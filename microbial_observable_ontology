@@ -1,7 +1,6 @@
 format-version: 1.2
-date: 07:02:2011 16:36
-saved-by: Adrienne 
-auto-generated-by: OBO-Edit 2.1
+date: 16:02:2011 16:09
+auto-generated-by: OBO-Edit 2.1-beta7
 default-namespace: file:/Users/Adrienne/Desktop/MOO 0.1
 
 [Term]
@@ -321,14 +320,14 @@ creation_date: 2011-02-02T03:17:19Z
 [Term]
 id: MOO:0000045
 name: cell shape
-is_a: MOO:0000042 ! cellular morphology
+relationship: part_of MOO:0000042 ! cellular morphology
 created_by: Adrienne
 creation_date: 2011-02-02T03:18:02Z
 
 [Term]
 id: MOO:0000046
 name: cell size
-is_a: MOO:0000042 ! cellular morphology
+relationship: part_of MOO:0000042 ! cellular morphology
 created_by: Adrienne
 creation_date: 2011-02-02T03:18:19Z
 
@@ -596,7 +595,7 @@ creation_date: 2011-02-02T03:46:44Z
 [Term]
 id: MOO:0000083
 name: appendage property
-is_a: MOO:0000042 ! cellular morphology
+relationship: part_of MOO:0000042 ! cellular morphology
 created_by: Adrienne
 creation_date: 2011-02-02T03:47:44Z
 
@@ -610,7 +609,7 @@ creation_date: 2011-02-02T03:47:57Z
 [Term]
 id: MOO:0000085
 name: cell envelope structure
-is_a: MOO:0000042 ! cellular morphology
+relationship: part_of MOO:0000042 ! cellular morphology
 created_by: Adrienne
 creation_date: 2011-02-02T03:49:03Z
 
@@ -821,7 +820,7 @@ creation_date: 2011-02-07T03:22:20Z
 
 [Term]
 id: MOO:0000115
-name: outer membrane 
+name: outer membrane
 is_a: MOO:0000085 ! cell envelope structure
 created_by: Adrienne
 creation_date: 2011-02-07T03:32:27Z
@@ -833,4 +832,11 @@ namespace: microbial_observable.obo
 is_a: MOO:0000086 ! metabolism
 created_by: Adrienne
 creation_date: 2011-02-07T03:53:37Z
+
+[Typedef]
+id: part_of
+name: part of
+is_transitive: true
+created_by: Adrienne
+creation_date: 2011-02-16T04:05:42Z
 
