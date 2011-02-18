@@ -1,6 +1,5 @@
 format-version: 1.2
-date: 16:02:2011 16:09
-saved-by: Marcus
+date: 18:02:2011 15:11
 auto-generated-by: OBO-Edit 2.1-beta7
 default-namespace: file:/Users/Adrienne/Desktop/MOO 0.1
 
@@ -23,7 +22,7 @@ creation_date: 2011-02-02T02:14:39Z
 [Term]
 id: MOO:0000003
 name: microbial communication
-is_a: MOO:0000035 ! microbe-microbe interaction
+is_a: MOO:0000035 ! microbe interaction type
 created_by: Adrienne
 creation_date: 2011-02-07T03:45:44Z
 
@@ -249,7 +248,7 @@ creation_date: 2011-02-02T02:52:30Z
 
 [Term]
 id: MOO:0000035
-name: microbe-microbe interaction
+name: microbe interaction type
 is_a: MOO:0000040 ! interaction type
 created_by: Adrienne
 creation_date: 2011-02-07T03:47:20Z
@@ -298,7 +297,7 @@ creation_date: 2011-02-02T03:13:59Z
 
 [Term]
 id: MOO:0000042
-name: cellular morphology
+name: aspect of cellular morphology
 def: "Refers to the form and structure of the cell." [MOO:AEZ]
 is_a: MOO:0000001 ! microbial observable
 created_by: Adrienne
@@ -320,47 +319,50 @@ creation_date: 2011-02-02T03:17:19Z
 
 [Term]
 id: MOO:0000045
-name: cell shape
-relationship: part_of MOO:0000042 ! cellular morphology
+name: cell shape characteristic
+is_a: MOO:0000042 ! aspect of cellular morphology
 created_by: Adrienne
 creation_date: 2011-02-02T03:18:02Z
 
 [Term]
 id: MOO:0000046
 name: cell size
-relationship: part_of MOO:0000042 ! cellular morphology
+is_a: MOO:0000042 ! aspect of cellular morphology
 created_by: Adrienne
 creation_date: 2011-02-02T03:18:19Z
 
 [Term]
 id: MOO:0000047
-name: cocci
+name: coccus type
+def: "Spherical or oval in shape." [MOO:AEZ]
 synonym: "<new synonym>Spherical" RELATED []
-is_a: MOO:0000045 ! cell shape
+is_a: MOO:0000045 ! cell shape characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T03:18:29Z
 
 [Term]
 id: MOO:0000048
-name: rod
-synonym: "Bacilli" RELATED []
-is_a: MOO:0000045 ! cell shape
+name: bacillus type
+def: "Rod-shaped bacteria." [MOO:AEZ]
+synonym: "Rod form" RELATED []
+is_a: MOO:0000045 ! cell shape characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T03:18:47Z
 
 [Term]
 id: MOO:0000049
-name: vibrio
-is_a: MOO:0000045 ! cell shape
+name: vibrio form
+def: "Curved or comma-shaped rod." [MOO:AEZ]
+is_a: MOO:0000050 ! spiral type
 created_by: Adrienne
 creation_date: 2011-02-02T03:19:31Z
 
 [Term]
 id: MOO:0000050
-name: spiral form
+name: spiral type
 synonym: "Curved rods" RELATED []
 synonym: "Spirochete" RELATED []
-is_a: MOO:0000045 ! cell shape
+is_a: MOO:0000045 ! cell shape characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T03:19:47Z
 
@@ -518,8 +520,8 @@ creation_date: 2011-02-02T03:30:07Z
 
 [Term]
 id: MOO:0000072
-name: filament
-is_a: MOO:0000045 ! cell shape
+name: filamentous appearance
+is_a: MOO:0000045 ! cell shape characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T03:31:35Z
 
@@ -560,57 +562,57 @@ creation_date: 2011-02-02T03:35:15Z
 
 [Term]
 id: MOO:0000078
-name: flagellar arrangement
-is_a: MOO:0000083 ! appendage property
+name: flagella configuration
+is_a: MOO:0000083 ! appendage feature
 created_by: Adrienne
 creation_date: 2011-02-02T03:43:16Z
 
 [Term]
 id: MOO:0000079
-name: monotrichous
-is_a: MOO:0000078 ! flagellar arrangement
+name: monotrichous distribution
+is_a: MOO:0000078 ! flagella configuration
 created_by: Adrienne
 creation_date: 2011-02-02T03:44:18Z
 
 [Term]
 id: MOO:0000080
-name: amphitrichous
-is_a: MOO:0000078 ! flagellar arrangement
+name: amphitrichous distribution 
+is_a: MOO:0000078 ! flagella configuration
 created_by: Adrienne
 creation_date: 2011-02-02T03:45:34Z
 
 [Term]
 id: MOO:0000081
-name: lophotrichous
-is_a: MOO:0000078 ! flagellar arrangement
+name: lophotrichous distribution
+is_a: MOO:0000078 ! flagella configuration
 created_by: Adrienne
 creation_date: 2011-02-02T03:46:16Z
 
 [Term]
 id: MOO:0000082
-name: peritrichous
-is_a: MOO:0000078 ! flagellar arrangement
+name: peritrichous distribution
+is_a: MOO:0000078 ! flagella configuration
 created_by: Adrienne
 creation_date: 2011-02-02T03:46:44Z
 
 [Term]
 id: MOO:0000083
-name: appendage property
-relationship: part_of MOO:0000042 ! cellular morphology
+name: appendage feature
+is_a: MOO:0000042 ! aspect of cellular morphology
 created_by: Adrienne
 creation_date: 2011-02-02T03:47:44Z
 
 [Term]
 id: MOO:0000084
-name: pilus
-is_a: MOO:0000083 ! appendage property
+name: pilus characteristic
+is_a: MOO:0000083 ! appendage feature
 created_by: Adrienne
 creation_date: 2011-02-02T03:47:57Z
 
 [Term]
 id: MOO:0000085
-name: cell envelope structure
-relationship: part_of MOO:0000042 ! cellular morphology
+name: cell envelope structure feature
+is_a: MOO:0000042 ! aspect of cellular morphology
 created_by: Adrienne
 creation_date: 2011-02-02T03:49:03Z
 
@@ -624,36 +626,36 @@ creation_date: 2011-02-03T11:24:08Z
 
 [Term]
 id: MOO:0000087
-name: fimbriae
-is_a: MOO:0000083 ! appendage property
+name: fimbriae characteristic
+is_a: MOO:0000083 ! appendage feature
 created_by: Adrienne
 creation_date: 2011-02-02T03:54:47Z
 
 [Term]
 id: MOO:0000088
-name: axial filament
-is_a: MOO:0000083 ! appendage property
+name: axial filament characteristic
+is_a: MOO:0000083 ! appendage feature
 created_by: Adrienne
 creation_date: 2011-02-02T03:55:04Z
 
 [Term]
 id: MOO:0000089
 name: capsule
-is_a: MOO:0000085 ! cell envelope structure
+is_a: MOO:0000085 ! cell envelope structure feature
 created_by: Adrienne
 creation_date: 2011-02-02T03:56:20Z
 
 [Term]
 id: MOO:0000090
 name: cell wall
-is_a: MOO:0000085 ! cell envelope structure
+is_a: MOO:0000085 ! cell envelope structure feature
 created_by: Adrienne
 creation_date: 2011-02-02T03:56:32Z
 
 [Term]
 id: MOO:0000091
 name: cytoplasmic membrane
-is_a: MOO:0000085 ! cell envelope structure
+is_a: MOO:0000085 ! cell envelope structure feature
 created_by: Adrienne
 creation_date: 2011-02-02T03:57:28Z
 
@@ -751,6 +753,13 @@ created_by: Adrienne
 creation_date: 2011-02-03T04:33:42Z
 
 [Term]
+id: MOO:0000105
+name: <new term>
+is_a: MOO:0000042 ! aspect of cellular morphology
+created_by: Adrienne
+creation_date: 2011-02-18T02:23:22Z
+
+[Term]
 id: MOO:0000106
 name: catalase test
 namespace: microbial_observable.obo
@@ -822,7 +831,7 @@ creation_date: 2011-02-07T03:22:20Z
 [Term]
 id: MOO:0000115
 name: outer membrane
-is_a: MOO:0000085 ! cell envelope structure
+is_a: MOO:0000085 ! cell envelope structure feature
 created_by: Adrienne
 creation_date: 2011-02-07T03:32:27Z
 
@@ -833,6 +842,127 @@ namespace: microbial_observable.obo
 is_a: MOO:0000086 ! metabolism
 created_by: Adrienne
 creation_date: 2011-02-07T03:53:37Z
+
+[Term]
+id: MOO:0000117
+name: diplococcus arrangement
+def: "Cocci arranged in pairs that arise from a division event in one plane." [MOO:AEZ]
+is_a: MOO:0000047 ! coccus type
+created_by: Adrienne
+creation_date: 2011-02-18T02:29:12Z
+
+[Term]
+id: MOO:0000118
+name: streptococcus arrangement
+def: "Cocci arranged in chains that arise from division events in one plane." [MOO:AEZ]
+is_a: MOO:0000047 ! coccus type
+created_by: Adrienne
+creation_date: 2011-02-18T02:31:37Z
+
+[Term]
+id: MOO:0000119
+name: tetrad arrangement
+def: "Cocci arranged in squares of 4 that result from division in two planes." [MOO:AEZ]
+is_a: MOO:0000047 ! coccus type
+created_by: Adrienne
+creation_date: 2011-02-18T02:33:22Z
+
+[Term]
+id: MOO:0000120
+name: sarcina arrangement
+def: "Cocci arranged cubes of 8 that arise from a division event in three planes." [MOO:AEZ]
+is_a: MOO:0000047 ! coccus type
+created_by: Adrienne
+creation_date: 2011-02-18T02:34:40Z
+
+[Term]
+id: MOO:0000121
+name: stapylococcus arrangement
+def: "Cocci arranged in irregular patterns that arise from division events in random planes." [MOO:AEZ]
+is_a: MOO:0000047 ! coccus type
+created_by: Adrienne
+creation_date: 2011-02-18T02:39:34Z
+
+[Term]
+id: MOO:0000122
+name: streptobacillus arrangement
+def: "Bacilli arranged in chains." [MOO:AEZ]
+is_a: MOO:0000048 ! bacillus type
+created_by: Adrienne
+creation_date: 2011-02-18T02:47:10Z
+
+[Term]
+id: MOO:0000123
+name: coccobacillus arrangement
+def: "Oval bacilli similar to cocci in shape." [MOO:AEZ]
+is_a: MOO:0000048 ! bacillus type
+created_by: Adrienne
+creation_date: 2011-02-18T02:48:21Z
+
+[Term]
+id: MOO:0000124
+name: spirillum form
+def: "Appear as a thick, rigid spiral." [MOO:AEZ]
+is_a: MOO:0000050 ! spiral type
+created_by: Adrienne
+creation_date: 2011-02-18T02:51:54Z
+
+[Term]
+id: MOO:0000125
+name: spirochete form
+def: "Appear as a thin, flexible spiral." [MOO:AEZ]
+is_a: MOO:0000050 ! spiral type
+created_by: Adrienne
+creation_date: 2011-02-18T02:52:33Z
+
+[Term]
+id: MOO:0000126
+name: trichome-forming appearance
+is_a: MOO:0000045 ! cell shape characteristic
+created_by: Adrienne
+creation_date: 2011-02-18T02:55:59Z
+
+[Term]
+id: MOO:0000127
+name: sheathed appearance
+is_a: MOO:0000045 ! cell shape characteristic
+created_by: Adrienne
+creation_date: 2011-02-18T02:59:18Z
+
+[Term]
+id: MOO:0000128
+name: stalked appearance
+is_a: MOO:0000045 ! cell shape characteristic
+created_by: Adrienne
+creation_date: 2011-02-18T02:59:38Z
+
+[Term]
+id: MOO:0000129
+name: square appearance
+is_a: MOO:0000045 ! cell shape characteristic
+created_by: Adrienne
+creation_date: 2011-02-18T02:59:57Z
+
+[Term]
+id: MOO:0000130
+name: star-shaped appearance
+is_a: MOO:0000045 ! cell shape characteristic
+created_by: Adrienne
+creation_date: 2011-02-18T03:00:30Z
+
+[Term]
+id: MOO:0000131
+name: lobed appearance
+is_a: MOO:0000045 ! cell shape characteristic
+created_by: Adrienne
+creation_date: 2011-02-18T03:00:58Z
+
+[Term]
+id: MOO:0000132
+name: pleomorphic appearance
+is_a: MOO:0000045 ! cell shape characteristic
+created_by: Adrienne
+creation_date: 2011-02-18T03:01:18Z
 
 [Typedef]
 id: part_of
