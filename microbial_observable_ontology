@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:02:2011 15:11
+date: 18:02:2011 16:03
 auto-generated-by: OBO-Edit 2.1-beta7
 default-namespace: file:/Users/Adrienne/Desktop/MOO 0.1
 
@@ -13,7 +13,7 @@ creation_date: 2011-02-02T01:59:52Z
 
 [Term]
 id: MOO:0000002
-name: colony characteristic
+name: colony feature
 def: "This is a definition." [MOO:AEZ]
 is_a: MOO:0000043 ! population characteristic
 created_by: Adrienne
@@ -28,228 +28,228 @@ creation_date: 2011-02-07T03:45:44Z
 
 [Term]
 id: MOO:0000004
-name: staining
-is_a: MOO:0000104 ! diagnostic test
+name: staining result
+is_a: MOO:0000104 ! aspect of diagnostic testing
 created_by: Adrienne
 creation_date: 2011-02-02T02:19:55Z
 
 [Term]
 id: MOO:0000005
-name: colony form
-is_a: MOO:0000002 ! colony characteristic
+name: colony form characteristic
+is_a: MOO:0000002 ! colony feature
 created_by: Adrienne
 creation_date: 2011-02-02T02:41:50Z
 
 [Term]
 id: MOO:0000006
-name: colony elevation
-is_a: MOO:0000002 ! colony characteristic
+name: colony elevation characteristic
+is_a: MOO:0000002 ! colony feature
 created_by: Adrienne
 creation_date: 2011-02-02T02:42:12Z
 
 [Term]
 id: MOO:0000007
-name: colony appearance
-is_a: MOO:0000002 ! colony characteristic
+name: colony sheen characteristic
+is_a: MOO:0000002 ! colony feature
 created_by: Adrienne
 creation_date: 2011-02-02T02:42:37Z
 
 [Term]
 id: MOO:0000008
-name: colony color
-is_a: MOO:0000002 ! colony characteristic
+name: colony color characteristic
+is_a: MOO:0000002 ! colony feature
 created_by: Adrienne
 creation_date: 2011-02-02T02:43:25Z
 
 [Term]
 id: MOO:0000009
-name: colony optical property
-is_a: MOO:0000002 ! colony characteristic
+name: colony optical characteristic
+is_a: MOO:0000002 ! colony feature
 created_by: Adrienne
 creation_date: 2011-02-02T02:43:46Z
 
 [Term]
 id: MOO:0000010
-name: mucoid
-is_a: MOO:0000007 ! colony appearance
+name: mucoid appearance
+is_a: MOO:0000007 ! colony sheen characteristic
 created_by: Adrienne
 creation_date: 2011-02-07T03:38:08Z
 
 [Term]
 id: MOO:0000011
-name: opaque
-is_a: MOO:0000009 ! colony optical property
+name: opaque appearance
+is_a: MOO:0000009 ! colony optical characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:45:02Z
 
 [Term]
 id: MOO:0000012
-name: translucent
-is_a: MOO:0000009 ! colony optical property
+name: translucent appearance
+is_a: MOO:0000009 ! colony optical characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:45:20Z
 
 [Term]
 id: MOO:0000013
-name: transparent
-is_a: MOO:0000009 ! colony optical property
+name: transparent appearance
+is_a: MOO:0000009 ! colony optical characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:45:41Z
 
 [Term]
 id: MOO:0000014
-name: pigmented
-is_a: MOO:0000008 ! colony color
+name: pigmented appearance
+is_a: MOO:0000008 ! colony color characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:46:17Z
 
 [Term]
 id: MOO:0000015
-name: non-pigmented
-is_a: MOO:0000008 ! colony color
+name: non-pigmented appearance
+is_a: MOO:0000008 ! colony color characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:46:39Z
 
 [Term]
 id: MOO:0000016
-name: shiny
+name: shiny appearance
 synonym: "smooth" RELATED []
-is_a: MOO:0000007 ! colony appearance
+is_a: MOO:0000007 ! colony sheen characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:47:04Z
 
 [Term]
 id: MOO:0000017
-name: dull
+name: dull appearance
 synonym: "matte" RELATED []
 synonym: "rough" RELATED []
-is_a: MOO:0000007 ! colony appearance
+is_a: MOO:0000007 ! colony sheen characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:47:21Z
 
 [Term]
 id: MOO:0000018
-name: colony margins
-is_a: MOO:0000002 ! colony characteristic
+name: colony margin characteristic
+is_a: MOO:0000002 ! colony feature
 created_by: Adrienne
 creation_date: 2011-02-02T02:47:43Z
 
 [Term]
 id: MOO:0000019
-name: entire
-is_a: MOO:0000018 ! colony margins
+name: entire appearance
+is_a: MOO:0000018 ! colony margin characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:47:59Z
 
 [Term]
 id: MOO:0000020
-name: undulate
-is_a: MOO:0000018 ! colony margins
+name: undulate appearance
+is_a: MOO:0000018 ! colony margin characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:11Z
 
 [Term]
 id: MOO:0000021
-name: lobate
-is_a: MOO:0000018 ! colony margins
+name: lobate appearance
+is_a: MOO:0000018 ! colony margin characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:33Z
 
 [Term]
 id: MOO:0000022
-name: erose
-is_a: MOO:0000018 ! colony margins
+name: erose appearance
+is_a: MOO:0000018 ! colony margin characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:46Z
 
 [Term]
 id: MOO:0000023
-name: filamentous
-is_a: MOO:0000018 ! colony margins
+name: filamented appearance
+is_a: MOO:0000018 ! colony margin characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:49:05Z
 
 [Term]
 id: MOO:0000024
-name: curled
-is_a: MOO:0000018 ! colony margins
+name: curled appearance
+is_a: MOO:0000018 ! colony margin characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:49:30Z
 
 [Term]
 id: MOO:0000025
 name: flat
-is_a: MOO:0000006 ! colony elevation
+is_a: MOO:0000006 ! colony elevation characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:49:49Z
 
 [Term]
 id: MOO:0000026
 name: raised
-is_a: MOO:0000006 ! colony elevation
+is_a: MOO:0000006 ! colony elevation characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:01Z
 
 [Term]
 id: MOO:0000027
 name: convex
-is_a: MOO:0000006 ! colony elevation
+is_a: MOO:0000006 ! colony elevation characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:11Z
 
 [Term]
 id: MOO:0000028
 name: pulvinate
-is_a: MOO:0000006 ! colony elevation
+is_a: MOO:0000006 ! colony elevation characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:30Z
 
 [Term]
 id: MOO:0000029
 name: umbonate
-is_a: MOO:0000006 ! colony elevation
+is_a: MOO:0000006 ! colony elevation characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:42Z
 
 [Term]
 id: MOO:0000030
-name: punctiform
-is_a: MOO:0000005 ! colony form
+name: punctiform appearance
+is_a: MOO:0000005 ! colony form characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:00Z
 
 [Term]
 id: MOO:0000031
-name: circular
-is_a: MOO:0000005 ! colony form
+name: circular appearance
+is_a: MOO:0000005 ! colony form characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:18Z
 
 [Term]
 id: MOO:0000032
-name: irregular
-is_a: MOO:0000005 ! colony form
+name: irregular appearance
+is_a: MOO:0000005 ! colony form characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:35Z
 
 [Term]
 id: MOO:0000033
-name: rhizoid
-is_a: MOO:0000005 ! colony form
+name: rhizoid appearance
+is_a: MOO:0000005 ! colony form characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:57Z
 
 [Term]
 id: MOO:0000034
-name: spindle
-is_a: MOO:0000005 ! colony form
+name: spindle appearance
+is_a: MOO:0000005 ! colony form characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T02:52:30Z
 
 [Term]
 id: MOO:0000035
 name: microbe interaction type
-is_a: MOO:0000040 ! interaction type
+is_a: MOO:0000040 ! aspect of an interaction
 created_by: Adrienne
 creation_date: 2011-02-07T03:47:20Z
 
@@ -262,7 +262,7 @@ creation_date: 2011-02-07T03:47:50Z
 
 [Term]
 id: MOO:0000037
-name: development
+name: aspect of development
 is_a: MOO:0000001 ! microbial observable
 created_by: Adrienne
 creation_date: 2011-02-02T03:11:48Z
@@ -270,27 +270,27 @@ creation_date: 2011-02-02T03:11:48Z
 [Term]
 id: MOO:0000038
 name: microbe-virus interaction
-is_a: MOO:0000040 ! interaction type
+is_a: MOO:0000040 ! aspect of an interaction
 created_by: Adrienne
 creation_date: 2011-02-07T03:49:40Z
 
 [Term]
 id: MOO:0000039
-name: motility
+name: aspect of motility
 is_a: MOO:0000001 ! microbial observable
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:11Z
 
 [Term]
 id: MOO:0000040
-name: interaction type
+name: aspect of an interaction
 is_a: MOO:0000001 ! microbial observable
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:32Z
 
 [Term]
 id: MOO:0000041
-name: growth
+name: aspect of growth
 is_a: MOO:0000001 ! microbial observable
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:59Z
@@ -312,7 +312,7 @@ creation_date: 2011-02-02T03:15:49Z
 
 [Term]
 id: MOO:0000044
-name: biofilm
+name: biofilm property
 is_a: MOO:0000043 ! population characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T03:17:19Z
@@ -375,7 +375,7 @@ creation_date: 2011-02-02T03:20:39Z
 
 [Term]
 id: MOO:0000052
-name: flocculation
+name: flocculation 
 is_a: MOO:0000051 ! liquid culture characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T03:21:00Z
@@ -383,14 +383,14 @@ creation_date: 2011-02-02T03:21:00Z
 [Term]
 id: MOO:0000053
 name: colony size
-is_a: MOO:0000002 ! colony characteristic
+is_a: MOO:0000002 ! colony feature
 created_by: Adrienne
 creation_date: 2011-02-02T03:22:43Z
 
 [Term]
 id: MOO:0000054
-name: budding
-is_a: MOO:0000037 ! development
+name: budding characteristic
+is_a: MOO:0000037 ! aspect of development
 created_by: Adrienne
 creation_date: 2011-02-02T03:23:41Z
 
@@ -403,59 +403,59 @@ creation_date: 2011-02-02T03:23:54Z
 
 [Term]
 id: MOO:0000056
-name: lifespan
-is_a: MOO:0000037 ! development
+name: lifespan 
+is_a: MOO:0000037 ! aspect of development
 created_by: Adrienne
 creation_date: 2011-02-02T03:24:11Z
 
 [Term]
 id: MOO:0000057
-name: sporulation
-is_a: MOO:0000037 ! development
+name: characteristic of sporulation 
+is_a: MOO:0000037 ! aspect of development
 created_by: Adrienne
 creation_date: 2011-02-02T03:24:24Z
 
 [Term]
 id: MOO:0000058
-name: heterocyst formation
-is_a: MOO:0000037 ! development
+name: characteristic of heterocyst formation
+is_a: MOO:0000037 ! aspect of development
 created_by: Adrienne
 creation_date: 2011-02-02T03:24:43Z
 
 [Term]
 id: MOO:0000059
-name: ankinete formation
-is_a: MOO:0000037 ! development
+name: characteristic of ankinete formation
+is_a: MOO:0000037 ! aspect of development
 created_by: Adrienne
 creation_date: 2011-02-02T03:25:02Z
 
 [Term]
 id: MOO:0000060
 name: endospore formation
-is_a: MOO:0000057 ! sporulation
+is_a: MOO:0000057 ! characteristic of sporulation 
 created_by: Adrienne
 creation_date: 2011-02-02T03:25:29Z
 
 [Term]
 id: MOO:0000061
-name: spore germination
-is_a: MOO:0000037 ! development
+name: characteristic of spore germination
+is_a: MOO:0000037 ! aspect of development
 created_by: Adrienne
 creation_date: 2011-02-02T03:25:47Z
 
 [Term]
 id: MOO:0000062
-name: negative staining
+name: negative staining appearance
 synonym: "background staining" RELATED []
 synonym: "indirect staining" RELATED []
-is_a: MOO:0000101 ! cell staining
+is_a: MOO:0000101 ! cell staining result 
 created_by: Adrienne
 creation_date: 2011-02-03T11:32:47Z
 
 [Term]
 id: MOO:0000063
 name: myxospore formation
-is_a: MOO:0000057 ! sporulation
+is_a: MOO:0000057 ! characteristic of sporulation 
 created_by: Adrienne
 creation_date: 2011-02-02T03:26:41Z
 
@@ -463,7 +463,7 @@ creation_date: 2011-02-02T03:26:41Z
 id: MOO:0000064
 name: gas production
 namespace: microbial_observable.obo
-is_a: MOO:0000086 ! metabolism
+is_a: MOO:0000086 ! aspect of metabolic testing
 created_by: Adrienne
 creation_date: 2011-02-07T03:52:30Z
 
@@ -471,21 +471,21 @@ creation_date: 2011-02-07T03:52:30Z
 id: MOO:0000065
 name: sulfate reduction
 namespace: microbial_observable.obo
-is_a: MOO:0000086 ! metabolism
+is_a: MOO:0000086 ! aspect of metabolic testing
 created_by: Adrienne
 creation_date: 2011-02-07T03:52:44Z
 
 [Term]
 id: MOO:0000066
 name: chemotaxis
-is_a: MOO:0000039 ! motility
+is_a: MOO:0000105 ! motile property
 created_by: Adrienne
 creation_date: 2011-02-02T03:28:13Z
 
 [Term]
 id: MOO:0000067
 name: swarming
-is_a: MOO:0000039 ! motility
+is_a: MOO:0000105 ! motile property
 created_by: Adrienne
 creation_date: 2011-02-02T03:28:43Z
 
@@ -500,21 +500,21 @@ creation_date: 2011-02-02T03:28:59Z
 [Term]
 id: MOO:0000069
 name: anaerobic growth
-is_a: MOO:0000041 ! growth
+is_a: MOO:0000041 ! aspect of growth
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:34Z
 
 [Term]
 id: MOO:0000070
 name: aerobic growth
-is_a: MOO:0000041 ! growth
+is_a: MOO:0000041 ! aspect of growth
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
 
 [Term]
 id: MOO:0000071
 name: photosynthetic growth
-is_a: MOO:0000041 ! growth
+is_a: MOO:0000041 ! aspect of growth
 created_by: Adrienne
 creation_date: 2011-02-02T03:30:07Z
 
@@ -527,7 +527,7 @@ creation_date: 2011-02-02T03:31:35Z
 
 [Term]
 id: MOO:0000073
-name: chain
+name: chain property
 is_a: MOO:0000051 ! liquid culture characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T03:31:55Z
@@ -535,28 +535,28 @@ creation_date: 2011-02-02T03:31:55Z
 [Term]
 id: MOO:0000074
 name: Gram-positive
-is_a: MOO:0000077 ! Gram stain
+is_a: MOO:0000077 ! Gram staining appearance
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:29Z
 
 [Term]
 id: MOO:0000075
-name: Gram-negative
-is_a: MOO:0000077 ! Gram stain
+name: Gram-negative 
+is_a: MOO:0000077 ! Gram staining appearance
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:45Z
 
 [Term]
 id: MOO:0000076
 name: Gram-variable
-is_a: MOO:0000077 ! Gram stain
+is_a: MOO:0000077 ! Gram staining appearance
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:58Z
 
 [Term]
 id: MOO:0000077
-name: Gram stain
-is_a: MOO:0000101 ! cell staining
+name: Gram staining appearance
+is_a: MOO:0000101 ! cell staining result 
 created_by: Adrienne
 creation_date: 2011-02-02T03:35:15Z
 
@@ -618,7 +618,7 @@ creation_date: 2011-02-02T03:49:03Z
 
 [Term]
 id: MOO:0000086
-name: metabolism
+name: aspect of metabolic testing
 namespace: microbial_observable.obo
 is_a: MOO:0000001 ! microbial observable
 created_by: Adrienne
@@ -669,70 +669,70 @@ creation_date: 2011-02-07T03:21:57Z
 [Term]
 id: MOO:0000093
 name: host interaction
-is_a: MOO:0000040 ! interaction type
+is_a: MOO:0000040 ! aspect of an interaction
 created_by: Adrienne
 creation_date: 2011-02-03T11:25:01Z
 
 [Term]
 id: MOO:0000094
 name: environmental interaction
-is_a: MOO:0000040 ! interaction type
+is_a: MOO:0000040 ! aspect of an interaction
 created_by: Adrienne
 creation_date: 2011-02-03T11:25:41Z
 
 [Term]
 id: MOO:0000095
-name: acid-fast staining
-is_a: MOO:0000101 ! cell staining
+name: acid-fast staining appearance
+is_a: MOO:0000101 ! cell staining result 
 created_by: Adrienne
 creation_date: 2011-02-03T11:38:46Z
 
 [Term]
 id: MOO:0000096
 name: non-acid-fast
-is_a: MOO:0000095 ! acid-fast staining
+is_a: MOO:0000095 ! acid-fast staining appearance
 created_by: Adrienne
 creation_date: 2011-02-03T11:39:53Z
 
 [Term]
 id: MOO:0000097
 name: acid-fast
-is_a: MOO:0000095 ! acid-fast staining
+is_a: MOO:0000095 ! acid-fast staining appearance
 created_by: Adrienne
 creation_date: 2011-02-03T11:40:14Z
 
 [Term]
 id: MOO:0000098
-name: endospore staining
-is_a: MOO:0000101 ! cell staining
+name: endospore staining appearance
+is_a: MOO:0000101 ! cell staining result 
 created_by: Adrienne
 creation_date: 2011-02-03T11:59:29Z
 
 [Term]
 id: MOO:0000099
-name: capsule staining
-is_a: MOO:0000101 ! cell staining
+name: capsule staining appearance
+is_a: MOO:0000101 ! cell staining result 
 created_by: Adrienne
 creation_date: 2011-02-03T11:59:54Z
 
 [Term]
 id: MOO:0000100
-name: flagella staining
-is_a: MOO:0000101 ! cell staining
+name: flagella staining appearance
+is_a: MOO:0000101 ! cell staining result 
 created_by: Adrienne
 creation_date: 2011-02-03T12:00:13Z
 
 [Term]
 id: MOO:0000101
-name: cell staining
-is_a: MOO:0000004 ! staining
+name: cell staining result 
+is_a: MOO:0000004 ! staining result
 created_by: Adrienne
 creation_date: 2011-02-03T01:33:37Z
 
 [Term]
 id: MOO:0000102
-name: biofilm staining
-is_a: MOO:0000004 ! staining
+name: biofilm stain result
+is_a: MOO:0000004 ! staining result
 created_by: Adrienne
 creation_date: 2011-02-03T01:35:21Z
 
@@ -740,13 +740,13 @@ creation_date: 2011-02-03T01:35:21Z
 id: MOO:0000103
 name: oxygen consumption
 namespace: microbial_observable.obo
-is_a: MOO:0000086 ! metabolism
+is_a: MOO:0000086 ! aspect of metabolic testing
 created_by: Adrienne
 creation_date: 2011-02-07T03:53:18Z
 
 [Term]
 id: MOO:0000104
-name: diagnostic test
+name: aspect of diagnostic testing
 namespace: microbial_observable.obo
 is_a: MOO:0000001 ! microbial observable
 created_by: Adrienne
@@ -754,69 +754,69 @@ creation_date: 2011-02-03T04:33:42Z
 
 [Term]
 id: MOO:0000105
-name: <new term>
-is_a: MOO:0000042 ! aspect of cellular morphology
+name: motile property
+is_a: MOO:0000039 ! aspect of motility
 created_by: Adrienne
-creation_date: 2011-02-18T02:23:22Z
+creation_date: 2011-02-18T03:33:05Z
 
 [Term]
 id: MOO:0000106
-name: catalase test
+name: catalase test characteristic
 namespace: microbial_observable.obo
-is_a: MOO:0000109 ! enzymatic assay
+is_a: MOO:0000109 ! enzymatic assay result
 created_by: Adrienne
 creation_date: 2011-02-03T04:43:28Z
 
 [Term]
 id: MOO:0000107
-name: decarboxylase test
+name: decarboxylase test characteristic
 namespace: microbial_observable.obo
-is_a: MOO:0000109 ! enzymatic assay
+is_a: MOO:0000109 ! enzymatic assay result
 created_by: Adrienne
 creation_date: 2011-02-03T04:43:53Z
 
 [Term]
 id: MOO:0000108
-name: oxidase test
+name: oxidase test characteristic
 namespace: microbial_observable.obo
-is_a: MOO:0000109 ! enzymatic assay
+is_a: MOO:0000109 ! enzymatic assay result
 created_by: Adrienne
 creation_date: 2011-02-03T04:44:11Z
 
 [Term]
 id: MOO:0000109
-name: enzymatic assay
+name: enzymatic assay result
 namespace: microbial_observable.obo
-is_a: MOO:0000104 ! diagnostic test
+is_a: MOO:0000104 ! aspect of diagnostic testing
 created_by: Adrienne
 creation_date: 2011-02-03T04:44:39Z
 
 [Term]
 id: MOO:0000110
-name: urease test
+name: urease test characteristic
 namespace: microbial_observable.obo
-is_a: MOO:0000109 ! enzymatic assay
+is_a: MOO:0000109 ! enzymatic assay result
 created_by: Adrienne
 creation_date: 2011-02-03T04:45:37Z
 
 [Term]
 id: MOO:0000111
 name: swimming
-is_a: MOO:0000039 ! motility
+is_a: MOO:0000105 ! motile property
 created_by: Adrienne
 creation_date: 2011-02-07T03:17:40Z
 
 [Term]
 id: MOO:0000112
 name: gliding
-is_a: MOO:0000039 ! motility
+is_a: MOO:0000105 ! motile property
 created_by: Adrienne
 creation_date: 2011-02-07T03:18:03Z
 
 [Term]
 id: MOO:0000113
 name: twitching
-is_a: MOO:0000039 ! motility
+is_a: MOO:0000105 ! motile property
 created_by: Adrienne
 creation_date: 2011-02-07T03:18:13Z
 
@@ -839,7 +839,7 @@ creation_date: 2011-02-07T03:32:27Z
 id: MOO:0000116
 name: carbon dioxide production
 namespace: microbial_observable.obo
-is_a: MOO:0000086 ! metabolism
+is_a: MOO:0000086 ! aspect of metabolic testing
 created_by: Adrienne
 creation_date: 2011-02-07T03:53:37Z
 
@@ -963,6 +963,27 @@ name: pleomorphic appearance
 is_a: MOO:0000045 ! cell shape characteristic
 created_by: Adrienne
 creation_date: 2011-02-18T03:01:18Z
+
+[Term]
+id: MOO:0000133
+name: non-motile
+is_a: MOO:0000039 ! aspect of motility
+created_by: Adrienne
+creation_date: 2011-02-18T03:33:32Z
+
+[Term]
+id: MOO:0000134
+name: spherical form
+is_a: MOO:0000059 ! characteristic of ankinete formation
+created_by: Adrienne
+creation_date: 2011-02-18T03:40:27Z
+
+[Term]
+id: MOO:0000135
+name: envelope attribute
+is_a: MOO:0000059 ! characteristic of ankinete formation
+created_by: Adrienne
+creation_date: 2011-02-18T03:41:16Z
 
 [Typedef]
 id: part_of
