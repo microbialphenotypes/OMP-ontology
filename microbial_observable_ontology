@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:02:2011 16:03
+date: 21:02:2011 16:38
 auto-generated-by: OBO-Edit 2.1-beta7
 default-namespace: file:/Users/Adrienne/Desktop/MOO 0.1
 
@@ -375,7 +375,7 @@ creation_date: 2011-02-02T03:20:39Z
 
 [Term]
 id: MOO:0000052
-name: flocculation 
+name: flocculation
 is_a: MOO:0000051 ! liquid culture characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T03:21:00Z
@@ -403,14 +403,14 @@ creation_date: 2011-02-02T03:23:54Z
 
 [Term]
 id: MOO:0000056
-name: lifespan 
+name: lifespan
 is_a: MOO:0000037 ! aspect of development
 created_by: Adrienne
 creation_date: 2011-02-02T03:24:11Z
 
 [Term]
 id: MOO:0000057
-name: characteristic of sporulation 
+name: characteristic of sporulation
 is_a: MOO:0000037 ! aspect of development
 created_by: Adrienne
 creation_date: 2011-02-02T03:24:24Z
@@ -432,7 +432,7 @@ creation_date: 2011-02-02T03:25:02Z
 [Term]
 id: MOO:0000060
 name: endospore formation
-is_a: MOO:0000057 ! characteristic of sporulation 
+is_a: MOO:0000057 ! characteristic of sporulation
 created_by: Adrienne
 creation_date: 2011-02-02T03:25:29Z
 
@@ -448,14 +448,14 @@ id: MOO:0000062
 name: negative staining appearance
 synonym: "background staining" RELATED []
 synonym: "indirect staining" RELATED []
-is_a: MOO:0000101 ! cell staining result 
+is_a: MOO:0000101 ! cell staining result
 created_by: Adrienne
 creation_date: 2011-02-03T11:32:47Z
 
 [Term]
 id: MOO:0000063
 name: myxospore formation
-is_a: MOO:0000057 ! characteristic of sporulation 
+is_a: MOO:0000057 ! characteristic of sporulation
 created_by: Adrienne
 creation_date: 2011-02-02T03:26:41Z
 
@@ -541,7 +541,7 @@ creation_date: 2011-02-02T03:34:29Z
 
 [Term]
 id: MOO:0000075
-name: Gram-negative 
+name: Gram-negative
 is_a: MOO:0000077 ! Gram staining appearance
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:45Z
@@ -556,7 +556,7 @@ creation_date: 2011-02-02T03:34:58Z
 [Term]
 id: MOO:0000077
 name: Gram staining appearance
-is_a: MOO:0000101 ! cell staining result 
+is_a: MOO:0000101 ! cell staining result
 created_by: Adrienne
 creation_date: 2011-02-02T03:35:15Z
 
@@ -576,7 +576,7 @@ creation_date: 2011-02-02T03:44:18Z
 
 [Term]
 id: MOO:0000080
-name: amphitrichous distribution 
+name: amphitrichous distribution
 is_a: MOO:0000078 ! flagella configuration
 created_by: Adrienne
 creation_date: 2011-02-02T03:45:34Z
@@ -683,7 +683,7 @@ creation_date: 2011-02-03T11:25:41Z
 [Term]
 id: MOO:0000095
 name: acid-fast staining appearance
-is_a: MOO:0000101 ! cell staining result 
+is_a: MOO:0000101 ! cell staining result
 created_by: Adrienne
 creation_date: 2011-02-03T11:38:46Z
 
@@ -704,27 +704,27 @@ creation_date: 2011-02-03T11:40:14Z
 [Term]
 id: MOO:0000098
 name: endospore staining appearance
-is_a: MOO:0000101 ! cell staining result 
+is_a: MOO:0000101 ! cell staining result
 created_by: Adrienne
 creation_date: 2011-02-03T11:59:29Z
 
 [Term]
 id: MOO:0000099
 name: capsule staining appearance
-is_a: MOO:0000101 ! cell staining result 
+is_a: MOO:0000101 ! cell staining result
 created_by: Adrienne
 creation_date: 2011-02-03T11:59:54Z
 
 [Term]
 id: MOO:0000100
 name: flagella staining appearance
-is_a: MOO:0000101 ! cell staining result 
+is_a: MOO:0000101 ! cell staining result
 created_by: Adrienne
 creation_date: 2011-02-03T12:00:13Z
 
 [Term]
 id: MOO:0000101
-name: cell staining result 
+name: cell staining result
 is_a: MOO:0000004 ! staining result
 created_by: Adrienne
 creation_date: 2011-02-03T01:33:37Z
@@ -984,6 +984,111 @@ name: envelope attribute
 is_a: MOO:0000059 ! characteristic of ankinete formation
 created_by: Adrienne
 creation_date: 2011-02-18T03:41:16Z
+
+[Term]
+id: MOO:0000136
+name: nucleoid appearance
+is_a: MOO:0000150 ! DNA morphology
+created_by: Adrienne
+creation_date: 2011-02-21T04:16:30Z
+
+[Term]
+id: MOO:0000137
+name: nucleoid configuration
+is_a: MOO:0000144 ! multinucleoid
+created_by: Adrienne
+creation_date: 2011-02-21T04:22:05Z
+
+[Term]
+id: MOO:0000138
+name: nucleated
+is_a: MOO:0000136 ! nucleoid appearance
+created_by: Adrienne
+creation_date: 2011-02-21T04:22:51Z
+
+[Term]
+id: MOO:0000139
+name: anucleated
+is_a: MOO:0000136 ! nucleoid appearance
+created_by: Adrienne
+creation_date: 2011-02-21T04:23:04Z
+
+[Term]
+id: MOO:0000140
+name: nucleoid spacing aspect
+is_a: MOO:0000137 ! nucleoid configuration
+created_by: Adrienne
+creation_date: 2011-02-21T04:25:41Z
+
+[Term]
+id: MOO:0000141
+name: regular spacing
+is_a: MOO:0000140 ! nucleoid spacing aspect
+created_by: Adrienne
+creation_date: 2011-02-21T04:26:57Z
+
+[Term]
+id: MOO:0000142
+name: irregular spacing
+is_a: MOO:0000140 ! nucleoid spacing aspect
+created_by: Adrienne
+creation_date: 2011-02-21T04:27:22Z
+
+[Term]
+id: MOO:0000143
+name: single nucleoid
+is_a: MOO:0000138 ! nucleated
+created_by: Adrienne
+creation_date: 2011-02-21T04:27:48Z
+
+[Term]
+id: MOO:0000144
+name: multinucleoid
+is_a: MOO:0000138 ! nucleated
+created_by: Adrienne
+creation_date: 2011-02-21T04:28:30Z
+
+[Term]
+id: MOO:0000145
+name: nucleoid localization aspect
+is_a: MOO:0000137 ! nucleoid configuration
+created_by: Adrienne
+creation_date: 2011-02-21T04:30:32Z
+
+[Term]
+id: MOO:0000146
+name: midcell localization
+is_a: MOO:0000145 ! nucleoid localization aspect
+created_by: Adrienne
+creation_date: 2011-02-21T04:31:22Z
+
+[Term]
+id: MOO:0000147
+name: polar localization
+is_a: MOO:0000145 ! nucleoid localization aspect
+created_by: Adrienne
+creation_date: 2011-02-21T04:31:46Z
+
+[Term]
+id: MOO:0000148
+name: quarter cell localization
+is_a: MOO:0000145 ! nucleoid localization aspect
+created_by: Adrienne
+creation_date: 2011-02-21T04:32:04Z
+
+[Term]
+id: MOO:0000149
+name: <new term>
+is_a: MOO:0000145 ! nucleoid localization aspect
+created_by: Adrienne
+creation_date: 2011-02-21T04:32:58Z
+
+[Term]
+id: MOO:0000150
+name: DNA morphology
+is_a: MOO:0000042 ! aspect of cellular morphology
+created_by: Adrienne
+creation_date: 2011-02-21T04:36:21Z
 
 [Typedef]
 id: part_of
