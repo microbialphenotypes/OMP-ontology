@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:02:2011 16:38
+date: 22:02:2011 15:11
 auto-generated-by: OBO-Edit 2.1-beta7
 default-namespace: file:/Users/Adrienne/Desktop/MOO 0.1
 
@@ -987,71 +987,71 @@ creation_date: 2011-02-18T03:41:16Z
 
 [Term]
 id: MOO:0000136
-name: nucleoid appearance
-is_a: MOO:0000150 ! DNA morphology
+name: nucleoid configuration
+is_a: MOO:0000138 ! nucleate
 created_by: Adrienne
 creation_date: 2011-02-21T04:16:30Z
 
 [Term]
 id: MOO:0000137
-name: nucleoid configuration
-is_a: MOO:0000144 ! multinucleoid
+name: CLONE OF midcell localization
+is_a: MOO:0000143 ! single nucleoid configuration
 created_by: Adrienne
-creation_date: 2011-02-21T04:22:05Z
+creation_date: 2011-02-22T02:08:36Z
 
 [Term]
 id: MOO:0000138
-name: nucleated
-is_a: MOO:0000136 ! nucleoid appearance
+name: nucleate
+is_a: MOO:0000150 ! DNA morphology
 created_by: Adrienne
 creation_date: 2011-02-21T04:22:51Z
 
 [Term]
 id: MOO:0000139
-name: anucleated
-is_a: MOO:0000136 ! nucleoid appearance
+name: anucleate
+is_a: MOO:0000150 ! DNA morphology
 created_by: Adrienne
 creation_date: 2011-02-21T04:23:04Z
 
 [Term]
 id: MOO:0000140
 name: nucleoid spacing aspect
-is_a: MOO:0000137 ! nucleoid configuration
+is_a: MOO:0000144 ! multiple nucleoids configuration
 created_by: Adrienne
 creation_date: 2011-02-21T04:25:41Z
 
 [Term]
 id: MOO:0000141
-name: regular spacing
+name: regular nucleoid spacing
 is_a: MOO:0000140 ! nucleoid spacing aspect
 created_by: Adrienne
 creation_date: 2011-02-21T04:26:57Z
 
 [Term]
 id: MOO:0000142
-name: irregular spacing
+name: irregular nucleoid spacing
 is_a: MOO:0000140 ! nucleoid spacing aspect
 created_by: Adrienne
 creation_date: 2011-02-21T04:27:22Z
 
 [Term]
 id: MOO:0000143
-name: single nucleoid
-is_a: MOO:0000138 ! nucleated
+name: single nucleoid configuration
+is_a: MOO:0000138 ! nucleate
 created_by: Adrienne
 creation_date: 2011-02-21T04:27:48Z
 
 [Term]
 id: MOO:0000144
-name: multinucleoid
-is_a: MOO:0000138 ! nucleated
+name: multiple nucleoids configuration
+is_a: MOO:0000138 ! nucleate
 created_by: Adrienne
 creation_date: 2011-02-21T04:28:30Z
 
 [Term]
 id: MOO:0000145
 name: nucleoid localization aspect
-is_a: MOO:0000137 ! nucleoid configuration
+is_a: MOO:0000144 ! multiple nucleoids configuration
 created_by: Adrienne
 creation_date: 2011-02-21T04:30:32Z
 
@@ -1078,10 +1078,10 @@ creation_date: 2011-02-21T04:32:04Z
 
 [Term]
 id: MOO:0000149
-name: <new term>
-is_a: MOO:0000145 ! nucleoid localization aspect
+name: CLONE OF quarter cell localization
+is_a: MOO:0000143 ! single nucleoid configuration
 created_by: Adrienne
-creation_date: 2011-02-21T04:32:58Z
+creation_date: 2011-02-22T02:09:43Z
 
 [Term]
 id: MOO:0000150
@@ -1089,6 +1089,27 @@ name: DNA morphology
 is_a: MOO:0000042 ! aspect of cellular morphology
 created_by: Adrienne
 creation_date: 2011-02-21T04:36:21Z
+
+[Term]
+id: MOO:0000151
+name: CLONE OF polar localization
+is_a: MOO:0000143 ! single nucleoid configuration
+created_by: Adrienne
+creation_date: 2011-02-22T02:09:11Z
+
+[Term]
+id: MOO:0000152
+name: dumbbell configuration
+is_a: MOO:0000136 ! nucleoid configuration
+created_by: Adrienne
+creation_date: 2011-02-22T02:27:29Z
+
+[Term]
+id: MOO:0000153
+name: compact nucleoid configuration
+is_a: MOO:0000136 ! nucleoid configuration
+created_by: Adrienne
+creation_date: 2011-02-22T02:27:58Z
 
 [Typedef]
 id: part_of
