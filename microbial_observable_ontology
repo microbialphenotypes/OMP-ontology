@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:03:2011 14:30
+date: 02:03:2011 15:31
 auto-generated-by: OBO-Edit 2.1-beta7
 default-namespace: file:/Users/Adrienne/Desktop/MOO 0.1
 
@@ -1185,6 +1185,13 @@ namespace: microbial_observable.obo
 is_a: MOO:0000162 ! serological reaction result
 created_by: Adrienne
 creation_date: 2011-03-02T02:17:53Z
+
+[Term]
+id: MOO:0000164
+name: fluorescence in situ hybridization result
+is_a: MOO:0000101 ! cell staining result
+created_by: Adrienne
+creation_date: 2011-03-02T02:35:18Z
 
 [Typedef]
 id: part_of
