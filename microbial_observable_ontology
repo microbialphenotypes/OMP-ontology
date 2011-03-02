@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:02:2011 15:11
+date: 02:03:2011 14:30
 auto-generated-by: OBO-Edit 2.1-beta7
 default-namespace: file:/Users/Adrienne/Desktop/MOO 0.1
 
@@ -21,7 +21,7 @@ creation_date: 2011-02-02T02:14:39Z
 
 [Term]
 id: MOO:0000003
-name: microbial communication
+name: microbial communication type
 is_a: MOO:0000035 ! microbe interaction type
 created_by: Adrienne
 creation_date: 2011-02-07T03:45:44Z
@@ -255,8 +255,8 @@ creation_date: 2011-02-07T03:47:20Z
 
 [Term]
 id: MOO:0000036
-name: quorum sensing
-is_a: MOO:0000003 ! microbial communication
+name: quorum sensing feature
+is_a: MOO:0000003 ! microbial communication type
 created_by: Adrienne
 creation_date: 2011-02-07T03:47:50Z
 
@@ -375,7 +375,7 @@ creation_date: 2011-02-02T03:20:39Z
 
 [Term]
 id: MOO:0000052
-name: flocculation
+name: flocculation property
 is_a: MOO:0000051 ! liquid culture characteristic
 created_by: Adrienne
 creation_date: 2011-02-02T03:21:00Z
@@ -966,7 +966,7 @@ creation_date: 2011-02-18T03:01:18Z
 
 [Term]
 id: MOO:0000133
-name: non-motile
+name: non-motile property
 is_a: MOO:0000039 ! aspect of motility
 created_by: Adrienne
 creation_date: 2011-02-18T03:33:32Z
@@ -1110,6 +1110,81 @@ name: compact nucleoid configuration
 is_a: MOO:0000136 ! nucleoid configuration
 created_by: Adrienne
 creation_date: 2011-02-22T02:27:58Z
+
+[Term]
+id: MOO:0000154
+name: nanotubule appearance
+is_a: MOO:0000003 ! microbial communication type
+created_by: Adrienne
+creation_date: 2011-03-02T01:41:52Z
+
+[Term]
+id: MOO:0000155
+name: membrane vesicle appearance
+is_a: MOO:0000003 ! microbial communication type
+created_by: Adrienne
+creation_date: 2011-03-02T01:43:12Z
+
+[Term]
+id: MOO:0000156
+name: micrococcus arrangement
+def: "Square group of four cells." [MOO:AEZ]
+is_a: MOO:0000047 ! coccus type
+created_by: Adrienne
+creation_date: 2011-03-02T01:52:13Z
+
+[Term]
+id: MOO:0000157
+name: motility test result
+namespace: microbial_observable.obo
+is_a: MOO:0000104 ! aspect of diagnostic testing
+created_by: Adrienne
+creation_date: 2011-03-02T02:01:05Z
+
+[Term]
+id: MOO:0000158
+name: swarmer plating result
+namespace: microbial_observable.obo
+is_a: MOO:0000157 ! motility test result
+created_by: Adrienne
+creation_date: 2011-03-02T02:01:37Z
+
+[Term]
+id: MOO:0000159
+name: aerotaxis
+is_a: MOO:0000105 ! motile property
+created_by: Adrienne
+creation_date: 2011-03-02T02:06:09Z
+
+[Term]
+id: MOO:0000160
+name: granulation property
+is_a: MOO:0000051 ! liquid culture characteristic
+created_by: Adrienne
+creation_date: 2011-03-02T02:15:05Z
+
+[Term]
+id: MOO:0000161
+name: slide agglutination result
+is_a: MOO:0000162 ! serological reaction result
+created_by: Adrienne
+creation_date: 2011-03-02T02:15:49Z
+
+[Term]
+id: MOO:0000162
+name: serological reaction result
+namespace: microbial_observable.obo
+is_a: MOO:0000104 ! aspect of diagnostic testing
+created_by: Adrienne
+creation_date: 2011-03-02T02:16:33Z
+
+[Term]
+id: MOO:0000163
+name: fluorescent antibody test result
+namespace: microbial_observable.obo
+is_a: MOO:0000162 ! serological reaction result
+created_by: Adrienne
+creation_date: 2011-03-02T02:17:53Z
 
 [Typedef]
 id: part_of
