@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: 1.0.0
-date: 09:06:2011 12:05
+data-version: 1.1.0
+date: 21:07:2011 17:57
 saved-by: mchibucos
-auto-generated-by: OBO-Edit 2.1-beta13
+auto-generated-by: OBO-Edit 2.1-beta16
 default-namespace: microbial_phenotype
-remark: first release version 1.0.0
+remark: Now on SourceForge, version 1.1.0
 ontology: omp
 
 [Term]
@@ -18,7 +18,7 @@ id: OMP:0000001
 name: motility phenotype
 def: "A microbial phenotype, where the trait in question is the self-propelled movement of a cell from one location to another." [OMP:MCC]
 synonym: "locomotion phenotype" EXACT []
-xref: PATO:0001488 "cellular motility"
+xref: PATO:0001488
 is_a: OMP:0000000 ! microbial phenotype
 creation_date: 2011-03-10T06:55:06Z
 
@@ -26,7 +26,7 @@ creation_date: 2011-03-10T06:55:06Z
 id: OMP:0000002
 name: decreased motility
 def: "A type of motility that is relatively lower." [OMP:MCC]
-xref: PATO:0002297 "decreased cellular motility"
+xref: PATO:0002297
 is_a: OMP:0000005 ! motile
 creation_date: 2011-03-10T07:02:42Z
 
@@ -74,7 +74,7 @@ creation_date: 2011-04-26T02:52:52Z
 [Term]
 id: OMP:0000008
 name: bud forming
-def: "An budding phenotype where a cell possesses the ability to perform budding." []
+def: "An budding phenotype where a cell possesses the ability to perform budding." [OMP:MCC]
 is_a: OMP:0000089 ! budding phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:58:46Z
@@ -184,7 +184,7 @@ creation_date: 2011-04-26T03:10:51Z
 [Term]
 id: OMP:0000022
 name: abolished myxospore formation
-def: "A myxospore formation phenotype where the cell completely loses its ability to form a myxospore." [ECO:MCC]
+def: "A myxospore formation phenotype where the cell completely loses its ability to form a myxospore." [OMP:MCC]
 is_a: OMP:0000096 ! myxospore formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
@@ -370,7 +370,7 @@ creation_date: 2011-04-26T04:08:12Z
 id: OMP:0000045
 name: increased motility
 def: "A type of motility that is relatively higher." [OMP:MCC]
-xref: PATO:0002298 "increased cellular motility"
+xref: PATO:0002298
 is_a: OMP:0000005 ! motile
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:26Z
@@ -395,7 +395,7 @@ creation_date: 2011-04-26T04:18:11Z
 id: OMP:0000048
 name: chemotaxis phenotype
 def: "A taxis phenotype where the movement of a cell is in response to a chemical concentration gradient." [OMP:MCC]
-comment: chebi cross product candidate (and child terms).
+comment: ChEBI cross product candidate (and child terms).
 is_a: OMP:0000004 ! taxis phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:27:11Z
@@ -500,7 +500,7 @@ id: OMP:0000061
 name: decreased virulence
 def: "A type of virulence that is relatively lower." [OMP:MCC]
 synonym: "less virulent" EXACT []
-xref: PATO:0002147 "reduced virulence"
+xref: PATO:0002147
 is_a: OMP:0000098 ! virulent
 created_by: mchibucos
 creation_date: 2011-04-26T05:02:57Z
@@ -510,7 +510,7 @@ id: OMP:0000062
 name: increased virulence
 def: "A type of virulence that is relatively higher." [OMP:MCC]
 synonym: "more virulent" RELATED []
-xref: PATO:0002148 "increased virulence"
+xref: PATO:0002148
 is_a: OMP:0000098 ! virulent
 created_by: mchibucos
 creation_date: 2011-04-26T05:03:12Z
@@ -807,7 +807,7 @@ name: virulent
 def: "A virulence phenotype where an organism possesses the ability to cause disease in another organism." [OMP:MCC]
 synonym: "compatible interaction" EXACT []
 synonym: "virulence" EXACT []
-xref: PATO:0002146 "virulence"
+xref: PATO:0002146
 is_a: OMP:0000068 ! virulence phenotype
 created_by: mchibucos
 creation_date: 2011-04-28T02:11:35Z
@@ -1203,7 +1203,7 @@ creation_date: 2011-02-02T02:47:43Z
 id: OMP:0000150
 name: nucleoid phenotype
 def: "A cellular morphology phenotype where the trait in question is the nucleoid, the region of a bacterial cell to which the DNA is confined." [OMP:MCC]
-is_a: OMP:0000071 ! cellular morphology phenotype
+is_a: OMP:0000290 ! genetic material phenotype
 created_by: adrienne
 creation_date: 2011-02-21T04:36:21Z
 
@@ -1509,7 +1509,7 @@ creation_date: 2011-02-03T11:24:08Z
 
 [Term]
 id: OMP:0000193
-name: carbon requirement
+name: carbon utilization phenotype
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T04:01:13Z
@@ -1935,4 +1935,454 @@ name: loss of hemolysis
 is_a: OMP:0000208 ! absence of hemolysis
 created_by: mchibucos
 creation_date: 2011-06-07T03:20:50Z
+
+[Term]
+id: OMP:0000252
+name: metabolite accumulation
+is_a: OMP:0000180 ! metabolic phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T12:51:15Z
+
+[Term]
+id: OMP:0000253
+name: gene expression phenotype
+comment: An observed gene expression phenotype could result from transcriptional regulation or translational regulation.
+synonym: "genetic expression phenotype" EXACT []
+is_a: OMP:0000000 ! microbial phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:03:06Z
+
+[Term]
+id: OMP:0000254
+name: constitutive expression
+comment: Within the scope of lac or trp gene regulation, expression of genes is regulated by either the presence or absence of an inducer. Some mutants isolated from screens show constitutive expression of a gene, whereby the gene is expressed all the time regardless of whether the inducer is present or regardless of whether the repressor is absent.
+synonym: "constitutive gene expression" EXACT []
+is_a: OMP:0000253 ! gene expression phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:05:42Z
+
+[Term]
+id: OMP:0000255
+name: plating phenotype
+is_a: OMP:0000000 ! microbial phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:34:48Z
+
+[Term]
+id: OMP:0000256
+name: MacConkey agar phenotype
+is_a: OMP:0000255 ! plating phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:35:25Z
+
+[Term]
+id: OMP:0000257
+name: lactose fermentation
+is_a: OMP:0000193 ! carbon utilization phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:37:41Z
+
+[Term]
+id: OMP:0000258
+name: red colony on MacConkey agar
+is_a: OMP:0000256 ! MacConkey agar phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:38:10Z
+
+[Term]
+id: OMP:0000259
+name: glucose fermentation
+is_a: OMP:0000193 ! carbon utilization phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:45:01Z
+
+[Term]
+id: OMP:0000260
+name: nitrogen utilization phenotype
+is_a: OMP:0000180 ! metabolic phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:47:50Z
+
+[Term]
+id: OMP:0000261
+name: sulfur utilization phenotype
+synonym: "sulphur utilization phenotype" EXACT []
+is_a: OMP:0000180 ! metabolic phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:49:44Z
+
+[Term]
+id: OMP:0000262
+name: utilizes sulfur-containing compound
+synonym: "utilizes sulphur-containing compound" EXACT []
+is_a: OMP:0000261 ! sulfur utilization phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:51:28Z
+
+[Term]
+id: OMP:0000263
+name: phosphorus utilization phenotype
+is_a: OMP:0000180 ! metabolic phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:55:26Z
+
+[Term]
+id: OMP:0000264
+name: utilizes phosphorus-containing compound
+is_a: OMP:0000263 ! phosphorus utilization phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:56:27Z
+
+[Term]
+id: OMP:0000265
+name: utilizes nitrogen-containing compound
+is_a: OMP:0000260 ! nitrogen utilization phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:57:49Z
+
+[Term]
+id: OMP:0000266
+name: utilizes carbon-containing compound
+is_a: OMP:0000193 ! carbon utilization phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T01:58:08Z
+
+[Term]
+id: OMP:0000267
+name: increased gene expression
+is_a: OMP:0000253 ! gene expression phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:01:35Z
+
+[Term]
+id: OMP:0000268
+name: decreased gene expression
+is_a: OMP:0000253 ! gene expression phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:02:26Z
+
+[Term]
+id: OMP:0000269
+name: protein activity phenotype
+is_a: OMP:0000000 ! microbial phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:05:51Z
+
+[Term]
+id: OMP:0000270
+name: absence of growth
+synonym: "no growth" EXACT []
+is_a: OMP:0000174 ! growth phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:09:22Z
+
+[Term]
+id: OMP:0000271
+name: temperature-dependent growth
+is_a: OMP:0000174 ! growth phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:11:56Z
+
+[Term]
+id: OMP:0000272
+name: suppressor-dependent growth
+is_a: OMP:0000174 ! growth phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:15:11Z
+
+[Term]
+id: OMP:0000273
+name: auxotroph
+is_a: OMP:0000180 ! metabolic phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:17:25Z
+
+[Term]
+id: OMP:0000274
+name: antibiotic response phenotype
+is_a: OMP:0000000 ! microbial phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:21:21Z
+
+[Term]
+id: OMP:0000275
+name: decreased resistance to antibiotics
+synonym: "increased sensitivity to antibiotics" EXACT []
+is_a: OMP:0000274 ! antibiotic response phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:22:27Z
+
+[Term]
+id: OMP:0000276
+name: increased resistance to antibiotics
+synonym: "decreased sensitivity to antibiotics" EXACT []
+is_a: OMP:0000274 ! antibiotic response phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:30:14Z
+
+[Term]
+id: OMP:0000277
+name: decreased beta-galactosidase activity
+is_a: OMP:0000297 ! beta-galactosidase activity phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:33:25Z
+
+[Term]
+id: OMP:0000278
+name: increased beta-galactosidase activity
+is_a: OMP:0000297 ! beta-galactosidase activity phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:33:53Z
+
+[Term]
+id: OMP:0000279
+name: uncoordinated motility
+is_a: OMP:0000048 ! chemotaxis phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:35:22Z
+
+[Term]
+id: OMP:0000280
+name: elongated cell length
+comment: mukB mutants appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
+is_a: OMP:0000073 ! cell shape phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:37:15Z
+
+[Term]
+id: OMP:0000281
+name: abolished beta-galactosidase activity
+synonym: "absence of beta-galactosidase activity" BROAD []
+is_a: OMP:0000297 ! beta-galactosidase activity phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:40:26Z
+
+[Term]
+id: OMP:0000282
+name: increased growth rate
+is_a: OMP:0000174 ! growth phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:43:01Z
+
+[Term]
+id: OMP:0000283
+name: decreased growth rate
+synonym: "slow growth rate" RELATED []
+is_a: OMP:0000174 ! growth phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T02:43:22Z
+
+[Term]
+id: OMP:0000284
+name: loss of utilization of carbon-containing compound
+is_a: OMP:0000193 ! carbon utilization phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T03:05:01Z
+
+[Term]
+id: OMP:0000285
+name: loss of utilization of nitrogen-containing compound
+is_a: OMP:0000260 ! nitrogen utilization phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T03:06:32Z
+
+[Term]
+id: OMP:0000286
+name: loss of utilization of phosphorus-containing compound
+is_a: OMP:0000263 ! phosphorus utilization phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T03:07:13Z
+
+[Term]
+id: OMP:0000287
+name: loss of utilization of sulfur-containing compound
+synonym: "loss of utilization of sulphur-containing compound" EXACT []
+is_a: OMP:0000261 ! sulfur utilization phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T03:07:30Z
+
+[Term]
+id: OMP:0000288
+name: heterogenous cell population
+is_a: OMP:0000170 ! microbe-microbe interaction phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T04:04:00Z
+
+[Term]
+id: OMP:0000289
+name: increased number of anucleoid cells
+comment: Mutations in Escherichia coli muk or par genes result in an increased number of anucleoid cells. Mutations in some genes involved in cell division can also result in a cell having an increased number of nucleoids than typical. These nucleoids have been shown to be evenly distributed throughout a filament, or distributed in some other fashion. This phenotype would not be consistent throughout the population.
+is_a: OMP:0000042 ! anucleoid
+created_by: mchibucos
+creation_date: 2011-07-21T04:07:44Z
+
+[Term]
+id: OMP:0000290
+name: genetic material phenotype
+is_a: OMP:0000071 ! cellular morphology phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T04:24:02Z
+
+[Term]
+id: OMP:0000291
+name: genophore phenotype
+synonym: "chromosome phenotype" RELATED []
+is_a: OMP:0000290 ! genetic material phenotype
+relationship: OBO_REL:part_of OMP:0000150 ! nucleoid phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T04:25:09Z
+
+[Term]
+id: OMP:0000292
+name: aberrant genophore partitioning
+synonym: "aberrant chromosome partitioning" RELATED []
+is_a: OMP:0000291 ! genophore phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T04:26:16Z
+
+[Term]
+id: OMP:0000293
+name: aberrant genophore arrangement
+comment: Mutations in Escherichia coli mukB often yield incorrect positioning.
+synonym: "aberrant chromosome arrangement" RELATED []
+is_a: OMP:0000291 ! genophore phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T04:31:30Z
+
+[Term]
+id: OMP:0000294
+name: DNA supercoiling phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T04:46:29Z
+
+[Term]
+id: OMP:0000295
+name: presence of negative DNA supercoiling
+is_a: OMP:0000294 ! DNA supercoiling phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T04:47:38Z
+
+[Term]
+id: OMP:0000296
+name: presence of positive DNA supercoiling
+is_a: OMP:0000294 ! DNA supercoiling phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T04:48:22Z
+
+[Term]
+id: OMP:0000297
+name: beta-galactosidase activity phenotype
+is_a: OMP:0000298 ! enzyme activity phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T05:08:18Z
+
+[Term]
+id: OMP:0000298
+name: enzyme activity phenotype
+is_a: OMP:0000269 ! protein activity phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T05:10:18Z
+
+[Term]
+id: OMP:0000299
+name: galactose-1-phosphate uridyl transferase activity
+is_a: OMP:0000298 ! enzyme activity phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T05:12:43Z
+
+[Term]
+id: OMP:0000300
+name: increased galactose-1-phosphate uridyl transferase activity
+is_a: OMP:0000299 ! galactose-1-phosphate uridyl transferase activity
+created_by: mchibucos
+creation_date: 2011-07-21T05:13:05Z
+
+[Term]
+id: OMP:0000301
+name: decreased galactose-1-phosphate uridyl transferase activity
+is_a: OMP:0000299 ! galactose-1-phosphate uridyl transferase activity
+created_by: mchibucos
+creation_date: 2011-07-21T05:13:27Z
+
+[Term]
+id: OMP:0000302
+name: substrate binding phenotype
+is_a: OMP:0000000 ! microbial phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T05:17:18Z
+
+[Term]
+id: OMP:0000303
+name: decreased substrate binding
+is_a: OMP:0000302 ! substrate binding phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T05:18:39Z
+
+[Term]
+id: OMP:0000304
+name: increased substrate binding
+is_a: OMP:0000302 ! substrate binding phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T05:18:58Z
+
+[Term]
+id: OMP:0000305
+name: increased genophore copy number
+comment: If mechanisms that normally would prevent replication initiation went awry, then the cell would contain more copies of the chromosome than typical. For example, Escherichia coli seqA mutants allow for overinitiation of DNA replication, which causes an increased number of chromosomes.
+synonym: "increased chrosomal copy number" RELATED []
+synonym: "increased number of chromosomes" RELATED []
+synonym: "increased number of genophores" EXACT []
+is_a: OMP:0000291 ! genophore phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T05:35:46Z
+
+[Term]
+id: OMP:0000306
+name: macromolecular biosynthesis phenotype
+is_a: OMP:0000309 ! biosynthetic phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T05:44:45Z
+
+[Term]
+id: OMP:0000307
+name: DNA replication phenotype
+is_a: OMP:0000306 ! macromolecular biosynthesis phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T05:45:47Z
+
+[Term]
+id: OMP:0000308
+name: overinitiation of DNA replication
+is_a: OMP:0000307 ! DNA replication phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T05:46:05Z
+
+[Term]
+id: OMP:0000309
+name: biosynthetic phenotype
+is_a: OMP:0000180 ! metabolic phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T05:47:06Z
+
+[Term]
+id: OMP:0000310
+name: small molecule biosynthesis phenotype
+is_a: OMP:0000309 ! biosynthetic phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T05:49:51Z
+
+[Term]
+id: OMP:0000311
+name: amino acid biosyntheis phenotype
+is_a: OMP:0000310 ! small molecule biosynthesis phenotype
+created_by: mchibucos
+creation_date: 2011-07-21T05:50:25Z
+
+[Typedef]
+id: OBO_REL:part_of
+name: part_of
+is_transitive: true
+created_by: mchibucos
+creation_date: 2011-07-21T04:42:37Z
 
