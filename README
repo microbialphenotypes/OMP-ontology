@@ -1,3 +1,6 @@
 This directory is the main development trunk for the Ontology of Microbial Phenotypes.
 The Ontology of Microbial Phenotypes (OMP) file is "microbial_phenotype.obo".
-The file "microbial_observable_ontology" is deprecated and should not be used.
+The deprecated file "microbial_observable_ontology" has been removed.
+
+For term requests and questions, please visit our tracker at:
+http://sourceforge.net/tracker/?atid=2248968&group_id=322568
