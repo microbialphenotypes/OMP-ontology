@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: 1.1.0
-date: 21:07:2011 17:57
+data-version: 1.0.0
+date: 11:08:2011 14:59
 saved-by: mchibucos
 auto-generated-by: OBO-Edit 2.1-beta16
 default-namespace: microbial_phenotype
-remark: Now on SourceForge, version 1.1.0
+remark: Now on SourceForge, version 1.0.3
 ontology: omp
 
 [Term]
@@ -2374,7 +2374,7 @@ creation_date: 2011-07-21T05:49:51Z
 
 [Term]
 id: OMP:0000311
-name: amino acid biosyntheis phenotype
+name: amino acid biosynthesis phenotype
 is_a: OMP:0000310 ! small molecule biosynthesis phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:50:25Z
