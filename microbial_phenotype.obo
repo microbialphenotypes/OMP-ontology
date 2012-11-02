@@ -1,25 +1,25 @@
 format-version: 1.2
 data-version: 1.0.0
-date: 11:08:2011 14:59
+date: 02:11:2012 14:23
 saved-by: mchibucos
-auto-generated-by: OBO-Edit 2.1-beta16
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
-remark: Now on SourceForge, version 1.0.3
+remark: Now on SourceForge, version 1.0.4
 ontology: omp
 
 [Term]
 id: OMP:0000000
 name: microbial phenotype
-def: "The manifestation of a microbe's genotype in an environment." [OMP:MCC]
+def: "The manifestation of the genotype of a microbial cell or group of cells in an environment." [OMP:MCC]
 creation_date: 2011-03-10T04:01:50Z
 
 [Term]
 id: OMP:0000001
 name: motility phenotype
-def: "A microbial phenotype, where the trait in question is the self-propelled movement of a cell from one location to another." [OMP:MCC]
+def: "A locomotion phenotype, where the trait in question is the self-propelled movement of a cell or group of cells from one location to another." [OMP:MCC]
 synonym: "locomotion phenotype" EXACT []
 xref: PATO:0001488
-is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0000312 ! locomotion phenotype
 creation_date: 2011-03-10T06:55:06Z
 
 [Term]
@@ -27,12 +27,12 @@ id: OMP:0000002
 name: decreased motility
 def: "A type of motility that is relatively lower." [OMP:MCC]
 xref: PATO:0002297
-is_a: OMP:0000005 ! motile
+is_a: OMP:0000314 ! motility, relative phenotype
 creation_date: 2011-03-10T07:02:42Z
 
 [Term]
 id: OMP:0000003
-name: cell arrangement
+name: cell arrangement phenotype
 def: "A microbial phenotype, where the trait in question is the arrangement of cells in relation to one another." [OMP:MCC]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
@@ -42,16 +42,16 @@ creation_date: 2011-04-14T02:30:07Z
 id: OMP:0000004
 name: taxis phenotype
 def: "A motility phenotype where the trait in question is the directed movement of a cell in response to an external stimulus." [OMP:MCC]
-is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0000312 ! locomotion phenotype
 created_by: mchibucos
 creation_date: 2011-04-14T03:29:20Z
 
 [Term]
 id: OMP:0000005
 name: motile
-def: "A cell motility phenotype where a cell posseses the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
+def: "A motility state phenotype where a cell or cells posseses the ability to perform controlled self-propelled movement that results in translocation from one place to another." [OMP:MCC]
 synonym: "presence of motility" RELATED []
-is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0000313 ! motility, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-14T03:35:35Z
 
@@ -362,7 +362,7 @@ creation_date: 2011-04-26T03:53:34Z
 id: OMP:0000044
 name: abolished motility
 def: "A cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
-is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0000002 ! decreased motility
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:12Z
 
@@ -371,7 +371,7 @@ id: OMP:0000045
 name: increased motility
 def: "A type of motility that is relatively higher." [OMP:MCC]
 xref: PATO:0002298
-is_a: OMP:0000005 ! motile
+is_a: OMP:0000314 ! motility, relative phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:26Z
 
@@ -379,7 +379,7 @@ creation_date: 2011-04-26T04:08:26Z
 id: OMP:0000046
 name: presence of chemotaxis
 def: "A chemotaxis phenotype where a cell possesses the ability to move in response to a chemical concentration gradient." [OMP:MCC]
-is_a: OMP:0000048 ! chemotaxis phenotype
+is_a: OMP:0000318 ! chemotaxis, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:17:42Z
 
@@ -404,7 +404,7 @@ creation_date: 2011-04-26T04:27:11Z
 id: OMP:0000049
 name: presence of aerotaxis
 def: "An aerotaxis phenotype where an organism possesses the ability to respond to environmental oxygen." [OMP:MCC]
-is_a: OMP:0000047 ! aerotaxis phenotype
+is_a: OMP:0000320 ! aerotaxis, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:27:42Z
 
@@ -552,8 +552,8 @@ creation_date: 2011-04-26T05:09:24Z
 [Term]
 id: OMP:0000067
 name: swarming
-def: "A cell motility phenotype where the action of numerous flagella of a group of bacteria results in the smooth movement of a group of cells along a solid surface." [OMP:MCC]
-is_a: OMP:0000001 ! motility phenotype
+def: "A motile phenotype where the action of numerous flagella of a group of bacteria results in the smooth movement of a group of cells along a solid surface." [OMP:MCC]
+is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
 
@@ -593,7 +593,7 @@ creation_date: 2011-02-02T03:15:16Z
 id: OMP:0000072
 name: filamentous
 def: "A cell arrangement where cells are joined end-to-end in linear chains." [OMP:MCC]
-is_a: OMP:0000003 ! cell arrangement
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:31:35Z
 
@@ -797,7 +797,7 @@ creation_date: 2011-02-02T03:26:41Z
 id: OMP:0000097
 name: absence of chemotaxis
 def: "A chemotaxis phenotype where a cell does not possess the ability to move in response to a chemical concentration gradient." [OMP:MCC]
-is_a: OMP:0000048 ! chemotaxis phenotype
+is_a: OMP:0000318 ! chemotaxis, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:13Z
 
@@ -898,17 +898,17 @@ creation_date: 2011-02-02T02:45:02Z
 
 [Term]
 id: OMP:0000111
-name: cell swimming
+name: swimming
 def: "A cell motility phenotype where the cell exhibits smooth movement through a liquid medium." [OMP:MCC]
-is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
 
 [Term]
 id: OMP:0000112
 name: gliding
-def: "A cell motility phenotype where the cell exhibits smooth movement along a solid surface." [OMP:MCC]
-is_a: OMP:0000001 ! motility phenotype
+def: "A motile phenotype where the cell exhibits smooth movement along a solid surface." [OMP:MCC]
+is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-07T03:18:03Z
 
@@ -916,7 +916,7 @@ creation_date: 2011-02-07T03:18:03Z
 id: OMP:0000113
 name: twitching
 def: "A cell motility phenotype where the controlled movement of a bacterial cell is dependent on the presence of type IV pili." [OMP:MCC]
-is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-07T03:18:13Z
 
@@ -946,7 +946,7 @@ creation_date: 2011-02-02T02:46:17Z
 id: OMP:0000117
 name: diplococcus
 def: "A cell arrangement where pairs of coccus cells arise from a division event in one plane." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:29:12Z
 
@@ -954,7 +954,7 @@ creation_date: 2011-02-18T02:29:12Z
 id: OMP:0000118
 name: streptococcus
 def: "A cell arrangement where chains of coccus cells arise from division events in one plane." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:31:37Z
 
@@ -964,7 +964,7 @@ name: tetrad
 alt_id: OMP:0000156
 def: "A cell arrangement where squares of four coccus cells arise from division in two planes." [OMP:AEZ]
 synonym: "micrococcus arrangement" EXACT []
-is_a: OMP:0000003 ! cell arrangement
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:33:22Z
 
@@ -972,7 +972,7 @@ creation_date: 2011-02-18T02:33:22Z
 id: OMP:0000120
 name: sarcina
 def: "A cell arrangement where cubes of eight coccus cells arise from a division event in three planes." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:34:40Z
 
@@ -980,7 +980,7 @@ creation_date: 2011-02-18T02:34:40Z
 id: OMP:0000121
 name: stapylococcus
 def: "A cell arrangement where irregular clumps of coccus cells arise from division events in random planes." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:39:34Z
 
@@ -988,7 +988,7 @@ creation_date: 2011-02-18T02:39:34Z
 id: OMP:0000122
 name: streptobacillus
 def: "A cell arrangement where bacillis cells are arranged in chains." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:47:10Z
 
@@ -1027,7 +1027,7 @@ creation_date: 2011-02-18T02:55:59Z
 id: OMP:0000127
 name: sheathed
 def: "A cell arrangement where chains of cells are enclosed in a hyaline envelope or sheath." [OMP:MCC]
-is_a: OMP:0000003 ! cell arrangement
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:59:18Z
 
@@ -1079,7 +1079,7 @@ id: OMP:0000133
 name: non-motile
 def: "A cell motility phenotype where a cell does not possess the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
 synonym: "absence of motility" RELATED []
-is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0000313 ! motility, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:33:32Z
 
@@ -1267,7 +1267,7 @@ creation_date: 2011-02-02T02:49:30Z
 id: OMP:0000159
 name: absence of aerotaxis
 def: "An aerotaxis phenotype where an organism does not possess the ability to respond to environmental oxygen." [OMP:MCC]
-is_a: OMP:0000047 ! aerotaxis phenotype
+is_a: OMP:0000320 ! aerotaxis, state phenotype
 created_by: adrienne
 creation_date: 2011-03-02T02:06:09Z
 
@@ -1630,6 +1630,7 @@ creation_date: 2011-06-07T03:18:33Z
 id: OMP:0000209
 name: fluorescent colony
 is_a: OMP:0000108 ! colony optical phenotype
+is_a: OMP:0000255 ! plating phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:20:31Z
 
@@ -2099,24 +2100,31 @@ creation_date: 2011-07-21T02:17:25Z
 
 [Term]
 id: OMP:0000274
-name: antibiotic response phenotype
+name: antimicrobial compound resistance phenotype
+def: "A microbial phenotype, where the trait in question is the resistance to a compound that kills (microbiocidal) or inhibits growth (microbiostatic) of a microbe." [OMP:MCC]
+synonym: "antibiotic resistance phenotype" NARROW []
+synonym: "antifungal resistance phenotype" NARROW []
+synonym: "antimetabolite resistance phenotype" NARROW []
+synonym: "antiviral resistance phenotype" NARROW []
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:21:21Z
 
 [Term]
 id: OMP:0000275
-name: decreased resistance to antibiotics
+name: decreased resistance to antimicrobial compound
+synonym: "abolished resistance to antibiotics" NARROW []
 synonym: "increased sensitivity to antibiotics" EXACT []
-is_a: OMP:0000274 ! antibiotic response phenotype
+is_a: OMP:0000506 ! antimicrobial compound resistance, relative phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:22:27Z
 
 [Term]
 id: OMP:0000276
-name: increased resistance to antibiotics
+name: increased resistance to antimicrobial compound
+synonym: "abolished sensitivity to antibiotics" NARROW []
 synonym: "decreased sensitivity to antibiotics" EXACT []
-is_a: OMP:0000274 ! antibiotic response phenotype
+is_a: OMP:0000506 ! antimicrobial compound resistance, relative phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:30:14Z
 
@@ -2137,7 +2145,7 @@ creation_date: 2011-07-21T02:33:53Z
 [Term]
 id: OMP:0000279
 name: uncoordinated motility
-is_a: OMP:0000048 ! chemotaxis phenotype
+is_a: OMP:0000005 ! motile
 created_by: mchibucos
 creation_date: 2011-07-21T02:35:22Z
 
@@ -2378,6 +2386,424 @@ name: amino acid biosynthesis phenotype
 is_a: OMP:0000310 ! small molecule biosynthesis phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:50:25Z
+
+[Term]
+id: OMP:0000312
+name: locomotion phenotype
+def: "A microbial phenotype, where the trait in question is the self-propelled movement of a cell from one location to another." [GO:0040011, OMP:MCC]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: mchibucos
+creation_date: 2012-04-05T11:43:53Z
+
+[Term]
+id: OMP:0000313
+name: motility, state phenotype
+def: "A motility phenotype that reflects the capability of an operational taxonomic unit." [OMP:MCC]
+is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0000315 ! state phenotype
+created_by: mchibucos
+creation_date: 2012-04-05T10:40:04Z
+
+[Term]
+id: OMP:0000314
+name: motility, relative phenotype
+def: "A motility phenotype that is different relative to a reference phenotype." [OMP:MCC]
+is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0000316 ! relative phenotype
+created_by: mchibucos
+creation_date: 2012-04-05T10:40:27Z
+
+[Term]
+id: OMP:0000315
+name: state phenotype
+def: "A microbial phenotype that reflects the capability of an operational taxonomic unit." [OMP:MCC]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: mchibucos
+creation_date: 2012-04-05T03:35:06Z
+
+[Term]
+id: OMP:0000316
+name: relative phenotype
+def: "A microbial phenotype that is different relative to a reference phenotype." [OMP:MCC]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: mchibucos
+creation_date: 2012-04-05T03:35:22Z
+
+[Term]
+id: OMP:0000317
+name: chemotaxis, relative phenotype
+is_a: OMP:0000048 ! chemotaxis phenotype
+created_by: mchibucos
+creation_date: 2012-04-17T02:06:57Z
+
+[Term]
+id: OMP:0000318
+name: chemotaxis, state phenotype
+is_a: OMP:0000048 ! chemotaxis phenotype
+is_a: OMP:0000315 ! state phenotype
+created_by: mchibucos
+creation_date: 2012-04-17T02:07:31Z
+
+[Term]
+id: OMP:0000319
+name: aerotaxis, relative phenotype
+is_a: OMP:0000047 ! aerotaxis phenotype
+created_by: mchibucos
+creation_date: 2012-04-17T02:17:26Z
+
+[Term]
+id: OMP:0000320
+name: aerotaxis, state phenotype
+is_a: OMP:0000047 ! aerotaxis phenotype
+is_a: OMP:0000315 ! state phenotype
+created_by: mchibucos
+creation_date: 2012-04-17T02:17:52Z
+
+[Term]
+id: OMP:0000321
+name: macrolide antibiotic resistance phenotype
+def: "An antimicrobial compound resistance phenotype, where the trait in question is resistance to a macrolide antibiotic inhibitor of bacterial protein biosynthesis." []
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:51:04Z
+
+[Term]
+id: OMP:0000322
+name: macrolide antibiotic resistance, relative phenotype
+is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:53:06Z
+
+[Term]
+id: OMP:0000323
+name: macrolide antibiotic resistance, state phenotype
+is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:55:27Z
+
+[Term]
+id: OMP:0000324
+name: increased resistance to macrolide antibiotic
+is_a: OMP:0000322 ! macrolide antibiotic resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:55:44Z
+
+[Term]
+id: OMP:0000325
+name: decreased resistance to macrolide antibiotic
+synonym: "abolished resistance to macrolide antibiotic" NARROW []
+is_a: OMP:0000322 ! macrolide antibiotic resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:56:02Z
+
+[Term]
+id: OMP:0000326
+name: erythromycin resistance phenotype
+is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:56:47Z
+
+[Term]
+id: OMP:0000327
+name: erythromycin resistance, relative phenotype
+is_a: OMP:0000326 ! erythromycin resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:57:24Z
+
+[Term]
+id: OMP:0000328
+name: erythromycin resistance, state phenotype
+is_a: OMP:0000326 ! erythromycin resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:57:51Z
+
+[Term]
+id: OMP:0000329
+name: increased resistance to erythromycin
+is_a: OMP:0000327 ! erythromycin resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:58:10Z
+
+[Term]
+id: OMP:0000330
+name: decreased resistance to erythromycin
+synonym: "abolished resistance to erythromycin" NARROW []
+is_a: OMP:0000327 ! erythromycin resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:58:42Z
+
+[Term]
+id: OMP:0000331
+name: diaminopyrimidine compound resistance phenotype
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:02:58Z
+
+[Term]
+id: OMP:0000332
+name: diaminopyrimidine compound resistance, relative phenotype
+is_a: OMP:0000331 ! diaminopyrimidine compound resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:03:42Z
+
+[Term]
+id: OMP:0000333
+name: diaminopyrimidine compound resistance, state phenotype
+is_a: OMP:0000331 ! diaminopyrimidine compound resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:04:07Z
+
+[Term]
+id: OMP:0000334
+name: increased resistance to diaminopyrimidine compound
+is_a: OMP:0000332 ! diaminopyrimidine compound resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:04:38Z
+
+[Term]
+id: OMP:0000335
+name: decreased resistance to diaminopyrimidine compound
+synonym: "abolished resistance to diaminopyrimidine compound" NARROW []
+is_a: OMP:0000332 ! diaminopyrimidine compound resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:04:58Z
+
+[Term]
+id: OMP:0000336
+name: beta lactam antibiotic resistance phenotype
+def: "An antimicrobial compound resistance phenotype, where the trait in question is resistance to a member of a broad class of cyclic amides that work primarily by protein biosynthesis inhibition." [OMP:MCC]
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:06:13Z
+
+[Term]
+id: OMP:0000337
+name: beta lactam antibiotic resistance, relative phenotype
+is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:09:23Z
+
+[Term]
+id: OMP:0000338
+name: beta lactam antibiotic resistance, state phenotype
+is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:09:49Z
+
+[Term]
+id: OMP:0000339
+name: increased resistance to beta lactam antibiotic
+is_a: OMP:0000337 ! beta lactam antibiotic resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:10:03Z
+
+[Term]
+id: OMP:0000340
+name: decreased resistance to beta lactam antibiotic
+synonym: "abolished resistance to beta lactam antibiotic" NARROW []
+is_a: OMP:0000337 ! beta lactam antibiotic resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:10:28Z
+
+[Term]
+id: OMP:0000341
+name: penicillin resistance phenotype
+is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:14:00Z
+
+[Term]
+id: OMP:0000342
+name: ampicillin resistance phenotype
+is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:14:41Z
+
+[Term]
+id: OMP:0000343
+name: cephalosporin resistance phenotype
+is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:15:00Z
+
+[Term]
+id: OMP:0000344
+name: cefoxitin resistance phenotype
+is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:15:15Z
+
+[Term]
+id: OMP:0000345
+name: ampicillin resistance, relative phenotype
+is_a: OMP:0000342 ! ampicillin resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:15:34Z
+
+[Term]
+id: OMP:0000346
+name: ampicillin resistance, state phenotype
+is_a: OMP:0000342 ! ampicillin resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:15:51Z
+
+[Term]
+id: OMP:0000347
+name: increased resistance to ampicillin
+is_a: OMP:0000345 ! ampicillin resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:16:03Z
+
+[Term]
+id: OMP:0000348
+name: decreased resistance to ampicillin
+synonym: "abolished resistance to ampicillin" NARROW []
+is_a: OMP:0000345 ! ampicillin resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:16:27Z
+
+[Term]
+id: OMP:0000349
+name: cefoxitin resistance, relative phenotype
+is_a: OMP:0000344 ! cefoxitin resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:17:08Z
+
+[Term]
+id: OMP:0000350
+name: cefoxitin resistance, state phenotype
+is_a: OMP:0000344 ! cefoxitin resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:17:24Z
+
+[Term]
+id: OMP:0000351
+name: increased resistance to cefoxitin
+is_a: OMP:0000349 ! cefoxitin resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:17:39Z
+
+[Term]
+id: OMP:0000352
+name: decreased resistance to cefoxitin
+synonym: "abolished resistance to cefoxitin" NARROW []
+is_a: OMP:0000349 ! cefoxitin resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:18:01Z
+
+[Term]
+id: OMP:0000353
+name: cephalosporin resistance, relative phenotype
+is_a: OMP:0000343 ! cephalosporin resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:18:43Z
+
+[Term]
+id: OMP:0000354
+name: cephalosporin resistance, state phenotype
+is_a: OMP:0000343 ! cephalosporin resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:19:02Z
+
+[Term]
+id: OMP:0000355
+name: increased resistance to cephalosporin
+is_a: OMP:0000353 ! cephalosporin resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:19:15Z
+
+[Term]
+id: OMP:0000356
+name: decreased resistance to cephalosporin
+synonym: "abolished resistance to cephalosporin" NARROW []
+is_a: OMP:0000353 ! cephalosporin resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:19:28Z
+
+[Term]
+id: OMP:0000357
+name: penicillin resistance, relative phenotype
+is_a: OMP:0000341 ! penicillin resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:20:05Z
+
+[Term]
+id: OMP:0000358
+name: penicillin resistance, state phenotype
+is_a: OMP:0000341 ! penicillin resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:20:25Z
+
+[Term]
+id: OMP:0000359
+name: increased resistance to penicillin
+is_a: OMP:0000357 ! penicillin resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:20:39Z
+
+[Term]
+id: OMP:0000360
+name: decreased resistance to penicillin
+synonym: "abolished resistance to penicillin" NARROW []
+is_a: OMP:0000357 ! penicillin resistance, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T14:20:54Z
+
+[Term]
+id: OMP:0000500
+name: decreased aerotaxis
+is_a: OMP:0000319 ! aerotaxis, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:20:31Z
+
+[Term]
+id: OMP:0000501
+name: abolished aerotaxis
+is_a: OMP:0000500 ! decreased aerotaxis
+created_by: mchibucos
+creation_date: 2012-11-02T13:20:58Z
+
+[Term]
+id: OMP:0000502
+name: increased aerotaxis
+is_a: OMP:0000319 ! aerotaxis, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:21:21Z
+
+[Term]
+id: OMP:0000503
+name: decreased chemotaxis
+is_a: OMP:0000317 ! chemotaxis, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:22:28Z
+
+[Term]
+id: OMP:0000504
+name: abolished chemotaxis
+is_a: OMP:0000503 ! decreased chemotaxis
+created_by: mchibucos
+creation_date: 2012-11-02T13:22:52Z
+
+[Term]
+id: OMP:0000505
+name: increased chemotaxis
+is_a: OMP:0000317 ! chemotaxis, relative phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:23:12Z
+
+[Term]
+id: OMP:0000506
+name: antimicrobial compound resistance, relative phenotype
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:26:17Z
+
+[Term]
+id: OMP:0000507
+name: antimicrobial compound resistance, state phenotype
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+created_by: mchibucos
+creation_date: 2012-11-02T13:31:06Z
 
 [Typedef]
 id: OBO_REL:part_of
