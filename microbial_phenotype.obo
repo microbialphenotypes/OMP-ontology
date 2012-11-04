@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: 1.0.0
-date: 04:11:2012 14:59
+date: 04:11:2012 15:59
 saved-by: mchibucos
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -25,7 +25,10 @@ creation_date: 2011-03-10T06:55:06Z
 [Term]
 id: OMP:0000002
 name: decreased motility
+alt_id: OMP:0000044
 def: "A type of motility that is relatively lower." [OMP:MCC]
+comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
+synonym: "abolished motility" NARROW []
 xref: PATO:0002297
 is_a: OMP:0000314 ! motility, relative phenotype
 creation_date: 2011-03-10T07:02:42Z
@@ -357,14 +360,6 @@ name: nucleoid number
 is_a: OMP:0000150 ! nucleoid phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:53:34Z
-
-[Term]
-id: OMP:0000044
-name: abolished motility
-def: "A cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
-is_a: OMP:0000002 ! decreased motility
-created_by: mchibucos
-creation_date: 2011-04-26T04:08:12Z
 
 [Term]
 id: OMP:0000045
@@ -2400,7 +2395,8 @@ id: OMP:0000313
 name: motility, state phenotype
 def: "A motility phenotype that reflects the capability of an operational taxonomic unit." [OMP:MCC]
 is_a: OMP:0000001 ! motility phenotype
-is_a: OMP:0000315 ! state phenotype
+intersection_of: OMP:0000001 ! motility phenotype
+intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2012-04-05T10:40:04Z
 
@@ -2409,7 +2405,8 @@ id: OMP:0000314
 name: motility, relative phenotype
 def: "A motility phenotype that is different relative to a reference phenotype." [OMP:MCC]
 is_a: OMP:0000001 ! motility phenotype
-is_a: OMP:0000316 ! relative phenotype
+intersection_of: OMP:0000001 ! motility phenotype
+intersection_of: is_a OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2012-04-05T10:40:27Z
 
@@ -2433,6 +2430,8 @@ creation_date: 2012-04-05T03:35:22Z
 id: OMP:0000317
 name: chemotaxis, relative phenotype
 is_a: OMP:0000048 ! chemotaxis phenotype
+intersection_of: OMP:0000048 ! chemotaxis phenotype
+intersection_of: is_a OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2012-04-17T02:06:57Z
 
@@ -2440,7 +2439,8 @@ creation_date: 2012-04-17T02:06:57Z
 id: OMP:0000318
 name: chemotaxis, state phenotype
 is_a: OMP:0000048 ! chemotaxis phenotype
-is_a: OMP:0000315 ! state phenotype
+intersection_of: OMP:0000048 ! chemotaxis phenotype
+intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2012-04-17T02:07:31Z
 
@@ -2448,6 +2448,8 @@ creation_date: 2012-04-17T02:07:31Z
 id: OMP:0000319
 name: aerotaxis, relative phenotype
 is_a: OMP:0000047 ! aerotaxis phenotype
+intersection_of: OMP:0000047 ! aerotaxis phenotype
+intersection_of: is_a OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2012-04-17T02:17:26Z
 
@@ -2455,7 +2457,8 @@ creation_date: 2012-04-17T02:17:26Z
 id: OMP:0000320
 name: aerotaxis, state phenotype
 is_a: OMP:0000047 ! aerotaxis phenotype
-is_a: OMP:0000315 ! state phenotype
+intersection_of: OMP:0000047 ! aerotaxis phenotype
+intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2012-04-17T02:17:52Z
 
@@ -3419,6 +3422,12 @@ name: antimicrobial compound resistance, state phenotype
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T13:31:06Z
+
+[Typedef]
+id: is_a
+name: is_a
+created_by: mchibucos
+creation_date: 2012-11-04T15:33:31Z
 
 [Typedef]
 id: OBO_REL:part_of
