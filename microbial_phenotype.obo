@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: 1.0.0
-date: 04:11:2012 15:59
+date: 23:05:2013 13:43
 saved-by: mchibucos
-auto-generated-by: OBO-Edit 2.3
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2396,7 +2396,7 @@ name: motility, state phenotype
 def: "A motility phenotype that reflects the capability of an operational taxonomic unit." [OMP:MCC]
 is_a: OMP:0000001 ! motility phenotype
 intersection_of: OMP:0000001 ! motility phenotype
-intersection_of: is_a OMP:0000315 ! state phenotype
+intersection_of: OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2012-04-05T10:40:04Z
 
@@ -2406,7 +2406,7 @@ name: motility, relative phenotype
 def: "A motility phenotype that is different relative to a reference phenotype." [OMP:MCC]
 is_a: OMP:0000001 ! motility phenotype
 intersection_of: OMP:0000001 ! motility phenotype
-intersection_of: is_a OMP:0000316 ! relative phenotype
+intersection_of: OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2012-04-05T10:40:27Z
 
@@ -2431,7 +2431,7 @@ id: OMP:0000317
 name: chemotaxis, relative phenotype
 is_a: OMP:0000048 ! chemotaxis phenotype
 intersection_of: OMP:0000048 ! chemotaxis phenotype
-intersection_of: is_a OMP:0000316 ! relative phenotype
+intersection_of: OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2012-04-17T02:06:57Z
 
@@ -2440,7 +2440,7 @@ id: OMP:0000318
 name: chemotaxis, state phenotype
 is_a: OMP:0000048 ! chemotaxis phenotype
 intersection_of: OMP:0000048 ! chemotaxis phenotype
-intersection_of: is_a OMP:0000315 ! state phenotype
+intersection_of: OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2012-04-17T02:07:31Z
 
@@ -2449,7 +2449,7 @@ id: OMP:0000319
 name: aerotaxis, relative phenotype
 is_a: OMP:0000047 ! aerotaxis phenotype
 intersection_of: OMP:0000047 ! aerotaxis phenotype
-intersection_of: is_a OMP:0000316 ! relative phenotype
+intersection_of: OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2012-04-17T02:17:26Z
 
@@ -2458,7 +2458,7 @@ id: OMP:0000320
 name: aerotaxis, state phenotype
 is_a: OMP:0000047 ! aerotaxis phenotype
 intersection_of: OMP:0000047 ! aerotaxis phenotype
-intersection_of: is_a OMP:0000315 ! state phenotype
+intersection_of: OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2012-04-17T02:17:52Z
 
@@ -3380,6 +3380,55 @@ created_by: mchibucos
 creation_date: 2012-11-04T14:56:21Z
 
 [Term]
+id: OMP:0000449
+name: erythromycin dependent growth
+def: "A growth phenotype where translation is dependent on the presence of erythromycin due to alterations to the ribosomes." [ECO:WAM]
+is_a: OMP:0000174 ! growth phenotype
+created_by: mchibucos
+creation_date: 2013-05-23T13:31:03Z
+
+[Term]
+id: OMP:0000450
+name: trace element utilization phenotype
+is_a: OMP:0000180 ! metabolic phenotype
+created_by: mchibucos
+creation_date: 2013-05-23T13:35:26Z
+
+[Term]
+id: OMP:0000451
+name: heme utilization phenotype
+is_a: OMP:0000450 ! trace element utilization phenotype
+created_by: mchibucos
+creation_date: 2013-05-23T13:37:06Z
+
+[Term]
+id: OMP:0000452
+name: increased heme utilization
+is_a: OMP:0000451 ! heme utilization phenotype
+intersection_of: OMP:0000451 ! heme utilization phenotype
+intersection_of: is_a OMP:0000316 ! relative phenotype
+created_by: mchibucos
+creation_date: 2013-05-23T13:37:51Z
+
+[Term]
+id: OMP:0000453
+name: decreased heme utilization
+is_a: OMP:0000451 ! heme utilization phenotype
+intersection_of: OMP:0000451 ! heme utilization phenotype
+intersection_of: is_a OMP:0000316 ! relative phenotype
+created_by: mchibucos
+creation_date: 2013-05-23T13:39:39Z
+
+[Term]
+id: OMP:0000454
+name: absence of heme utilization
+is_a: OMP:0000451 ! heme utilization phenotype
+intersection_of: OMP:0000451 ! heme utilization phenotype
+intersection_of: is_a OMP:0000315 ! state phenotype
+created_by: mchibucos
+creation_date: 2013-05-23T13:40:40Z
+
+[Term]
 id: OMP:0000500
 name: decreased aerotaxis
 synonym: "abolished aerotaxis" NARROW []
@@ -3435,4 +3484,3 @@ name: part_of
 is_transitive: true
 created_by: mchibucos
 creation_date: 2011-07-21T04:42:37Z
-
