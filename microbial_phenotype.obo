@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: 1.0.0
-date: 23:05:2013 14:00
+date: 23:05:2013 14:23
 saved-by: mchibucos
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -2422,6 +2422,7 @@ creation_date: 2012-04-05T03:35:06Z
 id: OMP:0000316
 name: relative phenotype
 def: "A microbial phenotype that is different relative to a reference phenotype." [OMP:MCC]
+synonym: "mutant phenotype" NARROW []
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2012-04-05T03:35:22Z
