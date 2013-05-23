@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: 1.0.0
-date: 23:05:2013 13:43
+date: 23:05:2013 14:00
 saved-by: mchibucos
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -3405,8 +3405,8 @@ creation_date: 2013-05-23T13:37:06Z
 id: OMP:0000452
 name: increased heme utilization
 is_a: OMP:0000451 ! heme utilization phenotype
+intersection_of: OMP:0000316 ! relative phenotype
 intersection_of: OMP:0000451 ! heme utilization phenotype
-intersection_of: is_a OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T13:37:51Z
 
@@ -3414,8 +3414,8 @@ creation_date: 2013-05-23T13:37:51Z
 id: OMP:0000453
 name: decreased heme utilization
 is_a: OMP:0000451 ! heme utilization phenotype
+intersection_of: OMP:0000316 ! relative phenotype
 intersection_of: OMP:0000451 ! heme utilization phenotype
-intersection_of: is_a OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T13:39:39Z
 
@@ -3423,10 +3423,60 @@ creation_date: 2013-05-23T13:39:39Z
 id: OMP:0000454
 name: absence of heme utilization
 is_a: OMP:0000451 ! heme utilization phenotype
+intersection_of: OMP:0000315 ! state phenotype
 intersection_of: OMP:0000451 ! heme utilization phenotype
-intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T13:40:40Z
+
+[Term]
+id: OMP:0000455
+name: alkaloid resistance phenotype
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+created_by: mchibucos
+creation_date: 2013-05-23T13:53:57Z
+
+[Term]
+id: OMP:0000456
+name: caffeine resistance phenotype
+is_a: OMP:0000455 ! alkaloid resistance phenotype
+created_by: mchibucos
+creation_date: 2013-05-23T13:54:51Z
+
+[Term]
+id: OMP:0000457
+name: resistance to caffeine
+is_a: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: is_a OMP:0000315 ! state phenotype
+created_by: mchibucos
+creation_date: 2013-05-23T13:55:13Z
+
+[Term]
+id: OMP:0000458
+name: lack of resistance to caffeine
+is_a: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: is_a OMP:0000315 ! state phenotype
+created_by: mchibucos
+creation_date: 2013-05-23T13:55:34Z
+
+[Term]
+id: OMP:0000459
+name: increased caffeine resistance
+is_a: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: is_a OMP:0000316 ! relative phenotype
+created_by: mchibucos
+creation_date: 2013-05-23T13:58:11Z
+
+[Term]
+id: OMP:0000460
+name: decreased caffeine resistance
+is_a: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: is_a OMP:0000316 ! relative phenotype
+created_by: mchibucos
+creation_date: 2013-05-23T13:58:55Z
 
 [Term]
 id: OMP:0000500
@@ -3484,3 +3534,4 @@ name: part_of
 is_transitive: true
 created_by: mchibucos
 creation_date: 2011-07-21T04:42:37Z
+
