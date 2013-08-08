@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: 1.0.0
-date: 23:05:2013 14:23
-saved-by: mchibucos
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 08:08:2013 15:03
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -218,6 +218,7 @@ creation_date: 2011-06-06T02:24:01Z
 [Term]
 id: OMP:0000026
 name: virus-host interaction phenotype
+alt_id: OMP:0000038
 synonym: "bacteriophage-host interaction phenotype" NARROW []
 synonym: "phage-host interaction phenotype" NARROW []
 is_a: OMP:0000197 ! microbe-host interaction phenotype
@@ -315,14 +316,6 @@ def: "A malformed flagellum that is not shaped like a typical flagellum." [OMP:M
 is_a: OMP:0000031 ! malformed flagellum
 created_by: mchibucos
 creation_date: 2011-06-07T11:25:05Z
-
-[Term]
-id: OMP:0000038
-name: bacteriophage-host interaction phenotype
-synonym: "phage-host interaction phenotype" EXACT []
-is_a: OMP:0000026 ! virus-host interaction phenotype
-created_by: mchibucos
-creation_date: 2011-06-06T02:42:55Z
 
 [Term]
 id: OMP:0000039
@@ -3447,8 +3440,8 @@ creation_date: 2013-05-23T13:54:51Z
 id: OMP:0000457
 name: resistance to caffeine
 is_a: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000315 ! state phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T13:55:13Z
 
@@ -3456,8 +3449,8 @@ creation_date: 2013-05-23T13:55:13Z
 id: OMP:0000458
 name: lack of resistance to caffeine
 is_a: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000315 ! state phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T13:55:34Z
 
@@ -3465,8 +3458,8 @@ creation_date: 2013-05-23T13:55:34Z
 id: OMP:0000459
 name: increased caffeine resistance
 is_a: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000316 ! relative phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: is_a OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T13:58:11Z
 
@@ -3474,8 +3467,8 @@ creation_date: 2013-05-23T13:58:11Z
 id: OMP:0000460
 name: decreased caffeine resistance
 is_a: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000316 ! relative phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: is_a OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T13:58:55Z
 
