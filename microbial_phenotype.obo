@@ -335,7 +335,7 @@ creation_date: 2011-04-26T03:47:26Z
 [Term]
 id: OMP:0000041
 name: increased cell size
-def: "A type of cell size that is relatively higher." [OMP:MCC]
+def: "A type of cell size that is relatively larger." [OMP:MCC]
 is_a: OMP:0000074 ! cell size
 created_by: mchibucos
 creation_date: 2011-04-26T03:49:09Z
