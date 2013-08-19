@@ -327,7 +327,7 @@ creation_date: 2011-06-06T03:36:04Z
 [Term]
 id: OMP:0000040
 name: decreased cell size
-def: "A type of cell size that is relatively lower." [OMP:MCC]
+def: "A type of cell size that is relatively smaller." [OMP:MCC]
 is_a: OMP:0000074 ! cell size
 created_by: mchibucos
 creation_date: 2011-04-26T03:47:26Z
