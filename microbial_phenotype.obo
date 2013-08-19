@@ -1,8 +1,7 @@
 format-version: 1.2
-data-version: 1.0.0
-date: 08:08:2013 15:03
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 19:08:2013 18:10
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.1-beta8
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -304,8 +303,9 @@ creation_date: 2011-04-26T03:44:34Z
 
 [Term]
 id: OMP:0000036
-name: increased capsule
-is_a: OMP:0000204 ! presence of capsule
+name: increased capsule, relative phenotype
+def: "An increased amount of capsule relative to the representative member of the taxonomic unit in the same environment." [OMP:OMP]
+is_a: OMP:0000204 ! presence of capsule, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:11Z
 
@@ -398,8 +398,9 @@ creation_date: 2011-04-26T04:27:42Z
 
 [Term]
 id: OMP:0000050
-name: decreased capsule
-is_a: OMP:0000204 ! presence of capsule
+name: decreased capsule, relative phenotype
+def: "An decreased amount of capsule relative to the representative member of the taxonomic unit in the same environment." [OMP:DAS]
+is_a: OMP:0000204 ! presence of capsule, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:59Z
 
@@ -407,7 +408,7 @@ creation_date: 2011-06-07T10:53:59Z
 id: OMP:0000051
 name: loss of capsule
 def: "An absence of capsule where the representative member of the taxonomic unit typically does possess a capsule, but has lost the ability to produce a capsule." [OMP:MCC]
-is_a: OMP:0000211 ! absence of capsule
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-06-07T10:54:14Z
 
@@ -1575,7 +1576,10 @@ creation_date: 2011-06-07T09:44:51Z
 
 [Term]
 id: OMP:0000204
-name: presence of capsule
+name: presence of capsule, state phenotype
+def: "The presence of an outermost layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, observed in one or more environments." [OMP:DAS]
+synonym: "glycocalyx" RELATED [OMP:DAS "ISBN:9780073402406"]
+synonym: "slime layer" RELATED [OMP:DAS "ISBN:9780083402406"]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:45:20Z
@@ -1631,7 +1635,8 @@ creation_date: 2011-06-07T12:31:24Z
 
 [Term]
 id: OMP:0000211
-name: absence of capsule
+name: absence of capsule, state phenotype
+def: "The absence of an outermost layer in any environment." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
@@ -1717,7 +1722,7 @@ creation_date: 2011-02-03T04:45:37Z
 id: OMP:0000223
 name: non-capsulated
 def: "An absence of capsule where the representative member of the taxonomic unit does not possess a capsule." [OMP:MCC]
-is_a: OMP:0000211 ! absence of capsule
+is_a: OMP:0000211 ! absence of capsule, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:54:29Z
 
@@ -2459,32 +2464,32 @@ creation_date: 2012-04-17T02:17:52Z
 [Term]
 id: OMP:0000321
 name: macrolide antibiotic resistance phenotype
-def: "An antimicrobial compound resistance phenotype, where the trait in question is resistance to a macrolide antibiotic inhibitor of bacterial protein biosynthesis." []
+def: "An antimicrobial compound resistance phenotype, where the trait in question is resistance to a macrolide antibiotic inhibitor of bacterial protein biosynthesis." [OMP:MCC]
 comment: Macrolide antibiotics are effective inhibitors of bacterial protein biosynthesis. They bind to the large 50S ribosomal subunit at or near the peptidyl transferase center and block the elongation of the peptide chain.
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:51:04Z
+creation_date: 2012-11-02T01:51:04Z
 
 [Term]
 id: OMP:0000322
 name: macrolide antibiotic resistance, relative phenotype
 is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:53:06Z
+creation_date: 2012-11-02T01:53:06Z
 
 [Term]
 id: OMP:0000323
 name: macrolide antibiotic resistance, state phenotype
 is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:55:27Z
+creation_date: 2012-11-02T01:55:27Z
 
 [Term]
 id: OMP:0000324
 name: increased resistance to macrolide antibiotic
 is_a: OMP:0000322 ! macrolide antibiotic resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:55:44Z
+creation_date: 2012-11-02T01:55:44Z
 
 [Term]
 id: OMP:0000325
@@ -2492,35 +2497,35 @@ name: decreased resistance to macrolide antibiotic
 synonym: "abolished resistance to macrolide antibiotic" NARROW []
 is_a: OMP:0000322 ! macrolide antibiotic resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:56:02Z
+creation_date: 2012-11-02T01:56:02Z
 
 [Term]
 id: OMP:0000326
 name: erythromycin resistance phenotype
 is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:56:47Z
+creation_date: 2012-11-02T01:56:47Z
 
 [Term]
 id: OMP:0000327
 name: erythromycin resistance, relative phenotype
 is_a: OMP:0000326 ! erythromycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:57:24Z
+creation_date: 2012-11-02T01:57:24Z
 
 [Term]
 id: OMP:0000328
 name: erythromycin resistance, state phenotype
 is_a: OMP:0000326 ! erythromycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:57:51Z
+creation_date: 2012-11-02T01:57:51Z
 
 [Term]
 id: OMP:0000329
 name: increased resistance to erythromycin
 is_a: OMP:0000327 ! erythromycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:58:10Z
+creation_date: 2012-11-02T01:58:10Z
 
 [Term]
 id: OMP:0000330
@@ -2528,35 +2533,35 @@ name: decreased resistance to erythromycin
 synonym: "abolished resistance to erythromycin" NARROW []
 is_a: OMP:0000327 ! erythromycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:58:42Z
+creation_date: 2012-11-02T01:58:42Z
 
 [Term]
 id: OMP:0000331
 name: diaminopyrimidine compound resistance phenotype
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:02:58Z
+creation_date: 2012-11-02T02:02:58Z
 
 [Term]
 id: OMP:0000332
 name: diaminopyrimidine compound resistance, relative phenotype
 is_a: OMP:0000331 ! diaminopyrimidine compound resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:03:42Z
+creation_date: 2012-11-02T02:03:42Z
 
 [Term]
 id: OMP:0000333
 name: diaminopyrimidine compound resistance, state phenotype
 is_a: OMP:0000331 ! diaminopyrimidine compound resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:04:07Z
+creation_date: 2012-11-02T02:04:07Z
 
 [Term]
 id: OMP:0000334
 name: increased resistance to diaminopyrimidine compound
 is_a: OMP:0000332 ! diaminopyrimidine compound resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:04:38Z
+creation_date: 2012-11-02T02:04:38Z
 
 [Term]
 id: OMP:0000335
@@ -2564,7 +2569,7 @@ name: decreased resistance to diaminopyrimidine compound
 synonym: "abolished resistance to diaminopyrimidine compound" NARROW []
 is_a: OMP:0000332 ! diaminopyrimidine compound resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:04:58Z
+creation_date: 2012-11-02T02:04:58Z
 
 [Term]
 id: OMP:0000336
@@ -2572,28 +2577,28 @@ name: beta lactam antibiotic resistance phenotype
 def: "An antimicrobial compound resistance phenotype, where the trait in question is resistance to a member of a broad class of cyclic amides that work primarily by protein biosynthesis inhibition." [OMP:MCC]
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:06:13Z
+creation_date: 2012-11-02T02:06:13Z
 
 [Term]
 id: OMP:0000337
 name: beta lactam antibiotic resistance, relative phenotype
 is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:09:23Z
+creation_date: 2012-11-02T02:09:23Z
 
 [Term]
 id: OMP:0000338
 name: beta lactam antibiotic resistance, state phenotype
 is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:09:49Z
+creation_date: 2012-11-02T02:09:49Z
 
 [Term]
 id: OMP:0000339
 name: increased resistance to beta lactam antibiotic
 is_a: OMP:0000337 ! beta lactam antibiotic resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:10:03Z
+creation_date: 2012-11-02T02:10:03Z
 
 [Term]
 id: OMP:0000340
@@ -2601,56 +2606,56 @@ name: decreased resistance to beta lactam antibiotic
 synonym: "abolished resistance to beta lactam antibiotic" NARROW []
 is_a: OMP:0000337 ! beta lactam antibiotic resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:10:28Z
+creation_date: 2012-11-02T02:10:28Z
 
 [Term]
 id: OMP:0000341
 name: penicillin resistance phenotype
 is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:14:00Z
+creation_date: 2012-11-02T02:14:00Z
 
 [Term]
 id: OMP:0000342
 name: ampicillin resistance phenotype
 is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:14:41Z
+creation_date: 2012-11-02T02:14:41Z
 
 [Term]
 id: OMP:0000343
 name: cephalosporin resistance phenotype
 is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:15:00Z
+creation_date: 2012-11-02T02:15:00Z
 
 [Term]
 id: OMP:0000344
 name: cefoxitin resistance phenotype
 is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:15:15Z
+creation_date: 2012-11-02T02:15:15Z
 
 [Term]
 id: OMP:0000345
 name: ampicillin resistance, relative phenotype
 is_a: OMP:0000342 ! ampicillin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:15:34Z
+creation_date: 2012-11-02T02:15:34Z
 
 [Term]
 id: OMP:0000346
 name: ampicillin resistance, state phenotype
 is_a: OMP:0000342 ! ampicillin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:15:51Z
+creation_date: 2012-11-02T02:15:51Z
 
 [Term]
 id: OMP:0000347
 name: increased resistance to ampicillin
 is_a: OMP:0000345 ! ampicillin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:16:03Z
+creation_date: 2012-11-02T02:16:03Z
 
 [Term]
 id: OMP:0000348
@@ -2658,28 +2663,28 @@ name: decreased resistance to ampicillin
 synonym: "abolished resistance to ampicillin" NARROW []
 is_a: OMP:0000345 ! ampicillin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:16:27Z
+creation_date: 2012-11-02T02:16:27Z
 
 [Term]
 id: OMP:0000349
 name: cefoxitin resistance, relative phenotype
 is_a: OMP:0000344 ! cefoxitin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:17:08Z
+creation_date: 2012-11-02T02:17:08Z
 
 [Term]
 id: OMP:0000350
 name: cefoxitin resistance, state phenotype
 is_a: OMP:0000344 ! cefoxitin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:17:24Z
+creation_date: 2012-11-02T02:17:24Z
 
 [Term]
 id: OMP:0000351
 name: increased resistance to cefoxitin
 is_a: OMP:0000349 ! cefoxitin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:17:39Z
+creation_date: 2012-11-02T02:17:39Z
 
 [Term]
 id: OMP:0000352
@@ -2687,28 +2692,28 @@ name: decreased resistance to cefoxitin
 synonym: "abolished resistance to cefoxitin" NARROW []
 is_a: OMP:0000349 ! cefoxitin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:18:01Z
+creation_date: 2012-11-02T02:18:01Z
 
 [Term]
 id: OMP:0000353
 name: cephalosporin resistance, relative phenotype
 is_a: OMP:0000343 ! cephalosporin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:18:43Z
+creation_date: 2012-11-02T02:18:43Z
 
 [Term]
 id: OMP:0000354
 name: cephalosporin resistance, state phenotype
 is_a: OMP:0000343 ! cephalosporin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:19:02Z
+creation_date: 2012-11-02T02:19:02Z
 
 [Term]
 id: OMP:0000355
 name: increased resistance to cephalosporin
 is_a: OMP:0000353 ! cephalosporin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:19:15Z
+creation_date: 2012-11-02T02:19:15Z
 
 [Term]
 id: OMP:0000356
@@ -2716,28 +2721,28 @@ name: decreased resistance to cephalosporin
 synonym: "abolished resistance to cephalosporin" NARROW []
 is_a: OMP:0000353 ! cephalosporin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:19:28Z
+creation_date: 2012-11-02T02:19:28Z
 
 [Term]
 id: OMP:0000357
 name: penicillin resistance, relative phenotype
 is_a: OMP:0000341 ! penicillin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:20:05Z
+creation_date: 2012-11-02T02:20:05Z
 
 [Term]
 id: OMP:0000358
 name: penicillin resistance, state phenotype
 is_a: OMP:0000341 ! penicillin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:20:25Z
+creation_date: 2012-11-02T02:20:25Z
 
 [Term]
 id: OMP:0000359
 name: increased resistance to penicillin
 is_a: OMP:0000357 ! penicillin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:20:39Z
+creation_date: 2012-11-02T02:20:39Z
 
 [Term]
 id: OMP:0000360
@@ -2745,91 +2750,91 @@ name: decreased resistance to penicillin
 synonym: "abolished resistance to penicillin" NARROW []
 is_a: OMP:0000357 ! penicillin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T14:20:54Z
+creation_date: 2012-11-02T02:20:54Z
 
 [Term]
 id: OMP:0000361
 name: clarithromycin resistance phenotype
 is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:04:46Z
+creation_date: 2012-11-04T02:04:46Z
 
 [Term]
 id: OMP:0000362
 name: azithromycin resistance phenotype
 is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:04:47Z
+creation_date: 2012-11-04T02:04:47Z
 
 [Term]
 id: OMP:0000363
 name: dirithromycin resistance phenotype
 is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:04:47Z
+creation_date: 2012-11-04T02:04:47Z
 
 [Term]
 id: OMP:0000364
 name: roxithromycin resistance phenotype
 is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:04:47Z
+creation_date: 2012-11-04T02:04:47Z
 
 [Term]
 id: OMP:0000365
 name: telithromycin resistance phenotype
 is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:04:47Z
+creation_date: 2012-11-04T02:04:47Z
 
 [Term]
 id: OMP:0000366
 name: carvomycin A resistance phenotype
 is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:04:47Z
+creation_date: 2012-11-04T02:04:47Z
 
 [Term]
 id: OMP:0000367
 name: josamycin resistance phenotype
 is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:04:47Z
+creation_date: 2012-11-04T02:04:47Z
 
 [Term]
 id: OMP:0000368
 name: troleandomycin resistance phenotype
 is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:04:47Z
+creation_date: 2012-11-04T02:04:47Z
 
 [Term]
 id: OMP:0000369
 name: spectinomycin resistance phenotype
 is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:04:47Z
+creation_date: 2012-11-04T02:04:47Z
 
 [Term]
 id: OMP:0000370
 name: spiramycin resistance phenotype
 is_a: OMP:0000321 ! macrolide antibiotic resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:04:47Z
+creation_date: 2012-11-04T02:04:47Z
 
 [Term]
 id: OMP:0000371
 name: azithromycin resistance, relative phenotype
 is_a: OMP:0000362 ! azithromycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:05:16Z
+creation_date: 2012-11-04T02:05:16Z
 
 [Term]
 id: OMP:0000372
 name: azithromycin resistance, state phenotype
 is_a: OMP:0000362 ! azithromycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:05:41Z
+creation_date: 2012-11-04T02:05:41Z
 
 [Term]
 id: OMP:0000373
@@ -2837,35 +2842,35 @@ name: decreased resistance to azithromycin
 synonym: "abolished resistance to azithromycin" NARROW []
 is_a: OMP:0000371 ! azithromycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:06:04Z
+creation_date: 2012-11-04T02:06:04Z
 
 [Term]
 id: OMP:0000374
 name: increased resistance to azithromycin
 is_a: OMP:0000371 ! azithromycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:06:33Z
+creation_date: 2012-11-04T02:06:33Z
 
 [Term]
 id: OMP:0000375
 name: carvomycin A resistance, relative phenotype
 is_a: OMP:0000366 ! carvomycin A resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:16:09Z
+creation_date: 2012-11-04T02:16:09Z
 
 [Term]
 id: OMP:0000376
 name: carvomycin A resistance, state phenotype
 is_a: OMP:0000366 ! carvomycin A resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:16:36Z
+creation_date: 2012-11-04T02:16:36Z
 
 [Term]
 id: OMP:0000377
 name: increased resistance to carvomycin A
 is_a: OMP:0000375 ! carvomycin A resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:16:50Z
+creation_date: 2012-11-04T02:16:50Z
 
 [Term]
 id: OMP:0000378
@@ -2873,28 +2878,28 @@ name: decreased resistance to carvomycin A
 synonym: "abolished resistance to carvomycin A" NARROW []
 is_a: OMP:0000375 ! carvomycin A resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:17:09Z
+creation_date: 2012-11-04T02:17:09Z
 
 [Term]
 id: OMP:0000379
 name: clarithromycin resistance, relative phenotype
 is_a: OMP:0000361 ! clarithromycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:17:56Z
+creation_date: 2012-11-04T02:17:56Z
 
 [Term]
 id: OMP:0000380
 name: clarithromycin resistance, state phenotype
 is_a: OMP:0000361 ! clarithromycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:18:09Z
+creation_date: 2012-11-04T02:18:09Z
 
 [Term]
 id: OMP:0000381
 name: increased resistance to clarithromycin
 is_a: OMP:0000379 ! clarithromycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:18:27Z
+creation_date: 2012-11-04T02:18:27Z
 
 [Term]
 id: OMP:0000382
@@ -2902,28 +2907,28 @@ name: decreased resistance to clarithromycin
 synonym: "abolished resistance to clarithromycin" NARROW []
 is_a: OMP:0000379 ! clarithromycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:18:54Z
+creation_date: 2012-11-04T02:18:54Z
 
 [Term]
 id: OMP:0000383
 name: dirithromycin resistance, relative phenotype
 is_a: OMP:0000363 ! dirithromycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:21:39Z
+creation_date: 2012-11-04T02:21:39Z
 
 [Term]
 id: OMP:0000384
 name: dirithromycin resistance, state phenotype
 is_a: OMP:0000363 ! dirithromycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:21:56Z
+creation_date: 2012-11-04T02:21:56Z
 
 [Term]
 id: OMP:0000385
 name: increased resistance to dirithromycin
 is_a: OMP:0000383 ! dirithromycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:22:22Z
+creation_date: 2012-11-04T02:22:22Z
 
 [Term]
 id: OMP:0000386
@@ -2931,28 +2936,28 @@ name: decreased resistance to dirithromycin
 synonym: "abolished resistance to dirithromycin" NARROW []
 is_a: OMP:0000383 ! dirithromycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:23:07Z
+creation_date: 2012-11-04T02:23:07Z
 
 [Term]
 id: OMP:0000387
 name: josamycin resistance, relative phenotype
 is_a: OMP:0000367 ! josamycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:24:36Z
+creation_date: 2012-11-04T02:24:36Z
 
 [Term]
 id: OMP:0000388
 name: josamycin resistance, state phenotype
 is_a: OMP:0000367 ! josamycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:25:01Z
+creation_date: 2012-11-04T02:25:01Z
 
 [Term]
 id: OMP:0000389
 name: increased resistance to josamycin
 is_a: OMP:0000387 ! josamycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:25:42Z
+creation_date: 2012-11-04T02:25:42Z
 
 [Term]
 id: OMP:0000390
@@ -2960,21 +2965,21 @@ name: decreased resistance to josamycin
 synonym: "abolished resistance to josamycin" RELATED []
 is_a: OMP:0000387 ! josamycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:25:59Z
+creation_date: 2012-11-04T02:25:59Z
 
 [Term]
 id: OMP:0000391
 name: roxithromycin resistance, relative phenotype
 is_a: OMP:0000364 ! roxithromycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:32:11Z
+creation_date: 2012-11-04T02:32:11Z
 
 [Term]
 id: OMP:0000392
 name: roxithromycin resistance, state phenotype
 is_a: OMP:0000364 ! roxithromycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:32:29Z
+creation_date: 2012-11-04T02:32:29Z
 
 [Term]
 id: OMP:0000393
@@ -2982,35 +2987,35 @@ name: decreased resistance to roxithromycin
 synonym: "abolished resistance to roxithromycin" RELATED []
 is_a: OMP:0000391 ! roxithromycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:32:57Z
+creation_date: 2012-11-04T02:32:57Z
 
 [Term]
 id: OMP:0000394
 name: increased resistance to roxithromycin
 is_a: OMP:0000391 ! roxithromycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:33:15Z
+creation_date: 2012-11-04T02:33:15Z
 
 [Term]
 id: OMP:0000395
 name: spectinomycin resistance, relative phenotype
 is_a: OMP:0000369 ! spectinomycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:34:54Z
+creation_date: 2012-11-04T02:34:54Z
 
 [Term]
 id: OMP:0000396
 name: spectinomycin resistance, state phenotype
 is_a: OMP:0000369 ! spectinomycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:35:08Z
+creation_date: 2012-11-04T02:35:08Z
 
 [Term]
 id: OMP:0000397
 name: increased resistance to spectinomycin
 is_a: OMP:0000395 ! spectinomycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:35:27Z
+creation_date: 2012-11-04T02:35:27Z
 
 [Term]
 id: OMP:0000398
@@ -3018,28 +3023,28 @@ name: decreased resistance to spectinomycin
 synonym: "abolished resistance to spectinomycin" NARROW []
 is_a: OMP:0000395 ! spectinomycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:35:38Z
+creation_date: 2012-11-04T02:35:38Z
 
 [Term]
 id: OMP:0000399
 name: spiramycin resistance, relative phenotype
 is_a: OMP:0000370 ! spiramycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:36:30Z
+creation_date: 2012-11-04T02:36:30Z
 
 [Term]
 id: OMP:0000400
 name: spiramycin resistance, state phenotype
 is_a: OMP:0000370 ! spiramycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:36:41Z
+creation_date: 2012-11-04T02:36:41Z
 
 [Term]
 id: OMP:0000401
 name: increased resistance to spiramycin
 is_a: OMP:0000399 ! spiramycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:36:54Z
+creation_date: 2012-11-04T02:36:54Z
 
 [Term]
 id: OMP:0000402
@@ -3047,28 +3052,28 @@ name: decreased resistance to spiramycin
 synonym: "abolished resistance to spiramycin" NARROW []
 is_a: OMP:0000399 ! spiramycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:37:09Z
+creation_date: 2012-11-04T02:37:09Z
 
 [Term]
 id: OMP:0000403
 name: telithromycin resistance, relative phenotype
 is_a: OMP:0000365 ! telithromycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:38:05Z
+creation_date: 2012-11-04T02:38:05Z
 
 [Term]
 id: OMP:0000404
 name: telithromycin resistance, state phenotype
 is_a: OMP:0000365 ! telithromycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:38:18Z
+creation_date: 2012-11-04T02:38:18Z
 
 [Term]
 id: OMP:0000405
 name: increased resistance to telithromycin
 is_a: OMP:0000403 ! telithromycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:38:38Z
+creation_date: 2012-11-04T02:38:38Z
 
 [Term]
 id: OMP:0000406
@@ -3076,28 +3081,28 @@ name: decreased resistance to telithromycin
 synonym: "decreased resistance to telithromycin" NARROW []
 is_a: OMP:0000403 ! telithromycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:38:55Z
+creation_date: 2012-11-04T02:38:55Z
 
 [Term]
 id: OMP:0000407
 name: troleandomycin resistance, state phenotype
 is_a: OMP:0000368 ! troleandomycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:40:26Z
+creation_date: 2012-11-04T02:40:26Z
 
 [Term]
 id: OMP:0000408
 name: troleandomycin resistance, relative phenotype
 is_a: OMP:0000368 ! troleandomycin resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:40:39Z
+creation_date: 2012-11-04T02:40:39Z
 
 [Term]
 id: OMP:0000409
 name: increased resistance to troleandomycin
 is_a: OMP:0000408 ! troleandomycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:40:58Z
+creation_date: 2012-11-04T02:40:58Z
 
 [Term]
 id: OMP:0000410
@@ -3105,273 +3110,273 @@ name: decreased resistance to troleandomycin
 synonym: "abolished resistance to troleandomycin" NARROW []
 is_a: OMP:0000408 ! troleandomycin resistance, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:41:14Z
+creation_date: 2012-11-04T02:41:14Z
 
 [Term]
 id: OMP:0000411
 name: resistant to azithromycin
 is_a: OMP:0000372 ! azithromycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:43:06Z
+creation_date: 2012-11-04T02:43:06Z
 
 [Term]
 id: OMP:0000412
 name: not resistant to azithromycin
 is_a: OMP:0000372 ! azithromycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:43:20Z
+creation_date: 2012-11-04T02:43:20Z
 
 [Term]
 id: OMP:0000413
 name: resistant to carvomycin
 is_a: OMP:0000376 ! carvomycin A resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:44:03Z
+creation_date: 2012-11-04T02:44:03Z
 
 [Term]
 id: OMP:0000414
 name: not resistant to carvomycin
 is_a: OMP:0000376 ! carvomycin A resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:44:13Z
+creation_date: 2012-11-04T02:44:13Z
 
 [Term]
 id: OMP:0000415
 name: resistant to clarithromycin
 is_a: OMP:0000380 ! clarithromycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:44:32Z
+creation_date: 2012-11-04T02:44:32Z
 
 [Term]
 id: OMP:0000416
 name: not resistant to clarithromycin
 is_a: OMP:0000380 ! clarithromycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:44:49Z
+creation_date: 2012-11-04T02:44:49Z
 
 [Term]
 id: OMP:0000417
 name: resistant to dirithromycin
 is_a: OMP:0000384 ! dirithromycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:45:40Z
+creation_date: 2012-11-04T02:45:40Z
 
 [Term]
 id: OMP:0000418
 name: not resistant to dirithromycin
 is_a: OMP:0000384 ! dirithromycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:45:51Z
+creation_date: 2012-11-04T02:45:51Z
 
 [Term]
 id: OMP:0000419
 name: resistant to erythromycin
 is_a: OMP:0000328 ! erythromycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:46:22Z
+creation_date: 2012-11-04T02:46:22Z
 
 [Term]
 id: OMP:0000420
 name: not resistant to erythromycin
 is_a: OMP:0000328 ! erythromycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:46:38Z
+creation_date: 2012-11-04T02:46:38Z
 
 [Term]
 id: OMP:0000421
 name: resistant to josamycin
 is_a: OMP:0000388 ! josamycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:46:59Z
+creation_date: 2012-11-04T02:46:59Z
 
 [Term]
 id: OMP:0000422
 name: not resistant to josamycin
 is_a: OMP:0000388 ! josamycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:47:06Z
+creation_date: 2012-11-04T02:47:06Z
 
 [Term]
 id: OMP:0000423
 name: resistant to macrolide antibiotic
 is_a: OMP:0000323 ! macrolide antibiotic resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:47:36Z
+creation_date: 2012-11-04T02:47:36Z
 
 [Term]
 id: OMP:0000424
 name: not resistant to macrolide antibiotic
 is_a: OMP:0000323 ! macrolide antibiotic resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:47:45Z
+creation_date: 2012-11-04T02:47:45Z
 
 [Term]
 id: OMP:0000425
 name: resistant to roxithromycin
 is_a: OMP:0000392 ! roxithromycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:48:02Z
+creation_date: 2012-11-04T02:48:02Z
 
 [Term]
 id: OMP:0000426
 name: not resistant to roxithromycin
 is_a: OMP:0000392 ! roxithromycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:48:09Z
+creation_date: 2012-11-04T02:48:09Z
 
 [Term]
 id: OMP:0000427
 name: resistant to spectinomycin
 is_a: OMP:0000396 ! spectinomycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:48:33Z
+creation_date: 2012-11-04T02:48:33Z
 
 [Term]
 id: OMP:0000428
 name: not resistant to spectinomycin
 is_a: OMP:0000396 ! spectinomycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:48:44Z
+creation_date: 2012-11-04T02:48:44Z
 
 [Term]
 id: OMP:0000429
 name: resistant to spiramycin
 is_a: OMP:0000400 ! spiramycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:49:30Z
+creation_date: 2012-11-04T02:49:30Z
 
 [Term]
 id: OMP:0000430
 name: not resistant to spiramycin
 is_a: OMP:0000400 ! spiramycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:49:39Z
+creation_date: 2012-11-04T02:49:39Z
 
 [Term]
 id: OMP:0000431
 name: resistant to telithromycin
 is_a: OMP:0000404 ! telithromycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:50:20Z
+creation_date: 2012-11-04T02:50:20Z
 
 [Term]
 id: OMP:0000432
 name: not resistant to telithromycin
 is_a: OMP:0000404 ! telithromycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:50:30Z
+creation_date: 2012-11-04T02:50:30Z
 
 [Term]
 id: OMP:0000433
 name: resistant to troleandomycin
 is_a: OMP:0000407 ! troleandomycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:50:49Z
+creation_date: 2012-11-04T02:50:49Z
 
 [Term]
 id: OMP:0000434
 name: not resistant to troleandomycin
 is_a: OMP:0000407 ! troleandomycin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:50:57Z
+creation_date: 2012-11-04T02:50:57Z
 
 [Term]
 id: OMP:0000435
 name: resistant to diaminopyrimidine compount
 is_a: OMP:0000333 ! diaminopyrimidine compound resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:52:01Z
+creation_date: 2012-11-04T02:52:01Z
 
 [Term]
 id: OMP:0000436
 name: not resistant to diaminopyrimidine compount
 is_a: OMP:0000333 ! diaminopyrimidine compound resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:52:18Z
+creation_date: 2012-11-04T02:52:18Z
 
 [Term]
 id: OMP:0000437
 name: resistant to ampicillin
 is_a: OMP:0000346 ! ampicillin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:52:48Z
+creation_date: 2012-11-04T02:52:48Z
 
 [Term]
 id: OMP:0000438
 name: not resistant to ampicillin
 is_a: OMP:0000346 ! ampicillin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:53:00Z
+creation_date: 2012-11-04T02:53:00Z
 
 [Term]
 id: OMP:0000439
 name: resistant to beta lactam antibiotic
 is_a: OMP:0000338 ! beta lactam antibiotic resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:53:24Z
+creation_date: 2012-11-04T02:53:24Z
 
 [Term]
 id: OMP:0000440
 name: not resistant to beta lactam antibiotic
 is_a: OMP:0000338 ! beta lactam antibiotic resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:53:35Z
+creation_date: 2012-11-04T02:53:35Z
 
 [Term]
 id: OMP:0000441
 name: resistant to cefoxitin
 is_a: OMP:0000350 ! cefoxitin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:54:04Z
+creation_date: 2012-11-04T02:54:04Z
 
 [Term]
 id: OMP:0000442
 name: not resistant to cefoxitin
 is_a: OMP:0000350 ! cefoxitin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:54:14Z
+creation_date: 2012-11-04T02:54:14Z
 
 [Term]
 id: OMP:0000443
 name: resistant to cephalosporin
 is_a: OMP:0000354 ! cephalosporin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:55:01Z
+creation_date: 2012-11-04T02:55:01Z
 
 [Term]
 id: OMP:0000444
 name: not resistant to cephalosporin
 is_a: OMP:0000354 ! cephalosporin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:55:19Z
+creation_date: 2012-11-04T02:55:19Z
 
 [Term]
 id: OMP:0000445
 name: resistant to penicillin
 is_a: OMP:0000358 ! penicillin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:55:41Z
+creation_date: 2012-11-04T02:55:41Z
 
 [Term]
 id: OMP:0000446
 name: not resistant to penicillin
 is_a: OMP:0000358 ! penicillin resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:55:50Z
+creation_date: 2012-11-04T02:55:50Z
 
 [Term]
 id: OMP:0000447
 name: resistant to antimicrobial compound
 is_a: OMP:0000507 ! antimicrobial compound resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:56:12Z
+creation_date: 2012-11-04T02:56:12Z
 
 [Term]
 id: OMP:0000448
 name: not resistant to antimicrobial compound
 is_a: OMP:0000507 ! antimicrobial compound resistance, state phenotype
 created_by: mchibucos
-creation_date: 2012-11-04T14:56:21Z
+creation_date: 2012-11-04T02:56:21Z
 
 [Term]
 id: OMP:0000449
@@ -3379,21 +3384,21 @@ name: erythromycin dependent growth
 def: "A growth phenotype where translation is dependent on the presence of erythromycin due to alterations to the ribosomes." [ECO:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
-creation_date: 2013-05-23T13:31:03Z
+creation_date: 2013-05-23T01:31:03Z
 
 [Term]
 id: OMP:0000450
 name: trace element utilization phenotype
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: mchibucos
-creation_date: 2013-05-23T13:35:26Z
+creation_date: 2013-05-23T01:35:26Z
 
 [Term]
 id: OMP:0000451
 name: heme utilization phenotype
 is_a: OMP:0000450 ! trace element utilization phenotype
 created_by: mchibucos
-creation_date: 2013-05-23T13:37:06Z
+creation_date: 2013-05-23T01:37:06Z
 
 [Term]
 id: OMP:0000452
@@ -3402,7 +3407,7 @@ is_a: OMP:0000451 ! heme utilization phenotype
 intersection_of: OMP:0000316 ! relative phenotype
 intersection_of: OMP:0000451 ! heme utilization phenotype
 created_by: mchibucos
-creation_date: 2013-05-23T13:37:51Z
+creation_date: 2013-05-23T01:37:51Z
 
 [Term]
 id: OMP:0000453
@@ -3411,7 +3416,7 @@ is_a: OMP:0000451 ! heme utilization phenotype
 intersection_of: OMP:0000316 ! relative phenotype
 intersection_of: OMP:0000451 ! heme utilization phenotype
 created_by: mchibucos
-creation_date: 2013-05-23T13:39:39Z
+creation_date: 2013-05-23T01:39:39Z
 
 [Term]
 id: OMP:0000454
@@ -3420,21 +3425,21 @@ is_a: OMP:0000451 ! heme utilization phenotype
 intersection_of: OMP:0000315 ! state phenotype
 intersection_of: OMP:0000451 ! heme utilization phenotype
 created_by: mchibucos
-creation_date: 2013-05-23T13:40:40Z
+creation_date: 2013-05-23T01:40:40Z
 
 [Term]
 id: OMP:0000455
 name: alkaloid resistance phenotype
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
-creation_date: 2013-05-23T13:53:57Z
+creation_date: 2013-05-23T01:53:57Z
 
 [Term]
 id: OMP:0000456
 name: caffeine resistance phenotype
 is_a: OMP:0000455 ! alkaloid resistance phenotype
 created_by: mchibucos
-creation_date: 2013-05-23T13:54:51Z
+creation_date: 2013-05-23T01:54:51Z
 
 [Term]
 id: OMP:0000457
@@ -3443,7 +3448,7 @@ is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000315 ! state phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
-creation_date: 2013-05-23T13:55:13Z
+creation_date: 2013-05-23T01:55:13Z
 
 [Term]
 id: OMP:0000458
@@ -3452,7 +3457,7 @@ is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000315 ! state phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
-creation_date: 2013-05-23T13:55:34Z
+creation_date: 2013-05-23T01:55:34Z
 
 [Term]
 id: OMP:0000459
@@ -3461,7 +3466,7 @@ is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000316 ! relative phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
-creation_date: 2013-05-23T13:58:11Z
+creation_date: 2013-05-23T01:58:11Z
 
 [Term]
 id: OMP:0000460
@@ -3470,7 +3475,7 @@ is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000316 ! relative phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
-creation_date: 2013-05-23T13:58:55Z
+creation_date: 2013-05-23T01:58:55Z
 
 [Term]
 id: OMP:0000500
@@ -3478,14 +3483,14 @@ name: decreased aerotaxis
 synonym: "abolished aerotaxis" NARROW []
 is_a: OMP:0000319 ! aerotaxis, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:20:31Z
+creation_date: 2012-11-02T01:20:31Z
 
 [Term]
 id: OMP:0000502
 name: increased aerotaxis
 is_a: OMP:0000319 ! aerotaxis, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:21:21Z
+creation_date: 2012-11-02T01:21:21Z
 
 [Term]
 id: OMP:0000503
@@ -3493,34 +3498,34 @@ name: decreased chemotaxis
 synonym: "abolished chemotaxis" NARROW []
 is_a: OMP:0000317 ! chemotaxis, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:22:28Z
+creation_date: 2012-11-02T01:22:28Z
 
 [Term]
 id: OMP:0000505
 name: increased chemotaxis
 is_a: OMP:0000317 ! chemotaxis, relative phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:23:12Z
+creation_date: 2012-11-02T01:23:12Z
 
 [Term]
 id: OMP:0000506
 name: antimicrobial compound resistance, relative phenotype
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:26:17Z
+creation_date: 2012-11-02T01:26:17Z
 
 [Term]
 id: OMP:0000507
 name: antimicrobial compound resistance, state phenotype
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
-creation_date: 2012-11-02T13:31:06Z
+creation_date: 2012-11-02T01:31:06Z
 
 [Typedef]
 id: is_a
 name: is_a
 created_by: mchibucos
-creation_date: 2012-11-04T15:33:31Z
+creation_date: 2012-11-04T03:33:31Z
 
 [Typedef]
 id: OBO_REL:part_of
