@@ -10,7 +10,7 @@ ontology: omp
 [Term]
 id: OMP:0000000
 name: microbial phenotype
-def: "The manifestation of the genotype of a microbial cell or group of cells in an." [OMP:MCC]
+def: "The manifestation of the genotype of a microbial cell or group of cells in an environment." [OMP:MCC]
 creation_date: 2011-03-10T04:01:50Z
 
 [Term]
