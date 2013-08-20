@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:08:2013 18:10
+date: 20:08:2013 17:57
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.1-beta8
 default-namespace: microbial_phenotype
@@ -162,8 +162,9 @@ creation_date: 2011-04-26T03:09:25Z
 [Term]
 id: OMP:0000019
 name: non-flagellated
-def: "An absence of flagellum where the representative member of the taxonomic unit does not possess a flagellum." [OMP:MCC]
-is_a: OMP:0000030 ! absence of flagellum
+def: "An absence of flagellum where the representative member of the taxonomic unit does not possess a flagellum. Synonym of absence of flagellum, state phenotype" [OMP:MCC]
+xref: XX:<new xref>
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-06-07T10:33:37Z
 
@@ -193,9 +194,12 @@ creation_date: 2011-04-26T03:10:51Z
 
 [Term]
 id: OMP:0000023
-name: periplasmic
+name: periplasmic flagellum, state phenotype
+def: "A flagellum distribution phenotype where the flagellum filament is located in the periplasm and does not extend past the cell envelope." [ISBN:9780073402406, OMP:DAS]
+synonym: "axial fibril" RELATED []
 synonym: "axial filament" NARROW []
-is_a: OMP:0000078 ! flagellum distribution
+synonym: "endoflagella" RELATED []
+is_a: OMP:0000078 ! flagellum distribution, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T11:12:48Z
 
@@ -227,7 +231,7 @@ creation_date: 2011-06-06T02:39:55Z
 [Term]
 id: OMP:0000027
 name: flagellum phenotype
-def: "A cell projection phenotype where the structure in question is a long whiplike or feathery structure borne either singly or in groups by a motile cell, which propels the cell." [OMP:MCC]
+def: "A cell projection phenotype where the structure in question is a long whiplike threadlike structure borne either singly or in groups by a motile cell, which propels the cell." [OMP:MCC]
 synonym: "axial filament phenotype" NARROW []
 is_a: OMP:0000083 ! cell projection phenotype
 created_by: mchibucos
@@ -244,16 +248,18 @@ creation_date: 2011-04-26T03:29:28Z
 
 [Term]
 id: OMP:0000029
-name: presence of flagellum
-def: "A flagellum phenotype where the cell possess a flagellum." [OMP:MCC]
+name: presence of flagellum, state phenotype
+def: "A flagellum phenotype where cells of the representative taxonomic unit possess a flagellum or flagella in at least some environments." [OMP:MCC]
+xref: XX:<new xref>
 is_a: OMP:0000027 ! flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:34Z
 
 [Term]
 id: OMP:0000030
-name: absence of flagellum
-def: "A flagellum phenotype where the cell does not possess a flagellum." [OMP:MCC]
+name: absence of flagellum, state phenotype
+def: "A flagellum phenotype where cells of the representative taxonomic unit do not possess a flagellum or flagella in any environment." [OMP:MCC]
+synonym: "non-flagellated phenotype" RELATED []
 is_a: OMP:0000027 ! flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:50Z
@@ -270,7 +276,8 @@ creation_date: 2011-04-26T03:41:37Z
 id: OMP:0000032
 name: loss of flagellum
 def: "An absence of flagellum where the representative member of the taxonomic unit typically does possess a flagellum, but has lost the ability to produce a flagellum." [OMP:MCC]
-is_a: OMP:0000030 ! absence of flagellum
+synonym: "Synonym of decreased flagellum number, relative phenotype" RELATED []
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-06-07T10:34:04Z
 
@@ -303,8 +310,8 @@ creation_date: 2011-04-26T03:44:34Z
 
 [Term]
 id: OMP:0000036
-name: increased capsule, relative phenotype
-def: "An increased amount of capsule relative to the representative member of the taxonomic unit in the same environment." [OMP:OMP]
+name: increased capsule formation, relative phenotype
+def: "An increased amount of capsule relative to a reference strain in the same environment or relative to the same strain in a different environment." [OMP:OMP]
 is_a: OMP:0000204 ! presence of capsule, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:11Z
@@ -398,8 +405,8 @@ creation_date: 2011-04-26T04:27:42Z
 
 [Term]
 id: OMP:0000050
-name: decreased capsule, relative phenotype
-def: "An decreased amount of capsule relative to the representative member of the taxonomic unit in the same environment." [OMP:DAS]
+name: decreased capsule formation, relative phenotype
+def: "An decreased amount of capsule relative to a reference strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
 is_a: OMP:0000204 ! presence of capsule, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:59Z
@@ -604,8 +611,8 @@ creation_date: 2011-02-02T03:18:19Z
 
 [Term]
 id: OMP:0000075
-name: coccus
-def: "A cell shape phenotype where the cell is spherical-shaped or nearly spherical in shape." [OMP:MCC]
+name: coccus, state phenotype
+def: "A cell shape phenotype where the cell is spherical-shaped or nearly spherical in shape." [ISBN:9780073402406, OMP:MCC]
 synonym: "spherical-shaped" EXACT []
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -613,8 +620,8 @@ creation_date: 2011-02-02T03:18:29Z
 
 [Term]
 id: OMP:0000076
-name: bacillus
-def: "A cell shape phenotype where the cell is rod-shaped (elongated)." [OMP:MCC]
+name: bacillus, state phenotype
+def: "A cell shape phenotype where the cell is rod-shaped (elongated)." [ISBN:9780073402406, OMP:MCC]
 synonym: "rod-shaped" EXACT []
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -622,49 +629,49 @@ creation_date: 2011-02-02T03:18:47Z
 
 [Term]
 id: OMP:0000077
-name: vibrio
-def: "A spiral that is a curved or comma-shaped rod." [OMP:AEZ]
-is_a: OMP:0000086 ! spiral
+name: vibrio, state phenotype
+def: "A cell shape phenotype where a rod-shaped cell is curved to form a commalike shape or incomplete spiral." [ISBN:9780073402406, OMP:AEZ]
+is_a: OMP:0000086 ! spiral cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:19:31Z
 
 [Term]
 id: OMP:0000078
-name: flagellum distribution
-def: "A flagellum phenotype where the trait in question is the location of the flagellum on the cell." [OMP:MCC]
+name: flagellum distribution, state phenotype
+def: "A flagellum phenotype where the trait in question is the location of the flagellum on the representative member of a taxonomic unit." [OMP:MCC]
 is_a: OMP:0000027 ! flagellum phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:43:16Z
 
 [Term]
 id: OMP:0000079
-name: monotrichous
-def: "A flagellum configuration where a single flagellum is located on the cell surface." [OMP:MCC]
-is_a: OMP:0000078 ! flagellum distribution
+name: monotrichous, state phenotype
+def: "A flagellum distribution phenotype where a single flagellum is located on the cell surface." [ISBN:9780073402406]
+is_a: OMP:0000078 ! flagellum distribution, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:44:18Z
 
 [Term]
 id: OMP:0000080
-name: amphitrichous
-def: "A flagellum configuration where a single flagellum is located on each of two opposite ends of the cell." [OMP:MCC]
-is_a: OMP:0000078 ! flagellum distribution
+name: amphitrichous, state phenotype
+def: "A flagellum distribution phenotype where the reference strain has a single flagellum at the opposite ends of the cell." [ISBN:9780073402406, OMP:MCC]
+is_a: OMP:0000078 ! flagellum distribution, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:45:34Z
 
 [Term]
 id: OMP:0000081
-name: lophotrichous
-def: "A flagellum configuration where multiple flagella are located at the same spot on the cell surface." [OMP:MCC]
-is_a: OMP:0000078 ! flagellum distribution
+name: lophotrichous, state phenotype
+def: "A flagellum distribution phenotype where multiple flagella are located at one or both ends of a cell." [ISBN:9780073402406]
+is_a: OMP:0000078 ! flagellum distribution, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:46:16Z
 
 [Term]
 id: OMP:0000082
-name: peritrichous
-def: "A flagellum configuration where multiple flagella are dispersed across the cell surface." [OMP:MCC]
-is_a: OMP:0000078 ! flagellum distribution
+name: peritrichous, state phenotype
+def: "A flagellum distribution phenotype, where multiple flagella are dispersed across the cell surface." [ISBN:9780073402406, OMP:MCC]
+is_a: OMP:0000078 ! flagellum distribution, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:46:44Z
 
@@ -696,10 +703,12 @@ creation_date: 2011-02-02T03:49:03Z
 
 [Term]
 id: OMP:0000086
-name: spiral
+name: spiral cell shape, state phenotype
 def: "A cell shape phenotype where the cell is helical or cork-screw shaped." [OMP:MCC]
 synonym: "curved rod" RELATED []
-synonym: "Spirochete" NARROW []
+synonym: "spirillum" NARROW []
+synonym: "spirochete" NARROW []
+synonym: "vibrio" NARROW []
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:19:47Z
@@ -983,32 +992,32 @@ creation_date: 2011-02-18T02:47:10Z
 
 [Term]
 id: OMP:0000123
-name: coccobacillus
-def: "A cell shape phenotype where the cell is intermediate in shape between coccus (spherical) and bacillus (elongated)." [OMP:MCC]
+name: coccobacillus, state phenotype
+def: "A cell shape phenotype where the cell is intermediate in shape between coccus (spherical) and bacillus (elongated)." [ISBN:9780073402406, OMP:MCC]
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:48:21Z
 
 [Term]
 id: OMP:0000124
-name: spirillum
-def: "A spiral that is thick and rigid." [OMP:AEZ]
-is_a: OMP:0000086 ! spiral
+name: spirillum, state phenotype
+def: "A cell shape phenotype where the cell forms a rigid spiral." [ISBN:A cell shape phenotype where the cell is rod-shaped (elongated)., OMP:AEZ]
+is_a: OMP:0000086 ! spiral cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:51:54Z
 
 [Term]
 id: OMP:0000125
-name: spirochete
-def: "A spiral that is thin and flexible." [OMP:AEZ]
-is_a: OMP:0000086 ! spiral
+name: spirochete, state phenotype
+def: "A cell shape phenotype where the cell forms a flexible spiral." [ISBN:9780073402406, OMP:AEZ]
+is_a: OMP:0000086 ! spiral cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:52:33Z
 
 [Term]
 id: OMP:0000126
 name: trichome-forming
-is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:55:59Z
 
@@ -1031,7 +1040,7 @@ creation_date: 2011-02-18T02:59:38Z
 
 [Term]
 id: OMP:0000129
-name: cuboid
+name: cuboid, state phenotype
 def: "A cell shape phenotype where the cell has six sides." [ONP:MCC]
 synonym: "square" RELATED []
 is_a: OMP:0000073 ! cell shape phenotype
@@ -1048,7 +1057,7 @@ creation_date: 2011-02-18T03:00:30Z
 
 [Term]
 id: OMP:0000131
-name: lobed
+name: lobed, state phenotype
 def: "A cell shape phenotype where the cell has deeply indented margins (lobes)." [OMP:MCC]
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -1056,8 +1065,8 @@ creation_date: 2011-02-18T03:00:58Z
 
 [Term]
 id: OMP:0000132
-name: pleomorphic
-def: "A cell shape phenotype where the cell possesses the ability to take on two or more different shapes during its life cycle." [OMP:MCC]
+name: pleomorphic, state phenotype
+def: "A cell shape phenotype where the cell possesses the ability to take on two or more different shapes during its life cycle." [ISBN:9780073402406, OMP:MCC]
 xref: PATO:0001356
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -1570,6 +1579,10 @@ creation_date: 2011-03-02T01:43:12Z
 [Term]
 id: OMP:0000203
 name: capsule phenotype
+def: "A cell envelope phenotype where the trait in question is the outermost layer, usually consisting of polysaccharide or a polymer of amino acids of a microbial cell." [OMP:DAS]
+synonym: "glycocalyx phenotype" RELATED []
+synonym: "slime layer phenotype" RELATED []
+xref: XX:<new xref>
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:44:51Z
@@ -1577,7 +1590,8 @@ creation_date: 2011-06-07T09:44:51Z
 [Term]
 id: OMP:0000204
 name: presence of capsule, state phenotype
-def: "The presence of an outermost layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, observed in one or more environments." [OMP:DAS]
+def: "The presence of an outermost layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, observed in the representative member of a taxonomic unit in one or more environments." [OMP:DAS]
+comment: When present, the capsule layer lies outside the cell wall and/or outer membrane.
 synonym: "glycocalyx" RELATED [OMP:DAS "ISBN:9780073402406"]
 synonym: "slime layer" RELATED [OMP:DAS "ISBN:9780083402406"]
 is_a: OMP:0000203 ! capsule phenotype
@@ -1636,7 +1650,7 @@ creation_date: 2011-06-07T12:31:24Z
 [Term]
 id: OMP:0000211
 name: absence of capsule, state phenotype
-def: "The absence of an outermost layer in any environment." [OMP:DAS]
+def: "The absence of an outermost layer in the representative member of the taxonomic unit in any environment." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
@@ -1650,8 +1664,9 @@ creation_date: 2011-06-07T12:32:12Z
 
 [Term]
 id: OMP:0000213
-name: increased flagellum number
-is_a: OMP:0000029 ! presence of flagellum
+name: increased flagellum number, relative phenotype
+def: "A flagellum phenotype where there are more flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
+is_a: OMP:0000029 ! presence of flagellum, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:53:17Z
 
@@ -1664,8 +1679,9 @@ creation_date: 2011-02-03T01:33:37Z
 
 [Term]
 id: OMP:0000215
-name: decreased flagellum number
-is_a: OMP:0000029 ! presence of flagellum
+name: decreased flagellum number, relative phenotype
+def: "A flagellum phenotype where there are fewer flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
+is_a: OMP:0000029 ! presence of flagellum, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:54:51Z
 
@@ -1721,8 +1737,8 @@ creation_date: 2011-02-03T04:45:37Z
 [Term]
 id: OMP:0000223
 name: non-capsulated
-def: "An absence of capsule where the representative member of the taxonomic unit does not possess a capsule." [OMP:MCC]
-is_a: OMP:0000211 ! absence of capsule, state phenotype
+def: "An absence of capsule where the representative member of the taxonomic unit does not possess a capsule. Replaced by absence of capsule, state phenotype." [OMP:MCC]
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-06-07T10:54:29Z
 
@@ -1744,7 +1760,7 @@ creation_date: 2011-02-07T03:53:37Z
 id: OMP:0000226
 name: increased frequency of cells possessing flagellum
 def: "A presence of flagellum where a relatively higher number of cells in the population possess flagellum." [OMP:MCC]
-is_a: OMP:0000029 ! presence of flagellum
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-06-07T11:02:18Z
 
@@ -1752,7 +1768,7 @@ creation_date: 2011-06-07T11:02:18Z
 id: OMP:0000227
 name: decreased frequency of cells possessing flagellum
 def: "A presence of flagellum where a relatively lower number of cells in the population possess flagellum." [OMP:MCC]
-is_a: OMP:0000029 ! presence of flagellum
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-06-07T11:02:49Z
 
@@ -2259,14 +2275,14 @@ creation_date: 2011-07-21T04:46:29Z
 
 [Term]
 id: OMP:0000295
-name: presence of negative DNA supercoiling
+name: presence of negative DNA supercoiling, state phenotype
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:47:38Z
 
 [Term]
 id: OMP:0000296
-name: presence of positive DNA supercoiling
+name: presence of positive DNA supercoiling, state phenotype
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:48:22Z
@@ -2394,7 +2410,6 @@ name: motility, state phenotype
 def: "A motility phenotype that reflects the capability of an operational taxonomic unit." [OMP:MCC]
 is_a: OMP:0000001 ! motility phenotype
 intersection_of: OMP:0000001 ! motility phenotype
-intersection_of: OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2012-04-05T10:40:04Z
 
