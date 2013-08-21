@@ -1,10 +1,26 @@
 format-version: 1.2
-date: 20:08:2013 17:57
+date: 21:08:2013 17:50
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.1-beta8
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
+
+[Term]
+id: ID:0000000
+name: outer membrane phenotype
+def: "A cell envelope phenotype where the structure in question is" [OMP:DAS]
+is_a: OMP:0000085 ! cell envelope phenotype
+created_by: siegele
+creation_date: 2013-08-21T04:49:02Z
+
+[Term]
+id: ID:0000001
+name: increased number of pili, relative phenotype
+def: "A pilus phenotype where a cell has more pili relative to a reference strain or relative to the same strain in a different environment." [OMP:DAS]
+is_a: OMP:0000034 ! presence of pilus, state phenotype
+created_by: siegele
+creation_date: 2013-08-21T04:51:57Z
 
 [Term]
 id: OMP:0000000
@@ -239,10 +255,10 @@ creation_date: 2011-04-26T03:26:26Z
 
 [Term]
 id: OMP:0000028
-name: abolished pilus formation
-def: "A pilus phenotype where the cell completely loses its ability to form a flagellum." [OMP:MCC]
-synonym: "abolished fimbrium formation" EXACT []
-is_a: OMP:0000084 ! pilus phenotype
+name: decreased number of pili, relative phenotype
+def: "A pilus phenotype where a cell has fewer pili relative to a reference strain or relative to the same strain in a different environment." [OMP:MCC]
+synonym: "decreased fimbriae formation" EXACT []
+is_a: OMP:0000034 ! presence of pilus, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:28Z
 
@@ -283,18 +299,19 @@ creation_date: 2011-06-07T10:34:04Z
 
 [Term]
 id: OMP:0000033
-name: absence of pilus
-def: "A pilus phenotype where the cell does not possess a pilus." [OMP:MCC]
-synonym: "fimbrium absent" EXACT []
+name: absence of pilus, state phenotype
+def: "A pilus phenotype where cells of a reference strain or representative taxonomic unit does not possess a pilus." [OMP:MCC]
+synonym: "fimbria absent" EXACT []
 is_a: OMP:0000084 ! pilus phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:01Z
 
 [Term]
 id: OMP:0000034
-name: presence of pilus
-def: "A pilus phenotype where the cell possesses a pilus." [OMP:MCC]
-synonym: "fimbrium present" EXACT []
+name: presence of pilus, state phenotype
+def: "A pilus phenotype where cells of a reference strain or representative taxonomic unit possess a pilus." [OMP:MCC]
+comment: Fimbria (pl., fimbriae) is a common synonym for pilus (pl., pili).
+synonym: "fimbria present" EXACT []
 is_a: OMP:0000084 ! pilus phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:22Z
@@ -304,7 +321,7 @@ id: OMP:0000035
 name: malformed pilus
 def: "A pilus phenotype where the cell possesses a pilus that was distorted during formation." [OMP:MCC]
 synonym: "malformed fimbrium" EXACT []
-is_a: OMP:0000084 ! pilus phenotype
+is_a: OMP:0000034 ! presence of pilus, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:34Z
 
@@ -654,7 +671,7 @@ creation_date: 2011-02-02T03:44:18Z
 [Term]
 id: OMP:0000080
 name: amphitrichous, state phenotype
-def: "A flagellum distribution phenotype where the reference strain has a single flagellum at the opposite ends of the cell." [ISBN:9780073402406, OMP:MCC]
+def: "A flagellum distribution phenotype where the cell has a single flagellum at each end of the cell." [ISBN:9780073402406, OMP:MCC]
 is_a: OMP:0000078 ! flagellum distribution, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:45:34Z
@@ -687,8 +704,8 @@ creation_date: 2011-02-02T03:47:44Z
 [Term]
 id: OMP:0000084
 name: pilus phenotype
-def: "A cell projection phenotype where the structure in question is a proteinaceous hair-like appendage on the surface of bacteria ranging from 2-8 nm in diameter." [OMP:MCC]
-synonym: "fimbrium phenotype" EXACT [GO:0009289]
+def: "A cell projection phenotype where the structure in question is a proteinaceous hair-like appendage on the surface of a microbial cell." [ISBN:9780073402406, OMP:MCC]
+synonym: "fimbria phenotype" EXACT [GO:0009289]
 is_a: OMP:0000083 ! cell projection phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:47:57Z
@@ -1031,8 +1048,8 @@ creation_date: 2011-02-18T02:59:18Z
 
 [Term]
 id: OMP:0000128
-name: stalked
-def: "A cell shape phenotype where the cell possesses appendages called prosthecae, which are extensions of the cellular membrane and contain cytosol." [OMP:MCC]
+name: stalked cell, state phenotype
+def: "A cell shape phenotype where the cell possesses an appendage called a stalk or prostheca (pl., prosthecae), which is a tubular extension of the cell envelope and contains cytosol." [OMP:MCC, PMID:14245437]
 synonym: "prosthecate bacterium" EXACT [URL:http\://en.wikipedia.org/wiki/Prosthecate_bacteria]
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -1377,6 +1394,7 @@ creation_date: 2011-02-02T03:13:59Z
 [Term]
 id: OMP:0000175
 name: nanotube phenotype
+def: "A cell projection phenotype where the structure in question" [OMP:DAS]
 is_a: OMP:0000083 ! cell projection phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T02:59:54Z
@@ -1579,7 +1597,7 @@ creation_date: 2011-03-02T01:43:12Z
 [Term]
 id: OMP:0000203
 name: capsule phenotype
-def: "A cell envelope phenotype where the trait in question is the outermost layer, usually consisting of polysaccharide or a polymer of amino acids of a microbial cell." [OMP:DAS]
+def: "A cell envelope phenotype where the trait in question is the outermost layer of a microbial cell that usually consists of polysaccharide or a polymer of amino acids." [OMP:DAS]
 synonym: "glycocalyx phenotype" RELATED []
 synonym: "slime layer phenotype" RELATED []
 xref: XX:<new xref>
@@ -1906,14 +1924,14 @@ creation_date: 2011-06-07T02:27:00Z
 
 [Term]
 id: OMP:0000246
-name: presence of nanotube
+name: presence of nanotube, state phenotype
 is_a: OMP:0000175 ! nanotube phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:00:25Z
 
 [Term]
 id: OMP:0000247
-name: absence of nanotube
+name: absence of nanotube, state phenotype
 is_a: OMP:0000175 ! nanotube phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:01:32Z
