@@ -1,26 +1,10 @@
 format-version: 1.2
-date: 21:08:2013 17:50
+date: 22:08:2013 15:05
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.1-beta8
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
-
-[Term]
-id: ID:0000000
-name: outer membrane phenotype
-def: "A cell envelope phenotype where the structure in question is" [OMP:DAS]
-is_a: OMP:0000085 ! cell envelope phenotype
-created_by: siegele
-creation_date: 2013-08-21T04:49:02Z
-
-[Term]
-id: ID:0000001
-name: increased number of pili, relative phenotype
-def: "A pilus phenotype where a cell has more pili relative to a reference strain or relative to the same strain in a different environment." [OMP:DAS]
-is_a: OMP:0000034 ! presence of pilus, state phenotype
-created_by: siegele
-creation_date: 2013-08-21T04:51:57Z
 
 [Term]
 id: OMP:0000000
@@ -3509,6 +3493,38 @@ intersection_of: OMP:0000316 ! relative phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:55Z
+
+[Term]
+id: OMP:0000461
+name: outer membrane phenotype
+def: "A cell envelope phenotype where the structure in question is a lipid bilayer membrane located outside the peptidoglycan cell wall of typical Gram-negative bacteria." [ISBN:9780073402406, OMP:DAS]
+is_a: OMP:0000085 ! cell envelope phenotype
+created_by: siegele
+creation_date: 2013-08-22T01:43:06Z
+
+[Term]
+id: OMP:0000462
+name: presence of an outer membrane, state phenotype
+def: "An outer membrane phenotype where cells of a reference strain or representative taxonomic unit possess an outer membrane." [OMP:DAS]
+is_a: OMP:0000461 ! outer membrane phenotype
+created_by: siegele
+creation_date: 2013-08-22T01:47:25Z
+
+[Term]
+id: OMP:0000463
+name: increased number of pili, relative phenotype
+def: "A pilus phenotype where a cell has more pili relative to a reference strain or relative to the same strain in a different environment." [OMP:DAS]
+is_a: OMP:0000034 ! presence of pilus, state phenotype
+created_by: siegele
+creation_date: 2013-08-22T01:48:57Z
+
+[Term]
+id: OMP:0000464
+name: absence of an outer membrane, state phenotype
+def: "An outer membrane phenotype where cells of a reference strain or representative taxonomic unit do not have an outer membrane." [OMP:DAS]
+is_a: OMP:0000461 ! outer membrane phenotype
+created_by: siegele
+creation_date: 2013-08-22T01:53:29Z
 
 [Term]
 id: OMP:0000500
