@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 22:08:2013 17:59
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.1.1-beta7
+date: 22:08:2013 18:51
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.1-beta8
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2247,6 +2247,7 @@ creation_date: 2011-07-21T04:24:02Z
 [Term]
 id: OMP:0000291
 name: genophore phenotype
+def: "A genophore is the chromosome equivalent in any organism, cellular organelle, or virus, however, the term is commonly used to refer to chromosomes other than the nuclear chromosomes of eukaryotes." [ISBN:9780195307610 "A Dictionary of Genetics", ISBN:9781613441138 "Oxford Dictionary of Biochemistry and Molecular Biology (2nd ed.), online version", OMP:DAS]
 synonym: "chromosome phenotype" RELATED []
 is_a: OMP:0000290 ! genetic material phenotype
 relationship: OBO_REL:part_of OMP:0000150 ! nucleoid phenotype
@@ -2273,6 +2274,7 @@ creation_date: 2011-07-21T04:31:30Z
 [Term]
 id: OMP:0000294
 name: DNA supercoiling phenotype
+def: "A genetic material phenotype where the trait in question is supercoiling of a double-stranded DNA molecule." [OMP:DAS]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:46:29Z
@@ -2280,6 +2282,8 @@ creation_date: 2011-07-21T04:46:29Z
 [Term]
 id: OMP:0000295
 name: presence of negative DNA supercoiling, state phenotype
+def: "A DNA supercoiling phenotype where the DNA twists around its axis in the opposite direction from the clockwise turns of the right-handed double helix." [ISBN:9781613441138 "Oxford Dictionary of Biochemistry and Molecular Biology (2nd ed.), online version"]
+synonym: "underwound DNA phenotype" RELATED []
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:47:38Z
@@ -2287,6 +2291,8 @@ creation_date: 2011-07-21T04:47:38Z
 [Term]
 id: OMP:0000296
 name: presence of positive DNA supercoiling, state phenotype
+def: "A DNA supercoiling phenotype where the DNA twists around its axis in the same direction as the clockwise turns of the right-handed double helix." [ISBN:9781613441138 "Oxford Dictionary of Biochemistry and Molecular Biology (2nd ed.), online version"]
+synonym: "overwound DNA phenotype" RELATED []
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:48:22Z
@@ -3576,6 +3582,7 @@ creation_date: 2012-11-02T01:31:06Z
 id: OMP:0001001
 name: Increased negative DNA supercoiling, relative phenotype
 is_a: OMP:0000295 ! presence of negative DNA supercoiling, state phenotype
+relationship: is_a OMP:0000316 ! relative phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:07Z
 
@@ -3583,6 +3590,7 @@ creation_date: 2013-08-22T05:57:07Z
 id: OMP:0001002
 name: decreased negative supercoiling, relative phenotype
 is_a: OMP:0000295 ! presence of negative DNA supercoiling, state phenotype
+relationship: is_a OMP:0000316 ! relative phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
 
