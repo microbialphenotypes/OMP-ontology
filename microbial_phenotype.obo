@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 22:08:2013 15:05
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.1-beta8
+date: 22:08:2013 17:59
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.1.1-beta7
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1594,8 +1594,8 @@ id: OMP:0000204
 name: presence of capsule, state phenotype
 def: "The presence of an outermost layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, observed in the representative member of a taxonomic unit in one or more environments." [OMP:DAS]
 comment: When present, the capsule layer lies outside the cell wall and/or outer membrane.
-synonym: "glycocalyx" RELATED [OMP:DAS "ISBN:9780073402406"]
-synonym: "slime layer" RELATED [OMP:DAS "ISBN:9780083402406"]
+synonym: "glycocalyx" RELATED [OMP:DAS]
+synonym: "slime layer" RELATED [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:45:20Z
@@ -2091,14 +2091,16 @@ creation_date: 2011-07-21T02:09:22Z
 [Term]
 id: OMP:0000271
 name: temperature-dependent growth
-is_a: OMP:0000174 ! growth phenotype
+comment: Restructured the terms.
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T02:11:56Z
 
 [Term]
 id: OMP:0000272
 name: suppressor-dependent growth
-is_a: OMP:0000174 ! growth phenotype
+comment: Restructured the terms.
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T02:15:11Z
 
@@ -3569,6 +3571,20 @@ name: antimicrobial compound resistance, state phenotype
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:31:06Z
+
+[Term]
+id: OMP:0001001
+name: Increased negative DNA supercoiling, relative phenotype
+is_a: OMP:0000295 ! presence of negative DNA supercoiling, state phenotype
+created_by: wmeza
+creation_date: 2013-08-22T05:57:07Z
+
+[Term]
+id: OMP:0001002
+name: decreased negative supercoiling, relative phenotype
+is_a: OMP:0000295 ! presence of negative DNA supercoiling, state phenotype
+created_by: wmeza
+creation_date: 2013-08-22T05:57:56Z
 
 [Typedef]
 id: is_a
