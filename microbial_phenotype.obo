@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 30:08:2013 17:19
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.2
+date: 02:09:2013 13:09
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.1.1-beta7
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3407,7 +3407,7 @@ creation_date: 2012-11-04T02:56:21Z
 [Term]
 id: OMP:0000449
 name: erythromycin dependent growth
-def: "A growth phenotype where translation is dependent on the presence of erythromycin due to alterations to the ribosomes." [ECO:WAM]
+def: "A growth phenotype where translation is dependent on the presence of erythromycin." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:31:03Z
@@ -3594,6 +3594,14 @@ is_a: OMP:0000295 ! presence of negative DNA supercoiling, state phenotype
 is_a: OMP:0000316 ! relative phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
+
+[Term]
+id: OMP:0005001
+name: growth type phenotype
+def: "A growth phenotype dealing with the various traits and requirements for microbial growth." [OMP:WAM]
+is_a: OMP:0000174 ! growth phenotype
+created_by: wmeza
+creation_date: 2013-09-02T01:07:53Z
 
 [Typedef]
 id: is_a
