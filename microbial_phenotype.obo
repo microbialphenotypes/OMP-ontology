@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:09:2013 13:48
+date: 03:09:2013 18:52
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.1.1-beta7
 default-namespace: microbial_phenotype
@@ -327,7 +327,8 @@ creation_date: 2011-06-07T11:25:05Z
 
 [Term]
 id: OMP:0000039
-name: oxygen requirement
+name: oxygen requirement for growth phenotype
+def: "A growth type phenotype dealing with  oxygen requirements and ranges for growth." [OMP:WAM]
 is_a: OMP:0005001 ! growth type phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:36:04Z
@@ -716,8 +717,9 @@ creation_date: 2011-02-02T03:19:47Z
 
 [Term]
 id: OMP:0000087
-name: facultative anaerobe
-is_a: OMP:0000039 ! oxygen requirement
+name: facultative anaerobe, state phenotype
+def: "An oxygen requirement growth phenotype where growth does not require oxygen but does better in its presence." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:42:26Z
 
@@ -855,8 +857,9 @@ creation_date: 2011-02-02T02:42:12Z
 
 [Term]
 id: OMP:0000105
-name: aerotolerant anaerobe
-is_a: OMP:0000039 ! oxygen requirement
+name: aerotolerant anaerobe, state phenotype
+def: "A oxygen requirement growth phenotype where growth occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:43:38Z
 
@@ -1349,8 +1352,9 @@ creation_date: 2011-02-07T03:47:20Z
 
 [Term]
 id: OMP:0000171
-name: microaerophile
-is_a: OMP:0000039 ! oxygen requirement
+name: microaerophile, state phenotype
+def: "An oxygen requirement growth phenotype where growth requires oxygen levels between 2 to 10 percent for growth and damaged by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
 
@@ -1444,15 +1448,17 @@ creation_date: 2011-02-07T03:52:44Z
 
 [Term]
 id: OMP:0000184
-name: obligate anaerobe
-is_a: OMP:0000039 ! oxygen requirement
+name: obligate anaerobe, state phenotype
+def: "A oxygen requirement growth phenotype where growth does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:34Z
 
 [Term]
 id: OMP:0000185
-name: obligate aerobe
-is_a: OMP:0000039 ! oxygen requirement
+name: obligate aerobe, state phenotype
+def: "A oxygen requirement growth phenotype where growth is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
 
@@ -2181,7 +2187,7 @@ creation_date: 2011-07-21T02:40:26Z
 
 [Term]
 id: OMP:0000282
-name: increased growth rate
+name: increased growth rate, relative phenotype
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:43:01Z
@@ -3605,7 +3611,7 @@ creation_date: 2013-09-02T01:07:53Z
 
 [Term]
 id: OMP:0005002
-name: temperature growth range, state phenotype
+name: temperature growth range phenotype
 def: "A growth type phenotype where the trait in question being the temperature range and requirements needed for microbial growth." [OMP:WAM]
 is_a: OMP:0005001 ! growth type phenotype
 created_by: wmeza
@@ -3615,17 +3621,41 @@ creation_date: 2013-09-03T01:06:05Z
 id: OMP:0005003
 name: hyperthermophilic growth, state phenotype
 def: "A temperature growth range phenotype where optimal growth is between 85 C to about 113 C." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005002 ! temperature growth range, state phenotype
+is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:29:51Z
 
 [Term]
 id: OMP:0005004
 name: thermophilic growth, state phenotype
-def: "A temperature growth range where microbial growth occurs at 55 C or higher with optimal growth between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005002 ! temperature growth range, state phenotype
+def: "A temperature growth range where growth occurs at 55 C or higher with optimal growth between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:36:26Z
+
+[Term]
+id: OMP:0005005
+name: mesophilic growth, state phenotype
+def: "A temperature growth range phenotype where optimal growth is between 20 C to 45 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature growth range phenotype
+created_by: wmeza
+creation_date: 2013-09-03T03:51:14Z
+
+[Term]
+id: OMP:0005006
+name: pyschrotrophic growth, state phenotype
+def: "A temperature growth range phenotype where growth occurring from 0 to 7 C with optimum growth at 20 to 30 C. The maximum range of growth is around 35 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature growth range phenotype
+created_by: wmeza
+creation_date: 2013-09-03T04:48:00Z
+
+[Term]
+id: OMP:0005007
+name: psychrophilic growth, state phenotype
+def: "A temperature growth range phenotype where growth occurs at 0 C and has an optimum growth temperature of 15 C or lower." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature growth range phenotype
+created_by: wmeza
+creation_date: 2013-09-03T05:12:05Z
 
 [Typedef]
 id: is_a
