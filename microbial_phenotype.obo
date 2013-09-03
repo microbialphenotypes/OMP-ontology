@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:09:2013 13:10
+date: 03:09:2013 13:48
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.1.1-beta7
 default-namespace: microbial_phenotype
@@ -3610,6 +3610,22 @@ def: "A growth type phenotype where the trait in question being the temperature 
 is_a: OMP:0005001 ! growth type phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:06:05Z
+
+[Term]
+id: OMP:0005003
+name: hyperthermophilic growth, state phenotype
+def: "A temperature growth range phenotype where optimal growth is between 85 C to about 113 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature growth range, state phenotype
+created_by: wmeza
+creation_date: 2013-09-03T01:29:51Z
+
+[Term]
+id: OMP:0005004
+name: thermophilic growth, state phenotype
+def: "A temperature growth range where microbial growth occurs at 55 C or higher with optimal growth between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature growth range, state phenotype
+created_by: wmeza
+creation_date: 2013-09-03T01:36:26Z
 
 [Typedef]
 id: is_a
