@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 02:09:2013 17:19
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.2
+date: 03:09:2013 13:10
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.1.1-beta7
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2082,7 +2082,7 @@ creation_date: 2011-07-21T02:05:51Z
 
 [Term]
 id: OMP:0000270
-name: absence of growth
+name: absence of growth, state phenotype
 synonym: "no growth" EXACT []
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
@@ -2188,7 +2188,7 @@ creation_date: 2011-07-21T02:43:01Z
 
 [Term]
 id: OMP:0000283
-name: decreased growth rate
+name: decreased growth rate, relative phenotype
 synonym: "slow growth rate" RELATED []
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
@@ -3406,7 +3406,7 @@ creation_date: 2012-11-04T02:56:21Z
 
 [Term]
 id: OMP:0000449
-name: erythromycin dependent growth
+name: erythromycin dependent growth, relative phenotype
 def: "A growth phenotype where translation is dependent on the presence of erythromycin." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
@@ -3602,6 +3602,14 @@ def: "A growth phenotype dealing with the various traits and requirements for mi
 is_a: OMP:0000174 ! growth phenotype
 created_by: wmeza
 creation_date: 2013-09-02T01:07:53Z
+
+[Term]
+id: OMP:0005002
+name: temperature growth range, state phenotype
+def: "A growth type phenotype where the trait in question being the temperature range and requirements needed for microbial growth." [OMP:WAM]
+is_a: OMP:0005001 ! growth type phenotype
+created_by: wmeza
+creation_date: 2013-09-03T01:06:05Z
 
 [Typedef]
 id: is_a
