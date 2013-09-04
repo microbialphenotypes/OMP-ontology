@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:09:2013 13:28
+date: 04:09:2013 13:42
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -3629,11 +3629,27 @@ creation_date: 2013-09-03T01:36:26Z
 
 [Term]
 id: OMP:0005005
-name: mesophilic growth
+name: mesophilic growth, state phenotype
 def: "A temperature growth range phenotype where optimal growth is between 20 C to 45 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range
 created_by: wmeza
 creation_date: 2013-09-04T13:24:06Z
+
+[Term]
+id: OMP:0005006
+name: psychrotrophic growth, state phenotype
+def: "A temperature growth range phenotype where growth occurring from 0 to 7 C with optimum growth at 20 to 30 C. The maximum range of growth is around 35 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature growth range
+created_by: wmeza
+creation_date: 2013-09-04T13:38:56Z
+
+[Term]
+id: OMP:0005007
+name: psychrophilic growth, state phenotype
+def: "A temperature growth range phenotype where growth occurs at 0 C and has an optimum growth temperature of 15 C or lower." [iSBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature growth range
+created_by: wmeza
+creation_date: 2013-09-04T13:40:27Z
 
 [Term]
 id: OMP:0006001
