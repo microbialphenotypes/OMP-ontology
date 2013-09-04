@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 04:09:2013 10:47
+date: 04:09:2013 12:15
 saved-by: wmeza
-auto-generated-by: OBO-Edit 2.1.1-beta7
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3629,7 +3629,7 @@ creation_date: 2013-09-03T01:36:26Z
 
 [Term]
 id: OMP:0006001
-name: Nutrient Phenotype
+name: nutrient phenotype
 def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and energy release and therefore are required for microbial growth." [ISBN:9780073402406]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: jonathanherrera
@@ -3637,17 +3637,17 @@ creation_date: 2013-09-03T05:28:25Z
 
 [Term]
 id: OMP:0006002
-name: Nutrient Requirement
+name: nutrient requirement
 def: "A Nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:DS]
-is_a: OMP:0006001 ! Nutrient Phenotype
+is_a: OMP:0006001 ! nutrient phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T05:30:35Z
 
 [Term]
 id: OMP:0006003
-name: Nutrient Utilization
+name: nutrient utilization
 def: "A Nutrient Phenotype, where the defining trait is where the nutrient is catabolized further or used as is, such as an amino acid that enters the AA pool without further modification." [OMP:DS]
-is_a: OMP:0006001 ! Nutrient Phenotype
+is_a: OMP:0006001 ! nutrient phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T07:54:22Z
 
