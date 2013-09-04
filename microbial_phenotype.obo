@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:09:2013 19:10
+date: 03:09:2013 20:30
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -3642,6 +3642,14 @@ def: "A Nutrient phenotype, where the defining trait is the lack in the ability 
 is_a: OMP:0006001 ! Nutrient Phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T17:30:35Z
+
+[Term]
+id: OMP:0006003
+name: Nutrient Utilization
+def: "A Nutrient Phenotype, where the defining trait is where the nutrient is catabolized further or used as is, such as an amino acid that enters the AA pool without further modification." [OMP:DS]
+is_a: OMP:0006001 ! Nutrient Phenotype
+created_by: jonathanherrera
+creation_date: 2013-09-03T19:54:22Z
 
 [Typedef]
 id: is_a
