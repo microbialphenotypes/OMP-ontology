@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:08:2013 15:58
+date: 03:09:2013 17:27
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -328,7 +328,7 @@ creation_date: 2011-06-07T11:25:05Z
 [Term]
 id: OMP:0000039
 name: oxygen requirement
-is_a: OMP:0000180 ! metabolic phenotype
+is_a: OMP:0005001 ! growth type phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:36:04Z
 
@@ -2082,7 +2082,7 @@ creation_date: 2011-07-21T02:05:51Z
 
 [Term]
 id: OMP:0000270
-name: absence of growth
+name: absence of growth, state phenotype
 synonym: "no growth" EXACT []
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
@@ -2106,7 +2106,8 @@ creation_date: 2011-07-21T02:15:11Z
 
 [Term]
 id: OMP:0000273
-name: auxotroph
+name: auxotrophic phenotype
+def: "A nutrient phenotype where an auxotroph is an organism that cannot synthesize certain organic molecules that are essential for its growth.  The organic molecules that must be obtained from the environment are often referred to as growth factors." [ISBN:9780073375267, OMP:DAS]
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:17:25Z
@@ -2187,7 +2188,7 @@ creation_date: 2011-07-21T02:43:01Z
 
 [Term]
 id: OMP:0000283
-name: decreased growth rate
+name: decreased growth rate, relative phenotype
 synonym: "slow growth rate" RELATED []
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
@@ -3405,8 +3406,8 @@ creation_date: 2012-11-04T02:56:21Z
 
 [Term]
 id: OMP:0000449
-name: erythromycin dependent growth
-def: "A growth phenotype where translation is dependent on the presence of erythromycin due to alterations to the ribosomes." [ECO:WAM]
+name: erythromycin dependent growth, relative phenotype
+def: "A growth phenotype where translation is dependent on the presence of erythromycin." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:31:03Z
@@ -3471,6 +3472,7 @@ id: OMP:0000457
 name: resistance to caffeine
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000315 ! state phenotype
+intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:13Z
 
@@ -3478,6 +3480,7 @@ creation_date: 2013-05-23T01:55:13Z
 id: OMP:0000458
 name: lack of resistance to caffeine
 is_a: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000315 ! state phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:34Z
@@ -3487,6 +3490,7 @@ id: OMP:0000459
 name: increased caffeine resistance
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000316 ! relative phenotype
+intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:11Z
 
@@ -3495,6 +3499,7 @@ id: OMP:0000460
 name: decreased caffeine resistance
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000316 ! relative phenotype
+intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:55Z
 
@@ -3591,20 +3596,43 @@ created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
 
 [Term]
-id: OMP:0006001
-name: Nutrient Phenotype
-def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and energy release and therefore are required for microbial growth." [ISBN:0073402400]
-is_a: OMP:0000000 ! microbial phenotype
-created_by: jonathanherrera
-creation_date: 2013-08-29T12:49:01Z
+id: OMP:0005001
+name: growth type phenotype
+def: "A growth phenotype dealing with the various traits and requirements for microbial growth." [OMP:WAM]
+is_a: OMP:0000174 ! growth phenotype
+created_by: wmeza
+creation_date: 2013-09-02T01:07:53Z
 
 [Term]
-id: OMP:0006002
-name: Nutrient Requirement
-def: "A Nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and must get them from the environment." [OMP:DS]
-is_a: OMP:0006001 ! Nutrient Phenotype
+id: OMP:0005002
+name: temperature growth range, state phenotype
+def: "A growth type phenotype where the trait in question being the temperature range and requirements needed for microbial growth." [OMP:WAM]
+is_a: OMP:0005001 ! growth type phenotype
+created_by: wmeza
+creation_date: 2013-09-03T01:06:05Z
+
+[Term]
+id: OMP:0005003
+name: hyperthermophilic growth, state phenotype
+def: "A temperature growth range phenotype where optimal growth is between 85 C to about 113 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature growth range, state phenotype
+created_by: wmeza
+creation_date: 2013-09-03T01:29:51Z
+
+[Term]
+id: OMP:0005004
+name: thermophilic growth, state phenotype
+def: "A temperature growth range where microbial growth occurs at 55 C or higher with optimal growth between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature growth range, state phenotype
+created_by: wmeza
+creation_date: 2013-09-03T01:36:26Z
+
+[Term]
+id: OMP:0006001
+name: Nutrient Phenotype
+is_a: OMP:0000000 ! microbial phenotype
 created_by: jonathanherrera
-creation_date: 2013-08-29T12:53:04Z
+creation_date: 2013-09-03T17:27:01Z
 
 [Typedef]
 id: is_a
