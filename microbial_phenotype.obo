@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:09:2013 16:14
+date: 05:09:2013 16:27
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -230,7 +230,7 @@ creation_date: 2011-06-06T02:39:55Z
 
 [Term]
 id: OMP:0000027
-name: flagellum phenotype
+name: flagellum, state phenotype
 def: "A cell projection phenotype where the structure in question is a long whiplike threadlike structure borne either singly or in groups by a motile cell, which propels the cell." [OMP:MCC]
 synonym: "axial filament phenotype" NARROW []
 is_a: OMP:0000083 ! cell projection phenotype
@@ -242,7 +242,7 @@ id: OMP:0000028
 name: decreased number of pili, relative phenotype
 def: "A pilus phenotype where a cell has fewer pili relative to a reference strain or relative to the same strain in a different environment." [OMP:MCC]
 synonym: "decreased fimbriae formation" EXACT []
-is_a: OMP:0000034 ! presence of pilus, state phenotype
+is_a: OMP:0000034 ! presence of pilus
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:28Z
 
@@ -251,7 +251,7 @@ id: OMP:0000029
 name: presence of flagellum, state phenotype
 def: "A flagellum phenotype where cells of the representative taxonomic unit possess a flagellum or flagella in at least some environments." [OMP:MCC]
 xref: XX:<new xref>
-is_a: OMP:0000027 ! flagellum phenotype
+is_a: OMP:0000027 ! flagellum, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:34Z
 
@@ -260,7 +260,7 @@ id: OMP:0000030
 name: absence of flagellum, state phenotype
 def: "A flagellum phenotype where cells of the representative taxonomic unit do not possess a flagellum or flagella in any environment." [OMP:MCC]
 synonym: "non-flagellated phenotype" RELATED []
-is_a: OMP:0000027 ! flagellum phenotype
+is_a: OMP:0000027 ! flagellum, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:50Z
 
@@ -268,7 +268,7 @@ creation_date: 2011-04-26T03:29:50Z
 id: OMP:0000031
 name: malformed flagellum
 def: "A flagellum phenotype where the cell possesses a flagellum that was distorted during formation." [OMP:MCC]
-is_a: OMP:0000027 ! flagellum phenotype
+is_a: OMP:0007005 ! flagellum, relative phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:41:37Z
 
@@ -283,20 +283,20 @@ creation_date: 2011-06-07T10:34:04Z
 
 [Term]
 id: OMP:0000033
-name: absence of pilus, state phenotype
+name: absence of pilus
 def: "A pilus phenotype where cells of a reference strain or representative taxonomic unit does not possess a pilus." [OMP:MCC]
 synonym: "fimbria absent" EXACT []
-is_a: OMP:0000084 ! pilus phenotype
+is_a: OMP:0000084 ! pilus phenotype, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:01Z
 
 [Term]
 id: OMP:0000034
-name: presence of pilus, state phenotype
+name: presence of pilus
 def: "A pilus phenotype where cells of a reference strain or representative taxonomic unit possess a pilus." [OMP:MCC]
 comment: Fimbria (pl., fimbriae) is a common synonym for pilus (pl., pili).
 synonym: "fimbria present" EXACT []
-is_a: OMP:0000084 ! pilus phenotype
+is_a: OMP:0000084 ! pilus phenotype, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:22Z
 
@@ -305,15 +305,15 @@ id: OMP:0000035
 name: malformed pilus
 def: "A pilus phenotype where the cell possesses a pilus that was distorted during formation." [OMP:MCC]
 synonym: "malformed fimbrium" EXACT []
-is_a: OMP:0000034 ! presence of pilus, state phenotype
+is_a: OMP:0000034 ! presence of pilus
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:34Z
 
 [Term]
 id: OMP:0000036
-name: increased capsule formation, relative phenotype
+name: increased capsule formation
 def: "An increased amount of capsule relative to a reference strain in the same environment or relative to the same strain in a different environment." [OMP:OMP]
-is_a: OMP:0000204 ! presence of capsule, state phenotype
+is_a: OMP:0007004 ! capsule, relative phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:11Z
 
@@ -407,9 +407,9 @@ creation_date: 2011-04-26T04:27:42Z
 
 [Term]
 id: OMP:0000050
-name: decreased capsule formation, relative phenotype
+name: decreased capsule formation
 def: "An decreased amount of capsule relative to a reference strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
-is_a: OMP:0000204 ! presence of capsule, state phenotype
+is_a: OMP:0007004 ! capsule, relative phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:59Z
 
@@ -641,7 +641,7 @@ creation_date: 2011-02-02T03:19:31Z
 id: OMP:0000078
 name: flagellum distribution, state phenotype
 def: "A flagellum phenotype where the trait in question is the location of the flagellum on the representative member of a taxonomic unit." [OMP:MCC]
-is_a: OMP:0000027 ! flagellum phenotype
+is_a: OMP:0000027 ! flagellum, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:43:16Z
 
@@ -688,7 +688,7 @@ creation_date: 2011-02-02T03:47:44Z
 
 [Term]
 id: OMP:0000084
-name: pilus phenotype
+name: pilus phenotype, state phenotype
 def: "A cell projection phenotype where the structure in question is a proteinaceous hair-like appendage on the surface of a microbial cell." [ISBN:9780073402406, OMP:MCC]
 synonym: "fimbria phenotype" EXACT [GO:0009289]
 is_a: OMP:0000083 ! cell projection phenotype
@@ -1579,30 +1579,29 @@ creation_date: 2011-03-02T01:41:52Z
 
 [Term]
 id: OMP:0000202
-name: outer membrane vesicle phenotype
+name: outer membrane vesicle, state phenotype
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: Adrienne
 creation_date: 2011-03-02T01:43:12Z
 
 [Term]
 id: OMP:0000203
-name: capsule phenotype
+name: capsule, state phenotype
 def: "A cell envelope phenotype where the trait in question is the outermost layer of a microbial cell that usually consists of polysaccharide or a polymer of amino acids." [OMP:DAS]
 synonym: "glycocalyx phenotype" RELATED []
 synonym: "slime layer phenotype" RELATED []
-xref: XX:<new xref>
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:44:51Z
 
 [Term]
 id: OMP:0000204
-name: presence of capsule, state phenotype
-def: "The presence of an outermost layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, observed in the representative member of a taxonomic unit in one or more environments." [OMP:DAS]
+name: presence of capsule
+def: "The presence of a capsule layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, observed in the representative member of a taxonomic unit in one or more environments." [OMP:DAS]
 comment: When present, the capsule layer lies outside the cell wall and/or outer membrane.
 synonym: "glycocalyx" RELATED [OMP:DAS]
 synonym: "slime layer" RELATED [OMP:DAS]
-is_a: OMP:0000203 ! capsule phenotype
+is_a: OMP:0000203 ! capsule, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:45:20Z
 
@@ -1657,9 +1656,9 @@ creation_date: 2011-06-07T12:31:24Z
 
 [Term]
 id: OMP:0000211
-name: absence of capsule, state phenotype
-def: "The absence of an outermost layer in the representative member of the taxonomic unit in any environment." [OMP:DAS]
-is_a: OMP:0000203 ! capsule phenotype
+name: absence of capsule
+def: "The absence of a capsule layer in the representative member of the taxonomic unit in any environment." [OMP:DAS]
+is_a: OMP:0000203 ! capsule, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
 
@@ -1674,7 +1673,7 @@ creation_date: 2011-06-07T12:32:12Z
 id: OMP:0000213
 name: increased flagellum number, relative phenotype
 def: "A flagellum phenotype where there are more flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
-is_a: OMP:0000029 ! presence of flagellum, state phenotype
+is_a: OMP:0007005 ! flagellum, relative phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:53:17Z
 
@@ -1689,7 +1688,7 @@ creation_date: 2011-02-03T01:33:37Z
 id: OMP:0000215
 name: decreased flagellum number, relative phenotype
 def: "A flagellum phenotype where there are fewer flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
-is_a: OMP:0000029 ! presence of flagellum, state phenotype
+is_a: OMP:0007005 ! flagellum, relative phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:54:51Z
 
@@ -3511,7 +3510,7 @@ creation_date: 2013-05-23T01:58:55Z
 
 [Term]
 id: OMP:0000461
-name: outer membrane phenotype
+name: outer membrane phenotype, state phenotype
 def: "A cell envelope phenotype where the structure in question is a lipid bilayer membrane located outside the peptidoglycan cell wall of typical Gram-negative bacteria." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: siegele
@@ -3519,9 +3518,9 @@ creation_date: 2013-08-22T01:43:06Z
 
 [Term]
 id: OMP:0000462
-name: presence of an outer membrane, state phenotype
+name: presence of an outer membrane
 def: "An outer membrane phenotype where cells of a reference strain or representative taxonomic unit possess an outer membrane." [OMP:DAS]
-is_a: OMP:0000461 ! outer membrane phenotype
+is_a: OMP:0000461 ! outer membrane phenotype, state phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:47:25Z
 
@@ -3529,15 +3528,15 @@ creation_date: 2013-08-22T01:47:25Z
 id: OMP:0000463
 name: increased number of pili, relative phenotype
 def: "A pilus phenotype where a cell has more pili relative to a reference strain or relative to the same strain in a different environment." [OMP:DAS]
-is_a: OMP:0000034 ! presence of pilus, state phenotype
+is_a: OMP:0000034 ! presence of pilus
 created_by: siegele
 creation_date: 2013-08-22T01:48:57Z
 
 [Term]
 id: OMP:0000464
-name: absence of an outer membrane, state phenotype
+name: absence of an outer membrane
 def: "An outer membrane phenotype where cells of a reference strain or representative taxonomic unit do not have an outer membrane." [OMP:DAS]
-is_a: OMP:0000461 ! outer membrane phenotype
+is_a: OMP:0000461 ! outer membrane phenotype, state phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:53:29Z
 
@@ -3731,6 +3730,20 @@ name: increased positive DNA supercoiling
 is_a: OMP:0007001 ! DNA supercoiling, relative phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:09:28Z
+
+[Term]
+id: OMP:0007004
+name: capsule, relative phenotype
+is_a: OMP:0000085 ! cell envelope phenotype
+created_by: siegele
+creation_date: 2013-09-05T16:17:12Z
+
+[Term]
+id: OMP:0007005
+name: flagellum, relative phenotype
+is_a: OMP:0000083 ! cell projection phenotype
+created_by: siegele
+creation_date: 2013-09-05T16:21:23Z
 
 [Typedef]
 id: is_a
