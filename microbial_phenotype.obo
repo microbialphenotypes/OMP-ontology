@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 04:09:2013 18:56
-saved-by: wmeza
+date: 05:09:2013 16:14
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -597,8 +597,8 @@ creation_date: 2011-02-02T03:31:35Z
 
 [Term]
 id: OMP:0000073
-name: cell shape phenotype
-def: "A cellular morphology phenotype where the trait in question is the shape of the cell." [OMP:MCC]
+name: cell shape, state phenotype
+def: "A cellular morphology phenotype where the trait in question is the shape of the representative taxonomic unit." [OMP:MCC]
 is_a: OMP:0000071 ! cellular morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:02Z
@@ -616,7 +616,7 @@ id: OMP:0000075
 name: coccus, state phenotype
 def: "A cell shape phenotype where the cell is spherical-shaped or nearly spherical in shape." [ISBN:9780073402406, OMP:MCC]
 synonym: "spherical-shaped" EXACT []
-is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0000073 ! cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:29Z
 
@@ -625,7 +625,7 @@ id: OMP:0000076
 name: bacillus, state phenotype
 def: "A cell shape phenotype where the cell is rod-shaped (elongated)." [ISBN:9780073402406, OMP:MCC]
 synonym: "rod-shaped" EXACT []
-is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0000073 ! cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:47Z
 
@@ -711,13 +711,13 @@ synonym: "curved rod" RELATED []
 synonym: "spirillum" NARROW []
 synonym: "spirochete" NARROW []
 synonym: "vibrio" NARROW []
-is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0000073 ! cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:19:47Z
 
 [Term]
 id: OMP:0000087
-name: facultative anaerobe,  state phenotype 
+name: facultative anaerobe,  state phenotype
 def: "An oxygen requirement growth phenotype where growth does not require oxygen but does better in its presence." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
@@ -998,14 +998,14 @@ creation_date: 2011-02-18T02:47:10Z
 id: OMP:0000123
 name: coccobacillus, state phenotype
 def: "A cell shape phenotype where the cell is intermediate in shape between coccus (spherical) and bacillus (elongated)." [ISBN:9780073402406, OMP:MCC]
-is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0000073 ! cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:48:21Z
 
 [Term]
 id: OMP:0000124
 name: spirillum, state phenotype
-def: "A cell shape phenotype where the cell forms a rigid spiral." [ISBN:A cell shape phenotype where the cell is rod-shaped (elongated)., OMP:AEZ]
+def: "A cell shape phenotype where the cell forms a rigid spiral." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000086 ! spiral cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:51:54Z
@@ -1038,7 +1038,7 @@ id: OMP:0000128
 name: stalked cell, state phenotype
 def: "A cell shape phenotype where the cell possesses an appendage called a stalk or prostheca (pl., prosthecae), which is a tubular extension of the cell envelope and contains cytosol." [OMP:MCC, PMID:14245437]
 synonym: "prosthecate bacterium" EXACT [URL:http\://en.wikipedia.org/wiki/Prosthecate_bacteria]
-is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0000073 ! cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:59:38Z
 
@@ -1047,15 +1047,15 @@ id: OMP:0000129
 name: cuboid, state phenotype
 def: "A cell shape phenotype where the cell has six sides." [ONP:MCC]
 synonym: "square" RELATED []
-is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0000073 ! cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:59:57Z
 
 [Term]
 id: OMP:0000130
-name: star-shaped
+name: star-shaped cell, state phenotype
 def: "A cell shape phenotype where the cell has lobe-like projections that form points." [OMP:MCC]
-is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0000073 ! cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:00:30Z
 
@@ -1063,7 +1063,7 @@ creation_date: 2011-02-18T03:00:30Z
 id: OMP:0000131
 name: lobed, state phenotype
 def: "A cell shape phenotype where the cell has deeply indented margins (lobes)." [OMP:MCC]
-is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0000073 ! cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:00:58Z
 
@@ -1072,7 +1072,7 @@ id: OMP:0000132
 name: pleomorphic, state phenotype
 def: "A cell shape phenotype where the cell possesses the ability to take on two or more different shapes during its life cycle." [ISBN:9780073402406, OMP:MCC]
 xref: PATO:0001356
-is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0000073 ! cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:01:18Z
 
@@ -2173,7 +2173,7 @@ creation_date: 2011-07-21T02:35:22Z
 id: OMP:0000280
 name: elongated cell length
 comment: mukB mutants appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
-is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0000073 ! cell shape, state phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:37:15Z
 
@@ -2280,7 +2280,7 @@ creation_date: 2011-07-21T04:31:30Z
 
 [Term]
 id: OMP:0000294
-name: DNA supercoiling phenotype
+name: DNA supercoiling, state phenotype
 def: "A genetic material phenotype where the trait in question is supercoiling of a double-stranded DNA molecule." [OMP:DAS]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: mchibucos
@@ -2291,7 +2291,7 @@ id: OMP:0000295
 name: presence of negative DNA supercoiling, state phenotype
 def: "A DNA supercoiling phenotype where the DNA twists around its axis in the opposite direction from the clockwise turns of the right-handed double helix." [ISBN:9781613441138]
 synonym: "underwound DNA phenotype" RELATED []
-is_a: OMP:0000294 ! DNA supercoiling phenotype
+is_a: OMP:0000294 ! DNA supercoiling, state phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:47:38Z
 
@@ -2300,7 +2300,7 @@ id: OMP:0000296
 name: presence of positive DNA supercoiling, state phenotype
 def: "A DNA supercoiling phenotype where the DNA twists around its axis in the same direction as the clockwise turns of the right-handed double helix." [ISBN:9781613441138]
 synonym: "overwound DNA phenotype" RELATED []
-is_a: OMP:0000294 ! DNA supercoiling phenotype
+is_a: OMP:0000294 ! DNA supercoiling, state phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:48:22Z
 
@@ -3587,17 +3587,15 @@ creation_date: 2012-11-02T01:31:06Z
 
 [Term]
 id: OMP:0001001
-name: Increased negative DNA supercoiling, relative phenotype
-is_a: OMP:0000295 ! presence of negative DNA supercoiling, state phenotype
-is_a: OMP:0000316 ! relative phenotype
+name: Increased negative DNA supercoiling
+is_a: OMP:0007001 ! DNA supercoiling, relative phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:07Z
 
 [Term]
 id: OMP:0001002
-name: decreased negative supercoiling, relative phenotype
-is_a: OMP:0000295 ! presence of negative DNA supercoiling, state phenotype
-is_a: OMP:0000316 ! relative phenotype
+name: decreased negative DNA supercoiling
+is_a: OMP:0007001 ! DNA supercoiling, relative phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
 
@@ -3712,6 +3710,27 @@ def: "A Nutrient Phenotype, where the defining trait is where the nutrient is ca
 is_a: OMP:0006001 ! nutrient phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T07:54:22Z
+
+[Term]
+id: OMP:0007001
+name: DNA supercoiling, relative phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: siegele
+creation_date: 2013-09-05T16:05:58Z
+
+[Term]
+id: OMP:0007002
+name: decreased positive DNA supercoiling
+is_a: OMP:0007001 ! DNA supercoiling, relative phenotype
+created_by: siegele
+creation_date: 2013-09-05T16:08:29Z
+
+[Term]
+id: OMP:0007003
+name: increased positive DNA supercoiling
+is_a: OMP:0007001 ! DNA supercoiling, relative phenotype
+created_by: siegele
+creation_date: 2013-09-05T16:09:28Z
 
 [Typedef]
 id: is_a
