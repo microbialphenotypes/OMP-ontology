@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:09:2013 16:27
+date: 05:09:2013 17:37
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -34,7 +34,7 @@ creation_date: 2011-03-10T07:02:42Z
 
 [Term]
 id: OMP:0000003
-name: cell arrangement phenotype
+name: cell arrangement phenotype, state phenotype
 def: "A microbial phenotype, where the trait in question is the arrangement of cells in relation to one another." [OMP:MCC]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
@@ -591,14 +591,14 @@ creation_date: 2011-02-02T03:15:16Z
 id: OMP:0000072
 name: filamentous
 def: "A cell arrangement where cells are joined end-to-end in linear chains." [OMP:MCC]
-is_a: OMP:0000003 ! cell arrangement phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:31:35Z
 
 [Term]
 id: OMP:0000073
 name: cell shape, state phenotype
-def: "A cellular morphology phenotype where the trait in question is the shape of the representative taxonomic unit." [OMP:MCC]
+def: "A cellular morphology phenotype where the trait in question is the shape of cells of the representative taxonomic unit." [OMP:MCC]
 is_a: OMP:0000071 ! cellular morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:02Z
@@ -698,7 +698,7 @@ creation_date: 2011-02-02T03:47:57Z
 [Term]
 id: OMP:0000085
 name: cell envelope phenotype
-def: "A cellular morphology phenotype where the structure in question is the envelope that surrounds a bacterial cell and includes the cytoplasmic membrane and everything external, encompassing the periplasmic space, cell wall, and outer membrane if present." [OMP:MCC]
+def: "A cellular morphology phenotype where the structure in question is the envelope that surrounds a bacterial cell and includes the cytoplasmic membrane and everything external to the cytoplasmic membrane, encompassing the periplasmic space, cell wall, and outer membrane if present." [OMP:MCC]
 is_a: OMP:0000071 ! cellular morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:49:03Z
@@ -948,7 +948,7 @@ creation_date: 2011-02-02T02:46:17Z
 id: OMP:0000117
 name: diplococcus
 def: "A cell arrangement where pairs of coccus cells arise from a division event in one plane." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:29:12Z
 
@@ -956,7 +956,7 @@ creation_date: 2011-02-18T02:29:12Z
 id: OMP:0000118
 name: streptococcus
 def: "A cell arrangement where chains of coccus cells arise from division events in one plane." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:31:37Z
 
@@ -966,7 +966,7 @@ name: tetrad
 alt_id: OMP:0000156
 def: "A cell arrangement where squares of four coccus cells arise from division in two planes." [OMP:AEZ]
 synonym: "micrococcus arrangement" EXACT []
-is_a: OMP:0000003 ! cell arrangement phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:33:22Z
 
@@ -974,7 +974,7 @@ creation_date: 2011-02-18T02:33:22Z
 id: OMP:0000120
 name: sarcina
 def: "A cell arrangement where cubes of eight coccus cells arise from a division event in three planes." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:34:40Z
 
@@ -982,7 +982,7 @@ creation_date: 2011-02-18T02:34:40Z
 id: OMP:0000121
 name: stapylococcus
 def: "A cell arrangement where irregular clumps of coccus cells arise from division events in random planes." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:39:34Z
 
@@ -990,7 +990,7 @@ creation_date: 2011-02-18T02:39:34Z
 id: OMP:0000122
 name: streptobacillus
 def: "A cell arrangement where bacillis cells are arranged in chains." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:47:10Z
 
@@ -1021,7 +1021,7 @@ creation_date: 2011-02-18T02:52:33Z
 [Term]
 id: OMP:0000126
 name: trichome-forming
-is_a: OMP:0000003 ! cell arrangement phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:55:59Z
 
@@ -1029,7 +1029,7 @@ creation_date: 2011-02-18T02:55:59Z
 id: OMP:0000127
 name: sheathed
 def: "A cell arrangement where chains of cells are enclosed in a hyaline envelope or sheath." [OMP:MCC]
-is_a: OMP:0000003 ! cell arrangement phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:59:18Z
 
@@ -1587,9 +1587,9 @@ creation_date: 2011-03-02T01:43:12Z
 [Term]
 id: OMP:0000203
 name: capsule, state phenotype
-def: "A cell envelope phenotype where the trait in question is the outermost layer of a microbial cell that usually consists of polysaccharide or a polymer of amino acids." [OMP:DAS]
-synonym: "glycocalyx phenotype" RELATED []
-synonym: "slime layer phenotype" RELATED []
+def: "A cell envelope phenotype where the trait in question is the outermost layer of the cell envelope that usually consists of polysaccharide or a polymer of amino acids." [ISBN:9780073402406, OMP:DAS]
+synonym: "glycocalyx" RELATED []
+synonym: "slime layer" RELATED []
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:44:51Z
@@ -1657,7 +1657,7 @@ creation_date: 2011-06-07T12:31:24Z
 [Term]
 id: OMP:0000211
 name: absence of capsule
-def: "The absence of a capsule layer in the representative member of the taxonomic unit in any environment." [OMP:DAS]
+def: "A capsule, state phenotype where cells of the representative taxonomic unit are not observed to produce a capsule in any environmental condition." [OMP:DAS]
 is_a: OMP:0000203 ! capsule, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
