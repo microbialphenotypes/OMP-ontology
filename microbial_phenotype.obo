@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 06:09:2013 17:12
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 06:09:2013 17:25
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3687,23 +3687,6 @@ created_by: wmeza
 creation_date: 2013-09-04T16:24:24Z
 
 [Term]
-id: OMP:0005012
-name: pressure growth range phenotype
-def: "A growth phenotype dealing with the pressure requirements for growth." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
-created_by: wmeza
-creation_date: 2013-09-06T15:43:16Z
-
-[Term]
-id: OMP:0005013
-name: piezophilic growth, state phenotype
-def: "A pressure growth phenotype where growth is more rapid at high hydrostatic pressure." [ISBN:9780073402406, OMP:WAM]
-synonym: "barophilic growth" RELATED [ISBN:9780073402406]
-is_a: OMP:0005012 ! pressure growth range phenotype
-created_by: wmeza
-creation_date: 2013-09-06T16:46:16Z
-
-[Term]
 id: OMP:0006001
 name: nutrient phenotype
 def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and energy release and therefore are required for microbial growth." [ISBN:9780073402406]
@@ -3726,6 +3709,38 @@ def: "A Nutrient Phenotype, where the defining trait is where the nutrient is ca
 is_a: OMP:0006001 ! nutrient phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T07:54:22Z
+
+[Term]
+id: OMP:0006004
+name: carbon utilization sources
+def: "A nutrient utilization phenotype where the nutrient incorporated is primarily used for carbon." [OMP:JCH]
+is_a: OMP:0006003 ! nutrient utilization
+created_by: jonathanherrera
+creation_date: 2013-09-06T16:52:37Z
+
+[Term]
+id: OMP:0006005
+name: nitrogen utilization sources
+def: "A nutrient utilization phenotype where the nutrient incorporated is primarily used for nitrogen." [OMP:JCH]
+is_a: OMP:0006003 ! nutrient utilization
+created_by: jonathanherrera
+creation_date: 2013-09-06T16:52:37Z
+
+[Term]
+id: OMP:0006006
+name: carbon requirement source
+def: "A nutrient requirement phenotype where the nutrient incorporated into the cell is used primarily for its carbon." [OMP:JCH]
+is_a: OMP:0006002 ! nutrient requirement
+created_by: jonathanherrera
+creation_date: 2013-09-06T17:16:32Z
+
+[Term]
+id: OMP:0006007
+name: nitrogen requirement source	
+def: "A Nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:JCH]
+is_a: OMP:0006002 ! nutrient requirement
+created_by: jonathanherrera
+creation_date: 2013-09-06T17:19:20Z
 
 [Term]
 id: OMP:0007001
