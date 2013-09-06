@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:09:2013 13:57
+date: 06:09:2013 17:12
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -3685,6 +3685,23 @@ def: "A pH growth phenotype where the optimum growth between pH 8.0 to 11.5." [I
 is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:24:24Z
+
+[Term]
+id: OMP:0005012
+name: pressure growth range phenotype
+def: "A growth phenotype dealing with the pressure requirements for growth." [OMP:WAM]
+is_a: OMP:0000174 ! growth phenotype
+created_by: wmeza
+creation_date: 2013-09-06T15:43:16Z
+
+[Term]
+id: OMP:0005013
+name: piezophilic growth, state phenotype
+def: "A pressure growth phenotype where growth is more rapid at high hydrostatic pressure." [ISBN:9780073402406, OMP:WAM]
+synonym: "barophilic growth" RELATED [ISBN:9780073402406]
+is_a: OMP:0005012 ! pressure growth range phenotype
+created_by: wmeza
+creation_date: 2013-09-06T16:46:16Z
 
 [Term]
 id: OMP:0006001
