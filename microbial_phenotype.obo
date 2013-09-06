@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 05:09:2013 17:37
-saved-by: siegele
+date: 06:09:2013 13:57
+saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -329,7 +329,7 @@ creation_date: 2011-06-07T11:25:05Z
 id: OMP:0000039
 name: oxygen requirement for growth phenotype
 def: "A growth type phenotype dealing with oxygen requirements and ranges for growth." [OMP:WAM]
-is_a: OMP:0005001 ! growth type phenotype
+is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:36:04Z
 
@@ -3602,7 +3602,7 @@ creation_date: 2013-08-22T05:57:56Z
 id: OMP:0005001
 name: growth type phenotype
 def: "A growth phenotype dealing with the various traits and requirements for microbial growth." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
+is_obsolete: true
 created_by: wmeza
 creation_date: 2013-09-02T01:07:53Z
 
@@ -3610,7 +3610,7 @@ creation_date: 2013-09-02T01:07:53Z
 id: OMP:0005002
 name: temperature growth range phenotype
 def: "A growth type phenotype where the trait in question being the temperature range and requirements needed for microbial growth." [OMP:WAM]
-is_a: OMP:0005001 ! growth type phenotype
+is_a: OMP:0000174 ! growth phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:06:05Z
 
@@ -3658,7 +3658,7 @@ creation_date: 2013-09-04T13:40:27Z
 id: OMP:0005008
 name: pH growth range phenotype
 def: "A growth type phenotype dealing with the pH requirements and range for growth." [OMP:WAM]
-is_a: OMP:0005001 ! growth type phenotype
+is_a: OMP:0000174 ! growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:57:28Z
 
