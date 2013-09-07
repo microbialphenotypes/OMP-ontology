@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:09:2013 22:04
+date: 06:09:2013 22:23
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -630,7 +630,7 @@ creation_date: 2011-02-02T03:18:47Z
 [Term]
 id: OMP:0000077
 name: vibrio, state phenotype
-def: "A cell shape phenotype where a rod-shaped cell is curved to form a commalike shape or incomplete spiral." [ISBN:9780073402406, OMP:AEZ]
+def: "A cell shape phenotype where a rod-shaped cell is curved to form a comma like shape or incomplete spiral." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000086 ! spiral cell shape, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:19:31Z
