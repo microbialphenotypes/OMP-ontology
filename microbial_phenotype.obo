@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:09:2013 21:53
+date: 06:09:2013 22:04
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -1351,7 +1351,7 @@ creation_date: 2011-02-07T03:47:20Z
 [Term]
 id: OMP:0000171
 name: microaerophile, state phenotype
-def: "An oxygen requirement growth phenotype where growth requires oxygen levels between 2 to 10 percent for growth and damaged by atmospheric oxygen levels (20 percent)." [ISB:9780073402406, ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement growth phenotype where growth requires oxygen levels between 2 to 10 percent for growth and damaged by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
