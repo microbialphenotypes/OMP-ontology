@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:09:2013 17:25
+date: 06:09:2013 21:53
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -16,7 +16,6 @@ creation_date: 2011-03-10T04:01:50Z
 id: OMP:0000001
 name: motility phenotype
 def: "A locomotion phenotype, where the trait in question is the self-propelled movement of a cell or group of cells from one location to another." [OMP:MCC]
-synonym: "locomotion phenotype" EXACT []
 xref: PATO:0001488
 is_a: OMP:0000312 ! locomotion phenotype
 creation_date: 2011-03-10T06:55:06Z
@@ -250,7 +249,6 @@ creation_date: 2011-04-26T03:29:28Z
 id: OMP:0000029
 name: presence of flagellum, state phenotype
 def: "A flagellum phenotype where cells of the representative taxonomic unit possess a flagellum or flagella in at least some environments." [OMP:MCC]
-xref: XX:<new xref>
 is_a: OMP:0000027 ! flagellum, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:34Z
@@ -1382,7 +1380,7 @@ creation_date: 2011-02-02T03:13:59Z
 [Term]
 id: OMP:0000175
 name: nanotube phenotype
-def: "A cell projection phenotype where the structure in question" [OMP:DAS]
+def: "A cell projection phenotype where the structure in question is a tube." [OMP:DAS]
 is_a: OMP:0000083 ! cell projection phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T02:59:54Z
@@ -1634,7 +1632,6 @@ creation_date: 2011-03-02T02:16:33Z
 [Term]
 id: OMP:0000208
 name: absence of hemolysis
-synonym: "absence of hemolysis" EXACT []
 is_a: OMP:0000099 ! hemolysis phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:18:33Z
@@ -2171,7 +2168,7 @@ creation_date: 2011-07-21T02:35:22Z
 [Term]
 id: OMP:0000280
 name: elongated cell length
-comment: mukB mutants appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
+comment: The mukB mutant appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
 is_a: OMP:0000073 ! cell shape, state phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:37:15Z
@@ -2425,7 +2422,6 @@ id: OMP:0000313
 name: motility, state phenotype
 def: "A motility phenotype that reflects the capability of an operational taxonomic unit." [OMP:MCC]
 is_a: OMP:0000001 ! motility phenotype
-intersection_of: OMP:0000001 ! motility phenotype
 created_by: mchibucos
 creation_date: 2012-04-05T10:40:04Z
 
@@ -2434,8 +2430,6 @@ id: OMP:0000314
 name: motility, relative phenotype
 def: "A motility phenotype that is different relative to a reference phenotype." [OMP:MCC]
 is_a: OMP:0000001 ! motility phenotype
-intersection_of: OMP:0000001 ! motility phenotype
-intersection_of: OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2012-04-05T10:40:27Z
 
