@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 06:09:2013 22:23
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 09:09:2013 12:13
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3681,6 +3681,30 @@ created_by: wmeza
 creation_date: 2013-09-04T16:24:24Z
 
 [Term]
+id: OMP:0005012
+name: pressure growth range phenotype
+def: "A growth phenotype dealing with the pressure requirements for growth." [OMP:WAM]
+is_a: OMP:0000174 ! growth phenotype
+created_by: wmeza
+creation_date: 2013-09-09T11:42:28Z
+
+[Term]
+id: OMP:0005013
+name: solute and water activity phenotype
+is_a: OMP:0000174 ! growth phenotype
+created_by: wmeza
+creation_date: 2013-09-09T11:43:45Z
+
+[Term]
+id: OMP:0005014
+name: piezophilic growth, state phenotype
+def: "A pressure phenotype where growth is more rapid at high hydrostatic pressure." [ISBN:9780073402406, OMP:WAM]
+synonym: "barophilic growth" RELATED [ISBN:9780073402406]
+is_a: OMP:0005012 ! pressure growth range phenotype
+created_by: wmeza
+creation_date: 2013-09-09T11:49:53Z
+
+[Term]
 id: OMP:0006001
 name: nutrient phenotype
 def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and energy release and therefore are required for microbial growth." [ISBN:9780073402406]
@@ -3730,7 +3754,7 @@ creation_date: 2013-09-06T17:16:32Z
 
 [Term]
 id: OMP:0006007
-name: nitrogen requirement source	
+name: nitrogen requirement source
 def: "A Nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:JCH]
 is_a: OMP:0006002 ! nutrient requirement
 created_by: jonathanherrera
