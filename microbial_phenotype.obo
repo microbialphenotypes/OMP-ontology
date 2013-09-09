@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 09:09:2013 12:13
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 09:09:2013 12:39
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3731,7 +3731,7 @@ creation_date: 2013-09-03T07:54:22Z
 [Term]
 id: OMP:0006004
 name: carbon utilization sources
-def: "A nutrient utilization phenotype where the nutrient incorporated is primarily used for carbon." [OMP:JCH]
+def: "A nutrient utilization phenotype where the nutrient incorporated is primarily used for carbon." [GO:0015976, OMP:JCH]
 is_a: OMP:0006003 ! nutrient utilization
 created_by: jonathanherrera
 creation_date: 2013-09-06T16:52:37Z
