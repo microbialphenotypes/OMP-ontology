@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 09:09:2013 19:30
+date: 10:09:2013 18:56
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -3747,7 +3747,7 @@ creation_date: 2013-09-03T07:54:22Z
 
 [Term]
 id: OMP:0006004
-name: carbon utilization sources
+name: carbon utilization source
 def: "A nutrient utilization phenotype where the nutrient incorporated is primarily used for carbon." [GO:0015976, OMP:JCH]
 is_a: OMP:0006003 ! nutrient utilization, relative phenotype
 created_by: jonathanherrera
@@ -3755,7 +3755,7 @@ creation_date: 2013-09-06T16:52:37Z
 
 [Term]
 id: OMP:0006005
-name: nitrogen utilization sources
+name: nitrogen source utilization
 def: "A nutrient utilization phenotype where the nutrient incorporated is primarily used for nitrogen." [GO:0019740, OMP:JCH]
 is_a: OMP:0006003 ! nutrient utilization, relative phenotype
 created_by: jonathanherrera
@@ -3763,7 +3763,7 @@ creation_date: 2013-09-06T16:52:37Z
 
 [Term]
 id: OMP:0006006
-name: carbon requirement source, relative phenotype
+name: carbon requirement source
 def: "A nutrient requirement phenotype where the nutrient incorporated into the cell is used primarily for its carbon." [OMP:JCH]
 is_a: OMP:0006002 ! nutrient requirement, relative phenotype
 created_by: jonathanherrera
@@ -3771,7 +3771,7 @@ creation_date: 2013-09-06T17:16:32Z
 
 [Term]
 id: OMP:0006007
-name: nitrogen requirement source, relative phenotype
+name: nitrogen requirement source
 def: "A Nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:JCH]
 is_a: OMP:0006002 ! nutrient requirement, relative phenotype
 created_by: jonathanherrera
@@ -3787,14 +3787,14 @@ creation_date: 2013-09-09T18:09:37Z
 
 [Term]
 id: OMP:0006009
-name: increase nutrient requirement, relative phenotype
+name: increase nutrient requirement
 is_a: OMP:0006002 ! nutrient requirement, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-09T18:20:42Z
 
 [Term]
 id: OMP:0006010
-name: decrease nutrient requirement, relative phenotype
+name: decrease nutrient requirement
 is_a: OMP:0006002 ! nutrient requirement, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-09T18:21:18Z
@@ -3808,31 +3808,150 @@ creation_date: 2013-09-09T19:18:50Z
 
 [Term]
 id: OMP:0006012
-name: increase nutrient requirement, state phenotype
+name: carbon source requirement
 is_a: OMP:0006011 ! nutrient requirement, state phenotype
 created_by: jonathanherrera
-creation_date: 2013-09-09T19:23:58Z
+creation_date: 2013-09-10T18:32:37Z
 
 [Term]
 id: OMP:0006013
-name: decrease nutrient requirement, state phenotype
+name: nitrogen source requirement
 is_a: OMP:0006011 ! nutrient requirement, state phenotype
 created_by: jonathanherrera
-creation_date: 2013-09-09T19:23:58Z
+creation_date: 2013-09-10T18:32:37Z
 
 [Term]
 id: OMP:0006014
-name: carbon requirement source, state phenotype
-is_a: OMP:0006011 ! nutrient requirement, state phenotype
+name: presence of carbon course requirement
+is_a: OMP:0006012 ! carbon source requirement
 created_by: jonathanherrera
-creation_date: 2013-09-09T19:23:58Z
+creation_date: 2013-09-10T18:32:44Z
 
 [Term]
 id: OMP:0006015
-name: nitrogen requirement source, state phenotype
+name: presence of carbon source requirement 
+is_a: OMP:0006013 ! nitrogen source requirement
+created_by: jonathanherrera
+creation_date: 2013-09-10T18:33:22Z
+
+[Term]
+id: OMP:0006016
+name: increase nutrient utilization
+is_a: OMP:0006003 ! nutrient utilization, relative phenotype
+created_by: jonathanherrera
+creation_date: 2013-09-10T13:43:42Z
+
+[Term]
+id: OMP:0006017
+name: decrease nutrient utilization
+is_a: OMP:0006003 ! nutrient utilization, relative phenotype
+created_by: jonathanherrera
+creation_date: 2013-09-10T13:43:42Z
+
+[Term]
+id: OMP:0006018
+name: increase carbon source utilization
+is_a: OMP:0006004 ! carbon utilization source
+created_by: jonathanherrera
+creation_date: 2013-09-10T13:49:43Z
+
+[Term]
+id: OMP:0006019
+name: decrease carbon source utilization
+is_a: OMP:0006004 ! carbon utilization source
+created_by: jonathanherrera
+creation_date: 2013-09-10T13:49:43Z
+
+[Term]
+id: OMP:0006020
+name: increase nitrogen source utilization
+is_a: OMP:0006005 ! nitrogen source utilization
+created_by: jonathanherrera
+creation_date: 2013-09-10T14:01:22Z
+
+[Term]
+id: OMP:0006021
+name: decrease nitrogen soruce utilization
+is_a: OMP:0006005 ! nitrogen source utilization
+created_by: jonathanherrera
+creation_date: 2013-09-10T14:01:22Z
+
+[Term]
+id: OMP:0006022
+name: nutrient utilization, state phenotype
+is_a: OMP:0006001 ! nutrient phenotype
+created_by: jonathanherrera
+creation_date: 2013-09-10T14:40:06Z
+
+[Term]
+id: OMP:0006023
+name: carbon source utilization
+is_a: OMP:0006022 ! nutrient utilization, state phenotype
+created_by: jonathanherrera
+creation_date: 2013-09-10T17:51:21Z
+
+[Term]
+id: OMP:0006024
+name: presence of carbon source utilization
+is_a: OMP:0006023 ! carbon source utilization
+created_by: jonathanherrera
+creation_date: 2013-09-10T18:39:02Z
+
+[Term]
+id: OMP:0006025
+name: presence of nutrient utilization
+is_a: OMP:0006022 ! nutrient utilization, state phenotype
+created_by: jonathanherrera
+creation_date: 2013-09-10T17:51:21Z
+
+[Term]
+id: OMP:0006026
+name: nitrogen utilization source
+is_a: OMP:0006022 ! nutrient utilization, state phenotype
+created_by: jonathanherrera
+creation_date: 2013-09-10T17:51:21Z
+
+[Term]
+id: OMP:0006030
+name: presence of nitrogen source utilization
+is_a: OMP:0006026 ! nitrogen utilization source
+created_by: jonathanherrera
+creation_date: 2013-09-10T17:54:07Z
+
+[Term]
+id: OMP:0006031
+name: presence of nutrient requirement source
 is_a: OMP:0006011 ! nutrient requirement, state phenotype
 created_by: jonathanherrera
-creation_date: 2013-09-09T19:23:58Z
+creation_date: 2013-09-10T18:33:55Z
+
+[Term]
+id: OMP:0006032
+name: increase carbon source requirement 
+is_a: OMP:0006006 ! carbon requirement source
+created_by: jonathanherrera
+creation_date: 2013-09-10T18:35:51Z
+
+[Term]
+id: OMP:0006033
+name: decrease carbon source requirement
+is_a: OMP:0006006 ! carbon requirement source
+created_by: jonathanherrera
+creation_date: 2013-09-10T18:36:15Z
+
+[Term]
+id: OMP:0006034
+name: increase nitrogen source requirement
+is_a: OMP:0006007 ! nitrogen requirement source
+created_by: jonathanherrera
+creation_date: 2013-09-10T18:36:42Z
+
+[Term]
+id: OMP:0006035
+name: decrease nitrogen source requirement
+is_a: OMP:0006007 ! nitrogen requirement source
+created_by: jonathanherrera
+creation_date: 2013-09-10T18:37:31Z
 
 [Term]
 id: OMP:0007001
