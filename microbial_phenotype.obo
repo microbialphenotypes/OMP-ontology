@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 11:09:2013 17:26
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 11:09:2013 20:19
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1351,7 +1351,7 @@ creation_date: 2011-02-07T03:47:20Z
 [Term]
 id: OMP:0000171
 name: microaerophile, state phenotype
-def: "An oxygen requirement growth phenotype where growth requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement growth phenotype where growth requires oxygen levels between 2 to 10 percent for growth and damaged by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
@@ -1373,7 +1373,6 @@ creation_date: 2011-02-02T03:13:32Z
 [Term]
 id: OMP:0000174
 name: growth phenotype
-def: "A microbial phenotype dealing with the environmental factors and requirements for microbial growth." [OMP:WAM]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:59Z
@@ -2087,7 +2086,7 @@ creation_date: 2011-07-21T02:05:51Z
 id: OMP:0000270
 name: absence of growth
 synonym: "no growth" EXACT []
-is_obsolete: true
+is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:09:22Z
 
@@ -3604,7 +3603,7 @@ creation_date: 2013-09-02T01:07:53Z
 [Term]
 id: OMP:0005002
 name: temperature growth range phenotype
-def: "A growth phenotype where the trait in question is the temperature requirements and range needed for microbial growth." [OMP:WAM]
+def: "A growth phenotype where the trait in question being the temperature range and requirements needed for microbial growth." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:06:05Z
@@ -3612,7 +3611,7 @@ creation_date: 2013-09-03T01:06:05Z
 [Term]
 id: OMP:0005003
 name: hyperthermophilic growth, state phenotype
-def: "A temperature growth range phenotype where optimal growth occurs between 85 C to about 113 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where optimal growth is between 85 C to about 113 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:29:51Z
@@ -3620,7 +3619,7 @@ creation_date: 2013-09-03T01:29:51Z
 [Term]
 id: OMP:0005004
 name: thermophilic growth, state phenotype
-def: "A temperature growth range where microbial growth occurs at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range where microbial growth occurs at 55 C or higher with optimal growth between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:36:26Z
@@ -3628,7 +3627,7 @@ creation_date: 2013-09-03T01:36:26Z
 [Term]
 id: OMP:0005005
 name: mesophilic growth, state phenotype
-def: "A temperature growth range phenotype where optimal growth occurs between 20 C to 45 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where optimal growth is between 20 C to 45 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:24:06Z
@@ -3636,7 +3635,7 @@ creation_date: 2013-09-04T13:24:06Z
 [Term]
 id: OMP:0005006
 name: psychrotrophic growth, state phenotype
-def: "A temperature growth range phenotype where growth occurs from 0 to 7 C with optimum growth at 20 to 30 C. The maximum range of growth is around 35 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where growth occurring from 0 to 7 C with optimum growth at 20 to 30 C. The maximum range of growth is around 35 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:38:56Z
@@ -3644,7 +3643,7 @@ creation_date: 2013-09-04T13:38:56Z
 [Term]
 id: OMP:0005007
 name: psychrophilic growth, state phenotype
-def: "A temperature growth range phenotype where growth occurs at 0 C and optimal growth occurs at temperatures of 15 C or lower." [iSBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where growth occurs at 0 C and has an optimum growth temperature of 15 C or lower." [iSBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:40:27Z
@@ -3660,24 +3659,24 @@ creation_date: 2013-09-04T13:57:28Z
 [Term]
 id: OMP:0005009
 name: acidophilic growth, state phenotype
-def: "A pH growth phenotype where optimum growth occurs between pH 0 to 5.5." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0007006 ! pH growth range, state phenotype
+def: "A pH growth phenotype where optimum growth is between pH 0 to 5.5." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:18:28Z
 
 [Term]
 id: OMP:0005010
 name: neutrophilic growth, state phenotype
-def: "A pH growth phenotype where optimum growth occurs between pH 5.5 to 8.0." [ISBN:780073402406, OMP:WAM]
-is_a: OMP:0007006 ! pH growth range, state phenotype
+def: "A pH growth phenotype where optimum growth is between pH 5.5 to 8.0." [ISBN:780073402406, OMP:WAM]
+is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:21:50Z
 
 [Term]
 id: OMP:0005011
 name: alkaliphilic growth, state phenotype
-def: "A pH growth phenotype where optimum growth occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0007006 ! pH growth range, state phenotype
+def: "A pH growth phenotype where the optimum growth between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:24:24Z
 
@@ -3733,7 +3732,7 @@ creation_date: 2013-09-03T05:28:25Z
 [Term]
 id: OMP:0006002
 name: nutrient requirement, relative phenotype
-def: "A Nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:DS]
+def: "A nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules and the change in that trait due to environment and mutagenesis." [OMP:DS]
 is_a: OMP:0006001 ! nutrient phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T05:30:35Z
@@ -3741,7 +3740,7 @@ creation_date: 2013-09-03T05:30:35Z
 [Term]
 id: OMP:0006003
 name: nutrient utilization, relative phenotype
-def: "A Nutrient Phenotype, where the defining trait is where the nutrient is catabolized further or used as is, such as an amino acid that enters the AA pool without further modification." [OMP:DS]
+def: "A nutrient state phenotype, where the defining trait is where the nutrient is catabolized further or used as is and the change in that trait due to the environment or mutagenesis." [OMP:DS]
 is_a: OMP:0006001 ! nutrient phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T07:54:22Z
@@ -3749,7 +3748,7 @@ creation_date: 2013-09-03T07:54:22Z
 [Term]
 id: OMP:0006004
 name: carbon utilization source
-def: "A nutrient utilization phenotype where the nutrient incorporated is primarily used for carbon." [GO:0015976, OMP:JCH]
+def: "A nutrient utilization relative phenotype, where the nutrient incorporated is primarily used for carbon." [GO:0015976, OMP:JCH]
 is_a: OMP:0006003 ! nutrient utilization, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-06T16:52:37Z
@@ -3765,7 +3764,7 @@ creation_date: 2013-09-06T16:52:37Z
 [Term]
 id: OMP:0006006
 name: carbon requirement source
-def: "A nutrient requirement phenotype where the nutrient incorporated into the cell is used primarily for its carbon." [OMP:JCH]
+def: "A nutrient requirement relative phenotype where the nutrient incorporated into the cell is used primarily for its carbon." [OMP:JCH]
 is_a: OMP:0006002 ! nutrient requirement, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-06T17:16:32Z
@@ -3773,7 +3772,7 @@ creation_date: 2013-09-06T17:16:32Z
 [Term]
 id: OMP:0006007
 name: nitrogen requirement source
-def: "A Nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:JCH]
+def: "A nutrient relative phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:JCH]
 is_a: OMP:0006002 ! nutrient requirement, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-06T17:19:20Z
@@ -3789,6 +3788,7 @@ creation_date: 2013-09-09T18:09:37Z
 [Term]
 id: OMP:0006009
 name: increase nutrient requirement
+def: "A nutrient requirement relative phenotype, where the defining trait is the increase requirement of any number of nutrients." [OMP:JCH]
 is_a: OMP:0006002 ! nutrient requirement, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-09T18:20:42Z
@@ -3796,6 +3796,7 @@ creation_date: 2013-09-09T18:20:42Z
 [Term]
 id: OMP:0006010
 name: decrease nutrient requirement
+def: "A nutrient requirement relative phenotype, where the defining trait is the decrease requirement of any number of nutrients." [OMP:JCH]
 is_a: OMP:0006002 ! nutrient requirement, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-09T18:21:18Z
@@ -3803,6 +3804,7 @@ creation_date: 2013-09-09T18:21:18Z
 [Term]
 id: OMP:0006011
 name: nutrient requirement, state phenotype
+def: "A nutrient state phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." []
 is_a: OMP:0006001 ! nutrient phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-09T19:18:50Z
@@ -3810,6 +3812,7 @@ creation_date: 2013-09-09T19:18:50Z
 [Term]
 id: OMP:0006012
 name: carbon source requirement
+def: "A nutrient requirement state phenotype, where the defining trait is the requirement for a carbon as a source." []
 is_a: OMP:0006011 ! nutrient requirement, state phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:32:37Z
@@ -3817,6 +3820,7 @@ creation_date: 2013-09-10T18:32:37Z
 [Term]
 id: OMP:0006013
 name: nitrogen source requirement
+def: "A nutrient requirement state phenotype, where the defining trait is the requirement for a nitrogen as a source." []
 is_a: OMP:0006011 ! nutrient requirement, state phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:32:37Z
@@ -3824,13 +3828,15 @@ creation_date: 2013-09-10T18:32:37Z
 [Term]
 id: OMP:0006014
 name: presence of carbon course requirement
+def: "A carbon source requirement phenotype, where there is a presence of carbon requirement." []
 is_a: OMP:0006012 ! carbon source requirement
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:32:44Z
 
 [Term]
 id: OMP:0006015
-name: presence of carbon source requirement
+name: presence of nitrogen source requirement 
+def: "A nitrogen source requirement phenotype, where there is a presence of nitreogen requirement." []
 is_a: OMP:0006013 ! nitrogen source requirement
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:33:22Z
@@ -3880,6 +3886,7 @@ creation_date: 2013-09-10T14:01:22Z
 [Term]
 id: OMP:0006022
 name: nutrient utilization, state phenotype
+def: "A nutrient phenotype, where the defining trait is where the nutrient is catabolized further or used as is, such as an amino acid that enters the AA pool without further modification." []
 is_a: OMP:0006001 ! nutrient phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:40:06Z
@@ -3922,13 +3929,15 @@ creation_date: 2013-09-10T17:54:07Z
 [Term]
 id: OMP:0006031
 name: presence of nutrient requirement source
+def: "A nutrient requirement state phenotype, where the defining trait is the presence of a nutrient requirement in the model strain." []
 is_a: OMP:0006011 ! nutrient requirement, state phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:33:55Z
 
 [Term]
 id: OMP:0006032
-name: increase carbon source requirement
+name: increase carbon source requirement 
+def: "A carbon source requirement phenotype, where the defining trait is the increase requirement of a carbon source." [OMP:JCH]
 is_a: OMP:0006006 ! carbon requirement source
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:35:51Z
@@ -3936,6 +3945,7 @@ creation_date: 2013-09-10T18:35:51Z
 [Term]
 id: OMP:0006033
 name: decrease carbon source requirement
+def: "A carbon source requirement phenotype, where the defining trait is the decrease requirement of a carbon source." [OMP:JCH]
 is_a: OMP:0006006 ! carbon requirement source
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:36:15Z
@@ -3943,6 +3953,7 @@ creation_date: 2013-09-10T18:36:15Z
 [Term]
 id: OMP:0006034
 name: increase nitrogen source requirement
+def: "A nitrogen requirement source phenotype, where the defining trait is the increase requirement of nitrogen." []
 is_a: OMP:0006007 ! nitrogen requirement source
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:36:42Z
@@ -3950,6 +3961,7 @@ creation_date: 2013-09-10T18:36:42Z
 [Term]
 id: OMP:0006035
 name: decrease nitrogen source requirement
+def: "A nitrogen requirement source phenotype, where the defining trait is the decrease in requirement for a nitrogen source." []
 is_a: OMP:0006007 ! nitrogen requirement source
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:37:31Z
@@ -3988,49 +4000,6 @@ name: flagellum, relative phenotype
 is_a: OMP:0000083 ! cell projection phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:21:23Z
-
-[Term]
-id: OMP:0007006
-name: pH growth range, state phenotype
-is_a: OMP:0005008 ! pH growth range phenotype
-created_by: siegele
-creation_date: 2013-09-11T17:08:50Z
-
-[Term]
-id: OMP:0007007
-name: pH growth range, relative phenotype
-is_a: OMP:0005008 ! pH growth range phenotype
-created_by: siegele
-creation_date: 2013-09-11T17:10:14Z
-
-[Term]
-id: OMP:0007008
-name: decreased growth at acidic pH
-def: "A pH growth range, relative phenotype where the organism has reduced ability to grow at some pH that is lower than pH 7." []
-is_a: OMP:0007007 ! pH growth range, relative phenotype
-created_by: siegele
-creation_date: 2013-09-11T17:11:01Z
-
-[Term]
-id: OMP:0007009
-name: Increased growth at acidic pH
-is_a: OMP:0007007 ! pH growth range, relative phenotype
-created_by: siegele
-creation_date: 2013-09-11T17:11:44Z
-
-[Term]
-id: OMP:0007010
-name: decreased growth at alkaline pH
-is_a: OMP:0007007 ! pH growth range, relative phenotype
-created_by: siegele
-creation_date: 2013-09-11T17:14:28Z
-
-[Term]
-id: OMP:0007011
-name: increased growth at alkaline pH
-is_a: OMP:0007007 ! pH growth range, relative phenotype
-created_by: siegele
-creation_date: 2013-09-11T17:14:56Z
 
 [Typedef]
 id: is_a
