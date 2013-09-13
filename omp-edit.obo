@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 12:09:2013 14:49
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 13:09:2013 15:24
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3748,17 +3748,17 @@ creation_date: 2013-09-03T07:54:22Z
 
 [Term]
 id: OMP:0006004
-name: carbon utilization source
+name: carbon source utilization, relative phenotype
 def: "A nutrient utilization phenotype where the nutrient incorporated is primarily used for carbon." [GO:0015976, OMP:JCH]
-is_a: OMP:0006003 ! nutrient utilization, relative phenotype
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-06T16:52:37Z
 
 [Term]
 id: OMP:0006005
-name: nitrogen source utilization
+name: nitrogen source utilization, relative phenotype
 def: "A nutrient utilization phenotype where the nutrient incorporated is primarily used for nitrogen." [GO:0019740, OMP:JCH]
-is_a: OMP:0006003 ! nutrient utilization, relative phenotype
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-06T16:52:37Z
 
@@ -3854,72 +3854,73 @@ creation_date: 2013-09-10T13:43:42Z
 
 [Term]
 id: OMP:0006018
-name: increase carbon source utilization
-is_a: OMP:0006004 ! carbon utilization source
+name: increased carbon source utilization
+is_a: OMP:0006004 ! carbon source utilization, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T13:49:43Z
 
 [Term]
 id: OMP:0006019
-name: decrease carbon source utilization
-is_a: OMP:0006004 ! carbon utilization source
+name: decreased carbon source utilization
+is_a: OMP:0006004 ! carbon source utilization, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T13:49:43Z
 
 [Term]
 id: OMP:0006020
-name: increase nitrogen source utilization
-is_a: OMP:0006005 ! nitrogen source utilization
+name: increased nitrogen source utilization phenotype
+is_a: OMP:0006005 ! nitrogen source utilization, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:01:22Z
 
 [Term]
 id: OMP:0006021
-name: decrease nitrogen soruce utilization
-is_a: OMP:0006005 ! nitrogen source utilization
+name: decreased nitrogen source utilization phenotype
+is_a: OMP:0006005 ! nitrogen source utilization, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:01:22Z
 
 [Term]
 id: OMP:0006022
-name: nutrient utilization, state phenotype
-def: "A Nutrient Phenotype, where the defining trait is where the nutrient is catabolized further or used as is, such as an amino acid that enters the AA pool without further modification." [OMP:JCH]
+name: nutrient utilization phenotype
+def: "A nutrient phenotype, where the defining trait is where the nutrient is catabolized further or used as is, such as an amino acid that enters the amino acid pool without further modification." [OMP:JCH]
 is_a: OMP:0006001 ! nutrient phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:40:06Z
 
 [Term]
 id: OMP:0006023
-name: carbon source utilization
-is_a: OMP:0006022 ! nutrient utilization, state phenotype
+name: carbon source utilization, state phenotype
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006024
-name: presence of carbon source utilization
-is_a: OMP:0006023 ! carbon source utilization
+name: heterotroph phenotype
+def: "A carbon source utilization state phenotype where organic molecules are the sole source of carbon." [ISBN:<new dbxref>, OMP:DAS]
+is_a: OMP:0006023 ! carbon source utilization, state phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:39:02Z
 
 [Term]
 id: OMP:0006025
 name: presence of nutrient utilization
-is_a: OMP:0006022 ! nutrient utilization, state phenotype
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006026
-name: nitrogen utilization source
-is_a: OMP:0006022 ! nutrient utilization, state phenotype
+name: nitrogen source utilization, state phenotype
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006030
-name: presence of nitrogen source utilization
-is_a: OMP:0006026 ! nitrogen utilization source
+name: utilization of dinitrogen (N2) gas as nitrogen source
+is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:54:07Z
 
@@ -4042,6 +4043,28 @@ def: "A pH growth range, relative phenotype where the organism's ability to grow
 is_a: OMP:0007007 ! pH growth range, relative phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:14:56Z
+
+[Term]
+id: OMP:0007012
+name: autotroph phenotype
+def: "A carbon source utilization state phenotype where carbon dioxide (CO2) is used as the sole or major carbon source." [ISBN:, OMP:DAS]
+is_a: OMP:0006023 ! carbon source utilization, state phenotype
+created_by: siegele
+creation_date: 2013-09-13T15:10:16Z
+
+[Term]
+id: OMP:0007013
+name: utilization of inorganic N sources phenotype
+is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
+created_by: siegele
+creation_date: 2013-09-13T15:19:33Z
+
+[Term]
+id: OMP:0007014
+name: utilization of organic N sources phenotype
+is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
+created_by: siegele
+creation_date: 2013-09-13T15:20:24Z
 
 [Typedef]
 id: is_a
