@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:09:2013 16:08
+date: 16:09:2013 17:31
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -325,7 +325,7 @@ creation_date: 2011-06-07T11:25:05Z
 
 [Term]
 id: OMP:0000039
-name: oxygen requirement for growth phenotype
+name: oxygen requirement for growth, state phenotype
 def: "A growth phenotype dealing with oxygen requirements and ranges for growth." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
@@ -715,9 +715,9 @@ creation_date: 2011-02-02T03:19:47Z
 
 [Term]
 id: OMP:0000087
-name: facultative anaerobe,  state phenotype
-def: "An oxygen requirement growth phenotype where growth does not require oxygen but does better in its presence." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+name: facultative anaerobe phenotype
+def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strain does not require oxygen but the organism grows better in its presence." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:42:26Z
 
@@ -855,9 +855,9 @@ creation_date: 2011-02-02T02:42:12Z
 
 [Term]
 id: OMP:0000105
-name: aerotolerant anaerobe, state phenotype
-def: "A oxygen requirement growth phenotype where growth occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+name: aerotolerant anaerobe phenotype
+def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strains occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:43:38Z
 
@@ -1350,9 +1350,9 @@ creation_date: 2011-02-07T03:47:20Z
 
 [Term]
 id: OMP:0000171
-name: microaerophile, state phenotype
-def: "An oxygen requirement growth phenotype where growth requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+name: microaerophile phenotype
+def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strain requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
 
@@ -1447,17 +1447,17 @@ creation_date: 2011-02-07T03:52:44Z
 
 [Term]
 id: OMP:0000184
-name: obligate anaerobe, state phenotype
-def: "A oxygen requirement growth phenotype where growth does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+name: obligate anaerobe phenotype
+def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strain does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:34Z
 
 [Term]
 id: OMP:0000185
-name: obligate aerobe,  state phenotype
-def: "A oxygen requirement growth phenotype where growth is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+name: obligate aerobe phenotype
+def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strain is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
 
@@ -2115,7 +2115,7 @@ creation_date: 2011-07-21T02:15:11Z
 id: OMP:0000273
 name: auxotrophic phenotype
 def: "A nutrient phenotype where an auxotroph is an organism that cannot synthesize certain organic molecules that are essential for its growth.  The organic molecules that must be obtained from the environment are often referred to as growth factors." [ISBN:9780073375267, OMP:DAS]
-is_a: OMP:0000180 ! metabolic phenotype
+is_a: OMP:0006002 ! growth factor requirement phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:17:25Z
 
@@ -4086,23 +4086,38 @@ creation_date: 2013-09-13T15:20:24Z
 [Term]
 id: OMP:0007015
 name: amino acid requirement, state phenotype
-is_a: OMP:0006002 ! growth factor requirement phenotype
+is_a: OMP:0000273 ! auxotrophic phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:47:41Z
 
 [Term]
 id: OMP:0007016
 name: purine/pyrimidine requirement, state phenotype
-is_a: OMP:0006002 ! growth factor requirement phenotype
+is_a: OMP:0000273 ! auxotrophic phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:48:22Z
 
 [Term]
 id: OMP:0007017
 name: vitamin/enzyme cofactor requirement, state phenotype
-is_a: OMP:0006002 ! growth factor requirement phenotype
+is_a: OMP:0000273 ! auxotrophic phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:49:50Z
+
+[Term]
+id: OMP:0007018
+name: prototrophic phenotype
+is_a: OMP:0006002 ! growth factor requirement phenotype
+created_by: siegele
+creation_date: 2013-09-16T17:29:19Z
+
+[Term]
+id: OMP:0007019
+name: amino acid requirement, relative phenotype
+def: "An auxotrophic phenotype where the parental or reference strain has lost the ability to synthesize one or more amino acids." [OMP:DAS]
+is_a: OMP:0000273 ! auxotrophic phenotype
+created_by: siegele
+creation_date: 2013-09-16T17:30:07Z
 
 [Typedef]
 id: is_a
