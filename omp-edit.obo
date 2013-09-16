@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:09:2013 16:04
+date: 16:09:2013 16:08
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -2014,23 +2014,25 @@ creation_date: 2011-07-21T01:45:01Z
 [Term]
 id: OMP:0000260
 name: nitrogen utilization phenotype
-is_a: OMP:0000180 ! metabolic phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:47:50Z
 
 [Term]
 id: OMP:0000261
-name: sulfur utilization phenotype
+name: sulfur source utilization phenotype, relative phenotype
+def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular sulfur source." []
 synonym: "sulphur utilization phenotype" EXACT []
-is_a: OMP:0000180 ! metabolic phenotype
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:49:44Z
 
 [Term]
 id: OMP:0000262
-name: utilizes sulfur-containing compound
+name: increased sulfur source utilization phenotype
+def: "A sulfur source utilization, relative phenotype where the trait in question is increased ability to utilize a particular sulfur source." [OMP:DAS]
 synonym: "utilizes sulphur-containing compound" EXACT []
-is_a: OMP:0000261 ! sulfur utilization phenotype
+is_a: OMP:0000261 ! sulfur source utilization phenotype, relative phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:51:28Z
 
@@ -2223,9 +2225,9 @@ creation_date: 2011-07-21T03:07:13Z
 
 [Term]
 id: OMP:0000287
-name: loss of utilization of sulfur-containing compound
-synonym: "loss of utilization of sulphur-containing compound" EXACT []
-is_a: OMP:0000261 ! sulfur utilization phenotype
+name: decreased sulfur utilization phenotype
+def: "A sulfur source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular sulfur source." [OMP:DAS]
+is_a: OMP:0000261 ! sulfur source utilization phenotype, relative phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T03:07:30Z
 
