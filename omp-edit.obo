@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:09:2013 13:06
+date: 16:09:2013 16:04
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -1515,7 +1515,7 @@ creation_date: 2011-02-03T11:24:08Z
 [Term]
 id: OMP:0000193
 name: carbon utilization phenotype
-is_a: OMP:0000180 ! metabolic phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-06-06T04:01:13Z
 
@@ -1993,7 +1993,7 @@ creation_date: 2011-07-21T01:35:25Z
 [Term]
 id: OMP:0000257
 name: lactose fermentation
-is_a: OMP:0000193 ! carbon utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:37:41Z
 
@@ -2007,7 +2007,7 @@ creation_date: 2011-07-21T01:38:10Z
 [Term]
 id: OMP:0000259
 name: glucose fermentation
-is_a: OMP:0000193 ! carbon utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:45:01Z
 
@@ -2036,29 +2036,31 @@ creation_date: 2011-07-21T01:51:28Z
 
 [Term]
 id: OMP:0000263
-name: phosphorus utilization phenotype
-is_a: OMP:0000180 ! metabolic phenotype
+name: phosphorus source utilization, relative phenotype
+def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular phosphorus source." [OMP:DAS]
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:55:26Z
 
 [Term]
 id: OMP:0000264
-name: utilizes phosphorus-containing compound
-is_a: OMP:0000263 ! phosphorus utilization phenotype
+name: increased phosphorus source utilization phenotype
+def: "A phosphorus source utilization, relative phenotype where the trait in question is increased ability to utilize a particular phosphorus source." [OMP:DAS]
+is_a: OMP:0000263 ! phosphorus source utilization, relative phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:56:27Z
 
 [Term]
 id: OMP:0000265
 name: utilizes nitrogen-containing compound
-is_a: OMP:0000260 ! nitrogen utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:57:49Z
 
 [Term]
 id: OMP:0000266
 name: utilizes carbon-containing compound
-is_a: OMP:0000193 ! carbon utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:58:08Z
 
@@ -2200,21 +2202,22 @@ creation_date: 2011-07-21T02:43:22Z
 [Term]
 id: OMP:0000284
 name: loss of utilization of carbon-containing compound
-is_a: OMP:0000193 ! carbon utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T03:05:01Z
 
 [Term]
 id: OMP:0000285
 name: loss of utilization of nitrogen-containing compound
-is_a: OMP:0000260 ! nitrogen utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T03:06:32Z
 
 [Term]
 id: OMP:0000286
-name: loss of utilization of phosphorus-containing compound
-is_a: OMP:0000263 ! phosphorus utilization phenotype
+name: decreased phosphorus source utilization phenotype
+def: "A phosphorus source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular phosphorus source." [OMP:DAS]
+is_a: OMP:0000263 ! phosphorus source utilization, relative phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T03:07:13Z
 
