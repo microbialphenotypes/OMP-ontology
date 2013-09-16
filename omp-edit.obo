@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 13:09:2013 18:26
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 16:09:2013 12:50
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3725,7 +3725,7 @@ creation_date: 2013-09-09T13:06:03Z
 [Term]
 id: OMP:0006001
 name: nutrient phenotype
-def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and energy release and therefore are required for microbial growth." [GO:0019740, ISBN:9780073402406]
+def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and/or energy release that supports growth and reproduction." [ISBN:9780073402406]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T05:28:25Z
@@ -3733,7 +3733,7 @@ creation_date: 2013-09-03T05:28:25Z
 [Term]
 id: OMP:0006002
 name: growth factor requirement phenotype
-def: "A nutrient phenotype, where the defining trait is inability for the organism to synthesize an organic molecule required for growth." [OMP:DS]
+def: "A nutrient phenotype, where the defining trait is the inability to synthesize an organic molecule required for growth." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0006001 ! nutrient phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T05:30:35Z
@@ -3766,7 +3766,7 @@ creation_date: 2013-09-06T16:52:37Z
 id: OMP:0006006
 name: carbon requirement source
 def: "A nutrient requirement phenotype where the nutrient incorporated into the cell is used primarily for its carbon." [OMP:JCH]
-is_a: OMP:0006002 ! growth factor requirement phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-06T17:16:32Z
 
@@ -3774,7 +3774,7 @@ creation_date: 2013-09-06T17:16:32Z
 id: OMP:0006007
 name: nitrogen requirement source
 def: "A nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:JCH]
-is_a: OMP:0006002 ! growth factor requirement phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-06T17:19:20Z
 
@@ -3790,7 +3790,7 @@ creation_date: 2013-09-09T18:09:37Z
 id: OMP:0006009
 name: increase nutrient requirement
 def: "A nutrient requirement relative phenotype, where the defining trait is the increase requirement of a carbon containing substance." [OMP:JCH]
-is_a: OMP:0006002 ! growth factor requirement phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-09T18:20:42Z
 
@@ -3798,7 +3798,7 @@ creation_date: 2013-09-09T18:20:42Z
 id: OMP:0006010
 name: decrease nutrient requirement
 def: "A nutrient requirement relative phenotype, where the defining trait is the decrease requirement of a carbon containing substance." [OMP:JCH]
-is_a: OMP:0006002 ! growth factor requirement phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-09T18:21:18Z
 
@@ -3806,35 +3806,35 @@ creation_date: 2013-09-09T18:21:18Z
 id: OMP:0006011
 name: nutrient requirement, state phenotype
 def: "A Nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:JCH]
-is_a: OMP:0006001 ! nutrient phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-09T19:18:50Z
 
 [Term]
 id: OMP:0006012
 name: carbon source requirement
-is_a: OMP:0006011 ! nutrient requirement, state phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:32:37Z
 
 [Term]
 id: OMP:0006013
 name: nitrogen source requirement
-is_a: OMP:0006011 ! nutrient requirement, state phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:32:37Z
 
 [Term]
 id: OMP:0006014
 name: presence of carbon course requirement
-is_a: OMP:0006012 ! carbon source requirement
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:32:44Z
 
 [Term]
 id: OMP:0006015
 name: presence of carbon source requirement
-is_a: OMP:0006013 ! nitrogen source requirement
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:33:22Z
 
@@ -3854,14 +3854,14 @@ creation_date: 2013-09-10T13:43:42Z
 
 [Term]
 id: OMP:0006018
-name: increased carbon source utilization
+name: increased carbon source utilization phenotype
 is_a: OMP:0006004 ! carbon source utilization, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T13:49:43Z
 
 [Term]
 id: OMP:0006019
-name: decreased carbon source utilization
+name: decreased carbon source utilization phenotype
 is_a: OMP:0006004 ! carbon source utilization, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T13:49:43Z
@@ -3927,7 +3927,7 @@ creation_date: 2013-09-10T17:54:07Z
 [Term]
 id: OMP:0006031
 name: presence of nutrient requirement source
-is_a: OMP:0006011 ! nutrient requirement, state phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:33:55Z
 
@@ -3935,7 +3935,7 @@ creation_date: 2013-09-10T18:33:55Z
 id: OMP:0006032
 name: increase carbon source requirement
 def: "A carbon requirement source, where the defining trait is the increase requirement of a carbon containing substance." [OMP:JCH]
-is_a: OMP:0006006 ! carbon requirement source
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:35:51Z
 
@@ -3943,7 +3943,7 @@ creation_date: 2013-09-10T18:35:51Z
 id: OMP:0006033
 name: decrease carbon source requirement
 def: "A carbon requirement source, where the defining trait is the decrease requirement of a carbon containing substance." [OMP:JCH]
-is_a: OMP:0006006 ! carbon requirement source
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:36:15Z
 
@@ -3951,7 +3951,7 @@ creation_date: 2013-09-10T18:36:15Z
 id: OMP:0006034
 name: increase nitrogen source requirement
 def: "A nitrogen requirement source, where the defining trait is the increase in requirement of the nitrogen containing substance." [OMP:JCH]
-is_a: OMP:0006007 ! nitrogen requirement source
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:36:42Z
 
@@ -3959,7 +3959,7 @@ creation_date: 2013-09-10T18:36:42Z
 id: OMP:0006035
 name: decrease nitrogen source requirement
 def: "A nitrogen requirement source, where the defining trait is the decrease in requirement of the nitrogen containing substance." [OMP:JCH]
-is_a: OMP:0006007 ! nitrogen requirement source
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:37:31Z
 
@@ -4065,6 +4065,27 @@ name: utilization of organic N sources phenotype
 is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:20:24Z
+
+[Term]
+id: OMP:0007015
+name: amino acid requirement, state phenotype
+is_a: OMP:0006002 ! growth factor requirement phenotype
+created_by: siegele
+creation_date: 2013-09-16T12:47:41Z
+
+[Term]
+id: OMP:0007016
+name: purine/pyrimidine requirement, state phenotype
+is_a: OMP:0006002 ! growth factor requirement phenotype
+created_by: siegele
+creation_date: 2013-09-16T12:48:22Z
+
+[Term]
+id: OMP:0007017
+name: vitamin/enzyme cofactor requirement, state phenotype
+is_a: OMP:0006002 ! growth factor requirement phenotype
+created_by: siegele
+creation_date: 2013-09-16T12:49:50Z
 
 [Typedef]
 id: is_a
