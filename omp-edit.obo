@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:09:2013 12:58
+date: 16:09:2013 13:06
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -3742,14 +3742,14 @@ creation_date: 2013-09-03T05:30:35Z
 id: OMP:0006003
 name: nutrient utilization, relative phenotype
 def: "A Nutrient Phenotype, where the defining trait is where the nutrient is catabolized further or used as is, and the change that trait due to the environment or mutagenesis." [OMP:DS]
-is_a: OMP:0006001 ! nutrient phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-03T07:54:22Z
 
 [Term]
 id: OMP:0006004
 name: carbon source utilization, relative phenotype
-def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a carbon source." [GO:0015976, OMP:JCH\, DAS]
+def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a carbon source." [GO:0015976, OMP:JCH\,DAS]
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-06T16:52:37Z
@@ -3757,7 +3757,7 @@ creation_date: 2013-09-06T16:52:37Z
 [Term]
 id: OMP:0006005
 name: nitrogen source utilization, relative phenotype
-def: "A nutrient utilization phenotype where the nutrient incorporated is primarily used for nitrogen." [GO:0019740, OMP:JCH]
+def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular nitrogen source." [GO:0019740, OMP:JCH\,DAS]
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-06T16:52:37Z
@@ -3841,14 +3841,14 @@ creation_date: 2013-09-10T18:33:22Z
 [Term]
 id: OMP:0006016
 name: increase nutrient utilization
-is_a: OMP:0006003 ! nutrient utilization, relative phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T13:43:42Z
 
 [Term]
 id: OMP:0006017
 name: decrease nutrient utilization
-is_a: OMP:0006003 ! nutrient utilization, relative phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T13:43:42Z
 
@@ -3871,6 +3871,7 @@ creation_date: 2013-09-10T13:49:43Z
 [Term]
 id: OMP:0006020
 name: increased nitrogen source utilization phenotype
+def: "A nitrogen source utilization, relative phenotype where the trait in question is increased ability to utilize a particular nitrogen source." [OMP:DAS]
 is_a: OMP:0006005 ! nitrogen source utilization, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:01:22Z
@@ -3878,6 +3879,7 @@ creation_date: 2013-09-10T14:01:22Z
 [Term]
 id: OMP:0006021
 name: decreased nitrogen source utilization phenotype
+def: "A nitrogen source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular nitrogen source." [OMP:DAS]
 is_a: OMP:0006005 ! nitrogen source utilization, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:01:22Z
@@ -3909,13 +3911,14 @@ creation_date: 2013-09-10T18:39:02Z
 [Term]
 id: OMP:0006025
 name: presence of nutrient utilization
-is_a: OMP:0006022 ! nutrient utilization phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006026
 name: nitrogen source utilization, state phenotype
+def: "A nutrient utilization phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize a particular nitrogen source." [OMP:DAS]
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
@@ -3923,6 +3926,7 @@ creation_date: 2013-09-10T17:51:21Z
 [Term]
 id: OMP:0006030
 name: utilization of dinitrogen (N2) gas as nitrogen source
+def: "A nitrogen source utilization, state phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize dinitrogen(N2) as a nitrogen source." [OMP:DAS]
 is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:54:07Z
@@ -4058,6 +4062,10 @@ creation_date: 2013-09-13T15:10:16Z
 [Term]
 id: OMP:0007013
 name: utilization of inorganic N sources phenotype
+def: "A nitrogen source utilization, state phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize inorganic compounds as a nitrogen source." [OMP:DAS]
+synonym: "ammonia (NH3) utilization, state phenotype" NARROW []
+synonym: "nitrate utilization, state phenotype " NARROW []
+synonym: "nitrite utilization, state phenotype" NARROW []
 is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:19:33Z
@@ -4065,6 +4073,7 @@ creation_date: 2013-09-13T15:19:33Z
 [Term]
 id: OMP:0007014
 name: utilization of organic N sources phenotype
+def: "A nitrogen source utilization, state phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize N-containing organic molecule as the nitrogen source." [OMP:DAS]
 is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:20:24Z
