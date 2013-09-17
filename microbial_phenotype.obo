@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 12:09:2013 14:49
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 17:09:2013 12:31
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -325,7 +325,7 @@ creation_date: 2011-06-07T11:25:05Z
 
 [Term]
 id: OMP:0000039
-name: oxygen requirement for growth phenotype
+name: oxygen requirement for growth, state phenotype
 def: "A growth phenotype dealing with oxygen requirements and ranges for growth." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
@@ -715,9 +715,9 @@ creation_date: 2011-02-02T03:19:47Z
 
 [Term]
 id: OMP:0000087
-name: facultative anaerobe,  state phenotype
-def: "An oxygen requirement growth phenotype where growth does not require oxygen but does better in its presence." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+name: facultative anaerobe phenotype
+def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strain does not require oxygen but the organism grows better in its presence." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:42:26Z
 
@@ -855,9 +855,9 @@ creation_date: 2011-02-02T02:42:12Z
 
 [Term]
 id: OMP:0000105
-name: aerotolerant anaerobe, state phenotype
-def: "A oxygen requirement growth phenotype where growth occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+name: aerotolerant anaerobe phenotype
+def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strains occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:43:38Z
 
@@ -1350,9 +1350,9 @@ creation_date: 2011-02-07T03:47:20Z
 
 [Term]
 id: OMP:0000171
-name: microaerophile, state phenotype
-def: "An oxygen requirement growth phenotype where growth requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+name: microaerophile phenotype
+def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strain requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
 
@@ -1447,17 +1447,17 @@ creation_date: 2011-02-07T03:52:44Z
 
 [Term]
 id: OMP:0000184
-name: obligate anaerobe, state phenotype
-def: "A oxygen requirement growth phenotype where growth does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+name: obligate anaerobe phenotype
+def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strain does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:34Z
 
 [Term]
 id: OMP:0000185
-name: obligate aerobe,  state phenotype
-def: "A oxygen requirement growth phenotype where growth is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+name: obligate aerobe phenotype
+def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strain is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
 
@@ -1515,7 +1515,7 @@ creation_date: 2011-02-03T11:24:08Z
 [Term]
 id: OMP:0000193
 name: carbon utilization phenotype
-is_a: OMP:0000180 ! metabolic phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-06-06T04:01:13Z
 
@@ -1993,7 +1993,7 @@ creation_date: 2011-07-21T01:35:25Z
 [Term]
 id: OMP:0000257
 name: lactose fermentation
-is_a: OMP:0000193 ! carbon utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:37:41Z
 
@@ -2007,58 +2007,62 @@ creation_date: 2011-07-21T01:38:10Z
 [Term]
 id: OMP:0000259
 name: glucose fermentation
-is_a: OMP:0000193 ! carbon utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:45:01Z
 
 [Term]
 id: OMP:0000260
 name: nitrogen utilization phenotype
-is_a: OMP:0000180 ! metabolic phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:47:50Z
 
 [Term]
 id: OMP:0000261
-name: sulfur utilization phenotype
+name: sulfur source utilization phenotype, relative phenotype
+def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular sulfur source." []
 synonym: "sulphur utilization phenotype" EXACT []
-is_a: OMP:0000180 ! metabolic phenotype
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:49:44Z
 
 [Term]
 id: OMP:0000262
-name: utilizes sulfur-containing compound
+name: increased sulfur source utilization phenotype
+def: "A sulfur source utilization, relative phenotype where the trait in question is increased ability to utilize a particular sulfur source." [OMP:DAS]
 synonym: "utilizes sulphur-containing compound" EXACT []
-is_a: OMP:0000261 ! sulfur utilization phenotype
+is_a: OMP:0000261 ! sulfur source utilization phenotype, relative phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:51:28Z
 
 [Term]
 id: OMP:0000263
-name: phosphorus utilization phenotype
-is_a: OMP:0000180 ! metabolic phenotype
+name: phosphorus source utilization, relative phenotype
+def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular phosphorus source." [OMP:DAS]
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:55:26Z
 
 [Term]
 id: OMP:0000264
-name: utilizes phosphorus-containing compound
-is_a: OMP:0000263 ! phosphorus utilization phenotype
+name: increased phosphorus source utilization phenotype
+def: "A phosphorus source utilization, relative phenotype where the trait in question is increased ability to utilize a particular phosphorus source." [OMP:DAS]
+is_a: OMP:0000263 ! phosphorus source utilization, relative phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:56:27Z
 
 [Term]
 id: OMP:0000265
 name: utilizes nitrogen-containing compound
-is_a: OMP:0000260 ! nitrogen utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:57:49Z
 
 [Term]
 id: OMP:0000266
 name: utilizes carbon-containing compound
-is_a: OMP:0000193 ! carbon utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:58:08Z
 
@@ -2111,7 +2115,7 @@ creation_date: 2011-07-21T02:15:11Z
 id: OMP:0000273
 name: auxotrophic phenotype
 def: "A nutrient phenotype where an auxotroph is an organism that cannot synthesize certain organic molecules that are essential for its growth.  The organic molecules that must be obtained from the environment are often referred to as growth factors." [ISBN:9780073375267, OMP:DAS]
-is_a: OMP:0000180 ! metabolic phenotype
+is_a: OMP:0006002 ! growth factor requirement phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:17:25Z
 
@@ -2200,29 +2204,30 @@ creation_date: 2011-07-21T02:43:22Z
 [Term]
 id: OMP:0000284
 name: loss of utilization of carbon-containing compound
-is_a: OMP:0000193 ! carbon utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T03:05:01Z
 
 [Term]
 id: OMP:0000285
 name: loss of utilization of nitrogen-containing compound
-is_a: OMP:0000260 ! nitrogen utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T03:06:32Z
 
 [Term]
 id: OMP:0000286
-name: loss of utilization of phosphorus-containing compound
-is_a: OMP:0000263 ! phosphorus utilization phenotype
+name: decreased phosphorus source utilization phenotype
+def: "A phosphorus source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular phosphorus source." [OMP:DAS]
+is_a: OMP:0000263 ! phosphorus source utilization, relative phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T03:07:13Z
 
 [Term]
 id: OMP:0000287
-name: loss of utilization of sulfur-containing compound
-synonym: "loss of utilization of sulphur-containing compound" EXACT []
-is_a: OMP:0000261 ! sulfur utilization phenotype
+name: decreased sulfur utilization phenotype
+def: "A sulfur source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular sulfur source." [OMP:DAS]
+is_a: OMP:0000261 ! sulfur source utilization phenotype, relative phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T03:07:30Z
 
@@ -3723,17 +3728,31 @@ created_by: wmeza
 creation_date: 2013-09-09T13:06:03Z
 
 [Term]
+id: OMP:0005017
+name: SOS response phenotype
+is_a: OMP:0000253 ! gene expression phenotype
+created_by: wmeza
+creation_date: 2013-09-17T12:30:29Z
+
+[Term]
+id: OMP:0005018
+name: stress induced mutagenesis phenotype
+is_a: OMP:0000253 ! gene expression phenotype
+created_by: wmeza
+creation_date: 2013-09-17T12:30:50Z
+
+[Term]
 id: OMP:0006001
 name: nutrient phenotype
-def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and energy release and therefore are required for microbial growth." [GO:0019740, ISBN:9780073402406]
+def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and/or energy release that supports growth and reproduction." [ISBN:9780073402406]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T05:28:25Z
 
 [Term]
 id: OMP:0006002
-name: nutrient requirement, relative phenotype
-def: "A Nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules and the change in that ability due to the environment or mutagenesis." [OMP:DS]
+name: growth factor requirement phenotype
+def: "A nutrient phenotype, where the defining trait is the inability to synthesize an organic molecule that is required for growth." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0006001 ! nutrient phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T05:30:35Z
@@ -3742,23 +3761,23 @@ creation_date: 2013-09-03T05:30:35Z
 id: OMP:0006003
 name: nutrient utilization, relative phenotype
 def: "A Nutrient Phenotype, where the defining trait is where the nutrient is catabolized further or used as is, and the change that trait due to the environment or mutagenesis." [OMP:DS]
-is_a: OMP:0006001 ! nutrient phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-03T07:54:22Z
 
 [Term]
 id: OMP:0006004
-name: carbon utilization source
-def: "A nutrient utilization phenotype where the nutrient incorporated is primarily used for carbon." [GO:0015976, OMP:JCH]
-is_a: OMP:0006003 ! nutrient utilization, relative phenotype
+name: carbon source utilization, relative phenotype
+def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a carbon source." [GO:0015976, OMP:JCH\,DAS]
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-06T16:52:37Z
 
 [Term]
 id: OMP:0006005
-name: nitrogen source utilization
-def: "A nutrient utilization phenotype where the nutrient incorporated is primarily used for nitrogen." [GO:0019740, OMP:JCH]
-is_a: OMP:0006003 ! nutrient utilization, relative phenotype
+name: nitrogen source utilization, relative phenotype
+def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular nitrogen source." [GO:0019740, OMP:JCH\,DAS]
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-06T16:52:37Z
 
@@ -3766,7 +3785,7 @@ creation_date: 2013-09-06T16:52:37Z
 id: OMP:0006006
 name: carbon requirement source
 def: "A nutrient requirement phenotype where the nutrient incorporated into the cell is used primarily for its carbon." [OMP:JCH]
-is_a: OMP:0006002 ! nutrient requirement, relative phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-06T17:16:32Z
 
@@ -3774,7 +3793,7 @@ creation_date: 2013-09-06T17:16:32Z
 id: OMP:0006007
 name: nitrogen requirement source
 def: "A nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:JCH]
-is_a: OMP:0006002 ! nutrient requirement, relative phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-06T17:19:20Z
 
@@ -3790,7 +3809,7 @@ creation_date: 2013-09-09T18:09:37Z
 id: OMP:0006009
 name: increase nutrient requirement
 def: "A nutrient requirement relative phenotype, where the defining trait is the increase requirement of a carbon containing substance." [OMP:JCH]
-is_a: OMP:0006002 ! nutrient requirement, relative phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-09T18:20:42Z
 
@@ -3798,7 +3817,7 @@ creation_date: 2013-09-09T18:20:42Z
 id: OMP:0006010
 name: decrease nutrient requirement
 def: "A nutrient requirement relative phenotype, where the defining trait is the decrease requirement of a carbon containing substance." [OMP:JCH]
-is_a: OMP:0006002 ! nutrient requirement, relative phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-09T18:21:18Z
 
@@ -3806,127 +3825,135 @@ creation_date: 2013-09-09T18:21:18Z
 id: OMP:0006011
 name: nutrient requirement, state phenotype
 def: "A Nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:JCH]
-is_a: OMP:0006001 ! nutrient phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-09T19:18:50Z
 
 [Term]
 id: OMP:0006012
 name: carbon source requirement
-is_a: OMP:0006011 ! nutrient requirement, state phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:32:37Z
 
 [Term]
 id: OMP:0006013
 name: nitrogen source requirement
-is_a: OMP:0006011 ! nutrient requirement, state phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:32:37Z
 
 [Term]
 id: OMP:0006014
 name: presence of carbon course requirement
-is_a: OMP:0006012 ! carbon source requirement
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:32:44Z
 
 [Term]
 id: OMP:0006015
 name: presence of carbon source requirement
-is_a: OMP:0006013 ! nitrogen source requirement
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:33:22Z
 
 [Term]
 id: OMP:0006016
 name: increase nutrient utilization
-is_a: OMP:0006003 ! nutrient utilization, relative phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T13:43:42Z
 
 [Term]
 id: OMP:0006017
 name: decrease nutrient utilization
-is_a: OMP:0006003 ! nutrient utilization, relative phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T13:43:42Z
 
 [Term]
 id: OMP:0006018
-name: increase carbon source utilization
-is_a: OMP:0006004 ! carbon utilization source
+name: increased carbon source utilization phenotype
+def: "A carbon source utilization, relative phenotype where the trait in question is increased ability to utilize a particular carbon source." [OMP:DAS]
+is_a: OMP:0006004 ! carbon source utilization, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T13:49:43Z
 
 [Term]
 id: OMP:0006019
-name: decrease carbon source utilization
-is_a: OMP:0006004 ! carbon utilization source
+name: decreased carbon source utilization phenotype
+def: "A carbon source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular carbon source." [OMP:DAS]
+is_a: OMP:0006004 ! carbon source utilization, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T13:49:43Z
 
 [Term]
 id: OMP:0006020
-name: increase nitrogen source utilization
-is_a: OMP:0006005 ! nitrogen source utilization
+name: increased nitrogen source utilization phenotype
+def: "A nitrogen source utilization, relative phenotype where the trait in question is increased ability to utilize a particular nitrogen source." [OMP:DAS]
+is_a: OMP:0006005 ! nitrogen source utilization, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:01:22Z
 
 [Term]
 id: OMP:0006021
-name: decrease nitrogen soruce utilization
-is_a: OMP:0006005 ! nitrogen source utilization
+name: decreased nitrogen source utilization phenotype
+def: "A nitrogen source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular nitrogen source." [OMP:DAS]
+is_a: OMP:0006005 ! nitrogen source utilization, relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:01:22Z
 
 [Term]
 id: OMP:0006022
-name: nutrient utilization, state phenotype
-def: "A Nutrient Phenotype, where the defining trait is where the nutrient is catabolized further or used as is, such as an amino acid that enters the AA pool without further modification." [OMP:JCH]
+name: nutrient utilization phenotype
+def: "A nutrient phenotype, where the defining trait is where the nutrient is catabolized further or used as is, such as an amino acid that enters the amino acid pool without further modification." [OMP:JCH]
 is_a: OMP:0006001 ! nutrient phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:40:06Z
 
 [Term]
 id: OMP:0006023
-name: carbon source utilization
-is_a: OMP:0006022 ! nutrient utilization, state phenotype
+name: carbon source utilization, state phenotype
+def: "A nutrient utilization phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize organic or inorganic sources of carbon." [OMP:DAS]
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006024
-name: presence of carbon source utilization
-is_a: OMP:0006023 ! carbon source utilization
+name: heterotroph phenotype
+def: "A carbon source utilization state phenotype where organic molecules are the sole source of carbon." [ISBN:9780073402406, OMP:DAS]
+is_a: OMP:0006023 ! carbon source utilization, state phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:39:02Z
 
 [Term]
 id: OMP:0006025
 name: presence of nutrient utilization
-is_a: OMP:0006022 ! nutrient utilization, state phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006026
-name: nitrogen utilization source
-is_a: OMP:0006022 ! nutrient utilization, state phenotype
+name: nitrogen source utilization, state phenotype
+def: "A nutrient utilization phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize a particular nitrogen source." [OMP:DAS]
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006030
-name: presence of nitrogen source utilization
-is_a: OMP:0006026 ! nitrogen utilization source
+name: utilization of dinitrogen (N2) gas as nitrogen source
+def: "A nitrogen source utilization, state phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize dinitrogen(N2) as a nitrogen source." [OMP:DAS]
+is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:54:07Z
 
 [Term]
 id: OMP:0006031
 name: presence of nutrient requirement source
-is_a: OMP:0006011 ! nutrient requirement, state phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:33:55Z
 
@@ -3934,7 +3961,7 @@ creation_date: 2013-09-10T18:33:55Z
 id: OMP:0006032
 name: increase carbon source requirement
 def: "A carbon requirement source, where the defining trait is the increase requirement of a carbon containing substance." [OMP:JCH]
-is_a: OMP:0006006 ! carbon requirement source
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:35:51Z
 
@@ -3942,7 +3969,7 @@ creation_date: 2013-09-10T18:35:51Z
 id: OMP:0006033
 name: decrease carbon source requirement
 def: "A carbon requirement source, where the defining trait is the decrease requirement of a carbon containing substance." [OMP:JCH]
-is_a: OMP:0006006 ! carbon requirement source
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:36:15Z
 
@@ -3950,7 +3977,7 @@ creation_date: 2013-09-10T18:36:15Z
 id: OMP:0006034
 name: increase nitrogen source requirement
 def: "A nitrogen requirement source, where the defining trait is the increase in requirement of the nitrogen containing substance." [OMP:JCH]
-is_a: OMP:0006007 ! nitrogen requirement source
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:36:42Z
 
@@ -3958,7 +3985,7 @@ creation_date: 2013-09-10T18:36:42Z
 id: OMP:0006035
 name: decrease nitrogen source requirement
 def: "A nitrogen requirement source, where the defining trait is the decrease in requirement of the nitrogen containing substance." [OMP:JCH]
-is_a: OMP:0006007 ! nitrogen requirement source
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:37:31Z
 
@@ -4042,6 +4069,69 @@ def: "A pH growth range, relative phenotype where the organism's ability to grow
 is_a: OMP:0007007 ! pH growth range, relative phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:14:56Z
+
+[Term]
+id: OMP:0007012
+name: autotroph phenotype
+def: "A carbon source utilization state phenotype where carbon dioxide (CO2) is used as the sole or major carbon source." [ISBN:9780073402406, OMP:DAS]
+is_a: OMP:0006023 ! carbon source utilization, state phenotype
+created_by: siegele
+creation_date: 2013-09-13T15:10:16Z
+
+[Term]
+id: OMP:0007013
+name: utilization of inorganic N sources phenotype
+def: "A nitrogen source utilization, state phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize inorganic compounds as a nitrogen source." [OMP:DAS]
+synonym: "ammonia (NH3) utilization, state phenotype" NARROW []
+synonym: "nitrate utilization, state phenotype " NARROW []
+synonym: "nitrite utilization, state phenotype" NARROW []
+is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
+created_by: siegele
+creation_date: 2013-09-13T15:19:33Z
+
+[Term]
+id: OMP:0007014
+name: utilization of organic N sources phenotype
+def: "A nitrogen source utilization, state phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize N-containing organic molecule as the nitrogen source." [OMP:DAS]
+is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
+created_by: siegele
+creation_date: 2013-09-13T15:20:24Z
+
+[Term]
+id: OMP:0007015
+name: amino acid requirement, state phenotype
+is_a: OMP:0000273 ! auxotrophic phenotype
+created_by: siegele
+creation_date: 2013-09-16T12:47:41Z
+
+[Term]
+id: OMP:0007016
+name: purine/pyrimidine requirement, state phenotype
+is_a: OMP:0000273 ! auxotrophic phenotype
+created_by: siegele
+creation_date: 2013-09-16T12:48:22Z
+
+[Term]
+id: OMP:0007017
+name: vitamin/enzyme cofactor requirement, state phenotype
+is_a: OMP:0000273 ! auxotrophic phenotype
+created_by: siegele
+creation_date: 2013-09-16T12:49:50Z
+
+[Term]
+id: OMP:0007018
+name: prototrophic phenotype
+is_a: OMP:0006002 ! growth factor requirement phenotype
+created_by: siegele
+creation_date: 2013-09-16T17:29:19Z
+
+[Term]
+id: OMP:0007019
+name: amino acid requirement, relative phenotype
+def: "An auxotrophic phenotype where the parental or reference strain has lost the ability to synthesize one or more amino acids." [OMP:DAS]
+is_a: OMP:0000273 ! auxotrophic phenotype
+created_by: siegele
+creation_date: 2013-09-16T17:30:07Z
 
 [Typedef]
 id: is_a
