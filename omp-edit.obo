@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:09:2013 16:38
+date: 17:09:2013 16:48
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -486,8 +486,8 @@ creation_date: 2011-04-26T04:44:17Z
 [Term]
 id: OMP:0000060
 name: presence of quorum sensing
-def: "A quorum sensing phenotype where an organism possesses the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
-is_a: OMP:0000069 ! quorum sensing phenotype
+def: "A quorum sensing state phenotype where an organism possesses the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
+is_a: OMP:0000069 ! quorum sensing, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T05:02:51Z
 
@@ -514,8 +514,8 @@ creation_date: 2011-04-26T05:03:12Z
 [Term]
 id: OMP:0000063
 name: absence of quorum sensing
-def: "A quorum sensing phenotype where an organism does not possess the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
-is_a: OMP:0000069 ! quorum sensing phenotype
+def: "A quorum sensing state phenotype where the operational taxonomic unit or reference strain does not possess the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
+is_a: OMP:0000069 ! quorum sensing, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T05:06:00Z
 
@@ -523,7 +523,7 @@ creation_date: 2011-04-26T05:06:00Z
 id: OMP:0000064
 name: abolished quorum sensing
 def: "A quorum sensing phenotype where an organism completely loses its ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
-is_a: OMP:0000069 ! quorum sensing phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-04-26T05:06:11Z
 
@@ -563,8 +563,8 @@ creation_date: 2011-02-02T03:28:59Z
 
 [Term]
 id: OMP:0000069
-name: quorum sensing phenotype
-def: "A microbial phenotype, where the trait in question is the ability of an organism to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:MCC]
+name: quorum sensing, state phenotype
+def: "A microbial communication phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:MCC\,DAS]
 is_a: OMP:0000101 ! microbial communication phenotype
 created_by: adrienne
 creation_date: 2011-02-07T03:47:50Z
@@ -1570,8 +1570,8 @@ creation_date: 2011-06-07T12:19:32Z
 
 [Term]
 id: OMP:0000201
-name: nanotube mediated interaction
-synonym: "nanotubule production" EXACT []
+name: nanotube mediated communication
+synonym: "nanotubule mediated communication" EXACT []
 is_a: OMP:0000101 ! microbial communication phenotype
 created_by: Adrienne
 creation_date: 2011-03-02T01:41:52Z
@@ -4167,6 +4167,30 @@ name: decreased vitamin/enzyme cofactor requirement phenotype
 is_a: OMP:0007020 ! auxotrophic phenotype, relative phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:33:34Z
+
+[Term]
+id: OMP:0007026
+name: quorum sensing, relative phenotype
+def: "A microbial communication phenotype where the trait in question is a change in the ability of an organism to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:DAS]
+is_a: OMP:0000101 ! microbial communication phenotype
+created_by: siegele
+creation_date: 2013-09-17T16:43:59Z
+
+[Term]
+id: OMP:0007027
+name: increased quorum sensing
+def: "A quorum sensing relative phenotype where an organism has increased ability to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:DAS]
+is_a: OMP:0007026 ! quorum sensing, relative phenotype
+created_by: siegele
+creation_date: 2013-09-17T16:45:02Z
+
+[Term]
+id: OMP:0007028
+name: decreased quorum sensing
+def: "A quorum sensing relative phenotype where an organism has decreased ability to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:DAS]
+is_a: OMP:0007026 ! quorum sensing, relative phenotype
+created_by: siegele
+creation_date: 2013-09-17T16:45:18Z
 
 [Typedef]
 id: is_a
