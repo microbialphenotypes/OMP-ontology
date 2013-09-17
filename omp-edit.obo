@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 17:09:2013 17:22
-saved-by: siegele
+date: 17:09:2013 18:21
+saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -1961,7 +1961,7 @@ creation_date: 2011-07-21T12:51:15Z
 [Term]
 id: OMP:0000253
 name: gene expression phenotype
-comment: An observed gene expression phenotype could result from transcriptional regulation or translational regulation.
+def: "A microbial phenotype where the trait in question is the manifestation of a gene's effects by the synthesis of the proteins or RNA whose production it controls." [ISBN:9781615835409, OMP:WAM]
 synonym: "genetic expression phenotype" EXACT []
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
