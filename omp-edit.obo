@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 17:09:2013 18:21
-saved-by: wmeza
+date: 18:09:2013 15:52
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -3512,7 +3512,7 @@ creation_date: 2013-05-23T01:58:55Z
 [Term]
 id: OMP:0000461
 name: outer membrane phenotype, state phenotype
-def: "A cell envelope phenotype where the structure in question is a lipid bilayer membrane located outside the peptidoglycan cell wall of the bacterial cell." [ISBN:9780073402406, OMP:DAS]
+def: "A cell envelope phenotype where the trait in question is the presence or absence of  a lipid bilayer membrane located outside the peptidoglycan cell wall." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:43:06Z
@@ -3520,7 +3520,10 @@ creation_date: 2013-08-22T01:43:06Z
 [Term]
 id: OMP:0000462
 name: presence of an outer membrane
-def: "An outer membrane phenotype where the representative member of the taxonomic unit possesses an outer membrane." [OMP:DAS]
+def: "An outer membrane phenotype where the representative member of the taxonomic unit posesses an outer membrane." [OMP:DAS]
+synonym: "Diderm" NARROW []
+synonym: "Gram negative" NARROW []
+synonym: "mycolate outer membrane" RELATED []
 is_a: OMP:0000461 ! outer membrane phenotype, state phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:47:25Z
