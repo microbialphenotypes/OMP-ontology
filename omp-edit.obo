@@ -248,7 +248,7 @@ creation_date: 2011-04-26T03:29:28Z
 [Term]
 id: OMP:0000029
 name: presence of flagellum, state phenotype
-def: "A flagellum phenotype where cells of the representative taxonomic unit possess a flagellum or flagella in at least some environments." [OMP:MCC]
+def: "A flagellum phenotype where the representative member of the taxonomic unit possesses a flagellum or flagella in at least some environments." [OMP:MCC]
 is_a: OMP:0000027 ! flagellum, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:34Z
@@ -256,7 +256,7 @@ creation_date: 2011-04-26T03:29:34Z
 [Term]
 id: OMP:0000030
 name: absence of flagellum, state phenotype
-def: "A flagellum phenotype where cells of the representative taxonomic unit do not possess a flagellum or flagella in any environment." [OMP:MCC]
+def: "A flagellum phenotype where the representative member of the taxonomic unit does not possess a flagellum or flagella in any environment." [OMP:MCC]
 synonym: "non-flagellated phenotype" RELATED []
 is_a: OMP:0000027 ! flagellum, state phenotype
 created_by: mchibucos
@@ -282,7 +282,7 @@ creation_date: 2011-06-07T10:34:04Z
 [Term]
 id: OMP:0000033
 name: absence of pilus
-def: "A pilus phenotype where cells of a reference strain or representative taxonomic unit does not possess a pilus." [OMP:MCC]
+def: "A pilus phenotype where the representative member of the taxonomic unit does not possess a pilus." [OMP:MCC]
 synonym: "fimbria absent" EXACT []
 is_a: OMP:0000084 ! pilus phenotype, state phenotype
 created_by: mchibucos
@@ -291,7 +291,7 @@ creation_date: 2011-04-26T03:44:01Z
 [Term]
 id: OMP:0000034
 name: presence of pilus
-def: "A pilus phenotype where cells of a reference strain or representative taxonomic unit possess a pilus." [OMP:MCC]
+def: "A pilus phenotype where the representative member of the taxonomic unit does possess a pilus in one or more growth conditions." [OMP:MCC]
 comment: Fimbria (pl., fimbriae) is a common synonym for pilus (pl., pili).
 synonym: "fimbria present" EXACT []
 is_a: OMP:0000084 ! pilus phenotype, state phenotype
@@ -514,7 +514,7 @@ creation_date: 2011-04-26T05:03:12Z
 [Term]
 id: OMP:0000063
 name: absence of quorum sensing
-def: "A quorum sensing state phenotype where the operational taxonomic unit or reference strain does not possess the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
+def: "A quorum sensing state phenotype where the representative member of the taxonomic unit does not possess the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
 is_a: OMP:0000069 ! quorum sensing, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T05:06:00Z
@@ -564,7 +564,7 @@ creation_date: 2011-02-02T03:28:59Z
 [Term]
 id: OMP:0000069
 name: quorum sensing, state phenotype
-def: "A microbial communication phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:MCC\,DAS]
+def: "A microbial communication phenotype where the trait in question is the ability of the representative member of the taxonomic unit to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:MCC\,DAS]
 is_a: OMP:0000101 ! microbial communication phenotype
 created_by: adrienne
 creation_date: 2011-02-07T03:47:50Z
@@ -596,7 +596,7 @@ creation_date: 2011-02-02T03:31:35Z
 [Term]
 id: OMP:0000073
 name: cell shape, state phenotype
-def: "A cellular morphology phenotype where the trait in question is the shape of cells of the representative taxonomic unit." [OMP:MCC]
+def: "A cellular morphology phenotype where the trait in question is the shape of cells of the representative member of the taxonomic unit." [OMP:MCC]
 is_a: OMP:0000071 ! cellular morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:02Z
@@ -638,7 +638,7 @@ creation_date: 2011-02-02T03:19:31Z
 [Term]
 id: OMP:0000078
 name: flagellum distribution, state phenotype
-def: "A flagellum phenotype where the trait in question is the location of the flagellum on the representative member of a taxonomic unit." [OMP:MCC]
+def: "A flagellum phenotype where the trait in question is the location of the flagellum on the representative member of the taxonomic unit." [OMP:MCC]
 is_a: OMP:0000027 ! flagellum, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:43:16Z
@@ -716,7 +716,7 @@ creation_date: 2011-02-02T03:19:47Z
 [Term]
 id: OMP:0000087
 name: facultative anaerobe phenotype
-def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strain does not require oxygen but the organism grows better in its presence." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth, state phenotype, where growth of the representative member of the taxonomic unit does not require oxygen for growth but grows better in its presence." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:42:26Z
@@ -856,7 +856,7 @@ creation_date: 2011-02-02T02:42:12Z
 [Term]
 id: OMP:0000105
 name: aerotolerant anaerobe phenotype
-def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strains occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth, state phenotype, where growth of the representative member of the taxonomic unit occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:43:38Z
@@ -1448,7 +1448,7 @@ creation_date: 2011-02-07T03:52:44Z
 [Term]
 id: OMP:0000184
 name: obligate anaerobe phenotype
-def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strain does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth, state phenotype, where growth of the representative member of the taxonomic unit does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:34Z
@@ -1456,7 +1456,7 @@ creation_date: 2011-02-02T03:29:34Z
 [Term]
 id: OMP:0000185
 name: obligate aerobe phenotype
-def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strain is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth, state phenotype where growth of the representative member of the taxonomic unit is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
@@ -1596,7 +1596,7 @@ creation_date: 2011-06-07T09:44:51Z
 [Term]
 id: OMP:0000204
 name: presence of capsule
-def: "The presence of a capsule layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, observed in the representative member of a taxonomic unit in one or more environments." [OMP:DAS]
+def: "The presence of a capsule layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, observed in the representative member of the taxonomic unit in one or more environments." [OMP:DAS]
 comment: When present, the capsule layer lies outside the cell wall and/or outer membrane.
 synonym: "glycocalyx" RELATED [OMP:DAS]
 synonym: "slime layer" RELATED [OMP:DAS]
@@ -1655,7 +1655,7 @@ creation_date: 2011-06-07T12:31:24Z
 [Term]
 id: OMP:0000211
 name: absence of capsule
-def: "A capsule, state phenotype where cells of the representative taxonomic unit are not observed to produce a capsule in any environmental condition." [OMP:DAS]
+def: "A capsule, state phenotype where the representative member of the taxonomic unit is not observed to produce a capsule in any environmental condition." [OMP:DAS]
 is_a: OMP:0000203 ! capsule, state phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
@@ -2426,7 +2426,7 @@ creation_date: 2012-04-05T11:43:53Z
 [Term]
 id: OMP:0000313
 name: motility, state phenotype
-def: "A motility phenotype that reflects the capability of an operational taxonomic unit." [OMP:MCC]
+def: "A motility phenotype that reflects the capability of the representative member of the taxonomic unit." [OMP:MCC]
 is_a: OMP:0000001 ! motility phenotype
 created_by: mchibucos
 creation_date: 2012-04-05T10:40:04Z
@@ -2442,7 +2442,7 @@ creation_date: 2012-04-05T10:40:27Z
 [Term]
 id: OMP:0000315
 name: state phenotype
-def: "A microbial phenotype that reflects the capability of an operational taxonomic unit." [OMP:MCC]
+def: "A microbial phenotype that reflects the capability of the representative member of the taxonomic unit." [OMP:MCC]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2012-04-05T03:35:06Z
@@ -3512,7 +3512,7 @@ creation_date: 2013-05-23T01:58:55Z
 [Term]
 id: OMP:0000461
 name: outer membrane phenotype, state phenotype
-def: "A cell envelope phenotype where the structure in question is a lipid bilayer membrane located outside the peptidoglycan cell wall of typical Gram-negative bacteria." [ISBN:9780073402406, OMP:DAS]
+def: "A cell envelope phenotype where the structure in question is a lipid bilayer membrane located outside the peptidoglycan cell wall of the bacterial cell." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:43:06Z
@@ -3520,7 +3520,7 @@ creation_date: 2013-08-22T01:43:06Z
 [Term]
 id: OMP:0000462
 name: presence of an outer membrane
-def: "An outer membrane phenotype where cells of a reference strain or representative taxonomic unit possess an outer membrane." [OMP:DAS]
+def: "An outer membrane phenotype where the representative member of the taxonomic unit possesses an outer membrane." [OMP:DAS]
 is_a: OMP:0000461 ! outer membrane phenotype, state phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:47:25Z
@@ -3536,7 +3536,7 @@ creation_date: 2013-08-22T01:48:57Z
 [Term]
 id: OMP:0000464
 name: absence of an outer membrane
-def: "An outer membrane phenotype where cells of a reference strain or representative taxonomic unit do not have an outer membrane." [OMP:DAS]
+def: "An outer membrane phenotype state phenotype where cells of the representative member of the taxonomic unit do not have an outer membrane." [OMP:DAS]
 is_a: OMP:0000461 ! outer membrane phenotype, state phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:53:29Z
@@ -3901,7 +3901,7 @@ creation_date: 2013-09-10T14:40:06Z
 [Term]
 id: OMP:0006023
 name: carbon source utilization, state phenotype
-def: "A nutrient utilization phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize organic or inorganic sources of carbon." [OMP:DAS]
+def: "A nutrient utilization phenotype where the trait in question is the ability of the representative member of the taxonomic unit to utilize organic or inorganic sources of carbon." [OMP:DAS]
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
@@ -3924,7 +3924,7 @@ creation_date: 2013-09-10T17:51:21Z
 [Term]
 id: OMP:0006026
 name: nitrogen source utilization, state phenotype
-def: "A nutrient utilization phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize a particular nitrogen source." [OMP:DAS]
+def: "A nutrient utilization phenotype where the trait in question is the ability of the representative member of the taxonomic unit to utilize a particular nitrogen source." [OMP:DAS]
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
@@ -3932,7 +3932,7 @@ creation_date: 2013-09-10T17:51:21Z
 [Term]
 id: OMP:0006030
 name: utilization of dinitrogen (N2) gas as nitrogen source
-def: "A nitrogen source utilization state phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize dinitrogen(N2) as a nitrogen source." [OMP:DAS]
+def: "A nitrogen source utilization state phenotype where the trait in question is the ability of the representative member of the taxonomic unit to utilize dinitrogen(N2) as a nitrogen source." [OMP:DAS]
 is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:54:07Z
@@ -4068,7 +4068,7 @@ creation_date: 2013-09-13T15:10:16Z
 [Term]
 id: OMP:0007013
 name: utilization of inorganic N sources phenotype
-def: "A nitrogen source utilization, state phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize inorganic compounds as a nitrogen source." [OMP:DAS]
+def: "A nitrogen source utilization, state phenotype where the trait in question is the ability of the representative member of the taxonomic unit to utilize inorganic compounds as a nitrogen source." [OMP:DAS]
 synonym: "ammonia (NH3) utilization, state phenotype" NARROW []
 synonym: "nitrate utilization, state phenotype " NARROW []
 synonym: "nitrite utilization, state phenotype" NARROW []
@@ -4079,7 +4079,7 @@ creation_date: 2013-09-13T15:19:33Z
 [Term]
 id: OMP:0007014
 name: utilization of organic N sources phenotype
-def: "A nitrogen source utilization, state phenotype where the trait in question is the ability of the operational taxonomic unit or reference strain to utilize N-containing organic molecule as the nitrogen source." [OMP:DAS]
+def: "A nitrogen source utilization, state phenotype where the trait in question is the ability of the representative member of the taxonomic unit to utilize N-containing organic molecule as the nitrogen source." [OMP:DAS]
 is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:20:24Z
@@ -4087,7 +4087,7 @@ creation_date: 2013-09-13T15:20:24Z
 [Term]
 id: OMP:0007015
 name: amino acid requirement
-def: "An auxotrophic state phenotype where the operational taxonomic unit or reference strain cannot synthesize one or more amino acids required for growth." [OMP:DAS]
+def: "An auxotrophic state phenotype where the representative member of the taxonomic unit cannot synthesize one or more amino acids required for growth." [OMP:DAS]
 is_a: OMP:0000273 ! auxotrophic phenotype, state phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:47:41Z
@@ -4095,7 +4095,7 @@ creation_date: 2013-09-16T12:47:41Z
 [Term]
 id: OMP:0007016
 name: purine/pyrimidine requirement
-def: "An auxotrophic state phenotype where the operational taxonomic unit or reference strain cannot synthesize one or more purine or pyrimidine bases required for growth." [OMP:DAS]
+def: "An auxotrophic state phenotype where the representative member of the taxonomic unit cannot synthesize one or more purine or pyrimidine bases required for growth." [OMP:DAS]
 is_a: OMP:0000273 ! auxotrophic phenotype, state phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:48:22Z
@@ -4103,7 +4103,7 @@ creation_date: 2013-09-16T12:48:22Z
 [Term]
 id: OMP:0007017
 name: vitamin/enzyme cofactor requirement
-def: "An auxotrophic state phenotype where the operational taxonomic unit or reference strain cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
+def: "An auxotrophic state phenotype where the representative member of the taxonomic unit cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
 is_a: OMP:0000273 ! auxotrophic phenotype, state phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:49:50Z
@@ -4111,7 +4111,7 @@ creation_date: 2013-09-16T12:49:50Z
 [Term]
 id: OMP:0007018
 name: prototrophic phenotype
-def: "A growth factor requirement phenotype where a prototroph is an organism that can synthesize all organic molecules essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
+def: "A growth factor requirement phenotype where a prototroph is the representative member of the taxonomic unit can synthesize all organic molecules essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
 is_a: OMP:0006002 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:29:19Z
@@ -4119,7 +4119,7 @@ creation_date: 2013-09-16T17:29:19Z
 [Term]
 id: OMP:0007019
 name: increased amino acid requirement phenotype
-def: "An auxotrophic relative phenotype where the organism in question has an increased requirement for one or more amino acids essential for its growth that can be synthesized by the operational taxonomic unit or reference strain." [OMP:DAS]
+def: "An auxotrophic relative phenotype where the organism in question has an increased requirement for one or more amino acids essential for its growth that can be synthesized by the representative member of the taxonomic unit." [OMP:DAS]
 is_a: OMP:0007020 ! auxotrophic phenotype, relative phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:30:07Z
