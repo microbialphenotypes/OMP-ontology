@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 18:09:2013 15:52
-saved-by: siegele
+date: 19:09:2013 12:56
+saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -1961,7 +1961,7 @@ creation_date: 2011-07-21T12:51:15Z
 [Term]
 id: OMP:0000253
 name: gene expression phenotype
-def: "A microbial phenotype where the trait in question is the manifestation of a gene's effects by the synthesis of the proteins or RNA whose production it controls." [ISBN:9781615835409, OMP:WAM]
+def: "A microbial phenotype where the trait in question is the biosynthesis of a gene product by the processes of translation and or transcription." [ISBN:9781615835409, OMP:WAM]
 synonym: "genetic expression phenotype" EXACT []
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
@@ -3730,6 +3730,13 @@ def: "A solute and water activity phenotype where growth requires high levels of
 is_a: OMP:0005013 ! solute and water activity phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:06:03Z
+
+[Term]
+id: OMP:0005017
+name: SOS response phenotype
+is_a: OMP:0000253 ! gene expression phenotype
+created_by: wmeza
+creation_date: 2013-09-18T18:35:30Z
 
 [Term]
 id: OMP:0006001
