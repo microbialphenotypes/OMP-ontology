@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:09:2013 12:56
+date: 20:09:2013 15:42
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -3734,9 +3734,88 @@ creation_date: 2013-09-09T13:06:03Z
 [Term]
 id: OMP:0005017
 name: SOS response phenotype
+def: "A gene expression phenotype dealing with the activation of various genes as a repair response to high levels of DNA damage and DNA inhibition." [ISBN:9781615831838, OMP:WAM]
 is_a: OMP:0000253 ! gene expression phenotype
 created_by: wmeza
 creation_date: 2013-09-18T18:35:30Z
+
+[Term]
+id: OMP:0005018
+name: expression of the SOS response, relative phenotype
+def: "A SOS response phenotype where the genes are expressed at their basal level." [OMP:WAM]
+is_a: OMP:0005017 ! SOS response phenotype
+created_by: wmeza
+creation_date: 2013-09-19T13:39:34Z
+
+[Term]
+id: OMP:0005019
+name: expression of the SOS response, state phenotype
+def: "A SOS response where the trait in question is the activation of the SOS mechanism." [OMP:WAM]
+is_a: OMP:0005017 ! SOS response phenotype
+created_by: wmeza
+creation_date: 2013-09-19T13:40:06Z
+
+[Term]
+id: OMP:0005020
+name: increased uninduced expression of the SOS response
+def: "A  expression of SOS phenotype where the basal level of gene expression is increased." [OMP:WAM]
+is_a: OMP:0005018 ! expression of the SOS response, relative phenotype
+created_by: wmeza
+creation_date: 2013-09-19T15:54:21Z
+
+[Term]
+id: OMP:0005021
+name: decreased uninduced expression of the SOS response
+def: "A expression of SOS phenotype where the basal level of gene expression is decreased." [OMP:WAM]
+is_a: OMP:0005018 ! expression of the SOS response, relative phenotype
+created_by: wmeza
+creation_date: 2013-09-19T15:55:16Z
+
+[Term]
+id: OMP:0005022
+name: absence of SOS response
+def: "A state SOS response phenotype where the mechanism is deactivated." [OMP:WAM]
+is_a: OMP:0005019 ! expression of the SOS response, state phenotype
+created_by: wmeza
+creation_date: 2013-09-19T16:25:09Z
+
+[Term]
+id: OMP:0005023
+name: presence of SOS response
+def: "A SOS response state phenotype where the mechanism is activated." [OMP:WAM]
+is_a: OMP:0005019 ! expression of the SOS response, state phenotype
+created_by: wmeza
+creation_date: 2013-09-19T16:25:30Z
+
+[Term]
+id: OMP:0005024
+name: increased induced expression of the SOS response
+def: "A expression of SOS response phenotype where mechanism's effect is increased." [OMP:WAM]
+is_a: OMP:0005018 ! expression of the SOS response, relative phenotype
+created_by: wmeza
+creation_date: 2013-09-20T13:01:05Z
+
+[Term]
+id: OMP:0005025
+name: decreased induced expression of the SOS response
+def: "A expression of the SOS response phenotype where the effect of the mechanism is decreased." [OMP:WAM]
+is_a: OMP:0005018 ! expression of the SOS response, relative phenotype
+created_by: wmeza
+creation_date: 2013-09-20T13:26:46Z
+
+[Term]
+id: OMP:0005026
+name: chromosome maintenance phenotype
+is_a: OMP:0000000 ! microbial phenotype
+created_by: wmeza
+creation_date: 2013-09-20T14:59:06Z
+
+[Term]
+id: OMP:0005027
+name: stress induced mutagenesis phenotype
+is_a: OMP:0005026 ! chromosome maintenance phenotype
+created_by: wmeza
+creation_date: 2013-09-20T15:00:09Z
 
 [Term]
 id: OMP:0006001
