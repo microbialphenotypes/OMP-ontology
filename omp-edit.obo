@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:09:2013 16:00
+date: 25:09:2013 18:22
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -1970,7 +1970,6 @@ creation_date: 2011-07-21T01:03:06Z
 [Term]
 id: OMP:0000254
 name: constitutive expression
-comment: Within the scope of lac or trp gene regulation, expression of genes is regulated by either the presence or absence of an inducer. Some mutants isolated from screens show constitutive expression of a gene, whereby the gene is expressed all the time regardless of whether the inducer is present or regardless of whether the repressor is absent.
 synonym: "constitutive gene expression" EXACT []
 is_a: OMP:0000253 ! gene expression phenotype
 created_by: mchibucos
@@ -2069,6 +2068,7 @@ creation_date: 2011-07-21T01:58:08Z
 [Term]
 id: OMP:0000267
 name: increased gene expression
+def: "A gene expression phenotype where the trait in question is a higher frequency of the biosynthesis of a gene product." [OMP:WAM]
 is_a: OMP:0000253 ! gene expression phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:01:35Z
@@ -2076,6 +2076,7 @@ creation_date: 2011-07-21T02:01:35Z
 [Term]
 id: OMP:0000268
 name: decreased gene expression
+def: "A gene expression phenotype where the trait in question is a lower frequency of biosynthesis of a gene product." [OMP:WAM]
 is_a: OMP:0000253 ! gene expression phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:02:26Z
@@ -3861,6 +3862,14 @@ def: "A stress induced mutagenesis phenotype where the processes of stress induc
 is_a: OMP:0005028 ! stress induced mutagenesis, state phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:59:12Z
+
+[Term]
+id: OMP:0005033
+name: absence of stress induced mutagenesis
+def: "A stress induced mutagenesis phenotype where the processes of stress induced mutagenesis is not activated." [OMP:WAM]
+is_a: OMP:0005028 ! stress induced mutagenesis, state phenotype
+created_by: wmeza
+creation_date: 2013-09-25T18:20:22Z
 
 [Term]
 id: OMP:0006001
