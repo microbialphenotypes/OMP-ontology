@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 20:09:2013 15:42
-saved-by: wmeza
+date: 25:09:2013 15:34
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -2604,87 +2604,91 @@ creation_date: 2012-11-02T02:04:58Z
 
 [Term]
 id: OMP:0000336
-name: beta lactam antibiotic resistance phenotype
-def: "An antimicrobial compound resistance phenotype, where the trait in question is resistance to a member of a broad class of cyclic amides that work primarily by protein biosynthesis inhibition." [OMP:MCC]
+name: beta-lactam compound resistance phenotype
+def: "An antimicrobial compound resistance phenotype, where the trait in question is resistance to a member of a broad class of antimicrobial compounds that contain a beta-lactam ring in their molecular structure." [OMP:MCC]
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:06:13Z
 
 [Term]
 id: OMP:0000337
-name: beta lactam antibiotic resistance, relative phenotype
-is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
+name: beta-lactam compound resistance, relative phenotype
+def: "A beta-lactam compound resistance phenotype, where the trait in question is a change in resistance to beta-lactam compounds relative to a reference strain or reference growth condition." [OMP:DAS]
+is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:09:23Z
 
 [Term]
 id: OMP:0000338
-name: beta lactam antibiotic resistance, state phenotype
-is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
+name: beta-lactam compound resistance, state phenotype
+def: "A beta-lactam compound resistance phenotype that describes whether the representative member of the taxonomic unit is resistant to or sensitive xx concentratons of" [OMP:DAS]
+is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:09:49Z
 
 [Term]
 id: OMP:0000339
-name: increased resistance to beta lactam antibiotic
-is_a: OMP:0000337 ! beta lactam antibiotic resistance, relative phenotype
+name: increased resistance to beta-lactam compounds
+def: "A beta-lactam compound resistance, relative phenotype, where the trait in question is increased resistance to beta-lactam compounds relative to a reference strain or reference growth condition." [OMP:DAS]
+is_a: OMP:0000337 ! beta-lactam compound resistance, relative phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:10:03Z
 
 [Term]
 id: OMP:0000340
-name: decreased resistance to beta lactam antibiotic
+name: decreased resistance to beta-lactam compounds
+def: "A beta-lactam compound resistance, relative phenotype, where the trait in question is decreased resistance to beta-lactam compounds relative to a reference strain or reference growth condition." [OMP:DAS]
 synonym: "abolished resistance to beta lactam antibiotic" NARROW []
-is_a: OMP:0000337 ! beta lactam antibiotic resistance, relative phenotype
+is_a: OMP:0000337 ! beta-lactam compound resistance, relative phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:10:28Z
 
 [Term]
 id: OMP:0000341
 name: penicillin resistance phenotype
-is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
+is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:14:00Z
 
 [Term]
 id: OMP:0000342
 name: ampicillin resistance phenotype
-is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:14:41Z
 
 [Term]
 id: OMP:0000343
 name: cephalosporin resistance phenotype
-is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
+is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:15:00Z
 
 [Term]
 id: OMP:0000344
 name: cefoxitin resistance phenotype
-is_a: OMP:0000336 ! beta lactam antibiotic resistance phenotype
+is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:15:15Z
 
 [Term]
 id: OMP:0000345
 name: ampicillin resistance, relative phenotype
-is_a: OMP:0000342 ! ampicillin resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:15:34Z
 
 [Term]
 id: OMP:0000346
 name: ampicillin resistance, state phenotype
-is_a: OMP:0000342 ! ampicillin resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:15:51Z
 
 [Term]
 id: OMP:0000347
 name: increased resistance to ampicillin
-is_a: OMP:0000345 ! ampicillin resistance, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:16:03Z
 
@@ -2692,7 +2696,7 @@ creation_date: 2012-11-02T02:16:03Z
 id: OMP:0000348
 name: decreased resistance to ampicillin
 synonym: "abolished resistance to ampicillin" NARROW []
-is_a: OMP:0000345 ! ampicillin resistance, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:16:27Z
 
@@ -3330,28 +3334,28 @@ creation_date: 2012-11-04T02:52:18Z
 [Term]
 id: OMP:0000437
 name: resistant to ampicillin
-is_a: OMP:0000346 ! ampicillin resistance, state phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:48Z
 
 [Term]
 id: OMP:0000438
 name: not resistant to ampicillin
-is_a: OMP:0000346 ! ampicillin resistance, state phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:53:00Z
 
 [Term]
 id: OMP:0000439
-name: resistant to beta lactam antibiotic
-is_a: OMP:0000338 ! beta lactam antibiotic resistance, state phenotype
+name: resistant to beta-lactam compounds
+is_a: OMP:0000338 ! beta-lactam compound resistance, state phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:53:24Z
 
 [Term]
 id: OMP:0000440
-name: not resistant to beta lactam antibiotic
-is_a: OMP:0000338 ! beta lactam antibiotic resistance, state phenotype
+name: not resistant to beta-lactam compounds
+is_a: OMP:0000338 ! beta-lactam compound resistance, state phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:53:35Z
 
