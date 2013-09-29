@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:09:2013 00:41
+date: 29:09:2013 09:59
 saved-by: DeborahSiegele
 auto-generated-by: OBO-Edit 2.2
 default-namespace: microbial_phenotype
@@ -291,8 +291,8 @@ creation_date: 2011-04-26T03:44:01Z
 [Term]
 id: OMP:0000034
 name: presence of pilus
-def: "A pilus phenotype where the representative member of the taxonomic unit does possess a pilus in one or more growth conditions." [OMP:MCC]
-comment: Fimbria (pl., fimbriae) is a common synonym for pilus (pl., pili).
+def: "A pilus phenotype where the representative member of a taxonomic unit does possess a pilus in one or more growth conditions." [OMP:MCC]
+comment: Fimbria (plural, fimbriae) is a common synonym for pilus (plural, pili).
 synonym: "fimbria present" EXACT []
 is_a: OMP:0000084 ! pilus phenotype, state phenotype
 created_by: mchibucos
@@ -595,7 +595,7 @@ creation_date: 2011-02-02T03:31:35Z
 
 [Term]
 id: OMP:0000073
-name: cell shape, state phenotype
+name: cell shape state phenotype
 def: "A cellular morphology phenotype where the trait in question is the shape of cells of the representative member of the taxonomic unit." [OMP:MCC]
 is_a: OMP:0000071 ! cellular morphology phenotype
 created_by: adrienne
@@ -611,27 +611,27 @@ creation_date: 2011-02-02T03:18:19Z
 
 [Term]
 id: OMP:0000075
-name: coccus, state phenotype
-def: "A cell shape phenotype where the cell is spherical-shaped or nearly spherical in shape." [ISBN:9780073402406, OMP:MCC]
+name: coccus phenotype
+def: "A cell shape state phenotype where the representative member of a taxonomic unit has cells that are spherical or nearly spherical." [ISBN:9780073402406, OMP:MCC]
 synonym: "spherical-shaped" EXACT []
-is_a: OMP:0000073 ! cell shape, state phenotype
+is_a: OMP:0000073 ! cell shape state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:29Z
 
 [Term]
 id: OMP:0000076
-name: bacillus, state phenotype
-def: "A cell shape phenotype where the cell is rod-shaped (elongated)." [ISBN:9780073402406, OMP:MCC]
+name: bacillus phenotype
+def: "A cell shape state phenotype where the representative member of a taxonomic unit has rod-shaped cells." [ISBN:9780073402406, OMP:MCC]
 synonym: "rod-shaped" EXACT []
-is_a: OMP:0000073 ! cell shape, state phenotype
+is_a: OMP:0000073 ! cell shape state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:47Z
 
 [Term]
 id: OMP:0000077
-name: vibrio, state phenotype
-def: "A cell shape phenotype where a rod-shaped cell is curved to form a comma like shape or incomplete spiral." [ISBN:9780073402406, OMP:AEZ]
-is_a: OMP:0000086 ! spiral cell shape, state phenotype
+name: vibrio phenotype
+def: "A spiral cell shape phenotype where the representative member of a taxonomic unit has rod-shaped cells that are curved to form a comma-like shape or incomplete spiral." [ISBN:9780073402406, OMP:AEZ]
+is_a: OMP:0000086 ! spiral cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:19:31Z
 
@@ -703,13 +703,13 @@ creation_date: 2011-02-02T03:49:03Z
 
 [Term]
 id: OMP:0000086
-name: spiral cell shape, state phenotype
-def: "A cell shape phenotype where the cell is helical or cork-screw shaped." [OMP:MCC]
+name: spiral cell shape phenotype
+def: "A cell shape phenotype where the representative member of a taxonomic has cells that are helical or cork-screw shaped." [OMP:MCC]
 synonym: "curved rod" RELATED []
 synonym: "spirillum" NARROW []
 synonym: "spirochete" NARROW []
 synonym: "vibrio" NARROW []
-is_a: OMP:0000073 ! cell shape, state phenotype
+is_a: OMP:0000073 ! cell shape state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:19:47Z
 
@@ -994,25 +994,25 @@ creation_date: 2011-02-18T02:47:10Z
 
 [Term]
 id: OMP:0000123
-name: coccobacillus, state phenotype
-def: "A cell shape phenotype where the cell is intermediate in shape between coccus (spherical) and bacillus (elongated)." [ISBN:9780073402406, OMP:MCC]
-is_a: OMP:0000073 ! cell shape, state phenotype
+name: coccobacillus phenotype
+def: "A cell shape state phenotype where the representative member of a taxonomic unit has cells intermediate in shape between cocci (spherical) and bacilli (rods)." [ISBN:9780073402406, OMP:MCC]
+is_a: OMP:0000073 ! cell shape state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:48:21Z
 
 [Term]
 id: OMP:0000124
-name: spirillum, state phenotype
-def: "A cell shape phenotype where the cell forms a rigid spiral." [ISBN:9780073402406, OMP:AEZ]
-is_a: OMP:0000086 ! spiral cell shape, state phenotype
+name: spirillum phenotype
+def: "A spiral cell shape phenotype where the representative member of a taxonomic unit has cells that form a rigid spiral." [ISBN:9780073402406, OMP:AEZ]
+is_a: OMP:0000086 ! spiral cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:51:54Z
 
 [Term]
 id: OMP:0000125
-name: spirochete, state phenotype
-def: "A cell shape phenotype where the cell forms a flexible spiral." [ISBN:9780073402406, OMP:AEZ]
-is_a: OMP:0000086 ! spiral cell shape, state phenotype
+name: spirochete phenotype
+def: "A spiral cell shape phenotype where the representative member of a taxonomic unit has cells that form a flexible spiral." [ISBN:9780073402406, OMP:AEZ]
+is_a: OMP:0000086 ! spiral cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:52:33Z
 
@@ -1033,44 +1033,44 @@ creation_date: 2011-02-18T02:59:18Z
 
 [Term]
 id: OMP:0000128
-name: stalked cell, state phenotype
-def: "A cell shape phenotype where the cell possesses an appendage called a stalk or prostheca (pl., prosthecae), which is a tubular extension of the cell envelope and contains cytosol." [OMP:MCC, PMID:14245437]
+name: stalked cell phenotype
+def: "A cell shape phenotype where the cell possesses an appendage called a stalk or prostheca (plural, prosthecae), which is a tubular extension of the cell envelope and contains cytosol." [OMP:MCC, PMID:14245437]
 synonym: "prosthecate bacterium" EXACT [URL:http\://en.wikipedia.org/wiki/Prosthecate_bacteria]
-is_a: OMP:0000073 ! cell shape, state phenotype
+is_a: OMP:0000073 ! cell shape state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:59:38Z
 
 [Term]
 id: OMP:0000129
-name: cuboid, state phenotype
-def: "A cell shape phenotype where the cell has six sides." [ONP:MCC]
+name: cuboid cell phenotype
+def: "A cell shape state phenotype where the representative member of a taxonomic unit has cell with six sides." [ONP:MCC]
 synonym: "square" RELATED []
-is_a: OMP:0000073 ! cell shape, state phenotype
+is_a: OMP:0000073 ! cell shape state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:59:57Z
 
 [Term]
 id: OMP:0000130
-name: star-shaped cell, state phenotype
-def: "A cell shape phenotype where the cell has lobe-like projections that form points." [OMP:MCC]
-is_a: OMP:0000073 ! cell shape, state phenotype
+name: star-shaped cell phenotype
+def: "A cell shape state phenotype where the representative member of a taxonomic unit has cells with lobe-like projections that form points." [OMP:MCC]
+is_a: OMP:0000073 ! cell shape state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:00:30Z
 
 [Term]
 id: OMP:0000131
-name: lobed, state phenotype
+name: lobed cell phenotype
 def: "A cell shape phenotype where the cell has deeply indented margins (lobes)." [OMP:MCC]
-is_a: OMP:0000073 ! cell shape, state phenotype
+is_a: OMP:0000073 ! cell shape state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:00:58Z
 
 [Term]
 id: OMP:0000132
-name: pleomorphic, state phenotype
-def: "A cell shape phenotype where the cell possesses the ability to take on two or more different shapes during its life cycle." [ISBN:9780073402406, OMP:MCC]
+name: pleomorphic cell shape phenotype
+def: "A cell shape phenotype where the representative member of a taxonomic unit posseses the ability to take on two or more different shapes during its life cycle." [ISBN:9780073402406, OMP:MCC]
 xref: PATO:0001356
-is_a: OMP:0000073 ! cell shape, state phenotype
+is_a: OMP:0000073 ! cell shape state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:01:18Z
 
@@ -2022,7 +2022,7 @@ id: OMP:0000261
 name: sulfur source utilization phenotype, relative phenotype
 def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular sulfur source." []
 synonym: "sulphur utilization phenotype" EXACT []
-is_a: OMP:0006022 ! nutrient utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:49:44Z
 
@@ -2031,7 +2031,7 @@ id: OMP:0000262
 name: increased sulfur source utilization phenotype
 def: "A sulfur source utilization, relative phenotype where the trait in question is increased ability to utilize a particular sulfur source." [OMP:DAS]
 synonym: "utilizes sulphur-containing compound" EXACT []
-is_a: OMP:0000261 ! sulfur source utilization phenotype, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:51:28Z
 
@@ -2039,7 +2039,7 @@ creation_date: 2011-07-21T01:51:28Z
 id: OMP:0000263
 name: phosphorus source utilization, relative phenotype
 def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular phosphorus source." [OMP:DAS]
-is_a: OMP:0006022 ! nutrient utilization phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:55:26Z
 
@@ -2047,7 +2047,7 @@ creation_date: 2011-07-21T01:55:26Z
 id: OMP:0000264
 name: increased phosphorus source utilization phenotype
 def: "A phosphorus source utilization, relative phenotype where the trait in question is increased ability to utilize a particular phosphorus source." [OMP:DAS]
-is_a: OMP:0000263 ! phosphorus source utilization, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:56:27Z
 
@@ -2175,7 +2175,7 @@ creation_date: 2011-07-21T02:35:22Z
 id: OMP:0000280
 name: elongated cell length
 comment: The mukB mutant appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
-is_a: OMP:0000073 ! cell shape, state phenotype
+is_a: OMP:0000074 ! cell size
 created_by: mchibucos
 creation_date: 2011-07-21T02:37:15Z
 
@@ -2220,7 +2220,7 @@ creation_date: 2011-07-21T03:06:32Z
 id: OMP:0000286
 name: decreased phosphorus source utilization phenotype
 def: "A phosphorus source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular phosphorus source." [OMP:DAS]
-is_a: OMP:0000263 ! phosphorus source utilization, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T03:07:13Z
 
@@ -2228,7 +2228,7 @@ creation_date: 2011-07-21T03:07:13Z
 id: OMP:0000287
 name: decreased sulfur utilization phenotype
 def: "A sulfur source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular sulfur source." [OMP:DAS]
-is_a: OMP:0000261 ! sulfur source utilization phenotype, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T03:07:30Z
 
@@ -3881,8 +3881,8 @@ creation_date: 2013-09-03T05:28:25Z
 
 [Term]
 id: OMP:0006002
-name: growth factor requirement phenotype
-def: "A nutrient utilization phenotype involving the need for a growth factor, which is a required organic molecule that the organism cannot synthesize for itself." [ISBN:9780073402406, OMP:DAS]
+name: growth factor utilization phenotype
+def: "A nutrient utilization phenotype where the nutrient is an essential organic molecule." [ISBN:9780073402406, OMP:DAS]
 synonym: "auxotroph" RELATED []
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
@@ -4046,7 +4046,7 @@ creation_date: 2013-09-10T14:40:06Z
 [Term]
 id: OMP:0006023
 name: carbon source utilization phenotype
-def: "A nutrient utilization phenotype where the nutrient is being used as the source of carbon." [OMP:DAS]
+def: "A nutrient utilization phenotype where the nutrient is being used as a source of carbon." [OMP:DAS]
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
@@ -4234,7 +4234,7 @@ creation_date: 2013-09-13T15:20:24Z
 [Term]
 id: OMP:0007015
 name: requirement for amino acids phenotype
-def: "An amino acid requirement state phenotype where the representative member of the taxonomic unit cannot synthesize one or more required amino acids." [OMP:DAS]
+def: "An amino acid requirement phenotype where the representative member of the taxonomic unit cannot synthesize one or more amino acids." [OMP:DAS]
 is_a: OMP:0007038 ! amino acid requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:47:41Z
@@ -4242,7 +4242,7 @@ creation_date: 2013-09-16T12:47:41Z
 [Term]
 id: OMP:0007016
 name: purine/pyrimidine requirement
-def: "An auxotrophic state phenotype where the representative member of the taxonomic unit cannot synthesize one or more purine or pyrimidine bases required for growth." [OMP:DAS]
+def: "A purine/pyrimidine requirement state phenotype where the representative member of the taxonomic unit cannot synthesize one or more purine or pyrimidine bases required for growth." [OMP:DAS]
 is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:48:22Z
@@ -4250,7 +4250,7 @@ creation_date: 2013-09-16T12:48:22Z
 [Term]
 id: OMP:0007017
 name: vitamin/enzyme cofactor requirement
-def: "An auxotrophic state phenotype where the representative member of the taxonomic unit cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
+def: "A vitamin/enzyme cofactor phenotype where the representative member of the taxonomic unit cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
 is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:49:50Z
@@ -4258,8 +4258,8 @@ creation_date: 2013-09-16T12:49:50Z
 [Term]
 id: OMP:0007018
 name: prototroph
-def: "A growth factor requirement state phenotype where the representative member of the taxonomic unit can synthesize all organic molecules essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
-is_a: OMP:0006002 ! growth factor requirement phenotype
+def: "A growth factor utilization state phenotype where the representative member of a taxonomic unit can synthesize all organic molecules essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
+is_a: OMP:0006002 ! growth factor utilization phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:29:19Z
 
@@ -4282,7 +4282,7 @@ creation_date: 2013-09-17T16:10:51Z
 [Term]
 id: OMP:0007021
 name: decreased amino acid requirement phenotype
-def: "An amino acid requirement phenotype where the organism has a decreased requirement relative to some reference for one or more amino acids." []
+def: "An amino acid requirement phenotype where the organism has a decreased requirement relative to some reference for one or more amino acids." [OMP:DAS]
 is_a: OMP:0007038 ! amino acid requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:13:20Z
@@ -4290,6 +4290,7 @@ creation_date: 2013-09-17T16:13:20Z
 [Term]
 id: OMP:0007022
 name: decreased purine/pyrimidine requirement phenotype
+def: "A purine/pyrimidine requirement phenotype where the organism has a decreased requirement relative to some reference for a purine or pyrimidine base." [OMP:DAS]
 is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
@@ -4297,7 +4298,7 @@ creation_date: 2013-09-17T16:30:10Z
 [Term]
 id: OMP:0007023
 name: increased purine/pyrimidine requirement phenotype
-def: "An auxotrophic relative phenotype where the organism in question has an increased requirement for one or more purine or pyrimidine bases essential for its growth that can be synthesized by the operational taxonomic unit or reference strain." []
+def: "A purine/pyrimidine requirement phenotype where the organism has an increased requirement relative to some reference for a purine or pyrimidine base." [OMP:DAS]
 is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:30:36Z
@@ -4305,7 +4306,7 @@ creation_date: 2013-09-17T16:30:36Z
 [Term]
 id: OMP:0007024
 name: increased vitamin/enzyme cofactor requirement phenotype
-def: "An auxotrophic relative phenotype where the organism in question has an increased requirement for one or more vitamins/enzyme cofactors essential for its growth that can be synthesized by the operational taxonomic unit or reference strain." []
+def: "A vitamin/enzyme cofactor requirement phenotype where the organism has an increased requirement relative to some reference for a vitamin/enzyme cofactor." [OMP:DAS]
 is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:31:05Z
@@ -4313,6 +4314,7 @@ creation_date: 2013-09-17T16:31:05Z
 [Term]
 id: OMP:0007025
 name: decreased vitamin/enzyme cofactor requirement phenotype
+def: "A vitamin/enzyme cofactor requirement phenotype where the organism has a decreased requirement relative to some reference for a vitamin/enzyme cofactor." [OMP:DAS]
 is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:33:34Z
@@ -4399,7 +4401,7 @@ creation_date: 2013-09-28T21:07:53Z
 
 [Term]
 id: OMP:0007036
-name: increased utilization of inorganic nitrogen phenotype
+name: increased utilization of organic nitrogen phenotype
 def: "An organic nitrogen utilization phenotype where the organism has increased ability relative to some reference to use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
 is_a: OMP:0007014 ! organic nitrogen utilization phenotype
 created_by: DeborahSiegele
@@ -4416,7 +4418,7 @@ creation_date: 2013-09-28T21:08:02Z
 [Term]
 id: OMP:0007038
 name: amino acid requirement phenotype
-def: "An auxotrophic phenotype where the required growth factor is an amino acid." []
+def: "An auxotrophic phenotype where the required growth factor is an amino acid." [OMP:DAS]
 is_a: OMP:0007041 ! auxotrophic phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:27:05Z
@@ -4424,7 +4426,7 @@ creation_date: 2013-09-29T00:27:05Z
 [Term]
 id: OMP:0007039
 name: purine/pyrimidine requirement phenotype
-def: "An auxotrophic phenotype where the required growth factor is a purine or pyrimidine base." []
+def: "An auxotrophic phenotype where the required growth factor is a purine or pyrimidine base." [OMP:DAS]
 is_a: OMP:0007041 ! auxotrophic phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:33:05Z
@@ -4432,7 +4434,7 @@ creation_date: 2013-09-29T00:33:05Z
 [Term]
 id: OMP:0007040
 name: vitamin/enzyme cofactor requirement phenotype
-def: "An auxotrophic phenotype where the required growth factor is a vitamin or enzyme cofactor." []
+def: "An auxotrophic phenotype where the required growth factor is a vitamin or enzyme cofactor." [OMP:DAS]
 is_a: OMP:0007041 ! auxotrophic phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:36:46Z
@@ -4440,9 +4442,26 @@ creation_date: 2013-09-29T00:36:46Z
 [Term]
 id: OMP:0007041
 name: auxotrophic phenotype
-is_a: OMP:0006002 ! growth factor requirement phenotype
+def: "A growth factor utilization phenotype where the organism cannot synthesize an essential organic molecule." [ISBN:9780878936083, OMP:DAS]
+is_a: OMP:0006002 ! growth factor utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:39:24Z
+
+[Term]
+id: OMP:0007042
+name: sulfur source utilization phenotype
+def: "A nutrient utilization phenotype where the nutrient is used as a source of sulfur." [OMP:DAS]
+is_a: OMP:0006022 ! nutrient utilization phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-29T09:39:03Z
+
+[Term]
+id: OMP:0007043
+name: phosphorus source utilization phenotype
+def: "A nutrient utilization phenotype where the nutrient is being used as a source of phosphorus." [OMP:DAS]
+is_a: OMP:0006022 ! nutrient utilization phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-29T09:41:48Z
 
 [Typedef]
 id: is_a
