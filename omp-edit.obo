@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:09:2013 09:59
+date: 29:09:2013 10:21
 saved-by: DeborahSiegele
 auto-generated-by: OBO-Edit 2.2
 default-namespace: microbial_phenotype
@@ -335,7 +335,7 @@ creation_date: 2011-06-06T03:36:04Z
 id: OMP:0000040
 name: decreased cell size
 def: "A type of cell size that is relatively smaller." [OMP:MCC]
-is_a: OMP:0000074 ! cell size
+is_a: OMP:0000074 ! cell size phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:47:26Z
 
@@ -343,7 +343,7 @@ creation_date: 2011-04-26T03:47:26Z
 id: OMP:0000041
 name: increased cell size
 def: "A type of cell size that is relatively larger." [OMP:MCC]
-is_a: OMP:0000074 ! cell size
+is_a: OMP:0000074 ! cell size phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:49:09Z
 
@@ -595,15 +595,15 @@ creation_date: 2011-02-02T03:31:35Z
 
 [Term]
 id: OMP:0000073
-name: cell shape state phenotype
-def: "A cellular morphology phenotype where the trait in question is the shape of cells of the representative member of the taxonomic unit." [OMP:MCC]
+name: cell shape phenotype
+def: "A cellular morphology phenotype where the trait in question is the shape of cells of the representative member of a taxonomic unit." [OMP:MCC]
 is_a: OMP:0000071 ! cellular morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:02Z
 
 [Term]
 id: OMP:0000074
-name: cell size
+name: cell size phenotype
 def: "A cellular morphology phenotype where the trait in question is the size of the cell." [OMP:MCC]
 is_a: OMP:0000071 ! cellular morphology phenotype
 created_by: adrienne
@@ -612,18 +612,18 @@ creation_date: 2011-02-02T03:18:19Z
 [Term]
 id: OMP:0000075
 name: coccus phenotype
-def: "A cell shape state phenotype where the representative member of a taxonomic unit has cells that are spherical or nearly spherical." [ISBN:9780073402406, OMP:MCC]
+def: "A cell shape phenotype where the representative member of a taxonomic unit has cells that are spherical or nearly spherical." [ISBN:9780073402406, OMP:MCC]
 synonym: "spherical-shaped" EXACT []
-is_a: OMP:0000073 ! cell shape state phenotype
+is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:29Z
 
 [Term]
 id: OMP:0000076
 name: bacillus phenotype
-def: "A cell shape state phenotype where the representative member of a taxonomic unit has rod-shaped cells." [ISBN:9780073402406, OMP:MCC]
+def: "A cell shape phenotype where the representative member of a taxonomic unit has rod-shaped cells." [ISBN:9780073402406, OMP:MCC]
 synonym: "rod-shaped" EXACT []
-is_a: OMP:0000073 ! cell shape state phenotype
+is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:47Z
 
@@ -709,7 +709,7 @@ synonym: "curved rod" RELATED []
 synonym: "spirillum" NARROW []
 synonym: "spirochete" NARROW []
 synonym: "vibrio" NARROW []
-is_a: OMP:0000073 ! cell shape state phenotype
+is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:19:47Z
 
@@ -995,8 +995,8 @@ creation_date: 2011-02-18T02:47:10Z
 [Term]
 id: OMP:0000123
 name: coccobacillus phenotype
-def: "A cell shape state phenotype where the representative member of a taxonomic unit has cells intermediate in shape between cocci (spherical) and bacilli (rods)." [ISBN:9780073402406, OMP:MCC]
-is_a: OMP:0000073 ! cell shape state phenotype
+def: "A cell shape phenotype where the representative member of a taxonomic unit has cells intermediate in shape between cocci (spherical) and bacilli (rods)." [ISBN:9780073402406, OMP:MCC]
+is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:48:21Z
 
@@ -1036,24 +1036,24 @@ id: OMP:0000128
 name: stalked cell phenotype
 def: "A cell shape phenotype where the cell possesses an appendage called a stalk or prostheca (plural, prosthecae), which is a tubular extension of the cell envelope and contains cytosol." [OMP:MCC, PMID:14245437]
 synonym: "prosthecate bacterium" EXACT [URL:http\://en.wikipedia.org/wiki/Prosthecate_bacteria]
-is_a: OMP:0000073 ! cell shape state phenotype
+is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:59:38Z
 
 [Term]
 id: OMP:0000129
 name: cuboid cell phenotype
-def: "A cell shape state phenotype where the representative member of a taxonomic unit has cell with six sides." [ONP:MCC]
+def: "A cell shape phenotype where the representative member of a taxonomic unit has cell with six sides." [ONP:MCC]
 synonym: "square" RELATED []
-is_a: OMP:0000073 ! cell shape state phenotype
+is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:59:57Z
 
 [Term]
 id: OMP:0000130
 name: star-shaped cell phenotype
-def: "A cell shape state phenotype where the representative member of a taxonomic unit has cells with lobe-like projections that form points." [OMP:MCC]
-is_a: OMP:0000073 ! cell shape state phenotype
+def: "A cell shape phenotype where the representative member of a taxonomic unit has cells with lobe-like projections that form points." [OMP:MCC]
+is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:00:30Z
 
@@ -1061,7 +1061,7 @@ creation_date: 2011-02-18T03:00:30Z
 id: OMP:0000131
 name: lobed cell phenotype
 def: "A cell shape phenotype where the cell has deeply indented margins (lobes)." [OMP:MCC]
-is_a: OMP:0000073 ! cell shape state phenotype
+is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:00:58Z
 
@@ -1070,7 +1070,7 @@ id: OMP:0000132
 name: pleomorphic cell shape phenotype
 def: "A cell shape phenotype where the representative member of a taxonomic unit posseses the ability to take on two or more different shapes during its life cycle." [ISBN:9780073402406, OMP:MCC]
 xref: PATO:0001356
-is_a: OMP:0000073 ! cell shape state phenotype
+is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:01:18Z
 
@@ -2175,7 +2175,7 @@ creation_date: 2011-07-21T02:35:22Z
 id: OMP:0000280
 name: elongated cell length
 comment: The mukB mutant appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
-is_a: OMP:0000074 ! cell size
+is_a: OMP:0000074 ! cell size phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:37:15Z
 
