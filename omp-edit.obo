@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 25:09:2013 18:22
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 28:09:2013 21:10
+saved-by: DeborahSiegele
+auto-generated-by: OBO-Edit 2.2
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3841,7 +3841,7 @@ creation_date: 2013-09-25T15:55:54Z
 
 [Term]
 id: OMP:0005030
-name: increase in stress induced mutagenesis	
+name: increase in stress induced mutagenesis
 def: "A stress induced mutagenesis phenotype where the frequency of mutagenesis is increased." [OMP:WAM]
 is_a: OMP:0005029 ! stress induced mutagenesis, relative phenotype
 created_by: wmeza
@@ -3875,7 +3875,7 @@ creation_date: 2013-09-25T18:20:22Z
 id: OMP:0006001
 name: nutrient phenotype
 def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and/or energy release that supports growth and reproduction." [ISBN:9780073402406]
-is_a: OMP:0000000 ! microbial phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-03T05:28:25Z
 
@@ -3883,7 +3883,7 @@ creation_date: 2013-09-03T05:28:25Z
 id: OMP:0006002
 name: growth factor requirement phenotype
 def: "A nutrient phenotype, where the defining trait is the ability or inability to synthesize an organic molecule that is required for growth." [ISBN:9780073402406, OMP:DAS]
-is_a: OMP:0006001 ! nutrient phenotype
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T05:30:35Z
 
@@ -3907,7 +3907,7 @@ creation_date: 2013-09-06T16:52:37Z
 id: OMP:0006005
 name: nitrogen source utilization, relative phenotype
 def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular nitrogen source." [GO:0019740, OMP:JCH\,DAS]
-is_a: OMP:0006022 ! nutrient utilization phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-06T16:52:37Z
 
@@ -4021,7 +4021,7 @@ creation_date: 2013-09-10T13:49:43Z
 id: OMP:0006020
 name: increased nitrogen source utilization phenotype
 def: "A nitrogen source utilization, relative phenotype where the trait in question is increased ability to utilize a particular nitrogen source." [OMP:DAS]
-is_a: OMP:0006005 ! nitrogen source utilization, relative phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:01:22Z
 
@@ -4029,15 +4029,16 @@ creation_date: 2013-09-10T14:01:22Z
 id: OMP:0006021
 name: decreased nitrogen source utilization phenotype
 def: "A nitrogen source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular nitrogen source." [OMP:DAS]
-is_a: OMP:0006005 ! nitrogen source utilization, relative phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:01:22Z
 
 [Term]
 id: OMP:0006022
 name: nutrient utilization phenotype
-def: "A nutrient phenotype, where the defining trait is where the nutrient is catabolized further or used as is, such as an amino acid that enters the amino acid pool without further modification." [OMP:JCH]
-is_a: OMP:0006001 ! nutrient phenotype
+def: "A microbial phenotype involving the utilization of a nutrient, which is a substance used for biosynthesis or energy release." [ISBN:9780073402406]
+comment: A nutrient by used as is, catabolized, or modified before being used.
+is_a: OMP:0000000 ! microbial phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:40:06Z
 
@@ -4066,17 +4067,19 @@ creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006026
-name: nitrogen source utilization, state phenotype
-def: "A nutrient utilization phenotype where the trait in question is the ability of the representative member of the taxonomic unit to utilize a particular nitrogen source." [OMP:DAS]
+name: nitrogen source utilization phenotype
+def: "A nutrient utilization phenotype where the nutrient is being utilized as a source of nitrogen." [OMP:DAS]
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006030
-name: utilization of dinitrogen (N2) gas as nitrogen source
-def: "A nitrogen source utilization state phenotype where the trait in question is the ability of the representative member of the taxonomic unit to utilize dinitrogen(N2) as a nitrogen source." [OMP:DAS]
-is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
+name: dinitrogen utilization phenotype
+def: "A nitrogen source utilization phenotype where dinitrogen (N2) is the source of nitrogen." [OMP:DAS]
+synonym: "diatomic nitrogen utilization phenotype" RELATED []
+synonym: "nitrogen fixation phenotype" RELATED []
+is_a: OMP:0006026 ! nitrogen source utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:54:07Z
 
@@ -4210,20 +4213,20 @@ creation_date: 2013-09-13T15:10:16Z
 
 [Term]
 id: OMP:0007013
-name: utilization of inorganic N sources phenotype
-def: "A nitrogen source utilization, state phenotype where the trait in question is the ability of the representative member of the taxonomic unit to utilize inorganic compounds as a nitrogen source." [OMP:DAS]
+name: inorganic nitrogen utilization phenotype
+def: "A nitrogen source utilization phenotype where an inorganic nitrogen-containing compound is the source of nitrogen." [OMP:DAS]
 synonym: "ammonia (NH3) utilization, state phenotype" NARROW []
 synonym: "nitrate utilization, state phenotype " NARROW []
 synonym: "nitrite utilization, state phenotype" NARROW []
-is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
+is_a: OMP:0006026 ! nitrogen source utilization phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:19:33Z
 
 [Term]
 id: OMP:0007014
-name: utilization of organic N sources phenotype
-def: "A nitrogen source utilization, state phenotype where the trait in question is the ability of the representative member of the taxonomic unit to utilize N-containing organic molecule as the nitrogen source." [OMP:DAS]
-is_a: OMP:0006026 ! nitrogen source utilization, state phenotype
+name: organic nitrogen utilization phenotype
+def: "A nitrogen source utilization phenotype where an organic nitrogen-containing compound is the source of nitrogen." [OMP:DAS]
+is_a: OMP:0006026 ! nitrogen source utilization phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:20:24Z
 
@@ -4335,6 +4338,78 @@ def: "A quorum sensing relative phenotype where an organism has decreased abilit
 is_a: OMP:0007026 ! quorum sensing, relative phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:18Z
+
+[Term]
+id: OMP:0007029
+name: decreased utilization of dinitrogen phenotype
+def: "A dinitrogen (N2) utilization phenotype where the organism has decreased ability relative to some reference to use N2 as a source of nitrogen." [OMP:DAS]
+is_a: OMP:0006030 ! dinitrogen utilization phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-28T20:59:52Z
+
+[Term]
+id: OMP:0007030
+name: increased utilization of dinitrogen phenotype
+def: "A dinitrogen (N2) utilization phenotype where the organism has increased ability relative to some reference to use N2 as a source of nitrogen." [OMP:DAS]
+is_a: OMP:0006030 ! dinitrogen utilization phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-28T21:02:26Z
+
+[Term]
+id: OMP:0007031
+name: utilization of dinitrogen phenotype
+def: "A dinitrogen utilization state phenotype where the representative member of a taxonomic unit can use N2 as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0006030 ! dinitrogen utilization phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-28T21:02:26Z
+
+[Term]
+id: OMP:0007032
+name: decreased utilization of inorganic nitrogen phenotype
+def: "An inorganic nitrogen utilization phenotype where the organism has decreased ability relative to some reference to use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007013 ! inorganic nitrogen utilization phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-28T21:03:56Z
+
+[Term]
+id: OMP:0007033
+name: increased utilization of inorganic nitrogen phenotype
+def: "An inorganic nitrogen utilization phenotype where the organism has increased ability relative to some reference to use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007013 ! inorganic nitrogen utilization phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-28T21:05:18Z
+
+[Term]
+id: OMP:0007034
+name: utilization of inorganic nitrogen phenotype
+def: "An inorganic nitrogen utilization state phenotype where the representative member of a taxonomic unit can use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007013 ! inorganic nitrogen utilization phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-28T21:05:43Z
+
+[Term]
+id: OMP:0007035
+name: decreased utilization of organic nitrogen phenotype
+def: "An organic nitrogen utilization phenotype where the organism has decreased ability relative to some reference to use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007014 ! organic nitrogen utilization phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-28T21:07:53Z
+
+[Term]
+id: OMP:0007036
+name: increased utilization of inorganic nitrogen phenotype
+def: "An organic nitrogen utilization phenotype where the organism has increased ability relative to some reference to use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007014 ! organic nitrogen utilization phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-28T21:07:58Z
+
+[Term]
+id: OMP:0007037
+name: utilization of organic nitrogen phenotype
+def: "An organic nitrogen utilization state phenotype where the representative member of a taxonomic unit can use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007014 ! organic nitrogen utilization phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-28T21:08:02Z
 
 [Typedef]
 id: is_a
