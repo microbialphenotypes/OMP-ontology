@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:09:2013 21:10
+date: 29:09:2013 00:41
 saved-by: DeborahSiegele
 auto-generated-by: OBO-Edit 2.2
 default-namespace: microbial_phenotype
@@ -2116,7 +2116,7 @@ creation_date: 2011-07-21T02:15:11Z
 id: OMP:0000273
 name: auxotrophic phenotype, state phenotype
 def: "A growth factor requirement phenotype where an auxotroph is an organism that cannot synthesize certain organic molecules (growth factors) that are essential for its growth." [ISBN:9780073375267, OMP:DAS]
-is_a: OMP:0006002 ! growth factor requirement phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T02:17:25Z
 
@@ -3882,7 +3882,8 @@ creation_date: 2013-09-03T05:28:25Z
 [Term]
 id: OMP:0006002
 name: growth factor requirement phenotype
-def: "A nutrient phenotype, where the defining trait is the ability or inability to synthesize an organic molecule that is required for growth." [ISBN:9780073402406, OMP:DAS]
+def: "A nutrient utilization phenotype involving the need for a growth factor, which is a required organic molecule that the organism cannot synthesize for itself." [ISBN:9780073402406, OMP:DAS]
+synonym: "auxotroph" RELATED []
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T05:30:35Z
@@ -3899,7 +3900,7 @@ creation_date: 2013-09-03T07:54:22Z
 id: OMP:0006004
 name: carbon source utilization, relative phenotype
 def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular carbon source." [GO:0015976, OMP:JCH\,DAS]
-is_a: OMP:0006022 ! nutrient utilization phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-06T16:52:37Z
 
@@ -4005,7 +4006,7 @@ creation_date: 2013-09-10T13:43:42Z
 id: OMP:0006018
 name: increased carbon source utilization phenotype
 def: "A carbon source utilization, relative phenotype where the trait in question is increased ability to utilize a particular carbon source." [OMP:DAS]
-is_a: OMP:0006004 ! carbon source utilization, relative phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T13:49:43Z
 
@@ -4013,7 +4014,7 @@ creation_date: 2013-09-10T13:49:43Z
 id: OMP:0006019
 name: decreased carbon source utilization phenotype
 def: "A carbon source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular carbon source." [OMP:DAS]
-is_a: OMP:0006004 ! carbon source utilization, relative phenotype
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T13:49:43Z
 
@@ -4044,17 +4045,17 @@ creation_date: 2013-09-10T14:40:06Z
 
 [Term]
 id: OMP:0006023
-name: carbon source utilization, state phenotype
-def: "A nutrient utilization phenotype where the trait in question is the ability of the representative member of the taxonomic unit to utilize organic or inorganic sources of carbon." [OMP:DAS]
+name: carbon source utilization phenotype
+def: "A nutrient utilization phenotype where the nutrient is being used as the source of carbon." [OMP:DAS]
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006024
-name: heterotroph phenotype
-def: "A carbon source utilization state phenotype where organic molecules are used as the source of carbon." [ISBN:9780073402406, OMP:DAS]
-is_a: OMP:0006023 ! carbon source utilization, state phenotype
+name: heterotroph
+def: "A carbon source utilization state phenotype where the representative member of a taxonomic unit can use organic molecules as the carbon source." [ISBN:9780073402406, OMP:DAS]
+is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:39:02Z
 
@@ -4205,9 +4206,9 @@ creation_date: 2013-09-11T17:14:56Z
 
 [Term]
 id: OMP:0007012
-name: autotroph phenotype
-def: "A carbon source utilization state phenotype where carbon dioxide (CO2) can be used as the sole carbon source." [ISBN:9780073402406, OMP:DAS]
-is_a: OMP:0006023 ! carbon source utilization, state phenotype
+name: autotroph
+def: "A carbon source utilization state phenotype where the representative member of a taxonomic unit can use carbon dioxide (CO2) as the carbon source." [ISBN:9780073402406, OMP:DAS]
+is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:10:16Z
 
@@ -4232,9 +4233,9 @@ creation_date: 2013-09-13T15:20:24Z
 
 [Term]
 id: OMP:0007015
-name: amino acid requirement
-def: "An auxotrophic state phenotype where the representative member of the taxonomic unit cannot synthesize one or more amino acids required for growth." [OMP:DAS]
-is_a: OMP:0000273 ! auxotrophic phenotype, state phenotype
+name: requirement for amino acids phenotype
+def: "An amino acid requirement state phenotype where the representative member of the taxonomic unit cannot synthesize one or more required amino acids." [OMP:DAS]
+is_a: OMP:0007038 ! amino acid requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:47:41Z
 
@@ -4242,7 +4243,7 @@ creation_date: 2013-09-16T12:47:41Z
 id: OMP:0007016
 name: purine/pyrimidine requirement
 def: "An auxotrophic state phenotype where the representative member of the taxonomic unit cannot synthesize one or more purine or pyrimidine bases required for growth." [OMP:DAS]
-is_a: OMP:0000273 ! auxotrophic phenotype, state phenotype
+is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:48:22Z
 
@@ -4250,14 +4251,14 @@ creation_date: 2013-09-16T12:48:22Z
 id: OMP:0007017
 name: vitamin/enzyme cofactor requirement
 def: "An auxotrophic state phenotype where the representative member of the taxonomic unit cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
-is_a: OMP:0000273 ! auxotrophic phenotype, state phenotype
+is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:49:50Z
 
 [Term]
 id: OMP:0007018
-name: prototrophic phenotype
-def: "A growth factor requirement phenotype where a prototroph is the representative member of the taxonomic unit can synthesize all organic molecules essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
+name: prototroph
+def: "A growth factor requirement state phenotype where the representative member of the taxonomic unit can synthesize all organic molecules essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
 is_a: OMP:0006002 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:29:19Z
@@ -4265,8 +4266,8 @@ creation_date: 2013-09-16T17:29:19Z
 [Term]
 id: OMP:0007019
 name: increased amino acid requirement phenotype
-def: "An auxotrophic relative phenotype where the organism in question has an increased requirement for one or more amino acids essential for its growth that can be synthesized by the representative member of the taxonomic unit." [OMP:DAS]
-is_a: OMP:0007020 ! auxotrophic phenotype, relative phenotype
+def: "An amino acid requirement phenotype where the organism has an increased requirement relative to some reference for one or more amino acids." [OMP:DAS]
+is_a: OMP:0007038 ! amino acid requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:30:07Z
 
@@ -4274,21 +4275,22 @@ creation_date: 2013-09-16T17:30:07Z
 id: OMP:0007020
 name: auxotrophic phenotype, relative phenotype
 def: "A growth factor phenotype where the trait in question is a change in the ability to synthesize growth factors.  The organism being annotated is derived from an operational taxonomic unit or reference strain that is a prototroph." [OMP:DAS]
-is_a: OMP:0006002 ! growth factor requirement phenotype
+is_obsolete: true
 created_by: siegele
 creation_date: 2013-09-17T16:10:51Z
 
 [Term]
 id: OMP:0007021
 name: decreased amino acid requirement phenotype
-is_a: OMP:0007020 ! auxotrophic phenotype, relative phenotype
+def: "An amino acid requirement phenotype where the organism has a decreased requirement relative to some reference for one or more amino acids." []
+is_a: OMP:0007038 ! amino acid requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:13:20Z
 
 [Term]
 id: OMP:0007022
 name: decreased purine/pyrimidine requirement phenotype
-is_a: OMP:0007020 ! auxotrophic phenotype, relative phenotype
+is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
 
@@ -4296,7 +4298,7 @@ creation_date: 2013-09-17T16:30:10Z
 id: OMP:0007023
 name: increased purine/pyrimidine requirement phenotype
 def: "An auxotrophic relative phenotype where the organism in question has an increased requirement for one or more purine or pyrimidine bases essential for its growth that can be synthesized by the operational taxonomic unit or reference strain." []
-is_a: OMP:0007020 ! auxotrophic phenotype, relative phenotype
+is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:30:36Z
 
@@ -4304,14 +4306,14 @@ creation_date: 2013-09-17T16:30:36Z
 id: OMP:0007024
 name: increased vitamin/enzyme cofactor requirement phenotype
 def: "An auxotrophic relative phenotype where the organism in question has an increased requirement for one or more vitamins/enzyme cofactors essential for its growth that can be synthesized by the operational taxonomic unit or reference strain." []
-is_a: OMP:0007020 ! auxotrophic phenotype, relative phenotype
+is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:31:05Z
 
 [Term]
 id: OMP:0007025
 name: decreased vitamin/enzyme cofactor requirement phenotype
-is_a: OMP:0007020 ! auxotrophic phenotype, relative phenotype
+is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:33:34Z
 
@@ -4410,6 +4412,37 @@ def: "An organic nitrogen utilization state phenotype where the representative m
 is_a: OMP:0007014 ! organic nitrogen utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:08:02Z
+
+[Term]
+id: OMP:0007038
+name: amino acid requirement phenotype
+def: "An auxotrophic phenotype where the required growth factor is an amino acid." []
+is_a: OMP:0007041 ! auxotrophic phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-29T00:27:05Z
+
+[Term]
+id: OMP:0007039
+name: purine/pyrimidine requirement phenotype
+def: "An auxotrophic phenotype where the required growth factor is a purine or pyrimidine base." []
+is_a: OMP:0007041 ! auxotrophic phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-29T00:33:05Z
+
+[Term]
+id: OMP:0007040
+name: vitamin/enzyme cofactor requirement phenotype
+def: "An auxotrophic phenotype where the required growth factor is a vitamin or enzyme cofactor." []
+is_a: OMP:0007041 ! auxotrophic phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-29T00:36:46Z
+
+[Term]
+id: OMP:0007041
+name: auxotrophic phenotype
+is_a: OMP:0006002 ! growth factor requirement phenotype
+created_by: DeborahSiegele
+creation_date: 2013-09-29T00:39:24Z
 
 [Typedef]
 id: is_a
