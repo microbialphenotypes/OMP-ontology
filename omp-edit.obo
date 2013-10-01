@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 29:09:2013 10:21
-saved-by: DeborahSiegele
-auto-generated-by: OBO-Edit 2.2
+date: 01:10:2013 15:40
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3882,8 +3882,7 @@ creation_date: 2013-09-03T05:28:25Z
 [Term]
 id: OMP:0006002
 name: growth factor utilization phenotype
-def: "A nutrient utilization phenotype where the nutrient is an essential organic molecule." [ISBN:9780073402406, OMP:DAS]
-synonym: "auxotroph" RELATED []
+def: "A nutrient utilization phenotype where the nutrient is an essential organic compound." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-03T05:30:35Z
@@ -4214,7 +4213,7 @@ creation_date: 2013-09-13T15:10:16Z
 
 [Term]
 id: OMP:0007013
-name: inorganic nitrogen utilization phenotype
+name: inorganic nitrogen source utilization phenotype
 def: "A nitrogen source utilization phenotype where an inorganic nitrogen-containing compound is the source of nitrogen." [OMP:DAS]
 synonym: "ammonia (NH3) utilization, state phenotype" NARROW []
 synonym: "nitrate utilization, state phenotype " NARROW []
@@ -4225,7 +4224,7 @@ creation_date: 2013-09-13T15:19:33Z
 
 [Term]
 id: OMP:0007014
-name: organic nitrogen utilization phenotype
+name: organic nitrogen source utilization phenotype
 def: "A nitrogen source utilization phenotype where an organic nitrogen-containing compound is the source of nitrogen." [OMP:DAS]
 is_a: OMP:0006026 ! nitrogen source utilization phenotype
 created_by: siegele
@@ -4234,7 +4233,7 @@ creation_date: 2013-09-13T15:20:24Z
 [Term]
 id: OMP:0007015
 name: requirement for amino acids phenotype
-def: "An amino acid requirement phenotype where the representative member of the taxonomic unit cannot synthesize one or more amino acids." [OMP:DAS]
+def: "An amino acid requirement state phenotype where the representative member of the taxonomic unit cannot synthesize one or more amino acids." [OMP:DAS]
 is_a: OMP:0007038 ! amino acid requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:47:41Z
@@ -4250,7 +4249,7 @@ creation_date: 2013-09-16T12:48:22Z
 [Term]
 id: OMP:0007017
 name: vitamin/enzyme cofactor requirement
-def: "A vitamin/enzyme cofactor phenotype where the representative member of the taxonomic unit cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
+def: "A vitamin/enzyme cofactor state phenotype where the representative member of the taxonomic unit cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
 is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:49:50Z
@@ -4258,7 +4257,7 @@ creation_date: 2013-09-16T12:49:50Z
 [Term]
 id: OMP:0007018
 name: prototroph
-def: "A growth factor utilization state phenotype where the representative member of a taxonomic unit can synthesize all organic molecules essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
+def: "A growth factor utilization state phenotype where the representative member of a taxonomic unit can synthesize all organic compounds essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
 is_a: OMP:0006002 ! growth factor utilization phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:29:19Z
@@ -4370,48 +4369,48 @@ creation_date: 2013-09-28T21:02:26Z
 [Term]
 id: OMP:0007032
 name: decreased utilization of inorganic nitrogen phenotype
-def: "An inorganic nitrogen utilization phenotype where the organism has decreased ability relative to some reference to use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
-is_a: OMP:0007013 ! inorganic nitrogen utilization phenotype
+def: "An inorganic nitrogen source utilization phenotype where the organism has decreased ability relative to some reference to use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:03:56Z
 
 [Term]
 id: OMP:0007033
 name: increased utilization of inorganic nitrogen phenotype
-def: "An inorganic nitrogen utilization phenotype where the organism has increased ability relative to some reference to use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
-is_a: OMP:0007013 ! inorganic nitrogen utilization phenotype
+def: "An inorganic nitrogen source utilization phenotype where the organism has increased ability relative to some reference to use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:05:18Z
 
 [Term]
 id: OMP:0007034
 name: utilization of inorganic nitrogen phenotype
-def: "An inorganic nitrogen utilization state phenotype where the representative member of a taxonomic unit can use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
-is_a: OMP:0007013 ! inorganic nitrogen utilization phenotype
+def: "An inorganic nitrogen source utilization state phenotype where the representative member of a taxonomic unit can use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:05:43Z
 
 [Term]
 id: OMP:0007035
 name: decreased utilization of organic nitrogen phenotype
-def: "An organic nitrogen utilization phenotype where the organism has decreased ability relative to some reference to use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
-is_a: OMP:0007014 ! organic nitrogen utilization phenotype
+def: "An organic nitrogen source utilization phenotype where the organism has decreased ability relative to some reference to use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:07:53Z
 
 [Term]
 id: OMP:0007036
 name: increased utilization of organic nitrogen phenotype
-def: "An organic nitrogen utilization phenotype where the organism has increased ability relative to some reference to use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
-is_a: OMP:0007014 ! organic nitrogen utilization phenotype
+def: "An organic nitrogen source utilization phenotype where the organism has increased ability relative to some reference to use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:07:58Z
 
 [Term]
 id: OMP:0007037
 name: utilization of organic nitrogen phenotype
-def: "An organic nitrogen utilization state phenotype where the representative member of a taxonomic unit can use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
-is_a: OMP:0007014 ! organic nitrogen utilization phenotype
+def: "An organic nitrogen source utilization state phenotype where the representative member of a taxonomic unit can use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:08:02Z
 
@@ -4419,7 +4418,7 @@ creation_date: 2013-09-28T21:08:02Z
 id: OMP:0007038
 name: amino acid requirement phenotype
 def: "An auxotrophic phenotype where the required growth factor is an amino acid." [OMP:DAS]
-is_a: OMP:0007041 ! auxotrophic phenotype
+is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:27:05Z
 
@@ -4427,7 +4426,7 @@ creation_date: 2013-09-29T00:27:05Z
 id: OMP:0007039
 name: purine/pyrimidine requirement phenotype
 def: "An auxotrophic phenotype where the required growth factor is a purine or pyrimidine base." [OMP:DAS]
-is_a: OMP:0007041 ! auxotrophic phenotype
+is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:33:05Z
 
@@ -4435,14 +4434,14 @@ creation_date: 2013-09-29T00:33:05Z
 id: OMP:0007040
 name: vitamin/enzyme cofactor requirement phenotype
 def: "An auxotrophic phenotype where the required growth factor is a vitamin or enzyme cofactor." [OMP:DAS]
-is_a: OMP:0007041 ! auxotrophic phenotype
+is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:36:46Z
 
 [Term]
 id: OMP:0007041
-name: auxotrophic phenotype
-def: "A growth factor utilization phenotype where the organism cannot synthesize an essential organic molecule." [ISBN:9780878936083, OMP:DAS]
+name: auxotroph
+def: "A growth factor utilization state phenotype where the representative member of a taxonomic unit cannot synthesize one or more essential organic molecules, but must obtain them from the environment." [ISBN:9780878936083, OMP:DAS]
 is_a: OMP:0006002 ! growth factor utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:39:24Z
@@ -4462,6 +4461,142 @@ def: "A nutrient utilization phenotype where the nutrient is being used as a sou
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T09:41:48Z
+
+[Term]
+id: OMP:0007044
+name: growth factor requirement phenotype
+def: "A growth factor utilization phenotype where an organism cannot synthesize one or more essential organic compounds, but must obtain them from the environment." []
+is_a: OMP:0006002 ! growth factor utilization phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:07:53Z
+
+[Term]
+id: OMP:0007045
+name: inorganic phosphorus source phenotype
+def: "A phosphorus source utilization phenotype where an inorganic P-containing compound is the source of phosphorus." [OMP:DAS]
+is_a: OMP:0007043 ! phosphorus source utilization phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:17:10Z
+
+[Term]
+id: OMP:0007046
+name: organic phosphorus source phenotype
+def: "A phosphorus source utilization phenotype where an organic P-containing compound is the source of phosphorus." [OMP:DAS]
+is_a: OMP:0007043 ! phosphorus source utilization phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:17:10Z
+
+[Term]
+id: OMP:0007047
+name: decreased utilization of inorganic phosphorus phenotype
+def: "An inorganic phosphorus source utilization phenotype where the organism has decreased ability relative to some reference to use an inorganic P-containing compound as the source of phosphorus." [OMP:DAS]
+is_a: OMP:0007045 ! inorganic phosphorus source phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:19:36Z
+
+[Term]
+id: OMP:0007048
+name: increased utilization of inorganic phosphorus phenotype
+def: "An inorganic phosphorus source utilization phenotype where the organism has increased ability relative to some reference to use an inorganic P-containing compound as the source of phosphorus." [OMP:DAS]
+is_a: OMP:0007045 ! inorganic phosphorus source phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:19:36Z
+
+[Term]
+id: OMP:0007049
+name: utilization of inorganic phosphorus phenotype
+def: "An inorganic phosphorus source utilization state phenotype where the representative member of a taxonomic unit can use an inorganic P-containing compound as the source of phosphorus." [OMP:DAS]
+is_a: OMP:0007045 ! inorganic phosphorus source phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:19:36Z
+
+[Term]
+id: OMP:0007050
+name: decreased utilization of organic phosphorus phenotype
+def: "An organic phosphorus source utilization phenotype where the organism has decreased ability relative to some reference to use an organic P-containing compound as the source of phosphorus." [OMP:DAS]
+is_a: OMP:0007046 ! organic phosphorus source phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:20:22Z
+
+[Term]
+id: OMP:0007051
+name: increased utilization of organic phosphorus phenotype
+def: "An organic phosphorus source utilization phenotype where the organism has increased ability relative to some reference to use an organic P-containing compound as the source of phosphorus." [OMP:DAS]
+is_a: OMP:0007046 ! organic phosphorus source phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:20:22Z
+
+[Term]
+id: OMP:0007052
+name: utilization of organic phosphorus phenotype
+def: "An organic phosphorus source utilization state phenotype where the representative member of a taxonomic unit can use an organic P-containing compound as the source of phosphorus." [OMP:DAS]
+is_a: OMP:0007046 ! organic phosphorus source phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:20:22Z
+
+[Term]
+id: OMP:0007053
+name: inorganic sulfur source utilization phenotype
+def: "A sulfur source utilization phenotype where an inorganic S-containing compound is the source of sulfur." [OMP:DAS]
+is_a: OMP:0007042 ! sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:32:55Z
+
+[Term]
+id: OMP:0007054
+name: organic sulfur source utilization phenotype
+def: "A sulfur source utilization phenotype where an organic S-containing compound is the source of sulfur." [OMP:DAS]
+is_a: OMP:0007042 ! sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:32:55Z
+
+[Term]
+id: OMP:0007055
+name: decreased utilization of inorganic sulfur phenotype
+def: "An inorganic sulfur source utilization phenotype where the organism has decreased ability relative to some reference to use an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007053 ! inorganic sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:33:08Z
+
+[Term]
+id: OMP:0007056
+name: increased utilization of inorganic sulfur phenotype
+def: "An inorganic sulfur source utilization phenotype where the organism has increased ability relative to some reference to use an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007053 ! inorganic sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:33:32Z
+
+[Term]
+id: OMP:0007057
+name: utilization of inorganic sulfur phenotype
+def: "An inorganic sulfur source utilization state phenotype where the representative member of a taxonomic unit can use an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007053 ! inorganic sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:33:38Z
+
+[Term]
+id: OMP:0007058
+name: decreased utilization of organic sulfur phenotype
+def: "An organic sulfur source utilization phenotype where the organism has decreased ability relative to some reference to use an organic S-containing compound as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007054 ! organic sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:34:00Z
+
+[Term]
+id: OMP:0007059
+name: increased utilization of organic sulfur phenotype
+def: "An organic sulfur source utilization phenotype where the organism has decreased ability relative to some reference to use an organic S-containing compound as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007054 ! organic sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:34:05Z
+
+[Term]
+id: OMP:0007060
+name: utilization of organic sulfur phenotype
+def: "An organic sulfur source utilization state phenotype where the representative member of a taxonomic unit can use an organic S-containing compound as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007054 ! organic sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:34:09Z
 
 [Typedef]
 id: is_a
