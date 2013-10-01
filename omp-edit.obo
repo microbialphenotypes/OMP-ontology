@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:10:2013 15:40
+date: 01:10:2013 15:48
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -945,7 +945,7 @@ creation_date: 2011-02-02T02:46:17Z
 [Term]
 id: OMP:0000117
 name: diplococcus
-def: "A cell arrangement where pairs of coccus cells arise from a division event in one plane." [OMP:AEZ]
+def: "A cell arrangement state phenotype where the representative member of a taxonomic unit forms pairs of coccus cells, which arise from a division event in one plane." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:29:12Z
@@ -3434,7 +3434,7 @@ creation_date: 2013-05-23T01:35:26Z
 [Term]
 id: OMP:0000451
 name: heme utilization phenotype
-is_a: OMP:0000450 ! trace element utilization phenotype
+is_a: OMP:0007061 ! iron source utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:37:06Z
 
@@ -3451,7 +3451,6 @@ creation_date: 2013-05-23T01:37:51Z
 id: OMP:0000453
 name: decreased heme utilization
 is_a: OMP:0000451 ! heme utilization phenotype
-intersection_of: OMP:0000316 ! relative phenotype
 intersection_of: OMP:0000451 ! heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:39:39Z
@@ -3460,8 +3459,6 @@ creation_date: 2013-05-23T01:39:39Z
 id: OMP:0000454
 name: absence of heme utilization
 is_a: OMP:0000451 ! heme utilization phenotype
-intersection_of: OMP:0000315 ! state phenotype
-intersection_of: OMP:0000451 ! heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:40:40Z
 
@@ -4597,6 +4594,13 @@ def: "An organic sulfur source utilization state phenotype where the representat
 is_a: OMP:0007054 ! organic sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:34:09Z
+
+[Term]
+id: OMP:0007061
+name: iron source utilization phenotype
+is_a: OMP:0006022 ! nutrient utilization phenotype
+created_by: siegele
+creation_date: 2013-10-01T15:46:38Z
 
 [Typedef]
 id: is_a
