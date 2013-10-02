@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:10:2013 18:12
+date: 02:10:2013 18:41
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -310,7 +310,7 @@ creation_date: 2011-04-26T03:44:34Z
 [Term]
 id: OMP:0000036
 name: increased capsule formation
-def: "An increased amount of capsule relative to a reference strain in the same environment or relative to the same strain in a different environment." [OMP:OMP]
+def: "An increased amount of capsule relative to a reference strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
 is_a: OMP:0007004 ! capsule, relative phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:11Z
