@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 01:10:2013 15:48
-saved-by: siegele
+date: 02:10:2013 18:12
+saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -3465,6 +3465,7 @@ creation_date: 2013-05-23T01:40:40Z
 [Term]
 id: OMP:0000455
 name: alkaloid resistance phenotype
+def: "An antimicrobial compound resistance phenotype where resistance is toward compounds containing basic nitrogen in a heterocyclic structure." [CheBI:22315, OMP:WAM]
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:53:57Z
@@ -3472,6 +3473,7 @@ creation_date: 2013-05-23T01:53:57Z
 [Term]
 id: OMP:0000456
 name: caffeine resistance phenotype
+def: "An alkaloid resistance phenotype dealing with resistance toward a trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7." [CheBI:27732, OMP:WAM]
 is_a: OMP:0000455 ! alkaloid resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:54:51Z
@@ -3479,6 +3481,7 @@ creation_date: 2013-05-23T01:54:51Z
 [Term]
 id: OMP:0000457
 name: resistance to caffeine
+def: "A caffeine resistance phenotype where resistance is present." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000315 ! state phenotype
 created_by: mchibucos
@@ -3487,27 +3490,27 @@ creation_date: 2013-05-23T01:55:13Z
 [Term]
 id: OMP:0000458
 name: lack of resistance to caffeine
+def: "A caffeine resistance phenotype where resistance is absent." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000315 ! state phenotype
-intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:34Z
 
 [Term]
 id: OMP:0000459
 name: increased caffeine resistance
+def: "A caffeine resistance phenotype where resistance is higher." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000316 ! relative phenotype
-intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:11Z
 
 [Term]
 id: OMP:0000460
 name: decreased caffeine resistance
+def: "A caffeine resistance phenotype where resistance is lowered." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000316 ! relative phenotype
-intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:55Z
 
