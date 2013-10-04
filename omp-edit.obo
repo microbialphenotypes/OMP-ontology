@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 04:10:2013 14:53
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 04:10:2013 18:22
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3484,8 +3484,8 @@ id: OMP:0000457
 name: resistance to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is resistant to caffeine." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000315 ! state phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:13Z
 
@@ -3494,8 +3494,8 @@ id: OMP:0000458
 name: lack of resistance to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is NOT resistant to caffeine." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000315 ! state phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:34Z
 
@@ -3514,8 +3514,8 @@ id: OMP:0000460
 name: decreased caffeine resistance
 def: "A caffeine resistance phenotype where resistance is lowered relative to some reference." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000316 ! relative phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: is_a OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:55Z
 
@@ -4077,6 +4077,15 @@ def: "A nutrient utilization phenotype where the nutrient is being utilized as a
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
+
+[Term]
+id: OMP:0006027
+name: bacteriocin resistance
+def: "Polypeptides synthesized by specific strains of bacteria that are lethal against other strains of the same or related species." [CHEBI:48081]
+xref: CHEBI:48081
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-04T16:57:43Z
 
 [Term]
 id: OMP:0006030
