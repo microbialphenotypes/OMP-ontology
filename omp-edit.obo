@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 04:10:2013 18:22
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 04:10:2013 22:30
+saved-by: DeborahSiegele
+auto-generated-by: OBO-Edit 2.2
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -373,8 +373,10 @@ creation_date: 2011-04-26T04:08:26Z
 [Term]
 id: OMP:0000046
 name: presence of chemotaxis
-def: "A chemotaxis phenotype where a cell possesses the ability to move in response to a chemical concentration gradient." [OMP:MCC]
-is_a: OMP:0000318 ! chemotaxis, state phenotype
+def: "A chemotaxis state phenotype where the representative member of a taxonomic unit possesses the ability to move in response to a chemical concentration gradient." [OMP:MCC]
+is_a: OMP:0000048 ! chemotaxis phenotype
+intersection_of: OMP:0000048 ! chemotaxis phenotype
+intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:17:42Z
 
@@ -422,7 +424,7 @@ creation_date: 2011-06-07T10:54:14Z
 [Term]
 id: OMP:0000052
 name: presence of positive chemotaxis
-def: "A chemotaxis phenotype where a cell possesses the ability to move toward a chemical concentration gradient." [OMP:MCC]
+def: "A presence of chemotaxis phenotype where the representative member of a taxonomic unit possesses the ability to move toward a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000046 ! presence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -430,7 +432,7 @@ creation_date: 2011-04-26T04:42:14Z
 [Term]
 id: OMP:0000053
 name: presence of negative chemotaxis
-def: "A chemotaxis phenotype where a cell possesses the ability to move away from a chemical concentration gradient." [OMP:MCC]
+def: "A presence of chemotaxis phenotype where the representative member of a taxonomic unit possesses the ability away from a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000046 ! presence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -438,7 +440,7 @@ creation_date: 2011-04-26T04:42:14Z
 [Term]
 id: OMP:0000054
 name: absence of positive chemotaxis
-def: "A chemotaxis phenotype where a cell does not possess the ability to move toward a chemical concentration gradient." [OMP:MCC]
+def: "An absence of chemotaxis phenotype where the representative member of a taxonomic unit does not possess the ability to move toward a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000097 ! absence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -446,7 +448,7 @@ creation_date: 2011-04-26T04:42:14Z
 [Term]
 id: OMP:0000055
 name: absence of negative chemotaxis
-def: "A chemotaxis phenotype where a cell does not possess the ability to move away from a chemical concentration gradient." [OMP:MCC]
+def: "An absence of chemotaxis phenotype where the representative member of a taxonomic unit does not possess the ability to move away from a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000097 ! absence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -795,8 +797,10 @@ creation_date: 2011-02-02T03:26:41Z
 [Term]
 id: OMP:0000097
 name: absence of chemotaxis
-def: "A chemotaxis phenotype where a cell does not possess the ability to move in response to a chemical concentration gradient." [OMP:MCC]
-is_a: OMP:0000318 ! chemotaxis, state phenotype
+def: "A chemotaxis state phenotype where the representative member of a taxonomic unit does not possess the ability to move in response to a chemical concentration gradient." [OMP:MCC]
+is_a: OMP:0000048 ! chemotaxis phenotype
+intersection_of: OMP:0000048 ! chemotaxis phenotype
+intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:13Z
 
@@ -2461,8 +2465,6 @@ creation_date: 2012-04-05T03:35:22Z
 id: OMP:0000317
 name: chemotaxis, relative phenotype
 is_a: OMP:0000048 ! chemotaxis phenotype
-intersection_of: OMP:0000048 ! chemotaxis phenotype
-intersection_of: OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2012-04-17T02:06:57Z
 
@@ -2470,8 +2472,6 @@ creation_date: 2012-04-17T02:06:57Z
 id: OMP:0000318
 name: chemotaxis, state phenotype
 is_a: OMP:0000048 ! chemotaxis phenotype
-intersection_of: OMP:0000048 ! chemotaxis phenotype
-intersection_of: OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2012-04-17T02:07:31Z
 
@@ -3573,14 +3573,14 @@ creation_date: 2012-11-02T01:21:21Z
 id: OMP:0000503
 name: decreased chemotaxis
 synonym: "abolished chemotaxis" NARROW []
-is_a: OMP:0000317 ! chemotaxis, relative phenotype
+is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:22:28Z
 
 [Term]
 id: OMP:0000505
 name: increased chemotaxis
-is_a: OMP:0000317 ! chemotaxis, relative phenotype
+is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:23:12Z
 
@@ -4246,7 +4246,7 @@ creation_date: 2013-09-13T15:20:24Z
 
 [Term]
 id: OMP:0007015
-name: requirement for amino acids phenotype
+name: requirement for amino acid
 def: "An amino acid requirement state phenotype where the representative member of the taxonomic unit cannot synthesize one or more amino acids." [OMP:DAS]
 is_a: OMP:0007038 ! amino acid requirement phenotype
 created_by: siegele
@@ -4278,7 +4278,7 @@ creation_date: 2013-09-16T17:29:19Z
 
 [Term]
 id: OMP:0007019
-name: increased amino acid requirement phenotype
+name: increased amino acid requirement
 def: "An amino acid requirement phenotype where the organism has an increased requirement relative to some reference for one or more amino acids." [OMP:DAS]
 is_a: OMP:0007038 ! amino acid requirement phenotype
 created_by: siegele
@@ -4294,7 +4294,7 @@ creation_date: 2013-09-17T16:10:51Z
 
 [Term]
 id: OMP:0007021
-name: decreased amino acid requirement phenotype
+name: decreased amino acid requirement
 def: "An amino acid requirement phenotype where the organism has a decreased requirement relative to some reference for one or more amino acids." [OMP:DAS]
 is_a: OMP:0007038 ! amino acid requirement phenotype
 created_by: siegele
@@ -4302,7 +4302,7 @@ creation_date: 2013-09-17T16:13:20Z
 
 [Term]
 id: OMP:0007022
-name: decreased purine/pyrimidine requirement phenotype
+name: decreased purine/pyrimidine requirement
 def: "A purine/pyrimidine requirement phenotype where the organism has a decreased requirement relative to some reference for a purine or pyrimidine base." [OMP:DAS]
 is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
 created_by: siegele
@@ -4310,7 +4310,7 @@ creation_date: 2013-09-17T16:30:10Z
 
 [Term]
 id: OMP:0007023
-name: increased purine/pyrimidine requirement phenotype
+name: increased purine/pyrimidine requirement
 def: "A purine/pyrimidine requirement phenotype where the organism has an increased requirement relative to some reference for a purine or pyrimidine base." [OMP:DAS]
 is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
 created_by: siegele
@@ -4318,7 +4318,7 @@ creation_date: 2013-09-17T16:30:36Z
 
 [Term]
 id: OMP:0007024
-name: increased vitamin/enzyme cofactor requirement phenotype
+name: increased vitamin/enzyme cofactor requirement
 def: "A vitamin/enzyme cofactor requirement phenotype where the organism has an increased requirement relative to some reference for a vitamin/enzyme cofactor." [OMP:DAS]
 is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
 created_by: siegele
@@ -4326,7 +4326,7 @@ creation_date: 2013-09-17T16:31:05Z
 
 [Term]
 id: OMP:0007025
-name: decreased vitamin/enzyme cofactor requirement phenotype
+name: decreased vitamin/enzyme cofactor requirement
 def: "A vitamin/enzyme cofactor requirement phenotype where the organism has a decreased requirement relative to some reference for a vitamin/enzyme cofactor." [OMP:DAS]
 is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
 created_by: siegele
@@ -4479,7 +4479,7 @@ creation_date: 2013-09-29T09:41:48Z
 [Term]
 id: OMP:0007044
 name: growth factor requirement phenotype
-def: "A growth factor utilization phenotype where an organism cannot synthesize one or more essential organic compounds, but must obtain them from the environment." []
+def: "A growth factor utilization phenotype where an organism cannot synthesize one or more essential organic compounds, but must obtain them from the environment." [OMP:DAS]
 is_a: OMP:0006002 ! growth factor utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:07:53Z
