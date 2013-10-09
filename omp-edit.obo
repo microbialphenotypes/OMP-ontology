@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 09:10:2013 13:58
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 09:10:2013 14:21
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -28,7 +28,7 @@ def: "A type of motility that is relatively lower." [OMP:MCC]
 comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
 synonym: "abolished motility" NARROW []
 xref: PATO:0002297
-is_a: OMP:0000314 ! motility, relative phenotype
+is_a: OMP:0000001 ! motility phenotype
 creation_date: 2011-03-10T07:02:42Z
 
 [Term]
@@ -52,7 +52,7 @@ id: OMP:0000005
 name: motile
 def: "A motility state phenotype where a cell or cells posseses the ability to perform controlled self-propelled movement that results in translocation from one place to another." [OMP:MCC]
 synonym: "presence of motility" RELATED []
-is_a: OMP:0000313 ! motility, state phenotype
+is_a: OMP:0000001 ! motility phenotype
 created_by: mchibucos
 creation_date: 2011-04-14T03:35:35Z
 
@@ -366,7 +366,7 @@ id: OMP:0000045
 name: increased motility
 def: "A type of motility that is relatively higher." [OMP:MCC]
 xref: PATO:0002298
-is_a: OMP:0000314 ! motility, relative phenotype
+is_a: OMP:0000001 ! motility phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:26Z
 
@@ -863,7 +863,7 @@ name: aerotolerant anaerobe phenotype
 def: "An oxygen requirement for growth, state phenotype, where growth of the representative member of the taxonomic unit occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 intersection_of: OMP:0000039 ! oxygen requirement for growth phenotype
-intersection_of: is_a OMP:0000315 ! state phenotype
+intersection_of: OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:43:38Z
 
@@ -912,7 +912,7 @@ creation_date: 2011-02-07T03:17:40Z
 
 [Term]
 id: OMP:0000112
-name: gliding
+name: gliding motility
 def: "A motile phenotype where the cell exhibits smooth movement along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
@@ -920,7 +920,7 @@ creation_date: 2011-02-07T03:18:03Z
 
 [Term]
 id: OMP:0000113
-name: twitching
+name: twitching motility
 def: "A cell motility phenotype where the controlled movement of a bacterial cell is dependent on the presence of type IV pili." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
@@ -1085,7 +1085,7 @@ id: OMP:0000133
 name: non-motile
 def: "A cell motility phenotype where a cell does not possess the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
 synonym: "absence of motility" RELATED []
-is_a: OMP:0000313 ! motility, state phenotype
+is_a: OMP:0000001 ! motility phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:33:32Z
 
@@ -2434,7 +2434,7 @@ creation_date: 2012-04-05T11:43:53Z
 id: OMP:0000313
 name: motility, state phenotype
 def: "A motility phenotype that reflects the capability of the representative member of the taxonomic unit." [OMP:MCC]
-is_a: OMP:0000001 ! motility phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-04-05T10:40:04Z
 
@@ -2442,7 +2442,7 @@ creation_date: 2012-04-05T10:40:04Z
 id: OMP:0000314
 name: motility, relative phenotype
 def: "A motility phenotype that is different relative to a reference phenotype." [OMP:MCC]
-is_a: OMP:0000001 ! motility phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-04-05T10:40:27Z
 
@@ -3486,8 +3486,8 @@ id: OMP:0000457
 name: resistance to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is resistant to caffeine." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000315 ! state phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:13Z
 
@@ -3497,7 +3497,7 @@ name: lack of resistance to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is NOT resistant to caffeine." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000315 ! state phenotype
-intersection_of: is_a OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:34Z
 
@@ -3507,7 +3507,7 @@ name: increased caffeine resistance
 def: "A caffeine resistance phenotype where resistance is higher relative to some reference." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000316 ! relative phenotype
-intersection_of: is_a OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:11Z
 
@@ -3517,7 +3517,7 @@ name: decreased caffeine resistance
 def: "A caffeine resistance phenotype where resistance is lowered relative to some reference." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000316 ! relative phenotype
-intersection_of: is_a OMP:0000456 ! caffeine resistance phenotype
+intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:55Z
 
