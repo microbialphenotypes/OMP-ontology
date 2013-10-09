@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 04:10:2013 22:30
-saved-by: DeborahSiegele
-auto-generated-by: OBO-Edit 2.2
+date: 09:10:2013 13:58
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -325,7 +325,7 @@ creation_date: 2011-06-07T11:25:05Z
 
 [Term]
 id: OMP:0000039
-name: oxygen requirement for growth, state phenotype
+name: oxygen requirement for growth phenotype
 def: "A growth phenotype dealing with oxygen requirements and ranges for growth." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
@@ -376,7 +376,7 @@ name: presence of chemotaxis
 def: "A chemotaxis state phenotype where the representative member of a taxonomic unit possesses the ability to move in response to a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 intersection_of: OMP:0000048 ! chemotaxis phenotype
-intersection_of: is_a OMP:0000315 ! state phenotype
+intersection_of: OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:17:42Z
 
@@ -719,7 +719,7 @@ creation_date: 2011-02-02T03:19:47Z
 id: OMP:0000087
 name: facultative anaerobe phenotype
 def: "An oxygen requirement for growth, state phenotype, where growth of the representative member of the taxonomic unit does not require oxygen for growth but grows better in its presence." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
+is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:42:26Z
 
@@ -800,7 +800,7 @@ name: absence of chemotaxis
 def: "A chemotaxis state phenotype where the representative member of a taxonomic unit does not possess the ability to move in response to a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 intersection_of: OMP:0000048 ! chemotaxis phenotype
-intersection_of: is_a OMP:0000315 ! state phenotype
+intersection_of: OMP:0000315 ! state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:13Z
 
@@ -861,7 +861,9 @@ creation_date: 2011-02-02T02:42:12Z
 id: OMP:0000105
 name: aerotolerant anaerobe phenotype
 def: "An oxygen requirement for growth, state phenotype, where growth of the representative member of the taxonomic unit occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
+is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+intersection_of: OMP:0000039 ! oxygen requirement for growth phenotype
+intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:43:38Z
 
@@ -1356,7 +1358,7 @@ creation_date: 2011-02-07T03:47:20Z
 id: OMP:0000171
 name: microaerophile phenotype
 def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strain requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
+is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
 
@@ -1453,7 +1455,7 @@ creation_date: 2011-02-07T03:52:44Z
 id: OMP:0000184
 name: obligate anaerobe phenotype
 def: "An oxygen requirement for growth, state phenotype, where growth of the representative member of the taxonomic unit does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
+is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:34Z
 
@@ -1461,7 +1463,7 @@ creation_date: 2011-02-02T03:29:34Z
 id: OMP:0000185
 name: obligate aerobe phenotype
 def: "An oxygen requirement for growth, state phenotype where growth of the representative member of the taxonomic unit is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth, state phenotype
+is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
 
@@ -3484,8 +3486,8 @@ id: OMP:0000457
 name: resistance to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is resistant to caffeine." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: OMP:0000315 ! state phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:13Z
 
@@ -3495,7 +3497,7 @@ name: lack of resistance to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is NOT resistant to caffeine." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000315 ! state phenotype
-intersection_of: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: is_a OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:34Z
 
@@ -3505,7 +3507,7 @@ name: increased caffeine resistance
 def: "A caffeine resistance phenotype where resistance is higher relative to some reference." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000316 ! relative phenotype
-intersection_of: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: is_a OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:11Z
 
@@ -3515,7 +3517,7 @@ name: decreased caffeine resistance
 def: "A caffeine resistance phenotype where resistance is lowered relative to some reference." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000316 ! relative phenotype
-intersection_of: OMP:0000456 ! caffeine resistance phenotype
+intersection_of: is_a OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:55Z
 
