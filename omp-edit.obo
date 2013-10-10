@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 10:10:2013 16:54
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 10:10:2013 18:24
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3680,7 +3680,7 @@ creation_date: 2013-09-04T13:57:28Z
 
 [Term]
 id: OMP:0005009
-name: acidophilic growth, state phenotype
+name: acidophilic growth
 def: "A pH growth phenotype where optimum growth occurs between pH 0 to 5.5." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0007006 ! pH growth range, state phenotype
 created_by: wmeza
@@ -3688,7 +3688,7 @@ creation_date: 2013-09-04T16:18:28Z
 
 [Term]
 id: OMP:0005010
-name: neutrophilic growth, state phenotype
+name: neutrophilic growth
 def: "A pH growth phenotype where optimum growth occurs between pH 5.5 to 8.0." [ISBN:780073402406, OMP:WAM]
 is_a: OMP:0007006 ! pH growth range, state phenotype
 created_by: wmeza
@@ -3696,7 +3696,7 @@ creation_date: 2013-09-04T16:21:50Z
 
 [Term]
 id: OMP:0005011
-name: alkaliphilic growth, state phenotype
+name: alkaliphilic growth
 def: "A pH growth phenotype where optimum growth occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0007006 ! pH growth range, state phenotype
 created_by: wmeza
