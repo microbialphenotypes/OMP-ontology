@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 09:10:2013 14:21
+date: 10:10:2013 16:54
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
@@ -24,7 +24,7 @@ creation_date: 2011-03-10T06:55:06Z
 id: OMP:0000002
 name: decreased motility
 alt_id: OMP:0000044
-def: "A type of motility that is relatively lower." [OMP:MCC]
+def: "A motility phenotype where the organism(s) has decreased motility relative to some reference." [OMP:MCC]
 comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
 synonym: "abolished motility" NARROW []
 xref: PATO:0002297
@@ -364,7 +364,7 @@ creation_date: 2011-04-26T03:53:34Z
 [Term]
 id: OMP:0000045
 name: increased motility
-def: "A type of motility that is relatively higher." [OMP:MCC]
+def: "A motility phenotype where the organism(s) has increased motility relative to some reference." [OMP:MCC]
 xref: PATO:0002298
 is_a: OMP:0000001 ! motility phenotype
 created_by: mchibucos
@@ -549,8 +549,8 @@ creation_date: 2011-04-26T05:09:24Z
 
 [Term]
 id: OMP:0000067
-name: swarming
-def: "A motile phenotype where the action of numerous flagella of a group of bacteria results in the smooth movement of a group of cells along a solid surface." [OMP:MCC]
+name: swarming motility
+def: "A motile phenotype where the representative member of a taxonomic unit A motile phenotype where the action of numerous flagella of a group of bacteria results in the smooth movement of a group of cells along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
@@ -913,7 +913,7 @@ creation_date: 2011-02-07T03:17:40Z
 [Term]
 id: OMP:0000112
 name: gliding motility
-def: "A motile phenotype where the cell exhibits smooth movement along a solid surface." [OMP:MCC]
+def: "A motile phenotype where the representative member of a taxonomic unit exhibits smooth movement along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-07T03:18:03Z
