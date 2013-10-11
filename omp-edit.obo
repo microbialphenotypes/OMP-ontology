@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 10:10:2013 18:24
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 10:10:2013 19:17
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2617,7 +2617,7 @@ creation_date: 2012-11-02T02:06:13Z
 id: OMP:0000337
 name: beta-lactam compound resistance, relative phenotype
 def: "A beta-lactam compound resistance phenotype, where the trait in question is a change in resistance to beta-lactam compounds relative to a reference strain or reference growth condition." [OMP:DAS]
-is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:09:23Z
 
@@ -2625,7 +2625,7 @@ creation_date: 2012-11-02T02:09:23Z
 id: OMP:0000338
 name: beta-lactam compound resistance, state phenotype
 def: "A beta-lactam compound resistance phenotype that describes whether the representative member of the taxonomic unit is resistant to or sensitive xx concentratons of" [OMP:DAS]
-is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:09:49Z
 
@@ -2633,7 +2633,7 @@ creation_date: 2012-11-02T02:09:49Z
 id: OMP:0000339
 name: increased resistance to beta-lactam compounds
 def: "A beta-lactam compound resistance, relative phenotype, where the trait in question is increased resistance to beta-lactam compounds relative to a reference strain or reference growth condition." [OMP:DAS]
-is_a: OMP:0000337 ! beta-lactam compound resistance, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:10:03Z
 
@@ -2642,14 +2642,14 @@ id: OMP:0000340
 name: decreased resistance to beta-lactam compounds
 def: "A beta-lactam compound resistance, relative phenotype, where the trait in question is decreased resistance to beta-lactam compounds relative to a reference strain or reference growth condition." [OMP:DAS]
 synonym: "abolished resistance to beta lactam antibiotic" NARROW []
-is_a: OMP:0000337 ! beta-lactam compound resistance, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:10:28Z
 
 [Term]
 id: OMP:0000341
 name: penicillin resistance phenotype
-is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:14:00Z
 
@@ -2663,14 +2663,14 @@ creation_date: 2012-11-02T02:14:41Z
 [Term]
 id: OMP:0000343
 name: cephalosporin resistance phenotype
-is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:15:00Z
 
 [Term]
 id: OMP:0000344
 name: cefoxitin resistance phenotype
-is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:15:15Z
 
@@ -2706,21 +2706,21 @@ creation_date: 2012-11-02T02:16:27Z
 [Term]
 id: OMP:0000349
 name: cefoxitin resistance, relative phenotype
-is_a: OMP:0000344 ! cefoxitin resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:17:08Z
 
 [Term]
 id: OMP:0000350
 name: cefoxitin resistance, state phenotype
-is_a: OMP:0000344 ! cefoxitin resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:17:24Z
 
 [Term]
 id: OMP:0000351
 name: increased resistance to cefoxitin
-is_a: OMP:0000349 ! cefoxitin resistance, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:17:39Z
 
@@ -2728,28 +2728,28 @@ creation_date: 2012-11-02T02:17:39Z
 id: OMP:0000352
 name: decreased resistance to cefoxitin
 synonym: "abolished resistance to cefoxitin" NARROW []
-is_a: OMP:0000349 ! cefoxitin resistance, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:18:01Z
 
 [Term]
 id: OMP:0000353
 name: cephalosporin resistance, relative phenotype
-is_a: OMP:0000343 ! cephalosporin resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:18:43Z
 
 [Term]
 id: OMP:0000354
 name: cephalosporin resistance, state phenotype
-is_a: OMP:0000343 ! cephalosporin resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:19:02Z
 
 [Term]
 id: OMP:0000355
 name: increased resistance to cephalosporin
-is_a: OMP:0000353 ! cephalosporin resistance, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:19:15Z
 
@@ -2757,28 +2757,28 @@ creation_date: 2012-11-02T02:19:15Z
 id: OMP:0000356
 name: decreased resistance to cephalosporin
 synonym: "abolished resistance to cephalosporin" NARROW []
-is_a: OMP:0000353 ! cephalosporin resistance, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:19:28Z
 
 [Term]
 id: OMP:0000357
 name: penicillin resistance, relative phenotype
-is_a: OMP:0000341 ! penicillin resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:20:05Z
 
 [Term]
 id: OMP:0000358
 name: penicillin resistance, state phenotype
-is_a: OMP:0000341 ! penicillin resistance phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:20:25Z
 
 [Term]
 id: OMP:0000359
 name: increased resistance to penicillin
-is_a: OMP:0000357 ! penicillin resistance, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:20:39Z
 
@@ -2786,7 +2786,7 @@ creation_date: 2012-11-02T02:20:39Z
 id: OMP:0000360
 name: decreased resistance to penicillin
 synonym: "abolished resistance to penicillin" NARROW []
-is_a: OMP:0000357 ! penicillin resistance, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:20:54Z
 
@@ -3351,56 +3351,56 @@ creation_date: 2012-11-04T02:53:00Z
 [Term]
 id: OMP:0000439
 name: resistant to beta-lactam compounds
-is_a: OMP:0000338 ! beta-lactam compound resistance, state phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:53:24Z
 
 [Term]
 id: OMP:0000440
 name: not resistant to beta-lactam compounds
-is_a: OMP:0000338 ! beta-lactam compound resistance, state phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:53:35Z
 
 [Term]
 id: OMP:0000441
 name: resistant to cefoxitin
-is_a: OMP:0000350 ! cefoxitin resistance, state phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:54:04Z
 
 [Term]
 id: OMP:0000442
 name: not resistant to cefoxitin
-is_a: OMP:0000350 ! cefoxitin resistance, state phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:54:14Z
 
 [Term]
 id: OMP:0000443
 name: resistant to cephalosporin
-is_a: OMP:0000354 ! cephalosporin resistance, state phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:55:01Z
 
 [Term]
 id: OMP:0000444
 name: not resistant to cephalosporin
-is_a: OMP:0000354 ! cephalosporin resistance, state phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:55:19Z
 
 [Term]
 id: OMP:0000445
 name: resistant to penicillin
-is_a: OMP:0000358 ! penicillin resistance, state phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:55:41Z
 
 [Term]
 id: OMP:0000446
 name: not resistant to penicillin
-is_a: OMP:0000358 ! penicillin resistance, state phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:55:50Z
 
@@ -4088,6 +4088,20 @@ xref: CHEBI:48081
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-04T16:57:43Z
+
+[Term]
+id: OMP:0006028
+name: azole resistance phenotype
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-10T19:15:32Z
+
+[Term]
+id: OMP:0006029
+name: quinolone resistance phenotype
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-10T19:15:32Z
 
 [Term]
 id: OMP:0006030
