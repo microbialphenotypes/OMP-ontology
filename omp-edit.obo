@@ -2497,7 +2497,7 @@ creation_date: 2012-04-17T02:17:52Z
 
 [Term]
 id: OMP:0000321
-name: macrolide antibiotic resistance phenotype
+name: macrolide compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype, where the trait in question is resistance to a macrolide drug.  Macrolides contain a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars." [ISBN:9780073375267, OMP:MCC]
 comment: Macrolide antibiotics are effective inhibitors of bacterial protein biosynthesis. They bind to the large 50S ribosomal subunit at or near the peptidyl transferase center and block the elongation of the peptide chain.
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
@@ -3483,20 +3483,18 @@ creation_date: 2013-05-23T01:54:51Z
 
 [Term]
 id: OMP:0000457
-name: resistance to caffeine
+name: resistant to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is resistant to caffeine." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 intersection_of: OMP:0000315 ! state phenotype
-intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:13Z
 
 [Term]
 id: OMP:0000458
-name: lack of resistance to caffeine
+name: not resistant to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is NOT resistant to caffeine." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: OMP:0000315 ! state phenotype
 intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:34Z
@@ -4082,7 +4080,7 @@ creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006027
-name: bacteriocin resistance
+name: bacteriocin compound resistance phenotype
 def: "Polypeptides synthesized by specific strains of bacteria that are lethal against other strains of the same or related species." [CHEBI:48081]
 xref: CHEBI:48081
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
@@ -4091,14 +4089,14 @@ creation_date: 2013-10-04T16:57:43Z
 
 [Term]
 id: OMP:0006028
-name: azole resistance phenotype
+name: azole compound resistance phenotype
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-10T19:15:32Z
 
 [Term]
 id: OMP:0006029
-name: quinolone resistance phenotype
+name: quinolone compound resistance phenotype
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-10T19:15:32Z
@@ -4151,6 +4149,146 @@ def: "A nitrogen requirement source, where the defining trait is the decrease in
 is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:37:31Z
+
+[Term]
+id: OMP:0006036
+name: decreased resistance to macrolide compound
+is_a: OMP:0000321 ! macrolide compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:35:04Z
+
+[Term]
+id: OMP:0006037
+name: increased resistance to macrolide compound
+is_a: OMP:0000321 ! macrolide compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:35:04Z
+
+[Term]
+id: OMP:0006038
+name: not resistant to macrolide compound
+is_a: OMP:0000321 ! macrolide compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:35:04Z
+
+[Term]
+id: OMP:0006039
+name: resistant to macrolide compound
+is_a: OMP:0000321 ! macrolide compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:35:04Z
+
+[Term]
+id: OMP:0006040
+name: decreased resistance to quinolone compound
+is_a: OMP:0006029 ! quinolone compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:38:00Z
+
+[Term]
+id: OMP:0006041
+name: increase resistance to quinolone compound
+is_a: OMP:0006029 ! quinolone compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:38:00Z
+
+[Term]
+id: OMP:0006042
+name: not resistant to quinolone compound
+is_a: OMP:0006029 ! quinolone compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:38:00Z
+
+[Term]
+id: OMP:0006043
+name: resistant to quinolone compound
+is_a: OMP:0006029 ! quinolone compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:38:00Z
+
+[Term]
+id: OMP:0006044
+name: decreased resistance to beta-lactam compound
+is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:40:34Z
+
+[Term]
+id: OMP:0006045
+name: increased resistance to beta-lactam compound
+is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:40:34Z
+
+[Term]
+id: OMP:0006046
+name: not resistant to beta-lactam compound
+is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:40:34Z
+
+[Term]
+id: OMP:0006047
+name: resistant to beta-lactam compound
+is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:40:34Z
+
+[Term]
+id: OMP:0006048
+name: decreased resistance to bacteriocin compound
+is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:44:39Z
+
+[Term]
+id: OMP:0006049
+name: increased resistance to bacteriocin compound
+is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:44:39Z
+
+[Term]
+id: OMP:0006050
+name: not resistant to bacteriocin compound
+is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:44:39Z
+
+[Term]
+id: OMP:0006051
+name: resistant to bacteriocin compound
+is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:44:39Z
+
+[Term]
+id: OMP:0006052
+name: decreased resistance to azole compound
+is_a: OMP:0006028 ! azole compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:45:44Z
+
+[Term]
+id: OMP:0006053
+name: increase resistance to azole compound
+is_a: OMP:0006028 ! azole compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:45:44Z
+
+[Term]
+id: OMP:0006054
+name: not resistant to azole compound
+is_a: OMP:0006028 ! azole compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:45:44Z
+
+[Term]
+id: OMP:0006055
+name: resistant to azole compound
+is_a: OMP:0006028 ! azole compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-11T17:45:44Z
 
 [Term]
 id: OMP:0007001
