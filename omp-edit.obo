@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 10:10:2013 19:17
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 11:10:2013 10:58
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -550,7 +550,7 @@ creation_date: 2011-04-26T05:09:24Z
 [Term]
 id: OMP:0000067
 name: swarming motility
-def: "A motile phenotype where the representative member of a taxonomic unit A motile phenotype where the action of numerous flagella of a group of bacteria results in the smooth movement of a group of cells along a solid surface." [OMP:MCC]
+def: "A motile state phenotype where a population of the representative member of the taxonomic unit displays coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
@@ -2579,21 +2579,21 @@ creation_date: 2012-11-02T02:02:58Z
 [Term]
 id: OMP:0000332
 name: diaminopyrimidine compound resistance, relative phenotype
-is_a: OMP:0000506 ! antimicrobial compound resistance, relative phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:03:42Z
 
 [Term]
 id: OMP:0000333
 name: diaminopyrimidine compound resistance, state phenotype
-is_a: OMP:0000507 ! antimicrobial compound resistance, state phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:07Z
 
 [Term]
 id: OMP:0000334
 name: increased resistance to diaminopyrimidine compound
-is_a: OMP:0000332 ! diaminopyrimidine compound resistance, relative phenotype
+is_a: OMP:0000331 ! diaminopyrimidine compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:38Z
 
@@ -2601,7 +2601,7 @@ creation_date: 2012-11-02T02:04:38Z
 id: OMP:0000335
 name: decreased resistance to diaminopyrimidine compound
 synonym: "abolished resistance to diaminopyrimidine compound" NARROW []
-is_a: OMP:0000332 ! diaminopyrimidine compound resistance, relative phenotype
+is_a: OMP:0000331 ! diaminopyrimidine compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:58Z
 
@@ -3322,15 +3322,15 @@ creation_date: 2012-11-04T02:50:57Z
 
 [Term]
 id: OMP:0000435
-name: resistant to diaminopyrimidine compount
-is_a: OMP:0000333 ! diaminopyrimidine compound resistance, state phenotype
+name: resistant to diaminopyrimidine compound
+is_a: OMP:0000331 ! diaminopyrimidine compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:01Z
 
 [Term]
 id: OMP:0000436
-name: not resistant to diaminopyrimidine compount
-is_a: OMP:0000333 ! diaminopyrimidine compound resistance, state phenotype
+name: not resistant to diaminopyrimidine compound
+is_a: OMP:0000331 ! diaminopyrimidine compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:18Z
 
