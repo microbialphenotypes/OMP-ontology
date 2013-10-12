@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:10:2013 23:28
+date: 11:10:2013 23:36
 saved-by: DeborahSiegele
 auto-generated-by: OBO-Edit 2.2
 default-namespace: microbial_phenotype
@@ -4211,13 +4211,17 @@ creation_date: 2013-10-11T17:44:39Z
 id: OMP:0006052
 name: decreased resistance to azole compound
 is_a: OMP:0006028 ! azole compound resistance phenotype
+intersection_of: OMP:0006028 ! azole compound resistance phenotype
+intersection_of: is_a OMP:0000316 ! relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
 [Term]
 id: OMP:0006053
-name: increase resistance to azole compound
+name: increased resistance to azole compound
 is_a: OMP:0006028 ! azole compound resistance phenotype
+intersection_of: OMP:0006028 ! azole compound resistance phenotype
+intersection_of: is_a OMP:0000316 ! relative phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
@@ -4225,6 +4229,8 @@ creation_date: 2013-10-11T17:45:44Z
 id: OMP:0006054
 name: not resistant to azole compound
 is_a: OMP:0006028 ! azole compound resistance phenotype
+intersection_of: OMP:0006028 ! azole compound resistance phenotype
+intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
@@ -4232,6 +4238,8 @@ creation_date: 2013-10-11T17:45:44Z
 id: OMP:0006055
 name: resistant to azole compound
 is_a: OMP:0006028 ! azole compound resistance phenotype
+intersection_of: OMP:0006028 ! azole compound resistance phenotype
+intersection_of: is_a OMP:0000315 ! state phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
