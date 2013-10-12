@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 11:10:2013 13:52
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 11:10:2013 22:38
+saved-by: DeborahSiegele
+auto-generated-by: OBO-Edit 2.2
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -33,7 +33,7 @@ creation_date: 2011-03-10T07:02:42Z
 
 [Term]
 id: OMP:0000003
-name: cell arrangement phenotype, state phenotype
+name: cell arrangement phenotype
 def: "A microbial phenotype, where the trait in question is the arrangement of cells in relation to one another." [OMP:MCC]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
@@ -591,7 +591,7 @@ creation_date: 2011-02-02T03:15:16Z
 id: OMP:0000072
 name: filamentous
 def: "A cell arrangement where cells are joined end-to-end in linear chains." [OMP:MCC]
-is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:31:35Z
 
@@ -904,8 +904,8 @@ creation_date: 2011-02-02T02:45:02Z
 
 [Term]
 id: OMP:0000111
-name: swimming
-def: "A cell motility phenotype where the cell exhibits smooth movement through a liquid medium." [OMP:MCC]
+name: swimming motility
+def: "A motile state phenotype where the cell exhibits smooth movement through a liquid medium." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
@@ -913,7 +913,7 @@ creation_date: 2011-02-07T03:17:40Z
 [Term]
 id: OMP:0000112
 name: gliding motility
-def: "A motile phenotype where the representative member of a taxonomic unit exhibits smooth movement along a solid surface." [OMP:MCC]
+def: "A motile state phenotype where the representative member of a taxonomic unit exhibits smooth movement along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-07T03:18:03Z
@@ -952,7 +952,7 @@ creation_date: 2011-02-02T02:46:17Z
 id: OMP:0000117
 name: diplococcus
 def: "A cell arrangement state phenotype where the representative member of a taxonomic unit forms pairs of coccus cells, which arise from a division event in one plane." [ISBN:9780073402406, OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:29:12Z
 
@@ -960,7 +960,7 @@ creation_date: 2011-02-18T02:29:12Z
 id: OMP:0000118
 name: streptococcus
 def: "A cell arrangement where chains of coccus cells arise from division events in one plane." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:31:37Z
 
@@ -970,7 +970,7 @@ name: tetrad
 alt_id: OMP:0000156
 def: "A cell arrangement where squares of four coccus cells arise from division in two planes." [OMP:AEZ]
 synonym: "micrococcus arrangement" EXACT []
-is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:33:22Z
 
@@ -978,7 +978,7 @@ creation_date: 2011-02-18T02:33:22Z
 id: OMP:0000120
 name: sarcina
 def: "A cell arrangement where cubes of eight coccus cells arise from a division event in three planes." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:34:40Z
 
@@ -986,7 +986,7 @@ creation_date: 2011-02-18T02:34:40Z
 id: OMP:0000121
 name: stapylococcus
 def: "A cell arrangement where irregular clumps of coccus cells arise from division events in random planes." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:39:34Z
 
@@ -994,7 +994,7 @@ creation_date: 2011-02-18T02:39:34Z
 id: OMP:0000122
 name: streptobacillus
 def: "A cell arrangement where bacillis cells are arranged in chains." [OMP:AEZ]
-is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:47:10Z
 
@@ -1025,7 +1025,7 @@ creation_date: 2011-02-18T02:52:33Z
 [Term]
 id: OMP:0000126
 name: trichome-forming
-is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:55:59Z
 
@@ -1033,7 +1033,7 @@ creation_date: 2011-02-18T02:55:59Z
 id: OMP:0000127
 name: sheathed
 def: "A cell arrangement where chains of cells are enclosed in a hyaline envelope or sheath." [OMP:MCC]
-is_a: OMP:0000003 ! cell arrangement phenotype, state phenotype
+is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:59:18Z
 
@@ -1083,7 +1083,7 @@ creation_date: 2011-02-18T03:01:18Z
 [Term]
 id: OMP:0000133
 name: non-motile
-def: "A cell motility phenotype where a cell does not possess the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
+def: "A motility state phenotype where the representative member of a taxonomic unit does not possess the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
 synonym: "absence of motility" RELATED []
 is_a: OMP:0000001 ! motility phenotype
 created_by: adrienne
@@ -2505,35 +2505,6 @@ created_by: mchibucos
 creation_date: 2012-11-02T01:51:04Z
 
 [Term]
-id: OMP:0000322
-name: macrolide antibiotic resistance, relative phenotype
-is_a: OMP:0000506 ! antimicrobial compound resistance, relative phenotype
-created_by: mchibucos
-creation_date: 2012-11-02T01:53:06Z
-
-[Term]
-id: OMP:0000323
-name: macrolide antibiotic resistance, state phenotype
-is_a: OMP:0000507 ! antimicrobial compound resistance, state phenotype
-created_by: mchibucos
-creation_date: 2012-11-02T01:55:27Z
-
-[Term]
-id: OMP:0000324
-name: increased resistance to macrolide antibiotic
-is_a: OMP:0000322 ! macrolide antibiotic resistance, relative phenotype
-created_by: mchibucos
-creation_date: 2012-11-02T01:55:44Z
-
-[Term]
-id: OMP:0000325
-name: decreased resistance to macrolide antibiotic
-synonym: "abolished resistance to macrolide antibiotic" NARROW []
-is_a: OMP:0000322 ! macrolide antibiotic resistance, relative phenotype
-created_by: mchibucos
-creation_date: 2012-11-02T01:56:02Z
-
-[Term]
 id: OMP:0000326
 name: erythromycin resistance phenotype
 is_obsolete: true
@@ -3237,20 +3208,6 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:47:06Z
 
 [Term]
-id: OMP:0000423
-name: resistant to macrolide antibiotic
-is_a: OMP:0000323 ! macrolide antibiotic resistance, state phenotype
-created_by: mchibucos
-creation_date: 2012-11-04T02:47:36Z
-
-[Term]
-id: OMP:0000424
-name: not resistant to macrolide antibiotic
-is_a: OMP:0000323 ! macrolide antibiotic resistance, state phenotype
-created_by: mchibucos
-creation_date: 2012-11-04T02:47:45Z
-
-[Term]
 id: OMP:0000425
 name: resistant to roxithromycin
 is_obsolete: true
@@ -3583,20 +3540,6 @@ name: increased chemotaxis
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:23:12Z
-
-[Term]
-id: OMP:0000506
-name: antimicrobial compound resistance, relative phenotype
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
-created_by: mchibucos
-creation_date: 2012-11-02T01:26:17Z
-
-[Term]
-id: OMP:0000507
-name: antimicrobial compound resistance, state phenotype
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
-created_by: mchibucos
-creation_date: 2012-11-02T01:31:06Z
 
 [Term]
 id: OMP:0001001
@@ -4187,7 +4130,7 @@ creation_date: 2013-10-11T17:38:00Z
 
 [Term]
 id: OMP:0006041
-name: increase resistance to quinolone compound
+name: increased resistance to quinolone compound
 is_a: OMP:0006029 ! quinolone compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
