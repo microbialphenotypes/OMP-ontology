@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:10:2013 23:05
+date: 11:10:2013 23:28
 saved-by: DeborahSiegele
 auto-generated-by: OBO-Edit 2.2
 default-namespace: microbial_phenotype
@@ -350,6 +350,7 @@ creation_date: 2011-04-26T03:49:09Z
 [Term]
 id: OMP:0000042
 name: anucleoid
+def: "A nucleoid phenotype where the nucleoid is absent in some fraction of cells in a population." [OMP:DAS]
 is_a: OMP:0000150 ! nucleoid phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:51:47Z
@@ -2248,7 +2249,8 @@ creation_date: 2011-07-21T04:04:00Z
 [Term]
 id: OMP:0000289
 name: increased number of anucleoid cells
-comment: Mutations in Escherichia coli muk or par genes result in an increased number of anucleoid cells. Mutations in some genes involved in cell division can also result in a cell having an increased number of nucleoids than typical. These nucleoids have been shown to be evenly distributed throughout a filament, or distributed in some other fashion. This phenotype would not be consistent throughout the population.
+def: "An anucleoid relative phenotype where the fraction of anucleoid cells in a population is increased relative to some reference." [OMP:DAS]
+comment: In Escherichia coli mutations in the muk or par genes result in an increased number of anucleoid cells.
 is_a: OMP:0000042 ! anucleoid
 created_by: mchibucos
 creation_date: 2011-07-21T04:07:44Z
@@ -2265,8 +2267,8 @@ id: OMP:0000291
 name: genophore phenotype
 def: "A genophore is the chromosome equivalent in any organism, cellular organelle, or virus, however, the term is commonly used to refer to chromosomes other than the nuclear chromosomes of eukaryotes." [ISBN:9780195307610, ISBN:9781613441138, OMP:DAS]
 synonym: "chromosome phenotype" RELATED []
+is_a: OMP:0000150 ! nucleoid phenotype
 is_a: OMP:0000290 ! genetic material phenotype
-relationship: OBO_REL:part_of OMP:0000150 ! nucleoid phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:25:09Z
 
