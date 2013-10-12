@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:10:2013 22:38
+date: 11:10:2013 23:05
 saved-by: DeborahSiegele
 auto-generated-by: OBO-Edit 2.2
 default-namespace: microbial_phenotype
@@ -2542,7 +2542,9 @@ creation_date: 2012-11-02T01:58:42Z
 
 [Term]
 id: OMP:0000331
-name: diaminopyrimidine compound resistance phenotype
+name: antifolate compound resistance phenotype
+def: "An antimicrobial compound resistance phenotype where resistance is to a class of drugs that stop cells from using folic acid." [OMP:DAS]
+synonym: "trimethoprim resistance" NARROW []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:02:58Z
@@ -2563,16 +2565,18 @@ creation_date: 2012-11-02T02:04:07Z
 
 [Term]
 id: OMP:0000334
-name: increased resistance to diaminopyrimidine compound
-is_a: OMP:0000331 ! diaminopyrimidine compound resistance phenotype
+name: increased resistance to antifolate compound
+def: "An antifolate compound resistance relative phenotype where resistance is increased relative to some reference." [OMP:DAS]
+is_a: OMP:0000331 ! antifolate compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:38Z
 
 [Term]
 id: OMP:0000335
-name: decreased resistance to diaminopyrimidine compound
+name: decreased resistance to antifolate compound
+def: "An antifolate compound resistance relative phenotype where resistance is decreased relative to some reference." [OMP:DAS]
 synonym: "abolished resistance to diaminopyrimidine compound" NARROW []
-is_a: OMP:0000331 ! diaminopyrimidine compound resistance phenotype
+is_a: OMP:0000331 ! antifolate compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:58Z
 
@@ -3279,15 +3283,17 @@ creation_date: 2012-11-04T02:50:57Z
 
 [Term]
 id: OMP:0000435
-name: resistant to diaminopyrimidine compound
-is_a: OMP:0000331 ! diaminopyrimidine compound resistance phenotype
+name: resistant to antifolate compound
+def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is resistant to antifolate compounds." [OMP:DAS]
+is_a: OMP:0000331 ! antifolate compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:01Z
 
 [Term]
 id: OMP:0000436
-name: not resistant to diaminopyrimidine compound
-is_a: OMP:0000331 ! diaminopyrimidine compound resistance phenotype
+name: not resistant to antifolate compound
+def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to antifolate compounds." [OMP:DAS]
+is_a: OMP:0000331 ! antifolate compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:18Z
 
@@ -3443,7 +3449,6 @@ id: OMP:0000457
 name: resistant to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is resistant to caffeine." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:13Z
 
@@ -3452,7 +3457,6 @@ id: OMP:0000458
 name: not resistant to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is NOT resistant to caffeine." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:34Z
 
@@ -3461,18 +3465,14 @@ id: OMP:0000459
 name: increased caffeine resistance
 def: "A caffeine resistance phenotype where resistance is higher relative to some reference." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: OMP:0000316 ! relative phenotype
-intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:11Z
 
 [Term]
 id: OMP:0000460
 name: decreased caffeine resistance
-def: "A caffeine resistance phenotype where resistance is lowered relative to some reference." [OMP:WAM]
+def: "A caffeine resistance phenotype where resistance is decreased relative to some reference." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: OMP:0000316 ! relative phenotype
-intersection_of: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:55Z
 
