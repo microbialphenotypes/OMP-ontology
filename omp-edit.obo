@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:10:2013 19:37
+date: 15:10:2013 12:34
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -3286,7 +3286,7 @@ creation_date: 2012-11-04T02:50:57Z
 [Term]
 id: OMP:0000435
 name: resistant to antifolate compound
-def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is resistant to antifolate compounds." [OMP:DAS]
+def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an antifolate compound." [OMP:DAS]
 is_a: OMP:0000331 ! antifolate compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:01Z
@@ -3294,7 +3294,7 @@ creation_date: 2012-11-04T02:52:01Z
 [Term]
 id: OMP:0000436
 name: not resistant to antifolate compound
-def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to antifolate compounds." [OMP:DAS]
+def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to an antifolate compound." [OMP:DAS]
 is_a: OMP:0000331 ! antifolate compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:18Z
@@ -4156,6 +4156,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006044
 name: decreased resistance to beta-lactam compound
+def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is decreased relative to some reference." []
 is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4163,6 +4164,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006045
 name: increased resistance to beta-lactam compound
+def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is increased relative to some reference." []
 is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4170,6 +4172,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006046
 name: not resistant to beta-lactam compound
+def: "A beta-lactam compound resistance state phenotype where the representative member of a taxonomic is not resistant to a beta-lactam compound." []
 is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4177,6 +4180,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006047
 name: resistant to beta-lactam compound
+def: "An beta-lactam compound resistance state phenotype where the representative member of a taxonomic unit is resistant to a beta-lactam compound." []
 is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4200,7 +4204,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006050
 name: not resistant to bacteriocin compound
-def: "An bacteriocin compound resistance state phenotype where the representative member of a taxonomic is not resistant to an bacteriocin compound." []
+def: "A bacteriocin compound resistance state phenotype where the representative member of a taxonomic is not resistant to a bacteriocin compound." []
 is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -4208,7 +4212,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006051
 name: resistant to bacteriocin compound
-def: "An bacteriocin compound resistance state phenotype where the representative member of a taxonomic unit is resistant to bacteriocin compounds." []
+def: "A bacteriocin compound resistance state phenotype where the representative member of a taxonomic unit is resistant to a bacteriocin compound." []
 is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
