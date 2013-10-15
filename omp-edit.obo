@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 15:10:2013 14:09
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 15:10:2013 15:04
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3394,7 +3394,7 @@ creation_date: 2013-05-23T01:31:03Z
 [Term]
 id: OMP:0000450
 name: trace element utilization phenotype
-is_a: OMP:0000180 ! metabolic phenotype
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:35:26Z
 
