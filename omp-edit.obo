@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 12:10:2013 11:39
-saved-by: DeborahSiegele
-auto-generated-by: OBO-Edit 2.2
+date: 14:10:2013 19:37
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -4184,6 +4184,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006048
 name: decreased resistance to bacteriocin compound
+def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is decreased relative to some reference." []
 is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -4191,6 +4192,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006049
 name: increased resistance to bacteriocin compound
+def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is increased relative to some reference." []
 is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -4198,6 +4200,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006050
 name: not resistant to bacteriocin compound
+def: "An bacteriocin compound resistance state phenotype where the representative member of a taxonomic is not resistant to an bacteriocin compound." []
 is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -4205,6 +4208,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006051
 name: resistant to bacteriocin compound
+def: "An bacteriocin compound resistance state phenotype where the representative member of a taxonomic unit is resistant to bacteriocin compounds." []
 is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
