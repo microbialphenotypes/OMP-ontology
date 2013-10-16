@@ -3876,6 +3876,20 @@ created_by: wmeza
 creation_date: 2013-10-15T18:59:52Z
 
 [Term]
+id: OMP:0005040
+name: acidic pH stress phenotype
+is_a: OMP:0000173 ! stress response phenotype
+created_by: wmeza
+creation_date: 2013-10-16T17:14:52Z
+
+[Term]
+id: OMP:0005041
+name: alkalinc pH stress phenotype
+is_a: OMP:0000173 ! stress response phenotype
+created_by: wmeza
+creation_date: 2013-10-16T17:15:59Z
+
+[Term]
 id: OMP:0006001
 name: nutrient phenotype
 def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and/or energy release that supports growth and reproduction." [ISBN:9780073402406]
