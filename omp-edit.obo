@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:10:2013 17:31
+date: 16:10:2013 18:09
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -2555,8 +2555,14 @@ creation_date: 2012-11-02T01:58:42Z
 [Term]
 id: OMP:0000331
 name: antifolate compound resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a class of drugs that stop cells from using folic acid." [OMP:DAS]
+def: "An antimicrobial compound resistance phenotype where resistance is to a class of drugs that stop cells from using folic acid." [CHEBI:73913, OMP:DAS]
+synonym: "diaminopyrimidine" NARROW []
+synonym: "diaveridine" RELATED [CHEBI:123115]
+synonym: "Iclaprim" NARROW []
+synonym: "piritrexim" NARROW []
+synonym: "pyrimethamine" NARROW [CHEBI:8673]
 synonym: "trimethoprim resistance" NARROW []
+synonym: "trimetrexate" NARROW []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:02:58Z
