@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 15:10:2013 15:04
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 15:10:2013 19:25
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2502,6 +2502,14 @@ id: OMP:0000321
 name: macrolide compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype, where the trait in question is resistance to a macrolide drug.  Macrolides contain a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars." [ISBN:9780073375267, OMP:MCC]
 comment: Macrolide antibiotics are effective inhibitors of bacterial protein biosynthesis. They bind to the large 50S ribosomal subunit at or near the peptidyl transferase center and block the elongation of the peptide chain.
+synonym: "Azithromycin" NARROW [CHEBI:2955]
+synonym: "Carvomycin A" NARROW []
+synonym: "clarithromycin" NARROW [CHEBi:3732]
+synonym: "Dirithromycin" NARROW [CHEBI:474014]
+synonym: "Josamycin" NARROW [CHEBI:31739]
+synonym: "roxithromycin" NARROW [CHEBI:48844]
+synonym: "Telithromycin" NARROW []
+synonym: "Troleandomycin" NARROW []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:51:04Z
@@ -3394,7 +3402,7 @@ creation_date: 2013-05-23T01:31:03Z
 [Term]
 id: OMP:0000450
 name: trace element utilization phenotype
-is_a: OMP:0006022 ! nutrient utilization phenotype
+is_a: OMP:0000180 ! metabolic phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:35:26Z
 
@@ -4100,6 +4108,8 @@ creation_date: 2013-09-10T18:37:31Z
 [Term]
 id: OMP:0006036
 name: decreased resistance to macrolide compound
+def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is decreased relative to some reference." [OMP:JCH]
+synonym: "erythromycin	" NARROW [CHEBI:25105]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4107,6 +4117,8 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006037
 name: increased resistance to macrolide compound
+def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is increased relative to some reference." [OMP:JCH]
+synonym: "erythromycin" NARROW [CHEBI:25105]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4114,6 +4126,8 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006038
 name: not resistant to macrolide compound
+def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic is not resistant to a macrolide compound." [OMP:JCH]
+synonym: "erythromycin" RELATED [CHEBI:25105]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4121,6 +4135,8 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006039
 name: resistant to macrolide compound
+def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic is resistant to a macrolide compound." [OMP:JCH]
+synonym: "erythromycin" RELATED [CHEBI:25105]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4156,7 +4172,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006044
 name: decreased resistance to beta-lactam compound
-def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is decreased relative to some reference." []
+def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is decreased relative to some reference." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4164,7 +4180,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006045
 name: increased resistance to beta-lactam compound
-def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is increased relative to some reference." []
+def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is increased relative to some reference." [OMp:JCH]
 is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4172,7 +4188,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006046
 name: not resistant to beta-lactam compound
-def: "A beta-lactam compound resistance state phenotype where the representative member of a taxonomic is not resistant to a beta-lactam compound." []
+def: "A beta-lactam compound resistance state phenotype where the representative member of a taxonomic is not resistant to a beta-lactam compound." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4180,7 +4196,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006047
 name: resistant to beta-lactam compound
-def: "An beta-lactam compound resistance state phenotype where the representative member of a taxonomic unit is resistant to a beta-lactam compound." []
+def: "An beta-lactam compound resistance state phenotype where the representative member of a taxonomic unit is resistant to a beta-lactam compound." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4188,7 +4204,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006048
 name: decreased resistance to bacteriocin compound
-def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is decreased relative to some reference." []
+def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is decreased relative to some reference." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -4196,7 +4212,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006049
 name: increased resistance to bacteriocin compound
-def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is increased relative to some reference." []
+def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is increased relative to some reference." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -4204,7 +4220,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006050
 name: not resistant to bacteriocin compound
-def: "A bacteriocin compound resistance state phenotype where the representative member of a taxonomic is not resistant to a bacteriocin compound." []
+def: "A bacteriocin compound resistance state phenotype where the representative member of a taxonomic is not resistant to a bacteriocin compound." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -4212,7 +4228,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006051
 name: resistant to bacteriocin compound
-def: "A bacteriocin compound resistance state phenotype where the representative member of a taxonomic unit is resistant to a bacteriocin compound." []
+def: "A bacteriocin compound resistance state phenotype where the representative member of a taxonomic unit is resistant to a bacteriocin compound." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
