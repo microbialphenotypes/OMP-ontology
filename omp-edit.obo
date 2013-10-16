@@ -3896,6 +3896,41 @@ created_by: wmeza
 creation_date: 2013-10-16T17:15:59Z
 
 [Term]
+id: OMP:0005042
+name: homologous recombination phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: wmeza
+creation_date: 2013-10-16T17:58:05Z
+
+[Term]
+id: OMP:0005043
+name: site specific recombination phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: wmeza
+creation_date: 2013-10-16T17:58:57Z
+
+[Term]
+id: OMP:0005044
+name: mitotic recombination phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: wmeza
+creation_date: 2013-10-16T18:00:51Z
+
+[Term]
+id: OMP:0005045
+name: chromosome segregation phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: wmeza
+creation_date: 2013-10-16T18:02:00Z
+
+[Term]
+id: OMP:0005046
+name: mutation frequency phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: wmeza
+creation_date: 2013-10-16T18:10:56Z
+
+[Term]
 id: OMP:0006001
 name: nutrient phenotype
 def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and/or energy release that supports growth and reproduction." [ISBN:9780073402406]
