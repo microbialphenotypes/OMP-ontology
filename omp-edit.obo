@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 16:10:2013 13:07
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 16:10:2013 17:31
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2508,6 +2508,8 @@ synonym: "clarithromycin" NARROW [CHEBi:3732]
 synonym: "Dirithromycin" NARROW [CHEBI:474014]
 synonym: "Josamycin" NARROW [CHEBI:31739]
 synonym: "roxithromycin" NARROW [CHEBI:48844]
+synonym: "Spectinomycin" NARROW []
+synonym: "Spiramycin" NARROW []
 synonym: "Telithromycin" NARROW []
 synonym: "Troleandomycin" NARROW []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
