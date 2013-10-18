@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 18:10:2013 18:19
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 18:10:2013 18:39
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3902,6 +3902,55 @@ name: alkalinc pH stress phenotype
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2013-10-16T17:15:59Z
+
+[Term]
+id: OMP:0005042
+name: homologous recombination phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: wmeza
+creation_date: 2013-10-18T18:34:37Z
+
+[Term]
+id: OMP:0005043
+name: site specific recombination phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: wmeza
+creation_date: 2013-10-18T18:34:58Z
+
+[Term]
+id: OMP:0005044
+name: chromosome recombination phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: wmeza
+creation_date: 2013-10-18T18:35:49Z
+
+[Term]
+id: OMP:0005045
+name: mitotic recombination phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: wmeza
+creation_date: 2013-10-18T18:38:05Z
+
+[Term]
+id: OMP:0005046
+name: gene silencing phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: wmeza
+creation_date: 2013-10-18T18:38:43Z
+
+[Term]
+id: OMP:0005047
+name: chromosome segregation phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: wmeza
+creation_date: 2013-10-18T18:39:04Z
+
+[Term]
+id: OMP:0005048
+name: mutation frequency phenotype
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: wmeza
+creation_date: 2013-10-18T18:39:27Z
 
 [Term]
 id: OMP:0006001
