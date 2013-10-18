@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:10:2013 17:09
+date: 18:10:2013 18:19
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -4127,6 +4127,7 @@ creation_date: 2013-10-10T19:15:32Z
 [Term]
 id: OMP:0006029
 name: quinolone compound resistance phenotype
+def: "An antimicrobial compound resistance phenotype where resistance is to a synthetic compound that inhibit nucleic acid synthesis." [ISBN:9780072992915, OMP:JCH]
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-10T19:15:32Z
@@ -4215,6 +4216,7 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006040
 name: decreased resistance to quinolone compound
+def: "A quinolone compound resistance relative phenotype where resistance to a quinolone compound is decreased relative to some reference." [OMP:JCH]
 is_a: OMP:0006029 ! quinolone compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
@@ -4222,6 +4224,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006041
 name: increased resistance to quinolone compound
+def: "A quinolone compound resistance relative phenotype where resistance to a quinolone compound is increased relative to some reference." [OMP:JCH]
 is_a: OMP:0006029 ! quinolone compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
@@ -4229,6 +4232,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006042
 name: not resistant to quinolone compound
+def: "A quinoline compound resistance state phenotype where the representative member of a taxonomic is not resistant to a quinoline compound." [OMp:JCH]
 is_a: OMP:0006029 ! quinolone compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
@@ -4236,6 +4240,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006043
 name: resistant to quinolone compound
+def: "A quinoline compound resistance state phenotype where the representative member of a taxonomic is resistant to a quinoline compound." [OMP:JCH]
 is_a: OMP:0006029 ! quinolone compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
