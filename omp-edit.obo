@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:10:2013 18:09
+date: 17:10:2013 17:09
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -2506,6 +2506,7 @@ synonym: "Azithromycin" NARROW [CHEBI:2955]
 synonym: "Carvomycin A" NARROW []
 synonym: "clarithromycin" NARROW [CHEBi:3732]
 synonym: "Dirithromycin" NARROW [CHEBI:474014]
+synonym: "Erythromycin" NARROW [CHEBI:25105]
 synonym: "Josamycin" NARROW [CHEBI:31739]
 synonym: "roxithromycin" NARROW [CHEBI:48844]
 synonym: "Spectinomycin" NARROW []
@@ -2602,6 +2603,13 @@ creation_date: 2012-11-02T02:04:58Z
 id: OMP:0000336
 name: beta-lactam compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype, where the trait in question is resistance to a member of a broad class of antimicrobial compounds that contain a beta-lactam ring in their molecular structure." [OMP:MCC]
+synonym: "ampicillin" NARROW [CHEBI:28971]
+synonym: "carbapenams" NARROW [CHEBI:64510]
+synonym: "cefoxitin" NARROW [CHEBI:209807]
+synonym: "cephaloxporins" NARROW []
+synonym: "cephamycin" NARROW [CHEBI:55429]
+synonym: "monobactams" NARROW [CHEBI:50695]
+synonym: "penicillin" NARROW [CHEBI:51356]
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:06:13Z
@@ -3896,41 +3904,6 @@ created_by: wmeza
 creation_date: 2013-10-16T17:15:59Z
 
 [Term]
-id: OMP:0005042
-name: homologous recombination phenotype
-is_a: OMP:0000290 ! genetic material phenotype
-created_by: wmeza
-creation_date: 2013-10-16T17:58:05Z
-
-[Term]
-id: OMP:0005043
-name: site specific recombination phenotype
-is_a: OMP:0000290 ! genetic material phenotype
-created_by: wmeza
-creation_date: 2013-10-16T17:58:57Z
-
-[Term]
-id: OMP:0005044
-name: mitotic recombination phenotype
-is_a: OMP:0000290 ! genetic material phenotype
-created_by: wmeza
-creation_date: 2013-10-16T18:00:51Z
-
-[Term]
-id: OMP:0005045
-name: chromosome segregation phenotype
-is_a: OMP:0000290 ! genetic material phenotype
-created_by: wmeza
-creation_date: 2013-10-16T18:02:00Z
-
-[Term]
-id: OMP:0005046
-name: mutation frequency phenotype
-is_a: OMP:0000290 ! genetic material phenotype
-created_by: wmeza
-creation_date: 2013-10-16T18:10:56Z
-
-[Term]
 id: OMP:0006001
 name: nutrient phenotype
 def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and/or energy release that supports growth and reproduction." [ISBN:9780073402406]
@@ -4146,6 +4119,7 @@ id: OMP:0006028
 name: azole compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a heteromonocyclic organic compound consisting of a mancude five-membered ring containing nitrogen." [CHEBI:68452, OMP:DAS]
 comment: Azoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
+synonym: "Triazole" NARROW [CHEBI:38597]
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-10T19:15:32Z
@@ -4210,7 +4184,6 @@ creation_date: 2013-09-10T18:37:31Z
 id: OMP:0006036
 name: decreased resistance to macrolide compound
 def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is decreased relative to some reference." [OMP:JCH]
-synonym: "erythromycin	" NARROW [CHEBI:25105]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4219,7 +4192,6 @@ creation_date: 2013-10-11T17:35:04Z
 id: OMP:0006037
 name: increased resistance to macrolide compound
 def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is increased relative to some reference." [OMP:JCH]
-synonym: "erythromycin" NARROW [CHEBI:25105]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4228,7 +4200,6 @@ creation_date: 2013-10-11T17:35:04Z
 id: OMP:0006038
 name: not resistant to macrolide compound
 def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic is not resistant to a macrolide compound." [OMP:JCH]
-synonym: "erythromycin" RELATED [CHEBI:25105]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4237,7 +4208,6 @@ creation_date: 2013-10-11T17:35:04Z
 id: OMP:0006039
 name: resistant to macrolide compound
 def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic is resistant to a macrolide compound." [OMP:JCH]
-synonym: "erythromycin" RELATED [CHEBI:25105]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4281,7 +4251,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006045
 name: increased resistance to beta-lactam compound
-def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is increased relative to some reference." [OMp:JCH]
+def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is increased relative to some reference." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
