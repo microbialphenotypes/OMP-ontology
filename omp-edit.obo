@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:10:2013 18:39
+date: 21:10:2013 14:08
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -2392,6 +2392,7 @@ creation_date: 2011-07-21T05:44:45Z
 [Term]
 id: OMP:0000307
 name: DNA replication phenotype
+def: "A macromolecular biosynthesis and genetic material phenotype dealing with the process involved in the duplication of a molecule of DNA." [OMP:WAM]
 is_a: OMP:0000306 ! macromolecular biosynthesis phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:45:47Z
@@ -3850,28 +3851,29 @@ creation_date: 2013-09-25T18:20:22Z
 [Term]
 id: OMP:0005034
 name: DNA Replication, Relative Phenotype
-is_a: OMP:0000307 ! DNA replication phenotype
+is_obsolete: true
 created_by: wmeza
 creation_date: 2013-10-15T17:50:54Z
 
 [Term]
 id: OMP:0005035
 name: quick stop DNA replication
-is_a: OMP:0005034 ! DNA Replication, Relative Phenotype
+is_a: OMP:0000307 ! DNA replication phenotype
 created_by: wmeza
 creation_date: 2013-10-15T17:51:12Z
 
 [Term]
 id: OMP:0005036
 name: slow stop DNA replication
-is_a: OMP:0005034 ! DNA Replication, Relative Phenotype
+is_a: OMP:0000307 ! DNA replication phenotype
 created_by: wmeza
 creation_date: 2013-10-15T17:51:40Z
 
 [Term]
 id: OMP:0005037
 name: independent origin of replication
-is_a: OMP:0005034 ! DNA Replication, Relative Phenotype
+def: "A macromolecular biosynthesis and genetic material phenotype in which the site of initiation of replication differs from the Origin of Replication." [OMP:WAM]
+is_a: OMP:0000307 ! DNA replication phenotype
 created_by: wmeza
 creation_date: 2013-10-15T18:53:12Z
 
