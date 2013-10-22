@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:10:2013 14:08
+date: 21:10:2013 18:41
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -3908,6 +3908,7 @@ creation_date: 2013-10-16T17:15:59Z
 [Term]
 id: OMP:0005042
 name: homologous recombination phenotype
+def: "A genetic material phenotype dealing with the process that occurs when two segments of DNA with identical or very similar sequences pair up and exchange or replace some portion of their DNA." [ISBN:9780471768654, OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:34:37Z
@@ -3915,6 +3916,7 @@ creation_date: 2013-10-18T18:34:37Z
 [Term]
 id: OMP:0005043
 name: site specific recombination phenotype
+def: "A genetic material phenotype where there is non-homologous recombination at a particular sequence of DNA." [ISBN:9780471768654, OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:34:58Z
@@ -3929,6 +3931,7 @@ creation_date: 2013-10-18T18:35:49Z
 [Term]
 id: OMP:0005045
 name: mitotic recombination phenotype
+def: "A genetic material phenotype dealing with the exchange, reciprocal or nonreciprocal of genetic material between one DNA  molecule and a homologous region of DNA that occurs  during mitotic cell cycles." [ISBN:9780198529170, OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:38:05Z
