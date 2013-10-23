@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 21:10:2013 18:41
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 23:10:2013 16:57
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -4430,7 +4430,7 @@ creation_date: 2013-10-22T19:24:20Z
 [Term]
 id: OMP:0006060
 name: resistant to aminoglycoside compound
-def: "An aminoglycoside compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an antifolate compound." [OMP:JCH]
+def: "An aminoglycoside compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an aminoglycoside compound." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
