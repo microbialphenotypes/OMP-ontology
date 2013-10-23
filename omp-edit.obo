@@ -4396,6 +4396,46 @@ created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
 [Term]
+id: OMP:0006056
+name: aminoglycoside compound resistance phenotype
+def: "An antimicrobial compound resistance phenotype where resistance is to a compound containing cyclohexane ring and amino sugars." [ISBN:978-0-07-299291-5, OMP:JCH]
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-22T13:29:22Z
+
+[Term]
+id: OMP:0006057
+name: decrease resistance to aminoglycoside compound
+def: "An aminoglycoside compound resistance relative phenotype where resistance is decreased relative to some reference." [OMP:JCH]
+is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-22T19:24:20Z
+
+[Term]
+id: OMP:0006058
+name: increased resistance to aminoglycoside compound
+def: "An aminoglycoside compound resistance relative phenotype where resistance is increased relative to some reference." [OMp:JCH]
+is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-22T19:24:20Z
+
+[Term]
+id: OMP:0006059
+name: not resistant to aminoglycoside compound
+def: "An aminoglycoside compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to an antifolate compound." [OMP:JCH]
+is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-22T19:24:20Z
+
+[Term]
+id: OMP:0006060
+name: resistant to aminoglycoside compound
+def: "An aminoglycoside compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an antifolate compound." [OMP:JCH]
+is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
+created_by: jonathanherrera
+creation_date: 2013-10-22T19:24:20Z
+
+[Term]
 id: OMP:0007001
 name: DNA supercoiling, relative phenotype
 is_a: OMP:0000290 ! genetic material phenotype
