@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 23:10:2013 16:57
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 23:10:2013 19:06
+saved-by: DeborahSiegele
+auto-generated-by: OBO-Edit 2.2
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2556,14 +2556,13 @@ creation_date: 2012-11-02T01:58:42Z
 
 [Term]
 id: OMP:0000331
-name: antifolate compound resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a class of drugs that stop cells from using folic acid." [CHEBI:73913, OMP:DAS]
-synonym: "diaminopyrimidine" NARROW []
+name: aminopyrimidine compound resistance phenotype
+def: "An antimicrobial compound resistance phenotype where resistance is to an aminopyrimidine compound." [OMP:DAS]
 synonym: "diaveridine" RELATED [CHEBI:123115]
 synonym: "Iclaprim" NARROW []
 synonym: "piritrexim" NARROW []
 synonym: "pyrimethamine" NARROW [CHEBI:8673]
-synonym: "trimethoprim resistance" NARROW []
+synonym: "trimethoprim resistance" NARROW [CHEBI:45924]
 synonym: "trimetrexate" NARROW []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
@@ -2586,17 +2585,19 @@ creation_date: 2012-11-02T02:04:07Z
 [Term]
 id: OMP:0000334
 name: increased resistance to antifolate compound
-def: "An antifolate compound resistance relative phenotype where resistance is increased relative to some reference." [OMP:DAS]
-is_a: OMP:0000331 ! antifolate compound resistance phenotype
+def: "An aminopyrimidine resistance relative phenotype where resistance is increased relative to some reference." [OMP:DAS]
+synonym: "increased resistance to trimethoprim" NARROW [CHEBI:45924]
+is_a: OMP:0000331 ! aminopyrimidine compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:38Z
 
 [Term]
 id: OMP:0000335
-name: decreased resistance to antifolate compound
-def: "An antifolate compound resistance relative phenotype where resistance is decreased relative to some reference." [OMP:DAS]
+name: decreased resistance to aminopyrimidine compound
+def: "An aminopyrimidine compound resistance relative phenotype where resistance is decreased relative to some reference." [OMP:DAS]
 synonym: "abolished resistance to diaminopyrimidine compound" NARROW []
-is_a: OMP:0000331 ! antifolate compound resistance phenotype
+synonym: "decreased resistance to trimethoprim" NARROW [CHEBI:45924]
+is_a: OMP:0000331 ! aminopyrimidine compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:58Z
 
@@ -3310,17 +3311,17 @@ creation_date: 2012-11-04T02:50:57Z
 
 [Term]
 id: OMP:0000435
-name: resistant to antifolate compound
-def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an antifolate compound." [OMP:DAS]
-is_a: OMP:0000331 ! antifolate compound resistance phenotype
+name: resistant to aminopyrimidine compound
+def: "An aminopyrimidine compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an aminopyrimidine compound." [OMP:DAS]
+is_a: OMP:0000331 ! aminopyrimidine compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:01Z
 
 [Term]
 id: OMP:0000436
-name: not resistant to antifolate compound
-def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to an antifolate compound." [OMP:DAS]
-is_a: OMP:0000331 ! antifolate compound resistance phenotype
+name: not resistant to aminopyrimidine compound
+def: "An aminopyrimidine compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to an aminopyrimidine compound." [OMP:DAS]
+is_a: OMP:0000331 ! aminopyrimidine compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:18Z
 
@@ -3492,8 +3493,6 @@ id: OMP:0000459
 name: increased caffeine resistance
 def: "A caffeine resistance phenotype where resistance is higher relative to some reference." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
-intersection_of: OMP:0000316 ! relative phenotype
-intersection_of: OBO_REL:part_of OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:11Z
 
@@ -4405,8 +4404,9 @@ creation_date: 2013-10-22T13:29:22Z
 
 [Term]
 id: OMP:0006057
-name: decrease resistance to aminoglycoside compound
+name: decreased resistance to aminoglycoside compound
 def: "An aminoglycoside compound resistance relative phenotype where resistance is decreased relative to some reference." [OMP:JCH]
+is_a: OMP:0000316 ! relative phenotype
 is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
