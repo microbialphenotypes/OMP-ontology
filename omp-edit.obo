@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:10:2013 19:46
+date: 24:10:2013 16:51
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -3924,7 +3924,7 @@ creation_date: 2013-10-18T18:34:58Z
 [Term]
 id: OMP:0005044
 name: chromosome recombination phenotype
-is_a: OMP:0000290 ! genetic material phenotype
+is_obsolete: true
 created_by: wmeza
 creation_date: 2013-10-18T18:35:49Z
 
@@ -3959,10 +3959,18 @@ creation_date: 2013-10-18T18:39:27Z
 
 [Term]
 id: OMP:0005049
-name: increase in homologous recombination
+name: increased frequency of homologous recombination
+def: "A homologous recombination phenotype" []
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-23T19:46:15Z
+
+[Term]
+id: OMP:0005050
+name: decreased frequency of homologous recombination
+is_a: OMP:0005042 ! homologous recombination phenotype
+created_by: wmeza
+creation_date: 2013-10-24T12:52:41Z
 
 [Term]
 id: OMP:0006001
