@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:10:2013 19:44
+date: 25:10:2013 11:05
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -4464,16 +4464,16 @@ creation_date: 2013-10-22T19:24:20Z
 
 [Term]
 id: OMP:0006061
-name: decreased resistance to tetracycline
+name: decreased resistance to tetracycline compound
 def: "A tetracycline compound resistance relative phenotype where resistance to a tetracycline compound is decreased relative to some reference." [OMP:JCH]
 synonym: "abolished resistance to tetracycline compound" NARROW []
-is_a: OMP:0006062 ! tetracycline
+is_a: OMP:0006062 ! tetracycline compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
 
 [Term]
 id: OMP:0006062
-name: tetracycline
+name: tetracycline compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a compound containing four ring structure and side chains." [ISBN:978-0-07-299291-5, OMP:JCH]
 synonym: "oxytetracycline " NARROW [CHEBI:27701]
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
@@ -4482,27 +4482,27 @@ creation_date: 2013-10-23T17:21:25Z
 
 [Term]
 id: OMP:0006063
-name: increased resistance to tetracycline
+name: increased resistance to tetracycline compound 
 def: "A tetracycline compound resistance relative phenotype where resistance to a tetracycline compound is increased relative to some reference." [OMP:JCH]
-is_a: OMP:0006062 ! tetracycline
+is_a: OMP:0006062 ! tetracycline compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
 
 [Term]
 id: OMP:0006064
-name: not resistant to tetracycline
+name: not resistant to tetracycline compound
 def: "A tetracycline compound resistance state phenotype where the representative member of a taxonomic is not resistant to a tetracycline compound." [OMP:JCH]
 synonym: "chlortetracycline" NARROW [OMP:JCH]
 synonym: "oxytetracycline " NARROW [OMP:JCH]
-is_a: OMP:0006062 ! tetracycline
+is_a: OMP:0006062 ! tetracycline compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
 
 [Term]
 id: OMP:0006065
-name: resistant to tetracycline
+name: resistant to tetracycline compound
 def: "A tetracycline compound resistance state phenotype where the representative member of a taxonomic is resistant to a tetracycline compound." [OMP:JCH]
-is_a: OMP:0006062 ! tetracycline
+is_a: OMP:0006062 ! tetracycline compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
 
