@@ -2608,6 +2608,7 @@ def: "An antimicrobial compound resistance phenotype, where the trait in questio
 synonym: "ampicillin" NARROW [CHEBI:28971]
 synonym: "carbapenams" NARROW [CHEBI:64510]
 synonym: "cefoxitin" NARROW [CHEBI:209807]
+synonym: "cephalosporins" NARROW []
 synonym: "cephaloxporins" NARROW []
 synonym: "cephamycin" NARROW [CHEBI:55429]
 synonym: "monobactams" NARROW [CHEBI:50695]
@@ -4537,6 +4538,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006066
 name: chloramphenicol compound resistance phenotype
+def: "A bacteriostatic compound that stops bacterial growth by inhibiting protein synthesis." [ISBN:9780072992915, OMP:JCH]
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T12:57:25Z
