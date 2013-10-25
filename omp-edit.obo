@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:10:2013 16:51
+date: 24:10:2013 19:03
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -3960,7 +3960,7 @@ creation_date: 2013-10-18T18:39:27Z
 [Term]
 id: OMP:0005049
 name: increased frequency of homologous recombination
-def: "A homologous recombination phenotype" []
+def: "A homologous recombination phenotype where the prevalence of homologous recombination is increased." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-23T19:46:15Z
@@ -3968,6 +3968,7 @@ creation_date: 2013-10-23T19:46:15Z
 [Term]
 id: OMP:0005050
 name: decreased frequency of homologous recombination
+def: "A homologous recombination phenotype where the prevalence of homologous recombination is reduced." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-24T12:52:41Z
