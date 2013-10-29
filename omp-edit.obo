@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:10:2013 13:27
+date: 29:10:2013 17:36
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -4006,14 +4006,16 @@ creation_date: 2013-10-25T13:57:46Z
 
 [Term]
 id: OMP:0005055
-name: increase frequency of site specific recombination
+name: increased frequency of site specific recombination
+def: "A site specific recombination relative phenotype where the prevalence of site specific recombination is increased." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:14:25Z
 
 [Term]
 id: OMP:0005056
-name: decrease frequency of site specific recombination
+name: decreased frequency of site specific recombination
+def: "A site specific recombination relative phenotype where the prevalence of site specific recombination is decreased." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:15:06Z
@@ -4021,6 +4023,7 @@ creation_date: 2013-10-29T13:15:06Z
 [Term]
 id: OMP:0005057
 name: absence of site specific recombination
+def: "A site specific recombination state phenotype where the processes do not occur." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:15:28Z
@@ -4028,6 +4031,7 @@ creation_date: 2013-10-29T13:15:28Z
 [Term]
 id: OMP:0005058
 name: presence of site specific recombination
+def: "A site specific recombination state phenotype where the process is active." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:20:16Z
