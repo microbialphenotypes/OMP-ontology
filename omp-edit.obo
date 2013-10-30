@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:10:2013 17:43
+date: 30:10:2013 18:12
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -3948,6 +3948,7 @@ creation_date: 2013-10-18T18:38:43Z
 [Term]
 id: OMP:0005047
 name: chromosome segregation phenotype
+def: "A genetic material phenotype dealing with the process in which chromosomes are organized into specific structures and then physically separated and apportioned to two or more sets." [GO:0007059, OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:39:04Z
@@ -3955,6 +3956,7 @@ creation_date: 2013-10-18T18:39:04Z
 [Term]
 id: OMP:0005048
 name: mutation frequency phenotype
+def: "A genetic material phenotype dealing with the frequency at which a mutation occurs in a population." [ISBN:9780198529170, OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:39:27Z
