@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:10:2013 18:37
+date: 30:10:2013 18:47
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -3473,6 +3473,7 @@ creation_date: 2013-05-23T01:53:57Z
 id: OMP:0000456
 name: caffeine resistance phenotype
 def: "An alkaloid resistance phenotype dealing with resistance toward a trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7." [CheBI:27732, OMP:WAM]
+synonym: "caffeine sensitivity phenotype" RELATED []
 is_a: OMP:0000455 ! alkaloid resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:54:51Z
