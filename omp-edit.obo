@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 30:10:2013 18:12
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 30:10:2013 18:37
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2509,6 +2509,7 @@ synonym: "clarithromycin" NARROW [CHEBi:3732]
 synonym: "Dirithromycin" NARROW [CHEBI:474014]
 synonym: "Erythromycin" NARROW [CHEBI:25105]
 synonym: "Josamycin" NARROW [CHEBI:31739]
+synonym: "macrolide sensitivity phenotype" RELATED []
 synonym: "roxithromycin" NARROW [CHEBI:48844]
 synonym: "Spectinomycin" NARROW []
 synonym: "Spiramycin" NARROW []
@@ -2558,6 +2559,7 @@ creation_date: 2012-11-02T01:58:42Z
 id: OMP:0000331
 name: antifolate compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a class of drugs that stop cells from using folic acid." [CHEBI:73913, OMP:DAS]
+synonym: "antifolate sensitivity phenotype" RELATED []
 synonym: "diaminopyrimidine" NARROW []
 synonym: "diaveridine" RELATED [CHEBI:123115]
 synonym: "Iclaprim" NARROW []
@@ -2606,6 +2608,7 @@ id: OMP:0000336
 name: beta-lactam compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype, where the trait in question is resistance to a member of a broad class of antimicrobial compounds that contain a beta-lactam ring in their molecular structure." [OMP:MCC]
 synonym: "ampicillin" NARROW [CHEBI:28971]
+synonym: "beta-lactam sensitivity phenotype" RELATED []
 synonym: "carbapenams" NARROW [CHEBI:64510]
 synonym: "cefoxitin" NARROW [CHEBI:209807]
 synonym: "cephalosporins" NARROW []
@@ -3461,6 +3464,7 @@ creation_date: 2013-05-23T01:40:40Z
 id: OMP:0000455
 name: alkaloid resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is toward compounds containing basic nitrogen in a heterocyclic structure." [CheBI:22315, OMP:WAM]
+synonym: "alkaloid sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:53:57Z
@@ -3948,7 +3952,6 @@ creation_date: 2013-10-18T18:38:43Z
 [Term]
 id: OMP:0005047
 name: chromosome segregation phenotype
-def: "A genetic material phenotype dealing with the process in which chromosomes are organized into specific structures and then physically separated and apportioned to two or more sets." [GO:0007059, OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:39:04Z
@@ -3956,7 +3959,6 @@ creation_date: 2013-10-18T18:39:04Z
 [Term]
 id: OMP:0005048
 name: mutation frequency phenotype
-def: "A genetic material phenotype dealing with the frequency at which a mutation occurs in a population." [ISBN:9780198529170, OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:39:27Z
@@ -4245,6 +4247,7 @@ creation_date: 2013-09-10T17:51:21Z
 id: OMP:0006027
 name: bacteriocin compound resistance phenotype
 def: "Polypeptides synthesized by specific strains of bacteria that are lethal against other strains of the same or related species." [CHEBI:48081]
+synonym: "bacteriocin sensitivity phenotype" RELATED []
 xref: CHEBI:48081
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
@@ -4255,6 +4258,7 @@ id: OMP:0006028
 name: azole compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a heteromonocyclic organic compound consisting of a mancude five-membered ring containing nitrogen." [CHEBI:68452, OMP:DAS]
 comment: Azoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
+synonym: "azole sensitivity phenotype" RELATED []
 synonym: "Triazole" NARROW [CHEBI:38597]
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
@@ -4264,6 +4268,7 @@ creation_date: 2013-10-10T19:15:32Z
 id: OMP:0006029
 name: quinolone compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a synthetic compound that inhibit nucleic acid synthesis." [ISBN:9780072992915, OMP:JCH]
+synonym: "quinoline sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-10T19:15:32Z
@@ -4486,6 +4491,7 @@ creation_date: 2013-10-11T17:45:44Z
 id: OMP:0006056
 name: aminoglycoside compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a compound containing cyclohexane ring and amino sugars." [ISBN:978-0-07-299291-5, OMP:JCH]
+synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
 synonym: "kanamycin" NARROW []
 synonym: "neomycin" NARROW []
@@ -4542,6 +4548,7 @@ id: OMP:0006062
 name: tetracycline compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a compound containing four ring structure and side chains." [ISBN:978-0-07-299291-5, OMP:JCH]
 synonym: "oxytetracycline " NARROW [CHEBI:27701]
+synonym: "tetracycline sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T17:21:25Z
@@ -4576,6 +4583,7 @@ creation_date: 2013-10-23T19:27:35Z
 id: OMP:0006066
 name: chloramphenicol compound resistance phenotype
 def: "A bacteriostatic compound that stops bacterial growth by inhibiting protein synthesis." [ISBN:9780072992915, OMP:JCH]
+synonym: "chloramphenicol sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T12:57:25Z
