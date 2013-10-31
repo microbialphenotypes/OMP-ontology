@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:10:2013 18:47
+date: 30:10:2013 19:02
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -376,8 +376,6 @@ id: OMP:0000046
 name: presence of chemotaxis
 def: "A chemotaxis state phenotype where the representative member of a taxonomic unit possesses the ability to move in response to a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
-intersection_of: OMP:0000048 ! chemotaxis phenotype
-intersection_of: OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:17:42Z
 
@@ -800,8 +798,6 @@ id: OMP:0000097
 name: absence of chemotaxis
 def: "A chemotaxis state phenotype where the representative member of a taxonomic unit does not possess the ability to move in response to a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
-intersection_of: OMP:0000048 ! chemotaxis phenotype
-intersection_of: OMP:0000315 ! state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:13Z
 
@@ -2160,6 +2156,7 @@ creation_date: 2011-07-21T02:30:14Z
 [Term]
 id: OMP:0000277
 name: decreased beta-galactosidase activity
+synonym: "abolished beta-galactosidase activity" RELATED []
 is_a: OMP:0000297 ! beta-galactosidase activity phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:33:25Z
@@ -2484,8 +2481,6 @@ creation_date: 2012-04-17T02:07:31Z
 id: OMP:0000319
 name: aerotaxis, relative phenotype
 is_a: OMP:0000047 ! aerotaxis phenotype
-intersection_of: OMP:0000047 ! aerotaxis phenotype
-intersection_of: OMP:0000316 ! relative phenotype
 created_by: mchibucos
 creation_date: 2012-04-17T02:17:26Z
 
@@ -2493,8 +2488,6 @@ creation_date: 2012-04-17T02:17:26Z
 id: OMP:0000320
 name: aerotaxis, state phenotype
 is_a: OMP:0000047 ! aerotaxis phenotype
-intersection_of: OMP:0000047 ! aerotaxis phenotype
-intersection_of: OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2012-04-17T02:17:52Z
 
@@ -3439,8 +3432,6 @@ creation_date: 2013-05-23T01:37:06Z
 id: OMP:0000452
 name: increased heme utilization
 is_a: OMP:0000451 ! heme utilization phenotype
-intersection_of: OMP:0000316 ! relative phenotype
-intersection_of: OMP:0000451 ! heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:37:51Z
 
@@ -3448,14 +3439,13 @@ creation_date: 2013-05-23T01:37:51Z
 id: OMP:0000453
 name: decreased heme utilization
 is_a: OMP:0000451 ! heme utilization phenotype
-intersection_of: OMP:0000316 ! relative phenotype
-intersection_of: OMP:0000451 ! heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:39:39Z
 
 [Term]
 id: OMP:0000454
 name: absence of heme utilization
+synonym: "abolished heme utilization" EXACT []
 is_a: OMP:0000451 ! heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:40:40Z
@@ -4789,6 +4779,7 @@ creation_date: 2013-09-17T16:10:51Z
 id: OMP:0007021
 name: decreased amino acid requirement
 def: "An amino acid requirement phenotype where the organism has a decreased requirement relative to some reference for one or more amino acids." [OMP:DAS]
+synonym: "abolished amino acid requirement" EXACT []
 is_a: OMP:0007038 ! amino acid requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:13:20Z
@@ -4797,6 +4788,7 @@ creation_date: 2013-09-17T16:13:20Z
 id: OMP:0007022
 name: decreased purine/pyrimidine requirement
 def: "A purine/pyrimidine requirement phenotype where the organism has a decreased requirement relative to some reference for a purine or pyrimidine base." [OMP:DAS]
+synonym: "abolished purine/pyrimidine requirement" EXACT []
 is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
@@ -4821,6 +4813,7 @@ creation_date: 2013-09-17T16:31:05Z
 id: OMP:0007025
 name: decreased vitamin/enzyme cofactor requirement
 def: "A vitamin/enzyme cofactor requirement phenotype where the organism has a decreased requirement relative to some reference for a vitamin/enzyme cofactor." [OMP:DAS]
+synonym: "abolished vitamin/enzyme cofactor requirement" EXACT []
 is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:33:34Z
@@ -4853,6 +4846,7 @@ creation_date: 2013-09-17T16:45:18Z
 id: OMP:0007029
 name: decreased utilization of dinitrogen phenotype
 def: "A dinitrogen (N2) utilization phenotype where the organism has decreased ability relative to some reference to use N2 as a source of nitrogen." [OMP:DAS]
+synonym: "abolished dinitrogen utilization phenotype" RELATED []
 is_a: OMP:0006030 ! dinitrogen utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T20:59:52Z
@@ -4877,6 +4871,7 @@ creation_date: 2013-09-28T21:02:26Z
 id: OMP:0007032
 name: decreased utilization of inorganic nitrogen phenotype
 def: "An inorganic nitrogen source utilization phenotype where the organism has decreased ability relative to some reference to use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
+synonym: "abolished utilization of inorganic nitrogen phenotype" EXACT []
 is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:03:56Z
@@ -4901,6 +4896,7 @@ creation_date: 2013-09-28T21:05:43Z
 id: OMP:0007035
 name: decreased utilization of organic nitrogen phenotype
 def: "An organic nitrogen source utilization phenotype where the organism has decreased ability relative to some reference to use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
+synonym: "abolished utilization of organic nitrogen phenotype" RELATED []
 is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:07:53Z
@@ -4997,6 +4993,7 @@ creation_date: 2013-10-01T15:17:10Z
 id: OMP:0007047
 name: decreased utilization of inorganic phosphorus phenotype
 def: "An inorganic phosphorus source utilization phenotype where the organism has decreased ability relative to some reference to use an inorganic P-containing compound as the source of phosphorus." [OMP:DAS]
+synonym: "abolished utilization of inorganic phosphorus phenotype" EXACT []
 is_a: OMP:0007045 ! inorganic phosphorus source phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:19:36Z
@@ -5021,6 +5018,7 @@ creation_date: 2013-10-01T15:19:36Z
 id: OMP:0007050
 name: decreased utilization of organic phosphorus phenotype
 def: "An organic phosphorus source utilization phenotype where the organism has decreased ability relative to some reference to use an organic P-containing compound as the source of phosphorus." [OMP:DAS]
+synonym: "abolished utilization of organic phosphorus phenotype" EXACT []
 is_a: OMP:0007046 ! organic phosphorus source phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:20:22Z
@@ -5061,6 +5059,7 @@ creation_date: 2013-10-01T15:32:55Z
 id: OMP:0007055
 name: decreased utilization of inorganic sulfur phenotype
 def: "An inorganic sulfur source utilization phenotype where the organism has decreased ability relative to some reference to use an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
+synonym: "abolished utilization of inorganic sulfur phenotype" RELATED []
 is_a: OMP:0007053 ! inorganic sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:33:08Z
@@ -5085,6 +5084,7 @@ creation_date: 2013-10-01T15:33:38Z
 id: OMP:0007058
 name: decreased utilization of organic sulfur phenotype
 def: "An organic sulfur source utilization phenotype where the organism has decreased ability relative to some reference to use an organic S-containing compound as the source of sulfur." [OMP:DAS]
+synonym: "abolished utilization of organic sulfur phenotype" EXACT []
 is_a: OMP:0007054 ! organic sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:34:00Z
