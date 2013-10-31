@@ -4033,6 +4033,14 @@ created_by: wmeza
 creation_date: 2013-10-29T13:20:16Z
 
 [Term]
+id: OMP:0005059
+name: transposable element transposition
+def: "A genetic material phenotype dealing with DNA sequences that change positions within the genome." [ISBN:9780198529170, OMP:WAM]
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: wmeza
+creation_date: 2013-10-30T18:35:34Z
+
+[Term]
 id: OMP:0006001
 name: nutrient phenotype
 def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and/or energy release that supports growth and reproduction." [ISBN:9780073402406]
