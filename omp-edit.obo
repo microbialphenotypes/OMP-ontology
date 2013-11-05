@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:11:2013 17:43
+date: 04:11:2013 18:34
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -4041,6 +4041,62 @@ def: "A genetic material phenotype dealing with DNA sequences that change positi
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-30T18:35:34Z
+
+[Term]
+id: OMP:0005060
+name: increased frequency of chromosome segregation 
+is_a: OMP:0005047 ! chromosome segregation phenotype
+created_by: wmeza
+creation_date: 2013-11-04T18:09:09Z
+
+[Term]
+id: OMP:0005061
+name: decreased frequency of chromosome segregation
+is_a: OMP:0005047 ! chromosome segregation phenotype
+created_by: wmeza
+creation_date: 2013-11-04T18:09:38Z
+
+[Term]
+id: OMP:0005062
+name: absence of chromosome segregation
+is_a: OMP:0005047 ! chromosome segregation phenotype
+created_by: wmeza
+creation_date: 2013-11-04T18:10:07Z
+
+[Term]
+id: OMP:0005063
+name: presence of chromosome segregation.  
+is_a: OMP:0005047 ! chromosome segregation phenotype
+created_by: wmeza
+creation_date: 2013-11-04T18:12:32Z
+
+[Term]
+id: OMP:0005064
+name: increased frequency of gene silencing
+is_a: OMP:0005046 ! gene silencing phenotype
+created_by: wmeza
+creation_date: 2013-11-04T18:21:37Z
+
+[Term]
+id: OMP:0005065
+name: decreased frequency of gene silencing
+is_a: OMP:0005046 ! gene silencing phenotype
+created_by: wmeza
+creation_date: 2013-11-04T18:21:56Z
+
+[Term]
+id: OMP:0005066
+name: absence of gene silencing 
+is_a: OMP:0005046 ! gene silencing phenotype
+created_by: wmeza
+creation_date: 2013-11-04T18:33:14Z
+
+[Term]
+id: OMP:0005067
+name: presence of gene silencing 
+is_a: OMP:0005046 ! gene silencing phenotype
+created_by: wmeza
+creation_date: 2013-11-04T18:34:20Z
 
 [Term]
 id: OMP:0006001
