@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:11:2013 15:55
+date: 08:11:2013 17:44
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -4105,6 +4105,48 @@ def: "A gene silencing state phenotype where the mechanisms are active." [OMP:WA
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:34:20Z
+
+[Term]
+id: OMP:0005068
+name: increased mutation frequency
+is_a: OMP:0005048 ! mutation frequency phenotype
+created_by: wmeza
+creation_date: 2013-11-08T17:05:44Z
+
+[Term]
+id: OMP:0005069
+name: decreased mutation frequency
+is_a: OMP:0005048 ! mutation frequency phenotype
+created_by: wmeza
+creation_date: 2013-11-08T17:11:14Z
+
+[Term]
+id: OMP:0005070
+name: increased mitotic recombination 
+is_a: OMP:0005045 ! mitotic recombination phenotype
+created_by: wmeza
+creation_date: 2013-11-08T17:11:59Z
+
+[Term]
+id: OMP:0005071
+name: decreased mitotic recombination
+is_a: OMP:0005045 ! mitotic recombination phenotype
+created_by: wmeza
+creation_date: 2013-11-08T17:12:27Z
+
+[Term]
+id: OMP:0005072
+name: absence of  mitotic recombination 
+is_a: OMP:0005045 ! mitotic recombination phenotype
+created_by: wmeza
+creation_date: 2013-11-08T17:35:56Z
+
+[Term]
+id: OMP:0005073
+name: presence of mitotic recombination
+is_a: OMP:0005045 ! mitotic recombination phenotype
+created_by: wmeza
+creation_date: 2013-11-08T17:36:20Z
 
 [Term]
 id: OMP:0006001
