@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 12:11:2013 12:56
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 12:11:2013 14:17
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2128,8 +2128,10 @@ id: OMP:0000274
 name: antimicrobial compound resistance phenotype
 def: "A microbial phenotype, where the trait in question is the resistance to a compound that kills (microbiocidal) or inhibits growth (microbiostatic) of a microbe." [OMP:MCC]
 synonym: "antibiotic resistance phenotype" NARROW []
+synonym: "antibiotic sensitivity phenotype" RELATED []
 synonym: "antifungal resistance phenotype" NARROW []
 synonym: "antimetabolite resistance phenotype" NARROW []
+synonym: "antimicrobial compound sensitivity phenotype" RELATED []
 synonym: "antiviral resistance phenotype" NARROW []
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
