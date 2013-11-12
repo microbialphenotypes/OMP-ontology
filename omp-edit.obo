@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:11:2013 15:36
+date: 12:11:2013 12:56
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -3991,14 +3991,14 @@ creation_date: 2013-10-25T12:22:04Z
 [Term]
 id: OMP:0005053
 name: homologous plasmid recombination phenotype
-is_a: OMP:0000290 ! genetic material phenotype
+is_obsolete: true
 created_by: wmeza
 creation_date: 2013-10-25T12:45:54Z
 
 [Term]
 id: OMP:0005054
 name: site specific plasmid recombination phenotype
-is_a: OMP:0000290 ! genetic material phenotype
+is_obsolete: true
 created_by: wmeza
 creation_date: 2013-10-25T13:57:46Z
 
@@ -4158,7 +4158,7 @@ creation_date: 2013-11-11T13:41:50Z
 
 [Term]
 id: OMP:0005075
-name: decreased rate of transposable element transposition 
+name: decreased rate of transposable element transposition
 def: "A transposable element transposition relative phenotype where DNA sequences change position at a lower frequency." [OMP:WAM]
 is_a: OMP:0005059 ! transposable element transposition
 created_by: wmeza
