@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 12:11:2013 14:17
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 12:11:2013 17:20
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1206,6 +1206,7 @@ creation_date: 2011-02-02T02:47:43Z
 id: OMP:0000150
 name: nucleoid phenotype
 def: "A cellular morphology phenotype where the trait in question is the nucleoid, the region of a bacterial cell to which the DNA is confined." [OMP:MCC]
+synonym: "genophore" RELATED []
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: adrienne
 creation_date: 2011-02-21T04:36:21Z
@@ -2267,26 +2268,8 @@ name: genophore phenotype
 def: "A genophore is the chromosome equivalent in any organism, cellular organelle, or virus, however, the term is commonly used to refer to chromosomes other than the nuclear chromosomes of eukaryotes." [ISBN:9780195307610, ISBN:9781613441138, OMP:DAS]
 synonym: "chromosome phenotype" RELATED []
 is_a: OMP:0000150 ! nucleoid phenotype
-is_a: OMP:0000290 ! genetic material phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:25:09Z
-
-[Term]
-id: OMP:0000292
-name: aberrant genophore partitioning
-synonym: "aberrant chromosome partitioning" RELATED []
-is_a: OMP:0000291 ! genophore phenotype
-created_by: mchibucos
-creation_date: 2011-07-21T04:26:16Z
-
-[Term]
-id: OMP:0000293
-name: aberrant genophore arrangement
-comment: Mutations in Escherichia coli mukB often yield incorrect positioning.
-synonym: "aberrant chromosome arrangement" RELATED []
-is_a: OMP:0000291 ! genophore phenotype
-created_by: mchibucos
-creation_date: 2011-07-21T04:31:30Z
 
 [Term]
 id: OMP:0000294
@@ -2369,17 +2352,6 @@ name: increased substrate binding
 is_a: OMP:0000302 ! substrate binding phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:18:58Z
-
-[Term]
-id: OMP:0000305
-name: increased genophore copy number
-comment: If mechanisms that normally would prevent replication initiation went awry, then the cell would contain more copies of the chromosome than typical. For example, Escherichia coli seqA mutants allow for overinitiation of DNA replication, which causes an increased number of chromosomes.
-synonym: "increased chrosomal copy number" RELATED []
-synonym: "increased number of chromosomes" RELATED []
-synonym: "increased number of genophores" EXACT []
-is_a: OMP:0000291 ! genophore phenotype
-created_by: mchibucos
-creation_date: 2011-07-21T05:35:46Z
 
 [Term]
 id: OMP:0000306
