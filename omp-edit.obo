@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 12:11:2013 17:20
+date: 13:11:2013 18:43
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -2267,7 +2267,7 @@ id: OMP:0000291
 name: genophore phenotype
 def: "A genophore is the chromosome equivalent in any organism, cellular organelle, or virus, however, the term is commonly used to refer to chromosomes other than the nuclear chromosomes of eukaryotes." [ISBN:9780195307610, ISBN:9781613441138, OMP:DAS]
 synonym: "chromosome phenotype" RELATED []
-is_a: OMP:0000150 ! nucleoid phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T04:25:09Z
 
