@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:11:2013 18:43
+date: 14:11:2013 18:30
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -2258,6 +2258,7 @@ creation_date: 2011-07-21T04:07:44Z
 [Term]
 id: OMP:0000290
 name: genetic material phenotype
+def: "A microbial phenotype dealing with the various aspects the molecular carrier of an organism's primary genetic information." [ISBN:9780198529170, OMP:WAM]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:24:02Z
