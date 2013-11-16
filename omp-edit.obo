@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:11:2013 18:22
+date: 15:11:2013 18:29
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -3860,6 +3860,7 @@ creation_date: 2013-10-15T18:59:38Z
 [Term]
 id: OMP:0005039
 name: freeze/thawing stress phenotype
+def: "A stress response phenotype dealing with the response to cyclic freezing and melting." [ISBN:9780080547916, OMP:WAM]
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2013-10-15T18:59:52Z
