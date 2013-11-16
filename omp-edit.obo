@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:11:2013 18:30
+date: 15:11:2013 18:22
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -1370,6 +1370,7 @@ creation_date: 2011-06-06T04:16:08Z
 [Term]
 id: OMP:0000173
 name: stress response phenotype
+def: "A microbial phenotype dealing with an organisms response to various environmental and chemical stressors." [OMP:WAM]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:32Z
@@ -3851,6 +3852,7 @@ creation_date: 2013-10-15T18:53:12Z
 [Term]
 id: OMP:0005038
 name: oxidative stress phenotype
+def: "A stress response phenotype dealing with a state of metabolic imbalance within cells that favors pro-oxidant substances leading to oxidative damage to all classes of major biomolecules." [ISBN:9780198529170, OMP:WAM]
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2013-10-15T18:59:38Z
@@ -3865,6 +3867,7 @@ creation_date: 2013-10-15T18:59:52Z
 [Term]
 id: OMP:0005040
 name: acidic pH stress phenotype
+def: "A stress response phenotype dealing with the response to the environmental stress of pH at or below 6.5." [OMP:WAM]
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2013-10-16T17:14:52Z
@@ -3872,6 +3875,7 @@ creation_date: 2013-10-16T17:14:52Z
 [Term]
 id: OMP:0005041
 name: alkalinc pH stress phenotype
+def: "A stress response phenotype dealing with the response too an environment with a pH at or above 7.5." [OMP:WAM]
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2013-10-16T17:15:59Z
@@ -4138,6 +4142,34 @@ def: "A transposable element transposition relative phenotype where DNA sequence
 is_a: OMP:0005059 ! transposable element transposition
 created_by: wmeza
 creation_date: 2013-11-11T13:42:44Z
+
+[Term]
+id: OMP:0005076
+name: increased resistance toward acidic pH stress 
+is_a: OMP:0005040 ! acidic pH stress phenotype
+created_by: wmeza
+creation_date: 2013-11-15T18:09:55Z
+
+[Term]
+id: OMP:0005077
+name: decreased resistance toward acidic pH stress
+is_a: OMP:0005040 ! acidic pH stress phenotype
+created_by: wmeza
+creation_date: 2013-11-15T18:12:48Z
+
+[Term]
+id: OMP:0005078
+name: increased resistance toward alkalinc pH stress
+is_a: OMP:0005041 ! alkalinc pH stress phenotype
+created_by: wmeza
+creation_date: 2013-11-15T18:14:08Z
+
+[Term]
+id: OMP:0005079
+name: decreased resistance toward alkalinc pH stress
+is_a: OMP:0005041 ! alkalinc pH stress phenotype
+created_by: wmeza
+creation_date: 2013-11-15T18:16:03Z
 
 [Term]
 id: OMP:0006001
