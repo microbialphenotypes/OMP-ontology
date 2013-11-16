@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 15:11:2013 18:29
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 15:11:2013 18:31
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1424,6 +1424,8 @@ creation_date: 2011-02-02T03:22:43Z
 [Term]
 id: OMP:0000180
 name: metabolic phenotype
+def: "The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances." [GO:0008152]
+synonym: "Metabolism" EXACT []
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:59:59Z
@@ -2380,6 +2382,8 @@ creation_date: 2011-07-21T05:46:05Z
 [Term]
 id: OMP:0000309
 name: biosynthetic phenotype
+def: "The chemical reactions and pathways resulting in the formation of substances; typically the energy-requiring part of metabolism in which simpler substances are transformed into more complex ones." [GO:0009058]
+synonym: "Biosynthesis" EXACT []
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:47:06Z
@@ -4146,7 +4150,7 @@ creation_date: 2013-11-11T13:42:44Z
 
 [Term]
 id: OMP:0005076
-name: increased resistance toward acidic pH stress 
+name: increased resistance toward acidic pH stress
 is_a: OMP:0005040 ! acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:09:55Z
