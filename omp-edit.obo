@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:11:2013 16:49
+date: 25:11:2013 12:14
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -4191,6 +4191,7 @@ creation_date: 2013-11-18T11:42:37Z
 [Term]
 id: OMP:0005081
 name: radiation stress phenotype
+def: "A stress response phenotype dealing response to energy in the form of electromagnetic waves at varies wavelengths." [OMP:WAM]
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2013-11-18T11:50:57Z
@@ -4201,6 +4202,34 @@ name: thermotolerance stress phenotype
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2013-11-18T12:22:55Z
+
+[Term]
+id: OMP:0005083
+name: ionizing radiation
+is_a: OMP:0005081 ! radiation stress phenotype
+created_by: wmeza
+creation_date: 2013-11-22T15:55:45Z
+
+[Term]
+id: OMP:0005084
+name: UV radiation
+is_a: OMP:0005081 ! radiation stress phenotype
+created_by: wmeza
+creation_date: 2013-11-22T15:56:27Z
+
+[Term]
+id: OMP:0005085
+name: gamma ray radiation
+is_a: OMP:0005083 ! ionizing radiation
+created_by: wmeza
+creation_date: 2013-11-22T16:04:42Z
+
+[Term]
+id: OMP:0005086
+name: x-ray radiation
+is_a: OMP:0005083 ! ionizing radiation
+created_by: wmeza
+creation_date: 2013-11-22T16:05:02Z
 
 [Term]
 id: OMP:0006001
