@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 25:11:2013 12:14
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 27:11:2013 14:33
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -34,7 +34,7 @@ creation_date: 2011-03-10T07:02:42Z
 [Term]
 id: OMP:0000003
 name: cell arrangement phenotype
-def: "A microbial phenotype, where the trait in question is the arrangement of cells in relation to one another." [OMP:MCC]
+def: "A microbial phenotype where the trait in question is the arrangement of cells in relation to one another." [OMP:MCC]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-04-14T02:30:07Z
@@ -589,7 +589,7 @@ creation_date: 2011-02-02T03:15:16Z
 [Term]
 id: OMP:0000072
 name: filamentous
-def: "A cell arrangement where cells are joined end-to-end in linear chains." [OMP:MCC]
+def: "A cell arrangement state phenotype where cells are joined end-to-end in linear chains." [OMP:MCC]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:31:35Z
@@ -956,7 +956,7 @@ creation_date: 2011-02-18T02:29:12Z
 [Term]
 id: OMP:0000118
 name: streptococcus
-def: "A cell arrangement where chains of coccus cells arise from division events in one plane." [OMP:AEZ]
+def: "A cell arrangement state phenotype where chains of coccus cells arise from division events in one plane." [OMP:AEZ]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:31:37Z
@@ -965,7 +965,7 @@ creation_date: 2011-02-18T02:31:37Z
 id: OMP:0000119
 name: tetrad
 alt_id: OMP:0000156
-def: "A cell arrangement where squares of four coccus cells arise from division in two planes." [OMP:AEZ]
+def: "A cell arrangement state phenotype where squares of four coccus cells arise from division in two planes." [OMP:AEZ]
 synonym: "micrococcus arrangement" EXACT []
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
@@ -974,15 +974,15 @@ creation_date: 2011-02-18T02:33:22Z
 [Term]
 id: OMP:0000120
 name: sarcina
-def: "A cell arrangement where cubes of eight coccus cells arise from a division event in three planes." [OMP:AEZ]
+def: "A cell arrangement state phenotype where cubes of eight coccus cells arise from a division event in three planes." [OMP:AEZ]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:34:40Z
 
 [Term]
 id: OMP:0000121
-name: stapylococcus
-def: "A cell arrangement where irregular clumps of coccus cells arise from division events in random planes." [OMP:AEZ]
+name: staphylococcus
+def: "A cell arrangement state phenotype where irregular clumps of coccus cells arise from division events in random planes." [OMP:AEZ]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:39:34Z
@@ -990,7 +990,7 @@ creation_date: 2011-02-18T02:39:34Z
 [Term]
 id: OMP:0000122
 name: streptobacillus
-def: "A cell arrangement where bacillis cells are arranged in chains." [OMP:AEZ]
+def: "A cell arrangement state phenotype where bacillis cells are arranged in chains." [OMP:AEZ]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:47:10Z
@@ -1022,6 +1022,7 @@ creation_date: 2011-02-18T02:52:33Z
 [Term]
 id: OMP:0000126
 name: trichome-forming
+def: "A cell arrangement state phenotype that consists of chains of cells in which the individual cells, which are usually wider than long, are closely appressed for the whole or the greater part of their width." [OMP:DAS, PMID:5318446]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:55:59Z
@@ -1029,7 +1030,7 @@ creation_date: 2011-02-18T02:55:59Z
 [Term]
 id: OMP:0000127
 name: sheathed
-def: "A cell arrangement where chains of cells are enclosed in a hyaline envelope or sheath." [OMP:MCC]
+def: "A cell arrangement state phenotype where chains of cells are enclosed in a hyaline envelope or sheath." [OMP:MCC]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:59:18Z
@@ -3606,7 +3607,7 @@ creation_date: 2013-09-04T13:24:06Z
 [Term]
 id: OMP:0005006
 name: psychrotrophic growth
-def: "A temperature growth range phenotype where growth occurs from 0 to 7 C with optimum growth at 20 to 30 C. The maximum range of growth is around 35 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where growth occurs from 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature of growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:38:56Z
@@ -3614,7 +3615,7 @@ creation_date: 2013-09-04T13:38:56Z
 [Term]
 id: OMP:0005007
 name: psychrophilic growth
-def: "A temperature growth range phenotype where growth occurs at 0 C and optimal growth occurs at temperatures of 15 C or lower." [iSBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where growth occurs at 0 degrees C and optimal growth occurs at temperatures of 15 degrees C or lower." [iSBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:40:27Z
