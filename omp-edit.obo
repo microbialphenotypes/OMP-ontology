@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 27:11:2013 14:33
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 03:12:2013 12:18
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -4185,6 +4185,7 @@ creation_date: 2013-11-15T18:16:03Z
 [Term]
 id: OMP:0005080
 name: dessication stress phenotype
+def: "A stress response dealing with the removal or immobilization of water." [ISBN:9780471138228, OMP:WAM]
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2013-11-18T11:42:37Z
