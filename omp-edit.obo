@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:12:2013 12:18
+date: 06:12:2013 18:40
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -4157,6 +4157,7 @@ creation_date: 2013-11-11T13:42:44Z
 [Term]
 id: OMP:0005076
 name: increased resistance toward acidic pH stress
+def: "A acidic pH stress relative phenotype were resistance to acidic pH was increased." [OMP:WAM]
 is_a: OMP:0005040 ! acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:09:55Z
@@ -4164,20 +4165,23 @@ creation_date: 2013-11-15T18:09:55Z
 [Term]
 id: OMP:0005077
 name: decreased resistance toward acidic pH stress
+def: "A acidic pH stress relative phenotype were resistance to acidic pH was reduced." [OMP:WAM]
 is_a: OMP:0005040 ! acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:12:48Z
 
 [Term]
 id: OMP:0005078
-name: increased resistance toward alkalinc pH stress
+name: increased resistance toward alkalinic pH stress
+def: "A alkalinic pH stress relative phenotype were resistance to alkalinic pH was increased." [OMP:WAM]
 is_a: OMP:0005041 ! alkalinc pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:14:08Z
 
 [Term]
 id: OMP:0005079
-name: decreased resistance toward alkalinc pH stress
+name: decreased resistance toward alkalinic pH stress
+def: "A alkalinic pH stress relative phenotype were resistance to alkalinic pH was decreased." [OMP:WAM]
 is_a: OMP:0005041 ! alkalinc pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:16:03Z
@@ -4232,6 +4236,52 @@ name: x-ray radiation
 is_a: OMP:0005083 ! ionizing radiation
 created_by: wmeza
 creation_date: 2013-11-22T16:05:02Z
+
+[Term]
+id: OMP:0005087
+name: increased resistance toward dessication stress
+def: "A dessication stress relative phenotype where resistance is increased." [OMP:WAM]
+is_a: OMP:0005080 ! dessication stress phenotype
+created_by: wmeza
+creation_date: 2013-12-06T14:14:31Z
+
+[Term]
+id: OMP:0005088
+name: decreased resistance toward dessication stress
+def: "A dessication stress relative phenotype where resistance is reduced." [OMP:WAM]
+is_a: OMP:0005080 ! dessication stress phenotype
+created_by: wmeza
+creation_date: 2013-12-06T14:15:06Z
+
+[Term]
+id: OMP:0005089
+name: increased resistance to freeze/thawing stress
+def: "A freeze/thawing stress relative phenotype where resistance is increased." [OMP:WAM]
+is_a: OMP:0005039 ! freeze/thawing stress phenotype
+created_by: wmeza
+creation_date: 2013-12-06T14:28:16Z
+
+[Term]
+id: OMP:0005090
+name: decreased resistance to freeze/thawing stress
+def: "A freeze/thawing stress relative phenotype where resistance is reduced." [OMP:WAM]
+is_a: OMP:0005039 ! freeze/thawing stress phenotype
+created_by: wmeza
+creation_date: 2013-12-06T14:28:46Z
+
+[Term]
+id: OMP:0005091
+name: increased resistance toward oxidative stress
+is_a: OMP:0005038 ! oxidative stress phenotype
+created_by: wmeza
+creation_date: 2013-12-06T17:57:46Z
+
+[Term]
+id: OMP:0005092
+name: decreased resistance toward oxidative stress
+is_a: OMP:0005038 ! oxidative stress phenotype
+created_by: wmeza
+creation_date: 2013-12-06T17:59:14Z
 
 [Term]
 id: OMP:0006001
