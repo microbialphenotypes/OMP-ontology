@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:12:2013 13:54
+date: 18:12:2013 13:18
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -4221,6 +4221,7 @@ creation_date: 2013-11-22T15:55:45Z
 [Term]
 id: OMP:0005084
 name: UV radiation
+def: "A radiation stress phenotype dealing with irradiation at 275-nm wavelengths for a period of time." [ISBN:1555810489, OMP:WAM]
 is_a: OMP:0005081 ! radiation stress phenotype
 created_by: wmeza
 creation_date: 2013-11-22T15:56:27Z
@@ -4228,6 +4229,7 @@ creation_date: 2013-11-22T15:56:27Z
 [Term]
 id: OMP:0005085
 name: gamma ray radiation
+def: "A ionizing radiation stress phenotype dealing with the exposure to gamma radiation." [OMP:WAM]
 is_a: OMP:0005083 ! ionizing radiation
 created_by: wmeza
 creation_date: 2013-11-22T16:04:42Z
@@ -4235,6 +4237,7 @@ creation_date: 2013-11-22T16:04:42Z
 [Term]
 id: OMP:0005086
 name: x-ray radiation
+def: "A ionizing radiation stress relative phenotype dealing with exposure to x-ray radiation." [OMP:WAM]
 is_a: OMP:0005083 ! ionizing radiation
 created_by: wmeza
 creation_date: 2013-11-22T16:05:02Z
@@ -4284,6 +4287,54 @@ name: decreased resistance toward oxidative stress
 is_a: OMP:0005038 ! oxidative stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T17:59:14Z
+
+[Term]
+id: OMP:0005093
+name: increase resistance to gamma radiation
+def: "A  gamma radiation phenotype where resistance is enhanced relative to the reference condition." [OMP:WAM]
+is_a: OMP:0005085 ! gamma ray radiation
+created_by: wmeza
+creation_date: 2013-12-17T13:05:40Z
+
+[Term]
+id: OMP:0005094
+name: decrease resistance to gamma radiation
+def: "A  gamma radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+is_a: OMP:0005085 ! gamma ray radiation
+created_by: wmeza
+creation_date: 2013-12-17T13:06:05Z
+
+[Term]
+id: OMP:0005095
+name: increased resistance toward x-ray radiation
+def: "An x-ray radiation phenotype were resistance is enhanced relative to the reference strain." [OMP:WAM]
+is_a: OMP:0005086 ! x-ray radiation
+created_by: wmeza
+creation_date: 2013-12-17T13:26:43Z
+
+[Term]
+id: OMP:0005096
+name: decreased resistance toward x-ray radiation
+def: "An x-ray radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+is_a: OMP:0005086 ! x-ray radiation
+created_by: wmeza
+creation_date: 2013-12-17T13:28:20Z
+
+[Term]
+id: OMP:0005097
+name: increased resistance to UV radiation
+def: "A UV radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+is_a: OMP:0005084 ! UV radiation
+created_by: wmeza
+creation_date: 2013-12-17T13:41:53Z
+
+[Term]
+id: OMP:0005098
+name: decreased resistance toward UV radiation
+def: "A UV radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+is_a: OMP:0005084 ! UV radiation
+created_by: wmeza
+creation_date: 2013-12-17T13:43:32Z
 
 [Term]
 id: OMP:0006001
