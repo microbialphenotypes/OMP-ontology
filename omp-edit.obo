@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 18:12:2013 13:18
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 27:12:2013 15:00
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -255,7 +255,7 @@ creation_date: 2011-04-26T03:29:34Z
 
 [Term]
 id: OMP:0000030
-name: absence of flagellum, state phenotype
+name: absence of flagellum
 def: "A flagellum phenotype where the representative member of the taxonomic unit does not possess a flagellum or flagella in any environment." [OMP:MCC]
 synonym: "non-flagellated phenotype" RELATED []
 is_a: OMP:0000027 ! flagellum, state phenotype
@@ -310,8 +310,8 @@ creation_date: 2011-04-26T03:44:34Z
 [Term]
 id: OMP:0000036
 name: increased capsule formation
-def: "An increased amount of capsule relative to a reference strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
-is_a: OMP:0007004 ! capsule, relative phenotype
+def: "An increased amount of capsule relative to the designated control strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
+is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:11Z
 
@@ -383,7 +383,7 @@ creation_date: 2011-04-26T04:17:42Z
 id: OMP:0000047
 name: aerotaxis phenotype
 def: "A chemotaxis phenotype where the cell is responding to environmental oxygen." [OMP:MCC]
-is_a: OMP:0000048 ! chemotaxis phenotype
+is_a: OMP:0000004 ! taxis phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:18:11Z
 
@@ -399,16 +399,16 @@ creation_date: 2011-04-26T04:27:11Z
 [Term]
 id: OMP:0000049
 name: presence of aerotaxis
-def: "An aerotaxis phenotype where an organism possesses the ability to respond to environmental oxygen." [OMP:MCC]
-is_a: OMP:0000320 ! aerotaxis, state phenotype
+def: "An aerotaxis state phenotype where the representative taxonomic unit  possesses the ability to respond to environmental oxygen." [OMP:MCC]
+is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:27:42Z
 
 [Term]
 id: OMP:0000050
 name: decreased capsule formation
-def: "An decreased amount of capsule relative to a reference strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
-is_a: OMP:0007004 ! capsule, relative phenotype
+def: "An decreased amount of capsule relative to the designated control strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
+is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:59Z
 
@@ -654,8 +654,8 @@ creation_date: 2011-02-02T03:44:18Z
 
 [Term]
 id: OMP:0000080
-name: amphitrichous, state phenotype
-def: "A flagellum distribution phenotype where the cell has a single flagellum at each end of the cell." [ISBN:9780073402406, OMP:MCC]
+name: amphitrichous
+def: "A flagellum distribution phenotype where cells of the representative taxonomic unit has a single flagellum at each end of the cell." [ISBN:9780073402406, OMP:MCC]
 is_a: OMP:0000078 ! flagellum distribution, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:45:34Z
@@ -1271,8 +1271,8 @@ creation_date: 2011-02-02T02:49:30Z
 [Term]
 id: OMP:0000159
 name: absence of aerotaxis
-def: "An aerotaxis phenotype where an organism does not possess the ability to respond to environmental oxygen." [OMP:MCC]
-is_a: OMP:0000320 ! aerotaxis, state phenotype
+def: "An aerotaxis state phenotype where the representative taxonomic unit does not possess the ability to respond to environmental oxygen." [OMP:MCC]
+is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: adrienne
 creation_date: 2011-03-02T02:06:09Z
 
@@ -1587,14 +1587,14 @@ creation_date: 2011-03-02T01:41:52Z
 
 [Term]
 id: OMP:0000202
-name: outer membrane vesicle, state phenotype
+name: outer membrane vesicle phenotype
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: Adrienne
 creation_date: 2011-03-02T01:43:12Z
 
 [Term]
 id: OMP:0000203
-name: capsule, state phenotype
+name: capsule phenotype
 def: "A cell envelope phenotype where the trait in question is the outermost layer of the cell envelope that usually consists of polysaccharide or a polymer of amino acids." [ISBN:9780073402406, OMP:DAS]
 synonym: "glycocalyx" RELATED []
 synonym: "slime layer" RELATED []
@@ -1609,7 +1609,7 @@ def: "The presence of a capsule layer, usually consisting of polysaccharide or a
 comment: When present, the capsule layer lies outside the cell wall and/or outer membrane.
 synonym: "glycocalyx" RELATED [OMP:DAS]
 synonym: "slime layer" RELATED [OMP:DAS]
-is_a: OMP:0000203 ! capsule, state phenotype
+is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:45:20Z
 
@@ -1664,8 +1664,8 @@ creation_date: 2011-06-07T12:31:24Z
 [Term]
 id: OMP:0000211
 name: absence of capsule
-def: "A capsule, state phenotype where the representative member of the taxonomic unit is not observed to produce a capsule in any environmental condition." [OMP:DAS]
-is_a: OMP:0000203 ! capsule, state phenotype
+def: "A capsule state phenotype where the representative member of the taxonomic unit is not observed to produce a capsule in any environmental condition." [OMP:DAS]
+is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
 
@@ -1927,7 +1927,7 @@ creation_date: 2011-06-07T03:00:25Z
 
 [Term]
 id: OMP:0000247
-name: absence of nanotube, state phenotype
+name: absence of nanotube
 is_a: OMP:0000175 ! nanotube phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:01:32Z
@@ -2120,14 +2120,6 @@ comment: Restructured the terms.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T02:15:11Z
-
-[Term]
-id: OMP:0000273
-name: auxotrophic phenotype, state phenotype
-def: "A growth factor requirement phenotype where an auxotroph is an organism that cannot synthesize certain organic molecules (growth factors) that are essential for its growth." [ISBN:9780073375267, OMP:DAS]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T02:17:25Z
 
 [Term]
 id: OMP:0000274
@@ -2416,14 +2408,6 @@ created_by: mchibucos
 creation_date: 2012-04-05T11:43:53Z
 
 [Term]
-id: OMP:0000313
-name: motility, state phenotype
-def: "A motility phenotype that reflects the capability of the representative member of the taxonomic unit." [OMP:MCC]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-04-05T10:40:04Z
-
-[Term]
 id: OMP:0000314
 name: motility, relative phenotype
 def: "A motility phenotype that is different relative to a reference phenotype." [OMP:MCC]
@@ -2447,34 +2431,6 @@ synonym: "mutant phenotype" NARROW []
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2012-04-05T03:35:22Z
-
-[Term]
-id: OMP:0000317
-name: chemotaxis, relative phenotype
-is_a: OMP:0000048 ! chemotaxis phenotype
-created_by: mchibucos
-creation_date: 2012-04-17T02:06:57Z
-
-[Term]
-id: OMP:0000318
-name: chemotaxis, state phenotype
-is_a: OMP:0000048 ! chemotaxis phenotype
-created_by: mchibucos
-creation_date: 2012-04-17T02:07:31Z
-
-[Term]
-id: OMP:0000319
-name: aerotaxis, relative phenotype
-is_a: OMP:0000047 ! aerotaxis phenotype
-created_by: mchibucos
-creation_date: 2012-04-17T02:17:26Z
-
-[Term]
-id: OMP:0000320
-name: aerotaxis, state phenotype
-is_a: OMP:0000047 ! aerotaxis phenotype
-created_by: mchibucos
-creation_date: 2012-04-17T02:17:52Z
 
 [Term]
 id: OMP:0000321
@@ -2512,13 +2468,6 @@ created_by: mchibucos
 creation_date: 2012-11-02T01:57:24Z
 
 [Term]
-id: OMP:0000328
-name: erythromycin resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T01:57:51Z
-
-[Term]
 id: OMP:0000329
 name: increased resistance to erythromycin
 is_obsolete: true
@@ -2535,17 +2484,15 @@ creation_date: 2012-11-02T01:58:42Z
 
 [Term]
 id: OMP:0000331
-name: antifolate compound resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a class of drugs that stop cells from using folic acid." [CHEBI:73913, OMP:DAS]
-synonym: "antifolate sensitivity phenotype" RELATED []
-synonym: "diaminopyrimidine" NARROW []
-synonym: "diaveridine" RELATED [CHEBI:123115]
+name: aminopyrimidine resistance phenotype
+def: "An antimicrobial compound resistance phenotype where resistance is to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
+synonym: "antifolate" BROAD [CHEBI:73913]
+synonym: "diaveridine" NARROW [CHEBI:123115]
 synonym: "Iclaprim" NARROW []
 synonym: "piritrexim" NARROW []
 synonym: "pyrimethamine" NARROW [CHEBI:8673]
-synonym: "trimethoprim" NARROW []
+synonym: "trimethoprim" NARROW [CHEBI:45924]
 synonym: "trimetrexate" NARROW []
-synonym: "TRP" NARROW [CHEBI:45924]
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:02:58Z
@@ -2558,17 +2505,10 @@ created_by: mchibucos
 creation_date: 2012-11-02T02:03:42Z
 
 [Term]
-id: OMP:0000333
-name: diaminopyrimidine compound resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:04:07Z
-
-[Term]
 id: OMP:0000334
 name: increased resistance to antifolate compound
 def: "An antifolate compound resistance relative phenotype where resistance is increased relative to some reference." [OMP:DAS]
-is_a: OMP:0000331 ! antifolate compound resistance phenotype
+is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:38Z
 
@@ -2577,7 +2517,7 @@ id: OMP:0000335
 name: decreased resistance to antifolate compound
 def: "An antifolate compound resistance relative phenotype where resistance is decreased relative to some reference." [OMP:DAS]
 synonym: "abolished resistance to diaminopyrimidine compound" NARROW []
-is_a: OMP:0000331 ! antifolate compound resistance phenotype
+is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:58Z
 
@@ -2605,14 +2545,6 @@ def: "A beta-lactam compound resistance phenotype, where the trait in question i
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:09:23Z
-
-[Term]
-id: OMP:0000338
-name: beta-lactam compound resistance, state phenotype
-def: "A beta-lactam compound resistance phenotype that describes whether the representative member of the taxonomic unit is resistant to or sensitive xx concentratons of" [OMP:DAS]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:09:49Z
 
 [Term]
 id: OMP:0000339
@@ -2667,13 +2599,6 @@ created_by: mchibucos
 creation_date: 2012-11-02T02:15:34Z
 
 [Term]
-id: OMP:0000346
-name: ampicillin resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:15:51Z
-
-[Term]
 id: OMP:0000347
 name: increased resistance to ampicillin
 is_obsolete: true
@@ -2694,13 +2619,6 @@ name: cefoxitin resistance, relative phenotype
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:17:08Z
-
-[Term]
-id: OMP:0000350
-name: cefoxitin resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:17:24Z
 
 [Term]
 id: OMP:0000351
@@ -2725,13 +2643,6 @@ created_by: mchibucos
 creation_date: 2012-11-02T02:18:43Z
 
 [Term]
-id: OMP:0000354
-name: cephalosporin resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:19:02Z
-
-[Term]
 id: OMP:0000355
 name: increased resistance to cephalosporin
 is_obsolete: true
@@ -2752,13 +2663,6 @@ name: penicillin resistance, relative phenotype
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:20:05Z
-
-[Term]
-id: OMP:0000358
-name: penicillin resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:20:25Z
 
 [Term]
 id: OMP:0000359
@@ -2853,13 +2757,6 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:05:16Z
 
 [Term]
-id: OMP:0000372
-name: azithromycin resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:05:41Z
-
-[Term]
 id: OMP:0000373
 name: decreased resistance to azithromycin
 synonym: "abolished resistance to azithromycin" NARROW []
@@ -2880,13 +2777,6 @@ name: carvomycin A resistance, relative phenotype
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:16:09Z
-
-[Term]
-id: OMP:0000376
-name: carvomycin A resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:16:36Z
 
 [Term]
 id: OMP:0000377
@@ -2911,13 +2801,6 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:17:56Z
 
 [Term]
-id: OMP:0000380
-name: clarithromycin resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:18:09Z
-
-[Term]
 id: OMP:0000381
 name: increased resistance to clarithromycin
 is_obsolete: true
@@ -2938,13 +2821,6 @@ name: dirithromycin resistance, relative phenotype
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:21:39Z
-
-[Term]
-id: OMP:0000384
-name: dirithromycin resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:21:56Z
 
 [Term]
 id: OMP:0000385
@@ -2969,15 +2845,6 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:24:36Z
 
 [Term]
-id: OMP:0000388
-name: josamycin resistance, state phenotype
-def: "An antimicrobial" []
-synonym: "azithromycin, clarithromycin, dirithromycin, erythromycin, josamycin" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:25:01Z
-
-[Term]
 id: OMP:0000389
 name: increased resistance to josamycin
 is_obsolete: true
@@ -2998,13 +2865,6 @@ name: roxithromycin resistance, relative phenotype
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:32:11Z
-
-[Term]
-id: OMP:0000392
-name: roxithromycin resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:32:29Z
 
 [Term]
 id: OMP:0000393
@@ -3029,13 +2889,6 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:34:54Z
 
 [Term]
-id: OMP:0000396
-name: spectinomycin resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:35:08Z
-
-[Term]
 id: OMP:0000397
 name: increased resistance to spectinomycin
 is_obsolete: true
@@ -3056,13 +2909,6 @@ name: spiramycin resistance, relative phenotype
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:36:30Z
-
-[Term]
-id: OMP:0000400
-name: spiramycin resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:36:41Z
 
 [Term]
 id: OMP:0000401
@@ -3087,13 +2933,6 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:38:05Z
 
 [Term]
-id: OMP:0000404
-name: telithromycin resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:38:18Z
-
-[Term]
 id: OMP:0000405
 name: increased resistance to telithromycin
 is_obsolete: true
@@ -3107,13 +2946,6 @@ synonym: "decreased resistance to telithromycin" NARROW []
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:38:55Z
-
-[Term]
-id: OMP:0000407
-name: troleandomycin resistance, state phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:40:26Z
 
 [Term]
 id: OMP:0000408
@@ -3145,25 +2977,11 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:43:06Z
 
 [Term]
-id: OMP:0000412
-name: not resistant to azithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:43:20Z
-
-[Term]
 id: OMP:0000413
 name: resistant to carvomycin
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:44:03Z
-
-[Term]
-id: OMP:0000414
-name: not resistant to carvomycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:44:13Z
 
 [Term]
 id: OMP:0000415
@@ -3173,25 +2991,11 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:44:32Z
 
 [Term]
-id: OMP:0000416
-name: not resistant to clarithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:44:49Z
-
-[Term]
 id: OMP:0000417
 name: resistant to dirithromycin
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:45:40Z
-
-[Term]
-id: OMP:0000418
-name: not resistant to dirithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:45:51Z
 
 [Term]
 id: OMP:0000419
@@ -3201,25 +3005,11 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:46:22Z
 
 [Term]
-id: OMP:0000420
-name: not resistant to erythromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:46:38Z
-
-[Term]
 id: OMP:0000421
 name: resistant to josamycin
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:46:59Z
-
-[Term]
-id: OMP:0000422
-name: not resistant to josamycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:47:06Z
 
 [Term]
 id: OMP:0000425
@@ -3229,25 +3019,11 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:48:02Z
 
 [Term]
-id: OMP:0000426
-name: not resistant to roxithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:48:09Z
-
-[Term]
 id: OMP:0000427
 name: resistant to spectinomycin
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:48:33Z
-
-[Term]
-id: OMP:0000428
-name: not resistant to spectinomycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:48:44Z
 
 [Term]
 id: OMP:0000429
@@ -3257,25 +3033,11 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:49:30Z
 
 [Term]
-id: OMP:0000430
-name: not resistant to spiramycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:49:39Z
-
-[Term]
 id: OMP:0000431
 name: resistant to telithromycin
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:50:20Z
-
-[Term]
-id: OMP:0000432
-name: not resistant to telithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:50:30Z
 
 [Term]
 id: OMP:0000433
@@ -3285,17 +3047,10 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:50:49Z
 
 [Term]
-id: OMP:0000434
-name: not resistant to troleandomycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:50:57Z
-
-[Term]
 id: OMP:0000435
 name: resistant to antifolate compound
 def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an antifolate compound." [OMP:DAS]
-is_a: OMP:0000331 ! antifolate compound resistance phenotype
+is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:01Z
 
@@ -3303,7 +3058,7 @@ creation_date: 2012-11-04T02:52:01Z
 id: OMP:0000436
 name: not resistant to antifolate compound
 def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to an antifolate compound." [OMP:DAS]
-is_a: OMP:0000331 ! antifolate compound resistance phenotype
+is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:18Z
 
@@ -3315,25 +3070,11 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:52:48Z
 
 [Term]
-id: OMP:0000438
-name: not resistant to ampicillin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:53:00Z
-
-[Term]
 id: OMP:0000439
 name: resistant to beta-lactam compounds
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:53:24Z
-
-[Term]
-id: OMP:0000440
-name: not resistant to beta-lactam compounds
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:53:35Z
 
 [Term]
 id: OMP:0000441
@@ -3343,25 +3084,11 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:54:04Z
 
 [Term]
-id: OMP:0000442
-name: not resistant to cefoxitin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:54:14Z
-
-[Term]
 id: OMP:0000443
 name: resistant to cephalosporin
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:55:01Z
-
-[Term]
-id: OMP:0000444
-name: not resistant to cephalosporin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:55:19Z
 
 [Term]
 id: OMP:0000445
@@ -3383,13 +3110,6 @@ name: resistant to antimicrobial compound
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:56:12Z
-
-[Term]
-id: OMP:0000448
-name: not resistant to antimicrobial compound
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:56:21Z
 
 [Term]
 id: OMP:0000449
@@ -3488,7 +3208,7 @@ creation_date: 2013-05-23T01:58:55Z
 
 [Term]
 id: OMP:0000461
-name: outer membrane phenotype, state phenotype
+name: outer membrane phenotype
 def: "A cell envelope phenotype where the trait in question is the presence or absence of  a lipid bilayer membrane located outside the peptidoglycan cell wall." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: siegele
@@ -3497,11 +3217,11 @@ creation_date: 2013-08-22T01:43:06Z
 [Term]
 id: OMP:0000462
 name: presence of an outer membrane
-def: "An outer membrane phenotype where the representative member of the taxonomic unit posesses an outer membrane." [OMP:DAS]
+def: "An outer membrane state phenotype where cells of the representative member of the taxonomic unit possesses an outer membrane." [OMP:DAS]
 synonym: "Diderm" NARROW []
 synonym: "Gram negative" NARROW []
 synonym: "mycolate outer membrane" RELATED []
-is_a: OMP:0000461 ! outer membrane phenotype, state phenotype
+is_a: OMP:0000461 ! outer membrane phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:47:25Z
 
@@ -3517,28 +3237,31 @@ creation_date: 2013-08-22T01:48:57Z
 id: OMP:0000464
 name: absence of an outer membrane
 def: "An outer membrane phenotype state phenotype where cells of the representative member of the taxonomic unit do not have an outer membrane." [OMP:DAS]
-is_a: OMP:0000461 ! outer membrane phenotype, state phenotype
+is_a: OMP:0000461 ! outer membrane phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:53:29Z
 
 [Term]
 id: OMP:0000500
 name: decreased aerotaxis
+def: "An aerotaxis relative phenotype where aerotaxis is decreased reative to the designated control strain in the same environment or to the same strain in a different environment." []
 synonym: "abolished aerotaxis" NARROW []
-is_a: OMP:0000319 ! aerotaxis, relative phenotype
+is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:20:31Z
 
 [Term]
 id: OMP:0000502
 name: increased aerotaxis
-is_a: OMP:0000319 ! aerotaxis, relative phenotype
+def: "An aerotaxis relative phenotype where aerotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." []
+is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:21:21Z
 
 [Term]
 id: OMP:0000503
 name: decreased chemotaxis
+def: "An chemotaxis relative phenotype where chemotaxis is decreased relative to the designated control strain in the same environment or to the same strain in a different environment." []
 synonym: "abolished chemotaxis" NARROW []
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
@@ -3547,6 +3270,7 @@ creation_date: 2012-11-02T01:22:28Z
 [Term]
 id: OMP:0000505
 name: increased chemotaxis
+def: "An chemotaxis relative phenotype where chemotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." []
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:23:12Z
@@ -4393,14 +4117,6 @@ created_by: jonathanherrera
 creation_date: 2013-09-06T17:19:20Z
 
 [Term]
-id: OMP:0006008
-name: nutrient requirement, state phenotype
-def: "A Nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:DS]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-09T18:09:37Z
-
-[Term]
 id: OMP:0006009
 name: increase nutrient requirement
 def: "A nutrient requirement relative phenotype, where the defining trait is the increase requirement of a carbon containing substance." [OMP:JCH]
@@ -4415,14 +4131,6 @@ def: "A nutrient requirement relative phenotype, where the defining trait is the
 is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-09T18:21:18Z
-
-[Term]
-id: OMP:0006011
-name: nutrient requirement, state phenotype
-def: "A Nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:JCH]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-09T19:18:50Z
 
 [Term]
 id: OMP:0006012
@@ -4945,13 +4653,6 @@ created_by: siegele
 creation_date: 2013-09-05T16:09:28Z
 
 [Term]
-id: OMP:0007004
-name: capsule, relative phenotype
-is_a: OMP:0000085 ! cell envelope phenotype
-created_by: siegele
-creation_date: 2013-09-05T16:17:12Z
-
-[Term]
 id: OMP:0007005
 name: flagellum, relative phenotype
 is_a: OMP:0000083 ! cell projection phenotype
@@ -5415,6 +5116,15 @@ name: iron source utilization phenotype
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:46:38Z
+
+[Term]
+id: Test::0000001
+name: pteridine resistance phenotype
+synonym: "antifolate" BROAD [CHEBI:73913]
+synonym: "methotrexate" NARROW [CHEBI:44185]
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+created_by: siegele
+creation_date: 2013-12-27T14:24:05Z
 
 [Typedef]
 id: is_a
