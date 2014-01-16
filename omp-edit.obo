@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:01:2014 16:45
+date: 16:01:2014 14:45
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -4901,6 +4901,8 @@ namespace: microbial_phenotype
 def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is decreased relative to some reference." [OMP:JCH]
 synonym: "abolished resistance to macrolide compound" NARROW []
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
+intersection_of: PATO:0002301 ! decreased quality
+intersection_of: decreased_in_magnitude_relative_to OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
@@ -4910,6 +4912,8 @@ name: increased resistance to macrolide compound
 namespace: microbial_phenotype
 def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is increased relative to some reference." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
+intersection_of: PATO:0002300 ! increased quality
+intersection_of: increased_in_magnitude_relative_to OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
