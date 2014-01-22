@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:01:2014 14:05
+date: 21:01:2014 19:01
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -4585,6 +4585,7 @@ id: OMP:0005097
 name: increased resistance to UV radiation
 namespace: microbial_phenotype
 def: "A UV radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+synonym: "decrease in UV sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005084 ! UV radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:41:53Z
@@ -4594,9 +4595,18 @@ id: OMP:0005098
 name: decreased resistance toward UV radiation
 namespace: microbial_phenotype
 def: "A UV radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+synonym: "increase in UV sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005084 ! UV radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:43:32Z
+
+[Term]
+id: OMP:0005099
+name: starvation stress phenotype
+namespace: microbial_phenotype
+is_a: OMP:0000173 ! stress response phenotype
+created_by: wmeza
+creation_date: 2014-01-21T12:13:04Z
 
 [Term]
 id: OMP:0006001
