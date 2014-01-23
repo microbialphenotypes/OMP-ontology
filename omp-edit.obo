@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 21:01:2014 19:01
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 23:01:2014 16:02
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -2740,9 +2740,6 @@ namespace: microbial_phenotype
 def: "A microbial phenotype that reflects the capability of the representative member of the taxonomic unit." [OMP:MCC]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
-intersection_of: PATO:0000001 ! quality
-intersection_of: inheres_in OMP:0000000 ! microbial phenotype
-intersection_of: qualifier PATO:0000461 ! normal
 created_by: mchibucos
 creation_date: 2012-04-05T03:35:06Z
 
@@ -2754,8 +2751,6 @@ def: "A microbial phenotype that is different relative to the designated control
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "mutant phenotype" NARROW []
 is_a: OMP:0000000 ! microbial phenotype
-intersection_of: PATO:0000001 ! quality
-intersection_of: inheres_in OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2012-04-05T03:35:22Z
 
