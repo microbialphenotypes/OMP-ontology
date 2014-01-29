@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 23:01:2014 16:02
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 28:01:2014 15:20
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -2573,7 +2573,7 @@ creation_date: 2011-07-21T04:25:09Z
 
 [Term]
 id: OMP:0000294
-name: DNA supercoiling, state phenotype
+name: DNA supercoiling state phenotype
 namespace: microbial_phenotype
 def: "A genetic material phenotype where the trait in question is supercoiling of a double-stranded DNA molecule." [OMP:DAS]
 is_a: OMP:0000290 ! genetic material phenotype
@@ -2582,21 +2582,21 @@ creation_date: 2011-07-21T04:46:29Z
 
 [Term]
 id: OMP:0000295
-name: presence of negative DNA supercoiling, state phenotype
+name: presence of negative DNA supercoiling
 namespace: microbial_phenotype
 def: "A DNA supercoiling phenotype where the DNA twists around its axis in the opposite direction from the clockwise turns of the right-handed double helix." [ISBN:9781613441138]
 synonym: "underwound DNA phenotype" RELATED []
-is_a: OMP:0000294 ! DNA supercoiling, state phenotype
+is_a: OMP:0000294 ! DNA supercoiling state phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:47:38Z
 
 [Term]
 id: OMP:0000296
-name: presence of positive DNA supercoiling, state phenotype
+name: presence of positive DNA supercoiling
 namespace: microbial_phenotype
 def: "A DNA supercoiling phenotype where the DNA twists around its axis in the same direction as the clockwise turns of the right-handed double helix." [ISBN:9781613441138]
 synonym: "overwound DNA phenotype" RELATED []
-is_a: OMP:0000294 ! DNA supercoiling, state phenotype
+is_a: OMP:0000294 ! DNA supercoiling state phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:48:22Z
 
@@ -4939,6 +4939,8 @@ name: resistant to macrolide compound
 namespace: microbial_phenotype
 def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic is resistant to a macrolide compound." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
+intersection_of: OMP:0000315 ! state phenotype
+intersection_of: inheres_in OMP:0006039 ! resistant to macrolide compound
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
