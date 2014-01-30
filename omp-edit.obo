@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:01:2014 15:20
+date: 29:01:2014 18:39
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -4165,7 +4165,7 @@ creation_date: 2013-10-23T19:46:15Z
 id: OMP:0005050
 name: decreased frequency of homologous recombination
 namespace: microbial_phenotype
-def: "A homologous recombination relative phenotype where the prevalence of homologous recombination is reduced." [OMP:WAM]
+def: "A homologous recombination relative phenotype where the prevalence of homologous recombination is reduced relative to the designated control." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-24T12:52:41Z
@@ -4183,7 +4183,7 @@ creation_date: 2013-10-25T12:21:41Z
 id: OMP:0005052
 name: absence of homologous recombination
 namespace: microbial_phenotype
-def: "A homologous recombination state phenotype where the processes do not occur." [OMP:WAM]
+def: "A homologous recombination state phenotype where the processes do not occur within the representative member of the taxonomic unit." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:22:04Z
@@ -4253,7 +4253,7 @@ creation_date: 2013-10-30T18:35:34Z
 id: OMP:0005060
 name: increased frequency of chromosome segregation
 namespace: microbial_phenotype
-def: "A chromosome segregation relative phenotype where the occurrence of segregation is increased." [OMP:WAM]
+def: "A chromosome segregation relative phenotype where the occurrence of segregation is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:09:09Z
@@ -4262,7 +4262,7 @@ creation_date: 2013-11-04T18:09:09Z
 id: OMP:0005061
 name: decreased frequency of chromosome segregation
 namespace: microbial_phenotype
-def: "A chromosome segregation relative phenotype where the occurrence of segregation is decreased." [OMP:WAM]
+def: "A chromosome segregation relative phenotype where the occurrence of segregation is decreased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:09:38Z
@@ -4271,7 +4271,7 @@ creation_date: 2013-11-04T18:09:38Z
 id: OMP:0005062
 name: absence of chromosome segregation
 namespace: microbial_phenotype
-def: "A chromosome segregation state phenotype where process does not occur." [OMP:WAM]
+def: "A chromosome segregation state phenotype where process does not occur in the representative member of the taxonomic unit." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:10:07Z
@@ -4280,7 +4280,7 @@ creation_date: 2013-11-04T18:10:07Z
 id: OMP:0005063
 name: presence of chromosome segregation.
 namespace: microbial_phenotype
-def: "A chromosome segregation state phenotype where process occurs." [OMP:WAM]
+def: "A chromosome segregation state phenotype where process occurs in the representative member of the taxonomic unit." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:12:32Z
@@ -4289,7 +4289,7 @@ creation_date: 2013-11-04T18:12:32Z
 id: OMP:0005064
 name: increased frequency of gene silencing
 namespace: microbial_phenotype
-def: "A gene silencing relative phenotype dealing with an increase in the incidence of gene silencing." [OMP:WAM]
+def: "A gene silencing relative phenotype dealing with an increase in the incidence of gene silencing relative to the designated control." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:21:37Z
@@ -4298,7 +4298,7 @@ creation_date: 2013-11-04T18:21:37Z
 id: OMP:0005065
 name: decreased frequency of gene silencing
 namespace: microbial_phenotype
-def: "A gene silencing relative phenotype dealing with a reduction in the incidence of gene silencing." [OMP:WAM]
+def: "A gene silencing relative phenotype dealing with a reduction in the incidence of gene silencing relative to the designated control." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:21:56Z
@@ -4307,7 +4307,7 @@ creation_date: 2013-11-04T18:21:56Z
 id: OMP:0005066
 name: absence of gene silencing
 namespace: microbial_phenotype
-def: "A gene silencing state phenotype where the mechanisms are inactive." [OMP:WAM]
+def: "A gene silencing state phenotype where the mechanisms are inactive in the representative member of the taxonomic unit." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:33:14Z
@@ -4316,7 +4316,7 @@ creation_date: 2013-11-04T18:33:14Z
 id: OMP:0005067
 name: presence of gene silencing
 namespace: microbial_phenotype
-def: "A gene silencing state phenotype where the mechanisms are active." [OMP:WAM]
+def: "A gene silencing state phenotype where the mechanisms are active in the representative member of the taxonomic unit." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:34:20Z
