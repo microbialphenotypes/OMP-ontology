@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:01:2014 18:39
+date: 29:01:2014 19:37
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -4156,7 +4156,7 @@ creation_date: 2013-10-18T18:39:27Z
 id: OMP:0005049
 name: increased frequency of homologous recombination
 namespace: microbial_phenotype
-def: "A homologous recombination relative phenotype where the prevalence of homologous recombination is increased." [OMP:WAM]
+def: "A homologous recombination relative phenotype where the prevalence of homologous recombination is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-23T19:46:15Z
@@ -4174,7 +4174,7 @@ creation_date: 2013-10-24T12:52:41Z
 id: OMP:0005051
 name: presence of homologous recombination
 namespace: microbial_phenotype
-def: "A homologous recombination state phenotype where the process is active." [OMP:WAM]
+def: "A homologous recombination state phenotype where the process is active within the representative member of the taxonomic unit." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:21:41Z
@@ -4325,6 +4325,7 @@ creation_date: 2013-11-04T18:34:20Z
 id: OMP:0005068
 name: increased mutation frequency
 namespace: microbial_phenotype
+def: "A mutation frequency phenotype where the incidence of mutation is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005048 ! mutation frequency phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:05:44Z
@@ -4333,6 +4334,7 @@ creation_date: 2013-11-08T17:05:44Z
 id: OMP:0005069
 name: decreased mutation frequency
 namespace: microbial_phenotype
+def: "A mutation frequency phenotype where the incidence of mutation is decreased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005048 ! mutation frequency phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:11:14Z
@@ -4341,6 +4343,7 @@ creation_date: 2013-11-08T17:11:14Z
 id: OMP:0005070
 name: increased mitotic recombination
 namespace: microbial_phenotype
+def: "A mitotic recombination relative phenotype where the prevalence of homologous recombination is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:11:59Z
@@ -4349,6 +4352,7 @@ creation_date: 2013-11-08T17:11:59Z
 id: OMP:0005071
 name: decreased mitotic recombination
 namespace: microbial_phenotype
+def: "A mitotic recombination relative phenotype where the prevalence of homologous recombination is reduced relative to the designated control." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:12:27Z
@@ -4357,6 +4361,7 @@ creation_date: 2013-11-08T17:12:27Z
 id: OMP:0005072
 name: absence of  mitotic recombination
 namespace: microbial_phenotype
+def: "A mitotic recombination state phenotype where the processes do not occur within the representative member of the taxonomic unit." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:35:56Z
@@ -4365,6 +4370,7 @@ creation_date: 2013-11-08T17:35:56Z
 id: OMP:0005073
 name: presence of mitotic recombination
 namespace: microbial_phenotype
+def: "A mitotic recombination state phenotype where the process is active within the representative member of the taxonomic unit." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:36:20Z
