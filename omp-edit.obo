@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 31:01:2014 17:31
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 31:01:2014 18:53
+saved-by: DeborahSiegele
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -76,7 +76,7 @@ creation_date: 2011-04-14T03:35:35Z
 id: OMP:0000006
 name: ankinete forming
 namespace: microbial_phenotype
-def: "An ankinete formation phenotype where a cell possesses the ability to form an ankinete." [OMP:MCC]
+def: "An ankinete formation state phenotype where the representative member of a taxonomic possesses the ability to form an ankinete." [OMP:MCC]
 is_a: OMP:0000093 ! ankinete formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:51:36Z
@@ -85,7 +85,7 @@ creation_date: 2011-04-26T02:51:36Z
 id: OMP:0000007
 name: non-ankinete forming
 namespace: microbial_phenotype
-def: "An ankinete formation phenotype where a cell does not possess the ability to form an ankinete." [OMP:MCC]
+def: "An ankinete formation phenotype where the representative member of a taxonomic unit does not possess the ability to form an ankinete." [OMP:MCC]
 is_a: OMP:0000093 ! ankinete formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:52:52Z
@@ -121,7 +121,7 @@ creation_date: 2011-04-26T02:59:42Z
 id: OMP:0000011
 name: non-heterocyst forming
 namespace: microbial_phenotype
-def: "A heterocyst formation phenotype where a cell does not possess the ability to differentiate into a heterocyst." [OMP:MCC]
+def: "A heterocyst formation phenotype where the representative member of a taxonomic unit does not possess the ability to differentiate into a heterocyst." [OMP:MCC]
 is_a: OMP:0000092 ! heterocyst formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:59:42Z
@@ -139,7 +139,7 @@ creation_date: 2011-04-26T03:01:38Z
 id: OMP:0000013
 name: decreased endospore formation
 namespace: microbial_phenotype
-is_a: OMP:0000017 ! endospore forming
+is_a: OMP:0000094 ! endospore formation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:15Z
 
@@ -147,15 +147,16 @@ creation_date: 2011-06-07T10:14:15Z
 id: OMP:0000014
 name: increased endospore formation
 namespace: microbial_phenotype
-is_a: OMP:0000017 ! endospore forming
+is_a: OMP:0000094 ! endospore formation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:39Z
 
 [Term]
 id: OMP:0000015
-name: abolished heterocyst formation
+name: decreased heterocyst formation
 namespace: microbial_phenotype
-def: "A heterocyst formation phenotype where a cell completely loses its ability to differentiate into a heterocyst." [OMP:MCC]
+def: "A heterocyst formation relative phenotype where the ability to form heterocysts is decreased relative to a designated control." [OMP:MCC]
+synonym: "abolished heterocyst formation" NARROW []
 is_a: OMP:0000092 ! heterocyst formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:05:35Z
@@ -201,7 +202,7 @@ creation_date: 2011-06-07T10:33:37Z
 id: OMP:0000020
 name: myxospore forming
 namespace: microbial_phenotype
-def: "A myxospore formation phenotype where the cell possesses the ability to form a myxospore." [OMP:MCC]
+def: "A myxospore formation state phenotype where the representative member of a taxonomic unit possesses the ability to form myxospores." [OMP:MCC]
 is_a: OMP:0000096 ! myxospore formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
@@ -210,16 +211,17 @@ creation_date: 2011-04-26T03:10:51Z
 id: OMP:0000021
 name: non-myxospore forming
 namespace: microbial_phenotype
-def: "A myxospore formation phenotype where the cell does not possess the ability to form a myxospore." [OMP:MCC]
+def: "A myxospore formation state phenotype where the representative member of a taxonomic unit does not possess the ability to form myxospores." [OMP:MCC]
 is_a: OMP:0000096 ! myxospore formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
 
 [Term]
 id: OMP:0000022
-name: abolished myxospore formation
+name: decreased myxospore formation
 namespace: microbial_phenotype
-def: "A myxospore formation phenotype where the cell completely loses its ability to form a myxospore." [OMP:MCC]
+def: "A myxospore formation relative phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
+synonym: "abolished myxospore formation" BROAD []
 is_a: OMP:0000096 ! myxospore formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
@@ -1684,24 +1686,27 @@ creation_date: 2011-06-07T02:22:14Z
 
 [Term]
 id: OMP:0000188
-name: Gram-positive
+name: Gram positive phenotype
 namespace: microbial_phenotype
+def: "A Gram stain state phenotype where the representative member of a taxonomic unit retains crystal violet stain when decolorized with an organic solvent such as ethanol." [OMP:DAS]
 is_a: OMP:0000191 ! Gram stain phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:29Z
 
 [Term]
 id: OMP:0000189
-name: Gram-negative
+name: Gram negative phenotype
 namespace: microbial_phenotype
+def: "A Gram stain state phenotype where the representative member of a taxonomic unit does not retain crystal violet stain when decolorized with an organic solvent such as ethanol." [OMP:DAS]
 is_a: OMP:0000191 ! Gram stain phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:45Z
 
 [Term]
 id: OMP:0000190
-name: Gram-variable
+name: Gram variable phenotype
 namespace: microbial_phenotype
+def: "A Gram stain state phenotype where the representative member of a taxonomic unit gives variable results to the Gram stain." []
 is_a: OMP:0000191 ! Gram stain phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:58Z
@@ -1710,6 +1715,7 @@ creation_date: 2011-02-02T03:34:58Z
 id: OMP:0000191
 name: Gram stain phenotype
 namespace: microbial_phenotype
+def: "A cell staining phenotype where microorganisms are grouped based on their ability to retain crystal violet stain when decolorized with an organic solvent such as ethanol." [ISBN:978-0-07-340240-6, OMP:DAS]
 is_a: OMP:0000214 ! cell staining phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:35:15Z
@@ -3614,7 +3620,7 @@ creation_date: 2013-05-23T01:55:34Z
 id: OMP:0000459
 name: increased caffeine resistance
 namespace: microbial_phenotype
-def: "A caffeine resistance phenotype where resistance is higher relative to some reference." [OMP:WAM]
+def: "A caffeine resistance relative phenotype where resistance is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:11Z
@@ -3623,7 +3629,7 @@ creation_date: 2013-05-23T01:58:11Z
 id: OMP:0000460
 name: decreased caffeine resistance
 namespace: microbial_phenotype
-def: "A caffeine resistance phenotype where resistance is decreased relative to some reference." [OMP:WAM]
+def: "A caffeine resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
 synonym: "abolished resistance to caffeine compound" NARROW []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
@@ -4278,7 +4284,7 @@ creation_date: 2013-11-04T18:10:07Z
 
 [Term]
 id: OMP:0005063
-name: presence of chromosome segregation.
+name: presence of chromosome segregation
 namespace: microbial_phenotype
 def: "A chromosome segregation state phenotype where process occurs in the representative member of the taxonomic unit." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
@@ -4934,7 +4940,7 @@ creation_date: 2013-10-11T17:35:04Z
 id: OMP:0006038
 name: not resistant to macrolide compound
 namespace: microbial_phenotype
-def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic is not resistant to a macrolide compound." [OMP:JCH]
+def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to a macrolide compound." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -5102,7 +5108,7 @@ creation_date: 2013-10-11T17:45:44Z
 id: OMP:0006056
 name: aminoglycoside compound resistance phenotype
 namespace: microbial_phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a compound containing cyclohexane ring and amino sugars." [ISBN:978-0-07-299291-5, OMP:JCH]
+def: "An antimicrobial compound resistance phenotype where resistance is to a compound containing a cyclohexane ring and amino sugars." [CHEBI:22507, ISBN:978-0-07-299291-5, OMP:JCH]
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
 synonym: "kanamycin" NARROW []
@@ -5278,6 +5284,16 @@ namespace: microbial_phenotype
 is_a: OMP:0007001 ! DNA supercoiling, relative phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:09:28Z
+
+[Term]
+id: OMP:0007004
+name: resistant to pteridine compounds
+namespace: microbial_phenotype
+def: "An antimicrobial compound state phenotype where the representative member of the taxonomic unit is resistant to pteridine compounds." [CHEBI:27601, OMP:DAS]
+synonym: "antifolate compound resistance" RELATED []
+is_a: Test::0000001 ! pteridine resistance phenotype
+created_by: DeborahSiegele
+creation_date: 2014-01-31T18:03:55Z
 
 [Term]
 id: OMP:0007005
@@ -5801,6 +5817,33 @@ namespace: microbial_phenotype
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:46:38Z
+
+[Term]
+id: OMP:0007062
+name: increased heterocyst formation
+namespace: microbial_phenotype
+def: "A heterocyst formation relative phenotype where the ability to form heterocysts is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0000092 ! heterocyst formation phenotype
+created_by: DeborahSiegele
+creation_date: 2014-01-31T18:31:01Z
+
+[Term]
+id: OMP:0007063
+name: increased myxospore formation
+namespace: microbial_phenotype
+def: "A myxospore formation relative phenotype where the ability to form myxospores is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0000096 ! myxospore formation phenotype
+created_by: DeborahSiegele
+creation_date: 2014-01-31T18:45:09Z
+
+[Term]
+id: OMP:0007064
+name: phototrophic phenotype
+namespace: microbial_phenotype
+def: "A metabolic state phenotype where the representative member of a taxonomic unit can use light as the energy source." [ISBN:978-0-07-340240-6, OMP:DAS]
+is_a: OMP:0000180 ! metabolic phenotype
+created_by: DeborahSiegele
+creation_date: 2014-01-31T18:49:00Z
 
 [Term]
 id: PATO:0000000
