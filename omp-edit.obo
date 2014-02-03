@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 31:01:2014 18:53
-saved-by: DeborahSiegele
+date: 03:02:2014 16:28
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -192,7 +192,7 @@ creation_date: 2011-04-26T03:09:25Z
 id: OMP:0000019
 name: non-flagellated
 namespace: microbial_phenotype
-def: "An absence of flagellum where the representative member of the taxonomic unit does not possess a flagellum. Synonym of absence of flagellum, state phenotype" [OMP:MCC]
+def: "An absence of flagellum where the representative member of a taxonomic unit does not possess a flagellum. Synonym of absence of flagellum, state phenotype" [OMP:MCC]
 xref: XX:<new xref>
 is_obsolete: true
 created_by: mchibucos
@@ -290,7 +290,7 @@ creation_date: 2011-04-26T03:29:28Z
 id: OMP:0000029
 name: presence of flagellum, state phenotype
 namespace: microbial_phenotype
-def: "A flagellum phenotype where the representative member of the taxonomic unit possesses a flagellum or flagella in at least some environments." [OMP:MCC]
+def: "A flagellum phenotype where the representative member of a taxonomic unit possesses a flagellum or flagella in at least some environments." [OMP:MCC]
 is_a: OMP:0000027 ! flagellum, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:34Z
@@ -299,7 +299,7 @@ creation_date: 2011-04-26T03:29:34Z
 id: OMP:0000030
 name: absence of flagellum
 namespace: microbial_phenotype
-def: "A flagellum phenotype where the representative member of the taxonomic unit does not possess a flagellum or flagella in any environment." [OMP:MCC]
+def: "A flagellum phenotype where the representative member of a taxonomic unit does not possess a flagellum or flagella in any environment." [OMP:MCC]
 synonym: "non-flagellated phenotype" RELATED []
 is_a: OMP:0000027 ! flagellum, state phenotype
 created_by: mchibucos
@@ -318,7 +318,7 @@ creation_date: 2011-04-26T03:41:37Z
 id: OMP:0000032
 name: loss of flagellum
 namespace: microbial_phenotype
-def: "An absence of flagellum where the representative member of the taxonomic unit typically does possess a flagellum, but has lost the ability to produce a flagellum." [OMP:MCC]
+def: "An absence of flagellum where the representative member of a taxonomic unit typically does possess a flagellum, but has lost the ability to produce a flagellum." [OMP:MCC]
 synonym: "Synonym of decreased flagellum number, relative phenotype" RELATED []
 is_obsolete: true
 created_by: mchibucos
@@ -328,7 +328,7 @@ creation_date: 2011-06-07T10:34:04Z
 id: OMP:0000033
 name: absence of pilus
 namespace: microbial_phenotype
-def: "A pilus phenotype where the representative member of the taxonomic unit does not possess a pilus." [OMP:MCC]
+def: "A pilus phenotype where the representative member of a taxonomic unit does not possess a pilus." [OMP:MCC]
 synonym: "fimbria absent" EXACT []
 is_a: OMP:0000084 ! pilus phenotype, state phenotype
 created_by: mchibucos
@@ -477,7 +477,7 @@ creation_date: 2011-06-07T10:53:59Z
 id: OMP:0000051
 name: loss of capsule
 namespace: microbial_phenotype
-def: "An absence of capsule where the representative member of the taxonomic unit typically does possess a capsule, but has lost the ability to produce a capsule." [OMP:MCC]
+def: "An absence of capsule where the representative member of a taxonomic unit typically does possess a capsule, but has lost the ability to produce a capsule." [OMP:MCC]
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-06-07T10:54:14Z
@@ -589,7 +589,7 @@ creation_date: 2011-04-26T05:03:12Z
 id: OMP:0000063
 name: absence of quorum sensing
 namespace: microbial_phenotype
-def: "A quorum sensing state phenotype where the representative member of the taxonomic unit does not possess the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
+def: "A quorum sensing state phenotype where the representative member of a taxonomic unit does not possess the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
 is_a: OMP:0000069 ! quorum sensing, state phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T05:06:00Z
@@ -627,7 +627,7 @@ creation_date: 2011-04-26T05:09:24Z
 id: OMP:0000067
 name: swarming motility
 namespace: microbial_phenotype
-def: "A motile state phenotype where a population of the representative member of the taxonomic unit displays coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
+def: "A motile state phenotype where a population of the representative member of a taxonomic unit displays coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
@@ -645,7 +645,7 @@ creation_date: 2011-02-02T03:28:59Z
 id: OMP:0000069
 name: quorum sensing, state phenotype
 namespace: microbial_phenotype
-def: "A microbial communication phenotype where the trait in question is the ability of the representative member of the taxonomic unit to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:MCC\,DAS]
+def: "A microbial communication phenotype where the trait in question is the ability of the representative member of a taxonomic unit to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:MCC\,DAS]
 is_a: OMP:0000101 ! microbial communication phenotype
 created_by: adrienne
 creation_date: 2011-02-07T03:47:50Z
@@ -728,7 +728,7 @@ creation_date: 2011-02-02T03:19:31Z
 id: OMP:0000078
 name: flagellum distribution, state phenotype
 namespace: microbial_phenotype
-def: "A flagellum phenotype where the trait in question is the location of the flagellum on the representative member of the taxonomic unit." [OMP:MCC]
+def: "A flagellum phenotype where the trait in question is the location of the flagellum on the representative member of a taxonomic unit." [OMP:MCC]
 is_a: OMP:0000027 ! flagellum, state phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:43:16Z
@@ -815,7 +815,7 @@ creation_date: 2011-02-02T03:19:47Z
 id: OMP:0000087
 name: facultative anaerobe phenotype
 namespace: microbial_phenotype
-def: "An oxygen requirement for growth, state phenotype, where growth of the representative member of the taxonomic unit does not require oxygen for growth but grows better in its presence." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth state phenotype, where growth of the representative member of a taxonomic unit does not require oxygen for growth but grows better in its presence." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:42:26Z
@@ -832,8 +832,8 @@ creation_date: 2011-06-07T12:08:48Z
 id: OMP:0000089
 name: budding phenotype
 namespace: microbial_phenotype
-def: "A cellular development phenotype where development concerns a form of asexual reproduction in which an individual arises from a daughter cell formed by pinching off a part of the parent cell." [OMP:MCC]
-is_a: OMP:0000070 ! cellular development phenotype
+def: "An asexual reproduction phenotype where a new individual forms from an outgrowth (bud) on the body of the parental organism." [OMP:DAS]
+is_a: OMP:0007066 ! asexual reproduction phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:23:41Z
 
@@ -973,10 +973,8 @@ creation_date: 2011-02-02T02:42:12Z
 id: OMP:0000105
 name: aerotolerant anaerobe phenotype
 namespace: microbial_phenotype
-def: "An oxygen requirement for growth, state phenotype, where growth of the representative member of the taxonomic unit occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth state phenotype, where growth of the representative member of a taxonomic unit occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
-intersection_of: OMP:0000039 ! oxygen requirement for growth phenotype
-intersection_of: OMP:0000315 ! state phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:43:38Z
 
@@ -1024,7 +1022,7 @@ creation_date: 2011-02-02T02:45:02Z
 id: OMP:0000111
 name: swimming motility
 namespace: microbial_phenotype
-def: "A motile state phenotype where the cell exhibits smooth movement through a liquid medium." [OMP:MCC]
+def: "A motile state phenotype where the representative member of a taxonomic unit exhibits smooth movement through a liquid medium." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
@@ -1042,7 +1040,7 @@ creation_date: 2011-02-07T03:18:03Z
 id: OMP:0000113
 name: twitching motility
 namespace: microbial_phenotype
-def: "A cell motility phenotype where the controlled movement of a bacterial cell is dependent on the presence of type IV pili." [OMP:MCC]
+def: "A cell motility state phenotype where the controlled movement of the representative member of a taxonomic unit is dependent on the presence of type IV pili." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-07T03:18:13Z
@@ -1538,7 +1536,7 @@ creation_date: 2011-02-07T03:47:20Z
 id: OMP:0000171
 name: microaerophile phenotype
 namespace: microbial_phenotype
-def: "An oxygen requirement for growth, state phenotype where growth of the functional taxonomic unit or reference strain requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth state phenotype where growth of the functional taxonomic unit or reference strain requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
@@ -1652,7 +1650,7 @@ creation_date: 2011-02-07T03:52:44Z
 id: OMP:0000184
 name: obligate anaerobe phenotype
 namespace: microbial_phenotype
-def: "An oxygen requirement for growth, state phenotype, where growth of the representative member of the taxonomic unit does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth state phenotype, where growth of the representative member of a taxonomic unit does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:34Z
@@ -1661,7 +1659,7 @@ creation_date: 2011-02-02T03:29:34Z
 id: OMP:0000185
 name: obligate aerobe phenotype
 namespace: microbial_phenotype
-def: "An oxygen requirement for growth, state phenotype where growth of the representative member of the taxonomic unit is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth state phenotype where growth of the representative member of a taxonomic unit is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
@@ -1824,7 +1822,7 @@ creation_date: 2011-06-07T09:44:51Z
 id: OMP:0000204
 name: presence of capsule
 namespace: microbial_phenotype
-def: "The presence of a capsule layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, observed in the representative member of the taxonomic unit in one or more environments." [OMP:DAS]
+def: "The presence of a capsule layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, observed in the representative member of a taxonomic unit in one or more environments." [OMP:DAS]
 comment: When present, the capsule layer lies outside the cell wall and/or outer membrane.
 synonym: "glycocalyx" RELATED [OMP:DAS]
 synonym: "slime layer" RELATED [OMP:DAS]
@@ -1890,7 +1888,7 @@ creation_date: 2011-06-07T12:31:24Z
 id: OMP:0000211
 name: absence of capsule
 namespace: microbial_phenotype
-def: "A capsule state phenotype where the representative member of the taxonomic unit is not observed to produce a capsule in any environmental condition." [OMP:DAS]
+def: "A capsule state phenotype where the representative member of a taxonomic unit is not observed to produce a capsule in any environmental condition." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
@@ -1989,7 +1987,7 @@ creation_date: 2011-02-03T04:45:37Z
 id: OMP:0000223
 name: non-capsulated
 namespace: microbial_phenotype
-def: "An absence of capsule where the representative member of the taxonomic unit does not possess a capsule. Replaced by absence of capsule, state phenotype." [OMP:MCC]
+def: "An absence of capsule where the representative member of a taxonomic unit does not possess a capsule. Replaced by absence of capsule, state phenotype." [OMP:MCC]
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-06-07T10:54:29Z
@@ -2743,7 +2741,7 @@ creation_date: 2012-04-05T10:40:27Z
 id: OMP:0000315
 name: state phenotype
 namespace: microbial_phenotype
-def: "A microbial phenotype that reflects the capability of the representative member of the taxonomic unit." [OMP:MCC]
+def: "A microbial phenotype that reflects the capability of the representative member of a taxonomic unit." [OMP:MCC]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
@@ -3648,7 +3646,7 @@ creation_date: 2013-08-22T01:43:06Z
 id: OMP:0000462
 name: presence of an outer membrane
 namespace: microbial_phenotype
-def: "An outer membrane state phenotype where cells of the representative member of the taxonomic unit possesses an outer membrane." [OMP:DAS]
+def: "An outer membrane state phenotype where cells of the representative member of a taxonomic unit possesses an outer membrane." [OMP:DAS]
 synonym: "Diderm" NARROW []
 synonym: "Gram negative" NARROW []
 synonym: "mycolate outer membrane" RELATED []
@@ -3669,7 +3667,7 @@ creation_date: 2013-08-22T01:48:57Z
 id: OMP:0000464
 name: absence of an outer membrane
 namespace: microbial_phenotype
-def: "An outer membrane phenotype state phenotype where cells of the representative member of the taxonomic unit do not have an outer membrane." [OMP:DAS]
+def: "An outer membrane phenotype state phenotype where cells of the representative member of a taxonomic unit do not have an outer membrane." [OMP:DAS]
 is_a: OMP:0000461 ! outer membrane phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:53:29Z
@@ -3750,7 +3748,7 @@ creation_date: 2013-09-03T01:06:05Z
 id: OMP:0005003
 name: hyperthermophilic growth
 namespace: microbial_phenotype
-def: "A temperature growth range phenotype where optimal growth occurs between 85 C to about 113 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range state phenotype where optimal growth of the representative member of a taxonomic unit occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:29:51Z
@@ -3759,7 +3757,7 @@ creation_date: 2013-09-03T01:29:51Z
 id: OMP:0005004
 name: thermophilic growth
 namespace: microbial_phenotype
-def: "A temperature growth range where microbial growth occurs at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range state phenotype where the representative member of a taxonomic unit can grow at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:36:26Z
@@ -3768,7 +3766,7 @@ creation_date: 2013-09-03T01:36:26Z
 id: OMP:0005005
 name: mesophilic growth
 namespace: microbial_phenotype
-def: "A temperature growth range phenotype where optimal growth occurs between 20 C to 45 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range state phenotype where optimal growth of the representative member of a taxonomic unit occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:24:06Z
@@ -3777,7 +3775,7 @@ creation_date: 2013-09-04T13:24:06Z
 id: OMP:0005006
 name: psychrotrophic growth
 namespace: microbial_phenotype
-def: "A temperature growth range phenotype where growth occurs from 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature of growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range state phenotype where growth of the representative member of a taxonomic unit occurs from 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature of growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:38:56Z
@@ -3786,7 +3784,7 @@ creation_date: 2013-09-04T13:38:56Z
 id: OMP:0005007
 name: psychrophilic growth
 namespace: microbial_phenotype
-def: "A temperature growth range phenotype where growth occurs at 0 degrees C and optimal growth occurs at temperatures of 15 degrees C or lower." [iSBN:9780073402406, OMP:WAM]
+def: "A temperature growth range state phenotype where the representative member of a taxonomic unit can grow  at 0 degrees C and optimal growth occurs at temperatures of 15 degrees C or lower." [iSBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:40:27Z
@@ -3802,28 +3800,28 @@ creation_date: 2013-09-04T13:57:28Z
 
 [Term]
 id: OMP:0005009
-name: acidophilic growth
+name: acidophile
 namespace: microbial_phenotype
-def: "A pH growth phenotype where optimum growth occurs between pH 0 to 5.5." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0007006 ! pH growth range, state phenotype
+def: "A pH growth state phenotype where optimum growth of the representative member of a taxonomic unit occurs between pH 0 and 5.5." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:18:28Z
 
 [Term]
 id: OMP:0005010
-name: neutrophilic growth
+name: neutrophile
 namespace: microbial_phenotype
-def: "A pH growth phenotype where optimum growth occurs between pH 5.5 to 8.0." [ISBN:780073402406, OMP:WAM]
-is_a: OMP:0007006 ! pH growth range, state phenotype
+def: "A pH growth state phenotype where optimum growth of the representative member of a taxonomic unit occurs between pH 5.5 and 8.0." [ISBN:780073402406, OMP:WAM]
+is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:21:50Z
 
 [Term]
 id: OMP:0005011
-name: alkaliphilic growth
+name: alkaliphile
 namespace: microbial_phenotype
-def: "A pH growth phenotype where optimum growth occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0007006 ! pH growth range, state phenotype
+def: "A pH growth state phenotype where optimum growth of the representative member of a taxonomic unit occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:24:24Z
 
@@ -3859,7 +3857,7 @@ creation_date: 2013-09-09T11:49:53Z
 id: OMP:0005015
 name: osmotolerant growth
 namespace: microbial_phenotype
-def: "A solute and water activity phenotype where growth can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
+def: "A solute and water activity state phenotype where growth can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005013 ! solute and water activity phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:05:24Z
@@ -3868,7 +3866,7 @@ creation_date: 2013-09-09T13:05:24Z
 id: OMP:0005016
 name: halophilic growth
 namespace: microbial_phenotype
-def: "A solute and water activity phenotype where growth requires high levels of sodium chloride, usually above or about 0.2 M, to occur." [ISBN:9780073402406, OMP:WAM]
+def: "A solute and water activity state phenotype where growth requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005013 ! solute and water activity phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:06:03Z
@@ -4011,7 +4009,7 @@ creation_date: 2013-09-25T15:57:46Z
 id: OMP:0005032
 name: presence of stress induced mutagenesis
 namespace: microbial_phenotype
-def: "A stress induced mutagenesis state phenotype where the processes of stress induced mutagenesis have been activated within the representative member of the taxonomic unit." [OMP:WAM]
+def: "A stress induced mutagenesis state phenotype where the processes of stress induced mutagenesis have been activated within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005027 ! stress induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:59:12Z
@@ -4020,7 +4018,7 @@ creation_date: 2013-09-25T15:59:12Z
 id: OMP:0005033
 name: absence of stress induced mutagenesis
 namespace: microbial_phenotype
-def: "A stress induced mutagenesis state phenotype where the processes of stress induced mutagenesis is not activated within the representative member of the taxonomic unit." [OMP:WAM]
+def: "A stress induced mutagenesis state phenotype where the processes of stress induced mutagenesis is not activated within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005027 ! stress induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T18:20:22Z
@@ -4180,7 +4178,7 @@ creation_date: 2013-10-24T12:52:41Z
 id: OMP:0005051
 name: presence of homologous recombination
 namespace: microbial_phenotype
-def: "A homologous recombination state phenotype where the process is active within the representative member of the taxonomic unit." [OMP:WAM]
+def: "A homologous recombination state phenotype where the process is active within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:21:41Z
@@ -4189,7 +4187,7 @@ creation_date: 2013-10-25T12:21:41Z
 id: OMP:0005052
 name: absence of homologous recombination
 namespace: microbial_phenotype
-def: "A homologous recombination state phenotype where the processes do not occur within the representative member of the taxonomic unit." [OMP:WAM]
+def: "A homologous recombination state phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:22:04Z
@@ -4232,7 +4230,7 @@ creation_date: 2013-10-29T13:15:06Z
 id: OMP:0005057
 name: absence of site specific recombination
 namespace: microbial_phenotype
-def: "A site specific recombination state phenotype where the processes do not occur within the representative member of the taxonomic unit." [OMP:WAM]
+def: "A site specific recombination state phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:15:28Z
@@ -4241,7 +4239,7 @@ creation_date: 2013-10-29T13:15:28Z
 id: OMP:0005058
 name: presence of site specific recombination
 namespace: microbial_phenotype
-def: "A site specific recombination state phenotype where the process is active within the representative member of the taxonomic unit." [OMP:WAM]
+def: "A site specific recombination state phenotype where the process is active within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:20:16Z
@@ -4277,7 +4275,7 @@ creation_date: 2013-11-04T18:09:38Z
 id: OMP:0005062
 name: absence of chromosome segregation
 namespace: microbial_phenotype
-def: "A chromosome segregation state phenotype where process does not occur in the representative member of the taxonomic unit." [OMP:WAM]
+def: "A chromosome segregation state phenotype where process does not occur in the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:10:07Z
@@ -4286,7 +4284,7 @@ creation_date: 2013-11-04T18:10:07Z
 id: OMP:0005063
 name: presence of chromosome segregation
 namespace: microbial_phenotype
-def: "A chromosome segregation state phenotype where process occurs in the representative member of the taxonomic unit." [OMP:WAM]
+def: "A chromosome segregation state phenotype where process occurs in the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:12:32Z
@@ -4313,7 +4311,7 @@ creation_date: 2013-11-04T18:21:56Z
 id: OMP:0005066
 name: absence of gene silencing
 namespace: microbial_phenotype
-def: "A gene silencing state phenotype where the mechanisms are inactive in the representative member of the taxonomic unit." [OMP:WAM]
+def: "A gene silencing state phenotype where the mechanisms are inactive in the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:33:14Z
@@ -4322,7 +4320,7 @@ creation_date: 2013-11-04T18:33:14Z
 id: OMP:0005067
 name: presence of gene silencing
 namespace: microbial_phenotype
-def: "A gene silencing state phenotype where the mechanisms are active in the representative member of the taxonomic unit." [OMP:WAM]
+def: "A gene silencing state phenotype where the mechanisms are active in the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:34:20Z
@@ -4367,7 +4365,7 @@ creation_date: 2013-11-08T17:12:27Z
 id: OMP:0005072
 name: absence of  mitotic recombination
 namespace: microbial_phenotype
-def: "A mitotic recombination state phenotype where the processes do not occur within the representative member of the taxonomic unit." [OMP:WAM]
+def: "A mitotic recombination state phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:35:56Z
@@ -4376,7 +4374,7 @@ creation_date: 2013-11-08T17:35:56Z
 id: OMP:0005073
 name: presence of mitotic recombination
 namespace: microbial_phenotype
-def: "A mitotic recombination state phenotype where the process is active within the representative member of the taxonomic unit." [OMP:WAM]
+def: "A mitotic recombination state phenotype where the process is active within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:36:20Z
@@ -4803,7 +4801,7 @@ creation_date: 2013-09-10T17:51:21Z
 id: OMP:0006024
 name: heterotroph
 namespace: microbial_phenotype
-def: "A carbon source utilization state phenotype where the representative member of a taxonomic unit can use organic molecules as the carbon source." [ISBN:9780073402406, OMP:DAS]
+def: "A carbon source utilization state phenotype where the representative member of a taxonomic unit uses organic molecules as the carbon source." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:39:02Z
@@ -5289,9 +5287,10 @@ creation_date: 2013-09-05T16:09:28Z
 id: OMP:0007004
 name: resistant to pteridine compounds
 namespace: microbial_phenotype
-def: "An antimicrobial compound state phenotype where the representative member of the taxonomic unit is resistant to pteridine compounds." [CHEBI:27601, OMP:DAS]
-synonym: "antifolate compound resistance" RELATED []
-is_a: Test::0000001 ! pteridine resistance phenotype
+def: "An antimicrobial compound state phenotype where the representative member of a taxonomic unit is resistant to pteridine compounds." [CHEBI:27601, OMP:DAS]
+synonym: "antifolate compound resistance" RELATED [CHEBI:73913]
+synonym: "methotrexate resistance" RELATED [CHEBI:44185]
+is_a: OMP:0007065 ! pteridine compound resistance phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:03:55Z
 
@@ -5307,16 +5306,16 @@ creation_date: 2013-09-05T16:21:23Z
 id: OMP:0007006
 name: pH growth range, state phenotype
 namespace: microbial_phenotype
-is_a: OMP:0005008 ! pH growth range phenotype
+is_obsolete: true
 created_by: siegele
 creation_date: 2013-09-11T17:08:50Z
 
 [Term]
 id: OMP:0007007
-name: pH growth range, relative phenotype
+name: pH growth range phenotype
 namespace: microbial_phenotype
 def: "A pH growth range phenotype dealing with responses  relative to the designated control." [OMP:WAM]
-is_a: OMP:0005008 ! pH growth range phenotype
+is_obsolete: true
 created_by: siegele
 creation_date: 2013-09-11T17:10:14Z
 
@@ -5324,8 +5323,8 @@ creation_date: 2013-09-11T17:10:14Z
 id: OMP:0007008
 name: decreased growth at acidic pH
 namespace: microbial_phenotype
-def: "A pH growth range, relative phenotype where the organism's ability to grow at some pH that is lower than pH 7 is reduced." [OMP:DAS]
-is_a: OMP:0007007 ! pH growth range, relative phenotype
+def: "A pH growth range relative phenotype where the organism's ability to grow at some pH that is lower than pH 7 is decreased." [OMP:DAS]
+is_a: OMP:0005008 ! pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:11:01Z
 
@@ -5333,8 +5332,8 @@ creation_date: 2013-09-11T17:11:01Z
 id: OMP:0007009
 name: Increased growth at acidic pH
 namespace: microbial_phenotype
-def: "A pH growth range, relative phenotype where the organism has a enhanced ability to grow at some pH that is lower than pH 7." [OMP:DAS]
-is_a: OMP:0007007 ! pH growth range, relative phenotype
+def: "A pH growth range relative phenotype where the organism has an increased ability to grow at some pH that is lower than pH 7." [OMP:DAS]
+is_a: OMP:0005008 ! pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:11:44Z
 
@@ -5342,8 +5341,8 @@ creation_date: 2013-09-11T17:11:44Z
 id: OMP:0007010
 name: decreased growth at alkaline pH
 namespace: microbial_phenotype
-def: "A pH growth range, relative phenotype where the organism's ability to grow at some pH that is higher than pH 7 is reduced." [OMP:DAS]
-is_a: OMP:0007007 ! pH growth range, relative phenotype
+def: "A pH growth range relative phenotype where the organism's ability to grow at some pH that is higher than pH 7 is decreased." [OMP:DAS]
+is_a: OMP:0005008 ! pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:14:28Z
 
@@ -5351,8 +5350,8 @@ creation_date: 2013-09-11T17:14:28Z
 id: OMP:0007011
 name: increased growth at alkaline pH
 namespace: microbial_phenotype
-def: "A pH growth range, relative phenotype where the organism's ability to grow at some pH that is higher than pH 7 is enhanced." [OMP:DAS]
-is_a: OMP:0007007 ! pH growth range, relative phenotype
+def: "A pH growth range relative phenotype where the organism's ability to grow at some pH that is higher than pH 7 is increased." [OMP:DAS]
+is_a: OMP:0005008 ! pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:14:56Z
 
@@ -5390,7 +5389,7 @@ creation_date: 2013-09-13T15:20:24Z
 id: OMP:0007015
 name: requirement for amino acid
 namespace: microbial_phenotype
-def: "An amino acid requirement state phenotype where the representative member of the taxonomic unit cannot synthesize one or more amino acids." [OMP:DAS]
+def: "An amino acid requirement state phenotype where the representative member of a taxonomic unit cannot synthesize one or more amino acids." [OMP:DAS]
 is_a: OMP:0007038 ! amino acid requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:47:41Z
@@ -5399,7 +5398,7 @@ creation_date: 2013-09-16T12:47:41Z
 id: OMP:0007016
 name: purine/pyrimidine requirement
 namespace: microbial_phenotype
-def: "A purine/pyrimidine requirement state phenotype where the representative member of the taxonomic unit cannot synthesize one or more purine or pyrimidine bases required for growth." [OMP:DAS]
+def: "A purine/pyrimidine requirement state phenotype where the representative member of a taxonomic unit cannot synthesize one or more purine or pyrimidine bases required for growth." [OMP:DAS]
 is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:48:22Z
@@ -5408,7 +5407,7 @@ creation_date: 2013-09-16T12:48:22Z
 id: OMP:0007017
 name: vitamin/enzyme cofactor requirement
 namespace: microbial_phenotype
-def: "A vitamin/enzyme cofactor state phenotype where the representative member of the taxonomic unit cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
+def: "A vitamin/enzyme cofactor state phenotype where the representative member of a taxonomic unita taxonomic unit cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
 is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:49:50Z
@@ -5844,6 +5843,46 @@ def: "A metabolic state phenotype where the representative member of a taxonomic
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:49:00Z
+
+[Term]
+id: OMP:0007065
+name: pteridine compound resistance phenotype
+namespace: microbial_phenotype
+def: "An antimicrobial compound resistance phenotype where the trait in question is resistance to a pteridine compound." [CHEBI:26373, OMP:DAS]
+synonym: "antifolate resistance" BROAD [CHEBI:73913]
+synonym: "methotrexate resistance" NARROW [CHEBI:44185]
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+created_by: siegele
+creation_date: 2014-02-03T15:39:56Z
+
+[Term]
+id: OMP:0007066
+name: asexual reproduction phenotype
+namespace: microbial_phenotype
+def: "A microbial phenotype that deals with the mechanism of asexual reproduction." [OMP:DAS]
+xref: :<new xref>
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2014-02-03T15:55:25Z
+
+[Term]
+id: OMP:0007067
+name: binary fission
+namespace: microbial_phenotype
+def: "An asexual reproduction phenotype where the representative member of a taxonomic unit multiplies by binary fission." []
+is_a: OMP:0007066 ! asexual reproduction phenotype
+created_by: siegele
+creation_date: 2014-02-03T15:55:54Z
+
+[Term]
+id: OMP:0007068
+name: multiple fission
+namespace: microbial_phenotype
+synonym: "baeocyte formation" NARROW []
+synonym: "schizogeny" NARROW []
+is_a: OMP:0007066 ! asexual reproduction phenotype
+created_by: siegele
+creation_date: 2014-02-03T16:09:27Z
 
 [Term]
 id: PATO:0000000
@@ -24600,16 +24639,6 @@ subset: value_slim
 is_a: PATO:0001925 ! surface feature shape
 created_by: gkoutos
 creation_date: 2013-10-25T04:42:40Z
-
-[Term]
-id: Test::0000001
-name: pteridine resistance phenotype
-namespace: microbial_phenotype
-synonym: "antifolate" BROAD [CHEBI:73913]
-synonym: "methotrexate" NARROW [CHEBI:44185]
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
-created_by: siegele
-creation_date: 2013-12-27T14:24:05Z
 
 [Typedef]
 id: correlates_with
