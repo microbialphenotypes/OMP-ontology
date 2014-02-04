@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 03:02:2014 16:28
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 03:02:2014 18:53
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -2357,7 +2357,7 @@ creation_date: 2011-07-21T01:58:08Z
 id: OMP:0000267
 name: increased gene expression
 namespace: microbial_phenotype
-def: "A gene expression phenotype where the trait in question is a higher frequency of the biosynthesis of a gene product." [OMP:WAM]
+def: "A gene expression phenotype where the trait in question is a higher frequency of the biosynthesis of a gene product relative to the designated control." [OMP:WAM]
 is_a: OMP:0000253 ! gene expression phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:01:35Z
@@ -2366,7 +2366,7 @@ creation_date: 2011-07-21T02:01:35Z
 id: OMP:0000268
 name: decreased gene expression
 namespace: microbial_phenotype
-def: "A gene expression phenotype where the trait in question is a lower frequency of biosynthesis of a gene product." [OMP:WAM]
+def: "A gene expression phenotype where the trait in question is a lower frequency of biosynthesis of a gene product relative to the designated to control." [OMP:WAM]
 is_a: OMP:0000253 ! gene expression phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:02:26Z
@@ -2648,7 +2648,7 @@ creation_date: 2011-07-21T05:13:27Z
 id: OMP:0000302
 name: substrate binding phenotype
 namespace: microbial_phenotype
-is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0000298 ! enzyme activity phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:17:18Z
 
@@ -3847,7 +3847,7 @@ creation_date: 2013-09-09T11:43:45Z
 id: OMP:0005014
 name: piezophilic growth
 namespace: microbial_phenotype
-def: "A pressure phenotype where growth is more rapid at high hydrostatic pressure." [ISBN:9780073402406, OMP:WAM]
+def: "A pressure growth range state phenotype where growth of the representative member of the taxonomic unit is more rapid at high hydrostatic pressure." [ISBN:9780073402406, OMP:WAM]
 synonym: "barophilic growth" RELATED [ISBN:9780073402406]
 is_a: OMP:0005012 ! pressure growth range phenotype
 created_by: wmeza
@@ -3857,7 +3857,7 @@ creation_date: 2013-09-09T11:49:53Z
 id: OMP:0005015
 name: osmotolerant growth
 namespace: microbial_phenotype
-def: "A solute and water activity state phenotype where growth can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
+def: "A solute and water activity state phenotype where the growth of the representative member of the taxonomic unit can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005013 ! solute and water activity phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:05:24Z
@@ -3866,7 +3866,7 @@ creation_date: 2013-09-09T13:05:24Z
 id: OMP:0005016
 name: halophilic growth
 namespace: microbial_phenotype
-def: "A solute and water activity state phenotype where growth requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
+def: "A solute and water activity state phenotype where the growth of the representative member of the taxonomic unit requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005013 ! solute and water activity phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:06:03Z
@@ -3920,7 +3920,7 @@ creation_date: 2013-09-19T15:55:16Z
 id: OMP:0005022
 name: absence of SOS response
 namespace: microbial_phenotype
-def: "A state SOS response phenotype where the mechanism is deactivated." [OMP:WAM]
+def: "A state SOS response phenotype where the mechanism is deactivated within the representative member of the taxonomic unit." [OMP:WAM]
 is_a: OMP:0005019 ! expression of the SOS response, state phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:09Z
@@ -3929,7 +3929,7 @@ creation_date: 2013-09-19T16:25:09Z
 id: OMP:0005023
 name: presence of SOS response
 namespace: microbial_phenotype
-def: "A SOS response state phenotype where the mechanism is activated." [OMP:WAM]
+def: "A SOS response state phenotype where the mechanism is activated within the representative member of the taxonomic unit." [OMP:WAM]
 is_a: OMP:0005019 ! expression of the SOS response, state phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:30Z
