@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:02:2014 18:53
+date: 04:02:2014 13:20
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2246,7 +2246,9 @@ creation_date: 2011-07-21T01:03:06Z
 id: OMP:0000254
 name: constitutive expression
 namespace: microbial_phenotype
+def: "A gene expression phenotype where the gene in question is continuously transcribed regardless of necessity." [OMP:WAM]
 synonym: "constitutive gene expression" EXACT []
+xref: XX:<new xref>
 is_a: OMP:0000253 ! gene expression phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:05:42Z
