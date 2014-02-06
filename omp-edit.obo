@@ -4946,8 +4946,6 @@ name: resistant to macrolide compound
 namespace: microbial_phenotype
 def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic is resistant to a macrolide compound." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
-intersection_of: OMP:0000315 ! state phenotype
-intersection_of: inheres_in OMP:0006039 ! resistant to macrolide compound
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
