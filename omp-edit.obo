@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 04:02:2014 13:20
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 06:02:2014 13:13
+saved-by: mchibucos
+auto-generated-by: OBO-Edit 2.3
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -2248,7 +2248,6 @@ name: constitutive expression
 namespace: microbial_phenotype
 def: "A gene expression phenotype where the gene in question is continuously transcribed regardless of necessity." [OMP:WAM]
 synonym: "constitutive gene expression" EXACT []
-xref: XX:<new xref>
 is_a: OMP:0000253 ! gene expression phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:05:42Z
@@ -4920,8 +4919,6 @@ namespace: microbial_phenotype
 def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is decreased relative to some reference." [OMP:JCH]
 synonym: "abolished resistance to macrolide compound" NARROW []
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
-intersection_of: PATO:0002301 ! decreased quality
-intersection_of: decreased_in_magnitude_relative_to OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
@@ -4931,8 +4928,6 @@ name: increased resistance to macrolide compound
 namespace: microbial_phenotype
 def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is increased relative to some reference." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
-intersection_of: PATO:0002300 ! increased quality
-intersection_of: increased_in_magnitude_relative_to OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
@@ -5862,7 +5857,6 @@ id: OMP:0007066
 name: asexual reproduction phenotype
 namespace: microbial_phenotype
 def: "A microbial phenotype that deals with the mechanism of asexual reproduction." [OMP:DAS]
-xref: :<new xref>
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-02-03T15:55:25Z
@@ -5885,3 +5879,4 @@ synonym: "schizogeny" NARROW []
 is_a: OMP:0007066 ! asexual reproduction phenotype
 created_by: siegele
 creation_date: 2014-02-03T16:09:27Z
+
