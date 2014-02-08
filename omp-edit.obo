@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 06:02:2014 13:13
-saved-by: mchibucos
-auto-generated-by: OBO-Edit 2.3
+date: 07:02:2014 18:28
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -3532,7 +3532,7 @@ id: OMP:0000449
 name: erythromycin dependent growth, relative phenotype
 namespace: microbial_phenotype
 def: "A growth phenotype where translation is dependent on the presence of erythromycin." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2013-05-23T01:31:03Z
 
