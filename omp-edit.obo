@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 07:02:2014 18:28
+date: 11:02:2014 12:04
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1589,7 +1589,7 @@ creation_date: 2011-02-02T03:17:19Z
 id: OMP:0000177
 name: liquid culture phenotype
 namespace: microbial_phenotype
-is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0000174 ! growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:20:39Z
 
@@ -2257,6 +2257,7 @@ id: OMP:0000255
 name: plating phenotype
 namespace: microbial_phenotype
 is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:34:48Z
 
@@ -3528,15 +3529,6 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:56:12Z
 
 [Term]
-id: OMP:0000449
-name: erythromycin dependent growth, relative phenotype
-namespace: microbial_phenotype
-def: "A growth phenotype where translation is dependent on the presence of erythromycin." [OMP:WAM]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2013-05-23T01:31:03Z
-
-[Term]
 id: OMP:0000450
 name: trace element utilization phenotype
 namespace: microbial_phenotype
@@ -4613,6 +4605,24 @@ namespace: microbial_phenotype
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2014-01-21T12:13:04Z
+
+[Term]
+id: OMP:0005100
+name: erythromycin dependent growth
+namespace: microbial_phenotype
+def: "A growth phenotype where translation is dependent on the presence of erythromycin." [OMP:WAM]
+is_a: OMP:0000174 ! growth phenotype
+created_by: wmeza
+creation_date: 2014-02-11T11:53:51Z
+
+[Term]
+id: OMP:0005101
+name: aminoglycoside dependent growth
+namespace: microbial_phenotype
+def: "A growth phenotype where growth is dependent on the presence of an aminoglycoside." [OMP:WAM]
+is_a: OMP:0000174 ! growth phenotype
+created_by: wmeza
+creation_date: 2014-02-11T11:54:51Z
 
 [Term]
 id: OMP:0006001
