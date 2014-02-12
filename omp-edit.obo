@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:02:2014 12:04
+date: 12:02:2014 16:53
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2256,7 +2256,6 @@ creation_date: 2011-07-21T01:05:42Z
 id: OMP:0000255
 name: plating phenotype
 namespace: microbial_phenotype
-is_a: OMP:0000000 ! microbial phenotype
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:34:48Z
