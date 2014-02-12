@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 12:02:2014 16:53
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 12:02:2014 17:04
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -1704,7 +1704,7 @@ creation_date: 2011-02-02T03:34:45Z
 id: OMP:0000190
 name: Gram variable phenotype
 namespace: microbial_phenotype
-def: "A Gram stain state phenotype where the representative member of a taxonomic unit gives variable results to the Gram stain." []
+def: "A Gram stain state phenotype where the representative member of a taxonomic unit gives variable results to the Gram stain." [OMP:DAS]
 is_a: OMP:0000191 ! Gram stain phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:58Z
@@ -3668,7 +3668,7 @@ creation_date: 2013-08-22T01:53:29Z
 id: OMP:0000500
 name: decreased aerotaxis
 namespace: microbial_phenotype
-def: "An aerotaxis relative phenotype where aerotaxis is decreased reative to the designated control strain in the same environment or to the same strain in a different environment." []
+def: "An aerotaxis relative phenotype where aerotaxis is decreased reative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
 synonym: "abolished aerotaxis" NARROW []
 is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: mchibucos
@@ -3678,7 +3678,7 @@ creation_date: 2012-11-02T01:20:31Z
 id: OMP:0000502
 name: increased aerotaxis
 namespace: microbial_phenotype
-def: "An aerotaxis relative phenotype where aerotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." []
+def: "An aerotaxis relative phenotype where aerotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
 is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:21:21Z
@@ -3687,7 +3687,7 @@ creation_date: 2012-11-02T01:21:21Z
 id: OMP:0000503
 name: decreased chemotaxis
 namespace: microbial_phenotype
-def: "An chemotaxis relative phenotype where chemotaxis is decreased relative to the designated control strain in the same environment or to the same strain in a different environment." []
+def: "An chemotaxis relative phenotype where chemotaxis is decreased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
 synonym: "abolished chemotaxis" NARROW []
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
@@ -3697,7 +3697,7 @@ creation_date: 2012-11-02T01:22:28Z
 id: OMP:0000505
 name: increased chemotaxis
 namespace: microbial_phenotype
-def: "An chemotaxis relative phenotype where chemotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." []
+def: "An chemotaxis relative phenotype where chemotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:23:12Z
@@ -4609,8 +4609,8 @@ creation_date: 2014-01-21T12:13:04Z
 id: OMP:0005100
 name: erythromycin dependent growth
 namespace: microbial_phenotype
-def: "A growth phenotype where translation is dependent on the presence of erythromycin." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
+def: "A growth phenotype where growth is dependent on the presence of erythromycin." [OMP:WAM]
+is_a: OMP:0005101 ! aminoglycoside dependent growth
 created_by: wmeza
 creation_date: 2014-02-11T11:53:51Z
 
@@ -5872,7 +5872,7 @@ creation_date: 2014-02-03T15:55:25Z
 id: OMP:0007067
 name: binary fission
 namespace: microbial_phenotype
-def: "An asexual reproduction phenotype where the representative member of a taxonomic unit multiplies by binary fission." []
+def: "An asexual reproduction phenotype where the representative member of a taxonomic unit multiplies by binary fission." [OMP:DAS]
 is_a: OMP:0007066 ! asexual reproduction phenotype
 created_by: siegele
 creation_date: 2014-02-03T15:55:54Z
