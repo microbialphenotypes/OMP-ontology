@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 13:02:2014 05:11
-saved-by: Marcus
-auto-generated-by: OBO-Edit 2.3-beta7
+date: 13:02:2014 16:59
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -4125,8 +4125,8 @@ creation_date: 2013-09-03T05:28:25Z
 [Term]
 id: OMP:0006002
 name: growth factor utilization phenotype
-def: "A nutrient utilization phenotype where the nutrient is an essential organic compound." [ISBN:9780073402406, OMP:DAS]
-is_a: OMP:0006022 ! nutrient utilization phenotype
+def: "A nutrient utilization phenotype where an organism cannot synthesize one or more essential organic compounds, but must obtain them from the environment." [ISBN:9780073402406, OMP:DAS]
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-03T05:30:35Z
 
@@ -4825,7 +4825,7 @@ creation_date: 2013-09-16T12:49:50Z
 id: OMP:0007018
 name: prototroph
 def: "A growth factor utilization state phenotype where the representative member of a taxonomic unit can synthesize all organic compounds essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
-is_a: OMP:0006002 ! growth factor utilization phenotype
+is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:29:19Z
 
@@ -4834,6 +4834,8 @@ id: OMP:0007019
 name: increased amino acid requirement
 def: "An amino acid requirement phenotype where the organism has an increased requirement relative to some reference for one or more amino acids." [OMP:DAS]
 is_a: OMP:0007038 ! amino acid requirement phenotype
+intersection_of: OMP:0007038 ! amino acid requirement phenotype
+intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:30:07Z
 
@@ -4851,6 +4853,8 @@ name: decreased amino acid requirement
 def: "An amino acid requirement phenotype where the organism has a decreased requirement relative to some reference for one or more amino acids." [OMP:DAS]
 synonym: "abolished amino acid requirement" EXACT []
 is_a: OMP:0007038 ! amino acid requirement phenotype
+intersection_of: OMP:0007038 ! amino acid requirement phenotype
+intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:13:20Z
 
@@ -5015,7 +5019,7 @@ creation_date: 2013-09-29T00:36:46Z
 id: OMP:0007041
 name: auxotroph
 def: "A growth factor utilization state phenotype where the representative member of a taxonomic unit cannot synthesize one or more essential organic molecules, but must obtain them from the environment." [ISBN:9780878936083, OMP:DAS]
-is_a: OMP:0006002 ! growth factor utilization phenotype
+is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:39:24Z
 
@@ -5038,8 +5042,8 @@ creation_date: 2013-09-29T09:41:48Z
 [Term]
 id: OMP:0007044
 name: growth factor requirement phenotype
-def: "A growth factor utilization phenotype where an organism cannot synthesize one or more essential organic compounds, but must obtain them from the environment." [OMP:DAS]
-is_a: OMP:0006002 ! growth factor utilization phenotype
+def: "A nutrient utilization phenotype where an organism cannot synthesize one or more essential organic compounds, but must obtain them from the environment." [OMP:DAS]
+is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:07:53Z
 
