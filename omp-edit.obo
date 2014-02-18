@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 13:02:2014 16:59
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 18:02:2014 11:56
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -748,7 +748,7 @@ creation_date: 2011-02-02T03:23:41Z
 [Term]
 id: OMP:0000090
 name: lifespan
-is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0000174 ! growth phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:24:11Z
 
@@ -1408,7 +1408,8 @@ creation_date: 2011-02-02T03:17:19Z
 
 [Term]
 id: OMP:0000177
-name: liquid culture phenotype
+name: liquid culture morphology phenotype
+def: "A growth phenotype dealing with the morphological characteristics in a liquid media." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:20:39Z
@@ -1418,7 +1419,7 @@ id: OMP:0000178
 name: flocculated liquid culture
 synonym: "clumping" BROAD []
 synonym: "flocculation" EXACT []
-is_a: OMP:0000177 ! liquid culture phenotype
+is_a: OMP:0000177 ! liquid culture morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:21:00Z
 
@@ -1488,7 +1489,7 @@ id: OMP:0000187
 name: granulated liquid culture
 synonym: "granulation in liquid" EXACT []
 synonym: "precipitation in liquid culture" RELATED []
-is_a: OMP:0000177 ! liquid culture phenotype
+is_a: OMP:0000177 ! liquid culture morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T02:22:14Z
 
@@ -1659,8 +1660,9 @@ creation_date: 2011-06-07T03:18:33Z
 [Term]
 id: OMP:0000209
 name: fluorescent colony
+def: "A plating state phenotype where the prominent morphological characteristic of the colony(ies) is that is fluorescence." [OMP:WAM]
 is_a: OMP:0000108 ! colony optical phenotype
-is_a: OMP:0000255 ! plating phenotype
+is_a: OMP:0000255 ! plating  morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:20:31Z
 
@@ -1997,7 +1999,8 @@ creation_date: 2011-07-21T01:05:42Z
 
 [Term]
 id: OMP:0000255
-name: plating phenotype
+name: plating  morphology phenotype
+def: "A growth state phenotype dealing with colony morphological characteristics." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:34:48Z
@@ -2005,7 +2008,7 @@ creation_date: 2011-07-21T01:34:48Z
 [Term]
 id: OMP:0000256
 name: MacConkey agar phenotype
-is_a: OMP:0000255 ! plating phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:35:25Z
 
@@ -2019,7 +2022,7 @@ creation_date: 2011-07-21T01:37:41Z
 [Term]
 id: OMP:0000258
 name: red colony on MacConkey agar
-is_a: OMP:0000256 ! MacConkey agar phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:38:10Z
 
@@ -4102,7 +4105,7 @@ creation_date: 2014-01-21T12:13:04Z
 id: OMP:0005100
 name: erythromycin dependent growth
 def: "A growth phenotype where growth is dependent on the presence of erythromycin." [OMP:WAM]
-is_a: OMP:0005101 ! aminoglycoside dependent growth
+is_a: OMP:0000174 ! growth phenotype
 created_by: wmeza
 creation_date: 2014-02-11T11:53:51Z
 
