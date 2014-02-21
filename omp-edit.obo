@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:02:2014 15:52
+date: 21:02:2014 16:13
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
@@ -198,12 +198,12 @@ creation_date: 2011-04-26T03:10:51Z
 
 [Term]
 id: OMP:0000023
-name: periplasmic flagellum, state phenotype
-def: "A flagellum distribution phenotype where the flagellum filament is located in the periplasm and does not extend past the cell envelope." [ISBN:9780073402406, OMP:DAS]
+name: periplasmic flagellum phenotype
+def: "A flagellum distribution phenotype where the flagellum filament of an organism is located in the periplasm and does not extend past the cell envelope." [ISBN:9780073402406, OMP:DAS]
 synonym: "axial fibril" RELATED []
 synonym: "axial filament" NARROW []
 synonym: "endoflagella" RELATED []
-is_a: OMP:0000078 ! flagellum distribution, state phenotype
+is_a: OMP:0000078 ! flagellum distribution phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T11:12:48Z
 
@@ -234,7 +234,7 @@ creation_date: 2011-06-06T02:39:55Z
 
 [Term]
 id: OMP:0000027
-name: flagellum, state phenotype
+name: flagellum phenotype
 def: "A cell projection phenotype where the structure in question is a long whiplike threadlike structure borne either singly or in groups by a motile cell, which propels the cell." [OMP:MCC]
 synonym: "axial filament phenotype" NARROW []
 is_a: OMP:0000083 ! cell projection phenotype
@@ -243,8 +243,8 @@ creation_date: 2011-04-26T03:26:26Z
 
 [Term]
 id: OMP:0000028
-name: decreased number of pili, relative phenotype
-def: "A pilus phenotype where a cell has fewer pili relative to a reference strain or relative to the same strain in a different environment." [OMP:MCC]
+name: decreased number of pili
+def: "A pilus relative phenotype where a cell has fewer pili relative to a designated control." [OMP:MCC]
 synonym: "decreased fimbriae formation" EXACT []
 is_a: OMP:0000034 ! presence of pilus
 created_by: mchibucos
@@ -252,18 +252,18 @@ creation_date: 2011-04-26T03:29:28Z
 
 [Term]
 id: OMP:0000029
-name: presence of flagellum, state phenotype
-def: "A flagellum phenotype where the representative member of a taxonomic unit possesses a flagellum or flagella in at least some environments." [OMP:MCC]
-is_a: OMP:0000027 ! flagellum, state phenotype
+name: presence of flagellum
+def: "A flagellum phenotype where the organism possesses a flagellum or flagella in at least some environments." [OMP:MCC]
+is_a: OMP:0000027 ! flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:34Z
 
 [Term]
 id: OMP:0000030
 name: absence of flagellum
-def: "A flagellum phenotype where the representative member of a taxonomic unit does not possess a flagellum or flagella in any environment." [OMP:MCC]
+def: "A flagellum phenotype where the organism does not possess a flagellum or flagella in any environment." [OMP:MCC]
 synonym: "non-flagellated phenotype" RELATED []
-is_a: OMP:0000027 ! flagellum, state phenotype
+is_a: OMP:0000027 ! flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:50Z
 
@@ -271,7 +271,7 @@ creation_date: 2011-04-26T03:29:50Z
 id: OMP:0000031
 name: malformed flagellum
 def: "A flagellum phenotype where the cell possesses a flagellum that was distorted during formation." [OMP:MCC]
-is_a: OMP:0007005 ! flagellum, relative phenotype
+is_a: OMP:0007005 ! flagella number phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:41:37Z
 
@@ -287,19 +287,19 @@ creation_date: 2011-06-07T10:34:04Z
 [Term]
 id: OMP:0000033
 name: absence of pilus
-def: "A pilus phenotype where the representative member of a taxonomic unit does not possess a pilus." [OMP:MCC]
+def: "A pilus state phenotype where an organism does not possess a pilus." [OMP:MCC]
 synonym: "fimbria absent" EXACT []
-is_a: OMP:0000084 ! pilus phenotype, state phenotype
+is_a: OMP:0000084 ! pilus phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:01Z
 
 [Term]
 id: OMP:0000034
 name: presence of pilus
-def: "A pilus phenotype where the representative member of a taxonomic unit does possess a pilus in one or more growth conditions." [OMP:MCC]
+def: "A pilus phenotype where an organism does possess a pilus in one or more growth conditions." [OMP:MCC]
 comment: Fimbria (plural, fimbriae) is a common synonym for pilus (plural, pili).
 synonym: "fimbria present" EXACT []
-is_a: OMP:0000084 ! pilus phenotype, state phenotype
+is_a: OMP:0000084 ! pilus phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:22Z
 
@@ -496,7 +496,7 @@ creation_date: 2011-04-26T04:44:17Z
 id: OMP:0000060
 name: presence of quorum sensing
 def: "A quorum sensing state phenotype where an organism possesses the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
-is_a: OMP:0000069 ! quorum sensing, state phenotype
+is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T05:02:51Z
 
@@ -523,8 +523,8 @@ creation_date: 2011-04-26T05:03:12Z
 [Term]
 id: OMP:0000063
 name: absence of quorum sensing
-def: "A quorum sensing state phenotype where the representative member of a taxonomic unit does not possess the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
-is_a: OMP:0000069 ! quorum sensing, state phenotype
+def: "A quorum sensing state phenotype where an organism does not possess the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
+is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T05:06:00Z
 
@@ -572,8 +572,8 @@ creation_date: 2011-02-02T03:28:59Z
 
 [Term]
 id: OMP:0000069
-name: quorum sensing, state phenotype
-def: "A microbial communication phenotype where the trait in question is the ability of the representative member of a taxonomic unit to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:MCC\,DAS]
+name: quorum sensing phenotype
+def: "A microbial communication phenotype where the trait in question is the ability of an organism to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:MCC\,DAS]
 is_a: OMP:0000101 ! microbial communication phenotype
 created_by: adrienne
 creation_date: 2011-02-07T03:47:50Z
@@ -646,41 +646,41 @@ creation_date: 2011-02-02T03:19:31Z
 
 [Term]
 id: OMP:0000078
-name: flagellum distribution, state phenotype
-def: "A flagellum phenotype where the trait in question is the location of the flagellum on the representative member of a taxonomic unit." [OMP:MCC]
-is_a: OMP:0000027 ! flagellum, state phenotype
+name: flagellum distribution phenotype
+def: "A flagellum phenotype where the trait in question is the location of the flagellum on an organism." [OMP:MCC]
+is_a: OMP:0000027 ! flagellum phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:43:16Z
 
 [Term]
 id: OMP:0000079
-name: monotrichous, state phenotype
-def: "A flagellum distribution phenotype where a single flagellum is located on the cell surface." [ISBN:9780073402406]
-is_a: OMP:0000078 ! flagellum distribution, state phenotype
+name: monotrichous phenotype
+def: "A flagellum distribution phenotype where an organism has a single flagellum." [ISBN:9780073402406]
+is_a: OMP:0000078 ! flagellum distribution phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:44:18Z
 
 [Term]
 id: OMP:0000080
-name: amphitrichous
-def: "A flagellum distribution phenotype where cells of the representative taxonomic unit has a single flagellum at each end of the cell." [ISBN:9780073402406, OMP:MCC]
-is_a: OMP:0000078 ! flagellum distribution, state phenotype
+name: amphitrichous phenotype
+def: "A flagellum distribution phenotype where an organism has a single flagellum at each end of the cell." [ISBN:9780073402406, OMP:MCC]
+is_a: OMP:0000078 ! flagellum distribution phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:45:34Z
 
 [Term]
 id: OMP:0000081
-name: lophotrichous, state phenotype
-def: "A flagellum distribution phenotype where multiple flagella are located at one or both ends of a cell." [ISBN:9780073402406]
-is_a: OMP:0000078 ! flagellum distribution, state phenotype
+name: lophotrichous phenotype
+def: "A flagellum distribution phenotype where an organism has multiple flagella located at one or both ends of a cell." [ISBN:9780073402406]
+is_a: OMP:0000078 ! flagellum distribution phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:46:16Z
 
 [Term]
 id: OMP:0000082
-name: peritrichous, state phenotype
-def: "A flagellum distribution phenotype, where multiple flagella are dispersed across the cell surface." [ISBN:9780073402406, OMP:MCC]
-is_a: OMP:0000078 ! flagellum distribution, state phenotype
+name: peritrichous phenotype
+def: "A flagellum distribution phenotype where an organism has multiple flagella dispersed across the cell surface." [ISBN:9780073402406, OMP:MCC]
+is_a: OMP:0000078 ! flagellum distribution phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:46:44Z
 
@@ -695,7 +695,7 @@ creation_date: 2011-02-02T03:47:44Z
 
 [Term]
 id: OMP:0000084
-name: pilus phenotype, state phenotype
+name: pilus phenotype
 def: "A cell projection phenotype where the structure in question is a proteinaceous hair-like appendage on the surface of a microbial cell." [ISBN:9780073402406, OMP:MCC]
 synonym: "fimbria phenotype" EXACT [GO:0009289]
 is_a: OMP:0000083 ! cell projection phenotype
@@ -1690,9 +1690,9 @@ creation_date: 2011-06-07T12:32:12Z
 
 [Term]
 id: OMP:0000213
-name: increased flagellum number, relative phenotype
-def: "A flagellum phenotype where there are more flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
-is_a: OMP:0007005 ! flagellum, relative phenotype
+name: increased number of flagella
+def: "A flagellum number relative phenotype where there are more flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
+is_a: OMP:0007005 ! flagella number phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:53:17Z
 
@@ -1705,9 +1705,9 @@ creation_date: 2011-02-03T01:33:37Z
 
 [Term]
 id: OMP:0000215
-name: decreased flagellum number, relative phenotype
-def: "A flagellum phenotype where there are fewer flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
-is_a: OMP:0007005 ! flagellum, relative phenotype
+name: decreased number of flagella
+def: "A flagellum number relative phenotype where there are fewer flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
+is_a: OMP:0007005 ! flagella number phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:54:51Z
 
@@ -1933,7 +1933,7 @@ creation_date: 2011-06-07T02:27:00Z
 
 [Term]
 id: OMP:0000246
-name: presence of nanotube, state phenotype
+name: presence of nanotube
 is_a: OMP:0000175 ! nanotube phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:00:25Z
@@ -3252,8 +3252,8 @@ creation_date: 2013-08-22T01:47:25Z
 
 [Term]
 id: OMP:0000463
-name: increased number of pili, relative phenotype
-def: "A pilus phenotype where a cell has more pili relative to a reference strain or relative to the same strain in a different environment." [OMP:DAS]
+name: increased number of pili
+def: "A pilus relative phenotype where an organism has more pili relative to a reference strain or relative to the same strain in a different environment." [OMP:DAS]
 is_a: OMP:0000034 ! presence of pilus
 created_by: siegele
 creation_date: 2013-08-22T01:48:57Z
@@ -4722,8 +4722,8 @@ creation_date: 2014-01-31T18:03:55Z
 
 [Term]
 id: OMP:0007005
-name: flagellum, relative phenotype
-is_a: OMP:0000083 ! cell projection phenotype
+name: flagella number phenotype
+is_a: OMP:0000027 ! flagellum phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:21:23Z
 
@@ -4900,23 +4900,23 @@ creation_date: 2013-09-17T16:33:34Z
 id: OMP:0007026
 name: quorum sensing, relative phenotype
 def: "A microbial communication phenotype where the trait in question is a change in the ability of an organism to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:DAS]
-is_a: OMP:0000101 ! microbial communication phenotype
+is_obsolete: true
 created_by: siegele
 creation_date: 2013-09-17T16:43:59Z
 
 [Term]
 id: OMP:0007027
 name: increased quorum sensing
-def: "A quorum sensing relative phenotype where an organism has increased ability to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:DAS]
-is_a: OMP:0007026 ! quorum sensing, relative phenotype
+def: "A quorum sensing relative phenotype where an organism's ability to monitor its population density is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:02Z
 
 [Term]
 id: OMP:0007028
 name: decreased quorum sensing
-def: "A quorum sensing relative phenotype where an organism has decreased ability to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:DAS]
-is_a: OMP:0007026 ! quorum sensing, relative phenotype
+def: "A quorum sensing relative phenotype where an organism's ability to monitor its population density is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:18Z
 
