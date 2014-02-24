@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 21:02:2014 16:13
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 24:02:2014 13:50
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2403,6 +2403,7 @@ creation_date: 2011-07-21T05:45:47Z
 [Term]
 id: OMP:0000308
 name: overinitiation of DNA replication
+def: "A DNA replication phenotype where there is an increased frequency of the initiation of DNA replication." [OMP:WAM]
 is_a: OMP:0000307 ! DNA replication phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:46:05Z
