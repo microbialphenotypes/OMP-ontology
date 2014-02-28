@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:02:2014 14:06
+date: 28:02:2014 17:56
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -4100,6 +4100,7 @@ creation_date: 2013-12-17T13:43:32Z
 [Term]
 id: OMP:0005099
 name: starvation stress phenotype
+def: "A stress response phenotype dealing with the response to deprivation of nourishment." [GO:0009267, OMP:WAM]
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2014-01-21T12:13:04Z
