@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 28:02:2014 17:56
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 02:03:2014 17:01
+saved-by: DeborahSiegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -29,7 +29,6 @@ comment: Abolished motility is a cell motility phenotype where a cell completely
 synonym: "abolished motility" NARROW []
 xref: PATO:0002297
 is_a: OMP:0000001 ! motility phenotype
-is_a: OMP:0000316 ! relative phenotype
 intersection_of: OMP:0000001 ! motility phenotype
 intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 creation_date: 2011-03-10T07:02:42Z
@@ -373,7 +372,6 @@ name: increased motility
 def: "A motility phenotype where the organism(s) has increased motility relative to some reference." [OMP:MCC]
 xref: PATO:0002298
 is_a: OMP:0000001 ! motility phenotype
-is_a: OMP:0000316 ! relative phenotype
 intersection_of: OMP:0000001 ! motility phenotype
 intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: mchibucos
@@ -621,7 +619,7 @@ creation_date: 2011-02-02T03:18:19Z
 [Term]
 id: OMP:0000075
 name: coccus phenotype
-def: "A cell shape phenotype where the representative member of a taxonomic unit has cells that are spherical or nearly spherical." [ISBN:9780073402406, OMP:MCC]
+def: "A cell shape phenotype where an organism has cells that are spherical or nearly spherical." [ISBN:9780073402406, OMP:MCC]
 synonym: "spherical-shaped" EXACT []
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -630,7 +628,7 @@ creation_date: 2011-02-02T03:18:29Z
 [Term]
 id: OMP:0000076
 name: bacillus phenotype
-def: "A cell shape phenotype where the representative member of a taxonomic unit has rod-shaped cells." [ISBN:9780073402406, OMP:MCC]
+def: "A cell shape phenotype where an organism has rod-shaped cells." [ISBN:9780073402406, OMP:MCC]
 synonym: "rod-shaped" EXACT []
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -639,7 +637,7 @@ creation_date: 2011-02-02T03:18:47Z
 [Term]
 id: OMP:0000077
 name: vibrio phenotype
-def: "A spiral cell shape phenotype where the representative member of a taxonomic unit has rod-shaped cells that are curved to form a comma-like shape or incomplete spiral." [ISBN:9780073402406, OMP:AEZ]
+def: "A spiral cell shape phenotype where the organism has rod-shaped cells that are curved to form a comma-like shape or incomplete spiral." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000086 ! spiral cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:19:31Z
@@ -713,7 +711,7 @@ creation_date: 2011-02-02T03:49:03Z
 [Term]
 id: OMP:0000086
 name: spiral cell shape phenotype
-def: "A cell shape phenotype where the representative member of a taxonomic has cells that are helical or cork-screw shaped." [OMP:MCC]
+def: "A cell shape phenotype where the organism has cells that are helical or cork-screw shaped." [OMP:MCC]
 synonym: "curved rod" RELATED []
 synonym: "spirillum" NARROW []
 synonym: "spirochete" NARROW []
@@ -1004,7 +1002,7 @@ creation_date: 2011-02-18T02:47:10Z
 [Term]
 id: OMP:0000123
 name: coccobacillus phenotype
-def: "A cell shape phenotype where the representative member of a taxonomic unit has cells intermediate in shape between cocci (spherical) and bacilli (rods)." [ISBN:9780073402406, OMP:MCC]
+def: "A cell shape phenotype where an organism has cells intermediate in shape between cocci (spherical) and bacilli (rods)." [ISBN:9780073402406, OMP:MCC]
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:48:21Z
@@ -1012,7 +1010,7 @@ creation_date: 2011-02-18T02:48:21Z
 [Term]
 id: OMP:0000124
 name: spirillum phenotype
-def: "A spiral cell shape phenotype where the representative member of a taxonomic unit has cells that form a rigid spiral." [ISBN:9780073402406, OMP:AEZ]
+def: "A spiral cell shape phenotype where the organism has cells that form a rigid spiral." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000086 ! spiral cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:51:54Z
@@ -1020,7 +1018,7 @@ creation_date: 2011-02-18T02:51:54Z
 [Term]
 id: OMP:0000125
 name: spirochete phenotype
-def: "A spiral cell shape phenotype where the representative member of a taxonomic unit has cells that form a flexible spiral." [ISBN:9780073402406, OMP:AEZ]
+def: "A spiral cell shape phenotype where the organism has cells that form a flexible spiral." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000086 ! spiral cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:52:33Z
@@ -1053,7 +1051,7 @@ creation_date: 2011-02-18T02:59:38Z
 [Term]
 id: OMP:0000129
 name: cuboid cell phenotype
-def: "A cell shape phenotype where the representative member of a taxonomic unit has cell with six sides." [ONP:MCC]
+def: "A cell shape phenotype where an organism has cell with six sides." [ONP:MCC]
 synonym: "square" RELATED []
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -1078,7 +1076,7 @@ creation_date: 2011-02-18T03:00:58Z
 [Term]
 id: OMP:0000132
 name: pleomorphic cell shape phenotype
-def: "A cell shape phenotype where the representative member of a taxonomic unit posseses the ability to take on two or more different shapes during its life cycle." [ISBN:9780073402406, OMP:MCC]
+def: "A cell shape phenotype where the organism posseses the ability to take on two or more different shapes during its life cycle." [ISBN:9780073402406, OMP:MCC]
 xref: PATO:0001356
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -1531,13 +1529,6 @@ name: chemical production phenotype
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:24:08Z
-
-[Term]
-id: OMP:0000193
-name: carbon utilization phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-06-06T04:01:13Z
 
 [Term]
 id: OMP:0000194
@@ -2305,7 +2296,7 @@ creation_date: 2014-02-13T02:43:57Z
 
 [Term]
 id: OMP:0000294
-name: DNA supercoiling state phenotype
+name: DNA supercoiling phenotype
 def: "A genetic material phenotype where the trait in question is supercoiling of a double-stranded DNA molecule." [OMP:DAS]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: mchibucos
@@ -2316,7 +2307,7 @@ id: OMP:0000295
 name: presence of negative DNA supercoiling
 def: "A DNA supercoiling phenotype where the DNA twists around its axis in the opposite direction from the clockwise turns of the right-handed double helix." [ISBN:9781613441138]
 synonym: "underwound DNA phenotype" RELATED []
-is_a: OMP:0000294 ! DNA supercoiling state phenotype
+is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:47:38Z
 
@@ -2325,7 +2316,7 @@ id: OMP:0000296
 name: presence of positive DNA supercoiling
 def: "A DNA supercoiling phenotype where the DNA twists around its axis in the same direction as the clockwise turns of the right-handed double helix." [ISBN:9781613441138]
 synonym: "overwound DNA phenotype" RELATED []
-is_a: OMP:0000294 ! DNA supercoiling state phenotype
+is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:48:22Z
 
@@ -3305,14 +3296,14 @@ creation_date: 2012-11-02T01:23:12Z
 [Term]
 id: OMP:0001001
 name: Increased negative DNA supercoiling
-is_a: OMP:0007001 ! DNA supercoiling, relative phenotype
+is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:07Z
 
 [Term]
 id: OMP:0001002
 name: decreased negative DNA supercoiling
-is_a: OMP:0007001 ! DNA supercoiling, relative phenotype
+is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
 
@@ -3520,14 +3511,14 @@ creation_date: 2013-09-20T13:26:46Z
 [Term]
 id: OMP:0005026
 name: chromosome maintenance phenotype
-is_a: OMP:0000000 ! microbial phenotype
+is_obsolete: true
 created_by: wmeza
 creation_date: 2013-09-20T14:59:06Z
 
 [Term]
 id: OMP:0005027
-name: stress induced mutagenesis phenotype
-def: "A chromosome maintenance phenotype that refers to the process(es) that give rise to mutators that occur after imposition of a non lethal stress." [OMP:WAM, PMID:17917874, PMID:3045565]
+name: stress-induced mutagenesis phenotype
+def: "A genetic material phenotype that refers to the process(es) that give rise to mutations that occur after imposition of a non-lethal stress." [OMP:WAM, PMID:17917874, PMID:3045565]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-09-20T15:00:09Z
@@ -3552,7 +3543,7 @@ creation_date: 2013-09-25T15:55:54Z
 id: OMP:0005030
 name: increase in stress induced mutagenesis
 def: "A stress induced mutagenesis relative phenotype where the frequency of mutagenesis is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005027 ! stress induced mutagenesis phenotype
+is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:57:03Z
 
@@ -3560,7 +3551,7 @@ creation_date: 2013-09-25T15:57:03Z
 id: OMP:0005031
 name: decrease in stress induced mutagenesis
 def: "A stress induced mutagenesis relative phenotype where the frequency of mutagenesis is reduced relative to the designated control." [OMP:WAM]
-is_a: OMP:0005027 ! stress induced mutagenesis phenotype
+is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:57:46Z
 
@@ -3568,15 +3559,15 @@ creation_date: 2013-09-25T15:57:46Z
 id: OMP:0005032
 name: presence of stress induced mutagenesis
 def: "A stress induced mutagenesis state phenotype where the processes of stress induced mutagenesis have been activated within the representative member of a taxonomic unit." [OMP:WAM]
-is_a: OMP:0005027 ! stress induced mutagenesis phenotype
+is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:59:12Z
 
 [Term]
 id: OMP:0005033
-name: absence of stress induced mutagenesis
-def: "A stress induced mutagenesis state phenotype where the processes of stress induced mutagenesis is not activated within the representative member of a taxonomic unit." [OMP:WAM]
-is_a: OMP:0005027 ! stress induced mutagenesis phenotype
+name: absence of stress-induced mutagenesis
+def: "A stress-induced mutagenesis phenotype where an organism does not processes of stress induced mutagenesis is not activated within the representative member of a taxonomic unit." [OMP:WAM]
+is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T18:20:22Z
 
@@ -3693,7 +3684,7 @@ creation_date: 2013-10-18T18:39:04Z
 [Term]
 id: OMP:0005048
 name: mutation frequency phenotype
-def: "A genetic material phenotype dealing with prevalence of a certain mutation occurs in a population." [ISBN:9780198529170, OMP:WAM]
+def: "A genetic material phenotype dealing with the frequency of mutations." [ISBN:9780198529170, OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:39:27Z
@@ -3851,16 +3842,20 @@ creation_date: 2013-11-04T18:34:20Z
 [Term]
 id: OMP:0005068
 name: increased mutation frequency
-def: "A mutation frequency phenotype where the incidence of mutation is increased relative to the designated control." [OMP:WAM]
+def: "A mutation frequency phenotype where the mutation frequency is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005048 ! mutation frequency phenotype
+intersection_of: OMP:0005048 ! mutation frequency phenotype
+intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:05:44Z
 
 [Term]
 id: OMP:0005069
 name: decreased mutation frequency
-def: "A mutation frequency phenotype where the incidence of mutation is decreased relative to the designated control." [OMP:WAM]
+def: "A mutation frequency phenotype where the mutation frequency is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005048 ! mutation frequency phenotype
+intersection_of: OMP:0005048 ! mutation frequency phenotype
+intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:11:14Z
 
@@ -4146,28 +4141,12 @@ created_by: jonathanherrera
 creation_date: 2013-09-03T07:54:22Z
 
 [Term]
-id: OMP:0006004
-name: carbon source utilization, relative phenotype
-def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular carbon source." [GO:0015976, OMP:JCH\,DAS]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-06T16:52:37Z
-
-[Term]
 id: OMP:0006005
 name: nitrogen source utilization, relative phenotype
 def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular nitrogen source." [GO:0019740, OMP:JCH\,DAS]
 is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-06T16:52:37Z
-
-[Term]
-id: OMP:0006006
-name: carbon requirement source
-def: "A nutrient requirement phenotype where the nutrient incorporated into the cell is used primarily for its carbon." [OMP:JCH]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-06T17:16:32Z
 
 [Term]
 id: OMP:0006007
@@ -4194,25 +4173,11 @@ created_by: jonathanherrera
 creation_date: 2013-09-09T18:21:18Z
 
 [Term]
-id: OMP:0006012
-name: carbon source requirement
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T18:32:37Z
-
-[Term]
 id: OMP:0006013
 name: nitrogen source requirement
 is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:32:37Z
-
-[Term]
-id: OMP:0006014
-name: presence of carbon course requirement
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T18:32:44Z
 
 [Term]
 id: OMP:0006015
@@ -4287,7 +4252,7 @@ creation_date: 2013-09-10T17:51:21Z
 [Term]
 id: OMP:0006024
 name: heterotroph
-def: "A carbon source utilization state phenotype where the representative member of a taxonomic unit uses organic molecules as the carbon source." [ISBN:9780073402406, OMP:DAS]
+def: "A carbon source utilization state phenotype where an organism uses organic molecules as the carbon source." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:39:02Z
@@ -4693,23 +4658,16 @@ created_by: jonathanherrera
 creation_date: 2013-10-24T13:10:50Z
 
 [Term]
-id: OMP:0007001
-name: DNA supercoiling, relative phenotype
-is_a: OMP:0000290 ! genetic material phenotype
-created_by: siegele
-creation_date: 2013-09-05T16:05:58Z
-
-[Term]
 id: OMP:0007002
 name: decreased positive DNA supercoiling
-is_a: OMP:0007001 ! DNA supercoiling, relative phenotype
+is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:08:29Z
 
 [Term]
 id: OMP:0007003
 name: increased positive DNA supercoiling
-is_a: OMP:0007001 ! DNA supercoiling, relative phenotype
+is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:09:28Z
 
@@ -4780,7 +4738,7 @@ creation_date: 2013-09-11T17:14:56Z
 [Term]
 id: OMP:0007012
 name: autotroph
-def: "A carbon source utilization state phenotype where the representative member of a taxonomic unit can use carbon dioxide (CO2) as the carbon source." [ISBN:9780073402406, OMP:DAS]
+def: "A carbon source utilization state phenotype where an organism can use carbon dioxide (CO2) as the carbon source." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:10:16Z
@@ -4806,15 +4764,15 @@ creation_date: 2013-09-13T15:20:24Z
 
 [Term]
 id: OMP:0007015
-name: requirement for amino acid
-def: "An amino acid requirement state phenotype where an organism cannot synthesize one or more amino acids." [OMP:DAS]
+name: requirement for amino acid, state phenotype
+def: "An amino acid requirement phenotype where an organism cannot synthesize one or more amino acids." [OMP:DAS]
 is_a: OMP:0007038 ! amino acid requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T12:47:41Z
 
 [Term]
 id: OMP:0007016
-name: purine/pyrimidine requirement
+name: purine/pyrimidine requirement, state phenotype
 def: "A purine/pyrimidine requirement state phenotype where the representative member of a taxonomic unit cannot synthesize one or more purine or pyrimidine bases required for growth." [OMP:DAS]
 is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
 created_by: siegele
@@ -4871,6 +4829,8 @@ name: decreased purine/pyrimidine requirement
 def: "A purine/pyrimidine requirement phenotype where an organism's requirement for a purine or pyrimidine base is decreased relative to a designated control." [OMP:DAS]
 synonym: "abolished purine/pyrimidine requirement" EXACT []
 is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
+intersection_of: OMP:0007039 ! purine/pyrimidine requirement phenotype
+intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
 
@@ -4879,6 +4839,8 @@ id: OMP:0007023
 name: increased purine/pyrimidine requirement
 def: "A purine/pyrimidine requirement relative phenotype where an organism's requirement for purine or pyrimidine bases is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
+intersection_of: OMP:0007039 ! purine/pyrimidine requirement phenotype
+intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:30:36Z
 
@@ -5263,16 +5225,20 @@ creation_date: 2014-02-21T15:07:59Z
 [Term]
 id: OMP:0007070
 name: decreased carbon source utilization phenotype
-def: "A carbon source utilization relative phenotype where the ability of an organism to use a particular carbon source is decreased relative to a designated control." [OMP:DAS]
+def: "A carbon source utilization relative phenotype where the ability to use a particular carbon source is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006023 ! carbon source utilization phenotype
+intersection_of: OMP:0006023 ! carbon source utilization phenotype
+intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:18:08Z
 
 [Term]
 id: OMP:0007071
 name: increased carbon source utilization phenotype
-def: "A carbon source utilization relative phenotype where the ability of an organism to use a particular carbon source is increased relative to a designated control." [OMP:DAS]
+def: "A carbon source utilization relative phenotype where the ability to use a particular carbon source is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006023 ! carbon source utilization phenotype
+intersection_of: OMP:0006023 ! carbon source utilization phenotype
+intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:18:41Z
 
@@ -5295,6 +5261,8 @@ id: OMP:0007074
 name: increased growth factor requirement phenotype
 def: "A growth factor requirement relative phenotype where an organism's requirement for one or more growth factors is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007069 ! growth factor requirement phenotype
+intersection_of: OMP:0007069 ! growth factor requirement phenotype
+intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:42:23Z
 
@@ -5303,6 +5271,8 @@ id: OMP:0007075
 name: decreased growth factor requirement phenotype
 def: "A growth factor requirement relative phenotype where an organism's requirement for one or more growth factors is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007069 ! growth factor requirement phenotype
+intersection_of: OMP:0007069 ! growth factor requirement phenotype
+intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:42:44Z
 
