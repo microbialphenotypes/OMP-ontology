@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 02:03:2014 17:01
-saved-by: DeborahSiegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 19:03:2014 13:39
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3958,6 +3958,7 @@ creation_date: 2013-11-18T11:50:57Z
 [Term]
 id: OMP:0005082
 name: thermotolerance stress phenotype
+def: "A stress response phenotype dealing with the resistance response to normally lethal high temperature levels." [OMP:WAM]
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2013-11-18T12:22:55Z
