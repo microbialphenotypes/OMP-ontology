@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 19:03:2014 13:39
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 26:03:2014 21:53
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -4142,12 +4142,30 @@ created_by: jonathanherrera
 creation_date: 2013-09-03T07:54:22Z
 
 [Term]
+id: OMP:0006004
+name: increase bud formation
+def: "A bud forming phenotype where the organism(s) has increased bud formation relative to some reference." []
+synonym: "increased buddign index" EXACT []
+is_a: OMP:0000008 ! bud forming
+created_by: jonathanherrera
+creation_date: 2014-03-26T21:33:14Z
+
+[Term]
 id: OMP:0006005
 name: nitrogen source utilization, relative phenotype
 def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular nitrogen source." [GO:0019740, OMP:JCH\,DAS]
 is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-06T16:52:37Z
+
+[Term]
+id: OMP:0006006
+name: decrease bud formation
+def: "A bud forming phenotype where the organism(s) has decreased bud formation relative to some reference." []
+synonym: "decrease budding index" EXACT []
+is_a: OMP:0000008 ! bud forming
+created_by: jonathanherrera
+creation_date: 2014-03-26T21:33:14Z
 
 [Term]
 id: OMP:0006007
