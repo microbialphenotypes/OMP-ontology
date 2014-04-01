@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 01:04:2014 13:08
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 01:04:2014 13:17
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -4046,7 +4046,7 @@ creation_date: 2013-12-06T17:59:14Z
 [Term]
 id: OMP:0005093
 name: increase resistance to gamma radiation
-def: "A  gamma radiation phenotype where resistance is enhanced relative to the reference condition." [OMP:WAM]
+def: "A  gamma radiation phenotype where resistance is enhanced relative to the designated control." [OMP:WAM]
 is_a: OMP:0005085 ! gamma ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:05:40Z
@@ -4054,7 +4054,7 @@ creation_date: 2013-12-17T13:05:40Z
 [Term]
 id: OMP:0005094
 name: decrease resistance to gamma radiation
-def: "A  gamma radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+def: "A  gamma radiation phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
 is_a: OMP:0005085 ! gamma ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:06:05Z
@@ -4062,7 +4062,7 @@ creation_date: 2013-12-17T13:06:05Z
 [Term]
 id: OMP:0005095
 name: increased resistance toward x-ray radiation
-def: "An x-ray radiation phenotype were resistance is enhanced relative to the reference strain." [OMP:WAM]
+def: "An x-ray radiation phenotype were resistance is enhanced relative to the designated control." [OMP:WAM]
 is_a: OMP:0005086 ! x-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:26:43Z
@@ -4070,7 +4070,7 @@ creation_date: 2013-12-17T13:26:43Z
 [Term]
 id: OMP:0005096
 name: decreased resistance toward x-ray radiation
-def: "An x-ray radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+def: "An x-ray radiation phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
 is_a: OMP:0005086 ! x-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:28:20Z
@@ -4078,7 +4078,7 @@ creation_date: 2013-12-17T13:28:20Z
 [Term]
 id: OMP:0005097
 name: increased resistance to UV radiation
-def: "A UV radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+def: "A UV radiation phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
 synonym: "decrease in UV sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005084 ! UV radiation
 created_by: wmeza
@@ -4087,7 +4087,7 @@ creation_date: 2013-12-17T13:41:53Z
 [Term]
 id: OMP:0005098
 name: decreased resistance toward UV radiation
-def: "A UV radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+def: "A UV radiation phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
 synonym: "increase in UV sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005084 ! UV radiation
 created_by: wmeza
@@ -4866,7 +4866,7 @@ creation_date: 2013-09-17T16:30:36Z
 [Term]
 id: OMP:0007024
 name: increased vitamin/enzyme cofactor requirement
-def: "A vitamin/enzyme cofactor requirement phenotype where the organism has an increased requirement relative to some reference for a vitamin/enzyme cofactor." [OMP:DAS]
+def: "A vitamin/enzyme cofactor requirement phenotype where the organism has an increased requirement relative to a designated control for a vitamin/enzyme cofactor." [OMP:DAS]
 is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:31:05Z
@@ -4874,7 +4874,7 @@ creation_date: 2013-09-17T16:31:05Z
 [Term]
 id: OMP:0007025
 name: decreased vitamin/enzyme cofactor requirement
-def: "A vitamin/enzyme cofactor requirement phenotype where the organism has a decreased requirement relative to some reference for a vitamin/enzyme cofactor." [OMP:DAS]
+def: "A vitamin/enzyme cofactor requirement phenotype where the organism has a decreased requirement relative to a designated control for a vitamin/enzyme cofactor." [OMP:DAS]
 synonym: "abolished vitamin/enzyme cofactor requirement" EXACT []
 is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
 created_by: siegele
@@ -4907,7 +4907,7 @@ creation_date: 2013-09-17T16:45:18Z
 [Term]
 id: OMP:0007029
 name: decreased utilization of dinitrogen phenotype
-def: "A dinitrogen (N2) utilization phenotype where the organism has decreased ability relative to some reference to use N2 as a source of nitrogen." [OMP:DAS]
+def: "A dinitrogen (N2) utilization phenotype where the organism has decreased ability relative to a designated control to use N2 as a source of nitrogen." [OMP:DAS]
 synonym: "abolished dinitrogen utilization phenotype" RELATED []
 is_a: OMP:0006030 ! dinitrogen utilization phenotype
 created_by: DeborahSiegele
@@ -4916,7 +4916,7 @@ creation_date: 2013-09-28T20:59:52Z
 [Term]
 id: OMP:0007030
 name: increased utilization of dinitrogen phenotype
-def: "A dinitrogen (N2) utilization phenotype where the organism has increased ability relative to some reference to use N2 as a source of nitrogen." [OMP:DAS]
+def: "A dinitrogen (N2) utilization phenotype where the organism has increased ability relative to a designated control to use N2 as a source of nitrogen." [OMP:DAS]
 is_a: OMP:0006030 ! dinitrogen utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:02:26Z
@@ -4932,7 +4932,7 @@ creation_date: 2013-09-28T21:02:26Z
 [Term]
 id: OMP:0007032
 name: decreased utilization of inorganic nitrogen phenotype
-def: "An inorganic nitrogen source utilization phenotype where the organism has decreased ability relative to some reference to use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
+def: "An inorganic nitrogen source utilization phenotype where the organism has decreased ability relative to a designated control to use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
 synonym: "abolished utilization of inorganic nitrogen phenotype" EXACT []
 is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
 created_by: DeborahSiegele
@@ -4941,7 +4941,7 @@ creation_date: 2013-09-28T21:03:56Z
 [Term]
 id: OMP:0007033
 name: increased utilization of inorganic nitrogen phenotype
-def: "An inorganic nitrogen source utilization phenotype where the organism has increased ability relative to some reference to use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
+def: "An inorganic nitrogen source utilization phenotype where the organism has increased ability relative to a designated control to use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
 is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:05:18Z
@@ -4957,7 +4957,7 @@ creation_date: 2013-09-28T21:05:43Z
 [Term]
 id: OMP:0007035
 name: decreased utilization of organic nitrogen phenotype
-def: "An organic nitrogen source utilization phenotype where the organism has decreased ability relative to some reference to use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
+def: "An organic nitrogen source utilization phenotype where the organism has decreased ability relative to a designated control to use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
 synonym: "abolished utilization of organic nitrogen phenotype" RELATED []
 is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
 created_by: DeborahSiegele
@@ -4966,7 +4966,7 @@ creation_date: 2013-09-28T21:07:53Z
 [Term]
 id: OMP:0007036
 name: increased utilization of organic nitrogen phenotype
-def: "An organic nitrogen source utilization phenotype where the organism has increased ability relative to some reference to use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
+def: "An organic nitrogen source utilization phenotype where the organism has increased ability relative to a designated control to use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
 is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:07:58Z
@@ -5054,7 +5054,7 @@ creation_date: 2013-10-01T15:17:10Z
 [Term]
 id: OMP:0007047
 name: decreased utilization of inorganic phosphorus phenotype
-def: "An inorganic phosphorus source utilization phenotype where the organism has decreased ability relative to some reference to use an inorganic P-containing compound as the source of phosphorus." [OMP:DAS]
+def: "An inorganic phosphorus source utilization phenotype where the organism has decreased ability relative to a designated control to use an inorganic P-containing compound as the source of phosphorus." [OMP:DAS]
 synonym: "abolished utilization of inorganic phosphorus phenotype" EXACT []
 is_a: OMP:0007045 ! inorganic phosphorus source phenotype
 created_by: siegele
@@ -5063,7 +5063,7 @@ creation_date: 2013-10-01T15:19:36Z
 [Term]
 id: OMP:0007048
 name: increased utilization of inorganic phosphorus phenotype
-def: "An inorganic phosphorus source utilization phenotype where the organism has increased ability relative to some reference to use an inorganic P-containing compound as the source of phosphorus." [OMP:DAS]
+def: "An inorganic phosphorus source utilization phenotype where the organism has increased ability relative to a designated control to use an inorganic P-containing compound as the source of phosphorus." [OMP:DAS]
 is_a: OMP:0007045 ! inorganic phosphorus source phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:19:36Z
@@ -5079,7 +5079,7 @@ creation_date: 2013-10-01T15:19:36Z
 [Term]
 id: OMP:0007050
 name: decreased utilization of organic phosphorus phenotype
-def: "An organic phosphorus source utilization phenotype where the organism has decreased ability relative to some reference to use an organic P-containing compound as the source of phosphorus." [OMP:DAS]
+def: "An organic phosphorus source utilization phenotype where the organism has decreased ability relative to a designated control to use an organic P-containing compound as the source of phosphorus." [OMP:DAS]
 synonym: "abolished utilization of organic phosphorus phenotype" EXACT []
 is_a: OMP:0007046 ! organic phosphorus source phenotype
 created_by: siegele
@@ -5088,7 +5088,7 @@ creation_date: 2013-10-01T15:20:22Z
 [Term]
 id: OMP:0007051
 name: increased utilization of organic phosphorus phenotype
-def: "An organic phosphorus source utilization phenotype where the organism has increased ability relative to some reference to use an organic P-containing compound as the source of phosphorus." [OMP:DAS]
+def: "An organic phosphorus source utilization phenotype where the organism has increased ability relative to a designated control to use an organic P-containing compound as the source of phosphorus." [OMP:DAS]
 is_a: OMP:0007046 ! organic phosphorus source phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:20:22Z
@@ -5120,7 +5120,7 @@ creation_date: 2013-10-01T15:32:55Z
 [Term]
 id: OMP:0007055
 name: decreased utilization of inorganic sulfur phenotype
-def: "An inorganic sulfur source utilization phenotype where the organism has decreased ability relative to some reference to use an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
+def: "An inorganic sulfur source utilization phenotype where the organism has decreased ability relative to a designated control to use an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
 synonym: "abolished utilization of inorganic sulfur phenotype" RELATED []
 is_a: OMP:0007053 ! inorganic sulfur source utilization phenotype
 created_by: siegele
@@ -5129,7 +5129,7 @@ creation_date: 2013-10-01T15:33:08Z
 [Term]
 id: OMP:0007056
 name: increased utilization of inorganic sulfur phenotype
-def: "An inorganic sulfur source utilization phenotype where the organism has increased ability relative to some reference to use an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
+def: "An inorganic sulfur source utilization phenotype where the organism has increased ability relative to a designated control to use an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
 is_a: OMP:0007053 ! inorganic sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:33:32Z
@@ -5145,7 +5145,7 @@ creation_date: 2013-10-01T15:33:38Z
 [Term]
 id: OMP:0007058
 name: decreased utilization of organic sulfur phenotype
-def: "An organic sulfur source utilization phenotype where the organism has decreased ability relative to some reference to use an organic S-containing compound as the source of sulfur." [OMP:DAS]
+def: "An organic sulfur source utilization phenotype where the organism has decreased ability relative to some designated control to use an organic S-containing compound as the source of sulfur." [OMP:DAS]
 synonym: "abolished utilization of organic sulfur phenotype" EXACT []
 is_a: OMP:0007054 ! organic sulfur source utilization phenotype
 created_by: siegele
@@ -5154,7 +5154,7 @@ creation_date: 2013-10-01T15:34:00Z
 [Term]
 id: OMP:0007059
 name: increased utilization of organic sulfur phenotype
-def: "An organic sulfur source utilization phenotype where the organism has decreased ability relative to some reference to use an organic S-containing compound as the source of sulfur." [OMP:DAS]
+def: "An organic sulfur source utilization phenotype where the organism has decreased ability relative to some designated control to use an organic S-containing compound as the source of sulfur." [OMP:DAS]
 is_a: OMP:0007054 ! organic sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:34:05Z
