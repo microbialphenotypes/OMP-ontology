@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:03:2014 21:53
+date: 01:04:2014 13:08
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -3202,7 +3202,7 @@ creation_date: 2013-05-23T01:55:13Z
 [Term]
 id: OMP:0000458
 name: not resistant to caffeine
-def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is NOT resistant to caffeine." [OMP:WAM]
+def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is not resistant to caffeine." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:34Z
@@ -4552,7 +4552,7 @@ creation_date: 2013-10-22T13:29:22Z
 [Term]
 id: OMP:0006057
 name: decrease resistance to aminoglycoside compound
-def: "An aminoglycoside compound resistance relative phenotype where resistance is decreased relative to some reference." [OMP:JCH]
+def: "An aminoglycoside compound resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to aminoglycoside compound" NARROW []
 is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
 created_by: jonathanherrera
@@ -4561,7 +4561,7 @@ creation_date: 2013-10-22T19:24:20Z
 [Term]
 id: OMP:0006058
 name: increased resistance to aminoglycoside compound
-def: "An aminoglycoside compound resistance relative phenotype where resistance is increased relative to some reference." [OMp:JCH]
+def: "An aminoglycoside compound resistance relative phenotype where resistance is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
