@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:04:2014 13:17
+date: 02:04:2014 16:50
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -78,7 +78,7 @@ creation_date: 2011-04-26T02:52:52Z
 id: OMP:0000008
 name: bud forming
 def: "An budding phenotype where a cell possesses the ability to perform budding." [OMP:MCC]
-is_a: OMP:0000089 ! budding phenotype
+is_a: OMP:0000224 ! energy metabolism phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:58:46Z
 
@@ -1478,7 +1478,7 @@ creation_date: 2011-02-02T03:29:51Z
 [Term]
 id: OMP:0000186
 name: photosynthesis phenotype
-is_a: OMP:0000180 ! metabolic phenotype
+is_a: OMP:0000224 ! energy metabolism phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:30:07Z
 
@@ -2172,14 +2172,14 @@ creation_date: 2011-07-21T02:30:14Z
 id: OMP:0000277
 name: decreased beta-galactosidase activity
 synonym: "abolished beta-galactosidase activity" RELATED []
-is_a: OMP:0000297 ! beta-galactosidase activity phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T02:33:25Z
 
 [Term]
 id: OMP:0000278
 name: increased beta-galactosidase activity
-is_a: OMP:0000297 ! beta-galactosidase activity phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T02:33:53Z
 
@@ -2202,7 +2202,7 @@ creation_date: 2011-07-21T02:37:15Z
 id: OMP:0000281
 name: abolished beta-galactosidase activity
 synonym: "absence of beta-galactosidase activity" BROAD []
-is_a: OMP:0000297 ! beta-galactosidase activity phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T02:40:26Z
 
@@ -2323,56 +2323,56 @@ creation_date: 2011-07-21T04:48:22Z
 [Term]
 id: OMP:0000297
 name: beta-galactosidase activity phenotype
-is_a: OMP:0000298 ! enzyme activity phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:08:18Z
 
 [Term]
 id: OMP:0000298
 name: enzyme activity phenotype
-is_a: OMP:0000269 ! protein activity phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:10:18Z
 
 [Term]
 id: OMP:0000299
 name: galactose-1-phosphate uridyl transferase activity
-is_a: OMP:0000298 ! enzyme activity phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:12:43Z
 
 [Term]
 id: OMP:0000300
 name: increased galactose-1-phosphate uridyl transferase activity
-is_a: OMP:0000299 ! galactose-1-phosphate uridyl transferase activity
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:13:05Z
 
 [Term]
 id: OMP:0000301
 name: decreased galactose-1-phosphate uridyl transferase activity
-is_a: OMP:0000299 ! galactose-1-phosphate uridyl transferase activity
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:13:27Z
 
 [Term]
 id: OMP:0000302
 name: substrate binding phenotype
-is_a: OMP:0000298 ! enzyme activity phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:17:18Z
 
 [Term]
 id: OMP:0000303
 name: decreased substrate binding
-is_a: OMP:0000302 ! substrate binding phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:18:39Z
 
 [Term]
 id: OMP:0000304
 name: increased substrate binding
-is_a: OMP:0000302 ! substrate binding phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:18:58Z
 
@@ -4144,7 +4144,7 @@ creation_date: 2013-09-03T07:54:22Z
 [Term]
 id: OMP:0006004
 name: increase bud formation
-def: "A bud forming phenotype where the organism(s) has increased bud formation relative to some reference." []
+def: "A bud forming phenotype where the organism(s) has increased bud formation relative to some reference." [OMP:WAM]
 synonym: "increased buddign index" EXACT []
 is_a: OMP:0000008 ! bud forming
 created_by: jonathanherrera
@@ -4161,7 +4161,7 @@ creation_date: 2013-09-06T16:52:37Z
 [Term]
 id: OMP:0006006
 name: decrease bud formation
-def: "A bud forming phenotype where the organism(s) has decreased bud formation relative to some reference." []
+def: "A bud forming phenotype where the organism(s) has decreased bud formation relative to some reference." [OMP:WAM]
 synonym: "decrease budding index" EXACT []
 is_a: OMP:0000008 ! bud forming
 created_by: jonathanherrera
@@ -5194,7 +5194,7 @@ creation_date: 2014-01-31T18:45:09Z
 id: OMP:0007064
 name: phototrophic phenotype
 def: "A metabolic state phenotype where the representative member of a taxonomic unit can use light as the energy source." [ISBN:978-0-07-340240-6, OMP:DAS]
-is_a: OMP:0000180 ! metabolic phenotype
+is_a: OMP:0000224 ! energy metabolism phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:49:00Z
 
@@ -5271,7 +5271,7 @@ creation_date: 2014-02-21T15:28:04Z
 [Term]
 id: OMP:0007073
 name: fermentation phenotype
-is_a: OMP:0000224 ! energy metabolism phenotype
+is_a: OMP:0000180 ! metabolic phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:31:32Z
 
