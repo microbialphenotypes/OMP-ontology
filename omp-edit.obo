@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 14:04:2014 13:13
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 14:04:2014 20:43
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1478,7 +1478,7 @@ creation_date: 2011-02-02T03:29:51Z
 [Term]
 id: OMP:0000186
 name: photosynthesis phenotype
-is_obsolete: true
+is_a: OMP:0000180 ! metabolic phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:30:07Z
 
@@ -2099,7 +2099,6 @@ creation_date: 2011-07-21T02:02:26Z
 [Term]
 id: OMP:0000269
 name: protein activity phenotype
-def: "A microbial phenotype involving the actions of large macromolecules consisting of one or more chains of amino acid residues." [OMP:WAM]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:05:51Z
@@ -2173,14 +2172,14 @@ creation_date: 2011-07-21T02:30:14Z
 id: OMP:0000277
 name: decreased beta-galactosidase activity
 synonym: "abolished beta-galactosidase activity" RELATED []
-is_obsolete: true
+is_a: OMP:0000297 ! beta-galactosidase activity phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:33:25Z
 
 [Term]
 id: OMP:0000278
 name: increased beta-galactosidase activity
-is_obsolete: true
+is_a: OMP:0000297 ! beta-galactosidase activity phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:33:53Z
 
@@ -2203,7 +2202,7 @@ creation_date: 2011-07-21T02:37:15Z
 id: OMP:0000281
 name: abolished beta-galactosidase activity
 synonym: "absence of beta-galactosidase activity" BROAD []
-is_obsolete: true
+is_a: OMP:0000297 ! beta-galactosidase activity phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:40:26Z
 
@@ -2324,14 +2323,13 @@ creation_date: 2011-07-21T04:48:22Z
 [Term]
 id: OMP:0000297
 name: beta-galactosidase activity phenotype
-is_obsolete: true
+is_a: OMP:0000298 ! enzyme activity phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:08:18Z
 
 [Term]
 id: OMP:0000298
 name: enzyme activity phenotype
-def: "A protein activity phenotype dealing with activity of enzymes." [OMP:WAM]
 is_a: OMP:0000269 ! protein activity phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:10:18Z
@@ -2339,42 +2337,42 @@ creation_date: 2011-07-21T05:10:18Z
 [Term]
 id: OMP:0000299
 name: galactose-1-phosphate uridyl transferase activity
-is_obsolete: true
+is_a: OMP:0000298 ! enzyme activity phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:12:43Z
 
 [Term]
 id: OMP:0000300
 name: increased galactose-1-phosphate uridyl transferase activity
-is_obsolete: true
+is_a: OMP:0000299 ! galactose-1-phosphate uridyl transferase activity
 created_by: mchibucos
 creation_date: 2011-07-21T05:13:05Z
 
 [Term]
 id: OMP:0000301
 name: decreased galactose-1-phosphate uridyl transferase activity
-is_obsolete: true
+is_a: OMP:0000299 ! galactose-1-phosphate uridyl transferase activity
 created_by: mchibucos
 creation_date: 2011-07-21T05:13:27Z
 
 [Term]
 id: OMP:0000302
 name: substrate binding phenotype
-is_obsolete: true
+is_a: OMP:0000298 ! enzyme activity phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:17:18Z
 
 [Term]
 id: OMP:0000303
 name: decreased substrate binding
-is_obsolete: true
+is_a: OMP:0000302 ! substrate binding phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:18:39Z
 
 [Term]
 id: OMP:0000304
 name: increased substrate binding
-is_obsolete: true
+is_a: OMP:0000302 ! substrate binding phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:18:58Z
 
@@ -2535,17 +2533,19 @@ creation_date: 2012-11-02T02:03:42Z
 
 [Term]
 id: OMP:0000334
-name: increased resistance to aminopyrimidine
+name: increased resistance to antifolate compound
 def: "An antifolate compound resistance relative phenotype where resistance is increased relative to a designated control." [OMP:DAS]
+synonym: "decreased sensitivity to antifolate compound" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:38Z
 
 [Term]
 id: OMP:0000335
-name: decreased resistance to aminopyrimidine
+name: decreased resistance to antifolate compound
 def: "An antifolate compound resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
 synonym: "abolished resistance to diaminopyrimidine compound" NARROW []
+synonym: "increased sensitivity to antifolate compound" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:58Z
@@ -3077,7 +3077,7 @@ creation_date: 2012-11-04T02:50:49Z
 
 [Term]
 id: OMP:0000435
-name: resistant to aminopyrimidine
+name: resistant to antifolate compound
 def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an antifolate compound." [OMP:DAS]
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
@@ -3085,7 +3085,7 @@ creation_date: 2012-11-04T02:52:01Z
 
 [Term]
 id: OMP:0000436
-name: not resistant to aminopyrimidine
+name: not resistant to antifolate compound
 def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to an antifolate compound." [OMP:DAS]
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
@@ -3214,6 +3214,7 @@ creation_date: 2013-05-23T01:55:34Z
 id: OMP:0000459
 name: increased caffeine resistance
 def: "A caffeine resistance relative phenotype where resistance is increased relative to a designated control." [OMP:WAM]
+synonym: "decreased caffeine sensitivity" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:11Z
@@ -3223,6 +3224,7 @@ id: OMP:0000460
 name: decreased caffeine resistance
 def: "A caffeine resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
 synonym: "abolished resistance to caffeine compound" NARROW []
+synonym: "increased caffeine sensitivity" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:55Z
@@ -4121,34 +4123,6 @@ created_by: wmeza
 creation_date: 2014-02-11T11:54:51Z
 
 [Term]
-id: OMP:0005102
-name: increased enzyme activity
-is_a: OMP:0000298 ! enzyme activity phenotype
-created_by: wmeza
-creation_date: 2014-04-09T12:13:47Z
-
-[Term]
-id: OMP:0005103
-name: decreased enzyme activity
-is_a: OMP:0000298 ! enzyme activity phenotype
-created_by: wmeza
-creation_date: 2014-04-09T12:19:21Z
-
-[Term]
-id: OMP:0005104
-name: presence of enzyme activity
-is_a: OMP:0000298 ! enzyme activity phenotype
-created_by: wmeza
-creation_date: 2014-04-10T12:16:40Z
-
-[Term]
-id: OMP:0005105
-name: absence of enzyme activity
-is_a: OMP:0000298 ! enzyme activity phenotype
-created_by: wmeza
-creation_date: 2014-04-10T12:27:55Z
-
-[Term]
 id: OMP:0006001
 name: nutrient phenotype
 def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and/or energy release that supports growth and reproduction." [ISBN:9780073402406]
@@ -4175,7 +4149,7 @@ creation_date: 2013-09-03T07:54:22Z
 [Term]
 id: OMP:0006004
 name: increase bud formation
-def: "A bud forming phenotype where the organism(s) has increased bud formation relative to a designated control." [OMP:WAM]
+def: "A bud forming phenotype where the organism(s) has increased bud formation relative to some reference." []
 synonym: "increased buddign index" EXACT []
 is_a: OMP:0000008 ! bud forming
 created_by: jonathanherrera
@@ -4192,7 +4166,7 @@ creation_date: 2013-09-06T16:52:37Z
 [Term]
 id: OMP:0006006
 name: decrease bud formation
-def: "A bud forming phenotype where the organism(s) has decreased bud formation relative to a designated control." [OMP:WAM]
+def: "A bud forming phenotype where the organism(s) has decreased bud formation relative to some reference." []
 synonym: "decrease budding index" EXACT []
 is_a: OMP:0000008 ! bud forming
 created_by: jonathanherrera
@@ -4479,6 +4453,7 @@ id: OMP:0006044
 name: decreased resistance to beta-lactam compound
 def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is decreased relative to some reference." [OMP:JCH]
 synonym: "abolished resistance to beta-lactam compound" NARROW []
+synonym: "increase sensitivity to beta-lactam compound" RELATED []
 is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4487,6 +4462,7 @@ creation_date: 2013-10-11T17:40:34Z
 id: OMP:0006045
 name: increased resistance to beta-lactam compound
 def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is increased relative to some reference." [OMP:JCH]
+synonym: "decreased sensitivity to beta-lactam compound" RELATED []
 is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4512,6 +4488,7 @@ id: OMP:0006048
 name: decreased resistance to bacteriocin compound
 def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is decreased relative to some reference." [OMP:JCH]
 synonym: "abolished resistance to bacteriocin compound" NARROW []
+synonym: "increased sensitivity to bacteriocin compound" RELATED []
 is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -4520,6 +4497,7 @@ creation_date: 2013-10-11T17:44:39Z
 id: OMP:0006049
 name: increased resistance to bacteriocin compound
 def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is increased relative to some reference." [OMP:JCH]
+synonym: "decreased sensitivity to bacteriocin compound" RELATED []
 is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -4545,6 +4523,7 @@ id: OMP:0006052
 name: decreased resistance to azole compound
 def: "An azole compound resistance relative phenotype where resistance to an azole compound is decreased relative to a designated control." [OMP:DAS]
 synonym: "abolished resistance to azole compound" NARROW []
+synonym: "increased resistance to azole compound" RELATED []
 is_a: OMP:0006028 ! azole compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
@@ -4553,6 +4532,7 @@ creation_date: 2013-10-11T17:45:44Z
 id: OMP:0006053
 name: increased resistance to azole compound
 def: "An azole compound resistance relative phenotype where resistance to an azole compound is increased relative to a designated control." [OMP:DAS]
+synonym: "decreased resistance to azole compound" RELATED []
 is_a: OMP:0006028 ! azole compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
@@ -4592,7 +4572,7 @@ id: OMP:0006057
 name: decrease resistance to aminoglycoside compound
 def: "An aminoglycoside compound resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to aminoglycoside compound" NARROW []
-synonym: "increased sensitivity to aminoglycoside compound. " RELATED []
+synonym: "increased sensitivity to aminoglycoside compound" RELATED []
 is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
@@ -4601,6 +4581,7 @@ creation_date: 2013-10-22T19:24:20Z
 id: OMP:0006058
 name: increased resistance to aminoglycoside compound
 def: "An aminoglycoside compound resistance relative phenotype where resistance is increased relative to a designated control." [OMP:JCH]
+synonym: "decreased sensitivity to aminoglycoside compound" RELATED []
 is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
@@ -5233,7 +5214,7 @@ creation_date: 2014-01-31T18:45:09Z
 id: OMP:0007064
 name: phototrophic phenotype
 def: "A metabolic state phenotype where the representative member of a taxonomic unit can use light as the energy source." [ISBN:978-0-07-340240-6, OMP:DAS]
-is_a: OMP:0000224 ! energy metabolism phenotype
+is_a: OMP:0000180 ! metabolic phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:49:00Z
 
@@ -5243,6 +5224,7 @@ name: pteridine compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype where the trait in question is resistance to a pteridine compound." [CHEBI:26373, OMP:DAS]
 synonym: "antifolate resistance" BROAD [CHEBI:73913]
 synonym: "methotrexate resistance" NARROW [CHEBI:44185]
+synonym: "pteridine compound sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: siegele
 creation_date: 2014-02-03T15:39:56Z
