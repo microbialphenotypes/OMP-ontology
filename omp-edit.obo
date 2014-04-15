@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 15:04:2014 11:18
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 15:04:2014 13:45
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -4308,6 +4308,7 @@ id: OMP:0006027
 name: bacteriocin compound resistance phenotype
 def: "Polypeptides synthesized by specific strains of bacteria that are lethal against other strains of the same or related species." [CHEBI:48081]
 synonym: "bacteriocin sensitivity phenotype" RELATED []
+synonym: "Nisin" NARROW [ChEBI:71629]
 xref: CHEBI:48081
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
@@ -4498,6 +4499,7 @@ id: OMP:0006049
 name: increased resistance to bacteriocin compound
 def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is increased relative to some reference." [OMP:JCH]
 synonym: "decreased sensitivity to bacteriocin compound" RELATED []
+synonym: "Nisin" NARROW [ChEBI:71629]
 is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
