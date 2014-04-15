@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:04:2014 14:47
+date: 15:04:2014 14:50
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -2286,13 +2286,6 @@ synonym: "chromosome phenotype" RELATED []
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T04:25:09Z
-
-[Term]
-id: OMP:0000292
-name: <new term>
-is_a: OMP:0000273 ! reference phenotype
-created_by: Marcus
-creation_date: 2014-02-13T02:43:57Z
 
 [Term]
 id: OMP:0000294
