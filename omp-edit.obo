@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:04:2014 19:04
+date: 21:04:2014 13:47
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -3172,7 +3172,7 @@ creation_date: 2013-05-23T01:40:40Z
 [Term]
 id: OMP:0000455
 name: alkaloid resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is toward compounds containing basic nitrogen in a heterocyclic structure." [CheBI:22315, OMP:WAM]
+def: "An antimicrobial compound resistance phenotype where resistance is to compounds containing basic nitrogen in a heterocyclic structure." [CheBI:22315, OMP:WAM]
 synonym: "alkaloid sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
@@ -4302,8 +4302,12 @@ name: bacteriocin compound resistance phenotype
 def: "Polypeptides synthesized by specific strains of bacteria that are lethal against other strains of the same or related species." [CHEBI:48081]
 synonym: "bacteriocin sensitivity phenotype" RELATED []
 synonym: "colicins" NARROW [GO:0015468]
+synonym: "lantibiotic " NARROW [CHEBI:71644]
 synonym: "microcin" NARROW [CHEBI:64627]
 synonym: "Nisin" NARROW [ChEBI:71629]
+synonym: "subtilin" NARROW [Bactibase:BAC045]
+synonym: "type A lantibiotic" NARROW [CHEBI:71645]
+synonym: "type B lantibiotic" NARROW [CHEBI:71647]
 xref: CHEBI:48081
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
