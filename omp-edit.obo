@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:04:2014 13:47
+date: 22:04:2014 12:45
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -4299,7 +4299,7 @@ creation_date: 2013-09-10T17:51:21Z
 [Term]
 id: OMP:0006027
 name: bacteriocin compound resistance phenotype
-def: "Polypeptides synthesized by specific strains of bacteria that are lethal against other strains of the same or related species." [CHEBI:48081]
+def: "An antimicrobial compound resistance phenotype where resistance is to polypeptides synthesized by specific strains of bacteria that are lethal against other strains of the same or related species." [CHEBI:48081]
 synonym: "bacteriocin sensitivity phenotype" RELATED []
 synonym: "colicins" NARROW [GO:0015468]
 synonym: "lantibiotic " NARROW [CHEBI:71644]
