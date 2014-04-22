@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:04:2014 12:45
+date: 22:04:2014 13:53
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -2546,7 +2546,7 @@ creation_date: 2012-11-02T02:04:58Z
 [Term]
 id: OMP:0000336
 name: beta-lactam compound resistance phenotype
-def: "An antimicrobial compound resistance phenotype, where the trait in question is resistance to a member of a broad class of antimicrobial compounds that contain a beta-lactam ring in their molecular structure." [OMP:MCC]
+def: "An antimicrobial compound resistance phenotype where resistance is to a member of a broad class of antimicrobial compounds that contain a beta-lactam ring in their molecular structure." [OMP:MCC]
 synonym: "ampicillin" NARROW [CHEBI:28971]
 synonym: "beta-lactam sensitivity phenotype" RELATED []
 synonym: "carbapenams" NARROW [CHEBI:64510]
