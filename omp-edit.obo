@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 23:04:2014 18:15
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 24:04:2014 17:43
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -28,7 +28,7 @@ def: "A motility phenotype where the organism(s) has decreased motility relative
 comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
 synonym: "abolished motility" NARROW []
 xref: PATO:0002297
-is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0007001 ! altered motility
 intersection_of: OMP:0000001 ! motility phenotype
 intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 creation_date: 2011-03-10T07:02:42Z
@@ -371,7 +371,7 @@ id: OMP:0000045
 name: increased motility
 def: "A motility phenotype where the organism(s) has increased motility relative to some reference." [OMP:MCC]
 xref: PATO:0002298
-is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0007001 ! altered motility
 intersection_of: OMP:0000001 ! motility phenotype
 intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: mchibucos
@@ -404,7 +404,7 @@ creation_date: 2011-04-26T04:27:11Z
 
 [Term]
 id: OMP:0000049
-name: presence of aerotaxis
+name: aerotactic
 def: "An aerotaxis state phenotype where the representative taxonomic unit  possesses the ability to respond to environmental oxygen." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: mchibucos
@@ -462,7 +462,7 @@ creation_date: 2011-04-26T04:42:14Z
 id: OMP:0000056
 name: presence of positive aerotaxis
 def: "An aerotaxis phenotype where an organism possesses the ability to move toward environmental oxygen." [OMP:MCC]
-is_a: OMP:0000049 ! presence of aerotaxis
+is_a: OMP:0000049 ! aerotactic
 created_by: mchibucos
 creation_date: 2011-04-26T04:44:17Z
 
@@ -470,7 +470,7 @@ creation_date: 2011-04-26T04:44:17Z
 id: OMP:0000057
 name: presence of negative aerotaxis
 def: "An aerotaxis phenotype where an organism possesses the ability to move away from environmental oxygen." [OMP:MCC]
-is_a: OMP:0000049 ! presence of aerotaxis
+is_a: OMP:0000049 ! aerotactic
 created_by: mchibucos
 creation_date: 2011-04-26T04:44:17Z
 
@@ -478,7 +478,7 @@ creation_date: 2011-04-26T04:44:17Z
 id: OMP:0000058
 name: absence of positive aerotaxis
 def: "An aerotaxis phenotype where an organism does not possess the ability to move toward environmental oxygen." [OMP:MCC]
-is_a: OMP:0000159 ! absence of aerotaxis
+is_a: OMP:0000159 ! non-aerotactic
 created_by: mchibucos
 creation_date: 2011-04-26T04:44:17Z
 
@@ -486,7 +486,7 @@ creation_date: 2011-04-26T04:44:17Z
 id: OMP:0000059
 name: absence of negative aerotaxis
 def: "An aerotaxis phenotype where an organism does not possess the ability to move away from environmental oxygen." [OMP:MCC]
-is_a: OMP:0000159 ! absence of aerotaxis
+is_a: OMP:0000159 ! non-aerotactic
 created_by: mchibucos
 creation_date: 2011-04-26T04:44:17Z
 
@@ -554,7 +554,7 @@ creation_date: 2011-04-26T05:09:24Z
 
 [Term]
 id: OMP:0000067
-name: swarming motility
+name: motile by swarming
 def: "A motile state phenotype where a population of the representative member of a taxonomic unit displays coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
@@ -906,7 +906,7 @@ creation_date: 2011-02-02T02:45:02Z
 
 [Term]
 id: OMP:0000111
-name: swimming motility
+name: motile by swimming
 def: "A motile state phenotype where the representative member of a taxonomic unit exhibits smooth movement through a liquid medium." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
@@ -914,7 +914,7 @@ creation_date: 2011-02-07T03:17:40Z
 
 [Term]
 id: OMP:0000112
-name: gliding motility
+name: motile by gliding
 def: "A motile state phenotype where the representative member of a taxonomic unit exhibits smooth movement along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
@@ -922,7 +922,7 @@ creation_date: 2011-02-07T03:18:03Z
 
 [Term]
 id: OMP:0000113
-name: twitching motility
+name: motile by twitching
 def: "A cell motility state phenotype where the controlled movement of the representative member of a taxonomic unit is dependent on the presence of type IV pili." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
@@ -1275,7 +1275,7 @@ creation_date: 2011-02-02T02:49:30Z
 
 [Term]
 id: OMP:0000159
-name: absence of aerotaxis
+name: non-aerotactic
 def: "An aerotaxis state phenotype where the representative taxonomic unit does not possess the ability to respond to environmental oxygen." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: adrienne
@@ -2187,7 +2187,7 @@ creation_date: 2011-07-21T02:33:53Z
 
 [Term]
 id: OMP:0000279
-name: uncoordinated motility
+name: motile by uncoordinated movement
 is_a: OMP:0000005 ! motile
 created_by: mchibucos
 creation_date: 2011-07-21T02:35:22Z
@@ -3265,7 +3265,7 @@ id: OMP:0000500
 name: decreased aerotaxis
 def: "An aerotaxis relative phenotype where aerotaxis is decreased reative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
 synonym: "abolished aerotaxis" NARROW []
-is_a: OMP:0000047 ! aerotaxis phenotype
+is_a: OMP:0007076 ! altered aerotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:20:31Z
 
@@ -3273,7 +3273,7 @@ creation_date: 2012-11-02T01:20:31Z
 id: OMP:0000502
 name: increased aerotaxis
 def: "An aerotaxis relative phenotype where aerotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
-is_a: OMP:0000047 ! aerotaxis phenotype
+is_a: OMP:0007076 ! altered aerotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:21:21Z
 
@@ -3282,7 +3282,7 @@ id: OMP:0000503
 name: decreased chemotaxis
 def: "An chemotaxis relative phenotype where chemotaxis is decreased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
 synonym: "abolished chemotaxis" NARROW []
-is_a: OMP:0000048 ! chemotaxis phenotype
+is_a: OMP:0007077 ! altered chemotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:22:28Z
 
@@ -3290,7 +3290,7 @@ creation_date: 2012-11-02T01:22:28Z
 id: OMP:0000505
 name: increased chemotaxis
 def: "An chemotaxis relative phenotype where chemotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
-is_a: OMP:0000048 ! chemotaxis phenotype
+is_a: OMP:0007077 ! altered chemotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:23:12Z
 
@@ -4732,6 +4732,13 @@ created_by: jonathanherrera
 creation_date: 2013-10-24T13:10:50Z
 
 [Term]
+id: OMP:0007001
+name: altered motility
+is_a: OMP:0000001 ! motility phenotype
+created_by: siegele
+creation_date: 2014-04-24T17:38:06Z
+
+[Term]
 id: OMP:0007002
 name: decreased positive DNA supercoiling
 is_a: OMP:0000294 ! DNA supercoiling phenotype
@@ -5350,6 +5357,76 @@ intersection_of: OMP:0007069 ! growth factor requirement phenotype
 intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:42:44Z
+
+[Term]
+id: OMP:0007076
+name: altered aerotaxis
+is_a: OMP:0000047 ! aerotaxis phenotype
+created_by: siegele
+creation_date: 2014-04-24T17:41:34Z
+
+[Term]
+id: OMP:0007077
+name: altered chemotaxis
+is_a: OMP:0000048 ! chemotaxis phenotype
+created_by: siegele
+creation_date: 2014-04-24T17:43:04Z
+
+[Term]
+id: TEST:0007001
+name: decreased motility by gliding
+is_a: OMP:0000002 ! decreased motility
+created_by: DeborahSiegele
+creation_date: 2014-03-02T17:03:34Z
+
+[Term]
+id: TEST:0007002
+name: decreased motility by swarming
+is_a: OMP:0000002 ! decreased motility
+created_by: DeborahSiegele
+creation_date: 2014-03-02T17:03:34Z
+
+[Term]
+id: TEST:0007003
+name: decreased motility by swimming
+is_a: OMP:0000002 ! decreased motility
+created_by: DeborahSiegele
+creation_date: 2014-03-02T17:03:34Z
+
+[Term]
+id: TEST:0007004
+name: decreased motility by twitching
+is_a: OMP:0000002 ! decreased motility
+created_by: DeborahSiegele
+creation_date: 2014-03-02T17:03:34Z
+
+[Term]
+id: TEST:0007005
+name: increased motility by gliding
+is_a: OMP:0000045 ! increased motility
+created_by: DeborahSiegele
+creation_date: 2014-03-02T17:04:14Z
+
+[Term]
+id: TEST:0007006
+name: increased motility by swarming
+is_a: OMP:0000045 ! increased motility
+created_by: DeborahSiegele
+creation_date: 2014-03-02T17:04:14Z
+
+[Term]
+id: TEST:0007007
+name: increased motility by swimming
+is_a: OMP:0000045 ! increased motility
+created_by: DeborahSiegele
+creation_date: 2014-03-02T17:04:14Z
+
+[Term]
+id: TEST:0007008
+name: increased motility by twitching
+is_a: OMP:0000045 ! increased motility
+created_by: DeborahSiegele
+creation_date: 2014-03-02T17:04:14Z
 
 [Typedef]
 id: decreased_relative_to
