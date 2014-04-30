@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 28:04:2014 11:19
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 29:04:2014 21:09
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -28,7 +28,7 @@ def: "A motility phenotype where the organism(s) has decreased motility relative
 comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
 synonym: "abolished motility" NARROW []
 xref: PATO:0002297
-is_a: OMP:0007001 ! altered motility
+is_a: OMP:0000001 ! motility phenotype
 intersection_of: OMP:0000001 ! motility phenotype
 intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 creation_date: 2011-03-10T07:02:42Z
@@ -371,7 +371,7 @@ id: OMP:0000045
 name: increased motility
 def: "A motility phenotype where the organism(s) has increased motility relative to some reference." [OMP:MCC]
 xref: PATO:0002298
-is_a: OMP:0007001 ! altered motility
+is_a: OMP:0000001 ! motility phenotype
 intersection_of: OMP:0000001 ! motility phenotype
 intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: mchibucos
@@ -404,7 +404,7 @@ creation_date: 2011-04-26T04:27:11Z
 
 [Term]
 id: OMP:0000049
-name: aerotactic
+name: presence of aerotaxis
 def: "An aerotaxis state phenotype where the representative taxonomic unit  possesses the ability to respond to environmental oxygen." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: mchibucos
@@ -462,7 +462,7 @@ creation_date: 2011-04-26T04:42:14Z
 id: OMP:0000056
 name: presence of positive aerotaxis
 def: "An aerotaxis phenotype where an organism possesses the ability to move toward environmental oxygen." [OMP:MCC]
-is_a: OMP:0000049 ! aerotactic
+is_a: OMP:0000049 ! presence of aerotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:44:17Z
 
@@ -470,7 +470,7 @@ creation_date: 2011-04-26T04:44:17Z
 id: OMP:0000057
 name: presence of negative aerotaxis
 def: "An aerotaxis phenotype where an organism possesses the ability to move away from environmental oxygen." [OMP:MCC]
-is_a: OMP:0000049 ! aerotactic
+is_a: OMP:0000049 ! presence of aerotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:44:17Z
 
@@ -478,7 +478,7 @@ creation_date: 2011-04-26T04:44:17Z
 id: OMP:0000058
 name: absence of positive aerotaxis
 def: "An aerotaxis phenotype where an organism does not possess the ability to move toward environmental oxygen." [OMP:MCC]
-is_a: OMP:0000159 ! non-aerotactic
+is_a: OMP:0000159 ! absence of aerotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:44:17Z
 
@@ -486,7 +486,7 @@ creation_date: 2011-04-26T04:44:17Z
 id: OMP:0000059
 name: absence of negative aerotaxis
 def: "An aerotaxis phenotype where an organism does not possess the ability to move away from environmental oxygen." [OMP:MCC]
-is_a: OMP:0000159 ! non-aerotactic
+is_a: OMP:0000159 ! absence of aerotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:44:17Z
 
@@ -554,7 +554,7 @@ creation_date: 2011-04-26T05:09:24Z
 
 [Term]
 id: OMP:0000067
-name: motile by swarming
+name: swarming motility
 def: "A motile state phenotype where a population of the representative member of a taxonomic unit displays coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
@@ -746,7 +746,6 @@ creation_date: 2011-02-02T03:23:41Z
 [Term]
 id: OMP:0000090
 name: lifespan
-def: "A growth phenotype dealing with the duration of the an organisms life." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:24:11Z
@@ -906,7 +905,7 @@ creation_date: 2011-02-02T02:45:02Z
 
 [Term]
 id: OMP:0000111
-name: motile by swimming
+name: swimming motility
 def: "A motile state phenotype where the representative member of a taxonomic unit exhibits smooth movement through a liquid medium." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
@@ -914,7 +913,7 @@ creation_date: 2011-02-07T03:17:40Z
 
 [Term]
 id: OMP:0000112
-name: motile by gliding
+name: gliding motility
 def: "A motile state phenotype where the representative member of a taxonomic unit exhibits smooth movement along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
@@ -922,7 +921,7 @@ creation_date: 2011-02-07T03:18:03Z
 
 [Term]
 id: OMP:0000113
-name: motile by twitching
+name: twitching motility
 def: "A cell motility state phenotype where the controlled movement of the representative member of a taxonomic unit is dependent on the presence of type IV pili." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
@@ -1275,7 +1274,7 @@ creation_date: 2011-02-02T02:49:30Z
 
 [Term]
 id: OMP:0000159
-name: non-aerotactic
+name: absence of aerotaxis
 def: "An aerotaxis state phenotype where the representative taxonomic unit does not possess the ability to respond to environmental oxygen." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: adrienne
@@ -2100,7 +2099,6 @@ creation_date: 2011-07-21T02:02:26Z
 [Term]
 id: OMP:0000269
 name: protein activity phenotype
-def: "A microbial phenotype dealing with enzymatic or other type of protein activity." [OMP:WAM]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:05:51Z
@@ -2187,7 +2185,7 @@ creation_date: 2011-07-21T02:33:53Z
 
 [Term]
 id: OMP:0000279
-name: motile by uncoordinated movement
+name: uncoordinated motility
 is_a: OMP:0000005 ! motile
 created_by: mchibucos
 creation_date: 2011-07-21T02:35:22Z
@@ -2325,7 +2323,6 @@ creation_date: 2011-07-21T05:08:18Z
 [Term]
 id: OMP:0000298
 name: enzyme activity phenotype
-def: "A protein activity phenotype dealing with the functions of enzymes." [OMP:WAM]
 is_a: OMP:0000269 ! protein activity phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:10:18Z
@@ -3265,7 +3262,7 @@ id: OMP:0000500
 name: decreased aerotaxis
 def: "An aerotaxis relative phenotype where aerotaxis is decreased reative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
 synonym: "abolished aerotaxis" NARROW []
-is_a: OMP:0007076 ! altered aerotaxis
+is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:20:31Z
 
@@ -3273,7 +3270,7 @@ creation_date: 2012-11-02T01:20:31Z
 id: OMP:0000502
 name: increased aerotaxis
 def: "An aerotaxis relative phenotype where aerotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
-is_a: OMP:0007076 ! altered aerotaxis
+is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:21:21Z
 
@@ -3282,7 +3279,7 @@ id: OMP:0000503
 name: decreased chemotaxis
 def: "An chemotaxis relative phenotype where chemotaxis is decreased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
 synonym: "abolished chemotaxis" NARROW []
-is_a: OMP:0007077 ! altered chemotaxis
+is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:22:28Z
 
@@ -3290,7 +3287,7 @@ creation_date: 2012-11-02T01:22:28Z
 id: OMP:0000505
 name: increased chemotaxis
 def: "An chemotaxis relative phenotype where chemotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
-is_a: OMP:0007077 ! altered chemotaxis
+is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:23:12Z
 
@@ -3912,7 +3909,6 @@ creation_date: 2013-11-11T13:42:44Z
 id: OMP:0005076
 name: increased resistance toward acidic pH stress
 def: "A acidic pH stress relative phenotype were resistance to acidic pH was increased relative to the designated control." [OMP:WAM]
-synonym: "decreased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005040 ! acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:09:55Z
@@ -3921,7 +3917,6 @@ creation_date: 2013-11-15T18:09:55Z
 id: OMP:0005077
 name: decreased resistance toward acidic pH stress
 def: "A acidic pH stress relative phenotype were resistance to acidic pH was reduced relative to the designated control." [OMP:WAM]
-synonym: "increased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005040 ! acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:12:48Z
@@ -3930,7 +3925,6 @@ creation_date: 2013-11-15T18:12:48Z
 id: OMP:0005078
 name: increased resistance toward alkalinic pH stress
 def: "A alkalinic pH stress relative phenotype were resistance to alkalinic pH was increased relative to the designated control." [OMP:WAM]
-synonym: "decreased alkalinic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005041 ! alkalinc pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:14:08Z
@@ -3939,7 +3933,6 @@ creation_date: 2013-11-15T18:14:08Z
 id: OMP:0005079
 name: decreased resistance toward alkalinic pH stress
 def: "A alkalinic pH stress relative phenotype were resistance to alkalinic pH was decreased relative to the designated control." [OMP:WAM]
-synonym: "increased alkalinic pH sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005041 ! alkalinc pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:16:03Z
@@ -4004,7 +3997,6 @@ creation_date: 2013-11-22T16:05:02Z
 id: OMP:0005087
 name: increased resistance toward dessication stress
 def: "A dessication stress relative phenotype where resistance is increased relative to the designated control." [OMP:WAM]
-synonym: "decreased dessication sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005080 ! dessication stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:14:31Z
@@ -4013,7 +4005,6 @@ creation_date: 2013-12-06T14:14:31Z
 id: OMP:0005088
 name: decreased resistance toward dessication stress
 def: "A dessication stress relative phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
-synonym: "increased dessication sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005080 ! dessication stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:15:06Z
@@ -4022,7 +4013,6 @@ creation_date: 2013-12-06T14:15:06Z
 id: OMP:0005089
 name: increased resistance to freeze/thawing stress
 def: "A freeze/thawing stress relative phenotype where resistance is increased relative to the designated control." [OMP:WAM]
-synonym: "increase in freeze/thawing sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005039 ! freeze/thawing stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:28:16Z
@@ -4031,7 +4021,6 @@ creation_date: 2013-12-06T14:28:16Z
 id: OMP:0005090
 name: decreased resistance to freeze/thawing stress
 def: "A freeze/thawing stress relative phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
-synonym: "decreased freeze/thaw sensitivity. " RELATED [OMP:WAM]
 is_a: OMP:0005039 ! freeze/thawing stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:28:46Z
@@ -4039,8 +4028,7 @@ creation_date: 2013-12-06T14:28:46Z
 [Term]
 id: OMP:0005091
 name: increased resistance toward oxidative stress
-def: "A oxidative stress relative phenotype where resistance is enhanced relative to the designated control." [OMP:WAM]
-synonym: "decreased oxidative sensitivity " NARROW [OMP:WAM]
+def: "A oxidative stress phenotype where resistance is enhanced relative to the designated control." [OMP:WAM]
 is_a: OMP:0005038 ! oxidative stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T17:57:46Z
@@ -4048,26 +4036,23 @@ creation_date: 2013-12-06T17:57:46Z
 [Term]
 id: OMP:0005092
 name: decreased resistance toward oxidative stress
-def: "A oxidative stress relative phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
-synonym: "increased oxidative sensitivity" NARROW [OMP:WAM]
+def: "A oxidative stress phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
 is_a: OMP:0005038 ! oxidative stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T17:59:14Z
 
 [Term]
 id: OMP:0005093
-name: increase resistance to gamma ray radiation
-def: "A  gamma radiation relative phenotype where resistance is enhanced relative to the reference condition." [OMP:WAM]
-synonym: "decrease in gamma ray sensitivity" NARROW [OMP:WAM]
+name: increase resistance to gamma radiation
+def: "A  gamma radiation phenotype where resistance is enhanced relative to the reference condition." [OMP:WAM]
 is_a: OMP:0005085 ! gamma ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:05:40Z
 
 [Term]
 id: OMP:0005094
-name: decrease resistance to gamma ray radiation
-def: "A  gamma radiation relative phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
-synonym: "increase in gamma ray sensitivity" NARROW [OMP:WAM]
+name: decrease resistance to gamma radiation
+def: "A  gamma radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
 is_a: OMP:0005085 ! gamma ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:06:05Z
@@ -4075,8 +4060,7 @@ creation_date: 2013-12-17T13:06:05Z
 [Term]
 id: OMP:0005095
 name: increased resistance toward x-ray radiation
-def: "An x-ray radiation relative phenotype were resistance is enhanced relative to the reference strain." [OMP:WAM]
-synonym: "decrease in x-ray sensitivity" NARROW [OMP:WAM]
+def: "An x-ray radiation phenotype were resistance is enhanced relative to the reference strain." [OMP:WAM]
 is_a: OMP:0005086 ! x-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:26:43Z
@@ -4084,8 +4068,7 @@ creation_date: 2013-12-17T13:26:43Z
 [Term]
 id: OMP:0005096
 name: decreased resistance toward x-ray radiation
-def: "An x-ray radiation relative phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
-synonym: "increase in x-ray sensitivity " NARROW [OMP:WAM]
+def: "An x-ray radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
 is_a: OMP:0005086 ! x-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:28:20Z
@@ -4093,7 +4076,7 @@ creation_date: 2013-12-17T13:28:20Z
 [Term]
 id: OMP:0005097
 name: increased resistance to UV radiation
-def: "A UV radiation relative phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+def: "A UV radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
 synonym: "decrease in UV sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005084 ! UV radiation
 created_by: wmeza
@@ -4102,7 +4085,7 @@ creation_date: 2013-12-17T13:41:53Z
 [Term]
 id: OMP:0005098
 name: decreased resistance toward UV radiation
-def: "A UV radiation relative phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+def: "A UV radiation phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
 synonym: "increase in UV sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005084 ! UV radiation
 created_by: wmeza
@@ -4131,38 +4114,6 @@ def: "A growth phenotype where growth is dependent on the presence of an aminogl
 is_a: OMP:0000174 ! growth phenotype
 created_by: wmeza
 creation_date: 2014-02-11T11:54:51Z
-
-[Term]
-id: OMP:0005102
-name: increase in enzyme activity
-def: "An enzyme activity relative phenotype where there is an increase in enzyme activity." [OMP:WAM]
-is_a: OMP:0000298 ! enzyme activity phenotype
-created_by: wmeza
-creation_date: 2014-04-17T10:54:45Z
-
-[Term]
-id: OMP:0005103
-name: decrease in enzyme activity
-def: "An enzyme activity relative phenotype where there is a reduction in enzyme activity." [OMP:WAM]
-is_a: OMP:0000298 ! enzyme activity phenotype
-created_by: wmeza
-creation_date: 2014-04-17T10:55:05Z
-
-[Term]
-id: OMP:0005104
-name: presence of enzyme activity
-def: "A enzyme activity state phenotype where the enzyme is functioning." [OMP:WAM]
-is_a: OMP:0000298 ! enzyme activity phenotype
-created_by: wmeza
-creation_date: 2014-04-17T17:09:56Z
-
-[Term]
-id: OMP:0005105
-name: absence of enzyme activity
-def: "A enzyme activity state phenotype where the enzyme is not functioning." [OMP:WAM]
-is_a: OMP:0000298 ! enzyme activity phenotype
-created_by: wmeza
-creation_date: 2014-04-17T17:13:04Z
 
 [Term]
 id: OMP:0006001
@@ -4434,7 +4385,7 @@ creation_date: 2013-09-10T18:37:31Z
 [Term]
 id: OMP:0006036
 name: decreased resistance to macrolide compound
-def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is decreased relative to a designated control." [OMP:JCH]
+def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is decreased relative to some reference." [OMP:JCH]
 synonym: "abolished resistance to macrolide compound" NARROW []
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
@@ -4443,7 +4394,7 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006037
 name: increased resistance to macrolide compound
-def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is increased relative to a designated control." [OMP:JCH]
+def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is increased relative to some reference." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4467,7 +4418,7 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006040
 name: decreased resistance to quinolone compound
-def: "A quinolone compound resistance relative phenotype where resistance to a quinolone compound is decreased relative to a designated control." [OMP:JCH]
+def: "A quinolone compound resistance relative phenotype where resistance to a quinolone compound is decreased relative to some reference." [OMP:JCH]
 synonym: "abolished resistance to quinoline compound" NARROW []
 is_a: OMP:0006029 ! quinolone compound resistance phenotype
 created_by: jonathanherrera
@@ -4476,7 +4427,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006041
 name: increased resistance to quinolone compound
-def: "A quinolone compound resistance relative phenotype where resistance to a quinolone compound is increased relative to a designated control." [OMP:JCH]
+def: "A quinolone compound resistance relative phenotype where resistance to a quinolone compound is increased relative to some reference." [OMP:JCH]
 is_a: OMP:0006029 ! quinolone compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
@@ -4500,7 +4451,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006044
 name: decreased resistance to beta-lactam compound
-def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is decreased relative to a designated control." [OMP:JCH]
+def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is decreased relative to some reference." [OMP:JCH]
 synonym: "abolished resistance to beta-lactam compound" NARROW []
 synonym: "increase sensitivity to beta-lactam compound" RELATED []
 is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
@@ -4510,7 +4461,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006045
 name: increased resistance to beta-lactam compound
-def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is increased relative to a designated control." [OMP:JCH]
+def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is increased relative to some reference." [OMP:JCH]
 synonym: "decreased sensitivity to beta-lactam compound" RELATED []
 is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
 created_by: jonathanherrera
@@ -4654,7 +4605,7 @@ creation_date: 2013-10-22T19:24:20Z
 [Term]
 id: OMP:0006061
 name: decreased resistance to tetracycline compound
-def: "A tetracycline compound resistance relative phenotype where resistance to a tetracycline compound is decreased relative to a designated control." [OMP:JCH]
+def: "A tetracycline compound resistance relative phenotype where resistance to a tetracycline compound is decreased relative to some reference." [OMP:JCH]
 synonym: "abolished resistance to tetracycline compound" NARROW []
 is_a: OMP:0006062 ! tetracycline compound resistance phenotype
 created_by: jonathanherrera
@@ -4673,7 +4624,7 @@ creation_date: 2013-10-23T17:21:25Z
 [Term]
 id: OMP:0006063
 name: increased resistance to tetracycline compound
-def: "A tetracycline compound resistance relative phenotype where resistance to a tetracycline compound is increased relative to a designated control." [OMP:JCH]
+def: "A tetracycline compound resistance relative phenotype where resistance to a tetracycline compound is increased relative to some reference." [OMP:JCH]
 is_a: OMP:0006062 ! tetracycline compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
@@ -4699,7 +4650,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006066
 name: chloramphenicol compound resistance phenotype
-def: "A bacteriostatic compound that stops bacterial growth by inhibiting protein synthesis." [ISBN:9780072992915, OMP:JCH]
+def: "An antimicrobial compound resistance phenotype where resistance is to a member an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, ISBN:9780072992915, OMP:JCH]
 synonym: "chloramphenicol sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
@@ -4708,7 +4659,7 @@ creation_date: 2013-10-24T12:57:25Z
 [Term]
 id: OMP:0006067
 name: decrease resistance to chloramphenicol compound
-def: "A chloramphenicol compound resistance relative phenotype where resistance to a chloramphenicol compound is decreased relative to a designated control." [OMP:JCH]
+def: "A chloramphenicol compound resistance relative phenotype where resistance to a chloramphenicol compound is decreased relative to some reference." [OMP:JCH]
 synonym: "abolished resistance to quinoline compound" NARROW []
 is_a: OMP:0006066 ! chloramphenicol compound resistance phenotype
 created_by: jonathanherrera
@@ -4717,7 +4668,7 @@ creation_date: 2013-10-24T19:41:11Z
 [Term]
 id: OMP:0006068
 name: increased resistance to chloramphenicol compound
-def: "A chloramphenicol compound resistance relative phenotype where resistance to a chloramphenicol compound is increased relative to a designated control." [OMP:JCH]
+def: "A chloramphenicol compound resistance relative phenotype where resistance to a chloramphenicol compound is increased relative to some reference." [OMP:JCH]
 is_a: OMP:0006066 ! chloramphenicol compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
@@ -4744,13 +4695,6 @@ name: resistant to trimethroprim
 is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-10-24T13:10:50Z
-
-[Term]
-id: OMP:0007001
-name: altered motility
-is_a: OMP:0000001 ! motility phenotype
-created_by: siegele
-creation_date: 2014-04-24T17:38:06Z
 
 [Term]
 id: OMP:0007002
@@ -5371,76 +5315,6 @@ intersection_of: OMP:0007069 ! growth factor requirement phenotype
 intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:42:44Z
-
-[Term]
-id: OMP:0007076
-name: altered aerotaxis
-is_a: OMP:0000047 ! aerotaxis phenotype
-created_by: siegele
-creation_date: 2014-04-24T17:41:34Z
-
-[Term]
-id: OMP:0007077
-name: altered chemotaxis
-is_a: OMP:0000048 ! chemotaxis phenotype
-created_by: siegele
-creation_date: 2014-04-24T17:43:04Z
-
-[Term]
-id: TEST:0007001
-name: decreased motility by gliding
-is_a: OMP:0000002 ! decreased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:03:34Z
-
-[Term]
-id: TEST:0007002
-name: decreased motility by swarming
-is_a: OMP:0000002 ! decreased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:03:34Z
-
-[Term]
-id: TEST:0007003
-name: decreased motility by swimming
-is_a: OMP:0000002 ! decreased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:03:34Z
-
-[Term]
-id: TEST:0007004
-name: decreased motility by twitching
-is_a: OMP:0000002 ! decreased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:03:34Z
-
-[Term]
-id: TEST:0007005
-name: increased motility by gliding
-is_a: OMP:0000045 ! increased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:04:14Z
-
-[Term]
-id: TEST:0007006
-name: increased motility by swarming
-is_a: OMP:0000045 ! increased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:04:14Z
-
-[Term]
-id: TEST:0007007
-name: increased motility by swimming
-is_a: OMP:0000045 ! increased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:04:14Z
-
-[Term]
-id: TEST:0007008
-name: increased motility by twitching
-is_a: OMP:0000045 ! increased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:04:14Z
 
 [Typedef]
 id: decreased_relative_to
