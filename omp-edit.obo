@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:04:2014 23:52
+date: 29:04:2014 23:57
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -2456,7 +2456,7 @@ creation_date: 2012-04-05T03:35:22Z
 
 [Term]
 id: OMP:0000321
-name: macrolide compound resistance phenotype
+name: macrolide resistance phenotype
 def: "An antimicrobial compound resistance phenotype, where the trait in question is resistance to a macrolide drug.  Macrolides contain a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars." [ISBN:9780073375267, OMP:MCC]
 comment: Macrolide antibiotics are effective inhibitors of bacterial protein biosynthesis. They bind to the large 50S ribosomal subunit at or near the peptidyl transferase center and block the elongation of the peptide chain.
 synonym: "Azithromycin" NARROW [CHEBI:2955]
@@ -2548,7 +2548,7 @@ creation_date: 2012-11-02T02:04:58Z
 
 [Term]
 id: OMP:0000336
-name: beta-lactam compound resistance phenotype
+name: beta-lactam resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a member of a broad class of antimicrobial compounds that contain a beta-lactam ring in their molecular structure." [OMP:MCC]
 synonym: "ampicillin" NARROW [CHEBI:28971]
 synonym: "beta-lactam sensitivity phenotype" RELATED []
@@ -4347,7 +4347,7 @@ creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006027
-name: bacteriocin compound resistance phenotype
+name: bacteriocin resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to polypeptides synthesized by specific strains of bacteria that are lethal against other strains of the same or related species." [CHEBI:48081]
 synonym: "bacteriocin sensitivity phenotype" RELATED []
 synonym: "colicins" NARROW [GO:0015468]
@@ -4364,7 +4364,7 @@ creation_date: 2013-10-04T16:57:43Z
 
 [Term]
 id: OMP:0006028
-name: azole compound resistance phenotype
+name: azole resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a heteromonocyclic organic compound consisting of a mancude five-membered ring containing nitrogen." [CHEBI:68452, OMP:DAS]
 comment: Azoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
 synonym: "azole sensitivity phenotype" RELATED []
@@ -4375,7 +4375,7 @@ creation_date: 2013-10-10T19:15:32Z
 
 [Term]
 id: OMP:0006029
-name: quinolone compound resistance phenotype
+name: quinolone resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a synthetic compound that inhibit nucleic acid synthesis." [ISBN:9780072992915, OMP:JCH]
 synonym: "quinoline sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
@@ -4436,7 +4436,7 @@ id: OMP:0006036
 name: decreased resistance to macrolide compound
 def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to macrolide compound" NARROW []
-is_a: OMP:0000321 ! macrolide compound resistance phenotype
+is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
@@ -4444,7 +4444,7 @@ creation_date: 2013-10-11T17:35:04Z
 id: OMP:0006037
 name: increased resistance to macrolide compound
 def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000321 ! macrolide compound resistance phenotype
+is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
@@ -4452,7 +4452,7 @@ creation_date: 2013-10-11T17:35:04Z
 id: OMP:0006038
 name: not resistant to macrolide compound
 def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to a macrolide compound." [OMP:JCH]
-is_a: OMP:0000321 ! macrolide compound resistance phenotype
+is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
@@ -4460,7 +4460,7 @@ creation_date: 2013-10-11T17:35:04Z
 id: OMP:0006039
 name: resistant to macrolide compound
 def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic is resistant to a macrolide compound." [OMP:JCH]
-is_a: OMP:0000321 ! macrolide compound resistance phenotype
+is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
@@ -4469,7 +4469,7 @@ id: OMP:0006040
 name: decreased resistance to quinolone compound
 def: "A quinolone compound resistance relative phenotype where resistance to a quinolone compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to quinoline compound" NARROW []
-is_a: OMP:0006029 ! quinolone compound resistance phenotype
+is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
 
@@ -4477,7 +4477,7 @@ creation_date: 2013-10-11T17:38:00Z
 id: OMP:0006041
 name: increased resistance to quinolone compound
 def: "A quinolone compound resistance relative phenotype where resistance to a quinolone compound is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006029 ! quinolone compound resistance phenotype
+is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
 
@@ -4485,7 +4485,7 @@ creation_date: 2013-10-11T17:38:00Z
 id: OMP:0006042
 name: not resistant to quinolone compound
 def: "A quinoline compound resistance state phenotype where the representative member of a taxonomic is not resistant to a quinoline compound." [OMp:JCH]
-is_a: OMP:0006029 ! quinolone compound resistance phenotype
+is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
 
@@ -4493,7 +4493,7 @@ creation_date: 2013-10-11T17:38:00Z
 id: OMP:0006043
 name: resistant to quinolone compound
 def: "A quinoline compound resistance state phenotype where the representative member of a taxonomic is resistant to a quinoline compound." [OMP:JCH]
-is_a: OMP:0006029 ! quinolone compound resistance phenotype
+is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
 
@@ -4503,7 +4503,7 @@ name: decreased resistance to beta-lactam compound
 def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to beta-lactam compound" NARROW []
 synonym: "increase sensitivity to beta-lactam compound" RELATED []
-is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
+is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
 
@@ -4512,7 +4512,7 @@ id: OMP:0006045
 name: increased resistance to beta-lactam compound
 def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to beta-lactam compound" RELATED []
-is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
+is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
 
@@ -4520,7 +4520,7 @@ creation_date: 2013-10-11T17:40:34Z
 id: OMP:0006046
 name: not resistant to beta-lactam compound
 def: "A beta-lactam compound resistance state phenotype where the representative member of a taxonomic is not resistant to a beta-lactam compound." [OMP:JCH]
-is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
+is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
 
@@ -4528,7 +4528,7 @@ creation_date: 2013-10-11T17:40:34Z
 id: OMP:0006047
 name: resistant to beta-lactam compound
 def: "An beta-lactam compound resistance state phenotype where the representative member of a taxonomic unit is resistant to a beta-lactam compound." [OMP:JCH]
-is_a: OMP:0000336 ! beta-lactam compound resistance phenotype
+is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
 
@@ -4538,7 +4538,7 @@ name: decreased resistance to bacteriocin compound
 def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is decreased relative to some reference." [OMP:JCH]
 synonym: "abolished resistance to bacteriocin compound" NARROW []
 synonym: "increased sensitivity to bacteriocin compound" RELATED []
-is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
+is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
 
@@ -4547,7 +4547,7 @@ id: OMP:0006049
 name: increased resistance to bacteriocin compound
 def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is increased relative to some reference." [OMP:JCH]
 synonym: "decreased sensitivity to bacteriocin compound" RELATED []
-is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
+is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
 
@@ -4555,7 +4555,7 @@ creation_date: 2013-10-11T17:44:39Z
 id: OMP:0006050
 name: not resistant to bacteriocin compound
 def: "A bacteriocin compound resistance state phenotype where the representative member of a taxonomic is not resistant to a bacteriocin compound." [OMP:JCH]
-is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
+is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
 
@@ -4563,7 +4563,7 @@ creation_date: 2013-10-11T17:44:39Z
 id: OMP:0006051
 name: resistant to bacteriocin compound
 def: "A bacteriocin compound resistance state phenotype where the representative member of a taxonomic unit is resistant to a bacteriocin compound." [OMP:JCH]
-is_a: OMP:0006027 ! bacteriocin compound resistance phenotype
+is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
 
@@ -4573,7 +4573,7 @@ name: decreased resistance to azole compound
 def: "An azole compound resistance relative phenotype where resistance to an azole compound is decreased relative to a designated control." [OMP:DAS]
 synonym: "abolished resistance to azole compound" NARROW []
 synonym: "increased resistance to azole compound" RELATED []
-is_a: OMP:0006028 ! azole compound resistance phenotype
+is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
@@ -4582,7 +4582,7 @@ id: OMP:0006053
 name: increased resistance to azole compound
 def: "An azole compound resistance relative phenotype where resistance to an azole compound is increased relative to a designated control." [OMP:DAS]
 synonym: "decreased resistance to azole compound" RELATED []
-is_a: OMP:0006028 ! azole compound resistance phenotype
+is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
@@ -4590,7 +4590,7 @@ creation_date: 2013-10-11T17:45:44Z
 id: OMP:0006054
 name: not resistant to azole compound
 def: "An azole compound resistance state phenotype where the representative member of a taxonomic is not resistant to an azole compound." [OMP:DAS]
-is_a: OMP:0006028 ! azole compound resistance phenotype
+is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
@@ -4598,13 +4598,13 @@ creation_date: 2013-10-11T17:45:44Z
 id: OMP:0006055
 name: resistant to azole compound
 def: "An azole compound resistance state phenotype where the representative member of a taxonomic is resistant to an azole compound." [OMP:DAS]
-is_a: OMP:0006028 ! azole compound resistance phenotype
+is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
 [Term]
 id: OMP:0006056
-name: aminoglycoside compound resistance phenotype
+name: aminoglycoside resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a compound containing a cyclohexane ring and amino sugars." [CHEBI:22507, ISBN:978-0-07-299291-5, OMP:JCH]
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
@@ -4622,7 +4622,7 @@ name: decrease resistance to aminoglycoside compound
 def: "An aminoglycoside compound resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to aminoglycoside compound" NARROW []
 synonym: "increased sensitivity to aminoglycoside compound" RELATED []
-is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
+is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -4631,7 +4631,7 @@ id: OMP:0006058
 name: increased resistance to aminoglycoside compound
 def: "An aminoglycoside compound resistance relative phenotype where resistance is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to aminoglycoside compound" RELATED []
-is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
+is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -4639,7 +4639,7 @@ creation_date: 2013-10-22T19:24:20Z
 id: OMP:0006059
 name: not resistant to aminoglycoside compound
 def: "An aminoglycoside compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to an antifolate compound." [OMP:JCH]
-is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
+is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -4647,7 +4647,7 @@ creation_date: 2013-10-22T19:24:20Z
 id: OMP:0006060
 name: resistant to aminoglycoside compound
 def: "An aminoglycoside compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an aminoglycoside compound." [OMP:JCH]
-is_a: OMP:0006056 ! aminoglycoside compound resistance phenotype
+is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -4656,13 +4656,13 @@ id: OMP:0006061
 name: decreased resistance to tetracycline compound
 def: "A tetracycline compound resistance relative phenotype where resistance to a tetracycline compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to tetracycline compound" NARROW []
-is_a: OMP:0006062 ! tetracycline compound resistance phenotype
+is_a: OMP:0006062 ! tetracycline resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
 
 [Term]
 id: OMP:0006062
-name: tetracycline compound resistance phenotype
+name: tetracycline resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a compound containing four ring structure and side chains." [ISBN:978-0-07-299291-5, OMP:JCH]
 synonym: "oxytetracycline " NARROW [CHEBI:27701]
 synonym: "tetracycline sensitivity phenotype" RELATED []
@@ -4674,7 +4674,7 @@ creation_date: 2013-10-23T17:21:25Z
 id: OMP:0006063
 name: increased resistance to tetracycline compound
 def: "A tetracycline compound resistance relative phenotype where resistance to a tetracycline compound is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006062 ! tetracycline compound resistance phenotype
+is_a: OMP:0006062 ! tetracycline resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
 
@@ -4684,7 +4684,7 @@ name: not resistant to tetracycline compound
 def: "A tetracycline compound resistance state phenotype where the representative member of a taxonomic is not resistant to a tetracycline compound." [OMP:JCH]
 synonym: "chlortetracycline" NARROW [OMP:JCH]
 synonym: "oxytetracycline " NARROW [OMP:JCH]
-is_a: OMP:0006062 ! tetracycline compound resistance phenotype
+is_a: OMP:0006062 ! tetracycline resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
 
@@ -4692,13 +4692,13 @@ creation_date: 2013-10-23T19:27:35Z
 id: OMP:0006065
 name: resistant to tetracycline compound
 def: "A tetracycline compound resistance state phenotype where the representative member of a taxonomic is resistant to a tetracycline compound." [OMP:JCH]
-is_a: OMP:0006062 ! tetracycline compound resistance phenotype
+is_a: OMP:0006062 ! tetracycline resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
 
 [Term]
 id: OMP:0006066
-name: chloramphenicol compound resistance phenotype
+name: chloramphenicol resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a member an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, ISBN:9780072992915, OMP:JCH]
 synonym: "chloramphenicol sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
@@ -4710,7 +4710,7 @@ id: OMP:0006067
 name: decrease resistance to chloramphenicol compound
 def: "A chloramphenicol compound resistance relative phenotype where resistance to a chloramphenicol compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to quinoline compound" NARROW []
-is_a: OMP:0006066 ! chloramphenicol compound resistance phenotype
+is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
 
@@ -4718,7 +4718,7 @@ creation_date: 2013-10-24T19:41:11Z
 id: OMP:0006068
 name: increased resistance to chloramphenicol compound
 def: "A chloramphenicol compound resistance relative phenotype where resistance to a chloramphenicol compound is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006066 ! chloramphenicol compound resistance phenotype
+is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
 
@@ -4726,7 +4726,7 @@ creation_date: 2013-10-24T19:41:11Z
 id: OMP:0006069
 name: not resistant to chloramphenicol compound
 def: "A chloramphenicol compound resistance state phenotype where the representative member of a taxonomic is not resistant to a chloramphenicol compound." [OMP:JCH]
-is_a: OMP:0006066 ! chloramphenicol compound resistance phenotype
+is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
 
@@ -4734,7 +4734,7 @@ creation_date: 2013-10-24T19:41:11Z
 id: OMP:0006070
 name: resistant to chloramphenicol compound
 def: "A chloramphenicol compound resistance state phenotype where the representative member of a taxonomic is resistant to a chloramphenicol compound." [OMP:JCH]
-is_a: OMP:0006066 ! chloramphenicol compound resistance phenotype
+is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
 
@@ -4772,7 +4772,7 @@ name: resistant to pteridine compounds
 def: "An antimicrobial compound state phenotype where the representative member of a taxonomic unit is resistant to pteridine compounds." [CHEBI:27601, OMP:DAS]
 synonym: "antifolate compound resistance" RELATED [CHEBI:73913]
 synonym: "methotrexate resistance" RELATED [CHEBI:44185]
-is_a: OMP:0007065 ! pteridine compound resistance phenotype
+is_a: OMP:0007065 ! pteridine resistance phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:03:55Z
 
@@ -5276,7 +5276,7 @@ creation_date: 2014-01-31T18:49:00Z
 
 [Term]
 id: OMP:0007065
-name: pteridine compound resistance phenotype
+name: pteridine resistance phenotype
 def: "An antimicrobial compound resistance phenotype where the trait in question is resistance to a pteridine compound." [CHEBI:26373, OMP:DAS]
 synonym: "antifolate resistance" BROAD [CHEBI:73913]
 synonym: "methotrexate resistance" NARROW [CHEBI:44185]
