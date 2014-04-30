@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 30:04:2014 02:01
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 30:04:2014 16:11
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -4324,7 +4324,7 @@ creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006024
-name: heterotroph
+name: heterotrophic
 def: "A carbon source utilization state phenotype where an organism uses organic molecules as the carbon source." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: jonathanherrera
@@ -4832,7 +4832,7 @@ creation_date: 2013-09-11T17:14:56Z
 
 [Term]
 id: OMP:0007012
-name: autotroph
+name: autotrophic
 def: "A carbon source utilization state phenotype where an organism can use carbon dioxide (CO2) as the carbon source." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: siegele
@@ -4859,42 +4859,42 @@ creation_date: 2013-09-13T15:20:24Z
 
 [Term]
 id: OMP:0007015
-name: requirement for amino acid, state phenotype
-def: "An amino acid requirement phenotype where an organism cannot synthesize one or more amino acids." [OMP:DAS]
-is_a: OMP:0007038 ! amino acid requirement phenotype
+name: make obsolete - requirement for amino acid(s)
+def: "An amino acid requirement state phenotype where an organism cannot synthesize one or more amino acids." [OMP:DAS]
+is_a: OMP:0007038 ! amino acid requirement
 created_by: siegele
 creation_date: 2013-09-16T12:47:41Z
 
 [Term]
 id: OMP:0007016
-name: purine/pyrimidine requirement, state phenotype
+name: make obsolete - purine/pyrimidine requirement, state phenotype
 def: "A purine/pyrimidine requirement state phenotype where the representative member of a taxonomic unit cannot synthesize one or more purine or pyrimidine bases required for growth." [OMP:DAS]
-is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
+is_a: OMP:0007039 ! purine/pyrimidine requirement
 created_by: siegele
 creation_date: 2013-09-16T12:48:22Z
 
 [Term]
 id: OMP:0007017
-name: vitamin/enzyme cofactor requirement
+name: make obsolete - vitamin/enzyme cofactor requirement
 def: "A vitamin/enzyme cofactor state phenotype where the representative member of a taxonomic unita taxonomic unit cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
-is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
+is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement
 created_by: siegele
 creation_date: 2013-09-16T12:49:50Z
 
 [Term]
 id: OMP:0007018
-name: prototroph
+name: prototrophic
 def: "A growth factor utilization state phenotype where an organism can synthesize all organic compounds essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
-is_a: OMP:0007044 ! growth factor utilization phenotype
+is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:29:19Z
 
 [Term]
 id: OMP:0007019
-name: increased amino acid requirement
+name: increased requirement for amino acid(s)
 def: "An amino acid requirement relative phenotype where an organism's requirement for one or more amino acids is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007038 ! amino acid requirement phenotype
-intersection_of: OMP:0007038 ! amino acid requirement phenotype
+is_a: OMP:0007080 ! altered amino acid requirement
+intersection_of: OMP:0007038 ! amino acid requirement
 intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:30:07Z
@@ -4909,11 +4909,11 @@ creation_date: 2013-09-17T16:10:51Z
 
 [Term]
 id: OMP:0007021
-name: decreased amino acid requirement
+name: decreased requirement for amino acid(s)
 def: "An amino acid requirement relative phenotype where an organism's requirement for one or more amino acids is decreased requirement relative to a designated control." [OMP:DAS]
 synonym: "abolished amino acid requirement" EXACT []
-is_a: OMP:0007038 ! amino acid requirement phenotype
-intersection_of: OMP:0007038 ! amino acid requirement phenotype
+is_a: OMP:0007080 ! altered amino acid requirement
+intersection_of: OMP:0007038 ! amino acid requirement
 intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:13:20Z
@@ -4923,8 +4923,8 @@ id: OMP:0007022
 name: decreased purine/pyrimidine requirement
 def: "A purine/pyrimidine requirement phenotype where an organism's requirement for a purine or pyrimidine base is decreased relative to a designated control." [OMP:DAS]
 synonym: "abolished purine/pyrimidine requirement" EXACT []
-is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
-intersection_of: OMP:0007039 ! purine/pyrimidine requirement phenotype
+is_a: OMP:0007081 ! altered purine/pyrimidine requirement
+intersection_of: OMP:0007039 ! purine/pyrimidine requirement
 intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
@@ -4933,8 +4933,8 @@ creation_date: 2013-09-17T16:30:10Z
 id: OMP:0007023
 name: increased purine/pyrimidine requirement
 def: "A purine/pyrimidine requirement relative phenotype where an organism's requirement for purine or pyrimidine bases is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007039 ! purine/pyrimidine requirement phenotype
-intersection_of: OMP:0007039 ! purine/pyrimidine requirement phenotype
+is_a: OMP:0007081 ! altered purine/pyrimidine requirement
+intersection_of: OMP:0007039 ! purine/pyrimidine requirement
 intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:30:36Z
@@ -4943,7 +4943,7 @@ creation_date: 2013-09-17T16:30:36Z
 id: OMP:0007024
 name: increased vitamin/enzyme cofactor requirement
 def: "A vitamin/enzyme cofactor requirement phenotype where the organism has an increased requirement relative to some reference for a vitamin/enzyme cofactor." [OMP:DAS]
-is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
+is_a: OMP:0007082 ! altered vitamin/enzyme cofactor requirement
 created_by: siegele
 creation_date: 2013-09-17T16:31:05Z
 
@@ -4952,7 +4952,7 @@ id: OMP:0007025
 name: decreased vitamin/enzyme cofactor requirement
 def: "A vitamin/enzyme cofactor requirement phenotype where the organism has a decreased requirement relative to some reference for a vitamin/enzyme cofactor." [OMP:DAS]
 synonym: "abolished vitamin/enzyme cofactor requirement" EXACT []
-is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement phenotype
+is_a: OMP:0007082 ! altered vitamin/enzyme cofactor requirement
 created_by: siegele
 creation_date: 2013-09-17T16:33:34Z
 
@@ -5057,33 +5057,33 @@ creation_date: 2013-09-28T21:08:02Z
 
 [Term]
 id: OMP:0007038
-name: amino acid requirement phenotype
-def: "A growth factor requirement phenotype where the required growth factor is an amino acid." [OMP:DAS]
-is_a: OMP:0007069 ! growth factor requirement phenotype
+name: amino acid requirement
+def: "A auxotrophic phenotype where the required growth factor is an amino acid." [OMP:DAS]
+is_a: OMP:0007069 ! auxotrophic
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:27:05Z
 
 [Term]
 id: OMP:0007039
-name: purine/pyrimidine requirement phenotype
+name: purine/pyrimidine requirement
 def: "An auxotrophic phenotype where the required growth factor is a purine or pyrimidine base." [OMP:DAS]
-is_a: OMP:0007069 ! growth factor requirement phenotype
+is_a: OMP:0007069 ! auxotrophic
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:33:05Z
 
 [Term]
 id: OMP:0007040
-name: vitamin/enzyme cofactor requirement phenotype
+name: vitamin/enzyme cofactor requirement
 def: "An auxotrophic phenotype where the required growth factor is a vitamin or enzyme cofactor." [OMP:DAS]
-is_a: OMP:0007069 ! growth factor requirement phenotype
+is_a: OMP:0007069 ! auxotrophic
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:36:46Z
 
 [Term]
 id: OMP:0007041
-name: auxotroph, state phenotype
+name: make obsolete - auxotroph, state phenotype
 def: "A growth factor requirement state phenotype where an organism cannot synthesize one or more growth factors, but must obtain them from the environment." [ISBN:9780878936083, OMP:DAS]
-is_a: OMP:0007069 ! growth factor requirement phenotype
+is_a: OMP:0007069 ! auxotrophic
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:39:24Z
 
@@ -5105,7 +5105,7 @@ creation_date: 2013-09-29T09:41:48Z
 
 [Term]
 id: OMP:0007044
-name: growth factor utilization phenotype
+name: growth factor requirement phenotype
 def: "A nutrient utilization phenotype where the nutrient is an essential organic compound." [OMP:DAS]
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: siegele
@@ -5277,7 +5277,7 @@ creation_date: 2014-01-31T18:49:00Z
 [Term]
 id: OMP:0007065
 name: pteridine resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a organonitrogen heterocyclic compound." [CHEBI:26373, CHEBI:26373, OMP:DAS]
+def: "An antimicrobial compound resistance phenotype where resistance is to a organonitrogen heterocyclic compound." [CHEBI:26373, OMP:DAS]
 synonym: "antifolate resistance" BROAD [CHEBI:73913]
 synonym: "methotrexate resistance" NARROW [CHEBI:44185]
 synonym: "pteridine compound sensitivity phenotype" RELATED []
@@ -5312,17 +5312,17 @@ creation_date: 2014-02-03T16:09:27Z
 
 [Term]
 id: OMP:0007069
-name: growth factor requirement phenotype
+name: auxotrophic
 def: "A growth factor utilization phenotype where an organism requires one or more growth factors." [OMP:DAS]
-is_a: OMP:0007044 ! growth factor utilization phenotype
+is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:07:59Z
 
 [Term]
 id: OMP:0007070
-name: decreased carbon source utilization phenotype
+name: decreased carbon source utilization
 def: "A carbon source utilization relative phenotype where the ability to use a particular carbon source is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0006023 ! carbon source utilization phenotype
+is_a: OMP:0007078 ! altered carbon source utilization
 intersection_of: OMP:0006023 ! carbon source utilization phenotype
 intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
@@ -5330,9 +5330,9 @@ creation_date: 2014-02-21T15:18:08Z
 
 [Term]
 id: OMP:0007071
-name: increased carbon source utilization phenotype
+name: increased carbon source utilization
 def: "A carbon source utilization relative phenotype where the ability to use a particular carbon source is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0006023 ! carbon source utilization phenotype
+is_a: OMP:0007078 ! altered carbon source utilization
 intersection_of: OMP:0006023 ! carbon source utilization phenotype
 intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
@@ -5354,20 +5354,20 @@ creation_date: 2014-02-21T15:31:32Z
 
 [Term]
 id: OMP:0007074
-name: increased growth factor requirement phenotype
+name: increased growth factor requirement
 def: "A growth factor requirement relative phenotype where an organism's requirement for one or more growth factors is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007069 ! growth factor requirement phenotype
-intersection_of: OMP:0007069 ! growth factor requirement phenotype
+is_a: OMP:0007079 ! altered growth factor requirement
+intersection_of: OMP:0007069 ! auxotrophic
 intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:42:23Z
 
 [Term]
 id: OMP:0007075
-name: decreased growth factor requirement phenotype
+name: decreased growth factor requirement
 def: "A growth factor requirement relative phenotype where an organism's requirement for one or more growth factors is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007069 ! growth factor requirement phenotype
-intersection_of: OMP:0007069 ! growth factor requirement phenotype
+is_a: OMP:0007079 ! altered growth factor requirement
+intersection_of: OMP:0007069 ! auxotrophic
 intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:42:44Z
@@ -5385,6 +5385,41 @@ name: altered chemotaxis
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: siegele
 creation_date: 2014-04-24T17:43:04Z
+
+[Term]
+id: OMP:0007078
+name: altered carbon source utilization
+is_a: OMP:0006023 ! carbon source utilization phenotype
+created_by: siegele
+creation_date: 2014-04-30T15:40:12Z
+
+[Term]
+id: OMP:0007079
+name: altered growth factor requirement
+is_a: OMP:0007044 ! growth factor requirement phenotype
+created_by: siegele
+creation_date: 2014-04-30T15:52:18Z
+
+[Term]
+id: OMP:0007080
+name: altered amino acid requirement
+is_a: OMP:0007079 ! altered growth factor requirement
+created_by: siegele
+creation_date: 2014-04-30T15:53:08Z
+
+[Term]
+id: OMP:0007081
+name: altered purine/pyrimidine requirement
+is_a: OMP:0007079 ! altered growth factor requirement
+created_by: siegele
+creation_date: 2014-04-30T16:03:42Z
+
+[Term]
+id: OMP:0007082
+name: altered vitamin/enzyme cofactor requirement
+is_a: OMP:0007079 ! altered growth factor requirement
+created_by: siegele
+creation_date: 2014-04-30T16:07:16Z
 
 [Term]
 id: TEST:0007001
