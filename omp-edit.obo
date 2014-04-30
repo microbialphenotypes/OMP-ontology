@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:04:2014 23:42
+date: 29:04:2014 23:52
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -4699,7 +4699,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006066
 name: chloramphenicol compound resistance phenotype
-def: "A bacteriostatic compound that stops bacterial growth by inhibiting protein synthesis." [ISBN:9780072992915, OMP:JCH]
+def: "An antimicrobial compound resistance phenotype where resistance is to a member an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, ISBN:9780072992915, OMP:JCH]
 synonym: "chloramphenicol sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
