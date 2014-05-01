@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 30:04:2014 16:11
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 30:04:2014 22:56
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -4246,11 +4246,36 @@ created_by: jonathanherrera
 creation_date: 2013-09-09T18:21:18Z
 
 [Term]
+id: OMP:0006011
+name: Lantibiotic resistance phenotype
+is_a: OMP:0006027 ! bacteriocin resistance phenotype
+created_by: jonathanherrera
+creation_date: 2014-04-30T22:47:51Z
+
+[Term]
+id: OMP:0006012
+name: decrease resistance to lantibiotic compounds
+synonym: "abolished resistance to lantibiotic compounds" NARROW []
+synonym: "increased sensitivity to lantibiotic compounds" RELATED []
+is_a: OMP:0006011 ! Lantibiotic resistance phenotype
+created_by: jonathanherrera
+creation_date: 2014-04-30T22:48:59Z
+
+[Term]
 id: OMP:0006013
 name: nitrogen source requirement
 is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:32:37Z
+
+[Term]
+id: OMP:0006014
+name: increased resistance to lantibiotic compounds
+synonym: "abolished sensitivity to lantibiotic compounds" NARROW []
+synonym: "decreased sensitivity to lantibiotic compounds" RELATED []
+is_a: OMP:0006011 ! Lantibiotic resistance phenotype
+created_by: jonathanherrera
+creation_date: 2014-04-30T22:48:59Z
 
 [Term]
 id: OMP:0006015
@@ -4744,6 +4769,22 @@ name: resistant to trimethroprim
 is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2013-10-24T13:10:50Z
+
+[Term]
+id: OMP:0006072
+name: not resistant to lantibiotic compounds
+synonym: "sensitivity to lantibiotic compounds" RELATED []
+is_a: OMP:0006011 ! Lantibiotic resistance phenotype
+created_by: jonathanherrera
+creation_date: 2014-04-30T22:48:59Z
+
+[Term]
+id: OMP:0006073
+name: resistant to lantibiotic compounds
+synonym: "not sensitive to lantibiotic compounds" RELATED []
+is_a: OMP:0006011 ! Lantibiotic resistance phenotype
+created_by: jonathanherrera
+creation_date: 2014-04-30T22:48:59Z
 
 [Term]
 id: OMP:0007001
