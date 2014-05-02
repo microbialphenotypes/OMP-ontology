@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 30:04:2014 22:56
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 02:05:2014 13:46
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -373,7 +373,6 @@ def: "A motility phenotype where the organism(s) has increased motility relative
 xref: PATO:0002298
 is_a: OMP:0007001 ! altered motility
 intersection_of: OMP:0000001 ! motility phenotype
-intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:26Z
 
@@ -917,6 +916,7 @@ id: OMP:0000112
 name: motile by gliding
 def: "A motile state phenotype where the representative member of a taxonomic unit exhibits smooth movement along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! motile
+is_a: OMP:0007083 ! gliding motility phenotype
 created_by: adrienne
 creation_date: 2011-02-07T03:18:03Z
 
@@ -5463,9 +5463,17 @@ created_by: siegele
 creation_date: 2014-04-30T16:07:16Z
 
 [Term]
+id: OMP:0007083
+name: gliding motility phenotype
+is_a: OMP:0000001 ! motility phenotype
+created_by: siegele
+creation_date: 2014-05-02T13:35:38Z
+
+[Term]
 id: TEST:0007001
 name: decreased motility by gliding
 is_a: OMP:0000002 ! decreased motility
+is_a: OMP:0007083 ! gliding motility phenotype
 created_by: DeborahSiegele
 creation_date: 2014-03-02T17:03:34Z
 
@@ -5494,6 +5502,7 @@ creation_date: 2014-03-02T17:03:34Z
 id: TEST:0007005
 name: increased motility by gliding
 is_a: OMP:0000045 ! increased motility
+is_a: OMP:0007083 ! gliding motility phenotype
 created_by: DeborahSiegele
 creation_date: 2014-03-02T17:04:14Z
 
