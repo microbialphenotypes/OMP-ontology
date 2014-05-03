@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:05:2014 20:54
+date: 02:05:2014 21:51
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -2529,8 +2529,9 @@ creation_date: 2012-11-02T02:03:42Z
 
 [Term]
 id: OMP:0000334
-name: increased resistance to aminopyrimidine compound
+name: increased resistance to aminopyrimidine
 def: "An antifolate compound resistance relative phenotype where resistance is increased relative to a designated control." [OMP:DAS]
+synonym: "abolished sensitivity to aminopyrimidine" NARROW []
 synonym: "decreased sensitivity to antifolate compound" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
@@ -2538,10 +2539,10 @@ creation_date: 2012-11-02T02:04:38Z
 
 [Term]
 id: OMP:0000335
-name: decreased resistance to aminopyrimidine compound
+name: decreased resistance to aminopyrimidine
 def: "An antifolate compound resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished resistance to diaminopyrimidine compound" NARROW []
-synonym: "increased sensitivity to antifolate compound" RELATED []
+synonym: "abolished resistance to diaminopyrimidine" NARROW []
+synonym: "increased sensitivity to antifolate" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:58Z
@@ -3073,16 +3074,18 @@ creation_date: 2012-11-04T02:50:49Z
 
 [Term]
 id: OMP:0000435
-name: resistant to aminopyrimidine compound
+name: resistant to aminopyrimidine
 def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an antifolate compound." [OMP:DAS]
+synonym: "no sensitivity to aminopyrimidine" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:01Z
 
 [Term]
 id: OMP:0000436
-name: not resistant to aminopyrimidine compound
+name: not resistant to aminopyrimidine
 def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to an antifolate compound." [OMP:DAS]
+synonym: "sensitivity to aminopyrimidine" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:18Z
@@ -4646,9 +4649,9 @@ creation_date: 2013-10-22T13:29:22Z
 
 [Term]
 id: OMP:0006057
-name: decrease resistance to aminoglycoside compound
+name: decrease resistance to aminoglycoside
 def: "An aminoglycoside compound resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to aminoglycoside compound" NARROW []
+synonym: "abolished resistance to aminoglycoside" NARROW []
 synonym: "increased sensitivity to aminoglycoside compound" RELATED []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
@@ -4656,17 +4659,19 @@ creation_date: 2013-10-22T19:24:20Z
 
 [Term]
 id: OMP:0006058
-name: increased resistance to aminoglycoside compound
+name: increased resistance to aminoglycoside
 def: "An aminoglycoside compound resistance relative phenotype where resistance is increased relative to a designated control." [OMP:JCH]
-synonym: "decreased sensitivity to aminoglycoside compound" RELATED []
+synonym: "abolished sensitivity to aminoglycoside" RELATED []
+synonym: "decreased sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
 [Term]
 id: OMP:0006059
-name: not resistant to aminoglycoside compound
+name: not resistant to aminoglycoside
 def: "An aminoglycoside compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to an antifolate compound." [OMP:JCH]
+synonym: "sensitivity to aminoglycoside " RELATED []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
@@ -4675,6 +4680,7 @@ creation_date: 2013-10-22T19:24:20Z
 id: OMP:0006060
 name: resistant to aminoglycoside compound
 def: "An aminoglycoside compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an aminoglycoside compound." [OMP:JCH]
+synonym: "no sensitivity to aminoglycoside" NARROW []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
