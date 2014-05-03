@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:05:2014 21:51
+date: 02:05:2014 22:25
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -4600,35 +4600,38 @@ creation_date: 2013-10-11T17:44:39Z
 
 [Term]
 id: OMP:0006052
-name: decreased resistance to azole compound
+name: decreased resistance to azole
 def: "An azole compound resistance relative phenotype where resistance to an azole compound is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished resistance to azole compound" NARROW []
-synonym: "increased resistance to azole compound" RELATED []
+synonym: "abolished resistance to azole" NARROW []
+synonym: "increased sensitivity to azole" RELATED []
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
 [Term]
 id: OMP:0006053
-name: increased resistance to azole compound
+name: increased resistance to azole
 def: "An azole compound resistance relative phenotype where resistance to an azole compound is increased relative to a designated control." [OMP:DAS]
-synonym: "decreased resistance to azole compound" RELATED []
+synonym: "abolished sensitivity to azole" NARROW []
+synonym: "decreased sensitivity to azole" RELATED []
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
 [Term]
 id: OMP:0006054
-name: not resistant to azole compound
+name: not resistant to azole
 def: "An azole compound resistance state phenotype where the representative member of a taxonomic is not resistant to an azole compound." [OMP:DAS]
+synonym: "sensitivity to azole" RELATED []
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
 [Term]
 id: OMP:0006055
-name: resistant to azole compound
+name: resistant to azole
 def: "An azole compound resistance state phenotype where the representative member of a taxonomic is resistant to an azole compound." [OMP:DAS]
+synonym: "no sensitivity t o azole" RELATED []
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
