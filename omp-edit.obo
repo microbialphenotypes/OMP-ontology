@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 02:05:2014 13:46
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 02:05:2014 20:54
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3194,6 +3194,7 @@ creation_date: 2013-05-23T01:54:51Z
 id: OMP:0000457
 name: resistant to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is resistant to caffeine." [OMP:WAM]
+synonym: "no sensitivity to caffeine" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:13Z
@@ -3202,6 +3203,7 @@ creation_date: 2013-05-23T01:55:13Z
 id: OMP:0000458
 name: not resistant to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is not resistant to caffeine." [OMP:WAM]
+synonym: "sensitivity to caffeine" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:34Z
@@ -3210,6 +3212,7 @@ creation_date: 2013-05-23T01:55:34Z
 id: OMP:0000459
 name: increased caffeine resistance
 def: "A caffeine resistance relative phenotype where resistance is increased relative to a designated control." [OMP:WAM]
+synonym: "abolished caffeine sensitivity" NARROW []
 synonym: "decreased caffeine sensitivity" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
