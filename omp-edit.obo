@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 02:05:2014 22:25
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 05:05:2014 14:09
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -3927,6 +3927,7 @@ creation_date: 2013-11-15T18:09:55Z
 id: OMP:0005077
 name: decreased resistance toward acidic pH stress
 def: "A acidic pH stress relative phenotype were resistance to acidic pH was reduced relative to the designated control." [OMP:WAM]
+synonym: "abolished resistance to acidic pH " NARROW [OMP:WAM]
 synonym: "increased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005040 ! acidic pH stress phenotype
 created_by: wmeza
@@ -3945,7 +3946,8 @@ creation_date: 2013-11-15T18:14:08Z
 id: OMP:0005079
 name: decreased resistance toward alkalinic pH stress
 def: "A alkalinic pH stress relative phenotype were resistance to alkalinic pH was decreased relative to the designated control." [OMP:WAM]
-synonym: "increased alkalinic pH sensitivity" NARROW [OMP:WAM]
+synonym: "abolished resistance to alkalinic pH" NARROW [OMP:WAM]
+synonym: "increased alkalinic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005041 ! alkalinc pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:16:03Z
@@ -4019,6 +4021,7 @@ creation_date: 2013-12-06T14:14:31Z
 id: OMP:0005088
 name: decreased resistance toward dessication stress
 def: "A dessication stress relative phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
+synonym: "abolished resistance to dessication stress" NARROW [OMP:WAM]
 synonym: "increased dessication sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005080 ! dessication stress phenotype
 created_by: wmeza
@@ -4028,7 +4031,7 @@ creation_date: 2013-12-06T14:15:06Z
 id: OMP:0005089
 name: increased resistance to freeze/thawing stress
 def: "A freeze/thawing stress relative phenotype where resistance is increased relative to the designated control." [OMP:WAM]
-synonym: "increase in freeze/thawing sensitivity" NARROW [OMP:WAM]
+synonym: "increase in freeze/thawing sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005039 ! freeze/thawing stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:28:16Z
@@ -4037,6 +4040,7 @@ creation_date: 2013-12-06T14:28:16Z
 id: OMP:0005090
 name: decreased resistance to freeze/thawing stress
 def: "A freeze/thawing stress relative phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
+synonym: "abolished resistance to freeze/thawing stress" NARROW [OMP:WAM]
 synonym: "decreased freeze/thaw sensitivity. " RELATED [OMP:WAM]
 is_a: OMP:0005039 ! freeze/thawing stress phenotype
 created_by: wmeza
@@ -4046,7 +4050,7 @@ creation_date: 2013-12-06T14:28:46Z
 id: OMP:0005091
 name: increased resistance toward oxidative stress
 def: "A oxidative stress relative phenotype where resistance is enhanced relative to the designated control." [OMP:WAM]
-synonym: "decreased oxidative sensitivity " NARROW [OMP:WAM]
+synonym: "decreased oxidative sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005038 ! oxidative stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T17:57:46Z
@@ -4055,7 +4059,8 @@ creation_date: 2013-12-06T17:57:46Z
 id: OMP:0005092
 name: decreased resistance toward oxidative stress
 def: "A oxidative stress relative phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
-synonym: "increased oxidative sensitivity" NARROW [OMP:WAM]
+synonym: "abolished resistance to oxidative stress" NARROW [OMP:WAM]
+synonym: "increased oxidative sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005038 ! oxidative stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T17:59:14Z
@@ -4064,7 +4069,7 @@ creation_date: 2013-12-06T17:59:14Z
 id: OMP:0005093
 name: increase resistance to gamma ray radiation
 def: "A  gamma radiation relative phenotype where resistance is enhanced relative to the reference condition." [OMP:WAM]
-synonym: "decrease in gamma ray sensitivity" NARROW [OMP:WAM]
+synonym: "decrease in gamma ray sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005085 ! gamma ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:05:40Z
@@ -4073,7 +4078,8 @@ creation_date: 2013-12-17T13:05:40Z
 id: OMP:0005094
 name: decrease resistance to gamma ray radiation
 def: "A  gamma radiation relative phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
-synonym: "increase in gamma ray sensitivity" NARROW [OMP:WAM]
+synonym: "abolished resistance to gamma ray radiation" NARROW [OMP:WAM]
+synonym: "increase in gamma ray sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005085 ! gamma ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:06:05Z
@@ -4082,7 +4088,7 @@ creation_date: 2013-12-17T13:06:05Z
 id: OMP:0005095
 name: increased resistance toward x-ray radiation
 def: "An x-ray radiation relative phenotype were resistance is enhanced relative to the reference strain." [OMP:WAM]
-synonym: "decrease in x-ray sensitivity" NARROW [OMP:WAM]
+synonym: "decrease in x-ray sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005086 ! x-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:26:43Z
@@ -4091,7 +4097,8 @@ creation_date: 2013-12-17T13:26:43Z
 id: OMP:0005096
 name: decreased resistance toward x-ray radiation
 def: "An x-ray radiation relative phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
-synonym: "increase in x-ray sensitivity " NARROW [OMP:WAM]
+synonym: "abolished resistance to x-ray radiation" NARROW [OMP:WAM]
+synonym: "increase in x-ray sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005086 ! x-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:28:20Z
@@ -4109,6 +4116,7 @@ creation_date: 2013-12-17T13:41:53Z
 id: OMP:0005098
 name: decreased resistance toward UV radiation
 def: "A UV radiation relative phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+synonym: "abolished resistance to UV radiation" NARROW [OMP:WAM]
 synonym: "increase in UV sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005084 ! UV radiation
 created_by: wmeza
