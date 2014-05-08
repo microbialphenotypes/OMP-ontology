@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 07:05:2014 19:54
+date: 08:05:2014 12:02
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -4262,7 +4262,11 @@ creation_date: 2013-09-09T18:21:18Z
 [Term]
 id: OMP:0006011
 name: Lantibiotic resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a  polycyclic thioether amino acids lanthionine or methyllanthionine, as well as the unsaturated amino acids." [OMP:JCH, PMID:7607233]
+def: "An antimicrobial compound resistance phenotype where resistance is to a  polycyclic thioether amino acids lanthionine or methyllanthionine, as well as the unsaturated amino acids." [CHEBI:71644, OMP:JCH, PMID:7607233]
+synonym: "lantibioitic sensitivity phenotype" RELATED []
+synonym: "Nisin" RELATED [CHEBI:71629]
+synonym: "Type A Lantibiotics" RELATED [CHEBI:71645]
+synonym: "Type B lantibioitics" RELATED [CHEBI:71647]
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:47:51Z
@@ -4393,12 +4397,8 @@ name: bacteriocin resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to polypeptides synthesized by specific strains of bacteria that are lethal against other strains of the same or related species." [CHEBI:48081]
 synonym: "bacteriocin sensitivity phenotype" RELATED []
 synonym: "colicins" NARROW [GO:0015468]
-synonym: "lantibiotic " NARROW [CHEBI:71644]
 synonym: "microcin" NARROW [CHEBI:64627]
-synonym: "Nisin" NARROW [ChEBI:71629]
 synonym: "subtilin" NARROW [Bactibase:BAC045]
-synonym: "type A lantibiotic" NARROW [CHEBI:71645]
-synonym: "type B lantibiotic" NARROW [CHEBI:71647]
 xref: CHEBI:48081
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
@@ -4541,7 +4541,7 @@ creation_date: 2013-10-11T17:38:00Z
 
 [Term]
 id: OMP:0006044
-name: decreased resistance to beta-lactam compound
+name: decreased resistance to beta-lactam
 def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to beta-lactam compound" NARROW []
 synonym: "increase sensitivity to beta-lactam compound" RELATED []
@@ -4551,25 +4551,28 @@ creation_date: 2013-10-11T17:40:34Z
 
 [Term]
 id: OMP:0006045
-name: increased resistance to beta-lactam compound
+name: increased resistance to beta-lactam
 def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is increased relative to a designated control." [OMP:JCH]
-synonym: "decreased sensitivity to beta-lactam compound" RELATED []
+synonym: "abolished sensitivity to beta-lactam" NARROW []
+synonym: "decreased sensitivity to beta-lactam" RELATED []
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
 
 [Term]
 id: OMP:0006046
-name: not resistant to beta-lactam compound
+name: not resistant to beta-lactam
 def: "A beta-lactam compound resistance state phenotype where the representative member of a taxonomic is not resistant to a beta-lactam compound." [OMP:JCH]
+synonym: "sensitivity to beta-lactam" RELATED []
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
 
 [Term]
 id: OMP:0006047
-name: resistant to beta-lactam compound
+name: resistant to beta-lactam
 def: "An beta-lactam compound resistance state phenotype where the representative member of a taxonomic unit is resistant to a beta-lactam compound." [OMP:JCH]
+synonym: "no sensitivity to beta-lactam" RELATED []
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4596,7 +4599,7 @@ creation_date: 2013-10-11T17:44:39Z
 
 [Term]
 id: OMP:0006050
-name: not resistant to bacteriocin compound
+name: not resistant to bacteriocin
 def: "A bacteriocin resistance state phenotype where the representative member of a taxonomic is not resistant to a bacteriocin compound." [OMP:JCH]
 synonym: "sensitivity to bacteriocin" RELATED []
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
@@ -4605,7 +4608,7 @@ creation_date: 2013-10-11T17:44:39Z
 
 [Term]
 id: OMP:0006051
-name: resistant to bacteriocin compound
+name: resistant to bacteriocin
 def: "A bacteriocin resistance state phenotype where the representative member of a taxonomic unit is resistant to a bacteriocin compound." [OMP:JCH]
 synonym: "no sensitivity to bacteriocin" RELATED []
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
@@ -4750,7 +4753,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006066
 name: chloramphenicol resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, ISBN:9780072992915, OMP:JCH]
+def: "An antimicrobial compound resistance phenotype where resistance is to an organochlorine compound that is a dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, ISBN:9780072992915, OMP:JCH]
 synonym: "chloramphenicol sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
@@ -4798,7 +4801,7 @@ creation_date: 2013-10-24T13:10:50Z
 
 [Term]
 id: OMP:0006072
-name: not resistant to lantibiotic compounds
+name: not resistant to lantibiotic
 def: "A lantibiotic resistance state phenotype where the representative member of a taxonomic unit is not resistant to a lantibioitic compound." [OMP:JCH]
 synonym: "sensitivity to lantibiotic compounds" RELATED []
 is_a: OMP:0006011 ! Lantibiotic resistance phenotype
@@ -4807,7 +4810,7 @@ creation_date: 2014-04-30T22:48:59Z
 
 [Term]
 id: OMP:0006073
-name: resistant to lantibiotic compounds
+name: resistant to lantibiotic
 def: "A lantibioitic resistance state phenotype where the representative member of a taxonomic unit is resistant to a lantibioitic compound." [OMP:JCH]
 synonym: "not sensitive to lantibiotic compounds" RELATED []
 is_a: OMP:0006011 ! Lantibiotic resistance phenotype
