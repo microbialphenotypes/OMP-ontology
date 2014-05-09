@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 09:05:2014 12:43
+date: 09:05:2014 17:56
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -372,7 +372,6 @@ name: increased motility
 def: "A motility phenotype where the organism(s) has increased motility relative to some reference." [OMP:MCC]
 xref: PATO:0002298
 is_a: OMP:0007001 ! altered motility
-intersection_of: OMP:0000001 ! motility phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:26Z
 
