@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 08:05:2014 12:02
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 09:05:2014 12:43
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2210,14 +2210,14 @@ creation_date: 2011-07-21T02:40:26Z
 
 [Term]
 id: OMP:0000282
-name: increased growth rate, relative phenotype
+name: increased growth rate
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:43:01Z
 
 [Term]
 id: OMP:0000283
-name: decreased growth rate, relative phenotype
+name: decreased growth rate
 synonym: "slow growth rate" RELATED []
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
@@ -4177,6 +4177,22 @@ def: "A enzyme activity state phenotype where the enzyme is not functioning." [O
 is_a: OMP:0000298 ! enzyme activity phenotype
 created_by: wmeza
 creation_date: 2014-04-17T17:13:04Z
+
+[Term]
+id: OMP:0005106
+name: increase in organism lifespan
+def: "A lifespan relative phenotype where there is an increase in the duration of an organism's life." [OMP:WAM]
+is_a: OMP:0000090 ! lifespan
+created_by: wmeza
+creation_date: 2014-05-07T12:39:57Z
+
+[Term]
+id: OMP:0005107
+name: decrease in organism lifepsan
+def: "A lifespan phenotype where there is a reduction in the duration of an organism's life." [OMP:WAM]
+is_a: OMP:0000090 ! lifespan
+created_by: wmeza
+creation_date: 2014-05-07T12:40:14Z
 
 [Term]
 id: OMP:0006001
