@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 09:05:2014 17:56
+date: 12:05:2014 14:01
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -4194,6 +4194,30 @@ created_by: wmeza
 creation_date: 2014-05-07T12:40:14Z
 
 [Term]
+id: OMP:0005108
+name: not resistant to pteridine compound
+def: "An antimicrobial compound state phenotype where the representative member of a taxonomic unit is not resistant to pteridine compounds." [CHEBI:27601, OMP:WAM]
+is_a: OMP:0007065 ! pteridine resistance phenotype
+created_by: wmeza
+creation_date: 2014-05-12T11:04:39Z
+
+[Term]
+id: OMP:0005109
+name: increased resistance to pteridine compound
+def: "An antimicrobial compound relative phenotype where resistance to pteridine compounds is increased relative to the designated control." [CHEBI:27601, OMP:WAM]
+is_a: OMP:0007065 ! pteridine resistance phenotype
+created_by: wmeza
+creation_date: 2014-05-12T11:09:21Z
+
+[Term]
+id: OMP:0005110
+name: decreased resistance to pteridine compound
+def: "An antimicrobial compound relative phenotype where resistance to pteridine compounds is reduced relative to the designated control." [CHEBI:27601, OMP:WAM]
+is_a: OMP:0007065 ! pteridine resistance phenotype
+created_by: wmeza
+creation_date: 2014-05-12T11:10:18Z
+
+[Term]
 id: OMP:0006001
 name: nutrient phenotype
 def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and/or energy release that supports growth and reproduction." [ISBN:9780073402406]
@@ -4855,7 +4879,7 @@ creation_date: 2013-09-05T16:09:28Z
 
 [Term]
 id: OMP:0007004
-name: resistant to pteridine compounds
+name: resistant to pteridine compound
 def: "An antimicrobial compound state phenotype where the representative member of a taxonomic unit is resistant to pteridine compounds." [CHEBI:27601, OMP:DAS]
 synonym: "antifolate compound resistance" RELATED [CHEBI:73913]
 synonym: "methotrexate resistance" RELATED [CHEBI:44185]
