@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 16:05:2014 16:28
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 16:05:2014 20:28
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2528,19 +2528,19 @@ creation_date: 2012-11-02T02:03:42Z
 
 [Term]
 id: OMP:0000334
-name: increased resistance to aminopyrimidine compound
+name: increased resistance to aminopyrimidine
 def: "An antifolate compound resistance relative phenotype where resistance is increased relative to a designated control." [OMP:DAS]
-synonym: "decreased sensitivity to antifolate compound" RELATED []
+synonym: "decreased sensitivity to antifolate" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:38Z
 
 [Term]
 id: OMP:0000335
-name: decreased resistance to aminopyrimidine compound
+name: decreased resistance to aminopyrimidine
 def: "An antifolate compound resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished resistance to diaminopyrimidine compound" NARROW []
-synonym: "increased sensitivity to antifolate compound" RELATED []
+synonym: "abolished resistance to diaminopyrimidine" NARROW []
+synonym: "increased sensitivity to antifolate" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:58Z
@@ -3072,7 +3072,7 @@ creation_date: 2012-11-04T02:50:49Z
 
 [Term]
 id: OMP:0000435
-name: resistant to aminopyrimidine compound
+name: resistant to aminopyrimidine
 def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an antifolate compound." [OMP:DAS]
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
@@ -3080,7 +3080,7 @@ creation_date: 2012-11-04T02:52:01Z
 
 [Term]
 id: OMP:0000436
-name: not resistant to aminopyrimidine compound
+name: not resistant to aminopyrimidine
 def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to an antifolate compound." [OMP:DAS]
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
@@ -3218,7 +3218,7 @@ creation_date: 2013-05-23T01:58:11Z
 id: OMP:0000460
 name: decreased caffeine resistance
 def: "A caffeine resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
-synonym: "abolished resistance to caffeine compound" NARROW []
+synonym: "abolished resistance to caffeine" NARROW []
 synonym: "increased caffeine sensitivity" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
@@ -4277,9 +4277,9 @@ creation_date: 2014-04-30T22:47:51Z
 
 [Term]
 id: OMP:0006012
-name: decrease resistance to lantibiotic compounds
-synonym: "abolished resistance to lantibiotic compounds" NARROW []
-synonym: "increased sensitivity to lantibiotic compounds" RELATED []
+name: decrease resistance to lantibiotic
+synonym: "abolished resistance to lantibiotic" NARROW []
+synonym: "increased sensitivity to lantibiotic" RELATED []
 is_a: OMP:0006011 ! Lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
@@ -4293,9 +4293,9 @@ creation_date: 2013-09-10T18:32:37Z
 
 [Term]
 id: OMP:0006014
-name: increased resistance to lantibiotic compounds
-synonym: "abolished sensitivity to lantibiotic compounds" NARROW []
-synonym: "decreased sensitivity to lantibiotic compounds" RELATED []
+name: increased resistance to lantibiotic
+synonym: "abolished sensitivity to lantibiotic" NARROW []
+synonym: "decreased sensitivity to lantibiotic" RELATED []
 is_a: OMP:0006011 ! Lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
@@ -4483,7 +4483,7 @@ creation_date: 2013-09-10T18:37:31Z
 id: OMP:0006036
 name: decreased resistance to macrolide
 def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to macrolide compound" NARROW []
+synonym: "abolished resistance to macrolide" NARROW []
 is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4498,7 +4498,7 @@ creation_date: 2013-10-11T17:35:04Z
 
 [Term]
 id: OMP:0006038
-name: not resistant to macrolide compound
+name: not resistant to macrolide
 def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to a macrolide compound." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
@@ -4506,7 +4506,7 @@ creation_date: 2013-10-11T17:35:04Z
 
 [Term]
 id: OMP:0006039
-name: resistant to macrolide compound
+name: resistant to macrolide
 def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic is resistant to a macrolide compound." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
@@ -4514,16 +4514,16 @@ creation_date: 2013-10-11T17:35:04Z
 
 [Term]
 id: OMP:0006040
-name: decreased resistance to quinolone compound
+name: decreased resistance to quinolone
 def: "A quinolone compound resistance relative phenotype where resistance to a quinolone compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to quinoline compound" NARROW []
+synonym: "abolished resistance to quinoline" NARROW []
 is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
 
 [Term]
 id: OMP:0006041
-name: increased resistance to quinolone compound
+name: increased resistance to quinolone
 def: "A quinolone compound resistance relative phenotype where resistance to a quinolone compound is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
@@ -4531,7 +4531,7 @@ creation_date: 2013-10-11T17:38:00Z
 
 [Term]
 id: OMP:0006042
-name: not resistant to quinolone compound
+name: not resistant to quinolone
 def: "A quinoline compound resistance state phenotype where the representative member of a taxonomic is not resistant to a quinoline compound." [OMp:JCH]
 is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
@@ -4539,7 +4539,7 @@ creation_date: 2013-10-11T17:38:00Z
 
 [Term]
 id: OMP:0006043
-name: resistant to quinolone compound
+name: resistant to quinolone
 def: "A quinoline compound resistance state phenotype where the representative member of a taxonomic is resistant to a quinoline compound." [OMP:JCH]
 is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
@@ -4547,26 +4547,26 @@ creation_date: 2013-10-11T17:38:00Z
 
 [Term]
 id: OMP:0006044
-name: decreased resistance to beta-lactam compound
+name: decreased resistance to beta-lactam
 def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to beta-lactam compound" NARROW []
-synonym: "increase sensitivity to beta-lactam compound" RELATED []
+synonym: "abolished resistance to beta-lactam" NARROW []
+synonym: "increase sensitivity to beta-lactam" RELATED []
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
 
 [Term]
 id: OMP:0006045
-name: increased resistance to beta-lactam compound
+name: increased resistance to beta-lactam
 def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is increased relative to a designated control." [OMP:JCH]
-synonym: "decreased sensitivity to beta-lactam compound" RELATED []
+synonym: "decreased sensitivity to beta-lactam" RELATED []
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
 
 [Term]
 id: OMP:0006046
-name: not resistant to beta-lactam compound
+name: not resistant to beta-lactam
 def: "A beta-lactam compound resistance state phenotype where the representative member of a taxonomic is not resistant to a beta-lactam compound." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
@@ -4574,7 +4574,7 @@ creation_date: 2013-10-11T17:40:34Z
 
 [Term]
 id: OMP:0006047
-name: resistant to beta-lactam compound
+name: resistant to beta-lactam
 def: "An beta-lactam compound resistance state phenotype where the representative member of a taxonomic unit is resistant to a beta-lactam compound." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
@@ -4582,26 +4582,26 @@ creation_date: 2013-10-11T17:40:34Z
 
 [Term]
 id: OMP:0006048
-name: decreased resistance to bacteriocin compound
+name: decreased resistance to bacteriocin
 def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is decreased relative to some reference." [OMP:JCH]
-synonym: "abolished resistance to bacteriocin compound" NARROW []
-synonym: "increased sensitivity to bacteriocin compound" RELATED []
+synonym: "abolished resistance to bacteriocin" NARROW []
+synonym: "increased sensitivity to bacteriocin" RELATED []
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
 
 [Term]
 id: OMP:0006049
-name: increased resistance to bacteriocin compound
+name: increased resistance to bacteriocin
 def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is increased relative to some reference." [OMP:JCH]
-synonym: "decreased sensitivity to bacteriocin compound" RELATED []
+synonym: "decreased sensitivity to bacteriocin" RELATED []
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
 
 [Term]
 id: OMP:0006050
-name: not resistant to bacteriocin compound
+name: not resistant to bacteriocin
 def: "A bacteriocin compound resistance state phenotype where the representative member of a taxonomic is not resistant to a bacteriocin compound." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
@@ -4609,7 +4609,7 @@ creation_date: 2013-10-11T17:44:39Z
 
 [Term]
 id: OMP:0006051
-name: resistant to bacteriocin compound
+name: resistant to bacteriocin
 def: "A bacteriocin compound resistance state phenotype where the representative member of a taxonomic unit is resistant to a bacteriocin compound." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
@@ -4617,26 +4617,26 @@ creation_date: 2013-10-11T17:44:39Z
 
 [Term]
 id: OMP:0006052
-name: decreased resistance to azole compound
+name: decreased resistance to azole
 def: "An azole compound resistance relative phenotype where resistance to an azole compound is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished resistance to azole compound" NARROW []
-synonym: "increased resistance to azole compound" RELATED []
+synonym: "abolished resistance to azole" NARROW []
+synonym: "increased resistance to azole" RELATED []
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
 [Term]
 id: OMP:0006053
-name: increased resistance to azole compound
+name: increased resistance to azole
 def: "An azole compound resistance relative phenotype where resistance to an azole compound is increased relative to a designated control." [OMP:DAS]
-synonym: "decreased resistance to azole compound" RELATED []
+synonym: "decreased resistance to azole" RELATED []
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
 [Term]
 id: OMP:0006054
-name: not resistant to azole compound
+name: not resistant to azole
 def: "An azole compound resistance state phenotype where the representative member of a taxonomic is not resistant to an azole compound." [OMP:DAS]
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
@@ -4644,7 +4644,7 @@ creation_date: 2013-10-11T17:45:44Z
 
 [Term]
 id: OMP:0006055
-name: resistant to azole compound
+name: resistant to azole
 def: "An azole compound resistance state phenotype where the representative member of a taxonomic is resistant to an azole compound." [OMP:DAS]
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
@@ -4666,19 +4666,19 @@ creation_date: 2013-10-22T13:29:22Z
 
 [Term]
 id: OMP:0006057
-name: decrease resistance to aminoglycoside compound
+name: decrease resistance to aminoglycoside
 def: "An aminoglycoside compound resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to aminoglycoside compound" NARROW []
-synonym: "increased sensitivity to aminoglycoside compound" RELATED []
+synonym: "abolished resistance to aminoglycoside" NARROW []
+synonym: "increased sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
 [Term]
 id: OMP:0006058
-name: increased resistance to aminoglycoside compound
+name: increased resistance to aminoglycoside
 def: "An aminoglycoside compound resistance relative phenotype where resistance is increased relative to a designated control." [OMP:JCH]
-synonym: "decreased sensitivity to aminoglycoside compound" RELATED []
+synonym: "decreased sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
@@ -4693,7 +4693,7 @@ creation_date: 2013-10-22T19:24:20Z
 
 [Term]
 id: OMP:0006060
-name: resistant to aminoglycoside compound
+name: resistant to aminoglycoside
 def: "An aminoglycoside compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an aminoglycoside compound." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
@@ -4701,9 +4701,9 @@ creation_date: 2013-10-22T19:24:20Z
 
 [Term]
 id: OMP:0006061
-name: decreased resistance to tetracycline compound
+name: decreased resistance to tetracycline
 def: "A tetracycline compound resistance relative phenotype where resistance to a tetracycline compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to tetracycline compound" NARROW []
+synonym: "abolished resistance to tetracycline" NARROW []
 is_a: OMP:0006062 ! tetracycline resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
@@ -4720,7 +4720,7 @@ creation_date: 2013-10-23T17:21:25Z
 
 [Term]
 id: OMP:0006063
-name: increased resistance to tetracycline compound
+name: increased resistance to tetracycline
 def: "A tetracycline compound resistance relative phenotype where resistance to a tetracycline compound is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006062 ! tetracycline resistance phenotype
 created_by: jonathanherrera
@@ -4728,7 +4728,7 @@ creation_date: 2013-10-23T19:27:35Z
 
 [Term]
 id: OMP:0006064
-name: not resistant to tetracycline compound
+name: not resistant to tetracycline
 def: "A tetracycline compound resistance state phenotype where the representative member of a taxonomic is not resistant to a tetracycline compound." [OMP:JCH]
 synonym: "chlortetracycline" NARROW [OMP:JCH]
 synonym: "oxytetracycline " NARROW [OMP:JCH]
@@ -4738,7 +4738,7 @@ creation_date: 2013-10-23T19:27:35Z
 
 [Term]
 id: OMP:0006065
-name: resistant to tetracycline compound
+name: resistant to tetracycline
 def: "A tetracycline compound resistance state phenotype where the representative member of a taxonomic is resistant to a tetracycline compound." [OMP:JCH]
 is_a: OMP:0006062 ! tetracycline resistance phenotype
 created_by: jonathanherrera
@@ -4755,16 +4755,16 @@ creation_date: 2013-10-24T12:57:25Z
 
 [Term]
 id: OMP:0006067
-name: decrease resistance to chloramphenicol compound
+name: decrease resistance to chloramphenicol
 def: "A chloramphenicol compound resistance relative phenotype where resistance to a chloramphenicol compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to quinoline compound" NARROW []
+synonym: "abolished resistance to chloramphenicol" NARROW []
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
 
 [Term]
 id: OMP:0006068
-name: increased resistance to chloramphenicol compound
+name: increased resistance to chloramphenicol
 def: "A chloramphenicol compound resistance relative phenotype where resistance to a chloramphenicol compound is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
@@ -4772,7 +4772,7 @@ creation_date: 2013-10-24T19:41:11Z
 
 [Term]
 id: OMP:0006069
-name: not resistant to chloramphenicol compound
+name: not resistant to chloramphenicol
 def: "A chloramphenicol compound resistance state phenotype where the representative member of a taxonomic is not resistant to a chloramphenicol compound." [OMP:JCH]
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
@@ -4780,7 +4780,7 @@ creation_date: 2013-10-24T19:41:11Z
 
 [Term]
 id: OMP:0006070
-name: resistant to chloramphenicol compound
+name: resistant to chloramphenicol
 def: "A chloramphenicol compound resistance state phenotype where the representative member of a taxonomic is resistant to a chloramphenicol compound." [OMP:JCH]
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
@@ -4795,16 +4795,16 @@ creation_date: 2013-10-24T13:10:50Z
 
 [Term]
 id: OMP:0006072
-name: not resistant to lantibiotic compounds
-synonym: "sensitivity to lantibiotic compounds" RELATED []
+name: not resistant to lantibiotic
+synonym: "sensitivity to lantibiotic" RELATED []
 is_a: OMP:0006011 ! Lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
 
 [Term]
 id: OMP:0006073
-name: resistant to lantibiotic compounds
-synonym: "not sensitive to lantibiotic compounds" RELATED []
+name: resistant to lantibiotic
+synonym: "not sensitive to lantibiotic" RELATED []
 is_a: OMP:0006011 ! Lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
@@ -4858,8 +4858,8 @@ creation_date: 2013-09-05T16:09:28Z
 id: OMP:0007004
 name: decreased resistance to pteridine
 def: "A pteridine resistance relative phenotype where resistance to a pteridine compound is decreased relative to a designated control." [CHEBI:27601, OMP:DAS]
-synonym: "antifolate compound resistance" RELATED [CHEBI:73913]
 synonym: "methotrexate resistance" RELATED [CHEBI:44185]
+synonym: "pteridine compound resistance" RELATED [CHEBI:73913]
 is_a: OMP:0007065 ! pteridine resistance phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:03:55Z
