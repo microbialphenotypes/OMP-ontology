@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:05:2014 20:28
+date: 21:05:2014 09:59
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -3193,6 +3193,7 @@ creation_date: 2013-05-23T01:54:51Z
 id: OMP:0000457
 name: resistant to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is resistant to caffeine." [OMP:WAM]
+synonym: "Not sensitive to caffeine" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:13Z
@@ -3201,6 +3202,7 @@ creation_date: 2013-05-23T01:55:13Z
 id: OMP:0000458
 name: not resistant to caffeine
 def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is not resistant to caffeine." [OMP:WAM]
+synonym: "sensitive to caffeine" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:34Z
@@ -3209,6 +3211,7 @@ creation_date: 2013-05-23T01:55:34Z
 id: OMP:0000459
 name: increased caffeine resistance
 def: "A caffeine resistance relative phenotype where resistance is increased relative to a designated control." [OMP:WAM]
+synonym: "Abolished caffeine sensitivity" NARROW []
 synonym: "decreased caffeine sensitivity" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
@@ -4653,7 +4656,7 @@ creation_date: 2013-10-11T17:45:44Z
 [Term]
 id: OMP:0006056
 name: aminoglycoside resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a compound containing a cyclohexane ring and amino sugars." [CHEBI:22507, ISBN:978-0-07-299291-5, OMP:JCH]
+def: "An antimicrobial compound resistance phenotype where resistance is to a compound containing a cyclohexane ring with amino sugars." [CHEBI:22507, ISBN:978-0-07-299291-5, OMP:JCH]
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
 synonym: "kanamycin" NARROW []
