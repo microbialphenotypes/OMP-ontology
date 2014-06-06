@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 21:05:2014 09:59
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 06:06:2014 18:21
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -4102,7 +4102,7 @@ creation_date: 2013-12-17T13:28:20Z
 [Term]
 id: OMP:0005097
 name: increased resistance to UV radiation
-def: "A UV radiation relative phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
+def: "A UV radiation relative phenotype where resistance is increased relative to the reference strain." [OMP:WAM]
 synonym: "decrease in UV sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005084 ! UV radiation
 created_by: wmeza
@@ -4960,7 +4960,7 @@ creation_date: 2013-09-16T12:47:41Z
 id: OMP:0007016
 name: make obsolete - purine/pyrimidine requirement, state phenotype
 def: "A purine/pyrimidine requirement state phenotype where the representative member of a taxonomic unit cannot synthesize one or more purine or pyrimidine bases required for growth." [OMP:DAS]
-is_a: OMP:0007039 ! purine/pyrimidine requirement
+is_obsolete: true
 created_by: siegele
 creation_date: 2013-09-16T12:48:22Z
 
@@ -4968,7 +4968,7 @@ creation_date: 2013-09-16T12:48:22Z
 id: OMP:0007017
 name: make obsolete - vitamin/enzyme cofactor requirement
 def: "A vitamin/enzyme cofactor state phenotype where the representative member of a taxonomic unita taxonomic unit cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
-is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement
+is_obsolete: true
 created_by: siegele
 creation_date: 2013-09-16T12:49:50Z
 
