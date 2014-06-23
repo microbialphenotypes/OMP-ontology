@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:06:2014 14:53
+date: 23:06:2014 17:17
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -52,7 +52,7 @@ creation_date: 2011-04-14T03:29:20Z
 [Term]
 id: OMP:0000005
 name: motile
-def: "A motility state phenotype where a cell or cells posseses the ability to perform controlled self-propelled movement that results in translocation from one place to another." [OMP:MCC]
+def: "A motility phenotype where a cell or cells posseses the ability to perform controlled self-propelled movement that results in translocation from one place to another." [OMP:MCC]
 synonym: "presence of motility" RELATED []
 is_a: OMP:0000001 ! motility phenotype
 created_by: mchibucos
@@ -61,7 +61,7 @@ creation_date: 2011-04-14T03:35:35Z
 [Term]
 id: OMP:0000006
 name: ankinete forming
-def: "An ankinete formation state phenotype where the representative member of a taxonomic possesses the ability to form an ankinete." [OMP:MCC]
+def: "An ankinete formation phenotype where the representative member of a taxonomic possesses the ability to form an ankinete." [OMP:MCC]
 is_a: OMP:0000093 ! ankinete formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:51:36Z
@@ -173,7 +173,7 @@ creation_date: 2011-06-07T10:33:37Z
 [Term]
 id: OMP:0000020
 name: myxospore forming
-def: "A myxospore formation state phenotype where the representative member of a taxonomic unit possesses the ability to form myxospores." [OMP:MCC]
+def: "A myxospore formation phenotype where the representative member of a taxonomic unit possesses the ability to form myxospores." [OMP:MCC]
 is_a: OMP:0000096 ! myxospore formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
@@ -181,7 +181,7 @@ creation_date: 2011-04-26T03:10:51Z
 [Term]
 id: OMP:0000021
 name: non-myxospore forming
-def: "A myxospore formation state phenotype where the representative member of a taxonomic unit does not possess the ability to form myxospores." [OMP:MCC]
+def: "A myxospore formation phenotype where the representative member of a taxonomic unit does not possess the ability to form myxospores." [OMP:MCC]
 is_a: OMP:0000096 ! myxospore formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
@@ -286,7 +286,7 @@ creation_date: 2011-06-07T10:34:04Z
 [Term]
 id: OMP:0000033
 name: absence of pilus
-def: "A pilus state phenotype where an organism does not possess a pilus." [OMP:MCC]
+def: "A pilus phenotype where an organism does not possess a pilus." [OMP:MCC]
 synonym: "fimbria absent" EXACT []
 is_a: OMP:0000084 ! pilus phenotype
 created_by: mchibucos
@@ -378,7 +378,7 @@ creation_date: 2011-04-26T04:08:26Z
 [Term]
 id: OMP:0000046
 name: presence of chemotaxis
-def: "A chemotaxis state phenotype where the representative member of a taxonomic unit possesses the ability to move in response to a chemical concentration gradient." [OMP:MCC]
+def: "A chemotaxis phenotype where the representative member of a taxonomic unit possesses the ability to move in response to a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:17:42Z
@@ -403,7 +403,7 @@ creation_date: 2011-04-26T04:27:11Z
 [Term]
 id: OMP:0000049
 name: aerotactic
-def: "An aerotaxis state phenotype where the representative taxonomic unit  possesses the ability to respond to environmental oxygen." [OMP:MCC]
+def: "An aerotaxis phenotype where the representative taxonomic unit  possesses the ability to respond to environmental oxygen." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:27:42Z
@@ -491,7 +491,7 @@ creation_date: 2011-04-26T04:44:17Z
 [Term]
 id: OMP:0000060
 name: presence of quorum sensing
-def: "A quorum sensing state phenotype where an organism possesses the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
+def: "A quorum sensing phenotype where an organism possesses the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T05:02:51Z
@@ -519,7 +519,7 @@ creation_date: 2011-04-26T05:03:12Z
 [Term]
 id: OMP:0000063
 name: absence of quorum sensing
-def: "A quorum sensing state phenotype where an organism does not possess the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
+def: "A quorum sensing phenotype where an organism does not possess the ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T05:06:00Z
@@ -553,7 +553,7 @@ creation_date: 2011-04-26T05:09:24Z
 [Term]
 id: OMP:0000067
 name: motile by swarming
-def: "A motile state phenotype where a population of the representative member of a taxonomic unit displays coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
+def: "A motile phenotype where a population of the representative member of a taxonomic unit displays coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
@@ -593,7 +593,7 @@ creation_date: 2011-02-02T03:15:16Z
 [Term]
 id: OMP:0000072
 name: filamentous
-def: "A cell arrangement state phenotype where cells are joined end-to-end in linear chains." [OMP:MCC]
+def: "A cell arrangement phenotype where cells are joined end-to-end in linear chains." [OMP:MCC]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:31:35Z
@@ -801,7 +801,7 @@ creation_date: 2011-02-02T03:26:41Z
 [Term]
 id: OMP:0000097
 name: absence of chemotaxis
-def: "A chemotaxis state phenotype where the representative member of a taxonomic unit does not possess the ability to move in response to a chemical concentration gradient." [OMP:MCC]
+def: "A chemotaxis phenotype where the representative member of a taxonomic unit does not possess the ability to move in response to a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:13Z
@@ -905,7 +905,7 @@ creation_date: 2011-02-02T02:45:02Z
 [Term]
 id: OMP:0000111
 name: motile by swimming
-def: "A motile state phenotype where the representative member of a taxonomic unit exhibits smooth movement through a liquid medium." [OMP:MCC]
+def: "A motile phenotype where the representative member of a taxonomic unit exhibits smooth movement through a liquid medium." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
@@ -913,7 +913,7 @@ creation_date: 2011-02-07T03:17:40Z
 [Term]
 id: OMP:0000112
 name: motile by gliding
-def: "A motile state phenotype where the representative member of a taxonomic unit exhibits smooth movement along a solid surface." [OMP:MCC]
+def: "A motile phenotype where the representative member of a taxonomic unit exhibits smooth movement along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 is_a: OMP:0005106 ! increase in organism lifespan
 created_by: adrienne
@@ -922,7 +922,7 @@ creation_date: 2011-02-07T03:18:03Z
 [Term]
 id: OMP:0000113
 name: motile by twitching
-def: "A cell motility state phenotype where the controlled movement of the representative member of a taxonomic unit is dependent on the presence of type IV pili." [OMP:MCC]
+def: "A cell motility phenotype where the controlled movement of the representative member of a taxonomic unit is dependent on the presence of type IV pili." [OMP:MCC]
 is_a: OMP:0000005 ! motile
 created_by: adrienne
 creation_date: 2011-02-07T03:18:13Z
@@ -952,7 +952,7 @@ creation_date: 2011-02-02T02:46:17Z
 [Term]
 id: OMP:0000117
 name: diplococcus
-def: "A cell arrangement state phenotype where the representative member of a taxonomic unit forms pairs of coccus cells, which arise from a division event in one plane." [ISBN:9780073402406, OMP:AEZ]
+def: "A cell arrangement phenotype where the representative member of a taxonomic unit forms pairs of coccus cells, which arise from a division event in one plane." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:29:12Z
@@ -960,7 +960,7 @@ creation_date: 2011-02-18T02:29:12Z
 [Term]
 id: OMP:0000118
 name: streptococcus
-def: "A cell arrangement state phenotype where chains of coccus cells arise from division events in one plane." [OMP:AEZ]
+def: "A cell arrangement phenotype where chains of coccus cells arise from division events in one plane." [OMP:AEZ]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:31:37Z
@@ -969,7 +969,7 @@ creation_date: 2011-02-18T02:31:37Z
 id: OMP:0000119
 name: tetrad
 alt_id: OMP:0000156
-def: "A cell arrangement state phenotype where squares of four coccus cells arise from division in two planes." [OMP:AEZ]
+def: "A cell arrangement phenotype where squares of four coccus cells arise from division in two planes." [OMP:AEZ]
 synonym: "micrococcus arrangement" EXACT []
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
@@ -978,7 +978,7 @@ creation_date: 2011-02-18T02:33:22Z
 [Term]
 id: OMP:0000120
 name: sarcina
-def: "A cell arrangement state phenotype where cubes of eight coccus cells arise from a division event in three planes." [OMP:AEZ]
+def: "A cell arrangement phenotype where cubes of eight coccus cells arise from a division event in three planes." [OMP:AEZ]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:34:40Z
@@ -986,7 +986,7 @@ creation_date: 2011-02-18T02:34:40Z
 [Term]
 id: OMP:0000121
 name: staphylococcus
-def: "A cell arrangement state phenotype where irregular clumps of coccus cells arise from division events in random planes." [OMP:AEZ]
+def: "A cell arrangement phenotype where irregular clumps of coccus cells arise from division events in random planes." [OMP:AEZ]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:39:34Z
@@ -994,7 +994,7 @@ creation_date: 2011-02-18T02:39:34Z
 [Term]
 id: OMP:0000122
 name: streptobacillus
-def: "A cell arrangement state phenotype where bacillis cells are arranged in chains." [OMP:AEZ]
+def: "A cell arrangement phenotype where bacillis cells are arranged in chains." [OMP:AEZ]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:47:10Z
@@ -1026,7 +1026,7 @@ creation_date: 2011-02-18T02:52:33Z
 [Term]
 id: OMP:0000126
 name: trichome-forming
-def: "A cell arrangement state phenotype that consists of chains of cells in which the individual cells, which are usually wider than long, are closely appressed for the whole or the greater part of their width." [OMP:DAS, PMID:5318446]
+def: "A cell arrangement phenotype that consists of chains of cells in which the individual cells, which are usually wider than long, are closely appressed for the whole or the greater part of their width." [OMP:DAS, PMID:5318446]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:55:59Z
@@ -1034,7 +1034,7 @@ creation_date: 2011-02-18T02:55:59Z
 [Term]
 id: OMP:0000127
 name: sheathed
-def: "A cell arrangement state phenotype where chains of cells are enclosed in a hyaline envelope or sheath." [OMP:MCC]
+def: "A cell arrangement phenotype where chains of cells are enclosed in a hyaline envelope or sheath." [OMP:MCC]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:59:18Z
@@ -1085,7 +1085,7 @@ creation_date: 2011-02-18T03:01:18Z
 [Term]
 id: OMP:0000133
 name: non-motile
-def: "A motility state phenotype where the representative member of a taxonomic unit does not possess the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
+def: "A motility phenotype where the representative member of a taxonomic unit does not possess the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
 synonym: "absence of motility" RELATED []
 is_a: OMP:0000001 ! motility phenotype
 created_by: adrienne
@@ -1275,7 +1275,7 @@ creation_date: 2011-02-02T02:49:30Z
 [Term]
 id: OMP:0000159
 name: non-aerotactic
-def: "An aerotaxis state phenotype where the representative taxonomic unit does not possess the ability to respond to environmental oxygen." [OMP:MCC]
+def: "An aerotaxis phenotype where the representative taxonomic unit does not possess the ability to respond to environmental oxygen." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: adrienne
 creation_date: 2011-03-02T02:06:09Z
@@ -1360,7 +1360,7 @@ creation_date: 2011-02-07T03:47:20Z
 [Term]
 id: OMP:0000171
 name: microaerophile phenotype
-def: "An oxygen requirement for growth state phenotype where growth of the functional taxonomic unit or reference strain requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth phenotype where growth of the functional taxonomic unit or reference strain requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
@@ -1470,7 +1470,7 @@ creation_date: 2011-02-02T03:29:34Z
 [Term]
 id: OMP:0000185
 name: obligate aerobe phenotype
-def: "An oxygen requirement for growth state phenotype where growth of the representative member of a taxonomic unit is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth phenotype where growth of the representative member of a taxonomic unit is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
@@ -1494,7 +1494,7 @@ creation_date: 2011-06-07T02:22:14Z
 [Term]
 id: OMP:0000188
 name: Gram positive phenotype
-def: "A Gram stain state phenotype where the representative member of a taxonomic unit retains crystal violet stain when decolorized with an organic solvent such as ethanol." [OMP:DAS]
+def: "A Gram stain phenotype where the representative member of a taxonomic unit retains crystal violet stain when decolorized with an organic solvent such as ethanol." [OMP:DAS]
 is_a: OMP:0000191 ! Gram stain phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:29Z
@@ -1502,7 +1502,7 @@ creation_date: 2011-02-02T03:34:29Z
 [Term]
 id: OMP:0000189
 name: Gram negative phenotype
-def: "A Gram stain state phenotype where the representative member of a taxonomic unit does not retain crystal violet stain when decolorized with an organic solvent such as ethanol." [OMP:DAS]
+def: "A Gram stain phenotype where the representative member of a taxonomic unit does not retain crystal violet stain when decolorized with an organic solvent such as ethanol." [OMP:DAS]
 is_a: OMP:0000191 ! Gram stain phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:45Z
@@ -1510,7 +1510,7 @@ creation_date: 2011-02-02T03:34:45Z
 [Term]
 id: OMP:0000190
 name: Gram variable phenotype
-def: "A Gram stain state phenotype where the representative member of a taxonomic unit gives variable results to the Gram stain." [OMP:DAS]
+def: "A Gram stain phenotype where the representative member of a taxonomic unit gives variable results to the Gram stain." [OMP:DAS]
 is_a: OMP:0000191 ! Gram stain phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:58Z
@@ -1651,7 +1651,7 @@ creation_date: 2011-06-07T03:18:33Z
 [Term]
 id: OMP:0000209
 name: fluorescent colony
-def: "A plating state phenotype where the prominent morphological characteristic of the colony(ies) is that is fluorescence." [OMP:WAM]
+def: "A plating phenotype where the prominent morphological characteristic of the colony(ies) is that is fluorescence." [OMP:WAM]
 is_a: OMP:0000108 ! colony optical phenotype
 is_a: OMP:0000255 ! plating  morphology phenotype
 created_by: mchibucos
@@ -1667,7 +1667,7 @@ creation_date: 2011-06-07T12:31:24Z
 [Term]
 id: OMP:0000211
 name: absence of capsule
-def: "A capsule state phenotype where the representative member of a taxonomic unit is not observed to produce a capsule in any environmental condition." [OMP:DAS]
+def: "A capsule phenotype where the representative member of a taxonomic unit is not observed to produce a capsule in any environmental condition." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
@@ -1992,7 +1992,7 @@ creation_date: 2011-07-21T01:05:42Z
 [Term]
 id: OMP:0000255
 name: plating  morphology phenotype
-def: "A growth state phenotype dealing with colony morphological characteristics." [OMP:WAM]
+def: "A growth phenotype dealing with colony morphological characteristics." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:34:48Z
@@ -3073,7 +3073,7 @@ creation_date: 2012-11-04T02:50:49Z
 [Term]
 id: OMP:0000435
 name: resistant to aminopyrimidine
-def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an antifolate compound." [OMP:DAS]
+def: "An antifolate compound resistance phenotype where the representative member of a taxonomic unit is resistant to an antifolate compound." [OMP:DAS]
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:01Z
@@ -3081,7 +3081,7 @@ creation_date: 2012-11-04T02:52:01Z
 [Term]
 id: OMP:0000436
 name: not resistant to aminopyrimidine
-def: "An antifolate compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to an antifolate compound." [OMP:DAS]
+def: "An antifolate compound resistance phenotype where the representative member of a taxonomic unit is not resistant to an antifolate compound." [OMP:DAS]
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:18Z
@@ -3192,7 +3192,7 @@ creation_date: 2013-05-23T01:54:51Z
 [Term]
 id: OMP:0000457
 name: resistant to caffeine
-def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is resistant to caffeine." [OMP:WAM]
+def: "A caffeine resistance phenotype where resistance to caffeine is observed or predicted." [OMP:WAM]
 synonym: "Not sensitive to caffeine" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
@@ -3201,7 +3201,7 @@ creation_date: 2013-05-23T01:55:13Z
 [Term]
 id: OMP:0000458
 name: not resistant to caffeine
-def: "A caffeine resistance state phenotype where the representative member of a taxonomic unit is not resistant to caffeine." [OMP:WAM]
+def: "A caffeine resistance phenotype where resistance to caffeine is not observed or predicted." [OMP:WAM]
 synonym: "sensitive to caffeine" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
@@ -3238,7 +3238,7 @@ creation_date: 2013-08-22T01:43:06Z
 [Term]
 id: OMP:0000462
 name: presence of an outer membrane
-def: "An outer membrane state phenotype where cells of the representative member of a taxonomic unit possesses an outer membrane." [OMP:DAS]
+def: "An outer membrane phenotype where cells of the representative member of a taxonomic unit possesses an outer membrane." [OMP:DAS]
 synonym: "Diderm" NARROW []
 synonym: "Gram negative" NARROW []
 synonym: "mycolate outer membrane" RELATED []
@@ -3257,7 +3257,7 @@ creation_date: 2013-08-22T01:48:57Z
 [Term]
 id: OMP:0000464
 name: absence of an outer membrane
-def: "An outer membrane phenotype state phenotype where cells of the representative member of a taxonomic unit do not have an outer membrane." [OMP:DAS]
+def: "An outer membrane phenotype phenotype where cells of the representative member of a taxonomic unit do not have an outer membrane." [OMP:DAS]
 is_a: OMP:0000461 ! outer membrane phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:53:29Z
@@ -3329,7 +3329,7 @@ creation_date: 2013-09-03T01:06:05Z
 [Term]
 id: OMP:0005003
 name: hyperthermophilic growth
-def: "A temperature growth range state phenotype where optimal growth of the representative member of a taxonomic unit occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where optimal growth of the representative member of a taxonomic unit occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:29:51Z
@@ -3337,7 +3337,7 @@ creation_date: 2013-09-03T01:29:51Z
 [Term]
 id: OMP:0005004
 name: thermophilic growth
-def: "A temperature growth range state phenotype where the representative member of a taxonomic unit can grow at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where the representative member of a taxonomic unit can grow at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:36:26Z
@@ -3345,7 +3345,7 @@ creation_date: 2013-09-03T01:36:26Z
 [Term]
 id: OMP:0005005
 name: mesophilic growth
-def: "A temperature growth range state phenotype where optimal growth of the representative member of a taxonomic unit occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where optimal growth of the representative member of a taxonomic unit occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:24:06Z
@@ -3353,7 +3353,7 @@ creation_date: 2013-09-04T13:24:06Z
 [Term]
 id: OMP:0005006
 name: psychrotrophic growth
-def: "A temperature growth range state phenotype where growth of the representative member of a taxonomic unit occurs from 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature of growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where growth of the representative member of a taxonomic unit occurs from 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature of growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:38:56Z
@@ -3361,7 +3361,7 @@ creation_date: 2013-09-04T13:38:56Z
 [Term]
 id: OMP:0005007
 name: psychrophilic growth
-def: "A temperature growth range state phenotype where the representative member of a taxonomic unit can grow  at 0 degrees C and optimal growth occurs at temperatures of 15 degrees C or lower." [iSBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where the representative member of a taxonomic unit can grow  at 0 degrees C and optimal growth occurs at temperatures of 15 degrees C or lower." [iSBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:40:27Z
@@ -3377,7 +3377,7 @@ creation_date: 2013-09-04T13:57:28Z
 [Term]
 id: OMP:0005009
 name: acidophile
-def: "A pH growth state phenotype where optimum growth of the representative member of a taxonomic unit occurs between pH 0 and 5.5." [ISBN:9780073402406, OMP:WAM]
+def: "A pH growth phenotype where optimum growth of the representative member of a taxonomic unit occurs between pH 0 and 5.5." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:18:28Z
@@ -3385,7 +3385,7 @@ creation_date: 2013-09-04T16:18:28Z
 [Term]
 id: OMP:0005010
 name: neutrophile
-def: "A pH growth state phenotype where optimum growth of the representative member of a taxonomic unit occurs between pH 5.5 and 8.0." [ISBN:780073402406, OMP:WAM]
+def: "A pH growth phenotype where optimum growth of the representative member of a taxonomic unit occurs between pH 5.5 and 8.0." [ISBN:780073402406, OMP:WAM]
 is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:21:50Z
@@ -3393,7 +3393,7 @@ creation_date: 2013-09-04T16:21:50Z
 [Term]
 id: OMP:0005011
 name: alkaliphile
-def: "A pH growth state phenotype where optimum growth of the representative member of a taxonomic unit occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
+def: "A pH growth phenotype where optimum growth of the representative member of a taxonomic unit occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:24:24Z
@@ -3417,7 +3417,7 @@ creation_date: 2013-09-09T11:43:45Z
 [Term]
 id: OMP:0005014
 name: piezophilic growth
-def: "A pressure growth range state phenotype where growth of the representative member of the taxonomic unit is more rapid at high hydrostatic pressure." [ISBN:9780073402406, OMP:WAM]
+def: "A pressure growth range phenotype where growth of the representative member of the taxonomic unit is more rapid at high hydrostatic pressure." [ISBN:9780073402406, OMP:WAM]
 synonym: "barophilic growth" RELATED [ISBN:9780073402406]
 is_a: OMP:0005012 ! pressure growth range phenotype
 created_by: wmeza
@@ -3426,7 +3426,7 @@ creation_date: 2013-09-09T11:49:53Z
 [Term]
 id: OMP:0005015
 name: osmotolerant growth
-def: "A solute and water activity state phenotype where the growth of the representative member of the taxonomic unit can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
+def: "A solute and water activity phenotype where the growth of the representative member of the taxonomic unit can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005013 ! solute and water activity phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:05:24Z
@@ -3434,7 +3434,7 @@ creation_date: 2013-09-09T13:05:24Z
 [Term]
 id: OMP:0005016
 name: halophilic growth
-def: "A solute and water activity state phenotype where the growth of the representative member of the taxonomic unit requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
+def: "A solute and water activity phenotype where the growth of the representative member of the taxonomic unit requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005013 ! solute and water activity phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:06:03Z
@@ -3490,7 +3490,7 @@ creation_date: 2013-09-19T16:25:09Z
 [Term]
 id: OMP:0005023
 name: presence of SOS response
-def: "A SOS response state phenotype where the mechanism is activated within the representative member of the taxonomic unit." [OMP:WAM]
+def: "A SOS response phenotype where the mechanism is activated within the representative member of the taxonomic unit." [OMP:WAM]
 is_a: OMP:0005019 ! expression of the SOS response, state phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:30Z
@@ -3561,7 +3561,7 @@ creation_date: 2013-09-25T15:57:46Z
 [Term]
 id: OMP:0005032
 name: presence of stress induced mutagenesis
-def: "A stress induced mutagenesis state phenotype where the processes of stress induced mutagenesis have been activated within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A stress induced mutagenesis phenotype where the processes of stress induced mutagenesis have been activated within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:59:12Z
@@ -3711,7 +3711,7 @@ creation_date: 2013-10-24T12:52:41Z
 [Term]
 id: OMP:0005051
 name: presence of homologous recombination
-def: "A homologous recombination state phenotype where the process is active within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A homologous recombination phenotype where the process is active within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:21:41Z
@@ -3719,7 +3719,7 @@ creation_date: 2013-10-25T12:21:41Z
 [Term]
 id: OMP:0005052
 name: absence of homologous recombination
-def: "A homologous recombination state phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A homologous recombination phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:22:04Z
@@ -3757,7 +3757,7 @@ creation_date: 2013-10-29T13:15:06Z
 [Term]
 id: OMP:0005057
 name: absence of site specific recombination
-def: "A site specific recombination state phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A site specific recombination phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:15:28Z
@@ -3765,7 +3765,7 @@ creation_date: 2013-10-29T13:15:28Z
 [Term]
 id: OMP:0005058
 name: presence of site specific recombination
-def: "A site specific recombination state phenotype where the process is active within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A site specific recombination phenotype where the process is active within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:20:16Z
@@ -3797,7 +3797,7 @@ creation_date: 2013-11-04T18:09:38Z
 [Term]
 id: OMP:0005062
 name: absence of chromosome segregation
-def: "A chromosome segregation state phenotype where process does not occur in the representative member of a taxonomic unit." [OMP:WAM]
+def: "A chromosome segregation phenotype where process does not occur in the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:10:07Z
@@ -3805,7 +3805,7 @@ creation_date: 2013-11-04T18:10:07Z
 [Term]
 id: OMP:0005063
 name: presence of chromosome segregation
-def: "A chromosome segregation state phenotype where process occurs in the representative member of a taxonomic unit." [OMP:WAM]
+def: "A chromosome segregation phenotype where process occurs in the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:12:32Z
@@ -3829,7 +3829,7 @@ creation_date: 2013-11-04T18:21:56Z
 [Term]
 id: OMP:0005066
 name: absence of gene silencing
-def: "A gene silencing state phenotype where the mechanisms are inactive in the representative member of a taxonomic unit." [OMP:WAM]
+def: "A gene silencing phenotype where the mechanisms are inactive in the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:33:14Z
@@ -3837,7 +3837,7 @@ creation_date: 2013-11-04T18:33:14Z
 [Term]
 id: OMP:0005067
 name: presence of gene silencing
-def: "A gene silencing state phenotype where the mechanisms are active in the representative member of a taxonomic unit." [OMP:WAM]
+def: "A gene silencing phenotype where the mechanisms are active in the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:34:20Z
@@ -3881,7 +3881,7 @@ creation_date: 2013-11-08T17:12:27Z
 [Term]
 id: OMP:0005072
 name: absence of  mitotic recombination
-def: "A mitotic recombination state phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A mitotic recombination phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:35:56Z
@@ -3889,7 +3889,7 @@ creation_date: 2013-11-08T17:35:56Z
 [Term]
 id: OMP:0005073
 name: presence of mitotic recombination
-def: "A mitotic recombination state phenotype where the process is active within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A mitotic recombination phenotype where the process is active within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:36:20Z
@@ -4161,7 +4161,7 @@ creation_date: 2014-04-17T10:55:05Z
 [Term]
 id: OMP:0005104
 name: presence of enzyme activity
-def: "A enzyme activity state phenotype where the enzyme is functioning." [OMP:WAM]
+def: "A enzyme activity phenotype where the enzyme is functioning." [OMP:WAM]
 is_a: OMP:0000298 ! enzyme activity phenotype
 created_by: wmeza
 creation_date: 2014-04-17T17:09:56Z
@@ -4169,7 +4169,7 @@ creation_date: 2014-04-17T17:09:56Z
 [Term]
 id: OMP:0005105
 name: absence of enzyme activity
-def: "A enzyme activity state phenotype where the enzyme is not functioning." [OMP:WAM]
+def: "A enzyme activity phenotype where the enzyme is not functioning." [OMP:WAM]
 is_a: OMP:0000298 ! enzyme activity phenotype
 created_by: wmeza
 creation_date: 2014-04-17T17:13:04Z
@@ -4376,7 +4376,7 @@ creation_date: 2013-09-10T17:51:21Z
 [Term]
 id: OMP:0006024
 name: heterotrophic
-def: "A carbon source utilization state phenotype where an organism uses organic molecules as the carbon source." [ISBN:9780073402406, OMP:DAS]
+def: "A carbon source utilization phenotype where an organism uses organic molecules as the carbon source." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:39:02Z
@@ -4502,7 +4502,7 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006038
 name: not resistant to macrolide
-def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to a macrolide compound." [OMP:JCH]
+def: "A macrolide compound resistance phenotype where the representative member of a taxonomic unit is not resistant to a macrolide compound." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4510,7 +4510,7 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006039
 name: resistant to macrolide
-def: "A macrolide compound resistance state phenotype where the representative member of a taxonomic is resistant to a macrolide compound." [OMP:JCH]
+def: "A macrolide compound resistance phenotype where the representative member of a taxonomic is resistant to a macrolide compound." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4535,7 +4535,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006042
 name: not resistant to quinolone
-def: "A quinoline compound resistance state phenotype where the representative member of a taxonomic is not resistant to a quinoline compound." [OMp:JCH]
+def: "A quinoline compound resistance phenotype where the representative member of a taxonomic is not resistant to a quinoline compound." [OMp:JCH]
 is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
@@ -4543,7 +4543,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006043
 name: resistant to quinolone
-def: "A quinoline compound resistance state phenotype where the representative member of a taxonomic is resistant to a quinoline compound." [OMP:JCH]
+def: "A quinoline compound resistance phenotype where the representative member of a taxonomic is resistant to a quinoline compound." [OMP:JCH]
 is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
@@ -4570,7 +4570,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006046
 name: not resistant to beta-lactam
-def: "A beta-lactam compound resistance state phenotype where the representative member of a taxonomic is not resistant to a beta-lactam compound." [OMP:JCH]
+def: "A beta-lactam compound resistance phenotype where the representative member of a taxonomic is not resistant to a beta-lactam compound." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4578,7 +4578,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006047
 name: resistant to beta-lactam
-def: "An beta-lactam compound resistance state phenotype where the representative member of a taxonomic unit is resistant to a beta-lactam compound." [OMP:JCH]
+def: "An beta-lactam compound resistance phenotype where the representative member of a taxonomic unit is resistant to a beta-lactam compound." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4605,7 +4605,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006050
 name: not resistant to bacteriocin
-def: "A bacteriocin compound resistance state phenotype where the representative member of a taxonomic is not resistant to a bacteriocin compound." [OMP:JCH]
+def: "A bacteriocin compound resistance phenotype where the representative member of a taxonomic is not resistant to a bacteriocin compound." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -4613,7 +4613,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006051
 name: resistant to bacteriocin
-def: "A bacteriocin compound resistance state phenotype where the representative member of a taxonomic unit is resistant to a bacteriocin compound." [OMP:JCH]
+def: "A bacteriocin compound resistance phenotype where the representative member of a taxonomic unit is resistant to a bacteriocin compound." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -4640,7 +4640,7 @@ creation_date: 2013-10-11T17:45:44Z
 [Term]
 id: OMP:0006054
 name: not resistant to azole
-def: "An azole compound resistance state phenotype where the representative member of a taxonomic is not resistant to an azole compound." [OMP:DAS]
+def: "An azole compound resistance phenotype where the representative member of a taxonomic is not resistant to an azole compound." [OMP:DAS]
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
@@ -4648,7 +4648,7 @@ creation_date: 2013-10-11T17:45:44Z
 [Term]
 id: OMP:0006055
 name: resistant to azole
-def: "An azole compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an azole compound." [OMP:DAS]
+def: "An azole compound resistance phenotype where the representative member of a taxonomic unit is resistant to an azole compound." [OMP:DAS]
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
@@ -4689,7 +4689,7 @@ creation_date: 2013-10-22T19:24:20Z
 [Term]
 id: OMP:0006059
 name: not resistant to aminoglycoside compound
-def: "An aminoglycoside compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to an antifolate compound." [OMP:JCH]
+def: "An aminoglycoside compound resistance phenotype where the representative member of a taxonomic unit is not resistant to an antifolate compound." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
@@ -4697,7 +4697,7 @@ creation_date: 2013-10-22T19:24:20Z
 [Term]
 id: OMP:0006060
 name: resistant to aminoglycoside
-def: "An aminoglycoside compound resistance state phenotype where the representative member of a taxonomic unit is resistant to an aminoglycoside compound." [OMP:JCH]
+def: "An aminoglycoside compound resistance phenotype where the representative member of a taxonomic unit is resistant to an aminoglycoside compound." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
@@ -4732,7 +4732,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006064
 name: not resistant to tetracycline
-def: "A tetracycline compound resistance state phenotype where the representative member of a taxonomic is not resistant to a tetracycline compound." [OMP:JCH]
+def: "A tetracycline compound resistance phenotype where the representative member of a taxonomic is not resistant to a tetracycline compound." [OMP:JCH]
 synonym: "chlortetracycline" NARROW [OMP:JCH]
 synonym: "oxytetracycline " NARROW [OMP:JCH]
 is_a: OMP:0006062 ! tetracycline resistance phenotype
@@ -4742,7 +4742,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006065
 name: resistant to tetracycline
-def: "A tetracycline compound resistance state phenotype where the representative member of a taxonomic is resistant to a tetracycline compound." [OMP:JCH]
+def: "A tetracycline compound resistance phenotype where the representative member of a taxonomic is resistant to a tetracycline compound." [OMP:JCH]
 is_a: OMP:0006062 ! tetracycline resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
@@ -4776,7 +4776,7 @@ creation_date: 2013-10-24T19:41:11Z
 [Term]
 id: OMP:0006069
 name: not resistant to chloramphenicol
-def: "A chloramphenicol compound resistance state phenotype where the representative member of a taxonomic is not resistant to a chloramphenicol compound." [OMP:JCH]
+def: "A chloramphenicol compound resistance phenotype where the representative member of a taxonomic is not resistant to a chloramphenicol compound." [OMP:JCH]
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
@@ -4784,7 +4784,7 @@ creation_date: 2013-10-24T19:41:11Z
 [Term]
 id: OMP:0006070
 name: resistant to chloramphenicol
-def: "A chloramphenicol compound resistance state phenotype where the representative member of a taxonomic is resistant to a chloramphenicol compound." [OMP:JCH]
+def: "A chloramphenicol compound resistance phenotype where the representative member of a taxonomic is resistant to a chloramphenicol compound." [OMP:JCH]
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
@@ -4823,7 +4823,7 @@ creation_date: 2014-05-12T13:04:39Z
 [Term]
 id: OMP:0006075
 name: not resistant to pteridine
-def: "A pteridine compound resistance state phenotype where the representative member of a taxonomic unit is not resistant to a pteridine compound." [CHEBI:27601, OMP:JCH]
+def: "A pteridine compound resistance phenotype where the representative member of a taxonomic unit is not resistant to a pteridine compound." [CHEBI:27601, OMP:JCH]
 is_a: OMP:0007065 ! pteridine resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-05-12T13:04:40Z
@@ -4831,7 +4831,7 @@ creation_date: 2014-05-12T13:04:40Z
 [Term]
 id: OMP:0006076
 name: resistant to pteridine
-def: "A pteridine compound resistance state phenotype where the representative member of a taxonomic is resistant to a pteridine compound." [CHEBI:27601, OMP:JCH]
+def: "A pteridine compound resistance phenotype where the representative member of a taxonomic is resistant to a pteridine compound." [CHEBI:27601, OMP:JCH]
 is_a: OMP:0007065 ! pteridine resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-05-12T13:04:40Z
@@ -4924,7 +4924,7 @@ creation_date: 2013-09-11T17:14:56Z
 [Term]
 id: OMP:0007012
 name: autotrophic
-def: "A carbon source utilization state phenotype where an organism can use carbon dioxide (CO2) as the carbon source." [ISBN:9780073402406, OMP:DAS]
+def: "A carbon source utilization phenotype where an organism can use carbon dioxide (CO2) as the carbon source." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:10:16Z
@@ -4934,7 +4934,7 @@ id: OMP:0007013
 name: inorganic nitrogen source utilization phenotype
 def: "A nitrogen source utilization phenotype where an inorganic nitrogen-containing compound is the source of nitrogen." [OMP:DAS]
 synonym: "ammonia (NH3) utilization, state phenotype" NARROW []
-synonym: "nitrate utilization, state phenotype " NARROW []
+synonym: "nitrate utilization, phenotype " NARROW []
 synonym: "nitrite utilization, state phenotype" NARROW []
 is_a: OMP:0006026 ! nitrogen source utilization phenotype
 created_by: siegele
@@ -4951,7 +4951,7 @@ creation_date: 2013-09-13T15:20:24Z
 [Term]
 id: OMP:0007015
 name: make obsolete - requirement for amino acid(s)
-def: "An amino acid requirement state phenotype where an organism cannot synthesize one or more amino acids." [OMP:DAS]
+def: "An amino acid requirement phenotype where an organism cannot synthesize one or more amino acids." [OMP:DAS]
 is_obsolete: true
 created_by: siegele
 creation_date: 2013-09-16T12:47:41Z
@@ -4959,7 +4959,7 @@ creation_date: 2013-09-16T12:47:41Z
 [Term]
 id: OMP:0007016
 name: make obsolete - purine/pyrimidine requirement, state phenotype
-def: "A purine/pyrimidine requirement state phenotype where the representative member of a taxonomic unit cannot synthesize one or more purine or pyrimidine bases required for growth." [OMP:DAS]
+def: "A purine/pyrimidine requirement phenotype where the representative member of a taxonomic unit cannot synthesize one or more purine or pyrimidine bases required for growth." [OMP:DAS]
 is_obsolete: true
 created_by: siegele
 creation_date: 2013-09-16T12:48:22Z
@@ -4967,7 +4967,7 @@ creation_date: 2013-09-16T12:48:22Z
 [Term]
 id: OMP:0007017
 name: make obsolete - vitamin/enzyme cofactor requirement
-def: "A vitamin/enzyme cofactor state phenotype where the representative member of a taxonomic unita taxonomic unit cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
+def: "A vitamin/enzyme cofactor phenotype where the representative member of a taxonomic unita taxonomic unit cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
 is_obsolete: true
 created_by: siegele
 creation_date: 2013-09-16T12:49:50Z
@@ -4975,7 +4975,7 @@ creation_date: 2013-09-16T12:49:50Z
 [Term]
 id: OMP:0007018
 name: prototrophic
-def: "A growth factor utilization state phenotype where an organism can synthesize all organic compounds essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
+def: "A growth factor utilization phenotype where an organism can synthesize all organic compounds essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
 is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:29:19Z
@@ -5089,7 +5089,7 @@ creation_date: 2013-09-28T21:02:26Z
 [Term]
 id: OMP:0007031
 name: utilization of dinitrogen phenotype
-def: "A dinitrogen utilization state phenotype where the representative member of a taxonomic unit can use N2 as the source of nitrogen." [OMP:DAS]
+def: "A dinitrogen utilization phenotype where the representative member of a taxonomic unit can use N2 as the source of nitrogen." [OMP:DAS]
 is_a: OMP:0006030 ! dinitrogen utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:02:26Z
@@ -5114,7 +5114,7 @@ creation_date: 2013-09-28T21:05:18Z
 [Term]
 id: OMP:0007034
 name: utilization of inorganic nitrogen phenotype
-def: "An inorganic nitrogen source utilization state phenotype where the representative member of a taxonomic unit can use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
+def: "An inorganic nitrogen source utilization phenotype where the representative member of a taxonomic unit can use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
 is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:05:43Z
@@ -5139,7 +5139,7 @@ creation_date: 2013-09-28T21:07:58Z
 [Term]
 id: OMP:0007037
 name: utilization of organic nitrogen phenotype
-def: "An organic nitrogen source utilization state phenotype where the representative member of a taxonomic unit can use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
+def: "An organic nitrogen source utilization phenotype where the representative member of a taxonomic unit can use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
 is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:08:02Z
@@ -5171,7 +5171,7 @@ creation_date: 2013-09-29T00:36:46Z
 [Term]
 id: OMP:0007041
 name: make obsolete - auxotroph, state phenotype
-def: "A growth factor requirement state phenotype where an organism cannot synthesize one or more growth factors, but must obtain them from the environment." [ISBN:9780878936083, OMP:DAS]
+def: "A growth factor requirement phenotype where an organism cannot synthesize one or more growth factors, but must obtain them from the environment." [ISBN:9780878936083, OMP:DAS]
 is_obsolete: true
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:39:24Z
@@ -5236,7 +5236,7 @@ creation_date: 2013-10-01T15:19:36Z
 [Term]
 id: OMP:0007049
 name: utilization of inorganic phosphorus phenotype
-def: "An inorganic phosphorus source utilization state phenotype where the representative member of a taxonomic unit can use an inorganic P-containing compound as the source of phosphorus." [OMP:DAS]
+def: "An inorganic phosphorus source utilization phenotype where the representative member of a taxonomic unit can use an inorganic P-containing compound as the source of phosphorus." [OMP:DAS]
 is_a: OMP:0007045 ! inorganic phosphorus source phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:19:36Z
@@ -5261,7 +5261,7 @@ creation_date: 2013-10-01T15:20:22Z
 [Term]
 id: OMP:0007052
 name: utilization of organic phosphorus phenotype
-def: "An organic phosphorus source utilization state phenotype where the representative member of a taxonomic unit can use an organic P-containing compound as the source of phosphorus." [OMP:DAS]
+def: "An organic phosphorus source utilization phenotype where the representative member of a taxonomic unit can use an organic P-containing compound as the source of phosphorus." [OMP:DAS]
 is_a: OMP:0007046 ! organic phosphorus source phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:20:22Z
@@ -5302,7 +5302,7 @@ creation_date: 2013-10-01T15:33:32Z
 [Term]
 id: OMP:0007057
 name: utilization of inorganic sulfur phenotype
-def: "An inorganic sulfur source utilization state phenotype where the representative member of a taxonomic unit can use an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
+def: "An inorganic sulfur source utilization phenotype where the representative member of a taxonomic unit can use an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
 is_a: OMP:0007053 ! inorganic sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:33:38Z
@@ -5327,7 +5327,7 @@ creation_date: 2013-10-01T15:34:05Z
 [Term]
 id: OMP:0007060
 name: utilization of organic sulfur phenotype
-def: "An organic sulfur source utilization state phenotype where the representative member of a taxonomic unit can use an organic S-containing compound as the source of sulfur." [OMP:DAS]
+def: "An organic sulfur source utilization phenotype where the representative member of a taxonomic unit can use an organic S-containing compound as the source of sulfur." [OMP:DAS]
 is_a: OMP:0007054 ! organic sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:34:09Z
@@ -5358,7 +5358,7 @@ creation_date: 2014-01-31T18:45:09Z
 [Term]
 id: OMP:0007064
 name: phototrophic phenotype
-def: "A metabolic state phenotype where the representative member of a taxonomic unit can use light as the energy source." [ISBN:978-0-07-340240-6, OMP:DAS]
+def: "A metabolic phenotype where the representative member of a taxonomic unit can use light as the energy source." [ISBN:978-0-07-340240-6, OMP:DAS]
 is_a: OMP:0000224 ! energy metabolism phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:49:00Z
