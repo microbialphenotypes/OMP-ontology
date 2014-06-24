@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 23:06:2014 18:58
+date: 24:06:2014 12:02
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -3074,6 +3074,7 @@ creation_date: 2012-11-04T02:50:49Z
 id: OMP:0000435
 name: resistant to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance to aminopyrimidines is observed or predict." [OMP:DAS]
+synonym: "resistant to antifolate" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:01Z
@@ -3082,6 +3083,7 @@ creation_date: 2012-11-04T02:52:01Z
 id: OMP:0000436
 name: not resistant to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance to aminopyrimidines is not observed or predicted." [OMP:DAS]
+synonym: "not resistant to antifolate" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:18Z
@@ -4502,7 +4504,7 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006038
 name: not resistant to macrolide
-def: "A macrolide compound resistance phenotype where the representative member of a taxonomic unit is not resistant to a macrolide compound." [OMP:JCH]
+def: "A macrolide compound resistance phenotype where resistance to macrolide compounds is not observed or predicted." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4510,7 +4512,7 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006039
 name: resistant to macrolide
-def: "A macrolide compound resistance phenotype where the representative member of a taxonomic is resistant to a macrolide compound." [OMP:JCH]
+def: "A macrolide compound resistance phenotype where resistance to macrolide compounds is observed or predicted." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -4535,7 +4537,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006042
 name: not resistant to quinolone
-def: "A quinoline compound resistance phenotype where the representative member of a taxonomic is not resistant to a quinoline compound." [OMp:JCH]
+def: "A quinoline compound resistance phenotype where resistance to quinolones is not observed or predicted." [OMp:JCH]
 is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
@@ -4543,7 +4545,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006043
 name: resistant to quinolone
-def: "A quinoline compound resistance phenotype where the representative member of a taxonomic is resistant to a quinoline compound." [OMP:JCH]
+def: "A quinoline compound resistance phenotype where resistance to quinolones is obsereved or predicted." [OMP:JCH]
 is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
@@ -4732,7 +4734,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006064
 name: not resistant to tetracycline
-def: "A tetracycline compound resistance phenotype where the representative member of a taxonomic is not resistant to a tetracycline compound." [OMP:JCH]
+def: "A tetracycline compound resistance phenotype where resistance to tetracycline compounds is not observed or predicted." [OMP:JCH]
 synonym: "chlortetracycline" NARROW [OMP:JCH]
 synonym: "oxytetracycline " NARROW [OMP:JCH]
 is_a: OMP:0006062 ! tetracycline resistance phenotype
@@ -4742,7 +4744,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006065
 name: resistant to tetracycline
-def: "A tetracycline compound resistance phenotype where the representative member of a taxonomic is resistant to a tetracycline compound." [OMP:JCH]
+def: "A tetracycline compound resistance phenotype where resistance to tetracycline is observed or predicted." [OMP:JCH]
 is_a: OMP:0006062 ! tetracycline resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
@@ -4831,7 +4833,7 @@ creation_date: 2014-05-12T13:04:40Z
 [Term]
 id: OMP:0006076
 name: resistant to pteridine
-def: "A pteridine compound resistance phenotype where the representative member of a taxonomic is resistant to a pteridine compound." [CHEBI:27601, OMP:JCH]
+def: "A pteridine compound resistance phenotype where resistance to pteridine compounds  is observed or predicted." [CHEBI:27601, OMP:JCH]
 is_a: OMP:0007065 ! pteridine resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-05-12T13:04:40Z
