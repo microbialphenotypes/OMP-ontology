@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 26:06:2014 17:55
+date: 27:06:2014 14:37
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -2210,6 +2210,7 @@ creation_date: 2011-07-21T02:40:26Z
 [Term]
 id: OMP:0000282
 name: increased growth rate
+def: "A growth phenotype where the rate of growth is increased relative to a designated control." []
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:43:01Z
@@ -2217,6 +2218,7 @@ creation_date: 2011-07-21T02:43:01Z
 [Term]
 id: OMP:0000283
 name: decreased growth rate
+def: "A growth phenotype dealing with an increase in the rate growth relative to a designated control." []
 synonym: "slow growth rate" RELATED []
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
@@ -3451,7 +3453,7 @@ creation_date: 2013-09-18T18:35:30Z
 
 [Term]
 id: OMP:0005018
-name: expression of the SOS response, relative phenotype
+name: altered SOS response phenotype
 def: "A SOS response phenotype where the genes are expressed at their basal level." [OMP:WAM]
 is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
@@ -3459,7 +3461,7 @@ creation_date: 2013-09-19T13:39:34Z
 
 [Term]
 id: OMP:0005019
-name: expression of the SOS response, state phenotype
+name: independent observations
 def: "A SOS response where the trait in question is the activation of the SOS mechanism." [OMP:WAM]
 is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
@@ -3469,7 +3471,7 @@ creation_date: 2013-09-19T13:40:06Z
 id: OMP:0005020
 name: increased uninduced expression of the SOS response
 def: "A  expression of SOS phenotype where the basal level of gene expression is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005018 ! expression of the SOS response, relative phenotype
+is_a: OMP:0005018 ! altered SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T15:54:21Z
 
@@ -3477,23 +3479,23 @@ creation_date: 2013-09-19T15:54:21Z
 id: OMP:0005021
 name: decreased uninduced expression of the SOS response
 def: "A expression of SOS phenotype where the basal level of gene expression is decreased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005018 ! expression of the SOS response, relative phenotype
+is_a: OMP:0005018 ! altered SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T15:55:16Z
 
 [Term]
 id: OMP:0005022
 name: absence of SOS response
-def: "A state SOS response phenotype where the mechanism is deactivated within the representative member of the taxonomic unit." [OMP:WAM]
-is_a: OMP:0005019 ! expression of the SOS response, state phenotype
+def: "A SOS response phenotype where the mechanism is not observed or predicted." [OMP:WAM]
+is_a: OMP:0005019 ! independent observations
 created_by: wmeza
 creation_date: 2013-09-19T16:25:09Z
 
 [Term]
 id: OMP:0005023
 name: presence of SOS response
-def: "A SOS response phenotype where the mechanism is activated within the representative member of the taxonomic unit." [OMP:WAM]
-is_a: OMP:0005019 ! expression of the SOS response, state phenotype
+def: "A SOS response phenotype where the mechanism is observed or predicted." [OMP:WAM]
+is_a: OMP:0005019 ! independent observations
 created_by: wmeza
 creation_date: 2013-09-19T16:25:30Z
 
@@ -3501,7 +3503,7 @@ creation_date: 2013-09-19T16:25:30Z
 id: OMP:0005024
 name: increased induced expression of the SOS response
 def: "A expression of SOS response phenotype where mechanism's effect is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005018 ! expression of the SOS response, relative phenotype
+is_a: OMP:0005018 ! altered SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-20T13:01:05Z
 
@@ -3509,7 +3511,7 @@ creation_date: 2013-09-20T13:01:05Z
 id: OMP:0005025
 name: decreased induced expression of the SOS response
 def: "A expression of the SOS response phenotype where the effect of the mechanism is decreased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005018 ! expression of the SOS response, relative phenotype
+is_a: OMP:0005018 ! altered SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-20T13:26:46Z
 
