@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:06:2014 12:12
+date: 29:06:2014 18:18
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -24,13 +24,11 @@ creation_date: 2011-03-10T06:55:06Z
 id: OMP:0000002
 name: decreased motility
 alt_id: OMP:0000044
-def: "A motility phenotype where the organism(s) has decreased motility relative to some reference." [OMP:MCC]
+def: "A motility phenotype where motility is decreased relative to a specified control." [OMP:MCC]
 comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
 synonym: "abolished motility" NARROW []
 xref: PATO:0002297
 is_a: OMP:0007001 ! altered motility
-intersection_of: OMP:0007001 ! altered motility
-intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 creation_date: 2011-03-10T07:02:42Z
 
 [Term]
@@ -51,7 +49,7 @@ creation_date: 2011-04-14T03:29:20Z
 
 [Term]
 id: OMP:0000005
-name: motile
+name: cell motility
 def: "A motility phenotype where a cell or cells posseses the ability to perform controlled self-propelled movement that results in translocation from one place to another." [OMP:MCC]
 synonym: "presence of motility" RELATED []
 is_a: OMP:0000001 ! motility phenotype
@@ -369,7 +367,7 @@ creation_date: 2011-04-26T03:53:34Z
 [Term]
 id: OMP:0000045
 name: increased motility
-def: "A motility phenotype where the organism(s) has increased motility relative to some reference." [OMP:MCC]
+def: "A motility phenotype where motility is increased relative to a specified control." [OMP:MCC]
 xref: PATO:0002298
 is_a: OMP:0007001 ! altered motility
 created_by: mchibucos
@@ -554,7 +552,7 @@ creation_date: 2011-04-26T05:09:24Z
 id: OMP:0000067
 name: motile by swarming
 def: "A motile phenotype where a population of the representative member of a taxonomic unit displays coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
-is_a: OMP:0000005 ! motile
+is_a: OMP:0000005 ! cell motility
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
 
@@ -906,7 +904,7 @@ creation_date: 2011-02-02T02:45:02Z
 id: OMP:0000111
 name: motile by swimming
 def: "A motile phenotype where the representative member of a taxonomic unit exhibits smooth movement through a liquid medium." [OMP:MCC]
-is_a: OMP:0000005 ! motile
+is_a: OMP:0000005 ! cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
 
@@ -914,7 +912,7 @@ creation_date: 2011-02-07T03:17:40Z
 id: OMP:0000112
 name: motile by gliding
 def: "A motile phenotype where the representative member of a taxonomic unit exhibits smooth movement along a solid surface." [OMP:MCC]
-is_a: OMP:0000005 ! motile
+is_a: OMP:0000005 ! cell motility
 is_a: OMP:0005106 ! increase in organism lifespan
 created_by: adrienne
 creation_date: 2011-02-07T03:18:03Z
@@ -923,7 +921,7 @@ creation_date: 2011-02-07T03:18:03Z
 id: OMP:0000113
 name: motile by twitching
 def: "A cell motility phenotype where the controlled movement of the representative member of a taxonomic unit is dependent on the presence of type IV pili." [OMP:MCC]
-is_a: OMP:0000005 ! motile
+is_a: OMP:0000005 ! cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:13Z
 
@@ -1084,8 +1082,8 @@ creation_date: 2011-02-18T03:01:18Z
 
 [Term]
 id: OMP:0000133
-name: non-motile
-def: "A motility phenotype where the representative member of a taxonomic unit does not possess the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
+name: lack of cell motility
+def: "A motility phenotype where a cell or cells lacks the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
 synonym: "absence of motility" RELATED []
 is_a: OMP:0000001 ! motility phenotype
 created_by: adrienne
@@ -2187,7 +2185,7 @@ creation_date: 2011-07-21T02:33:53Z
 [Term]
 id: OMP:0000279
 name: motile by uncoordinated movement
-is_a: OMP:0000005 ! motile
+is_a: OMP:0000005 ! cell motility
 created_by: mchibucos
 creation_date: 2011-07-21T02:35:22Z
 
@@ -4844,6 +4842,13 @@ def: "A pteridine compound resistance phenotype where resistance to pteridine co
 is_a: OMP:0007065 ! pteridine resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-05-12T13:04:40Z
+
+[Term]
+id: OMP:0007000
+name: abolished motility
+is_a: OMP:0000002 ! decreased motility
+created_by: siegele
+creation_date: 2014-06-29T14:10:40Z
 
 [Term]
 id: OMP:0007001
