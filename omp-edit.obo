@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 27:06:2014 14:37
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 29:06:2014 12:12
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2210,7 +2210,7 @@ creation_date: 2011-07-21T02:40:26Z
 [Term]
 id: OMP:0000282
 name: increased growth rate
-def: "A growth phenotype where the rate of growth is increased relative to a designated control." []
+def: "A growth phenotype where the growth rate is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:43:01Z
@@ -2218,7 +2218,7 @@ creation_date: 2011-07-21T02:43:01Z
 [Term]
 id: OMP:0000283
 name: decreased growth rate
-def: "A growth phenotype dealing with an increase in the rate growth relative to a designated control." []
+def: "A growth phenotype where the growth rate is decreased relative to a designated control." [OMP:DAS]
 synonym: "slow growth rate" RELATED []
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
@@ -3261,7 +3261,7 @@ creation_date: 2013-08-22T01:48:57Z
 [Term]
 id: OMP:0000464
 name: absence of an outer membrane
-def: "An outer membrane phenotype phenotype where cells of the representative member of a taxonomic unit do not have an outer membrane." [OMP:DAS]
+def: "An outer membrane phenotype where a cell or cells lacks an outer membrane." [OMP:DAS]
 is_a: OMP:0000461 ! outer membrane phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:53:29Z
@@ -4994,7 +4994,6 @@ id: OMP:0007019
 name: increased requirement for amino acid(s)
 def: "An amino acid requirement relative phenotype where an organism's requirement for one or more amino acids is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007074 ! increased growth factor requirement
-intersection_of: OMP:0007038 ! amino acid requirement
 created_by: siegele
 creation_date: 2013-09-16T17:30:07Z
 
@@ -5011,7 +5010,7 @@ id: OMP:0007021
 name: decreased requirement for amino acid(s)
 def: "An amino acid requirement relative phenotype where an organism's requirement for one or more amino acids is decreased requirement relative to a designated control." [OMP:DAS]
 synonym: "abolished amino acid requirement" EXACT []
-is_a: OMP:0005107 ! decrease in organism lifepsan
+is_a: OMP:0007074 ! increased growth factor requirement
 is_a: OMP:0007075 ! decreased growth factor requirement
 created_by: siegele
 creation_date: 2013-09-17T16:13:20Z
@@ -5157,7 +5156,7 @@ creation_date: 2013-09-28T21:08:02Z
 id: OMP:0007038
 name: amino acid requirement
 def: "A auxotrophic phenotype where the required growth factor is an amino acid." [OMP:DAS]
-is_a: OMP:0005107 ! decrease in organism lifepsan
+is_a: OMP:0007069 ! auxotrophic phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:27:05Z
 
@@ -5455,8 +5454,6 @@ id: OMP:0007074
 name: increased growth factor requirement
 def: "A growth factor requirement relative phenotype where an organism's requirement for one or more growth factors is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007079 ! altered growth factor requirement
-intersection_of: OMP:0007069 ! auxotrophic phenotype
-intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:42:23Z
 
@@ -5465,8 +5462,6 @@ id: OMP:0007075
 name: decreased growth factor requirement
 def: "A growth factor requirement relative phenotype where an organism's requirement for one or more growth factors is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007079 ! altered growth factor requirement
-intersection_of: OMP:0007069 ! auxotrophic phenotype
-intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:42:44Z
 
