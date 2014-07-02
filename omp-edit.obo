@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 29:06:2014 18:18
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+date: 02:07:2014 18:47
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -4191,6 +4191,20 @@ def: "A lifespan phenotype where there is a reduction in the duration of an orga
 is_a: OMP:0000090 ! lifespan
 created_by: wmeza
 creation_date: 2014-05-07T12:40:14Z
+
+[Term]
+id: OMP:0005108
+name: increased cell diameter 
+is_a: OMP:0000074 ! cell size phenotype
+created_by: wmeza
+creation_date: 2014-07-02T18:39:12Z
+
+[Term]
+id: OMP:0005109
+name: decreased cell diameter
+is_a: OMP:0000074 ! cell size phenotype
+created_by: wmeza
+creation_date: 2014-07-02T18:46:00Z
 
 [Term]
 id: OMP:0006001
