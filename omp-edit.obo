@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 02:07:2014 18:47
+date: 03:07:2014 17:48
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -4205,6 +4205,20 @@ name: decreased cell diameter
 is_a: OMP:0000074 ! cell size phenotype
 created_by: wmeza
 creation_date: 2014-07-02T18:46:00Z
+
+[Term]
+id: OMP:0005110
+name: increased rate of biofilm formation
+is_a: OMP:0000176 ! biofilm phenotype
+created_by: wmeza
+creation_date: 2014-07-03T12:18:43Z
+
+[Term]
+id: OMP:0005111
+name: decreased rate of biofilm formation
+is_a: OMP:0000176 ! biofilm phenotype
+created_by: wmeza
+creation_date: 2014-07-03T12:19:02Z
 
 [Term]
 id: OMP:0006001
