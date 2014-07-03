@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:07:2014 17:48
+date: 03:07:2014 18:37
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
@@ -4194,7 +4194,8 @@ creation_date: 2014-05-07T12:40:14Z
 
 [Term]
 id: OMP:0005108
-name: increased cell diameter 
+name: increased cell diameter
+def: "A cell size phenotype where the diameter is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0000074 ! cell size phenotype
 created_by: wmeza
 creation_date: 2014-07-02T18:39:12Z
@@ -4202,6 +4203,7 @@ creation_date: 2014-07-02T18:39:12Z
 [Term]
 id: OMP:0005109
 name: decreased cell diameter
+def: "A cell size phenotype term where the diameter is reduced relative to a designated control." [OMP:WAM]
 is_a: OMP:0000074 ! cell size phenotype
 created_by: wmeza
 creation_date: 2014-07-02T18:46:00Z
