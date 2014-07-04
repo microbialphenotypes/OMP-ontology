@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 03:07:2014 18:37
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 03:07:2014 23:06
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -28,7 +28,7 @@ def: "A motility phenotype where motility is decreased relative to a specified c
 comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
 synonym: "abolished motility" NARROW []
 xref: PATO:0002297
-is_a: OMP:0007001 ! altered motility
+is_a: OMP:0007001 ! altered motility phenotype
 creation_date: 2011-03-10T07:02:42Z
 
 [Term]
@@ -369,7 +369,7 @@ id: OMP:0000045
 name: increased motility
 def: "A motility phenotype where motility is increased relative to a specified control." [OMP:MCC]
 xref: PATO:0002298
-is_a: OMP:0007001 ! altered motility
+is_a: OMP:0007001 ! altered motility phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:26Z
 
@@ -550,8 +550,8 @@ creation_date: 2011-04-26T05:09:24Z
 
 [Term]
 id: OMP:0000067
-name: motile by swarming
-def: "A motile phenotype where a population of the representative member of a taxonomic unit displays coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
+name: cell motility by swarming
+def: "A cell motility phenotype where a population of cells exhibit coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
 is_a: OMP:0000005 ! cell motility
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
@@ -902,25 +902,24 @@ creation_date: 2011-02-02T02:45:02Z
 
 [Term]
 id: OMP:0000111
-name: motile by swimming
-def: "A motile phenotype where the representative member of a taxonomic unit exhibits smooth movement through a liquid medium." [OMP:MCC]
+name: cell motility by swimming
+def: "A cell motility phenotype where a cell or cells exhibits smooth movement through a liquid medium." [OMP:MCC]
 is_a: OMP:0000005 ! cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
 
 [Term]
 id: OMP:0000112
-name: motile by gliding
-def: "A motile phenotype where the representative member of a taxonomic unit exhibits smooth movement along a solid surface." [OMP:MCC]
+name: cell motility by gliding
+def: "A cell motility phenotype where the a cell or cells exhibits smooth movement along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! cell motility
-is_a: OMP:0005106 ! increase in organism lifespan
 created_by: adrienne
 creation_date: 2011-02-07T03:18:03Z
 
 [Term]
 id: OMP:0000113
-name: motile by twitching
-def: "A cell motility phenotype where the controlled movement of the representative member of a taxonomic unit is dependent on the presence of type IV pili." [OMP:MCC]
+name: cell motility by twitching
+def: "A cell motility phenotype where a cell or cells exhibit movement over moist surfaces by the extension, tethering and then retraction of polar pili, usually type IV pili." [OMP:MCC, PMID:12142488]
 is_a: OMP:0000005 ! cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:13Z
@@ -1086,6 +1085,7 @@ name: lack of cell motility
 def: "A motility phenotype where a cell or cells lacks the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
 synonym: "absence of motility" RELATED []
 is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0007001 ! altered motility phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:33:32Z
 
@@ -2131,7 +2131,7 @@ id: OMP:0000273
 name: reference phenotype
 def: "A microbial phenotype that is used as a reference point by which to compare the phenotypic attributes of another cell or group of cells." [OMP:MCC]
 comment: Many observed phenotypes, such exhibiting an increase or a decrease in a particular process or quality, can only be understood in the context of comparison to a reference phenotype. We call the phenotype to which a comparison is being made a reference phenotype, and we consider the phenotype resulting from this comparison a relative phenotype. A second category of phenotypes, called state phenotypes, reflects the inherent capability of a representative member of a taxonomic unit. It is possible to asses state phenotypes in absence of a reference. For example, some organisms are motile, while others are non-motile, both of which can be assessed independent of comparison to a second phenotype.
-is_a: OMP:0000000 ! microbial phenotype
+is_obsolete: true
 created_by: Marcus
 creation_date: 2014-02-13T02:05:25Z
 
@@ -2439,7 +2439,7 @@ id: OMP:0000315
 name: state phenotype
 def: "A microbial phenotype that reflects the capability of the representative member of a taxonomic unit." [OMP:MCC]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
-is_a: OMP:0000000 ! microbial phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-04-05T03:35:06Z
 
@@ -2449,7 +2449,7 @@ name: relative phenotype
 def: "A microbial phenotype that is different relative to the designated control phenotype." [OMP:MCC]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "mutant phenotype" NARROW []
-is_a: OMP:0000000 ! microbial phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-04-05T03:35:22Z
 
@@ -3849,8 +3849,6 @@ id: OMP:0005068
 name: increased mutation frequency
 def: "A mutation frequency phenotype where the mutation frequency is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005048 ! mutation frequency phenotype
-intersection_of: OMP:0005048 ! mutation frequency phenotype
-intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:05:44Z
 
@@ -3859,8 +3857,6 @@ id: OMP:0005069
 name: decreased mutation frequency
 def: "A mutation frequency phenotype where the mutation frequency is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005048 ! mutation frequency phenotype
-intersection_of: OMP:0005048 ! mutation frequency phenotype
-intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:11:14Z
 
@@ -4882,7 +4878,7 @@ creation_date: 2014-06-29T14:10:40Z
 
 [Term]
 id: OMP:0007001
-name: altered motility
+name: altered motility phenotype
 is_a: OMP:0000001 ! motility phenotype
 created_by: siegele
 creation_date: 2014-04-24T17:38:06Z
@@ -5056,8 +5052,6 @@ name: decreased purine/pyrimidine requirement
 def: "A purine/pyrimidine requirement phenotype where an organism's requirement for a purine or pyrimidine base is decreased relative to a designated control." [OMP:DAS]
 synonym: "abolished purine/pyrimidine requirement" EXACT []
 is_a: OMP:0007081 ! altered purine/pyrimidine requirement
-intersection_of: OMP:0007039 ! purine/pyrimidine requirement
-intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
 
@@ -5066,8 +5060,6 @@ id: OMP:0007023
 name: increased purine/pyrimidine requirement
 def: "A purine/pyrimidine requirement relative phenotype where an organism's requirement for purine or pyrimidine bases is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007081 ! altered purine/pyrimidine requirement
-intersection_of: OMP:0007039 ! purine/pyrimidine requirement
-intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:30:36Z
 
@@ -5455,8 +5447,6 @@ id: OMP:0007070
 name: decreased carbon source utilization
 def: "A carbon source utilization relative phenotype where the ability to use a particular carbon source is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007078 ! altered carbon source utilization
-intersection_of: OMP:0006023 ! carbon source utilization phenotype
-intersection_of: decreased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:18:08Z
 
@@ -5465,8 +5455,6 @@ id: OMP:0007071
 name: increased carbon source utilization
 def: "A carbon source utilization relative phenotype where the ability to use a particular carbon source is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007078 ! altered carbon source utilization
-intersection_of: OMP:0006023 ! carbon source utilization phenotype
-intersection_of: increased_relative_to OMP:0000273 ! reference phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:18:41Z
 
@@ -5553,7 +5541,6 @@ creation_date: 2014-04-30T16:07:16Z
 id: TEST:0007001
 name: decreased motility by gliding
 is_a: OMP:0000002 ! decreased motility
-is_a: OMP:0005106 ! increase in organism lifespan
 created_by: DeborahSiegele
 creation_date: 2014-03-02T17:03:34Z
 
