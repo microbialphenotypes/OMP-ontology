@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 03:07:2014 23:06
+date: 06:07:2014 14:46
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -336,16 +336,16 @@ creation_date: 2011-06-06T03:36:04Z
 [Term]
 id: OMP:0000040
 name: decreased cell size
-def: "A type of cell size that is relatively smaller." [OMP:MCC]
-is_a: OMP:0000074 ! cell size phenotype
+def: "An altered cell size phenotype where the size of a cell or cells is decreased relative to a specified control." [OMP:MCC]
+is_a: OMP:0007083 ! altered cell size phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:47:26Z
 
 [Term]
 id: OMP:0000041
 name: increased cell size
-def: "A type of cell size that is relatively larger." [OMP:MCC]
-is_a: OMP:0000074 ! cell size phenotype
+def: "An altered cell size phenotype where the volume of a cell or cells is increased relative to a specified control." [OMP:MCC]
+is_a: OMP:0007083 ! altered cell size phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:49:09Z
 
@@ -574,7 +574,7 @@ creation_date: 2011-02-07T03:47:50Z
 
 [Term]
 id: OMP:0000070
-name: cellular development phenotype
+name: cell development phenotype
 def: "A microbial phenotype, where the trait in question is the progression of a cell from an initial condition to a later condition." [OMP:MCC]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: adrienne
@@ -582,7 +582,7 @@ creation_date: 2011-02-02T03:11:48Z
 
 [Term]
 id: OMP:0000071
-name: cellular morphology phenotype
+name: cell morphology phenotype
 def: "A microbial phenotype, where the trait in question is the form and structure of the cell." [OMP:MCC]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: adrienne
@@ -600,7 +600,7 @@ creation_date: 2011-02-02T03:31:35Z
 id: OMP:0000073
 name: cell shape phenotype
 def: "A cellular morphology phenotype where the trait in question is the shape of cells of the representative member of a taxonomic unit." [OMP:MCC]
-is_a: OMP:0000071 ! cellular morphology phenotype
+is_a: OMP:0000071 ! cell morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:02Z
 
@@ -608,7 +608,7 @@ creation_date: 2011-02-02T03:18:02Z
 id: OMP:0000074
 name: cell size phenotype
 def: "A cellular morphology phenotype where the trait in question is the size of the cell." [OMP:MCC]
-is_a: OMP:0000071 ! cellular morphology phenotype
+is_a: OMP:0000071 ! cell morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:19Z
 
@@ -683,7 +683,7 @@ id: OMP:0000083
 name: cell projection phenotype
 def: "A cellular morphology phenotype where the structure in question is a prolongation or process extending from a cell." [OMP:MCC]
 synonym: "cell appendage phenotype" EXACT []
-is_a: OMP:0000071 ! cellular morphology phenotype
+is_a: OMP:0000071 ! cell morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:47:44Z
 
@@ -700,7 +700,7 @@ creation_date: 2011-02-02T03:47:57Z
 id: OMP:0000085
 name: cell envelope phenotype
 def: "A cellular morphology phenotype where the structure in question is the envelope that surrounds a bacterial cell and includes the cytoplasmic membrane and everything external to the cytoplasmic membrane, encompassing the periplasmic space, cell wall, and outer membrane if present." [OMP:MCC]
-is_a: OMP:0000071 ! cellular morphology phenotype
+is_a: OMP:0000071 ! cell morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:49:03Z
 
@@ -751,7 +751,7 @@ creation_date: 2011-02-02T03:24:11Z
 id: OMP:0000091
 name: sporulation phenotype
 def: "A cellular development phenotype where development concerns formation of a spore, a structure that can be used for dissemination, survival in adverse conditions, or reproduction." [OMP:MCC]
-is_a: OMP:0000070 ! cellular development phenotype
+is_a: OMP:0000070 ! cell development phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:24:24Z
 
@@ -759,7 +759,7 @@ creation_date: 2011-02-02T03:24:24Z
 id: OMP:0000092
 name: heterocyst formation phenotype
 def: "A cellular development phenotype where development concerns differentiation into a specialized cell whose purpose is to fix nitrogen." [OMP:MCC]
-is_a: OMP:0000070 ! cellular development phenotype
+is_a: OMP:0000070 ! cell development phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:24:43Z
 
@@ -767,7 +767,7 @@ creation_date: 2011-02-02T03:24:43Z
 id: OMP:0000093
 name: ankinete formation phenotype
 def: "A cellular development phenotype where development concerns a special thick-walled cell that has the ability to withstand desiccation for long periods of time." [OMP:MCC]
-is_a: OMP:0000070 ! cellular development phenotype
+is_a: OMP:0000070 ! cell development phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:25:02Z
 
@@ -783,7 +783,7 @@ creation_date: 2011-02-02T03:25:29Z
 id: OMP:0000095
 name: spore germination phenotype
 def: "A cellular development phenotype where development concerns the physiological and developmental changes that occur in a spore following release from dormancy up to the earliest signs of growth (e.g. emergence from a spore wall)." [OMP:MCC]
-is_a: OMP:0000070 ! cellular development phenotype
+is_a: OMP:0000070 ! cell development phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:25:47Z
 
@@ -2191,9 +2191,10 @@ creation_date: 2011-07-21T02:35:22Z
 
 [Term]
 id: OMP:0000280
-name: elongated cell length
+name: increased cell length
+def: "An altered cell size phenotype where the long axis of a cell or cells is increased relative to a specified control." [OMP:DAS]
 comment: The mukB mutant appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
-is_a: OMP:0000074 ! cell size phenotype
+is_a: OMP:0007083 ! altered cell size phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:37:15Z
 
@@ -4191,16 +4192,16 @@ creation_date: 2014-05-07T12:40:14Z
 [Term]
 id: OMP:0005108
 name: increased cell diameter
-def: "A cell size phenotype where the diameter is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0000074 ! cell size phenotype
+def: "An altered cell size phenotype where the diameter or a cell or cells is increased relative to a designated control." [OMP:WAM]
+is_a: OMP:0007083 ! altered cell size phenotype
 created_by: wmeza
 creation_date: 2014-07-02T18:39:12Z
 
 [Term]
 id: OMP:0005109
 name: decreased cell diameter
-def: "A cell size phenotype term where the diameter is reduced relative to a designated control." [OMP:WAM]
-is_a: OMP:0000074 ! cell size phenotype
+def: "An altered cell size phenotype where the diameter or a cell or cells is decreased relative to a designated control." [OMP:WAM]
+is_a: OMP:0007083 ! altered cell size phenotype
 created_by: wmeza
 creation_date: 2014-07-02T18:46:00Z
 
@@ -5536,6 +5537,22 @@ name: altered vitamin/enzyme cofactor requirement
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-04-30T16:07:16Z
+
+[Term]
+id: OMP:0007083
+name: altered cell size phenotype
+def: "A cell size phenotype where the size of a cell or cells is altered relative to a specified control." [OMP:DAS]
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2014-07-06T14:41:49Z
+
+[Term]
+id: OMP:0007084
+name: decreased cell length
+def: "An altered cell size phenotype where the long axis of a cell or cells is decreased relative to a specified control." [OMP:DAS]
+is_a: OMP:0007083 ! altered cell size phenotype
+created_by: siegele
+creation_date: 2014-07-06T14:43:59Z
 
 [Term]
 id: TEST:0007001
