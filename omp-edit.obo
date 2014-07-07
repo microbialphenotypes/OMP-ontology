@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 06:07:2014 14:46
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+date: 07:07:2014 16:14
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1622,7 +1622,7 @@ creation_date: 2011-06-07T02:26:30Z
 
 [Term]
 id: OMP:0000206
-name: hemolytic
+name: hemolytic phenotype
 synonym: "presence of hemolysis" EXACT []
 is_a: OMP:0000099 ! hemolysis phenotype
 created_by: mchibucos
@@ -1710,7 +1710,7 @@ creation_date: 2011-02-07T03:53:18Z
 [Term]
 id: OMP:0000217
 name: increased hemolysis
-is_a: OMP:0000206 ! hemolytic
+is_a: OMP:0000206 ! hemolytic phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:19:00Z
 
@@ -1944,7 +1944,7 @@ creation_date: 2011-06-07T03:05:56Z
 [Term]
 id: OMP:0000249
 name: decreased hemolysis
-is_a: OMP:0000206 ! hemolytic
+is_a: OMP:0000206 ! hemolytic phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:19:25Z
 
@@ -4208,6 +4208,7 @@ creation_date: 2014-07-02T18:46:00Z
 [Term]
 id: OMP:0005110
 name: increased rate of biofilm formation
+def: "A biofilm phenotype where the rate of formation is enhanced relative to a designated control." [OMP:WAM]
 is_a: OMP:0000176 ! biofilm phenotype
 created_by: wmeza
 creation_date: 2014-07-03T12:18:43Z
@@ -4215,9 +4216,34 @@ creation_date: 2014-07-03T12:18:43Z
 [Term]
 id: OMP:0005111
 name: decreased rate of biofilm formation
+def: "A biofilm phenotype where the rate of biofilm formation is reduced relative to a designated control." [OMP:WAM]
 is_a: OMP:0000176 ! biofilm phenotype
 created_by: wmeza
 creation_date: 2014-07-03T12:19:02Z
+
+[Term]
+id: OMP:0005112
+name: SDS-EDTA stress phenotype
+def: "A stress response phenotype dealing with the response to exposure to SDS-EDTA." [OMP:WAM]
+is_a: OMP:0000173 ! stress response phenotype
+created_by: wmeza
+creation_date: 2014-07-07T13:21:43Z
+
+[Term]
+id: OMP:0005113
+name: decreased resistance to SDS-EDTA stress
+def: "A SDS-EDTA stress phenotype where resistance is reduced relative to a designated control." [OMP:WAM]
+is_a: OMP:0005112 ! SDS-EDTA stress phenotype
+created_by: wmeza
+creation_date: 2014-07-07T13:50:24Z
+
+[Term]
+id: OMP:0005114
+name: increased resistance to SDS-EDTA stress
+def: "A SDS-EDTA stress phenotype where resistance is enhanced relative to a designated control." [OMP:WAM]
+is_a: OMP:0005112 ! SDS-EDTA stress phenotype
+created_by: wmeza
+creation_date: 2014-07-07T13:50:45Z
 
 [Term]
 id: OMP:0006001
