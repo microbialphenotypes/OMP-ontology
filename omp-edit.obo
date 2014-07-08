@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 07:07:2014 20:34
+date: 08:07:2014 13:55
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -2460,6 +2460,7 @@ name: macrolide resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars which exhibit antimicrobial properties." [CHEBI:25105, ISBN:9780073375267, OMP:MCC]
 comment: Macrolide antibiotics are effective inhibitors of bacterial protein biosynthesis. They bind to the large 50S ribosomal subunit at or near the peptidyl transferase center and block the elongation of the peptide chain.
 synonym: "Azithromycin" NARROW [CHEBI:2955]
+synonym: "Bacteriostatic" BROAD []
 synonym: "Carvomycin A" NARROW []
 synonym: "clarithromycin" NARROW [CHEBi:3732]
 synonym: "Dirithromycin" NARROW [CHEBI:474014]
@@ -4797,6 +4798,7 @@ creation_date: 2013-10-23T19:27:35Z
 id: OMP:0006062
 name: tetracycline resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a subclass of polyketides having an octahydrotetracene-2-carboxamide skeleton." [CHEBI:27902, ISBN:978-0-07-299291-5, OMP:JCH]
+synonym: "Bacteriostatic" BROAD []
 synonym: "chlortetracycline" RELATED []
 synonym: "oxytetracycline " NARROW [CHEBI:27701]
 synonym: "tetracycline sensitivity phenotype" RELATED []
@@ -4836,6 +4838,7 @@ creation_date: 2013-10-23T19:27:35Z
 id: OMP:0006066
 name: chloramphenicol resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, ISBN:9780072992915, OMP:JCH]
+synonym: "Bacteriostatic" BROAD []
 synonym: "chloramphenicol sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
