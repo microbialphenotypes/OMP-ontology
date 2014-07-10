@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:07:2014 12:53
+date: 10:07:2014 14:20
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
@@ -3644,7 +3644,7 @@ creation_date: 2013-10-16T17:14:52Z
 
 [Term]
 id: OMP:0005041
-name: alkalinc pH stress phenotype
+name: alkalinic pH stress phenotype
 def: "A stress response phenotype dealing with the response too an environment with a pH at or above 7.5." [OMP:WAM]
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
@@ -3943,7 +3943,7 @@ id: OMP:0005078
 name: increased resistance toward alkalinic pH stress
 def: "A alkalinic pH stress relative phenotype were resistance to alkalinic pH was increased relative to the designated control." [OMP:WAM]
 synonym: "decreased alkalinic pH sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005041 ! alkalinc pH stress phenotype
+is_a: OMP:0005041 ! alkalinic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:14:08Z
 
@@ -3953,7 +3953,7 @@ name: decreased resistance toward alkalinic pH stress
 def: "A alkalinic pH stress relative phenotype were resistance to alkalinic pH was decreased relative to the designated control." [OMP:WAM]
 synonym: "abolished resistance to alkalinic pH stress" NARROW [OMP:WAM]
 synonym: "increased alkalinic pH sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005041 ! alkalinc pH stress phenotype
+is_a: OMP:0005041 ! alkalinic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:16:03Z
 
@@ -5654,6 +5654,13 @@ is_a: OMP:0000453 ! decreased heme utilization
 is_a: OMP:0000454 ! lack of heme utilization
 created_by: siegele
 creation_date: 2014-07-10T12:51:30Z
+
+[Term]
+id: OMP:0007090
+name: spheroid cell phenotype
+is_a: OMP:0007089 ! abolished heme utilization
+created_by: siegele
+creation_date: 2014-07-10T14:06:23Z
 
 [Term]
 id: TEST:0007001
