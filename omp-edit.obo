@@ -1,9 +1,10 @@
 format-version: 1.2
-date: 08:07:2014 13:55
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 10:07:2014 12:53
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
-remark: Now on SourceForge, version 1.0.5
+namespace-id-rule: * OMP:$sequence(7,0007001,0008000)$
+remark: cvs version: use data-version
 ontology: omp
 
 [Term]
@@ -1708,6 +1709,7 @@ creation_date: 2011-06-07T09:54:51Z
 [Term]
 id: OMP:0000216
 name: aerobic respiration phenotype
+def: "An energy metabolism phenotype in which inorganic or organic substrates are oxidized and the electrons are transferred through an electron transfer chain that uses oxygen (O2) as the terminal acceptor." [OMP:DAS]
 is_a: OMP:0000224 ! energy metabolism phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:53:18Z
@@ -3164,21 +3166,20 @@ creation_date: 2013-05-23T01:37:06Z
 [Term]
 id: OMP:0000452
 name: increased heme utilization
-is_a: OMP:0000451 ! heme utilization phenotype
+is_a: OMP:0007088 ! altered heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:37:51Z
 
 [Term]
 id: OMP:0000453
 name: decreased heme utilization
-is_a: OMP:0000451 ! heme utilization phenotype
+is_a: OMP:0007088 ! altered heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:39:39Z
 
 [Term]
 id: OMP:0000454
-name: absence of heme utilization
-synonym: "abolished heme utilization" EXACT []
+name: lack of heme utilization
 is_a: OMP:0000451 ! heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:40:40Z
@@ -5367,7 +5368,7 @@ creation_date: 2013-10-01T15:20:22Z
 id: OMP:0007053
 name: inorganic sulfur source utilization phenotype
 def: "A sulfur source utilization phenotype where an inorganic S-containing compound is the source of sulfur." [OMP:DAS]
-is_a: OMP:0007042 ! sulfur source utilization phenotype
+is_obsolete: true
 created_by: siegele
 creation_date: 2013-10-01T15:32:55Z
 
@@ -5375,57 +5376,57 @@ creation_date: 2013-10-01T15:32:55Z
 id: OMP:0007054
 name: organic sulfur source utilization phenotype
 def: "A sulfur source utilization phenotype where an organic S-containing compound is the source of sulfur." [OMP:DAS]
-is_a: OMP:0007042 ! sulfur source utilization phenotype
+is_obsolete: true
 created_by: siegele
 creation_date: 2013-10-01T15:32:55Z
 
 [Term]
 id: OMP:0007055
-name: decreased utilization of inorganic sulfur phenotype
-def: "An inorganic sulfur source utilization phenotype where the organism has decreased ability relative to some reference to use an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
+name: decreased utilization of inorganic sulfur
+def: "An inorganic sulfur source utilization phenotype where the organism has decreased ability to use an inorganic S-containing compound as the source of sulfur relative to a designated control." [OMP:DAS]
 synonym: "abolished utilization of inorganic sulfur phenotype" RELATED []
-is_a: OMP:0007053 ! inorganic sulfur source utilization phenotype
+is_a: OMP:0007086 ! altered sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:33:08Z
 
 [Term]
 id: OMP:0007056
-name: increased utilization of inorganic sulfur phenotype
-def: "An inorganic sulfur source utilization phenotype where the organism has increased ability relative to some reference to use an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
-is_a: OMP:0007053 ! inorganic sulfur source utilization phenotype
+name: increased utilization of inorganic sulfur
+def: "An inorganic sulfur source utilization phenotype where the organism has increased ability to use an inorganic S-containing compound as the source of sulfur relative to a designated control." [OMP:DAS]
+is_a: OMP:0007086 ! altered sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:33:32Z
 
 [Term]
 id: OMP:0007057
-name: utilization of inorganic sulfur phenotype
-def: "An inorganic sulfur source utilization phenotype where the representative member of a taxonomic unit can use an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
-is_a: OMP:0007053 ! inorganic sulfur source utilization phenotype
+name: utilization of inorganic sulfur
+def: "A sulfur source utilization phenotype where an organism uses an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007042 ! sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:33:38Z
 
 [Term]
 id: OMP:0007058
-name: decreased utilization of organic sulfur phenotype
-def: "An organic sulfur source utilization phenotype where the organism has decreased ability relative to some reference to use an organic S-containing compound as the source of sulfur." [OMP:DAS]
+name: decreased utilization of organic sulfur
+def: "An organic sulfur source utilization phenotype where the organism has decreased ability to use an organic S-containing compound as the source of sulfur relative to a designated control." [OMP:DAS]
 synonym: "abolished utilization of organic sulfur phenotype" EXACT []
-is_a: OMP:0007054 ! organic sulfur source utilization phenotype
+is_a: OMP:0007086 ! altered sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:34:00Z
 
 [Term]
 id: OMP:0007059
-name: increased utilization of organic sulfur phenotype
-def: "An organic sulfur source utilization phenotype where the organism has decreased ability relative to some reference to use an organic S-containing compound as the source of sulfur." [OMP:DAS]
-is_a: OMP:0007054 ! organic sulfur source utilization phenotype
+name: increased utilization of organic sulfur
+def: "An organic sulfur source utilization phenotype where the organism has increased ability to use an organic S-containing compound as the source of sulfur relative to a designated control." [OMP:DAS]
+is_a: OMP:0007086 ! altered sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:34:05Z
 
 [Term]
 id: OMP:0007060
-name: utilization of organic sulfur phenotype
-def: "An organic sulfur source utilization phenotype where the representative member of a taxonomic unit can use an organic S-containing compound as the source of sulfur." [OMP:DAS]
-is_a: OMP:0007054 ! organic sulfur source utilization phenotype
+name: utilization of organic sulfur
+def: "A sulfur source utilization phenotype where an organism uses an organic S-containing compound as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007042 ! sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:34:09Z
 
@@ -5614,6 +5615,45 @@ def: "An altered cell size phenotype where the long axis of a cell or cells is d
 is_a: OMP:0007083 ! altered cell size phenotype
 created_by: siegele
 creation_date: 2014-07-06T14:43:59Z
+
+[Term]
+id: OMP:0007085
+name: altered phenotype
+def: "A microbial phenotype that is altered in some way relative to a designated control." [OMP:DAS]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2014-07-10T12:28:36Z
+
+[Term]
+id: OMP:0007086
+name: altered sulfur source utilization phenotype
+def: "A sulfur source utilization phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007042 ! sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2014-07-10T12:40:51Z
+
+[Term]
+id: OMP:0007087
+name: altered iron source utilization phenotype
+def: "An iron source utilization phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007061 ! iron source utilization phenotype
+created_by: siegele
+creation_date: 2014-07-10T12:48:21Z
+
+[Term]
+id: OMP:0007088
+name: altered heme utilization phenotype
+is_a: OMP:0000451 ! heme utilization phenotype
+created_by: siegele
+creation_date: 2014-07-10T12:49:28Z
+
+[Term]
+id: OMP:0007089
+name: abolished heme utilization
+is_a: OMP:0000453 ! decreased heme utilization
+is_a: OMP:0000454 ! lack of heme utilization
+created_by: siegele
+creation_date: 2014-07-10T12:51:30Z
 
 [Term]
 id: TEST:0007001
