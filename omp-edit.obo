@@ -1,9 +1,8 @@
 format-version: 1.2
-date: 10:07:2014 14:20
+date: 10:07:2014 22:56
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
-namespace-id-rule: * OMP:$sequence(7,0007001,0008000)$
 remark: cvs version: use data-version
 ontology: omp
 
@@ -616,25 +615,25 @@ creation_date: 2011-02-02T03:18:19Z
 
 [Term]
 id: OMP:0000075
-name: coccus phenotype
+name: coccus
 def: "A cell shape phenotype where an organism has cells that are spherical or nearly spherical." [ISBN:9780073402406, OMP:MCC]
 synonym: "spherical-shaped" EXACT []
-is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0007100 ! spheroid cell phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:29Z
 
 [Term]
 id: OMP:0000076
-name: bacillus phenotype
+name: bacillus
 def: "A cell shape phenotype where an organism has rod-shaped cells." [ISBN:9780073402406, OMP:MCC]
 synonym: "rod-shaped" EXACT []
-is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0007099 ! cylindrical cell phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:47Z
 
 [Term]
 id: OMP:0000077
-name: vibrio phenotype
+name: vibrio
 def: "A spiral cell shape phenotype where the organism has rod-shaped cells that are curved to form a comma-like shape or incomplete spiral." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000086 ! spiral cell shape phenotype
 created_by: adrienne
@@ -1009,7 +1008,7 @@ creation_date: 2011-02-18T02:48:21Z
 
 [Term]
 id: OMP:0000124
-name: spirillum phenotype
+name: spirillum
 def: "A spiral cell shape phenotype where the organism has cells that form a rigid spiral." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000086 ! spiral cell shape phenotype
 created_by: adrienne
@@ -1017,7 +1016,7 @@ creation_date: 2011-02-18T02:51:54Z
 
 [Term]
 id: OMP:0000125
-name: spirochete phenotype
+name: spirochete
 def: "A spiral cell shape phenotype where the organism has cells that form a flexible spiral." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000086 ! spiral cell shape phenotype
 created_by: adrienne
@@ -1076,7 +1075,7 @@ creation_date: 2011-02-18T03:00:58Z
 [Term]
 id: OMP:0000132
 name: pleomorphic cell shape phenotype
-def: "A cell shape phenotype where the organism posseses the ability to take on two or more different shapes during its life cycle." [ISBN:9780073402406, OMP:MCC]
+def: "A cell shape phenotype where an organism posseses the ability to take on two or more different shapes during its life cycle." [ISBN:9780073402406, OMP:MCC]
 xref: PATO:0001356
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -1494,31 +1493,31 @@ creation_date: 2011-06-07T02:22:14Z
 
 [Term]
 id: OMP:0000188
-name: Gram positive phenotype
-def: "A Gram stain phenotype where the representative member of a taxonomic unit retains crystal violet stain when decolorized with an organic solvent such as ethanol." [OMP:DAS]
-is_a: OMP:0000191 ! Gram stain phenotype
+name: gram positive
+def: "A Gram stain phenotype where a cell or cells retain crystal violet stain when decolorized with an organic solvent such as ethanol." [OMP:DAS]
+is_a: OMP:0000191 ! gram stain phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:29Z
 
 [Term]
 id: OMP:0000189
-name: Gram negative phenotype
-def: "A Gram stain phenotype where the representative member of a taxonomic unit does not retain crystal violet stain when decolorized with an organic solvent such as ethanol." [OMP:DAS]
-is_a: OMP:0000191 ! Gram stain phenotype
+name: gram negative
+def: "A gram stain phenotype where a cell or cells do not retain crystal violet stain when decolorized with an organic solvent such as ethanol." [OMP:DAS]
+is_a: OMP:0000191 ! gram stain phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:45Z
 
 [Term]
 id: OMP:0000190
 name: Gram variable phenotype
-def: "A Gram stain phenotype where the representative member of a taxonomic unit gives variable results to the Gram stain." [OMP:DAS]
-is_a: OMP:0000191 ! Gram stain phenotype
+def: "A gram stain phenotype where a cell or cells give variable results to the gram stain." [OMP:DAS]
+is_a: OMP:0000191 ! gram stain phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:58Z
 
 [Term]
 id: OMP:0000191
-name: Gram stain phenotype
+name: gram stain phenotype
 def: "A cell staining phenotype where microorganisms are grouped based on their ability to retain crystal violet stain when decolorized with an organic solvent such as ethanol." [ISBN:978-0-07-340240-6, OMP:DAS]
 is_a: OMP:0000214 ! cell staining phenotype
 created_by: Adrienne
@@ -4936,6 +4935,7 @@ creation_date: 2014-05-12T13:04:40Z
 id: OMP:0007000
 name: abolished motility
 is_a: OMP:0000002 ! decreased motility
+is_a: OMP:0000133 ! lack of cell motility
 created_by: siegele
 creation_date: 2014-06-29T14:10:40Z
 
@@ -4943,6 +4943,7 @@ creation_date: 2014-06-29T14:10:40Z
 id: OMP:0007001
 name: altered motility phenotype
 is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0007085 ! altered phenotype
 created_by: siegele
 creation_date: 2014-04-24T17:38:06Z
 
@@ -5569,6 +5570,7 @@ creation_date: 2014-04-24T17:43:04Z
 id: OMP:0007078
 name: altered carbon source utilization
 is_a: OMP:0006023 ! carbon source utilization phenotype
+is_a: OMP:0007104 ! altered nutrient utilization phenotype
 created_by: siegele
 creation_date: 2014-04-30T15:40:12Z
 
@@ -5605,6 +5607,7 @@ id: OMP:0007083
 name: altered cell size phenotype
 def: "A cell size phenotype where the size of a cell or cells is altered relative to a specified control." [OMP:DAS]
 is_a: OMP:0000074 ! cell size phenotype
+is_a: OMP:0007103 ! altered cell morphology phenotype
 created_by: siegele
 creation_date: 2014-07-06T14:41:49Z
 
@@ -5657,66 +5660,120 @@ creation_date: 2014-07-10T12:51:30Z
 
 [Term]
 id: OMP:0007090
-name: spheroid cell phenotype
-is_a: OMP:0007089 ! abolished heme utilization
+name: more rod-like
+is_a: OMP:0007099 ! cylindrical cell phenotype
+is_a: OMP:0007101 ! altered cell shape phenotype
 created_by: siegele
-creation_date: 2014-07-10T14:06:23Z
+creation_date: 2014-07-10T21:50:33Z
 
 [Term]
-id: TEST:0007001
+id: OMP:0007091
 name: decreased motility by gliding
 is_a: OMP:0000002 ! decreased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:03:34Z
+created_by: siegele
+creation_date: 2014-07-10T20:08:43Z
 
 [Term]
-id: TEST:0007002
+id: OMP:0007092
 name: decreased motility by swarming
 is_a: OMP:0000002 ! decreased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:03:34Z
+created_by: siegele
+creation_date: 2014-07-10T20:08:43Z
 
 [Term]
-id: TEST:0007003
+id: OMP:0007093
 name: decreased motility by swimming
 is_a: OMP:0000002 ! decreased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:03:34Z
+created_by: siegele
+creation_date: 2014-07-10T20:08:43Z
 
 [Term]
-id: TEST:0007004
+id: OMP:0007094
 name: decreased motility by twitching
 is_a: OMP:0000002 ! decreased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:03:34Z
+created_by: siegele
+creation_date: 2014-07-10T20:08:43Z
 
 [Term]
-id: TEST:0007005
+id: OMP:0007095
 name: increased motility by gliding
 is_a: OMP:0000045 ! increased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:04:14Z
+created_by: siegele
+creation_date: 2014-07-10T20:10:11Z
 
 [Term]
-id: TEST:0007006
+id: OMP:0007096
 name: increased motility by swarming
 is_a: OMP:0000045 ! increased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:04:14Z
+created_by: siegele
+creation_date: 2014-07-10T20:10:11Z
 
 [Term]
-id: TEST:0007007
+id: OMP:0007097
 name: increased motility by swimming
 is_a: OMP:0000045 ! increased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:04:14Z
+created_by: siegele
+creation_date: 2014-07-10T20:10:11Z
 
 [Term]
-id: TEST:0007008
+id: OMP:0007098
 name: increased motility by twitching
 is_a: OMP:0000045 ! increased motility
-created_by: DeborahSiegele
-creation_date: 2014-03-02T17:04:14Z
+created_by: siegele
+creation_date: 2014-07-10T20:10:11Z
+
+[Term]
+id: OMP:0007099
+name: cylindrical cell phenotype
+def: "A cell shape phenotype where a cell or cells exhibit a consistently-sized round cross section." [OMP:DAS]
+xref: PATO:0001873
+is_a: OMP:0000073 ! cell shape phenotype
+created_by: siegele
+creation_date: 2014-07-10T20:13:46Z
+
+[Term]
+id: OMP:0007100
+name: spheroid cell phenotype
+def: "A cell shape phenotype where a cell or cells have a sphere-like shape, i.e. quadric surface in three dimensions obtained by rotating an ellipse about one of its principle axes." [OMP:DAS]
+xref: PATO:0001865
+is_a: OMP:0000073 ! cell shape phenotype
+created_by: siegele
+creation_date: 2014-07-10T20:13:46Z
+
+[Term]
+id: OMP:0007101
+name: altered cell shape phenotype
+def: "A cell shape phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000073 ! cell shape phenotype
+is_a: OMP:0007103 ! altered cell morphology phenotype
+created_by: siegele
+creation_date: 2014-07-10T20:24:53Z
+
+[Term]
+id: OMP:0007102
+name: rounder
+is_a: OMP:0007100 ! spheroid cell phenotype
+is_a: OMP:0007101 ! altered cell shape phenotype
+created_by: siegele
+creation_date: 2014-07-10T21:51:13Z
+
+[Term]
+id: OMP:0007103
+name: altered cell morphology phenotype
+def: "A cell morphology phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000071 ! cell morphology phenotype
+is_a: OMP:0007085 ! altered phenotype
+created_by: siegele
+creation_date: 2014-07-10T22:43:40Z
+
+[Term]
+id: OMP:0007104
+name: altered nutrient utilization phenotype
+def: "A nutrient utilization phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0006022 ! nutrient utilization phenotype
+is_a: OMP:0007085 ! altered phenotype
+created_by: siegele
+creation_date: 2014-07-10T22:45:48Z
 
 [Typedef]
 id: decreased_relative_to
