@@ -1,9 +1,9 @@
 format-version: 1.2
-date: 11:07:2014 13:58
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3-beta5
+date: 11:07:2014 16:17
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
-remark: cvs version: use data-version
+remark: Now on SourceForge, version 1.0.5
 ontology: omp
 
 [Term]
@@ -2541,6 +2541,7 @@ creation_date: 2012-11-02T02:03:42Z
 id: OMP:0000334
 name: increased resistance to aminopyrimidine
 def: "An aminopyrimidine resistance relative phenotype where resistance is increased relative to a designated control." [OMP:DAS]
+synonym: "abolished sensitivity to aminopyrimidine" NARROW []
 synonym: "decreased sensitivity to antifolate" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
@@ -2550,8 +2551,8 @@ creation_date: 2012-11-02T02:04:38Z
 id: OMP:0000335
 name: decreased resistance to aminopyrimidine
 def: "An aminopyrimidine resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished resistance to diaminopyrimidine" NARROW []
-synonym: "increased sensitivity to antifolate" RELATED []
+synonym: "abolished resistance to aminopyrimidine" NARROW []
+synonym: "increased sensitivity to aminopyrimidine" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:58Z
@@ -3085,7 +3086,7 @@ creation_date: 2012-11-04T02:50:49Z
 id: OMP:0000435
 name: resistant to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance to aminopyrimidines is observed or predict." [OMP:DAS]
-synonym: "resistant to antifolate" RELATED []
+synonym: "no sensitivity to aminopyrimidine" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:01Z
@@ -3094,7 +3095,7 @@ creation_date: 2012-11-04T02:52:01Z
 id: OMP:0000436
 name: not resistant to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance to aminopyrimidines is not observed or predicted." [OMP:DAS]
-synonym: "not resistant to antifolate" RELATED []
+synonym: "sensitivity to aminopyrimidine" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:18Z
@@ -3923,7 +3924,7 @@ id: OMP:0005076
 name: increased resistance toward acidic pH stress
 def: "A acidic pH stress relative phenotype were resistance to acidic pH was increased relative to the designated control." [OMP:WAM]
 synonym: "decreased acidic pH sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005118 !  altered acidic pH stress phenotype
+is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:09:55Z
 
@@ -3933,7 +3934,7 @@ name: decreased resistance toward acidic pH stress
 def: "A acidic pH stress relative phenotype were resistance to acidic pH was reduced relative to the designated control." [OMP:WAM]
 synonym: "abolished resistance to acidic pH stress" NARROW [OMP:WAM]
 synonym: "increased acidic pH sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005118 !  altered acidic pH stress phenotype
+is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:12:48Z
 
@@ -4279,7 +4280,7 @@ creation_date: 2014-07-08T17:55:17Z
 
 [Term]
 id: OMP:0005118
-name:  altered acidic pH stress phenotype
+name: altered acidic pH stress phenotype
 is_a: OMP:0005040 ! acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:55:53Z
@@ -4834,6 +4835,7 @@ creation_date: 2013-10-22T19:24:20Z
 id: OMP:0006058
 name: increased resistance to aminoglycoside
 def: "An aminoglycoside compound resistance relative phenotype where resistance is increased relative to a designated control." [OMP:JCH]
+synonym: "abolished sensitivity to aminoglycoside" NARROW []
 synonym: "decreased sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
@@ -4841,8 +4843,9 @@ creation_date: 2013-10-22T19:24:20Z
 
 [Term]
 id: OMP:0006059
-name: not resistant to aminoglycoside compound
+name: not resistant to aminoglycoside
 def: "An aminoglycoside resistance phenotype where resistance to aminoglycosides is not observed or predicted." [OMP:JCH]
+synonym: "sensitivity to aminoglycosdie " RELATED []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
@@ -4851,6 +4854,7 @@ creation_date: 2013-10-22T19:24:20Z
 id: OMP:0006060
 name: resistant to aminoglycoside
 def: "An aminoglycoside resistance phenotype where resistance to aminoglycosides is observed or predicted." [OMP:JCH]
+synonym: "no sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
