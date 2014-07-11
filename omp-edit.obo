@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 10:07:2014 23:06
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+date: 11:07:2014 13:58
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3-beta5
 default-namespace: microbial_phenotype
 remark: cvs version: use data-version
 ontology: omp
@@ -3923,7 +3923,7 @@ id: OMP:0005076
 name: increased resistance toward acidic pH stress
 def: "A acidic pH stress relative phenotype were resistance to acidic pH was increased relative to the designated control." [OMP:WAM]
 synonym: "decreased acidic pH sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005040 ! acidic pH stress phenotype
+is_a: OMP:0005118 !  altered acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:09:55Z
 
@@ -3933,7 +3933,7 @@ name: decreased resistance toward acidic pH stress
 def: "A acidic pH stress relative phenotype were resistance to acidic pH was reduced relative to the designated control." [OMP:WAM]
 synonym: "abolished resistance to acidic pH stress" NARROW [OMP:WAM]
 synonym: "increased acidic pH sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005040 ! acidic pH stress phenotype
+is_a: OMP:0005118 !  altered acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:12:48Z
 
@@ -3942,7 +3942,7 @@ id: OMP:0005078
 name: increased resistance toward alkalinic pH stress
 def: "A alkalinic pH stress relative phenotype were resistance to alkalinic pH was increased relative to the designated control." [OMP:WAM]
 synonym: "decreased alkalinic pH sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005041 ! alkalinic pH stress phenotype
+is_a: OMP:0005119 ! altered alkalinic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:14:08Z
 
@@ -3952,7 +3952,7 @@ name: decreased resistance toward alkalinic pH stress
 def: "A alkalinic pH stress relative phenotype were resistance to alkalinic pH was decreased relative to the designated control." [OMP:WAM]
 synonym: "abolished resistance to alkalinic pH stress" NARROW [OMP:WAM]
 synonym: "increased alkalinic pH sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005041 ! alkalinic pH stress phenotype
+is_a: OMP:0005119 ! altered alkalinic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:16:03Z
 
@@ -4017,7 +4017,7 @@ id: OMP:0005087
 name: increased resistance toward dessication stress
 def: "A dessication stress relative phenotype where resistance is increased relative to the designated control." [OMP:WAM]
 synonym: "decreased dessication sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005080 ! dessication stress phenotype
+is_a: OMP:0005120 ! altered dessication stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:14:31Z
 
@@ -4027,7 +4027,7 @@ name: decreased resistance toward dessication stress
 def: "A dessication stress relative phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
 synonym: "abolished resistance to dessication stress" NARROW [OMP:WAM]
 synonym: "increased dessication sensitivity " RELATED [OMP:WAM]
-is_a: OMP:0005080 ! dessication stress phenotype
+is_a: OMP:0005120 ! altered dessication stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:15:06Z
 
@@ -4036,7 +4036,7 @@ id: OMP:0005089
 name: increased resistance to freeze/thawing stress
 def: "A freeze/thawing stress relative phenotype where resistance is increased relative to the designated control." [OMP:WAM]
 synonym: "increase in freeze/thawing sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005039 ! freeze/thawing stress phenotype
+is_a: OMP:0005121 ! altered freeze/thawing stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:28:16Z
 
@@ -4046,7 +4046,7 @@ name: decreased resistance to freeze/thawing stress
 def: "A freeze/thawing stress relative phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
 synonym: "abolished resistance to freeze/thaw stress" NARROW [OMP:WAM]
 synonym: "decreased freeze/thaw sensitivity. " RELATED [OMP:WAM]
-is_a: OMP:0005039 ! freeze/thawing stress phenotype
+is_a: OMP:0005121 ! altered freeze/thawing stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:28:46Z
 
@@ -4055,7 +4055,7 @@ id: OMP:0005091
 name: increased resistance toward oxidative stress
 def: "A oxidative stress relative phenotype where resistance is enhanced relative to the designated control." [OMP:WAM]
 synonym: "decreased oxidative sensitivity " NARROW [OMP:WAM]
-is_a: OMP:0005038 ! oxidative stress phenotype
+is_a: OMP:0005122 ! altered oxidative stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T17:57:46Z
 
@@ -4065,7 +4065,7 @@ name: decreased resistance toward oxidative stress
 def: "A oxidative stress relative phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
 synonym: "abolished resistance to oxidative stress" NARROW [OMP:WAM]
 synonym: "increased oxidative sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005038 ! oxidative stress phenotype
+is_a: OMP:0005122 ! altered oxidative stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T17:59:14Z
 
@@ -4074,7 +4074,7 @@ id: OMP:0005093
 name: increase resistance to gamma ray radiation
 def: "A  gamma radiation relative phenotype where resistance is enhanced relative to the reference condition." [OMP:WAM]
 synonym: "decrease in gamma ray sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005085 ! gamma ray radiation
+is_a: OMP:0005123 ! altered gamma ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:05:40Z
 
@@ -4084,7 +4084,7 @@ name: decrease resistance to gamma ray radiation
 def: "A  gamma radiation relative phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
 synonym: "abolished resistance to gamma ray radiation" NARROW [OMP:WAM]
 synonym: "increase in gamma ray sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005085 ! gamma ray radiation
+is_a: OMP:0005123 ! altered gamma ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:06:05Z
 
@@ -4093,7 +4093,7 @@ id: OMP:0005095
 name: increased resistance toward x-ray radiation
 def: "An x-ray radiation relative phenotype were resistance is enhanced relative to the reference strain." [OMP:WAM]
 synonym: "decrease in x-ray sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005086 ! x-ray radiation
+is_a: OMP:0005124 ! altered x-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:26:43Z
 
@@ -4103,7 +4103,7 @@ name: decreased resistance toward x-ray radiation
 def: "An x-ray radiation relative phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
 synonym: "abolished resistance toward x-ray radiation" NARROW [OMP:WAM]
 synonym: "increase in x-ray sensitivity " NARROW [OMP:WAM]
-is_a: OMP:0005086 ! x-ray radiation
+is_a: OMP:0005124 ! altered x-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:28:20Z
 
@@ -4112,7 +4112,7 @@ id: OMP:0005097
 name: increased resistance to UV radiation
 def: "A UV radiation relative phenotype where resistance is increased relative to the reference strain." [OMP:WAM]
 synonym: "decrease in UV sensitivity " RELATED [OMP:WAM]
-is_a: OMP:0005084 ! UV radiation
+is_a: OMP:0005125 ! altered UV radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:41:53Z
 
@@ -4122,7 +4122,7 @@ name: decreased resistance toward UV radiation
 def: "A UV radiation relative phenotype where resistance is reduced relative to the reference strain." [OMP:WAM]
 synonym: "abolished resistance to UV radiation " NARROW [OMP:WAM]
 synonym: "increase in UV sensitivity " RELATED [OMP:WAM]
-is_a: OMP:0005084 ! UV radiation
+is_a: OMP:0005125 ! altered UV radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:43:32Z
 
@@ -4242,7 +4242,7 @@ creation_date: 2014-07-07T13:21:43Z
 id: OMP:0005113
 name: decreased resistance to SDS-EDTA stress
 def: "A SDS-EDTA stress phenotype where resistance is reduced relative to a designated control." [OMP:WAM]
-is_a: OMP:0005112 ! SDS-EDTA stress phenotype
+is_a: OMP:0005126 ! altered SDS-EDTA stress phenotype
 created_by: wmeza
 creation_date: 2014-07-07T13:50:24Z
 
@@ -4250,7 +4250,7 @@ creation_date: 2014-07-07T13:50:24Z
 id: OMP:0005114
 name: increased resistance to SDS-EDTA stress
 def: "A SDS-EDTA stress phenotype where resistance is enhanced relative to a designated control." [OMP:WAM]
-is_a: OMP:0005112 ! SDS-EDTA stress phenotype
+is_a: OMP:0005126 ! altered SDS-EDTA stress phenotype
 created_by: wmeza
 creation_date: 2014-07-07T13:50:45Z
 
@@ -4276,6 +4276,69 @@ def: "A hemolysis phenotype where hemolysis is observed." [OMP:WAM]
 is_a: OMP:0000099 ! hemolysis phenotype
 created_by: wmeza
 creation_date: 2014-07-08T17:55:17Z
+
+[Term]
+id: OMP:0005118
+name:  altered acidic pH stress phenotype
+is_a: OMP:0005040 ! acidic pH stress phenotype
+created_by: wmeza
+creation_date: 2014-07-11T12:55:53Z
+
+[Term]
+id: OMP:0005119
+name: altered alkalinic pH stress phenotype
+is_a: OMP:0005041 ! alkalinic pH stress phenotype
+created_by: wmeza
+creation_date: 2014-07-11T12:58:56Z
+
+[Term]
+id: OMP:0005120
+name: altered dessication stress phenotype
+is_a: OMP:0005080 ! dessication stress phenotype
+created_by: wmeza
+creation_date: 2014-07-11T12:59:47Z
+
+[Term]
+id: OMP:0005121
+name: altered freeze/thawing stress phenotype
+is_a: OMP:0005039 ! freeze/thawing stress phenotype
+created_by: wmeza
+creation_date: 2014-07-11T13:00:23Z
+
+[Term]
+id: OMP:0005122
+name: altered oxidative stress phenotype
+is_a: OMP:0005038 ! oxidative stress phenotype
+created_by: wmeza
+creation_date: 2014-07-11T13:03:36Z
+
+[Term]
+id: OMP:0005123
+name: altered gamma ray radiation
+is_a: OMP:0005085 ! gamma ray radiation
+created_by: wmeza
+creation_date: 2014-07-11T13:16:15Z
+
+[Term]
+id: OMP:0005124
+name: altered x-ray radiation
+is_a: OMP:0005086 ! x-ray radiation
+created_by: wmeza
+creation_date: 2014-07-11T13:16:47Z
+
+[Term]
+id: OMP:0005125
+name: altered UV radiation
+is_a: OMP:0005084 ! UV radiation
+created_by: wmeza
+creation_date: 2014-07-11T13:56:51Z
+
+[Term]
+id: OMP:0005126
+name: altered SDS-EDTA stress phenotype
+is_a: OMP:0005112 ! SDS-EDTA stress phenotype
+created_by: wmeza
+creation_date: 2014-07-11T13:57:22Z
 
 [Term]
 id: OMP:0006001
