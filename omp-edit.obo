@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 10:07:2014 22:56
+date: 10:07:2014 23:06
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -259,7 +259,7 @@ creation_date: 2011-04-26T03:29:34Z
 [Term]
 id: OMP:0000030
 name: absence of flagellum
-def: "A flagellum phenotype where the organism does not possess a flagellum or flagella in any environment." [OMP:MCC]
+def: "A flagellum phenotype where the organism does not possess a flagellum or flagella." [OMP:MCC]
 synonym: "non-flagellated phenotype" RELATED []
 is_a: OMP:0000027 ! flagellum phenotype
 created_by: mchibucos
@@ -269,7 +269,7 @@ creation_date: 2011-04-26T03:29:50Z
 id: OMP:0000031
 name: malformed flagellum
 def: "A flagellum phenotype where the cell possesses a flagellum that was distorted during formation." [OMP:MCC]
-is_a: OMP:0007005 ! flagella number phenotype
+is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:41:37Z
 
@@ -1686,7 +1686,7 @@ creation_date: 2011-06-07T12:32:12Z
 id: OMP:0000213
 name: increased number of flagella
 def: "A flagellum number relative phenotype where there are more flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
-is_a: OMP:0007005 ! flagella number phenotype
+is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:53:17Z
 
@@ -1701,7 +1701,7 @@ creation_date: 2011-02-03T01:33:37Z
 id: OMP:0000215
 name: decreased number of flagella
 def: "A flagellum number relative phenotype where there are fewer flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
-is_a: OMP:0007005 ! flagella number phenotype
+is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:54:51Z
 
@@ -5774,6 +5774,36 @@ is_a: OMP:0006022 ! nutrient utilization phenotype
 is_a: OMP:0007085 ! altered phenotype
 created_by: siegele
 creation_date: 2014-07-10T22:45:48Z
+
+[Term]
+id: OMP:0007105
+name: altered flagellum phenotype
+def: "A flagellum phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000027 ! flagellum phenotype
+created_by: siegele
+creation_date: 2014-07-10T23:00:30Z
+
+[Term]
+id: OMP:0007106
+name: single flagellum per cell
+is_a: OMP:0007005 ! flagella number phenotype
+created_by: siegele
+creation_date: 2014-07-10T23:02:33Z
+
+[Term]
+id: OMP:0007107
+name: multiple flagella per cell
+is_a: OMP:0007005 ! flagella number phenotype
+created_by: siegele
+creation_date: 2014-07-10T23:02:33Z
+
+[Term]
+id: OMP:0007108
+name: abolished flagella
+def: "A decreased number of flagella phenotype where the number of flagella per cell is decreased to zero." [OMP:DAS]
+is_a: OMP:0000215 ! decreased number of flagella
+created_by: siegele
+creation_date: 2014-07-10T23:04:16Z
 
 [Typedef]
 id: decreased_relative_to
