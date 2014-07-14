@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:07:2014 12:33
+date: 14:07:2014 13:58
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -4281,7 +4281,7 @@ creation_date: 2014-07-08T17:55:17Z
 [Term]
 id: OMP:0005118
 name: altered acidic pH stress phenotype
-def: "A acidic pH stress phenotype where the response to stress is altered." [OMP:WAM]
+def: "A acidic pH stress phenotype altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005040 ! acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:55:53Z
@@ -4289,6 +4289,7 @@ creation_date: 2014-07-11T12:55:53Z
 [Term]
 id: OMP:0005119
 name: altered alkalinic pH stress phenotype
+def: "An alkalinic pH stress phenotype altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005041 ! alkalinic pH stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:58:56Z
@@ -4296,6 +4297,7 @@ creation_date: 2014-07-11T12:58:56Z
 [Term]
 id: OMP:0005120
 name: altered dessication stress phenotype
+def: "A dessication stress phenotype altered relative to designated control." [OMP:WAM]
 is_a: OMP:0005080 ! dessication stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:59:47Z
@@ -4310,6 +4312,7 @@ creation_date: 2014-07-11T13:00:23Z
 [Term]
 id: OMP:0005122
 name: altered oxidative stress phenotype
+def: "A oxidative stress phenotype altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005038 ! oxidative stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T13:03:36Z
@@ -4317,6 +4320,7 @@ creation_date: 2014-07-11T13:03:36Z
 [Term]
 id: OMP:0005123
 name: altered gamma ray radiation
+def: "A gamma ray radiation phenotype relative to a designated control." [OMP:WAM]
 is_a: OMP:0005085 ! gamma ray radiation
 created_by: wmeza
 creation_date: 2014-07-11T13:16:15Z
@@ -4324,6 +4328,7 @@ creation_date: 2014-07-11T13:16:15Z
 [Term]
 id: OMP:0005124
 name: altered x-ray radiation
+def: "A x-ray radiation phenotype altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005086 ! x-ray radiation
 created_by: wmeza
 creation_date: 2014-07-11T13:16:47Z
@@ -4331,6 +4336,7 @@ creation_date: 2014-07-11T13:16:47Z
 [Term]
 id: OMP:0005125
 name: altered UV radiation
+def: "A UV radiation phenotype altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005084 ! UV radiation
 created_by: wmeza
 creation_date: 2014-07-11T13:56:51Z
@@ -4338,6 +4344,7 @@ creation_date: 2014-07-11T13:56:51Z
 [Term]
 id: OMP:0005126
 name: altered SDS-EDTA stress phenotype
+def: "A SDS-EDTA stress phenotype altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005112 ! SDS-EDTA stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T13:57:22Z
