@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 14:07:2014 13:58
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3.1
+date: 14:07:2014 17:56
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1431,7 +1431,7 @@ creation_date: 2011-02-02T03:22:43Z
 [Term]
 id: OMP:0000180
 name: metabolic phenotype
-def: "The chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances." [GO:0008152]
+def: "A microbial phenotype that deals with the chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances." [GO:0008152]
 synonym: "Metabolism" EXACT []
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
@@ -1745,6 +1745,7 @@ creation_date: 2011-02-03T04:44:11Z
 [Term]
 id: OMP:0000221
 name: enzymatic activity phenotype
+def: "A metabolic phenotype which deals with selective catalysts that modify rate and specificity of metabolic reactions." [OMP:JCH]
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:44:39Z
