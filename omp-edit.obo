@@ -7,6 +7,22 @@ remark: Now on SourceForge, version 1.0.5
 ontology: omp
 
 [Term]
+id: ID:0000000
+name: altered biofilm phenotype
+def: "A biofilm phenotype where formation is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0000176 ! biofilm phenotype
+created_by: wmeza
+creation_date: 2014-07-15T12:55:39Z
+
+[Term]
+id: ID:0000001
+name: abolished resistance toward acidic pH stress
+def: "A decreased resistance toward acidic pH stress" []
+is_obsolete: true
+created_by: wmeza
+creation_date: 2014-07-15T16:21:16Z
+
+[Term]
 id: OMP:0000000
 name: microbial phenotype
 def: "The observable manifestation of the genotype of a microbial cell or group of cells in an environment." [OMP:MCC]
@@ -1400,6 +1416,7 @@ creation_date: 2011-06-07T02:59:54Z
 [Term]
 id: OMP:0000176
 name: biofilm phenotype
+def: "A multicellular phenotype dealing with the process in which microorganisms attach to and grow on a surface and produce extracellular polymers that facilitate attachment and matrix formation." [GO:0042710, OMP:WAM]
 is_a: OMP:0005116 ! multicellular phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:17:19Z
@@ -3933,7 +3950,7 @@ creation_date: 2013-11-11T13:42:44Z
 [Term]
 id: OMP:0005076
 name: increased resistance toward acidic pH stress
-def: "A acidic pH stress relative phenotype were resistance to acidic pH was increased relative to the designated control." [OMP:WAM]
+def: "A altered acidic pH stress relative phenotype were resistance to acidic pH was increased relative to the designated control." [OMP:WAM]
 synonym: "decreased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
@@ -3942,8 +3959,7 @@ creation_date: 2013-11-15T18:09:55Z
 [Term]
 id: OMP:0005077
 name: decreased resistance toward acidic pH stress
-def: "A acidic pH stress relative phenotype were resistance to acidic pH was reduced relative to the designated control." [OMP:WAM]
-synonym: "abolished resistance to acidic pH stress" NARROW [OMP:WAM]
+def: "A altered acidic pH stress relative phenotype were resistance to acidic pH was reduced relative to the designated control." [OMP:WAM]
 synonym: "increased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
@@ -3962,7 +3978,6 @@ creation_date: 2013-11-15T18:14:08Z
 id: OMP:0005079
 name: decreased resistance toward alkalinic pH stress
 def: "A alkalinic pH stress relative phenotype were resistance to alkalinic pH was decreased relative to the designated control." [OMP:WAM]
-synonym: "abolished resistance to alkalinic pH stress" NARROW [OMP:WAM]
 synonym: "increased alkalinic pH sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005119 ! altered alkalinic pH stress phenotype
 created_by: wmeza
@@ -4229,16 +4244,16 @@ creation_date: 2014-07-02T18:46:00Z
 [Term]
 id: OMP:0005110
 name: increased rate of biofilm formation
-def: "A biofilm phenotype where the rate of formation is enhanced relative to a designated control." [OMP:WAM]
-is_a: OMP:0000176 ! biofilm phenotype
+def: "A altered biofilm phenotype where the rate of formation is enhanced relative to a designated control." [OMP:WAM]
+is_a: ID:0000000 ! altered biofilm phenotype
 created_by: wmeza
 creation_date: 2014-07-03T12:18:43Z
 
 [Term]
 id: OMP:0005111
 name: decreased rate of biofilm formation
-def: "A biofilm phenotype where the rate of biofilm formation is reduced relative to a designated control." [OMP:WAM]
-is_a: OMP:0000176 ! biofilm phenotype
+def: "A altered biofilm phenotype where the rate of biofilm formation is reduced relative to a designated control." [OMP:WAM]
+is_a: ID:0000000 ! altered biofilm phenotype
 created_by: wmeza
 creation_date: 2014-07-03T12:19:02Z
 
@@ -4359,6 +4374,22 @@ def: "A SDS-EDTA stress phenotype altered relative to a designated control." [OM
 is_a: OMP:0005112 ! SDS-EDTA stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T13:57:22Z
+
+[Term]
+id: OMP:0005127
+name: abolished resistance toward acidic pH stress
+def: "A decreased resistance toward acidic pH stress where resistance is completely removed." [OMP:WAM]
+is_a: OMP:0005077 ! decreased resistance toward acidic pH stress
+created_by: wmeza
+creation_date: 2014-07-15T16:46:17Z
+
+[Term]
+id: OMP:0005128
+name: abolished resistance toward alkalinic pH stress 
+def: "A decreased resistance toward alkalinic pH stress phenotype where is resistance is extinguished." [OMP:WAM]
+is_a: OMP:0005079 ! decreased resistance toward alkalinic pH stress
+created_by: wmeza
+creation_date: 2014-07-15T17:31:56Z
 
 [Term]
 id: OMP:0006001
