@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 14:07:2014 17:56
+date: 15:07:2014 17:38
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -1532,7 +1532,9 @@ creation_date: 2011-02-03T11:24:08Z
 
 [Term]
 id: OMP:0000194
-name: catalase positive
+name: presence of catalase
+def: "A catalase phenotype where an organism poses the enzyme to decompose hydrogen peroxide." [OMP:JCH]
+synonym: "catalase positive" EXACT []
 is_a: OMP:0000218 ! catalase phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T04:28:49Z
@@ -1540,14 +1542,18 @@ creation_date: 2011-06-06T04:28:49Z
 [Term]
 id: OMP:0000195
 name: decreased catalase activity
-is_a: OMP:0000194 ! catalase positive
+def: "A catalase positive activity phenotype in which a process occurs that stops, prevents or reduces the frequency, rate or extent of catalase activity." [GO:1902552]
+synonym: "negative regulation of catalase activity" EXACT []
+is_a: OMP:0006077 ! altered catalase
 created_by: mchibucos
 creation_date: 2011-06-06T04:29:20Z
 
 [Term]
 id: OMP:0000196
 name: increased catalase activity
-is_a: OMP:0000194 ! catalase positive
+def: "A catalase positive activity phenotype in which a process occurs that activates or increases the frequency, rate or extent of catalase activity." [GO:1902553]
+synonym: "positive regulation of catalase activity" EXACT []
+is_a: OMP:0006077 ! altered catalase
 created_by: mchibucos
 creation_date: 2011-06-06T04:29:39Z
 
@@ -1561,7 +1567,10 @@ creation_date: 2011-02-03T11:25:01Z
 
 [Term]
 id: OMP:0000198
-name: catalase negative
+name: absence of catalase
+def: "A catalase phenotype where an organism does not poses the enzyme to decompose hydrogen peroxide." [OMP:JCH]
+synonym: "catalase deficient" RELATED []
+synonym: "catalase negative" EXACT []
 is_a: OMP:0000218 ! catalase phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T04:30:12Z
@@ -1724,6 +1733,7 @@ creation_date: 2011-06-07T03:19:00Z
 [Term]
 id: OMP:0000218
 name: catalase phenotype
+def: "An enzymatic activity phenotype where the enzyme catalyzes the decomposition of hydrogen peroxide into water and oxygen." [OMP:JCH]
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:43:28Z
@@ -5040,6 +5050,13 @@ synonym: "no sensitivity to pteridine" RELATED []
 is_a: OMP:0007065 ! pteridine resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-05-12T13:04:40Z
+
+[Term]
+id: OMP:0006077
+name: altered catalase
+is_a: OMP:0000218 ! catalase phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-15T14:55:03Z
 
 [Term]
 id: OMP:0007000
