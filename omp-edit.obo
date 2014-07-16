@@ -1,18 +1,10 @@
 format-version: 1.2
-date: 15:07:2014 20:09
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 16:07:2014 12:40
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
-
-[Term]
-id: ID:0000000
-name: altered biofilm phenotype
-def: "A biofilm phenotype where formation is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0000176 ! biofilm phenotype
-created_by: wmeza
-creation_date: 2014-07-15T12:55:39Z
 
 [Term]
 id: ID:0000001
@@ -4245,7 +4237,7 @@ creation_date: 2014-07-02T18:46:00Z
 id: OMP:0005110
 name: increased rate of biofilm formation
 def: "A altered biofilm phenotype where the rate of formation is enhanced relative to a designated control." [OMP:WAM]
-is_a: ID:0000000 ! altered biofilm phenotype
+is_a: OMP:0005129 ! altered biofilm phenotype
 created_by: wmeza
 creation_date: 2014-07-03T12:18:43Z
 
@@ -4253,7 +4245,7 @@ creation_date: 2014-07-03T12:18:43Z
 id: OMP:0005111
 name: decreased rate of biofilm formation
 def: "A altered biofilm phenotype where the rate of biofilm formation is reduced relative to a designated control." [OMP:WAM]
-is_a: ID:0000000 ! altered biofilm phenotype
+is_a: OMP:0005129 ! altered biofilm phenotype
 created_by: wmeza
 creation_date: 2014-07-03T12:19:02Z
 
@@ -4391,6 +4383,13 @@ def: "A decreased resistance toward alkalinic pH stress phenotype where is resis
 is_a: OMP:0005079 ! decreased resistance toward alkalinic pH stress
 created_by: wmeza
 creation_date: 2014-07-15T17:31:56Z
+
+[Term]
+id: OMP:0005129
+name: altered biofilm phenotype
+is_a: OMP:0000176 ! biofilm phenotype
+created_by: wmeza
+creation_date: 2014-07-16T12:36:13Z
 
 [Term]
 id: OMP:0006001
