@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:07:2014 19:40
+date: 15:07:2014 20:09
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -5090,6 +5090,111 @@ def: "A catalase phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000218 ! catalase phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T14:55:03Z
+
+[Term]
+id: OMP:0006078
+name: absence of decarboxylase
+is_a: OMP:0000219 ! decarboxylase phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-15T19:59:58Z
+
+[Term]
+id: OMP:0006079
+name: altered decarboxylase
+is_a: OMP:0000219 ! decarboxylase phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-15T19:59:58Z
+
+[Term]
+id: OMP:0006080
+name: presence of decarboxylase
+is_a: OMP:0000219 ! decarboxylase phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-15T19:59:58Z
+
+[Term]
+id: OMP:0006081
+name: increase decarboxylase
+is_a: OMP:0006079 ! altered decarboxylase
+created_by: jonathanherrera
+creation_date: 2014-07-15T20:00:41Z
+
+[Term]
+id: OMP:0006082
+name: decrease decarboxylase
+is_a: OMP:0006079 ! altered decarboxylase
+created_by: jonathanherrera
+creation_date: 2014-07-15T20:00:41Z
+
+[Term]
+id: OMP:0006083
+name: altered oxidase
+is_a: OMP:0000220 ! oxidase phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-15T20:06:25Z
+
+[Term]
+id: OMP:0006084
+name: absence of oxidase
+is_a: OMP:0000220 ! oxidase phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-15T20:06:25Z
+
+[Term]
+id: OMP:0006085
+name: presence of oxidase
+is_a: OMP:0000220 ! oxidase phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-15T20:06:25Z
+
+[Term]
+id: OMP:0006086
+name: increase oxidase
+is_a: OMP:0006083 ! altered oxidase
+created_by: jonathanherrera
+creation_date: 2014-07-15T20:06:48Z
+
+[Term]
+id: OMP:0006087
+name: decrease oxidase
+is_a: OMP:0006083 ! altered oxidase
+created_by: jonathanherrera
+creation_date: 2014-07-15T20:06:48Z
+
+[Term]
+id: OMP:0006088
+name: altered urease
+is_a: OMP:0000222 ! urease phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-15T20:07:31Z
+
+[Term]
+id: OMP:0006089
+name: presence of urease
+is_a: OMP:0000222 ! urease phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-15T20:07:31Z
+
+[Term]
+id: OMP:0006090
+name: absence of urease
+is_a: OMP:0000222 ! urease phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-15T20:07:31Z
+
+[Term]
+id: OMP:0006091
+name: increase altered urease
+is_a: OMP:0006088 ! altered urease
+created_by: jonathanherrera
+creation_date: 2014-07-15T20:07:54Z
+
+[Term]
+id: OMP:0006092
+name: decrease urease
+is_a: OMP:0006088 ! altered urease
+created_by: jonathanherrera
+creation_date: 2014-07-15T20:07:54Z
 
 [Term]
 id: OMP:0007000
