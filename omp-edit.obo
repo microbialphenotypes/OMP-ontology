@@ -1,18 +1,10 @@
 format-version: 1.2
-date: 16:07:2014 12:40
+date: 16:07:2014 17:51
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
-
-[Term]
-id: ID:0000001
-name: abolished resistance toward acidic pH stress
-def: "A decreased resistance toward acidic pH stress" []
-is_obsolete: true
-created_by: wmeza
-creation_date: 2014-07-15T16:21:16Z
 
 [Term]
 id: OMP:0000000
@@ -1766,6 +1758,7 @@ id: OMP:0000221
 name: enzymatic activity phenotype
 def: "A metabolic phenotype which deals with selective catalysts that modify rate and specificity of metabolic reactions." [OMP:JCH]
 is_a: OMP:0000180 ! metabolic phenotype
+is_a: OMP:0000269 ! protein activity phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:44:39Z
 
@@ -2355,7 +2348,7 @@ creation_date: 2011-07-21T05:08:18Z
 id: OMP:0000298
 name: enzyme activity phenotype
 def: "A protein activity phenotype dealing with the functions of enzymes." [OMP:WAM]
-is_a: OMP:0000269 ! protein activity phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:10:18Z
 
@@ -4173,7 +4166,7 @@ creation_date: 2014-02-11T11:54:51Z
 id: OMP:0005102
 name: increase in enzyme activity
 def: "An enzyme activity relative phenotype where there is an increase in enzyme activity." [OMP:WAM]
-is_a: OMP:0000298 ! enzyme activity phenotype
+is_a: OMP:0005130 ! altered enzymatic activity phenotype
 created_by: wmeza
 creation_date: 2014-04-17T10:54:45Z
 
@@ -4181,25 +4174,9 @@ creation_date: 2014-04-17T10:54:45Z
 id: OMP:0005103
 name: decrease in enzyme activity
 def: "An enzyme activity relative phenotype where there is a reduction in enzyme activity." [OMP:WAM]
-is_a: OMP:0000298 ! enzyme activity phenotype
+is_a: OMP:0005130 ! altered enzymatic activity phenotype
 created_by: wmeza
 creation_date: 2014-04-17T10:55:05Z
-
-[Term]
-id: OMP:0005104
-name: presence of enzyme activity
-def: "A enzyme activity phenotype where the enzyme is functioning." [OMP:WAM]
-is_a: OMP:0000298 ! enzyme activity phenotype
-created_by: wmeza
-creation_date: 2014-04-17T17:09:56Z
-
-[Term]
-id: OMP:0005105
-name: absence of enzyme activity
-def: "A enzyme activity phenotype where the enzyme is not functioning." [OMP:WAM]
-is_a: OMP:0000298 ! enzyme activity phenotype
-created_by: wmeza
-creation_date: 2014-04-17T17:13:04Z
 
 [Term]
 id: OMP:0005106
@@ -4387,9 +4364,17 @@ creation_date: 2014-07-15T17:31:56Z
 [Term]
 id: OMP:0005129
 name: altered biofilm phenotype
+def: "A biofilm phenotype that is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0000176 ! biofilm phenotype
 created_by: wmeza
 creation_date: 2014-07-16T12:36:13Z
+
+[Term]
+id: OMP:0005130
+name: altered enzymatic activity phenotype
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: wmeza
+creation_date: 2014-07-16T17:48:24Z
 
 [Term]
 id: OMP:0006001
