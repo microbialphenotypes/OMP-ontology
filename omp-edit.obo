@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:07:2014 17:38
+date: 15:07:2014 19:40
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -4331,6 +4331,7 @@ creation_date: 2014-07-11T12:59:47Z
 [Term]
 id: OMP:0005121
 name: altered freeze/thawing stress phenotype
+def: "A freeze/thawing stress phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005039 ! freeze/thawing stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T13:00:23Z
@@ -4385,7 +4386,7 @@ creation_date: 2014-07-15T16:46:17Z
 
 [Term]
 id: OMP:0005128
-name: abolished resistance toward alkalinic pH stress 
+name: abolished resistance toward alkalinic pH stress
 def: "A decreased resistance toward alkalinic pH stress phenotype where is resistance is extinguished." [OMP:WAM]
 is_a: OMP:0005079 ! decreased resistance toward alkalinic pH stress
 created_by: wmeza
@@ -5085,6 +5086,7 @@ creation_date: 2014-05-12T13:04:40Z
 [Term]
 id: OMP:0006077
 name: altered catalase
+def: "A catalase phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000218 ! catalase phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T14:55:03Z
@@ -5100,6 +5102,7 @@ creation_date: 2014-06-29T14:10:40Z
 [Term]
 id: OMP:0007001
 name: altered motility phenotype
+def: "A motility phenotype altered relative to a designated control." []
 is_a: OMP:0000001 ! motility phenotype
 is_a: OMP:0007085 ! altered phenotype
 created_by: siegele
@@ -5713,6 +5716,7 @@ creation_date: 2014-02-21T15:42:44Z
 [Term]
 id: OMP:0007076
 name: altered aerotaxis
+def: "An aerotaxis phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: siegele
 creation_date: 2014-04-24T17:41:34Z
@@ -5720,6 +5724,7 @@ creation_date: 2014-04-24T17:41:34Z
 [Term]
 id: OMP:0007077
 name: altered chemotaxis
+def: "A chemotaxis phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: siegele
 creation_date: 2014-04-24T17:43:04Z
@@ -5727,6 +5732,7 @@ creation_date: 2014-04-24T17:43:04Z
 [Term]
 id: OMP:0007078
 name: altered carbon source utilization
+def: "An altered nutrient utilization phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006023 ! carbon source utilization phenotype
 is_a: OMP:0007104 ! altered nutrient utilization phenotype
 created_by: siegele
@@ -5735,6 +5741,7 @@ creation_date: 2014-04-30T15:40:12Z
 [Term]
 id: OMP:0007079
 name: altered growth factor requirement
+def: "A nutrient utilization phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2014-04-30T15:52:18Z
@@ -5749,6 +5756,7 @@ creation_date: 2014-04-30T15:53:08Z
 [Term]
 id: OMP:0007081
 name: altered purine/pyrimidine requirement
+def: "An altered growth factor requirement phenotype where purine/pyrimidine requirement is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-04-30T16:03:42Z
@@ -5756,6 +5764,7 @@ creation_date: 2014-04-30T16:03:42Z
 [Term]
 id: OMP:0007082
 name: altered vitamin/enzyme cofactor requirement
+def: "An altered growth factor requirement phenotype where vitamin/enzyme cofactor requirement is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-04-30T16:07:16Z
@@ -5804,6 +5813,7 @@ creation_date: 2014-07-10T12:48:21Z
 [Term]
 id: OMP:0007088
 name: altered heme utilization phenotype
+def: "A heme utilization phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000451 ! heme utilization phenotype
 created_by: siegele
 creation_date: 2014-07-10T12:49:28Z
