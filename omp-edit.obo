@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:07:2014 14:31
+date: 17:07:2014 16:30
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
@@ -1498,7 +1498,8 @@ creation_date: 2011-06-07T02:22:14Z
 [Term]
 id: OMP:0000188
 name: gram positive
-def: "A Gram stain phenotype where a cell or cells retain crystal violet stain when decolorized with an organic solvent such as ethanol." [OMP:DAS]
+def: "A gram stain phenotype where a cell or cells retain crystal violet stain when decolorized with an organic solvent such as ethanol." [OMP:DAS]
+xref: GO:0009275 "Gram-positive-bacterium-type cell wall"
 is_a: OMP:0000191 ! gram stain phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:29Z
@@ -1507,13 +1508,14 @@ creation_date: 2011-02-02T03:34:29Z
 id: OMP:0000189
 name: gram negative
 def: "A gram stain phenotype where a cell or cells do not retain crystal violet stain when decolorized with an organic solvent such as ethanol." [OMP:DAS]
+xref: GO:0009276 "Gram-negative-bacterium-type cell wall"
 is_a: OMP:0000191 ! gram stain phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:34:45Z
 
 [Term]
 id: OMP:0000190
-name: Gram variable phenotype
+name: gram variable
 def: "A gram stain phenotype where a cell or cells give variable results to the gram stain." [OMP:DAS]
 is_a: OMP:0000191 ! gram stain phenotype
 created_by: Adrienne
@@ -1581,7 +1583,8 @@ creation_date: 2011-06-06T04:30:12Z
 
 [Term]
 id: OMP:0000199
-name: acid-fast
+name: acid-fast stain
+def: "A cell-staining phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol." [ISBN:978-0-07-729281-1, OMP:DAS]
 is_a: OMP:0000214 ! cell staining phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:38:46Z
@@ -1706,6 +1709,7 @@ creation_date: 2011-06-07T09:53:17Z
 [Term]
 id: OMP:0000214
 name: cell staining phenotype
+def: "A microbial phenotype where a cell or cells are treated with a dye or dyes for purposes of identification and classification." [OMP:DAS]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T01:33:37Z
@@ -2235,7 +2239,7 @@ creation_date: 2011-07-21T02:40:26Z
 id: OMP:0000282
 name: increased growth rate
 def: "A growth phenotype where the growth rate is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0007115 ! altered growth rate phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:43:01Z
 
@@ -2244,7 +2248,7 @@ id: OMP:0000283
 name: decreased growth rate
 def: "A growth phenotype where the growth rate is decreased relative to a designated control." [OMP:DAS]
 synonym: "slow growth rate" RELATED []
-is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0007115 ! altered growth rate phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:43:22Z
 
@@ -6156,6 +6160,14 @@ def: "A chemolithotrophic phenotype where energy is derived from the oxidation o
 is_a: OMP:0007110 ! chemolithotrophic
 created_by: siegele
 creation_date: 2014-07-17T14:28:35Z
+
+[Term]
+id: OMP:0007115
+name: altered growth rate phenotype
+def: "A growth phenotype where the growth rate of a cell or cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000174 ! growth phenotype
+created_by: siegele
+creation_date: 2014-07-17T16:29:34Z
 
 [Typedef]
 id: decreased_relative_to
