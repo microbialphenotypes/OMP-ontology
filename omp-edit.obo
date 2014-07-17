@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 16:07:2014 17:51
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3.1
+date: 17:07:2014 14:31
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1455,7 +1455,10 @@ creation_date: 2011-02-07T03:52:30Z
 [Term]
 id: OMP:0000183
 name: anaerobic respiration with sulfate as the terminal electron acceptor
-synonym: "sulfide production" EXACT []
+def: "An anaerobic respiration phenotype where sulfate (SO4) is used as the terminal electron acceptor." [ISBN:978-0-07-340240-6, OMP:DAS]
+synonym: "dissimilatory sulfate reduction" EXACT [ISBN:978-0-07-340240-6]
+synonym: "sulfide production" NARROW []
+xref: GO:0019420 "dissimilatory sulfate reduction"
 is_a: OMP:0007072 ! anaerobic respiration phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:52:44Z
@@ -1718,8 +1721,8 @@ creation_date: 2011-06-07T09:54:51Z
 [Term]
 id: OMP:0000216
 name: aerobic respiration phenotype
-def: "An energy metabolism phenotype in which inorganic or organic substrates are oxidized and the electrons are transferred through an electron transfer chain that uses oxygen (O2) as the terminal acceptor." [OMP:DAS]
-is_a: OMP:0000224 ! energy metabolism phenotype
+def: "A respiration phenotype where oxygen (O2) is used as the terminal electron acceptor." [ISBN:978-0-07-340240-6, OMP:DAS]
+is_a: OMP:0007112 ! respiration phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:53:18Z
 
@@ -4437,7 +4440,7 @@ creation_date: 2013-09-06T17:19:20Z
 [Term]
 id: OMP:0006008
 name: photosynthesis phenotype
-is_a: OMP:0000224 ! energy metabolism phenotype
+is_a: OMP:0007064 ! phototrophic phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-01T14:18:12Z
 
@@ -5191,7 +5194,7 @@ creation_date: 2014-06-29T14:10:40Z
 [Term]
 id: OMP:0007001
 name: altered motility phenotype
-def: "A motility phenotype altered relative to a designated control." []
+def: "A motility phenotype where motility is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000001 ! motility phenotype
 is_a: OMP:0007085 ! altered phenotype
 created_by: siegele
@@ -5707,7 +5710,7 @@ creation_date: 2014-01-31T18:45:09Z
 [Term]
 id: OMP:0007064
 name: phototrophic phenotype
-def: "A metabolic phenotype where the representative member of a taxonomic unit can use light as the energy source." [ISBN:978-0-07-340240-6, OMP:DAS]
+def: "An energy metabolism phenotype where light is used as the energy source." [ISBN:978-0-07-340240-6, OMP:DAS]
 is_a: OMP:0000224 ! energy metabolism phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:49:00Z
@@ -5775,13 +5778,15 @@ creation_date: 2014-02-21T15:18:41Z
 [Term]
 id: OMP:0007072
 name: anaerobic respiration phenotype
-is_a: OMP:0000224 ! energy metabolism phenotype
+def: "A respiration phenotype where electrons are transferred to a final electron acceptor that is not oxygen (O2)." [ISBN:978-0-07-340240-6, OMP:DAS]
+is_a: OMP:0007112 ! respiration phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:28:04Z
 
 [Term]
 id: OMP:0007073
 name: fermentation phenotype
+def: "An energy metabolism phenotype where electrons derived from oxidation of a nutrient are transferred to an endogenous terminal electron acceptor without the involvement of an electron transport chain." [ISBN:978-0-07-340240-6, OMP:DAS]
 is_a: OMP:0000224 ! energy metabolism phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:31:32Z
@@ -6061,6 +6066,56 @@ def: "A decreased number of flagella phenotype where the number of flagella per 
 is_a: OMP:0000215 ! decreased number of flagella
 created_by: siegele
 creation_date: 2014-07-10T23:04:16Z
+
+[Term]
+id: OMP:0007109
+name: chemotrophic phenotype
+def: "An energy metabolism phenotype where energy is obtained from the oxidation of chemicals." [ISBN:978-0-07-340240-6, OMP:DAS]
+is_a: OMP:0000224 ! energy metabolism phenotype
+created_by: siegele
+creation_date: 2014-07-17T13:45:13Z
+
+[Term]
+id: OMP:0007110
+name: chemolithotrophic
+def: "A chemotrophic phenotype where energy is obtained from the oxidation of inorganic chemicals." [ISBN:978-0-07-340240-6, OMP:DAS]
+is_a: OMP:0007109 ! chemotrophic phenotype
+created_by: siegele
+creation_date: 2014-07-17T13:46:04Z
+
+[Term]
+id: OMP:0007111
+name: chemoorganotrophic
+def: "A chemotrophic phenotype where energy is derived from the oxidation of organic molecules." [ISBN:978-0-07-340240-6, OMP:DAS]
+synonym: "organotroph" EXACT []
+is_a: OMP:0007109 ! chemotrophic phenotype
+created_by: siegele
+creation_date: 2014-07-17T13:46:04Z
+
+[Term]
+id: OMP:0007112
+name: respiration phenotype
+def: "An energy metabolism phenotype where electrons from an oxidized chemical are transferred via an electron transport chain to an exogenous or externally derived electron acceptor." [ISBN:978-0-07-340240-6, OMP:DAS]
+xref: GO:0045333 "cellular respiration"
+is_a: OMP:0000224 ! energy metabolism phenotype
+created_by: siegele
+creation_date: 2014-07-17T13:56:17Z
+
+[Term]
+id: OMP:0007113
+name: ferrous iron (Fe2+) oxidation
+def: "A chemolithotrophic phenotype where energy is obtained from the oxidation of ferrous iron (Fe2+)." [ISBN:978-0-07-340240-6, OMP:DAS]
+is_a: OMP:0007110 ! chemolithotrophic
+created_by: siegele
+creation_date: 2014-07-17T14:28:35Z
+
+[Term]
+id: OMP:0007114
+name: sulfide (H2S) oxidation
+def: "A chemolithotrophic phenotype where energy is derived from the oxidation of hydrogen sulfide (H2S)." [ISBN:978-0-07-340240-6, OMP:DAS]
+is_a: OMP:0007110 ! chemolithotrophic
+created_by: siegele
+creation_date: 2014-07-17T14:28:35Z
 
 [Typedef]
 id: decreased_relative_to
