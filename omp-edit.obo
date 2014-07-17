@@ -4182,6 +4182,22 @@ created_by: wmeza
 creation_date: 2014-04-17T10:55:05Z
 
 [Term]
+id: OMP:0005104
+name: abolished resistance to dessication stress
+def: "A decreased resistance to dessication stress phenotype where resistance is extinguished." [OMP:WAM]
+is_a: OMP:0005088 ! decreased resistance toward dessication stress
+created_by: wmeza
+creation_date: 2014-07-17T13:11:33Z
+
+[Term]
+id: OMP:0005105
+name: abolished resistance to freeze/thawing stress
+def: "A decreased resistance to freeze/thawing stress phenotype where resistance is completely extinguished." [OMP:WAM]
+is_a: OMP:0005090 ! decreased resistance to freeze/thawing stress
+created_by: wmeza
+creation_date: 2014-07-17T14:10:28Z
+
+[Term]
 id: OMP:0005106
 name: increase in organism lifespan
 def: "A lifespan relative phenotype where there is an increase in the duration of an organism's life." [OMP:WAM]
@@ -4378,6 +4394,30 @@ name: altered enzymatic activity phenotype
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: wmeza
 creation_date: 2014-07-16T17:48:24Z
+
+[Term]
+id: OMP:0005131
+name: abolished resistance to oxidative stress
+def: "A decreased resistance toward oxidative stress phenotype where resistance is extinguished." [OMP:WAM]
+is_a: OMP:0005092 ! decreased resistance toward oxidative stress
+created_by: wmeza
+creation_date: 2014-07-17T14:18:37Z
+
+[Term]
+id: OMP:0005132
+name: abolished resistance to gamma ray radiation
+def: "A decreased resistance to gamma ray radiation phenotype where resistance is extinguished." [OMP:WAM]
+is_a: OMP:0005094 ! decrease resistance to gamma ray radiation
+created_by: wmeza
+creation_date: 2014-07-17T14:23:39Z
+
+[Term]
+id: OMP:0005133
+name: abolished resistance to x-ray radiation
+def: "A decreased x-ray radiation phenotype where resistance is extinguished." [OMP:WAM]
+is_a: OMP:0005096 ! decreased resistance toward x-ray radiation
+created_by: wmeza
+creation_date: 2014-07-17T14:28:44Z
 
 [Term]
 id: OMP:0006001
