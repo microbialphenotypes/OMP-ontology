@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:07:2014 14:27
+date: 18:07:2014 14:30
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
@@ -3399,14 +3399,6 @@ created_by: wmeza
 creation_date: 2013-09-20T15:00:09Z
 
 [Term]
-id: OMP:0005028
-name: stress induced mutagenesis, state phenotype
-def: "A stress induced mutagenesis phenotype dealing with the activation of the stress induced mutagenesis processes." [OMP:WAM]
-is_obsolete: true
-created_by: wmeza
-creation_date: 2013-09-25T15:54:56Z
-
-[Term]
 id: OMP:0005030
 name: increase in stress induced mutagenesis
 def: "A stress induced mutagenesis relative phenotype where the frequency of mutagenesis is increased relative to the designated control." [OMP:WAM]
@@ -5100,13 +5092,6 @@ created_by: siegele
 creation_date: 2013-09-05T16:21:23Z
 
 [Term]
-id: OMP:0007006
-name: pH growth range, state phenotype
-is_obsolete: true
-created_by: siegele
-creation_date: 2013-09-11T17:08:50Z
-
-[Term]
 id: OMP:0007007
 name: pH growth range phenotype
 def: "A pH growth range phenotype dealing with responses  relative to the designated control." [OMP:WAM]
@@ -5158,9 +5143,7 @@ creation_date: 2013-09-13T15:10:16Z
 id: OMP:0007013
 name: inorganic nitrogen source utilization phenotype
 def: "A nitrogen source utilization phenotype where an inorganic nitrogen-containing compound is the source of nitrogen." [OMP:DAS]
-synonym: "ammonia (NH3) utilization, state phenotype" NARROW []
 synonym: "nitrate utilization, phenotype " NARROW []
-synonym: "nitrite utilization, state phenotype" NARROW []
 is_a: OMP:0006026 ! nitrogen source utilization phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:19:33Z
@@ -5180,14 +5163,6 @@ def: "An amino acid requirement phenotype where an organism cannot synthesize on
 is_obsolete: true
 created_by: siegele
 creation_date: 2013-09-16T12:47:41Z
-
-[Term]
-id: OMP:0007016
-name: make obsolete - purine/pyrimidine requirement, state phenotype
-def: "A purine/pyrimidine requirement phenotype where the representative member of a taxonomic unit cannot synthesize one or more purine or pyrimidine bases required for growth." [OMP:DAS]
-is_obsolete: true
-created_by: siegele
-creation_date: 2013-09-16T12:48:22Z
 
 [Term]
 id: OMP:0007017
@@ -5371,14 +5346,6 @@ def: "An auxotrophic phenotype where the required growth factor is a vitamin or 
 is_a: OMP:0007069 ! auxotrophic phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:36:46Z
-
-[Term]
-id: OMP:0007041
-name: make obsolete - auxotroph, state phenotype
-def: "A growth factor requirement phenotype where an organism cannot synthesize one or more growth factors, but must obtain them from the environment." [ISBN:9780878936083, OMP:DAS]
-is_obsolete: true
-created_by: DeborahSiegele
-creation_date: 2013-09-29T00:39:24Z
 
 [Term]
 id: OMP:0007042
