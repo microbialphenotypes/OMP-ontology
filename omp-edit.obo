@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:07:2014 14:07
+date: 18:07:2014 14:27
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
@@ -274,15 +274,6 @@ created_by: mchibucos
 creation_date: 2011-04-26T03:41:37Z
 
 [Term]
-id: OMP:0000032
-name: loss of flagellum
-def: "An absence of flagellum where the representative member of a taxonomic unit typically does possess a flagellum, but has lost the ability to produce a flagellum." [OMP:MCC]
-synonym: "Synonym of decreased flagellum number, relative phenotype" RELATED []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-06-07T10:34:04Z
-
-[Term]
 id: OMP:0000033
 name: absence of pilus
 def: "A pilus phenotype where an organism does not possess a pilus." [OMP:MCC]
@@ -524,14 +515,6 @@ created_by: mchibucos
 creation_date: 2011-04-26T05:06:00Z
 
 [Term]
-id: OMP:0000064
-name: abolished quorum sensing
-def: "A quorum sensing phenotype where an organism completely loses its ability to monitor its population density by detecting the concentration of small, diffusible signal molecules." [OMP:MCC]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-04-26T05:06:11Z
-
-[Term]
 id: OMP:0000065
 name: avirulent
 def: "A virulence phenotype where an organism does not possess the ability to cause disease in another organism." [OMP:MCC]
@@ -682,7 +665,7 @@ creation_date: 2011-02-02T03:46:44Z
 [Term]
 id: OMP:0000083
 name: cell projection phenotype
-def: "A cellular morphology phenotype where the structure in question is a prolongation or process extending from a cell." [OMP:MCC]
+def: "A cell morphology phenotype where the structure in question is a prolongation or process extending from a cell." [OMP:MCC]
 synonym: "cell appendage phenotype" EXACT []
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: adrienne
@@ -700,7 +683,7 @@ creation_date: 2011-02-02T03:47:57Z
 [Term]
 id: OMP:0000085
 name: cell envelope phenotype
-def: "A cellular morphology phenotype where the structure in question is the envelope that surrounds a bacterial cell and includes the cytoplasmic membrane and everything external to the cytoplasmic membrane, encompassing the periplasmic space, cell wall, and outer membrane if present." [OMP:MCC]
+def: "A cell morphology phenotype where the structure in question is the envelope that surrounds a bacterial cell and includes the cytoplasmic membrane and everything external to the cytoplasmic membrane, encompassing the periplasmic space, cell wall, and outer membrane if present." [OMP:MCC]
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:49:03Z
@@ -751,7 +734,7 @@ creation_date: 2011-02-02T03:24:11Z
 [Term]
 id: OMP:0000091
 name: sporulation phenotype
-def: "A cellular development phenotype where development concerns formation of a spore, a structure that can be used for dissemination, survival in adverse conditions, or reproduction." [OMP:MCC]
+def: "A cell development phenotype where development concerns formation of a spore, a structure that can be used for dissemination, survival in adverse conditions, or reproduction." [OMP:MCC]
 is_a: OMP:0000070 ! cell development phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:24:24Z
@@ -759,7 +742,7 @@ creation_date: 2011-02-02T03:24:24Z
 [Term]
 id: OMP:0000092
 name: heterocyst formation phenotype
-def: "A cellular development phenotype where development concerns differentiation into a specialized cell whose purpose is to fix nitrogen." [OMP:MCC]
+def: "A cell development phenotype where development concerns differentiation into a specialized cell whose purpose is to fix nitrogen." [OMP:MCC]
 is_a: OMP:0000070 ! cell development phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:24:43Z
@@ -767,7 +750,7 @@ creation_date: 2011-02-02T03:24:43Z
 [Term]
 id: OMP:0000093
 name: ankinete formation phenotype
-def: "A cellular development phenotype where development concerns a special thick-walled cell that has the ability to withstand desiccation for long periods of time." [OMP:MCC]
+def: "A cell development phenotype where development concerns a special thick-walled cell that has the ability to withstand desiccation for long periods of time." [OMP:MCC]
 is_a: OMP:0000070 ! cell development phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:25:02Z
@@ -783,7 +766,7 @@ creation_date: 2011-02-02T03:25:29Z
 [Term]
 id: OMP:0000095
 name: spore germination phenotype
-def: "A cellular development phenotype where development concerns the physiological and developmental changes that occur in a spore following release from dormancy up to the earliest signs of growth (e.g. emergence from a spore wall)." [OMP:MCC]
+def: "A cell development phenotype where development concerns the physiological and developmental changes that occur in a spore following release from dormancy up to the earliest signs of growth (e.g. emergence from a spore wall)." [OMP:MCC]
 is_a: OMP:0000070 ! cell development phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:25:47Z
@@ -1211,7 +1194,7 @@ creation_date: 2011-02-02T02:47:43Z
 [Term]
 id: OMP:0000150
 name: nucleoid phenotype
-def: "A cellular morphology phenotype where the trait in question is the nucleoid, the region of a bacterial cell to which the DNA is confined." [OMP:MCC]
+def: "A cell morphology phenotype where the trait in question is the nucleoid, the region of a bacterial cell to which the DNA is confined." [OMP:MCC]
 synonym: "genophore" RELATED []
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: adrienne
@@ -2061,15 +2044,6 @@ created_by: mchibucos
 creation_date: 2011-07-21T01:47:50Z
 
 [Term]
-id: OMP:0000261
-name: sulfur source utilization phenotype, relative phenotype
-def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular sulfur source." []
-synonym: "sulphur utilization phenotype" EXACT []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T01:49:44Z
-
-[Term]
 id: OMP:0000262
 name: increased sulfur source utilization phenotype
 def: "A sulfur source utilization, relative phenotype where the trait in question is increased ability to utilize a particular sulfur source." [OMP:DAS]
@@ -2077,14 +2051,6 @@ synonym: "utilizes sulphur-containing compound" EXACT []
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:51:28Z
-
-[Term]
-id: OMP:0000263
-name: phosphorus source utilization, relative phenotype
-def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular phosphorus source." [OMP:DAS]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T01:55:26Z
 
 [Term]
 id: OMP:0000264
@@ -2458,14 +2424,6 @@ created_by: mchibucos
 creation_date: 2012-04-05T11:43:53Z
 
 [Term]
-id: OMP:0000314
-name: motility, relative phenotype
-def: "A motility phenotype that is different relative to a reference phenotype." [OMP:MCC]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-04-05T10:40:27Z
-
-[Term]
 id: OMP:0000315
 name: state phenotype
 def: "A microbial phenotype that reflects the capability of the representative member of a taxonomic unit." [OMP:MCC]
@@ -2514,13 +2472,6 @@ created_by: mchibucos
 creation_date: 2012-11-02T01:56:47Z
 
 [Term]
-id: OMP:0000327
-name: erythromycin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T01:57:24Z
-
-[Term]
 id: OMP:0000329
 name: increased resistance to erythromycin
 is_obsolete: true
@@ -2550,13 +2501,6 @@ synonym: "trimetrexate" NARROW []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:02:58Z
-
-[Term]
-id: OMP:0000332
-name: diaminopyrimidine compound resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:03:42Z
 
 [Term]
 id: OMP:0000334
@@ -2594,14 +2538,6 @@ synonym: "penicillin" NARROW [CHEBI:51356]
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:06:13Z
-
-[Term]
-id: OMP:0000337
-name: beta-lactam compound resistance, relative phenotype
-def: "A beta-lactam compound resistance phenotype, where the trait in question is a change in resistance to beta-lactam compounds relative to a reference strain or reference growth condition." [OMP:DAS]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:09:23Z
 
 [Term]
 id: OMP:0000339
@@ -2649,13 +2585,6 @@ created_by: mchibucos
 creation_date: 2012-11-02T02:15:15Z
 
 [Term]
-id: OMP:0000345
-name: ampicillin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:15:34Z
-
-[Term]
 id: OMP:0000347
 name: increased resistance to ampicillin
 is_obsolete: true
@@ -2669,13 +2598,6 @@ synonym: "abolished resistance to ampicillin" NARROW []
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:16:27Z
-
-[Term]
-id: OMP:0000349
-name: cefoxitin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:17:08Z
 
 [Term]
 id: OMP:0000351
@@ -2693,13 +2615,6 @@ created_by: mchibucos
 creation_date: 2012-11-02T02:18:01Z
 
 [Term]
-id: OMP:0000353
-name: cephalosporin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:18:43Z
-
-[Term]
 id: OMP:0000355
 name: increased resistance to cephalosporin
 is_obsolete: true
@@ -2713,13 +2628,6 @@ synonym: "abolished resistance to cephalosporin" NARROW []
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-02T02:19:28Z
-
-[Term]
-id: OMP:0000357
-name: penicillin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:20:05Z
 
 [Term]
 id: OMP:0000359
@@ -2807,13 +2715,6 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:04:47Z
 
 [Term]
-id: OMP:0000371
-name: azithromycin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:05:16Z
-
-[Term]
 id: OMP:0000373
 name: decreased resistance to azithromycin
 synonym: "abolished resistance to azithromycin" NARROW []
@@ -2827,13 +2728,6 @@ name: increased resistance to azithromycin
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:06:33Z
-
-[Term]
-id: OMP:0000375
-name: carvomycin A resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:16:09Z
 
 [Term]
 id: OMP:0000377
@@ -2851,13 +2745,6 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:17:09Z
 
 [Term]
-id: OMP:0000379
-name: clarithromycin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:17:56Z
-
-[Term]
 id: OMP:0000381
 name: increased resistance to clarithromycin
 is_obsolete: true
@@ -2871,13 +2758,6 @@ synonym: "abolished resistance to clarithromycin" NARROW []
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:18:54Z
-
-[Term]
-id: OMP:0000383
-name: dirithromycin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:21:39Z
 
 [Term]
 id: OMP:0000385
@@ -2895,13 +2775,6 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:23:07Z
 
 [Term]
-id: OMP:0000387
-name: josamycin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:24:36Z
-
-[Term]
 id: OMP:0000389
 name: increased resistance to josamycin
 is_obsolete: true
@@ -2915,13 +2788,6 @@ synonym: "abolished resistance to josamycin" RELATED []
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:25:59Z
-
-[Term]
-id: OMP:0000391
-name: roxithromycin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:32:11Z
 
 [Term]
 id: OMP:0000393
@@ -2939,13 +2805,6 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:33:15Z
 
 [Term]
-id: OMP:0000395
-name: spectinomycin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:34:54Z
-
-[Term]
 id: OMP:0000397
 name: increased resistance to spectinomycin
 is_obsolete: true
@@ -2959,13 +2818,6 @@ synonym: "abolished resistance to spectinomycin" NARROW []
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:35:38Z
-
-[Term]
-id: OMP:0000399
-name: spiramycin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:36:30Z
 
 [Term]
 id: OMP:0000401
@@ -2983,13 +2835,6 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:37:09Z
 
 [Term]
-id: OMP:0000403
-name: telithromycin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:38:05Z
-
-[Term]
 id: OMP:0000405
 name: increased resistance to telithromycin
 is_obsolete: true
@@ -3003,13 +2848,6 @@ synonym: "decreased resistance to telithromycin" NARROW []
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:38:55Z
-
-[Term]
-id: OMP:0000408
-name: troleandomycin resistance, relative phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:40:39Z
 
 [Term]
 id: OMP:0000409
@@ -3569,14 +3407,6 @@ created_by: wmeza
 creation_date: 2013-09-25T15:54:56Z
 
 [Term]
-id: OMP:0005029
-name: stress induced mutagenesis, relative phenotype
-def: "A stress induced mutagenesis phenotype dealing with the frequency of the occurrence of mutagenesis." [OMP:WAM]
-is_obsolete: true
-created_by: wmeza
-creation_date: 2013-09-25T15:55:54Z
-
-[Term]
 id: OMP:0005030
 name: increase in stress induced mutagenesis
 def: "A stress induced mutagenesis relative phenotype where the frequency of mutagenesis is increased relative to the designated control." [OMP:WAM]
@@ -3607,13 +3437,6 @@ def: "A stress-induced mutagenesis phenotype where an organism does not processe
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T18:20:22Z
-
-[Term]
-id: OMP:0005034
-name: DNA Replication, Relative Phenotype
-is_obsolete: true
-created_by: wmeza
-creation_date: 2013-10-15T17:50:54Z
 
 [Term]
 id: OMP:0005035
@@ -4457,14 +4280,6 @@ created_by: jonathanherrera
 creation_date: 2013-09-03T05:30:35Z
 
 [Term]
-id: OMP:0006003
-name: nutrient utilization, relative phenotype
-def: "A Nutrient Phenotype, where the defining trait is where the nutrient is catabolized further or used as is, and the change that trait due to the environment or mutagenesis." [OMP:DS]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-03T07:54:22Z
-
-[Term]
 id: OMP:0006004
 name: increase bud formation
 def: "A bud forming phenotype where the organism(s) has increased bud formation relative to a designated control." [OMP:WAM]
@@ -4472,14 +4287,6 @@ synonym: "increased buddign index" EXACT []
 is_a: OMP:0000008 ! bud forming
 created_by: jonathanherrera
 creation_date: 2014-03-26T21:33:14Z
-
-[Term]
-id: OMP:0006005
-name: nitrogen source utilization, relative phenotype
-def: "A nutrient utilization phenotype where the trait in question is a change in the ability to utilize a particular nitrogen source." [GO:0019740, OMP:JCH\,DAS]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-06T16:52:37Z
 
 [Term]
 id: OMP:0006006
@@ -5407,14 +5214,6 @@ created_by: siegele
 creation_date: 2013-09-16T17:30:07Z
 
 [Term]
-id: OMP:0007020
-name: auxotrophic phenotype, relative phenotype
-def: "A growth factor phenotype where the trait in question is a change in the ability to synthesize growth factors.  The organism being annotated is derived from an operational taxonomic unit or reference strain that is a prototroph." [OMP:DAS]
-is_obsolete: true
-created_by: siegele
-creation_date: 2013-09-17T16:10:51Z
-
-[Term]
 id: OMP:0007021
 name: decreased requirement for amino acid(s)
 def: "An amino acid requirement relative phenotype where an organism's requirement for one or more amino acids is decreased requirement relative to a designated control." [OMP:DAS]
@@ -5459,14 +5258,6 @@ created_by: siegele
 creation_date: 2013-09-17T16:33:34Z
 
 [Term]
-id: OMP:0007026
-name: quorum sensing, relative phenotype
-def: "A microbial communication phenotype where the trait in question is a change in the ability of an organism to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:DAS]
-is_obsolete: true
-created_by: siegele
-creation_date: 2013-09-17T16:43:59Z
-
-[Term]
 id: OMP:0007027
 name: increased quorum sensing
 def: "A quorum sensing relative phenotype where an organism's ability to monitor its population density is increased relative to a designated control." [OMP:DAS]
@@ -5477,7 +5268,7 @@ creation_date: 2013-09-17T16:45:02Z
 [Term]
 id: OMP:0007028
 name: decreased quorum sensing
-def: "A quorum sensing relative phenotype where an organism's ability to monitor its population density is decreased relative to a designated control." [OMP:DAS]
+def: "An altered quorum sensing phenotype where an organism's ability to monitor its population density is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:18Z
@@ -6196,6 +5987,14 @@ is_a: OMP:0000128 ! stalked cell phenotype
 is_a: OMP:0007101 ! altered cell shape phenotype
 created_by: siegele
 creation_date: 2014-07-18T13:53:13Z
+
+[Term]
+id: OMP:0007117
+name: abolished quorum sensing
+def: "A decreased quorum sensing phenotype where an organism completely loses its ability to perform quorum sensing." [OMP:DAS]
+is_a: OMP:0007028 ! decreased quorum sensing
+created_by: siegele
+creation_date: 2014-07-18T14:21:06Z
 
 [Typedef]
 id: decreased_relative_to
