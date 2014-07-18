@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:07:2014 14:30
+date: 18:07:2014 14:40
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
@@ -2146,24 +2146,6 @@ created_by: mchibucos
 creation_date: 2011-07-21T02:21:21Z
 
 [Term]
-id: OMP:0000275
-name: decreased resistance to antimicrobial compound
-synonym: "abolished resistance to antibiotics" NARROW []
-synonym: "increased sensitivity to antibiotics" EXACT []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T02:22:27Z
-
-[Term]
-id: OMP:0000276
-name: increased resistance to antimicrobial compound
-synonym: "abolished sensitivity to antibiotics" NARROW []
-synonym: "decreased sensitivity to antibiotics" EXACT []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T02:30:14Z
-
-[Term]
 id: OMP:0000277
 name: decreased beta-galactosidase activity
 synonym: "abolished beta-galactosidase activity" RELATED []
@@ -2472,21 +2454,6 @@ created_by: mchibucos
 creation_date: 2012-11-02T01:56:47Z
 
 [Term]
-id: OMP:0000329
-name: increased resistance to erythromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T01:58:10Z
-
-[Term]
-id: OMP:0000330
-name: decreased resistance to erythromycin
-synonym: "abolished resistance to erythromycin" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T01:58:42Z
-
-[Term]
 id: OMP:0000331
 name: aminopyrimidine resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
@@ -2540,23 +2507,6 @@ created_by: mchibucos
 creation_date: 2012-11-02T02:06:13Z
 
 [Term]
-id: OMP:0000339
-name: increased resistance to beta-lactam compounds
-def: "A beta-lactam compound resistance, relative phenotype, where the trait in question is increased resistance to beta-lactam compounds relative to a reference strain or reference growth condition." [OMP:DAS]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:10:03Z
-
-[Term]
-id: OMP:0000340
-name: decreased resistance to beta-lactam compounds
-def: "A beta-lactam compound resistance, relative phenotype, where the trait in question is decreased resistance to beta-lactam compounds relative to a reference strain or reference growth condition." [OMP:DAS]
-synonym: "abolished resistance to beta lactam antibiotic" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:10:28Z
-
-[Term]
 id: OMP:0000341
 name: penicillin resistance phenotype
 is_obsolete: true
@@ -2578,319 +2528,11 @@ created_by: mchibucos
 creation_date: 2012-11-02T02:15:00Z
 
 [Term]
-id: OMP:0000344
-name: cefoxitin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:15:15Z
-
-[Term]
-id: OMP:0000347
-name: increased resistance to ampicillin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:16:03Z
-
-[Term]
-id: OMP:0000348
-name: decreased resistance to ampicillin
-synonym: "abolished resistance to ampicillin" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:16:27Z
-
-[Term]
-id: OMP:0000351
-name: increased resistance to cefoxitin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:17:39Z
-
-[Term]
-id: OMP:0000352
-name: decreased resistance to cefoxitin
-synonym: "abolished resistance to cefoxitin" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:18:01Z
-
-[Term]
-id: OMP:0000355
-name: increased resistance to cephalosporin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:19:15Z
-
-[Term]
-id: OMP:0000356
-name: decreased resistance to cephalosporin
-synonym: "abolished resistance to cephalosporin" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:19:28Z
-
-[Term]
-id: OMP:0000359
-name: increased resistance to penicillin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:20:39Z
-
-[Term]
-id: OMP:0000360
-name: decreased resistance to penicillin
-synonym: "abolished resistance to penicillin" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:20:54Z
-
-[Term]
-id: OMP:0000361
-name: clarithromycin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:04:46Z
-
-[Term]
-id: OMP:0000362
-name: azithromycin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:04:47Z
-
-[Term]
-id: OMP:0000363
-name: dirithromycin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:04:47Z
-
-[Term]
-id: OMP:0000364
-name: roxithromycin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:04:47Z
-
-[Term]
-id: OMP:0000365
-name: telithromycin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:04:47Z
-
-[Term]
-id: OMP:0000366
-name: carvomycin A resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:04:47Z
-
-[Term]
-id: OMP:0000367
-name: josamycin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:04:47Z
-
-[Term]
-id: OMP:0000368
-name: troleandomycin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:04:47Z
-
-[Term]
 id: OMP:0000369
 name: spectinomycin resistance phenotype
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:04:47Z
-
-[Term]
-id: OMP:0000370
-name: spiramycin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:04:47Z
-
-[Term]
-id: OMP:0000373
-name: decreased resistance to azithromycin
-synonym: "abolished resistance to azithromycin" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:06:04Z
-
-[Term]
-id: OMP:0000374
-name: increased resistance to azithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:06:33Z
-
-[Term]
-id: OMP:0000377
-name: increased resistance to carvomycin A
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:16:50Z
-
-[Term]
-id: OMP:0000378
-name: decreased resistance to carvomycin A
-synonym: "abolished resistance to carvomycin A" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:17:09Z
-
-[Term]
-id: OMP:0000381
-name: increased resistance to clarithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:18:27Z
-
-[Term]
-id: OMP:0000382
-name: decreased resistance to clarithromycin
-synonym: "abolished resistance to clarithromycin" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:18:54Z
-
-[Term]
-id: OMP:0000385
-name: increased resistance to dirithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:22:22Z
-
-[Term]
-id: OMP:0000386
-name: decreased resistance to dirithromycin
-synonym: "abolished resistance to dirithromycin" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:23:07Z
-
-[Term]
-id: OMP:0000389
-name: increased resistance to josamycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:25:42Z
-
-[Term]
-id: OMP:0000390
-name: decreased resistance to josamycin
-synonym: "abolished resistance to josamycin" RELATED []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:25:59Z
-
-[Term]
-id: OMP:0000393
-name: decreased resistance to roxithromycin
-synonym: "abolished resistance to roxithromycin" RELATED []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:32:57Z
-
-[Term]
-id: OMP:0000394
-name: increased resistance to roxithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:33:15Z
-
-[Term]
-id: OMP:0000397
-name: increased resistance to spectinomycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:35:27Z
-
-[Term]
-id: OMP:0000398
-name: decreased resistance to spectinomycin
-synonym: "abolished resistance to spectinomycin" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:35:38Z
-
-[Term]
-id: OMP:0000401
-name: increased resistance to spiramycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:36:54Z
-
-[Term]
-id: OMP:0000402
-name: decreased resistance to spiramycin
-synonym: "abolished resistance to spiramycin" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:37:09Z
-
-[Term]
-id: OMP:0000405
-name: increased resistance to telithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:38:38Z
-
-[Term]
-id: OMP:0000406
-name: decreased resistance to telithromycin
-synonym: "decreased resistance to telithromycin" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:38:55Z
-
-[Term]
-id: OMP:0000409
-name: increased resistance to troleandomycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:40:58Z
-
-[Term]
-id: OMP:0000410
-name: decreased resistance to troleandomycin
-synonym: "abolished resistance to troleandomycin" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:41:14Z
-
-[Term]
-id: OMP:0000411
-name: resistant to azithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:43:06Z
-
-[Term]
-id: OMP:0000413
-name: resistant to carvomycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:44:03Z
-
-[Term]
-id: OMP:0000415
-name: resistant to clarithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:44:32Z
-
-[Term]
-id: OMP:0000417
-name: resistant to dirithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:45:40Z
 
 [Term]
 id: OMP:0000419
@@ -2900,46 +2542,11 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:46:22Z
 
 [Term]
-id: OMP:0000421
-name: resistant to josamycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:46:59Z
-
-[Term]
-id: OMP:0000425
-name: resistant to roxithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:48:02Z
-
-[Term]
 id: OMP:0000427
 name: resistant to spectinomycin
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:48:33Z
-
-[Term]
-id: OMP:0000429
-name: resistant to spiramycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:49:30Z
-
-[Term]
-id: OMP:0000431
-name: resistant to telithromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:50:20Z
-
-[Term]
-id: OMP:0000433
-name: resistant to troleandomycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:50:49Z
 
 [Term]
 id: OMP:0000435
@@ -2967,20 +2574,6 @@ created_by: mchibucos
 creation_date: 2012-11-04T02:52:48Z
 
 [Term]
-id: OMP:0000439
-name: resistant to beta-lactam compounds
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:53:24Z
-
-[Term]
-id: OMP:0000441
-name: resistant to cefoxitin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:54:04Z
-
-[Term]
 id: OMP:0000443
 name: resistant to cephalosporin
 is_obsolete: true
@@ -3000,13 +2593,6 @@ name: not resistant to penicillin
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:55:50Z
-
-[Term]
-id: OMP:0000447
-name: resistant to antimicrobial compound
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:56:12Z
 
 [Term]
 id: OMP:0000450
@@ -5155,22 +4741,6 @@ def: "A nitrogen source utilization phenotype where an organic nitrogen-containi
 is_a: OMP:0006026 ! nitrogen source utilization phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:20:24Z
-
-[Term]
-id: OMP:0007015
-name: make obsolete - requirement for amino acid(s)
-def: "An amino acid requirement phenotype where an organism cannot synthesize one or more amino acids." [OMP:DAS]
-is_obsolete: true
-created_by: siegele
-creation_date: 2013-09-16T12:47:41Z
-
-[Term]
-id: OMP:0007017
-name: make obsolete - vitamin/enzyme cofactor requirement
-def: "A vitamin/enzyme cofactor phenotype where the representative member of a taxonomic unita taxonomic unit cannot synthesize a vitamin/enzyme factor required for growth." [OMP:DAS]
-is_obsolete: true
-created_by: siegele
-creation_date: 2013-09-16T12:49:50Z
 
 [Term]
 id: OMP:0007018
