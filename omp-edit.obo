@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 17:07:2014 17:57
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3.1
+date: 18:07:2014 14:07
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -24,7 +24,7 @@ creation_date: 2011-03-10T06:55:06Z
 id: OMP:0000002
 name: decreased motility
 alt_id: OMP:0000044
-def: "A motility phenotype where motility is decreased relative to a specified control." [OMP:MCC]
+def: "A motility phenotype where motility is decreased relative to a designated control." [OMP:MCC]
 comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
 synonym: "abolished motility" NARROW []
 xref: PATO:0002297
@@ -337,7 +337,7 @@ creation_date: 2011-06-06T03:36:04Z
 [Term]
 id: OMP:0000040
 name: decreased cell size
-def: "An altered cell size phenotype where the size of a cell or cells is decreased relative to a specified control." [OMP:MCC]
+def: "An altered cell size phenotype where the size of a cell or cells is decreased relative to a designated control." [OMP:MCC]
 is_a: OMP:0007083 ! altered cell size phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:47:26Z
@@ -345,7 +345,7 @@ creation_date: 2011-04-26T03:47:26Z
 [Term]
 id: OMP:0000041
 name: increased cell size
-def: "An altered cell size phenotype where the volume of a cell or cells is increased relative to a specified control." [OMP:MCC]
+def: "An altered cell size phenotype where the volume of a cell or cells is increased relative to a designated control." [OMP:MCC]
 is_a: OMP:0007083 ! altered cell size phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:49:09Z
@@ -368,7 +368,7 @@ creation_date: 2011-04-26T03:53:34Z
 [Term]
 id: OMP:0000045
 name: increased motility
-def: "A motility phenotype where motility is increased relative to a specified control." [OMP:MCC]
+def: "A motility phenotype where motility is increased relative to a designated control." [OMP:MCC]
 xref: PATO:0002298
 is_a: OMP:0007001 ! altered motility phenotype
 created_by: mchibucos
@@ -600,7 +600,7 @@ creation_date: 2011-02-02T03:31:35Z
 [Term]
 id: OMP:0000073
 name: cell shape phenotype
-def: "A cellular morphology phenotype where the trait in question is the shape of cells of the representative member of a taxonomic unit." [OMP:MCC]
+def: "A cell morphology phenotype where the trait in question is the shape of a cell." [OMP:MCC]
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:02Z
@@ -608,7 +608,7 @@ creation_date: 2011-02-02T03:18:02Z
 [Term]
 id: OMP:0000074
 name: cell size phenotype
-def: "A cellular morphology phenotype where the trait in question is the size of the cell." [OMP:MCC]
+def: "A cell morphology phenotype where the trait in question is the size of a cell." [OMP:MCC]
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:19Z
@@ -616,7 +616,7 @@ creation_date: 2011-02-02T03:18:19Z
 [Term]
 id: OMP:0000075
 name: coccus
-def: "A cell shape phenotype where an organism has cells that are spherical or nearly spherical." [ISBN:9780073402406, OMP:MCC]
+def: "A spheroid cell phenotype where a cell is spherical or nearly spherical." [ISBN:9780073402406, OMP:MCC]
 synonym: "spherical-shaped" EXACT []
 is_a: OMP:0007100 ! spheroid cell phenotype
 created_by: adrienne
@@ -625,7 +625,7 @@ creation_date: 2011-02-02T03:18:29Z
 [Term]
 id: OMP:0000076
 name: bacillus
-def: "A cell shape phenotype where an organism has rod-shaped cells." [ISBN:9780073402406, OMP:MCC]
+def: "A cylindrical cell phenotype where an organism has rod-shaped cells." [ISBN:9780073402406, OMP:MCC]
 synonym: "rod-shaped" EXACT []
 is_a: OMP:0007099 ! cylindrical cell phenotype
 created_by: adrienne
@@ -634,7 +634,7 @@ creation_date: 2011-02-02T03:18:47Z
 [Term]
 id: OMP:0000077
 name: vibrio
-def: "A spiral cell shape phenotype where the organism has rod-shaped cells that are curved to form a comma-like shape or incomplete spiral." [ISBN:9780073402406, OMP:AEZ]
+def: "A spiral cell shape phenotype where a rod-shaped cell is curved to form a comma-like shape or incomplete spiral." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000086 ! spiral cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:19:31Z
@@ -708,7 +708,7 @@ creation_date: 2011-02-02T03:49:03Z
 [Term]
 id: OMP:0000086
 name: spiral cell shape phenotype
-def: "A cell shape phenotype where the organism has cells that are helical or cork-screw shaped." [OMP:MCC]
+def: "A cell shape phenotype where a cell is helical or cork-screw shaped." [OMP:MCC]
 synonym: "curved rod" RELATED []
 synonym: "spirillum" NARROW []
 synonym: "spirochete" NARROW []
@@ -1000,8 +1000,8 @@ creation_date: 2011-02-18T02:47:10Z
 
 [Term]
 id: OMP:0000123
-name: coccobacillus phenotype
-def: "A cell shape phenotype where an organism has cells intermediate in shape between cocci (spherical) and bacilli (rods)." [ISBN:9780073402406, OMP:MCC]
+name: coccobacillus cell phenotype
+def: "A cell shape phenotype where a cell is intermediate in shape between a coccus (sphere) and a bacillus (rod)." [ISBN:9780073402406, OMP:MCC]
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:48:21Z
@@ -1009,7 +1009,7 @@ creation_date: 2011-02-18T02:48:21Z
 [Term]
 id: OMP:0000124
 name: spirillum
-def: "A spiral cell shape phenotype where the organism has cells that form a rigid spiral." [ISBN:9780073402406, OMP:AEZ]
+def: "A spiral cell shape phenotype where a cell forms a rigid spiral." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000086 ! spiral cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:51:54Z
@@ -1017,7 +1017,7 @@ creation_date: 2011-02-18T02:51:54Z
 [Term]
 id: OMP:0000125
 name: spirochete
-def: "A spiral cell shape phenotype where the organism has cells that form a flexible spiral." [ISBN:9780073402406, OMP:AEZ]
+def: "A spiral cell shape phenotype where a cell forms a flexible spiral." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000086 ! spiral cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:52:33Z
@@ -1041,7 +1041,7 @@ creation_date: 2011-02-18T02:59:18Z
 [Term]
 id: OMP:0000128
 name: stalked cell phenotype
-def: "A cell shape phenotype where the cell possesses an appendage called a stalk or prostheca (plural, prosthecae), which is a tubular extension of the cell envelope and contains cytosol." [OMP:MCC, PMID:14245437]
+def: "A cell shape phenotype where a cell possesses an appendage called a stalk or prostheca (plural, prosthecae), which is a tubular extension of the cell envelope and contains cytosol." [OMP:MCC, PMID:14245437]
 synonym: "prosthecate bacterium" EXACT [URL:http\://en.wikipedia.org/wiki/Prosthecate_bacteria]
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -1049,8 +1049,8 @@ creation_date: 2011-02-18T02:59:38Z
 
 [Term]
 id: OMP:0000129
-name: cuboid cell phenotype
-def: "A cell shape phenotype where an organism has cell with six sides." [ONP:MCC]
+name: cuboidal cell phenotype
+def: "A cell shape phenotype where a cell has a cube-like shape; there are six sides and the width is approximately equal to the height of the cell." [OMP:MCC]
 synonym: "square" RELATED []
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -1059,7 +1059,7 @@ creation_date: 2011-02-18T02:59:57Z
 [Term]
 id: OMP:0000130
 name: star-shaped cell phenotype
-def: "A cell shape phenotype where the representative member of a taxonomic unit has cells with lobe-like projections that form points." [OMP:MCC]
+def: "A cell shape phenotype where a cell has projections that form points." [OMP:MCC]
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:00:30Z
@@ -1067,7 +1067,8 @@ creation_date: 2011-02-18T03:00:30Z
 [Term]
 id: OMP:0000131
 name: lobed cell phenotype
-def: "A cell shape phenotype where the cell has deeply indented margins (lobes)." [OMP:MCC]
+def: "A cell shape phenotype where a cell has curved or rounded projections or divisions (lobes)." [OMP:MCC]
+xref: PATO:0001979 "lobed"
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:00:58Z
@@ -1075,7 +1076,7 @@ creation_date: 2011-02-18T03:00:58Z
 [Term]
 id: OMP:0000132
 name: pleomorphic cell shape phenotype
-def: "A cell shape phenotype where an organism posseses the ability to take on two or more different shapes during its life cycle." [ISBN:9780073402406, OMP:MCC]
+def: "A cell shape phenotype where a cell is variable in shape and lacks a single, characteristic form." [ISBN:9780073402406, OMP:MCC]
 xref: PATO:0001356
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -2221,7 +2222,7 @@ creation_date: 2011-07-21T02:35:22Z
 [Term]
 id: OMP:0000280
 name: increased cell length
-def: "An altered cell size phenotype where the long axis of a cell or cells is increased relative to a specified control." [OMP:DAS]
+def: "An altered cell size phenotype where the long axis of a cell or cells is increased relative to a designated control." [OMP:DAS]
 comment: The mukB mutant appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
 is_a: OMP:0007083 ! altered cell size phenotype
 created_by: mchibucos
@@ -5926,7 +5927,7 @@ creation_date: 2014-04-30T16:07:16Z
 [Term]
 id: OMP:0007083
 name: altered cell size phenotype
-def: "A cell size phenotype where the size of a cell or cells is altered relative to a specified control." [OMP:DAS]
+def: "A cell size phenotype where the size of a cell is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000074 ! cell size phenotype
 is_a: OMP:0007103 ! altered cell morphology phenotype
 created_by: siegele
@@ -5935,7 +5936,7 @@ creation_date: 2014-07-06T14:41:49Z
 [Term]
 id: OMP:0007084
 name: decreased cell length
-def: "An altered cell size phenotype where the long axis of a cell or cells is decreased relative to a specified control." [OMP:DAS]
+def: "An altered cell size phenotype where the long axis of a cell or cells is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007083 ! altered cell size phenotype
 created_by: siegele
 creation_date: 2014-07-06T14:43:59Z
@@ -5983,6 +5984,7 @@ creation_date: 2014-07-10T12:51:30Z
 [Term]
 id: OMP:0007090
 name: more rod-like
+def: "An altered cell shape phenotype where a cell's shape is more rod-like than that of a designated control." [OMP:DAS]
 is_a: OMP:0007099 ! cylindrical cell phenotype
 is_a: OMP:0007101 ! altered cell shape phenotype
 created_by: siegele
@@ -6047,7 +6049,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007099
 name: cylindrical cell phenotype
-def: "A cell shape phenotype where a cell or cells exhibit a consistently-sized round cross section." [OMP:DAS]
+def: "A cell shape phenotype where a cell has a consistently-sized round cross section.  The long axis of the cell is typically longer than the cell diameter." [OMP:DAS]
 xref: PATO:0001873
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: siegele
@@ -6056,7 +6058,7 @@ creation_date: 2014-07-10T20:13:46Z
 [Term]
 id: OMP:0007100
 name: spheroid cell phenotype
-def: "A cell shape phenotype where a cell or cells have a sphere-like shape, i.e. quadric surface in three dimensions obtained by rotating an ellipse about one of its principle axes." [OMP:DAS]
+def: "A cell shape phenotype where a cell has a sphere-like shape, i.e. quadric surface in three dimensions obtained by rotating an ellipse about one of its principle axes." [OMP:DAS]
 xref: PATO:0001865
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: siegele
@@ -6065,7 +6067,7 @@ creation_date: 2014-07-10T20:13:46Z
 [Term]
 id: OMP:0007101
 name: altered cell shape phenotype
-def: "A cell shape phenotype that is altered relative to a designated control." [OMP:DAS]
+def: "A cell shape phenotype where the shape of a cell is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000073 ! cell shape phenotype
 is_a: OMP:0007103 ! altered cell morphology phenotype
 created_by: siegele
@@ -6074,6 +6076,7 @@ creation_date: 2014-07-10T20:24:53Z
 [Term]
 id: OMP:0007102
 name: rounder
+def: "An altered cell shape phenotype where a cell's shape is rounder than that of a designated control." [OMP:DAS]
 is_a: OMP:0007100 ! spheroid cell phenotype
 is_a: OMP:0007101 ! altered cell shape phenotype
 created_by: siegele
@@ -6184,6 +6187,15 @@ def: "A growth phenotype where the growth rate of a cell or cells is altered rel
 is_a: OMP:0000174 ! growth phenotype
 created_by: siegele
 creation_date: 2014-07-17T16:29:34Z
+
+[Term]
+id: OMP:0007116
+name: altered cell stalk phenotype
+def: "An altered cell shape phenotype where the stalk of a stalk-shaped cell is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000128 ! stalked cell phenotype
+is_a: OMP:0007101 ! altered cell shape phenotype
+created_by: siegele
+creation_date: 2014-07-18T13:53:13Z
 
 [Typedef]
 id: decreased_relative_to
