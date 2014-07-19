@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 18:07:2014 14:40
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 18:07:2014 21:34
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1522,10 +1522,10 @@ creation_date: 2011-02-03T11:24:08Z
 
 [Term]
 id: OMP:0000194
-name: presence of catalase
+name: presence of catalase activity
 def: "A catalase phenotype where an organism poses the enzyme to decompose hydrogen peroxide." [OMP:JCH]
 synonym: "catalase positive" EXACT []
-is_a: OMP:0000218 ! catalase phenotype
+is_a: OMP:0000218 ! catalase activity phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T04:28:49Z
 
@@ -1534,7 +1534,7 @@ id: OMP:0000195
 name: decreased catalase activity
 def: "A catalase positive activity phenotype in which a process occurs that stops, prevents or reduces the frequency, rate or extent of catalase activity." [GO:1902552]
 synonym: "negative regulation of catalase activity" EXACT []
-is_a: OMP:0006077 ! altered catalase
+is_a: OMP:0006077 ! altered catalase activity
 created_by: mchibucos
 creation_date: 2011-06-06T04:29:20Z
 
@@ -1543,7 +1543,7 @@ id: OMP:0000196
 name: increased catalase activity
 def: "A catalase positive activity phenotype in which a process occurs that activates or increases the frequency, rate or extent of catalase activity." [GO:1902553]
 synonym: "positive regulation of catalase activity" EXACT []
-is_a: OMP:0006077 ! altered catalase
+is_a: OMP:0006077 ! altered catalase activity
 created_by: mchibucos
 creation_date: 2011-06-06T04:29:39Z
 
@@ -1557,11 +1557,11 @@ creation_date: 2011-02-03T11:25:01Z
 
 [Term]
 id: OMP:0000198
-name: absence of catalase
+name: absence of catalase activity
 def: "A catalase phenotype where an organism does not poses the enzyme to decompose hydrogen peroxide." [OMP:JCH]
 synonym: "catalase deficient" RELATED []
 synonym: "catalase negative" EXACT []
-is_a: OMP:0000218 ! catalase phenotype
+is_a: OMP:0000218 ! catalase activity phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T04:30:12Z
 
@@ -1724,22 +1724,22 @@ creation_date: 2011-06-07T03:19:00Z
 
 [Term]
 id: OMP:0000218
-name: catalase phenotype
-def: "An enzymatic activity phenotype where the enzyme catalyzes the decomposition of hydrogen peroxide into water and oxygen." [OMP:JCH]
+name: catalase activity phenotype
+def: "An enzymatic activity phenotype where the cell or cells display the ability to catalyze the decomposition of hydrogen peroxide into oxygen and water." [OMP:JCH]
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:43:28Z
 
 [Term]
 id: OMP:0000219
-name: decarboxylase phenotype
+name: decarboxylase activity phenotype
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:43:53Z
 
 [Term]
 id: OMP:0000220
-name: oxidase phenotype
+name: oxidase activity phenotype
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:44:11Z
@@ -1755,7 +1755,7 @@ creation_date: 2011-02-03T04:44:39Z
 
 [Term]
 id: OMP:0000222
-name: urease phenotype
+name: urease activity phenotype
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:45:37Z
@@ -4518,114 +4518,114 @@ creation_date: 2014-05-12T13:04:40Z
 
 [Term]
 id: OMP:0006077
-name: altered catalase
+name: altered catalase activity
 def: "A catalase phenotype altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0000218 ! catalase phenotype
+is_a: OMP:0000218 ! catalase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T14:55:03Z
 
 [Term]
 id: OMP:0006078
-name: absence of decarboxylase
-is_a: OMP:0000219 ! decarboxylase phenotype
+name: absence of decarboxylase activity
+is_a: OMP:0000219 ! decarboxylase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
 
 [Term]
 id: OMP:0006079
-name: altered decarboxylase
-is_a: OMP:0000219 ! decarboxylase phenotype
+name: altered decarboxylase activity
+is_a: OMP:0000219 ! decarboxylase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
 
 [Term]
 id: OMP:0006080
-name: presence of decarboxylase
-is_a: OMP:0000219 ! decarboxylase phenotype
+name: presence of decarboxylase activity
+is_a: OMP:0000219 ! decarboxylase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
 
 [Term]
 id: OMP:0006081
-name: increase decarboxylase
-is_a: OMP:0006079 ! altered decarboxylase
+name: increase decarboxylase activity
+is_a: OMP:0006079 ! altered decarboxylase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
 
 [Term]
 id: OMP:0006082
-name: decrease decarboxylase
-is_a: OMP:0006079 ! altered decarboxylase
+name: decrease decarboxylase activity
+is_a: OMP:0006079 ! altered decarboxylase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
 
 [Term]
 id: OMP:0006083
-name: altered oxidase
-is_a: OMP:0000220 ! oxidase phenotype
+name: altered oxidase activity
+is_a: OMP:0000220 ! oxidase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
 
 [Term]
 id: OMP:0006084
-name: absence of oxidase
-is_a: OMP:0000220 ! oxidase phenotype
+name: absence of oxidase activity
+is_a: OMP:0000220 ! oxidase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
 
 [Term]
 id: OMP:0006085
-name: presence of oxidase
-is_a: OMP:0000220 ! oxidase phenotype
+name: presence of oxidase activity
+is_a: OMP:0000220 ! oxidase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
 
 [Term]
 id: OMP:0006086
-name: increase oxidase
-is_a: OMP:0006083 ! altered oxidase
+name: increase oxidase activity
+is_a: OMP:0006083 ! altered oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
 
 [Term]
 id: OMP:0006087
-name: decrease oxidase
-is_a: OMP:0006083 ! altered oxidase
+name: decrease oxidase activity
+is_a: OMP:0006083 ! altered oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
 
 [Term]
 id: OMP:0006088
-name: altered urease
-is_a: OMP:0000222 ! urease phenotype
+name: altered urease activity
+is_a: OMP:0000222 ! urease activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
 
 [Term]
 id: OMP:0006089
-name: presence of urease
-is_a: OMP:0000222 ! urease phenotype
+name: presence of urease activity
+is_a: OMP:0000222 ! urease activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
 
 [Term]
 id: OMP:0006090
-name: absence of urease
-is_a: OMP:0000222 ! urease phenotype
+name: absence of urease activity
+is_a: OMP:0000222 ! urease activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
 
 [Term]
 id: OMP:0006091
-name: increase altered urease
-is_a: OMP:0006088 ! altered urease
+name: increase altered urease activity
+is_a: OMP:0006088 ! altered urease activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
 
 [Term]
 id: OMP:0006092
-name: decrease urease
-is_a: OMP:0006088 ! altered urease
+name: decrease urease activity
+is_a: OMP:0006088 ! altered urease activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
 
