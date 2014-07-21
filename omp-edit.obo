@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 21:07:2014 13:51
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3.1
+date: 21:07:2014 14:00
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1490,7 +1490,7 @@ creation_date: 2011-02-03T11:24:08Z
 [Term]
 id: OMP:0000194
 name: presence of catalase activity
-def: "A catalase phenotype where an organism poses the enzyme to decompose hydrogen peroxide." [OMP:JCH]
+def: "A catalase activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
 synonym: "catalase positive" EXACT []
 is_a: OMP:0000218 ! catalase activity phenotype
 created_by: mchibucos
@@ -1499,7 +1499,7 @@ creation_date: 2011-06-06T04:28:49Z
 [Term]
 id: OMP:0000195
 name: decreased catalase activity
-def: "A catalase positive activity phenotype in which a process occurs that stops, prevents or reduces the frequency, rate or extent of catalase activity." [GO:1902552]
+def: "A catalase positive activity phenotype in which a process occurs that stops, prevents or reduces the frequency, rate or extent of catalase activity relative to a designated control." [GO:1902552]
 synonym: "negative regulation of catalase activity" EXACT []
 is_a: OMP:0006077 ! altered catalase activity
 created_by: mchibucos
@@ -1508,7 +1508,7 @@ creation_date: 2011-06-06T04:29:20Z
 [Term]
 id: OMP:0000196
 name: increased catalase activity
-def: "A catalase positive activity phenotype in which a process occurs that activates or increases the frequency, rate or extent of catalase activity." [GO:1902553]
+def: "A catalase positive activity phenotype in which a process occurs that activates or increases the frequency, rate or extent of catalase activity relative to a designated control." [GO:1902553]
 synonym: "positive regulation of catalase activity" EXACT []
 is_a: OMP:0006077 ! altered catalase activity
 created_by: mchibucos
@@ -1525,7 +1525,7 @@ creation_date: 2011-02-03T11:25:01Z
 [Term]
 id: OMP:0000198
 name: absence of catalase activity
-def: "A catalase phenotype where an organism does not poses the enzyme to decompose hydrogen peroxide." [OMP:JCH]
+def: "A catalase activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
 synonym: "catalase deficient" RELATED []
 synonym: "catalase negative" EXACT []
 is_a: OMP:0000218 ! catalase activity phenotype
