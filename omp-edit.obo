@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:07:2014 14:00
+date: 21:07:2014 15:05
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -3209,7 +3209,8 @@ creation_date: 2014-02-11T11:54:51Z
 [Term]
 id: OMP:0005102
 name: increase in enzyme activity
-def: "An enzyme activity relative phenotype where there is an increase in enzyme activity." [OMP:WAM]
+def: "An enzyme activity relative phenotype where there is an increase in enzyme activity relative to a designated control." [OMP:WAM]
+synonym: "positive regulation of catalase activity" RELATED []
 is_a: OMP:0005130 ! altered enzymatic activity phenotype
 created_by: wmeza
 creation_date: 2014-04-17T10:54:45Z
@@ -3217,7 +3218,8 @@ creation_date: 2014-04-17T10:54:45Z
 [Term]
 id: OMP:0005103
 name: decrease in enzyme activity
-def: "An enzyme activity relative phenotype where there is a reduction in enzyme activity." [OMP:WAM]
+def: "An enzyme activity relative phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:WAM]
+synonym: "negative regulation of enzymatic activity" RELATED []
 is_a: OMP:0005130 ! altered enzymatic activity phenotype
 created_by: wmeza
 creation_date: 2014-04-17T10:55:05Z
@@ -3433,6 +3435,7 @@ creation_date: 2014-07-16T12:36:13Z
 [Term]
 id: OMP:0005130
 name: altered enzymatic activity phenotype
+def: "An enzymatic activity phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: wmeza
 creation_date: 2014-07-16T17:48:24Z
