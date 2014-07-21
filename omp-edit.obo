@@ -852,8 +852,9 @@ creation_date: 2011-02-02T02:43:46Z
 
 [Term]
 id: OMP:0000109
-name: mucoid colony sheen
-is_a: OMP:0000106 ! colony sheen phenotype
+name: mucoid colony texture
+synonym: "viscous colony texture" RELATED [OMP:WAM]
+is_a: OMP:0000229 ! colony texture phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:38:08Z
 
@@ -1754,6 +1755,7 @@ creation_date: 2011-06-07T12:32:41Z
 [Term]
 id: OMP:0000229
 name: colony texture phenotype
+def: "A colony surface phenotype dealing with various aspects of the consistency of the colonies surface." [OMP:WAM]
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:34:58Z
@@ -1783,38 +1785,40 @@ creation_date: 2011-06-07T12:39:13Z
 id: OMP:0000233
 name: colony texture phenotype
 def: "A colony morphology phenotype dealing with the consistency of the colony." [OMP:WAM]
-is_a: OMP:0000100 ! colony morphology phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-06-07T12:41:05Z
 
 [Term]
 id: OMP:0000234
-name: butyrous colony consistency
+name: butyrous colony texture
 synonym: "buttery colony consistency" EXACT []
-is_a: OMP:0000233 ! colony texture phenotype
+is_a: OMP:0000229 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:41:24Z
 
 [Term]
 id: OMP:0000235
 name: viscous colony consistency
+comment: Was obsoleted because it was found to be close to mucoid colony texture. It was thus made into a synonym for that term.
 synonym: "viscid colony consistency" EXACT []
-is_a: OMP:0000233 ! colony texture phenotype
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-06-07T12:42:06Z
 
 [Term]
 id: OMP:0000236
-name: dry colony consistency
+name: dry colony texture
 synonym: "brittle colony consistency" EXACT []
 synonym: "friable colony consistency" EXACT []
-is_a: OMP:0000233 ! colony texture phenotype
+is_a: OMP:0000229 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:42:40Z
 
 [Term]
 id: OMP:0000237
 name: colony odor phenotype
+def: "A morphology phenotype dealing with the smell a colony produces." [OMP:WAM]
 is_a: OMP:0000100 ! colony morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:45:12Z
