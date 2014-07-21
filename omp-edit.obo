@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 21:07:2014 15:05
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 21:07:2014 16:32
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1942,15 +1942,10 @@ created_by: mchibucos
 creation_date: 2011-07-21T01:34:48Z
 
 [Term]
-id: OMP:0000256
-name: MacConkey agar phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T01:35:25Z
-
-[Term]
 id: OMP:0000258
 name: red colony on MacConkey agar
+def: "A colony morphology phenotype where cells form a red colony on MacConkey agar medium." []
+comment: This term was made obsolete because colony color on MacConkey agar was determined to be evidence for the presence or absence of lactose utilization, which would be the phenotype to be annotated.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:38:10Z
@@ -2050,7 +2045,7 @@ creation_date: 2011-07-21T04:24:02Z
 id: OMP:0000291
 name: genophore phenotype
 def: "A genophore is the chromosome equivalent in any organism, cellular organelle, or virus, however, the term is commonly used to refer to chromosomes other than the nuclear chromosomes of eukaryotes." [ISBN:9780195307610, ISBN:9781613441138, OMP:DAS]
-comment: This term was obsoleted because it is rarely used.  Instead, genophore phenotype is listed as a synonym of nucleoid phenotype.
+comment: This term was made obsolete because it is rarely used in the literature.  Genophore phenotype is now present as a synonym of nucleoid phenotype.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T04:25:09Z
@@ -2085,7 +2080,7 @@ creation_date: 2011-07-21T04:48:22Z
 id: OMP:0000299
 name: galactose-1-phosphate uridyl transferase activity
 def: "An enzymatic activity phenotype where galactose-1-phosphate uridyl transferase activity is present." []
-comment: This term was obsoleted in response to the decision to not have terms for individual enzyme activities unless those activities are commonly used for identification or classification.
+comment: This term was made obsolete in response to the decision to not have terms for individual enzyme activities unless those activities are commonly used for identification or classification.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:12:43Z
@@ -2094,7 +2089,7 @@ creation_date: 2011-07-21T05:12:43Z
 id: OMP:0000304
 name: increased substrate binding
 def: "A substrate binding phenotype where a protein has increased affinity for a substrate." []
-comment: This term was obsoleted in response to the decision that Kd measurements are too granular a phenotype for OMP, at least at this time.  The issue can be reconsidered if a need for such terms arises in the future.
+comment: This term was made obsolete in response to the decision that Kd measurements are too granular a phenotype for OMP, at least at this time.  The issue can be reconsidered if a need for such terms arises in the future.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:18:58Z
@@ -2251,19 +2246,10 @@ creation_date: 2012-11-04T02:52:18Z
 id: OMP:0000437
 name: resistant to ampicillin
 def: "An antimicrobial compound resistance phenotype where a cell or cells are resistant to ampicillin." []
-comment: This term was obsoleted in response to our decision to not have precomposed terms for individual antimicrobial compounds.  Instead, terms will be made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactam', and the particular antimicrobial compound tested will be annotated by putting its CHEBI ID into column 16.
+comment: This term was made obsolete in response to the decision to not have precomposed terms for individual antimicrobial compounds.  Instead, terms are made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactams', and the particular antimicrobial compound tested will be annotated by putting the CHEBI ID into the appropriate column in the annotation file.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:48Z
-
-[Term]
-id: OMP:0000445
-name: resistant to penicillin
-def: "An antimicrobial compound resistance phenotype where a cell or cells are resistant to penicillin." []
-comment: This term was obsoleted in response to our decision to not have precomposed terms for individual antimicrobial compounds.  Instead, terms will be made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactam', and the particular antimicrobial compound tested will be annotated by putting its CHEBI ID into column 16.
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:55:41Z
 
 [Term]
 id: OMP:0000450
