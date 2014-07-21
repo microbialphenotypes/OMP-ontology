@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 18:07:2014 21:34
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 21:07:2014 10:47
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -160,15 +160,6 @@ created_by: mchibucos
 creation_date: 2011-04-26T03:09:25Z
 
 [Term]
-id: OMP:0000019
-name: non-flagellated
-def: "An absence of flagellum where the representative member of a taxonomic unit does not possess a flagellum. Synonym of absence of flagellum, state phenotype" [OMP:MCC]
-xref: XX:<new xref>
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-06-07T10:33:37Z
-
-[Term]
 id: OMP:0000020
 name: myxospore forming
 def: "A myxospore formation phenotype where the representative member of a taxonomic unit possesses the ability to form myxospores." [OMP:MCC]
@@ -211,14 +202,6 @@ def: "A malformed flagellum that is longer or shorter than typical." [OMP:MCC]
 is_a: OMP:0000031 ! malformed flagellum
 created_by: mchibucos
 creation_date: 2011-06-07T11:19:56Z
-
-[Term]
-id: OMP:0000025
-name: multiorganism interaction phenotype
-def: "A microbial phenotype dealing with relationship between two or more organisms of the same or different species." [OMP:WAM]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-06-06T02:24:01Z
 
 [Term]
 id: OMP:0000026
@@ -405,14 +388,6 @@ def: "An decreased amount of capsule relative to the designated control strain i
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:59Z
-
-[Term]
-id: OMP:0000051
-name: loss of capsule
-def: "An absence of capsule where the representative member of a taxonomic unit typically does possess a capsule, but has lost the ability to produce a capsule." [OMP:MCC]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-06-07T10:54:14Z
 
 [Term]
 id: OMP:0000052
@@ -1335,13 +1310,6 @@ created_by: Adrienne
 creation_date: 2011-02-02T02:52:30Z
 
 [Term]
-id: OMP:0000170
-name: microbe-microbe interaction phenotype
-is_obsolete: true
-created_by: Adrienne
-creation_date: 2011-02-07T03:47:20Z
-
-[Term]
 id: OMP:0000171
 name: microaerophile phenotype
 def: "An oxygen requirement for growth phenotype where growth of the functional taxonomic unit or reference strain requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
@@ -1462,13 +1430,6 @@ def: "An oxygen requirement for growth phenotype where growth of the representat
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
-
-[Term]
-id: OMP:0000186
-name: photosynthesis phenotype
-is_obsolete: true
-created_by: Adrienne
-creation_date: 2011-02-02T03:30:07Z
 
 [Term]
 id: OMP:0000187
@@ -1761,14 +1722,6 @@ created_by: Adrienne
 creation_date: 2011-02-03T04:45:37Z
 
 [Term]
-id: OMP:0000223
-name: non-capsulated
-def: "An absence of capsule where the representative member of a taxonomic unit does not possess a capsule. Replaced by absence of capsule, state phenotype." [OMP:MCC]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-06-07T10:54:29Z
-
-[Term]
 id: OMP:0000224
 name: energy metabolism phenotype
 synonym: "bioenergetics" EXACT []
@@ -1782,22 +1735,6 @@ name: carbon dioxide production
 is_a: OMP:0000192 ! chemical production phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:53:37Z
-
-[Term]
-id: OMP:0000226
-name: increased frequency of cells possessing flagellum
-def: "A presence of flagellum where a relatively higher number of cells in the population possess flagellum." [OMP:MCC]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-06-07T11:02:18Z
-
-[Term]
-id: OMP:0000227
-name: decreased frequency of cells possessing flagellum
-def: "A presence of flagellum where a relatively lower number of cells in the population possess flagellum." [OMP:MCC]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-06-07T11:02:49Z
 
 [Term]
 id: OMP:0000228
@@ -1961,21 +1898,6 @@ created_by: mchibucos
 creation_date: 2011-06-07T03:19:25Z
 
 [Term]
-id: OMP:0000250
-name: non-hemolytic
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-06-07T03:19:44Z
-
-[Term]
-id: OMP:0000251
-name: loss of hemolysis
-def: "A lack of hemolysis phenotype" []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-06-07T03:20:50Z
-
-[Term]
 id: OMP:0000252
 name: metabolite accumulation
 is_a: OMP:0000180 ! metabolic phenotype
@@ -2016,63 +1938,11 @@ created_by: mchibucos
 creation_date: 2011-07-21T01:35:25Z
 
 [Term]
-id: OMP:0000257
-name: lactose fermentation
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T01:37:41Z
-
-[Term]
 id: OMP:0000258
 name: red colony on MacConkey agar
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:38:10Z
-
-[Term]
-id: OMP:0000259
-name: glucose fermentation
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T01:45:01Z
-
-[Term]
-id: OMP:0000260
-name: nitrogen utilization phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T01:47:50Z
-
-[Term]
-id: OMP:0000262
-name: increased sulfur source utilization phenotype
-def: "A sulfur source utilization, relative phenotype where the trait in question is increased ability to utilize a particular sulfur source." [OMP:DAS]
-synonym: "utilizes sulphur-containing compound" EXACT []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T01:51:28Z
-
-[Term]
-id: OMP:0000264
-name: increased phosphorus source utilization phenotype
-def: "A phosphorus source utilization, relative phenotype where the trait in question is increased ability to utilize a particular phosphorus source." [OMP:DAS]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T01:56:27Z
-
-[Term]
-id: OMP:0000265
-name: utilizes nitrogen-containing compound
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T01:57:49Z
-
-[Term]
-id: OMP:0000266
-name: utilizes carbon-containing compound
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T01:58:08Z
 
 [Term]
 id: OMP:0000267
@@ -2099,39 +1969,6 @@ created_by: mchibucos
 creation_date: 2011-07-21T02:05:51Z
 
 [Term]
-id: OMP:0000270
-name: absence of growth
-synonym: "no growth" EXACT []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T02:09:22Z
-
-[Term]
-id: OMP:0000271
-name: temperature-dependent growth
-comment: Restructured the terms.
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T02:11:56Z
-
-[Term]
-id: OMP:0000272
-name: suppressor-dependent growth
-comment: Restructured the terms.
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T02:15:11Z
-
-[Term]
-id: OMP:0000273
-name: reference phenotype
-def: "A microbial phenotype that is used as a reference point by which to compare the phenotypic attributes of another cell or group of cells." [OMP:MCC]
-comment: Many observed phenotypes, such exhibiting an increase or a decrease in a particular process or quality, can only be understood in the context of comparison to a reference phenotype. We call the phenotype to which a comparison is being made a reference phenotype, and we consider the phenotype resulting from this comparison a relative phenotype. A second category of phenotypes, called state phenotypes, reflects the inherent capability of a representative member of a taxonomic unit. It is possible to asses state phenotypes in absence of a reference. For example, some organisms are motile, while others are non-motile, both of which can be assessed independent of comparison to a second phenotype.
-is_obsolete: true
-created_by: Marcus
-creation_date: 2014-02-13T02:05:25Z
-
-[Term]
 id: OMP:0000274
 name: antimicrobial compound resistance phenotype
 def: "A microbial phenotype, where the trait in question is the resistance to a compound that kills (microbiocidal) or inhibits growth (microbiostatic) of a microbe." [OMP:MCC]
@@ -2144,21 +1981,6 @@ synonym: "antiviral resistance phenotype" NARROW []
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:21:21Z
-
-[Term]
-id: OMP:0000277
-name: decreased beta-galactosidase activity
-synonym: "abolished beta-galactosidase activity" RELATED []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T02:33:25Z
-
-[Term]
-id: OMP:0000278
-name: increased beta-galactosidase activity
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T02:33:53Z
 
 [Term]
 id: OMP:0000279
@@ -2177,14 +1999,6 @@ created_by: mchibucos
 creation_date: 2011-07-21T02:37:15Z
 
 [Term]
-id: OMP:0000281
-name: abolished beta-galactosidase activity
-synonym: "absence of beta-galactosidase activity" BROAD []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T02:40:26Z
-
-[Term]
 id: OMP:0000282
 name: increased growth rate
 def: "A growth phenotype where the growth rate is increased relative to a designated control." [OMP:DAS]
@@ -2200,43 +2014,6 @@ synonym: "slow growth rate" RELATED []
 is_a: OMP:0007115 ! altered growth rate phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:43:22Z
-
-[Term]
-id: OMP:0000284
-name: loss of utilization of carbon-containing compound
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T03:05:01Z
-
-[Term]
-id: OMP:0000285
-name: loss of utilization of nitrogen-containing compound
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T03:06:32Z
-
-[Term]
-id: OMP:0000286
-name: decreased phosphorus source utilization phenotype
-def: "A phosphorus source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular phosphorus source." [OMP:DAS]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T03:07:13Z
-
-[Term]
-id: OMP:0000287
-name: decreased sulfur utilization phenotype
-def: "A sulfur source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular sulfur source." [OMP:DAS]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T03:07:30Z
-
-[Term]
-id: OMP:0000288
-name: heterogenous cell population
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T04:04:00Z
 
 [Term]
 id: OMP:0000289
@@ -2262,7 +2039,7 @@ creation_date: 2011-07-21T04:24:02Z
 id: OMP:0000291
 name: genophore phenotype
 def: "A genophore is the chromosome equivalent in any organism, cellular organelle, or virus, however, the term is commonly used to refer to chromosomes other than the nuclear chromosomes of eukaryotes." [ISBN:9780195307610, ISBN:9781613441138, OMP:DAS]
-synonym: "chromosome phenotype" RELATED []
+comment: This term was obsoleted because it is rarely used.  Instead, genophore phenotype is listed as a synonym of nucleoid phenotype.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T04:25:09Z
@@ -2294,58 +2071,19 @@ created_by: mchibucos
 creation_date: 2011-07-21T04:48:22Z
 
 [Term]
-id: OMP:0000297
-name: beta-galactosidase activity phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T05:08:18Z
-
-[Term]
-id: OMP:0000298
-name: enzyme activity phenotype
-def: "A protein activity phenotype dealing with the functions of enzymes." [OMP:WAM]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T05:10:18Z
-
-[Term]
 id: OMP:0000299
 name: galactose-1-phosphate uridyl transferase activity
+def: "An enzymatic activity phenotype where galactose-1-phosphate uridyl transferase activity is present." []
+comment: This term was obsoleted in response to the decision to not have terms for individual enzyme activities unless those activities are commonly used for identification or classification.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:12:43Z
 
 [Term]
-id: OMP:0000300
-name: increased galactose-1-phosphate uridyl transferase activity
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T05:13:05Z
-
-[Term]
-id: OMP:0000301
-name: decreased galactose-1-phosphate uridyl transferase activity
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T05:13:27Z
-
-[Term]
-id: OMP:0000302
-name: substrate binding phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T05:17:18Z
-
-[Term]
-id: OMP:0000303
-name: decreased substrate binding
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-07-21T05:18:39Z
-
-[Term]
 id: OMP:0000304
 name: increased substrate binding
+def: "A substrate binding phenotype where a protein has increased affinity for a substrate." []
+comment: This term was obsoleted in response to the decision that Kd measurements are too granular a phenotype for OMP, at least at this time.  The issue can be reconsidered if a need for such terms arises in the future.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:18:58Z
@@ -2406,25 +2144,6 @@ created_by: mchibucos
 creation_date: 2012-04-05T11:43:53Z
 
 [Term]
-id: OMP:0000315
-name: state phenotype
-def: "A microbial phenotype that reflects the capability of the representative member of a taxonomic unit." [OMP:MCC]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-04-05T03:35:06Z
-
-[Term]
-id: OMP:0000316
-name: relative phenotype
-def: "A microbial phenotype that is different relative to the designated control phenotype." [OMP:MCC]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
-synonym: "mutant phenotype" NARROW []
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-04-05T03:35:22Z
-
-[Term]
 id: OMP:0000321
 name: macrolide resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars which exhibit antimicrobial properties." [CHEBI:25105, ISBN:9780073375267, OMP:MCC]
@@ -2445,13 +2164,6 @@ synonym: "Troleandomycin" NARROW []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:51:04Z
-
-[Term]
-id: OMP:0000326
-name: erythromycin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T01:56:47Z
 
 [Term]
 id: OMP:0000331
@@ -2507,48 +2219,6 @@ created_by: mchibucos
 creation_date: 2012-11-02T02:06:13Z
 
 [Term]
-id: OMP:0000341
-name: penicillin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:14:00Z
-
-[Term]
-id: OMP:0000342
-name: ampicillin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:14:41Z
-
-[Term]
-id: OMP:0000343
-name: cephalosporin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-02T02:15:00Z
-
-[Term]
-id: OMP:0000369
-name: spectinomycin resistance phenotype
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:04:47Z
-
-[Term]
-id: OMP:0000419
-name: resistant to erythromycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:46:22Z
-
-[Term]
-id: OMP:0000427
-name: resistant to spectinomycin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:48:33Z
-
-[Term]
 id: OMP:0000435
 name: resistant to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance to aminopyrimidines is observed or predict." [OMP:DAS]
@@ -2569,30 +2239,20 @@ creation_date: 2012-11-04T02:52:18Z
 [Term]
 id: OMP:0000437
 name: resistant to ampicillin
+def: "An antimicrobial compound resistance phenotype where a cell or cells are resistant to ampicillin." []
+comment: This term was obsoleted in response to our decision to not have precomposed terms for individual antimicrobial compounds.  Instead, terms will be made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactam', and the particular antimicrobial compound tested will be annotated by putting its CHEBI ID into column 16.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:48Z
 
 [Term]
-id: OMP:0000443
-name: resistant to cephalosporin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:55:01Z
-
-[Term]
 id: OMP:0000445
 name: resistant to penicillin
+def: "An antimicrobial compound resistance phenotype where a cell or cells are resistant to penicillin." []
+comment: This term was obsoleted in response to our decision to not have precomposed terms for individual antimicrobial compounds.  Instead, terms will be made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactam', and the particular antimicrobial compound tested will be annotated by putting its CHEBI ID into column 16.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:55:41Z
-
-[Term]
-id: OMP:0000446
-name: not resistant to penicillin
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2012-11-04T02:55:50Z
 
 [Term]
 id: OMP:0000450
@@ -2767,14 +2427,6 @@ name: decreased negative DNA supercoiling
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
-
-[Term]
-id: OMP:0005001
-name: growth type phenotype
-def: "A growth phenotype dealing with the various traits and requirements for microbial growth." [OMP:WAM]
-is_obsolete: true
-created_by: wmeza
-creation_date: 2013-09-02T01:07:53Z
 
 [Term]
 id: OMP:0005002
@@ -2970,13 +2622,6 @@ created_by: wmeza
 creation_date: 2013-09-20T13:26:46Z
 
 [Term]
-id: OMP:0005026
-name: chromosome maintenance phenotype
-is_obsolete: true
-created_by: wmeza
-creation_date: 2013-09-20T14:59:06Z
-
-[Term]
 id: OMP:0005027
 name: stress-induced mutagenesis phenotype
 def: "A genetic material phenotype that refers to the process(es) that give rise to mutations that occur after imposition of a non-lethal stress." [OMP:WAM, PMID:17917874, PMID:3045565]
@@ -3089,13 +2734,6 @@ created_by: wmeza
 creation_date: 2013-10-18T18:34:58Z
 
 [Term]
-id: OMP:0005044
-name: chromosome recombination phenotype
-is_obsolete: true
-created_by: wmeza
-creation_date: 2013-10-18T18:35:49Z
-
-[Term]
 id: OMP:0005045
 name: mitotic recombination phenotype
 def: "A genetic material phenotype dealing with the exchange, reciprocal or nonreciprocal of genetic material between one DNA  molecule and a homologous region of DNA that occurs  during mitotic cell cycles." [ISBN:9780198529170, OMP:WAM]
@@ -3158,20 +2796,6 @@ def: "A homologous recombination phenotype where the processes do not occur with
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:22:04Z
-
-[Term]
-id: OMP:0005053
-name: homologous plasmid recombination phenotype
-is_obsolete: true
-created_by: wmeza
-creation_date: 2013-10-25T12:45:54Z
-
-[Term]
-id: OMP:0005054
-name: site specific plasmid recombination phenotype
-is_obsolete: true
-created_by: wmeza
-creation_date: 2013-10-25T13:57:46Z
 
 [Term]
 id: OMP:0005055
@@ -3678,6 +3302,7 @@ creation_date: 2014-07-07T13:50:45Z
 [Term]
 id: OMP:0005115
 name: abolished hemolysis
+is_a: OMP:0000208 ! absence of hemolysis
 is_a: OMP:0000249 ! decreased hemolysis
 created_by: wmeza
 creation_date: 2014-07-08T16:54:51Z
@@ -3842,22 +3467,6 @@ created_by: wmeza
 creation_date: 2014-07-17T17:39:39Z
 
 [Term]
-id: OMP:0006001
-name: nutrient phenotype
-def: "A microbial phenotype, where a nutrient is a substance used in biosynthesis and/or energy release that supports growth and reproduction." [ISBN:9780073402406]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-03T05:28:25Z
-
-[Term]
-id: OMP:0006002
-name: growth factor utilization phenotype
-def: "A nutrient utilization phenotype where an organism cannot synthesize one or more essential organic compounds, but must obtain them from the environment." [ISBN:9780073402406, OMP:DAS]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-03T05:30:35Z
-
-[Term]
 id: OMP:0006004
 name: increase bud formation
 def: "A bud forming phenotype where the organism(s) has increased bud formation relative to a designated control." [OMP:WAM]
@@ -3876,35 +3485,11 @@ created_by: jonathanherrera
 creation_date: 2014-03-26T21:33:14Z
 
 [Term]
-id: OMP:0006007
-name: nitrogen requirement source
-def: "A nutrient phenotype, where the defining trait is the lack in the ability for the organism to synthesize organic molecules, and  must get them from the environment." [OMP:JCH]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-06T17:19:20Z
-
-[Term]
 id: OMP:0006008
 name: photosynthesis phenotype
 is_a: OMP:0007064 ! phototrophic phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-01T14:18:12Z
-
-[Term]
-id: OMP:0006009
-name: increase nutrient requirement
-def: "A nutrient requirement relative phenotype, where the defining trait is the increase requirement of a carbon containing substance." [OMP:JCH]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-09T18:20:42Z
-
-[Term]
-id: OMP:0006010
-name: decrease nutrient requirement
-def: "A nutrient requirement relative phenotype, where the defining trait is the decrease requirement of a carbon containing substance." [OMP:JCH]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-09T18:21:18Z
 
 [Term]
 id: OMP:0006011
@@ -3926,13 +3511,6 @@ created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
 
 [Term]
-id: OMP:0006013
-name: nitrogen source requirement
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T18:32:37Z
-
-[Term]
 id: OMP:0006014
 name: increased resistance to lantibiotic
 def: "A lantibiotic resistance phenotype where resistance is enhanced relative to a designated control." [OMP:WAM]
@@ -3941,59 +3519,6 @@ synonym: "decreased sensitivity to lantibiotic" RELATED []
 is_a: OMP:0006011 ! Lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
-
-[Term]
-id: OMP:0006015
-name: presence of carbon source requirement
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T18:33:22Z
-
-[Term]
-id: OMP:0006016
-name: increase nutrient utilization
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T13:43:42Z
-
-[Term]
-id: OMP:0006017
-name: decrease nutrient utilization
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T13:43:42Z
-
-[Term]
-id: OMP:0006018
-name: increased carbon source utilization phenotype
-def: "A carbon source utilization, relative phenotype where the trait in question is increased ability to utilize a particular carbon source." [OMP:DAS]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T13:49:43Z
-
-[Term]
-id: OMP:0006019
-name: decreased carbon source utilization phenotype
-def: "A carbon source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular carbon source." [OMP:DAS]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T13:49:43Z
-
-[Term]
-id: OMP:0006020
-name: increased nitrogen source utilization phenotype
-def: "A nitrogen source utilization, relative phenotype where the trait in question is increased ability to utilize a particular nitrogen source." [OMP:DAS]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T14:01:22Z
-
-[Term]
-id: OMP:0006021
-name: decreased nitrogen source utilization phenotype
-def: "A nitrogen source utilization, relative phenotype where the trait in question is decreased ability to utilize a particular nitrogen source." [OMP:DAS]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T14:01:22Z
 
 [Term]
 id: OMP:0006022
@@ -4019,13 +3544,6 @@ def: "A carbon source utilization phenotype where an organism uses organic molec
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:39:02Z
-
-[Term]
-id: OMP:0006025
-name: presence of nutrient utilization
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006026
@@ -4081,45 +3599,6 @@ synonym: "nitrogen fixation phenotype" RELATED []
 is_a: OMP:0006026 ! nitrogen source utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:54:07Z
-
-[Term]
-id: OMP:0006031
-name: presence of nutrient requirement source
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T18:33:55Z
-
-[Term]
-id: OMP:0006032
-name: increase carbon source requirement
-def: "A carbon requirement source, where the defining trait is the increase requirement of a carbon containing substance." [OMP:JCH]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T18:35:51Z
-
-[Term]
-id: OMP:0006033
-name: decrease carbon source requirement
-def: "A carbon requirement source, where the defining trait is the decrease requirement of a carbon containing substance." [OMP:JCH]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T18:36:15Z
-
-[Term]
-id: OMP:0006034
-name: increase nitrogen source requirement
-def: "A nitrogen requirement source, where the defining trait is the increase in requirement of the nitrogen containing substance." [OMP:JCH]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T18:36:42Z
-
-[Term]
-id: OMP:0006035
-name: decrease nitrogen source requirement
-def: "A nitrogen requirement source, where the defining trait is the decrease in requirement of the nitrogen containing substance." [OMP:JCH]
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-09-10T18:37:31Z
 
 [Term]
 id: OMP:0006036
@@ -4464,13 +3943,6 @@ created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
 
 [Term]
-id: OMP:0006071
-name: resistant to trimethroprim
-is_obsolete: true
-created_by: jonathanherrera
-creation_date: 2013-10-24T13:10:50Z
-
-[Term]
 id: OMP:0006072
 name: not resistant to lantibiotic
 def: "A lantibiotic resistance phenotype where resistance to lantibiotic compounds are not observed or predicted." [OMP:WAM]
@@ -4678,12 +4150,13 @@ created_by: siegele
 creation_date: 2013-09-05T16:21:23Z
 
 [Term]
-id: OMP:0007007
-name: pH growth range phenotype
-def: "A pH growth range phenotype dealing with responses  relative to the designated control." [OMP:WAM]
-is_obsolete: true
+id: OMP:0007006
+name: cell population phenotype
+def: "A microbial phenotype observation at the level of a population of cells belonging to the same species." [OMP:DAS]
+xref: CMPO:0000002 "cell phenotype"
+is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
-creation_date: 2013-09-11T17:10:14Z
+creation_date: 2014-07-21T10:25:43Z
 
 [Term]
 id: OMP:0007008
@@ -5008,22 +4481,6 @@ created_by: siegele
 creation_date: 2013-10-01T15:20:22Z
 
 [Term]
-id: OMP:0007053
-name: inorganic sulfur source utilization phenotype
-def: "A sulfur source utilization phenotype where an inorganic S-containing compound is the source of sulfur." [OMP:DAS]
-is_obsolete: true
-created_by: siegele
-creation_date: 2013-10-01T15:32:55Z
-
-[Term]
-id: OMP:0007054
-name: organic sulfur source utilization phenotype
-def: "A sulfur source utilization phenotype where an organic S-containing compound is the source of sulfur." [OMP:DAS]
-is_obsolete: true
-created_by: siegele
-creation_date: 2013-10-01T15:32:55Z
-
-[Term]
 id: OMP:0007055
 name: decreased utilization of inorganic sulfur
 def: "An inorganic sulfur source utilization phenotype where the organism has decreased ability to use an inorganic S-containing compound as the source of sulfur relative to a designated control." [OMP:DAS]
@@ -5228,13 +4685,6 @@ def: "A nutrient utilization phenotype altered relative to a designated control.
 is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2014-04-30T15:52:18Z
-
-[Term]
-id: OMP:0007080
-name: altered amino acid requirement
-is_obsolete: true
-created_by: siegele
-creation_date: 2014-04-30T15:53:08Z
 
 [Term]
 id: OMP:0007081
