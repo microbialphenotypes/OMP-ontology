@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:07:2014 16:32
+date: 21:07:2014 18:10
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
@@ -758,7 +758,7 @@ creation_date: 2011-02-02T03:26:41Z
 [Term]
 id: OMP:0000097
 name: absence of chemotaxis
-def: "A chemotaxis phenotype where the representative member of a taxonomic unit does not possess the ability to move in response to a chemical concentration gradient." [OMP:MCC]
+def: "A chemotaxis phenotype where a cell or cells do not possess the ability to move in response to a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:13Z
@@ -1639,7 +1639,7 @@ creation_date: 2011-06-07T12:31:24Z
 [Term]
 id: OMP:0000211
 name: absence of capsule
-def: "A capsule phenotype where the representative member of a taxonomic unit is not observed to produce a capsule in any environmental condition." [OMP:DAS]
+def: "A capsule phenotype where a cell or cells is not observed to produce a capsule." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
@@ -2436,7 +2436,7 @@ creation_date: 2013-09-03T01:06:05Z
 [Term]
 id: OMP:0005003
 name: hyperthermophilic growth
-def: "A temperature growth range phenotype where optimal growth of the representative member of a taxonomic unit occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where optimal growth occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:29:51Z
@@ -2444,7 +2444,7 @@ creation_date: 2013-09-03T01:29:51Z
 [Term]
 id: OMP:0005004
 name: thermophilic growth
-def: "A temperature growth range phenotype where the representative member of a taxonomic unit can grow at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where growth occurs at 55 C or higher, and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:36:26Z
@@ -2452,7 +2452,7 @@ creation_date: 2013-09-03T01:36:26Z
 [Term]
 id: OMP:0005005
 name: mesophilic growth
-def: "A temperature growth range phenotype where optimal growth of the representative member of a taxonomic unit occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where optimal growth occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:24:06Z
@@ -2460,7 +2460,7 @@ creation_date: 2013-09-04T13:24:06Z
 [Term]
 id: OMP:0005006
 name: psychrotrophic growth
-def: "A temperature growth range phenotype where growth of the representative member of a taxonomic unit occurs from 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature of growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where growth occurs from 0 to 7 degrees C, and optimal growth occurs between 20 to 30 degrees C. The maximum temperature of growth is typically around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:38:56Z
@@ -2468,7 +2468,7 @@ creation_date: 2013-09-04T13:38:56Z
 [Term]
 id: OMP:0005007
 name: psychrophilic growth
-def: "A temperature growth range phenotype where the representative member of a taxonomic unit can grow  at 0 degrees C and optimal growth occurs at temperatures of 15 degrees C or lower." [iSBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where growth can occur at 0 degrees C and optimal growth occurs at temperatures of 15 degrees C or lower." [iSBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:40:27Z
@@ -2741,7 +2741,7 @@ creation_date: 2013-10-18T18:38:05Z
 [Term]
 id: OMP:0005046
 name: gene silencing phenotype
-def: "A genetic material phenotype dealing with the transcriptional or post-transcriptional processes carried out at the cellular level that results in long-term gene inactivation." [GO:0016458, OMP:WAM]
+def: "A genetic material phenotype dealing with the transcriptional or post-transcriptional processes carried out at the cellular level that result in long-term gene inactivation." [GO:0016458, OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:38:43Z
@@ -2853,7 +2853,7 @@ creation_date: 2013-11-04T18:09:38Z
 [Term]
 id: OMP:0005062
 name: absence of chromosome segregation
-def: "A chromosome segregation phenotype where process does not occur in the representative member of a taxonomic unit." [OMP:WAM]
+def: "A chromosome segregation phenotype where a cell or cells do not segregate their chromosomes." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:10:07Z
@@ -2868,24 +2868,24 @@ creation_date: 2013-11-04T18:12:32Z
 
 [Term]
 id: OMP:0005064
-name: increased frequency of gene silencing
-def: "A gene silencing relative phenotype dealing with an increase in the incidence of gene silencing relative to the designated control." [OMP:WAM]
-is_a: OMP:0005046 ! gene silencing phenotype
+name: increased gene silencing
+def: "A gene silencing phenotype where silencing is increased relative to a designated control." [OMP:WAM]
+is_a: OMP:0007007 ! altered gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:21:37Z
 
 [Term]
 id: OMP:0005065
-name: decreased frequency of gene silencing
-def: "A gene silencing relative phenotype dealing with a reduction in the incidence of gene silencing relative to the designated control." [OMP:WAM]
-is_a: OMP:0005046 ! gene silencing phenotype
+name: decreased gene silencing
+def: "A gene silencing phenotype where silencing is decreased relative to a designated control." [OMP:WAM]
+is_a: OMP:0007007 ! altered gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:21:56Z
 
 [Term]
 id: OMP:0005066
 name: absence of gene silencing
-def: "A gene silencing phenotype where the mechanisms are inactive in the representative member of a taxonomic unit." [OMP:WAM]
+def: "A gene silencing phenotype where a cell or cells do not perform the process of gene silencing." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:33:14Z
@@ -2893,7 +2893,7 @@ creation_date: 2013-11-04T18:33:14Z
 [Term]
 id: OMP:0005067
 name: presence of gene silencing
-def: "A gene silencing phenotype where the mechanisms are active in the representative member of a taxonomic unit." [OMP:WAM]
+def: "A gene silencing phenotype where a cell or cells are observed to perform the process of gene silencing." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:34:20Z
@@ -2932,8 +2932,8 @@ creation_date: 2013-11-08T17:12:27Z
 
 [Term]
 id: OMP:0005072
-name: absence of  mitotic recombination
-def: "A mitotic recombination phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
+name: absence of mitotic recombination
+def: "A mitotic recombination phenotype where a cell or cells lacks the ability to perform mitotic recombination." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:35:56Z
@@ -4157,6 +4157,14 @@ xref: CMPO:0000002 "cell phenotype"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-07-21T10:25:43Z
+
+[Term]
+id: OMP:0007007
+name: altered gene silencing phenotype
+def: "A gene silencing phenotype where the process of gene silencing is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0005046 ! gene silencing phenotype
+created_by: siegele
+creation_date: 2014-07-21T18:05:01Z
 
 [Term]
 id: OMP:0007008
