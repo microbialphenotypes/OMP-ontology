@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 21:07:2014 10:47
-saved-by: siegele
+date: 21:07:2014 13:51
+saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -784,7 +784,8 @@ creation_date: 2011-06-07T03:17:22Z
 
 [Term]
 id: OMP:0000100
-name: colony phenotype
+name: colony morphology phenotype
+def: "A multicellular phenotype dealing with the physical characteristics of an assemblage of microorganisms growing on a solid surface such as the surface of an agar culture medium." [ISBN:9780073302089, OMP:WAM]
 is_a: OMP:0005116 ! multicellular phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:14:39Z
@@ -806,14 +807,16 @@ creation_date: 2011-06-07T12:18:14Z
 [Term]
 id: OMP:0000103
 name: colony form phenotype
-is_a: OMP:0000100 ! colony phenotype
+def: "A colony morphology phenotype dealing with the basic shape of the colony." [OMP:WAM]
+is_a: OMP:0000100 ! colony morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:41:50Z
 
 [Term]
 id: OMP:0000104
 name: colony elevation phenotype
-is_a: OMP:0000100 ! colony phenotype
+def: "A colony morphology phenotype dealing with the cross sectional shape of the colony." [OMP:WAM]
+is_a: OMP:0000100 ! colony morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:42:12Z
 
@@ -842,7 +845,8 @@ creation_date: 2011-02-02T02:43:25Z
 [Term]
 id: OMP:0000108
 name: colony optical phenotype
-is_a: OMP:0000100 ! colony phenotype
+def: "A colony morphology phenotype dealing with the degree to which light can pass through the colony." [OMP:WAM]
+is_a: OMP:0000100 ! colony morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:43:46Z
 
@@ -1162,7 +1166,8 @@ creation_date: 2011-02-21T04:32:04Z
 [Term]
 id: OMP:0000149
 name: colony margin phenotype
-is_a: OMP:0000100 ! colony phenotype
+def: "A colony morphology dealing with the magnified shape of the edge of the colony." [OMP:WAM]
+is_a: OMP:0000100 ! colony morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:47:43Z
 
@@ -1377,7 +1382,8 @@ creation_date: 2011-02-02T03:21:00Z
 [Term]
 id: OMP:0000179
 name: colony size phenotype
-is_a: OMP:0000100 ! colony phenotype
+def: "A colony morphology phenotype dealing with the size of the colony." [OMP:WAM]
+is_a: OMP:0000100 ! colony morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:22:43Z
 
@@ -1581,6 +1587,7 @@ creation_date: 2011-06-07T09:45:20Z
 [Term]
 id: OMP:0000205
 name: forms single species biofilm
+def: "A biofilm phenotype where the biofilm is formed by a single species." [OMP:WAM]
 is_a: OMP:0000176 ! biofilm phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T02:26:30Z
@@ -1624,7 +1631,8 @@ creation_date: 2011-06-07T12:20:31Z
 [Term]
 id: OMP:0000210
 name: colony surface phenotype
-is_a: OMP:0000100 ! colony phenotype
+def: "A colony morphology phenotype dealing with the appearance of the colonies surface." [OMP:WAM]
+is_a: OMP:0000100 ! colony morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:31:24Z
 
@@ -1773,8 +1781,9 @@ creation_date: 2011-06-07T12:39:13Z
 
 [Term]
 id: OMP:0000233
-name: colony consistency phenotype
-is_a: OMP:0000100 ! colony phenotype
+name: colony texture phenotype
+def: "A colony morphology phenotype dealing with the consistency of the colony." [OMP:WAM]
+is_a: OMP:0000100 ! colony morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:41:05Z
 
@@ -1782,7 +1791,7 @@ creation_date: 2011-06-07T12:41:05Z
 id: OMP:0000234
 name: butyrous colony consistency
 synonym: "buttery colony consistency" EXACT []
-is_a: OMP:0000233 ! colony consistency phenotype
+is_a: OMP:0000233 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:41:24Z
 
@@ -1790,7 +1799,7 @@ creation_date: 2011-06-07T12:41:24Z
 id: OMP:0000235
 name: viscous colony consistency
 synonym: "viscid colony consistency" EXACT []
-is_a: OMP:0000233 ! colony consistency phenotype
+is_a: OMP:0000233 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:42:06Z
 
@@ -1799,14 +1808,14 @@ id: OMP:0000236
 name: dry colony consistency
 synonym: "brittle colony consistency" EXACT []
 synonym: "friable colony consistency" EXACT []
-is_a: OMP:0000233 ! colony consistency phenotype
+is_a: OMP:0000233 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:42:40Z
 
 [Term]
 id: OMP:0000237
 name: colony odor phenotype
-is_a: OMP:0000100 ! colony phenotype
+is_a: OMP:0000100 ! colony morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:45:12Z
 
@@ -1864,6 +1873,7 @@ creation_date: 2011-06-07T02:06:19Z
 [Term]
 id: OMP:0000245
 name: participates in multi-species biofilm
+def: "A biofilm phenotype where the formation involves two or more species." [OMP:WAM]
 is_a: OMP:0000176 ! biofilm phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T02:27:00Z
@@ -1885,6 +1895,7 @@ creation_date: 2011-06-07T03:01:32Z
 [Term]
 id: OMP:0000248
 name: biofilm architecture phenotype
+def: "A biofilm phenotype dealing with the structural formation of the biofilm." [OMP:WAM]
 is_a: OMP:0000176 ! biofilm phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:05:56Z
