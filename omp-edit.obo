@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:07:2014 01:52
+date: 22:07:2014 02:08
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -225,9 +225,9 @@ creation_date: 2011-04-26T03:26:26Z
 [Term]
 id: OMP:0000028
 name: decreased number of pili
-def: "A pilus relative phenotype where a cell has fewer pili relative to a designated control." [OMP:MCC]
-synonym: "decreased fimbriae formation" EXACT []
-is_a: OMP:0000034 ! presence of pilus
+def: "An altered pilus phenotype where a cell or cells have a decreased number of pili relative to a designated control." [OMP:MCC]
+synonym: "decreased number of fimbriae" EXACT []
+is_a: OMP:0007007 ! altered pilus phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:28Z
 
@@ -277,10 +277,10 @@ creation_date: 2011-04-26T03:44:22Z
 
 [Term]
 id: OMP:0000035
-name: malformed pilus
-def: "A pilus phenotype where the cell possesses a pilus that was distorted during formation." [OMP:MCC]
+name: altered pilus shape
+def: "An altered pilus phenotype where a cell or cells possess a pilus whose shape is altered relative to a designated control." [OMP:MCC]
 synonym: "malformed fimbrium" EXACT []
-is_a: OMP:0000034 ! presence of pilus
+is_a: OMP:0007007 ! altered pilus phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:34Z
 
@@ -2385,8 +2385,8 @@ creation_date: 2013-08-22T01:47:25Z
 [Term]
 id: OMP:0000463
 name: increased number of pili
-def: "A pilus relative phenotype where an organism has more pili relative to a reference strain or relative to the same strain in a different environment." [OMP:DAS]
-is_a: OMP:0000034 ! presence of pilus
+def: "An altered pilus phenotype where a cell or cells have an increased number of pili relative to a designated control." [OMP:DAS]
+is_a: OMP:0007007 ! altered pilus phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:48:57Z
 
@@ -4202,6 +4202,15 @@ created_by: siegele
 creation_date: 2014-07-21T10:25:43Z
 
 [Term]
+id: OMP:0007007
+name: altered pilus phenotype
+def: "A pilus phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000084 ! pilus phenotype
+is_a: OMP:0007015 ! altered cell projection phenotype
+created_by: siegele
+creation_date: 2014-07-22T01:54:09Z
+
+[Term]
 id: OMP:0007008
 name: decreased growth at acidic pH
 def: "A pH growth range relative phenotype where the organism's ability to grow at some pH that is lower than pH 7 is decreased." [OMP:DAS]
@@ -4257,6 +4266,14 @@ def: "A nitrogen source utilization phenotype where an organic nitrogen-containi
 is_a: OMP:0006026 ! nitrogen source utilization phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:20:24Z
+
+[Term]
+id: OMP:0007015
+name: altered cell projection phenotype
+is_a: OMP:0000083 ! cell projection phenotype
+is_a: OMP:0007103 ! altered cell morphology phenotype
+created_by: siegele
+creation_date: 2014-07-22T02:02:55Z
 
 [Term]
 id: OMP:0007018
