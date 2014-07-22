@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 22:07:2014 13:58
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3.1
+date: 22:07:2014 15:09
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1698,6 +1698,8 @@ creation_date: 2011-06-07T03:19:00Z
 id: OMP:0000218
 name: catalase activity phenotype
 def: "An enzymatic activity phenotype where the cell or cells display the ability to catalyze the decomposition of hydrogen peroxide into oxygen and water." [OMP:JCH]
+comment: Catalysis of the reaction: 2 hydrogen peroxide = O2 + 2 H2O [EC:1.11.1.6].
+xref: GO:0004096 "catalase activity"
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:43:28Z
