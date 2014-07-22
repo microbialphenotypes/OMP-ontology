@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:07:2014 18:09
+date: 22:07:2014 18:25
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -2993,7 +2993,7 @@ creation_date: 2013-11-11T13:42:44Z
 [Term]
 id: OMP:0005076
 name: increased resistance toward acidic pH stress
-def: "A altered acidic pH stress relative phenotype were resistance to acidic pH was increased relative to the designated control." [OMP:WAM]
+def: "A altered acidic pH stress relative phenotype were resistance to acidic pH was increased relative to a designated control." [OMP:WAM]
 synonym: "decreased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
@@ -3002,7 +3002,7 @@ creation_date: 2013-11-15T18:09:55Z
 [Term]
 id: OMP:0005077
 name: decreased resistance toward acidic pH stress
-def: "A altered acidic pH stress relative phenotype were resistance to acidic pH was reduced relative to the designated control." [OMP:WAM]
+def: "A altered acidic pH stress relative phenotype were resistance to acidic pH was reduced relative to a designated control." [OMP:WAM]
 synonym: "increased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
@@ -3011,7 +3011,7 @@ creation_date: 2013-11-15T18:12:48Z
 [Term]
 id: OMP:0005078
 name: increased resistance toward alkalinic pH stress
-def: "A alkalinic pH stress relative phenotype were resistance to alkalinic pH was increased relative to the designated control." [OMP:WAM]
+def: "An altered alkalinic pH stress phenotype were resistance to alkalinic pH is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased alkalinic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005119 ! altered alkalinic pH stress phenotype
 created_by: wmeza
@@ -3020,7 +3020,7 @@ creation_date: 2013-11-15T18:14:08Z
 [Term]
 id: OMP:0005079
 name: decreased resistance toward alkalinic pH stress
-def: "A alkalinic pH stress relative phenotype were resistance to alkalinic pH was decreased relative to the designated control." [OMP:WAM]
+def: "An altered alkalinic pH stress phenotype were resistance to alkalinic pH is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased alkalinic pH sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005119 ! altered alkalinic pH stress phenotype
 created_by: wmeza
@@ -3085,7 +3085,7 @@ creation_date: 2013-11-22T16:05:02Z
 [Term]
 id: OMP:0005087
 name: increased resistance toward dessication stress
-def: "A dessication stress relative phenotype where resistance is increased relative to the designated control." [OMP:WAM]
+def: "An altered dessication stress phenotype where resistance is increased relative to the designated control." [OMP:WAM]
 synonym: "decreased dessication sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005120 ! altered dessication stress phenotype
 created_by: wmeza
@@ -3094,7 +3094,7 @@ creation_date: 2013-12-06T14:14:31Z
 [Term]
 id: OMP:0005088
 name: decreased resistance toward dessication stress
-def: "A dessication stress relative phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
+def: "An altered dessication stress phenotype where resistance is decreased relative to the designated control." [OMP:WAM]
 synonym: "abolished resistance to dessication stress" NARROW [OMP:WAM]
 synonym: "increased dessication sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005120 ! altered dessication stress phenotype
@@ -3161,7 +3161,7 @@ creation_date: 2013-12-17T13:06:05Z
 [Term]
 id: OMP:0005095
 name: increased resistance toward x-ray radiation
-def: "An altered x-ray radiation relative phenotype were resistance is increased relative to a designated control." [OMP:WAM]
+def: "An altered x-ray radiation phenotype were resistance is increased relative to a designated control." [OMP:WAM]
 synonym: "decrease in x-ray sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005124 ! altered x-ray radiation
 created_by: wmeza
