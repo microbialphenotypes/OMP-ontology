@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 21:07:2014 21:14
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 22:07:2014 01:52
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -4010,7 +4010,7 @@ creation_date: 2014-05-12T13:04:40Z
 [Term]
 id: OMP:0006077
 name: altered catalase activity
-def: "A catalase activity phenotype altered relative to a designated control." [OMP:JCH]
+def: "A catalase activity phenotype where activity is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000218 ! catalase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T14:55:03Z
@@ -4028,7 +4028,7 @@ creation_date: 2014-07-15T19:59:58Z
 [Term]
 id: OMP:0006079
 name: altered decarboxylase activity
-def: "A decarboxylase activity phenotype altered relative to a designated control." [OMP:JCH]
+def: "A decarboxylase activity phenotype where activity is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000219 ! decarboxylase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
@@ -4044,16 +4044,16 @@ creation_date: 2014-07-15T19:59:58Z
 
 [Term]
 id: OMP:0006081
-name: increase decarboxylase activity
-def: "An altered decarboxylase activity relative phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
+name: increased decarboxylase activity
+def: "An altered decarboxylase activity phenotype where decarboxylase activity is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006079 ! altered decarboxylase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
 
 [Term]
 id: OMP:0006082
-name: decrease decarboxylase activity
-def: "An altered decarboxylase activity relative phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
+name: decreased decarboxylase activity
+def: "An altered decarboxylase activity relative phenotype where decarboxylase activity is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006079 ! altered decarboxylase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
@@ -4061,7 +4061,7 @@ creation_date: 2014-07-15T20:00:41Z
 [Term]
 id: OMP:0006083
 name: altered oxidase activity
-def: "An oxidase activity phenotype altered relative to a designated control." [OMP:JCH]
+def: "An oxidase activity phenotype where enzyme activity is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000220 ! oxidase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
@@ -4087,16 +4087,16 @@ creation_date: 2014-07-15T20:06:25Z
 
 [Term]
 id: OMP:0006086
-name: increase oxidase activity
-def: "An altered oxidase activity phenotype where there is an increase in enzyme activity relative to a designated control." [OMP:JCH]
+name: increased oxidase activity
+def: "An altered oxidase activity phenotype where there oxidase activity is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006083 ! altered oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
 
 [Term]
 id: OMP:0006087
-name: decrease oxidase activity
-def: "An altered oxidase activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
+name: decreased oxidase activity
+def: "An altered oxidase activity phenotype where there oxidase activity is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006083 ! altered oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
@@ -4130,16 +4130,16 @@ creation_date: 2014-07-15T20:07:31Z
 
 [Term]
 id: OMP:0006091
-name: increase urease activity
-def: "An altered urease activity phenotype where there is an increase in enzyme activity relative to a designated control." [OMP:JCH]
+name: increased urease activity
+def: "An altered urease activity phenotype where urease activity is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006088 ! altered urease activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
 
 [Term]
 id: OMP:0006092
-name: decrease urease activity
-def: "An altered urease activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
+name: decreased urease activity
+def: "An altered urease activity phenotype where urease activity is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006088 ! altered urease activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
