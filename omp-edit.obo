@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 21:07:2014 18:10
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 21:07:2014 21:14
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -758,7 +758,7 @@ creation_date: 2011-02-02T03:26:41Z
 [Term]
 id: OMP:0000097
 name: absence of chemotaxis
-def: "A chemotaxis phenotype where a cell or cells do not possess the ability to move in response to a chemical concentration gradient." [OMP:MCC]
+def: "A chemotaxis phenotype where the representative member of a taxonomic unit does not possess the ability to move in response to a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:13Z
@@ -1500,8 +1500,8 @@ creation_date: 2011-06-06T04:28:49Z
 [Term]
 id: OMP:0000195
 name: decreased catalase activity
-def: "A catalase positive activity phenotype in which a process occurs that stops, prevents or reduces the frequency, rate or extent of catalase activity relative to a designated control." [GO:1902552]
-synonym: "negative regulation of catalase activity" EXACT []
+def: "An altered catalase activity phenotype where catalase activity is decreased relative to a designated control." [OMP:JCH]
+synonym: "negative regulation of catalase activity" NARROW [GO:1902552]
 is_a: OMP:0006077 ! altered catalase activity
 created_by: mchibucos
 creation_date: 2011-06-06T04:29:20Z
@@ -1509,8 +1509,8 @@ creation_date: 2011-06-06T04:29:20Z
 [Term]
 id: OMP:0000196
 name: increased catalase activity
-def: "A catalase positive activity phenotype in which a process occurs that activates or increases the frequency, rate or extent of catalase activity relative to a designated control." [GO:1902553]
-synonym: "positive regulation of catalase activity" EXACT []
+def: "An altered catalase activity phenotype where catalase activity is increased relative to a designated control." [OMP:JCH]
+synonym: "positive regulation of catalase activity" NARROW [GO:1902553]
 is_a: OMP:0006077 ! altered catalase activity
 created_by: mchibucos
 creation_date: 2011-06-06T04:29:39Z
@@ -1640,7 +1640,7 @@ creation_date: 2011-06-07T12:31:24Z
 [Term]
 id: OMP:0000211
 name: absence of capsule
-def: "A capsule phenotype where a cell or cells is not observed to produce a capsule." [OMP:DAS]
+def: "A capsule phenotype where the representative member of a taxonomic unit is not observed to produce a capsule in any environmental condition." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
@@ -1703,6 +1703,8 @@ creation_date: 2011-02-03T04:43:28Z
 [Term]
 id: OMP:0000219
 name: decarboxylase activity phenotype
+def: "An enzymatic activity phenotype where the cell or cells display the ability to catalyze  the removal of a carboxyl group from a compound." [OMP:JCH]
+synonym: "Carboxy-lyases" EXACT []
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:43:53Z
@@ -1710,6 +1712,7 @@ creation_date: 2011-02-03T04:43:53Z
 [Term]
 id: OMP:0000220
 name: oxidase activity phenotype
+def: "An enzymatic activity phenotype where a cell or cells display the catalyzing of oxidoreduction reactions where the donor is molecular oxygen." [OMP:JCH]
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:44:11Z
@@ -1946,10 +1949,15 @@ created_by: mchibucos
 creation_date: 2011-07-21T01:34:48Z
 
 [Term]
+id: OMP:0000256
+name: MacConkey agar phenotype
+is_obsolete: true
+created_by: mchibucos
+creation_date: 2011-07-21T01:35:25Z
+
+[Term]
 id: OMP:0000258
 name: red colony on MacConkey agar
-def: "A colony morphology phenotype where cells form a red colony on MacConkey agar medium." []
-comment: This term was made obsolete because colony color on MacConkey agar was determined to be evidence for the presence or absence of lactose utilization, which would be the phenotype to be annotated.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:38:10Z
@@ -2049,7 +2057,7 @@ creation_date: 2011-07-21T04:24:02Z
 id: OMP:0000291
 name: genophore phenotype
 def: "A genophore is the chromosome equivalent in any organism, cellular organelle, or virus, however, the term is commonly used to refer to chromosomes other than the nuclear chromosomes of eukaryotes." [ISBN:9780195307610, ISBN:9781613441138, OMP:DAS]
-comment: This term was made obsolete because it is rarely used in the literature.  Genophore phenotype is now present as a synonym of nucleoid phenotype.
+comment: This term was obsoleted because it is rarely used.  Instead, genophore phenotype is listed as a synonym of nucleoid phenotype.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T04:25:09Z
@@ -2084,7 +2092,7 @@ creation_date: 2011-07-21T04:48:22Z
 id: OMP:0000299
 name: galactose-1-phosphate uridyl transferase activity
 def: "An enzymatic activity phenotype where galactose-1-phosphate uridyl transferase activity is present." []
-comment: This term was made obsolete in response to the decision to not have terms for individual enzyme activities unless those activities are commonly used for identification or classification.
+comment: This term was obsoleted in response to the decision to not have terms for individual enzyme activities unless those activities are commonly used for identification or classification.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:12:43Z
@@ -2093,7 +2101,7 @@ creation_date: 2011-07-21T05:12:43Z
 id: OMP:0000304
 name: increased substrate binding
 def: "A substrate binding phenotype where a protein has increased affinity for a substrate." []
-comment: This term was made obsolete in response to the decision that Kd measurements are too granular a phenotype for OMP, at least at this time.  The issue can be reconsidered if a need for such terms arises in the future.
+comment: This term was obsoleted in response to the decision that Kd measurements are too granular a phenotype for OMP, at least at this time.  The issue can be reconsidered if a need for such terms arises in the future.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:18:58Z
@@ -2250,10 +2258,19 @@ creation_date: 2012-11-04T02:52:18Z
 id: OMP:0000437
 name: resistant to ampicillin
 def: "An antimicrobial compound resistance phenotype where a cell or cells are resistant to ampicillin." []
-comment: This term was made obsolete in response to the decision to not have precomposed terms for individual antimicrobial compounds.  Instead, terms are made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactams', and the particular antimicrobial compound tested will be annotated by putting the CHEBI ID into the appropriate column in the annotation file.
+comment: This term was obsoleted in response to our decision to not have precomposed terms for individual antimicrobial compounds.  Instead, terms will be made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactam', and the particular antimicrobial compound tested will be annotated by putting its CHEBI ID into column 16.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:48Z
+
+[Term]
+id: OMP:0000445
+name: resistant to penicillin
+def: "An antimicrobial compound resistance phenotype where a cell or cells are resistant to penicillin." []
+comment: This term was obsoleted in response to our decision to not have precomposed terms for individual antimicrobial compounds.  Instead, terms will be made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactam', and the particular antimicrobial compound tested will be annotated by putting its CHEBI ID into column 16.
+is_obsolete: true
+created_by: mchibucos
+creation_date: 2012-11-04T02:55:41Z
 
 [Term]
 id: OMP:0000450
@@ -2440,7 +2457,7 @@ creation_date: 2013-09-03T01:06:05Z
 [Term]
 id: OMP:0005003
 name: hyperthermophilic growth
-def: "A temperature growth range phenotype where optimal growth occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where optimal growth of the representative member of a taxonomic unit occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:29:51Z
@@ -2448,7 +2465,7 @@ creation_date: 2013-09-03T01:29:51Z
 [Term]
 id: OMP:0005004
 name: thermophilic growth
-def: "A temperature growth range phenotype where growth occurs at 55 C or higher, and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where the representative member of a taxonomic unit can grow at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:36:26Z
@@ -2456,7 +2473,7 @@ creation_date: 2013-09-03T01:36:26Z
 [Term]
 id: OMP:0005005
 name: mesophilic growth
-def: "A temperature growth range phenotype where optimal growth occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where optimal growth of the representative member of a taxonomic unit occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:24:06Z
@@ -2464,7 +2481,7 @@ creation_date: 2013-09-04T13:24:06Z
 [Term]
 id: OMP:0005006
 name: psychrotrophic growth
-def: "A temperature growth range phenotype where growth occurs from 0 to 7 degrees C, and optimal growth occurs between 20 to 30 degrees C. The maximum temperature of growth is typically around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where growth of the representative member of a taxonomic unit occurs from 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature of growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:38:56Z
@@ -2472,7 +2489,7 @@ creation_date: 2013-09-04T13:38:56Z
 [Term]
 id: OMP:0005007
 name: psychrophilic growth
-def: "A temperature growth range phenotype where growth can occur at 0 degrees C and optimal growth occurs at temperatures of 15 degrees C or lower." [iSBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where the representative member of a taxonomic unit can grow  at 0 degrees C and optimal growth occurs at temperatures of 15 degrees C or lower." [iSBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:40:27Z
@@ -2745,7 +2762,7 @@ creation_date: 2013-10-18T18:38:05Z
 [Term]
 id: OMP:0005046
 name: gene silencing phenotype
-def: "A genetic material phenotype dealing with the transcriptional or post-transcriptional processes carried out at the cellular level that result in long-term gene inactivation." [GO:0016458, OMP:WAM]
+def: "A genetic material phenotype dealing with the transcriptional or post-transcriptional processes carried out at the cellular level that results in long-term gene inactivation." [GO:0016458, OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:38:43Z
@@ -2857,7 +2874,7 @@ creation_date: 2013-11-04T18:09:38Z
 [Term]
 id: OMP:0005062
 name: absence of chromosome segregation
-def: "A chromosome segregation phenotype where a cell or cells do not segregate their chromosomes." [OMP:WAM]
+def: "A chromosome segregation phenotype where process does not occur in the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:10:07Z
@@ -2872,24 +2889,24 @@ creation_date: 2013-11-04T18:12:32Z
 
 [Term]
 id: OMP:0005064
-name: increased gene silencing
-def: "A gene silencing phenotype where silencing is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007007 ! altered gene silencing phenotype
+name: increased frequency of gene silencing
+def: "A gene silencing relative phenotype dealing with an increase in the incidence of gene silencing relative to the designated control." [OMP:WAM]
+is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:21:37Z
 
 [Term]
 id: OMP:0005065
-name: decreased gene silencing
-def: "A gene silencing phenotype where silencing is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007007 ! altered gene silencing phenotype
+name: decreased frequency of gene silencing
+def: "A gene silencing relative phenotype dealing with a reduction in the incidence of gene silencing relative to the designated control." [OMP:WAM]
+is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:21:56Z
 
 [Term]
 id: OMP:0005066
 name: absence of gene silencing
-def: "A gene silencing phenotype where a cell or cells do not perform the process of gene silencing." [OMP:WAM]
+def: "A gene silencing phenotype where the mechanisms are inactive in the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:33:14Z
@@ -2897,7 +2914,7 @@ creation_date: 2013-11-04T18:33:14Z
 [Term]
 id: OMP:0005067
 name: presence of gene silencing
-def: "A gene silencing phenotype where a cell or cells are observed to perform the process of gene silencing." [OMP:WAM]
+def: "A gene silencing phenotype where the mechanisms are active in the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:34:20Z
@@ -2936,8 +2953,8 @@ creation_date: 2013-11-08T17:12:27Z
 
 [Term]
 id: OMP:0005072
-name: absence of mitotic recombination
-def: "A mitotic recombination phenotype where a cell or cells lacks the ability to perform mitotic recombination." [OMP:WAM]
+name: absence of  mitotic recombination
+def: "A mitotic recombination phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:35:56Z
@@ -3199,8 +3216,7 @@ creation_date: 2014-02-11T11:54:51Z
 [Term]
 id: OMP:0005102
 name: increase in enzyme activity
-def: "An enzyme activity relative phenotype where there is an increase in enzyme activity relative to a designated control." [OMP:WAM]
-synonym: "positive regulation of catalase activity" RELATED []
+def: "An altered enzyme activity phenotype where there is an increase in enzyme activity relative to a designated control." [OMP:WAM]
 is_a: OMP:0005130 ! altered enzymatic activity phenotype
 created_by: wmeza
 creation_date: 2014-04-17T10:54:45Z
@@ -3208,8 +3224,7 @@ creation_date: 2014-04-17T10:54:45Z
 [Term]
 id: OMP:0005103
 name: decrease in enzyme activity
-def: "An enzyme activity relative phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:WAM]
-synonym: "negative regulation of enzymatic activity" RELATED []
+def: "An altered enzyme activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:WAM]
 is_a: OMP:0005130 ! altered enzymatic activity phenotype
 created_by: wmeza
 creation_date: 2014-04-17T10:55:05Z
@@ -3425,7 +3440,7 @@ creation_date: 2014-07-16T12:36:13Z
 [Term]
 id: OMP:0005130
 name: altered enzymatic activity phenotype
-def: "An enzymatic activity phenotype altered relative to a designated control." [OMP:JCH]
+def: "An enzymatic activity phenotype that is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: wmeza
 creation_date: 2014-07-16T17:48:24Z
@@ -3995,7 +4010,7 @@ creation_date: 2014-05-12T13:04:40Z
 [Term]
 id: OMP:0006077
 name: altered catalase activity
-def: "A catalase phenotype altered relative to a designated control." [OMP:JCH]
+def: "A catalase activity phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000218 ! catalase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T14:55:03Z
@@ -4003,6 +4018,9 @@ creation_date: 2014-07-15T14:55:03Z
 [Term]
 id: OMP:0006078
 name: absence of decarboxylase activity
+def: "A decarboxylase activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
+synonym: "decarboxylase deficient" RELATED []
+synonym: "decarboxylase negative" EXACT []
 is_a: OMP:0000219 ! decarboxylase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
@@ -4010,6 +4028,7 @@ creation_date: 2014-07-15T19:59:58Z
 [Term]
 id: OMP:0006079
 name: altered decarboxylase activity
+def: "A decarboxylase activity phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000219 ! decarboxylase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
@@ -4017,6 +4036,8 @@ creation_date: 2014-07-15T19:59:58Z
 [Term]
 id: OMP:0006080
 name: presence of decarboxylase activity
+def: "A decarboxylase activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
+synonym: "decarboxylase positive" EXACT []
 is_a: OMP:0000219 ! decarboxylase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
@@ -4024,6 +4045,7 @@ creation_date: 2014-07-15T19:59:58Z
 [Term]
 id: OMP:0006081
 name: increase decarboxylase activity
+def: "An altered decarboxylase activity relative phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
 is_a: OMP:0006079 ! altered decarboxylase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
@@ -4031,6 +4053,7 @@ creation_date: 2014-07-15T20:00:41Z
 [Term]
 id: OMP:0006082
 name: decrease decarboxylase activity
+def: "An altered decarboxylase activity relative phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
 is_a: OMP:0006079 ! altered decarboxylase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
@@ -4038,6 +4061,7 @@ creation_date: 2014-07-15T20:00:41Z
 [Term]
 id: OMP:0006083
 name: altered oxidase activity
+def: "An oxidase activity phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000220 ! oxidase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
@@ -4045,6 +4069,9 @@ creation_date: 2014-07-15T20:06:25Z
 [Term]
 id: OMP:0006084
 name: absence of oxidase activity
+def: "An oxidase activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
+synonym: "oxidase deficient" RELATED []
+synonym: "oxidase negative" EXACT []
 is_a: OMP:0000220 ! oxidase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
@@ -4052,6 +4079,8 @@ creation_date: 2014-07-15T20:06:25Z
 [Term]
 id: OMP:0006085
 name: presence of oxidase activity
+def: "An oxidase activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
+synonym: "oxidase positive" EXACT []
 is_a: OMP:0000220 ! oxidase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
@@ -4059,6 +4088,7 @@ creation_date: 2014-07-15T20:06:25Z
 [Term]
 id: OMP:0006086
 name: increase oxidase activity
+def: "An altered oxidase activity phenotype where there is an increase in enzyme activity relative to a designated control." [OMP:JCH]
 is_a: OMP:0006083 ! altered oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
@@ -4066,6 +4096,7 @@ creation_date: 2014-07-15T20:06:48Z
 [Term]
 id: OMP:0006087
 name: decrease oxidase activity
+def: "An altered oxidase activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
 is_a: OMP:0006083 ! altered oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
@@ -4073,6 +4104,7 @@ creation_date: 2014-07-15T20:06:48Z
 [Term]
 id: OMP:0006088
 name: altered urease activity
+def: "A urease activity phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000222 ! urease activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
@@ -4080,6 +4112,8 @@ creation_date: 2014-07-15T20:07:31Z
 [Term]
 id: OMP:0006089
 name: presence of urease activity
+def: "A urease activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
+synonym: "urease positive" EXACT []
 is_a: OMP:0000222 ! urease activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
@@ -4087,13 +4121,17 @@ creation_date: 2014-07-15T20:07:31Z
 [Term]
 id: OMP:0006090
 name: absence of urease activity
+def: "A urease activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
+synonym: "oxidase deficient" RELATED []
+synonym: "Oxidase negative" EXACT []
 is_a: OMP:0000222 ! urease activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
 
 [Term]
 id: OMP:0006091
-name: increase altered urease activity
+name: increase urease activity
+def: "An altered urease activity phenotype where there is an increase in enzyme activity relative to a designated control." [OMP:JCH]
 is_a: OMP:0006088 ! altered urease activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
@@ -4101,6 +4139,7 @@ creation_date: 2014-07-15T20:07:54Z
 [Term]
 id: OMP:0006092
 name: decrease urease activity
+def: "An altered urease activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
 is_a: OMP:0006088 ! altered urease activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
@@ -4161,14 +4200,6 @@ xref: CMPO:0000002 "cell phenotype"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-07-21T10:25:43Z
-
-[Term]
-id: OMP:0007007
-name: altered gene silencing phenotype
-def: "A gene silencing phenotype where the process of gene silencing is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0005046 ! gene silencing phenotype
-created_by: siegele
-creation_date: 2014-07-21T18:05:01Z
 
 [Term]
 id: OMP:0007008
