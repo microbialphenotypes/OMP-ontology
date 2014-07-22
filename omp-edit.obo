@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 22:07:2014 02:08
-saved-by: siegele
+date: 22:07:2014 13:58
+saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -678,7 +678,7 @@ creation_date: 2011-02-02T03:19:47Z
 [Term]
 id: OMP:0000087
 name: facultative anaerobe phenotype
-def: "An oxygen requirement for growth state phenotype, where growth of the representative member of a taxonomic unit does not require oxygen for growth but grows better in its presence." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth phenotype where growth does not require oxygen but growth is better in its presence." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:42:26Z
@@ -823,7 +823,7 @@ creation_date: 2011-02-02T02:42:12Z
 [Term]
 id: OMP:0000105
 name: aerotolerant anaerobe phenotype
-def: "An oxygen requirement for growth state phenotype, where growth of the representative member of a taxonomic unit occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth phenotype, where growth occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:43:38Z
@@ -853,6 +853,7 @@ creation_date: 2011-02-02T02:43:46Z
 [Term]
 id: OMP:0000109
 name: mucoid colony texture
+def: "A colony texture phenotype that is characterized by a surface with a slimy or gummy appearance." [ISBN:1555810489, OMP:WAM]
 synonym: "viscous colony texture" RELATED [OMP:WAM]
 is_a: OMP:0000229 ! colony texture phenotype
 created_by: Adrienne
@@ -1425,7 +1426,7 @@ creation_date: 2011-02-07T03:52:44Z
 [Term]
 id: OMP:0000184
 name: obligate anaerobe phenotype
-def: "An oxygen requirement for growth state phenotype, where growth of the representative member of a taxonomic unit does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth phenotype where growth does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:34Z
@@ -1648,6 +1649,7 @@ creation_date: 2011-06-07T09:49:20Z
 [Term]
 id: OMP:0000212
 name: smooth colony surface texture
+def: "A colony texture phenotype where it is characterized by a shiny glistening surface." [ISBN:1555810489, OMP:WAM]
 is_a: OMP:0000229 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:32:12Z
@@ -1751,6 +1753,7 @@ creation_date: 2011-02-07T03:53:37Z
 [Term]
 id: OMP:0000228
 name: rough colony surface texture
+def: "A colony texture phenotype where it is characterized by a dull, bumpy, granular, or matte surface." [ISBN:1555810489, OMP:WAM]
 is_a: OMP:0000229 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:32:41Z
@@ -1795,6 +1798,7 @@ creation_date: 2011-06-07T12:41:05Z
 [Term]
 id: OMP:0000234
 name: butyrous colony texture
+def: "A colony texture phenotype characterized by a butter like surface." [ISBN:1555810489, OMP:WAM]
 synonym: "buttery colony consistency" EXACT []
 is_a: OMP:0000229 ! colony texture phenotype
 created_by: mchibucos
@@ -2657,8 +2661,8 @@ creation_date: 2013-09-25T15:57:03Z
 
 [Term]
 id: OMP:0005031
-name: decrease in stress induced mutagenesis
-def: "A stress induced mutagenesis relative phenotype where the frequency of mutagenesis is reduced relative to the designated control." [OMP:WAM]
+name: decreased stress induced mutagenesis
+def: "An altered stress induced mutagenesis phenotype where the frequency of mutagenesis is decreased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:57:46Z
