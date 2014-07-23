@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 22:07:2014 18:25
+date: 23:07:2014 12:34
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -2353,20 +2353,20 @@ creation_date: 2013-05-23T01:55:34Z
 [Term]
 id: OMP:0000459
 name: increased caffeine resistance
-def: "A caffeine resistance relative phenotype where resistance is increased relative to a designated control." [OMP:WAM]
+def: "An altered caffeine resistance phenotype where resistance is increased relative to a designated control." [OMP:WAM]
 synonym: "Abolished caffeine sensitivity" NARROW []
 synonym: "decreased caffeine sensitivity" RELATED []
-is_a: OMP:0000456 ! caffeine resistance phenotype
+is_a: OMP:0005001 ! altered caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:11Z
 
 [Term]
 id: OMP:0000460
 name: decreased caffeine resistance
-def: "A caffeine resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
+def: "An altered caffeine resistance phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
 synonym: "abolished resistance to caffeine" NARROW []
 synonym: "increased caffeine sensitivity" RELATED []
-is_a: OMP:0000456 ! caffeine resistance phenotype
+is_a: OMP:0005001 ! altered caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:58:55Z
 
@@ -2452,6 +2452,14 @@ name: decreased negative DNA supercoiling
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
+
+[Term]
+id: OMP:0005001
+name: altered caffeine resistance phenotype
+def: "A caffeine resistance phenotype that is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0000456 ! caffeine resistance phenotype
+created_by: wmeza
+creation_date: 2014-07-23T12:18:08Z
 
 [Term]
 id: OMP:0005002
@@ -2993,7 +3001,7 @@ creation_date: 2013-11-11T13:42:44Z
 [Term]
 id: OMP:0005076
 name: increased resistance toward acidic pH stress
-def: "A altered acidic pH stress relative phenotype were resistance to acidic pH was increased relative to a designated control." [OMP:WAM]
+def: "A altered acidic pH stress phenotype were resistance to acidic pH was increased relative to a designated control." [OMP:WAM]
 synonym: "decreased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
@@ -3002,7 +3010,7 @@ creation_date: 2013-11-15T18:09:55Z
 [Term]
 id: OMP:0005077
 name: decreased resistance toward acidic pH stress
-def: "A altered acidic pH stress relative phenotype were resistance to acidic pH was reduced relative to a designated control." [OMP:WAM]
+def: "A altered acidic pH stress phenotype were resistance to acidic pH was decreased relative to a designated control." [OMP:WAM]
 synonym: "increased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
@@ -3104,7 +3112,7 @@ creation_date: 2013-12-06T14:15:06Z
 [Term]
 id: OMP:0005089
 name: increased resistance to freeze/thawing stress
-def: "A freeze/thawing stress relative phenotype where resistance is increased relative to the designated control." [OMP:WAM]
+def: "An altered freeze/thawing stress phenotype where resistance is increased relative to a designated control." [OMP:WAM]
 synonym: "increase in freeze/thawing sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005121 ! altered freeze/thawing stress phenotype
 created_by: wmeza
@@ -3113,8 +3121,7 @@ creation_date: 2013-12-06T14:28:16Z
 [Term]
 id: OMP:0005090
 name: decreased resistance to freeze/thawing stress
-def: "A freeze/thawing stress relative phenotype where resistance is reduced relative to the designated control." [OMP:WAM]
-synonym: "abolished resistance to freeze/thaw stress" NARROW [OMP:WAM]
+def: "An altered freeze/thawing stress phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
 synonym: "decreased freeze/thaw sensitivity. " RELATED [OMP:WAM]
 is_a: OMP:0005121 ! altered freeze/thawing stress phenotype
 created_by: wmeza
@@ -3123,7 +3130,7 @@ creation_date: 2013-12-06T14:28:46Z
 [Term]
 id: OMP:0005091
 name: increased resistance toward oxidative stress
-def: "An altered oxidative stress e phenotype where resistance is increased relative to the designated control." [OMP:WAM]
+def: "An altered oxidative stress phenotype where resistance is increased relative to the designated control." [OMP:WAM]
 synonym: "decreased oxidative sensitivity " NARROW [OMP:WAM]
 is_a: OMP:0005122 ! altered oxidative stress phenotype
 created_by: wmeza
@@ -3132,7 +3139,7 @@ creation_date: 2013-12-06T17:57:46Z
 [Term]
 id: OMP:0005092
 name: decreased resistance toward oxidative stress
-def: "An altered oxidative stress phenotype where resistance is increased relative to the designated control." [OMP:WAM]
+def: "An altered oxidative stress phenotype where resistance is decreased relative to the designated control." [OMP:WAM]
 synonym: "abolished resistance to oxidative stress" NARROW [OMP:WAM]
 synonym: "increased oxidative sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005122 ! altered oxidative stress phenotype
@@ -3391,7 +3398,7 @@ creation_date: 2014-07-11T13:03:36Z
 [Term]
 id: OMP:0005123
 name: altered gamma ray radiation
-def: "A gamma ray radiation phenotype relative to a designated control." [OMP:WAM]
+def: "A gamma ray radiation phenotype altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005085 ! gamma ray radiation
 created_by: wmeza
 creation_date: 2014-07-11T13:16:15Z
