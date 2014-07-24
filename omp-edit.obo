@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:07:2014 13:16
+date: 24:07:2014 16:35
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -131,7 +131,7 @@ id: OMP:0000015
 name: decreased heterocyst formation
 def: "A altered heterocyst formation phenotype where heterocyst formation is decreased relative to a designated control." [OMP:MCC]
 synonym: "abolished heterocyst formation" NARROW []
-is_a: OMP:0000092 ! heterocyst formation phenotype
+is_a: OMP:0006007 ! altered heterocyst formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:05:35Z
 
@@ -180,7 +180,7 @@ id: OMP:0000022
 name: decreased myxospore formation
 def: "An altered myxospore formation phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
 synonym: "abolished myxospore formation" NARROW []
-is_a: OMP:0000096 ! myxospore formation phenotype
+is_a: OMP:0006009 ! altered myxospore formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
 
@@ -229,7 +229,7 @@ def: "A presence of pilus phenotype where a cell has fewer pili relative to a de
 synonym: "abolished fimbriae formation" NARROW []
 synonym: "abolished number of pili" NARROW []
 synonym: "decreased fimbriae formation" EXACT []
-is_a: OMP:0000034 ! presence of pilus
+is_a: OMP:0006010 ! altered pilus phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:28Z
 
@@ -2398,7 +2398,7 @@ creation_date: 2013-08-22T01:47:25Z
 id: OMP:0000463
 name: increased number of pili
 def: "An pilus phenotype where an organism has more pili relative to a reference a designated control." [OMP:DAS]
-is_a: OMP:0000034 ! presence of pilus
+is_a: OMP:0006010 ! altered pilus phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:48:57Z
 
@@ -2840,7 +2840,7 @@ creation_date: 2013-10-18T18:39:27Z
 id: OMP:0005049
 name: increased frequency of homologous recombination
 def: "A homologous recombination phenotype where homologous recombination is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005042 ! homologous recombination phenotype
+is_a: OMP:0006002 ! altered homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-23T19:46:15Z
 
@@ -2849,7 +2849,7 @@ id: OMP:0005050
 name: decreased frequency of homologous recombination
 def: "A homologous recombination phenotype where homologous recombination is reduced relative to a designated control." [OMP:WAM]
 synonym: "abolished frequency of homologous recombination" NARROW []
-is_a: OMP:0005042 ! homologous recombination phenotype
+is_a: OMP:0006002 ! altered homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-24T12:52:41Z
 
@@ -2873,7 +2873,7 @@ creation_date: 2013-10-25T12:22:04Z
 id: OMP:0005055
 name: increased frequency of site specific recombination
 def: "A site specific recombination phenotype where site specific recombination is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005043 ! site specific recombination phenotype
+is_a: OMP:0006005 ! altered site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:14:25Z
 
@@ -2882,7 +2882,7 @@ id: OMP:0005056
 name: decreased frequency of site specific recombination
 def: "A site specific recombination phenotype where site specific recombination is decreased relative to the designated control." [OMP:WAM]
 synonym: "abolished frequency of site specific recombination" NARROW []
-is_a: OMP:0005043 ! site specific recombination phenotype
+is_a: OMP:0006005 ! altered site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:15:06Z
 
@@ -2914,7 +2914,7 @@ creation_date: 2013-10-30T18:35:34Z
 id: OMP:0005060
 name: increased frequency of chromosome segregation
 def: "A chromosome segregation phenotype where chromosome segregation is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005047 ! chromosome segregation phenotype
+is_a: OMP:0006001 ! altered chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:09:09Z
 
@@ -2923,7 +2923,7 @@ id: OMP:0005061
 name: decreased frequency of chromosome segregation
 def: "A chromosome segregation phenotype where the occurrence of segregation is decreased relative to the designated control." [OMP:WAM]
 synonym: "abolished frequency of chromosome segregation" NARROW []
-is_a: OMP:0005047 ! chromosome segregation phenotype
+is_a: OMP:0006001 ! altered chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:09:38Z
 
@@ -2947,7 +2947,7 @@ creation_date: 2013-11-04T18:12:32Z
 id: OMP:0005064
 name: increased frequency of gene silencing
 def: "A gene silencing phenotype dealing with an increase in the incidence of gene silencing relative to the designated control." [OMP:WAM]
-is_a: OMP:0005046 ! gene silencing phenotype
+is_a: OMP:0006003 ! altered gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:21:37Z
 
@@ -2956,7 +2956,7 @@ id: OMP:0005065
 name: decreased frequency of gene silencing
 def: "An gene silencing phenotype where gene silencing is decreased relative to a designated control." [OMP:WAM]
 synonym: "abolished frequency of gene silencing" NARROW []
-is_a: OMP:0005046 ! gene silencing phenotype
+is_a: OMP:0006003 ! altered gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:21:56Z
 
@@ -3029,7 +3029,7 @@ creation_date: 2013-11-08T17:36:20Z
 id: OMP:0005074
 name: increased rate of transposable element transposition
 def: "A transposable element transposition phenotype where DNA sequences change position at a higher frequency relative to the designated control." [OMP:WAM]
-is_a: OMP:0005059 ! transposable element transposition phenotype
+is_a: OMP:0006013 ! altered transposable element transposition phenotype
 created_by: wmeza
 creation_date: 2013-11-11T13:41:50Z
 
@@ -3038,7 +3038,7 @@ id: OMP:0005075
 name: decreased rate of transposable element transposition
 def: "A transposable element transposition phenotype where DNA sequences change position at a lower frequency relative to the designated control." [OMP:WAM]
 synonym: "abolished transposable element transposition phenotype" NARROW []
-is_a: OMP:0005059 ! transposable element transposition phenotype
+is_a: OMP:0006013 ! altered transposable element transposition phenotype
 created_by: wmeza
 creation_date: 2013-11-11T13:42:44Z
 
@@ -3552,6 +3552,30 @@ created_by: wmeza
 creation_date: 2014-07-17T17:39:39Z
 
 [Term]
+id: OMP:0006001
+name: altered chromosome segregation phenotype
+def: "A chromosome segregation phenotype where chromosome segregation is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0005047 ! chromosome segregation phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-24T14:14:37Z
+
+[Term]
+id: OMP:0006002
+name: altered homologous recombination phenotype
+def: "A homologous recombination phenotype where recombination is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0005042 ! homologous recombination phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-24T15:04:15Z
+
+[Term]
+id: OMP:0006003
+name: altered gene silencing phenotype
+def: "A gene silencing phenotype where gene silencing is decreased relative to a designated control." [OMP:JCH]
+is_a: OMP:0005046 ! gene silencing phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-24T15:10:50Z
+
+[Term]
 id: OMP:0006004
 name: increase bud formation
 def: "A bud forming phenotype where the organism(s) has increased bud formation relative to a designated control." [OMP:WAM]
@@ -3559,6 +3583,14 @@ synonym: "increased buddign index" EXACT []
 is_a: OMP:0000008 ! bud forming
 created_by: jonathanherrera
 creation_date: 2014-03-26T21:33:14Z
+
+[Term]
+id: OMP:0006005
+name: altered site specific recombination phenotype
+def: "A site specific recombination phenotype where recombination is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0005043 ! site specific recombination phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-24T15:21:56Z
 
 [Term]
 id: OMP:0006006
@@ -3570,11 +3602,35 @@ created_by: jonathanherrera
 creation_date: 2014-03-26T21:33:14Z
 
 [Term]
+id: OMP:0006007
+name: altered heterocyst formation phenotype
+def: "A heterocyst formation phenotype where formation is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0000092 ! heterocyst formation phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-24T16:24:44Z
+
+[Term]
 id: OMP:0006008
 name: photosynthesis phenotype
 is_a: OMP:0007064 ! phototrophic phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-01T14:18:12Z
+
+[Term]
+id: OMP:0006009
+name: altered myxospore formation phenotype
+def: "A myxospore formation phenotype where myxospore formation is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0000096 ! myxospore formation phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-24T16:26:38Z
+
+[Term]
+id: OMP:0006010
+name: altered pilus phenotype
+def: "A pilus phenotype where the pilus is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0000084 ! pilus phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-24T16:28:24Z
 
 [Term]
 id: OMP:0006011
@@ -3596,6 +3652,14 @@ created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
 
 [Term]
+id: OMP:0006013
+name: altered transposable element transposition phenotype
+def: "A Transposable element transposition phenotype where transposable element transposition is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0005059 ! transposable element transposition phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-24T16:30:53Z
+
+[Term]
 id: OMP:0006014
 name: increased resistance to lantibiotic
 def: "A lantibiotic resistance phenotype where resistance is enhanced relative to a designated control." [OMP:WAM]
@@ -3604,6 +3668,20 @@ synonym: "decreased sensitivity to lantibiotic" RELATED []
 is_a: OMP:0006011 ! Lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
+
+[Term]
+id: OMP:0006015
+name: presence of transposable element transposition phenotype
+is_a: OMP:0005059 ! transposable element transposition phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-24T16:34:28Z
+
+[Term]
+id: OMP:0006016
+name: absence of transposable element transposition phenotype
+is_a: OMP:0005059 ! transposable element transposition phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-24T16:34:28Z
 
 [Term]
 id: OMP:0006022
@@ -4657,7 +4735,7 @@ creation_date: 2013-10-01T15:46:38Z
 id: OMP:0007062
 name: increased heterocyst formation
 def: "An altered heterocyst formation phenotype where the ability to form heterocysts is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0000092 ! heterocyst formation phenotype
+is_a: OMP:0006007 ! altered heterocyst formation phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:31:01Z
 
@@ -4665,7 +4743,7 @@ creation_date: 2014-01-31T18:31:01Z
 id: OMP:0007063
 name: increased myxospore formation
 def: "An altered myxospore formation phenotype where the ability to form myxospores is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0000096 ! myxospore formation phenotype
+is_a: OMP:0006009 ! altered myxospore formation phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:45:09Z
 
