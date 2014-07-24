@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:07:2014 17:23
+date: 24:07:2014 18:31
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -67,7 +67,7 @@ creation_date: 2011-04-26T02:51:36Z
 [Term]
 id: OMP:0000007
 name: non-ankinete forming
-def: "An ankinete formation phenotype where the representative member of a taxonomic unit does not possess the ability to form an ankinete." [OMP:MCC]
+def: "An ankinete formation phenotype where an organism possess the ability to form an ankinete." [OMP:MCC]
 is_a: OMP:0000093 ! ankinete formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:52:52Z
@@ -99,7 +99,7 @@ creation_date: 2011-04-26T02:59:42Z
 [Term]
 id: OMP:0000011
 name: non-heterocyst forming
-def: "A heterocyst formation phenotype where the representative member of a taxonomic unit does not possess the ability to differentiate into a heterocyst." [OMP:MCC]
+def: "A heterocyst formation phenotype where an organism does not possess the ability to differentiate into a heterocyst." [OMP:MCC]
 is_a: OMP:0000092 ! heterocyst formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:59:42Z
@@ -170,7 +170,7 @@ creation_date: 2011-04-26T03:10:51Z
 [Term]
 id: OMP:0000021
 name: non-myxospore forming
-def: "A myxospore formation phenotype where the representative member of a taxonomic unit does not possess the ability to form myxospores." [OMP:MCC]
+def: "A myxospore formation phenotype where an organism does not possess the ability to form myxospores." [OMP:MCC]
 is_a: OMP:0000096 ! myxospore formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
@@ -351,7 +351,7 @@ creation_date: 2011-04-26T04:08:26Z
 [Term]
 id: OMP:0000046
 name: presence of chemotaxis
-def: "A chemotaxis phenotype where the representative member of a taxonomic unit possesses the ability to move in response to a chemical concentration gradient." [OMP:MCC]
+def: "A chemotaxis phenotype where an organism possesses the ability to move in response to a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:17:42Z
@@ -1241,7 +1241,7 @@ creation_date: 2011-02-02T02:49:30Z
 [Term]
 id: OMP:0000159
 name: non-aerotactic
-def: "An aerotaxis phenotype where the representative taxonomic unit does not possess the ability to respond to environmental oxygen." [OMP:MCC]
+def: "An aerotaxis phenotype where an organism possess the ability to respond to environmental oxygen." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: adrienne
 creation_date: 2011-03-02T02:06:09Z
@@ -1435,7 +1435,7 @@ creation_date: 2011-02-02T03:29:34Z
 [Term]
 id: OMP:0000185
 name: obligate aerobe phenotype
-def: "An oxygen requirement for growth phenotype where growth of the representative member of a taxonomic unit is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth phenotype where growth is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
@@ -1580,7 +1580,7 @@ creation_date: 2011-06-07T09:44:51Z
 [Term]
 id: OMP:0000204
 name: presence of capsule
-def: "The presence of a capsule layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, observed in the representative member of a taxonomic unit in one or more environments." [OMP:DAS]
+def: "The presence of a capsule layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, is observed in one or more environments." [OMP:DAS]
 comment: When present, the capsule layer lies outside the cell wall and/or outer membrane.
 synonym: "glycocalyx" RELATED [OMP:DAS]
 synonym: "slime layer" RELATED [OMP:DAS]
@@ -2384,7 +2384,7 @@ creation_date: 2013-08-22T01:43:06Z
 [Term]
 id: OMP:0000462
 name: presence of an outer membrane
-def: "An outer membrane phenotype where cells of the representative member of a taxonomic unit possesses an outer membrane." [OMP:DAS]
+def: "An outer membrane phenotype where cells possess an outer membrane." [OMP:DAS]
 synonym: "Diderm" NARROW []
 synonym: "Gram negative" NARROW []
 synonym: "mycolate outer membrane" RELATED []
@@ -2483,7 +2483,7 @@ creation_date: 2013-09-03T01:29:51Z
 [Term]
 id: OMP:0005004
 name: thermophilic growth
-def: "A temperature growth range phenotype where the representative member of a taxonomic unit can grow at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where growth can occur at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:36:26Z
@@ -2499,7 +2499,7 @@ creation_date: 2013-09-04T13:24:06Z
 [Term]
 id: OMP:0005006
 name: psychrotrophic growth
-def: "A temperature growth range phenotype where growth of the representative member of a taxonomic unit occurs from 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature of growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where growth of the occurs from 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature of growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:38:56Z
@@ -2507,7 +2507,7 @@ creation_date: 2013-09-04T13:38:56Z
 [Term]
 id: OMP:0005007
 name: psychrophilic growth
-def: "A temperature growth range phenotype where the representative member of a taxonomic unit can grow  at 0 degrees C and optimal growth occurs at temperatures of 15 degrees C or lower." [iSBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where growth can occur at 0 degrees C and optimal growth occurs at temperatures of 15 degrees C or lower." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:40:27Z
@@ -2563,7 +2563,7 @@ creation_date: 2013-09-09T11:43:45Z
 [Term]
 id: OMP:0005014
 name: piezophilic growth
-def: "A pressure growth range phenotype where growth of the representative member of the taxonomic unit is more rapid at high hydrostatic pressure." [ISBN:9780073402406, OMP:WAM]
+def: "A pressure growth range phenotype where growth is more rapid at high hydrostatic pressure." [ISBN:9780073402406, OMP:WAM]
 synonym: "barophilic growth" RELATED [ISBN:9780073402406]
 is_a: OMP:0005012 ! pressure growth range phenotype
 created_by: wmeza
@@ -2572,7 +2572,7 @@ creation_date: 2013-09-09T11:49:53Z
 [Term]
 id: OMP:0005015
 name: osmotolerant growth
-def: "A solute and water activity phenotype where the growth of the representative member of the taxonomic unit can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
+def: "A solute and water activity phenotype where the growth can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005013 ! solute and water activity phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:05:24Z
@@ -2709,7 +2709,7 @@ creation_date: 2013-09-25T15:57:46Z
 [Term]
 id: OMP:0005032
 name: presence of stress induced mutagenesis
-def: "A stress induced mutagenesis phenotype where the processes of stress induced mutagenesis have been activated within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A stress induced mutagenesis phenotype where the processes have been activated." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:59:12Z
@@ -2862,7 +2862,7 @@ creation_date: 2013-10-24T12:52:41Z
 [Term]
 id: OMP:0005051
 name: presence of homologous recombination
-def: "A homologous recombination phenotype where the process is active within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A homologous recombination phenotype where the process is active." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:21:41Z
@@ -2903,7 +2903,7 @@ creation_date: 2013-10-29T13:15:28Z
 [Term]
 id: OMP:0005058
 name: presence of site specific recombination
-def: "A site specific recombination phenotype where the process is active within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A site specific recombination phenotype where the process is active." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:20:16Z
@@ -2944,7 +2944,7 @@ creation_date: 2013-11-04T18:10:07Z
 [Term]
 id: OMP:0005063
 name: presence of chromosome segregation
-def: "A chromosome segregation phenotype where process occurs in the representative member of a taxonomic unit." [OMP:WAM]
+def: "A chromosome segregation phenotype where the process occurs." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:12:32Z
@@ -2977,7 +2977,7 @@ creation_date: 2013-11-04T18:33:14Z
 [Term]
 id: OMP:0005067
 name: presence of gene silencing
-def: "A gene silencing phenotype where the mechanisms are active in the representative member of a taxonomic unit." [OMP:WAM]
+def: "A gene silencing phenotype where the mechanisms are active." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:34:20Z
@@ -4502,7 +4502,7 @@ creation_date: 2013-09-28T21:02:26Z
 [Term]
 id: OMP:0007031
 name: utilization of dinitrogen phenotype
-def: "A dinitrogen utilization phenotype where the representative member of a taxonomic unit can use N2 as the source of nitrogen." [OMP:DAS]
+def: "A dinitrogen utilization phenotype where an organism can use N2 as the source of nitrogen." [OMP:DAS]
 is_a: OMP:0006030 ! dinitrogen utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:02:26Z
@@ -4527,7 +4527,7 @@ creation_date: 2013-09-28T21:05:18Z
 [Term]
 id: OMP:0007034
 name: utilization of inorganic nitrogen phenotype
-def: "An inorganic nitrogen source utilization phenotype where the representative member of a taxonomic unit can use an inorganic N-containing compound as the source of nitrogen." [OMP:DAS]
+def: "An inorganic nitrogen source utilization phenotype where an inorganic N-containing compound can be used as a nitrogen source." [OMP:DAS]
 is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:05:43Z
@@ -4552,7 +4552,7 @@ creation_date: 2013-09-28T21:07:58Z
 [Term]
 id: OMP:0007037
 name: utilization of organic nitrogen phenotype
-def: "An organic nitrogen source utilization phenotype where the representative member of a taxonomic unit can use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
+def: "An organic nitrogen source utilization phenotype where an organism can use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
 is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:08:02Z
@@ -4641,7 +4641,7 @@ creation_date: 2013-10-01T15:19:36Z
 [Term]
 id: OMP:0007049
 name: utilization of inorganic phosphorus phenotype
-def: "An inorganic phosphorus source utilization phenotype where the representative member of a taxonomic unit can use an inorganic P-containing compound as the source of phosphorus." [OMP:DAS]
+def: "An inorganic phosphorus source utilization phenotype where an organism can use an inorganic P-containing compound as the source of phosphorus." [OMP:DAS]
 is_a: OMP:0007045 ! inorganic phosphorus source phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:19:36Z
@@ -4666,7 +4666,7 @@ creation_date: 2013-10-01T15:20:22Z
 [Term]
 id: OMP:0007052
 name: utilization of organic phosphorus phenotype
-def: "An organic phosphorus source utilization phenotype where the representative member of a taxonomic unit can use an organic P-containing compound as the source of phosphorus." [OMP:DAS]
+def: "An organic phosphorus source utilization phenotype where an organism can use an organic P-containing compound as the source of phosphorus." [OMP:DAS]
 is_a: OMP:0007046 ! organic phosphorus source phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:20:22Z
