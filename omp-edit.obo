@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 24:07:2014 12:59
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3.1
+date: 24:07:2014 13:16
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -129,7 +129,7 @@ creation_date: 2011-06-07T10:14:39Z
 [Term]
 id: OMP:0000015
 name: decreased heterocyst formation
-def: "A heterocyst formation phenotype where heterocyst formation is decreased relative to a designated control." [OMP:MCC]
+def: "A altered heterocyst formation phenotype where heterocyst formation is decreased relative to a designated control." [OMP:MCC]
 synonym: "abolished heterocyst formation" NARROW []
 is_a: OMP:0000092 ! heterocyst formation phenotype
 created_by: mchibucos
@@ -178,7 +178,7 @@ creation_date: 2011-04-26T03:10:51Z
 [Term]
 id: OMP:0000022
 name: decreased myxospore formation
-def: "A myxospore formation phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
+def: "An altered myxospore formation phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
 synonym: "abolished myxospore formation" NARROW []
 is_a: OMP:0000096 ! myxospore formation phenotype
 created_by: mchibucos
@@ -226,6 +226,8 @@ creation_date: 2011-04-26T03:26:26Z
 id: OMP:0000028
 name: decreased number of pili
 def: "A presence of pilus phenotype where a cell has fewer pili relative to a designated control." [OMP:MCC]
+synonym: "abolished fimbriae formation" NARROW []
+synonym: "abolished number of pili" NARROW []
 synonym: "decreased fimbriae formation" EXACT []
 is_a: OMP:0000034 ! presence of pilus
 created_by: mchibucos
@@ -1659,7 +1661,7 @@ creation_date: 2011-06-07T12:32:12Z
 [Term]
 id: OMP:0000213
 name: increased number of flagella
-def: "A flagellum number phenotype where there are more flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
+def: "An altered flagellum phenotype where there are more flagella per cell relative to a designated control." [OMP:DAS]
 is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:53:17Z
@@ -2046,7 +2048,7 @@ creation_date: 2011-07-21T02:43:22Z
 [Term]
 id: OMP:0000289
 name: increased number of anucleoid cells
-def: "An anucleoid phenotype where the fraction of anucleoid cells in a population is increased relative to some reference." [OMP:DAS]
+def: "An anucleoid phenotype where the fraction of anucleoid cells in a population is increased relative to a designated control." [OMP:DAS]
 comment: In Escherichia coli mutations in the muk or par genes result in an increased number of anucleoid cells.
 is_a: OMP:0000042 ! anucleoid
 created_by: mchibucos
@@ -2395,7 +2397,7 @@ creation_date: 2013-08-22T01:47:25Z
 [Term]
 id: OMP:0000463
 name: increased number of pili
-def: "A pilus phenotype where an organism has more pili relative to a reference strain or relative to the same strain in a different environment." [OMP:DAS]
+def: "An pilus phenotype where an organism has more pili relative to a reference a designated control." [OMP:DAS]
 is_a: OMP:0000034 ! presence of pilus
 created_by: siegele
 creation_date: 2013-08-22T01:48:57Z
@@ -2837,7 +2839,7 @@ creation_date: 2013-10-18T18:39:27Z
 [Term]
 id: OMP:0005049
 name: increased frequency of homologous recombination
-def: "A homologous recombination phenotype where the prevalence of homologous recombination is increased relative to the designated control." [OMP:WAM]
+def: "A homologous recombination phenotype where homologous recombination is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-23T19:46:15Z
@@ -2870,7 +2872,7 @@ creation_date: 2013-10-25T12:22:04Z
 [Term]
 id: OMP:0005055
 name: increased frequency of site specific recombination
-def: "A site specific recombination phenotype where the prevalence of site specific recombination is increased relative to the designated control." [OMP:WAM]
+def: "A site specific recombination phenotype where site specific recombination is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:14:25Z
@@ -2902,7 +2904,7 @@ creation_date: 2013-10-29T13:20:16Z
 
 [Term]
 id: OMP:0005059
-name: transposable element transposition
+name: transposable element transposition phenotype
 def: "A genetic material phenotype dealing with DNA sequences that change positions within the genome." [ISBN:9780198529170, OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
@@ -2993,7 +2995,7 @@ creation_date: 2013-11-08T17:11:14Z
 [Term]
 id: OMP:0005070
 name: increased mitotic recombination
-def: "A mitotic recombination phenotype where the prevalence of homologous recombination is increased relative to the designated control." [OMP:WAM]
+def: "An altered mitotic recombination phenotype where homologous recombination is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:11:59Z
@@ -3027,7 +3029,7 @@ creation_date: 2013-11-08T17:36:20Z
 id: OMP:0005074
 name: increased rate of transposable element transposition
 def: "A transposable element transposition phenotype where DNA sequences change position at a higher frequency relative to the designated control." [OMP:WAM]
-is_a: OMP:0005059 ! transposable element transposition
+is_a: OMP:0005059 ! transposable element transposition phenotype
 created_by: wmeza
 creation_date: 2013-11-11T13:41:50Z
 
@@ -3036,7 +3038,7 @@ id: OMP:0005075
 name: decreased rate of transposable element transposition
 def: "A transposable element transposition phenotype where DNA sequences change position at a lower frequency relative to the designated control." [OMP:WAM]
 synonym: "abolished transposable element transposition phenotype" NARROW []
-is_a: OMP:0005059 ! transposable element transposition
+is_a: OMP:0005059 ! transposable element transposition phenotype
 created_by: wmeza
 creation_date: 2013-11-11T13:42:44Z
 
@@ -4285,6 +4287,7 @@ creation_date: 2013-09-11T17:11:44Z
 id: OMP:0007010
 name: decreased growth at alkaline pH
 def: "An altered alkaline pH growth range phenotype where the organism's ability to grow at some pH that is higher than pH 7 is decreased." [OMP:DAS]
+synonym: "abolished growth at alkaline pH" NARROW []
 is_a: OMP:0005028 ! altered alkaline pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:14:28Z
@@ -4292,7 +4295,7 @@ creation_date: 2013-09-11T17:14:28Z
 [Term]
 id: OMP:0007011
 name: increased growth at alkaline pH
-def: "A pH growth range phenotype where the organism's ability to grow at some pH that is higher than pH 7 is increased." [OMP:DAS]
+def: "An altered alkaline pH growth range phenotype where the organism's ability to grow at some pH that is higher than pH 7 is increased." [OMP:DAS]
 is_a: OMP:0005028 ! altered alkaline pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:14:56Z
@@ -4350,18 +4353,23 @@ creation_date: 2013-09-17T16:13:20Z
 
 [Term]
 id: OMP:0007022
-name: decreased purine/pyrimidine requirement
-def: "A purine/pyrimidine requirement phenotype where an organism's requirement for a purine or pyrimidine base is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished purine/pyrimidine requirement" EXACT []
-is_a: OMP:0007081 ! altered purine/pyrimidine requirement
+name: decreased nucleobase requirement
+def: "A nucleobase requirement phenotype where an organism's requirement for a purine or pyrimidine base is decreased relative to a designated control." [OMP:DAS]
+synonym: "abolished purine requirement" NARROW []
+synonym: "abolished pyrimidine requirement" NARROW []
+synonym: "decreased purine requirement" NARROW []
+synonym: "decreased pyrimidine requirement" NARROW []
+is_a: OMP:0007081 ! altered nucleobase requirement
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
 
 [Term]
 id: OMP:0007023
-name: increased purine/pyrimidine requirement
-def: "A purine/pyrimidine requirement phenotype where an organism's requirement for purine or pyrimidine bases is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007081 ! altered purine/pyrimidine requirement
+name: increased nucleobase requirement
+def: "A nucleobase requirement phenotype where an organism's requirement for nucleobase bases is increased relative to a designated control." [OMP:DAS]
+synonym: "increase purine requirement" NARROW []
+synonym: "increase pyrimidine requirement" NARROW []
+is_a: OMP:0007081 ! altered nucleobase requirement
 created_by: siegele
 creation_date: 2013-09-17T16:30:36Z
 
@@ -4385,7 +4393,7 @@ creation_date: 2013-09-17T16:33:34Z
 [Term]
 id: OMP:0007027
 name: increased quorum sensing
-def: "A quorum sensing phenotype where an organism's ability to monitor its population density is increased relative to a designated control." [OMP:DAS]
+def: "An altered quorum sensing phenotype where an organism's ability to monitor its population density is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:02Z
@@ -4394,6 +4402,7 @@ creation_date: 2013-09-17T16:45:02Z
 id: OMP:0007028
 name: decreased quorum sensing
 def: "An altered quorum sensing phenotype where an organism's ability to monitor its population density is decreased relative to a designated control." [OMP:DAS]
+synonym: "abolished quorum sensing phenotype" NARROW []
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:18Z
@@ -4647,7 +4656,7 @@ creation_date: 2013-10-01T15:46:38Z
 [Term]
 id: OMP:0007062
 name: increased heterocyst formation
-def: "A heterocyst formation phenotype where the ability to form heterocysts is increased relative to a designated control." [OMP:DAS]
+def: "An altered heterocyst formation phenotype where the ability to form heterocysts is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000092 ! heterocyst formation phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:31:01Z
@@ -4655,7 +4664,7 @@ creation_date: 2014-01-31T18:31:01Z
 [Term]
 id: OMP:0007063
 name: increased myxospore formation
-def: "A myxospore formation phenotype where the ability to form myxospores is increased relative to a designated control." [OMP:DAS]
+def: "An altered myxospore formation phenotype where the ability to form myxospores is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000096 ! myxospore formation phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:45:09Z
@@ -4748,7 +4757,7 @@ creation_date: 2014-02-21T15:31:32Z
 [Term]
 id: OMP:0007074
 name: increased growth factor requirement
-def: "A growth factor requirement phenotype where an organism's requirement for one or more growth factors is increased relative to a designated control." [OMP:DAS]
+def: "An growth factor requirement phenotype where an organism's requirement for one or more growth factors is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-02-21T15:42:23Z
@@ -4797,8 +4806,10 @@ creation_date: 2014-04-30T15:52:18Z
 
 [Term]
 id: OMP:0007081
-name: altered purine/pyrimidine requirement
-def: "An altered growth factor requirement phenotype where purine/pyrimidine requirement is altered relative to a designated control." [OMP:JCH]
+name: altered nucleobase requirement
+def: "An altered growth factor requirement phenotype where nucleobase requirement is altered relative to a designated control." [OMP:JCH]
+synonym: "altered purine requirement " NARROW []
+synonym: "altered pyrimidine requirement" NARROW []
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-04-30T16:03:42Z
@@ -5088,7 +5099,7 @@ creation_date: 2014-07-18T13:53:13Z
 id: OMP:0007117
 name: abolished quorum sensing
 def: "A decreased quorum sensing phenotype where an organism completely loses its ability to perform quorum sensing." [OMP:DAS]
-is_a: OMP:0007028 ! decreased quorum sensing
+is_obsolete: true
 created_by: siegele
 creation_date: 2014-07-18T14:21:06Z
 
