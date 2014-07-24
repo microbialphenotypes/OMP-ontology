@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 23:07:2014 17:03
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3.1
+date: 23:07:2014 20:25
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -129,7 +129,7 @@ creation_date: 2011-06-07T10:14:39Z
 [Term]
 id: OMP:0000015
 name: decreased heterocyst formation
-def: "A heterocyst formation relative phenotype where the ability to form heterocysts is decreased relative to a designated control." [OMP:MCC]
+def: "A heterocyst formation phenotype where the ability to form heterocysts is decreased relative to a designated control." [OMP:MCC]
 synonym: "abolished heterocyst formation" NARROW []
 is_a: OMP:0000092 ! heterocyst formation phenotype
 created_by: mchibucos
@@ -178,7 +178,7 @@ creation_date: 2011-04-26T03:10:51Z
 [Term]
 id: OMP:0000022
 name: decreased myxospore formation
-def: "A myxospore formation relative phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
+def: "A myxospore formation phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
 synonym: "abolished myxospore formation" BROAD []
 is_a: OMP:0000096 ! myxospore formation phenotype
 created_by: mchibucos
@@ -225,9 +225,9 @@ creation_date: 2011-04-26T03:26:26Z
 [Term]
 id: OMP:0000028
 name: decreased number of pili
-def: "An altered pilus phenotype where a cell or cells have a decreased number of pili relative to a designated control." [OMP:MCC]
-synonym: "decreased number of fimbriae" EXACT []
-is_a: OMP:0007007 ! altered pilus phenotype
+def: "A pilus phenotype where a cell has fewer pili relative to a designated control." [OMP:MCC]
+synonym: "decreased fimbriae formation" EXACT []
+is_a: OMP:0000034 ! presence of pilus
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:28Z
 
@@ -277,10 +277,10 @@ creation_date: 2011-04-26T03:44:22Z
 
 [Term]
 id: OMP:0000035
-name: altered pilus shape
-def: "An altered pilus phenotype where a cell or cells possess a pilus whose shape is altered relative to a designated control." [OMP:MCC]
+name: malformed pilus
+def: "A pilus phenotype where the cell possesses a pilus that was distorted during formation." [OMP:MCC]
 synonym: "malformed fimbrium" EXACT []
-is_a: OMP:0007007 ! altered pilus phenotype
+is_a: OMP:0000034 ! presence of pilus
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:34Z
 
@@ -1659,7 +1659,7 @@ creation_date: 2011-06-07T12:32:12Z
 [Term]
 id: OMP:0000213
 name: increased number of flagella
-def: "A flagellum number relative phenotype where there are more flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
+def: "A flagellum number phenotype where there are more flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
 is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:53:17Z
@@ -1675,7 +1675,7 @@ creation_date: 2011-02-03T01:33:37Z
 [Term]
 id: OMP:0000215
 name: decreased number of flagella
-def: "A flagellum number relative phenotype where there are fewer flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
+def: "A flagellum number phenotype where there are fewer flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
 is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:54:51Z
@@ -1710,7 +1710,7 @@ creation_date: 2011-02-03T04:43:28Z
 id: OMP:0000219
 name: decarboxylase activity phenotype
 def: "An enzymatic activity phenotype where the cell or cells display the ability to catalyze  the removal of a carboxyl group from a compound." [OMP:JCH]
-synonym: "Carboxy-lyases" EXACT []
+synonym: "Carboxy-lyases" BROAD []
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:43:53Z
@@ -2045,7 +2045,7 @@ creation_date: 2011-07-21T02:43:22Z
 [Term]
 id: OMP:0000289
 name: increased number of anucleoid cells
-def: "An anucleoid relative phenotype where the fraction of anucleoid cells in a population is increased relative to some reference." [OMP:DAS]
+def: "An anucleoid phenotype where the fraction of anucleoid cells in a population is increased relative to some reference." [OMP:DAS]
 comment: In Escherichia coli mutations in the muk or par genes result in an increased number of anucleoid cells.
 is_a: OMP:0000042 ! anucleoid
 created_by: mchibucos
@@ -2211,7 +2211,7 @@ creation_date: 2012-11-02T02:02:58Z
 [Term]
 id: OMP:0000334
 name: increased resistance to aminopyrimidine
-def: "An aminopyrimidine resistance relative phenotype where resistance is increased relative to a designated control." [OMP:DAS]
+def: "An aminopyrimidine resistance phenotype where resistance is increased relative to a designated control." [OMP:DAS]
 synonym: "abolished sensitivity to aminopyrimidine" NARROW []
 synonym: "decreased sensitivity to antifolate" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
@@ -2221,7 +2221,7 @@ creation_date: 2012-11-02T02:04:38Z
 [Term]
 id: OMP:0000335
 name: decreased resistance to aminopyrimidine
-def: "An aminopyrimidine resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
+def: "An aminopyrimidine resistance phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
 synonym: "abolished resistance to aminopyrimidine" NARROW []
 synonym: "increased sensitivity to aminopyrimidine" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
@@ -2394,8 +2394,8 @@ creation_date: 2013-08-22T01:47:25Z
 [Term]
 id: OMP:0000463
 name: increased number of pili
-def: "An altered pilus phenotype where a cell or cells have an increased number of pili relative to a designated control." [OMP:DAS]
-is_a: OMP:0007007 ! altered pilus phenotype
+def: "A pilus phenotype where an organism has more pili relative to a reference strain or relative to the same strain in a different environment." [OMP:DAS]
+is_a: OMP:0000034 ! presence of pilus
 created_by: siegele
 creation_date: 2013-08-22T01:48:57Z
 
@@ -2410,7 +2410,7 @@ creation_date: 2013-08-22T01:53:29Z
 [Term]
 id: OMP:0000500
 name: decreased aerotaxis
-def: "An aerotaxis relative phenotype where aerotaxis is decreased reative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
+def: "An aerotaxis phenotype where aerotaxis is decreased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
 synonym: "abolished aerotaxis" NARROW []
 is_a: OMP:0007076 ! altered aerotaxis
 created_by: mchibucos
@@ -2419,7 +2419,7 @@ creation_date: 2012-11-02T01:20:31Z
 [Term]
 id: OMP:0000502
 name: increased aerotaxis
-def: "An aerotaxis relative phenotype where aerotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
+def: "An aerotaxis phenotype where aerotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
 is_a: OMP:0007076 ! altered aerotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:21:21Z
@@ -2427,7 +2427,7 @@ creation_date: 2012-11-02T01:21:21Z
 [Term]
 id: OMP:0000503
 name: decreased chemotaxis
-def: "An chemotaxis relative phenotype where chemotaxis is decreased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
+def: "An altered chemotaxis relative phenotype where chemotaxis is decreased relative to the designated control." [OMP:DAS]
 synonym: "abolished chemotaxis" NARROW []
 is_a: OMP:0007077 ! altered chemotaxis
 created_by: mchibucos
@@ -2436,7 +2436,7 @@ creation_date: 2012-11-02T01:22:28Z
 [Term]
 id: OMP:0000505
 name: increased chemotaxis
-def: "An chemotaxis relative phenotype where chemotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
+def: "An chemotaxis phenotype where chemotaxis is increased relative to the designated control strain in the same environment or to the same strain in a different environment." [OMP:DAS]
 is_a: OMP:0007077 ! altered chemotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:23:12Z
@@ -2683,7 +2683,7 @@ creation_date: 2014-07-23T13:55:07Z
 [Term]
 id: OMP:0005030
 name: increase in stress induced mutagenesis
-def: "A stress induced mutagenesis relative phenotype where the frequency of mutagenesis is increased relative to the designated control." [OMP:WAM]
+def: "A stress induced mutagenesis phenotype where the frequency of mutagenesis is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:57:03Z
@@ -2819,7 +2819,7 @@ creation_date: 2013-10-18T18:39:27Z
 [Term]
 id: OMP:0005049
 name: increased frequency of homologous recombination
-def: "A homologous recombination relative phenotype where the prevalence of homologous recombination is increased relative to the designated control." [OMP:WAM]
+def: "A homologous recombination phenotype where the prevalence of homologous recombination is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-23T19:46:15Z
@@ -2827,7 +2827,7 @@ creation_date: 2013-10-23T19:46:15Z
 [Term]
 id: OMP:0005050
 name: decreased frequency of homologous recombination
-def: "A homologous recombination relative phenotype where the prevalence of homologous recombination is reduced relative to the designated control." [OMP:WAM]
+def: "A homologous recombination phenotype where the prevalence of homologous recombination is reduced relative to the designated control." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-24T12:52:41Z
@@ -2851,7 +2851,7 @@ creation_date: 2013-10-25T12:22:04Z
 [Term]
 id: OMP:0005055
 name: increased frequency of site specific recombination
-def: "A site specific recombination relative phenotype where the prevalence of site specific recombination is increased relative to the designated control." [OMP:WAM]
+def: "A site specific recombination phenotype where the prevalence of site specific recombination is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:14:25Z
@@ -2859,7 +2859,7 @@ creation_date: 2013-10-29T13:14:25Z
 [Term]
 id: OMP:0005056
 name: decreased frequency of site specific recombination
-def: "A site specific recombination relative phenotype where the prevalence of site specific recombination is decreased relative to the designated control." [OMP:WAM]
+def: "A site specific recombination phenotype where the prevalence of site specific recombination is decreased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:15:06Z
@@ -2891,7 +2891,7 @@ creation_date: 2013-10-30T18:35:34Z
 [Term]
 id: OMP:0005060
 name: increased frequency of chromosome segregation
-def: "A chromosome segregation relative phenotype where the occurrence of segregation is increased relative to the designated control." [OMP:WAM]
+def: "A chromosome segregation phenotype where the occurrence of segregation is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:09:09Z
@@ -2899,7 +2899,7 @@ creation_date: 2013-11-04T18:09:09Z
 [Term]
 id: OMP:0005061
 name: decreased frequency of chromosome segregation
-def: "A chromosome segregation relative phenotype where the occurrence of segregation is decreased relative to the designated control." [OMP:WAM]
+def: "A chromosome segregation phenotype where the occurrence of segregation is decreased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:09:38Z
@@ -2923,7 +2923,7 @@ creation_date: 2013-11-04T18:12:32Z
 [Term]
 id: OMP:0005064
 name: increased frequency of gene silencing
-def: "A gene silencing relative phenotype dealing with an increase in the incidence of gene silencing relative to the designated control." [OMP:WAM]
+def: "A gene silencing phenotype dealing with an increase in the incidence of gene silencing relative to the designated control." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:21:37Z
@@ -2931,7 +2931,7 @@ creation_date: 2013-11-04T18:21:37Z
 [Term]
 id: OMP:0005065
 name: decreased frequency of gene silencing
-def: "A gene silencing relative phenotype dealing with a reduction in the incidence of gene silencing relative to the designated control." [OMP:WAM]
+def: "A gene silencing phenotype dealing with a reduction in the incidence of gene silencing relative to the designated control." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:21:56Z
@@ -2971,7 +2971,7 @@ creation_date: 2013-11-08T17:11:14Z
 [Term]
 id: OMP:0005070
 name: increased mitotic recombination
-def: "A mitotic recombination relative phenotype where the prevalence of homologous recombination is increased relative to the designated control." [OMP:WAM]
+def: "A mitotic recombination phenotype where the prevalence of homologous recombination is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:11:59Z
@@ -2979,7 +2979,7 @@ creation_date: 2013-11-08T17:11:59Z
 [Term]
 id: OMP:0005071
 name: decreased mitotic recombination
-def: "A mitotic recombination relative phenotype where the prevalence of homologous recombination is reduced relative to the designated control." [OMP:WAM]
+def: "A mitotic recombination phenotype where the prevalence of homologous recombination is reduced relative to the designated control." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:12:27Z
@@ -3003,7 +3003,7 @@ creation_date: 2013-11-08T17:36:20Z
 [Term]
 id: OMP:0005074
 name: increased rate of transposable element transposition
-def: "A transposable element transposition relative phenotype where DNA sequences change position at a higher frequency relative to the designated control." [OMP:WAM]
+def: "A transposable element transposition phenotype where DNA sequences change position at a higher frequency relative to the designated control." [OMP:WAM]
 is_a: OMP:0005059 ! transposable element transposition
 created_by: wmeza
 creation_date: 2013-11-11T13:41:50Z
@@ -3011,7 +3011,7 @@ creation_date: 2013-11-11T13:41:50Z
 [Term]
 id: OMP:0005075
 name: decreased rate of transposable element transposition
-def: "A transposable element transposition relative phenotype where DNA sequences change position at a lower frequency relative to the designated control." [OMP:WAM]
+def: "A transposable element transposition phenotype where DNA sequences change position at a lower frequency relative to the designated control." [OMP:WAM]
 is_a: OMP:0005059 ! transposable element transposition
 created_by: wmeza
 creation_date: 2013-11-11T13:42:44Z
@@ -3654,7 +3654,7 @@ creation_date: 2013-09-10T17:54:07Z
 [Term]
 id: OMP:0006036
 name: decreased resistance to macrolide
-def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is decreased relative to a designated control." [OMP:JCH]
+def: "A macrolide compound resistance phenotype where resistance to a macrolide compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to macrolide" NARROW []
 synonym: "increase sensitivity to macrolide" RELATED []
 is_a: OMP:0000321 ! macrolide resistance phenotype
@@ -3664,7 +3664,7 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006037
 name: increased resistance to macrolide
-def: "A macrolide compound resistance relative phenotype where resistance to a macrolide compound is increased relative to a designated control." [OMP:JCH]
+def: "A macrolide compound resistance phenotype where resistance to a macrolide compound is increased relative to a designated control." [OMP:JCH]
 synonym: "abolish sensitivity to macrolide" NARROW []
 synonym: "decrease sensitivity to macrolide" RELATED []
 is_a: OMP:0000321 ! macrolide resistance phenotype
@@ -3692,7 +3692,7 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006040
 name: decreased resistance to quinolone
-def: "A quinolone compound resistance relative phenotype where resistance to a quinolone compound is decreased relative to a designated control." [OMP:JCH]
+def: "A quinolone compound resistance phenotype where resistance to a quinolone compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to quinoline" NARROW []
 synonym: "increase sensitivity to quinoline" RELATED []
 is_a: OMP:0006029 ! quinolone resistance phenotype
@@ -3702,7 +3702,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006041
 name: increased resistance to quinolone
-def: "A quinolone compound resistance relative phenotype where resistance to a quinolone compound is increased relative to a designated control." [OMP:JCH]
+def: "A quinolone compound resistance phenotype where resistance to a quinolone compound is increased relative to a designated control." [OMP:JCH]
 synonym: "abolish sensitivity to quinolone" RELATED []
 synonym: "decrease sensitivity to quinoline" RELATED []
 is_a: OMP:0006029 ! quinolone resistance phenotype
@@ -3730,7 +3730,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006044
 name: decreased resistance to beta-lactam
-def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is decreased relative to a designated control." [OMP:JCH]
+def: "A beta-lactam compound resistance phenotype where resistance to a beta-lactam compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to beta-lactam" NARROW []
 synonym: "increase sensitivity to beta-lactam" RELATED []
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
@@ -3740,7 +3740,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006045
 name: increased resistance to beta-lactam
-def: "A beta-lactam compound resistance relative phenotype where resistance to a beta-lactam compound is increased relative to a designated control." [OMP:JCH]
+def: "A beta-lactam compound resistance phenotype where resistance to a beta-lactam compound is increased relative to a designated control." [OMP:JCH]
 synonym: "abolished sensitivity to beta-lactam" NARROW []
 synonym: "decreased sensitivity to beta-lactam" RELATED []
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
@@ -3768,7 +3768,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006048
 name: decreased resistance to bacteriocin
-def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is decreased relative to some reference." [OMP:JCH]
+def: "A bacteriocin compound resistance phenotype where resistance to a bacteriocin compound is decreased relative to some reference." [OMP:JCH]
 synonym: "abolished resistance to bacteriocin" NARROW []
 synonym: "increased sensitivity to bacteriocin" RELATED []
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
@@ -3778,7 +3778,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006049
 name: increased resistance to bacteriocin
-def: "A bacteriocin compound resistance relative phenotype where resistance to a bacteriocin compound is increased relative to some reference." [OMP:JCH]
+def: "A bacteriocin compound resistance phenotype where resistance to a bacteriocin compound is increased relative to some reference." [OMP:JCH]
 synonym: "abolished sensitivity to a bacteriocin" RELATED []
 synonym: "decreased sensitivity to a bacteriocin" RELATED []
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
@@ -3806,7 +3806,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006052
 name: decreased resistance to azole
-def: "An azole compound resistance relative phenotype where resistance to an azole compound is decreased relative to a designated control." [OMP:DAS]
+def: "An azole compound resistance phenotype where resistance to an azole compound is decreased relative to a designated control." [OMP:DAS]
 synonym: "abolished resistance to azole" NARROW []
 synonym: "increased sensitivity to azole" RELATED []
 is_a: OMP:0006028 ! azole resistance phenotype
@@ -3816,7 +3816,7 @@ creation_date: 2013-10-11T17:45:44Z
 [Term]
 id: OMP:0006053
 name: increased resistance to azole
-def: "An azole compound resistance relative phenotype where resistance to an azole compound is increased relative to a designated control." [OMP:DAS]
+def: "An azole compound resistance phenotype where resistance to an azole compound is increased relative to a designated control." [OMP:DAS]
 synonym: "abolished sensitivity to azole" RELATED []
 synonym: "decreased sensitivity to azole" RELATED []
 is_a: OMP:0006028 ! azole resistance phenotype
@@ -3858,7 +3858,7 @@ creation_date: 2013-10-22T13:29:22Z
 [Term]
 id: OMP:0006057
 name: decreased resistance to aminoglycoside
-def: "An aminoglycoside compound resistance relative phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
+def: "An aminoglycoside compound resistance phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to aminoglycoside" NARROW []
 synonym: "increased sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
@@ -3868,7 +3868,7 @@ creation_date: 2013-10-22T19:24:20Z
 [Term]
 id: OMP:0006058
 name: increased resistance to aminoglycoside
-def: "An aminoglycoside compound resistance relative phenotype where resistance is increased relative to a designated control." [OMP:JCH]
+def: "An aminoglycoside compound resistance phenotype where resistance is increased relative to a designated control." [OMP:JCH]
 synonym: "abolished sensitivity to aminoglycoside" NARROW []
 synonym: "decreased sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
@@ -3896,7 +3896,7 @@ creation_date: 2013-10-22T19:24:20Z
 [Term]
 id: OMP:0006061
 name: decreased resistance to tetracycline
-def: "A tetracycline compound resistance relative phenotype where resistance to a tetracycline compound is decreased relative to a designated control." [OMP:JCH]
+def: "A tetracycline compound resistance phenotype where resistance to a tetracycline compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to tetracycline" NARROW []
 synonym: "increase sensitivity to tetracycline" RELATED []
 is_a: OMP:0006062 ! tetracycline resistance phenotype
@@ -3918,7 +3918,7 @@ creation_date: 2013-10-23T17:21:25Z
 [Term]
 id: OMP:0006063
 name: increased resistance to tetracycline
-def: "A tetracycline compound resistance relative phenotype where resistance to a tetracycline compound is increased relative to a designated control." [OMP:JCH]
+def: "A tetracycline compound resistance phenotype where resistance to a tetracycline compound is increased relative to a designated control." [OMP:JCH]
 synonym: "abolish sensitivity to tetracycline" RELATED []
 synonym: "decrease sensitivity to tetracycline" RELATED []
 is_a: OMP:0006062 ! tetracycline resistance phenotype
@@ -3957,8 +3957,8 @@ creation_date: 2013-10-24T12:57:25Z
 
 [Term]
 id: OMP:0006067
-name: decrease resistance to chloramphenicol
-def: "A chloramphenicol compound resistance relative phenotype where resistance to a chloramphenicol compound is decreased relative to a designated control." [OMP:JCH]
+name: decreased resistance to chloramphenicol
+def: "A chloramphenicol compound resistance phenotype where resistance to a chloramphenicol compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to chloramphenicol" NARROW []
 synonym: "increase sensitivity to chloramphenicol" RELATED []
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
@@ -3968,7 +3968,7 @@ creation_date: 2013-10-24T19:41:11Z
 [Term]
 id: OMP:0006068
 name: increased resistance to chloramphenicol
-def: "A chloramphenicol compound resistance relative phenotype where resistance to a chloramphenicol compound is increased relative to a designated control." [OMP:JCH]
+def: "A chloramphenicol compound resistance phenotype where resistance to a chloramphenicol compound is increased relative to a designated control." [OMP:JCH]
 synonym: "abolish sensitivity to chloramphenicol" RELATED []
 synonym: "decrease sensitivity to chloramphenicol" RELATED []
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
@@ -4014,7 +4014,7 @@ creation_date: 2014-04-30T22:48:59Z
 [Term]
 id: OMP:0006074
 name: increased resistance to pteridine
-def: "A pteridine resistance relative phenotype where resistance to a pteridine compound is increased relative to a designated control." [CHEBI:27601, OMP:DAS]
+def: "A pteridine resistance phenotype where resistance to a pteridine compound is increased relative to a designated control." [CHEBI:27601, OMP:DAS]
 synonym: "abolish sensitivity to pteridine" RELATED []
 synonym: "decrease sensitivity to pteridine" RELATED []
 is_a: OMP:0007065 ! pteridine resistance phenotype
@@ -4042,7 +4042,7 @@ creation_date: 2014-05-12T13:04:40Z
 [Term]
 id: OMP:0006077
 name: altered catalase activity
-def: "A catalase activity phenotype where activity is altered relative to a designated control." [OMP:JCH]
+def: "A catalase activity phenotype where catalase activity altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000218 ! catalase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T14:55:03Z
@@ -4060,7 +4060,7 @@ creation_date: 2014-07-15T19:59:58Z
 [Term]
 id: OMP:0006079
 name: altered decarboxylase activity
-def: "A decarboxylase activity phenotype where activity is altered relative to a designated control." [OMP:JCH]
+def: "A decarboxylase activity phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000219 ! decarboxylase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
@@ -4076,16 +4076,16 @@ creation_date: 2014-07-15T19:59:58Z
 
 [Term]
 id: OMP:0006081
-name: increased decarboxylase activity
-def: "An altered decarboxylase activity phenotype where decarboxylase activity is increased relative to a designated control." [OMP:JCH]
+name: increase decarboxylase activity
+def: "An altered decarboxylase activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
 is_a: OMP:0006079 ! altered decarboxylase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
 
 [Term]
 id: OMP:0006082
-name: decreased decarboxylase activity
-def: "An altered decarboxylase activity relative phenotype where decarboxylase activity is decreased relative to a designated control." [OMP:JCH]
+name: decrease decarboxylase activity
+def: "An altered decarboxylase activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
 is_a: OMP:0006079 ! altered decarboxylase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
@@ -4093,7 +4093,7 @@ creation_date: 2014-07-15T20:00:41Z
 [Term]
 id: OMP:0006083
 name: altered oxidase activity
-def: "An oxidase activity phenotype where enzyme activity is altered relative to a designated control." [OMP:JCH]
+def: "An oxidase activity phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000220 ! oxidase activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
@@ -4119,16 +4119,16 @@ creation_date: 2014-07-15T20:06:25Z
 
 [Term]
 id: OMP:0006086
-name: increased oxidase activity
-def: "An altered oxidase activity phenotype where there oxidase activity is increased relative to a designated control." [OMP:JCH]
+name: increase oxidase activity
+def: "An altered oxidase activity phenotype where there is an increase in enzyme activity relative to a designated control." [OMP:JCH]
 is_a: OMP:0006083 ! altered oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
 
 [Term]
 id: OMP:0006087
-name: decreased oxidase activity
-def: "An altered oxidase activity phenotype where there oxidase activity is decreased relative to a designated control." [OMP:JCH]
+name: decrease oxidase activity
+def: "An altered oxidase activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
 is_a: OMP:0006083 ! altered oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
@@ -4162,16 +4162,16 @@ creation_date: 2014-07-15T20:07:31Z
 
 [Term]
 id: OMP:0006091
-name: increased urease activity
-def: "An altered urease activity phenotype where urease activity is increased relative to a designated control." [OMP:JCH]
+name: increase urease activity
+def: "An altered urease activity phenotype where there is an increase in enzyme activity relative to a designated control." [OMP:JCH]
 is_a: OMP:0006088 ! altered urease activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
 
 [Term]
 id: OMP:0006092
-name: decreased urease activity
-def: "An altered urease activity phenotype where urease activity is decreased relative to a designated control." [OMP:JCH]
+name: decrease urease activity
+def: "An altered urease activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
 is_a: OMP:0006088 ! altered urease activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
@@ -4210,7 +4210,7 @@ creation_date: 2013-09-05T16:09:28Z
 [Term]
 id: OMP:0007004
 name: decreased resistance to pteridine
-def: "A pteridine resistance relative phenotype where resistance to a pteridine compound is decreased relative to a designated control." [CHEBI:27601, OMP:DAS]
+def: "A pteridine resistance phenotype where resistance to a pteridine compound is decreased relative to a designated control." [CHEBI:27601, OMP:DAS]
 synonym: "abolish resistance to pteridine" NARROW [CHEBI:73913]
 synonym: "increase sensitivity to pteridine" RELATED []
 is_a: OMP:0007065 ! pteridine resistance phenotype
@@ -4232,15 +4232,6 @@ xref: CMPO:0000002 "cell phenotype"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-07-21T10:25:43Z
-
-[Term]
-id: OMP:0007007
-name: altered pilus phenotype
-def: "A pilus phenotype that is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000084 ! pilus phenotype
-is_a: OMP:0007015 ! altered cell projection phenotype
-created_by: siegele
-creation_date: 2014-07-22T01:54:09Z
 
 [Term]
 id: OMP:0007008
@@ -4269,7 +4260,7 @@ creation_date: 2013-09-11T17:14:28Z
 [Term]
 id: OMP:0007011
 name: increased growth at alkaline pH
-def: "A pH growth range relative phenotype where the organism's ability to grow at some pH that is higher than pH 7 is increased." [OMP:DAS]
+def: "A pH growth range phenotype where the organism's ability to grow at some pH that is higher than pH 7 is increased." [OMP:DAS]
 is_a: OMP:0005028 ! altered alkaline pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:14:56Z
@@ -4300,14 +4291,6 @@ created_by: siegele
 creation_date: 2013-09-13T15:20:24Z
 
 [Term]
-id: OMP:0007015
-name: altered cell projection phenotype
-is_a: OMP:0000083 ! cell projection phenotype
-is_a: OMP:0007103 ! altered cell morphology phenotype
-created_by: siegele
-creation_date: 2014-07-22T02:02:55Z
-
-[Term]
 id: OMP:0007018
 name: prototrophic
 def: "A growth factor utilization phenotype where an organism can synthesize all organic compounds essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
@@ -4318,7 +4301,7 @@ creation_date: 2013-09-16T17:29:19Z
 [Term]
 id: OMP:0007019
 name: increased requirement for amino acid(s)
-def: "An amino acid requirement relative phenotype where an organism's requirement for one or more amino acids is increased relative to a designated control." [OMP:DAS]
+def: "An amino acid requirement phenotype where an organism's requirement for one or more amino acids is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007074 ! increased growth factor requirement
 created_by: siegele
 creation_date: 2013-09-16T17:30:07Z
@@ -4326,7 +4309,7 @@ creation_date: 2013-09-16T17:30:07Z
 [Term]
 id: OMP:0007021
 name: decreased requirement for amino acid(s)
-def: "An amino acid requirement relative phenotype where an organism's requirement for one or more amino acids is decreased requirement relative to a designated control." [OMP:DAS]
+def: "An amino acid requirement phenotype where an organism's requirement for one or more amino acids is decreased requirement relative to a designated control." [OMP:DAS]
 synonym: "abolished amino acid requirement" EXACT []
 is_a: OMP:0007074 ! increased growth factor requirement
 is_a: OMP:0007075 ! decreased growth factor requirement
@@ -4345,7 +4328,7 @@ creation_date: 2013-09-17T16:30:10Z
 [Term]
 id: OMP:0007023
 name: increased purine/pyrimidine requirement
-def: "A purine/pyrimidine requirement relative phenotype where an organism's requirement for purine or pyrimidine bases is increased relative to a designated control." [OMP:DAS]
+def: "A purine/pyrimidine requirement phenotype where an organism's requirement for purine or pyrimidine bases is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007081 ! altered purine/pyrimidine requirement
 created_by: siegele
 creation_date: 2013-09-17T16:30:36Z
@@ -4370,7 +4353,7 @@ creation_date: 2013-09-17T16:33:34Z
 [Term]
 id: OMP:0007027
 name: increased quorum sensing
-def: "A quorum sensing relative phenotype where an organism's ability to monitor its population density is increased relative to a designated control." [OMP:DAS]
+def: "A quorum sensing phenotype where an organism's ability to monitor its population density is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:02Z
@@ -4632,7 +4615,7 @@ creation_date: 2013-10-01T15:46:38Z
 [Term]
 id: OMP:0007062
 name: increased heterocyst formation
-def: "A heterocyst formation relative phenotype where the ability to form heterocysts is increased relative to a designated control." [OMP:DAS]
+def: "A heterocyst formation phenotype where the ability to form heterocysts is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000092 ! heterocyst formation phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:31:01Z
@@ -4640,7 +4623,7 @@ creation_date: 2014-01-31T18:31:01Z
 [Term]
 id: OMP:0007063
 name: increased myxospore formation
-def: "A myxospore formation relative phenotype where the ability to form myxospores is increased relative to a designated control." [OMP:DAS]
+def: "A myxospore formation phenotype where the ability to form myxospores is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000096 ! myxospore formation phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:45:09Z
@@ -4700,16 +4683,16 @@ creation_date: 2014-02-21T15:07:59Z
 [Term]
 id: OMP:0007070
 name: decreased carbon source utilization
-def: "A carbon source utilization relative phenotype where the ability to use a particular carbon source is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007078 ! altered carbon source utilization
+def: "An altered carbon source utilization phenotype where the ability to use a particular carbon source is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007078 ! altered carbon source utilization phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:18:08Z
 
 [Term]
 id: OMP:0007071
 name: increased carbon source utilization
-def: "A carbon source utilization relative phenotype where the ability to use a particular carbon source is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007078 ! altered carbon source utilization
+def: "A carbon source utilization phenotype where the ability to use a particular carbon source is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007078 ! altered carbon source utilization phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:18:41Z
 
@@ -4732,7 +4715,7 @@ creation_date: 2014-02-21T15:31:32Z
 [Term]
 id: OMP:0007074
 name: increased growth factor requirement
-def: "A growth factor requirement relative phenotype where an organism's requirement for one or more growth factors is increased relative to a designated control." [OMP:DAS]
+def: "A growth factor requirement phenotype where an organism's requirement for one or more growth factors is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-02-21T15:42:23Z
@@ -4740,7 +4723,7 @@ creation_date: 2014-02-21T15:42:23Z
 [Term]
 id: OMP:0007075
 name: decreased growth factor requirement
-def: "A growth factor requirement relative phenotype where an organism's requirement for one or more growth factors is decreased relative to a designated control." [OMP:DAS]
+def: "A growth factor requirement phenotype where an organism's requirement for one or more growth factors is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-02-21T15:42:44Z
@@ -4763,7 +4746,7 @@ creation_date: 2014-04-24T17:43:04Z
 
 [Term]
 id: OMP:0007078
-name: altered carbon source utilization
+name: altered carbon source utilization phenotype
 def: "An altered nutrient utilization phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006023 ! carbon source utilization phenotype
 is_a: OMP:0007104 ! altered nutrient utilization phenotype
