@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 24:07:2014 02:50
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 24:07:2014 12:59
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2682,6 +2682,14 @@ created_by: wmeza
 creation_date: 2014-07-23T13:55:07Z
 
 [Term]
+id: OMP:0005029
+name: altered tetracycline resistance phenotype
+def: "A tetracycline resistance phenotype where resistance is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0006062 ! tetracycline resistance phenotype
+created_by: wmeza
+creation_date: 2014-07-23T17:05:20Z
+
+[Term]
 id: OMP:0005030
 name: increase in stress induced mutagenesis
 def: "A stress induced mutagenesis phenotype where the mutagenesis is increased relative to the designated control." [OMP:WAM]
@@ -2713,6 +2721,14 @@ def: "A stress-induced mutagenesis phenotype where an organism does not processe
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T18:20:22Z
+
+[Term]
+id: OMP:0005034
+name: altered quinolone resistance phenotype
+def: "A quinolone resistance phenotype where resistance is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0006029 ! quinolone resistance phenotype
+created_by: wmeza
+creation_date: 2014-07-23T17:13:45Z
 
 [Term]
 id: OMP:0005035
@@ -3129,7 +3145,6 @@ creation_date: 2013-12-06T14:14:31Z
 id: OMP:0005088
 name: decreased resistance toward dessication stress
 def: "An altered dessication stress phenotype where resistance is decreased relative to the designated control." [OMP:WAM]
-synonym: "abolished resistance to dessication stress" NARROW [OMP:WAM]
 synonym: "increased dessication sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005120 ! altered dessication stress phenotype
 created_by: wmeza
@@ -3185,7 +3200,6 @@ creation_date: 2013-12-17T13:05:40Z
 id: OMP:0005094
 name: decrease resistance to gamma ray radiation
 def: "An altered gamma radiation phenotype where resistance is decreased relative a designated control." [OMP:WAM]
-synonym: "abolished resistance to gamma ray radiation" NARROW [OMP:WAM]
 synonym: "increase in gamma ray sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005123 ! altered gamma ray radiation
 created_by: wmeza
@@ -3272,7 +3286,8 @@ creation_date: 2014-04-17T10:55:05Z
 [Term]
 id: OMP:0005104
 name: abolished resistance to dessication stress
-def: "A decreased resistance to dessication stress phenotype where resistance is extinguished." [OMP:WAM]
+def: "A decreased resistance to dessication stress phenotype where an organism completely loses its resistance to dessication stress." [OMP:WAM]
+synonym: "abolished dessication sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005088 ! decreased resistance toward dessication stress
 created_by: wmeza
 creation_date: 2014-07-17T13:11:33Z
@@ -3280,7 +3295,8 @@ creation_date: 2014-07-17T13:11:33Z
 [Term]
 id: OMP:0005105
 name: abolished resistance to freeze/thawing stress
-def: "A decreased resistance to freeze/thawing stress phenotype where resistance is completely extinguished." [OMP:WAM]
+def: "A decreased resistance to freeze/thawing stress phenotype where an organism completely loses its resistance to freeze/thawing stress." [OMP:WAM]
+synonym: "abolished freeze/thaw sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005090 ! decreased resistance to freeze/thawing stress
 created_by: wmeza
 creation_date: 2014-07-17T14:10:28Z
@@ -3457,7 +3473,8 @@ creation_date: 2014-07-11T13:57:22Z
 [Term]
 id: OMP:0005127
 name: abolished resistance toward acidic pH stress
-def: "A decreased resistance toward acidic pH stress where resistance is completely removed." [OMP:WAM]
+def: "A decreased resistance toward acidic pH stress where an organism completely loses its resistance to acidic pH stress." [OMP:WAM]
+synonym: "abolished acidic pH sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005077 ! decreased resistance toward acidic pH stress
 created_by: wmeza
 creation_date: 2014-07-15T16:46:17Z
@@ -3465,7 +3482,8 @@ creation_date: 2014-07-15T16:46:17Z
 [Term]
 id: OMP:0005128
 name: abolished resistance toward alkalinic pH stress
-def: "A decreased resistance toward alkalinic pH stress phenotype where is resistance is extinguished." [OMP:WAM]
+def: "A decreased resistance toward alkalinic pH stress phenotype where an organism completely loses its resistance to alkalinic pH stress." [OMP:WAM]
+synonym: "abolished sensitivity to alkalinic pH stress" RELATED [OMP:WAM]
 is_a: OMP:0005079 ! decreased resistance toward alkalinic pH stress
 created_by: wmeza
 creation_date: 2014-07-15T17:31:56Z
@@ -3489,7 +3507,8 @@ creation_date: 2014-07-16T17:48:24Z
 [Term]
 id: OMP:0005131
 name: abolished resistance to oxidative stress
-def: "A decreased resistance toward oxidative stress phenotype where resistance is extinguished." [OMP:WAM]
+def: "A decreased resistance toward oxidative stress phenotype where an organism completely loses its resistance to oxidative stress." [OMP:WAM]
+synonym: "abolished oxidative sensitivity. " RELATED [OMP:WAM]
 is_a: OMP:0005092 ! decreased resistance toward oxidative stress
 created_by: wmeza
 creation_date: 2014-07-17T14:18:37Z
@@ -3497,7 +3516,8 @@ creation_date: 2014-07-17T14:18:37Z
 [Term]
 id: OMP:0005132
 name: abolished resistance to gamma ray radiation
-def: "A decreased resistance to gamma ray radiation phenotype where resistance is extinguished." [OMP:WAM]
+def: "A decreased resistance to gamma ray radiation phenotype where an organism completely loses its resistance to gamma ray radiation." [OMP:WAM]
+synonym: "abolished gamma ray sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005094 ! decrease resistance to gamma ray radiation
 created_by: wmeza
 creation_date: 2014-07-17T14:23:39Z
@@ -3505,7 +3525,8 @@ creation_date: 2014-07-17T14:23:39Z
 [Term]
 id: OMP:0005133
 name: abolished resistance to x-ray radiation
-def: "A decreased x-ray radiation phenotype where resistance is extinguished." [OMP:WAM]
+def: "A decreased x-ray radiation phenotype where an organism completely loses its resistance to x-ray radiation." [OMP:WAM]
+synonym: "abolished x-ray sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005096 ! decreased resistance toward x-ray radiation
 created_by: wmeza
 creation_date: 2014-07-17T14:28:44Z
@@ -3513,7 +3534,8 @@ creation_date: 2014-07-17T14:28:44Z
 [Term]
 id: OMP:0005134
 name: abolished resistance toward UV radiation
-def: "A decreased resistance to UV radiation phenotype where resistance is completely extinguished." [OMP:WAM]
+def: "A decreased resistance to UV radiation phenotype where an organism completely loses its resistance toward UV radiation." [OMP:WAM]
+synonym: "abolished UV sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005098 ! decreased resistance toward UV radiation
 created_by: wmeza
 creation_date: 2014-07-17T17:22:15Z
@@ -3521,7 +3543,8 @@ creation_date: 2014-07-17T17:22:15Z
 [Term]
 id: OMP:0005135
 name: abolished resistance to SDS-EDTA stress
-def: "A decreased SDS-EDTA stress phenotype where resistance is extinguished." [OMP:WAM]
+def: "A decreased SDS-EDTA stress phenotype where an organism completely loses its resistance to SDS-EDTA stress." [OMP:WAM]
+synonym: "abolished SDS-EDTA sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005113 ! decreased resistance to SDS-EDTA stress
 created_by: wmeza
 creation_date: 2014-07-17T17:39:39Z
@@ -3702,9 +3725,8 @@ creation_date: 2013-10-11T17:35:04Z
 id: OMP:0006040
 name: decreased resistance to quinolone
 def: "A quinolone compound resistance phenotype where resistance to a quinolone compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to quinoline" NARROW []
 synonym: "increase sensitivity to quinoline" RELATED []
-is_a: OMP:0006029 ! quinolone resistance phenotype
+is_a: OMP:0005034 ! altered quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
 
@@ -3714,7 +3736,7 @@ name: increased resistance to quinolone
 def: "A quinolone compound resistance phenotype where resistance to a quinolone compound is increased relative to a designated control." [OMP:JCH]
 synonym: "abolish sensitivity to quinolone" RELATED []
 synonym: "decrease sensitivity to quinoline" RELATED []
-is_a: OMP:0006029 ! quinolone resistance phenotype
+is_a: OMP:0005034 ! altered quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
 
@@ -3908,7 +3930,7 @@ name: decreased resistance to tetracycline
 def: "A tetracycline compound resistance phenotype where resistance to a tetracycline compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "abolished resistance to tetracycline" NARROW []
 synonym: "increase sensitivity to tetracycline" RELATED []
-is_a: OMP:0006062 ! tetracycline resistance phenotype
+is_a: OMP:0005029 ! altered tetracycline resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
 
@@ -3930,7 +3952,7 @@ name: increased resistance to tetracycline
 def: "A tetracycline compound resistance phenotype where resistance to a tetracycline compound is increased relative to a designated control." [OMP:JCH]
 synonym: "abolish sensitivity to tetracycline" RELATED []
 synonym: "decrease sensitivity to tetracycline" RELATED []
-is_a: OMP:0006062 ! tetracycline resistance phenotype
+is_a: OMP:0005029 ! altered tetracycline resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
 
