@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 24:07:2014 16:35
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 24:07:2014 17:23
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -129,7 +129,7 @@ creation_date: 2011-06-07T10:14:39Z
 [Term]
 id: OMP:0000015
 name: decreased heterocyst formation
-def: "A altered heterocyst formation phenotype where heterocyst formation is decreased relative to a designated control." [OMP:MCC]
+def: "A heterocyst formation phenotype where heterocyst formation is decreased relative to a designated control." [OMP:MCC]
 synonym: "abolished heterocyst formation" NARROW []
 is_a: OMP:0006007 ! altered heterocyst formation phenotype
 created_by: mchibucos
@@ -162,7 +162,7 @@ creation_date: 2011-04-26T03:09:25Z
 [Term]
 id: OMP:0000020
 name: myxospore forming
-def: "A myxospore formation phenotype where the representative member of a taxonomic unit possesses the ability to form myxospores." [OMP:MCC]
+def: "A myxospore formation phenotype where an organism possesses the ability to form myxospores." [OMP:MCC]
 is_a: OMP:0000096 ! myxospore formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
@@ -178,7 +178,7 @@ creation_date: 2011-04-26T03:10:51Z
 [Term]
 id: OMP:0000022
 name: decreased myxospore formation
-def: "An altered myxospore formation phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
+def: "A myxospore formation phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
 synonym: "abolished myxospore formation" NARROW []
 is_a: OMP:0006009 ! altered myxospore formation phenotype
 created_by: mchibucos
@@ -226,8 +226,6 @@ creation_date: 2011-04-26T03:26:26Z
 id: OMP:0000028
 name: decreased number of pili
 def: "A presence of pilus phenotype where a cell has fewer pili relative to a designated control." [OMP:MCC]
-synonym: "abolished fimbriae formation" NARROW []
-synonym: "abolished number of pili" NARROW []
 synonym: "decreased fimbriae formation" EXACT []
 is_a: OMP:0006010 ! altered pilus phenotype
 created_by: mchibucos
@@ -378,7 +376,7 @@ creation_date: 2011-04-26T04:27:11Z
 [Term]
 id: OMP:0000049
 name: aerotactic
-def: "An aerotaxis phenotype where the representative taxonomic unit  possesses the ability to respond to environmental oxygen." [OMP:MCC]
+def: "An aerotaxis phenotype where the organism possesses the ability to respond to environmental oxygen." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:27:42Z
@@ -410,7 +408,7 @@ creation_date: 2011-04-26T04:42:14Z
 [Term]
 id: OMP:0000054
 name: absence of positive chemotaxis
-def: "An absence of chemotaxis phenotype where the representative member of a taxonomic unit does not possess the ability to move toward a chemical concentration gradient." [OMP:MCC]
+def: "An absence of chemotaxis phenotype where an organism does not possess the ability to move toward a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000097 ! absence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -418,7 +416,7 @@ creation_date: 2011-04-26T04:42:14Z
 [Term]
 id: OMP:0000055
 name: absence of negative chemotaxis
-def: "An absence of chemotaxis phenotype where the representative member of a taxonomic unit does not possess the ability to move away from a chemical concentration gradient." [OMP:MCC]
+def: "An absence of chemotaxis phenotype where an organism does not possess the ability to move away from a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000097 ! absence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -760,7 +758,7 @@ creation_date: 2011-02-02T03:26:41Z
 [Term]
 id: OMP:0000097
 name: absence of chemotaxis
-def: "A chemotaxis phenotype where the representative member of a taxonomic unit does not possess the ability to move in response to a chemical concentration gradient." [OMP:MCC]
+def: "A chemotaxis phenotype where an organism does not possess the ability to move in response to a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:13Z
@@ -917,7 +915,7 @@ creation_date: 2011-02-02T02:46:17Z
 [Term]
 id: OMP:0000117
 name: diplococcus
-def: "A cell arrangement phenotype where the representative member of a taxonomic unit forms pairs of coccus cells, which arise from a division event in one plane." [ISBN:9780073402406, OMP:AEZ]
+def: "A cell arrangement phenotype where an organism forms pairs of coccus cells, which arise from a division event in one plane." [ISBN:9780073402406, OMP:AEZ]
 is_a: OMP:0000003 ! cell arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-18T02:29:12Z
@@ -1321,7 +1319,7 @@ creation_date: 2011-02-02T02:52:30Z
 [Term]
 id: OMP:0000171
 name: microaerophile phenotype
-def: "An oxygen requirement for growth phenotype where growth of the functional taxonomic unit or reference strain requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen requirement for growth phenotype where growth requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0000039 ! oxygen requirement for growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
@@ -1645,7 +1643,7 @@ creation_date: 2011-06-07T12:31:24Z
 [Term]
 id: OMP:0000211
 name: absence of capsule
-def: "A capsule phenotype where the representative member of a taxonomic unit is not observed to produce a capsule in any environmental condition." [OMP:DAS]
+def: "A capsule phenotype where an organism is not observed to produce a capsule in any environmental condition." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
@@ -1661,7 +1659,7 @@ creation_date: 2011-06-07T12:32:12Z
 [Term]
 id: OMP:0000213
 name: increased number of flagella
-def: "An altered flagellum phenotype where there are more flagella per cell relative to a designated control." [OMP:DAS]
+def: "A flagellum number phenotype where there are more flagella per cell relative to a reference strain or relative to the same strain in a reference condition." [OMP:DAS]
 is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:53:17Z
@@ -2048,7 +2046,7 @@ creation_date: 2011-07-21T02:43:22Z
 [Term]
 id: OMP:0000289
 name: increased number of anucleoid cells
-def: "An anucleoid phenotype where the fraction of anucleoid cells in a population is increased relative to a designated control." [OMP:DAS]
+def: "An anucleoid phenotype where the fraction of anucleoid cells in a population is increased relative to some reference." [OMP:DAS]
 comment: In Escherichia coli mutations in the muk or par genes result in an increased number of anucleoid cells.
 is_a: OMP:0000042 ! anucleoid
 created_by: mchibucos
@@ -2397,7 +2395,7 @@ creation_date: 2013-08-22T01:47:25Z
 [Term]
 id: OMP:0000463
 name: increased number of pili
-def: "An pilus phenotype where an organism has more pili relative to a reference a designated control." [OMP:DAS]
+def: "A pilus phenotype where an organism has more pili relative to a reference strain or relative to the same strain in a different environment." [OMP:DAS]
 is_a: OMP:0006010 ! altered pilus phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:48:57Z
@@ -2477,7 +2475,7 @@ creation_date: 2013-09-03T01:06:05Z
 [Term]
 id: OMP:0005003
 name: hyperthermophilic growth
-def: "A temperature growth range phenotype where optimal growth of the representative member of a taxonomic unit occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where optimal growth occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:29:51Z
@@ -2493,7 +2491,7 @@ creation_date: 2013-09-03T01:36:26Z
 [Term]
 id: OMP:0005005
 name: mesophilic growth
-def: "A temperature growth range phenotype where optimal growth of the representative member of a taxonomic unit occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
+def: "A temperature growth range phenotype where optimal growth occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:24:06Z
@@ -2525,7 +2523,7 @@ creation_date: 2013-09-04T13:57:28Z
 [Term]
 id: OMP:0005009
 name: acidophile
-def: "A pH growth phenotype where optimum growth of the representative member of a taxonomic unit occurs between pH 0 and 5.5." [ISBN:9780073402406, OMP:WAM]
+def: "A pH growth phenotype where optimum growth occurs between pH 0 and 5.5." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:18:28Z
@@ -2533,7 +2531,7 @@ creation_date: 2013-09-04T16:18:28Z
 [Term]
 id: OMP:0005010
 name: neutrophile
-def: "A pH growth phenotype where optimum growth of the representative member of a taxonomic unit occurs between pH 5.5 and 8.0." [ISBN:780073402406, OMP:WAM]
+def: "A pH growth phenotype where optimum growth occurs between pH 5.5 and 8.0." [ISBN:780073402406, OMP:WAM]
 is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:21:50Z
@@ -2541,7 +2539,7 @@ creation_date: 2013-09-04T16:21:50Z
 [Term]
 id: OMP:0005011
 name: alkaliphile
-def: "A pH growth phenotype where optimum growth of the representative member of a taxonomic unit occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
+def: "A pH growth phenotype where optimum growth of occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:24:24Z
@@ -2582,7 +2580,7 @@ creation_date: 2013-09-09T13:05:24Z
 [Term]
 id: OMP:0005016
 name: halophilic growth
-def: "A solute and water activity phenotype where the growth of the representative member of the taxonomic unit requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
+def: "A solute and water activity phenotype where the growth requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005013 ! solute and water activity phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:06:03Z
@@ -2719,7 +2717,7 @@ creation_date: 2013-09-25T15:59:12Z
 [Term]
 id: OMP:0005033
 name: absence of stress-induced mutagenesis
-def: "A stress-induced mutagenesis phenotype where an organism does not processes of stress induced mutagenesis is not activated within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A stress-induced mutagenesis phenotype where an organism does not process does not occur." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T18:20:22Z
@@ -2805,6 +2803,14 @@ created_by: wmeza
 creation_date: 2013-10-18T18:34:58Z
 
 [Term]
+id: OMP:0005044
+name: altered mitotic recombination
+def: "A mitotic recombination phenotype term where mitotic recombination is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005045 ! mitotic recombination phenotype
+created_by: wmeza
+creation_date: 2014-07-24T13:27:41Z
+
+[Term]
 id: OMP:0005045
 name: mitotic recombination phenotype
 def: "A genetic material phenotype dealing with the exchange, reciprocal or nonreciprocal of genetic material between one DNA  molecule and a homologous region of DNA that occurs  during mitotic cell cycles." [ISBN:9780198529170, OMP:WAM]
@@ -2839,7 +2845,7 @@ creation_date: 2013-10-18T18:39:27Z
 [Term]
 id: OMP:0005049
 name: increased frequency of homologous recombination
-def: "A homologous recombination phenotype where homologous recombination is increased relative to the designated control." [OMP:WAM]
+def: "A homologous recombination phenotype where the prevalence of homologous recombination is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0006002 ! altered homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-23T19:46:15Z
@@ -2864,7 +2870,7 @@ creation_date: 2013-10-25T12:21:41Z
 [Term]
 id: OMP:0005052
 name: absence of homologous recombination
-def: "A homologous recombination phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A homologous recombination phenotype where the process does not occur." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:22:04Z
@@ -2872,7 +2878,7 @@ creation_date: 2013-10-25T12:22:04Z
 [Term]
 id: OMP:0005055
 name: increased frequency of site specific recombination
-def: "A site specific recombination phenotype where site specific recombination is increased relative to the designated control." [OMP:WAM]
+def: "A site specific recombination phenotype where the prevalence of site specific recombination is increased relative to the designated control." [OMP:WAM]
 is_a: OMP:0006005 ! altered site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:14:25Z
@@ -2889,7 +2895,7 @@ creation_date: 2013-10-29T13:15:06Z
 [Term]
 id: OMP:0005057
 name: absence of site specific recombination
-def: "A site specific recombination phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A site specific recombination phenotype where the process does not occur." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:15:28Z
@@ -2904,7 +2910,7 @@ creation_date: 2013-10-29T13:20:16Z
 
 [Term]
 id: OMP:0005059
-name: transposable element transposition phenotype
+name: transposable element transposition
 def: "A genetic material phenotype dealing with DNA sequences that change positions within the genome." [ISBN:9780198529170, OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
@@ -2930,7 +2936,7 @@ creation_date: 2013-11-04T18:09:38Z
 [Term]
 id: OMP:0005062
 name: absence of chromosome segregation
-def: "A chromosome segregation phenotype where process does not occur in the representative member of a taxonomic unit." [OMP:WAM]
+def: "A chromosome segregation phenotype where process does not occur." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:10:07Z
@@ -2963,7 +2969,7 @@ creation_date: 2013-11-04T18:21:56Z
 [Term]
 id: OMP:0005066
 name: absence of gene silencing
-def: "A gene silencing phenotype where the mechanisms are inactive in the representative member of a taxonomic unit." [OMP:WAM]
+def: "A gene silencing phenotype where the mechanisms are inactive." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:33:14Z
@@ -2995,24 +3001,24 @@ creation_date: 2013-11-08T17:11:14Z
 [Term]
 id: OMP:0005070
 name: increased mitotic recombination
-def: "An altered mitotic recombination phenotype where homologous recombination is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005045 ! mitotic recombination phenotype
+def: "An altered mitotic recombination phenotype where the mitotic recombination is increased relative to the designated control." [OMP:WAM]
+is_a: OMP:0005044 ! altered mitotic recombination
 created_by: wmeza
 creation_date: 2013-11-08T17:11:59Z
 
 [Term]
 id: OMP:0005071
 name: decreased mitotic recombination
-def: "A mitotic recombination phenotype where homologous recombination is reduced relative to the designated control." [OMP:WAM]
+def: "An altered mitotic recombination phenotype where mitotic recombination is reduced relative to the designated control." [OMP:WAM]
 synonym: "abolished mitotic recombination " NARROW []
-is_a: OMP:0005045 ! mitotic recombination phenotype
+is_a: OMP:0005044 ! altered mitotic recombination
 created_by: wmeza
 creation_date: 2013-11-08T17:12:27Z
 
 [Term]
 id: OMP:0005072
 name: absence of  mitotic recombination
-def: "A mitotic recombination phenotype where the processes do not occur within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A mitotic recombination phenotype where the process does not occur." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:35:56Z
@@ -3020,7 +3026,7 @@ creation_date: 2013-11-08T17:35:56Z
 [Term]
 id: OMP:0005073
 name: presence of mitotic recombination
-def: "A mitotic recombination phenotype where the process is active within the representative member of a taxonomic unit." [OMP:WAM]
+def: "A mitotic recombination phenotype where the process is active." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:36:20Z
@@ -3183,7 +3189,6 @@ creation_date: 2013-12-06T17:57:46Z
 id: OMP:0005092
 name: decreased resistance toward oxidative stress
 def: "An altered oxidative stress phenotype where resistance is decreased relative to the designated control." [OMP:WAM]
-synonym: "abolished resistance to oxidative stress" NARROW [OMP:WAM]
 synonym: "increased oxidative sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005122 ! altered oxidative stress phenotype
 created_by: wmeza
@@ -3239,7 +3244,6 @@ creation_date: 2013-12-17T13:41:53Z
 id: OMP:0005098
 name: decreased resistance toward UV radiation
 def: "An altered UV radiation phenotype where resistance is decreased relative to the reference strain." [OMP:WAM]
-synonym: "abolished resistance to UV radiation " NARROW [OMP:WAM]
 synonym: "increase in UV sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005125 ! altered UV radiation
 created_by: wmeza
@@ -3655,7 +3659,7 @@ creation_date: 2014-04-30T22:48:59Z
 id: OMP:0006013
 name: altered transposable element transposition phenotype
 def: "A Transposable element transposition phenotype where transposable element transposition is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0005059 ! transposable element transposition phenotype
+is_a: OMP:0005059 ! transposable element transposition
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:30:53Z
 
@@ -3672,14 +3676,14 @@ creation_date: 2014-04-30T22:48:59Z
 [Term]
 id: OMP:0006015
 name: presence of transposable element transposition phenotype
-is_a: OMP:0005059 ! transposable element transposition phenotype
+is_a: OMP:0005059 ! transposable element transposition
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:34:28Z
 
 [Term]
 id: OMP:0006016
 name: absence of transposable element transposition phenotype
-is_a: OMP:0005059 ! transposable element transposition phenotype
+is_a: OMP:0005059 ! transposable element transposition
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:34:28Z
 
@@ -4365,7 +4369,6 @@ creation_date: 2013-09-11T17:11:44Z
 id: OMP:0007010
 name: decreased growth at alkaline pH
 def: "An altered alkaline pH growth range phenotype where the organism's ability to grow at some pH that is higher than pH 7 is decreased." [OMP:DAS]
-synonym: "abolished growth at alkaline pH" NARROW []
 is_a: OMP:0005028 ! altered alkaline pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:14:28Z
@@ -4373,7 +4376,7 @@ creation_date: 2013-09-11T17:14:28Z
 [Term]
 id: OMP:0007011
 name: increased growth at alkaline pH
-def: "An altered alkaline pH growth range phenotype where the organism's ability to grow at some pH that is higher than pH 7 is increased." [OMP:DAS]
+def: "A pH growth range phenotype where the organism's ability to grow at some pH that is higher than pH 7 is increased." [OMP:DAS]
 is_a: OMP:0005028 ! altered alkaline pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:14:56Z
@@ -4431,23 +4434,18 @@ creation_date: 2013-09-17T16:13:20Z
 
 [Term]
 id: OMP:0007022
-name: decreased nucleobase requirement
-def: "A nucleobase requirement phenotype where an organism's requirement for a purine or pyrimidine base is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished purine requirement" NARROW []
-synonym: "abolished pyrimidine requirement" NARROW []
-synonym: "decreased purine requirement" NARROW []
-synonym: "decreased pyrimidine requirement" NARROW []
-is_a: OMP:0007081 ! altered nucleobase requirement
+name: decreased purine/pyrimidine requirement
+def: "A purine/pyrimidine requirement phenotype where an organism's requirement for a purine or pyrimidine base is decreased relative to a designated control." [OMP:DAS]
+synonym: "abolished purine/pyrimidine requirement" EXACT []
+is_a: OMP:0007081 ! altered purine/pyrimidine requirement
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
 
 [Term]
 id: OMP:0007023
-name: increased nucleobase requirement
-def: "A nucleobase requirement phenotype where an organism's requirement for nucleobase bases is increased relative to a designated control." [OMP:DAS]
-synonym: "increase purine requirement" NARROW []
-synonym: "increase pyrimidine requirement" NARROW []
-is_a: OMP:0007081 ! altered nucleobase requirement
+name: increased purine/pyrimidine requirement
+def: "A purine/pyrimidine requirement phenotype where an organism's requirement for purine or pyrimidine bases is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007081 ! altered purine/pyrimidine requirement
 created_by: siegele
 creation_date: 2013-09-17T16:30:36Z
 
@@ -4471,7 +4469,7 @@ creation_date: 2013-09-17T16:33:34Z
 [Term]
 id: OMP:0007027
 name: increased quorum sensing
-def: "An altered quorum sensing phenotype where an organism's ability to monitor its population density is increased relative to a designated control." [OMP:DAS]
+def: "A quorum sensing phenotype where an organism's ability to monitor its population density is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:02Z
@@ -4480,7 +4478,6 @@ creation_date: 2013-09-17T16:45:02Z
 id: OMP:0007028
 name: decreased quorum sensing
 def: "An altered quorum sensing phenotype where an organism's ability to monitor its population density is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished quorum sensing phenotype" NARROW []
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:18Z
@@ -4734,7 +4731,7 @@ creation_date: 2013-10-01T15:46:38Z
 [Term]
 id: OMP:0007062
 name: increased heterocyst formation
-def: "An altered heterocyst formation phenotype where the ability to form heterocysts is increased relative to a designated control." [OMP:DAS]
+def: "A heterocyst formation phenotype where the ability to form heterocysts is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006007 ! altered heterocyst formation phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:31:01Z
@@ -4742,7 +4739,7 @@ creation_date: 2014-01-31T18:31:01Z
 [Term]
 id: OMP:0007063
 name: increased myxospore formation
-def: "An altered myxospore formation phenotype where the ability to form myxospores is increased relative to a designated control." [OMP:DAS]
+def: "A myxospore formation phenotype where the ability to form myxospores is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006009 ! altered myxospore formation phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:45:09Z
@@ -4777,7 +4774,7 @@ creation_date: 2014-02-03T15:55:25Z
 [Term]
 id: OMP:0007067
 name: binary fission
-def: "An asexual reproduction phenotype where the representative member of a taxonomic unit multiplies by binary fission." [OMP:DAS]
+def: "An asexual reproduction phenotype where an organism multiplies by binary fission." [OMP:DAS]
 is_a: OMP:0007066 ! asexual reproduction phenotype
 created_by: siegele
 creation_date: 2014-02-03T15:55:54Z
@@ -4835,7 +4832,7 @@ creation_date: 2014-02-21T15:31:32Z
 [Term]
 id: OMP:0007074
 name: increased growth factor requirement
-def: "An growth factor requirement phenotype where an organism's requirement for one or more growth factors is increased relative to a designated control." [OMP:DAS]
+def: "A growth factor requirement phenotype where an organism's requirement for one or more growth factors is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-02-21T15:42:23Z
@@ -4884,10 +4881,8 @@ creation_date: 2014-04-30T15:52:18Z
 
 [Term]
 id: OMP:0007081
-name: altered nucleobase requirement
-def: "An altered growth factor requirement phenotype where nucleobase requirement is altered relative to a designated control." [OMP:JCH]
-synonym: "altered purine requirement " NARROW []
-synonym: "altered pyrimidine requirement" NARROW []
+name: altered purine/pyrimidine requirement
+def: "An altered growth factor requirement phenotype where purine/pyrimidine requirement is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-04-30T16:03:42Z
@@ -5177,7 +5172,7 @@ creation_date: 2014-07-18T13:53:13Z
 id: OMP:0007117
 name: abolished quorum sensing
 def: "A decreased quorum sensing phenotype where an organism completely loses its ability to perform quorum sensing." [OMP:DAS]
-is_obsolete: true
+is_a: OMP:0007028 ! decreased quorum sensing
 created_by: siegele
 creation_date: 2014-07-18T14:21:06Z
 
