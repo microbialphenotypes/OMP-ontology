@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:07:2014 17:10
+date: 25:07:2014 18:05
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -26,7 +26,6 @@ name: decreased motility
 alt_id: OMP:0000044
 def: "A motility phenotype where motility is decreased relative to a designated control." [OMP:MCC]
 comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
-synonym: "abolished motility" NARROW []
 xref: PATO:0002297
 is_a: OMP:0007001 ! altered motility phenotype
 creation_date: 2011-03-10T07:02:42Z
@@ -179,7 +178,6 @@ creation_date: 2011-04-26T03:10:51Z
 id: OMP:0000022
 name: decreased myxospore formation
 def: "A myxospore formation phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
-synonym: "abolished myxospore formation" NARROW []
 is_a: OMP:0006009 ! altered myxospore formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
@@ -312,7 +310,6 @@ creation_date: 2011-06-06T03:36:04Z
 id: OMP:0000040
 name: decreased cell size
 def: "An altered cell size phenotype where the size of a cell or cells is decreased relative to a designated control." [OMP:MCC]
-synonym: "abolished cell size" NARROW []
 is_a: OMP:0007083 ! altered cell size phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:47:26Z
@@ -1505,8 +1502,6 @@ creation_date: 2011-06-06T04:28:49Z
 id: OMP:0000195
 name: decreased catalase activity
 def: "An altered catalase activity phenotype where catalase activity is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished catalase activity" NARROW []
-synonym: "negative regulation of catalase activity" NARROW [GO:1902552]
 is_a: OMP:0006077 ! altered catalase activity
 created_by: mchibucos
 creation_date: 2011-06-06T04:29:20Z
@@ -2215,8 +2210,7 @@ creation_date: 2012-11-02T02:02:58Z
 id: OMP:0000334
 name: increased resistance to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance is increased relative to a designated control." [OMP:DAS]
-synonym: "abolished sensitivity to aminopyrimidine" NARROW []
-synonym: "decreased sensitivity to antifolate" RELATED []
+synonym: "decreased sensitivity to antifolates" RELATED []
 is_a: OMP:0006018 ! altered resistance to aminopyrimidine phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:38Z
@@ -2360,7 +2354,6 @@ creation_date: 2013-05-23T01:55:34Z
 id: OMP:0000459
 name: increased caffeine resistance
 def: "An altered caffeine resistance phenotype where resistance is increased relative to a designated control." [OMP:WAM]
-synonym: "Abolished caffeine sensitivity" NARROW []
 synonym: "decreased caffeine sensitivity" RELATED []
 is_a: OMP:0005001 ! altered caffeine resistance phenotype
 created_by: mchibucos
@@ -2370,7 +2363,6 @@ creation_date: 2013-05-23T01:58:11Z
 id: OMP:0000460
 name: decreased caffeine resistance
 def: "An altered caffeine resistance phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
-synonym: "abolished resistance to caffeine" NARROW []
 synonym: "increased caffeine sensitivity" RELATED []
 is_a: OMP:0005001 ! altered caffeine resistance phenotype
 created_by: mchibucos
@@ -2415,7 +2407,6 @@ creation_date: 2013-08-22T01:53:29Z
 id: OMP:0000500
 name: decreased aerotaxis
 def: "An altered aerotaxis phenotype where aerotaxis is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished aerotaxis" NARROW []
 is_a: OMP:0007076 ! altered aerotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:20:31Z
@@ -2431,8 +2422,7 @@ creation_date: 2012-11-02T01:21:21Z
 [Term]
 id: OMP:0000503
 name: decreased chemotaxis
-def: "An altered chemotaxis phenotype where chemotaxis is decreased relative to the designated control." [OMP:DAS]
-synonym: "abolished chemotaxis" NARROW []
+def: "An altered chemotaxis phenotype where chemotaxis is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007077 ! altered chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:22:28Z
@@ -2858,7 +2848,6 @@ creation_date: 2013-10-23T19:46:15Z
 id: OMP:0005050
 name: decreased frequency of homologous recombination
 def: "A homologous recombination phenotype where homologous recombination is reduced relative to a designated control." [OMP:WAM]
-synonym: "abolished frequency of homologous recombination" NARROW []
 is_a: OMP:0006002 ! altered homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-24T12:52:41Z
@@ -2931,8 +2920,7 @@ creation_date: 2013-11-04T18:09:09Z
 [Term]
 id: OMP:0005061
 name: decreased frequency of chromosome segregation
-def: "A chromosome segregation phenotype where the occurrence of segregation is decreased relative to the designated control." [OMP:WAM]
-synonym: "abolished frequency of chromosome segregation" NARROW []
+def: "A chromosome segregation phenotype where the occurrence of segregation is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006001 ! altered chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:09:38Z
@@ -2965,7 +2953,6 @@ creation_date: 2013-11-04T18:21:37Z
 id: OMP:0005065
 name: decreased frequency of gene silencing
 def: "A gene silencing phenotype where gene silencing is decreased relative to a designated control." [OMP:WAM]
-synonym: "abolished frequency of gene silencing" NARROW []
 is_a: OMP:0006003 ! altered gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:21:56Z
@@ -2998,7 +2985,6 @@ creation_date: 2013-11-08T17:05:44Z
 id: OMP:0005069
 name: decreased mutation frequency
 def: "A mutation frequency phenotype where the mutation frequency is decreased relative to a designated control." [OMP:WAM]
-synonym: "abolished mutation frequency" NARROW []
 is_a: OMP:0006071 ! altered mutation frequency phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:11:14Z
@@ -3014,8 +3000,7 @@ creation_date: 2013-11-08T17:11:59Z
 [Term]
 id: OMP:0005071
 name: decreased mitotic recombination
-def: "An altered mitotic recombination phenotype where mitotic recombination is reduced relative to the designated control." [OMP:WAM]
-synonym: "abolished mitotic recombination " NARROW []
+def: "An altered mitotic recombination phenotype where mitotic recombination is decreased relative to the designated control." [OMP:WAM]
 is_a: OMP:0005044 ! altered mitotic recombination
 created_by: wmeza
 creation_date: 2013-11-08T17:12:27Z
@@ -3227,10 +3212,9 @@ creation_date: 2013-12-17T13:26:43Z
 
 [Term]
 id: OMP:0005096
-name: decreased resistance toward x-ray radiation
+name: decreased resistance to x-ray radiation
 def: "An altered x-ray radiation phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
-synonym: "abolished resistance toward x-ray radiation" NARROW [OMP:WAM]
-synonym: "increase in x-ray sensitivity " NARROW [OMP:WAM]
+synonym: "increased x-ray sensitivity " NARROW [OMP:WAM]
 is_a: OMP:0005124 ! altered x-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:28:20Z
@@ -3340,7 +3324,6 @@ creation_date: 2014-07-02T18:39:12Z
 id: OMP:0005109
 name: decreased cell diameter
 def: "An altered cell size phenotype where the diameter or a cell or cells is decreased relative to a designated control." [OMP:WAM]
-synonym: "abolished cell diameter" NARROW []
 is_a: OMP:0007083 ! altered cell size phenotype
 created_by: wmeza
 creation_date: 2014-07-02T18:46:00Z
@@ -3530,7 +3513,7 @@ id: OMP:0005133
 name: abolished resistance to x-ray radiation
 def: "A decreased x-ray radiation phenotype where an organism completely loses its resistance to x-ray radiation." [OMP:WAM]
 synonym: "abolished x-ray sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005096 ! decreased resistance toward x-ray radiation
+is_a: OMP:0005096 ! decreased resistance to x-ray radiation
 created_by: wmeza
 creation_date: 2014-07-17T14:28:44Z
 
@@ -3645,8 +3628,7 @@ creation_date: 2014-04-30T22:47:51Z
 [Term]
 id: OMP:0006012
 name: decreased resistance to lantibiotic
-def: "A lantibiotic resistance phenotype where resistance is reduced relative to a designated control." [OMP:WAM]
-synonym: "abolished resistance to lantibiotic" NARROW []
+def: "A lantibiotic resistance phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased sensitivity to lantibiotic" RELATED []
 is_a: OMP:0006011 ! Lantibiotic resistance phenotype
 created_by: jonathanherrera
@@ -3663,8 +3645,7 @@ creation_date: 2014-07-24T16:30:53Z
 [Term]
 id: OMP:0006014
 name: increased resistance to lantibiotic
-def: "A lantibiotic resistance phenotype where resistance is enhanced relative to a designated control." [OMP:WAM]
-synonym: "abolished sensitivity to lantibiotic" NARROW []
+def: "A lantibiotic resistance phenotype where resistance is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased sensitivity to lantibiotic" RELATED []
 is_a: OMP:0006011 ! Lantibiotic resistance phenotype
 created_by: jonathanherrera
@@ -3937,9 +3918,8 @@ creation_date: 2013-10-11T17:40:34Z
 
 [Term]
 id: OMP:0006045
-name: increased resistance to beta-lactam
+name: increased resistance to beta-lactam compound
 def: "A beta-lactam compound resistance phenotype where resistance to a beta-lactam compound is increased relative to a designated control." [OMP:JCH]
-synonym: "abolished sensitivity to beta-lactam" NARROW []
 synonym: "decreased sensitivity to beta-lactam" RELATED []
 is_a: OMP:0006021 ! altered beta-lactam resistance phenotype
 created_by: jonathanherrera
@@ -3975,8 +3955,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006049
 name: increased resistance to bacteriocin
-def: "A bacteriocin compound resistance phenotype where resistance to a bacteriocin compound is increased relative to some reference." [OMP:JCH]
-synonym: "abolished sensitivity to a bacteriocin" RELATED []
+def: "A bacteriocin compound resistance phenotype where resistance to a bacteriocin is increased relative to some reference." [OMP:JCH]
 synonym: "decreased sensitivity to a bacteriocin" RELATED []
 is_a: OMP:0006020 ! altered bacteriocin resistance phenotype
 created_by: jonathanherrera
@@ -4011,9 +3990,8 @@ creation_date: 2013-10-11T17:45:44Z
 
 [Term]
 id: OMP:0006053
-name: increased resistance to azole
+name: increased resistance to azole compound
 def: "An azole compound resistance phenotype where resistance to an azole compound is increased relative to a designated control." [OMP:DAS]
-synonym: "abolished sensitivity to azole" RELATED []
 synonym: "decreased sensitivity to azole" RELATED []
 is_a: OMP:0006019 ! altered azole resistance phenotype
 created_by: jonathanherrera
@@ -4064,7 +4042,6 @@ creation_date: 2013-10-22T19:24:20Z
 id: OMP:0006058
 name: increased resistance to aminoglycoside
 def: "An aminoglycoside compound resistance phenotype where resistance is increased relative to a designated control." [OMP:JCH]
-synonym: "abolished sensitivity to aminoglycoside" NARROW []
 synonym: "decreased sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006017 ! altered resistance to aminoglycoside
 created_by: jonathanherrera
@@ -4285,9 +4262,8 @@ creation_date: 2014-07-15T20:00:41Z
 
 [Term]
 id: OMP:0006082
-name: decrease decarboxylase activity
+name: decreased decarboxylase activity
 def: "An altered decarboxylase activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
-synonym: "abolished decarboxylase activity" NARROW []
 is_a: OMP:0006079 ! altered decarboxylase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
@@ -4372,9 +4348,8 @@ creation_date: 2014-07-15T20:07:54Z
 
 [Term]
 id: OMP:0006092
-name: decrease urease activity
+name: decreased urease activity
 def: "An altered urease activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
-synonym: "abolished urease activity" NARROW []
 is_a: OMP:0006088 ! altered urease activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
@@ -4391,7 +4366,7 @@ creation_date: 2014-07-24T18:43:39Z
 id: OMP:0006094
 name: abolished decarboxylase activity
 def: "A decreased in decarboxylase activity where an organism completely loses its decarboxylase activity." [OMP:JCH]
-is_a: OMP:0006082 ! decrease decarboxylase activity
+is_a: OMP:0006082 ! decreased decarboxylase activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:05:39Z
 
@@ -4415,7 +4390,7 @@ creation_date: 2014-07-24T20:11:44Z
 id: OMP:0006097
 name: abolished urease activity
 def: "A decreased in urease activity where an organism completely loses its urease enzymatic activity." [OMP:JCH]
-is_a: OMP:0006092 ! decrease urease activity
+is_a: OMP:0006092 ! decreased urease activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:17:01Z
 
@@ -4493,28 +4468,12 @@ created_by: jonathanherrera
 creation_date: 2014-07-25T12:04:16Z
 
 [Term]
-id: OMP:0006107
-name: abolished cell size
-def: "A decreased in cell size where an organism completely loses its ability to form a cell size." [OMP:JCH]
-is_a: OMP:0000040 ! decreased cell size
-created_by: jonathanherrera
-creation_date: 2014-07-25T12:06:39Z
-
-[Term]
 id: OMP:0006108
 name: abolish chemotaxis
 def: "A decreased in cell chemotaxis where an organism completely loses the ability to respond to a chemical concentration gradient." [OMP:JCH]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:11:10Z
-
-[Term]
-id: OMP:0006109
-name: abolished colony size
-def: "A decreased colony size where an organism completely loses the ability to form a colony size." [OMP:JCH]
-is_a: OMP:0000241 ! decreased colony size
-created_by: jonathanherrera
-creation_date: 2014-07-25T12:14:25Z
 
 [Term]
 id: OMP:0006110
@@ -4687,7 +4646,7 @@ creation_date: 2014-07-25T14:32:42Z
 [Term]
 id: OMP:0006131
 name: abolished number of flagella
-def: "A decreased in number of flagella where an organism completely loses the ability to form flagella." [OMP:JCH]
+def: "A decreased number of flagella phenotype where the number of flagella per cell is decreased to zero." [OMP:JCH]
 is_a: OMP:0000215 ! decreased number of flagella
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:43:31Z
@@ -4880,14 +4839,14 @@ creation_date: 2014-07-25T15:37:42Z
 id: OMP:0006155
 name: abolished utilization of organic sulfur
 def: "A decreased utilization of organic sulfur where an organism completely loses the ability to utilize organic sulfur." [OMP:JCH]
-is_a: OMP:0007058 ! decreased utilization of organic sulfur
+is_a: OMP:0007058 ! decreased utilization of organic sulfur source
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:40:13Z
 
 [Term]
 id: OMP:0006156
 name: abolished virulence
-def: "A decreased in virulence where an organism completely loses the ability to cause disease in another organism (the host)." [OMP:JCH]
+def: "A decreased virulence phenotype where an organism completely loses the ability to cause disease in another organism (the host)." [OMP:JCH]
 is_a: OMP:0000061 ! decreased virulence
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:41:25Z
@@ -4962,8 +4921,7 @@ creation_date: 2014-07-21T10:25:43Z
 [Term]
 id: OMP:0007008
 name: decreased growth at acidic pH
-def: "An altered acidic pH growth range phenotype where the organism's ability to grow at some pH that is lower than pH 7 is decreased." [OMP:DAS]
-synonym: "abolished acidic pH growth range phenotype" NARROW []
+def: "An altered acidic pH growth range phenotype where the ability to grow at some pH that is lower than pH 7 is decreased." [OMP:DAS]
 is_a: OMP:0005026 ! altered acidic pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:11:01Z
@@ -4979,8 +4937,7 @@ creation_date: 2013-09-11T17:11:44Z
 [Term]
 id: OMP:0007010
 name: decreased growth at alkaline pH
-def: "An altered alkaline pH growth range phenotype where the organism's ability to grow at some pH that is higher than pH 7 is decreased." [OMP:DAS]
-synonym: "abolished growth at alkaline pH" NARROW []
+def: "An altered alkaline pH growth range phenotype where the ability to grow at some pH that is higher than pH 7 is decreased." [OMP:DAS]
 is_a: OMP:0005028 ! altered alkaline pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:14:28Z
@@ -5037,8 +4994,7 @@ creation_date: 2013-09-16T17:30:07Z
 [Term]
 id: OMP:0007021
 name: decreased requirement for amino acid(s)
-def: "An amino acid requirement phenotype where an organism's requirement for one or more amino acids is decreased requirement relative to a designated control." [OMP:DAS]
-synonym: "abolished amino acid requirement" NARROW []
+def: "An amino acid requirement phenotype where the requirement for one or more amino acids is decreased requirement relative to a designated control." [OMP:DAS]
 is_a: OMP:0007074 ! increased growth factor requirement
 is_a: OMP:0007075 ! decreased growth factor requirement
 created_by: siegele
@@ -5087,8 +5043,7 @@ creation_date: 2013-09-17T16:45:02Z
 [Term]
 id: OMP:0007028
 name: decreased quorum sensing
-def: "An altered quorum sensing phenotype where an organism's ability to monitor its population density is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished quorum sensing" NARROW []
+def: "An altered quorum sensing phenotype where the ability to monitor the population density is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006093 ! altered quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:18Z
@@ -5303,9 +5258,8 @@ creation_date: 2013-10-01T15:33:38Z
 
 [Term]
 id: OMP:0007058
-name: decreased utilization of organic sulfur
+name: decreased utilization of organic sulfur source
 def: "An organic sulfur source utilization phenotype where the organism has decreased ability to use an organic S-containing compound as the source of sulfur relative to a designated control." [OMP:DAS]
-synonym: "abolished utilization of organic sulfur phenotype" EXACT []
 is_a: OMP:0007086 ! altered sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:34:00Z
@@ -5405,7 +5359,6 @@ creation_date: 2014-02-21T15:07:59Z
 id: OMP:0007070
 name: decreased carbon source utilization
 def: "An altered carbon source utilization phenotype where the ability to use a particular carbon source is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished carbon source utilization" NARROW []
 is_a: OMP:0007078 ! altered carbon source utilization phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:18:08Z
@@ -5445,8 +5398,7 @@ creation_date: 2014-02-21T15:42:23Z
 [Term]
 id: OMP:0007075
 name: decreased growth factor requirement
-def: "A growth factor requirement phenotype where an organism's requirement for one or more growth factors is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished growth factor requirement" NARROW []
+def: "A growth factor requirement phenotype where the requirement for one or more growth factors is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-02-21T15:42:44Z
@@ -5513,7 +5465,6 @@ creation_date: 2014-07-06T14:41:49Z
 id: OMP:0007084
 name: decreased cell length
 def: "An altered cell size phenotype where the long axis of a cell or cells is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished cell length" NARROW []
 is_a: OMP:0007083 ! altered cell size phenotype
 created_by: siegele
 creation_date: 2014-07-06T14:43:59Z
@@ -5774,14 +5725,6 @@ is_a: OMP:0000128 ! stalked cell phenotype
 is_a: OMP:0007101 ! altered cell shape phenotype
 created_by: siegele
 creation_date: 2014-07-18T13:53:13Z
-
-[Term]
-id: OMP:0007117
-name: abolished quorum sensing
-def: "A decreased quorum sensing phenotype where an organism completely loses its ability to perform quorum sensing." [OMP:DAS]
-is_obsolete: true
-created_by: siegele
-creation_date: 2014-07-18T14:21:06Z
 
 [Typedef]
 id: decreased_relative_to
