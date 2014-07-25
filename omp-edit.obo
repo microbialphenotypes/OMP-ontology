@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:07:2014 19:02
+date: 24:07:2014 20:23
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -4340,7 +4340,6 @@ creation_date: 2014-07-15T20:06:48Z
 id: OMP:0006087
 name: decrease oxidase activity
 def: "An altered oxidase activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
-synonym: "abolished oxidase activity" NARROW []
 is_a: OMP:0006083 ! altered oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
@@ -4396,6 +4395,46 @@ def: "A quorum sensing phenotype were the quorum sensing is altered relative to 
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T18:43:39Z
+
+[Term]
+id: OMP:0006094
+name: abolished decarboxylase activity
+def: "A decreased in decarboxylase activity where an organism completely loses its decarboxylase activity." [OMP:JCH]
+is_a: OMP:0006082 ! decrease decarboxylase activity
+created_by: jonathanherrera
+creation_date: 2014-07-24T20:05:39Z
+
+[Term]
+id: OMP:0006095
+name: abolished enzyme activity
+def: "A decreased in enzyme activity where an organism completely loses its enzymatic activity." [OMP:JCH]
+is_a: OMP:0005103 ! decrease in enzyme activity
+created_by: jonathanherrera
+creation_date: 2014-07-24T20:09:28Z
+
+[Term]
+id: OMP:0006096
+name: abolished oxidase activity
+def: "A decrease in oxidase activity where an organism completely loses its oxidase enzymatic activity." [OMP:JCH]
+is_a: OMP:0006087 ! decrease oxidase activity
+created_by: jonathanherrera
+creation_date: 2014-07-24T20:11:44Z
+
+[Term]
+id: OMP:0006097
+name: abolished urease activity
+def: "A decreased in urease activity where an organism completely loses its urease enzymatic activity." [OMP:JCH]
+is_a: OMP:0006092 ! decrease urease activity
+created_by: jonathanherrera
+creation_date: 2014-07-24T20:17:01Z
+
+[Term]
+id: OMP:0006098
+name: abolished aerotaxis
+def: "A decreased in aerotaxis where an organism completely loses its ability to respond to environmental oxygen." [OMP:JCH]
+is_a: OMP:0000500 ! decreased aerotaxis
+created_by: jonathanherrera
+creation_date: 2014-07-24T20:18:01Z
 
 [Term]
 id: OMP:0007000
