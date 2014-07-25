@@ -114,7 +114,6 @@ creation_date: 2011-04-26T03:01:38Z
 [Term]
 id: OMP:0000013
 name: decreased endospore formation
-def: "An endospore formation phenotype where endospore formation is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000094 ! endospore formation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:15Z
@@ -130,6 +129,7 @@ creation_date: 2011-06-07T10:14:39Z
 id: OMP:0000015
 name: decreased heterocyst formation
 def: "A heterocyst formation phenotype where heterocyst formation is decreased relative to a designated control." [OMP:MCC]
+synonym: "abolished heterocyst formation" NARROW []
 is_a: OMP:0006007 ! altered heterocyst formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:05:35Z
@@ -501,7 +501,7 @@ creation_date: 2011-04-26T05:06:35Z
 id: OMP:0000066
 name: abolished virulence
 def: "A virulence phenotype where an organism completely loses its ability to cause disease in another organism." [OMP:MCC]
-is_obsolete: true
+is_a: OMP:0000068 ! virulence phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T05:09:24Z
 
@@ -684,6 +684,7 @@ creation_date: 2011-06-06T03:42:26Z
 [Term]
 id: OMP:0000088
 name: filamentous form
+def: "A colony form phenotype characterized by growth of thin individual projections in the colony." [OMP:WAM]
 is_a: OMP:0000103 ! colony form phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:08:48Z
@@ -805,7 +806,7 @@ creation_date: 2011-06-07T12:18:14Z
 [Term]
 id: OMP:0000103
 name: colony form phenotype
-def: "A colony morphology phenotype dealing with the basic shape of the colony." [OMP:WAM]
+def: "A colony morphology phenotype dealing with the basic shape or appearance of the colony." [OMP:WAM]
 is_a: OMP:0000100 ! colony morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:41:50Z
@@ -813,7 +814,7 @@ creation_date: 2011-02-02T02:41:50Z
 [Term]
 id: OMP:0000104
 name: colony elevation phenotype
-def: "A colony morphology phenotype dealing with the cross sectional shape of the colony." [OMP:WAM]
+def: "A colony morphology phenotype dealing with the height or vertical growth of the colony." [OMP:WAM]
 is_a: OMP:0000100 ! colony morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:42:12Z
@@ -1183,6 +1184,7 @@ creation_date: 2011-02-21T04:36:21Z
 [Term]
 id: OMP:0000151
 name: entire colony margin
+def: "A colony margin phenotype characterized by smooth growth, with no projections along the edge." [OMP:WAM]
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:47:59Z
@@ -1204,6 +1206,7 @@ creation_date: 2011-02-22T02:27:58Z
 [Term]
 id: OMP:0000154
 name: undulate colony margin
+def: "A colony margin phenotype characterized by wavy growth along the colony edge." [OMP:WAM]
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:11Z
@@ -1211,6 +1214,7 @@ creation_date: 2011-02-02T02:48:11Z
 [Term]
 id: OMP:0000155
 name: lobate colony margin
+def: "A colony margin phenotype characterized by lobed growth along the colony edge." [OMP:WAM]
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:33Z
@@ -1247,6 +1251,7 @@ creation_date: 2011-03-02T02:06:09Z
 [Term]
 id: OMP:0000160
 name: flat colony elevation
+def: "A colony elevation phenotype characterized by no growth above the medium." [OMP:WAM]
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:49:49Z
@@ -1254,6 +1259,7 @@ creation_date: 2011-02-02T02:49:49Z
 [Term]
 id: OMP:0000161
 name: raised colony elevation
+def: "A colony elevation phenotype characterized by uniform growth above the medium." [OMP:WAM]
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:01Z
@@ -1261,6 +1267,7 @@ creation_date: 2011-02-02T02:50:01Z
 [Term]
 id: OMP:0000162
 name: convex colony elevation
+def: "A colony elevation phenotype characterized by sloping up from the edges." [OMP:WAM]
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:11Z
@@ -1268,6 +1275,7 @@ creation_date: 2011-02-02T02:50:11Z
 [Term]
 id: OMP:0000163
 name: pulvinate colony elevation
+def: "A colony elevation phenotype characterized by sloping steeply from edges and very high in the center." [OMP:WAM]
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:30Z
@@ -1275,6 +1283,7 @@ creation_date: 2011-02-02T02:50:30Z
 [Term]
 id: OMP:0000164
 name: umbonate colony elevation
+def: "A colony elevation phenotype characterized by raised growth in the center." [OMP:WAM]
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:42Z
@@ -1289,6 +1298,7 @@ creation_date: 2011-06-07T01:55:00Z
 [Term]
 id: OMP:0000166
 name: circular form
+def: "A colony form phenotype characterized by growth in a round shape." [OMP:WAM]
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:18Z
@@ -1296,6 +1306,7 @@ creation_date: 2011-02-02T02:51:18Z
 [Term]
 id: OMP:0000167
 name: irregular form
+def: "A colony form phenotype characterized by growth without a defined shape or size." [OMP:WAM]
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:35Z
@@ -1303,6 +1314,7 @@ creation_date: 2011-02-02T02:51:35Z
 [Term]
 id: OMP:0000168
 name: rhizoid form
+def: "A colony form phenotype characterized by the growth of thin, branching projections." [OMP:WAM]
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:57Z
@@ -1673,6 +1685,7 @@ creation_date: 2011-02-03T01:33:37Z
 id: OMP:0000215
 name: decreased number of flagella
 def: "An altered flagellum phenotype where there are fewer flagella per cell relative to a designated control." [OMP:DAS]
+synonym: "abolished flagella" NARROW []
 is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:54:51Z
@@ -1777,6 +1790,7 @@ creation_date: 2011-06-07T12:35:30Z
 [Term]
 id: OMP:0000231
 name: growth into medium
+def: "A colony elevation phenotype characterized by growth into the medium not above it." [OMP:WAM]
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:38:26Z
@@ -1835,6 +1849,7 @@ creation_date: 2011-06-07T12:45:12Z
 [Term]
 id: OMP:0000238
 name: crateriform colony elevation
+def: "A colony elevation phenotype characterized by crater like growth." [OMP:WAM]
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T01:11:04Z
@@ -1918,6 +1933,7 @@ creation_date: 2011-06-07T03:05:56Z
 id: OMP:0000249
 name: decreased hemolysis
 def: "An altered hemolysis phenotype were the rate of hemolysis is reduced relative to a designated control." [OMP:WAM]
+synonym: "abolished hemolysis" NARROW []
 is_a: OMP:0000206 ! altered hemolysis phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:19:25Z
@@ -2219,6 +2235,7 @@ creation_date: 2012-11-02T02:04:38Z
 id: OMP:0000335
 name: decreased resistance to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
+synonym: "abolished resistance to aminopyrimidine" NARROW []
 synonym: "increased sensitivity to aminopyrimidine" RELATED []
 is_a: OMP:0006018 ! altered resistance to aminopyrimidine phenotype
 created_by: mchibucos
@@ -2438,16 +2455,14 @@ creation_date: 2012-11-02T01:23:12Z
 [Term]
 id: OMP:0001001
 name: Increased negative DNA supercoiling
-def: "A altered DNA supercoiling phenotype where negative DNA supercoiling is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006126 ! altered DNA supercoiling phenotype
+is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:07Z
 
 [Term]
 id: OMP:0001002
 name: decreased negative DNA supercoiling
-def: "A altered DNA supercoiling phenotype where negative DNA supercoiling is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006126 ! altered DNA supercoiling phenotype
+is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
 
@@ -2696,6 +2711,7 @@ creation_date: 2013-09-25T15:57:03Z
 id: OMP:0005031
 name: decreased stress induced mutagenesis
 def: "An altered stress induced mutagenesis phenotype where the frequency of mutagenesis is decreased relative to the designated control." [OMP:WAM]
+synonym: "abolished stress induced mutagenesis" NARROW []
 is_a: OMP:0006034 ! altered stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:57:46Z
@@ -2952,7 +2968,7 @@ creation_date: 2013-11-04T18:21:37Z
 [Term]
 id: OMP:0005065
 name: decreased frequency of gene silencing
-def: "A gene silencing phenotype where gene silencing is decreased relative to a designated control." [OMP:WAM]
+def: "An gene silencing phenotype where gene silencing is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006003 ! altered gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:21:56Z
@@ -3033,6 +3049,7 @@ creation_date: 2013-11-11T13:41:50Z
 id: OMP:0005075
 name: decreased rate of transposable element transposition
 def: "A transposable element transposition phenotype where DNA sequences change position at a lower frequency relative to the designated control." [OMP:WAM]
+synonym: "abolished transposable element transposition phenotype" NARROW []
 is_a: OMP:0006013 ! altered transposable element transposition phenotype
 created_by: wmeza
 creation_date: 2013-11-11T13:42:44Z
@@ -3160,7 +3177,7 @@ creation_date: 2013-12-06T14:28:16Z
 id: OMP:0005090
 name: decreased resistance to freeze/thawing stress
 def: "An altered freeze/thawing stress phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
-synonym: "increase freeze/thaw sensitivity. " RELATED [OMP:WAM]
+synonym: "decreased freeze/thaw sensitivity. " RELATED [OMP:WAM]
 is_a: OMP:0005121 ! altered freeze/thawing stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:28:46Z
@@ -3340,6 +3357,7 @@ creation_date: 2014-07-03T12:18:43Z
 id: OMP:0005111
 name: decreased rate of biofilm formation
 def: "A altered biofilm phenotype where the rate of biofilm formation is reduced relative to a designated control." [OMP:WAM]
+synonym: "abolished rate of biofilm formation" NARROW []
 is_a: OMP:0005129 ! altered biofilm phenotype
 created_by: wmeza
 creation_date: 2014-07-03T12:19:02Z
@@ -3837,6 +3855,7 @@ creation_date: 2014-07-24T18:10:38Z
 id: OMP:0006036
 name: decreased resistance to macrolide
 def: "A macrolide compound resistance phenotype where resistance to a macrolide compound is decreased relative to a designated control." [OMP:JCH]
+synonym: "abolished resistance to macrolide" NARROW []
 synonym: "increase sensitivity to macrolide" RELATED []
 is_a: OMP:0006031 ! altered macrolide resistance phenotype
 created_by: jonathanherrera
@@ -3911,6 +3930,7 @@ creation_date: 2013-10-11T17:38:00Z
 id: OMP:0006044
 name: decreased resistance to beta-lactam
 def: "A beta-lactam compound resistance phenotype where resistance to a beta-lactam compound is decreased relative to a designated control." [OMP:JCH]
+synonym: "abolished resistance to beta-lactam" NARROW []
 synonym: "increase sensitivity to beta-lactam" RELATED []
 is_a: OMP:0006021 ! altered beta-lactam resistance phenotype
 created_by: jonathanherrera
@@ -3947,6 +3967,7 @@ creation_date: 2013-10-11T17:40:34Z
 id: OMP:0006048
 name: decreased resistance to bacteriocin
 def: "An altered bacteriocin resistance phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
+synonym: "abolished resistance to bacteriocin" NARROW []
 synonym: "increased sensitivity to bacteriocin" RELATED []
 is_a: OMP:0006020 ! altered bacteriocin resistance phenotype
 created_by: jonathanherrera
@@ -3983,6 +4004,7 @@ creation_date: 2013-10-11T17:44:39Z
 id: OMP:0006052
 name: decreased resistance to azole
 def: "An azole compound resistance phenotype where resistance to an azole compound is decreased relative to a designated control." [OMP:DAS]
+synonym: "abolished resistance to azole" NARROW []
 synonym: "increased sensitivity to azole" RELATED []
 is_a: OMP:0006019 ! altered azole resistance phenotype
 created_by: jonathanherrera
@@ -4033,6 +4055,7 @@ creation_date: 2013-10-22T13:29:22Z
 id: OMP:0006057
 name: decreased resistance to aminoglycoside
 def: "An aminoglycoside resistance phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
+synonym: "abolished resistance to aminoglycoside" NARROW []
 synonym: "increased sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006017 ! altered resistance to aminoglycoside
 created_by: jonathanherrera
@@ -4069,6 +4092,7 @@ creation_date: 2013-10-22T19:24:20Z
 id: OMP:0006061
 name: decreased resistance to tetracycline
 def: "A tetracycline compound resistance phenotype where resistance to a tetracycline compound is decreased relative to a designated control." [OMP:JCH]
+synonym: "abolished resistance to tetracycline" NARROW []
 synonym: "increase sensitivity to tetracycline" RELATED []
 is_a: OMP:0005029 ! altered tetracycline resistance phenotype
 created_by: jonathanherrera
@@ -4130,6 +4154,7 @@ creation_date: 2013-10-24T12:57:25Z
 id: OMP:0006067
 name: decreased resistance to chloramphenicol
 def: "A chloramphenicol compound resistance phenotype where resistance to a chloramphenicol compound is decreased relative to a designated control." [OMP:JCH]
+synonym: "abolished resistance to chloramphenicol" NARROW []
 synonym: "increase sensitivity to chloramphenicol" RELATED []
 is_a: OMP:0006025 ! altered chloramphenicol resistance phenotype
 created_by: jonathanherrera
@@ -4478,7 +4503,6 @@ creation_date: 2014-07-25T12:11:10Z
 [Term]
 id: OMP:0006110
 name: abolished endospore formation
-def: "A decreased endospore formation where an organism completely loses the ability to form endospores." [OMP:JCH]
 is_a: OMP:0000013 ! decreased endospore formation
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:21:50Z
@@ -4862,7 +4886,6 @@ creation_date: 2014-07-25T15:43:18Z
 [Term]
 id: OMP:0007000
 name: abolished motility
-def: "A decrease in motility where motility is lost." [OMP:JCH]
 is_a: OMP:0000002 ! decreased motility
 is_a: OMP:0000133 ! lack of cell motility
 created_by: siegele
@@ -4880,16 +4903,14 @@ creation_date: 2014-04-24T17:38:06Z
 [Term]
 id: OMP:0007002
 name: decreased positive DNA supercoiling
-def: "A altered DNA supercoiling phenotype where positive DNA supercoiling is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006126 ! altered DNA supercoiling phenotype
+is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:08:29Z
 
 [Term]
 id: OMP:0007003
 name: increased positive DNA supercoiling
-def: "A altered DNA supercoiling phenotype where positive DNA supercoiling is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006126 ! altered DNA supercoiling phenotype
+is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:09:28Z
 
@@ -4897,6 +4918,7 @@ creation_date: 2013-09-05T16:09:28Z
 id: OMP:0007004
 name: decreased resistance to pteridine
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is decreased relative to a designated control." [CHEBI:27601, OMP:DAS]
+synonym: "abolish resistance to pteridine" NARROW [CHEBI:73913]
 synonym: "increase sensitivity to pteridine" RELATED []
 is_a: OMP:0006032 ! altered pteridine resistance phenotype
 created_by: DeborahSiegele
@@ -5004,6 +5026,7 @@ creation_date: 2013-09-17T16:13:20Z
 id: OMP:0007022
 name: decreased purine/pyrimidine requirement
 def: "A purine/pyrimidine requirement phenotype where an organism's requirement for a purine or pyrimidine base is decreased relative to a designated control." [OMP:DAS]
+synonym: "abolished purine/pyrimidine requirement" EXACT []
 is_a: OMP:0007081 ! altered purine/pyrimidine requirement
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
@@ -5028,6 +5051,7 @@ creation_date: 2013-09-17T16:31:05Z
 id: OMP:0007025
 name: decreased vitamin/enzyme cofactor requirement
 def: "A vitamin/enzyme cofactor requirement phenotype the requirement for a vitamin/enzyme cofactor is decreased relative to a designated control." [OMP:DAS]
+synonym: "abolished vitamin/enzyme cofactor requirement" EXACT []
 is_a: OMP:0007082 ! altered vitamin/enzyme cofactor requirement
 created_by: siegele
 creation_date: 2013-09-17T16:33:34Z
@@ -5052,6 +5076,7 @@ creation_date: 2013-09-17T16:45:18Z
 id: OMP:0007029
 name: decreased utilization of dinitrogen
 def: "A dinitrogen (N2) utilization phenotype where the ability to use N2 as a nitrogen source is decreased relative to a designated control." [OMP:DAS]
+synonym: "abolished dinitrogen utilization phenotype" RELATED []
 is_a: OMP:0006030 ! dinitrogen utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T20:59:52Z
@@ -5076,6 +5101,7 @@ creation_date: 2013-09-28T21:02:26Z
 id: OMP:0007032
 name: decreased utilization of inorganic nitrogen source
 def: "An inorganic nitrogen source utilization phenotype where the ability to use an inorganic N-containing compound as the source of nitrogen is decreased relative to a designated control." [OMP:DAS]
+synonym: "abolished utilization of inorganic nitrogen phenotype" EXACT []
 is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:03:56Z
@@ -5236,6 +5262,7 @@ creation_date: 2013-10-01T15:20:22Z
 id: OMP:0007055
 name: decreased utilization of inorganic sulfur
 def: "An inorganic sulfur source utilization phenotype where the organism has decreased ability to use an inorganic S-containing compound as the source of sulfur relative to a designated control." [OMP:DAS]
+synonym: "abolished utilization of inorganic sulfur phenotype" RELATED []
 is_a: OMP:0007086 ! altered sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:33:08Z
