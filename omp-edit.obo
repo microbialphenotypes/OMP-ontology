@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:07:2014 14:56
+date: 25:07:2014 15:14
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -2224,7 +2224,6 @@ creation_date: 2012-11-02T02:04:38Z
 id: OMP:0000335
 name: decreased resistance to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished resistance to aminopyrimidine" NARROW []
 synonym: "increased sensitivity to aminopyrimidine" RELATED []
 is_a: OMP:0006018 ! altered resistance to aminopyrimidine phenotype
 created_by: mchibucos
@@ -3176,7 +3175,7 @@ creation_date: 2013-12-06T14:28:16Z
 id: OMP:0005090
 name: decreased resistance to freeze/thawing stress
 def: "An altered freeze/thawing stress phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
-synonym: "decreased freeze/thaw sensitivity. " RELATED [OMP:WAM]
+synonym: "increase freeze/thaw sensitivity. " RELATED [OMP:WAM]
 is_a: OMP:0005121 ! altered freeze/thawing stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:28:46Z
@@ -3857,7 +3856,6 @@ creation_date: 2014-07-24T18:10:38Z
 id: OMP:0006036
 name: decreased resistance to macrolide
 def: "A macrolide compound resistance phenotype where resistance to a macrolide compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to macrolide" NARROW []
 synonym: "increase sensitivity to macrolide" RELATED []
 is_a: OMP:0006031 ! altered macrolide resistance phenotype
 created_by: jonathanherrera
@@ -3932,7 +3930,6 @@ creation_date: 2013-10-11T17:38:00Z
 id: OMP:0006044
 name: decreased resistance to beta-lactam
 def: "A beta-lactam compound resistance phenotype where resistance to a beta-lactam compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to beta-lactam" NARROW []
 synonym: "increase sensitivity to beta-lactam" RELATED []
 is_a: OMP:0006021 ! altered beta-lactam resistance phenotype
 created_by: jonathanherrera
@@ -3970,7 +3967,6 @@ creation_date: 2013-10-11T17:40:34Z
 id: OMP:0006048
 name: decreased resistance to bacteriocin
 def: "A bacteriocin compound resistance phenotype where resistance to a bacteriocin compound is decreased relative to some reference." [OMP:JCH]
-synonym: "abolished resistance to bacteriocin" NARROW []
 synonym: "increased sensitivity to bacteriocin" RELATED []
 is_a: OMP:0006020 ! altered bacteriocin resistance phenotype
 created_by: jonathanherrera
@@ -4008,7 +4004,6 @@ creation_date: 2013-10-11T17:44:39Z
 id: OMP:0006052
 name: decreased resistance to azole
 def: "An azole compound resistance phenotype where resistance to an azole compound is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished resistance to azole" NARROW []
 synonym: "increased sensitivity to azole" RELATED []
 is_a: OMP:0006019 ! altered azole resistance phenotype
 created_by: jonathanherrera
@@ -4060,7 +4055,6 @@ creation_date: 2013-10-22T13:29:22Z
 id: OMP:0006057
 name: decreased resistance to aminoglycoside
 def: "An aminoglycoside resistance phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to aminoglycoside" NARROW []
 synonym: "increased sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006017 ! altered resistance to aminoglycoside
 created_by: jonathanherrera
@@ -4160,7 +4154,6 @@ creation_date: 2013-10-24T12:57:25Z
 id: OMP:0006067
 name: decreased resistance to chloramphenicol
 def: "A chloramphenicol compound resistance phenotype where resistance to a chloramphenicol compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to chloramphenicol" NARROW []
 synonym: "increase sensitivity to chloramphenicol" RELATED []
 is_a: OMP:0006025 ! altered chloramphenicol resistance phenotype
 created_by: jonathanherrera
@@ -4748,6 +4741,78 @@ created_by: jonathanherrera
 creation_date: 2014-07-25T14:54:43Z
 
 [Term]
+id: OMP:0006138
+name: abolished resistance to aminopyrimidine
+def: "A decreased in resistance to aminopyrimidine where an organism loses ability to resist aminopyrimidine." [OMP:JCH]
+is_a: OMP:0000335 ! decreased resistance to aminopyrimidine
+created_by: jonathanherrera
+creation_date: 2014-07-25T14:59:06Z
+
+[Term]
+id: OMP:0006139
+name: abolished resistance to azole
+def: "A decreased in resistance to azole where an organism loses the ability to resist azole." [OMP:JCH]
+is_a: OMP:0006052 ! decreased resistance to azole
+created_by: jonathanherrera
+creation_date: 2014-07-25T15:00:48Z
+
+[Term]
+id: OMP:0006140
+name: abolished resistance to bacteriocin
+def: "A decreased in resistance to bacteriocin where an organism completely loses the ability to resist bacteriocin." [OMP:JCH]
+is_a: OMP:0006048 ! decreased resistance to bacteriocin
+created_by: jonathanherrera
+creation_date: 2014-07-25T15:02:13Z
+
+[Term]
+id: OMP:0006141
+name: abolished resistance to beta-lactam
+def: "A decreased in resistance to beta-lactam where an organism completely loses the ability to resist beta-lactam." [OMP:JCh]
+is_a: OMP:0006044 ! decreased resistance to beta-lactam
+created_by: jonathanherrera
+creation_date: 2014-07-25T15:04:08Z
+
+[Term]
+id: OMP:0006142
+name: abolished resistance to chloramphenicol
+def: "A decreased in resistance to chloramphenicol where an organism completely loses the ability to resist chloramphenicol." [OMP:JCH]
+is_a: OMP:0006067 ! decreased resistance to chloramphenicol
+created_by: jonathanherrera
+creation_date: 2014-07-25T15:05:24Z
+
+[Term]
+id: OMP:0006143
+name: abolished resistance to lantibiotic
+def: "A decreased in resistance to lantibiotic where an organism completely loses the ability to resist lantibiotics." [OMP:JCh]
+is_a: OMP:0006012 ! decreased resistance to lantibiotic
+created_by: jonathanherrera
+creation_date: 2014-07-25T15:07:57Z
+
+[Term]
+id: OMP:0006144
+name: abolished resistance to macrolide
+def: "A decreased in resistance to macrolide where an organism completely loses the ability to resist macrolides." [OMP:JCH]
+is_a: OMP:0006036 ! decreased resistance to macrolide
+created_by: jonathanherrera
+creation_date: 2014-07-25T15:09:24Z
+
+[Term]
+id: OMP:0006145
+name: abolished resistance to pteridine
+def: "A decreased in resistance to pteridine where an organism completely loses the ability to resist pteridine." [OMP:JCH]
+is_a: OMP:0007004 ! decreased resistance to pteridine
+created_by: jonathanherrera
+creation_date: 2014-07-25T15:11:04Z
+
+[Term]
+id: OMP:0006146
+name: abolish resistance to quinolone
+def: "A decreased in resistance to quinolone where an organism completely loses the ability to resist quinolones." [OMP:JCH]
+is_a: OMP:0006040 ! decreased resistance to quinolone
+created_by: jonathanherrera
+creation_date: 2014-07-25T15:12:28Z
+
+[Term]
 id: OMP:0007000
 name: abolished motility
 def: "A decrease in motility where motility is lost." [OMP:JCH]
@@ -4785,7 +4850,6 @@ creation_date: 2013-09-05T16:09:28Z
 id: OMP:0007004
 name: decreased resistance to pteridine
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is decreased relative to a designated control." [CHEBI:27601, OMP:DAS]
-synonym: "abolish resistance to pteridine" NARROW [CHEBI:73913]
 synonym: "increase sensitivity to pteridine" RELATED []
 is_a: OMP:0006032 ! altered pteridine resistance phenotype
 created_by: DeborahSiegele
