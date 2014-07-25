@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:07:2014 18:32
+date: 24:07:2014 19:02
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -4390,6 +4390,14 @@ created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
 
 [Term]
+id: OMP:0006093
+name: altered quorum sensing phenotype
+def: "A quorum sensing phenotype were the quorum sensing is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0000069 ! quorum sensing phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-24T18:43:39Z
+
+[Term]
 id: OMP:0007000
 name: abolished motility
 is_a: OMP:0000002 ! decreased motility
@@ -4569,7 +4577,7 @@ creation_date: 2013-09-17T16:33:34Z
 id: OMP:0007027
 name: increased quorum sensing
 def: "A quorum sensing phenotype where an organism's ability to monitor its population density is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0000069 ! quorum sensing phenotype
+is_a: OMP:0006093 ! altered quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:02Z
 
@@ -4577,7 +4585,8 @@ creation_date: 2013-09-17T16:45:02Z
 id: OMP:0007028
 name: decreased quorum sensing
 def: "An altered quorum sensing phenotype where an organism's ability to monitor its population density is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0000069 ! quorum sensing phenotype
+synonym: "abolished quorum sensing" NARROW []
+is_a: OMP:0006093 ! altered quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:18Z
 
@@ -5272,7 +5281,7 @@ creation_date: 2014-07-18T13:53:13Z
 id: OMP:0007117
 name: abolished quorum sensing
 def: "A decreased quorum sensing phenotype where an organism completely loses its ability to perform quorum sensing." [OMP:DAS]
-is_a: OMP:0007028 ! decreased quorum sensing
+is_obsolete: true
 created_by: siegele
 creation_date: 2014-07-18T14:21:06Z
 
