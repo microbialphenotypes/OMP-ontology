@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:07:2014 14:38
+date: 25:07:2014 14:56
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -1677,7 +1677,6 @@ creation_date: 2011-02-03T01:33:37Z
 id: OMP:0000215
 name: decreased number of flagella
 def: "An altered flagellum phenotype where there are fewer flagella per cell relative to a designated control." [OMP:DAS]
-synonym: "abolished flagella" NARROW []
 is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:54:51Z
@@ -3050,7 +3049,6 @@ creation_date: 2013-11-11T13:41:50Z
 id: OMP:0005075
 name: decreased rate of transposable element transposition
 def: "A transposable element transposition phenotype where DNA sequences change position at a lower frequency relative to the designated control." [OMP:WAM]
-synonym: "abolished transposable element transposition phenotype" NARROW []
 is_a: OMP:0006013 ! altered transposable element transposition phenotype
 created_by: wmeza
 creation_date: 2013-11-11T13:42:44Z
@@ -3360,7 +3358,6 @@ creation_date: 2014-07-03T12:18:43Z
 id: OMP:0005111
 name: decreased rate of biofilm formation
 def: "A altered biofilm phenotype where the rate of biofilm formation is reduced relative to a designated control." [OMP:WAM]
-synonym: "abolished rate of biofilm formation" NARROW []
 is_a: OMP:0005129 ! altered biofilm phenotype
 created_by: wmeza
 creation_date: 2014-07-03T12:19:02Z
@@ -4695,6 +4692,62 @@ created_by: jonathanherrera
 creation_date: 2014-07-25T14:32:42Z
 
 [Term]
+id: OMP:0006131
+name: abolished number of flagella
+def: "A decreased in number of flagella where an organism completely loses the ability to form flagella." [OMP:JCH]
+is_a: OMP:0000215 ! decreased number of flagella
+created_by: jonathanherrera
+creation_date: 2014-07-25T14:43:31Z
+
+[Term]
+id: OMP:0006132
+name: abolished number of pili
+def: "A decreased in number of pili where an organism completely loses the ability to form pili." [OMP:JCH]
+is_a: OMP:0000028 ! decreased number of pili
+created_by: jonathanherrera
+creation_date: 2014-07-25T14:46:12Z
+
+[Term]
+id: OMP:0006133
+name: abolished purine/pyrimidine requirement
+def: "A decreased in purine/pyrimidine requirement where an organism completely loses the ability to utilize purine/pyrimidine." [OMP:JCH]
+is_a: OMP:0007022 ! decreased purine/pyrimidine requirement
+created_by: jonathanherrera
+creation_date: 2014-07-25T14:47:24Z
+
+[Term]
+id: OMP:0006134
+name: abolished quorum sensing
+def: "A decreased in quorum sensing where an organism completely loses ability to monitor population density." [OMP:JCH]
+is_a: OMP:0007028 ! decreased quorum sensing
+created_by: jonathanherrera
+creation_date: 2014-07-25T14:49:11Z
+
+[Term]
+id: OMP:0006135
+name: abolished rate of biofilm formation
+def: "A decreased in rate of biofilm formation where an organism completely loses the ability to form biofilm." [OMP:JCH]
+is_a: OMP:0005111 ! decreased rate of biofilm formation
+created_by: jonathanherrera
+creation_date: 2014-07-25T14:50:55Z
+
+[Term]
+id: OMP:0006136
+name: abolished rate of transposable element transposition
+def: "A decreased in rate of transposable element transposition where an organism completely loses the ability the ability." [OMP:JCH]
+is_a: OMP:0005075 ! decreased rate of transposable element transposition
+created_by: jonathanherrera
+creation_date: 2014-07-25T14:52:06Z
+
+[Term]
+id: OMP:0006137
+name: abolished resistance to aminoglycoside
+def: "A decreased resistance to aminoglycosdie where an organism completely loses the ability to resists aminoglycoside." [OMP:JCH]
+is_a: OMP:0006057 ! decreased resistance to aminoglycoside
+created_by: jonathanherrera
+creation_date: 2014-07-25T14:54:43Z
+
+[Term]
 id: OMP:0007000
 name: abolished motility
 def: "A decrease in motility where motility is lost." [OMP:JCH]
@@ -4843,7 +4896,6 @@ creation_date: 2013-09-17T16:13:20Z
 id: OMP:0007022
 name: decreased purine/pyrimidine requirement
 def: "A purine/pyrimidine requirement phenotype where an organism's requirement for a purine or pyrimidine base is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished purine/pyrimidine requirement" EXACT []
 is_a: OMP:0007081 ! altered purine/pyrimidine requirement
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
