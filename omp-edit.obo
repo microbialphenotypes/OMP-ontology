@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:07:2014 20:23
+date: 25:07:2014 13:10
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -1862,6 +1862,7 @@ creation_date: 2011-06-07T01:50:03Z
 [Term]
 id: OMP:0000241
 name: decreased colony size
+def: "A colony size phenotype where colony size is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000179 ! colony size phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T01:55:22Z
@@ -2302,6 +2303,7 @@ creation_date: 2013-05-23T01:37:06Z
 [Term]
 id: OMP:0000452
 name: increased heme utilization
+def: "An altered heme utilization phenotype where the ability to utilize heme is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0007088 ! altered heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:37:51Z
@@ -2309,6 +2311,7 @@ creation_date: 2013-05-23T01:37:51Z
 [Term]
 id: OMP:0000453
 name: decreased heme utilization
+def: "An altered heme utilization phenotype where the ability to utilize heme is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0007088 ! altered heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:39:39Z
@@ -3289,7 +3292,6 @@ creation_date: 2014-04-17T10:54:45Z
 id: OMP:0005103
 name: decrease in enzyme activity
 def: "An altered enzyme activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:WAM]
-synonym: "abolished enzyme activity" NARROW []
 is_a: OMP:0005130 ! altered enzymatic activity phenotype
 created_by: wmeza
 creation_date: 2014-04-17T10:55:05Z
@@ -3324,7 +3326,7 @@ creation_date: 2014-05-07T12:39:57Z
 id: OMP:0005107
 name: decrease in organism lifespan
 def: "A lifespan phenotype where there is a reduction in the duration of an organism's life." [OMP:WAM]
-synonym: "abolish organism lifespan" RELATED []
+synonym: "cell death" RELATED []
 is_a: OMP:0006033 ! altered organism lifespan phenotype
 created_by: wmeza
 creation_date: 2014-05-07T12:40:14Z
@@ -3513,7 +3515,7 @@ creation_date: 2014-07-16T17:48:24Z
 id: OMP:0005131
 name: abolished resistance to oxidative stress
 def: "A decreased resistance toward oxidative stress phenotype where an organism completely loses its resistance to oxidative stress." [OMP:WAM]
-synonym: "abolished oxidative sensitivity. " RELATED [OMP:WAM]
+synonym: "abolished oxidative sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005092 ! decreased resistance toward oxidative stress
 created_by: wmeza
 creation_date: 2014-07-17T14:18:37Z
@@ -4407,7 +4409,7 @@ creation_date: 2014-07-24T20:05:39Z
 [Term]
 id: OMP:0006095
 name: abolished enzyme activity
-def: "A decreased in enzyme activity where an organism completely loses its enzymatic activity." [OMP:JCH]
+def: "A decreased in enzyme activity where the ability of enzymatic activity is lost." [OMP:JCH]
 is_a: OMP:0005103 ! decrease in enzyme activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:09:28Z
@@ -4415,7 +4417,7 @@ creation_date: 2014-07-24T20:09:28Z
 [Term]
 id: OMP:0006096
 name: abolished oxidase activity
-def: "A decrease in oxidase activity where an organism completely loses its oxidase enzymatic activity." [OMP:JCH]
+def: "A decrease in oxidase activity where an organism loses its oxidase enzymatic activity." [OMP:JCH]
 is_a: OMP:0006087 ! decrease oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:11:44Z
@@ -4435,6 +4437,166 @@ def: "A decreased in aerotaxis where an organism completely loses its ability to
 is_a: OMP:0000500 ! decreased aerotaxis
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:18:01Z
+
+[Term]
+id: OMP:0006099
+name: abolished bud formation
+def: "A decrease in bud formation where the ability for bud formation is lost." [OMP:JCH]
+is_a: OMP:0006006 ! decrease bud formation
+created_by: jonathanherrera
+creation_date: 2014-07-25T11:08:59Z
+
+[Term]
+id: OMP:0006100
+name: abolished organism lifespan
+def: "A decrease in organism lifespan where the organisms lifespan is abolished." [OMP:JCH]
+is_a: OMP:0005107 ! decrease in organism lifespan
+created_by: jonathanherrera
+creation_date: 2014-07-25T11:34:46Z
+
+[Term]
+id: OMP:0006101
+name: abolished caffeine resistance
+def: "A caffeine resistance where the ability for resistance is lost." [OMP:JCH]
+synonym: "abolished caffeine sensitivity" RELATED []
+is_a: OMP:0000460 ! decreased caffeine resistance
+created_by: jonathanherrera
+creation_date: 2014-07-25T11:40:57Z
+
+[Term]
+id: OMP:0006102
+name: abolished capsule formation
+def: "A decreased in capsule formation where an organism completely loses the ability to form capsule." [OMP:JCH]
+is_a: OMP:0000050 ! decreased capsule formation
+created_by: jonathanherrera
+creation_date: 2014-07-25T11:52:24Z
+
+[Term]
+id: OMP:0006103
+name: abolished carbon source utilization
+def: "A decreased in carbon source utilization where an organism loses ability to use a carbon source." [OMP:JCH]
+is_a: OMP:0007070 ! decreased carbon source utilization
+created_by: jonathanherrera
+creation_date: 2014-07-25T11:54:11Z
+
+[Term]
+id: OMP:0006104
+name: abolished catalase acitivity
+def: "A decreased in catalase activity where an organism completely loses its catalase enzyme activity." [OMP:JCH]
+is_a: OMP:0000195 ! decreased catalase activity
+created_by: jonathanherrera
+creation_date: 2014-07-25T11:59:12Z
+
+[Term]
+id: OMP:0006105
+name: abolish cell diameter
+def: "A decreased in cell diameter where a cell loses its ability to form a cell diameter." [OMP:JCH]
+is_a: OMP:0005109 ! decreased cell diameter
+created_by: jonathanherrera
+creation_date: 2014-07-25T12:02:28Z
+
+[Term]
+id: OMP:0006106
+name: abolish cell length
+def: "A decreased in cell length where an organism completely loses its ability to form a cell length." [OMP:JCH]
+is_a: OMP:0007084 ! decreased cell length
+created_by: jonathanherrera
+creation_date: 2014-07-25T12:04:16Z
+
+[Term]
+id: OMP:0006107
+name: abolished cell size
+def: "A decreased in cell size where an organism completely loses its ability to form a cell size." [OMP:JCH]
+is_a: OMP:0000040 ! decreased cell size
+created_by: jonathanherrera
+creation_date: 2014-07-25T12:06:39Z
+
+[Term]
+id: OMP:0006108
+name: abolish chemotaxis
+def: "A decreased in cell chemotaxis where an organism completely loses the ability to respond to a chemical concentration gradient." [OMP:JCH]
+is_a: OMP:0000503 ! decreased chemotaxis
+created_by: jonathanherrera
+creation_date: 2014-07-25T12:11:10Z
+
+[Term]
+id: OMP:0006109
+name: abolished colony size
+def: "A decreased colony size where an organism completely loses the ability to form a colony size." [OMP:JCH]
+is_a: OMP:0000241 ! decreased colony size
+created_by: jonathanherrera
+creation_date: 2014-07-25T12:14:25Z
+
+[Term]
+id: OMP:0006110
+name: abolished endospore formation
+is_a: OMP:0000013 ! decreased endospore formation
+created_by: jonathanherrera
+creation_date: 2014-07-25T12:21:50Z
+
+[Term]
+id: OMP:0006111
+name: abolished frequency  of chromosome segregation
+def: "A decreased in frequency of chromosome segregation where an organism completely loses the ability of chromosome segregation." [OMP:JCH]
+is_a: OMP:0005061 ! decreased frequency of chromosome segregation
+created_by: jonathanherrera
+creation_date: 2014-07-25T12:24:27Z
+
+[Term]
+id: OMP:0006112
+name: abolished frequency of gene silencing
+def: "A decreased in frequency of gene silencing where an organism completely loses the ability to silence genes." [OMP:JCH]
+is_a: OMP:0005065 ! decreased frequency of gene silencing
+created_by: jonathanherrera
+creation_date: 2014-07-25T12:40:10Z
+
+[Term]
+id: OMP:0006113
+name: abolished frequency of homologous recombination
+def: "A decreased in frequency of homologous recombination where an organism completely loses the ability of homologous recombination." [OMP:JCH]
+is_a: OMP:0005050 ! decreased frequency of homologous recombination
+created_by: jonathanherrera
+creation_date: 2014-07-25T12:45:20Z
+
+[Term]
+id: OMP:0006114
+name: abolished frequency of site specific recombination
+def: "A decreased in frequency of site specific recombination where an organism completely loses the ability of site specific recombination." [OMP:JCH]
+is_a: OMP:0005056 ! decreased frequency of site specific recombination
+created_by: jonathanherrera
+creation_date: 2014-07-25T12:47:43Z
+
+[Term]
+id: OMP:0006115
+name: abolished gene expression
+def: "A decrease in frequency of chromosome segregation where an organism completely loses the ability of chromosome segregation." [OMP:JCH]
+is_a: OMP:0000268 ! decreased gene expression
+created_by: jonathanherrera
+creation_date: 2014-07-25T12:50:04Z
+
+[Term]
+id: OMP:0006116
+name: abolished growth at acidic pH
+def: "A decreased in growth at acidic pH where an organism completely loses the ability to grow at acidic pH." [OMP:DAS]
+is_a: OMP:0007008 ! decreased growth at acidic pH
+created_by: jonathanherrera
+creation_date: 2014-07-25T12:58:01Z
+
+[Term]
+id: OMP:0006117
+name: abolished growth at alkaline pH
+def: "A decreased in growth at alkaline pH where an organism completely loses the ability to grow at alkaline pH." [OMP:JCH]
+is_a: OMP:0007010 ! decreased growth at alkaline pH
+created_by: jonathanherrera
+creation_date: 2014-07-25T13:02:17Z
+
+[Term]
+id: OMP:0006118
+name: abolished growth rate
+def: "A decreased in growth rate where an organism completely loses the ability to grow at a rate." [OMP:JCH]
+is_a: OMP:0000283 ! decreased growth rate
+created_by: jonathanherrera
+creation_date: 2014-07-25T13:03:29Z
 
 [Term]
 id: OMP:0007000
@@ -5095,6 +5257,7 @@ creation_date: 2014-07-10T12:49:28Z
 [Term]
 id: OMP:0007089
 name: abolished heme utilization
+def: "A decrease in heme utilization where an organism completely loses the ability to utilize heme." [OMP:JCH]
 is_a: OMP:0000453 ! decreased heme utilization
 is_a: OMP:0000454 ! lack of heme utilization
 created_by: siegele
