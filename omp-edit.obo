@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 25:07:2014 18:05
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+date: 28:07:2014 18:05
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -500,8 +500,8 @@ creation_date: 2011-04-26T05:06:35Z
 [Term]
 id: OMP:0000066
 name: abolished virulence
-def: "A virulence phenotype where an organism completely loses its ability to cause disease in another organism." [OMP:MCC]
-is_a: OMP:0000068 ! virulence phenotype
+def: "A decreased virulence phenotype where an organism completely loses the ability to cause disease in another organism (the host)." [OMP:MCC]
+is_a: OMP:0000061 ! decreased virulence
 created_by: mchibucos
 creation_date: 2011-04-26T05:09:24Z
 
@@ -4868,14 +4868,6 @@ created_by: jonathanherrera
 creation_date: 2014-07-25T15:40:13Z
 
 [Term]
-id: OMP:0006156
-name: abolished virulence
-def: "A decreased virulence phenotype where an organism completely loses the ability to cause disease in another organism (the host)." [OMP:JCH]
-is_a: OMP:0000061 ! decreased virulence
-created_by: jonathanherrera
-creation_date: 2014-07-25T15:41:25Z
-
-[Term]
 id: OMP:0006157
 name: abolished vitamin/enzyme cofactor requirement
 def: "A decreased vitamin/enzyme cofactor requirement where an organism loses the ability to utilize vitamin/enzyme cofactor." [OMP:JCH]
@@ -5026,7 +5018,6 @@ creation_date: 2013-09-17T16:13:20Z
 id: OMP:0007022
 name: decreased purine/pyrimidine requirement
 def: "A purine/pyrimidine requirement phenotype where an organism's requirement for a purine or pyrimidine base is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished purine/pyrimidine requirement" EXACT []
 is_a: OMP:0007081 ! altered purine/pyrimidine requirement
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
@@ -5051,7 +5042,6 @@ creation_date: 2013-09-17T16:31:05Z
 id: OMP:0007025
 name: decreased vitamin/enzyme cofactor requirement
 def: "A vitamin/enzyme cofactor requirement phenotype the requirement for a vitamin/enzyme cofactor is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished vitamin/enzyme cofactor requirement" EXACT []
 is_a: OMP:0007082 ! altered vitamin/enzyme cofactor requirement
 created_by: siegele
 creation_date: 2013-09-17T16:33:34Z
