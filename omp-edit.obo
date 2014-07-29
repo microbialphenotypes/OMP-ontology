@@ -1222,6 +1222,7 @@ creation_date: 2011-02-02T02:48:33Z
 [Term]
 id: OMP:0000156
 name: erose colony margin
+def: "A colony margin phenotype characterized by growth that appears jagged or zig-zagged along the edge of the colony." [OMP:WAM]
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:46Z
@@ -1864,6 +1865,7 @@ creation_date: 2011-06-07T01:11:50Z
 [Term]
 id: OMP:0000240
 name: punctiform colony
+def: "A colony size phenotype characterized by growth in multiple pinpoint colonies." [OMP:WAM]
 is_a: OMP:0000179 ! colony size phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T01:50:03Z
@@ -1887,6 +1889,7 @@ creation_date: 2011-06-07T01:58:00Z
 [Term]
 id: OMP:0000243
 name: sectored form
+def: "A colony form phenotype characterized by the formation of wedged shaped sectors of varying colors and appearance in colonies growing on a solid substrate." [OMP:WAM]
 is_a: OMP:0000103 ! colony form phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T02:04:20Z
