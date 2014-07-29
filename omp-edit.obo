@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:07:2014 18:05
+date: 28:07:2014 20:51
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -3093,7 +3093,7 @@ creation_date: 2013-11-15T18:16:03Z
 [Term]
 id: OMP:0005080
 name: dessication stress phenotype
-def: "A stress response dealing with the removal or immobilization of water." [ISBN:9780471138228, OMP:WAM]
+def: "A stress response dealing with the removal or immobilisation of water." [ISBN:9780471138228, OMP:WAM]
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2013-11-18T11:42:37Z
@@ -4493,12 +4493,26 @@ created_by: jonathanherrera
 creation_date: 2014-07-25T12:04:16Z
 
 [Term]
+id: OMP:0006107
+name: presence of outer membrane vesicle phenotype
+is_a: OMP:0000202 ! outer membrane vesicle phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-28T18:19:45Z
+
+[Term]
 id: OMP:0006108
 name: abolish chemotaxis
 def: "A decreased in cell chemotaxis where an organism completely loses the ability to respond to a chemical concentration gradient." [OMP:JCH]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:11:10Z
+
+[Term]
+id: OMP:0006109
+name: absence of outer membrane vesicle phenotype
+is_a: OMP:0000202 ! outer membrane vesicle phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-28T18:19:45Z
 
 [Term]
 id: OMP:0006110
@@ -4868,12 +4882,40 @@ created_by: jonathanherrera
 creation_date: 2014-07-25T15:40:13Z
 
 [Term]
+id: OMP:0006156
+name: altered outer membrane vesicle phenotype
+is_a: OMP:0000202 ! outer membrane vesicle phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-28T18:44:09Z
+
+[Term]
 id: OMP:0006157
 name: abolished vitamin/enzyme cofactor requirement
 def: "A decreased vitamin/enzyme cofactor requirement where an organism loses the ability to utilize vitamin/enzyme cofactor." [OMP:JCH]
 is_a: OMP:0007025 ! decreased vitamin/enzyme cofactor requirement
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:43:18Z
+
+[Term]
+id: OMP:0006158
+name: increase membrane vesicle production
+is_a: OMP:0006156 ! altered outer membrane vesicle phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-28T18:45:05Z
+
+[Term]
+id: OMP:0006159
+name: decrease outer membrane vesicle production
+is_a: OMP:0006156 ! altered outer membrane vesicle phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-28T18:45:05Z
+
+[Term]
+id: OMP:0006160
+name: abolished outer membrane vesicle production
+is_a: OMP:0006159 ! decrease outer membrane vesicle production
+created_by: jonathanherrera
+creation_date: 2014-07-28T20:49:39Z
 
 [Term]
 id: OMP:0007000
