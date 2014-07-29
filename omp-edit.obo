@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 29:07:2014 17:32
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 29:07:2014 18:42
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -863,6 +863,7 @@ creation_date: 2011-02-07T03:38:08Z
 [Term]
 id: OMP:0000110
 name: opaque colony
+def: "A colony opacity phenotype characterized by inability of light to pass through it." [OMP:WAM]
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:45:02Z
@@ -894,6 +895,7 @@ creation_date: 2011-02-07T03:18:13Z
 [Term]
 id: OMP:0000114
 name: translucent colony
+def: "A colony opacity phenotype characterized by an almost clear but distorted, frosted glass appearance." [OMP:WAM]
 synonym: "semi-translucent" EXACT []
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: Adrienne
@@ -902,6 +904,7 @@ creation_date: 2011-02-02T02:45:20Z
 [Term]
 id: OMP:0000115
 name: transparent colony
+def: "A colony opacity phenotype characterized by a clear appearance." [OMP:WAM]
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:45:41Z
@@ -1802,6 +1805,7 @@ creation_date: 2011-06-07T12:38:26Z
 [Term]
 id: OMP:0000232
 name: iridescent colony
+def: "A colony opacity phenotype characterized by varying colors being observed in reflected light." [OMP:WAM]
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:39:13Z
