@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:07:2014 20:51
+date: 29:07:2014 13:58
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -1573,6 +1573,7 @@ creation_date: 2011-03-02T01:41:52Z
 [Term]
 id: OMP:0000202
 name: outer membrane vesicle phenotype
+def: "A cell envelope phenotype where the trait is the ability to utilize outer membrane vesicles that contain biologically active proteins and perform diverse biological processes." [OMP:JCH, PMID:20825345]
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: Adrienne
 creation_date: 2011-03-02T01:43:12Z
@@ -3979,7 +3980,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006049
 name: increased resistance to bacteriocin
-def: "A bacteriocin compound resistance phenotype where resistance to a bacteriocin is increased relative to some reference." [OMP:JCH]
+def: "A bacteriocin compound resistance phenotype where resistance to a bacteriocin is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to a bacteriocin" RELATED []
 is_a: OMP:0006020 ! altered bacteriocin resistance phenotype
 created_by: jonathanherrera
@@ -4498,6 +4499,8 @@ creation_date: 2014-07-25T12:04:16Z
 [Term]
 id: OMP:0006107
 name: presence of outer membrane vesicle phenotype
+def: "A outer membrane vesicle phenotype where a cell or cells possess outer membrane vesicles." [OMP:JCH]
+synonym: "vesiculation " EXACT []
 is_a: OMP:0000202 ! outer membrane vesicle phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:19:45Z
@@ -4513,6 +4516,7 @@ creation_date: 2014-07-25T12:11:10Z
 [Term]
 id: OMP:0006109
 name: absence of outer membrane vesicle phenotype
+def: "A outer membrane vesicle phenotype where a cell or cells lack outer membrane vesicles." [OMP:JCH]
 is_a: OMP:0000202 ! outer membrane vesicle phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:19:45Z
@@ -4887,6 +4891,7 @@ creation_date: 2014-07-25T15:40:13Z
 [Term]
 id: OMP:0006156
 name: altered outer membrane vesicle phenotype
+def: "An outer membrane vesicle phenotype where utilization of outer membrane vesicles is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000202 ! outer membrane vesicle phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:44:09Z
@@ -4901,22 +4906,26 @@ creation_date: 2014-07-25T15:43:18Z
 
 [Term]
 id: OMP:0006158
-name: increase membrane vesicle production
+name: increase membrane vesicle
+def: "A altered outer membrane vesicle phenotype where vesicle utilization is increased relative to a designated control." [OMP:JCH]
+synonym: "hyper-vesiculating" EXACT []
 is_a: OMP:0006156 ! altered outer membrane vesicle phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:45:05Z
 
 [Term]
 id: OMP:0006159
-name: decrease outer membrane vesicle production
+name: decrease outer membrane vesicle
+def: "A altered outer membrane vesicle phenotype where vesicle utilization is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006156 ! altered outer membrane vesicle phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:45:05Z
 
 [Term]
 id: OMP:0006160
-name: abolished outer membrane vesicle production
-is_a: OMP:0006159 ! decrease outer membrane vesicle production
+name: abolished outer membrane vesicle
+def: "A decrease outer membrane vesicle phenotype where an organism loses the ability to utilize outer membrane vesicles." [OMP:JCH]
+is_a: OMP:0006159 ! decrease outer membrane vesicle
 created_by: jonathanherrera
 creation_date: 2014-07-28T20:49:39Z
 
