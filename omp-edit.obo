@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:07:2014 13:58
+date: 29:07:2014 15:53
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -765,7 +765,7 @@ creation_date: 2011-02-02T03:28:13Z
 [Term]
 id: OMP:0000098
 name: altered virulence
-def: "A virulence phenotype where an organism possesses the ability to cause disease in another organism." [OMP:MCC]
+def: "A virulence phenotype where an organisms ability to cause disease in another organism is altered relative to a designated control." [OMP:MCC]
 synonym: "compatible interaction" EXACT []
 synonym: "virulence" EXACT []
 xref: PATO:0002146
@@ -1610,7 +1610,7 @@ creation_date: 2011-06-07T02:26:30Z
 [Term]
 id: OMP:0000206
 name: altered hemolysis phenotype
-def: "A hemolysis phenotype were the rate of hemolysis is changed relative to a designated control." [OMP:WAM]
+def: "A hemolysis phenotype were the rate of hemolysis is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0000099 ! hemolysis phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:17:46Z
@@ -2610,7 +2610,7 @@ creation_date: 2013-09-18T18:35:30Z
 [Term]
 id: OMP:0005018
 name: altered SOS response phenotype
-def: "A SOS response phenotype where the genes are expressed at their basal level." [OMP:WAM]
+def: "A SOS response phenotype where response is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T13:39:34Z
@@ -3576,7 +3576,7 @@ creation_date: 2014-07-24T15:04:15Z
 [Term]
 id: OMP:0006003
 name: altered gene silencing phenotype
-def: "A gene silencing phenotype where gene silencing is decreased relative to a designated control." [OMP:JCH]
+def: "A gene silencing phenotype where gene silencing is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T15:10:50Z
@@ -3659,7 +3659,7 @@ creation_date: 2014-04-30T22:48:59Z
 [Term]
 id: OMP:0006013
 name: altered transposable element transposition phenotype
-def: "A Transposable element transposition phenotype where transposable element transposition is altered relative to a designated control." [OMP:JCH]
+def: "A transposable element transposition phenotype where transposable element transposition is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005059 ! transposable element transposition
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:30:53Z
@@ -4928,6 +4928,14 @@ def: "A decrease outer membrane vesicle phenotype where an organism loses the ab
 is_a: OMP:0006159 ! decrease outer membrane vesicle
 created_by: jonathanherrera
 creation_date: 2014-07-28T20:49:39Z
+
+[Term]
+id: OMP:0006161
+name: altered endospore formation
+def: "A endospore formation phenotype where endospore formation is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0000094 ! endospore formation phenotype
+created_by: jonathanherrera
+creation_date: 2014-07-29T15:37:45Z
 
 [Term]
 id: OMP:0007000
