@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:07:2014 15:53
+date: 29:07:2014 16:20
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -114,14 +114,15 @@ creation_date: 2011-04-26T03:01:38Z
 [Term]
 id: OMP:0000013
 name: decreased endospore formation
-is_a: OMP:0000094 ! endospore formation phenotype
+def: "An altered endospore formation where there are fewer endospore relative to a designated control." [OMP:JCH]
+is_a: OMP:0006161 ! altered endospore formation
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:15Z
 
 [Term]
 id: OMP:0000014
 name: increased endospore formation
-is_a: OMP:0000094 ! endospore formation phenotype
+is_a: OMP:0006161 ! altered endospore formation
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:39Z
 
@@ -799,7 +800,6 @@ creation_date: 2011-02-07T03:45:44Z
 [Term]
 id: OMP:0000102
 name: colony opacity phenotype
-def: "A colony optical phenotype dealing with the degree to which light can pass through the colony." [OMP:WAM]
 is_a: OMP:0000108 ! colony optical phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:18:14Z
@@ -845,6 +845,7 @@ creation_date: 2011-02-02T02:43:25Z
 [Term]
 id: OMP:0000108
 name: colony optical phenotype
+def: "A colony morphology phenotype dealing with the degree to which light can pass through the colony." [OMP:WAM]
 is_a: OMP:0000100 ! colony morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:43:46Z
@@ -861,7 +862,6 @@ creation_date: 2011-02-07T03:38:08Z
 [Term]
 id: OMP:0000110
 name: opaque colony
-def: "A colony opacity phenotype characterized by inability of light to pass through it." [OMP:WAM]
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:45:02Z
@@ -1801,7 +1801,6 @@ creation_date: 2011-06-07T12:38:26Z
 [Term]
 id: OMP:0000232
 name: iridescent colony
-def: "A colony opacity phenotype characterized by varying colors being observed when light passes through it." [OMP:WAM]
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:39:13Z
@@ -2621,23 +2620,23 @@ creation_date: 2013-09-19T13:39:34Z
 id: OMP:0005019
 name: independent observations
 def: "A SOS response where the trait in question is the activation of the SOS mechanism." [OMP:WAM]
-is_obsolete: true
+is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T13:40:06Z
 
 [Term]
 id: OMP:0005020
 name: increased uninduced expression of the SOS response
-def: "An altered uninduced SOS phenotype where the basal level of gene expression is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005053 ! altered uninduced SOS response phenotype 
+def: "A  expression of SOS phenotype where the basal level of gene expression is increased relative to the designated control." [OMP:WAM]
+is_a: OMP:0005018 ! altered SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T15:54:21Z
 
 [Term]
 id: OMP:0005021
 name: decreased uninduced expression of the SOS response
-def: "An altered uninduced SOS phenotype where the basal level of gene expression is decreased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005053 ! altered uninduced SOS response phenotype 
+def: "A expression of SOS phenotype where the basal level of gene expression is decreased relative to the designated control." [OMP:WAM]
+is_a: OMP:0005018 ! altered SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T15:55:16Z
 
@@ -2645,7 +2644,7 @@ creation_date: 2013-09-19T15:55:16Z
 id: OMP:0005022
 name: absence of SOS response
 def: "A SOS response phenotype where the mechanism is not observed or predicted." [OMP:WAM]
-is_a: OMP:0005017 ! SOS response phenotype
+is_a: OMP:0005019 ! independent observations
 created_by: wmeza
 creation_date: 2013-09-19T16:25:09Z
 
@@ -2653,23 +2652,23 @@ creation_date: 2013-09-19T16:25:09Z
 id: OMP:0005023
 name: presence of SOS response
 def: "A SOS response phenotype where the mechanism is observed or predicted." [OMP:WAM]
-is_a: OMP:0005017 ! SOS response phenotype
+is_a: OMP:0005019 ! independent observations
 created_by: wmeza
 creation_date: 2013-09-19T16:25:30Z
 
 [Term]
 id: OMP:0005024
 name: increased induced expression of the SOS response
-def: "An altered induced SOS response phenotype where mechanism's effect is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005054 ! altered induced SOS response phenotype
+def: "A expression of SOS response phenotype where mechanism's effect is increased relative to the designated control." [OMP:WAM]
+is_a: OMP:0005018 ! altered SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-20T13:01:05Z
 
 [Term]
 id: OMP:0005025
 name: decreased induced expression of the SOS response
-def: "An altered induced SOS response phenotype where the effect of the mechanism is decreased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005054 ! altered induced SOS response phenotype
+def: "A expression of the SOS response phenotype where the effect of the mechanism is decreased relative to the designated control." [OMP:WAM]
+is_a: OMP:0005018 ! altered SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-20T13:26:46Z
 
@@ -2889,22 +2888,6 @@ def: "A homologous recombination phenotype where the process does not occur." [O
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:22:04Z
-
-[Term]
-id: OMP:0005053
-name: altered uninduced SOS response phenotype 
-def: "An altered SOS response phenotype dealing with the expression of the genes at the basal level." [OMP:WAM]
-is_a: OMP:0005018 ! altered SOS response phenotype
-created_by: wmeza
-creation_date: 2014-07-29T15:58:02Z
-
-[Term]
-id: OMP:0005054
-name: altered induced SOS response phenotype
-def: "A altered SOS response phenotype dealing with the induced expression of the mechanism." [OMP:WAM]
-is_a: OMP:0005018 ! altered SOS response phenotype
-created_by: wmeza
-creation_date: 2014-07-29T15:58:41Z
 
 [Term]
 id: OMP:0005055
@@ -3233,7 +3216,7 @@ creation_date: 2013-12-17T13:05:40Z
 
 [Term]
 id: OMP:0005094
-name: decrease resistance to gamma ray radiation
+name: decreased resistance to gamma ray radiation
 def: "An altered gamma radiation phenotype where resistance is decreased relative a designated control." [OMP:WAM]
 synonym: "increase in gamma ray sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005123 ! altered gamma ray radiation
@@ -3310,7 +3293,7 @@ creation_date: 2014-04-17T10:54:45Z
 
 [Term]
 id: OMP:0005103
-name: decrease in enzyme activity
+name: decreased in enzyme activity
 def: "An altered enzyme activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:WAM]
 is_a: OMP:0005130 ! altered enzymatic activity phenotype
 created_by: wmeza
@@ -3344,7 +3327,7 @@ creation_date: 2014-05-07T12:39:57Z
 
 [Term]
 id: OMP:0005107
-name: decrease in organism lifespan
+name: decreased in organism lifespan
 def: "A lifespan phenotype where there is a reduction in the duration of an organism's life." [OMP:WAM]
 synonym: "cell death" RELATED []
 is_a: OMP:0006033 ! altered organism lifespan phenotype
@@ -3544,7 +3527,7 @@ id: OMP:0005132
 name: abolished resistance to gamma ray radiation
 def: "A decreased resistance to gamma ray radiation phenotype where an organism completely loses its resistance to gamma ray radiation." [OMP:WAM]
 synonym: "abolished gamma ray sensitivity " RELATED [OMP:WAM]
-is_a: OMP:0005094 ! decrease resistance to gamma ray radiation
+is_a: OMP:0005094 ! decreased resistance to gamma ray radiation
 created_by: wmeza
 creation_date: 2014-07-17T14:23:39Z
 
@@ -3618,7 +3601,7 @@ creation_date: 2014-07-24T15:21:56Z
 
 [Term]
 id: OMP:0006006
-name: decrease bud formation
+name: decreased bud formation
 def: "A bud forming phenotype where the organism(s) has decreased bud formation relative to a designated control." [OMP:WAM]
 synonym: "decrease budding index" EXACT []
 is_a: OMP:0006035 ! altered bud forming phenotype
@@ -4352,7 +4335,7 @@ creation_date: 2014-07-15T20:06:48Z
 
 [Term]
 id: OMP:0006087
-name: decrease oxidase activity
+name: decreased oxidase activity
 def: "An altered oxidase activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
 is_a: OMP:0006083 ! altered oxidase activity
 created_by: jonathanherrera
@@ -4421,7 +4404,7 @@ creation_date: 2014-07-24T20:05:39Z
 id: OMP:0006095
 name: abolished enzyme activity
 def: "A decreased in enzyme activity where the ability of enzymatic activity is lost." [OMP:JCH]
-is_a: OMP:0005103 ! decrease in enzyme activity
+is_a: OMP:0005103 ! decreased in enzyme activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:09:28Z
 
@@ -4429,7 +4412,7 @@ creation_date: 2014-07-24T20:09:28Z
 id: OMP:0006096
 name: abolished oxidase activity
 def: "A decrease in oxidase activity where an organism loses its oxidase enzymatic activity." [OMP:JCH]
-is_a: OMP:0006087 ! decrease oxidase activity
+is_a: OMP:0006087 ! decreased oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:11:44Z
 
@@ -4453,7 +4436,7 @@ creation_date: 2014-07-24T20:18:01Z
 id: OMP:0006099
 name: abolished bud formation
 def: "A decrease in bud formation where the ability for bud formation is lost." [OMP:JCH]
-is_a: OMP:0006006 ! decrease bud formation
+is_a: OMP:0006006 ! decreased bud formation
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:08:59Z
 
@@ -4461,7 +4444,7 @@ creation_date: 2014-07-25T11:08:59Z
 id: OMP:0006100
 name: abolished organism lifespan
 def: "A decrease in organism lifespan where the organisms lifespan is abolished." [OMP:JCH]
-is_a: OMP:0005107 ! decrease in organism lifespan
+is_a: OMP:0005107 ! decreased in organism lifespan
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:34:46Z
 
@@ -4933,7 +4916,7 @@ creation_date: 2014-07-28T18:45:05Z
 
 [Term]
 id: OMP:0006159
-name: decrease outer membrane vesicle
+name: decreased outer membrane vesicle
 def: "A altered outer membrane vesicle phenotype where vesicle utilization is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006156 ! altered outer membrane vesicle phenotype
 created_by: jonathanherrera
@@ -4943,7 +4926,7 @@ creation_date: 2014-07-28T18:45:05Z
 id: OMP:0006160
 name: abolished outer membrane vesicle
 def: "A decrease outer membrane vesicle phenotype where an organism loses the ability to utilize outer membrane vesicles." [OMP:JCH]
-is_a: OMP:0006159 ! decrease outer membrane vesicle
+is_a: OMP:0006159 ! decreased outer membrane vesicle
 created_by: jonathanherrera
 creation_date: 2014-07-28T20:49:39Z
 
