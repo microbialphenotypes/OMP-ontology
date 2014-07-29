@@ -799,6 +799,7 @@ creation_date: 2011-02-07T03:45:44Z
 [Term]
 id: OMP:0000102
 name: colony opacity phenotype
+def: "A colony optical phenotype dealing with the degree to which light can pass through the colony." [OMP:WAM]
 is_a: OMP:0000108 ! colony optical phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:18:14Z
@@ -844,7 +845,6 @@ creation_date: 2011-02-02T02:43:25Z
 [Term]
 id: OMP:0000108
 name: colony optical phenotype
-def: "A colony morphology phenotype dealing with the degree to which light can pass through the colony." [OMP:WAM]
 is_a: OMP:0000100 ! colony morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:43:46Z
@@ -861,6 +861,7 @@ creation_date: 2011-02-07T03:38:08Z
 [Term]
 id: OMP:0000110
 name: opaque colony
+def: "A colony opacity phenotype characterized by inability of light to pass through it." [OMP:WAM]
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:45:02Z
@@ -1800,6 +1801,7 @@ creation_date: 2011-06-07T12:38:26Z
 [Term]
 id: OMP:0000232
 name: iridescent colony
+def: "A colony opacity phenotype characterized by varying colors being observed when light passes through it." [OMP:WAM]
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:39:13Z
@@ -2619,23 +2621,23 @@ creation_date: 2013-09-19T13:39:34Z
 id: OMP:0005019
 name: independent observations
 def: "A SOS response where the trait in question is the activation of the SOS mechanism." [OMP:WAM]
-is_a: OMP:0005017 ! SOS response phenotype
+is_obsolete: true
 created_by: wmeza
 creation_date: 2013-09-19T13:40:06Z
 
 [Term]
 id: OMP:0005020
 name: increased uninduced expression of the SOS response
-def: "A  expression of SOS phenotype where the basal level of gene expression is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005018 ! altered SOS response phenotype
+def: "An altered uninduced SOS phenotype where the basal level of gene expression is increased relative to the designated control." [OMP:WAM]
+is_a: OMP:0005053 ! altered uninduced SOS response phenotype 
 created_by: wmeza
 creation_date: 2013-09-19T15:54:21Z
 
 [Term]
 id: OMP:0005021
 name: decreased uninduced expression of the SOS response
-def: "A expression of SOS phenotype where the basal level of gene expression is decreased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005018 ! altered SOS response phenotype
+def: "An altered uninduced SOS phenotype where the basal level of gene expression is decreased relative to the designated control." [OMP:WAM]
+is_a: OMP:0005053 ! altered uninduced SOS response phenotype 
 created_by: wmeza
 creation_date: 2013-09-19T15:55:16Z
 
@@ -2643,7 +2645,7 @@ creation_date: 2013-09-19T15:55:16Z
 id: OMP:0005022
 name: absence of SOS response
 def: "A SOS response phenotype where the mechanism is not observed or predicted." [OMP:WAM]
-is_a: OMP:0005019 ! independent observations
+is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:09Z
 
@@ -2651,23 +2653,23 @@ creation_date: 2013-09-19T16:25:09Z
 id: OMP:0005023
 name: presence of SOS response
 def: "A SOS response phenotype where the mechanism is observed or predicted." [OMP:WAM]
-is_a: OMP:0005019 ! independent observations
+is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:30Z
 
 [Term]
 id: OMP:0005024
 name: increased induced expression of the SOS response
-def: "A expression of SOS response phenotype where mechanism's effect is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005018 ! altered SOS response phenotype
+def: "An altered induced SOS response phenotype where mechanism's effect is increased relative to the designated control." [OMP:WAM]
+is_a: OMP:0005054 ! altered induced SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-20T13:01:05Z
 
 [Term]
 id: OMP:0005025
 name: decreased induced expression of the SOS response
-def: "A expression of the SOS response phenotype where the effect of the mechanism is decreased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005018 ! altered SOS response phenotype
+def: "An altered induced SOS response phenotype where the effect of the mechanism is decreased relative to the designated control." [OMP:WAM]
+is_a: OMP:0005054 ! altered induced SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-20T13:26:46Z
 
@@ -2887,6 +2889,22 @@ def: "A homologous recombination phenotype where the process does not occur." [O
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:22:04Z
+
+[Term]
+id: OMP:0005053
+name: altered uninduced SOS response phenotype 
+def: "An altered SOS response phenotype dealing with the expression of the genes at the basal level." [OMP:WAM]
+is_a: OMP:0005018 ! altered SOS response phenotype
+created_by: wmeza
+creation_date: 2014-07-29T15:58:02Z
+
+[Term]
+id: OMP:0005054
+name: altered induced SOS response phenotype
+def: "A altered SOS response phenotype dealing with the induced expression of the mechanism." [OMP:WAM]
+is_a: OMP:0005018 ! altered SOS response phenotype
+created_by: wmeza
+creation_date: 2014-07-29T15:58:41Z
 
 [Term]
 id: OMP:0005055
