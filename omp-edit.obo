@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:07:2014 13:32
+date: 30:07:2014 15:22
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -839,6 +839,7 @@ creation_date: 2011-02-02T02:42:37Z
 [Term]
 id: OMP:0000107
 name: colony pigmentation phenotype
+def: "A colony morphology phenotype dealing with pigmentation of the colony." [OMP:WAM]
 is_a: OMP:0000108 ! colony optical phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:43:25Z
@@ -912,6 +913,7 @@ creation_date: 2011-02-02T02:45:41Z
 [Term]
 id: OMP:0000116
 name: pigmented colony
+def: "A colony pigmentation phenotype where pigmentation is observed or predicted." [OMP:WAM]
 is_a: OMP:0000107 ! colony pigmentation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:46:17Z
@@ -1084,6 +1086,7 @@ creation_date: 2011-02-21T04:16:30Z
 [Term]
 id: OMP:0000137
 name: non-pigmented colony
+def: "A colony pigmentation phenotype where pigmentation is not observed or predicted." [OMP:WAM]
 synonym: "colorless colony" EXACT []
 is_a: OMP:0000107 ! colony pigmentation phenotype
 created_by: Adrienne
@@ -1418,6 +1421,7 @@ creation_date: 2011-06-06T03:59:59Z
 [Term]
 id: OMP:0000181
 name: colony with diffusible pigment
+def: "A colony pigmentation phenotype characterized by the presence of diffusible/water soluble pigments that color the agar around the colony." [OMP:WAM]
 is_a: OMP:0000116 ! pigmented colony
 created_by: mchibucos
 creation_date: 2011-06-07T12:18:54Z
@@ -1562,6 +1566,7 @@ creation_date: 2011-02-03T11:38:46Z
 [Term]
 id: OMP:0000200
 name: colony with non-diffusible pigment
+def: "A colony pigmentation phenotype characterized by pigmentation only in the colony." [OMP:WAM]
 is_a: OMP:0000116 ! pigmented colony
 created_by: mchibucos
 creation_date: 2011-06-07T12:19:32Z
