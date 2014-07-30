@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:07:2014 18:42
+date: 30:07:2014 13:32
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -2625,23 +2625,23 @@ creation_date: 2013-09-19T13:39:34Z
 id: OMP:0005019
 name: independent observations
 def: "A SOS response where the trait in question is the activation of the SOS mechanism." [OMP:WAM]
-is_a: OMP:0005017 ! SOS response phenotype
+is_obsolete: true
 created_by: wmeza
 creation_date: 2013-09-19T13:40:06Z
 
 [Term]
 id: OMP:0005020
 name: increased uninduced expression of the SOS response
-def: "A  expression of SOS phenotype where the basal level of gene expression is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005018 ! altered SOS response phenotype
+def: "An altered uninduced SOS phenotype where the basal level of gene expression is increased relative to the designated control." [OMP:WAM]
+is_a: OMP:0005054 ! altered uniduced SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T15:54:21Z
 
 [Term]
 id: OMP:0005021
 name: decreased uninduced expression of the SOS response
-def: "A expression of SOS phenotype where the basal level of gene expression is decreased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005018 ! altered SOS response phenotype
+def: "An altered uninduced SOS phenotype where the basal level of gene expression is decreased relative to the designated control." [OMP:WAM]
+is_a: OMP:0005054 ! altered uniduced SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T15:55:16Z
 
@@ -2649,7 +2649,7 @@ creation_date: 2013-09-19T15:55:16Z
 id: OMP:0005022
 name: absence of SOS response
 def: "A SOS response phenotype where the mechanism is not observed or predicted." [OMP:WAM]
-is_a: OMP:0005019 ! independent observations
+is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:09Z
 
@@ -2657,23 +2657,23 @@ creation_date: 2013-09-19T16:25:09Z
 id: OMP:0005023
 name: presence of SOS response
 def: "A SOS response phenotype where the mechanism is observed or predicted." [OMP:WAM]
-is_a: OMP:0005019 ! independent observations
+is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:30Z
 
 [Term]
 id: OMP:0005024
 name: increased induced expression of the SOS response
-def: "A expression of SOS response phenotype where mechanism's effect is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005018 ! altered SOS response phenotype
+def: "An altered induced SOS response phenotype where the mechanism's effect is increased relative to the designated control." [OMP:WAM]
+is_a: OMP:0005053 ! altered induced SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-20T13:01:05Z
 
 [Term]
 id: OMP:0005025
 name: decreased induced expression of the SOS response
-def: "A expression of the SOS response phenotype where the effect of the mechanism is decreased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005018 ! altered SOS response phenotype
+def: "An altered induced SOS response phenotype where the mechanism's effect is decreased relative to the designated control." [OMP:WAM]
+is_a: OMP:0005053 ! altered induced SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-20T13:26:46Z
 
@@ -2893,6 +2893,22 @@ def: "A homologous recombination phenotype where the process does not occur." [O
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:22:04Z
+
+[Term]
+id: OMP:0005053
+name: altered induced SOS response phenotype
+def: "An altered SOS response phenotype dealing with the induced expression of the mechanism." [OMP:WAM]
+is_a: OMP:0005018 ! altered SOS response phenotype
+created_by: wmeza
+creation_date: 2014-07-30T12:34:21Z
+
+[Term]
+id: OMP:0005054
+name: altered uniduced SOS response phenotype
+def: "An altered SOS response phenotype dealing with the expression of the genes at the basal level." [OMP:WAM]
+is_a: OMP:0005018 ! altered SOS response phenotype
+created_by: wmeza
+creation_date: 2014-07-30T12:58:59Z
 
 [Term]
 id: OMP:0005055
