@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:07:2014 19:12
+date: 30:07:2014 19:43
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -2734,7 +2734,7 @@ creation_date: 2013-09-25T15:57:46Z
 [Term]
 id: OMP:0005032
 name: presence of stress induced mutagenesis
-def: "A stress induced mutagenesis phenotype where the processes have been activated." [OMP:WAM]
+def: "A stress induced mutagenesis phenotype where the processes are observed or predicted." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:59:12Z
@@ -2742,7 +2742,7 @@ creation_date: 2013-09-25T15:59:12Z
 [Term]
 id: OMP:0005033
 name: absence of stress-induced mutagenesis
-def: "A stress-induced mutagenesis phenotype where an organism does not process does not occur." [OMP:WAM]
+def: "A stress-induced mutagenesis phenotype where the process is not observed or predicted." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T18:20:22Z
@@ -2935,7 +2935,7 @@ creation_date: 2013-10-29T13:15:06Z
 [Term]
 id: OMP:0005057
 name: absence of site specific recombination
-def: "A site specific recombination phenotype where the process does not occur." [OMP:WAM]
+def: "A site specific recombination phenotype where the process is not observed or predicted." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:15:28Z
@@ -2943,7 +2943,7 @@ creation_date: 2013-10-29T13:15:28Z
 [Term]
 id: OMP:0005058
 name: presence of site specific recombination
-def: "A site specific recombination phenotype where the process is active." [OMP:WAM]
+def: "A site specific recombination phenotype where the process is observed or predicted." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:20:16Z
