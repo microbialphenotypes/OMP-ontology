@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 30:07:2014 15:22
+date: 30:07:2014 19:12
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -801,6 +801,7 @@ creation_date: 2011-02-07T03:45:44Z
 [Term]
 id: OMP:0000102
 name: colony opacity phenotype
+def: "A colony morphology phenotype dealing with the degree to which light can pass through the colony." [OMP:WAM]
 is_a: OMP:0000108 ! colony optical phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:18:14Z
@@ -847,7 +848,6 @@ creation_date: 2011-02-02T02:43:25Z
 [Term]
 id: OMP:0000108
 name: colony optical phenotype
-def: "A colony morphology phenotype dealing with the degree to which light can pass through the colony." [OMP:WAM]
 is_a: OMP:0000100 ! colony morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:43:46Z
@@ -2950,7 +2950,7 @@ creation_date: 2013-10-29T13:20:16Z
 
 [Term]
 id: OMP:0005059
-name: transposable element transposition
+name: transposable element transposition phenotype
 def: "A genetic material phenotype dealing with DNA sequences that change positions within the genome." [ISBN:9780198529170, OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
@@ -3687,7 +3687,7 @@ creation_date: 2014-04-30T22:48:59Z
 id: OMP:0006013
 name: altered transposable element transposition phenotype
 def: "A transposable element transposition phenotype where transposable element transposition is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0005059 ! transposable element transposition
+is_a: OMP:0005059 ! transposable element transposition phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:30:53Z
 
@@ -3703,14 +3703,16 @@ creation_date: 2014-04-30T22:48:59Z
 [Term]
 id: OMP:0006015
 name: presence of transposable element transposition phenotype
-is_a: OMP:0005059 ! transposable element transposition
+def: "A transposable element transposition phenotype where the process is observed or predicted." [OMP:WAM]
+is_a: OMP:0005059 ! transposable element transposition phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:34:28Z
 
 [Term]
 id: OMP:0006016
 name: absence of transposable element transposition phenotype
-is_a: OMP:0005059 ! transposable element transposition
+def: "A transposable element transposition phenotype where the process is not observed or predicted." [OMP:WAM]
+is_a: OMP:0005059 ! transposable element transposition phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:34:28Z
 
