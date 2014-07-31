@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 30:07:2014 20:11
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 31:07:2014 16:19
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -131,7 +131,6 @@ creation_date: 2011-06-07T10:14:39Z
 id: OMP:0000015
 name: decreased heterocyst formation
 def: "A heterocyst formation phenotype where heterocyst formation is decreased relative to a designated control." [OMP:MCC]
-synonym: "abolished heterocyst formation" NARROW []
 is_a: OMP:0006007 ! altered heterocyst formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:05:35Z
@@ -1699,7 +1698,6 @@ creation_date: 2011-02-03T01:33:37Z
 id: OMP:0000215
 name: decreased number of flagella
 def: "An altered flagellum phenotype where there are fewer flagella per cell relative to a designated control." [OMP:DAS]
-synonym: "abolished flagella" NARROW []
 is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:54:51Z
@@ -1953,7 +1951,6 @@ creation_date: 2011-06-07T03:05:56Z
 id: OMP:0000249
 name: decreased hemolysis
 def: "An altered hemolysis phenotype were the rate of hemolysis is reduced relative to a designated control." [OMP:WAM]
-synonym: "abolished hemolysis" NARROW []
 is_a: OMP:0000206 ! altered hemolysis phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:19:25Z
@@ -2255,7 +2252,6 @@ creation_date: 2012-11-02T02:04:38Z
 id: OMP:0000335
 name: decreased resistance to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished resistance to aminopyrimidine" NARROW []
 synonym: "increased sensitivity to aminopyrimidine" RELATED []
 is_a: OMP:0006018 ! altered resistance to aminopyrimidine phenotype
 created_by: mchibucos
@@ -2731,7 +2727,6 @@ creation_date: 2013-09-25T15:57:03Z
 id: OMP:0005031
 name: decreased stress induced mutagenesis
 def: "An altered stress induced mutagenesis phenotype where the frequency of mutagenesis is decreased relative to the designated control." [OMP:WAM]
-synonym: "abolished stress induced mutagenesis" NARROW []
 is_a: OMP:0006034 ! altered stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:57:46Z
@@ -2932,7 +2927,6 @@ creation_date: 2013-10-29T13:14:25Z
 id: OMP:0005056
 name: decreased frequency of site specific recombination
 def: "A site specific recombination phenotype where site specific recombination is decreased relative to the designated control." [OMP:WAM]
-synonym: "abolished frequency of site specific recombination" NARROW []
 is_a: OMP:0006005 ! altered site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:15:06Z
@@ -3085,7 +3079,6 @@ creation_date: 2013-11-11T13:41:50Z
 id: OMP:0005075
 name: decreased rate of transposable element transposition
 def: "A transposable element transposition phenotype where DNA sequences change position at a lower frequency relative to the designated control." [OMP:WAM]
-synonym: "abolished transposable element transposition phenotype" NARROW []
 is_a: OMP:0006013 ! altered transposable element transposition phenotype
 created_by: wmeza
 creation_date: 2013-11-11T13:42:44Z
@@ -3393,7 +3386,6 @@ creation_date: 2014-07-03T12:18:43Z
 id: OMP:0005111
 name: decreased rate of biofilm formation
 def: "A altered biofilm phenotype where the rate of biofilm formation is reduced relative to a designated control." [OMP:WAM]
-synonym: "abolished rate of biofilm formation" NARROW []
 is_a: OMP:0005129 ! altered biofilm phenotype
 created_by: wmeza
 creation_date: 2014-07-03T12:19:02Z
@@ -3805,7 +3797,7 @@ creation_date: 2013-09-10T17:51:21Z
 [Term]
 id: OMP:0006027
 name: bacteriocin resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to polypeptides synthesized by specific strains of bacteria that are lethal against other strains of the same or related species." [CHEBI:48081]
+def: "An antimicrobial compound resistance phenotype where resistance is to bacteriocins, which are polypeptides synthesized by specific strains of bacteria that are lethal against other strains of the same or related species." [CHEBI:48081]
 synonym: "bacteriocin sensitivity phenotype" RELATED []
 synonym: "colicins" NARROW [GO:0015468]
 synonym: "lantibiotic " NARROW [CHEBI:71644]
@@ -3893,7 +3885,6 @@ creation_date: 2014-07-24T18:10:38Z
 id: OMP:0006036
 name: decreased resistance to macrolide
 def: "A macrolide compound resistance phenotype where resistance to a macrolide compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to macrolide" NARROW []
 synonym: "increase sensitivity to macrolide" RELATED []
 is_a: OMP:0006031 ! altered macrolide resistance phenotype
 created_by: jonathanherrera
@@ -3968,7 +3959,6 @@ creation_date: 2013-10-11T17:38:00Z
 id: OMP:0006044
 name: decreased resistance to beta-lactam
 def: "A beta-lactam compound resistance phenotype where resistance to a beta-lactam compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to beta-lactam" NARROW []
 synonym: "increase sensitivity to beta-lactam" RELATED []
 is_a: OMP:0006021 ! altered beta-lactam resistance phenotype
 created_by: jonathanherrera
@@ -4005,7 +3995,6 @@ creation_date: 2013-10-11T17:40:34Z
 id: OMP:0006048
 name: decreased resistance to bacteriocin
 def: "An altered bacteriocin resistance phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to bacteriocin" NARROW []
 synonym: "increased sensitivity to bacteriocin" RELATED []
 is_a: OMP:0006020 ! altered bacteriocin resistance phenotype
 created_by: jonathanherrera
@@ -4042,7 +4031,6 @@ creation_date: 2013-10-11T17:44:39Z
 id: OMP:0006052
 name: decreased resistance to azole
 def: "An azole compound resistance phenotype where resistance to an azole compound is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished resistance to azole" NARROW []
 synonym: "increased sensitivity to azole" RELATED []
 is_a: OMP:0006019 ! altered azole resistance phenotype
 created_by: jonathanherrera
@@ -4093,7 +4081,6 @@ creation_date: 2013-10-22T13:29:22Z
 id: OMP:0006057
 name: decreased resistance to aminoglycoside
 def: "An aminoglycoside resistance phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to aminoglycoside" NARROW []
 synonym: "increased sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006017 ! altered resistance to aminoglycoside
 created_by: jonathanherrera
@@ -4130,7 +4117,6 @@ creation_date: 2013-10-22T19:24:20Z
 id: OMP:0006061
 name: decreased resistance to tetracycline
 def: "A tetracycline compound resistance phenotype where resistance to a tetracycline compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to tetracycline" NARROW []
 synonym: "increase sensitivity to tetracycline" RELATED []
 is_a: OMP:0005029 ! altered tetracycline resistance phenotype
 created_by: jonathanherrera
@@ -4192,7 +4178,6 @@ creation_date: 2013-10-24T12:57:25Z
 id: OMP:0006067
 name: decreased resistance to chloramphenicol
 def: "A chloramphenicol compound resistance phenotype where resistance to a chloramphenicol compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "abolished resistance to chloramphenicol" NARROW []
 synonym: "increase sensitivity to chloramphenicol" RELATED []
 is_a: OMP:0006025 ! altered chloramphenicol resistance phenotype
 created_by: jonathanherrera
@@ -4790,7 +4775,7 @@ creation_date: 2014-07-25T14:59:06Z
 [Term]
 id: OMP:0006139
 name: abolished resistance to azole
-def: "A decreased in resistance to azole where an organism loses the ability to resist azole." [OMP:JCH]
+def: "A decreased resistance to azole phenotype where an organism loses the ability to resist azole." [OMP:JCH]
 is_a: OMP:0006052 ! decreased resistance to azole
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:00:48Z
@@ -4798,7 +4783,7 @@ creation_date: 2014-07-25T15:00:48Z
 [Term]
 id: OMP:0006140
 name: abolished resistance to bacteriocin
-def: "A decreased in resistance to bacteriocin where an organism completely loses the ability to resist bacteriocin." [OMP:JCH]
+def: "A decreased resistance to bacteriocin phenotype where an organism completely loses the ability to resist bacteriocin." [OMP:JCH]
 is_a: OMP:0006048 ! decreased resistance to bacteriocin
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:02:13Z
@@ -5037,6 +5022,15 @@ created_by: siegele
 creation_date: 2014-07-21T10:25:43Z
 
 [Term]
+id: OMP:0007007
+name: nutrient import phenotype
+def: "A nutrient utilization phenotype where the phenotype involves the uptake of one or more nutrients from the environment." [OMP:DAS]
+xref: GO:0098657 "import into cell"
+is_a: OMP:0006022 ! nutrient utilization phenotype
+created_by: siegele
+creation_date: 2014-07-31T16:11:22Z
+
+[Term]
 id: OMP:0007008
 name: decreased growth at acidic pH
 def: "An altered acidic pH growth range phenotype where the ability to grow at some pH that is lower than pH 7 is decreased." [OMP:DAS]
@@ -5092,6 +5086,30 @@ def: "A nitrogen source utilization phenotype where an organic nitrogen-containi
 is_a: OMP:0006026 ! nitrogen source utilization phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:20:24Z
+
+[Term]
+id: OMP:0007015
+name: altered nutrient import phenotype
+def: "A nutrient uptake phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007007 ! nutrient import phenotype
+created_by: siegele
+creation_date: 2014-07-31T16:16:15Z
+
+[Term]
+id: OMP:0007016
+name: decreased nutrient import
+def: "An altered nutrient import phenotype where import is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007015 ! altered nutrient import phenotype
+created_by: siegele
+creation_date: 2014-07-31T16:16:52Z
+
+[Term]
+id: OMP:0007017
+name: abolished nutrient import
+def: "A decreased nutrient import phenotype where import cannot be detected." [OMP:DAS]
+is_a: OMP:0007016 ! decreased nutrient import
+created_by: siegele
+creation_date: 2014-07-31T16:18:02Z
 
 [Term]
 id: OMP:0007018
@@ -5170,7 +5188,6 @@ creation_date: 2013-09-17T16:45:18Z
 id: OMP:0007029
 name: decreased utilization of dinitrogen
 def: "A dinitrogen (N2) utilization phenotype where the ability to use N2 as a nitrogen source is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished dinitrogen utilization phenotype" RELATED []
 is_a: OMP:0006030 ! dinitrogen utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T20:59:52Z
@@ -5195,7 +5212,6 @@ creation_date: 2013-09-28T21:02:26Z
 id: OMP:0007032
 name: decreased utilization of inorganic nitrogen source
 def: "An inorganic nitrogen source utilization phenotype where the ability to use an inorganic N-containing compound as the source of nitrogen is decreased relative to a designated control." [OMP:DAS]
-synonym: "abolished utilization of inorganic nitrogen phenotype" EXACT []
 is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:03:56Z
@@ -5356,7 +5372,6 @@ creation_date: 2013-10-01T15:20:22Z
 id: OMP:0007055
 name: decreased utilization of inorganic sulfur
 def: "An inorganic sulfur source utilization phenotype where the organism has decreased ability to use an inorganic S-containing compound as the source of sulfur relative to a designated control." [OMP:DAS]
-synonym: "abolished utilization of inorganic sulfur phenotype" RELATED []
 is_a: OMP:0007086 ! altered sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:33:08Z
@@ -5771,14 +5786,6 @@ name: multiple flagella per cell
 is_a: OMP:0007005 ! flagella number phenotype
 created_by: siegele
 creation_date: 2014-07-10T23:02:33Z
-
-[Term]
-id: OMP:0007108
-name: abolished flagella
-def: "A decreased number of flagella phenotype where the number of flagella per cell is decreased to zero." [OMP:DAS]
-is_obsolete: true
-created_by: siegele
-creation_date: 2014-07-10T23:04:16Z
 
 [Term]
 id: OMP:0007109
