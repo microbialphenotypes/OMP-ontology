@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 31:07:2014 16:19
+date: 01:08:2014 00:27
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -4742,9 +4742,9 @@ creation_date: 2014-07-25T14:49:11Z
 
 [Term]
 id: OMP:0006135
-name: abolished rate of biofilm formation
-def: "A decreased in rate of biofilm formation where an organism completely loses the ability to form biofilm." [OMP:JCH]
-is_a: OMP:0005111 ! decreased rate of biofilm formation
+name: abolished biofilm formation
+def: "A decreased biofilm formation phenotype where an organism doesn't produce a biofilm." [OMP:JCH]
+is_a: OMP:0007026 ! decreased biofilm formation
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:50:55Z
 
@@ -5128,6 +5128,14 @@ created_by: siegele
 creation_date: 2013-09-16T17:30:07Z
 
 [Term]
+id: OMP:0007020
+name: increased biofilm formation
+def: "An altered biofilm phenotype where the amount of biofilm is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0005129 ! altered biofilm phenotype
+created_by: siegele
+creation_date: 2014-08-01T00:12:56Z
+
+[Term]
 id: OMP:0007021
 name: decreased requirement for amino acid(s)
 def: "An amino acid requirement phenotype where the requirement for one or more amino acids is decreased requirement relative to a designated control." [OMP:DAS]
@@ -5167,6 +5175,14 @@ def: "A vitamin/enzyme cofactor requirement phenotype the requirement for a vita
 is_a: OMP:0007082 ! altered vitamin/enzyme cofactor requirement
 created_by: siegele
 creation_date: 2013-09-17T16:33:34Z
+
+[Term]
+id: OMP:0007026
+name: decreased biofilm formation
+def: "An altered biofilm phenotype where the amount of biofilm is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0005129 ! altered biofilm phenotype
+created_by: siegele
+creation_date: 2014-08-01T00:12:56Z
 
 [Term]
 id: OMP:0007027
