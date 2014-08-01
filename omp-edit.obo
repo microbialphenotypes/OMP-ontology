@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:08:2014 11:28
+date: 01:08:2014 12:04
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -3378,7 +3378,7 @@ creation_date: 2014-07-02T18:46:00Z
 id: OMP:0005110
 name: increased rate of biofilm formation
 def: "A altered biofilm phenotype where the rate of formation is enhanced relative to a designated control." [OMP:WAM]
-is_a: OMP:0005129 ! altered biofilm phenotype
+is_obsolete: true
 created_by: wmeza
 creation_date: 2014-07-03T12:18:43Z
 
@@ -3386,7 +3386,7 @@ creation_date: 2014-07-03T12:18:43Z
 id: OMP:0005111
 name: decreased rate of biofilm formation
 def: "A altered biofilm phenotype where the rate of biofilm formation is reduced relative to a designated control." [OMP:WAM]
-is_a: OMP:0005129 ! altered biofilm phenotype
+is_obsolete: true
 created_by: wmeza
 creation_date: 2014-07-03T12:19:02Z
 
