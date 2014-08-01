@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:08:2014 14:51
+date: 01:08:2014 16:32
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -206,9 +206,10 @@ creation_date: 2011-06-07T11:19:56Z
 id: OMP:0000026
 name: virus-host interaction phenotype
 alt_id: OMP:0000038
+def: "A virulence phenotype, where the trait in question is the ability of a virus to cause disease in another organism (the host)." [OMP:JCH]
 synonym: "bacteriophage-host interaction phenotype" NARROW []
 synonym: "phage-host interaction phenotype" NARROW []
-is_a: OMP:0000197 ! microbe-host interaction phenotype
+is_a: OMP:0000068 ! virulence phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T02:39:55Z
 
@@ -518,6 +519,8 @@ creation_date: 2011-02-02T03:28:43Z
 id: OMP:0000068
 name: virulence phenotype
 def: "A microbial phenotype, where the trait in question is the ability of an organism to cause disease in another organism (the host)." [OMP:MCC]
+synonym: "infectious agent" BROAD []
+synonym: "pathogen" BROAD []
 is_a: OMP:0000197 ! microbe-host interaction phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:59Z
