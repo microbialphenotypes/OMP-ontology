@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 01:08:2014 12:04
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3.1
+date: 01:08:2014 14:51
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1731,7 +1731,7 @@ creation_date: 2011-02-03T04:43:28Z
 [Term]
 id: OMP:0000219
 name: decarboxylase activity phenotype
-def: "An enzymatic activity phenotype where the cell or cells display the ability to catalyze  the removal of a carboxyl group from a compound." [OMP:JCH]
+def: "An enzymatic activity phenotype where the cell or cells display the ability to catalyze the removal of a carboxyl group from a compound." [OMP:JCH]
 synonym: "Carboxy-lyases" BROAD []
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Adrienne
@@ -1740,7 +1740,7 @@ creation_date: 2011-02-03T04:43:53Z
 [Term]
 id: OMP:0000220
 name: oxidase activity phenotype
-def: "An enzymatic activity phenotype where a cell or cells display the catalyzing of oxidoreduction reactions where the donor is molecular oxygen." [OMP:JCH]
+def: "An enzymatic activity phenotype where a cell or cells display the ability to catalyze oxidoreduction reactions where the donor is molecular oxygen." [OMP:JCH]
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:44:11Z
@@ -1757,6 +1757,7 @@ creation_date: 2011-02-03T04:44:39Z
 [Term]
 id: OMP:0000222
 name: urease activity phenotype
+def: "An enzymatic activity phenotype where the cell or cells display the ability to catalyze the hydrolysis of urea to form ammonia and carbamate." [GO:0009039, IPR:IPR005848, OMP:JCH]
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:45:37Z
