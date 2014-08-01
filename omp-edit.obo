@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 01:08:2014 00:27
-saved-by: siegele
+date: 01:08:2014 11:28
+saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -1245,7 +1245,7 @@ creation_date: 2011-02-02T02:49:05Z
 [Term]
 id: OMP:0000158
 name: curled colony margin
-def: "A colony margin phenotype characterized by growth that appears as waves or curls along the endge of the colony." [OMP:JCH]
+def: "A colony margin phenotype characterized by growth that appears as waves or curls along the edge of the colony." [OMP:JCH]
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:49:30Z
@@ -2113,7 +2113,7 @@ creation_date: 2011-07-21T04:46:29Z
 [Term]
 id: OMP:0000295
 name: presence of negative DNA supercoiling
-def: "A DNA supercoiling phenotype where the DNA twists around its axis in the opposite direction from the clockwise turns of the right-handed double helix." [ISBN:9781613441138]
+def: "A DNA supercoiling phenotype where the DNA twists around its axis in the opposite direction from the clockwise turns of the right-handed double helix is observed or predicted." [ISBN:9781613441138]
 synonym: "underwound DNA phenotype" RELATED []
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
@@ -2122,7 +2122,7 @@ creation_date: 2011-07-21T04:47:38Z
 [Term]
 id: OMP:0000296
 name: presence of positive DNA supercoiling
-def: "A DNA supercoiling phenotype where the DNA twists around its axis in the same direction as the clockwise turns of the right-handed double helix." [ISBN:9781613441138]
+def: "A DNA supercoiling phenotype where the DNA twists around its axis in the same direction as the clockwise turns of the right-handed double helix is observed or predicted." [ISBN:9781613441138]
 synonym: "overwound DNA phenotype" RELATED []
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
@@ -2471,14 +2471,14 @@ creation_date: 2012-11-02T01:23:12Z
 [Term]
 id: OMP:0001001
 name: Increased negative DNA supercoiling
-is_a: OMP:0000294 ! DNA supercoiling phenotype
+is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:07Z
 
 [Term]
 id: OMP:0001002
 name: decreased negative DNA supercoiling
-is_a: OMP:0000294 ! DNA supercoiling phenotype
+is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
 
@@ -2886,7 +2886,7 @@ creation_date: 2013-10-24T12:52:41Z
 [Term]
 id: OMP:0005051
 name: presence of homologous recombination
-def: "A homologous recombination phenotype where the process is active." [OMP:WAM]
+def: "A homologous recombination phenotype where the process is observed or predicted." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:21:41Z
@@ -2894,7 +2894,7 @@ creation_date: 2013-10-25T12:21:41Z
 [Term]
 id: OMP:0005052
 name: absence of homologous recombination
-def: "A homologous recombination phenotype where the process does not occur." [OMP:WAM]
+def: "A homologous recombination phenotype where the process is not observed or predicted." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:22:04Z
@@ -2974,7 +2974,7 @@ creation_date: 2013-11-04T18:09:38Z
 [Term]
 id: OMP:0005062
 name: absence of chromosome segregation
-def: "A chromosome segregation phenotype where process does not occur." [OMP:WAM]
+def: "A chromosome segregation phenotype where process is not observed or predicted." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:10:07Z
@@ -2982,7 +2982,7 @@ creation_date: 2013-11-04T18:10:07Z
 [Term]
 id: OMP:0005063
 name: presence of chromosome segregation
-def: "A chromosome segregation phenotype where the process occurs." [OMP:WAM]
+def: "A chromosome segregation phenotype where the process is observed or predicted." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:12:32Z
@@ -3006,7 +3006,7 @@ creation_date: 2013-11-04T18:21:56Z
 [Term]
 id: OMP:0005066
 name: absence of gene silencing
-def: "A gene silencing phenotype where the mechanisms are inactive." [OMP:WAM]
+def: "A gene silencing phenotype where the mechanisms are not observed or predicted." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:33:14Z
@@ -3014,7 +3014,7 @@ creation_date: 2013-11-04T18:33:14Z
 [Term]
 id: OMP:0005067
 name: presence of gene silencing
-def: "A gene silencing phenotype where the mechanisms are active." [OMP:WAM]
+def: "A gene silencing phenotype where the mechanisms are observed not predicted." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:34:20Z
@@ -3054,7 +3054,7 @@ creation_date: 2013-11-08T17:12:27Z
 [Term]
 id: OMP:0005072
 name: absence of  mitotic recombination
-def: "A mitotic recombination phenotype where the process does not occur." [OMP:WAM]
+def: "A mitotic recombination phenotype where the process is not observed or predicted." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:35:56Z
@@ -3062,7 +3062,7 @@ creation_date: 2013-11-08T17:35:56Z
 [Term]
 id: OMP:0005073
 name: presence of mitotic recombination
-def: "A mitotic recombination phenotype where the process is active." [OMP:WAM]
+def: "A mitotic recombination phenotype where the process is observed or predicted." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:36:20Z
@@ -4695,7 +4695,7 @@ creation_date: 2014-07-25T14:16:27Z
 [Term]
 id: OMP:0006129
 name: absence of negative DNA supercoiling
-def: "A DNA supercoiling phenotype where negative DNA supercoiling does not occur." [OMP:JCH]
+def: "A DNA supercoiling phenotype where negative DNA supercoiling is not seen or observed." [OMP:JCH]
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:32:08Z
@@ -4703,7 +4703,7 @@ creation_date: 2014-07-25T14:32:08Z
 [Term]
 id: OMP:0006130
 name: absence of positive DNA supercoiling
-def: "A DNA supercoiling phenotype where positive DNA supercoiling does not occur." [OMP:JCH]
+def: "A DNA supercoiling phenotype where positive DNA supercoiling is not seen or observed." [OMP:JCH]
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:32:42Z
@@ -4984,14 +4984,14 @@ creation_date: 2014-04-24T17:38:06Z
 [Term]
 id: OMP:0007002
 name: decreased positive DNA supercoiling
-is_a: OMP:0000294 ! DNA supercoiling phenotype
+is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:08:29Z
 
 [Term]
 id: OMP:0007003
 name: increased positive DNA supercoiling
-is_a: OMP:0000294 ! DNA supercoiling phenotype
+is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:09:28Z
 
