@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:08:2014 19:43
+date: 01:08:2014 19:46
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -1187,7 +1187,7 @@ creation_date: 2011-02-02T02:47:43Z
 [Term]
 id: OMP:0000150
 name: nucleoid phenotype
-def: "A cell morphology phenotype where the trait in question is the nucleoid, the region of a bacterial or archaeal cell to which the DNA is confined." [OMP:MCC]
+def: "A genetic material phenotype where the trait in question is the nucleoid, the region of a bacterial or archaeal cell to which the DNA is confined." [OMP:MCC]
 synonym: "genophore" RELATED []
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: adrienne
