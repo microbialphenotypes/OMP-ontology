@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:08:2014 19:46
+date: 01:08:2014 20:29
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -3652,6 +3652,7 @@ creation_date: 2014-07-24T16:24:44Z
 [Term]
 id: OMP:0006008
 name: photosynthesis phenotype
+def: "A phototrophic phenotype where light is used as an energy source to fix carbon to create chemical energy in the form of carbohydrate molecules." [OMP:JCH]
 is_a: OMP:0007064 ! phototrophic phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-01T14:18:12Z
