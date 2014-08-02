@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:08:2014 18:40
+date: 01:08:2014 19:43
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -835,6 +835,7 @@ creation_date: 2011-06-06T03:43:38Z
 [Term]
 id: OMP:0000106
 name: colony sheen phenotype
+def: "A colony surface phenotype characterized by a soft luster on the surface." [OMP:JCH]
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:42:37Z
@@ -1098,13 +1099,14 @@ creation_date: 2011-02-02T02:46:39Z
 id: OMP:0000138
 name: shiny colony sheen
 synonym: "smooth" RELATED []
-is_a: OMP:0000106 ! colony sheen phenotype
+is_obsolete: true
 created_by: Adrienne
 creation_date: 2011-02-02T02:47:04Z
 
 [Term]
 id: OMP:0000139
 name: dull colony sheen
+def: "A colony form phenotype characterized by a dull luster on the surface." [OMP:JCH]
 synonym: "matte" RELATED []
 synonym: "rough" RELATED []
 is_a: OMP:0000106 ! colony sheen phenotype
@@ -1800,6 +1802,7 @@ creation_date: 2011-06-07T12:34:58Z
 [Term]
 id: OMP:0000230
 name: rugose colony surface texture
+def: "A colony texture phenotype that is characterized by a surface that is wrinkled." [OMP:JCH]
 is_a: OMP:0000229 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:35:30Z
@@ -1875,6 +1878,7 @@ creation_date: 2011-06-07T01:11:04Z
 [Term]
 id: OMP:0000239
 name: plicated colony surface texture
+def: "A colony texture phenotype that is characterized by a surface arranged in parallel folds or ridges; pleated." [OMP:JCH]
 is_a: OMP:0000229 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T01:11:50Z
