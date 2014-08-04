@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:08:2014 18:21
+date: 04:08:2014 18:30
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -5725,6 +5725,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007095
 name: increased motility by gliding
+def: "An increase motility phenotype where motility by gliding is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -5732,6 +5733,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007096
 name: increased motility by swarming
+def: "An increase motility phenotype where motility by swarming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -5739,6 +5741,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007097
 name: increased motility by swimming
+def: "An increase motility phenotype where motility by swimming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -5746,6 +5749,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007098
 name: increased motility by twitching
+def: "An increase motility phenotype where motility by twitching is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
