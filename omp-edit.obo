@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:08:2014 14:09
+date: 04:08:2014 18:21
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -851,6 +851,7 @@ creation_date: 2011-02-02T02:43:25Z
 [Term]
 id: OMP:0000108
 name: colony optical phenotype
+def: "A colony morphology phenotype dealing with the interaction of light and the colony." [OMP:JCH]
 is_a: OMP:0000100 ! colony morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:43:46Z
@@ -1151,6 +1152,7 @@ creation_date: 2011-02-21T04:28:30Z
 [Term]
 id: OMP:0000145
 name: nucleoid localization
+def: "A nucleoid phenotype consisting of the nucleoid region location within the cell." [OMP:JCH]
 is_a: OMP:0000150 ! nucleoid phenotype
 created_by: adrienne
 creation_date: 2011-02-21T04:30:32Z
@@ -5691,6 +5693,7 @@ creation_date: 2014-07-10T21:50:33Z
 [Term]
 id: OMP:0007091
 name: decreased motility by gliding
+def: "A decrease motility phenotype where motility by gliding is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -5698,6 +5701,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007092
 name: decreased motility by swarming
+def: "A decrease motility phenotype where motility by swarming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -5705,6 +5709,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007093
 name: decreased motility by swimming
+def: "A decrease motility phenotype where motility by swimming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -5712,6 +5717,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007094
 name: decreased motility by twitching
+def: "A decrease motility phenotype where motility by twitching is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
