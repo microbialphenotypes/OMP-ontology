@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 04:08:2014 13:02
+date: 04:08:2014 14:09
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -1436,6 +1436,7 @@ creation_date: 2011-06-07T12:18:54Z
 [Term]
 id: OMP:0000182
 name: uncharacterized gas production
+def: "A chemical production phenotype where an uncharacterized gas is produced." [OMP:JCH]
 is_a: OMP:0000192 ! chemical production phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:52:30Z
@@ -1514,6 +1515,7 @@ creation_date: 2011-02-02T03:35:15Z
 [Term]
 id: OMP:0000192
 name: chemical production phenotype
+def: "The chemical reactions and pathways resulting in the formation of chemicals." [OMP:JCH]
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:24:08Z
@@ -1779,6 +1781,7 @@ creation_date: 2011-06-06T04:53:09Z
 [Term]
 id: OMP:0000225
 name: carbon dioxide production
+def: "A chemical production phenotype where carbon dioxide is produced." [OMP:JCH]
 is_a: OMP:0000192 ! chemical production phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:53:37Z
@@ -2200,6 +2203,7 @@ creation_date: 2011-07-21T05:49:51Z
 [Term]
 id: OMP:0000311
 name: amino acid biosynthesis phenotype
+def: "A small molecule biosynthesis phenotype dealing with the metabolic pathways which takes precursor molecules and synthesize amino acids by remodeling the carbon skeleton and adding an amino group or sulfur." [OMP:JCH]
 is_a: OMP:0000310 ! small molecule biosynthesis phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:50:25Z
