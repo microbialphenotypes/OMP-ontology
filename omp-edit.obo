@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:08:2014 20:29
+date: 04:08:2014 13:02
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -2192,6 +2192,7 @@ creation_date: 2011-07-21T05:47:06Z
 [Term]
 id: OMP:0000310
 name: small molecule biosynthesis phenotype
+def: "A biosynthetic phenotype dealing with the chemical reactions and pathways resulting in the formation of small molecules, any low molecular weight, monomeric, non-encoded molecule." [OMP:JCH]
 is_a: OMP:0000309 ! biosynthetic phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:49:51Z
@@ -4979,6 +4980,7 @@ creation_date: 2014-07-29T18:03:06Z
 [Term]
 id: OMP:0007000
 name: abolished motility
+def: "A decrease in motility phenotype where an organism loses the ability to be motile." [OMP:JCH]
 is_a: OMP:0000002 ! decreased motility
 created_by: siegele
 creation_date: 2014-06-29T14:10:40Z
