@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:08:2014 18:06
+date: 05:08:2014 18:45
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -1518,7 +1518,7 @@ creation_date: 2011-02-02T03:35:15Z
 [Term]
 id: OMP:0000192
 name: chemical production phenotype
-def: "The chemical reactions and pathways resulting in the formation of chemicals." [OMP:JCH]
+def: "A metabolic phenotype that deals with the chemical reactions and pathways resulting in the formation of chemicals." [OMP:JCH]
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:24:08Z
@@ -1759,7 +1759,7 @@ creation_date: 2011-02-03T04:44:11Z
 [Term]
 id: OMP:0000221
 name: enzymatic activity phenotype
-def: "A metabolic phenotype which deals with selective catalysts that modify rate and specificity of metabolic reactions." [OMP:JCH]
+def: "A metabolic phenotype that deals with selective catalysts that modify rate and specificity of metabolic reactions." [OMP:JCH]
 is_a: OMP:0000180 ! metabolic phenotype
 is_a: OMP:0000269 ! protein activity phenotype
 created_by: Adrienne
@@ -1776,6 +1776,7 @@ creation_date: 2011-02-03T04:45:37Z
 [Term]
 id: OMP:0000224
 name: energy metabolism phenotype
+def: "A metabolic phenotype that deals with the specific process an organism uses to produce energy carriers." [OMP:JCH]
 synonym: "bioenergetics" EXACT []
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: mchibucos
@@ -1974,6 +1975,7 @@ creation_date: 2011-06-07T03:19:25Z
 [Term]
 id: OMP:0000252
 name: metabolite accumulation
+def: "A metabolic phenotype that deals with the accumulation of small intermediate or products of metabolism." [OMP:JCH]
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T12:51:15Z
@@ -2189,7 +2191,7 @@ creation_date: 2011-07-21T05:46:05Z
 [Term]
 id: OMP:0000309
 name: biosynthetic phenotype
-def: "The chemical reactions and pathways resulting in the formation of substances; typically the energy-requiring part of metabolism in which simpler substances are transformed into more complex ones." [GO:0009058]
+def: "A metabolic phenotype dealing with the chemical reactions and pathways resulting in the formation of substances; typically the energy-requiring part of metabolism in which simpler substances are transformed into more complex ones." [GO:0009058]
 synonym: "Biosynthesis" EXACT []
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: mchibucos
@@ -2331,6 +2333,8 @@ creation_date: 2012-11-04T02:55:41Z
 [Term]
 id: OMP:0000450
 name: trace element utilization phenotype
+def: "A metabolic phenotype which is any chemical element required by living organisms in minute amounts." [OMP:JCH]
+synonym: "micronutrient " EXACT []
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:35:26Z
@@ -5504,6 +5508,7 @@ creation_date: 2014-01-31T18:45:09Z
 id: OMP:0007064
 name: phototrophic phenotype
 def: "An energy metabolism phenotype where light is used as the energy source." [ISBN:978-0-07-340240-6, OMP:DAS]
+synonym: "phototroph " RELATED []
 is_a: OMP:0000224 ! energy metabolism phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:49:00Z
