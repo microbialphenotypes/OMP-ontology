@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:08:2014 17:54
+date: 05:08:2014 18:06
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -5479,6 +5479,7 @@ creation_date: 2013-10-01T15:34:09Z
 [Term]
 id: OMP:0007061
 name: iron source utilization phenotype
+def: "A nutrient utilization phenotype where the nutrient is being used as a source of iron." [OMP:JCH]
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:46:38Z
