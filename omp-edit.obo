@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:08:2014 13:38
+date: 05:08:2014 13:57
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -1308,7 +1308,8 @@ creation_date: 2011-02-02T02:50:42Z
 [Term]
 id: OMP:0000165
 name: increased colony size
-is_a: OMP:0000179 ! colony size phenotype
+def: "A colony size phenotype where colony size is increased relative to a designated control." [OMP:JCH]
+is_a: OMP:0006164 ! altered colony size phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T01:55:00Z
 
@@ -1900,7 +1901,7 @@ creation_date: 2011-06-07T01:50:03Z
 id: OMP:0000241
 name: decreased colony size
 def: "A colony size phenotype where colony size is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000179 ! colony size phenotype
+is_a: OMP:0006164 ! altered colony size phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T01:55:22Z
 
@@ -4995,6 +4996,14 @@ def: "A heme utilization phenotype where heme utilization is observed or predict
 is_a: OMP:0000451 ! heme utilization phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-05T13:35:01Z
+
+[Term]
+id: OMP:0006164
+name: altered colony size phenotype
+def: "An colony size phenotype where size is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0000179 ! colony size phenotype
+created_by: jonathanherrera
+creation_date: 2014-08-05T13:44:09Z
 
 [Term]
 id: OMP:0007000
