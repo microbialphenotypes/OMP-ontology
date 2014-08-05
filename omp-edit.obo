@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:08:2014 13:57
+date: 05:08:2014 17:54
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -5529,7 +5529,7 @@ creation_date: 2014-02-03T15:55:25Z
 [Term]
 id: OMP:0007067
 name: binary fission
-def: "An asexual reproduction phenotype where an organism multiplies by binary fission." [OMP:DAS]
+def: "An asexual reproduction phenotype where an organism multiplies by binary fission and 2 cells are produced." [OMP:DAS]
 is_a: OMP:0007066 ! asexual reproduction phenotype
 created_by: siegele
 creation_date: 2014-02-03T15:55:54Z
@@ -5537,6 +5537,7 @@ creation_date: 2014-02-03T15:55:54Z
 [Term]
 id: OMP:0007068
 name: multiple fission
+def: "An asexual reproduction phenotype where an organism multiplies by binary fission and multiple cells are produced." [OMP:JCH]
 synonym: "baeocyte formation" NARROW []
 synonym: "schizogeny" NARROW []
 is_a: OMP:0007066 ! asexual reproduction phenotype
