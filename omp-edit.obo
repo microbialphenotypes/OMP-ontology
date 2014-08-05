@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 04:08:2014 19:20
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3.1
+date: 05:08:2014 13:38
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1068,7 +1068,7 @@ creation_date: 2011-02-18T03:33:32Z
 
 [Term]
 id: OMP:0000134
-name: spherical form
+name: spherical forming
 is_a: OMP:0000093 ! ankinete formation phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:40:27Z
@@ -2337,6 +2337,8 @@ creation_date: 2013-05-23T01:35:26Z
 [Term]
 id: OMP:0000451
 name: heme utilization phenotype
+def: "An iron source utilization phenotype where the trait is a compound of iron complexed in a porphyrin (tetrapyrrole) ring." [OMP:JCH]
+synonym: "haem" EXACT []
 is_a: OMP:0007061 ! iron source utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:37:06Z
@@ -2359,7 +2361,8 @@ creation_date: 2013-05-23T01:39:39Z
 
 [Term]
 id: OMP:0000454
-name: lack of heme utilization
+name: absence of heme utilization
+def: "A heme utilization phenotype where heme utilization is not observed or predicted." [OMP:JCH]
 is_a: OMP:0000451 ! heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:40:40Z
@@ -4986,6 +4989,14 @@ created_by: jonathanherrera
 creation_date: 2014-07-29T18:03:06Z
 
 [Term]
+id: OMP:0006163
+name: presence of heme utilization
+def: "A heme utilization phenotype where heme utilization is observed or predicted." [OMP:JCH]
+is_a: OMP:0000451 ! heme utilization phenotype
+created_by: jonathanherrera
+creation_date: 2014-08-05T13:35:01Z
+
+[Term]
 id: OMP:0007000
 name: abolished motility
 def: "A decrease in motility phenotype where an organism loses the ability to be motile." [OMP:JCH]
@@ -5030,7 +5041,8 @@ creation_date: 2014-01-31T18:03:55Z
 
 [Term]
 id: OMP:0007005
-name: flagella number phenotype
+name: flagellum number phenotype
+def: "A flagellum phenotype where the trait in question is the number of flagella on an organism." [OMP:JCH]
 is_a: OMP:0000027 ! flagellum phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:21:23Z
@@ -5679,9 +5691,8 @@ creation_date: 2014-07-10T12:49:28Z
 [Term]
 id: OMP:0007089
 name: abolished heme utilization
-def: "A decrease in heme utilization where an organism completely loses the ability to utilize heme." [OMP:JCH]
+def: "A decrease in heme utilization where an organism loses the ability to utilize heme." [OMP:JCH]
 is_a: OMP:0000453 ! decreased heme utilization
-is_a: OMP:0000454 ! lack of heme utilization
 created_by: siegele
 creation_date: 2014-07-10T12:51:30Z
 
@@ -5823,14 +5834,14 @@ creation_date: 2014-07-10T23:00:30Z
 [Term]
 id: OMP:0007106
 name: single flagellum per cell
-is_a: OMP:0007005 ! flagella number phenotype
+is_a: OMP:0007005 ! flagellum number phenotype
 created_by: siegele
 creation_date: 2014-07-10T23:02:33Z
 
 [Term]
 id: OMP:0007107
 name: multiple flagella per cell
-is_a: OMP:0007005 ! flagella number phenotype
+is_a: OMP:0007005 ! flagellum number phenotype
 created_by: siegele
 creation_date: 2014-07-10T23:02:33Z
 
