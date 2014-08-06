@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:08:2014 18:45
+date: 06:08:2014 17:32
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -14,7 +14,7 @@ creation_date: 2011-03-10T04:01:50Z
 
 [Term]
 id: OMP:0000001
-name: cell motility phenotype
+name: motility phenotype
 def: "A locomotion phenotype, where the trait in question is the self-propelled movement of a cell or group of cells from one location to another." [OMP:MCC]
 xref: PATO:0001488
 is_a: OMP:0000312 ! locomotion phenotype
@@ -22,12 +22,12 @@ creation_date: 2011-03-10T06:55:06Z
 
 [Term]
 id: OMP:0000002
-name: decreased cell motility
+name: decreased motility
 alt_id: OMP:0000044
 def: "A motility phenotype where motility is decreased relative to a designated control." [OMP:MCC]
 comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
 xref: PATO:0002297
-is_a: OMP:0007001 ! altered cell motility phenotype
+is_a: OMP:0007001 ! altered motility phenotype
 creation_date: 2011-03-10T07:02:42Z
 
 [Term]
@@ -48,25 +48,26 @@ creation_date: 2011-04-14T03:29:20Z
 
 [Term]
 id: OMP:0000005
-name: presence of cell motility
+name: cell motility
 def: "A motility phenotype where a cell or cells posseses the ability to perform controlled self-propelled movement that results in translocation from one place to another." [OMP:MCC]
-is_a: OMP:0000001 ! cell motility phenotype
+synonym: "presence of motility" RELATED []
+is_a: OMP:0000001 ! motility phenotype
 created_by: mchibucos
 creation_date: 2011-04-14T03:35:35Z
 
 [Term]
 id: OMP:0000006
-name: ankinete forming
-def: "An ankinete formation phenotype where a cell or cells posess the ability to form an ankinete." [OMP:MCC]
-is_a: OMP:0000093 ! ankinete formation phenotype
+name: akinete forming
+def: "An akinete formation phenotype where the representative member of a taxonomic possesses the ability to form an akinete." [OMP:MCC]
+is_a: OMP:0000093 ! akinete formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:51:36Z
 
 [Term]
 id: OMP:0000007
-name: non-ankinete forming
-def: "An ankinete formation phenotype where an organism possess the ability to form an ankinete." [OMP:MCC]
-is_a: OMP:0000093 ! ankinete formation phenotype
+name: non-akinete forming
+def: "An akinete formation phenotype where an organism does not possess the ability to form an akinete." [OMP:MCC]
+is_a: OMP:0000093 ! akinete formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:52:52Z
 
@@ -184,12 +185,12 @@ creation_date: 2011-04-26T03:10:51Z
 
 [Term]
 id: OMP:0000023
-name: periplasmic flagellum phenotype
+name: periplasmic
 def: "A flagellum distribution phenotype where the flagellum filament of an organism is located in the periplasm and does not extend past the cell envelope." [ISBN:9780073402406, OMP:DAS]
 synonym: "axial fibril" RELATED []
 synonym: "axial filament" NARROW []
 synonym: "endoflagella" RELATED []
-is_a: OMP:0000078 ! flagellum distribution phenotype
+is_a: OMP:0000078 ! flagellum arrangement phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T11:12:48Z
 
@@ -340,10 +341,10 @@ creation_date: 2011-04-26T03:53:34Z
 
 [Term]
 id: OMP:0000045
-name: increased cell motility
+name: increased motility
 def: "A motility phenotype where motility is increased relative to a designated control." [OMP:MCC]
 xref: PATO:0002298
-is_a: OMP:0007001 ! altered cell motility phenotype
+is_a: OMP:0007001 ! altered motility phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:26Z
 
@@ -391,7 +392,7 @@ creation_date: 2011-06-07T10:53:59Z
 [Term]
 id: OMP:0000052
 name: presence of positive chemotaxis
-def: "A presence of chemotaxis phenotype where a cell or cells possesses the ability to move toward a chemical." [OMP:MCC]
+def: "A presence of chemotaxis phenotype where the representative member of a taxonomic unit possesses the ability to move toward a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000046 ! presence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -399,7 +400,7 @@ creation_date: 2011-04-26T04:42:14Z
 [Term]
 id: OMP:0000053
 name: presence of negative chemotaxis
-def: "A presence of chemotaxis phenotype where a cell or cells possess the ability away from a chemical." [OMP:MCC]
+def: "A presence of chemotaxis phenotype where the representative member of a taxonomic unit possesses the ability away from a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000046 ! presence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -510,7 +511,7 @@ creation_date: 2011-04-26T05:09:24Z
 id: OMP:0000067
 name: cell motility by swarming
 def: "A cell motility phenotype where a population of cells exhibit coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
-is_a: OMP:0000005 ! presence of cell motility
+is_a: OMP:0000005 ! cell motility
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
 
@@ -600,7 +601,7 @@ creation_date: 2011-02-02T03:19:31Z
 
 [Term]
 id: OMP:0000078
-name: flagellum distribution phenotype
+name: flagellum arrangement phenotype
 def: "A flagellum phenotype where the trait in question is the location of the flagellum on an organism." [OMP:MCC]
 is_a: OMP:0000027 ! flagellum phenotype
 created_by: adrienne
@@ -608,33 +609,34 @@ creation_date: 2011-02-02T03:43:16Z
 
 [Term]
 id: OMP:0000079
-name: monotrichous phenotype
+name: monotrichous
 def: "A flagellum distribution phenotype where an organism has a single flagellum." [ISBN:9780073402406]
-is_a: OMP:0000078 ! flagellum distribution phenotype
+synonym: "single flagellum" EXACT []
+is_a: OMP:0000078 ! flagellum arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:44:18Z
 
 [Term]
 id: OMP:0000080
-name: amphitrichous phenotype
+name: amphitrichous
 def: "A flagellum distribution phenotype where an organism has a single flagellum at each end of the cell." [ISBN:9780073402406, OMP:MCC]
-is_a: OMP:0000078 ! flagellum distribution phenotype
+is_a: OMP:0000078 ! flagellum arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:45:34Z
 
 [Term]
 id: OMP:0000081
-name: lophotrichous phenotype
+name: lophotrichous
 def: "A flagellum distribution phenotype where an organism has multiple flagella located at one or both ends of a cell." [ISBN:9780073402406]
-is_a: OMP:0000078 ! flagellum distribution phenotype
+is_a: OMP:0000078 ! flagellum arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:46:16Z
 
 [Term]
 id: OMP:0000082
-name: peritrichous phenotype
+name: peritrichous
 def: "A flagellum distribution phenotype where an organism has multiple flagella dispersed across the cell surface." [ISBN:9780073402406, OMP:MCC]
-is_a: OMP:0000078 ! flagellum distribution phenotype
+is_a: OMP:0000078 ! flagellum arrangement phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:46:44Z
 
@@ -726,7 +728,7 @@ creation_date: 2011-02-02T03:24:43Z
 
 [Term]
 id: OMP:0000093
-name: ankinete formation phenotype
+name: akinete formation phenotype
 def: "A cell development phenotype where development concerns a special thick-walled cell that has the ability to withstand desiccation for long periods of time." [OMP:MCC]
 is_a: OMP:0000070 ! cell development phenotype
 created_by: adrienne
@@ -876,7 +878,7 @@ creation_date: 2011-02-02T02:45:02Z
 id: OMP:0000111
 name: cell motility by swimming
 def: "A cell motility phenotype where a cell or cells exhibits smooth movement through a liquid medium." [OMP:MCC]
-is_a: OMP:0000005 ! presence of cell motility
+is_a: OMP:0000005 ! cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
 
@@ -884,7 +886,7 @@ creation_date: 2011-02-07T03:17:40Z
 id: OMP:0000112
 name: cell motility by gliding
 def: "A cell motility phenotype where the a cell or cells exhibits smooth movement along a solid surface." [OMP:MCC]
-is_a: OMP:0000005 ! presence of cell motility
+is_a: OMP:0000005 ! cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:03Z
 
@@ -892,7 +894,7 @@ creation_date: 2011-02-07T03:18:03Z
 id: OMP:0000113
 name: cell motility by twitching
 def: "A cell motility phenotype where a cell or cells exhibit movement over moist surfaces by the extension, tethering and then retraction of polar pili, usually type IV pili." [OMP:MCC, PMID:12142488]
-is_a: OMP:0000005 ! presence of cell motility
+is_a: OMP:0000005 ! cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:13Z
 
@@ -1057,23 +1059,25 @@ creation_date: 2011-02-18T03:01:18Z
 
 [Term]
 id: OMP:0000133
-name: absence of cell motility
+name: lack of cell motility
 def: "A motility phenotype where a cell or cells lacks the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
-is_a: OMP:0000001 ! cell motility phenotype
+synonym: "absence of motility" RELATED []
+is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0007001 ! altered motility phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:33:32Z
 
 [Term]
 id: OMP:0000134
-name: spherical forming
-is_a: OMP:0000093 ! ankinete formation phenotype
+name: spherical akinete
+is_a: OMP:0000006 ! akinete forming
 created_by: adrienne
 creation_date: 2011-02-18T03:40:27Z
 
 [Term]
 id: OMP:0000135
-name: envelope attribute
-is_a: OMP:0000093 ! ankinete formation phenotype
+name: akinete envelope attribute
+is_a: OMP:0000093 ! akinete formation phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:41:16Z
 
@@ -2058,7 +2062,7 @@ creation_date: 2011-07-21T02:21:21Z
 [Term]
 id: OMP:0000279
 name: motile by uncoordinated movement
-is_a: OMP:0000005 ! presence of cell motility
+is_a: OMP:0000005 ! cell motility
 created_by: mchibucos
 creation_date: 2011-07-21T02:35:22Z
 
@@ -4551,8 +4555,8 @@ creation_date: 2014-07-28T18:19:45Z
 
 [Term]
 id: OMP:0006108
-name: abolished chemotaxis
-def: "A decreased chemotaxis phenotype where an organism completely loses the ability to respond to a chemical concentration gradient." [OMP:JCH]
+name: abolish chemotaxis
+def: "A decreased in cell chemotaxis where an organism completely loses the ability to respond to a chemical concentration gradient." [OMP:JCH]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:11:10Z
@@ -4680,7 +4684,7 @@ creation_date: 2014-07-25T13:27:32Z
 [Term]
 id: OMP:0006124
 name: abolished mutation frequency
-def: "A decrease in mutation frequency where mutation is frequency is lost." [OMP:JCH]
+def: "A decreased in mutation frequency where mutation frequency is lost." [OMP:JCH]
 is_a: OMP:0005069 ! decreased mutation frequency
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:05:31Z
@@ -5007,18 +5011,25 @@ created_by: jonathanherrera
 creation_date: 2014-08-05T13:44:09Z
 
 [Term]
+id: OMP:0006165
+name: cylindrical akinete
+is_a: OMP:0000006 ! akinete forming
+created_by: jonathanherrera
+creation_date: 2014-08-06T17:30:58Z
+
+[Term]
 id: OMP:0007000
-name: abolished cell motility
-def: "A decreased motility phenotype where a cell or cells lose the ability to be motile." [OMP:JCH]
-is_a: OMP:0000002 ! decreased cell motility
+name: abolished motility
+def: "A decrease in motility phenotype where an organism loses the ability to be motile." [OMP:JCH]
+is_a: OMP:0000002 ! decreased motility
 created_by: siegele
 creation_date: 2014-06-29T14:10:40Z
 
 [Term]
 id: OMP:0007001
-name: altered cell motility phenotype
+name: altered motility phenotype
 def: "A motility phenotype where motility is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000001 ! cell motility phenotype
+is_a: OMP:0000001 ! motility phenotype
 is_a: OMP:0007085 ! altered phenotype
 created_by: siegele
 creation_date: 2014-04-24T17:38:06Z
@@ -5048,14 +5059,6 @@ synonym: "increase sensitivity to pteridine" RELATED []
 is_a: OMP:0006032 ! altered pteridine resistance phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:03:55Z
-
-[Term]
-id: OMP:0007005
-name: flagellum number phenotype
-def: "A flagellum phenotype where the trait in question is the number of flagella on an organism." [OMP:JCH]
-is_a: OMP:0000027 ! flagellum phenotype
-created_by: siegele
-creation_date: 2013-09-05T16:21:23Z
 
 [Term]
 id: OMP:0007006
@@ -5722,7 +5725,7 @@ creation_date: 2014-07-10T21:50:33Z
 id: OMP:0007091
 name: decreased motility by gliding
 def: "A decrease motility phenotype where motility by gliding is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0000002 ! decreased motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -5730,7 +5733,7 @@ creation_date: 2014-07-10T20:08:43Z
 id: OMP:0007092
 name: decreased motility by swarming
 def: "A decrease motility phenotype where motility by swarming is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0000002 ! decreased motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -5738,7 +5741,7 @@ creation_date: 2014-07-10T20:08:43Z
 id: OMP:0007093
 name: decreased motility by swimming
 def: "A decrease motility phenotype where motility by swimming is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0000002 ! decreased motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -5746,7 +5749,7 @@ creation_date: 2014-07-10T20:08:43Z
 id: OMP:0007094
 name: decreased motility by twitching
 def: "A decrease motility phenotype where motility by twitching is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0000002 ! decreased motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -5754,7 +5757,7 @@ creation_date: 2014-07-10T20:08:43Z
 id: OMP:0007095
 name: increased motility by gliding
 def: "An increase motility phenotype where motility by gliding is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000045 ! increased cell motility
+is_a: OMP:0000045 ! increased motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -5762,7 +5765,7 @@ creation_date: 2014-07-10T20:10:11Z
 id: OMP:0007096
 name: increased motility by swarming
 def: "An increase motility phenotype where motility by swarming is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000045 ! increased cell motility
+is_a: OMP:0000045 ! increased motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -5770,7 +5773,7 @@ creation_date: 2014-07-10T20:10:11Z
 id: OMP:0007097
 name: increased motility by swimming
 def: "An increase motility phenotype where motility by swimming is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000045 ! increased cell motility
+is_a: OMP:0000045 ! increased motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -5778,7 +5781,7 @@ creation_date: 2014-07-10T20:10:11Z
 id: OMP:0007098
 name: increased motility by twitching
 def: "An increase motility phenotype where motility by twitching is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000045 ! increased cell motility
+is_a: OMP:0000045 ! increased motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -5843,20 +5846,6 @@ def: "A flagellum phenotype that is altered relative to a designated control." [
 is_a: OMP:0000027 ! flagellum phenotype
 created_by: siegele
 creation_date: 2014-07-10T23:00:30Z
-
-[Term]
-id: OMP:0007106
-name: single flagellum per cell
-is_a: OMP:0007005 ! flagellum number phenotype
-created_by: siegele
-creation_date: 2014-07-10T23:02:33Z
-
-[Term]
-id: OMP:0007107
-name: multiple flagella per cell
-is_a: OMP:0007005 ! flagellum number phenotype
-created_by: siegele
-creation_date: 2014-07-10T23:02:33Z
 
 [Term]
 id: OMP:0007109
