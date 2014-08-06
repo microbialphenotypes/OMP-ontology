@@ -14,7 +14,7 @@ creation_date: 2011-03-10T04:01:50Z
 
 [Term]
 id: OMP:0000001
-name: motility phenotype
+name: cell motility phenotype
 def: "A locomotion phenotype, where the trait in question is the self-propelled movement of a cell or group of cells from one location to another." [OMP:MCC]
 xref: PATO:0001488
 is_a: OMP:0000312 ! locomotion phenotype
@@ -22,12 +22,12 @@ creation_date: 2011-03-10T06:55:06Z
 
 [Term]
 id: OMP:0000002
-name: decreased motility
+name: decreased cell motility
 alt_id: OMP:0000044
 def: "A motility phenotype where motility is decreased relative to a designated control." [OMP:MCC]
 comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
 xref: PATO:0002297
-is_a: OMP:0007001 ! altered motility phenotype
+is_a: OMP:0007001 ! altered cell motility phenotype
 creation_date: 2011-03-10T07:02:42Z
 
 [Term]
@@ -48,17 +48,16 @@ creation_date: 2011-04-14T03:29:20Z
 
 [Term]
 id: OMP:0000005
-name: cell motility
+name: presence of cell motility
 def: "A motility phenotype where a cell or cells posseses the ability to perform controlled self-propelled movement that results in translocation from one place to another." [OMP:MCC]
-synonym: "presence of motility" RELATED []
-is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0000001 ! cell motility phenotype
 created_by: mchibucos
 creation_date: 2011-04-14T03:35:35Z
 
 [Term]
 id: OMP:0000006
 name: ankinete forming
-def: "An ankinete formation phenotype where the representative member of a taxonomic possesses the ability to form an ankinete." [OMP:MCC]
+def: "An ankinete formation phenotype where a cell or cells posess the ability to form an ankinete." [OMP:MCC]
 is_a: OMP:0000093 ! ankinete formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:51:36Z
@@ -341,10 +340,10 @@ creation_date: 2011-04-26T03:53:34Z
 
 [Term]
 id: OMP:0000045
-name: increased motility
+name: increased cell motility
 def: "A motility phenotype where motility is increased relative to a designated control." [OMP:MCC]
 xref: PATO:0002298
-is_a: OMP:0007001 ! altered motility phenotype
+is_a: OMP:0007001 ! altered cell motility phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:26Z
 
@@ -392,7 +391,7 @@ creation_date: 2011-06-07T10:53:59Z
 [Term]
 id: OMP:0000052
 name: presence of positive chemotaxis
-def: "A presence of chemotaxis phenotype where the representative member of a taxonomic unit possesses the ability to move toward a chemical concentration gradient." [OMP:MCC]
+def: "A presence of chemotaxis phenotype where a cell or cells possesses the ability to move toward a chemical." [OMP:MCC]
 is_a: OMP:0000046 ! presence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -400,7 +399,7 @@ creation_date: 2011-04-26T04:42:14Z
 [Term]
 id: OMP:0000053
 name: presence of negative chemotaxis
-def: "A presence of chemotaxis phenotype where the representative member of a taxonomic unit possesses the ability away from a chemical concentration gradient." [OMP:MCC]
+def: "A presence of chemotaxis phenotype where a cell or cells possess the ability away from a chemical." [OMP:MCC]
 is_a: OMP:0000046 ! presence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -511,7 +510,7 @@ creation_date: 2011-04-26T05:09:24Z
 id: OMP:0000067
 name: cell motility by swarming
 def: "A cell motility phenotype where a population of cells exhibit coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
-is_a: OMP:0000005 ! cell motility
+is_a: OMP:0000005 ! presence of cell motility
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
 
@@ -877,7 +876,7 @@ creation_date: 2011-02-02T02:45:02Z
 id: OMP:0000111
 name: cell motility by swimming
 def: "A cell motility phenotype where a cell or cells exhibits smooth movement through a liquid medium." [OMP:MCC]
-is_a: OMP:0000005 ! cell motility
+is_a: OMP:0000005 ! presence of cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
 
@@ -885,7 +884,7 @@ creation_date: 2011-02-07T03:17:40Z
 id: OMP:0000112
 name: cell motility by gliding
 def: "A cell motility phenotype where the a cell or cells exhibits smooth movement along a solid surface." [OMP:MCC]
-is_a: OMP:0000005 ! cell motility
+is_a: OMP:0000005 ! presence of cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:03Z
 
@@ -893,7 +892,7 @@ creation_date: 2011-02-07T03:18:03Z
 id: OMP:0000113
 name: cell motility by twitching
 def: "A cell motility phenotype where a cell or cells exhibit movement over moist surfaces by the extension, tethering and then retraction of polar pili, usually type IV pili." [OMP:MCC, PMID:12142488]
-is_a: OMP:0000005 ! cell motility
+is_a: OMP:0000005 ! presence of cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:13Z
 
@@ -1058,11 +1057,9 @@ creation_date: 2011-02-18T03:01:18Z
 
 [Term]
 id: OMP:0000133
-name: lack of cell motility
+name: absence of cell motility
 def: "A motility phenotype where a cell or cells lacks the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
-synonym: "absence of motility" RELATED []
-is_a: OMP:0000001 ! motility phenotype
-is_a: OMP:0007001 ! altered motility phenotype
+is_a: OMP:0000001 ! cell motility phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:33:32Z
 
@@ -2061,7 +2058,7 @@ creation_date: 2011-07-21T02:21:21Z
 [Term]
 id: OMP:0000279
 name: motile by uncoordinated movement
-is_a: OMP:0000005 ! cell motility
+is_a: OMP:0000005 ! presence of cell motility
 created_by: mchibucos
 creation_date: 2011-07-21T02:35:22Z
 
@@ -4554,8 +4551,8 @@ creation_date: 2014-07-28T18:19:45Z
 
 [Term]
 id: OMP:0006108
-name: abolish chemotaxis
-def: "A decreased in cell chemotaxis where an organism completely loses the ability to respond to a chemical concentration gradient." [OMP:JCH]
+name: abolished chemotaxis
+def: "A decreased chemotaxis phenotype where an organism completely loses the ability to respond to a chemical concentration gradient." [OMP:JCH]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:11:10Z
@@ -5011,17 +5008,17 @@ creation_date: 2014-08-05T13:44:09Z
 
 [Term]
 id: OMP:0007000
-name: abolished motility
-def: "A decrease in motility phenotype where an organism loses the ability to be motile." [OMP:JCH]
-is_a: OMP:0000002 ! decreased motility
+name: abolished cell motility
+def: "A decreased motility phenotype where a cell or cells lose the ability to be motile." [OMP:JCH]
+is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-06-29T14:10:40Z
 
 [Term]
 id: OMP:0007001
-name: altered motility phenotype
+name: altered cell motility phenotype
 def: "A motility phenotype where motility is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000001 ! motility phenotype
+is_a: OMP:0000001 ! cell motility phenotype
 is_a: OMP:0007085 ! altered phenotype
 created_by: siegele
 creation_date: 2014-04-24T17:38:06Z
@@ -5725,7 +5722,7 @@ creation_date: 2014-07-10T21:50:33Z
 id: OMP:0007091
 name: decreased motility by gliding
 def: "A decrease motility phenotype where motility by gliding is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000002 ! decreased motility
+is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -5733,7 +5730,7 @@ creation_date: 2014-07-10T20:08:43Z
 id: OMP:0007092
 name: decreased motility by swarming
 def: "A decrease motility phenotype where motility by swarming is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000002 ! decreased motility
+is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -5741,7 +5738,7 @@ creation_date: 2014-07-10T20:08:43Z
 id: OMP:0007093
 name: decreased motility by swimming
 def: "A decrease motility phenotype where motility by swimming is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000002 ! decreased motility
+is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -5749,7 +5746,7 @@ creation_date: 2014-07-10T20:08:43Z
 id: OMP:0007094
 name: decreased motility by twitching
 def: "A decrease motility phenotype where motility by twitching is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000002 ! decreased motility
+is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -5757,7 +5754,7 @@ creation_date: 2014-07-10T20:08:43Z
 id: OMP:0007095
 name: increased motility by gliding
 def: "An increase motility phenotype where motility by gliding is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000045 ! increased motility
+is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -5765,7 +5762,7 @@ creation_date: 2014-07-10T20:10:11Z
 id: OMP:0007096
 name: increased motility by swarming
 def: "An increase motility phenotype where motility by swarming is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000045 ! increased motility
+is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -5773,7 +5770,7 @@ creation_date: 2014-07-10T20:10:11Z
 id: OMP:0007097
 name: increased motility by swimming
 def: "An increase motility phenotype where motility by swimming is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000045 ! increased motility
+is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -5781,7 +5778,7 @@ creation_date: 2014-07-10T20:10:11Z
 id: OMP:0007098
 name: increased motility by twitching
 def: "An increase motility phenotype where motility by twitching is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000045 ! increased motility
+is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
