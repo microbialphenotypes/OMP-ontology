@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 07:08:2014 18:18
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3.1
+date: 07:08:2014 17:45
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1716,7 +1716,6 @@ creation_date: 2011-06-07T09:49:20Z
 id: OMP:0000212
 name: smooth colony surface texture
 def: "A colony texture phenotype where it is characterized by a shiny glistening surface." [ISBN:1555810489, OMP:WAM]
-xref: SNOMED:P3-51290
 is_a: OMP:0000229 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:32:12Z
@@ -1826,7 +1825,6 @@ creation_date: 2011-02-07T03:53:37Z
 id: OMP:0000228
 name: rough colony surface texture
 def: "A colony texture phenotype where it is characterized by a dull, bumpy, granular, or matte surface." [ISBN:1555810489, OMP:WAM]
-xref: SNOMED:P3-51320
 is_a: OMP:0000229 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:32:41Z
