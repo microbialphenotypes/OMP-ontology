@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 07:08:2014 16:16
+date: 07:08:2014 17:45
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -1076,6 +1076,7 @@ creation_date: 2011-02-18T03:33:32Z
 [Term]
 id: OMP:0000134
 name: spherical akinete
+def: "An akinete forming phenotype where the organism forms a spherical shaped akinete." [OMP:JCH]
 is_a: OMP:0000006 ! akinete forming
 created_by: adrienne
 creation_date: 2011-02-18T03:40:27Z
@@ -2089,13 +2090,6 @@ synonym: "antiviral resistance phenotype" NARROW []
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:21:21Z
-
-[Term]
-id: OMP:0000279
-name: motile by uncoordinated movement
-is_a: OMP:0000005 ! cell motility
-created_by: mchibucos
-creation_date: 2011-07-21T02:35:22Z
 
 [Term]
 id: OMP:0000280
@@ -5076,6 +5070,7 @@ creation_date: 2014-08-05T13:44:09Z
 [Term]
 id: OMP:0006165
 name: cylindrical akinete
+def: "An akinete forming phenotype where the organism forms a cylindrical shaped akinete." [OMP:JCH]
 is_a: OMP:0000006 ! akinete forming
 created_by: jonathanherrera
 creation_date: 2014-08-06T17:30:58Z
