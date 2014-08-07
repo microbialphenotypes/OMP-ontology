@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 06:08:2014 17:32
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 07:08:2014 12:10
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -335,6 +335,7 @@ creation_date: 2011-04-26T03:51:47Z
 [Term]
 id: OMP:0000043
 name: nucleoid number
+def: "A nucleoid phenotype dealing with the number of nucleoid regions in the cell." [OMP:WAM]
 is_a: OMP:0000150 ! nucleoid phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:53:34Z
@@ -1084,6 +1085,7 @@ creation_date: 2011-02-18T03:41:16Z
 [Term]
 id: OMP:0000136
 name: nucleoid shape
+def: "A nucleoid phenotype dealing with shape of the nucleoid region." [OMP:WAM]
 is_a: OMP:0000150 ! nucleoid phenotype
 created_by: adrienne
 creation_date: 2011-02-21T04:16:30Z
@@ -1139,6 +1141,7 @@ creation_date: 2011-02-21T04:27:22Z
 [Term]
 id: OMP:0000143
 name: single nucleoid
+def: "A nucleoid number phenotype where there is only one nucleoid regions in the cell." [OMP:WAM]
 is_a: OMP:0000043 ! nucleoid number
 created_by: adrienne
 creation_date: 2011-02-21T04:27:48Z
@@ -1146,6 +1149,7 @@ creation_date: 2011-02-21T04:27:48Z
 [Term]
 id: OMP:0000144
 name: multiple nucleoids
+def: "A nucleoid number phenotype where there are more than one nucleoid regions in the cell." [OMP:WAM]
 is_a: OMP:0000043 ! nucleoid number
 created_by: adrienne
 creation_date: 2011-02-21T04:28:30Z
@@ -1153,7 +1157,7 @@ creation_date: 2011-02-21T04:28:30Z
 [Term]
 id: OMP:0000145
 name: nucleoid localization
-def: "A nucleoid phenotype consisting of the nucleoid region location within the cell." [OMP:JCH]
+def: "A nucleoid phenotype dealing with the nucleoid region location within the cell." [OMP:JCH]
 is_a: OMP:0000150 ! nucleoid phenotype
 created_by: adrienne
 creation_date: 2011-02-21T04:30:32Z
@@ -1161,6 +1165,7 @@ creation_date: 2011-02-21T04:30:32Z
 [Term]
 id: OMP:0000146
 name: midcell nucleoid localization
+def: "A nucleoid localization phenotype where the nucleoid region is located in the center of the cell." [OMP:WAM]
 is_a: OMP:0000145 ! nucleoid localization
 created_by: adrienne
 creation_date: 2011-02-21T04:31:22Z
@@ -1168,6 +1173,7 @@ creation_date: 2011-02-21T04:31:22Z
 [Term]
 id: OMP:0000147
 name: polar nucleoid localization
+def: "A nucleoid localization phenotype where the nucleoid region is located in one of the polar regions of the cell." [OMP:WAM]
 is_a: OMP:0000145 ! nucleoid localization
 created_by: adrienne
 creation_date: 2011-02-21T04:31:46Z
@@ -1207,6 +1213,7 @@ creation_date: 2011-02-02T02:47:59Z
 [Term]
 id: OMP:0000152
 name: dumbbell nucleoid shape
+def: "A nucleoid shape phenotype where the nucleoid region is shaped like a dumbbell." [OMP:WAM]
 is_a: OMP:0000136 ! nucleoid shape
 created_by: adrienne
 creation_date: 2011-02-22T02:27:29Z
@@ -1214,6 +1221,7 @@ creation_date: 2011-02-22T02:27:29Z
 [Term]
 id: OMP:0000153
 name: compact nucleoid shape
+def: "A nucleoid shape phenotype where the overall shape of the nucleoid region is compacted." [OMP:WAM]
 is_a: OMP:0000136 ! nucleoid shape
 created_by: adrienne
 creation_date: 2011-02-22T02:27:58Z
