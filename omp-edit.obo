@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 07:08:2014 12:10
+date: 07:08:2014 15:00
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -691,6 +691,7 @@ creation_date: 2011-06-06T03:42:26Z
 id: OMP:0000088
 name: filamentous form
 def: "A colony form phenotype characterized by growth of thin individual projections in the colony." [OMP:WAM]
+xref: SNOMED:P3-51070
 is_a: OMP:0000103 ! colony form phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:08:48Z
@@ -871,6 +872,7 @@ creation_date: 2011-02-07T03:38:08Z
 id: OMP:0000110
 name: opaque colony
 def: "A colony opacity phenotype characterized by inability of light to pass through it." [OMP:WAM]
+xref: SNOMED:P3-51350
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:45:02Z
@@ -904,6 +906,7 @@ id: OMP:0000114
 name: translucent colony
 def: "A colony opacity phenotype characterized by an almost clear but distorted, frosted glass appearance." [OMP:WAM]
 synonym: "semi-translucent" EXACT []
+xref: SNOMED:P3-51370
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:45:20Z
@@ -912,6 +915,7 @@ creation_date: 2011-02-02T02:45:20Z
 id: OMP:0000115
 name: transparent colony
 def: "A colony opacity phenotype characterized by a clear appearance." [OMP:WAM]
+xref: SNOMED:P3-51360
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:45:41Z
@@ -1084,7 +1088,7 @@ creation_date: 2011-02-18T03:41:16Z
 
 [Term]
 id: OMP:0000136
-name: nucleoid shape
+name: in vitro nucleoid shape
 def: "A nucleoid phenotype dealing with shape of the nucleoid region." [OMP:WAM]
 is_a: OMP:0000150 ! nucleoid phenotype
 created_by: adrienne
@@ -1113,6 +1117,7 @@ name: dull colony sheen
 def: "A colony form phenotype characterized by a dull luster on the surface." [OMP:JCH]
 synonym: "matte" RELATED []
 synonym: "rough" RELATED []
+xref: SNOMED:P3-513150
 is_a: OMP:0000106 ! colony sheen phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:47:21Z
@@ -1206,23 +1211,25 @@ creation_date: 2011-02-21T04:36:21Z
 id: OMP:0000151
 name: entire colony margin
 def: "A colony margin phenotype characterized by smooth growth, with no projections along the edge." [OMP:WAM]
+xref: SNOMED:P3-5120
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:47:59Z
 
 [Term]
 id: OMP:0000152
-name: dumbbell nucleoid shape
-def: "A nucleoid shape phenotype where the nucleoid region is shaped like a dumbbell." [OMP:WAM]
-is_a: OMP:0000136 ! nucleoid shape
+name: doublet nucleoid
+def: "A nucleoid shape phenotype where the nucleoid isolated from a cell is shaped like a dumbbell." [OMP:WAM]
+synonym: "dumbbell nucleoid" RELATED [OMP:WAM]
+is_a: OMP:0000136 ! in vitro nucleoid shape
 created_by: adrienne
 creation_date: 2011-02-22T02:27:29Z
 
 [Term]
 id: OMP:0000153
-name: compact nucleoid shape
-def: "A nucleoid shape phenotype where the overall shape of the nucleoid region is compacted." [OMP:WAM]
-is_a: OMP:0000136 ! nucleoid shape
+name: singlet nucleoid
+def: "A nucleoid shape phenotype where the nucleoid isolated from a cell is compacted." [OMP:WAM]
+is_a: OMP:0000136 ! in vitro nucleoid shape
 created_by: adrienne
 creation_date: 2011-02-22T02:27:58Z
 
@@ -1230,6 +1237,7 @@ creation_date: 2011-02-22T02:27:58Z
 id: OMP:0000154
 name: undulate colony margin
 def: "A colony margin phenotype characterized by wavy growth along the colony edge." [OMP:WAM]
+xref: SNOMED:P3-51210
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:11Z
@@ -1238,6 +1246,7 @@ creation_date: 2011-02-02T02:48:11Z
 id: OMP:0000155
 name: lobate colony margin
 def: "A colony margin phenotype characterized by lobed growth along the colony edge." [OMP:WAM]
+xref: SNOMED:P3-51220
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:33Z
@@ -1246,6 +1255,7 @@ creation_date: 2011-02-02T02:48:33Z
 id: OMP:0000156
 name: erose colony margin
 def: "A colony margin phenotype characterized by growth that appears jagged or zig-zagged along the edge of the colony." [OMP:WAM]
+xref: SNOMED:P3-51200
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:46Z
@@ -1254,6 +1264,7 @@ creation_date: 2011-02-02T02:48:46Z
 id: OMP:0000157
 name: filiform colony margin
 def: "A colony margin phenotype characterized by thread or filamentous shaped edge." [OMP:JCH]
+xref: SNOMED:P3-51250
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:49:05Z
@@ -1262,6 +1273,7 @@ creation_date: 2011-02-02T02:49:05Z
 id: OMP:0000158
 name: curled colony margin
 def: "A colony margin phenotype characterized by growth that appears as waves or curls along the edge of the colony." [OMP:JCH]
+xref: SNOMED:P3-51230
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:49:30Z
@@ -1278,6 +1290,7 @@ creation_date: 2011-03-02T02:06:09Z
 id: OMP:0000160
 name: flat colony elevation
 def: "A colony elevation phenotype characterized by no growth above the medium." [OMP:WAM]
+xref: SNOMED:P3-51130
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:49:49Z
@@ -1286,6 +1299,7 @@ creation_date: 2011-02-02T02:49:49Z
 id: OMP:0000161
 name: raised colony elevation
 def: "A colony elevation phenotype characterized by uniform growth above the medium." [OMP:WAM]
+xref: SNOMED:P3-51140
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:01Z
@@ -1294,6 +1308,7 @@ creation_date: 2011-02-02T02:50:01Z
 id: OMP:0000162
 name: convex colony elevation
 def: "A colony elevation phenotype characterized by sloping up from the edges." [OMP:WAM]
+xref: SNOMED:P3-51150
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:11Z
@@ -1310,6 +1325,7 @@ creation_date: 2011-02-02T02:50:30Z
 id: OMP:0000164
 name: umbonate colony elevation
 def: "A colony elevation phenotype characterized by raised growth in the center." [OMP:WAM]
+xref: SNOMED:P3-51170
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:42Z
@@ -1326,6 +1342,7 @@ creation_date: 2011-06-07T01:55:00Z
 id: OMP:0000166
 name: circular form
 def: "A colony form phenotype characterized by growth in a round shape." [OMP:WAM]
+xref: SNOMED:P3-51060
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:18Z
@@ -1334,6 +1351,7 @@ creation_date: 2011-02-02T02:51:18Z
 id: OMP:0000167
 name: irregular form
 def: "A colony form phenotype characterized by growth without a defined shape or size." [OMP:WAM]
+xref: SNOMED:P3-51080
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:35Z
@@ -1342,6 +1360,7 @@ creation_date: 2011-02-02T02:51:35Z
 id: OMP:0000168
 name: rhizoid form
 def: "A colony form phenotype characterized by the growth of thin, branching projections." [OMP:WAM]
+xref: SNOMED:P3-51100
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:57Z
@@ -1350,6 +1369,7 @@ creation_date: 2011-02-02T02:51:57Z
 id: OMP:0000169
 name: spindle form
 def: "A colony form phenotype characterized by growth being wide in the middle then tapering at both ends." [OMP:JCH]
+xref: SNOMED:P3-51110
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:52:30Z
@@ -1852,6 +1872,7 @@ id: OMP:0000234
 name: butyrous colony texture
 def: "A colony texture phenotype characterized by a butter like surface." [ISBN:1555810489, OMP:WAM]
 synonym: "buttery colony consistency" EXACT []
+xref: SNMI:P3-513190
 is_a: OMP:0000229 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:41:24Z
@@ -1903,6 +1924,7 @@ creation_date: 2011-06-07T01:11:50Z
 id: OMP:0000240
 name: punctiform colony
 def: "A colony size phenotype characterized by growth in multiple pinpoint colonies." [OMP:WAM]
+xref: SNOMED:P3-51090
 is_a: OMP:0000179 ! colony size phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T01:50:03Z
@@ -3451,6 +3473,14 @@ created_by: wmeza
 creation_date: 2014-07-07T13:50:45Z
 
 [Term]
+id: OMP:0005115
+name: cell division phenotype
+def: "A growth phenotype dealing with processes of cell division." [OMP:WAM]
+is_a: OMP:0000174 ! growth phenotype
+created_by: wmeza
+creation_date: 2014-08-07T14:54:52Z
+
+[Term]
 id: OMP:0005116
 name: multicellular phenotype
 def: "A microbial phenotype involving two or more cells of the same or different species." [OMP:DAS]
@@ -3616,6 +3646,30 @@ synonym: "abolished SDS-EDTA sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005113 ! decreased resistance to SDS-EDTA stress
 created_by: wmeza
 creation_date: 2014-07-17T17:39:39Z
+
+[Term]
+id: OMP:0005136
+name: altered cell division.
+def: "A cell division phenotype where it is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005115 ! cell division phenotype
+created_by: wmeza
+creation_date: 2014-08-07T14:55:46Z
+
+[Term]
+id: OMP:0005137
+name: increased cell division
+def: "An altered cell division phenotype where cell division is increased relative to a designated control." [OMP:WAM]
+is_a: OMP:0005136 ! altered cell division.
+created_by: wmeza
+creation_date: 2014-08-07T14:57:39Z
+
+[Term]
+id: OMP:0005138
+name: decreased cell division
+def: "A cell division phenotype where cell division is decreased relative to a designated control." [OMP:WAM]
+is_a: OMP:0005136 ! altered cell division.
+created_by: wmeza
+creation_date: 2014-08-07T14:58:34Z
 
 [Term]
 id: OMP:0006001
