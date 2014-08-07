@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 07:08:2014 15:00
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3.1
+date: 07:08:2014 16:16
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -799,6 +799,7 @@ creation_date: 2011-02-02T02:14:39Z
 [Term]
 id: OMP:0000101
 name: microbial communication phenotype
+def: "A multicellular phenotype where microbial organisms communicate and coordinate their activities through chemical signals that either diffuse through the environment or remain cell associated." [OMP:JCH]
 is_a: OMP:0005116 ! multicellular phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:45:44Z
