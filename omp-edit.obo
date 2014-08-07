@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 07:08:2014 18:04
-saved-by: dsiegele
+date: 07:08:2014 18:18
+saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -691,6 +691,7 @@ creation_date: 2011-06-06T03:42:26Z
 id: OMP:0000088
 name: filamentous form
 def: "A colony form phenotype characterized by growth of thin individual projections in the colony." [OMP:WAM]
+xref: SNOMED:P3-51070
 is_a: OMP:0000103 ! colony form phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:08:48Z
@@ -798,6 +799,7 @@ creation_date: 2011-02-02T02:14:39Z
 [Term]
 id: OMP:0000101
 name: microbial communication phenotype
+def: "A multicellular phenotype where microbial organisms communicate and coordinate their activities through chemical signals that either diffuse through the environment or remain cell associated." [OMP:JCH]
 is_a: OMP:0005116 ! multicellular phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:45:44Z
@@ -871,6 +873,7 @@ creation_date: 2011-02-07T03:38:08Z
 id: OMP:0000110
 name: opaque colony
 def: "A colony opacity phenotype characterized by inability of light to pass through it." [OMP:WAM]
+xref: SNOMED:P3-51350
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:45:02Z
@@ -904,6 +907,7 @@ id: OMP:0000114
 name: translucent colony
 def: "A colony opacity phenotype characterized by an almost clear but distorted, frosted glass appearance." [OMP:WAM]
 synonym: "semi-translucent" EXACT []
+xref: SNOMED:P3-51370
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:45:20Z
@@ -912,6 +916,7 @@ creation_date: 2011-02-02T02:45:20Z
 id: OMP:0000115
 name: transparent colony
 def: "A colony opacity phenotype characterized by a clear appearance." [OMP:WAM]
+xref: SNOMED:P3-51360
 is_a: OMP:0000102 ! colony opacity phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:45:41Z
@@ -1085,7 +1090,7 @@ creation_date: 2011-02-18T03:41:16Z
 
 [Term]
 id: OMP:0000136
-name: nucleoid shape
+name: in vitro nucleoid shape
 def: "A nucleoid phenotype dealing with shape of the nucleoid region." [OMP:WAM]
 is_a: OMP:0000150 ! nucleoid phenotype
 created_by: adrienne
@@ -1114,6 +1119,7 @@ name: dull colony sheen
 def: "A colony form phenotype characterized by a dull luster on the surface." [OMP:JCH]
 synonym: "matte" RELATED []
 synonym: "rough" RELATED []
+xref: SNOMED:P3-513150
 is_a: OMP:0000106 ! colony sheen phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:47:21Z
@@ -1207,23 +1213,25 @@ creation_date: 2011-02-21T04:36:21Z
 id: OMP:0000151
 name: entire colony margin
 def: "A colony margin phenotype characterized by smooth growth, with no projections along the edge." [OMP:WAM]
+xref: SNOMED:P3-5120
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:47:59Z
 
 [Term]
 id: OMP:0000152
-name: dumbbell nucleoid shape
-def: "A nucleoid shape phenotype where the nucleoid region is shaped like a dumbbell." [OMP:WAM]
-is_a: OMP:0000136 ! nucleoid shape
+name: doublet nucleoid
+def: "A nucleoid shape phenotype where the nucleoid isolated from a cell is shaped like a dumbbell." [OMP:WAM]
+synonym: "dumbbell nucleoid" RELATED [OMP:WAM]
+is_a: OMP:0000136 ! in vitro nucleoid shape
 created_by: adrienne
 creation_date: 2011-02-22T02:27:29Z
 
 [Term]
 id: OMP:0000153
-name: compact nucleoid shape
-def: "A nucleoid shape phenotype where the overall shape of the nucleoid region is compacted." [OMP:WAM]
-is_a: OMP:0000136 ! nucleoid shape
+name: singlet nucleoid
+def: "A nucleoid shape phenotype where the nucleoid isolated from a cell is compacted." [OMP:WAM]
+is_a: OMP:0000136 ! in vitro nucleoid shape
 created_by: adrienne
 creation_date: 2011-02-22T02:27:58Z
 
@@ -1231,6 +1239,7 @@ creation_date: 2011-02-22T02:27:58Z
 id: OMP:0000154
 name: undulate colony margin
 def: "A colony margin phenotype characterized by wavy growth along the colony edge." [OMP:WAM]
+xref: SNOMED:P3-51210
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:11Z
@@ -1239,6 +1248,7 @@ creation_date: 2011-02-02T02:48:11Z
 id: OMP:0000155
 name: lobate colony margin
 def: "A colony margin phenotype characterized by lobed growth along the colony edge." [OMP:WAM]
+xref: SNOMED:P3-51220
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:33Z
@@ -1247,6 +1257,7 @@ creation_date: 2011-02-02T02:48:33Z
 id: OMP:0000156
 name: erose colony margin
 def: "A colony margin phenotype characterized by growth that appears jagged or zig-zagged along the edge of the colony." [OMP:WAM]
+xref: SNOMED:P3-51200
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:46Z
@@ -1255,6 +1266,7 @@ creation_date: 2011-02-02T02:48:46Z
 id: OMP:0000157
 name: filiform colony margin
 def: "A colony margin phenotype characterized by thread or filamentous shaped edge." [OMP:JCH]
+xref: SNOMED:P3-51250
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:49:05Z
@@ -1263,6 +1275,7 @@ creation_date: 2011-02-02T02:49:05Z
 id: OMP:0000158
 name: curled colony margin
 def: "A colony margin phenotype characterized by growth that appears as waves or curls along the edge of the colony." [OMP:JCH]
+xref: SNOMED:P3-51230
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:49:30Z
@@ -1279,6 +1292,7 @@ creation_date: 2011-03-02T02:06:09Z
 id: OMP:0000160
 name: flat colony elevation
 def: "A colony elevation phenotype characterized by no growth above the medium." [OMP:WAM]
+xref: SNOMED:P3-51130
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:49:49Z
@@ -1287,6 +1301,7 @@ creation_date: 2011-02-02T02:49:49Z
 id: OMP:0000161
 name: raised colony elevation
 def: "A colony elevation phenotype characterized by uniform growth above the medium." [OMP:WAM]
+xref: SNOMED:P3-51140
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:01Z
@@ -1295,6 +1310,7 @@ creation_date: 2011-02-02T02:50:01Z
 id: OMP:0000162
 name: convex colony elevation
 def: "A colony elevation phenotype characterized by sloping up from the edges." [OMP:WAM]
+xref: SNOMED:P3-51150
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:11Z
@@ -1311,6 +1327,7 @@ creation_date: 2011-02-02T02:50:30Z
 id: OMP:0000164
 name: umbonate colony elevation
 def: "A colony elevation phenotype characterized by raised growth in the center." [OMP:WAM]
+xref: SNOMED:P3-51170
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:42Z
@@ -1327,6 +1344,7 @@ creation_date: 2011-06-07T01:55:00Z
 id: OMP:0000166
 name: circular form
 def: "A colony form phenotype characterized by growth in a round shape." [OMP:WAM]
+xref: SNOMED:P3-51060
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:18Z
@@ -1335,6 +1353,7 @@ creation_date: 2011-02-02T02:51:18Z
 id: OMP:0000167
 name: irregular form
 def: "A colony form phenotype characterized by growth without a defined shape or size." [OMP:WAM]
+xref: SNOMED:P3-51080
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:35Z
@@ -1343,6 +1362,7 @@ creation_date: 2011-02-02T02:51:35Z
 id: OMP:0000168
 name: rhizoid form
 def: "A colony form phenotype characterized by the growth of thin, branching projections." [OMP:WAM]
+xref: SNOMED:P3-51100
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:57Z
@@ -1351,6 +1371,7 @@ creation_date: 2011-02-02T02:51:57Z
 id: OMP:0000169
 name: spindle form
 def: "A colony form phenotype characterized by growth being wide in the middle then tapering at both ends." [OMP:JCH]
+xref: SNOMED:P3-51110
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:52:30Z
@@ -1695,6 +1716,7 @@ creation_date: 2011-06-07T09:49:20Z
 id: OMP:0000212
 name: smooth colony surface texture
 def: "A colony texture phenotype where it is characterized by a shiny glistening surface." [ISBN:1555810489, OMP:WAM]
+xref: SNOMED:P3-51290
 is_a: OMP:0000229 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:32:12Z
@@ -1804,6 +1826,7 @@ creation_date: 2011-02-07T03:53:37Z
 id: OMP:0000228
 name: rough colony surface texture
 def: "A colony texture phenotype where it is characterized by a dull, bumpy, granular, or matte surface." [ISBN:1555810489, OMP:WAM]
+xref: SNOMED:P3-51320
 is_a: OMP:0000229 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:32:41Z
@@ -1853,6 +1876,7 @@ id: OMP:0000234
 name: butyrous colony texture
 def: "A colony texture phenotype characterized by a butter like surface." [ISBN:1555810489, OMP:WAM]
 synonym: "buttery colony consistency" EXACT []
+xref: SNMI:P3-513190
 is_a: OMP:0000229 ! colony texture phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:41:24Z
@@ -1904,6 +1928,7 @@ creation_date: 2011-06-07T01:11:50Z
 id: OMP:0000240
 name: punctiform colony
 def: "A colony size phenotype characterized by growth in multiple pinpoint colonies." [OMP:WAM]
+xref: SNOMED:P3-51090
 is_a: OMP:0000179 ! colony size phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T01:50:03Z
@@ -1993,19 +2018,18 @@ creation_date: 2011-07-21T12:51:15Z
 [Term]
 id: OMP:0000253
 name: gene expression phenotype
-def: "A microbial phenotype that affects expression of a gene or genes.  Gene expression includes transcription, RNA processing, and, for protein-coding genes, translation and protein maturation." [ISBN:9781615835409, OMP:WAM]
+def: "A microbial phenotype where the trait in question is the biosynthesis of a gene product by the processes of translation and or transcription." [ISBN:9781615835409, OMP:WAM]
 synonym: "genetic expression phenotype" EXACT []
-xref: FYPO:0000142 "gene expression phenotype"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:03:06Z
 
 [Term]
 id: OMP:0000254
-name: constitutive transcription
-def: "An increased transcription phenotype where a gene or genes whose transcription is normally regulated are now transcribed constitutively." [OMP:DAS]
+name: constitutive expression
+def: "A gene expression phenotype where the gene in question is continuously transcribed regardless of necessity." [OMP:WAM]
 synonym: "constitutive gene expression" EXACT []
-is_a: OMP:0007119 ! increased transcription
+is_a: OMP:0000253 ! gene expression phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:05:42Z
 
@@ -2034,16 +2058,16 @@ creation_date: 2011-07-21T01:38:10Z
 [Term]
 id: OMP:0000267
 name: increased gene expression
-def: "An altered gene expression phenotype where expression of a gene or genes is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007005 ! altered gene expression phenotype
+def: "A gene expression phenotype where the trait in question is a higher frequency of the biosynthesis of a gene product relative to the designated control." [OMP:WAM]
+is_a: OMP:0000253 ! gene expression phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:01:35Z
 
 [Term]
 id: OMP:0000268
 name: decreased gene expression
-def: "An altered gene expression phenotype where expression of a gene or genes is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007005 ! altered gene expression phenotype
+def: "A gene expression phenotype where the trait in question is a lower frequency of biosynthesis of a gene product relative to the designated to control." [OMP:WAM]
+is_a: OMP:0000253 ! gene expression phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:02:26Z
 
@@ -3446,6 +3470,14 @@ created_by: wmeza
 creation_date: 2014-07-07T13:50:45Z
 
 [Term]
+id: OMP:0005115
+name: cell division phenotype
+def: "A growth phenotype dealing with processes of cell division." [OMP:WAM]
+is_a: OMP:0000174 ! growth phenotype
+created_by: wmeza
+creation_date: 2014-08-07T14:54:52Z
+
+[Term]
 id: OMP:0005116
 name: multicellular phenotype
 def: "A microbial phenotype involving two or more cells of the same or different species." [OMP:DAS]
@@ -3611,6 +3643,30 @@ synonym: "abolished SDS-EDTA sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005113 ! decreased resistance to SDS-EDTA stress
 created_by: wmeza
 creation_date: 2014-07-17T17:39:39Z
+
+[Term]
+id: OMP:0005136
+name: altered cell division.
+def: "A cell division phenotype where it is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005115 ! cell division phenotype
+created_by: wmeza
+creation_date: 2014-08-07T14:55:46Z
+
+[Term]
+id: OMP:0005137
+name: increased cell division
+def: "An altered cell division phenotype where cell division is increased relative to a designated control." [OMP:WAM]
+is_a: OMP:0005136 ! altered cell division.
+created_by: wmeza
+creation_date: 2014-08-07T14:57:39Z
+
+[Term]
+id: OMP:0005138
+name: decreased cell division
+def: "A cell division phenotype where cell division is decreased relative to a designated control." [OMP:WAM]
+is_a: OMP:0005136 ! altered cell division.
+created_by: wmeza
+creation_date: 2014-08-07T14:58:34Z
 
 [Term]
 id: OMP:0006001
@@ -4558,8 +4614,8 @@ creation_date: 2014-07-28T18:19:45Z
 
 [Term]
 id: OMP:0006108
-name: abolished chemotaxis
-def: "A decreased chemotaxis phenotype where a cell or cells loses the ability to perform chemotaxis." [OMP:JCH]
+name: abolish chemotaxis
+def: "A decreased in cell chemotaxis where an organism completely loses the ability to respond to a chemical concentration gradient." [OMP:JCH]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:11:10Z
@@ -4615,7 +4671,7 @@ creation_date: 2014-07-25T12:47:43Z
 [Term]
 id: OMP:0006115
 name: abolished gene expression
-def: "A decreased gene expression phenotype where expression of a gene is abolished." [OMP:JCH]
+def: "A decrease in frequency of chromosome segregation where an organism completely loses the ability of chromosome segregation." [OMP:JCH]
 is_a: OMP:0000268 ! decreased gene expression
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:50:04Z
@@ -5065,14 +5121,6 @@ created_by: DeborahSiegele
 creation_date: 2014-01-31T18:03:55Z
 
 [Term]
-id: OMP:0007005
-name: altered gene expression phenotype
-def: "A gene expression phenotype where gene expression is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000253 ! gene expression phenotype
-created_by: dsiegele
-creation_date: 2014-08-07T17:18:26Z
-
-[Term]
 id: OMP:0007006
 name: cell population phenotype
 def: "A microbial phenotype observation at the level of a population of cells belonging to the same species." [OMP:DAS]
@@ -5357,14 +5405,6 @@ created_by: DeborahSiegele
 creation_date: 2013-09-29T00:36:46Z
 
 [Term]
-id: OMP:0007041
-name: decreased positive chemotaxis
-def: "A decreased chemotaxis phenotype where chemotaxis towards an attractant is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0000503 ! decreased chemotaxis
-created_by: siegele
-creation_date: 2014-08-06T15:37:26Z
-
-[Term]
 id: OMP:0007042
 name: sulfur source utilization phenotype
 def: "A nutrient utilization phenotype where the nutrient is used as a source of sulfur." [OMP:DAS]
@@ -5451,22 +5491,6 @@ def: "An organic phosphorus source utilization phenotype where an organism can u
 is_a: OMP:0007046 ! organic phosphorus source phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:20:22Z
-
-[Term]
-id: OMP:0007053
-name: decreased negative chemotaxis
-def: "A decreased chemotaxis phenotype where chemotaxis away from a chemical (repellent) is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0000503 ! decreased chemotaxis
-created_by: siegele
-creation_date: 2014-08-06T15:39:40Z
-
-[Term]
-id: OMP:0007054
-name: decreased chemotaxis towards a specific chemical
-def: "A decreased chemotaxis phenotype where the ability to move towards a specific chemical is decreased relative to a designated control, but chemotaxis to other chemicals is unchanged." [OMP:DAS]
-is_a: OMP:0007041 ! decreased positive chemotaxis
-created_by: siegele
-creation_date: 2014-08-06T15:45:34Z
 
 [Term]
 id: OMP:0007055
@@ -5674,14 +5698,6 @@ def: "A nutrient utilization phenotype altered relative to a designated control.
 is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2014-04-30T15:52:18Z
-
-[Term]
-id: OMP:0007080
-name: presence of chemotaxis to a specific chemical
-def: "A presence of positive chemotaxis phenotype where a cell or cells moves toward a specific chemical (attractant)." [OMP:DAS]
-is_a: OMP:0000052 ! presence of positive chemotaxis
-created_by: siegele
-creation_date: 2014-08-06T16:03:53Z
 
 [Term]
 id: OMP:0007081
@@ -5892,32 +5908,6 @@ created_by: siegele
 creation_date: 2014-07-10T23:00:30Z
 
 [Term]
-id: OMP:0007106
-name: transcription phenotype
-def: "A gene expression phenotype that affects DNA-dependent transcription." [OMP:DAS]
-xref: FYPO:0000290
-is_a: OMP:0000253 ! gene expression phenotype
-created_by: dsiegele
-creation_date: 2014-08-07T17:24:59Z
-
-[Term]
-id: OMP:0007107
-name: translation phenotype
-def: "A gene expression phenotype that affects translation of mRNAs." [OMP:DAS]
-xref: FYPO:0000291
-is_a: OMP:0000253 ! gene expression phenotype
-created_by: dsiegele
-creation_date: 2014-08-07T17:24:59Z
-
-[Term]
-id: OMP:0007108
-name: altered transcription phenotype
-def: "A transcription phenotype where DNA-dependent transcription of a gene or genes is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007106 ! transcription phenotype
-created_by: dsiegele
-creation_date: 2014-08-07T17:33:35Z
-
-[Term]
 id: OMP:0007109
 name: chemotrophic phenotype
 def: "An energy metabolism phenotype where energy is obtained from the oxidation of chemicals." [ISBN:978-0-07-340240-6, OMP:DAS]
@@ -5983,38 +5973,6 @@ is_a: OMP:0000128 ! stalked cell phenotype
 is_a: OMP:0007101 ! altered cell shape phenotype
 created_by: siegele
 creation_date: 2014-07-18T13:53:13Z
-
-[Term]
-id: OMP:0007117
-name: decreased transcription
-def: "An altered transcription phenotype where transcription of a gene or genes is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007108 ! altered transcription phenotype
-created_by: dsiegele
-creation_date: 2014-08-07T17:36:31Z
-
-[Term]
-id: OMP:0007118
-name: abolished transcription
-def: "A decreased transcription phenotype where transcription of a gene or genes is abolished." [OMP:DAS]
-is_a: OMP:0007117 ! decreased transcription
-created_by: dsiegele
-creation_date: 2014-08-07T17:36:31Z
-
-[Term]
-id: OMP:0007119
-name: increased transcription
-def: "An altered transcription phenotype where transcription of a gene or genes is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007108 ! altered transcription phenotype
-created_by: dsiegele
-creation_date: 2014-08-07T17:36:31Z
-
-[Term]
-id: OMP:0007120
-name: decreased RpoS-dependent transcription
-def: "A decreased transcription phenotype where transcription of RpoS-dependent genes is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007117 ! decreased transcription
-created_by: dsiegele
-creation_date: 2014-08-07T17:44:34Z
 
 [Typedef]
 id: decreased_relative_to
