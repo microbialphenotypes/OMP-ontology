@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 07:08:2014 17:45
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 07:08:2014 18:39
+saved-by: dsiegele
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -4612,8 +4612,8 @@ creation_date: 2014-07-28T18:19:45Z
 
 [Term]
 id: OMP:0006108
-name: abolish chemotaxis
-def: "A decreased in cell chemotaxis where an organism completely loses the ability to respond to a chemical concentration gradient." [OMP:JCH]
+name: abolished chemotaxis
+def: "A decreased chemotaxis phenotype where a cell or cells loses the ability to respond to a chemical concentration gradient." [OMP:JCH]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:11:10Z
@@ -5119,6 +5119,14 @@ created_by: DeborahSiegele
 creation_date: 2014-01-31T18:03:55Z
 
 [Term]
+id: OMP:0007005
+name: decreased chemotaxis to a specific chemical
+def: "A decreased positive chemotaxis phenotype where the ability to move toward  a chemical (attractant) is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007041 ! decreased positive chemotaxis
+created_by: dsiegele
+creation_date: 2014-08-07T18:35:51Z
+
+[Term]
 id: OMP:0007006
 name: cell population phenotype
 def: "A microbial phenotype observation at the level of a population of cells belonging to the same species." [OMP:DAS]
@@ -5401,6 +5409,14 @@ def: "An auxotrophic phenotype where the required growth factor is a vitamin or 
 is_a: OMP:0007069 ! auxotrophic phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:36:46Z
+
+[Term]
+id: OMP:0007041
+name: decreased positive chemotaxis
+def: "A decreased chemotaxis phenotype where positive chemotaxis is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0000503 ! decreased chemotaxis
+created_by: dsiegele
+creation_date: 2014-08-07T18:37:42Z
 
 [Term]
 id: OMP:0007042
