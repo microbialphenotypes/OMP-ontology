@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 08:08:2014 14:35
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3.1
+date: 08:08:2014 16:12
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -5084,6 +5084,53 @@ created_by: jonathanherrera
 creation_date: 2014-08-06T17:30:58Z
 
 [Term]
+id: OMP:0006166
+name: presence of binary fission phenotype
+def: "A binary fission phenotype where binary fission is observed." [OMP:JCH]
+is_a: OMP:0007067 ! binary fission phenotype
+created_by: jonathanherrera
+creation_date: 2014-08-08T15:51:18Z
+
+[Term]
+id: OMP:0006167
+name: absence of binary fission phenotype
+def: "A binary fission phenotype where binary fission is not observed." [OMP:JCH]
+is_a: OMP:0007067 ! binary fission phenotype
+created_by: jonathanherrera
+creation_date: 2014-08-08T15:59:13Z
+
+[Term]
+id: OMP:0006168
+name: altered binary fission phenotype
+def: "An altered binary fission phenotype where binary fission is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0007067 ! binary fission phenotype
+created_by: jonathanherrera
+creation_date: 2014-08-08T15:59:42Z
+
+[Term]
+id: OMP:0006169
+name: increased binary fission
+def: "An altered binary fission phenotype where binary fission is increased relative to a designated control." [OMP:JCH]
+is_a: OMP:0006168 ! altered binary fission phenotype
+created_by: jonathanherrera
+creation_date: 2014-08-08T16:01:46Z
+
+[Term]
+id: OMP:0006170
+name: decreased binary fission
+def: "An altered binary fission phenotype where binary fission is decreased relative to a designated control." [OMP:JCH]
+is_a: OMP:0006168 ! altered binary fission phenotype
+created_by: jonathanherrera
+creation_date: 2014-08-08T16:01:46Z
+
+[Term]
+id: OMP:0006171
+name: abolished binary fission
+is_a: OMP:0006170 ! decreased binary fission
+created_by: jonathanherrera
+creation_date: 2014-08-08T16:01:54Z
+
+[Term]
 id: OMP:0007000
 name: abolished motility
 def: "A decrease in motility phenotype where an organism loses the ability to be motile." [OMP:JCH]
@@ -5616,7 +5663,7 @@ creation_date: 2014-02-03T15:55:25Z
 
 [Term]
 id: OMP:0007067
-name: binary fission
+name: binary fission phenotype
 def: "An asexual reproduction phenotype where an organism multiplies by binary fission and 2 cells are produced." [OMP:DAS]
 is_a: OMP:0007066 ! asexual reproduction phenotype
 created_by: siegele
