@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:08:2014 16:12
+date: 08:08:2014 16:52
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -73,8 +73,9 @@ creation_date: 2011-04-26T02:52:52Z
 
 [Term]
 id: OMP:0000008
-name: bud forming phenotype
+name: bud forming
 def: "An budding phenotype where a cell possesses the ability to perform budding." [OMP:MCC]
+synonym: "presence of bud forming" EXACT []
 is_a: OMP:0000089 ! budding phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:58:46Z
@@ -83,6 +84,7 @@ creation_date: 2011-04-26T02:58:46Z
 id: OMP:0000009
 name: non-bud forming
 def: "An budding phenotype where a cell does not possess the ability to perform budding." [OMP:MCC]
+synonym: "absence of bud formation" EXACT []
 is_a: OMP:0000089 ! budding phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:59:00Z
@@ -3702,7 +3704,7 @@ id: OMP:0006004
 name: increase bud formation
 def: "A bud forming phenotype where the organism(s) has increased bud formation relative to a designated control." [OMP:WAM]
 synonym: "increased buddign index" EXACT []
-is_a: OMP:0006035 ! altered bud forming phenotype
+is_a: OMP:0006035 ! altered bud forming
 created_by: jonathanherrera
 creation_date: 2014-03-26T21:33:14Z
 
@@ -3719,7 +3721,7 @@ id: OMP:0006006
 name: decreased bud formation
 def: "A bud forming phenotype where the organism(s) has decreased bud formation relative to a designated control." [OMP:WAM]
 synonym: "decrease budding index" EXACT []
-is_a: OMP:0006035 ! altered bud forming phenotype
+is_a: OMP:0006035 ! altered bud forming
 created_by: jonathanherrera
 creation_date: 2014-03-26T21:33:14Z
 
@@ -3944,7 +3946,7 @@ creation_date: 2014-07-24T17:40:33Z
 
 [Term]
 id: OMP:0006032
-name: altered pteridine resistance phenotype
+name: altered pteridine resistance
 def: "A pteridine resistance phenotype that is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007065 ! pteridine resistance phenotype
 created_by: jonathanherrera
@@ -3968,9 +3970,9 @@ creation_date: 2014-07-24T17:57:37Z
 
 [Term]
 id: OMP:0006035
-name: altered bud forming phenotype
+name: altered bud forming
 def: "A bud forming phenotype that is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0000008 ! bud forming phenotype
+is_a: OMP:0000089 ! budding phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T18:10:38Z
 
@@ -4337,7 +4339,7 @@ name: increased resistance to pteridine
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is increased relative to a designated control." [CHEBI:27601, OMP:DAS]
 synonym: "abolish sensitivity to pteridine" RELATED []
 synonym: "decrease sensitivity to pteridine" RELATED []
-is_a: OMP:0006032 ! altered pteridine resistance phenotype
+is_a: OMP:0006032 ! altered pteridine resistance
 created_by: jonathanherrera
 creation_date: 2014-05-12T13:04:39Z
 
@@ -5085,7 +5087,7 @@ creation_date: 2014-08-06T17:30:58Z
 
 [Term]
 id: OMP:0006166
-name: presence of binary fission phenotype
+name: presence of binary fission
 def: "A binary fission phenotype where binary fission is observed." [OMP:JCH]
 is_a: OMP:0007067 ! binary fission phenotype
 created_by: jonathanherrera
@@ -5093,7 +5095,7 @@ creation_date: 2014-08-08T15:51:18Z
 
 [Term]
 id: OMP:0006167
-name: absence of binary fission phenotype
+name: absence of binary fission
 def: "A binary fission phenotype where binary fission is not observed." [OMP:JCH]
 is_a: OMP:0007067 ! binary fission phenotype
 created_by: jonathanherrera
@@ -5101,8 +5103,8 @@ creation_date: 2014-08-08T15:59:13Z
 
 [Term]
 id: OMP:0006168
-name: altered binary fission phenotype
-def: "An altered binary fission phenotype where binary fission is altered relative to a designated control." [OMP:JCH]
+name: altered binary fission
+def: "A binary fission phenotype where binary fission is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007067 ! binary fission phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-08T15:59:42Z
@@ -5111,7 +5113,7 @@ creation_date: 2014-08-08T15:59:42Z
 id: OMP:0006169
 name: increased binary fission
 def: "An altered binary fission phenotype where binary fission is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006168 ! altered binary fission phenotype
+is_a: OMP:0006168 ! altered binary fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:46Z
 
@@ -5119,16 +5121,65 @@ creation_date: 2014-08-08T16:01:46Z
 id: OMP:0006170
 name: decreased binary fission
 def: "An altered binary fission phenotype where binary fission is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006168 ! altered binary fission phenotype
+is_a: OMP:0006168 ! altered binary fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:46Z
 
 [Term]
 id: OMP:0006171
 name: abolished binary fission
+def: "A decreased binary fission phenotype where an organism loses binary fission ability." [OMP:JCH]
 is_a: OMP:0006170 ! decreased binary fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:54Z
+
+[Term]
+id: OMP:0006172
+name: absence of multiple fission
+def: "A multiple fission phenotype where multiple fission is not observed." [OMP:JCH]
+is_a: OMP:0007068 ! multiple fission phenotype
+created_by: jonathanherrera
+creation_date: 2014-08-08T16:42:12Z
+
+[Term]
+id: OMP:0006173
+name: presence of multiple fission
+def: "A multiple fission phenotype where multiple fission is observed." [OMP:JCH]
+is_a: OMP:0007068 ! multiple fission phenotype
+created_by: jonathanherrera
+creation_date: 2014-08-08T16:42:12Z
+
+[Term]
+id: OMP:0006174
+name: altered multiple fission
+def: "A multiple fission phenotype where multiple fission is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0007068 ! multiple fission phenotype
+created_by: jonathanherrera
+creation_date: 2014-08-08T16:42:12Z
+
+[Term]
+id: OMP:0006175
+name: decreased multiple fission
+def: "An altered multiple fission phenotype where multiple fission is decreased relative to a designated control." [OMP:JCH]
+is_a: OMP:0006174 ! altered multiple fission
+created_by: jonathanherrera
+creation_date: 2014-08-08T16:46:45Z
+
+[Term]
+id: OMP:0006176
+name: increased multiple fission
+def: "An altered multiple fission phenotype where multiple fission is increased relative to a designated control." [OMP:JCH]
+is_a: OMP:0006174 ! altered multiple fission
+created_by: jonathanherrera
+creation_date: 2014-08-08T16:46:45Z
+
+[Term]
+id: OMP:0006177
+name: abolished multiple fission
+def: "A decreased multiple fission phenotype where an organism loses multiple fission ability." [OMP:JCH]
+is_a: OMP:0006175 ! decreased multiple fission
+created_by: jonathanherrera
+creation_date: 2014-08-08T16:49:27Z
 
 [Term]
 id: OMP:0007000
@@ -5169,7 +5220,7 @@ name: decreased resistance to pteridine
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is decreased relative to a designated control." [CHEBI:27601, OMP:DAS]
 synonym: "abolish resistance to pteridine" NARROW [CHEBI:73913]
 synonym: "increase sensitivity to pteridine" RELATED []
-is_a: OMP:0006032 ! altered pteridine resistance phenotype
+is_a: OMP:0006032 ! altered pteridine resistance
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:03:55Z
 
@@ -5671,7 +5722,7 @@ creation_date: 2014-02-03T15:55:54Z
 
 [Term]
 id: OMP:0007068
-name: multiple fission
+name: multiple fission phenotype
 def: "An asexual reproduction phenotype where an organism multiplies by binary fission and multiple cells are produced." [OMP:JCH]
 synonym: "baeocyte formation" NARROW []
 synonym: "schizogeny" NARROW []
