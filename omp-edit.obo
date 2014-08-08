@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 08:08:2014 17:52
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 08:08:2014 18:20
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -921,7 +921,7 @@ creation_date: 2011-02-02T02:45:41Z
 [Term]
 id: OMP:0000116
 name: pigmented colony
-def: "A colony pigmentation phenotype where pigmentation is observed or predicted." [OMP:WAM]
+def: "A colony pigmentation phenotype where pigmentation is observed." [OMP:WAM]
 is_a: OMP:0000107 ! colony pigmentation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:46:17Z
@@ -1096,7 +1096,7 @@ creation_date: 2011-02-21T04:16:30Z
 [Term]
 id: OMP:0000137
 name: non-pigmented colony
-def: "A colony pigmentation phenotype where pigmentation is not observed or predicted." [OMP:WAM]
+def: "A colony pigmentation phenotype where pigmentation is not observed." [OMP:WAM]
 synonym: "colorless colony" EXACT []
 is_a: OMP:0000107 ! colony pigmentation phenotype
 created_by: Adrienne
@@ -1558,7 +1558,7 @@ creation_date: 2011-02-03T11:24:08Z
 [Term]
 id: OMP:0000194
 name: presence of catalase activity
-def: "A catalase activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
+def: "A catalase activity phenotype where the enzyme activity is observed." [OMP:JCH]
 synonym: "catalase positive" EXACT []
 is_a: OMP:0000218 ! catalase activity phenotype
 created_by: mchibucos
@@ -1979,7 +1979,7 @@ creation_date: 2011-06-07T02:27:00Z
 [Term]
 id: OMP:0000246
 name: presence of nanotube
-def: "A nanotube phenotype where formation of the tube structure is observed or predicted." [OMP:JCH]
+def: "A nanotube phenotype where formation of the tube structure is observed." [OMP:JCH]
 is_a: OMP:0000175 ! nanotube phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:00:25Z
@@ -1987,7 +1987,7 @@ creation_date: 2011-06-07T03:00:25Z
 [Term]
 id: OMP:0000247
 name: absence of nanotube
-def: "A nanotube phenotype where formation of the tube structure is not observed or predicted." [OMP:JCH]
+def: "A nanotube phenotype where formation of the tube structure is not observed." [OMP:JCH]
 is_a: OMP:0000175 ! nanotube phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:01:32Z
@@ -2160,7 +2160,7 @@ creation_date: 2011-07-21T04:46:29Z
 [Term]
 id: OMP:0000295
 name: presence of negative DNA supercoiling
-def: "A DNA supercoiling phenotype where the DNA twists around its axis in the opposite direction from the clockwise turns of the right-handed double helix is observed or predicted." [ISBN:9781613441138]
+def: "A DNA supercoiling phenotype where the DNA twists around its axis in the opposite direction from the clockwise turns of the right-handed double helix is observed." [ISBN:9781613441138]
 synonym: "underwound DNA phenotype" RELATED []
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
@@ -2169,7 +2169,7 @@ creation_date: 2011-07-21T04:47:38Z
 [Term]
 id: OMP:0000296
 name: presence of positive DNA supercoiling
-def: "A DNA supercoiling phenotype where the DNA twists around its axis in the same direction as the clockwise turns of the right-handed double helix is observed or predicted." [ISBN:9781613441138]
+def: "A DNA supercoiling phenotype where the DNA twists around its axis in the same direction as the clockwise turns of the right-handed double helix is observed." [ISBN:9781613441138]
 synonym: "overwound DNA phenotype" RELATED []
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
@@ -2396,7 +2396,7 @@ creation_date: 2013-05-23T01:39:39Z
 [Term]
 id: OMP:0000454
 name: absence of heme utilization
-def: "A heme utilization phenotype where heme utilization is not observed or predicted." [OMP:JCH]
+def: "A heme utilization phenotype where heme utilization is not observed." [OMP:JCH]
 is_a: OMP:0000451 ! heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:40:40Z
@@ -2710,7 +2710,7 @@ creation_date: 2013-09-19T15:55:16Z
 [Term]
 id: OMP:0005022
 name: absence of SOS response
-def: "A SOS response phenotype where the mechanism is not observed or predicted." [OMP:WAM]
+def: "A SOS response phenotype where the mechanism is not observed." [OMP:WAM]
 is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:09Z
@@ -2718,7 +2718,7 @@ creation_date: 2013-09-19T16:25:09Z
 [Term]
 id: OMP:0005023
 name: presence of SOS response
-def: "A SOS response phenotype where the mechanism is observed or predicted." [OMP:WAM]
+def: "A SOS response phenotype where the mechanism is observed." [OMP:WAM]
 is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:30Z
@@ -2790,7 +2790,7 @@ creation_date: 2013-09-25T15:57:46Z
 [Term]
 id: OMP:0005032
 name: presence of stress induced mutagenesis
-def: "A stress induced mutagenesis phenotype where the processes are observed or predicted." [OMP:WAM]
+def: "A stress induced mutagenesis phenotype where the processes are observed." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:59:12Z
@@ -2798,7 +2798,7 @@ creation_date: 2013-09-25T15:59:12Z
 [Term]
 id: OMP:0005033
 name: absence of stress-induced mutagenesis
-def: "A stress-induced mutagenesis phenotype where the process is not observed or predicted." [OMP:WAM]
+def: "A stress-induced mutagenesis phenotype where the process is not observed." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T18:20:22Z
@@ -2942,7 +2942,7 @@ creation_date: 2013-10-24T12:52:41Z
 [Term]
 id: OMP:0005051
 name: presence of homologous recombination
-def: "A homologous recombination phenotype where the process is observed or predicted." [OMP:WAM]
+def: "A homologous recombination phenotype where the process is observed." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:21:41Z
@@ -2950,7 +2950,7 @@ creation_date: 2013-10-25T12:21:41Z
 [Term]
 id: OMP:0005052
 name: absence of homologous recombination
-def: "A homologous recombination phenotype where the process is not observed or predicted." [OMP:WAM]
+def: "A homologous recombination phenotype where the process is not observed." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:22:04Z
@@ -2990,7 +2990,7 @@ creation_date: 2013-10-29T13:15:06Z
 [Term]
 id: OMP:0005057
 name: absence of site specific recombination
-def: "A site specific recombination phenotype where the process is not observed or predicted." [OMP:WAM]
+def: "A site specific recombination phenotype where the process is not observed." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:15:28Z
@@ -2998,7 +2998,7 @@ creation_date: 2013-10-29T13:15:28Z
 [Term]
 id: OMP:0005058
 name: presence of site specific recombination
-def: "A site specific recombination phenotype where the process is observed or predicted." [OMP:WAM]
+def: "A site specific recombination phenotype where the process is observed." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:20:16Z
@@ -3038,7 +3038,7 @@ creation_date: 2013-11-04T18:10:07Z
 [Term]
 id: OMP:0005063
 name: presence of chromosome segregation
-def: "A chromosome segregation phenotype where the process is observed or predicted." [OMP:WAM]
+def: "A chromosome segregation phenotype where the process is observed." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:12:32Z
@@ -3062,7 +3062,7 @@ creation_date: 2013-11-04T18:21:56Z
 [Term]
 id: OMP:0005066
 name: absence of gene silencing
-def: "A gene silencing phenotype where the mechanisms are not observed or predicted." [OMP:WAM]
+def: "A gene silencing phenotype where the mechanisms are not observed." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:33:14Z
@@ -3118,7 +3118,7 @@ creation_date: 2013-11-08T17:35:56Z
 [Term]
 id: OMP:0005073
 name: presence of mitotic recombination
-def: "A mitotic recombination phenotype where the process is observed or predicted." [OMP:WAM]
+def: "A mitotic recombination phenotype where the process is observed." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:36:20Z
@@ -3789,7 +3789,7 @@ creation_date: 2014-04-30T22:48:59Z
 [Term]
 id: OMP:0006015
 name: presence of transposable element transposition phenotype
-def: "A transposable element transposition phenotype where the process is observed or predicted." [OMP:WAM]
+def: "A transposable element transposition phenotype where the process is observed." [OMP:WAM]
 is_a: OMP:0005059 ! transposable element transposition phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:34:28Z
@@ -3797,7 +3797,7 @@ creation_date: 2014-07-24T16:34:28Z
 [Term]
 id: OMP:0006016
 name: absence of transposable element transposition phenotype
-def: "A transposable element transposition phenotype where the process is not observed or predicted." [OMP:WAM]
+def: "A transposable element transposition phenotype where the process is not observed." [OMP:WAM]
 is_a: OMP:0005059 ! transposable element transposition phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:34:28Z
@@ -4366,7 +4366,7 @@ creation_date: 2014-07-15T14:55:03Z
 [Term]
 id: OMP:0006078
 name: absence of decarboxylase activity
-def: "A decarboxylase activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
+def: "A decarboxylase activity phenotype where the enzyme activity is not observed." [OMP:JCH]
 synonym: "decarboxylase deficient" RELATED []
 synonym: "decarboxylase negative" EXACT []
 is_a: OMP:0000219 ! decarboxylase activity phenotype
@@ -4384,7 +4384,7 @@ creation_date: 2014-07-15T19:59:58Z
 [Term]
 id: OMP:0006080
 name: presence of decarboxylase activity
-def: "A decarboxylase activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
+def: "A decarboxylase activity phenotype where the enzyme activity is observed." [OMP:JCH]
 synonym: "decarboxylase positive" EXACT []
 is_a: OMP:0000219 ! decarboxylase activity phenotype
 created_by: jonathanherrera
@@ -4417,7 +4417,7 @@ creation_date: 2014-07-15T20:06:25Z
 [Term]
 id: OMP:0006084
 name: absence of oxidase activity
-def: "An oxidase activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
+def: "An oxidase activity phenotype where the enzyme activity is not observed." [OMP:JCH]
 synonym: "oxidase deficient" RELATED []
 synonym: "oxidase negative" EXACT []
 is_a: OMP:0000220 ! oxidase activity phenotype
@@ -4427,7 +4427,7 @@ creation_date: 2014-07-15T20:06:25Z
 [Term]
 id: OMP:0006085
 name: presence of oxidase activity
-def: "An oxidase activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
+def: "An oxidase activity phenotype where the enzyme activity is observed." [OMP:JCH]
 synonym: "oxidase positive" EXACT []
 is_a: OMP:0000220 ! oxidase activity phenotype
 created_by: jonathanherrera
@@ -4460,7 +4460,7 @@ creation_date: 2014-07-15T20:07:31Z
 [Term]
 id: OMP:0006089
 name: presence of urease activity
-def: "A urease activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
+def: "A urease activity phenotype where the enzyme activity is observed." [OMP:JCH]
 synonym: "urease positive" EXACT []
 is_a: OMP:0000222 ! urease activity phenotype
 created_by: jonathanherrera
@@ -4469,7 +4469,7 @@ creation_date: 2014-07-15T20:07:31Z
 [Term]
 id: OMP:0006090
 name: absence of urease activity
-def: "A urease activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
+def: "A urease activity phenotype where the enzyme activity is not observed." [OMP:JCH]
 synonym: "oxidase deficient" RELATED []
 synonym: "Oxidase negative" EXACT []
 is_a: OMP:0000222 ! urease activity phenotype
@@ -5058,7 +5058,7 @@ creation_date: 2014-07-29T18:03:06Z
 [Term]
 id: OMP:0006163
 name: presence of heme utilization
-def: "A heme utilization phenotype where heme utilization is observed or predicted." [OMP:JCH]
+def: "A heme utilization phenotype where heme utilization is observed." [OMP:JCH]
 is_a: OMP:0000451 ! heme utilization phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-05T13:35:01Z
