@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 08:08:2014 13:46
-saved-by: dsiegele
-auto-generated-by: OBO-Edit 2.3.1
+date: 08:08:2014 14:11
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -58,7 +58,7 @@ creation_date: 2011-04-14T03:35:35Z
 [Term]
 id: OMP:0000006
 name: akinete forming
-def: "An akinete formation phenotype where the representative member of a taxonomic possesses the ability to form an akinete." [OMP:MCC]
+def: "An akinete formation phenotype where the organism has the ability to form an akinete." [OMP:MCC]
 is_a: OMP:0000093 ! akinete formation phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:51:36Z
@@ -393,7 +393,7 @@ creation_date: 2011-06-07T10:53:59Z
 [Term]
 id: OMP:0000052
 name: presence of positive chemotaxis
-def: "A presence of chemotaxis phenotype where the representative member of a taxonomic unit possesses the ability to move toward a chemical concentration gradient." [OMP:MCC]
+def: "A presence of chemotaxis phenotype where the defining trait is the ability to move towards a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000046 ! presence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -401,7 +401,7 @@ creation_date: 2011-04-26T04:42:14Z
 [Term]
 id: OMP:0000053
 name: presence of negative chemotaxis
-def: "A presence of chemotaxis phenotype where the representative member of a taxonomic unit possesses the ability away from a chemical concentration gradient." [OMP:MCC]
+def: "A presence of chemotaxis phenotype where the defining trait is the ability to move away from a chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000046 ! presence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
