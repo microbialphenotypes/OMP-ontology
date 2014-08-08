@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:08:2014 18:20
+date: 08:08:2014 18:29
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -3365,7 +3365,7 @@ creation_date: 2014-02-11T11:54:51Z
 
 [Term]
 id: OMP:0005102
-name: increase in enzyme activity
+name: increase enzyme activity
 def: "An altered enzyme activity phenotype where there is an increase in enzyme activity relative to a designated control." [OMP:WAM]
 is_a: OMP:0005130 ! altered enzymatic activity phenotype
 created_by: wmeza
@@ -3373,7 +3373,7 @@ creation_date: 2014-04-17T10:54:45Z
 
 [Term]
 id: OMP:0005103
-name: decreased in enzyme activity
+name: decreased enzyme activity
 def: "An altered enzyme activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:WAM]
 is_a: OMP:0005130 ! altered enzymatic activity phenotype
 created_by: wmeza
@@ -4512,7 +4512,7 @@ creation_date: 2014-07-24T20:05:39Z
 id: OMP:0006095
 name: abolished enzyme activity
 def: "A decreased in enzyme activity where the ability of enzymatic activity is lost." [OMP:JCH]
-is_a: OMP:0005103 ! decreased in enzyme activity
+is_a: OMP:0005103 ! decreased enzyme activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:09:28Z
 
