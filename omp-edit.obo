@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 07:08:2014 20:03
-saved-by: wmeza
-auto-generated-by: OBO-Edit 2.3.1
+date: 08:08:2014 13:33
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1084,6 +1084,7 @@ creation_date: 2011-02-18T03:40:27Z
 [Term]
 id: OMP:0000135
 name: akinete envelope attribute
+def: "An akinete formation phenotype where the traits described are from the cells thick-walled outer membrane." [OMP:JCH]
 is_a: OMP:0000093 ! akinete formation phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:41:16Z
