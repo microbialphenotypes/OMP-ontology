@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 08:08:2014 14:11
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 08:08:2014 14:35
+saved-by: wmeza
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2330,7 +2330,7 @@ creation_date: 2012-11-02T02:06:13Z
 [Term]
 id: OMP:0000435
 name: resistant to aminopyrimidine
-def: "An aminopyrimidine resistance phenotype where resistance to aminopyrimidines is observed or predict." [OMP:DAS]
+def: "An aminopyrimidine resistance phenotype where resistance to aminopyrimidines is observed." [OMP:DAS]
 synonym: "no sensitivity to aminopyrimidine" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
@@ -2339,7 +2339,7 @@ creation_date: 2012-11-04T02:52:01Z
 [Term]
 id: OMP:0000436
 name: not resistant to aminopyrimidine
-def: "An aminopyrimidine resistance phenotype where resistance to aminopyrimidines is not observed or predicted." [OMP:DAS]
+def: "An aminopyrimidine resistance phenotype where resistance to aminopyrimidines is not observed." [OMP:DAS]
 synonym: "sensitivity to aminopyrimidine" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
@@ -2426,7 +2426,7 @@ creation_date: 2013-05-23T01:54:51Z
 [Term]
 id: OMP:0000457
 name: resistant to caffeine
-def: "A caffeine resistance phenotype where resistance to caffeine is observed or predicted." [OMP:WAM]
+def: "A caffeine resistance phenotype where resistance to caffeine is observed." [OMP:WAM]
 synonym: "Not sensitive to caffeine" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
@@ -2435,7 +2435,7 @@ creation_date: 2013-05-23T01:55:13Z
 [Term]
 id: OMP:0000458
 name: not resistant to caffeine
-def: "A caffeine resistance phenotype where resistance to caffeine is not observed or predicted." [OMP:WAM]
+def: "A caffeine resistance phenotype where resistance to caffeine is not observed." [OMP:WAM]
 synonym: "sensitive to caffeine" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
@@ -3996,7 +3996,7 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006038
 name: not resistant to macrolide
-def: "A macrolide compound resistance phenotype where resistance to macrolide compounds is not observed or predicted." [OMP:JCH]
+def: "A macrolide compound resistance phenotype where resistance to macrolide compounds is not observed." [OMP:JCH]
 synonym: "sensitivity to macrolide" RELATED []
 is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
@@ -4005,7 +4005,7 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006039
 name: resistant to macrolide
-def: "A macrolide compound resistance phenotype where resistance to macrolide compounds is observed or predicted." [OMP:JCH]
+def: "A macrolide compound resistance phenotype where resistance to macrolide compounds is observed." [OMP:JCH]
 synonym: "no sensitivity to macrolide" RELATED []
 is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
@@ -4033,7 +4033,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006042
 name: not resistant to quinolone
-def: "A quinoline compound resistance phenotype where resistance to quinolone compounds is not observed or predicted." [OMp:JCH]
+def: "A quinoline compound resistance phenotype where resistance to quinolone compounds is not observed." [OMp:JCH]
 synonym: "sensitivity to quinolone" RELATED []
 is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
@@ -4042,7 +4042,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006043
 name: resistant to quinolone
-def: "A quinoline compound resistance phenotype where resistance to quinolone compounds is observed or predicted." [OMP:JCH]
+def: "A quinoline compound resistance phenotype where resistance to quinolone compounds is observed." [OMP:JCH]
 synonym: "sensitivity to quinolone" RELATED []
 is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
@@ -4069,7 +4069,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006046
 name: not resistant to beta-lactam
-def: "A beta-lactam compound resistance phenotype where resistance to beta-lactam compounds are not observed or predicted." [OMP:JCH]
+def: "A beta-lactam compound resistance phenotype where resistance to beta-lactam compounds is not observed." [OMP:JCH]
 synonym: "sensitivity to beta-lactam" RELATED []
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
@@ -4078,7 +4078,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006047
 name: resistant to beta-lactam
-def: "An beta-lactam compound resistance phenotype where resistance to beta-lactam compounds are observed or predicted." [OMP:JCH]
+def: "An beta-lactam compound resistance phenotype where resistance to beta-lactam compounds is observed." [OMP:JCH]
 synonym: "no sensitivity to beta-lactam" RELATED []
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
@@ -4105,7 +4105,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006050
 name: not resistant to bacteriocin
-def: "A bacteriocin compound resistance phenotype where resistance to bacteriocins are not observed or predicted." [OMP:JCH]
+def: "A bacteriocin compound resistance phenotype where resistance to bacteriocins is not observed." [OMP:JCH]
 synonym: "sensitivity to a bacteriocin" RELATED []
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
@@ -4114,7 +4114,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006051
 name: resistant to bacteriocin
-def: "A bacteriocin compound resistance phenotype where resistance to bacteriocins are observed or predicted." [OMP:JCH]
+def: "A bacteriocin compound resistance phenotype where resistance to bacteriocins is observed." [OMP:JCH]
 synonym: "no sensitivity to bacteriocin" RELATED []
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
@@ -4141,7 +4141,7 @@ creation_date: 2013-10-11T17:45:44Z
 [Term]
 id: OMP:0006054
 name: not resistant to azole
-def: "An azole compound resistance phenotype where resistance to azoles is not observed or predicted." [OMP:DAS]
+def: "An azole compound resistance phenotype where resistance to azoles is not observed." [OMP:DAS]
 synonym: "sensitivity to azole" RELATED []
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
@@ -4150,7 +4150,7 @@ creation_date: 2013-10-11T17:45:44Z
 [Term]
 id: OMP:0006055
 name: resistant to azole
-def: "An azole compound resistance phenotype where resistance to azoles is observed or predicted." [OMP:DAS]
+def: "An azole compound resistance phenotype where resistance to azoles is observed." [OMP:DAS]
 synonym: "No sensitivity to azole" RELATED []
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
@@ -4191,7 +4191,8 @@ creation_date: 2013-10-22T19:24:20Z
 [Term]
 id: OMP:0006059
 name: not resistant to aminoglycoside
-def: "An aminoglycoside resistance phenotype where resistance to aminoglycosides is not observed or predicted." [OMP:JCH]
+def: "An aminoglycoside resistance phenotype where resistance to aminoglycosides is not observed." [OMP:JCH]
+synonym: "<new synonym>" RELATED []
 synonym: "sensitivity to aminoglycosdie " RELATED []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
@@ -4200,7 +4201,7 @@ creation_date: 2013-10-22T19:24:20Z
 [Term]
 id: OMP:0006060
 name: resistant to aminoglycoside
-def: "An aminoglycoside resistance phenotype where resistance to aminoglycosides is observed or predicted." [OMP:JCH]
+def: "An aminoglycoside resistance phenotype where resistance to aminoglycosides is observed." [OMP:JCH]
 synonym: "no sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
@@ -4240,7 +4241,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006064
 name: not resistant to tetracycline
-def: "A tetracycline compound resistance phenotype where resistance to tetracycline compounds is not observed or predicted." [OMP:JCH]
+def: "A tetracycline compound resistance phenotype where resistance to tetracycline compounds is not observed." [OMP:JCH]
 synonym: "chlortetracycline" NARROW [OMP:JCH]
 synonym: "oxytetracycline " NARROW [OMP:JCH]
 synonym: "sensitivity to tetracycline" RELATED []
@@ -4251,7 +4252,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006065
 name: resistant to tetracycline
-def: "A tetracycline compound resistance phenotype where resistance to tetracycline compounds is observed or predicted." [OMP:JCH]
+def: "A tetracycline compound resistance phenotype where resistance to tetracycline compounds is observed." [OMP:JCH]
 synonym: "no sensitivity to tetracycline" RELATED []
 is_a: OMP:0006062 ! tetracycline resistance phenotype
 created_by: jonathanherrera
@@ -4289,7 +4290,7 @@ creation_date: 2013-10-24T19:41:11Z
 [Term]
 id: OMP:0006069
 name: not resistant to chloramphenicol
-def: "A chloramphenicol compound resistance phenotype where resistance to chloramphenicol compounds is not observed or predicted." [OMP:JCH]
+def: "A chloramphenicol compound resistance phenotype where resistance to chloramphenicol compounds is not observed." [OMP:JCH]
 synonym: "sensitivity to chloramphenicol" RELATED []
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
@@ -4298,7 +4299,7 @@ creation_date: 2013-10-24T19:41:11Z
 [Term]
 id: OMP:0006070
 name: resistant to chloramphenicol
-def: "A chloramphenicol compound resistance phenotype where resistance to chloramphenicol compounds is observed or predicted." [OMP:JCH]
+def: "A chloramphenicol compound resistance phenotype where resistance to chloramphenicol compounds is observed." [OMP:JCH]
 synonym: "no sensitivity to chloramphenicol" RELATED []
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
@@ -4315,7 +4316,7 @@ creation_date: 2014-07-24T18:18:59Z
 [Term]
 id: OMP:0006072
 name: not resistant to lantibiotic
-def: "A lantibiotic resistance phenotype where resistance to lantibiotic compounds are not observed or predicted." [OMP:WAM]
+def: "A lantibiotic resistance phenotype where resistance to lantibiotic compounds are not observed." [OMP:WAM]
 synonym: "sensitivity to lantibiotic" RELATED []
 is_a: OMP:0006011 ! Lantibiotic resistance phenotype
 created_by: jonathanherrera
@@ -4324,7 +4325,7 @@ creation_date: 2014-04-30T22:48:59Z
 [Term]
 id: OMP:0006073
 name: resistant to lantibiotic
-def: "A lantibiotic resistance phenotype where resistance to lantibiotic compounds are observed or predicted." [OMP:WAM]
+def: "A lantibiotic resistance phenotype where resistance to lantibiotic compounds are observed." [OMP:WAM]
 synonym: "not sensitive to lantibiotic" RELATED []
 is_a: OMP:0006011 ! Lantibiotic resistance phenotype
 created_by: jonathanherrera
@@ -4343,7 +4344,7 @@ creation_date: 2014-05-12T13:04:39Z
 [Term]
 id: OMP:0006075
 name: not resistant to pteridine
-def: "A pteridine compound resistance phenotype where resistance to pteridine compounds is not observed or predicted." [CHEBI:27601, OMP:JCH]
+def: "A pteridine compound resistance phenotype where resistance to pteridine compounds is not observed." [CHEBI:27601, OMP:JCH]
 synonym: "sensitivity to pteridine" RELATED []
 is_a: OMP:0007065 ! pteridine resistance phenotype
 created_by: jonathanherrera
@@ -4352,7 +4353,7 @@ creation_date: 2014-05-12T13:04:40Z
 [Term]
 id: OMP:0006076
 name: resistant to pteridine
-def: "A pteridine compound resistance phenotype where resistance to pteridine compounds is observed or predicted." [CHEBI:27601, OMP:JCH]
+def: "A pteridine compound resistance phenotype where resistance to pteridine compounds is observed." [CHEBI:27601, OMP:JCH]
 synonym: "no sensitivity to pteridine" RELATED []
 is_a: OMP:0007065 ! pteridine resistance phenotype
 created_by: jonathanherrera
