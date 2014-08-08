@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:08:2014 16:52
+date: 08:08:2014 17:52
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -79,15 +79,6 @@ synonym: "presence of bud forming" EXACT []
 is_a: OMP:0000089 ! budding phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:58:46Z
-
-[Term]
-id: OMP:0000009
-name: non-bud forming
-def: "An budding phenotype where a cell does not possess the ability to perform budding." [OMP:MCC]
-synonym: "absence of bud formation" EXACT []
-is_a: OMP:0000089 ! budding phenotype
-created_by: mchibucos
-creation_date: 2011-04-26T02:59:00Z
 
 [Term]
 id: OMP:0000010
@@ -5097,14 +5088,6 @@ created_by: jonathanherrera
 creation_date: 2014-08-08T15:51:18Z
 
 [Term]
-id: OMP:0006167
-name: absence of binary fission
-def: "A binary fission phenotype where binary fission is not observed." [OMP:JCH]
-is_a: OMP:0007067 ! binary fission phenotype
-created_by: jonathanherrera
-creation_date: 2014-08-08T15:59:13Z
-
-[Term]
 id: OMP:0006168
 name: altered binary fission
 def: "A binary fission phenotype where binary fission is altered relative to a designated control." [OMP:JCH]
@@ -5135,14 +5118,6 @@ def: "A decreased binary fission phenotype where an organism loses binary fissio
 is_a: OMP:0006170 ! decreased binary fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:54Z
-
-[Term]
-id: OMP:0006172
-name: absence of multiple fission
-def: "A multiple fission phenotype where multiple fission is not observed." [OMP:JCH]
-is_a: OMP:0007068 ! multiple fission phenotype
-created_by: jonathanherrera
-creation_date: 2014-08-08T16:42:12Z
 
 [Term]
 id: OMP:0006173
