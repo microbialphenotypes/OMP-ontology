@@ -73,8 +73,8 @@ creation_date: 2011-04-26T02:52:52Z
 
 [Term]
 id: OMP:0000008
-name: bud forming
-def: "An budding phenotype where a cell possesses the ability to perform budding." [OMP:MCC]
+name: presence of budding
+def: "A budding phenotype where a cell possesses the ability to perform budding." [OMP:MCC]
 synonym: "presence of bud forming" EXACT []
 is_a: OMP:0000089 ! budding phenotype
 created_by: mchibucos
@@ -345,7 +345,7 @@ creation_date: 2011-04-26T04:08:26Z
 [Term]
 id: OMP:0000046
 name: presence of chemotaxis
-def: "A chemotaxis phenotype where a motile cell or organism displays directed movement in response to a chemical concentration gradient." [OMP:MCC]
+def: "A chemotaxis phenotype where a motile cell or organism displays directed movement in response to a specific chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:17:42Z
@@ -362,7 +362,7 @@ creation_date: 2011-04-26T04:18:11Z
 [Term]
 id: OMP:0000048
 name: chemotaxis phenotype
-def: "A taxis phenotype where the directed movement of a motile cell or organism is in response to a chemical concentration gradient." [ISBN:0198506732, OMP:MCC]
+def: "A taxis phenotype where the directed movement of a motile cell or organism is in response to a specific chemical concentration gradient." [ISBN:0198506732, OMP:MCC]
 comment: ChEBI cross product candidate (and child terms).
 xref: GO:0006935
 is_a: OMP:0000004 ! taxis phenotype
@@ -388,7 +388,7 @@ creation_date: 2011-06-07T10:53:59Z
 [Term]
 id: OMP:0000052
 name: presence of positive chemotaxis
-def: "A chemotaxis phenotype where a motile cell or organism displays directed movement towards a higher concentration of a chemical." [OMP:MCC]
+def: "A presence of chemotaxis phenotype where a motile cell or organism displays directed movement towards a higher concentration of a chemical." [OMP:MCC]
 is_a: OMP:0000046 ! presence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -404,7 +404,7 @@ creation_date: 2011-04-26T04:42:14Z
 [Term]
 id: OMP:0000054
 name: absence of positive chemotaxis
-def: "An absence of chemotaxis phenotype where an organism does not possess the ability to move toward a chemical concentration gradient." [OMP:MCC]
+def: "An absence of chemotaxis phenotype where an organism doesn't display directed movement toward a higher concentration of a specific chemical." [OMP:MCC]
 is_a: OMP:0000097 ! absence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -412,7 +412,7 @@ creation_date: 2011-04-26T04:42:14Z
 [Term]
 id: OMP:0000055
 name: absence of negative chemotaxis
-def: "An absence of chemotaxis phenotype where an organism does not possess the ability to move away from a chemical concentration gradient." [OMP:MCC]
+def: "An absence of chemotaxis phenotype where an organism doesn't display directed movement toward a lower concentration of a specific chemical." [OMP:MCC]
 is_a: OMP:0000097 ! absence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -761,7 +761,7 @@ creation_date: 2011-02-02T03:26:41Z
 [Term]
 id: OMP:0000097
 name: absence of chemotaxis
-def: "A chemotaxis phenotype where a motile cell or organism doesn't display directed movement in response to a chemical concentration gradient." [OMP:MCC]
+def: "A chemotaxis phenotype where a motile cell or organism doesn't display directed movement in response to a specific chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:13Z
@@ -921,7 +921,7 @@ creation_date: 2011-02-02T02:45:41Z
 [Term]
 id: OMP:0000116
 name: pigmented colony
-def: "A colony pigmentation phenotype where pigmentation is observed." [OMP:WAM]
+def: "A colony pigmentation phenotype where pigmentation is observed or predicted." [OMP:WAM]
 is_a: OMP:0000107 ! colony pigmentation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:46:17Z
@@ -1096,7 +1096,7 @@ creation_date: 2011-02-21T04:16:30Z
 [Term]
 id: OMP:0000137
 name: non-pigmented colony
-def: "A colony pigmentation phenotype where pigmentation is not observed." [OMP:WAM]
+def: "A colony pigmentation phenotype where pigmentation is not observed or predicted." [OMP:WAM]
 synonym: "colorless colony" EXACT []
 is_a: OMP:0000107 ! colony pigmentation phenotype
 created_by: Adrienne
@@ -1558,7 +1558,7 @@ creation_date: 2011-02-03T11:24:08Z
 [Term]
 id: OMP:0000194
 name: presence of catalase activity
-def: "A catalase activity phenotype where the enzyme activity is observed." [OMP:JCH]
+def: "A catalase activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
 synonym: "catalase positive" EXACT []
 is_a: OMP:0000218 ! catalase activity phenotype
 created_by: mchibucos
@@ -1979,7 +1979,7 @@ creation_date: 2011-06-07T02:27:00Z
 [Term]
 id: OMP:0000246
 name: presence of nanotube
-def: "A nanotube phenotype where formation of the tube structure is observed." [OMP:JCH]
+def: "A nanotube phenotype where formation of the tube structure is observed or predicted." [OMP:JCH]
 is_a: OMP:0000175 ! nanotube phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:00:25Z
@@ -1987,7 +1987,7 @@ creation_date: 2011-06-07T03:00:25Z
 [Term]
 id: OMP:0000247
 name: absence of nanotube
-def: "A nanotube phenotype where formation of the tube structure is not observed." [OMP:JCH]
+def: "A nanotube phenotype where formation of the tube structure is not observed or predicted." [OMP:JCH]
 is_a: OMP:0000175 ! nanotube phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:01:32Z
@@ -2160,7 +2160,7 @@ creation_date: 2011-07-21T04:46:29Z
 [Term]
 id: OMP:0000295
 name: presence of negative DNA supercoiling
-def: "A DNA supercoiling phenotype where the DNA twists around its axis in the opposite direction from the clockwise turns of the right-handed double helix is observed." [ISBN:9781613441138]
+def: "A DNA supercoiling phenotype where the DNA twists around its axis in the opposite direction from the clockwise turns of the right-handed double helix is observed or predicted." [ISBN:9781613441138]
 synonym: "underwound DNA phenotype" RELATED []
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
@@ -2169,7 +2169,7 @@ creation_date: 2011-07-21T04:47:38Z
 [Term]
 id: OMP:0000296
 name: presence of positive DNA supercoiling
-def: "A DNA supercoiling phenotype where the DNA twists around its axis in the same direction as the clockwise turns of the right-handed double helix is observed." [ISBN:9781613441138]
+def: "A DNA supercoiling phenotype where the DNA twists around its axis in the same direction as the clockwise turns of the right-handed double helix is observed or predicted." [ISBN:9781613441138]
 synonym: "overwound DNA phenotype" RELATED []
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
@@ -2396,7 +2396,7 @@ creation_date: 2013-05-23T01:39:39Z
 [Term]
 id: OMP:0000454
 name: absence of heme utilization
-def: "A heme utilization phenotype where heme utilization is not observed." [OMP:JCH]
+def: "A heme utilization phenotype where heme utilization is not observed or predicted." [OMP:JCH]
 is_a: OMP:0000451 ! heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:40:40Z
@@ -2509,7 +2509,7 @@ creation_date: 2012-11-02T01:21:21Z
 [Term]
 id: OMP:0000503
 name: decreased chemotaxis
-def: "An altered chemotaxis phenotype where chemotaxis is decreased relative to a designated control." [OMP:DAS]
+def: "An altered chemotaxis phenotype where directed movement of a motile cell or organism in response to a specific chemical gradient is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007077 ! altered chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:22:28Z
@@ -2517,7 +2517,7 @@ creation_date: 2012-11-02T01:22:28Z
 [Term]
 id: OMP:0000505
 name: increased chemotaxis
-def: "An altered chemotaxis phenotype where chemotaxis is increased relative to a designated control." [OMP:DAS]
+def: "An altered chemotaxis phenotype where directed movement of a motile cell or organism in response to a specific chemical gradient is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007077 ! altered chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:23:12Z
@@ -2710,7 +2710,7 @@ creation_date: 2013-09-19T15:55:16Z
 [Term]
 id: OMP:0005022
 name: absence of SOS response
-def: "A SOS response phenotype where the mechanism is not observed." [OMP:WAM]
+def: "A SOS response phenotype where the mechanism is not observed or predicted." [OMP:WAM]
 is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:09Z
@@ -2718,7 +2718,7 @@ creation_date: 2013-09-19T16:25:09Z
 [Term]
 id: OMP:0005023
 name: presence of SOS response
-def: "A SOS response phenotype where the mechanism is observed." [OMP:WAM]
+def: "A SOS response phenotype where the mechanism is observed or predicted." [OMP:WAM]
 is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:30Z
@@ -2790,7 +2790,7 @@ creation_date: 2013-09-25T15:57:46Z
 [Term]
 id: OMP:0005032
 name: presence of stress induced mutagenesis
-def: "A stress induced mutagenesis phenotype where the processes are observed." [OMP:WAM]
+def: "A stress induced mutagenesis phenotype where the processes are observed or predicted." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:59:12Z
@@ -2798,7 +2798,7 @@ creation_date: 2013-09-25T15:59:12Z
 [Term]
 id: OMP:0005033
 name: absence of stress-induced mutagenesis
-def: "A stress-induced mutagenesis phenotype where the process is not observed." [OMP:WAM]
+def: "A stress-induced mutagenesis phenotype where the process is not observed or predicted." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T18:20:22Z
@@ -2942,7 +2942,7 @@ creation_date: 2013-10-24T12:52:41Z
 [Term]
 id: OMP:0005051
 name: presence of homologous recombination
-def: "A homologous recombination phenotype where the process is observed." [OMP:WAM]
+def: "A homologous recombination phenotype where the process is observed or predicted." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:21:41Z
@@ -2950,7 +2950,7 @@ creation_date: 2013-10-25T12:21:41Z
 [Term]
 id: OMP:0005052
 name: absence of homologous recombination
-def: "A homologous recombination phenotype where the process is not observed." [OMP:WAM]
+def: "A homologous recombination phenotype where the process is not observed or predicted." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:22:04Z
@@ -2990,7 +2990,7 @@ creation_date: 2013-10-29T13:15:06Z
 [Term]
 id: OMP:0005057
 name: absence of site specific recombination
-def: "A site specific recombination phenotype where the process is not observed." [OMP:WAM]
+def: "A site specific recombination phenotype where the process is not observed or predicted." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:15:28Z
@@ -2998,7 +2998,7 @@ creation_date: 2013-10-29T13:15:28Z
 [Term]
 id: OMP:0005058
 name: presence of site specific recombination
-def: "A site specific recombination phenotype where the process is observed." [OMP:WAM]
+def: "A site specific recombination phenotype where the process is observed or predicted." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:20:16Z
@@ -3038,7 +3038,7 @@ creation_date: 2013-11-04T18:10:07Z
 [Term]
 id: OMP:0005063
 name: presence of chromosome segregation
-def: "A chromosome segregation phenotype where the process is observed." [OMP:WAM]
+def: "A chromosome segregation phenotype where the process is observed or predicted." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:12:32Z
@@ -3062,7 +3062,7 @@ creation_date: 2013-11-04T18:21:56Z
 [Term]
 id: OMP:0005066
 name: absence of gene silencing
-def: "A gene silencing phenotype where the mechanisms are not observed." [OMP:WAM]
+def: "A gene silencing phenotype where the mechanisms are not observed or predicted." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:33:14Z
@@ -3118,7 +3118,7 @@ creation_date: 2013-11-08T17:35:56Z
 [Term]
 id: OMP:0005073
 name: presence of mitotic recombination
-def: "A mitotic recombination phenotype where the process is observed." [OMP:WAM]
+def: "A mitotic recombination phenotype where the process is observed or predicted." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:36:20Z
@@ -3695,10 +3695,10 @@ creation_date: 2014-07-24T15:10:50Z
 
 [Term]
 id: OMP:0006004
-name: increase bud formation
-def: "A bud forming phenotype where the organism(s) has increased bud formation relative to a designated control." [OMP:WAM]
-synonym: "increased buddign index" EXACT []
-is_a: OMP:0006035 ! altered bud forming
+name: increased budding
+def: "An altered budding phenotype where the organism(s) has increased bud formation relative to a designated control." [OMP:WAM]
+synonym: "increased budding index" EXACT []
+is_a: OMP:0006035 ! altered budding
 created_by: jonathanherrera
 creation_date: 2014-03-26T21:33:14Z
 
@@ -3712,10 +3712,10 @@ creation_date: 2014-07-24T15:21:56Z
 
 [Term]
 id: OMP:0006006
-name: decreased bud formation
-def: "A bud forming phenotype where the organism(s) has decreased bud formation relative to a designated control." [OMP:WAM]
-synonym: "decrease budding index" EXACT []
-is_a: OMP:0006035 ! altered bud forming
+name: decreased budding
+def: "An altered budding phenotype where the organism(s) has decreased bud formation relative to a designated control." [OMP:WAM]
+synonym: "decreased budding index" EXACT []
+is_a: OMP:0006035 ! altered budding
 created_by: jonathanherrera
 creation_date: 2014-03-26T21:33:14Z
 
@@ -3789,7 +3789,7 @@ creation_date: 2014-04-30T22:48:59Z
 [Term]
 id: OMP:0006015
 name: presence of transposable element transposition phenotype
-def: "A transposable element transposition phenotype where the process is observed." [OMP:WAM]
+def: "A transposable element transposition phenotype where the process is observed or predicted." [OMP:WAM]
 is_a: OMP:0005059 ! transposable element transposition phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:34:28Z
@@ -3797,7 +3797,7 @@ creation_date: 2014-07-24T16:34:28Z
 [Term]
 id: OMP:0006016
 name: absence of transposable element transposition phenotype
-def: "A transposable element transposition phenotype where the process is not observed." [OMP:WAM]
+def: "A transposable element transposition phenotype where the process is not observed or predicted." [OMP:WAM]
 is_a: OMP:0005059 ! transposable element transposition phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:34:28Z
@@ -3964,8 +3964,8 @@ creation_date: 2014-07-24T17:57:37Z
 
 [Term]
 id: OMP:0006035
-name: altered bud forming
-def: "A bud forming phenotype that is altered relative to a designated control." [OMP:JCH]
+name: altered budding
+def: "A budding phenotype that is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000089 ! budding phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T18:10:38Z
@@ -4366,7 +4366,7 @@ creation_date: 2014-07-15T14:55:03Z
 [Term]
 id: OMP:0006078
 name: absence of decarboxylase activity
-def: "A decarboxylase activity phenotype where the enzyme activity is not observed." [OMP:JCH]
+def: "A decarboxylase activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
 synonym: "decarboxylase deficient" RELATED []
 synonym: "decarboxylase negative" EXACT []
 is_a: OMP:0000219 ! decarboxylase activity phenotype
@@ -4384,7 +4384,7 @@ creation_date: 2014-07-15T19:59:58Z
 [Term]
 id: OMP:0006080
 name: presence of decarboxylase activity
-def: "A decarboxylase activity phenotype where the enzyme activity is observed." [OMP:JCH]
+def: "A decarboxylase activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
 synonym: "decarboxylase positive" EXACT []
 is_a: OMP:0000219 ! decarboxylase activity phenotype
 created_by: jonathanherrera
@@ -4417,7 +4417,7 @@ creation_date: 2014-07-15T20:06:25Z
 [Term]
 id: OMP:0006084
 name: absence of oxidase activity
-def: "An oxidase activity phenotype where the enzyme activity is not observed." [OMP:JCH]
+def: "An oxidase activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
 synonym: "oxidase deficient" RELATED []
 synonym: "oxidase negative" EXACT []
 is_a: OMP:0000220 ! oxidase activity phenotype
@@ -4427,7 +4427,7 @@ creation_date: 2014-07-15T20:06:25Z
 [Term]
 id: OMP:0006085
 name: presence of oxidase activity
-def: "An oxidase activity phenotype where the enzyme activity is observed." [OMP:JCH]
+def: "An oxidase activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
 synonym: "oxidase positive" EXACT []
 is_a: OMP:0000220 ! oxidase activity phenotype
 created_by: jonathanherrera
@@ -4460,7 +4460,7 @@ creation_date: 2014-07-15T20:07:31Z
 [Term]
 id: OMP:0006089
 name: presence of urease activity
-def: "A urease activity phenotype where the enzyme activity is observed." [OMP:JCH]
+def: "A urease activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
 synonym: "urease positive" EXACT []
 is_a: OMP:0000222 ! urease activity phenotype
 created_by: jonathanherrera
@@ -4469,7 +4469,7 @@ creation_date: 2014-07-15T20:07:31Z
 [Term]
 id: OMP:0006090
 name: absence of urease activity
-def: "A urease activity phenotype where the enzyme activity is not observed." [OMP:JCH]
+def: "A urease activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
 synonym: "oxidase deficient" RELATED []
 synonym: "Oxidase negative" EXACT []
 is_a: OMP:0000222 ! urease activity phenotype
@@ -4544,7 +4544,7 @@ creation_date: 2014-07-24T20:18:01Z
 id: OMP:0006099
 name: abolished bud formation
 def: "A decrease in bud formation where the ability for bud formation is lost." [OMP:JCH]
-is_a: OMP:0006006 ! decreased bud formation
+is_a: OMP:0006006 ! decreased budding
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:08:59Z
 
@@ -4617,7 +4617,7 @@ creation_date: 2014-07-28T18:19:45Z
 [Term]
 id: OMP:0006108
 name: abolished chemotaxis
-def: "A decreased chemotaxis phenotype where a cell or cells loses the ability to respond to a chemical concentration gradient." [OMP:JCH]
+def: "A decreased chemotaxis phenotype where a motile cell or organism no longer displays chemotaxis." [OMP:JCH]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:11:10Z
@@ -5058,7 +5058,7 @@ creation_date: 2014-07-29T18:03:06Z
 [Term]
 id: OMP:0006163
 name: presence of heme utilization
-def: "A heme utilization phenotype where heme utilization is observed." [OMP:JCH]
+def: "A heme utilization phenotype where heme utilization is observed or predicted." [OMP:JCH]
 is_a: OMP:0000451 ! heme utilization phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-05T13:35:01Z
@@ -5204,9 +5204,9 @@ creation_date: 2014-01-31T18:03:55Z
 
 [Term]
 id: OMP:0007005
-name: decreased chemotaxis to a specific chemical
-def: "A decreased positive chemotaxis phenotype where the ability to move toward  a chemical (attractant) is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007041 ! decreased positive chemotaxis
+name: decreased negative chemotaxis
+def: "A decreased chemotaxis phenotype where directed movement of a motile cell or organism toward a lower concentration of a chemical is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0000503 ! decreased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-07T18:35:51Z
 
@@ -5497,7 +5497,7 @@ creation_date: 2013-09-29T00:36:46Z
 [Term]
 id: OMP:0007041
 name: decreased positive chemotaxis
-def: "A decreased chemotaxis phenotype where positive chemotaxis is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased chemotaxis phenotype where directed movement of a motile cell or organism toward a higher concentration of a chemical is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-07T18:37:42Z
@@ -5589,6 +5589,22 @@ def: "An organic phosphorus source utilization phenotype where an organism can u
 is_a: OMP:0007046 ! organic phosphorus source phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:20:22Z
+
+[Term]
+id: OMP:0007053
+name: increased positive chemotaxis
+def: "An increased chemotaxis phenotype where directed movement of a motile cell or organism toward a higher concentration of a chemical is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0000505 ! increased chemotaxis
+created_by: dsiegele
+creation_date: 2014-08-08T18:08:51Z
+
+[Term]
+id: OMP:0007054
+name: increased negative chemotaxis
+def: "An increased chemotaxis phenotype where directed movement of a motile cell or organism toward a lower concentration of a chemical is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0000505 ! increased chemotaxis
+created_by: dsiegele
+creation_date: 2014-08-08T18:08:51Z
 
 [Term]
 id: OMP:0007055
@@ -5775,7 +5791,7 @@ creation_date: 2014-04-24T17:41:34Z
 [Term]
 id: OMP:0007077
 name: altered chemotaxis phenotype
-def: "A chemotaxis phenotype altered relative to a designated control." [OMP:JCH]
+def: "A chemotaxis phenotype where directed movement in response to a specific chemical gradient is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: siegele
 creation_date: 2014-04-24T17:43:04Z
