@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 08:08:2014 13:33
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 08:08:2014 13:46
+saved-by: dsiegele
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1128,6 +1128,7 @@ creation_date: 2011-02-02T02:47:21Z
 [Term]
 id: OMP:0000140
 name: nucleoid spacing
+def: "A nucleoid phenotype that describes the distribution of within a cell or cells." [OMP:AZ]
 is_a: OMP:0000150 ! nucleoid phenotype
 created_by: adrienne
 creation_date: 2011-02-21T04:25:41Z
@@ -1135,6 +1136,7 @@ creation_date: 2011-02-21T04:25:41Z
 [Term]
 id: OMP:0000141
 name: regular nucleoid spacing
+def: "A nucleoid spacing phenotype where multiple nucleoids within a single cell exhibit regular spacing." [OMP:AZ]
 is_a: OMP:0000140 ! nucleoid spacing
 created_by: adrienne
 creation_date: 2011-02-21T04:26:57Z
@@ -1142,6 +1144,7 @@ creation_date: 2011-02-21T04:26:57Z
 [Term]
 id: OMP:0000142
 name: irregular nucleoid spacing
+def: "A nucleoid spacing phenotype where multiple nucleoids within a single cell exhibit irregular spacing." [OMP:AZ]
 is_a: OMP:0000140 ! nucleoid spacing
 created_by: adrienne
 creation_date: 2011-02-21T04:27:22Z
@@ -1165,7 +1168,7 @@ creation_date: 2011-02-21T04:28:30Z
 [Term]
 id: OMP:0000145
 name: nucleoid localization
-def: "A nucleoid phenotype dealing with the nucleoid region location within the cell." [OMP:JCH]
+def: "A nucleoid phenotype that describes the location of the nucleoid within a cell or cells." [OMP:JCH]
 is_a: OMP:0000150 ! nucleoid phenotype
 created_by: adrienne
 creation_date: 2011-02-21T04:30:32Z
@@ -1173,7 +1176,7 @@ creation_date: 2011-02-21T04:30:32Z
 [Term]
 id: OMP:0000146
 name: midcell nucleoid localization
-def: "A nucleoid localization phenotype where the nucleoid region is located in the center of the cell." [OMP:WAM]
+def: "A nucleoid localization phenotype where the nucleoid is localized at the center of the cell." [OMP:WAM]
 is_a: OMP:0000145 ! nucleoid localization
 created_by: adrienne
 creation_date: 2011-02-21T04:31:22Z
@@ -1181,7 +1184,7 @@ creation_date: 2011-02-21T04:31:22Z
 [Term]
 id: OMP:0000147
 name: polar nucleoid localization
-def: "A nucleoid localization phenotype where the nucleoid region is located in one of the polar regions of the cell." [OMP:WAM]
+def: "A nucleoid localization phenotype where the nucleoid is located in one of the polar regions of the cell." [OMP:WAM]
 is_a: OMP:0000145 ! nucleoid localization
 created_by: adrienne
 creation_date: 2011-02-21T04:31:46Z
@@ -1189,6 +1192,7 @@ creation_date: 2011-02-21T04:31:46Z
 [Term]
 id: OMP:0000148
 name: quarter cell nucleoid localization
+def: "A nucleoid localization phenotype where the nucleoid is localized midway between the pole and midpoint of a cell." [OMP:AZ]
 is_a: OMP:0000145 ! nucleoid localization
 created_by: adrienne
 creation_date: 2011-02-21T04:32:04Z
