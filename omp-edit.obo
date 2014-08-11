@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 08:08:2014 18:29
+date: 11:08:2014 12:11
 saved-by: wmeza
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -1865,14 +1865,6 @@ created_by: mchibucos
 creation_date: 2011-06-07T12:39:13Z
 
 [Term]
-id: OMP:0000233
-name: colony texture phenotype
-def: "A colony morphology phenotype dealing with the consistency of the colony." [OMP:WAM]
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-06-07T12:41:05Z
-
-[Term]
 id: OMP:0000234
 name: butyrous colony texture
 def: "A colony texture phenotype characterized by a butter like surface." [ISBN:1555810489, OMP:WAM]
@@ -3429,22 +3421,6 @@ def: "An altered cell size phenotype where the diameter or a cell or cells is de
 is_a: OMP:0007083 ! altered cell size phenotype
 created_by: wmeza
 creation_date: 2014-07-02T18:46:00Z
-
-[Term]
-id: OMP:0005110
-name: increased rate of biofilm formation
-def: "A altered biofilm phenotype where the rate of formation is enhanced relative to a designated control." [OMP:WAM]
-is_obsolete: true
-created_by: wmeza
-creation_date: 2014-07-03T12:18:43Z
-
-[Term]
-id: OMP:0005111
-name: decreased rate of biofilm formation
-def: "A altered biofilm phenotype where the rate of biofilm formation is reduced relative to a designated control." [OMP:WAM]
-is_obsolete: true
-created_by: wmeza
-creation_date: 2014-07-03T12:19:02Z
 
 [Term]
 id: OMP:0005112
