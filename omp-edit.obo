@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 11:08:2014 12:11
-saved-by: wmeza
+date: 11:08:2014 12:36
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -2037,6 +2037,8 @@ creation_date: 2011-07-21T01:34:48Z
 [Term]
 id: OMP:0000256
 name: MacConkey agar phenotype
+def: "A colony morphology phenotype that describes the appearance of colonies on MacConkey agar indicator medium." [OMP:AZ]
+comment: This term was made obsolete because the appearance of colonies on MacConkey agar was determined to be evidence for a phenotype rather than a phenotype itself.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:35:25Z
@@ -2044,6 +2046,8 @@ creation_date: 2011-07-21T01:35:25Z
 [Term]
 id: OMP:0000258
 name: red colony on MacConkey agar
+def: "A colony morphology phenotype where cells form a red colony on MacConkey agar medium." [OMP:AZ]
+comment: This term was made obsolete because 'red colony on MacConkey agar' was determined to be evidence for a phenotype, i.e. utilization of a particular sugar, rather than the phenotype itself.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:38:10Z
