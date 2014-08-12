@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 11:08:2014 18:23
+date: 12:08:2014 15:13
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -686,9 +686,9 @@ creation_date: 2011-06-06T03:42:26Z
 
 [Term]
 id: OMP:0000088
-name: filamentous form
+name: filamentous colony
 def: "A colony form phenotype characterized by growth of thin individual projections in the colony." [OMP:WAM]
-xref: SNOMED:P3-51070
+xref: SNOMEDCT:31153000
 is_a: OMP:0000103 ! colony form phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:08:48Z
@@ -812,7 +812,7 @@ creation_date: 2011-06-07T12:18:14Z
 [Term]
 id: OMP:0000103
 name: colony form phenotype
-def: "A colony morphology phenotype dealing with the basic shape or appearance of the colony." [OMP:WAM]
+def: "A colony morphology phenotype dealing with the basic shape or form of a colony or colonies." [OMP:WAM]
 is_a: OMP:0000100 ! colony morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:41:50Z
@@ -1212,9 +1212,9 @@ creation_date: 2011-02-21T04:36:21Z
 
 [Term]
 id: OMP:0000151
-name: entire colony margin
+name: entire margin
 def: "A colony margin phenotype characterized by smooth growth, with no projections along the edge." [OMP:WAM]
-xref: SNOMED:P3-5120
+xref: SNOMEDCT:12774002
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:47:59Z
@@ -1238,45 +1238,46 @@ creation_date: 2011-02-22T02:27:58Z
 
 [Term]
 id: OMP:0000154
-name: undulate colony margin
+name: undulate margin
 def: "A colony margin phenotype characterized by wavy growth along the colony edge." [OMP:WAM]
-xref: SNOMED:P3-51210
+xref: SNOMEDCT:48408000 "Bacterial colony morphology, undulate margin"
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:11Z
 
 [Term]
 id: OMP:0000155
-name: lobate colony margin
+name: lobate margin
 def: "A colony margin phenotype characterized by lobed growth along the colony edge." [OMP:WAM]
-xref: SNOMED:P3-51220
+xref: SNOMEDCT:36580002
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:33Z
 
 [Term]
 id: OMP:0000156
-name: erose colony margin
+name: erose margin
 def: "A colony margin phenotype characterized by growth that appears jagged or zig-zagged along the edge of the colony." [OMP:WAM]
-xref: SNOMED:P3-51200
+xref: SNOMEDCT:86734000
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:48:46Z
 
 [Term]
 id: OMP:0000157
-name: filiform colony margin
+name: filiform margin
 def: "A colony margin phenotype characterized by thread or filamentous shaped edge." [OMP:JCH]
-xref: SNOMED:P3-51250
+synonym: "filamentous margin" RELATED []
+xref: SNOMEDCT:42844005 "Bacterial colony morphology, filamentous margin"
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:49:05Z
 
 [Term]
 id: OMP:0000158
-name: curled colony margin
+name: curled margin
 def: "A colony margin phenotype characterized by growth that appears as waves or curls along the edge of the colony." [OMP:JCH]
-xref: SNOMED:P3-51230
+xref: SNOMEDCT:85764001
 is_a: OMP:0000149 ! colony margin phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:49:30Z
@@ -1311,7 +1312,7 @@ creation_date: 2011-02-02T02:50:01Z
 id: OMP:0000162
 name: convex colony elevation
 def: "A colony elevation phenotype characterized by sloping up from the edges." [OMP:WAM]
-xref: SNOMED:P3-51150
+xref: SNOMEDCT:26875006 "Bacterial colony elevation, convex"
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:11Z
@@ -1328,7 +1329,7 @@ creation_date: 2011-02-02T02:50:30Z
 id: OMP:0000164
 name: umbonate colony elevation
 def: "A colony elevation phenotype characterized by raised growth in the center." [OMP:WAM]
-xref: SNOMED:P3-51170
+xref: SNOMEDCT:70929009 "Bacterial colony elevation, umbonate"
 is_a: OMP:0000104 ! colony elevation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:50:42Z
@@ -1343,36 +1344,36 @@ creation_date: 2011-06-07T01:55:00Z
 
 [Term]
 id: OMP:0000166
-name: circular form
+name: circular colony
 def: "A colony form phenotype characterized by growth in a round shape." [OMP:WAM]
-xref: SNOMED:P3-51060
+xref: SNOMEDCT:64781005
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:18Z
 
 [Term]
 id: OMP:0000167
-name: irregular form
+name: irregular colony
 def: "A colony form phenotype characterized by growth without a defined shape or size." [OMP:WAM]
-xref: SNOMED:P3-51080
+xref: SNOMEDCT:39696006
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:35Z
 
 [Term]
 id: OMP:0000168
-name: rhizoid form
+name: rhizoid colony
 def: "A colony form phenotype characterized by the growth of thin, branching projections." [OMP:WAM]
-xref: SNOMED:P3-51100
+xref: SNOMEDCT:113047000
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:51:57Z
 
 [Term]
 id: OMP:0000169
-name: spindle form
+name: spindle colony
 def: "A colony form phenotype characterized by growth being wide in the middle then tapering at both ends." [OMP:JCH]
-xref: SNOMED:P3-51110
+xref: SNOMEDCT:77324006
 is_a: OMP:0000103 ! colony form phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:52:30Z
@@ -1717,7 +1718,7 @@ creation_date: 2011-06-07T09:49:20Z
 id: OMP:0000212
 name: smooth colony
 def: "A colony surface phenotype where colonies have a shiny glistening surface." [ISBN:1555810489, OMP:WAM]
-xref: SNNOMED:P3-51290
+xref: SNOMEDCT:90926009 "Bacterial colony surface, smooth"
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:32:12Z
@@ -1827,23 +1828,24 @@ creation_date: 2011-02-07T03:53:37Z
 id: OMP:0000228
 name: rough colony
 def: "A colony surface phenotype where a colony or colonies have a dull, bumpy, granular, or matte surface." [ISBN:1555810489, OMP:WAM]
-xref: SNOMED:P3-51320
+xref: SNOMEDCT:77092005 "Bacterial colony surface, rough"
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:32:41Z
 
 [Term]
 id: OMP:0000229
-name: colony texture phenotype
-def: "A colony morphology phenotype that describes the texture of a colony or colonies when tested with a needle." [ISBN:1555810489, OMP:WAM]
+name: colony consistency phenotype
+def: "A colony morphology phenotype that describes the consistency or texture of a colony or colonies when tested with a needle." [ISBN:1555810489, OMP:WAM]
+synonym: "colony texture" RELATED []
 is_a: OMP:0000100 ! colony morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:34:58Z
 
 [Term]
 id: OMP:0000230
-name: rugose colony surface texture
-def: "A colony texture phenotype that is characterized by a surface that is wrinkled." [OMP:JCH]
+name: rugose colony
+def: "A colony surface phenotype that is characterized by a surface that is wrinkled." [OMP:JCH]
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:35:30Z
@@ -1866,11 +1868,11 @@ creation_date: 2011-06-07T12:39:13Z
 
 [Term]
 id: OMP:0000234
-name: butyrous colony texture
-def: "A colony texture phenotype where a colony or colonies have a butter-like texture." [ISBN:1555810489, OMP:WAM]
+name: butyrous colony consistency
+def: "A colony consistency phenotype where a colony or colonies have a butter-like consistency." [ISBN:1555810489, OMP:WAM]
 synonym: "buttery colony consistency" EXACT []
-xref: SNMI:P3-513190
-is_a: OMP:0000229 ! colony texture phenotype
+xref: SNOMEDCT:25778006 "Bacterial colony consistency, butyrous"
+is_a: OMP:0000229 ! colony consistency phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:41:24Z
 
@@ -1884,10 +1886,11 @@ creation_date: 2011-06-07T12:42:06Z
 
 [Term]
 id: OMP:0000236
-name: dry colony texture
-def: "A colony texture phenotype where a colony or colonies have a brittle or powdery texture." [ISBN:1555810489, OMP:WAM]
+name: dry colony consistency
+def: "A colony consistency phenotype where a colony or colonies have a brittle or powdery consistency." [ISBN:1555810489, OMP:WAM]
 synonym: "friable colony" EXACT []
-is_a: OMP:0000229 ! colony texture phenotype
+xref: SNOMEDCT:87916001 "Bacterial colony consistency, friable"
+is_a: OMP:0000229 ! colony consistency phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:42:40Z
 
@@ -1909,8 +1912,8 @@ creation_date: 2011-06-07T01:11:04Z
 
 [Term]
 id: OMP:0000239
-name: plicate colony surface texture
-def: "A colony texture phenotype that is characterized by a surface arranged in parallel folds or ridges; pleated." [OMP:JCH]
+name: plicate colony
+def: "A colony surface phenotype that is characterized by a surface arranged in parallel folds or ridges; pleated." [OMP:JCH]
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T01:11:50Z
@@ -1918,9 +1921,9 @@ creation_date: 2011-06-07T01:11:50Z
 [Term]
 id: OMP:0000240
 name: punctiform colony
-def: "A colony size phenotype characterized by growth in multiple pinpoint colonies." [OMP:WAM]
-xref: SNOMED:P3-51090
-is_a: OMP:0000179 ! colony size phenotype
+def: "A colony form phenotype where a colony or colonies are small, but not microscopic, with a diameter of <1 mm." [OMP:WAM]
+xref: SNOMEDCT:55699002
+is_a: OMP:0000103 ! colony form phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T01:50:03Z
 
@@ -1934,8 +1937,8 @@ creation_date: 2011-06-07T01:55:22Z
 
 [Term]
 id: OMP:0000242
-name: concentrically ringed colony texture
-def: "A colony texture phenotype characterized by rippled surface that radiate outward from a central point or axis." [OMP:JCH]
+name: concentrically ringed colony
+def: "A colony surface phenotype characterized by rippled surface that radiate outward from a central point or axis." [OMP:JCH]
 synonym: "concentric colony surface texture" EXACT []
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
@@ -1943,7 +1946,7 @@ creation_date: 2011-06-07T01:58:00Z
 
 [Term]
 id: OMP:0000243
-name: sectored form
+name: sectored colony
 def: "A colony form phenotype characterized by the formation of wedged shaped sectors of varying colors and appearance in colonies growing on a solid substrate." [OMP:WAM]
 is_a: OMP:0000103 ! colony form phenotype
 created_by: mchibucos
@@ -1951,7 +1954,7 @@ creation_date: 2011-06-07T02:04:20Z
 
 [Term]
 id: OMP:0000244
-name: papillated form
+name: papillated colony
 def: "A colony form phenotype characterized by growth of small, round or cone-shaped protuberances." [OMP:JCH]
 synonym: "colony papillation" EXACT []
 is_a: OMP:0000103 ! colony form phenotype
@@ -5763,6 +5766,7 @@ id: OMP:0007076
 name: altered aerotaxis phenotype
 def: "An aerotaxis phenotype where aerotaxis is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000047 ! aerotaxis phenotype
+is_a: OMP:0007127 ! altered taxis phenotype
 created_by: siegele
 creation_date: 2014-04-24T17:41:34Z
 
@@ -5771,6 +5775,7 @@ id: OMP:0007077
 name: altered chemotaxis phenotype
 def: "A chemotaxis phenotype where directed movement in response to a specific chemical gradient is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000048 ! chemotaxis phenotype
+is_a: OMP:0007127 ! altered taxis phenotype
 created_by: siegele
 creation_date: 2014-04-24T17:43:04Z
 
@@ -6179,11 +6184,30 @@ creation_date: 2014-08-11T17:10:06Z
 
 [Term]
 id: OMP:0007126
-name: viscous colony
-def: "A colony texture phenotype where a colony or colonies have a gummy texture." [ISBN:1555810489, OMP:WAM]
-is_a: OMP:0000229 ! colony texture phenotype
+name: viscous colony consistency
+def: "A colony consistency phenotype where a colony or colonies have a sticky or gummy consistency." [ISBN:1555810489, OMP:WAM]
+xref: SNOMEDCT:16601003 "Bacterial colony consistency, viscous"
+is_a: OMP:0000229 ! colony consistency phenotype
 created_by: dsiegele
 creation_date: 2014-08-11T17:58:30Z
+
+[Term]
+id: OMP:0007127
+name: altered taxis phenotype
+def: "A taxis phenotype where directed movement of a motile cell or organism in response to an external stimulus is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000004 ! taxis phenotype
+is_a: OMP:0007085 ! altered phenotype
+created_by: dsiegele
+creation_date: 2014-08-12T13:30:01Z
+
+[Term]
+id: OMP:0007128
+name: altered cell arrangement phenotype
+def: "A cell arrangement phenotype where the arrangement of cells characteristic of a taxon is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000003 ! cell arrangement phenotype
+is_a: OMP:0007085 ! altered phenotype
+created_by: dsiegele
+creation_date: 2014-08-12T13:36:13Z
 
 [Typedef]
 id: decreased_relative_to
