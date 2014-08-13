@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 12:08:2014 15:13
-saved-by: dsiegele
-auto-generated-by: OBO-Edit 2.3.1
+date: 13:08:2014 16:03
+saved-by: jonathanherrera
+auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -5764,7 +5764,7 @@ creation_date: 2014-02-21T15:42:44Z
 [Term]
 id: OMP:0007076
 name: altered aerotaxis phenotype
-def: "An aerotaxis phenotype where aerotaxis is altered relative to a designated control." [OMP:JCH]
+def: "An aerotaxis phenotype where directed movement in response to environmental oxygen is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000047 ! aerotaxis phenotype
 is_a: OMP:0007127 ! altered taxis phenotype
 created_by: siegele
