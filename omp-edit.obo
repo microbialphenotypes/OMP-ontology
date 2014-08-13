@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:08:2014 16:03
+date: 13:08:2014 17:28
 saved-by: jonathanherrera
 auto-generated-by: OBO-Edit 2.3
 default-namespace: microbial_phenotype
@@ -5067,6 +5067,14 @@ def: "A binary fission phenotype where binary fission is observed." [OMP:JCH]
 is_a: OMP:0007067 ! binary fission phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-08T15:51:18Z
+
+[Term]
+id: OMP:0006167
+name: abolished cell motility by swarming
+def: "A decreased cell motility by swarming phenotype where an organism loses the ability to swarm." [OMP:JCH]
+is_a: OMP:0007092 ! decreased cell motility by swarming
+created_by: jonathanherrera
+creation_date: 2014-08-13T17:25:47Z
 
 [Term]
 id: OMP:0006168
