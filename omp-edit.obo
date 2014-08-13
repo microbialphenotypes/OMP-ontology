@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 13:08:2014 17:28
-saved-by: jonathanherrera
-auto-generated-by: OBO-Edit 2.3
+date: 13:08:2014 18:49
+saved-by: dsiegele
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1429,7 +1429,7 @@ creation_date: 2011-02-02T03:17:19Z
 [Term]
 id: OMP:0000177
 name: liquid culture morphology phenotype
-def: "A growth phenotype dealing with the morphological characteristics in a liquid media." [OMP:WAM]
+def: "A growth phenotype dealing with the morphological characteristics of a culture growing in a liquid medium." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:20:39Z
@@ -1437,7 +1437,7 @@ creation_date: 2011-02-02T03:20:39Z
 [Term]
 id: OMP:0000178
 name: flocculated liquid culture
-def: "A liquid culture morphology phenotype characterized by small masses in the medium." [ISBN:9780763743031, OMP:WAM]
+def: "A liquid culture morphology phenotype where cells clump together to form small masses in the medium." [ISBN:9780763743031, OMP:WAM]
 synonym: "clumping" BROAD []
 synonym: "flocculation" EXACT []
 is_a: OMP:0000177 ! liquid culture morphology phenotype
@@ -1507,7 +1507,7 @@ creation_date: 2011-02-02T03:29:51Z
 [Term]
 id: OMP:0000187
 name: granulated liquid culture
-def: "A liquid culture morphology phenotype characterized by small particles within the medium." [ISBN:9780763743031, OMP:WAM]
+def: "A liquid culture morphology phenotype where cells group together and form small particles in the medium." [ISBN:9780763743031, OMP:WAM]
 synonym: "granulation in liquid" EXACT []
 synonym: "precipitation in liquid culture" RELATED []
 is_a: OMP:0000177 ! liquid culture morphology phenotype
