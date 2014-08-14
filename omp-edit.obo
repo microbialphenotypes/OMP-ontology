@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 13:08:2014 18:49
+date: 14:08:2014 18:54
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -23,7 +23,6 @@ creation_date: 2011-03-10T06:55:06Z
 [Term]
 id: OMP:0000002
 name: decreased cell motility
-alt_id: OMP:0000044
 def: "An altered cell motility phenotype where motility is decreased relative to a designated control." [OMP:MCC]
 comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
 xref: PATO:0002297
@@ -198,7 +197,6 @@ creation_date: 2011-06-07T11:19:56Z
 [Term]
 id: OMP:0000026
 name: virus-host interaction phenotype
-alt_id: OMP:0000038
 def: "A virulence phenotype, where the trait in question is the ability of a virus to cause disease in another organism (the host)." [OMP:JCH]
 synonym: "bacteriophage-host interaction phenotype" NARROW []
 synonym: "phage-host interaction phenotype" NARROW []
@@ -703,8 +701,8 @@ creation_date: 2011-02-02T03:23:41Z
 
 [Term]
 id: OMP:0000090
-name: organism lifespan phenotype
-def: "A growth phenotype dealing with the duration of the an organisms life." [OMP:WAM]
+name: lifespan phenotype
+def: "A growth phenotype dealing with the lifespan of a cell or organism." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:24:11Z
@@ -921,7 +919,7 @@ creation_date: 2011-02-02T02:45:41Z
 [Term]
 id: OMP:0000116
 name: pigmented colony
-def: "A colony pigmentation phenotype where pigmentation is observed or predicted." [OMP:WAM]
+def: "A colony pigmentation phenotype where colonies are pigmented." [OMP:WAM]
 is_a: OMP:0000107 ! colony pigmentation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:46:17Z
@@ -945,7 +943,6 @@ creation_date: 2011-02-18T02:31:37Z
 [Term]
 id: OMP:0000119
 name: tetrad
-alt_id: OMP:0000156
 def: "A cell arrangement phenotype where squares of four coccus cells arise from division in two planes." [OMP:AEZ]
 synonym: "micrococcus arrangement" EXACT []
 is_a: OMP:0000003 ! cell arrangement phenotype
@@ -1096,19 +1093,11 @@ creation_date: 2011-02-21T04:16:30Z
 [Term]
 id: OMP:0000137
 name: non-pigmented colony
-def: "A colony pigmentation phenotype where pigmentation is not observed or predicted." [OMP:WAM]
+def: "A colony pigmentation phenotype colonies are non-pigmented." [OMP:WAM]
 synonym: "colorless colony" EXACT []
 is_a: OMP:0000107 ! colony pigmentation phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:46:39Z
-
-[Term]
-id: OMP:0000138
-name: shiny colony sheen
-synonym: "smooth" RELATED []
-is_obsolete: true
-created_by: Adrienne
-creation_date: 2011-02-02T02:47:04Z
 
 [Term]
 id: OMP:0000139
@@ -1559,7 +1548,7 @@ creation_date: 2011-02-03T11:24:08Z
 [Term]
 id: OMP:0000194
 name: presence of catalase activity
-def: "A catalase activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
+def: "A catalase activity phenotype where a cell or cells exhibit catalase activity." [OMP:JCH]
 synonym: "catalase positive" EXACT []
 is_a: OMP:0000218 ! catalase activity phenotype
 created_by: mchibucos
@@ -1593,7 +1582,7 @@ creation_date: 2011-02-03T11:25:01Z
 [Term]
 id: OMP:0000198
 name: absence of catalase activity
-def: "A catalase activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
+def: "A catalase activity phenotype where a cell or cells don't exhibit catalase activity." [OMP:JCH]
 synonym: "catalase deficient" RELATED []
 synonym: "catalase negative" EXACT []
 is_a: OMP:0000218 ! catalase activity phenotype
@@ -1627,8 +1616,8 @@ creation_date: 2011-03-02T01:41:52Z
 
 [Term]
 id: OMP:0000202
-name: outer membrane vesicle phenotype
-def: "A cell envelope phenotype where the trait is the ability to utilize outer membrane vesicles that contain biologically active proteins and perform diverse biological processes." [OMP:JCH, PMID:20825345]
+name: outer membrane vesicles phenotype
+def: "A cell envelope phenotype where a cell or cells have the ability to produce outer membrane vesicles." [OMP:JCH, PMID:20825345]
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: Adrienne
 creation_date: 2011-03-02T01:43:12Z
@@ -1877,14 +1866,6 @@ created_by: mchibucos
 creation_date: 2011-06-07T12:41:24Z
 
 [Term]
-id: OMP:0000235
-name: viscous colony consistency
-comment: This term was made obsolete because it had the same definition as mucoid colony.  It was made into a synonym for the latter term.
-is_obsolete: true
-created_by: mchibucos
-creation_date: 2011-06-07T12:42:06Z
-
-[Term]
 id: OMP:0000236
 name: dry colony consistency
 def: "A colony consistency phenotype where a colony or colonies have a brittle or powdery consistency." [ISBN:1555810489, OMP:WAM]
@@ -1971,16 +1952,16 @@ creation_date: 2011-06-07T02:27:00Z
 
 [Term]
 id: OMP:0000246
-name: presence of nanotube
-def: "A nanotube phenotype where formation of the tube structure is observed or predicted." [OMP:JCH]
+name: presence of nanotubes
+def: "A nanotube phenotype where a cell or cells have the ability to produce nanotubes." [OMP:JCH]
 is_a: OMP:0000175 ! nanotube phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:00:25Z
 
 [Term]
 id: OMP:0000247
-name: absence of nanotube
-def: "A nanotube phenotype where formation of the tube structure is not observed or predicted." [OMP:JCH]
+name: absence of nanotubes
+def: "A nanotube phenotype where a cell or cells lack the ability to produce nanotubes." [OMP:JCH]
 is_a: OMP:0000175 ! nanotube phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:01:32Z
@@ -2157,8 +2138,8 @@ creation_date: 2011-07-21T04:46:29Z
 [Term]
 id: OMP:0000295
 name: presence of negative DNA supercoiling
-def: "A DNA supercoiling phenotype where the DNA twists around its axis in the opposite direction from the clockwise turns of the right-handed double helix is observed or predicted." [ISBN:9781613441138]
-synonym: "underwound DNA phenotype" RELATED []
+def: "A DNA supercoiling phenotype where the DNA twists around its axis in the opposite direction from the clockwise turns of the right-handed double helix." [ISBN:9781613441138]
+synonym: "underwound DNA" RELATED []
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:47:38Z
@@ -2166,8 +2147,8 @@ creation_date: 2011-07-21T04:47:38Z
 [Term]
 id: OMP:0000296
 name: presence of positive DNA supercoiling
-def: "A DNA supercoiling phenotype where the DNA twists around its axis in the same direction as the clockwise turns of the right-handed double helix is observed or predicted." [ISBN:9781613441138]
-synonym: "overwound DNA phenotype" RELATED []
+def: "A DNA supercoiling phenotype where the DNA twists around its axis in the same direction as the clockwise turns of the right-handed double helix." [ISBN:9781613441138]
+synonym: "overwound DNA" RELATED []
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:48:22Z
@@ -2393,7 +2374,7 @@ creation_date: 2013-05-23T01:39:39Z
 [Term]
 id: OMP:0000454
 name: absence of heme utilization
-def: "A heme utilization phenotype where heme utilization is not observed or predicted." [OMP:JCH]
+def: "A heme utilization phenotype where a cell or cells don't exhibit the ability to utilize heme as a source of iron." [OMP:JCH]
 is_a: OMP:0000451 ! heme utilization phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:40:40Z
@@ -2666,17 +2647,17 @@ creation_date: 2013-09-09T13:06:03Z
 
 [Term]
 id: OMP:0005017
-name: SOS response phenotype
-def: "A gene expression phenotype dealing with the activation of various genes as a repair response to high levels of DNA damage and DNA inhibition." [ISBN:9781615831838, OMP:WAM]
+name: expression of the SOS response phenotype
+def: "A gene expression phenotype dealing with the expression of genes that are part of the SOS response.  Expression of the SOS response is induced by DNA damage." [ISBN:9781615831838, OMP:WAM]
 is_a: OMP:0000253 ! gene expression phenotype
 created_by: wmeza
 creation_date: 2013-09-18T18:35:30Z
 
 [Term]
 id: OMP:0005018
-name: altered SOS response phenotype
-def: "A SOS response phenotype where response is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005017 ! SOS response phenotype
+name: altered expression of the SOS response phenotype
+def: "An expression of the SOS response phenotype where expression of a gene or genes that are part of the SOS response is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005017 ! expression of the SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T13:39:34Z
 
@@ -2707,16 +2688,16 @@ creation_date: 2013-09-19T15:55:16Z
 [Term]
 id: OMP:0005022
 name: absence of SOS response
-def: "A SOS response phenotype where the mechanism is not observed or predicted." [OMP:WAM]
-is_a: OMP:0005017 ! SOS response phenotype
+def: "An expression of the SOS response phenotype xx" [OMP:WAM]
+is_a: OMP:0005017 ! expression of the SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:09Z
 
 [Term]
 id: OMP:0005023
 name: presence of SOS response
-def: "A SOS response phenotype where the mechanism is observed or predicted." [OMP:WAM]
-is_a: OMP:0005017 ! SOS response phenotype
+def: "A SOS response phenotype where a cell or cells exhibit an SOS response." [OMP:WAM]
+is_a: OMP:0005017 ! expression of the SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:30Z
 
@@ -2724,15 +2705,15 @@ creation_date: 2013-09-19T16:25:30Z
 id: OMP:0005024
 name: increased induced expression of the SOS response
 def: "An altered induced SOS response phenotype where the mechanism's effect is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005053 ! altered induced SOS response phenotype
+is_a: OMP:0005053 ! altered induced SOS response
 created_by: wmeza
 creation_date: 2013-09-20T13:01:05Z
 
 [Term]
 id: OMP:0005025
-name: decreased induced expression of the SOS response
+name: decreased expression of the SOS response 
 def: "An altered induced SOS response phenotype where the mechanism's effect is decreased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005053 ! altered induced SOS response phenotype
+is_a: OMP:0005053 ! altered induced SOS response
 created_by: wmeza
 creation_date: 2013-09-20T13:26:46Z
 
@@ -2770,8 +2751,8 @@ creation_date: 2014-07-23T17:05:20Z
 
 [Term]
 id: OMP:0005030
-name: increase in stress induced mutagenesis
-def: "A stress induced mutagenesis phenotype where the mutagenesis is increased relative to the designated control." [OMP:WAM]
+name: increased stress-induced mutagenesis
+def: "An altered stress-induced mutagenesis phenotype where mutagenesis is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006034 ! altered stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:57:03Z
@@ -2787,7 +2768,7 @@ creation_date: 2013-09-25T15:57:46Z
 [Term]
 id: OMP:0005032
 name: presence of stress induced mutagenesis
-def: "A stress induced mutagenesis phenotype where the processes are observed or predicted." [OMP:WAM]
+def: "A stress-induced mutagenesis phenotype where a cell or cells exhibit stress-induced mutagenesis." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:59:12Z
@@ -2795,7 +2776,7 @@ creation_date: 2013-09-25T15:59:12Z
 [Term]
 id: OMP:0005033
 name: absence of stress-induced mutagenesis
-def: "A stress-induced mutagenesis phenotype where the process is not observed or predicted." [OMP:WAM]
+def: "A stress-induced mutagenesis phenotype where a cell or cells don't exhibit stress-induced mutagenesis." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T18:20:22Z
@@ -2939,7 +2920,7 @@ creation_date: 2013-10-24T12:52:41Z
 [Term]
 id: OMP:0005051
 name: presence of homologous recombination
-def: "A homologous recombination phenotype where the process is observed or predicted." [OMP:WAM]
+def: "A homologous recombination phenotype a cell or cells have the ability to perform homologous recombination." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:21:41Z
@@ -2947,16 +2928,16 @@ creation_date: 2013-10-25T12:21:41Z
 [Term]
 id: OMP:0005052
 name: absence of homologous recombination
-def: "A homologous recombination phenotype where the process is not observed or predicted." [OMP:WAM]
+def: "A homologous recombination phenotype a cell or cells lack the ability to perform homologous recombination." [OMP:WAM]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-25T12:22:04Z
 
 [Term]
 id: OMP:0005053
-name: altered induced SOS response phenotype
+name: altered induced SOS response
 def: "An altered SOS response phenotype dealing with the induced expression of the mechanism." [OMP:WAM]
-is_a: OMP:0005018 ! altered SOS response phenotype
+is_a: OMP:0005018 ! altered expression of the SOS response phenotype
 created_by: wmeza
 creation_date: 2014-07-30T12:34:21Z
 
@@ -2964,7 +2945,7 @@ creation_date: 2014-07-30T12:34:21Z
 id: OMP:0005054
 name: altered uniduced SOS response phenotype
 def: "An altered SOS response phenotype dealing with the expression of the genes at the basal level." [OMP:WAM]
-is_a: OMP:0005018 ! altered SOS response phenotype
+is_a: OMP:0005018 ! altered expression of the SOS response phenotype
 created_by: wmeza
 creation_date: 2014-07-30T12:58:59Z
 
@@ -2986,16 +2967,16 @@ creation_date: 2013-10-29T13:15:06Z
 
 [Term]
 id: OMP:0005057
-name: absence of site specific recombination
-def: "A site specific recombination phenotype where the process is not observed or predicted." [OMP:WAM]
+name: absence of site-specific recombination
+def: "A site-specific recombination phenotype where a cell or cells lack the ability to perform site-specific recombination." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:15:28Z
 
 [Term]
 id: OMP:0005058
-name: presence of site specific recombination
-def: "A site specific recombination phenotype where the process is observed or predicted." [OMP:WAM]
+name: presence of site-specific recombination
+def: "A site-specific recombination phenotype where a cell or cells have the ability to perform site-specific recombination." [OMP:WAM]
 is_a: OMP:0005043 ! site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:20:16Z
@@ -3027,7 +3008,7 @@ creation_date: 2013-11-04T18:09:38Z
 [Term]
 id: OMP:0005062
 name: absence of chromosome segregation
-def: "A chromosome segregation phenotype where process is not observed or predicted." [OMP:WAM]
+def: "A chromosome segregation phenotype where chromosome segregation doesn't occur." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:10:07Z
@@ -3035,7 +3016,7 @@ creation_date: 2013-11-04T18:10:07Z
 [Term]
 id: OMP:0005063
 name: presence of chromosome segregation
-def: "A chromosome segregation phenotype where the process is observed or predicted." [OMP:WAM]
+def: "A chromosome segregation phenotype where chromosome segregation occurs." [OMP:WAM]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:12:32Z
@@ -3043,7 +3024,7 @@ creation_date: 2013-11-04T18:12:32Z
 [Term]
 id: OMP:0005064
 name: increased frequency of gene silencing
-def: "A gene silencing phenotype dealing with an increase in the incidence of gene silencing relative to the designated control." [OMP:WAM]
+def: "An altered gene silencing phenotype where the incidence of gene silencing is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006003 ! altered gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:21:37Z
@@ -3059,7 +3040,7 @@ creation_date: 2013-11-04T18:21:56Z
 [Term]
 id: OMP:0005066
 name: absence of gene silencing
-def: "A gene silencing phenotype where the mechanisms are not observed or predicted." [OMP:WAM]
+def: "A gene silencing phenotype where a cell or cells doesn't exhibit the ability to perform gene silencing." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:33:14Z
@@ -3067,7 +3048,7 @@ creation_date: 2013-11-04T18:33:14Z
 [Term]
 id: OMP:0005067
 name: presence of gene silencing
-def: "A gene silencing phenotype where the mechanisms are observed not predicted." [OMP:WAM]
+def: "A gene silencing phenotype where a cell or cells exhibit the ability to perform gene silencing." [OMP:WAM]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:34:20Z
@@ -3075,7 +3056,7 @@ creation_date: 2013-11-04T18:34:20Z
 [Term]
 id: OMP:0005068
 name: increased mutation frequency
-def: "A mutation frequency phenotype where the mutation frequency is increased relative to a designated control." [OMP:WAM]
+def: "An altered mutation frequency phenotype where the mutation frequency is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006071 ! altered mutation frequency phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:05:44Z
@@ -3083,7 +3064,7 @@ creation_date: 2013-11-08T17:05:44Z
 [Term]
 id: OMP:0005069
 name: decreased mutation frequency
-def: "A mutation frequency phenotype where the mutation frequency is decreased relative to a designated control." [OMP:WAM]
+def: "An altered mutation frequency phenotype where the mutation frequency is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006071 ! altered mutation frequency phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:11:14Z
@@ -3107,7 +3088,7 @@ creation_date: 2013-11-08T17:12:27Z
 [Term]
 id: OMP:0005072
 name: absence of  mitotic recombination
-def: "A mitotic recombination phenotype where the process is not observed or predicted." [OMP:WAM]
+def: "A mitotic recombination phenotype where a cell or cells lack the ability to perform mitotic recombination." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:35:56Z
@@ -3115,7 +3096,7 @@ creation_date: 2013-11-08T17:35:56Z
 [Term]
 id: OMP:0005073
 name: presence of mitotic recombination
-def: "A mitotic recombination phenotype where the process is observed or predicted." [OMP:WAM]
+def: "A mitotic recombination phenotype where a cell or cells have the ability to perform mitotic recombination." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2013-11-08T17:36:20Z
@@ -3250,7 +3231,6 @@ creation_date: 2013-12-06T14:15:06Z
 id: OMP:0005089
 name: increased resistance to freeze/thawing stress
 def: "An altered freeze/thawing stress phenotype where resistance is increased relative to a designated control." [OMP:WAM]
-synonym: "increase in freeze/thawing sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005121 ! altered freeze/thawing stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:28:16Z
@@ -3284,9 +3264,9 @@ creation_date: 2013-12-06T17:59:14Z
 
 [Term]
 id: OMP:0005093
-name: increase resistance to gamma ray radiation
+name: increased resistance to gamma ray radiation
 def: "An altered gamma radiation phenotype where resistance is increased relative a designated control." [OMP:WAM]
-synonym: "decrease in gamma ray sensitivity" NARROW [OMP:WAM]
+synonym: "decreased gamma ray sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005123 ! altered gamma ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:05:40Z
@@ -3295,16 +3275,16 @@ creation_date: 2013-12-17T13:05:40Z
 id: OMP:0005094
 name: decreased resistance to gamma ray radiation
 def: "An altered gamma radiation phenotype where resistance is decreased relative a designated control." [OMP:WAM]
-synonym: "increase in gamma ray sensitivity" NARROW [OMP:WAM]
+synonym: "increased gamma ray sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005123 ! altered gamma ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:06:05Z
 
 [Term]
 id: OMP:0005095
-name: increased resistance toward x-ray radiation
+name: increased resistance to x-ray radiation
 def: "An altered x-ray radiation phenotype were resistance is increased relative to a designated control." [OMP:WAM]
-synonym: "decrease in x-ray sensitivity" NARROW [OMP:WAM]
+synonym: "decreased x-ray sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005124 ! altered x-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:26:43Z
@@ -3362,8 +3342,8 @@ creation_date: 2014-02-11T11:54:51Z
 
 [Term]
 id: OMP:0005102
-name: increase enzyme activity
-def: "An altered enzyme activity phenotype where there is an increase in enzyme activity relative to a designated control." [OMP:WAM]
+name: increased enzyme activity
+def: "An altered enzyme activity phenotype where enzyme activity is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005130 ! altered enzymatic activity phenotype
 created_by: wmeza
 creation_date: 2014-04-17T10:54:45Z
@@ -3396,18 +3376,17 @@ creation_date: 2014-07-17T14:10:28Z
 
 [Term]
 id: OMP:0005106
-name: increase in organism lifespan
-def: "A lifespan phenotype where there is an increase in the duration of an organism's life." [OMP:WAM]
-is_a: OMP:0006033 ! altered organism lifespan phenotype
+name: increased lifespan
+def: "A lifespan phenotype where lifespan is increased relative to a designated control." [OMP:WAM]
+is_a: OMP:0006033 ! altered lifespan phenotype
 created_by: wmeza
 creation_date: 2014-05-07T12:39:57Z
 
 [Term]
 id: OMP:0005107
-name: decreased in organism lifespan
-def: "A lifespan phenotype where there is a reduction in the duration of an organism's life." [OMP:WAM]
-synonym: "cell death" RELATED []
-is_a: OMP:0006033 ! altered organism lifespan phenotype
+name: decreased lifespan
+def: "An altered lifespan phenotype where the lifespan is decreased relative to a designated control." [OMP:WAM]
+is_a: OMP:0006033 ! altered lifespan phenotype
 created_by: wmeza
 creation_date: 2014-05-07T12:40:14Z
 
@@ -3770,7 +3749,7 @@ creation_date: 2014-04-30T22:48:59Z
 [Term]
 id: OMP:0006015
 name: presence of transposable element transposition phenotype
-def: "A transposable element transposition phenotype where the process is observed or predicted." [OMP:WAM]
+def: "A transposable element transposition phenotype where a cell or cells have  transposition of transposable elements." [OMP:WAM]
 is_a: OMP:0005059 ! transposable element transposition phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:34:28Z
@@ -3778,7 +3757,7 @@ creation_date: 2014-07-24T16:34:28Z
 [Term]
 id: OMP:0006016
 name: absence of transposable element transposition phenotype
-def: "A transposable element transposition phenotype where the process is not observed or predicted." [OMP:WAM]
+def: "A transposable element transposition phenotype where a cell or cells lack transposition of transposable elements." [OMP:WAM]
 is_a: OMP:0005059 ! transposable element transposition phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:34:28Z
@@ -3929,9 +3908,9 @@ creation_date: 2014-07-24T17:42:30Z
 
 [Term]
 id: OMP:0006033
-name: altered organism lifespan phenotype
-def: "An organism lifespan phenotype that is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0000090 ! organism lifespan phenotype
+name: altered lifespan phenotype
+def: "An lifespan phenotype that is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0000090 ! lifespan phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:52:43Z
 
@@ -4347,7 +4326,7 @@ creation_date: 2014-07-15T14:55:03Z
 [Term]
 id: OMP:0006078
 name: absence of decarboxylase activity
-def: "A decarboxylase activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
+def: "A decarboxylase activity phenotype where a cell or cells don't exhibit decarboxylase activity." [OMP:JCH]
 synonym: "decarboxylase deficient" RELATED []
 synonym: "decarboxylase negative" EXACT []
 is_a: OMP:0000219 ! decarboxylase activity phenotype
@@ -4365,7 +4344,7 @@ creation_date: 2014-07-15T19:59:58Z
 [Term]
 id: OMP:0006080
 name: presence of decarboxylase activity
-def: "A decarboxylase activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
+def: "A decarboxylase activity phenotype where a cell or cells exhibit decarboxylase activity." [OMP:JCH]
 synonym: "decarboxylase positive" EXACT []
 is_a: OMP:0000219 ! decarboxylase activity phenotype
 created_by: jonathanherrera
@@ -4373,8 +4352,8 @@ creation_date: 2014-07-15T19:59:58Z
 
 [Term]
 id: OMP:0006081
-name: increase decarboxylase activity
-def: "An altered decarboxylase activity phenotype where enzyme activity is decreased relative to a designated control." [OMP:JCH]
+name: increased decarboxylase activity
+def: "An altered decarboxylase activity phenotype where decarboxylase activity is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006079 ! altered decarboxylase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
@@ -4398,7 +4377,7 @@ creation_date: 2014-07-15T20:06:25Z
 [Term]
 id: OMP:0006084
 name: absence of oxidase activity
-def: "An oxidase activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
+def: "An oxidase activity phenotype where a cell or cells don't exhibit oxidase activity." [OMP:JCH]
 synonym: "oxidase deficient" RELATED []
 synonym: "oxidase negative" EXACT []
 is_a: OMP:0000220 ! oxidase activity phenotype
@@ -4408,7 +4387,7 @@ creation_date: 2014-07-15T20:06:25Z
 [Term]
 id: OMP:0006085
 name: presence of oxidase activity
-def: "An oxidase activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
+def: "An oxidase activity phenotype where a cell or cells exhibit oxidase activity." [OMP:JCH]
 synonym: "oxidase positive" EXACT []
 is_a: OMP:0000220 ! oxidase activity phenotype
 created_by: jonathanherrera
@@ -4416,8 +4395,8 @@ creation_date: 2014-07-15T20:06:25Z
 
 [Term]
 id: OMP:0006086
-name: increase oxidase activity
-def: "An altered oxidase activity phenotype where there is an increase in enzyme activity relative to a designated control." [OMP:JCH]
+name: increased oxidase activity
+def: "An altered oxidase activity phenotype where oxidase activity is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006083 ! altered oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
@@ -4441,7 +4420,7 @@ creation_date: 2014-07-15T20:07:31Z
 [Term]
 id: OMP:0006089
 name: presence of urease activity
-def: "A urease activity phenotype where the enzyme activity is observed or predicted." [OMP:JCH]
+def: "A urease activity phenotype where a cell or cells exhibit urease activity." [OMP:JCH]
 synonym: "urease positive" EXACT []
 is_a: OMP:0000222 ! urease activity phenotype
 created_by: jonathanherrera
@@ -4450,17 +4429,17 @@ creation_date: 2014-07-15T20:07:31Z
 [Term]
 id: OMP:0006090
 name: absence of urease activity
-def: "A urease activity phenotype where the enzyme activity is not observed or predicted." [OMP:JCH]
-synonym: "oxidase deficient" RELATED []
-synonym: "Oxidase negative" EXACT []
+def: "A urease activity phenotype where a cell or cells don't exhibit urease activity." [OMP:JCH]
+synonym: "urease deficient" RELATED []
+synonym: "urease negative" EXACT []
 is_a: OMP:0000222 ! urease activity phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
 
 [Term]
 id: OMP:0006091
-name: increase urease activity
-def: "An altered urease activity phenotype where there is an increase in enzyme activity relative to a designated control." [OMP:JCH]
+name: increased urease activity
+def: "An altered urease activity phenotype where urease activity is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006088 ! altered urease activity
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
@@ -4500,7 +4479,7 @@ creation_date: 2014-07-24T20:09:28Z
 [Term]
 id: OMP:0006096
 name: abolished oxidase activity
-def: "A decrease in oxidase activity where an organism loses its oxidase enzymatic activity." [OMP:JCH]
+def: "A decreased oxidase activity phenotype where oxidase activity is abolished." [OMP:JCH]
 is_a: OMP:0006087 ! decreased oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:11:44Z
@@ -4524,18 +4503,10 @@ creation_date: 2014-07-24T20:18:01Z
 [Term]
 id: OMP:0006099
 name: abolished bud formation
-def: "A decrease in bud formation where the ability for bud formation is lost." [OMP:JCH]
+def: "A decreased bud formation phenotype where the ability to form buds is abolished." [OMP:JCH]
 is_a: OMP:0006006 ! decreased budding
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:08:59Z
-
-[Term]
-id: OMP:0006100
-name: abolished organism lifespan
-def: "A decrease in organism lifespan where the organisms lifespan is abolished." [OMP:JCH]
-is_a: OMP:0005107 ! decreased in organism lifespan
-created_by: jonathanherrera
-creation_date: 2014-07-25T11:34:46Z
 
 [Term]
 id: OMP:0006101
@@ -4588,10 +4559,10 @@ creation_date: 2014-07-25T12:04:16Z
 
 [Term]
 id: OMP:0006107
-name: presence of outer membrane vesicle phenotype
-def: "A outer membrane vesicle phenotype where a cell or cells possess outer membrane vesicles." [OMP:JCH]
+name: presence of outer membrane vesicles
+def: "A outer membrane vesicles phenotype where a cell or cells produce outer membrane vesicles." [OMP:JCH]
 synonym: "vesiculation " EXACT []
-is_a: OMP:0000202 ! outer membrane vesicle phenotype
+is_a: OMP:0000202 ! outer membrane vesicles phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:19:45Z
 
@@ -4605,9 +4576,9 @@ creation_date: 2014-07-25T12:11:10Z
 
 [Term]
 id: OMP:0006109
-name: absence of outer membrane vesicle phenotype
-def: "A outer membrane vesicle phenotype where a cell or cells lack outer membrane vesicles." [OMP:JCH]
-is_a: OMP:0000202 ! outer membrane vesicle phenotype
+name: absence of outer membrane vesicles
+def: "A outer membrane vesicles phenotype where a cell or cells don't produce outer membrane vesicles." [OMP:JCH]
+is_a: OMP:0000202 ! outer membrane vesicles phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:19:45Z
 
@@ -4694,7 +4665,7 @@ creation_date: 2014-07-25T13:17:12Z
 [Term]
 id: OMP:0006120
 name: abolished heterocyst formation
-def: "A decrease in heterocyst formation where the ability for heterocyst formation is lost." [OMP:JCH]
+def: "A decreased heterocyst formation phenotype where the ability for heterocyst formation is abolished." [OMP:JCH]
 is_a: OMP:0000015 ! decreased heterocyst formation
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:19:17Z
@@ -4702,8 +4673,8 @@ creation_date: 2014-07-25T13:19:17Z
 [Term]
 id: OMP:0006121
 name: abolished induced expression of the SOS response
-def: "A decrease in induced expression of SOS where the ability to induce expression of SOS is lost." [OMP:JCH]
-is_a: OMP:0005025 ! decreased induced expression of the SOS response
+def: "A decreased induced expression of SOS phenotype where the ability to induce expression of SOS is abolished." [OMP:JCH]
+is_a: OMP:0005025 ! decreased expression of the SOS response 
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:22:37Z
 
@@ -4718,7 +4689,7 @@ creation_date: 2014-07-25T13:24:16Z
 [Term]
 id: OMP:0006123
 name: abolished mitotic recombination
-def: "A decrease in mitotic recombination where mitotic recombination is lost." [OMP:JCH]
+def: "A decreased mitotic recombination phenotype where the ability to perform mitotic recombination is abolished." [OMP:JCH]
 is_a: OMP:0005071 ! decreased mitotic recombination
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:27:32Z
@@ -4727,14 +4698,15 @@ creation_date: 2014-07-25T13:27:32Z
 id: OMP:0006124
 name: abolished mutation frequency
 def: "A decreased in mutation frequency where mutation frequency is lost." [OMP:JCH]
-is_a: OMP:0005069 ! decreased mutation frequency
+comment: This term was made obsolete because it describes a phenotype that is highly unlikely to occur in nature.
+is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:05:31Z
 
 [Term]
 id: OMP:0006125
 name: abolished myxospore formation
-def: "A decrease in myxospore formation where the ability to form myxospore is lost." [OMP:JCH]
+def: "A decreased myxospore formation phenotype where the ability to form myxospores is abolished." [OMP:JCH]
 is_a: OMP:0000022 ! decreased myxospore formation
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:07:02Z
@@ -4981,9 +4953,9 @@ creation_date: 2014-07-25T15:40:13Z
 
 [Term]
 id: OMP:0006156
-name: altered outer membrane vesicle phenotype
-def: "An outer membrane vesicle phenotype where utilization of outer membrane vesicles is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0000202 ! outer membrane vesicle phenotype
+name: altered outer membrane vesicles
+def: "An outer membrane vesicle phenotype where production of outer membrane vesicles is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0000202 ! outer membrane vesicles phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:44:09Z
 
@@ -4997,26 +4969,26 @@ creation_date: 2014-07-25T15:43:18Z
 
 [Term]
 id: OMP:0006158
-name: increase membrane vesicle
-def: "A altered outer membrane vesicle phenotype where vesicle utilization is increased relative to a designated control." [OMP:JCH]
+name: increased outer membrane vesicle production
+def: "A altered outer membrane vesicle production phenotype where production of outer membrane vesicles is increased relative to a designated control." [OMP:JCH]
 synonym: "hyper-vesiculating" EXACT []
-is_a: OMP:0006156 ! altered outer membrane vesicle phenotype
+is_a: OMP:0007129 ! altered outer membrane vesicle production
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:45:05Z
 
 [Term]
 id: OMP:0006159
-name: decreased outer membrane vesicle
-def: "A altered outer membrane vesicle phenotype where vesicle utilization is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006156 ! altered outer membrane vesicle phenotype
+name: decreased outer membrane vesicle production
+def: "A altered outer membrane vesicle production phenotype where production of outer membrane vesicles is decreased relative to a designated control." [OMP:JCH]
+is_a: OMP:0007129 ! altered outer membrane vesicle production
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:45:05Z
 
 [Term]
 id: OMP:0006160
 name: abolished outer membrane vesicle
-def: "A decrease outer membrane vesicle phenotype where an organism loses the ability to utilize outer membrane vesicles." [OMP:JCH]
-is_a: OMP:0006159 ! decreased outer membrane vesicle
+def: "A decreased outer membrane vesicle phenotype where the ability to produce outer membrane vesicles is abolished." [OMP:JCH]
+is_a: OMP:0006159 ! decreased outer membrane vesicle production
 created_by: jonathanherrera
 creation_date: 2014-07-28T20:49:39Z
 
@@ -5039,7 +5011,7 @@ creation_date: 2014-07-29T18:03:06Z
 [Term]
 id: OMP:0006163
 name: presence of heme utilization
-def: "A heme utilization phenotype where heme utilization is observed or predicted." [OMP:JCH]
+def: "A heme utilization phenotype where a cell or cells exhibit the ability to utilize heme as a source of iron." [OMP:JCH]
 is_a: OMP:0000451 ! heme utilization phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-05T13:35:01Z
@@ -5881,7 +5853,7 @@ creation_date: 2014-07-10T12:49:28Z
 [Term]
 id: OMP:0007089
 name: abolished heme utilization
-def: "A decrease in heme utilization where an organism loses the ability to utilize heme." [OMP:JCH]
+def: "A decreased heme utilization phenotype where the ability to utilize heme as a source of iron is abolished." [OMP:JCH]
 is_a: OMP:0000453 ! decreased heme utilization
 created_by: siegele
 creation_date: 2014-07-10T12:51:30Z
@@ -6216,6 +6188,14 @@ is_a: OMP:0000003 ! cell arrangement phenotype
 is_a: OMP:0007085 ! altered phenotype
 created_by: dsiegele
 creation_date: 2014-08-12T13:36:13Z
+
+[Term]
+id: OMP:0007129
+name: altered outer membrane vesicle production
+def: "An altered outer membrane vesicles phenotypes where the production of outer membrane vesicles is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0006156 ! altered outer membrane vesicles
+created_by: dsiegele
+creation_date: 2014-08-14T18:22:16Z
 
 [Typedef]
 id: decreased_relative_to
