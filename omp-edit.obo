@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 14:08:2014 18:54
-saved-by: dsiegele
+date: 15:08:2014 01:38
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -278,7 +278,7 @@ creation_date: 2011-04-26T03:44:34Z
 [Term]
 id: OMP:0000036
 name: increased capsule formation
-def: "An increased amount of capsule relative to the designated control strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
+def: "An increased amount of capsule relative to a designated control strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:11Z
@@ -378,7 +378,7 @@ creation_date: 2011-04-26T04:27:42Z
 [Term]
 id: OMP:0000050
 name: decreased capsule formation
-def: "An decreased amount of capsule relative to the designated control strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
+def: "An decreased amount of capsule relative to a designated control strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:59Z
@@ -2647,17 +2647,17 @@ creation_date: 2013-09-09T13:06:03Z
 
 [Term]
 id: OMP:0005017
-name: expression of the SOS response phenotype
-def: "A gene expression phenotype dealing with the expression of genes that are part of the SOS response.  Expression of the SOS response is induced by DNA damage." [ISBN:9781615831838, OMP:WAM]
+name: expression of SOS response genes phenotype
+def: "A gene expression phenotype dealing with the expression of a gene or genes that are part of the SOS response.  Expression of the SOS response is induced by DNA damage." [ISBN:9781615831838, OMP:WAM]
 is_a: OMP:0000253 ! gene expression phenotype
 created_by: wmeza
 creation_date: 2013-09-18T18:35:30Z
 
 [Term]
 id: OMP:0005018
-name: altered expression of the SOS response phenotype
-def: "An expression of the SOS response phenotype where expression of a gene or genes that are part of the SOS response is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005017 ! expression of the SOS response phenotype
+name: altered expression of SOS response genes
+def: "An expression SOS response genes phenotype where expression of a gene or genes that are part of the SOS response is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005017 ! expression of SOS response genes phenotype
 created_by: wmeza
 creation_date: 2013-09-19T13:39:34Z
 
@@ -2673,47 +2673,47 @@ creation_date: 2013-09-19T13:40:06Z
 id: OMP:0005020
 name: increased uninduced expression of the SOS response
 def: "An altered uninduced SOS phenotype where the basal level of gene expression is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005054 ! altered uniduced SOS response phenotype
+is_a: OMP:0005054 ! altered basal expression of SOS response genes
 created_by: wmeza
 creation_date: 2013-09-19T15:54:21Z
 
 [Term]
 id: OMP:0005021
-name: decreased uninduced expression of the SOS response
-def: "An altered uninduced SOS phenotype where the basal level of gene expression is decreased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005054 ! altered uniduced SOS response phenotype
+name: decreased basal expression of SOS response genes
+def: "An altered basal expression of SOS response genes phenotype where the basal level of gene expression is decreased relative to a designated control." [OMP:WAM]
+is_a: OMP:0005054 ! altered basal expression of SOS response genes
 created_by: wmeza
 creation_date: 2013-09-19T15:55:16Z
 
 [Term]
 id: OMP:0005022
-name: absence of SOS response
-def: "An expression of the SOS response phenotype xx" [OMP:WAM]
-is_a: OMP:0005017 ! expression of the SOS response phenotype
+name: absence of SOS response gene expression
+def: "An expression of SOS response genes phenotype where a cell or cells don't express SOS response genes in response to DNA damage or other inducing signals." [OMP:WAM]
+is_a: OMP:0005017 ! expression of SOS response genes phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:09Z
 
 [Term]
 id: OMP:0005023
-name: presence of SOS response
-def: "A SOS response phenotype where a cell or cells exhibit an SOS response." [OMP:WAM]
-is_a: OMP:0005017 ! expression of the SOS response phenotype
+name: presence of SOS response gene expression
+def: "An expression of SOS response genes phenotype where a cell or cells express SOS response genes in response to DNA damage or other inducing signals." [OMP:WAM]
+is_a: OMP:0005017 ! expression of SOS response genes phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:30Z
 
 [Term]
 id: OMP:0005024
 name: increased induced expression of the SOS response
-def: "An altered induced SOS response phenotype where the mechanism's effect is increased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005053 ! altered induced SOS response
+def: "An altered induced SOS response phenotype where the mechanism's effect is increased relative to a designated control." [OMP:WAM]
+is_a: OMP:0005053 ! altered induced expression of SOS response genes
 created_by: wmeza
 creation_date: 2013-09-20T13:01:05Z
 
 [Term]
 id: OMP:0005025
-name: decreased expression of the SOS response 
-def: "An altered induced SOS response phenotype where the mechanism's effect is decreased relative to the designated control." [OMP:WAM]
-is_a: OMP:0005053 ! altered induced SOS response
+name: decreased expression of the SOS response
+def: "An altered induced SOS response phenotype where the mechanism's effect is decreased relative to a designated control." [OMP:WAM]
+is_a: OMP:0005053 ! altered induced expression of SOS response genes
 created_by: wmeza
 creation_date: 2013-09-20T13:26:46Z
 
@@ -2759,8 +2759,8 @@ creation_date: 2013-09-25T15:57:03Z
 
 [Term]
 id: OMP:0005031
-name: decreased stress induced mutagenesis
-def: "An altered stress induced mutagenesis phenotype where the frequency of mutagenesis is decreased relative to the designated control." [OMP:WAM]
+name: decreased stress-induced mutagenesis
+def: "An altered stress-induced mutagenesis phenotype where the frequency of mutagenesis is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006034 ! altered stress-induced mutagenesis phenotype
 created_by: wmeza
 creation_date: 2013-09-25T15:57:46Z
@@ -2904,7 +2904,7 @@ creation_date: 2013-10-18T18:39:27Z
 [Term]
 id: OMP:0005049
 name: increased frequency of homologous recombination
-def: "A homologous recombination phenotype where the prevalence of homologous recombination is increased relative to the designated control." [OMP:WAM]
+def: "A homologous recombination phenotype where the prevalence of homologous recombination is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006002 ! altered homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-23T19:46:15Z
@@ -2935,32 +2935,32 @@ creation_date: 2013-10-25T12:22:04Z
 
 [Term]
 id: OMP:0005053
-name: altered induced SOS response
-def: "An altered SOS response phenotype dealing with the induced expression of the mechanism." [OMP:WAM]
-is_a: OMP:0005018 ! altered expression of the SOS response phenotype
+name: altered induced expression of SOS response genes
+def: "An altered expression of SOS response genes phenotype where induced expression is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005018 ! altered expression of SOS response genes
 created_by: wmeza
 creation_date: 2014-07-30T12:34:21Z
 
 [Term]
 id: OMP:0005054
-name: altered uniduced SOS response phenotype
-def: "An altered SOS response phenotype dealing with the expression of the genes at the basal level." [OMP:WAM]
-is_a: OMP:0005018 ! altered expression of the SOS response phenotype
+name: altered basal expression of SOS response genes
+def: "An altered expression of SOS response genes phenotype where basal or uninduced expression of SOS response genes is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005018 ! altered expression of SOS response genes
 created_by: wmeza
 creation_date: 2014-07-30T12:58:59Z
 
 [Term]
 id: OMP:0005055
 name: increased frequency of site specific recombination
-def: "A site specific recombination phenotype where the prevalence of site specific recombination is increased relative to the designated control." [OMP:WAM]
+def: "A site specific recombination phenotype where the prevalence of site specific recombination is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006005 ! altered site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:14:25Z
 
 [Term]
 id: OMP:0005056
-name: decreased frequency of site specific recombination
-def: "A site specific recombination phenotype where site specific recombination is decreased relative to the designated control." [OMP:WAM]
+name: decreased frequency of site-specific recombination
+def: "A site specific recombination phenotype where site specific recombination is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006005 ! altered site specific recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-29T13:15:06Z
@@ -2992,7 +2992,7 @@ creation_date: 2013-10-30T18:35:34Z
 [Term]
 id: OMP:0005060
 name: increased frequency of chromosome segregation
-def: "A chromosome segregation phenotype where chromosome segregation is increased relative to the designated control." [OMP:WAM]
+def: "A chromosome segregation phenotype where chromosome segregation is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006001 ! altered chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:09:09Z
@@ -3072,7 +3072,7 @@ creation_date: 2013-11-08T17:11:14Z
 [Term]
 id: OMP:0005070
 name: increased mitotic recombination
-def: "An altered mitotic recombination phenotype where the mitotic recombination is increased relative to the designated control." [OMP:WAM]
+def: "An altered mitotic recombination phenotype where the mitotic recombination is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005044 ! altered mitotic recombination
 created_by: wmeza
 creation_date: 2013-11-08T17:11:59Z
@@ -3104,7 +3104,7 @@ creation_date: 2013-11-08T17:36:20Z
 [Term]
 id: OMP:0005074
 name: increased rate of transposable element transposition
-def: "A transposable element transposition phenotype where DNA sequences change position at a higher frequency relative to the designated control." [OMP:WAM]
+def: "A transposable element transposition phenotype where DNA sequences change position at a higher frequency relative to a designated control." [OMP:WAM]
 is_a: OMP:0006013 ! altered transposable element transposition phenotype
 created_by: wmeza
 creation_date: 2013-11-11T13:41:50Z
@@ -3211,8 +3211,8 @@ creation_date: 2013-11-22T16:05:02Z
 
 [Term]
 id: OMP:0005087
-name: increased resistance toward dessication stress
-def: "An altered dessication stress phenotype where resistance is increased relative to the designated control." [OMP:WAM]
+name: increased resistance to dessication stress
+def: "An altered dessication stress phenotype where resistance to dessication is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased dessication sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005120 ! altered dessication stress phenotype
 created_by: wmeza
@@ -3220,8 +3220,8 @@ creation_date: 2013-12-06T14:14:31Z
 
 [Term]
 id: OMP:0005088
-name: decreased resistance toward dessication stress
-def: "An altered dessication stress phenotype where resistance is decreased relative to the designated control." [OMP:WAM]
+name: decreased resistance to dessication stress
+def: "An altered dessication stress phenotype where resistance to dessication is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased dessication sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005120 ! altered dessication stress phenotype
 created_by: wmeza
@@ -3246,8 +3246,8 @@ creation_date: 2013-12-06T14:28:46Z
 
 [Term]
 id: OMP:0005091
-name: increased resistance toward oxidative stress
-def: "An altered oxidative stress phenotype where resistance is increased relative to the designated control." [OMP:WAM]
+name: increased resistance to oxidative stress
+def: "An altered oxidative stress phenotype where resistance is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased oxidative sensitivity " NARROW [OMP:WAM]
 is_a: OMP:0005122 ! altered oxidative stress phenotype
 created_by: wmeza
@@ -3255,8 +3255,8 @@ creation_date: 2013-12-06T17:57:46Z
 
 [Term]
 id: OMP:0005092
-name: decreased resistance toward oxidative stress
-def: "An altered oxidative stress phenotype where resistance is decreased relative to the designated control." [OMP:WAM]
+name: decreased resistance to oxidative stress
+def: "An altered oxidative stress phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased oxidative sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005122 ! altered oxidative stress phenotype
 created_by: wmeza
@@ -3361,7 +3361,7 @@ id: OMP:0005104
 name: abolished resistance to dessication stress
 def: "A decreased resistance to dessication stress phenotype where an organism completely loses its resistance to dessication stress." [OMP:WAM]
 synonym: "abolished dessication sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005088 ! decreased resistance toward dessication stress
+is_a: OMP:0005088 ! decreased resistance to dessication stress
 created_by: wmeza
 creation_date: 2014-07-17T13:11:33Z
 
@@ -3565,7 +3565,7 @@ id: OMP:0005131
 name: abolished resistance to oxidative stress
 def: "A decreased resistance toward oxidative stress phenotype where an organism completely loses its resistance to oxidative stress." [OMP:WAM]
 synonym: "abolished oxidative sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005092 ! decreased resistance toward oxidative stress
+is_a: OMP:0005092 ! decreased resistance to oxidative stress
 created_by: wmeza
 creation_date: 2014-07-17T14:18:37Z
 
@@ -4618,7 +4618,7 @@ creation_date: 2014-07-25T12:45:20Z
 id: OMP:0006114
 name: abolished frequency of site specific recombination
 def: "A decreased in frequency of site specific recombination where an organism completely loses the ability of site specific recombination." [OMP:JCH]
-is_a: OMP:0005056 ! decreased frequency of site specific recombination
+is_a: OMP:0005056 ! decreased frequency of site-specific recombination
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:47:43Z
 
@@ -4674,7 +4674,7 @@ creation_date: 2014-07-25T13:19:17Z
 id: OMP:0006121
 name: abolished induced expression of the SOS response
 def: "A decreased induced expression of SOS phenotype where the ability to induce expression of SOS is abolished." [OMP:JCH]
-is_a: OMP:0005025 ! decreased expression of the SOS response 
+is_a: OMP:0005025 ! decreased expression of the SOS response
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:22:37Z
 
@@ -4682,7 +4682,7 @@ creation_date: 2014-07-25T13:22:37Z
 id: OMP:0006122
 name: abolished uninduced expression of the SOS response
 def: "A decrease in uninduced expression of SOS where the ability to induce expression of SOS is lost." [OMP:JCH]
-is_a: OMP:0005021 ! decreased uninduced expression of the SOS response
+is_a: OMP:0005021 ! decreased basal expression of SOS response genes
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:24:16Z
 
@@ -4891,7 +4891,7 @@ creation_date: 2014-07-25T15:18:09Z
 id: OMP:0006148
 name: abolished stress induced mutagenesis
 def: "A decreased in stress induced mutagenesis where an organism completely loses mutagenesis during stress." [OMP:JCH]
-is_a: OMP:0005031 ! decreased stress induced mutagenesis
+is_a: OMP:0005031 ! decreased stress-induced mutagenesis
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:19:48Z
 
