@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 15:08:2014 10:31
-saved-by: siegele
+date: 15:08:2014 17:07
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -506,7 +506,7 @@ creation_date: 2011-04-26T05:09:24Z
 [Term]
 id: OMP:0000067
 name: cell motility by swarming
-def: "A cell motility phenotype where a population of cells exhibit coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
+def: "A presence of cell motility phenotype where a population of cells exhibit coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
@@ -876,7 +876,7 @@ creation_date: 2011-02-02T02:45:02Z
 [Term]
 id: OMP:0000111
 name: cell motility by swimming
-def: "A cell motility phenotype where a cell or cells exhibits smooth movement through a liquid medium." [OMP:MCC]
+def: "A presence of cell motility phenotype where a cell or cells exhibits smooth movement through a liquid medium." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
@@ -884,7 +884,7 @@ creation_date: 2011-02-07T03:17:40Z
 [Term]
 id: OMP:0000112
 name: cell motility by gliding
-def: "A cell motility phenotype where a cell or cells exhibits smooth movement along a solid surface." [OMP:MCC]
+def: "A presence of cell motility phenotype where a cell or cells exhibits smooth movement along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:03Z
@@ -892,7 +892,7 @@ creation_date: 2011-02-07T03:18:03Z
 [Term]
 id: OMP:0000113
 name: cell motility by twitching
-def: "A cell motility phenotype where a cell or cells exhibit movement over moist surfaces by the extension, tethering and then retraction of polar pili, usually type IV pili." [OMP:MCC, PMID:12142488]
+def: "A presence of cell motility phenotype where a cell or cells exhibit movement over moist surfaces by the extension, tethering and then retraction of polar pili, usually type IV pili." [OMP:MCC, PMID:12142488]
 is_a: OMP:0000005 ! presence of cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:13Z
@@ -2061,8 +2061,8 @@ creation_date: 2011-07-21T02:05:51Z
 [Term]
 id: OMP:0000274
 name: antimicrobial compound resistance phenotype
-def: "A microbial phenotype, where the trait in question is the resistance to a compound that kills (microbiocidal) or inhibits growth (microbiostatic) of a microbe." [OMP:MCC]
-synonym: "antibiotic resistance phenotype" NARROW []
+def: "A microbial phenotype where the trait in question is resistance to a compound that kills (microbiocidal) or inhibits growth (microbiostatic) of a microbe." [OMP:MCC]
+synonym: "antibiotic resistance phenotype" EXACT []
 synonym: "antibiotic sensitivity phenotype" RELATED []
 synonym: "antifungal resistance phenotype" NARROW []
 synonym: "antimetabolite resistance phenotype" NARROW []
@@ -2271,7 +2271,7 @@ id: OMP:0000334
 name: increased resistance to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance is increased relative to a designated control." [OMP:DAS]
 synonym: "decreased sensitivity to antifolates" RELATED []
-is_a: OMP:0006018 ! altered resistance to aminopyrimidine phenotype
+is_a: OMP:0006018 ! altered aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:38Z
 
@@ -2280,7 +2280,7 @@ id: OMP:0000335
 name: decreased resistance to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
 synonym: "increased sensitivity to aminopyrimidine" RELATED []
-is_a: OMP:0006018 ! altered resistance to aminopyrimidine phenotype
+is_a: OMP:0006018 ! altered aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:58Z
 
@@ -2746,6 +2746,7 @@ id: OMP:0005029
 name: altered tetracycline resistance phenotype
 def: "A tetracycline resistance phenotype where resistance is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0006062 ! tetracycline resistance phenotype
+is_a: OMP:0007131 ! altered antimicrobial compound resistance phenotype
 created_by: wmeza
 creation_date: 2014-07-23T17:05:20Z
 
@@ -2786,6 +2787,7 @@ id: OMP:0005034
 name: altered quinolone resistance phenotype
 def: "A quinolone resistance phenotype where resistance is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0006029 ! quinolone resistance phenotype
+is_a: OMP:0007131 ! altered antimicrobial compound resistance phenotype
 created_by: wmeza
 creation_date: 2014-07-23T17:13:45Z
 
@@ -3709,8 +3711,8 @@ creation_date: 2014-07-24T16:28:24Z
 
 [Term]
 id: OMP:0006011
-name: Lantibiotic resistance phenotype
-def: "A bacteriocin resistance phenotype dealing with resistance to peptide antimicrobials that contain the thioether amino acids lanthionine or methyllanthionine, and the unsaturated amino acids dehydroalanine and 2-aminoisobutyric acid." [CHEBI:71644, OMP:WAM]
+name: lantibiotic resistance phenotype
+def: "A bacteriocin resistance phenotype dealing with resistance to antimicrobial peptides that contain the thioether amino acids lanthionine or methyllanthionine, and the unsaturated amino acids dehydroalanine and 2-aminoisobutyric acid." [CHEBI:71644, OMP:WAM]
 synonym: "lantibiotic sensitivity phenotype" RELATED []
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
@@ -3721,7 +3723,7 @@ id: OMP:0006012
 name: decreased resistance to lantibiotic
 def: "A lantibiotic resistance phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased sensitivity to lantibiotic" RELATED []
-is_a: OMP:0006011 ! Lantibiotic resistance phenotype
+is_a: OMP:0007132 ! altered lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
 
@@ -3738,7 +3740,7 @@ id: OMP:0006014
 name: increased resistance to lantibiotic
 def: "A lantibiotic resistance phenotype where resistance is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased sensitivity to lantibiotic" RELATED []
-is_a: OMP:0006011 ! Lantibiotic resistance phenotype
+is_a: OMP:0007132 ! altered lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
 
@@ -3760,17 +3762,19 @@ creation_date: 2014-07-24T16:34:28Z
 
 [Term]
 id: OMP:0006017
-name: altered resistance to aminoglycoside
-def: "An aminoglycoside resistance phenotype that is altered relative to a designated control." [OMP:JCH]
+name: altered aminoglycoside resistance phenotype
+def: "An aminoglycoside resistance phenotype where resistance is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
+is_a: OMP:0007131 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:04:53Z
 
 [Term]
 id: OMP:0006018
-name: altered resistance to aminopyrimidine phenotype
-def: "An aminopyrimidine resistance phenotype that is altered relative to a designated control." [OMP:JCh]
+name: altered aminopyrimidine resistance phenotype
+def: "An aminopyrimidine resistance phenotype where resistance is altered relative to a designated control." [OMP:JCh]
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
+is_a: OMP:0007131 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:13:02Z
 
@@ -3779,6 +3783,7 @@ id: OMP:0006019
 name: altered azole resistance phenotype
 def: "An azole resistance phenotype that is altered relative to a designated control." [OMp:JCH]
 is_a: OMP:0006028 ! azole resistance phenotype
+is_a: OMP:0007131 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:20:23Z
 
@@ -3787,6 +3792,7 @@ id: OMP:0006020
 name: altered bacteriocin resistance phenotype
 def: "A bacteriocin resistance phenotype that is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
+is_a: OMP:0007131 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:21:28Z
 
@@ -3795,6 +3801,7 @@ id: OMP:0006021
 name: altered beta-lactam resistance phenotype
 def: "A beta-lactam resistance phenotype that is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
+is_a: OMP:0007131 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:26:03Z
 
@@ -3828,6 +3835,7 @@ id: OMP:0006025
 name: altered chloramphenicol resistance phenotype
 def: "A chloramphenicol resistance phenotype that is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
+is_a: OMP:0007131 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:39:51Z
 
@@ -3891,14 +3899,16 @@ id: OMP:0006031
 name: altered macrolide resistance phenotype
 def: "A macrolide resistance phenotype that is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
+is_a: OMP:0007131 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:40:33Z
 
 [Term]
 id: OMP:0006032
-name: altered pteridine resistance
+name: altered pteridine resistance phenotype
 def: "A pteridine resistance phenotype that is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007065 ! pteridine resistance phenotype
+is_a: OMP:0007131 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:42:30Z
 
@@ -4011,8 +4021,8 @@ creation_date: 2013-10-11T17:40:34Z
 
 [Term]
 id: OMP:0006045
-name: increased resistance to beta-lactam compound
-def: "A beta-lactam compound resistance phenotype where resistance to a beta-lactam compound is increased relative to a designated control." [OMP:JCH]
+name: increased resistance to beta-lactams
+def: "A beta-lactam compound resistance phenotype where resistance to one or more beta-lactam compounds is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to beta-lactam" RELATED []
 is_a: OMP:0006021 ! altered beta-lactam resistance phenotype
 created_by: jonathanherrera
@@ -4127,7 +4137,7 @@ id: OMP:0006057
 name: decreased resistance to aminoglycoside
 def: "An aminoglycoside resistance phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
 synonym: "increased sensitivity to aminoglycoside" RELATED []
-is_a: OMP:0006017 ! altered resistance to aminoglycoside
+is_a: OMP:0006017 ! altered aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -4136,7 +4146,7 @@ id: OMP:0006058
 name: increased resistance to aminoglycoside
 def: "An aminoglycoside compound resistance phenotype where resistance is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to aminoglycoside" RELATED []
-is_a: OMP:0006017 ! altered resistance to aminoglycoside
+is_a: OMP:0006017 ! altered aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -4270,7 +4280,7 @@ id: OMP:0006072
 name: not resistant to lantibiotic
 def: "A lantibiotic resistance phenotype where resistance to lantibiotic compounds are not observed." [OMP:WAM]
 synonym: "sensitivity to lantibiotic" RELATED []
-is_a: OMP:0006011 ! Lantibiotic resistance phenotype
+is_a: OMP:0006011 ! lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
 
@@ -4279,7 +4289,7 @@ id: OMP:0006073
 name: resistant to lantibiotic
 def: "A lantibiotic resistance phenotype where resistance to lantibiotic compounds are observed." [OMP:WAM]
 synonym: "not sensitive to lantibiotic" RELATED []
-is_a: OMP:0006011 ! Lantibiotic resistance phenotype
+is_a: OMP:0006011 ! lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
 
@@ -4289,7 +4299,7 @@ name: increased resistance to pteridine
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is increased relative to a designated control." [CHEBI:27601, OMP:DAS]
 synonym: "abolish sensitivity to pteridine" RELATED []
 synonym: "decrease sensitivity to pteridine" RELATED []
-is_a: OMP:0006032 ! altered pteridine resistance
+is_a: OMP:0006032 ! altered pteridine resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-05-12T13:04:39Z
 
@@ -5039,7 +5049,7 @@ creation_date: 2014-08-08T15:51:18Z
 [Term]
 id: OMP:0006167
 name: abolished cell motility by swarming
-def: "A decreased cell motility by swarming phenotype where an organism loses the ability to swarm." [OMP:JCH]
+def: "A decreased cell motility by swarming phenotype where cell motility by swarming is abolished." [OMP:JCH]
 is_a: OMP:0007092 ! decreased cell motility by swarming
 created_by: jonathanherrera
 creation_date: 2014-08-13T17:25:47Z
@@ -5119,7 +5129,7 @@ creation_date: 2014-08-08T16:49:27Z
 [Term]
 id: OMP:0007000
 name: abolished cell motility
-def: "A decreased motility phenotype where an organism loses the ability to be motile." [OMP:JCH]
+def: "A decreased motility phenotype where cell motility is abolished." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-06-29T14:10:40Z
@@ -5155,7 +5165,7 @@ name: decreased resistance to pteridine
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is decreased relative to a designated control." [CHEBI:27601, OMP:DAS]
 synonym: "abolish resistance to pteridine" NARROW [CHEBI:73913]
 synonym: "increase sensitivity to pteridine" RELATED []
-is_a: OMP:0006032 ! altered pteridine resistance
+is_a: OMP:0006032 ! altered pteridine resistance phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:03:55Z
 
@@ -5866,7 +5876,7 @@ creation_date: 2014-07-10T21:50:33Z
 [Term]
 id: OMP:0007091
 name: decreased cell motility by gliding
-def: "A decreased cell motility phenotype where motility by gliding is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased cell motility phenotype where cell motility by gliding is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -5874,7 +5884,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007092
 name: decreased cell motility by swarming
-def: "A decreased cell motility phenotype where motility by swarming is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased cell motility phenotype where cell motility by swarming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -5882,7 +5892,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007093
 name: decreased cell motility by swimming
-def: "A decreased motility phenotype where motility by swimming is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased motility phenotype where cell motility by swimming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -5890,7 +5900,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007094
 name: decreased cell motility by twitching
-def: "A decreased cell motility phenotype where motility by twitching is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased cell motility phenotype where cell motility by twitching is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -5898,7 +5908,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007095
 name: increased cell motility by gliding
-def: "An increased cell motility phenotype where motility by gliding is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where cell motility by gliding is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -5906,7 +5916,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007096
 name: increased cell motility by swarming
-def: "An increased cell motility phenotype where motility by swarming is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where cell motility by swarming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -5914,7 +5924,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007097
 name: increased cell motility by swimming
-def: "An increased cell motility phenotype where motility by swimming is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where cell motility by swimming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -5922,7 +5932,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007098
 name: increased cell motility by twitching
-def: "An increased cell motility phenotype where motility by twitching is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where cell motility by twitching is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -6200,6 +6210,24 @@ def: "A capsule phenotype where the capsule layer is altered relative to a desig
 is_a: OMP:0000203 ! capsule phenotype
 created_by: siegele
 creation_date: 2014-08-15T10:07:30Z
+
+[Term]
+id: OMP:0007131
+name: altered antimicrobial compound resistance phenotype
+def: "An antimicrobial compound resistance phenotype where resistance to an antimicrobial compound is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+is_a: OMP:0007085 ! altered phenotype
+created_by: dsiegele
+creation_date: 2014-08-15T16:44:24Z
+
+[Term]
+id: OMP:0007132
+name: altered lantibiotic resistance phenotype
+def: "A lantibiotic resistance phenotype where resistance is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0006011 ! lantibiotic resistance phenotype
+is_a: OMP:0006020 ! altered bacteriocin resistance phenotype
+created_by: dsiegele
+creation_date: 2014-08-15T16:54:08Z
 
 [Typedef]
 id: decreased_relative_to
