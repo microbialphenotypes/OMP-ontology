@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 15:08:2014 01:38
+date: 15:08:2014 10:31
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -114,7 +114,7 @@ creation_date: 2011-06-07T10:14:15Z
 [Term]
 id: OMP:0000014
 name: increased endospore formation
-def: "A altered endospore formation where there are more Endospores formed relative to a designated control." [OMP:JCH]
+def: "An altered endospore formation where endospore formation is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006161 ! altered endospore formation
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:39Z
@@ -278,8 +278,8 @@ creation_date: 2011-04-26T03:44:34Z
 [Term]
 id: OMP:0000036
 name: increased capsule formation
-def: "An increased amount of capsule relative to a designated control strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
-is_a: OMP:0000203 ! capsule phenotype
+def: "An altered capsule phenotype where capsule formation is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007130 ! altered capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:11Z
 
@@ -378,8 +378,8 @@ creation_date: 2011-04-26T04:27:42Z
 [Term]
 id: OMP:0000050
 name: decreased capsule formation
-def: "An decreased amount of capsule relative to a designated control strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
-is_a: OMP:0000203 ! capsule phenotype
+def: "An altered capsule phenotype where capsule formation is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007130 ! altered capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:59Z
 
@@ -460,7 +460,7 @@ creation_date: 2011-04-26T05:02:51Z
 [Term]
 id: OMP:0000061
 name: decreased virulence
-def: "A altered virulence phenotype where the ability of an organism to cause disease is reduced relative to a designated control." [OMP:MCC]
+def: "An altered virulence phenotype where the ability to cause disease is decreased relative to a designated control." [OMP:MCC]
 synonym: "less virulent" EXACT []
 xref: PATO:0002147
 is_a: OMP:0000098 ! altered virulence
@@ -470,7 +470,7 @@ creation_date: 2011-04-26T05:02:57Z
 [Term]
 id: OMP:0000062
 name: increased virulence
-def: "A altered virulence phenotype where an organisms ability to cause disease is enhanced relative to a designated phenotype." [OMP:MCC]
+def: "An altered virulence phenotype where the ability to cause disease is increased relative to a designated control." [OMP:MCC]
 synonym: "more virulent" RELATED []
 xref: PATO:0002148
 is_a: OMP:0000098 ! altered virulence
@@ -1378,7 +1378,7 @@ creation_date: 2011-06-06T03:44:11Z
 [Term]
 id: OMP:0000172
 name: response to chemical stimulus phenotype
-def: "A stress response phenotype dealing with the reaction toward exposure to chemical stimuli." [OMP:WAM]
+def: "A stress response phenotype dealing with the reaction to exposure to a chemical stimulus." [OMP:WAM]
 is_a: OMP:0000173 ! stress response phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T04:16:08Z
@@ -1625,7 +1625,7 @@ creation_date: 2011-03-02T01:43:12Z
 [Term]
 id: OMP:0000203
 name: capsule phenotype
-def: "A cell envelope phenotype where the trait in question is the outermost layer of the cell envelope that usually consists of polysaccharide or a polymer of amino acids." [ISBN:9780073402406, OMP:DAS]
+def: "A cell envelope phenotype where the trait in question is the capsule, a layer of polysaccharide or polymers of amino acids surrounding a microbial cell. When present, the capsule is the outermost layer of the cell envelope." [ISBN:9780073402406, OMP:DAS]
 synonym: "glycocalyx" RELATED []
 synonym: "slime layer" RELATED []
 is_a: OMP:0000085 ! cell envelope phenotype
@@ -1635,7 +1635,7 @@ creation_date: 2011-06-07T09:44:51Z
 [Term]
 id: OMP:0000204
 name: presence of capsule
-def: "The presence of a capsule layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, is observed in one or more environments." [OMP:DAS]
+def: "A capsule phenotype where a cell or cells have the ability to produce a capsule." [OMP:DAS]
 comment: When present, the capsule layer lies outside the cell wall and/or outer membrane.
 synonym: "glycocalyx" RELATED [OMP:DAS]
 synonym: "slime layer" RELATED [OMP:DAS]
@@ -1698,7 +1698,7 @@ creation_date: 2011-06-07T12:31:24Z
 [Term]
 id: OMP:0000211
 name: absence of capsule
-def: "A capsule phenotype where an organism is not observed to produce a capsule in any environmental condition." [OMP:DAS]
+def: "A capsule phenotype where a cell or cells lack the ability to produce a capsule." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
@@ -1715,7 +1715,7 @@ creation_date: 2011-06-07T12:32:12Z
 [Term]
 id: OMP:0000213
 name: increased number of flagella
-def: "A altered flagellum phenotype where there is an increased number of flagella per cell relative to a designated control." [OMP:DAS]
+def: "An altered flagellum phenotype where there is an increased number of flagella per cell relative to a designated control." [OMP:DAS]
 is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:53:17Z
@@ -2503,7 +2503,7 @@ creation_date: 2012-11-02T01:23:12Z
 [Term]
 id: OMP:0001001
 name: Increased negative DNA supercoiling
-def: "A altered DNA supercoiling phenotype where negative DNA supercoiling is increased relative to a designated control." [OMP:WAM]
+def: "An altered DNA supercoiling phenotype where negative DNA supercoiling is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:07Z
@@ -2511,7 +2511,7 @@ creation_date: 2013-08-22T05:57:07Z
 [Term]
 id: OMP:0001002
 name: decreased negative DNA supercoiling
-def: "A altered DNA supercoiling phenotype where negative DNA supercoiling is decreased relative to a designated control." [OMP:WAM]
+def: "An altered DNA supercoiling phenotype where negative DNA supercoiling is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
@@ -2647,7 +2647,7 @@ creation_date: 2013-09-09T13:06:03Z
 
 [Term]
 id: OMP:0005017
-name: expression of SOS response genes phenotype
+name: SOS response phenotype
 def: "A gene expression phenotype dealing with the expression of a gene or genes that are part of the SOS response.  Expression of the SOS response is induced by DNA damage." [ISBN:9781615831838, OMP:WAM]
 is_a: OMP:0000253 ! gene expression phenotype
 created_by: wmeza
@@ -2655,9 +2655,9 @@ creation_date: 2013-09-18T18:35:30Z
 
 [Term]
 id: OMP:0005018
-name: altered expression of SOS response genes
-def: "An expression SOS response genes phenotype where expression of a gene or genes that are part of the SOS response is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005017 ! expression of SOS response genes phenotype
+name: altered SOS response
+def: "An SOS response phenotype where expression of SOS response genes is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T13:39:34Z
 
@@ -2671,8 +2671,8 @@ creation_date: 2013-09-19T13:40:06Z
 
 [Term]
 id: OMP:0005020
-name: increased uninduced expression of the SOS response
-def: "An altered uninduced SOS phenotype where the basal level of gene expression is increased relative to the designated control." [OMP:WAM]
+name: increased basal expression of the SOS response
+def: "An altered basal expression of SOS response genes phenotype where the basal level of SOS gene expression is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005054 ! altered basal expression of SOS response genes
 created_by: wmeza
 creation_date: 2013-09-19T15:54:21Z
@@ -2680,39 +2680,39 @@ creation_date: 2013-09-19T15:54:21Z
 [Term]
 id: OMP:0005021
 name: decreased basal expression of SOS response genes
-def: "An altered basal expression of SOS response genes phenotype where the basal level of gene expression is decreased relative to a designated control." [OMP:WAM]
+def: "An altered basal expression of SOS response genes phenotype where the basal level of SOS gene expression is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005054 ! altered basal expression of SOS response genes
 created_by: wmeza
 creation_date: 2013-09-19T15:55:16Z
 
 [Term]
 id: OMP:0005022
-name: absence of SOS response gene expression
-def: "An expression of SOS response genes phenotype where a cell or cells don't express SOS response genes in response to DNA damage or other inducing signals." [OMP:WAM]
-is_a: OMP:0005017 ! expression of SOS response genes phenotype
+name: absence of the SOS response
+def: "An SOS response phenotype where a cell or cells don't exhibit an SOS response." [OMP:WAM]
+is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:09Z
 
 [Term]
 id: OMP:0005023
-name: presence of SOS response gene expression
-def: "An expression of SOS response genes phenotype where a cell or cells express SOS response genes in response to DNA damage or other inducing signals." [OMP:WAM]
-is_a: OMP:0005017 ! expression of SOS response genes phenotype
+name: presence of the SOS response
+def: "An SOS response phenotype where a cell or cells exhibit an SOS response." [OMP:WAM]
+is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:30Z
 
 [Term]
 id: OMP:0005024
 name: increased induced expression of the SOS response
-def: "An altered induced SOS response phenotype where the mechanism's effect is increased relative to a designated control." [OMP:WAM]
+def: "An altered induced expression of SOS response genes phenotype where the induced level of SOS gene expression is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005053 ! altered induced expression of SOS response genes
 created_by: wmeza
 creation_date: 2013-09-20T13:01:05Z
 
 [Term]
 id: OMP:0005025
-name: decreased expression of the SOS response
-def: "An altered induced SOS response phenotype where the mechanism's effect is decreased relative to a designated control." [OMP:WAM]
+name: decreased induced expression of SOS response genes
+def: "An altered induced expression of SOS response genes phenotype where the induced level of SOS gene expression is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005053 ! altered induced expression of SOS response genes
 created_by: wmeza
 creation_date: 2013-09-20T13:26:46Z
@@ -2936,16 +2936,16 @@ creation_date: 2013-10-25T12:22:04Z
 [Term]
 id: OMP:0005053
 name: altered induced expression of SOS response genes
-def: "An altered expression of SOS response genes phenotype where induced expression is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005018 ! altered expression of SOS response genes
+def: "An altered SOS response phenotype where induced expression of SOS response genes is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005018 ! altered SOS response
 created_by: wmeza
 creation_date: 2014-07-30T12:34:21Z
 
 [Term]
 id: OMP:0005054
 name: altered basal expression of SOS response genes
-def: "An altered expression of SOS response genes phenotype where basal or uninduced expression of SOS response genes is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005018 ! altered expression of SOS response genes
+def: "An altered SOS response phenotype where basal or uninduced expression of SOS response genes is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005018 ! altered SOS response
 created_by: wmeza
 creation_date: 2014-07-30T12:58:59Z
 
@@ -3119,8 +3119,8 @@ creation_date: 2013-11-11T13:42:44Z
 
 [Term]
 id: OMP:0005076
-name: increased resistance toward acidic pH stress
-def: "A altered acidic pH stress phenotype were resistance to acidic pH was increased relative to a designated control." [OMP:WAM]
+name: increased resistance to acidic pH stress
+def: "An altered resistance to acidic pH stress phenotype were resistance to acidic pH is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
@@ -3128,8 +3128,8 @@ creation_date: 2013-11-15T18:09:55Z
 
 [Term]
 id: OMP:0005077
-name: decreased resistance toward acidic pH stress
-def: "A altered acidic pH stress phenotype were resistance to acidic pH was decreased relative to a designated control." [OMP:WAM]
+name: decreased resistance to acidic pH stress
+def: "An altered resistance to acidic pH stress phenotype were resistance to acidic pH is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
@@ -3137,18 +3137,18 @@ creation_date: 2013-11-15T18:12:48Z
 
 [Term]
 id: OMP:0005078
-name: increased resistance toward alkalinic pH stress
-def: "An altered alkalinic pH stress phenotype were resistance to alkalinic pH is increased relative to a designated control." [OMP:WAM]
-synonym: "decreased alkalinic pH sensitivity" RELATED [OMP:WAM]
+name: increased resistance to alkaline pH stress
+def: "An altered resistance to alkaline pH stress phenotype were resistance to alkaline pH is increased relative to a designated control." [OMP:WAM]
+synonym: "decreased alkaline pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005119 ! altered alkalinic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:14:08Z
 
 [Term]
 id: OMP:0005079
-name: decreased resistance toward alkalinic pH stress
-def: "An altered alkalinic pH stress phenotype were resistance to alkalinic pH is decreased relative to a designated control." [OMP:WAM]
-synonym: "increased alkalinic pH sensitivity" NARROW [OMP:WAM]
+name: decreased resistance to alkaline pH stress
+def: "An altered resistance to alkaline pH stress phenotype were resistance to alkaline pH is decreased relative to a designated control." [OMP:WAM]
+synonym: "increased alkaline pH sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005119 ! altered alkalinic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:16:03Z
@@ -3528,19 +3528,17 @@ creation_date: 2014-07-11T13:57:22Z
 
 [Term]
 id: OMP:0005127
-name: abolished resistance toward acidic pH stress
-def: "A decreased resistance toward acidic pH stress where an organism completely loses its resistance to acidic pH stress." [OMP:WAM]
-synonym: "abolished acidic pH sensitivity " RELATED [OMP:WAM]
-is_a: OMP:0005077 ! decreased resistance toward acidic pH stress
+name: abolished resistance to acidic pH stress
+def: "A decreased resistance to acidic pH stress phenotype where resistance to acidic pH is abolished." [OMP:WAM]
+is_a: OMP:0005077 ! decreased resistance to acidic pH stress
 created_by: wmeza
 creation_date: 2014-07-15T16:46:17Z
 
 [Term]
 id: OMP:0005128
-name: abolished resistance toward alkalinic pH stress
-def: "A decreased resistance toward alkalinic pH stress phenotype where an organism completely loses its resistance to alkalinic pH stress." [OMP:WAM]
-synonym: "abolished sensitivity to alkalinic pH stress" RELATED [OMP:WAM]
-is_a: OMP:0005079 ! decreased resistance toward alkalinic pH stress
+name: abolished resistance to alkaline pH stress
+def: "A decreased resistance to alkaline pH stress phenotype where resistance to alkaline pH is abolished." [OMP:WAM]
+is_a: OMP:0005079 ! decreased resistance to alkaline pH stress
 created_by: wmeza
 creation_date: 2014-07-15T17:31:56Z
 
@@ -3563,8 +3561,7 @@ creation_date: 2014-07-16T17:48:24Z
 [Term]
 id: OMP:0005131
 name: abolished resistance to oxidative stress
-def: "A decreased resistance toward oxidative stress phenotype where an organism completely loses its resistance to oxidative stress." [OMP:WAM]
-synonym: "abolished oxidative sensitivity" RELATED [OMP:WAM]
+def: "A decreased resistance to oxidative stress phenotype where resistance to oxidative stress is abolished." [OMP:WAM]
 is_a: OMP:0005092 ! decreased resistance to oxidative stress
 created_by: wmeza
 creation_date: 2014-07-17T14:18:37Z
@@ -3589,9 +3586,8 @@ creation_date: 2014-07-17T14:28:44Z
 
 [Term]
 id: OMP:0005134
-name: abolished resistance toward UV radiation
-def: "A decreased resistance to UV radiation phenotype where an organism completely loses its resistance toward UV radiation." [OMP:WAM]
-synonym: "abolished UV sensitivity" RELATED [OMP:WAM]
+name: abolished resistance to UV radiation
+def: "A decreased resistance to UV radiation phenotype where resistance to UV radiation is abolished." [OMP:WAM]
 is_a: OMP:0005098 ! decreased resistance to UV radiation
 created_by: wmeza
 creation_date: 2014-07-17T17:22:15Z
@@ -4520,7 +4516,7 @@ creation_date: 2014-07-25T11:40:57Z
 [Term]
 id: OMP:0006102
 name: abolished capsule formation
-def: "A decreased in capsule formation where an organism completely loses the ability to form capsule." [OMP:JCH]
+def: "A decreased capsule formation phenotype where capsule formation is abolished." [OMP:JCH]
 is_a: OMP:0000050 ! decreased capsule formation
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:52:24Z
@@ -4673,15 +4669,15 @@ creation_date: 2014-07-25T13:19:17Z
 [Term]
 id: OMP:0006121
 name: abolished induced expression of the SOS response
-def: "A decreased induced expression of SOS phenotype where the ability to induce expression of SOS is abolished." [OMP:JCH]
-is_a: OMP:0005025 ! decreased expression of the SOS response
+def: "A decreased induced expression of SOS response genes phenotype where the induced level of expression of SOS response genes is abolished." [OMP:JCH]
+is_a: OMP:0005025 ! decreased induced expression of SOS response genes
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:22:37Z
 
 [Term]
 id: OMP:0006122
-name: abolished uninduced expression of the SOS response
-def: "A decrease in uninduced expression of SOS where the ability to induce expression of SOS is lost." [OMP:JCH]
+name: abolished basal expression of SOS response genes
+def: "A decreased basal expression of SOS response genes phenotype where the basal level of expression of SOS response genes is abolished." [OMP:JCH]
 is_a: OMP:0005021 ! decreased basal expression of SOS response genes
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:24:16Z
@@ -4970,7 +4966,7 @@ creation_date: 2014-07-25T15:43:18Z
 [Term]
 id: OMP:0006158
 name: increased outer membrane vesicle production
-def: "A altered outer membrane vesicle production phenotype where production of outer membrane vesicles is increased relative to a designated control." [OMP:JCH]
+def: "An altered outer membrane vesicle production phenotype where production of outer membrane vesicles is increased relative to a designated control." [OMP:JCH]
 synonym: "hyper-vesiculating" EXACT []
 is_a: OMP:0007129 ! altered outer membrane vesicle production
 created_by: jonathanherrera
@@ -4979,7 +4975,7 @@ creation_date: 2014-07-28T18:45:05Z
 [Term]
 id: OMP:0006159
 name: decreased outer membrane vesicle production
-def: "A altered outer membrane vesicle production phenotype where production of outer membrane vesicles is decreased relative to a designated control." [OMP:JCH]
+def: "An altered outer membrane vesicle production phenotype where production of outer membrane vesicles is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0007129 ! altered outer membrane vesicle production
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:45:05Z
@@ -5140,7 +5136,7 @@ creation_date: 2014-04-24T17:38:06Z
 [Term]
 id: OMP:0007002
 name: decreased positive DNA supercoiling
-def: "A altered DNA supercoiling phenotype where positive DNA supercoiling is decreased relative to a designated control." [OMP:WAM]
+def: "An altered DNA supercoiling phenotype where positive DNA supercoiling is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:08:29Z
@@ -5148,7 +5144,7 @@ creation_date: 2013-09-05T16:08:29Z
 [Term]
 id: OMP:0007003
 name: increased positive DNA supercoiling
-def: "A altered DNA supercoiling phenotype where positive DNA supercoiling is increased relative to a designated control." [OMP:WAM]
+def: "An altered DNA supercoiling phenotype where positive DNA supercoiling is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:09:28Z
@@ -6196,6 +6192,14 @@ def: "An altered outer membrane vesicles phenotypes where the production of oute
 is_a: OMP:0006156 ! altered outer membrane vesicles
 created_by: dsiegele
 creation_date: 2014-08-14T18:22:16Z
+
+[Term]
+id: OMP:0007130
+name: altered capsule phenotype
+def: "A capsule phenotype where the capsule layer is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000203 ! capsule phenotype
+created_by: siegele
+creation_date: 2014-08-15T10:07:30Z
 
 [Typedef]
 id: decreased_relative_to
