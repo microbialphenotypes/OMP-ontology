@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:08:2014 17:17
+date: 17:08:2014 17:59
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -498,7 +498,7 @@ creation_date: 2011-04-26T05:06:35Z
 [Term]
 id: OMP:0000066
 name: abolished virulence
-def: "A decreased virulence phenotype where an organism completely loses the ability to cause disease in another organism (the host)." [OMP:MCC]
+def: "A decreased virulence phenotype where the ability to cause disease is abolished." [OMP:MCC]
 is_a: OMP:0000061 ! decreased virulence
 created_by: mchibucos
 creation_date: 2011-04-26T05:09:24Z
@@ -506,7 +506,7 @@ creation_date: 2011-04-26T05:09:24Z
 [Term]
 id: OMP:0000067
 name: cell motility by swarming
-def: "A cell motility phenotype where a population of cells exhibit coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
+def: "A presence of cell motility phenotype where a population of cells exhibit coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
@@ -876,7 +876,7 @@ creation_date: 2011-02-02T02:45:02Z
 [Term]
 id: OMP:0000111
 name: cell motility by swimming
-def: "A cell motility phenotype where a cell or cells exhibits smooth movement through a liquid medium." [OMP:MCC]
+def: "A presence of cell motility phenotype where a cell or cells exhibits smooth movement through a liquid medium." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
@@ -884,7 +884,7 @@ creation_date: 2011-02-07T03:17:40Z
 [Term]
 id: OMP:0000112
 name: cell motility by gliding
-def: "A cell motility phenotype where a cell or cells exhibits smooth movement along a solid surface." [OMP:MCC]
+def: "A presence of cell motility phenotype where a cell or cells exhibits smooth movement along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:03Z
@@ -892,7 +892,7 @@ creation_date: 2011-02-07T03:18:03Z
 [Term]
 id: OMP:0000113
 name: cell motility by twitching
-def: "A cell motility phenotype where a cell or cells exhibit movement over moist surfaces by the extension, tethering and then retraction of polar pili, usually type IV pili." [OMP:MCC, PMID:12142488]
+def: "A presence of cell motility phenotype where a cell or cells exhibit movement over moist surfaces by the extension, tethering and then retraction of polar pili, usually type IV pili." [OMP:MCC, PMID:12142488]
 is_a: OMP:0000005 ! presence of cell motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:13Z
@@ -1386,7 +1386,7 @@ creation_date: 2011-06-06T04:16:08Z
 [Term]
 id: OMP:0000173
 name: stress response phenotype
-def: "A microbial phenotype dealing with an organism's response to environmental and chemical stressors." [OMP:WAM]
+def: "A microbial phenotype related to a cell or organism's response to environmental stress." [OMP:WAM]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:32Z
@@ -2575,7 +2575,7 @@ creation_date: 2013-09-04T13:40:27Z
 [Term]
 id: OMP:0005008
 name: pH growth range phenotype
-def: "A growth phenotype dealing with the pH requirements and range for growth." [OMP:WAM]
+def: "A growth phenotype related to the pH range required for growth of a cell or organism." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:57:28Z
@@ -2583,7 +2583,7 @@ creation_date: 2013-09-04T13:57:28Z
 [Term]
 id: OMP:0005009
 name: acidophile
-def: "A pH growth phenotype where optimum growth occurs between pH 0 and 5.5." [ISBN:9780073402406, OMP:WAM]
+def: "A pH growth range phenotype where optimum growth occurs between pH 0 and 5.5." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:18:28Z
@@ -2591,7 +2591,7 @@ creation_date: 2013-09-04T16:18:28Z
 [Term]
 id: OMP:0005010
 name: neutrophile
-def: "A pH growth phenotype where optimum growth occurs between pH 5.5 and 8.0." [ISBN:780073402406, OMP:WAM]
+def: "A pH growth range phenotype where optimum growth occurs between pH 5.5 and 8.0." [ISBN:780073402406, OMP:WAM]
 is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:21:50Z
@@ -2599,7 +2599,7 @@ creation_date: 2013-09-04T16:21:50Z
 [Term]
 id: OMP:0005011
 name: alkaliphile
-def: "A pH growth phenotype where optimum growth of occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
+def: "A pH growth range phenotype where optimum growth of occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005008 ! pH growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:24:24Z
@@ -2688,16 +2688,16 @@ creation_date: 2013-09-19T15:55:16Z
 
 [Term]
 id: OMP:0005022
-name: absence of SOS response gene expression
-def: "An expression of SOS response genes phenotype where a cell or cells don't express SOS response genes in response to DNA damage or other inducing signals." [OMP:WAM]
+name: absence of an SOS response
+def: "An SOS response phenotype where a cell or cells lack an SOS response." [OMP:WAM]
 is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:09Z
 
 [Term]
 id: OMP:0005023
-name: presence of SOS response gene expression
-def: "An expression of SOS response genes phenotype where a cell or cells express SOS response genes in response to DNA damage or other inducing signals." [OMP:WAM]
+name: presence of an SOS response
+def: "An SOS response phenotype where a cell or cells exhibit an SOS response." [OMP:WAM]
 is_a: OMP:0005017 ! SOS response phenotype
 created_by: wmeza
 creation_date: 2013-09-19T16:25:30Z
@@ -2719,28 +2719,12 @@ created_by: wmeza
 creation_date: 2013-09-20T13:26:46Z
 
 [Term]
-id: OMP:0005026
-name: altered acidic pH growth range phenotype
-def: "A pH growth phenotype where growth at acidic pH is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005008 ! pH growth range phenotype
-created_by: wmeza
-creation_date: 2014-07-23T13:54:20Z
-
-[Term]
 id: OMP:0005027
 name: stress-induced mutagenesis phenotype
 def: "A genetic material phenotype that refers to the process(es) that give rise to mutations that occur after imposition of a non-lethal stress." [OMP:WAM, PMID:17917874, PMID:3045565]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-09-20T15:00:09Z
-
-[Term]
-id: OMP:0005028
-name: altered alkaline pH growth range phenotype
-def: "A pH growth range phenotype where growth in the alkalinic pH range is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005008 ! pH growth range phenotype
-created_by: wmeza
-creation_date: 2014-07-23T13:55:07Z
 
 [Term]
 id: OMP:0005029
@@ -2840,8 +2824,8 @@ creation_date: 2013-10-16T17:14:52Z
 
 [Term]
 id: OMP:0005041
-name: alkalinic pH stress phenotype
-def: "A stress response phenotype dealing with the response too an environment with a pH at or above 7.5." [OMP:WAM]
+name: alkaline pH stress phenotype
+def: "A stress response phenotype dealing with the response to an environment with a pH at or above 7.5." [OMP:WAM]
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2013-10-16T17:15:59Z
@@ -3123,19 +3107,19 @@ creation_date: 2013-11-15T18:12:48Z
 
 [Term]
 id: OMP:0005078
-name: increased resistance to alkalinic pH stress
-def: "An altered alkalinic pH stress phenotype were resistance to alkalinic pH is increased relative to a designated control." [OMP:WAM]
-synonym: "decreased alkalinic pH sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005119 ! altered alkalinic pH stress phenotype
+name: increased resistance to alkaline pH stress
+def: "An altered alkaline pH stress phenotype were resistance to alkaline pH is increased relative to a designated control." [OMP:WAM]
+synonym: "decreased alkaline pH sensitivity" RELATED [OMP:WAM]
+is_a: OMP:0005119 ! altered alkaline pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:14:08Z
 
 [Term]
 id: OMP:0005079
-name: decreased resistance to alkalinic pH stress
-def: "An altered alkalinic pH stress phenotype were resistance to alkalinic pH is decreased relative to a designated control." [OMP:WAM]
-synonym: "increased alkalinic pH sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005119 ! altered alkalinic pH stress phenotype
+name: decreased resistance to alkaline pH stress
+def: "An altered alkaline pH stress phenotype were resistance to alkaline pH is decreased relative to a designated control." [OMP:WAM]
+synonym: "increased alkaline pH sensitivity" NARROW [OMP:WAM]
+is_a: OMP:0005119 ! altered alkaline pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:16:03Z
 
@@ -3260,7 +3244,7 @@ creation_date: 2013-12-17T13:05:40Z
 [Term]
 id: OMP:0005094
 name: decreased resistance to gamma ray radiation
-def: "An altered gamma radiation phenotype where resistance is decreased relative a designated control." [OMP:WAM]
+def: "An altered gamma radiation phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased gamma ray sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005123 ! altered gamma ray radiation
 created_by: wmeza
@@ -3345,7 +3329,7 @@ creation_date: 2014-04-17T10:55:05Z
 [Term]
 id: OMP:0005104
 name: abolished resistance to dessication stress
-def: "A decreased resistance to dessication stress phenotype where an organism completely loses its resistance to dessication stress." [OMP:WAM]
+def: "A decreased resistance to dessication stress phenotype where resistance to dessication stress is abolished." [OMP:WAM]
 synonym: "abolished dessication sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005088 ! decreased resistance to dessication stress
 created_by: wmeza
@@ -3354,8 +3338,7 @@ creation_date: 2014-07-17T13:11:33Z
 [Term]
 id: OMP:0005105
 name: abolished resistance to freeze/thawing stress
-def: "A decreased resistance to freeze/thawing stress phenotype where an organism completely loses its resistance to freeze/thawing stress." [OMP:WAM]
-synonym: "abolished freeze/thaw sensitivity " RELATED [OMP:WAM]
+def: "A decreased resistance to freeze/thawing stress phenotype where resistance to freeze/thawing is abolished." [OMP:WAM]
 is_a: OMP:0005090 ! decreased resistance to freeze/thawing stress
 created_by: wmeza
 creation_date: 2014-07-17T14:10:28Z
@@ -3450,9 +3433,9 @@ creation_date: 2014-07-11T12:55:53Z
 
 [Term]
 id: OMP:0005119
-name: altered alkalinic pH stress phenotype
-def: "An alkalinic pH stress phenotype altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005041 ! alkalinic pH stress phenotype
+name: altered alkaline pH stress phenotype
+def: "An alkaline pH stress phenotype altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005041 ! alkaline pH stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:58:56Z
 
@@ -3525,7 +3508,7 @@ creation_date: 2014-07-15T16:46:17Z
 id: OMP:0005128
 name: abolished resistance to alkaline pH stress
 def: "A decreased resistance to alkaline pH stress phenotype where the ability to resist alkaline pH is abolished." [OMP:WAM]
-is_a: OMP:0005079 ! decreased resistance to alkalinic pH stress
+is_a: OMP:0005079 ! decreased resistance to alkaline pH stress
 created_by: wmeza
 creation_date: 2014-07-15T17:31:56Z
 
@@ -3556,7 +3539,7 @@ creation_date: 2014-07-17T14:18:37Z
 [Term]
 id: OMP:0005132
 name: abolished resistance to gamma ray radiation
-def: "A decreased resistance to gamma ray radiation phenotype where an organism completely loses its resistance to gamma ray radiation." [OMP:WAM]
+def: "A decreased resistance to gamma ray radiation phenotype where resistance to gamma ray radiation is abolished." [OMP:WAM]
 synonym: "abolished gamma ray sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005094 ! decreased resistance to gamma ray radiation
 created_by: wmeza
@@ -3565,7 +3548,7 @@ creation_date: 2014-07-17T14:23:39Z
 [Term]
 id: OMP:0005133
 name: abolished resistance to x-ray radiation
-def: "A decreased x-ray radiation phenotype where an organism completely loses its resistance to x-ray radiation." [OMP:WAM]
+def: "A decreased x-ray radiation resistance phenotype where resistance to x-ray radiation is abolished." [OMP:WAM]
 synonym: "abolished x-ray sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005096 ! decreased resistance to x-ray radiation
 created_by: wmeza
@@ -3582,8 +3565,7 @@ creation_date: 2014-07-17T17:22:15Z
 [Term]
 id: OMP:0005135
 name: abolished resistance to SDS-EDTA stress
-def: "A decreased SDS-EDTA stress phenotype where an organism completely loses its resistance to SDS-EDTA stress." [OMP:WAM]
-synonym: "abolished SDS-EDTA sensitivity" RELATED [OMP:WAM]
+def: "A decreased SDS-EDTA stress phenotype where resistance to SDS-EDTA stress is abolished." [OMP:WAM]
 is_a: OMP:0005113 ! decreased resistance to SDS-EDTA stress
 created_by: wmeza
 creation_date: 2014-07-17T17:39:39Z
@@ -4453,7 +4435,7 @@ creation_date: 2014-07-24T20:05:39Z
 [Term]
 id: OMP:0006095
 name: abolished enzyme activity
-def: "A decreased enzyme activity phenotype where an enzymatic activity is abolished." [OMP:JCH]
+def: "A decreased enzyme activity phenotype where an enzyme activity is abolished." [OMP:JCH]
 is_a: OMP:0005103 ! decreased enzyme activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:09:28Z
@@ -4477,7 +4459,7 @@ creation_date: 2014-07-24T20:17:01Z
 [Term]
 id: OMP:0006098
 name: abolished aerotaxis
-def: "A decreased aerotaxis phenotype where a cell or organism has lost the ability to perform aerotaxis." [OMP:JCH]
+def: "A decreased aerotaxis phenotype where a cell or organism the ability to perform aerotaxis is abolished." [OMP:JCH]
 is_a: OMP:0000500 ! decreased aerotaxis
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:18:01Z
@@ -4485,7 +4467,7 @@ creation_date: 2014-07-24T20:18:01Z
 [Term]
 id: OMP:0006099
 name: abolished bud formation
-def: "A decreased bud formation phenotype where the ability to form buds is abolished." [OMP:JCH]
+def: "A decreased bud formation phenotype where the ability to form a bud is abolished." [OMP:JCH]
 is_a: OMP:0006006 ! decreased budding
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:08:59Z
@@ -4606,7 +4588,7 @@ creation_date: 2014-07-25T12:50:04Z
 [Term]
 id: OMP:0006116
 name: abolished growth at acidic pH
-def: "A decreased growth at acidic pH phenotype where the ability to grow at acidic pH is abolished." [OMP:DAS]
+def: "A decreased growth at acidic pH phenotype where the ability to grow at an acidic pH is abolished." [OMP:DAS]
 is_a: OMP:0007008 ! decreased growth at acidic pH
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:58:01Z
@@ -4630,7 +4612,7 @@ creation_date: 2014-07-25T13:17:12Z
 [Term]
 id: OMP:0006120
 name: abolished heterocyst formation
-def: "A decreased heterocyst formation phenotype where the ability for heterocyst formation is abolished." [OMP:JCH]
+def: "A decreased heterocyst formation phenotype where the ability to form heterocysts is abolished." [OMP:JCH]
 is_a: OMP:0000015 ! decreased heterocyst formation
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:19:17Z
@@ -4727,7 +4709,7 @@ creation_date: 2014-07-25T14:43:31Z
 [Term]
 id: OMP:0006132
 name: abolished number of pili
-def: "A decreased number of pili phenotype where the ability to form pili is abolished." [OMP:JCH]
+def: "A decreased number of pili phenotype where the number of pili is decreased to zero." [OMP:JCH]
 is_a: OMP:0000028 ! decreased number of pili
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:46:12Z
@@ -4751,7 +4733,7 @@ creation_date: 2014-07-25T14:49:11Z
 [Term]
 id: OMP:0006135
 name: abolished biofilm formation
-def: "A decreased biofilm formation phenotype where an organism doesn't produce a biofilm." [OMP:JCH]
+def: "A decreased biofilm formation phenotype where the ability to form a biofilm is abolished." [OMP:JCH]
 is_a: OMP:0007026 ! decreased biofilm formation
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:50:55Z
@@ -4783,7 +4765,7 @@ creation_date: 2014-07-25T14:59:06Z
 [Term]
 id: OMP:0006139
 name: abolished resistance to azole
-def: "A decreased resistance to azole phenotype where an organism loses the ability to resist azole." [OMP:JCH]
+def: "A decreased resistance to azole phenotype where resistance to azole is abolished." [OMP:JCH]
 is_a: OMP:0006052 ! decreased resistance to azole
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:00:48Z
@@ -4791,7 +4773,7 @@ creation_date: 2014-07-25T15:00:48Z
 [Term]
 id: OMP:0006140
 name: abolished resistance to bacteriocin
-def: "A decreased resistance to bacteriocin phenotype where an organism completely loses the ability to resist bacteriocin." [OMP:JCH]
+def: "A decreased resistance to bacteriocin phenotype where resistance to one or more bacteriocins is abolished." [OMP:JCH]
 is_a: OMP:0006048 ! decreased resistance to bacteriocin
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:02:13Z
@@ -4879,7 +4861,7 @@ creation_date: 2014-07-25T15:23:03Z
 [Term]
 id: OMP:0006151
 name: abolished utilization of inorganic phosphorus
-def: "A decreased utilization of inorganic phosphorus phenotype where an organism loses the ability to utilize inorganic phosphorus." [OMP:JCH]
+def: "A decreased utilization of inorganic phosphorus phenotype where the ability to utilize inorganic phosphorus is abolished." [OMP:JCH]
 is_a: OMP:0007047 ! decreased utilization of inorganic phosphorus source
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:31:15Z
@@ -4895,7 +4877,7 @@ creation_date: 2014-07-25T15:33:11Z
 [Term]
 id: OMP:0006153
 name: abolished utilization of organic nitrogen
-def: "A decreased utilization of organic nitrogen phenotype where an organism completely loses the ability to utilize organic nitrogen." [OMP:JCH]
+def: "A decreased utilization of organic nitrogen phenotype where the ability to utilize organic nitrogen is abolished." [OMP:JCH]
 is_a: OMP:0007035 ! decreased utilization of organic nitrogen source
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:36:09Z
@@ -4903,7 +4885,7 @@ creation_date: 2014-07-25T15:36:09Z
 [Term]
 id: OMP:0006154
 name: abolished utilization of organic phosphorus
-def: "A decreased utilization of organic phosphorus phenotype where an organism loses the ability to utilize organic phosphorus." [OMP:JCH]
+def: "A decreased utilization of organic phosphorus phenotype where the ability to utilize organic phosphorus is abolished." [OMP:JCH]
 is_a: OMP:0007050 ! decreased utilization of organic phosphorus source
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:37:42Z
@@ -4927,7 +4909,7 @@ creation_date: 2014-07-28T18:44:09Z
 [Term]
 id: OMP:0006157
 name: abolished vitamin/enzyme cofactor requirement
-def: "A decreased vitamin/enzyme cofactor requirement phenotype where an organism where the requirement for a vitamin/enzyme cofactor is abolished." [OMP:JCH]
+def: "A decreased vitamin/enzyme cofactor requirement phenotype where the requirement for a vitamin/enzyme cofactor is abolished." [OMP:JCH]
 is_a: OMP:0007025 ! decreased vitamin/enzyme cofactor requirement
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:43:18Z
@@ -5040,7 +5022,7 @@ creation_date: 2014-08-08T16:01:46Z
 [Term]
 id: OMP:0006171
 name: abolished binary fission
-def: "A decreased binary fission phenotype where an organism loses binary fission ability." [OMP:JCH]
+def: "A decreased binary fission phenotype where the ability to perform binary fission is abolished." [OMP:JCH]
 is_a: OMP:0006170 ! decreased binary fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:54Z
@@ -5080,7 +5062,7 @@ creation_date: 2014-08-08T16:46:45Z
 [Term]
 id: OMP:0006177
 name: abolished multiple fission
-def: "A decreased multiple fission phenotype where an organism loses multiple fission ability." [OMP:JCH]
+def: "A decreased multiple fission phenotype where the ability to perform multiple fission is abolished." [OMP:JCH]
 is_a: OMP:0006175 ! decreased multiple fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:49:27Z
@@ -5157,32 +5139,32 @@ creation_date: 2014-07-31T16:11:22Z
 [Term]
 id: OMP:0007008
 name: decreased growth at acidic pH
-def: "An altered acidic pH growth range phenotype where the ability to grow at some pH that is lower than pH 7 is decreased." [OMP:DAS]
-is_a: OMP:0005026 ! altered acidic pH growth range phenotype
+def: "An altered pH growth range phenotype where the ability to grow at some pH that is lower than pH 7 is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007138 ! altered pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:11:01Z
 
 [Term]
 id: OMP:0007009
 name: increased growth at acidic pH
-def: "An altered acidic pH growth range phenotype where the organism has an increased ability to grow at some pH that is lower than pH 7." [OMP:DAS]
-is_a: OMP:0005026 ! altered acidic pH growth range phenotype
+def: "An altered growth range phenotype where the ability to grow at some pH that is lower than pH 7 is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007138 ! altered pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:11:44Z
 
 [Term]
 id: OMP:0007010
 name: decreased growth at alkaline pH
-def: "An altered alkaline pH growth range phenotype where the ability to grow at some pH that is higher than pH 7 is decreased." [OMP:DAS]
-is_a: OMP:0005028 ! altered alkaline pH growth range phenotype
+def: "An altered pH growth range phenotype where the ability to grow at some pH that is higher than pH 7 is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007138 ! altered pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:14:28Z
 
 [Term]
 id: OMP:0007011
 name: increased growth at alkaline pH
-def: "A pH growth range phenotype where the organism's ability to grow at some pH that is higher than pH 7 is increased." [OMP:DAS]
-is_a: OMP:0005028 ! altered alkaline pH growth range phenotype
+def: "An altered pH growth range phenotype where the ability to grow at some pH that is higher than pH 7 is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007138 ! altered pH growth range phenotype
 created_by: siegele
 creation_date: 2013-09-11T17:14:56Z
 
@@ -5230,7 +5212,7 @@ creation_date: 2014-07-31T16:16:52Z
 [Term]
 id: OMP:0007017
 name: abolished nutrient import
-def: "A decreased nutrient import phenotype where import cannot be detected." [OMP:DAS]
+def: "A decreased nutrient import phenotype where the ability to import a nutrient into a cell or organism is abolished." [OMP:DAS]
 is_a: OMP:0007016 ! decreased nutrient import
 created_by: siegele
 creation_date: 2014-07-31T16:18:02Z
@@ -6189,7 +6171,7 @@ creation_date: 2014-08-17T00:46:29Z
 [Term]
 id: OMP:0007133
 name: altered capsule phenotype
-def: "A capsule phenotype where the capsule is altered relative to a designated control." [OMP:DAS]
+def: "A capsule phenotype where the capsule layer is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: siegele
 creation_date: 2014-08-17T12:52:35Z
@@ -6227,6 +6209,14 @@ is_a: OMP:0000455 ! alkaloid resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: siegele
 creation_date: 2014-08-17T13:19:30Z
+
+[Term]
+id: OMP:0007138
+name: altered pH growth range phenotype
+def: "A pH growth range phenotype where the range of pH where growth occurs is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0005008 ! pH growth range phenotype
+created_by: siegele
+creation_date: 2014-08-17T17:35:20Z
 
 [Typedef]
 id: decreased_relative_to
