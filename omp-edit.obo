@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:08:2014 01:04
+date: 17:08:2014 13:01
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -114,7 +114,7 @@ creation_date: 2011-06-07T10:14:15Z
 [Term]
 id: OMP:0000014
 name: increased endospore formation
-def: "A altered endospore formation where there are more Endospores formed relative to a designated control." [OMP:JCH]
+def: "A altered endospore formation phenotype where endospore formation is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006161 ! altered endospore formation
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:39Z
@@ -277,9 +277,9 @@ creation_date: 2011-04-26T03:44:34Z
 
 [Term]
 id: OMP:0000036
-name: increased capsule formation
-def: "An increased amount of capsule relative to a designated control strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
-is_a: OMP:0000203 ! capsule phenotype
+name: increased amount of capsule
+def: "An altered capsule phenotype where the amount of capsule is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007133 ! altered capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:11Z
 
@@ -377,9 +377,9 @@ creation_date: 2011-04-26T04:27:42Z
 
 [Term]
 id: OMP:0000050
-name: decreased capsule formation
-def: "An decreased capsule formation phenotype where the ability to form capsule is abolished." [OMP:DAS]
-is_a: OMP:0000203 ! capsule phenotype
+name: decreased amount of capsule
+def: "An altered capsule phenotype where the amount of capsule produced is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007133 ! altered capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:59Z
 
@@ -1378,7 +1378,7 @@ creation_date: 2011-06-06T03:44:11Z
 [Term]
 id: OMP:0000172
 name: response to chemical stimulus phenotype
-def: "A stress response phenotype dealing with the reaction toward exposure to chemical stimuli." [OMP:WAM]
+def: "A stress response phenotype dealing with the response to exposure to chemical stimuli." [OMP:WAM]
 is_a: OMP:0000173 ! stress response phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T04:16:08Z
@@ -1634,7 +1634,7 @@ creation_date: 2011-06-07T09:44:51Z
 [Term]
 id: OMP:0000204
 name: presence of capsule
-def: "The presence of a capsule layer, usually consisting of polysaccharide or amino acid polymers, surrounding a microbial cell, is observed in one or more environments." [OMP:DAS]
+def: "A capsule phenotype where a cell or cells have capsule." [OMP:DAS]
 comment: When present, the capsule layer lies outside the cell wall and/or outer membrane.
 synonym: "glycocalyx" RELATED [OMP:DAS]
 synonym: "slime layer" RELATED [OMP:DAS]
@@ -1697,7 +1697,7 @@ creation_date: 2011-06-07T12:31:24Z
 [Term]
 id: OMP:0000211
 name: absence of capsule
-def: "A capsule phenotype where the ability to form capsule is not observed." [OMP:DAS]
+def: "A capsule phenotype where a cell or cells lack capsule." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
@@ -2390,8 +2390,7 @@ creation_date: 2013-05-23T01:53:57Z
 [Term]
 id: OMP:0000456
 name: caffeine resistance phenotype
-def: "An alkaloid resistance phenotype dealing with resistance toward a trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7." [CheBI:27732, OMP:WAM]
-synonym: "caffeine sensitivity phenotype" RELATED []
+def: "An alkaloid resistance phenotype dealing with resistance to a trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7." [CHEBI:27732, OMP:WAM]
 is_a: OMP:0000455 ! alkaloid resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:54:51Z
@@ -2443,7 +2442,7 @@ creation_date: 2013-08-22T01:43:06Z
 [Term]
 id: OMP:0000462
 name: presence of an outer membrane
-def: "An outer membrane phenotype where cells possess an outer membrane." [OMP:DAS]
+def: "An outer membrane phenotype where a cell or cells possess an outer membrane." [OMP:DAS]
 synonym: "Diderm" NARROW []
 synonym: "Gram negative" NARROW []
 synonym: "mycolate outer membrane" RELATED []
@@ -2462,7 +2461,7 @@ creation_date: 2013-08-22T01:48:57Z
 [Term]
 id: OMP:0000464
 name: absence of an outer membrane
-def: "An outer membrane phenotype where a cell or cells lacks an outer membrane." [OMP:DAS]
+def: "An outer membrane phenotype where a cell or cells lack an outer membrane." [OMP:DAS]
 is_a: OMP:0000461 ! outer membrane phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:53:29Z
@@ -2887,7 +2886,8 @@ creation_date: 2013-10-18T18:38:43Z
 [Term]
 id: OMP:0005047
 name: chromosome segregation phenotype
-def: "A genetic material phenotype dealing with the process in which genetic material inform of chromosomes is organized into specific structures and then physically separated and apportioned to two or more sets." [GO:0007059, OMP:WAM]
+def: "A genetic material phenotype concerning the process in which replicated chromosomes are physically separated and apportioned as sets to daughter cells." [GO:0007059, OMP:WAM]
+xref: GO\::0007059 "chromosome segregation"
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:39:04Z
@@ -2999,26 +2999,10 @@ creation_date: 2013-11-04T18:09:09Z
 [Term]
 id: OMP:0005061
 name: decreased frequency of chromosome segregation
-def: "A chromosome segregation phenotype where the occurrence of segregation is decreased relative to a designated control." [OMP:WAM]
+def: "An altered chromosome segregation phenotype where the occurrence of chromosome segregation is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006001 ! altered chromosome segregation phenotype
 created_by: wmeza
 creation_date: 2013-11-04T18:09:38Z
-
-[Term]
-id: OMP:0005062
-name: absence of chromosome segregation
-def: "A chromosome segregation phenotype where chromosome segregation doesn't occur." [OMP:WAM]
-is_a: OMP:0005047 ! chromosome segregation phenotype
-created_by: wmeza
-creation_date: 2013-11-04T18:10:07Z
-
-[Term]
-id: OMP:0005063
-name: presence of chromosome segregation
-def: "A chromosome segregation phenotype where chromosome segregation occurs." [OMP:WAM]
-is_a: OMP:0005047 ! chromosome segregation phenotype
-created_by: wmeza
-creation_date: 2013-11-04T18:12:32Z
 
 [Term]
 id: OMP:0005064
@@ -3118,8 +3102,8 @@ creation_date: 2013-11-11T13:42:44Z
 
 [Term]
 id: OMP:0005076
-name: increased resistance toward acidic pH stress
-def: "A altered acidic pH stress phenotype were resistance to acidic pH was increased relative to a designated control." [OMP:WAM]
+name: increased resistance to acidic pH stress
+def: "A altered acidic pH stress phenotype were resistance to acidic pH is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
@@ -3127,8 +3111,8 @@ creation_date: 2013-11-15T18:09:55Z
 
 [Term]
 id: OMP:0005077
-name: decreased resistance toward acidic pH stress
-def: "A altered acidic pH stress phenotype were resistance to acidic pH was decreased relative to a designated control." [OMP:WAM]
+name: decreased resistance to acidic pH stress
+def: "A altered acidic pH stress phenotype were resistance to acidic pH is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
@@ -3136,7 +3120,7 @@ creation_date: 2013-11-15T18:12:48Z
 
 [Term]
 id: OMP:0005078
-name: increased resistance toward alkalinic pH stress
+name: increased resistance to alkalinic pH stress
 def: "An altered alkalinic pH stress phenotype were resistance to alkalinic pH is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased alkalinic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005119 ! altered alkalinic pH stress phenotype
@@ -3145,7 +3129,7 @@ creation_date: 2013-11-15T18:14:08Z
 
 [Term]
 id: OMP:0005079
-name: decreased resistance toward alkalinic pH stress
+name: decreased resistance to alkalinic pH stress
 def: "An altered alkalinic pH stress phenotype were resistance to alkalinic pH is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased alkalinic pH sensitivity" NARROW [OMP:WAM]
 is_a: OMP:0005119 ! altered alkalinic pH stress phenotype
@@ -3530,7 +3514,7 @@ id: OMP:0005127
 name: abolished resistance to acidic pH stress
 def: "A decreased resistance to acidic pH stress phenotype where resistance to acidic pH is abolished." [OMP:WAM]
 synonym: "abolished acidic pH sensitivity " RELATED [OMP:WAM]
-is_a: OMP:0005077 ! decreased resistance toward acidic pH stress
+is_a: OMP:0005077 ! decreased resistance to acidic pH stress
 created_by: wmeza
 creation_date: 2014-07-15T16:46:17Z
 
@@ -3538,7 +3522,7 @@ creation_date: 2014-07-15T16:46:17Z
 id: OMP:0005128
 name: abolished resistance to alkaline pH stress
 def: "A decreased resistance to alkaline pH stress phenotype where the ability to resist alkaline pH is abolished." [OMP:WAM]
-is_a: OMP:0005079 ! decreased resistance toward alkalinic pH stress
+is_a: OMP:0005079 ! decreased resistance to alkalinic pH stress
 created_by: wmeza
 creation_date: 2014-07-15T17:31:56Z
 
@@ -3561,8 +3545,7 @@ creation_date: 2014-07-16T17:48:24Z
 [Term]
 id: OMP:0005131
 name: abolished resistance to oxidative stress
-def: "A decreased resistance toward oxidative stress phenotype where an organism completely loses its resistance to oxidative stress." [OMP:WAM]
-synonym: "abolished oxidative sensitivity" RELATED [OMP:WAM]
+def: "A decreased resistance to oxidative stress phenotype where resistance to oxidative stress is abolished." [OMP:WAM]
 is_a: OMP:0005092 ! decreased resistance to oxidative stress
 created_by: wmeza
 creation_date: 2014-07-17T14:18:37Z
@@ -3587,9 +3570,8 @@ creation_date: 2014-07-17T14:28:44Z
 
 [Term]
 id: OMP:0005134
-name: abolished resistance toward UV radiation
-def: "A decreased resistance to UV radiation phenotype where an organism completely loses its resistance toward UV radiation." [OMP:WAM]
-synonym: "abolished UV sensitivity" RELATED [OMP:WAM]
+name: abolished resistance to UV radiation
+def: "A decreased resistance to UV radiation phenotype where resistance to UV radiation is abolished." [OMP:WAM]
 is_a: OMP:0005098 ! decreased resistance to UV radiation
 created_by: wmeza
 creation_date: 2014-07-17T17:22:15Z
@@ -4524,8 +4506,8 @@ creation_date: 2014-07-25T11:40:57Z
 [Term]
 id: OMP:0006102
 name: abolished capsule formation
-def: "A decreased capsule formation phenotype where the ability to form capsule is abolished." [OMP:JCH]
-is_a: OMP:0000050 ! decreased capsule formation
+def: "A decreased amount of capsule phenotype where capsule is abolished." [OMP:JCH]
+is_a: OMP:0000050 ! decreased amount of capsule
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:52:24Z
 
@@ -4678,7 +4660,7 @@ creation_date: 2014-07-25T13:27:32Z
 id: OMP:0006124
 name: abolished mutation frequency
 def: "A decreased mutation frequency phenotype where mutations no longer occur." [OMP:JCH]
-comment: This term was made obsolete because it describes a phenotype that is highly unlikely to occur in nature.
+comment: This term was made obsolete because it describes a phenotype that is unlikely to occur in nature.
 is_obsolete: true
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:05:31Z
@@ -6201,11 +6183,20 @@ is_a: OMP:0000024 ! altered flagellum length phenotype
 created_by: siegele
 creation_date: 2014-08-17T00:46:29Z
 
+[Term]
+id: OMP:0007133
+name: altered capsule phenotype
+def: "A capsule phenotype where the capsule is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000203 ! capsule phenotype
+created_by: siegele
+creation_date: 2014-08-17T12:52:35Z
+
 [Typedef]
 id: decreased_relative_to
 name: decreased_relative_to
 def: "P decreased_relative_to P' if and only if: given any process p that instantiates P under condition (genotype or environment) c, there is some process p' that instantiates P' under condition c', and P' is greater than P." [ECO:MCC]
 is_transitive: true
+is_obsolete: true
 created_by: Marcus
 creation_date: 2014-02-13T01:39:46Z
 
@@ -6214,6 +6205,19 @@ id: increased_relative_to
 name: increased_relative_to
 def: "P increased_relative_to P' if and only if: given any process p that instantiates P under condition (genotype or environment) c, there is some process p' that instantiates P' under condition c', and P' is less than P." [ECO:MCC]
 is_transitive: true
+is_obsolete: true
 created_by: Marcus
 creation_date: 2014-02-13T01:41:08Z
+
+[Typedef]
+id: RO:0000056
+name: participates_in
+created_by: siegele
+creation_date: 2014-08-17T12:05:35Z
+
+[Typedef]
+id: RO:0000086
+name: has_quality
+created_by: siegele
+creation_date: 2014-08-17T12:15:53Z
 
