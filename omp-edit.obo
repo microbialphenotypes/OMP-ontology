@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:08:2014 13:09
+date: 17:08:2014 17:05
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -106,7 +106,7 @@ creation_date: 2011-04-26T03:01:38Z
 [Term]
 id: OMP:0000013
 name: decreased endospore formation
-def: "An altered endospore formation phenotype where fewer endospores are formed relative to a designated control." [OMP:JCH]
+def: "An altered endospore formation phenotype where endospore formation is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006161 ! altered endospore formation
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:15Z
@@ -114,7 +114,7 @@ creation_date: 2011-06-07T10:14:15Z
 [Term]
 id: OMP:0000014
 name: increased endospore formation
-def: "A altered endospore formation phenotype where more endospores are formed relative to a designated control." [OMP:JCH]
+def: "An altered endospore formation phenotype where endospore formation is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006161 ! altered endospore formation
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:39Z
@@ -460,7 +460,7 @@ creation_date: 2011-04-26T05:02:51Z
 [Term]
 id: OMP:0000061
 name: decreased virulence
-def: "A altered virulence phenotype where the ability of an organism to cause disease is reduced relative to a designated control." [OMP:MCC]
+def: "An altered virulence phenotype where the ability to cause disease is decreased relative to a designated control." [OMP:MCC]
 synonym: "less virulent" EXACT []
 xref: PATO:0002147
 is_a: OMP:0000098 ! altered virulence
@@ -470,7 +470,7 @@ creation_date: 2011-04-26T05:02:57Z
 [Term]
 id: OMP:0000062
 name: increased virulence
-def: "A altered virulence phenotype where an organisms ability to cause disease is enhanced relative to a designated phenotype." [OMP:MCC]
+def: "An altered virulence phenotype where the ability to cause disease is increased relative to a designated phenotype." [OMP:MCC]
 synonym: "more virulent" RELATED []
 xref: PATO:0002148
 is_a: OMP:0000098 ! altered virulence
@@ -1624,7 +1624,7 @@ creation_date: 2011-03-02T01:43:12Z
 [Term]
 id: OMP:0000203
 name: capsule phenotype
-def: "A cell envelope phenotype where the trait in question is the outermost layer of the cell envelope that usually consists of polysaccharide or a polymer of amino acids." [ISBN:9780073402406, OMP:DAS]
+def: "A cell envelope phenotype where the trait in question is the capsule, a layer of polysaccharide or poly-amino acids surrounding a microbial cell.  When present, the capsule is the outermost layer of the cell envelope." [ISBN:9780073402406, OMP:DAS]
 synonym: "glycocalyx" RELATED []
 synonym: "slime layer" RELATED []
 is_a: OMP:0000085 ! cell envelope phenotype
@@ -1714,7 +1714,7 @@ creation_date: 2011-06-07T12:32:12Z
 [Term]
 id: OMP:0000213
 name: increased number of flagella
-def: "A altered flagellum phenotype where there is an increased number of flagella per cell relative to a designated control." [OMP:DAS]
+def: "An altered flagellum phenotype where the number of flagella per cell is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:53:17Z
@@ -1730,7 +1730,7 @@ creation_date: 2011-02-03T01:33:37Z
 [Term]
 id: OMP:0000215
 name: decreased number of flagella
-def: "An altered flagellum phenotype where there are fewer flagella per cell relative to a designated control." [OMP:DAS]
+def: "An altered flagellum phenotype where the number of flagella per cell is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:54:51Z
@@ -2060,7 +2060,7 @@ creation_date: 2011-07-21T02:05:51Z
 [Term]
 id: OMP:0000274
 name: antimicrobial compound resistance phenotype
-def: "A microbial phenotype, where the trait in question is the resistance to a compound that kills (microbiocidal) or inhibits growth (microbiostatic) of a microbe." [OMP:MCC]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds that kill (microbiocidal) or inhibit growth (microbiostatic) of a microbe." [OMP:MCC]
 synonym: "antibiotic resistance phenotype" NARROW []
 synonym: "antibiotic sensitivity phenotype" RELATED []
 synonym: "antifungal resistance phenotype" NARROW []
@@ -2252,7 +2252,7 @@ creation_date: 2012-11-02T01:51:04Z
 [Term]
 id: OMP:0000331
 name: aminopyrimidine resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
 synonym: "aminopyrimidine sensitivity phenotype" RELATED []
 synonym: "antifolate" BROAD [CHEBI:73913]
 synonym: "diaveridine" NARROW [CHEBI:123115]
@@ -2286,7 +2286,7 @@ creation_date: 2012-11-02T02:04:58Z
 [Term]
 id: OMP:0000336
 name: beta-lactam resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a member of a broad class of antimicrobial compounds that contain a beta-lactam ring in their molecular structure." [OMP:MCC]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds that contain a beta-lactam ring in their molecular structure." [OMP:MCC]
 synonym: "ampicillin" NARROW [CHEBI:28971]
 synonym: "beta-lactam sensitivity phenotype" RELATED []
 synonym: "carbapenams" NARROW [CHEBI:64510]
@@ -2381,7 +2381,7 @@ creation_date: 2013-05-23T01:40:40Z
 [Term]
 id: OMP:0000455
 name: alkaloid resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to compounds containing basic nitrogen in a heterocyclic structure." [CheBI:22315, OMP:WAM]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds containing basic nitrogen in a heterocyclic structure." [CHEBI:22315, OMP:WAM]
 synonym: "alkaloid sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
@@ -2390,7 +2390,8 @@ creation_date: 2013-05-23T01:53:57Z
 [Term]
 id: OMP:0000456
 name: caffeine resistance phenotype
-def: "An alkaloid resistance phenotype dealing with resistance to a trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7." [CHEBI:27732, OMP:WAM]
+def: "An alkaloid resistance phenotype that concerns resistance to a trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7." [CHEBI:27732, OMP:WAM]
+synonym: "caffeine sensitivity phenotype" RELATED []
 is_a: OMP:0000455 ! alkaloid resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:54:51Z
@@ -2501,7 +2502,7 @@ creation_date: 2012-11-02T01:23:12Z
 [Term]
 id: OMP:0001001
 name: Increased negative DNA supercoiling
-def: "A altered DNA supercoiling phenotype where negative DNA supercoiling is increased relative to a designated control." [OMP:WAM]
+def: "An altered DNA supercoiling phenotype where negative DNA supercoiling is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:07Z
@@ -2509,7 +2510,7 @@ creation_date: 2013-08-22T05:57:07Z
 [Term]
 id: OMP:0001002
 name: decreased negative DNA supercoiling
-def: "A altered DNA supercoiling phenotype where negative DNA supercoiling is decreased relative to a designated control." [OMP:WAM]
+def: "An altered DNA supercoiling phenotype where negative DNA supercoiling is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
@@ -2519,6 +2520,7 @@ id: OMP:0005001
 name: altered caffeine resistance phenotype
 def: "A caffeine resistance phenotype that is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: wmeza
 creation_date: 2014-07-23T12:18:08Z
 
@@ -2887,7 +2889,7 @@ creation_date: 2013-10-18T18:38:43Z
 id: OMP:0005047
 name: chromosome segregation phenotype
 def: "A genetic material phenotype concerning the process in which replicated chromosomes are physically separated and apportioned as sets to daughter cells." [GO:0007059, OMP:WAM]
-xref: GO\::0007059 "chromosome segregation"
+xref: GO:\:0007059 "chromosome segregation"
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:39:04Z
@@ -3103,7 +3105,7 @@ creation_date: 2013-11-11T13:42:44Z
 [Term]
 id: OMP:0005076
 name: increased resistance to acidic pH stress
-def: "A altered acidic pH stress phenotype were resistance to acidic pH is increased relative to a designated control." [OMP:WAM]
+def: "An altered acidic pH stress phenotype were resistance to acidic pH is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
@@ -3112,7 +3114,7 @@ creation_date: 2013-11-15T18:09:55Z
 [Term]
 id: OMP:0005077
 name: decreased resistance to acidic pH stress
-def: "A altered acidic pH stress phenotype were resistance to acidic pH is decreased relative to a designated control." [OMP:WAM]
+def: "An altered acidic pH stress phenotype were resistance to acidic pH is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased acidic pH sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005118 ! altered acidic pH stress phenotype
 created_by: wmeza
@@ -3693,7 +3695,7 @@ creation_date: 2014-07-24T16:28:24Z
 
 [Term]
 id: OMP:0006011
-name: Lantibiotic resistance phenotype
+name: lantibiotic resistance phenotype
 def: "A bacteriocin resistance phenotype dealing with resistance to peptide antimicrobials that contain the thioether amino acids lanthionine or methyllanthionine, and the unsaturated amino acids dehydroalanine and 2-aminoisobutyric acid." [CHEBI:71644, OMP:WAM]
 synonym: "lantibiotic sensitivity phenotype" RELATED []
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
@@ -3705,7 +3707,7 @@ id: OMP:0006012
 name: decreased resistance to lantibiotic
 def: "A lantibiotic resistance phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased sensitivity to lantibiotic" RELATED []
-is_a: OMP:0006011 ! Lantibiotic resistance phenotype
+is_a: OMP:0006011 ! lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
 
@@ -3722,7 +3724,7 @@ id: OMP:0006014
 name: increased resistance to lantibiotic
 def: "A lantibiotic resistance phenotype where resistance is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased sensitivity to lantibiotic" RELATED []
-is_a: OMP:0006011 ! Lantibiotic resistance phenotype
+is_a: OMP:0006011 ! lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
 
@@ -3745,8 +3747,9 @@ creation_date: 2014-07-24T16:34:28Z
 [Term]
 id: OMP:0006017
 name: altered resistance to aminoglycoside
-def: "An aminoglycoside resistance phenotype that is altered relative to a designated control." [OMP:JCH]
+def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:04:53Z
 
@@ -3826,7 +3829,7 @@ creation_date: 2013-09-10T17:51:21Z
 [Term]
 id: OMP:0006027
 name: bacteriocin resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to bacteriocins, which are polypeptides synthesized by specific strains of bacteria that are lethal against other strains of the same or related species." [CHEBI:48081]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to bacteriocins, which are polypeptides synthesized by specific strains of bacteria that are active against other cells of the same or different species." [CHEBI:48081]
 synonym: "bacteriocin sensitivity phenotype" RELATED []
 synonym: "colicins" NARROW [GO:0015468]
 synonym: "lantibiotic " NARROW [CHEBI:71644]
@@ -3843,7 +3846,7 @@ creation_date: 2013-10-04T16:57:43Z
 [Term]
 id: OMP:0006028
 name: azole resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a heteromonocyclic organic compound consisting of a mancude five-membered ring containing nitrogen." [CHEBI:68452, OMP:DAS]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to heteromonocyclic organic compounds consisting of a five-membered mancude-ring containing nitrogen." [CHEBI:68452, OMP:DAS]
 comment: Azoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
 synonym: "azole sensitivity phenotype" RELATED []
 synonym: "Triazole" NARROW [CHEBI:38597]
@@ -4095,7 +4098,7 @@ creation_date: 2013-10-11T17:45:44Z
 [Term]
 id: OMP:0006056
 name: aminoglycoside resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a compound containing a cyclohexane ring with amino sugars." [CHEBI:22507, ISBN:978-0-07-299291-5, OMP:JCH]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:22507, ISBN:978-0-07-299291-5, OMP:JCH]
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
 synonym: "kanamycin" NARROW []
@@ -4109,7 +4112,7 @@ creation_date: 2013-10-22T13:29:22Z
 [Term]
 id: OMP:0006057
 name: decreased resistance to aminoglycoside
-def: "An aminoglycoside resistance phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
+def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside is decreased relative to a designated control." [OMP:JCH]
 synonym: "increased sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006017 ! altered resistance to aminoglycoside
 created_by: jonathanherrera
@@ -4197,8 +4200,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006066
 name: chloramphenicol resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, ISBN:9780072992915, OMP:JCH]
-synonym: "Bacteriostatic" BROAD []
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, ISBN:9780072992915, OMP:JCH]
 synonym: "chloramphenicol sensitivity phenotype" RELATED []
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
@@ -4254,7 +4256,7 @@ id: OMP:0006072
 name: not resistant to lantibiotic
 def: "A lantibiotic resistance phenotype where resistance to lantibiotic compounds are not observed." [OMP:WAM]
 synonym: "sensitivity to lantibiotic" RELATED []
-is_a: OMP:0006011 ! Lantibiotic resistance phenotype
+is_a: OMP:0006011 ! lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
 
@@ -4263,7 +4265,7 @@ id: OMP:0006073
 name: resistant to lantibiotic
 def: "A lantibiotic resistance phenotype where resistance to lantibiotic compounds are observed." [OMP:WAM]
 synonym: "not sensitive to lantibiotic" RELATED []
-is_a: OMP:0006011 ! Lantibiotic resistance phenotype
+is_a: OMP:0006011 ! lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
 
@@ -4764,7 +4766,7 @@ creation_date: 2014-07-25T14:52:06Z
 [Term]
 id: OMP:0006137
 name: abolished resistance to aminoglycoside
-def: "A decreased resistance to aminoglycoside phenotype where resistance to aminoglycosides is abolished." [OMP:JCH]
+def: "A decreased resistance to aminoglycoside phenotype where resistance to an aminoglycoside is abolished." [OMP:JCH]
 is_a: OMP:0006057 ! decreased resistance to aminoglycoside
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:54:43Z
@@ -4932,7 +4934,7 @@ creation_date: 2014-07-25T15:43:18Z
 [Term]
 id: OMP:0006158
 name: increased outer membrane vesicle production
-def: "A altered outer membrane vesicle production phenotype where production of outer membrane vesicles is increased relative to a designated control." [OMP:JCH]
+def: "An altered outer membrane vesicle production phenotype where production of outer membrane vesicles is increased relative to a designated control." [OMP:JCH]
 synonym: "hyper-vesiculating" EXACT []
 is_a: OMP:0007129 ! altered outer membrane vesicle production
 created_by: jonathanherrera
@@ -4941,7 +4943,7 @@ creation_date: 2014-07-28T18:45:05Z
 [Term]
 id: OMP:0006159
 name: decreased outer membrane vesicle production
-def: "A altered outer membrane vesicle production phenotype where production of outer membrane vesicles is decreased relative to a designated control." [OMP:JCH]
+def: "An altered outer membrane vesicle production phenotype where production of outer membrane vesicles is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0007129 ! altered outer membrane vesicle production
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:45:05Z
@@ -5102,7 +5104,7 @@ creation_date: 2014-04-24T17:38:06Z
 [Term]
 id: OMP:0007002
 name: decreased positive DNA supercoiling
-def: "A altered DNA supercoiling phenotype where positive DNA supercoiling is decreased relative to a designated control." [OMP:WAM]
+def: "An altered DNA supercoiling phenotype where positive DNA supercoiling is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:08:29Z
@@ -5110,7 +5112,7 @@ creation_date: 2013-09-05T16:08:29Z
 [Term]
 id: OMP:0007003
 name: increased positive DNA supercoiling
-def: "A altered DNA supercoiling phenotype where positive DNA supercoiling is increased relative to a designated control." [OMP:WAM]
+def: "An altered DNA supercoiling phenotype where positive DNA supercoiling is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:09:28Z
@@ -6190,6 +6192,40 @@ def: "A capsule phenotype where the capsule is altered relative to a designated 
 is_a: OMP:0000203 ! capsule phenotype
 created_by: siegele
 creation_date: 2014-08-17T12:52:35Z
+
+[Term]
+id: OMP:0007134
+name: altered antimicrobial compound resistance phenotype
+def: "An antimicrobial compound resistance phenotype where resistance to an antimicrobial compound is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+is_a: OMP:0007085 ! altered phenotype
+created_by: siegele
+creation_date: 2014-08-17T13:12:31Z
+
+[Term]
+id: OMP:0007135
+name: not resistant to alkaloid
+def: "An alkaloid resistance phenotype where a cell or cells lack resistance to an alkaloid compound." [OMP:DAS]
+is_a: OMP:0000455 ! alkaloid resistance phenotype
+created_by: siegele
+creation_date: 2014-08-17T13:19:30Z
+
+[Term]
+id: OMP:0007136
+name: resistant to alkaloid
+def: "An alkaloid resistance phenotype where a cell or cells are resistant to an alkaloid compound." [OMP:DAS]
+is_a: OMP:0000455 ! alkaloid resistance phenotype
+created_by: siegele
+creation_date: 2014-08-17T13:19:30Z
+
+[Term]
+id: OMP:0007137
+name: altered resistance to alkaloid
+def: "An alkaloid resistance phenotype where resistance to an alkaloid is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000455 ! alkaloid resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+created_by: siegele
+creation_date: 2014-08-17T13:19:30Z
 
 [Typedef]
 id: decreased_relative_to
