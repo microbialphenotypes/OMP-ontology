@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 16:08:2014 16:56
+date: 17:08:2014 01:04
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -188,9 +188,9 @@ creation_date: 2011-06-07T11:12:48Z
 
 [Term]
 id: OMP:0000024
-name: abnormal flagellum length
-def: "A malformed flagellum that is longer or shorter than typical." [OMP:MCC]
-is_a: OMP:0000031 ! malformed flagellum
+name: altered flagellum length phenotype
+def: "An altered flagellum phenotype where the length of the flagellum is altered relative to a designated control." [OMP:MCC]
+is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T11:19:56Z
 
@@ -241,8 +241,8 @@ creation_date: 2011-04-26T03:29:50Z
 
 [Term]
 id: OMP:0000031
-name: malformed flagellum
-def: "A flagellum phenotype where the cell possesses a flagellum that was distorted during formation." [OMP:MCC]
+name: altered flagellum shape
+def: "An altered flagellum phenotype where the shape of the flagellum is altered relative to a designated control." [OMP:MCC]
 is_a: OMP:0007105 ! altered flagellum phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:41:37Z
@@ -285,9 +285,9 @@ creation_date: 2011-06-07T10:53:11Z
 
 [Term]
 id: OMP:0000037
-name: abnormal flagellum shape
-def: "A malformed flagellum that is not shaped like a typical flagellum." [OMP:MCC]
-is_a: OMP:0000031 ! malformed flagellum
+name: increased flagellum length
+def: "An altered flagellum length phenotype where the length of the flagellum is longer than a designated control." [OMP:MCC]
+is_a: OMP:0000024 ! altered flagellum length phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T11:25:05Z
 
@@ -378,7 +378,7 @@ creation_date: 2011-04-26T04:27:42Z
 [Term]
 id: OMP:0000050
 name: decreased capsule formation
-def: "An decreased amount of capsule relative to a designated control strain in the same environment or relative to the same strain in a different environment." [OMP:DAS]
+def: "An decreased capsule formation phenotype where the ability to form capsule is abolished." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:59Z
@@ -1386,7 +1386,7 @@ creation_date: 2011-06-06T04:16:08Z
 [Term]
 id: OMP:0000173
 name: stress response phenotype
-def: "A microbial phenotype dealing with an organisms response to various environmental and chemical stressors." [OMP:WAM]
+def: "A microbial phenotype dealing with an organism's response to environmental and chemical stressors." [OMP:WAM]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:32Z
@@ -1697,7 +1697,7 @@ creation_date: 2011-06-07T12:31:24Z
 [Term]
 id: OMP:0000211
 name: absence of capsule
-def: "A capsule phenotype where an organism is not observed to produce a capsule in any environmental condition." [OMP:DAS]
+def: "A capsule phenotype where the ability to form capsule is not observed." [OMP:DAS]
 is_a: OMP:0000203 ! capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:49:20Z
@@ -2703,7 +2703,7 @@ creation_date: 2013-09-19T16:25:30Z
 [Term]
 id: OMP:0005024
 name: increased induced expression of the SOS response
-def: "An altered induced SOS response phenotype where the mechanism's effect is increased relative to a designated control." [OMP:WAM]
+def: "An altered induced SOS response phenotype where induced expression of the SOS response is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005053 ! altered induced expression of SOS response genes
 created_by: wmeza
 creation_date: 2013-09-20T13:01:05Z
@@ -3527,8 +3527,8 @@ creation_date: 2014-07-11T13:57:22Z
 
 [Term]
 id: OMP:0005127
-name: abolished resistance toward acidic pH stress
-def: "A decreased resistance toward acidic pH stress where an organism completely loses its resistance to acidic pH stress." [OMP:WAM]
+name: abolished resistance to acidic pH stress
+def: "A decreased resistance to acidic pH stress phenotype where resistance to acidic pH is abolished." [OMP:WAM]
 synonym: "abolished acidic pH sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005077 ! decreased resistance toward acidic pH stress
 created_by: wmeza
@@ -3536,9 +3536,8 @@ creation_date: 2014-07-15T16:46:17Z
 
 [Term]
 id: OMP:0005128
-name: abolished resistance toward alkalinic pH stress
-def: "A decreased resistance toward alkalinic pH stress phenotype where an organism completely loses its resistance to alkalinic pH stress." [OMP:WAM]
-synonym: "abolished sensitivity to alkalinic pH stress" RELATED [OMP:WAM]
+name: abolished resistance to alkaline pH stress
+def: "A decreased resistance to alkaline pH stress phenotype where the ability to resist alkaline pH is abolished." [OMP:WAM]
 is_a: OMP:0005079 ! decreased resistance toward alkalinic pH stress
 created_by: wmeza
 creation_date: 2014-07-15T17:31:56Z
@@ -4325,8 +4324,7 @@ creation_date: 2014-07-15T14:55:03Z
 [Term]
 id: OMP:0006078
 name: absence of decarboxylase activity
-def: "A decarboxylase activity phenotype where a cell or cells don't exhibit decarboxylase activity." [OMP:JCH]
-synonym: "decarboxylase deficient" RELATED []
+def: "A decarboxylase test phenotype where an organism doesn't exhibit decarboxylase activity." [OMP:JCH]
 synonym: "decarboxylase negative" EXACT []
 is_a: OMP:0000219 ! decarboxylase test phenotype
 created_by: jonathanherrera
@@ -4335,7 +4333,7 @@ creation_date: 2014-07-15T19:59:58Z
 [Term]
 id: OMP:0006079
 name: altered decarboxylase activity
-def: "A decarboxylase activity phenotype where the decarboxylase activity displayed by a cell or cells is altered relative to a designated control." [OMP:JCH]
+def: "A decarboxylase test phenotype where the decarboxylase or an organism is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000219 ! decarboxylase test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
@@ -4343,7 +4341,7 @@ creation_date: 2014-07-15T19:59:58Z
 [Term]
 id: OMP:0006080
 name: presence of decarboxylase activity
-def: "A decarboxylase activity phenotype where a cell or cells exhibit decarboxylase activity." [OMP:JCH]
+def: "A decarboxylase activity phenotype where an organism exhibits decarboxylase activity." [OMP:JCH]
 synonym: "decarboxylase positive" EXACT []
 is_a: OMP:0000219 ! decarboxylase test phenotype
 created_by: jonathanherrera
@@ -4462,7 +4460,7 @@ creation_date: 2014-07-24T18:43:39Z
 [Term]
 id: OMP:0006094
 name: abolished decarboxylase activity
-def: "A decreased decarboxylase activity where decarboxylase activity is abolished." [OMP:JCH]
+def: "A decreased decarboxylase activity phenotype where decarboxylase activity is abolished." [OMP:JCH]
 is_a: OMP:0006082 ! decreased decarboxylase activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:05:39Z
@@ -4470,7 +4468,7 @@ creation_date: 2014-07-24T20:05:39Z
 [Term]
 id: OMP:0006095
 name: abolished enzyme activity
-def: "A decreased in enzyme activity where the ability of enzymatic activity is lost." [OMP:JCH]
+def: "A decreased enzyme activity phenotype where an enzymatic activity is abolished." [OMP:JCH]
 is_a: OMP:0005103 ! decreased enzyme activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:09:28Z
@@ -4486,7 +4484,7 @@ creation_date: 2014-07-24T20:11:44Z
 [Term]
 id: OMP:0006097
 name: abolished urease activity
-def: "A decreased in urease activity where an organism completely loses its urease enzymatic activity." [OMP:JCH]
+def: "A decreased urease activity phenotype where urease activity is abolished." [OMP:JCH]
 is_a: OMP:0006092 ! decreased urease activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:17:01Z
@@ -4518,8 +4516,7 @@ creation_date: 2014-08-15T19:12:43Z
 [Term]
 id: OMP:0006101
 name: abolished caffeine resistance
-def: "A caffeine resistance where the ability for resistance is lost." [OMP:JCH]
-synonym: "abolished caffeine sensitivity" RELATED []
+def: "A caffeine resistance phenotype where resistance to caffeine is abolished." [OMP:JCH]
 is_a: OMP:0000460 ! decreased caffeine resistance
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:40:57Z
@@ -4527,7 +4524,7 @@ creation_date: 2014-07-25T11:40:57Z
 [Term]
 id: OMP:0006102
 name: abolished capsule formation
-def: "A decreased in capsule formation where an organism completely loses the ability to form capsule." [OMP:JCH]
+def: "A decreased capsule formation phenotype where the ability to form capsule is abolished." [OMP:JCH]
 is_a: OMP:0000050 ! decreased capsule formation
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:52:24Z
@@ -4535,7 +4532,7 @@ creation_date: 2014-07-25T11:52:24Z
 [Term]
 id: OMP:0006103
 name: abolished carbon source utilization
-def: "A decreased in carbon source utilization where an organism loses ability to use a carbon source." [OMP:JCH]
+def: "A decreased carbon source utilization phenotype where the ability to utilize a carbon source is abolished." [OMP:JCH]
 is_a: OMP:0007070 ! decreased carbon source utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:54:11Z
@@ -4547,22 +4544,6 @@ def: "A decreased catalase activity phenotype where catalase activity is abolish
 is_a: OMP:0000195 ! decreased catalase activity
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:59:12Z
-
-[Term]
-id: OMP:0006105
-name: abolish cell diameter
-def: "A decreased in cell diameter where a cell loses its ability to form a cell diameter." [OMP:JCH]
-is_a: OMP:0005109 ! decreased cell diameter
-created_by: jonathanherrera
-creation_date: 2014-07-25T12:02:28Z
-
-[Term]
-id: OMP:0006106
-name: abolish cell length
-def: "A decreased in cell length where an organism completely loses its ability to form a cell length." [OMP:JCH]
-is_a: OMP:0007084 ! decreased cell length
-created_by: jonathanherrera
-creation_date: 2014-07-25T12:04:16Z
 
 [Term]
 id: OMP:0006107
@@ -4592,7 +4573,7 @@ creation_date: 2014-07-28T18:19:45Z
 [Term]
 id: OMP:0006110
 name: abolished endospore formation
-def: "A decrease endospore formation where an organism loses the ability to form endospore." [OMP:JCH]
+def: "A decreased endospore formation phenotype where the ability to form endospores is abolished." [OMP:JCH]
 is_a: OMP:0000013 ! decreased endospore formation
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:21:50Z
@@ -4600,31 +4581,31 @@ creation_date: 2014-07-25T12:21:50Z
 [Term]
 id: OMP:0006111
 name: abolished frequency  of chromosome segregation
-def: "A decreased in frequency of chromosome segregation where an organism completely loses the ability of chromosome segregation." [OMP:JCH]
+def: "A decreased frequency of chromosome segregation phenotype where the ability to segregate chromosomes is abolished." [OMP:JCH]
 is_a: OMP:0005061 ! decreased frequency of chromosome segregation
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:24:27Z
 
 [Term]
 id: OMP:0006112
-name: abolished frequency of gene silencing
-def: "A decreased in frequency of gene silencing where an organism completely loses the ability to silence genes." [OMP:JCH]
+name: abolished gene silencing
+def: "A decreased frequency of gene silencing phenotype where the ability to silence genes is abolished." [OMP:JCH]
 is_a: OMP:0005065 ! decreased frequency of gene silencing
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:40:10Z
 
 [Term]
 id: OMP:0006113
-name: abolished frequency of homologous recombination
-def: "A decreased in frequency of homologous recombination where an organism completely loses the ability of homologous recombination." [OMP:JCH]
+name: abolished homologous recombination
+def: "A decreased frequency of homologous recombination phenotype where the ability to perform homologous recombination is abolished." [OMP:JCH]
 is_a: OMP:0005050 ! decreased frequency of homologous recombination
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:45:20Z
 
 [Term]
 id: OMP:0006114
-name: abolished frequency of site specific recombination
-def: "A decreased in frequency of site specific recombination where an organism completely loses the ability of site specific recombination." [OMP:JCH]
+name: abolished site-specific recombination
+def: "A decreased frequency of site-specific recombination where the ability to perform site-specific recombination is abolished." [OMP:JCH]
 is_a: OMP:0005056 ! decreased frequency of site-specific recombination
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:47:43Z
@@ -4640,7 +4621,7 @@ creation_date: 2014-07-25T12:50:04Z
 [Term]
 id: OMP:0006116
 name: abolished growth at acidic pH
-def: "A decreased in growth at acidic pH where an organism completely loses the ability to grow at acidic pH." [OMP:DAS]
+def: "A decreased growth at acidic pH phenotype where the ability to grow at acidic pH is abolished." [OMP:DAS]
 is_a: OMP:0007008 ! decreased growth at acidic pH
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:58:01Z
@@ -4648,23 +4629,15 @@ creation_date: 2014-07-25T12:58:01Z
 [Term]
 id: OMP:0006117
 name: abolished growth at alkaline pH
-def: "A decreased in growth at alkaline pH where an organism completely loses the ability to grow at alkaline pH." [OMP:JCH]
+def: "A decreased growth at alkaline pH phenotype where the ability to grow at alkaline pH is abolished." [OMP:JCH]
 is_a: OMP:0007010 ! decreased growth at alkaline pH
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:02:17Z
 
 [Term]
-id: OMP:0006118
-name: abolished growth rate
-def: "A decreased in growth rate where an organism completely loses the ability to grow at a rate." [OMP:JCH]
-is_a: OMP:0000283 ! decreased growth rate
-created_by: jonathanherrera
-creation_date: 2014-07-25T13:03:29Z
-
-[Term]
 id: OMP:0006119
 name: abolished hemolysis
-def: "A decrease hemolysis where hemolysis is abolished." [OMP:JCH]
+def: "A decreased hemolysis phenotype where hemolysis is abolished." [OMP:JCH]
 is_a: OMP:0000249 ! decreased hemolysis
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:17:12Z
@@ -4680,7 +4653,7 @@ creation_date: 2014-07-25T13:19:17Z
 [Term]
 id: OMP:0006121
 name: abolished induced expression of the SOS response
-def: "A decreased induced expression of SOS phenotype where the ability to induce expression of SOS is abolished." [OMP:JCH]
+def: "A decreased induced expression of SOS phenotype where the ability to induce expression of the SOS response is abolished." [OMP:JCH]
 is_a: OMP:0005025 ! decreased expression of the SOS response
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:22:37Z
@@ -4704,7 +4677,7 @@ creation_date: 2014-07-25T13:27:32Z
 [Term]
 id: OMP:0006124
 name: abolished mutation frequency
-def: "A decreased in mutation frequency where mutation frequency is lost." [OMP:JCH]
+def: "A decreased mutation frequency phenotype where mutations no longer occur." [OMP:JCH]
 comment: This term was made obsolete because it describes a phenotype that is highly unlikely to occur in nature.
 is_obsolete: true
 created_by: jonathanherrera
@@ -4729,7 +4702,7 @@ creation_date: 2014-07-25T14:11:37Z
 [Term]
 id: OMP:0006127
 name: abolished negative DNA supercoiling
-def: "A decrease negative DNA supercoiling where an organism loses the ability of negative DNA supercoiling." [OMP:JCH]
+def: "A decrease negative DNA supercoiling phenotype where the ability to form negative supercoils in DNA is abolished." [OMP:JCH]
 is_a: OMP:0001002 ! decreased negative DNA supercoiling
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:16:09Z
@@ -4737,7 +4710,7 @@ creation_date: 2014-07-25T14:16:09Z
 [Term]
 id: OMP:0006128
 name: abolished positive DNA supercoiling
-def: "A decrease positive DNA supercoiling where an organism loses the ability of positive DNA supercoiling." [OMP:JCH]
+def: "A decreased positive DNA supercoiling phenotype where the ability to form positive supercoils in DNA is abolished." [OMP:JCH]
 is_a: OMP:0007002 ! decreased positive DNA supercoiling
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:16:27Z
@@ -4769,7 +4742,7 @@ creation_date: 2014-07-25T14:43:31Z
 [Term]
 id: OMP:0006132
 name: abolished number of pili
-def: "A decreased in number of pili where an organism completely loses the ability to form pili." [OMP:JCH]
+def: "A decreased number of pili phenotype where the ability to form pili is abolished." [OMP:JCH]
 is_a: OMP:0000028 ! decreased number of pili
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:46:12Z
@@ -4777,7 +4750,7 @@ creation_date: 2014-07-25T14:46:12Z
 [Term]
 id: OMP:0006133
 name: abolished purine/pyrimidine requirement
-def: "A decreased in purine/pyrimidine requirement where an organism completely loses the ability to utilize purine/pyrimidine." [OMP:JCH]
+def: "A decreased purine/pyrimidine requirement phenotype where the requirement for a purine/pyrimidine compound as a growth factor is abolished." [OMP:JCH]
 is_a: OMP:0007022 ! decreased purine/pyrimidine requirement
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:47:24Z
@@ -4785,7 +4758,7 @@ creation_date: 2014-07-25T14:47:24Z
 [Term]
 id: OMP:0006134
 name: abolished quorum sensing
-def: "A decreased in quorum sensing where an organism completely loses ability to monitor population density." [OMP:JCH]
+def: "A decreased quorum sensing phenotype where the ability to perform quorum sensing is abolished." [OMP:JCH]
 is_a: OMP:0007028 ! decreased quorum sensing
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:49:11Z
@@ -4800,8 +4773,8 @@ creation_date: 2014-07-25T14:50:55Z
 
 [Term]
 id: OMP:0006136
-name: abolished rate of transposable element transposition
-def: "A decreased in rate of transposable element transposition where an organism completely loses the ability the ability." [OMP:JCH]
+name: abolished transposition
+def: "A decreased rate of transposition phenotype where the ability to perform transposition is abolished." [OMP:JCH]
 is_a: OMP:0005075 ! decreased rate of transposable element transposition
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:52:06Z
@@ -4809,7 +4782,7 @@ creation_date: 2014-07-25T14:52:06Z
 [Term]
 id: OMP:0006137
 name: abolished resistance to aminoglycoside
-def: "A decreased resistance to aminoglycosdie where an organism completely loses the ability to resists aminoglycoside." [OMP:JCH]
+def: "A decreased resistance to aminoglycoside phenotype where resistance to aminoglycosides is abolished." [OMP:JCH]
 is_a: OMP:0006057 ! decreased resistance to aminoglycoside
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:54:43Z
@@ -4817,7 +4790,7 @@ creation_date: 2014-07-25T14:54:43Z
 [Term]
 id: OMP:0006138
 name: abolished resistance to aminopyrimidine
-def: "A decreased in resistance to aminopyrimidine where an organism loses ability to resist aminopyrimidine." [OMP:JCH]
+def: "A decreased resistance to aminopyrimidines phenotype where resistance to aminopyrimidine compounds is abolished." [OMP:JCH]
 is_a: OMP:0000335 ! decreased resistance to aminopyrimidine
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:59:06Z
@@ -4841,7 +4814,7 @@ creation_date: 2014-07-25T15:02:13Z
 [Term]
 id: OMP:0006141
 name: abolished resistance to beta-lactam
-def: "A decreased in resistance to beta-lactam where an organism completely loses the ability to resist beta-lactam." [OMP:JCh]
+def: "A decreased resistance to beta-lactam phenotype where resistance to beta-lactam is abolished." [OMP:JCh]
 is_a: OMP:0006044 ! decreased resistance to beta-lactam
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:04:08Z
@@ -4849,7 +4822,7 @@ creation_date: 2014-07-25T15:04:08Z
 [Term]
 id: OMP:0006142
 name: abolished resistance to chloramphenicol
-def: "A decreased in resistance to chloramphenicol where an organism completely loses the ability to resist chloramphenicol." [OMP:JCH]
+def: "A decreased resistance to chloramphenicol phenotype where resistance to chloramphenicol is abolished." [OMP:JCH]
 is_a: OMP:0006067 ! decreased resistance to chloramphenicol
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:05:24Z
@@ -4857,7 +4830,7 @@ creation_date: 2014-07-25T15:05:24Z
 [Term]
 id: OMP:0006143
 name: abolished resistance to lantibiotic
-def: "A decreased in resistance to lantibiotic where an organism completely loses the ability to resist lantibiotics." [OMP:JCh]
+def: "A decreased resistance to lantibiotics phenotype where resistance to lantibiotics is abolished." [OMP:JCh]
 is_a: OMP:0006012 ! decreased resistance to lantibiotic
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:07:57Z
@@ -4865,7 +4838,7 @@ creation_date: 2014-07-25T15:07:57Z
 [Term]
 id: OMP:0006144
 name: abolished resistance to macrolide
-def: "A decreased in resistance to macrolide where an organism completely loses the ability to resist macrolides." [OMP:JCH]
+def: "A decreased resistance to macrolide phenotype where resistance to macrolides is abolished." [OMP:JCH]
 is_a: OMP:0006036 ! decreased resistance to macrolide
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:09:24Z
@@ -4873,15 +4846,15 @@ creation_date: 2014-07-25T15:09:24Z
 [Term]
 id: OMP:0006145
 name: abolished resistance to pteridine
-def: "A decreased in resistance to pteridine where an organism completely loses the ability to resist pteridine." [OMP:JCH]
+def: "A decreased resistance to pteridine phenotype where resistance to pteridine is abolished." [OMP:JCH]
 is_a: OMP:0007004 ! decreased resistance to pteridine
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:11:04Z
 
 [Term]
 id: OMP:0006146
-name: abolish resistance to quinolone
-def: "A decreased in resistance to quinolone where an organism completely loses the ability to resist quinolones." [OMP:JCH]
+name: abolished resistance to quinolones
+def: "A decreased resistance to quinolones phenotype where resistance to quinolones is abolished." [OMP:JCH]
 is_a: OMP:0006040 ! decreased resistance to quinolone
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:12:28Z
@@ -4889,15 +4862,15 @@ creation_date: 2014-07-25T15:12:28Z
 [Term]
 id: OMP:0006147
 name: abolished resistance to tetracycline
-def: "A decreased in resistance to tetracycline where an organism completely loses the ability to resist tetracycline." [OMP:JCH]
+def: "A decreased resistance to tetracycline phenotype where resistance to tetracycline is abolished." [OMP:JCH]
 is_a: OMP:0006061 ! decreased resistance to tetracycline
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:18:09Z
 
 [Term]
 id: OMP:0006148
-name: abolished stress induced mutagenesis
-def: "A decreased in stress induced mutagenesis where an organism completely loses mutagenesis during stress." [OMP:JCH]
+name: abolished stress-induced mutagenesis
+def: "A decreased stress-induced mutagenesis phenotype where stress-induced mutagenesis is abolished." [OMP:JCH]
 is_a: OMP:0005031 ! decreased stress-induced mutagenesis
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:19:48Z
@@ -4905,7 +4878,7 @@ creation_date: 2014-07-25T15:19:48Z
 [Term]
 id: OMP:0006149
 name: abolished utilization of dinitrogen
-def: "A decreased in dinitrogen utilization where an organism completely loses the ability to utilize dinitrogen." [OMP:JCH]
+def: "A decreased dinitrogen utilization phenotype where the ability to fix dinitrogen is abolished." [OMP:JCH]
 is_a: OMP:0007029 ! decreased utilization of dinitrogen
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:22:06Z
@@ -4913,7 +4886,7 @@ creation_date: 2014-07-25T15:22:06Z
 [Term]
 id: OMP:0006150
 name: abolished utilization of inorganic nitrogen
-def: "A decreased in utilization of inorganic nitrogen where an organism loses the ability to utilize inorganic nitrogen." [OMP:JCH]
+def: "A decreased utilization of inorganic nitrogen phenotype where an organism loses the ability to utilize inorganic nitrogen." [OMP:JCH]
 is_a: OMP:0007032 ! decreased utilization of inorganic nitrogen source
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:23:03Z
@@ -4921,7 +4894,7 @@ creation_date: 2014-07-25T15:23:03Z
 [Term]
 id: OMP:0006151
 name: abolished utilization of inorganic phosphorus
-def: "A decreased in utilization of inorganic phosphorus where an organism loses the ability to utilize inorganic phosphorus." [OMP:JCH]
+def: "A decreased utilization of inorganic phosphorus phenotype where an organism loses the ability to utilize inorganic phosphorus." [OMP:JCH]
 is_a: OMP:0007047 ! decreased utilization of inorganic phosphorus source
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:31:15Z
@@ -5190,7 +5163,7 @@ creation_date: 2014-07-21T10:25:43Z
 [Term]
 id: OMP:0007007
 name: nutrient import phenotype
-def: "A nutrient utilization phenotype where the phenotype involves the uptake of one or more nutrients from the environment." [OMP:DAS]
+def: "A nutrient utilization phenotype concerning the uptake of one or more nutrients from the environment." [OMP:DAS]
 xref: GO:0098657 "import into cell"
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: siegele
@@ -6219,6 +6192,14 @@ def: "A differential media phenotype where the appearance of an organism on diff
 is_a: OMP:0007130 ! differential media phenotype
 created_by: siegele
 creation_date: 2014-08-16T16:44:03Z
+
+[Term]
+id: OMP:0007132
+name: decreased flagellum length
+def: "An altered flagellum length phenotype where the length of the flagellum is shorter than a designated control." [OMP:DAS]
+is_a: OMP:0000024 ! altered flagellum length phenotype
+created_by: siegele
+creation_date: 2014-08-17T00:46:29Z
 
 [Typedef]
 id: decreased_relative_to
