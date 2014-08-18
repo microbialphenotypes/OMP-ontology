@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 18:08:2014 10:50
+date: 18:08:2014 17:30
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -73,8 +73,7 @@ creation_date: 2011-04-26T02:52:52Z
 [Term]
 id: OMP:0000008
 name: presence of budding
-def: "A budding phenotype where a cell possesses the ability to perform budding." [OMP:MCC]
-synonym: "presence of bud forming" EXACT []
+def: "A budding phenotype where an organism reproduces by the process of budding." [OMP:MCC]
 is_a: OMP:0000089 ! budding phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T02:58:46Z
@@ -694,7 +693,8 @@ creation_date: 2011-06-07T12:08:48Z
 [Term]
 id: OMP:0000089
 name: budding phenotype
-def: "An asexual reproduction phenotype where a new individual forms from an outgrowth (bud) on the body of the parental organism." [OMP:DAS]
+def: "An asexual reproduction phenotype related to the process of budding, where a new individual forms from an outgrowth (bud) on the body of the parental organism." [OMP:DAS]
+xref: GO:0007114 "cell budding"
 is_a: OMP:0007066 ! asexual reproduction phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:23:41Z
@@ -3622,9 +3622,9 @@ creation_date: 2014-07-24T15:10:50Z
 [Term]
 id: OMP:0006004
 name: increased budding
-def: "An altered budding phenotype where the organism(s) has increased bud formation relative to a designated control." [OMP:WAM]
+def: "An altered budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is increased relative to a designated control." [OMP:WAM]
 synonym: "increased budding index" EXACT []
-is_a: OMP:0006035 ! altered budding
+is_a: OMP:0006035 ! altered budding phenotype
 created_by: jonathanherrera
 creation_date: 2014-03-26T21:33:14Z
 
@@ -3639,9 +3639,9 @@ creation_date: 2014-07-24T15:21:56Z
 [Term]
 id: OMP:0006006
 name: decreased budding
-def: "An altered budding phenotype where the organism(s) has decreased bud formation relative to a designated control." [OMP:WAM]
+def: "An altered budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is decreased relative to a designated control." [OMP:WAM]
 synonym: "decreased budding index" EXACT []
-is_a: OMP:0006035 ! altered budding
+is_a: OMP:0006035 ! altered budding phenotype
 created_by: jonathanherrera
 creation_date: 2014-03-26T21:33:14Z
 
@@ -3898,9 +3898,10 @@ creation_date: 2014-07-24T17:57:37Z
 
 [Term]
 id: OMP:0006035
-name: altered budding
-def: "A budding phenotype that is altered relative to a designated control." [OMP:JCH]
+name: altered budding phenotype
+def: "A budding phenotype where the process of budding is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000089 ! budding phenotype
+is_a: OMP:0007144 ! altered asexual reproduction phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T18:10:38Z
 
@@ -4468,8 +4469,8 @@ creation_date: 2014-07-24T20:18:01Z
 
 [Term]
 id: OMP:0006099
-name: abolished bud formation
-def: "A decreased bud formation phenotype where the ability to form a bud is abolished." [OMP:JCH]
+name: abolished budding
+def: "A decreased budding phenotype where the fraction of budding cells is decreased to zero." [OMP:JCH]
 is_a: OMP:0006006 ! decreased budding
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:08:59Z
@@ -4984,7 +4985,7 @@ creation_date: 2014-08-06T17:30:58Z
 [Term]
 id: OMP:0006166
 name: presence of binary fission
-def: "A binary fission phenotype where binary fission is observed." [OMP:JCH]
+def: "A binary fission phenotype where an organism multiplies by the process of binary fission." [OMP:JCH]
 is_a: OMP:0007067 ! binary fission phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-08T15:51:18Z
@@ -4999,9 +5000,10 @@ creation_date: 2014-08-13T17:25:47Z
 
 [Term]
 id: OMP:0006168
-name: altered binary fission
-def: "A binary fission phenotype where binary fission is altered relative to a designated control." [OMP:JCH]
+name: altered binary fission phenotype
+def: "A binary fission phenotype where the process of binary fission is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007067 ! binary fission phenotype
+is_a: OMP:0007144 ! altered asexual reproduction phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-08T15:59:42Z
 
@@ -5009,7 +5011,7 @@ creation_date: 2014-08-08T15:59:42Z
 id: OMP:0006169
 name: increased binary fission
 def: "An altered binary fission phenotype where binary fission is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006168 ! altered binary fission
+is_a: OMP:0006168 ! altered binary fission phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:46Z
 
@@ -5017,7 +5019,7 @@ creation_date: 2014-08-08T16:01:46Z
 id: OMP:0006170
 name: decreased binary fission
 def: "An altered binary fission phenotype where binary fission is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006168 ! altered binary fission
+is_a: OMP:0006168 ! altered binary fission phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:46Z
 
@@ -5032,16 +5034,17 @@ creation_date: 2014-08-08T16:01:54Z
 [Term]
 id: OMP:0006173
 name: presence of multiple fission
-def: "A multiple fission phenotype where multiple fission is observed." [OMP:JCH]
+def: "A multiple fission phenotype where an organism reproduces by the process of multiple fission." [OMP:JCH]
 is_a: OMP:0007068 ! multiple fission phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:42:12Z
 
 [Term]
 id: OMP:0006174
-name: altered multiple fission
-def: "A multiple fission phenotype where multiple fission is altered relative to a designated control." [OMP:JCH]
+name: altered multiple fission phenotype
+def: "A multiple fission phenotype where the process of multiple fission is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007068 ! multiple fission phenotype
+is_a: OMP:0007144 ! altered asexual reproduction phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:42:12Z
 
@@ -5049,7 +5052,7 @@ creation_date: 2014-08-08T16:42:12Z
 id: OMP:0006175
 name: decreased multiple fission
 def: "An altered multiple fission phenotype where multiple fission is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006174 ! altered multiple fission
+is_a: OMP:0006174 ! altered multiple fission phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:46:45Z
 
@@ -5057,7 +5060,7 @@ creation_date: 2014-08-08T16:46:45Z
 id: OMP:0006176
 name: increased multiple fission
 def: "An altered multiple fission phenotype where multiple fission is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006174 ! altered multiple fission
+is_a: OMP:0006174 ! altered multiple fission phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:46:45Z
 
@@ -5611,7 +5614,8 @@ creation_date: 2014-02-03T15:39:56Z
 [Term]
 id: OMP:0007066
 name: asexual reproduction phenotype
-def: "A microbial phenotype that deals with the mechanism of asexual reproduction." [OMP:DAS]
+def: "A microbial phenotype related to asexual reproduction, the biological process in which new individuals are produced by either a single cell or by a group of cells in the absence of any sexual process." [ISBN:0673521435, OMP:DAS]
+xref: GO:0019954 "asexual reproduction"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-02-03T15:55:25Z
@@ -5619,7 +5623,8 @@ creation_date: 2014-02-03T15:55:25Z
 [Term]
 id: OMP:0007067
 name: binary fission phenotype
-def: "An asexual reproduction phenotype where an organism multiplies by binary fission and 2 cells are produced." [OMP:DAS]
+def: "An asexual reproduction phenotype related to the process of binary fission, where a parental cell divides into two daughter cells of approximately equal size and shape." [ISBN:0673521435, OMP:DAS]
+xref: GO:0043093 "cytokinesis by binary fission"
 is_a: OMP:0007066 ! asexual reproduction phenotype
 created_by: siegele
 creation_date: 2014-02-03T15:55:54Z
@@ -5627,9 +5632,8 @@ creation_date: 2014-02-03T15:55:54Z
 [Term]
 id: OMP:0007068
 name: multiple fission phenotype
-def: "An asexual reproduction phenotype where an organism multiplies by binary fission and multiple cells are produced." [OMP:JCH]
+def: "An asexual reproduction phenotype related to the process of multiple fission, where the genome is multiplied multiple times prior to division of the cytoplasm and formation of multiple daughter cells." [ISBN:9781593392925, OMP:JCH]
 synonym: "baeocyte formation" NARROW []
-synonym: "schizogeny" NARROW []
 is_a: OMP:0007066 ! asexual reproduction phenotype
 created_by: siegele
 creation_date: 2014-02-03T16:09:27Z
@@ -6229,6 +6233,68 @@ is_a: OMP:0006011 ! lantibiotic resistance phenotype
 is_a: OMP:0006020 ! altered bacteriocin resistance phenotype
 created_by: siegele
 creation_date: 2014-08-17T18:03:16Z
+
+[Term]
+id: OMP:0007140
+name: schizogeny phenotype
+def: "A multiple fission phenotype related to the process of schizogeny, where the nucleus of  the parent cell divides multiple times before the cytoplasm separates and each nucleus is encased in its own membrane to form an individual cell." [ISBN:9781593392925, OMP:DAS]
+xref: GO:0020014 "schizogeny"
+is_a: OMP:0007068 ! multiple fission phenotype
+created_by: siegele
+creation_date: 2014-08-18T17:02:12Z
+
+[Term]
+id: OMP:0007141
+name: presence of schizogeny
+def: "A schizogeny phenotype where an organism reproduces by the process of schizogeny." [OMP:DAS]
+is_a: OMP:0007140 ! schizogeny phenotype
+created_by: siegele
+creation_date: 2014-08-18T17:12:34Z
+
+[Term]
+id: OMP:0007142
+name: asexual sporulation phenotype
+def: "An asexual reproduction phenotype related to the process where reproduction occurs through the formation of spores derived from the products of mitosis." [OMP:DAS, PMID:9781593392925]
+synonym: "mitotic spore formation" RELATED []
+xref: GO:0030436 "asexual sporulation"
+is_a: OMP:0007066 ! asexual reproduction phenotype
+created_by: siegele
+creation_date: 2014-08-18T17:15:43Z
+
+[Term]
+id: OMP:0007143
+name: presence of asexual sporulation
+def: "An asexual sporulation phenotype where an organism reproduces by the process of forming mitotic spores." [OMP:DAS]
+is_a: OMP:0007142 ! asexual sporulation phenotype
+created_by: siegele
+creation_date: 2014-08-18T17:19:11Z
+
+[Term]
+id: OMP:0007144
+name: altered asexual reproduction phenotype
+def: "An asexual reproduction phenotype where the process of asexual reproduction is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007066 ! asexual reproduction phenotype
+is_a: OMP:0007085 ! altered phenotype
+created_by: siegele
+creation_date: 2014-08-18T17:22:42Z
+
+[Term]
+id: OMP:0007145
+name: altered asexual sporulation phenotype
+def: "An asexual sporulation phenotype where the process of forming mitotic spores is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007142 ! asexual sporulation phenotype
+is_a: OMP:0007144 ! altered asexual reproduction phenotype
+created_by: siegele
+creation_date: 2014-08-18T17:23:30Z
+
+[Term]
+id: OMP:0007146
+name: altered schizogeny phenotype
+def: "A schizogeny phenotype where the process of schizogeny is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0006174 ! altered multiple fission phenotype
+is_a: OMP:0007140 ! schizogeny phenotype
+created_by: siegele
+creation_date: 2014-08-18T17:24:18Z
 
 [Typedef]
 id: decreased_relative_to
