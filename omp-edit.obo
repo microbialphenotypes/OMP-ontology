@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 17:08:2014 17:59
+date: 18:08:2014 00:10
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -23,7 +23,7 @@ creation_date: 2011-03-10T06:55:06Z
 [Term]
 id: OMP:0000002
 name: decreased cell motility
-def: "An altered cell motility phenotype where motility is decreased relative to a designated control." [OMP:MCC]
+def: "An altered cell motility phenotype where cell motility is decreased relative to a designated control." [OMP:MCC]
 comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
 xref: PATO:0002297
 is_a: OMP:0007001 ! altered cell motility phenotype
@@ -334,7 +334,7 @@ creation_date: 2011-04-26T03:53:34Z
 [Term]
 id: OMP:0000045
 name: increased cell motility
-def: "An altered cell motility phenotype where motility is increased relative to a designated control." [OMP:MCC]
+def: "An altered cell motility phenotype where cell motility is increased relative to a designated control." [OMP:MCC]
 xref: PATO:0002298
 is_a: OMP:0007001 ! altered cell motility phenotype
 created_by: mchibucos
@@ -1547,10 +1547,9 @@ creation_date: 2011-02-03T11:24:08Z
 
 [Term]
 id: OMP:0000194
-name: presence of catalase activity
-def: "A catalase activity phenotype where a cell or cells exhibit catalase activity." [OMP:JCH]
-synonym: "catalase positive" EXACT []
-is_a: OMP:0000218 ! catalase activity phenotype
+name: catalase positive
+def: "A catalase test phenotype where an organism exhibits catalase activity." [OMP:JCH]
+is_a: OMP:0000218 ! catalase test phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T04:28:49Z
 
@@ -1581,10 +1580,9 @@ creation_date: 2011-02-03T11:25:01Z
 
 [Term]
 id: OMP:0000198
-name: absence of catalase activity
-def: "A catalase activity phenotype where a cell or cells don't exhibit catalase activity." [OMP:JCH]
-synonym: "catalase negative" EXACT []
-is_a: OMP:0000218 ! catalase activity phenotype
+name: catalase negative
+def: "A catalase test phenotype where an organism doesn't exhibit catalase activity." [OMP:JCH]
+is_a: OMP:0000218 ! catalase test phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T04:30:12Z
 
@@ -1753,11 +1751,11 @@ creation_date: 2011-06-07T03:19:00Z
 
 [Term]
 id: OMP:0000218
-name: catalase activity phenotype
-def: "An enzymatic activity phenotype that describes the ability of a cell or cells to catalyze the decomposition of hydrogen peroxide into oxygen and water." [OMP:JCH]
+name: catalase test phenotype
+def: "A differential media phenotype that relates to the presence or absence of catalase, an enzyme that catalyzes the decomposition of hydrogen peroxide into oxygen and water." [OMP:JCH]
 comment: Catalysis of the reaction: 2 hydrogen peroxide = O2 + 2 H2O [EC:1.11.1.6].
 xref: GO:0004096 "catalase activity"
-is_a: OMP:0000221 ! enzymatic activity phenotype
+is_a: OMP:0007130 ! differential media phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:43:28Z
 
@@ -1772,7 +1770,8 @@ creation_date: 2011-02-03T04:43:53Z
 [Term]
 id: OMP:0000220
 name: oxidase test phenotype
-def: "A differential media phenotype that describes a cell or cells display the ability to catalyze oxidoreduction reactions where the donor is molecular oxygen." [OMP:JCH]
+def: "A differential media phenotype that relates to the presence or absence of cytochrome oxidase based on the ability of an organism to oxidize certain aromatic amines to form colored end products." [OMP:JCH]
+comment: The oxidase test is used in identification of bacterial species.
 is_a: OMP:0007130 ! differential media phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:44:11Z
@@ -1789,8 +1788,8 @@ creation_date: 2011-02-03T04:44:39Z
 [Term]
 id: OMP:0000222
 name: urease test phenotype
-def: "A differential media phenotype where the cell or cells display the ability to catalyze the hydrolysis of urea to form ammonia and carbamate." [GO:0009039, IPR:IPR005848, OMP:JCH]
-xref: GO:0009039
+def: "A differential media phenotype that relates to the presence or absence of urease an enzyme that hydrolyzes urea to ammonia and carbon dioxide." [OMP:JCH]
+xref: GO:0009039 "urease activity"
 is_a: OMP:0007130 ! differential media phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:45:37Z
@@ -1976,7 +1975,7 @@ creation_date: 2011-06-07T03:05:56Z
 [Term]
 id: OMP:0000249
 name: decreased hemolysis
-def: "An altered hemolysis phenotype were the rate of hemolysis is reduced relative to a designated control." [OMP:WAM]
+def: "An altered hemolysis phenotype where hemolysis is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0000206 ! altered hemolysis phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:19:25Z
@@ -2898,7 +2897,7 @@ creation_date: 2013-10-23T19:46:15Z
 [Term]
 id: OMP:0005050
 name: decreased frequency of homologous recombination
-def: "A homologous recombination phenotype where homologous recombination is reduced relative to a designated control." [OMP:WAM]
+def: "A homologous recombination phenotype where homologous recombination is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006002 ! altered homologous recombination phenotype
 created_by: wmeza
 creation_date: 2013-10-24T12:52:41Z
@@ -3321,7 +3320,7 @@ creation_date: 2014-04-17T10:54:45Z
 [Term]
 id: OMP:0005103
 name: decreased enzyme activity
-def: "An altered enzyme activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:WAM]
+def: "An altered enzyme activity phenotype where there the activity of an enzyme is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005130 ! altered enzymatic activity phenotype
 created_by: wmeza
 creation_date: 2014-04-17T10:55:05Z
@@ -3679,7 +3678,7 @@ creation_date: 2014-07-24T16:28:24Z
 [Term]
 id: OMP:0006011
 name: lantibiotic resistance phenotype
-def: "A bacteriocin resistance phenotype dealing with resistance to peptide antimicrobials that contain the thioether amino acids lanthionine or methyllanthionine, and the unsaturated amino acids dehydroalanine and 2-aminoisobutyric acid." [CHEBI:71644, OMP:WAM]
+def: "A bacteriocin resistance phenotype related to resistance or sensitivity to peptides that contain the thioether amino acids lanthionine or methyllanthionine, and the unsaturated amino acids dehydroalanine and 2-aminoisobutyric acid." [CHEBI:71644, OMP:WAM]
 synonym: "lantibiotic sensitivity phenotype" RELATED []
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
@@ -3690,7 +3689,7 @@ id: OMP:0006012
 name: decreased resistance to lantibiotic
 def: "A lantibiotic resistance phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased sensitivity to lantibiotic" RELATED []
-is_a: OMP:0006011 ! lantibiotic resistance phenotype
+is_a: OMP:0007139 ! altered lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
 
@@ -3707,7 +3706,7 @@ id: OMP:0006014
 name: increased resistance to lantibiotic
 def: "A lantibiotic resistance phenotype where resistance is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased sensitivity to lantibiotic" RELATED []
-is_a: OMP:0006011 ! lantibiotic resistance phenotype
+is_a: OMP:0007139 ! altered lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
 
@@ -3729,7 +3728,7 @@ creation_date: 2014-07-24T16:34:28Z
 
 [Term]
 id: OMP:0006017
-name: altered resistance to aminoglycoside
+name: altered aminoglycoside resistance phenotype
 def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
@@ -4097,7 +4096,7 @@ id: OMP:0006057
 name: decreased resistance to aminoglycoside
 def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside is decreased relative to a designated control." [OMP:JCH]
 synonym: "increased sensitivity to aminoglycoside" RELATED []
-is_a: OMP:0006017 ! altered resistance to aminoglycoside
+is_a: OMP:0006017 ! altered aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -4106,7 +4105,7 @@ id: OMP:0006058
 name: increased resistance to aminoglycoside
 def: "An aminoglycoside compound resistance phenotype where resistance is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to aminoglycoside" RELATED []
-is_a: OMP:0006017 ! altered resistance to aminoglycoside
+is_a: OMP:0006017 ! altered aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -4283,33 +4282,31 @@ creation_date: 2014-05-12T13:04:40Z
 [Term]
 id: OMP:0006077
 name: altered catalase activity
-def: "A catalase activity phenotype where the catalase activity displayed be a cell or cells is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0000218 ! catalase activity phenotype
+def: "A catalase test phenotype where catalase activity is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0000218 ! catalase test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T14:55:03Z
 
 [Term]
 id: OMP:0006078
-name: absence of decarboxylase activity
+name: decarboxylase negative
 def: "A decarboxylase test phenotype where an organism doesn't exhibit decarboxylase activity." [OMP:JCH]
-synonym: "decarboxylase negative" EXACT []
 is_a: OMP:0000219 ! decarboxylase test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
 
 [Term]
 id: OMP:0006079
-name: altered decarboxylase activity
-def: "A decarboxylase test phenotype where the decarboxylase or an organism is altered relative to a designated control." [OMP:JCH]
+name: altered decarboxylase test phenotype
+def: "A decarboxylase test phenotype where the phenotype of an organism on a decarboxylase test medium is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000219 ! decarboxylase test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
 
 [Term]
 id: OMP:0006080
-name: presence of decarboxylase activity
-def: "A decarboxylase activity phenotype where an organism exhibits decarboxylase activity." [OMP:JCH]
-synonym: "decarboxylase positive" EXACT []
+name: decarboxylase positive
+def: "A decarboxylase test phenotype where an organism exhibits decarboxylase activity." [OMP:JCH]
 is_a: OMP:0000219 ! decarboxylase test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
@@ -4317,42 +4314,40 @@ creation_date: 2014-07-15T19:59:58Z
 [Term]
 id: OMP:0006081
 name: increased decarboxylase activity
-def: "An altered decarboxylase activity phenotype where decarboxylase activity is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006079 ! altered decarboxylase activity
+def: "An altered decarboxylase test phenotype where decarboxylase activity is increased relative to a designated control." [OMP:JCH]
+is_a: OMP:0006079 ! altered decarboxylase test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
 
 [Term]
 id: OMP:0006082
 name: decreased decarboxylase activity
-def: "An altered decarboxylase activity phenotype where decarboxylase activity is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006079 ! altered decarboxylase activity
+def: "An altered decarboxylase test phenotype where decarboxylase activity is decreased relative to a designated control." [OMP:JCH]
+is_a: OMP:0006079 ! altered decarboxylase test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
 
 [Term]
 id: OMP:0006083
-name: altered oxidase activity
-def: "An oxidase activity phenotype altered relative to a designated control." [OMP:JCH]
+name: altered oxidase test phenotype
+def: "An oxidase test phenotype where the phenotype of an organism is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000220 ! oxidase test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
 
 [Term]
 id: OMP:0006084
-name: absence of oxidase activity
-def: "An oxidase activity phenotype where a cell or cells don't exhibit oxidase activity." [OMP:JCH]
+name: oxidase negative
+def: "An oxidase test phenotype where an organism doesn't exhibit oxidase activity." [OMP:JCH]
 synonym: "oxidase deficient" RELATED []
-synonym: "oxidase negative" EXACT []
 is_a: OMP:0000220 ! oxidase test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
 
 [Term]
 id: OMP:0006085
-name: presence of oxidase activity
-def: "An oxidase activity phenotype where a cell or cells exhibit oxidase activity." [OMP:JCH]
-synonym: "oxidase positive" EXACT []
+name: oxidase positive
+def: "An oxidase test phenotype where an organism exhibits oxidase activity." [OMP:JCH]
 is_a: OMP:0000220 ! oxidase test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
@@ -4360,42 +4355,40 @@ creation_date: 2014-07-15T20:06:25Z
 [Term]
 id: OMP:0006086
 name: increased oxidase activity
-def: "An altered oxidase activity phenotype where oxidase activity is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006083 ! altered oxidase activity
+def: "An altered oxidase test phenotype where oxidase activity is increased relative to a designated control." [OMP:JCH]
+is_a: OMP:0006083 ! altered oxidase test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
 
 [Term]
 id: OMP:0006087
 name: decreased oxidase activity
-def: "An altered oxidase activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
-is_a: OMP:0006083 ! altered oxidase activity
+def: "An altered oxidase test phenotype where oxidase activity is decreased relative to a designated control." [OMP:JCH]
+is_a: OMP:0006083 ! altered oxidase test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
 
 [Term]
 id: OMP:0006088
-name: altered urease activity
-def: "A urease activity phenotype altered relative to a designated control." [OMP:JCH]
+name: altered urease test phenotype
+def: "A urease test phenotype where urease activity is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000222 ! urease test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
 
 [Term]
 id: OMP:0006089
-name: presence of urease activity
-def: "A urease activity phenotype where a cell or cells exhibit urease activity." [OMP:JCH]
-synonym: "urease positive" EXACT []
+name: urease positive
+def: "A urease test phenotype where an organism exhibits urease activity." [OMP:JCH]
 is_a: OMP:0000222 ! urease test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
 
 [Term]
 id: OMP:0006090
-name: absence of urease activity
-def: "A urease activity phenotype where a cell or cells don't exhibit urease activity." [OMP:JCH]
+name: urease negative
+def: "A urease test phenotype where an organism doesn't exhibit urease activity." [OMP:JCH]
 synonym: "urease deficient" RELATED []
-synonym: "urease negative" EXACT []
 is_a: OMP:0000222 ! urease test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
@@ -4404,15 +4397,15 @@ creation_date: 2014-07-15T20:07:31Z
 id: OMP:0006091
 name: increased urease activity
 def: "An altered urease activity phenotype where urease activity is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006088 ! altered urease activity
+is_a: OMP:0006088 ! altered urease test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
 
 [Term]
 id: OMP:0006092
 name: decreased urease activity
-def: "An altered urease activity phenotype where there is a reduction in enzyme activity relative to a designated control." [OMP:JCH]
-is_a: OMP:0006088 ! altered urease activity
+def: "An altered urease activity phenotype where there urease activity is decreased relative to a designated control." [OMP:JCH]
+is_a: OMP:0006088 ! altered urease test phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
 
@@ -5817,7 +5810,7 @@ creation_date: 2014-07-10T21:50:33Z
 [Term]
 id: OMP:0007091
 name: decreased cell motility by gliding
-def: "A decreased cell motility phenotype where motility by gliding is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased cell motility phenotype where cell motility by gliding is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -5825,7 +5818,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007092
 name: decreased cell motility by swarming
-def: "A decreased cell motility phenotype where motility by swarming is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased cell motility phenotype where cell motility by swarming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -5833,7 +5826,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007093
 name: decreased cell motility by swimming
-def: "A decreased motility phenotype where motility by swimming is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased motility phenotype where cell motility by swimming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -5841,7 +5834,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007094
 name: decreased cell motility by twitching
-def: "A decreased cell motility phenotype where motility by twitching is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased cell motility phenotype where cell motility by twitching is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -5849,7 +5842,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007095
 name: increased cell motility by gliding
-def: "An increased cell motility phenotype where motility by gliding is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where cell motility by gliding is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -5857,7 +5850,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007096
 name: increased cell motility by swarming
-def: "An increased cell motility phenotype where motility by swarming is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where cell motility by swarming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -5865,7 +5858,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007097
 name: increased cell motility by swimming
-def: "An increased cell motility phenotype where motility by swimming is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where cell motility by swimming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -5873,7 +5866,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007098
 name: increased cell motility by twitching
-def: "An increased cell motility phenotype where motility by twitching is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where cell motility by twitching is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -6147,7 +6140,7 @@ creation_date: 2014-08-14T18:22:16Z
 [Term]
 id: OMP:0007130
 name: differential media phenotype
-def: "A microbial phenotype that describes the phenotype of an organism on a differential medium." [OMP:DAS]
+def: "A microbial phenotype related to the phenotype of an organism on a differential medium." [OMP:DAS]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-08-16T16:40:58Z
@@ -6155,7 +6148,7 @@ creation_date: 2014-08-16T16:40:58Z
 [Term]
 id: OMP:0007131
 name: altered differential media phenotype
-def: "A differential media phenotype where the appearance of an organism on differential media is altered relative to a designated control." [OMP:DAS]
+def: "A differential media phenotype where the appearance of an organism on a differential medium is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007130 ! differential media phenotype
 created_by: siegele
 creation_date: 2014-08-16T16:44:03Z
@@ -6217,6 +6210,15 @@ def: "A pH growth range phenotype where the range of pH where growth occurs is a
 is_a: OMP:0005008 ! pH growth range phenotype
 created_by: siegele
 creation_date: 2014-08-17T17:35:20Z
+
+[Term]
+id: OMP:0007139
+name: altered lantibiotic resistance phenotype
+def: "A lantibiotic resistance phenotype where resistance to one or more lantibiotics is altered relative to a designated control." [OMP:DAS]
+synonym: "lantibiotic sensitivity phenotype" RELATED []
+is_a: OMP:0006011 ! lantibiotic resistance phenotype
+created_by: siegele
+creation_date: 2014-08-17T18:03:16Z
 
 [Typedef]
 id: decreased_relative_to
