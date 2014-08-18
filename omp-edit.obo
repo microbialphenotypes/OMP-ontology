@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 18:08:2014 00:10
+date: 18:08:2014 10:50
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -2269,7 +2269,7 @@ id: OMP:0000334
 name: increased resistance to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance is increased relative to a designated control." [OMP:DAS]
 synonym: "decreased sensitivity to antifolates" RELATED []
-is_a: OMP:0006018 ! altered resistance to aminopyrimidine phenotype
+is_a: OMP:0006018 ! altered aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:38Z
 
@@ -2278,7 +2278,7 @@ id: OMP:0000335
 name: decreased resistance to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
 synonym: "increased sensitivity to aminopyrimidine" RELATED []
-is_a: OMP:0006018 ! altered resistance to aminopyrimidine phenotype
+is_a: OMP:0006018 ! altered aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:58Z
 
@@ -2389,7 +2389,7 @@ creation_date: 2013-05-23T01:53:57Z
 [Term]
 id: OMP:0000456
 name: caffeine resistance phenotype
-def: "An alkaloid resistance phenotype that concerns resistance to a trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7." [CHEBI:27732, OMP:WAM]
+def: "An alkaloid resistance phenotype that is related to resistance or sensitivity to a trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7." [CHEBI:27732, OMP:WAM]
 synonym: "caffeine sensitivity phenotype" RELATED []
 is_a: OMP:0000455 ! alkaloid resistance phenotype
 created_by: mchibucos
@@ -2519,7 +2519,7 @@ id: OMP:0005001
 name: altered caffeine resistance phenotype
 def: "A caffeine resistance phenotype that is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+is_a: OMP:0007137 ! altered alkaloid resistance phenotype
 created_by: wmeza
 creation_date: 2014-07-23T12:18:08Z
 
@@ -2728,8 +2728,9 @@ creation_date: 2013-09-20T15:00:09Z
 [Term]
 id: OMP:0005029
 name: altered tetracycline resistance phenotype
-def: "A tetracycline resistance phenotype where resistance is altered relative to a designated control." [OMP:WAM]
+def: "A tetracycline resistance phenotype where resistance to a tetracycline compound is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0006062 ! tetracycline resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: wmeza
 creation_date: 2014-07-23T17:05:20Z
 
@@ -2768,8 +2769,9 @@ creation_date: 2013-09-25T18:20:22Z
 [Term]
 id: OMP:0005034
 name: altered quinolone resistance phenotype
-def: "A quinolone resistance phenotype where resistance is altered relative to a designated control." [OMP:WAM]
+def: "A quinolone resistance phenotype where resistance to a quinolone compound is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0006029 ! quinolone resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: wmeza
 creation_date: 2014-07-23T17:13:45Z
 
@@ -3729,7 +3731,7 @@ creation_date: 2014-07-24T16:34:28Z
 [Term]
 id: OMP:0006017
 name: altered aminoglycoside resistance phenotype
-def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside is altered relative to a designated control." [OMP:JCH]
+def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
@@ -3737,33 +3739,37 @@ creation_date: 2014-07-24T17:04:53Z
 
 [Term]
 id: OMP:0006018
-name: altered resistance to aminopyrimidine phenotype
-def: "An aminopyrimidine resistance phenotype that is altered relative to a designated control." [OMP:JCh]
+name: altered aminopyrimidine resistance phenotype
+def: "An aminopyrimidine resistance phenotype where resistance to an aminopyrimidine compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:13:02Z
 
 [Term]
 id: OMP:0006019
 name: altered azole resistance phenotype
-def: "An azole resistance phenotype that is altered relative to a designated control." [OMp:JCH]
+def: "An azole resistance phenotype where resistance to an azole compound is altered relative to a designated control." [OMp:JCH]
 is_a: OMP:0006028 ! azole resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:20:23Z
 
 [Term]
 id: OMP:0006020
 name: altered bacteriocin resistance phenotype
-def: "A bacteriocin resistance phenotype that is altered relative to a designated control." [OMP:JCH]
+def: "A bacteriocin resistance phenotype where resistance to a bacteriocin is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:21:28Z
 
 [Term]
 id: OMP:0006021
 name: altered beta-lactam resistance phenotype
-def: "A beta-lactam resistance phenotype that is altered relative to a designated control." [OMP:JCH]
+def: "A beta-lactam resistance phenotype where resistance to a beta-lactam compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:26:03Z
 
@@ -3795,8 +3801,9 @@ creation_date: 2013-09-10T18:39:02Z
 [Term]
 id: OMP:0006025
 name: altered chloramphenicol resistance phenotype
-def: "A chloramphenicol resistance phenotype that is altered relative to a designated control." [OMP:JCH]
+def: "A chloramphenicol resistance phenotype where resistance to chloramphenicol is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:39:51Z
 
@@ -3858,16 +3865,18 @@ creation_date: 2013-09-10T17:54:07Z
 [Term]
 id: OMP:0006031
 name: altered macrolide resistance phenotype
-def: "A macrolide resistance phenotype that is altered relative to a designated control." [OMP:JCH]
+def: "A macrolide resistance phenotype where resistance to a macrolide compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:40:33Z
 
 [Term]
 id: OMP:0006032
-name: altered pteridine resistance
-def: "A pteridine resistance phenotype that is altered relative to a designated control." [OMP:JCH]
+name: altered pteridine resistance phenotype
+def: "A pteridine resistance phenotype where resistance to a pteridine compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007065 ! pteridine resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:42:30Z
 
@@ -4257,7 +4266,7 @@ name: increased resistance to pteridine
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is increased relative to a designated control." [CHEBI:27601, OMP:DAS]
 synonym: "abolish sensitivity to pteridine" RELATED []
 synonym: "decrease sensitivity to pteridine" RELATED []
-is_a: OMP:0006032 ! altered pteridine resistance
+is_a: OMP:0006032 ! altered pteridine resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-05-12T13:04:39Z
 
@@ -5099,7 +5108,7 @@ name: decreased resistance to pteridine
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is decreased relative to a designated control." [CHEBI:27601, OMP:DAS]
 synonym: "abolish resistance to pteridine" NARROW [CHEBI:73913]
 synonym: "increase sensitivity to pteridine" RELATED []
-is_a: OMP:0006032 ! altered pteridine resistance
+is_a: OMP:0006032 ! altered pteridine resistance phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:03:55Z
 
@@ -6189,15 +6198,15 @@ creation_date: 2014-08-17T13:19:30Z
 [Term]
 id: OMP:0007136
 name: resistant to alkaloid
-def: "An alkaloid resistance phenotype where a cell or cells are resistant to an alkaloid compound." [OMP:DAS]
+def: "An alkaloid resistance phenotype where an organism or cell is resistant to one or more alkaloid compounds." [OMP:DAS]
 is_a: OMP:0000455 ! alkaloid resistance phenotype
 created_by: siegele
 creation_date: 2014-08-17T13:19:30Z
 
 [Term]
 id: OMP:0007137
-name: altered resistance to alkaloid
-def: "An alkaloid resistance phenotype where resistance to an alkaloid is altered relative to a designated control." [OMP:DAS]
+name: altered alkaloid resistance phenotype
+def: "An alkaloid resistance phenotype where resistance to an alkaloid compound is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000455 ! alkaloid resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: siegele
@@ -6217,6 +6226,7 @@ name: altered lantibiotic resistance phenotype
 def: "A lantibiotic resistance phenotype where resistance to one or more lantibiotics is altered relative to a designated control." [OMP:DAS]
 synonym: "lantibiotic sensitivity phenotype" RELATED []
 is_a: OMP:0006011 ! lantibiotic resistance phenotype
+is_a: OMP:0006020 ! altered bacteriocin resistance phenotype
 created_by: siegele
 creation_date: 2014-08-17T18:03:16Z
 
