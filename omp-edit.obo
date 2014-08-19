@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 18:08:2014 18:05
+date: 19:08:2014 13:08
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2181,7 +2181,9 @@ creation_date: 2011-07-21T05:44:45Z
 id: OMP:0000307
 name: DNA replication phenotype
 def: "A macromolecular biosynthesis and genetic material phenotype dealing with the process involved in the duplication of a molecule of DNA." [OMP:WAM]
+is_a: OMP:0000290 ! genetic material phenotype
 is_a: OMP:0000306 ! macromolecular biosynthesis phenotype
+is_a: OMP:0005115 ! cell cycle phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:45:47Z
 
@@ -3402,8 +3404,9 @@ creation_date: 2014-07-07T13:50:45Z
 
 [Term]
 id: OMP:0005115
-name: cell division phenotype
-def: "A growth phenotype dealing with processes of cell division." [OMP:WAM]
+name: cell cycle phenotype
+def: "A growth phenotype that relates to the progression of biochemical and morpholoigical events that occur in a cell during cell replication or nuclear replication events.  Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in some cells or organisms DNA replication and/or nuclear division may not be immediately followed by cell division." [GO:0007049, OMP:WAM]
+xref: GO:0007049 "cell cycle"
 is_a: OMP:0000174 ! growth phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:54:52Z
@@ -3573,9 +3576,9 @@ creation_date: 2014-07-17T17:39:39Z
 
 [Term]
 id: OMP:0005136
-name: altered cell division.
-def: "A cell division phenotype where it is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005115 ! cell division phenotype
+name: altered cell cycle phenotype
+def: "A cell cycle phenotype where progression of the cell cycle is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005115 ! cell cycle phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:55:46Z
 
@@ -3583,7 +3586,7 @@ creation_date: 2014-08-07T14:55:46Z
 id: OMP:0005137
 name: increased cell division
 def: "An altered cell division phenotype where cell division is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0005136 ! altered cell division.
+is_a: OMP:0005136 ! altered cell cycle phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:57:39Z
 
@@ -3591,7 +3594,7 @@ creation_date: 2014-08-07T14:57:39Z
 id: OMP:0005138
 name: decreased cell division
 def: "A cell division phenotype where cell division is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0005136 ! altered cell division.
+is_a: OMP:0005136 ! altered cell cycle phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:58:34Z
 
@@ -6239,7 +6242,7 @@ id: OMP:0007140
 name: schizogeny phenotype
 def: "A multiple fission phenotype related to the process of schizogeny, where the nucleus of  the parent cell divides multiple times before the cytoplasm separates and each nucleus is encased in its own membrane to form an individual cell." [ISBN:9781593392925, OMP:DAS]
 xref: GO:0020014 "schizogeny"
-is_a: OMP:0007068 ! multiple fission phenotype
+is_a: OMP:0006173 ! presence of multiple fission
 created_by: siegele
 creation_date: 2014-08-18T17:02:12Z
 
