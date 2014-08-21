@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 19:08:2014 13:08
+date: 21:08:2014 00:01
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -80,7 +80,7 @@ creation_date: 2011-04-26T02:58:46Z
 
 [Term]
 id: OMP:0000010
-name: heterocyst forming
+name: presence of heterocysts
 def: "A heterocyst formation phenotype where a cell possesses the ability to differentiate into a heterocyst." [OMP:MCC]
 is_a: OMP:0000092 ! heterocyst formation phenotype
 created_by: mchibucos
@@ -2180,7 +2180,7 @@ creation_date: 2011-07-21T05:44:45Z
 [Term]
 id: OMP:0000307
 name: DNA replication phenotype
-def: "A macromolecular biosynthesis and genetic material phenotype dealing with the process involved in the duplication of a molecule of DNA." [OMP:WAM]
+def: "A macromolecular biosynthesis and genetic material phenotype related to the processes involved in the duplication of a molecule of DNA." [OMP:WAM]
 is_a: OMP:0000290 ! genetic material phenotype
 is_a: OMP:0000306 ! macromolecular biosynthesis phenotype
 is_a: OMP:0005115 ! cell cycle phenotype
@@ -2189,9 +2189,9 @@ creation_date: 2011-07-21T05:45:47Z
 
 [Term]
 id: OMP:0000308
-name: overinitiation of DNA replication
-def: "A DNA replication phenotype where there is an increased frequency of the initiation of DNA replication." [OMP:WAM]
-is_a: OMP:0000307 ! DNA replication phenotype
+name: over-initiation of DNA replication
+def: "A DNA replication phenotype where the frequency of initiating new rounds of DNA replication is increased relative to a designated control." [OMP:WAM]
+is_a: OMP:0007147 ! altered DNA replication phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:46:05Z
 
@@ -2779,25 +2779,25 @@ creation_date: 2014-07-23T17:13:45Z
 
 [Term]
 id: OMP:0005035
-name: quick stop DNA replication
-def: "A conditional phenotype where incorporation of dNTPs ceases at the same rate as inactivation of the gene product upon shift to a restrictive condition." [OMP:JHU, OMP:WAM]
-is_a: OMP:0000307 ! DNA replication phenotype
+name: quick-stop DNA replication
+def: "A conditional DNA replication phenotype where incorporation of dNTPs into DNA ceases at the same rate as inactivation or depletion of a required gene product upon shift to a restrictive condition." [OMP:JHU, OMP:WAM]
+is_a: OMP:0007147 ! altered DNA replication phenotype
 created_by: wmeza
 creation_date: 2013-10-15T17:51:12Z
 
 [Term]
 id: OMP:0005036
-name: slow stop DNA replication
-def: "A conditional phenotype where incorporation of dNTPs does not stop at the same rate as inactivation of the gene product upon shift to a restrictive condition. Incorporation of dNTPs stops only after completion of the rounds of replication that had initiated prior to the shift." [OMP:JHU, OMP:WAM]
-is_a: OMP:0000307 ! DNA replication phenotype
+name: slow-stop DNA replication
+def: "A conditional DNA replication phenotype where incorporation of dNTPs into DNA does not stop at the same rate as inactivation or depletion of a required gene product upon shift to a restrictive condition. Incorporation of dNTPs stops only after completion of any rounds of replication that had initiated prior to the shift." [OMP:JHU, OMP:WAM]
+is_a: OMP:0007147 ! altered DNA replication phenotype
 created_by: wmeza
 creation_date: 2013-10-15T17:51:40Z
 
 [Term]
 id: OMP:0005037
-name: independent origin of replication
-def: "A macromolecular biosynthesis and genetic material phenotype in which the site of initiation of replication differs from the Origin of Replication." [OMP:WAM]
-is_a: OMP:0000307 ! DNA replication phenotype
+name: origin-independent replication
+def: "A DNA replication phenotype in which replication of the chromosome(s) is independent of the origin of replication." [OMP:WAM]
+is_a: OMP:0007147 ! altered DNA replication phenotype
 created_by: wmeza
 creation_date: 2013-10-15T18:53:12Z
 
@@ -3405,7 +3405,8 @@ creation_date: 2014-07-07T13:50:45Z
 [Term]
 id: OMP:0005115
 name: cell cycle phenotype
-def: "A growth phenotype that relates to the progression of biochemical and morpholoigical events that occur in a cell during cell replication or nuclear replication events.  Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in some cells or organisms DNA replication and/or nuclear division may not be immediately followed by cell division." [GO:0007049, OMP:WAM]
+def: "A growth phenotype that relates to the progression of biochemical and morphological events that occur in a cell during cell replication or nuclear replication events.  Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in some cells or organisms DNA replication and/or nuclear division may not be immediately followed by cell division." [GO:0007049, OMP:WAM]
+synonym: "cell division cycle" RELATED []
 xref: GO:0007049 "cell cycle"
 is_a: OMP:0000174 ! growth phenotype
 created_by: wmeza
@@ -4490,6 +4491,7 @@ creation_date: 2014-08-15T19:12:43Z
 id: OMP:0006101
 name: abolished caffeine resistance
 def: "A caffeine resistance phenotype where resistance to caffeine is abolished." [OMP:JCH]
+is_a: OMP:0000458 ! not resistant to caffeine
 is_a: OMP:0000460 ! decreased caffeine resistance
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:40:57Z
@@ -4756,6 +4758,7 @@ creation_date: 2014-07-25T14:52:06Z
 id: OMP:0006137
 name: abolished resistance to aminoglycoside
 def: "A decreased resistance to aminoglycoside phenotype where resistance to an aminoglycoside is abolished." [OMP:JCH]
+is_a: OMP:0000458 ! not resistant to caffeine
 is_a: OMP:0006057 ! decreased resistance to aminoglycoside
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:54:43Z
@@ -4765,6 +4768,7 @@ id: OMP:0006138
 name: abolished resistance to aminopyrimidine
 def: "A decreased resistance to aminopyrimidines phenotype where resistance to aminopyrimidine compounds is abolished." [OMP:JCH]
 is_a: OMP:0000335 ! decreased resistance to aminopyrimidine
+is_a: OMP:0000436 ! not resistant to aminopyrimidine
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:59:06Z
 
@@ -4773,6 +4777,7 @@ id: OMP:0006139
 name: abolished resistance to azole
 def: "A decreased resistance to azole phenotype where resistance to azole is abolished." [OMP:JCH]
 is_a: OMP:0006052 ! decreased resistance to azole
+is_a: OMP:0006054 ! not resistant to azole
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:00:48Z
 
@@ -4996,7 +5001,8 @@ creation_date: 2014-08-08T15:51:18Z
 [Term]
 id: OMP:0006167
 name: abolished cell motility by swarming
-def: "A decreased cell motility by swarming phenotype where the ability of a cell or cells to swarm is abolished." [OMP:JCH]
+def: "A decreased cell motility by swarming phenotype where the ability of cells to swarm is abolished." [OMP:JCH]
+is_a: OMP:0000133 ! absence of cell motility
 is_a: OMP:0007092 ! decreased cell motility by swarming
 created_by: jonathanherrera
 creation_date: 2014-08-13T17:25:47Z
@@ -5080,6 +5086,7 @@ id: OMP:0007000
 name: abolished cell motility
 def: "A decreased cell motility phenotype where the ability of a cell or cells to be motile is abolished." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0000133 ! absence of cell motility
 created_by: siegele
 creation_date: 2014-06-29T14:10:40Z
 
@@ -6298,6 +6305,41 @@ is_a: OMP:0006174 ! altered multiple fission phenotype
 is_a: OMP:0007140 ! schizogeny phenotype
 created_by: siegele
 creation_date: 2014-08-18T17:24:18Z
+
+[Term]
+id: OMP:0007147
+name: altered DNA replication phenotype
+def: "A DNA replication phenotype in which the process of DNA replication is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000307 ! DNA replication phenotype
+is_a: OMP:0005136 ! altered cell cycle phenotype
+created_by: siegele
+creation_date: 2014-08-19T14:26:57Z
+
+[Term]
+id: OMP:0007148
+name: cytokinesis phenotype
+def: "A cell cycle phenotype related to the process in a proliferating cell or organism in which the cytoplasm and cell envelope are separation into two or more daughter cells." [OMP:DAS]
+xref: GO:0000910 "cytokinesis"
+is_a: OMP:0005115 ! cell cycle phenotype
+created_by: siegele
+creation_date: 2014-08-19T14:37:21Z
+
+[Term]
+id: OMP:0007149
+name: septation phenotype
+def: "A cytokinesis phenotype related to the process of forming a septum that separates daughter cells." [OMP:DAS]
+is_a: OMP:0007148 ! cytokinesis phenotype
+created_by: siegele
+creation_date: 2014-08-19T14:52:08Z
+
+[Term]
+id: OMP:0007150
+name: abolished cell motility by gliding
+def: "A decreased cell motility by gliding phenotype where the ability of a cell or cells to move by gliding motility is abolished." [OMP:DAS]
+is_a: OMP:0000133 ! absence of cell motility
+is_a: OMP:0007091 ! decreased cell motility by gliding
+created_by: siegele
+creation_date: 2014-08-20T23:57:11Z
 
 [Typedef]
 id: decreased_relative_to
