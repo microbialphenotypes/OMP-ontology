@@ -1,6 +1,6 @@
 format-version: 1.2
-date: 27:08:2014 22:57
-saved-by: siegele
+date: 28:08:2014 13:48
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
@@ -176,7 +176,7 @@ creation_date: 2011-04-26T03:10:51Z
 
 [Term]
 id: OMP:0000023
-name: periplasmic
+name: periplasmic flagellum/flagella
 def: "A flagellum distribution phenotype where the flagellum filament of an organism is located in the periplasm and does not extend past the cell envelope." [ISBN:9780073402406, OMP:DAS]
 synonym: "axial fibril" RELATED []
 synonym: "axial filament" NARROW []
@@ -629,7 +629,7 @@ creation_date: 2011-02-02T03:46:16Z
 
 [Term]
 id: OMP:0000082
-name: peritrichous
+name: peritrichous flagella
 def: "A flagellum distribution phenotype where an organism has multiple flagella dispersed across the cell surface." [ISBN:9780073402406, OMP:MCC]
 is_a: OMP:0000078 ! flagellum arrangement phenotype
 created_by: adrienne
@@ -6022,7 +6022,8 @@ creation_date: 2014-07-17T14:28:35Z
 id: OMP:0007115
 name: altered growth rate phenotype
 def: "A growth phenotype where the growth rate of a cell or cells is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0007156 ! growth rate phenotype
+is_a: OMP:0007157 ! altered growth phenotype
 created_by: siegele
 creation_date: 2014-07-17T16:29:34Z
 
@@ -6333,6 +6334,55 @@ def: "A colony pigmentation phenotype where the color of a colony or colonies is
 is_a: OMP:0000107 ! colony pigmentation phenotype
 created_by: siegele
 creation_date: 2014-08-27T22:56:03Z
+
+[Term]
+id: OMP:0007152
+name: persister cell phenotype
+def: "A growth phenotype related to persister cells, which are dormant variants of vegetatively growing cells that form stochastically in microbial populations. Persister cells are highly resistant to antibiotics." [OMP:DAS, PMID:20528688]
+is_a: OMP:0000174 ! growth phenotype
+created_by: siegele
+creation_date: 2014-08-28T11:55:19Z
+
+[Term]
+id: OMP:0007153
+name: altered persister cell phenotype
+def: "A persister cell phenotype where the character or frequency of persister cells in a microbial population is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007152 ! persister cell phenotype
+is_a: OMP:0007157 ! altered growth phenotype
+created_by: siegele
+creation_date: 2014-08-28T11:57:56Z
+
+[Term]
+id: OMP:0007154
+name: increased frequency of persister cells
+def: "An altered persister cell phenotype where the fraction of cells in a microbial population that are persister cells is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007153 ! altered persister cell phenotype
+created_by: siegele
+creation_date: 2014-08-28T11:59:20Z
+
+[Term]
+id: OMP:0007155
+name: decreased frequency of persister cells
+def: "An altered persister cell phenotype where the fraction of cells in a microbial population that are persister cells is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007153 ! altered persister cell phenotype
+created_by: siegele
+creation_date: 2014-08-28T12:00:42Z
+
+[Term]
+id: OMP:0007156
+name: growth rate phenotype
+def: "A growth phenotype concerning the rate at which the number of organisms or cells in a microbial population increases over time." [OMP:DAS]
+is_a: OMP:0000174 ! growth phenotype
+created_by: siegele
+creation_date: 2014-08-28T12:14:20Z
+
+[Term]
+id: OMP:0007157
+name: altered growth phenotype
+def: "A growth phenotype where some aspect of growth of a microbial cell, entity, organism, or population is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000174 ! growth phenotype
+created_by: siegele
+creation_date: 2014-08-28T12:15:47Z
 
 [Typedef]
 id: decreased_relative_to
