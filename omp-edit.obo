@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 21:08:2014 00:01
+date: 27:08:2014 22:57
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
@@ -802,7 +802,7 @@ creation_date: 2011-02-07T03:45:44Z
 [Term]
 id: OMP:0000102
 name: colony opacity phenotype
-def: "A colony morphology phenotype dealing with the degree to which light can pass through the colony." [OMP:WAM]
+def: "A colony morphology phenotype dealing with the degree to which light can pass through a colony." [OMP:WAM]
 is_a: OMP:0000108 ! colony optical phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:18:14Z
@@ -842,7 +842,7 @@ creation_date: 2011-02-02T02:42:37Z
 [Term]
 id: OMP:0000107
 name: colony pigmentation phenotype
-def: "A colony morphology phenotype dealing with pigmentation of the colony." [OMP:WAM]
+def: "A colony morphology phenotype related to the color of a colony or colonies." [OMP:WAM]
 is_a: OMP:0000108 ! colony optical phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:43:25Z
@@ -850,7 +850,7 @@ creation_date: 2011-02-02T02:43:25Z
 [Term]
 id: OMP:0000108
 name: colony optical phenotype
-def: "A colony morphology phenotype dealing with the interaction of light and the colony." [OMP:JCH]
+def: "A colony morphology phenotype dealing with the interaction of a colony or colonies and light." [OMP:JCH]
 is_a: OMP:0000100 ! colony morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:43:46Z
@@ -1670,7 +1670,7 @@ creation_date: 2011-03-02T02:16:33Z
 [Term]
 id: OMP:0000208
 name: absence of hemolysis
-def: "A hemolysis phenotype where hemolysis is not observed." [OMP:WAM]
+def: "A hemolysis phenotype where hemolysis is absent." [OMP:WAM]
 is_a: OMP:0000099 ! hemolysis phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:18:33Z
@@ -1679,7 +1679,7 @@ creation_date: 2011-06-07T03:18:33Z
 id: OMP:0000209
 name: fluorescent colony
 def: "A plating phenotype where the prominent morphological characteristic of the colony(ies) is that is fluorescence." [OMP:WAM]
-is_a: OMP:0000108 ! colony optical phenotype
+is_a: OMP:0000107 ! colony pigmentation phenotype
 is_a: OMP:0000255 ! plating  morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:20:31Z
@@ -1849,7 +1849,7 @@ creation_date: 2011-06-07T12:38:26Z
 id: OMP:0000232
 name: iridescent colony
 def: "A colony opacity phenotype characterized by varying colors being observed in reflected light." [OMP:WAM]
-is_a: OMP:0000102 ! colony opacity phenotype
+is_a: OMP:0000107 ! colony pigmentation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:39:13Z
 
@@ -2059,7 +2059,7 @@ creation_date: 2011-07-21T02:05:51Z
 [Term]
 id: OMP:0000274
 name: antimicrobial compound resistance phenotype
-def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds that kill (microbiocidal) or inhibit growth (microbiostatic) of a microbe." [OMP:MCC]
+def: "A microbial phenotype related to resistance or sensitivity to compounds that kill (microbiocidal) or inhibit growth (microbiostatic) of a microbe." [OMP:MCC]
 synonym: "antibiotic resistance phenotype" NARROW []
 synonym: "antibiotic sensitivity phenotype" RELATED []
 synonym: "antifungal resistance phenotype" NARROW []
@@ -2128,14 +2128,14 @@ creation_date: 2011-07-21T04:25:09Z
 [Term]
 id: OMP:0000294
 name: DNA supercoiling phenotype
-def: "A genetic material phenotype where the trait in question is supercoiling of a double-stranded DNA molecule." [OMP:DAS]
+def: "A genetic material phenotype related to supercoiling of a double-stranded DNA molecule." [OMP:DAS]
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:46:29Z
 
 [Term]
 id: OMP:0000295
-name: presence of negative DNA supercoiling
+name: presence of negative supercoiling
 def: "A DNA supercoiling phenotype where the DNA twists around its axis in the opposite direction from the clockwise turns of the right-handed double helix." [ISBN:9781613441138]
 synonym: "underwound DNA" RELATED []
 is_a: OMP:0000294 ! DNA supercoiling phenotype
@@ -2144,7 +2144,7 @@ creation_date: 2011-07-21T04:47:38Z
 
 [Term]
 id: OMP:0000296
-name: presence of positive DNA supercoiling
+name: presence of positive supercoiling
 def: "A DNA supercoiling phenotype where the DNA twists around its axis in the same direction as the clockwise turns of the right-handed double helix." [ISBN:9781613441138]
 synonym: "overwound DNA" RELATED []
 is_a: OMP:0000294 ! DNA supercoiling phenotype
@@ -2304,8 +2304,7 @@ creation_date: 2012-11-02T02:06:13Z
 [Term]
 id: OMP:0000435
 name: resistant to aminopyrimidine
-def: "An aminopyrimidine resistance phenotype where resistance to aminopyrimidines is observed." [OMP:DAS]
-synonym: "no sensitivity to aminopyrimidine" RELATED []
+def: "An aminopyrimidine resistance phenotype where an organism or cell is resistant to one or more aminopyrimidine compounds." [OMP:DAS]
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:01Z
@@ -2313,7 +2312,7 @@ creation_date: 2012-11-04T02:52:01Z
 [Term]
 id: OMP:0000436
 name: not resistant to aminopyrimidine
-def: "An aminopyrimidine resistance phenotype where resistance to aminopyrimidines is not observed." [OMP:DAS]
+def: "An aminopyrimidine resistance phenotype where an organism or cell is sensitive to one or more  aminopyrimidine compounds." [OMP:DAS]
 synonym: "sensitivity to aminopyrimidine" RELATED []
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 created_by: mchibucos
@@ -2400,8 +2399,7 @@ creation_date: 2013-05-23T01:54:51Z
 [Term]
 id: OMP:0000457
 name: resistant to caffeine
-def: "A caffeine resistance phenotype where resistance to caffeine is observed." [OMP:WAM]
-synonym: "Not sensitive to caffeine" RELATED []
+def: "A caffeine resistance phenotype where an organism or cell is resistant to caffeine." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:13Z
@@ -2409,8 +2407,8 @@ creation_date: 2013-05-23T01:55:13Z
 [Term]
 id: OMP:0000458
 name: not resistant to caffeine
-def: "A caffeine resistance phenotype where resistance to caffeine is not observed." [OMP:WAM]
-synonym: "sensitive to caffeine" RELATED []
+def: "A caffeine resistance phenotype where an organism or cell is sensitive to caffeine." [OMP:WAM]
+synonym: "caffeine sensitivity" RELATED []
 is_a: OMP:0000456 ! caffeine resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:55:34Z
@@ -2502,16 +2500,16 @@ creation_date: 2012-11-02T01:23:12Z
 
 [Term]
 id: OMP:0001001
-name: Increased negative DNA supercoiling
-def: "An altered DNA supercoiling phenotype where negative DNA supercoiling is increased relative to a designated control." [OMP:WAM]
+name: Increased negative supercoiling
+def: "An altered DNA supercoiling phenotype where negative supercoiling is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:07Z
 
 [Term]
 id: OMP:0001002
-name: decreased negative DNA supercoiling
-def: "An altered DNA supercoiling phenotype where negative DNA supercoiling is decreased relative to a designated control." [OMP:WAM]
+name: decreased negative supercoiling
+def: "An altered DNA supercoiling phenotype where negative supercoiling is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
@@ -3423,7 +3421,7 @@ creation_date: 2014-07-08T17:10:17Z
 [Term]
 id: OMP:0005117
 name: presence of hemolysis
-def: "A hemolysis phenotype where hemolysis is observed." [OMP:WAM]
+def: "A hemolysis phenotype where an organism or cell causes hemolysis." [OMP:WAM]
 is_a: OMP:0000099 ! hemolysis phenotype
 created_by: wmeza
 creation_date: 2014-07-08T17:55:17Z
@@ -3931,7 +3929,7 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006038
 name: not resistant to macrolide
-def: "A macrolide compound resistance phenotype where resistance to macrolide compounds is not observed." [OMP:JCH]
+def: "A macrolide compound resistance phenotype where an organism or cell is sensitive to one or more macrolide compounds." [OMP:JCH]
 synonym: "sensitivity to macrolide" RELATED []
 is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
@@ -3940,8 +3938,7 @@ creation_date: 2013-10-11T17:35:04Z
 [Term]
 id: OMP:0006039
 name: resistant to macrolide
-def: "A macrolide compound resistance phenotype where resistance to macrolide compounds is observed." [OMP:JCH]
-synonym: "no sensitivity to macrolide" RELATED []
+def: "A macrolide compound resistance phenotype where an organism or cell is resistant to one or more macrolide compounds." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -3968,7 +3965,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006042
 name: not resistant to quinolone
-def: "A quinoline compound resistance phenotype where resistance to quinolone compounds is not observed." [OMp:JCH]
+def: "A quinoline compound resistance phenotype where an organism or cell is sensitive to one or more quinolone compounds." [OMp:JCH]
 synonym: "sensitivity to quinolone" RELATED []
 is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
@@ -3977,8 +3974,7 @@ creation_date: 2013-10-11T17:38:00Z
 [Term]
 id: OMP:0006043
 name: resistant to quinolone
-def: "A quinoline compound resistance phenotype where resistance to quinolone compounds is observed." [OMP:JCH]
-synonym: "sensitivity to quinolone" RELATED []
+def: "A quinoline compound resistance phenotype where an organism or cell is resistant to one or more quinolone compounds." [OMP:JCH]
 is_a: OMP:0006029 ! quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
@@ -4004,8 +4000,8 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006046
 name: not resistant to beta-lactam
-def: "A beta-lactam compound resistance phenotype where resistance to beta-lactam compounds is not observed." [OMP:JCH]
-synonym: "sensitivity to beta-lactam" RELATED []
+def: "A beta-lactam compound resistance phenotype where an organism or cell is sensitive to one or more beta-lactam compounds." [OMP:JCH]
+synonym: "beta-lactam sensitivity" RELATED []
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4013,8 +4009,7 @@ creation_date: 2013-10-11T17:40:34Z
 [Term]
 id: OMP:0006047
 name: resistant to beta-lactam
-def: "An beta-lactam compound resistance phenotype where resistance to beta-lactam compounds is observed." [OMP:JCH]
-synonym: "no sensitivity to beta-lactam" RELATED []
+def: "An beta-lactam compound resistance phenotype where an organism or cell is resistant to one or more beta-lactam compounds." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4040,8 +4035,8 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006050
 name: not resistant to bacteriocin
-def: "A bacteriocin compound resistance phenotype where resistance to bacteriocins is not observed." [OMP:JCH]
-synonym: "sensitivity to a bacteriocin" RELATED []
+def: "A bacteriocin compound resistance phenotype where an organism or cell is sensitive to one or more bacteriocins." [OMP:JCH]
+synonym: "bacteriocin sensitivity" RELATED []
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -4049,8 +4044,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006051
 name: resistant to bacteriocin
-def: "A bacteriocin compound resistance phenotype where resistance to bacteriocins is observed." [OMP:JCH]
-synonym: "no sensitivity to bacteriocin" RELATED []
+def: "A bacteriocin compound resistance phenotype where an organism or cell is resistant to one or more bacteriocins." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -4076,8 +4070,8 @@ creation_date: 2013-10-11T17:45:44Z
 [Term]
 id: OMP:0006054
 name: not resistant to azole
-def: "An azole compound resistance phenotype where resistance to azoles is not observed." [OMP:DAS]
-synonym: "sensitivity to azole" RELATED []
+def: "An azole compound resistance phenotype where an organism or cell is sensitive to one or more azole compounds." [OMP:DAS]
+synonym: "azole sensitivity" RELATED []
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
@@ -4085,8 +4079,7 @@ creation_date: 2013-10-11T17:45:44Z
 [Term]
 id: OMP:0006055
 name: resistant to azole
-def: "An azole compound resistance phenotype where resistance to azoles is observed." [OMP:DAS]
-synonym: "No sensitivity to azole" RELATED []
+def: "An azole compound resistance phenotype where an organism or cell is resistant to one or more azole compounds." [OMP:DAS]
 is_a: OMP:0006028 ! azole resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
@@ -4126,9 +4119,8 @@ creation_date: 2013-10-22T19:24:20Z
 [Term]
 id: OMP:0006059
 name: not resistant to aminoglycoside
-def: "An aminoglycoside resistance phenotype where resistance to aminoglycosides is not observed." [OMP:JCH]
-synonym: "<new synonym>" RELATED []
-synonym: "sensitivity to aminoglycosdie " RELATED []
+def: "An aminoglycoside resistance phenotype where an organism or cell is sensitive to one or more aminoglycosides." [OMP:JCH]
+synonym: "aminoglycoside sensitivity" RELATED []
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
@@ -4136,8 +4128,7 @@ creation_date: 2013-10-22T19:24:20Z
 [Term]
 id: OMP:0006060
 name: resistant to aminoglycoside
-def: "An aminoglycoside resistance phenotype where resistance to aminoglycosides is observed." [OMP:JCH]
-synonym: "no sensitivity to aminoglycoside" RELATED []
+def: "An aminoglycoside resistance phenotype where an organism or cell is resistant to one or more aminoglycoside compounds." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
@@ -4176,9 +4167,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006064
 name: not resistant to tetracycline
-def: "A tetracycline compound resistance phenotype where resistance to tetracycline compounds is not observed." [OMP:JCH]
-synonym: "chlortetracycline" NARROW [OMP:JCH]
-synonym: "oxytetracycline " NARROW [OMP:JCH]
+def: "A tetracycline compound resistance phenotype where an organism or cell is sensitive to one or more tetracyclines." [OMP:JCH]
 synonym: "sensitivity to tetracycline" RELATED []
 is_a: OMP:0006062 ! tetracycline resistance phenotype
 created_by: jonathanherrera
@@ -4187,8 +4176,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006065
 name: resistant to tetracycline
-def: "A tetracycline compound resistance phenotype where resistance to tetracycline compounds is observed." [OMP:JCH]
-synonym: "no sensitivity to tetracycline" RELATED []
+def: "A tetracycline compound resistance phenotype where an organism or cell is resistant to one or more tetracycline compounds." [OMP:JCH]
 is_a: OMP:0006062 ! tetracycline resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
@@ -4224,8 +4212,8 @@ creation_date: 2013-10-24T19:41:11Z
 [Term]
 id: OMP:0006069
 name: not resistant to chloramphenicol
-def: "A chloramphenicol compound resistance phenotype where resistance to chloramphenicol compounds is not observed." [OMP:JCH]
-synonym: "sensitivity to chloramphenicol" RELATED []
+def: "A chloramphenicol compound resistance phenotype where an organism or cell is sensitive to chloramphenicol." [OMP:JCH]
+synonym: "chloramphenicol sensitivity" RELATED []
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
@@ -4233,8 +4221,7 @@ creation_date: 2013-10-24T19:41:11Z
 [Term]
 id: OMP:0006070
 name: resistant to chloramphenicol
-def: "A chloramphenicol compound resistance phenotype where resistance to chloramphenicol compounds is observed." [OMP:JCH]
-synonym: "no sensitivity to chloramphenicol" RELATED []
+def: "A chloramphenicol compound resistance phenotype where an organism or cell is resistant to chloramphenicol." [OMP:JCH]
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
@@ -4250,8 +4237,8 @@ creation_date: 2014-07-24T18:18:59Z
 [Term]
 id: OMP:0006072
 name: not resistant to lantibiotic
-def: "A lantibiotic resistance phenotype where resistance to lantibiotic compounds are not observed." [OMP:WAM]
-synonym: "sensitivity to lantibiotic" RELATED []
+def: "A lantibiotic resistance phenotype where an organism or cell is sensitive to one or more lantibiotics." [OMP:WAM]
+synonym: "sensitive to lantibiotic" RELATED []
 is_a: OMP:0006011 ! lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
@@ -4259,8 +4246,7 @@ creation_date: 2014-04-30T22:48:59Z
 [Term]
 id: OMP:0006073
 name: resistant to lantibiotic
-def: "A lantibiotic resistance phenotype where resistance to lantibiotic compounds are observed." [OMP:WAM]
-synonym: "not sensitive to lantibiotic" RELATED []
+def: "A lantibiotic resistance phenotype where an organism or cell is resistant to one or more lantibiotic compounds." [OMP:WAM]
 is_a: OMP:0006011 ! lantibiotic resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-04-30T22:48:59Z
@@ -4278,7 +4264,7 @@ creation_date: 2014-05-12T13:04:39Z
 [Term]
 id: OMP:0006075
 name: not resistant to pteridine
-def: "A pteridine compound resistance phenotype where resistance to pteridine compounds is not observed." [CHEBI:27601, OMP:JCH]
+def: "A pteridine compound resistance phenotype where an organism or cell is sensitive to one or more pteridine compounds." [CHEBI:27601, OMP:JCH]
 synonym: "sensitivity to pteridine" RELATED []
 is_a: OMP:0007065 ! pteridine resistance phenotype
 created_by: jonathanherrera
@@ -4287,8 +4273,7 @@ creation_date: 2014-05-12T13:04:40Z
 [Term]
 id: OMP:0006076
 name: resistant to pteridine
-def: "A pteridine compound resistance phenotype where resistance to pteridine compounds is observed." [CHEBI:27601, OMP:JCH]
-synonym: "no sensitivity to pteridine" RELATED []
+def: "A pteridine compound resistance phenotype where an organism or cell is resistant to one or more pteridine compounds." [CHEBI:27601, OMP:JCH]
 is_a: OMP:0007065 ! pteridine resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-05-12T13:04:40Z
@@ -4669,7 +4654,7 @@ creation_date: 2014-07-25T14:07:02Z
 [Term]
 id: OMP:0006126
 name: altered DNA supercoiling phenotype
-def: "A DNA supercoiling phenotype where DNA supercoiling is altered relative to a designated control." [OMP:JCH]
+def: "A DNA supercoiling phenotype where supercoiling is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:11:37Z
@@ -4678,7 +4663,7 @@ creation_date: 2014-07-25T14:11:37Z
 id: OMP:0006127
 name: abolished negative DNA supercoiling
 def: "A decrease negative DNA supercoiling phenotype where the ability to form negative supercoils in DNA is abolished." [OMP:JCH]
-is_a: OMP:0001002 ! decreased negative DNA supercoiling
+is_a: OMP:0001002 ! decreased negative supercoiling
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:16:09Z
 
@@ -4686,22 +4671,22 @@ creation_date: 2014-07-25T14:16:09Z
 id: OMP:0006128
 name: abolished positive DNA supercoiling
 def: "A decreased positive DNA supercoiling phenotype where the ability to form positive supercoils in DNA is abolished." [OMP:JCH]
-is_a: OMP:0007002 ! decreased positive DNA supercoiling
+is_a: OMP:0007002 ! decreased positive supercoiling
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:16:27Z
 
 [Term]
 id: OMP:0006129
-name: absence of negative DNA supercoiling
-def: "A DNA supercoiling phenotype where negative DNA supercoiling is not seen or observed." [OMP:JCH]
+name: absence of negative supercoiling
+def: "A DNA supercoiling phenotype where negative supercoiling is absent." [OMP:JCH]
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:32:08Z
 
 [Term]
 id: OMP:0006130
-name: absence of positive DNA supercoiling
-def: "A DNA supercoiling phenotype where positive DNA supercoiling is not seen or observed." [OMP:JCH]
+name: absence of positive supercoiling
+def: "A DNA supercoiling phenotype where positive supercoiling is absent." [OMP:JCH]
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:32:42Z
@@ -5101,16 +5086,16 @@ creation_date: 2014-04-24T17:38:06Z
 
 [Term]
 id: OMP:0007002
-name: decreased positive DNA supercoiling
-def: "An altered DNA supercoiling phenotype where positive DNA supercoiling is decreased relative to a designated control." [OMP:WAM]
+name: decreased positive supercoiling
+def: "An altered DNA supercoiling phenotype where positive supercoiling is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:08:29Z
 
 [Term]
 id: OMP:0007003
-name: increased positive DNA supercoiling
-def: "An altered DNA supercoiling phenotype where positive DNA supercoiling is increased relative to a designated control." [OMP:WAM]
+name: increased positive supercoiling
+def: "An altered DNA supercoiling phenotype where positive supercoiling is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006126 ! altered DNA supercoiling phenotype
 created_by: siegele
 creation_date: 2013-09-05T16:09:28Z
@@ -6340,6 +6325,14 @@ is_a: OMP:0000133 ! absence of cell motility
 is_a: OMP:0007091 ! decreased cell motility by gliding
 created_by: siegele
 creation_date: 2014-08-20T23:57:11Z
+
+[Term]
+id: OMP:0007151
+name: altered colony pigmentation
+def: "A colony pigmentation phenotype where the color of a colony or colonies is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000107 ! colony pigmentation phenotype
+created_by: siegele
+creation_date: 2014-08-27T22:56:03Z
 
 [Typedef]
 id: decreased_relative_to
