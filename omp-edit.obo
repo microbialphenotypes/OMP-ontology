@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 28:08:2014 13:48
-saved-by: dsiegele
-auto-generated-by: OBO-Edit 2.3.1
+date: 28:08:2014 17:05
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -2662,14 +2662,6 @@ created_by: wmeza
 creation_date: 2013-09-19T13:39:34Z
 
 [Term]
-id: OMP:0005019
-name: independent observations
-def: "A SOS response where the trait in question is the activation of the SOS mechanism." [OMP:WAM]
-is_obsolete: true
-created_by: wmeza
-creation_date: 2013-09-19T13:40:06Z
-
-[Term]
 id: OMP:0005020
 name: increased basal expression of the SOS response
 def: "An altered basal expression of the SOS response phenotype where basal expression of one or more genes in the SOS response is increased relative to a designated control." [OMP:WAM]
@@ -3135,7 +3127,8 @@ creation_date: 2013-11-18T11:42:37Z
 [Term]
 id: OMP:0005081
 name: radiation stress phenotype
-def: "A stress response phenotype dealing response to energy in the form of electromagnetic waves at varies wavelengths." [OMP:WAM]
+def: "A stress response phenotype related to resistance or sensitivity to energy in the form of electromagnetic waves at various wavelengths." [OMP:WAM]
+synonym: "radiation resistance" RELATED []
 is_a: OMP:0000173 ! stress response phenotype
 created_by: wmeza
 creation_date: 2013-11-18T11:50:57Z
@@ -3150,7 +3143,7 @@ creation_date: 2013-11-18T12:22:55Z
 
 [Term]
 id: OMP:0005083
-name: ionizing radiation
+name: ionizing radiation phenotype
 def: "A radiation stress phenotype dealing with short wavelength, highly energetic radiation." [ISBN:9780471387350, OMP:WAM]
 is_a: OMP:0005081 ! radiation stress phenotype
 created_by: wmeza
@@ -3166,17 +3159,17 @@ creation_date: 2013-11-22T15:56:27Z
 
 [Term]
 id: OMP:0005085
-name: gamma ray radiation
-def: "A ionizing radiation stress phenotype dealing with the exposure to gamma radiation." [OMP:WAM]
-is_a: OMP:0005083 ! ionizing radiation
+name: gamma ray radiation resistance phenotype
+def: "An ionizing radiation stress phenotype related to resistance or sensitivity to gamma radiation." [OMP:WAM]
+is_a: OMP:0005083 ! ionizing radiation phenotype
 created_by: wmeza
 creation_date: 2013-11-22T16:04:42Z
 
 [Term]
 id: OMP:0005086
-name: x-ray radiation
-def: "A ionizing radiation stress phenotype dealing with exposure to x-ray radiation." [OMP:WAM]
-is_a: OMP:0005083 ! ionizing radiation
+name: x-ray radiation resistance phenotype
+def: "An ionizing radiation stress phenotype related to resistance or sensitivity of a cell (or cells) or organism to x-ray radiation." [OMP:WAM]
+is_a: OMP:0005083 ! ionizing radiation phenotype
 created_by: wmeza
 creation_date: 2013-11-22T16:05:02Z
 
@@ -3236,18 +3229,18 @@ creation_date: 2013-12-06T17:59:14Z
 [Term]
 id: OMP:0005093
 name: increased resistance to gamma ray radiation
-def: "An altered gamma radiation phenotype where resistance is increased relative a designated control." [OMP:WAM]
+def: "An altered gamma ray radiation resistance phenotype where resistance is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased gamma ray sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005123 ! altered gamma ray radiation
+is_a: OMP:0005123 ! altered gamma ray radiation resistance
 created_by: wmeza
 creation_date: 2013-12-17T13:05:40Z
 
 [Term]
 id: OMP:0005094
 name: decreased resistance to gamma ray radiation
-def: "An altered gamma radiation phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
+def: "A decreased gamma ray radiation phenotype where resistance to gamma rays is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased gamma ray sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005123 ! altered gamma ray radiation
+is_a: OMP:0005123 ! altered gamma ray radiation resistance
 created_by: wmeza
 creation_date: 2013-12-17T13:06:05Z
 
@@ -3256,7 +3249,7 @@ id: OMP:0005095
 name: increased resistance to x-ray radiation
 def: "An altered x-ray radiation phenotype were resistance is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased x-ray sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005124 ! altered x-ray radiation
+is_a: OMP:0005124 ! altered x-ray radiation resistance phenotype
 created_by: wmeza
 creation_date: 2013-12-17T13:26:43Z
 
@@ -3265,7 +3258,7 @@ id: OMP:0005096
 name: decreased resistance to x-ray radiation
 def: "An altered x-ray radiation phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased x-ray sensitivity " NARROW [OMP:WAM]
-is_a: OMP:0005124 ! altered x-ray radiation
+is_a: OMP:0005124 ! altered x-ray radiation resistance phenotype
 created_by: wmeza
 creation_date: 2013-12-17T13:28:20Z
 
@@ -3331,7 +3324,6 @@ creation_date: 2014-04-17T10:55:05Z
 id: OMP:0005104
 name: abolished resistance to dessication stress
 def: "A decreased resistance to dessication stress phenotype where resistance to dessication stress is abolished." [OMP:WAM]
-synonym: "abolished dessication sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005088 ! decreased resistance to dessication stress
 created_by: wmeza
 creation_date: 2014-07-17T13:11:33Z
@@ -3430,7 +3422,9 @@ creation_date: 2014-07-08T17:55:17Z
 id: OMP:0005118
 name: altered acidic pH stress phenotype
 def: "A acidic pH stress phenotype altered relative to a designated control." [OMP:WAM]
+synonym: "acid pH stress" RELATED []
 is_a: OMP:0005040 ! acidic pH stress phenotype
+is_a: OMP:0007158 ! altered stress response phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:55:53Z
 
@@ -3439,6 +3433,7 @@ id: OMP:0005119
 name: altered alkaline pH stress phenotype
 def: "An alkaline pH stress phenotype altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005041 ! alkaline pH stress phenotype
+is_a: OMP:0007158 ! altered stress response phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:58:56Z
 
@@ -3447,6 +3442,7 @@ id: OMP:0005120
 name: altered dessication stress phenotype
 def: "A dessication stress phenotype altered relative to designated control." [OMP:WAM]
 is_a: OMP:0005080 ! dessication stress phenotype
+is_a: OMP:0007158 ! altered stress response phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:59:47Z
 
@@ -3455,6 +3451,7 @@ id: OMP:0005121
 name: altered freeze/thawing stress phenotype
 def: "A freeze/thawing stress phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005039 ! freeze/thawing stress phenotype
+is_a: OMP:0007158 ! altered stress response phenotype
 created_by: wmeza
 creation_date: 2014-07-11T13:00:23Z
 
@@ -3468,17 +3465,17 @@ creation_date: 2014-07-11T13:03:36Z
 
 [Term]
 id: OMP:0005123
-name: altered gamma ray radiation
-def: "A gamma ray radiation phenotype altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005085 ! gamma ray radiation
+name: altered gamma ray radiation resistance
+def: "A gamma ray radiation resistance phenotype where resistance of a cell or organism to gamma rays is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005085 ! gamma ray radiation resistance phenotype
 created_by: wmeza
 creation_date: 2014-07-11T13:16:15Z
 
 [Term]
 id: OMP:0005124
-name: altered x-ray radiation
-def: "A x-ray radiation phenotype altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005086 ! x-ray radiation
+name: altered x-ray radiation resistance phenotype
+def: "An x-ray radiation phenotype where resistance or sensitivity to x-rays is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005086 ! x-ray radiation resistance phenotype
 created_by: wmeza
 creation_date: 2014-07-11T13:16:47Z
 
@@ -3502,7 +3499,6 @@ creation_date: 2014-07-11T13:57:22Z
 id: OMP:0005127
 name: abolished resistance to acidic pH stress
 def: "A decreased resistance to acidic pH stress phenotype where resistance to acidic pH is abolished." [OMP:WAM]
-synonym: "abolished acidic pH sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005077 ! decreased resistance to acidic pH stress
 created_by: wmeza
 creation_date: 2014-07-15T16:46:17Z
@@ -3543,7 +3539,6 @@ creation_date: 2014-07-17T14:18:37Z
 id: OMP:0005132
 name: abolished resistance to gamma ray radiation
 def: "A decreased resistance to gamma ray radiation phenotype where resistance to gamma ray radiation is abolished." [OMP:WAM]
-synonym: "abolished gamma ray sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005094 ! decreased resistance to gamma ray radiation
 created_by: wmeza
 creation_date: 2014-07-17T14:23:39Z
@@ -3552,7 +3547,6 @@ creation_date: 2014-07-17T14:23:39Z
 id: OMP:0005133
 name: abolished resistance to x-ray radiation
 def: "A decreased x-ray radiation resistance phenotype where resistance to x-ray radiation is abolished." [OMP:WAM]
-synonym: "abolished x-ray sensitivity" RELATED [OMP:WAM]
 is_a: OMP:0005096 ! decreased resistance to x-ray radiation
 created_by: wmeza
 creation_date: 2014-07-17T14:28:44Z
@@ -6381,8 +6375,26 @@ id: OMP:0007157
 name: altered growth phenotype
 def: "A growth phenotype where some aspect of growth of a microbial cell, entity, organism, or population is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0007085 ! altered phenotype
 created_by: siegele
 creation_date: 2014-08-28T12:15:47Z
+
+[Term]
+id: OMP:0007158
+name: altered stress response phenotype
+def: "A stress response phenotype where the response of a cell or organism to a stress is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000173 ! stress response phenotype
+is_a: OMP:0007085 ! altered phenotype
+created_by: siegele
+creation_date: 2014-08-28T16:51:03Z
+
+[Term]
+id: OMP:0007159
+name: altered radiation resistance phenotype
+is_a: OMP:0005081 ! radiation stress phenotype
+is_a: OMP:0007158 ! altered stress response phenotype
+created_by: siegele
+creation_date: 2014-08-28T17:03:47Z
 
 [Typedef]
 id: decreased_relative_to
