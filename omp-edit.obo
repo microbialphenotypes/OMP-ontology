@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 28:08:2014 17:05
+date: 29:08:2014 12:29
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
@@ -3516,6 +3516,7 @@ id: OMP:0005129
 name: altered biofilm phenotype
 def: "A biofilm phenotype that is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0000176 ! biofilm phenotype
+is_a: OMP:0007085 ! altered phenotype
 created_by: wmeza
 creation_date: 2014-07-16T12:36:13Z
 
@@ -6395,6 +6396,15 @@ is_a: OMP:0005081 ! radiation stress phenotype
 is_a: OMP:0007158 ! altered stress response phenotype
 created_by: siegele
 creation_date: 2014-08-28T17:03:47Z
+
+[Term]
+id: OMP:0007160
+name: altered colony morphology phenotype
+def: "A colony morphology phenotype where the morphology of a colony or colonies is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000100 ! colony morphology phenotype
+is_a: OMP:0007085 ! altered phenotype
+created_by: siegele
+creation_date: 2014-08-29T12:27:50Z
 
 [Typedef]
 id: decreased_relative_to
