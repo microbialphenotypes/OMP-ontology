@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 29:08:2014 12:29
+date: 14:09:2014 15:02
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -33,6 +33,7 @@ creation_date: 2011-03-10T07:02:42Z
 id: OMP:0000003
 name: cell arrangement phenotype
 def: "A microbial phenotype where the trait in question is the arrangement of cells in relation to one another." [OMP:MCC]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-04-14T02:30:07Z
@@ -532,6 +533,7 @@ creation_date: 2011-02-07T03:47:50Z
 id: OMP:0000070
 name: cell development phenotype
 def: "A microbial phenotype, where the trait in question is the progression of a cell from an initial condition to a later condition." [OMP:MCC]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:11:48Z
@@ -540,6 +542,7 @@ creation_date: 2011-02-02T03:11:48Z
 id: OMP:0000071
 name: cell morphology phenotype
 def: "A microbial phenotype, where the trait in question is the form and structure of the cell." [OMP:MCC]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:15:16Z
@@ -1387,6 +1390,7 @@ creation_date: 2011-06-06T04:16:08Z
 id: OMP:0000173
 name: stress response phenotype
 def: "A microbial phenotype related to a cell or organism's response to environmental stress." [OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:32Z
@@ -1395,6 +1399,7 @@ creation_date: 2011-02-02T03:13:32Z
 id: OMP:0000174
 name: growth phenotype
 def: "A microbial phenotype dealing with the environmental factors and requirements for microbial growth." [OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:59Z
@@ -1445,6 +1450,7 @@ creation_date: 2011-02-02T03:22:43Z
 id: OMP:0000180
 name: metabolic phenotype
 def: "A microbial phenotype that deals with the chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances." [GO:0008152]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "Metabolism" EXACT []
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
@@ -1660,6 +1666,7 @@ creation_date: 2011-06-07T03:17:46Z
 id: OMP:0000207
 name: serotype phenotype
 def: "A microbial phenotype that is distinguished by the presence a specific surface antigen." [OMP:MCC]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "antigenic typing phenotype" RELATED []
 synonym: "serological test phenotype" RELATED []
 synonym: "serovar" EXACT []
@@ -1721,6 +1728,7 @@ creation_date: 2011-06-07T09:53:17Z
 id: OMP:0000214
 name: cell staining phenotype
 def: "A microbial phenotype where a cell or cells are treated with a dye or dyes for purposes of identification and classification." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T01:33:37Z
@@ -1992,6 +2000,7 @@ creation_date: 2011-07-21T12:51:15Z
 id: OMP:0000253
 name: gene expression phenotype
 def: "A microbial phenotype that affects expression of a gene or genes.  Gene expression includes transcription, RNA processing, and, for protein-coding genes, translation and protein maturation." [ISBN:9781615835409, OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 xref: FYPO:0000142 "gene expression phenotype"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
@@ -2052,6 +2061,7 @@ creation_date: 2011-07-21T02:02:26Z
 id: OMP:0000269
 name: protein activity phenotype
 def: "A microbial phenotype dealing with enzymatic or other type of protein activity." [OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:05:51Z
@@ -2060,6 +2070,7 @@ creation_date: 2011-07-21T02:05:51Z
 id: OMP:0000274
 name: antimicrobial compound resistance phenotype
 def: "A microbial phenotype related to resistance or sensitivity to compounds that kill (microbiocidal) or inhibit growth (microbiostatic) of a microbe." [OMP:MCC]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "antibiotic resistance phenotype" NARROW []
 synonym: "antibiotic sensitivity phenotype" RELATED []
 synonym: "antifungal resistance phenotype" NARROW []
@@ -2109,6 +2120,7 @@ creation_date: 2011-07-21T04:07:44Z
 id: OMP:0000290
 name: genetic material phenotype
 def: "A microbial phenotype dealing with the various aspects of the molecular carrier of an organism's primary genetic information." [ISBN:9780198529170, OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "double stranded DNA" RELATED [ISBN:9780198529170]
 synonym: "RNA" RELATED [ISBN:9780198529170]
 synonym: "single stranded DNA" RELATED [ISBN:9780198529170]
@@ -2224,6 +2236,7 @@ creation_date: 2011-07-21T05:50:25Z
 id: OMP:0000312
 name: locomotion phenotype
 def: "A microbial phenotype, where the trait in question is the self-propelled movement of a cell from one location to another." [GO:0040011, OMP:MCC]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2012-04-05T11:43:53Z
@@ -3406,6 +3419,7 @@ creation_date: 2014-08-07T14:54:52Z
 id: OMP:0005116
 name: multicellular phenotype
 def: "A microbial phenotype involving two or more cells of the same or different species." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: wmeza
 creation_date: 2014-07-08T17:10:17Z
@@ -3774,7 +3788,7 @@ creation_date: 2014-07-24T17:26:03Z
 id: OMP:0006022
 name: nutrient utilization phenotype
 def: "A microbial phenotype involving the utilization of a nutrient, which is a substance used for biosynthesis or energy release." [ISBN:9780073402406]
-comment: A nutrient by used as is, catabolized, or modified before being used.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:40:06Z
@@ -5117,6 +5131,7 @@ creation_date: 2014-08-07T18:35:51Z
 id: OMP:0007006
 name: cell population phenotype
 def: "A microbial phenotype observation at the level of a population of cells belonging to the same species." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 xref: CMPO:0000002 "cell phenotype"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
@@ -5605,6 +5620,7 @@ creation_date: 2014-02-03T15:39:56Z
 id: OMP:0007066
 name: asexual reproduction phenotype
 def: "A microbial phenotype related to asexual reproduction, the biological process in which new individuals are produced by either a single cell or by a group of cells in the absence of any sexual process." [ISBN:0673521435, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 xref: GO:0019954 "asexual reproduction"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
@@ -5765,6 +5781,7 @@ creation_date: 2014-07-06T14:43:59Z
 id: OMP:0007085
 name: altered phenotype
 def: "A microbial phenotype that is altered in some way relative to a designated control." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-07-10T12:28:36Z
@@ -6145,6 +6162,7 @@ creation_date: 2014-08-14T18:22:16Z
 id: OMP:0007130
 name: differential test phenotype
 def: "A microbial phenotype related to the presence or absence of a biochemical activity in a test used to differentiate and identify microorganisms." [ISBN:9780895828309, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-08-16T16:40:58Z
@@ -6405,6 +6423,47 @@ is_a: OMP:0000100 ! colony morphology phenotype
 is_a: OMP:0007085 ! altered phenotype
 created_by: siegele
 creation_date: 2014-08-29T12:27:50Z
+
+[Term]
+id: OMP:0007161
+name: regulation phenotype
+def: "A microbial phenotype that affects the regulation of a molecular function, biological process, or biological quality." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+xref: FYPO:0000145 "regulation phenotype"
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2014-09-14T14:45:03Z
+
+[Term]
+id: OMP:0007162
+name: gene expression regulation phenotype
+def: "A regulation phenotype that affects the regulation of gene expression. Regulation can occur at the level transcription, translation, or turnover." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+xref: FYPO:0000288 "gene expression regulation phenotype"
+is_a: OMP:0007161 ! regulation phenotype
+created_by: siegele
+creation_date: 2014-09-14T14:47:50Z
+
+[Term]
+id: OMP:0007163
+name: transcription regulation phenotype
+def: "A gene expression phenotype that affects the regulation of DNA-dependent or RNA-dependent transcription." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+xref: FYPO:0000143 "transcription regulation phenotype"
+is_a: OMP:0007162 ! gene expression regulation phenotype
+created_by: siegele
+creation_date: 2014-09-14T14:52:31Z
+
+[Term]
+id: OMP:0007164
+name: translation regulation phenotype
+def: "A gene expression regulation phenotype that affects the regulation of translation." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+synonym: "protein synthesis regulation" EXACT []
+xref: FYPO:0000289 "translation regulation phenotype"
+is_a: OMP:0007162 ! gene expression regulation phenotype
+created_by: siegele
+creation_date: 2014-09-14T14:54:10Z
 
 [Typedef]
 id: decreased_relative_to
