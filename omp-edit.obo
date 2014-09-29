@@ -1,7 +1,7 @@
 format-version: 1.2
-date: 14:09:2014 15:02
+date: 29:09:2014 12:53
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
 remark: Now on SourceForge, version 1.0.5
 ontology: omp
@@ -1398,8 +1398,9 @@ creation_date: 2011-02-02T03:13:32Z
 [Term]
 id: OMP:0000174
 name: growth phenotype
-def: "A microbial phenotype dealing with the environmental factors and requirements for microbial growth." [OMP:WAM]
+def: "A microbial phenotype related to the environmental factors and requirements for microbial growth." [OMP:WAM]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+xref: GO:0040007 "growth"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:59Z
@@ -3409,9 +3410,9 @@ creation_date: 2014-07-07T13:50:45Z
 id: OMP:0005115
 name: cell cycle phenotype
 def: "A growth phenotype that relates to the progression of biochemical and morphological events that occur in a cell during cell replication or nuclear replication events.  Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in some cells or organisms DNA replication and/or nuclear division may not be immediately followed by cell division." [GO:0007049, OMP:WAM]
-synonym: "cell division cycle" RELATED []
+synonym: "cell division phenotype" RELATED []
 xref: GO:0007049 "cell cycle"
-is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0007167 ! reproduction phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:54:52Z
 
@@ -3592,17 +3593,17 @@ creation_date: 2014-08-07T14:55:46Z
 
 [Term]
 id: OMP:0005137
-name: increased cell division
-def: "An altered cell division phenotype where cell division is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0005136 ! altered cell cycle phenotype
+name: increased septation
+def: "An altered septation phenotype where formation of new cell septa is increased relative to a designated control." [OMP:WAM]
+is_a: OMP:0007165 ! altered septation phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:57:39Z
 
 [Term]
 id: OMP:0005138
-name: decreased cell division
-def: "A cell division phenotype where cell division is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0005136 ! altered cell cycle phenotype
+name: decreased septation
+def: "An altered septation phenotype where formation of new cell septa is decreased relative to a designated control." [OMP:WAM]
+is_a: OMP:0007165 ! altered septation phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:58:34Z
 
@@ -3956,7 +3957,7 @@ creation_date: 2013-10-11T17:35:04Z
 id: OMP:0006040
 name: decreased resistance to quinolone
 def: "A quinolone compound resistance phenotype where resistance to a quinolone compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "increase sensitivity to quinoline" RELATED []
+synonym: "increased sensitivity to quinoline" RELATED []
 is_a: OMP:0005034 ! altered quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
@@ -3965,8 +3966,7 @@ creation_date: 2013-10-11T17:38:00Z
 id: OMP:0006041
 name: increased resistance to quinolone
 def: "A quinolone compound resistance phenotype where resistance to a quinolone compound is increased relative to a designated control." [OMP:JCH]
-synonym: "abolish sensitivity to quinolone" RELATED []
-synonym: "decrease sensitivity to quinoline" RELATED []
+synonym: "decreased sensitivity to quinoline" RELATED []
 is_a: OMP:0005034 ! altered quinolone resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
@@ -4825,8 +4825,8 @@ creation_date: 2014-07-25T15:11:04Z
 
 [Term]
 id: OMP:0006146
-name: abolished resistance to quinolones
-def: "A decreased resistance to quinolones phenotype where resistance to quinolones is abolished." [OMP:JCH]
+name: abolished resistance to quinolone
+def: "A decreased resistance to quinolone phenotype where resistance to a quinolone is abolished." [OMP:JCH]
 is_a: OMP:0006040 ! decreased resistance to quinolone
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:12:28Z
@@ -5622,7 +5622,7 @@ name: asexual reproduction phenotype
 def: "A microbial phenotype related to asexual reproduction, the biological process in which new individuals are produced by either a single cell or by a group of cells in the absence of any sexual process." [ISBN:0673521435, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 xref: GO:0019954 "asexual reproduction"
-is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0007167 ! reproduction phenotype
 created_by: siegele
 creation_date: 2014-02-03T15:55:25Z
 
@@ -6464,6 +6464,86 @@ xref: FYPO:0000289 "translation regulation phenotype"
 is_a: OMP:0007162 ! gene expression regulation phenotype
 created_by: siegele
 creation_date: 2014-09-14T14:54:10Z
+
+[Term]
+id: OMP:0007165
+name: altered septation phenotype
+def: "A septation phenotype where the process of forming a septum between daughter cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007149 ! septation phenotype
+created_by: siegele
+creation_date: 2014-09-14T15:35:53Z
+
+[Term]
+id: OMP:0007166
+name: altered cytokinesis phenotype
+def: "A cytokinesis phenotype where the process of cytokinesis is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007148 ! cytokinesis phenotype
+created_by: siegele
+creation_date: 2014-09-14T15:36:38Z
+
+[Term]
+id: OMP:0007167
+name: reproduction phenotype
+def: "A microbial phenotype related to reproduction, the biological process in which new individuals are produced by either a single cell or by a group of cells." [OMP:DAS]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2014-09-25T17:14:07Z
+
+[Term]
+id: OMP:0007168
+name: abolished septation
+def: "A decreased septation phenotype where formation of new cell septa is abolished." [OMP:DAS]
+is_a: OMP:0005138 ! decreased septation
+created_by: siegele
+creation_date: 2014-09-25T17:18:11Z
+
+[Term]
+id: OMP:0007169
+name: antimicrobial peptide resistance phenotype
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to antimicrobial peptides produced by a variety of vertebrate, invertebrate, and plant species." [doi:10.1038/nrmicro1098, OMP:DAS]
+is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+created_by: siegele
+creation_date: 2014-09-26T15:57:03Z
+
+[Term]
+id: OMP:0007170
+name: altered antimicrobial peptide resistance phenotype
+def: "An antimicrobial peptide resistance phenotype where resistance or sensitivity to one or more antimicrobial peptides is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
+created_by: siegele
+creation_date: 2014-09-26T16:02:16Z
+
+[Term]
+id: OMP:0007171
+name: resistant to antimicrobial peptide
+def: "An antimicrobial peptide resistance phenotype where an organism or cell is resistant to one or more antimicrobial peptides." [OMP:DAS]
+is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
+created_by: siegele
+creation_date: 2014-09-26T16:02:16Z
+
+[Term]
+id: OMP:0007172
+name: not resistant to antimicrobial peptide
+def: "An antimicrobial peptide resistance phenotype where an organism or cell is sensitive to one or more antimicrobial peptides." [OMP:DAS]
+is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
+created_by: siegele
+creation_date: 2014-09-26T16:02:16Z
+
+[Term]
+id: OMP:0007173
+name: decreased resistance to antimicrobial peptide
+def: "An altered antimicrobial peptide resistance phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007170 ! altered antimicrobial peptide resistance phenotype
+created_by: siegele
+creation_date: 2014-09-26T16:02:54Z
+
+[Term]
+id: OMP:0007174
+name: increased resistance to antimicrobial peptide
+def: "An altered antimicrobial peptide resistance phenotype where resistance is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007170 ! altered antimicrobial peptide resistance phenotype
+created_by: siegele
+creation_date: 2014-09-26T16:02:54Z
 
 [Typedef]
 id: decreased_relative_to
