@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:09:2014 12:53
+date: 29:09:2014 14:24
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
@@ -1475,12 +1475,12 @@ creation_date: 2011-02-07T03:52:30Z
 
 [Term]
 id: OMP:0000183
-name: anaerobic respiration with sulfate as the terminal electron acceptor
-def: "An anaerobic respiration phenotype where sulfate (SO4) is used as the terminal electron acceptor." [ISBN:978-0-07-340240-6, OMP:DAS]
+name: anaerobic respiration with sulfate as the terminal acceptor
+def: "A presence of anaerobic respiration phenotype where sulfate (SO4) is used as the terminal electron acceptor." [ISBN:978-0-07-340240-6, OMP:DAS]
 synonym: "dissimilatory sulfate reduction" EXACT [ISBN:978-0-07-340240-6]
 synonym: "sulfide production" NARROW []
 xref: GO:0019420 "dissimilatory sulfate reduction"
-is_a: OMP:0007072 ! anaerobic respiration phenotype
+is_a: OMP:0007181 ! presence of anaerobic respiration
 created_by: Adrienne
 creation_date: 2011-02-07T03:52:44Z
 
@@ -3921,7 +3921,7 @@ creation_date: 2014-07-24T18:10:38Z
 id: OMP:0006036
 name: decreased resistance to macrolide
 def: "A macrolide compound resistance phenotype where resistance to a macrolide compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "increase sensitivity to macrolide" RELATED []
+synonym: "increased sensitivity to macrolide" RELATED []
 is_a: OMP:0006031 ! altered macrolide resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -3930,8 +3930,7 @@ creation_date: 2013-10-11T17:35:04Z
 id: OMP:0006037
 name: increased resistance to macrolide
 def: "A macrolide compound resistance phenotype where resistance to a macrolide compound is increased relative to a designated control." [OMP:JCH]
-synonym: "abolish sensitivity to macrolide" NARROW []
-synonym: "decrease sensitivity to macrolide" RELATED []
+synonym: "decreased sensitivity to macrolide" RELATED []
 is_a: OMP:0006031 ! altered macrolide resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
@@ -3992,7 +3991,7 @@ creation_date: 2013-10-11T17:38:00Z
 id: OMP:0006044
 name: decreased resistance to beta-lactam
 def: "A beta-lactam compound resistance phenotype where resistance to a beta-lactam compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "increase sensitivity to beta-lactam" RELATED []
+synonym: "increased sensitivity to beta-lactam" RELATED []
 is_a: OMP:0006021 ! altered beta-lactam resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
@@ -4146,7 +4145,7 @@ creation_date: 2013-10-22T19:24:20Z
 id: OMP:0006061
 name: decreased resistance to tetracycline
 def: "A tetracycline compound resistance phenotype where resistance to a tetracycline compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "increase sensitivity to tetracycline" RELATED []
+synonym: "increased sensitivity to tetracycline" RELATED []
 is_a: OMP:0005029 ! altered tetracycline resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
@@ -4167,8 +4166,7 @@ creation_date: 2013-10-23T17:21:25Z
 id: OMP:0006063
 name: increased resistance to tetracycline
 def: "A tetracycline compound resistance phenotype where resistance to a tetracycline compound is increased relative to a designated control." [OMP:JCH]
-synonym: "abolish sensitivity to tetracycline" RELATED []
-synonym: "decrease sensitivity to tetracycline" RELATED []
+synonym: "decreased sensitivity to tetracycline" RELATED []
 is_a: OMP:0005029 ! altered tetracycline resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
@@ -4203,7 +4201,7 @@ creation_date: 2013-10-24T12:57:25Z
 id: OMP:0006067
 name: decreased resistance to chloramphenicol
 def: "A chloramphenicol compound resistance phenotype where resistance to a chloramphenicol compound is decreased relative to a designated control." [OMP:JCH]
-synonym: "increase sensitivity to chloramphenicol" RELATED []
+synonym: "increased sensitivity to chloramphenicol" RELATED []
 is_a: OMP:0006025 ! altered chloramphenicol resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
@@ -4212,8 +4210,8 @@ creation_date: 2013-10-24T19:41:11Z
 id: OMP:0006068
 name: increased resistance to chloramphenicol
 def: "A chloramphenicol compound resistance phenotype where resistance to a chloramphenicol compound is increased relative to a designated control." [OMP:JCH]
-synonym: "abolish sensitivity to chloramphenicol" RELATED []
-synonym: "decrease sensitivity to chloramphenicol" RELATED []
+synonym: "<new synonym>" RELATED []
+synonym: "decreased sensitivity to chloramphenicol" RELATED []
 is_a: OMP:0006025 ! altered chloramphenicol resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
@@ -4264,8 +4262,7 @@ creation_date: 2014-04-30T22:48:59Z
 id: OMP:0006074
 name: increased resistance to pteridine
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is increased relative to a designated control." [CHEBI:27601, OMP:DAS]
-synonym: "abolish sensitivity to pteridine" RELATED []
-synonym: "decrease sensitivity to pteridine" RELATED []
+synonym: "decreased sensitivity to pteridine" RELATED []
 is_a: OMP:0006032 ! altered pteridine resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-05-12T13:04:39Z
@@ -5113,8 +5110,7 @@ creation_date: 2013-09-05T16:09:28Z
 id: OMP:0007004
 name: decreased resistance to pteridine
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is decreased relative to a designated control." [CHEBI:27601, OMP:DAS]
-synonym: "abolish resistance to pteridine" NARROW [CHEBI:73913]
-synonym: "increase sensitivity to pteridine" RELATED []
+synonym: "increased sensitivity to pteridine" RELATED []
 is_a: OMP:0006032 ! altered pteridine resistance phenotype
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:03:55Z
@@ -6008,7 +6004,7 @@ creation_date: 2014-07-17T13:46:04Z
 [Term]
 id: OMP:0007112
 name: respiration phenotype
-def: "An energy metabolism phenotype where electrons from an oxidized chemical are transferred via an electron transport chain to an exogenous or externally derived electron acceptor." [ISBN:978-0-07-340240-6, OMP:DAS]
+def: "An energy metabolism phenotype where electrons from an oxidized chemical are transferred via an electron transport chain to an exogenous electron acceptor." [ISBN:978-0-07-340240-6, OMP:DAS]
 xref: GO:0045333 "cellular respiration"
 is_a: OMP:0000224 ! energy metabolism phenotype
 created_by: siegele
@@ -6544,6 +6540,102 @@ def: "An altered antimicrobial peptide resistance phenotype where resistance is 
 is_a: OMP:0007170 ! altered antimicrobial peptide resistance phenotype
 created_by: siegele
 creation_date: 2014-09-26T16:02:54Z
+
+[Term]
+id: OMP:0007175
+name: presence of aerobic respiration
+def: "An aerobic respiration phenotype where an organism, cell, or cells have the ability to perform aerobic respiration." [OMP:DAS]
+is_a: OMP:0000216 ! aerobic respiration phenotype
+created_by: siegele
+creation_date: 2014-09-29T14:00:51Z
+
+[Term]
+id: OMP:0007176
+name: absence of aerobic respiration
+def: "An aerobic respiration phenotype where an organism, cell, or cells lack the ability to perform aerobic respiration." [OMP:DAS]
+is_a: OMP:0000216 ! aerobic respiration phenotype
+created_by: siegele
+creation_date: 2014-09-29T14:02:56Z
+
+[Term]
+id: OMP:0007177
+name: altered aerobic respiration
+def: "An aerobic respiration phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000216 ! aerobic respiration phenotype
+created_by: siegele
+creation_date: 2014-09-29T14:04:45Z
+
+[Term]
+id: OMP:0007178
+name: increased aerobic respiration
+def: "An altered aerobic respiration phenotype where the ability to perform aerobic respiration is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007177 ! altered aerobic respiration
+created_by: siegele
+creation_date: 2014-09-29T14:05:44Z
+
+[Term]
+id: OMP:0007179
+name: decreased aerobic respiration
+def: "An altered aerobic respiration phenotype where the ability to perform aerobic respiration is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007177 ! altered aerobic respiration
+created_by: siegele
+creation_date: 2014-09-29T14:06:33Z
+
+[Term]
+id: OMP:0007180
+name: abolished aerobic respiration
+def: "A decreased aerobic respiration phenotype where the ability to perform aerobic respiration is abolished." [OMP:DAS]
+is_a: OMP:0007179 ! decreased aerobic respiration
+created_by: siegele
+creation_date: 2014-09-29T14:07:17Z
+
+[Term]
+id: OMP:0007181
+name: presence of anaerobic respiration
+def: "An anaerobic respiration phenotype where an organism, cell, or cells have the ability to perform anaerobic respiration." [OMP:DAS]
+is_a: OMP:0007072 ! anaerobic respiration phenotype
+created_by: siegele
+creation_date: 2014-09-29T14:08:46Z
+
+[Term]
+id: OMP:0007182
+name: absence of anaerobic respiration
+def: "An anaerobic respiration phenotype where an organism, cell, or cells lack the ability to perform anaerobic respiration." [OMP:DAS]
+is_a: OMP:0007072 ! anaerobic respiration phenotype
+created_by: siegele
+creation_date: 2014-09-29T14:08:46Z
+
+[Term]
+id: OMP:0007183
+name: altered anaerobic respiration
+def: "An anaerobic respiration phenotype where the ability to perform anaerobic respiration is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007072 ! anaerobic respiration phenotype
+created_by: siegele
+creation_date: 2014-09-29T14:08:46Z
+
+[Term]
+id: OMP:0007184
+name: increased anaerobic respiration
+def: "An altered anaerobic respiration phenotype where the ability to perform anaerobic respiration is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007183 ! altered anaerobic respiration
+created_by: siegele
+creation_date: 2014-09-29T14:08:46Z
+
+[Term]
+id: OMP:0007185
+name: decreased anaerobic respiration
+def: "An altered anaerobic respiration phenotype where the ability to perform anaerobic respiration is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007183 ! altered anaerobic respiration
+created_by: siegele
+creation_date: 2014-09-29T14:08:46Z
+
+[Term]
+id: OMP:0007186
+name: abolished anaerobic respiration
+def: "A decreased anaerobic respiration phenotype where the ability to perform anaerobic respiration is abolished." [OMP:DAS]
+is_a: OMP:0007185 ! decreased anaerobic respiration
+created_by: siegele
+creation_date: 2014-09-29T14:08:46Z
 
 [Typedef]
 id: decreased_relative_to
