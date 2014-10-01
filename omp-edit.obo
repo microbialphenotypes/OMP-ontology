@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 29:09:2014 14:24
+date: 01:10:2014 11:14
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
@@ -26,7 +26,7 @@ name: decreased cell motility
 def: "An altered cell motility phenotype where cell motility is decreased relative to a designated control." [OMP:MCC]
 comment: Abolished motility is a cell motility phenotype where a cell completely loses its ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another.
 xref: PATO:0002297
-is_a: OMP:0007001 ! altered cell motility phenotype
+is_a: OMP:0007001 ! altered cell motility
 creation_date: 2011-03-10T07:02:42Z
 
 [Term]
@@ -303,7 +303,7 @@ creation_date: 2011-06-06T03:36:04Z
 id: OMP:0000040
 name: decreased cell size
 def: "An altered cell size phenotype where the size of a cell or cells is decreased relative to a designated control." [OMP:MCC]
-is_a: OMP:0007083 ! altered cell size phenotype
+is_a: OMP:0007083 ! altered cell size
 created_by: mchibucos
 creation_date: 2011-04-26T03:47:26Z
 
@@ -311,7 +311,7 @@ creation_date: 2011-04-26T03:47:26Z
 id: OMP:0000041
 name: increased cell size
 def: "An altered cell size phenotype where the volume of a cell or cells is increased relative to a designated control." [OMP:MCC]
-is_a: OMP:0007083 ! altered cell size phenotype
+is_a: OMP:0007083 ! altered cell size
 created_by: mchibucos
 creation_date: 2011-04-26T03:49:09Z
 
@@ -336,7 +336,7 @@ id: OMP:0000045
 name: increased cell motility
 def: "An altered cell motility phenotype where cell motility is increased relative to a designated control." [OMP:MCC]
 xref: PATO:0002298
-is_a: OMP:0007001 ! altered cell motility phenotype
+is_a: OMP:0007001 ! altered cell motility
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:26Z
 
@@ -2046,7 +2046,7 @@ creation_date: 2011-07-21T01:38:10Z
 id: OMP:0000267
 name: increased gene expression
 def: "An altered gene expression phenotype where expression of a gene or genes is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007080 ! altered gene expression phenotype
+is_a: OMP:0007080 ! altered gene expression
 created_by: mchibucos
 creation_date: 2011-07-21T02:01:35Z
 
@@ -2054,7 +2054,7 @@ creation_date: 2011-07-21T02:01:35Z
 id: OMP:0000268
 name: decreased gene expression
 def: "An altered gene expression phenotype where expression of a gene or genes is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007080 ! altered gene expression phenotype
+is_a: OMP:0007080 ! altered gene expression
 created_by: mchibucos
 creation_date: 2011-07-21T02:02:26Z
 
@@ -2087,7 +2087,7 @@ id: OMP:0000280
 name: increased cell length
 def: "An altered cell size phenotype where the long axis of a cell or cells is increased relative to a designated control." [OMP:DAS]
 comment: The mukB mutant appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
-is_a: OMP:0007083 ! altered cell size phenotype
+is_a: OMP:0007083 ! altered cell size
 created_by: mchibucos
 creation_date: 2011-07-21T02:37:15Z
 
@@ -2736,7 +2736,7 @@ id: OMP:0005029
 name: altered tetracycline resistance phenotype
 def: "A tetracycline resistance phenotype where resistance to a tetracycline compound is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0006062 ! tetracycline resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance
 created_by: wmeza
 creation_date: 2014-07-23T17:05:20Z
 
@@ -2777,7 +2777,7 @@ id: OMP:0005034
 name: altered quinolone resistance phenotype
 def: "A quinolone resistance phenotype where resistance to a quinolone compound is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0006029 ! quinolone resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance
 created_by: wmeza
 creation_date: 2014-07-23T17:13:45Z
 
@@ -3370,7 +3370,7 @@ creation_date: 2014-05-07T12:40:14Z
 id: OMP:0005108
 name: increased cell diameter
 def: "An altered cell size phenotype where the diameter or a cell or cells is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007083 ! altered cell size phenotype
+is_a: OMP:0007083 ! altered cell size
 created_by: wmeza
 creation_date: 2014-07-02T18:39:12Z
 
@@ -3378,7 +3378,7 @@ creation_date: 2014-07-02T18:39:12Z
 id: OMP:0005109
 name: decreased cell diameter
 def: "An altered cell size phenotype where the diameter or a cell or cells is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007083 ! altered cell size phenotype
+is_a: OMP:0007083 ! altered cell size
 created_by: wmeza
 creation_date: 2014-07-02T18:46:00Z
 
@@ -3439,7 +3439,7 @@ name: altered acidic pH stress phenotype
 def: "A acidic pH stress phenotype altered relative to a designated control." [OMP:WAM]
 synonym: "acid pH stress" RELATED []
 is_a: OMP:0005040 ! acidic pH stress phenotype
-is_a: OMP:0007158 ! altered stress response phenotype
+is_a: OMP:0007158 ! altered stress response
 created_by: wmeza
 creation_date: 2014-07-11T12:55:53Z
 
@@ -3448,7 +3448,7 @@ id: OMP:0005119
 name: altered alkaline pH stress phenotype
 def: "An alkaline pH stress phenotype altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005041 ! alkaline pH stress phenotype
-is_a: OMP:0007158 ! altered stress response phenotype
+is_a: OMP:0007158 ! altered stress response
 created_by: wmeza
 creation_date: 2014-07-11T12:58:56Z
 
@@ -3457,7 +3457,7 @@ id: OMP:0005120
 name: altered dessication stress phenotype
 def: "A dessication stress phenotype altered relative to designated control." [OMP:WAM]
 is_a: OMP:0005080 ! dessication stress phenotype
-is_a: OMP:0007158 ! altered stress response phenotype
+is_a: OMP:0007158 ! altered stress response
 created_by: wmeza
 creation_date: 2014-07-11T12:59:47Z
 
@@ -3466,7 +3466,7 @@ id: OMP:0005121
 name: altered freeze/thawing stress phenotype
 def: "A freeze/thawing stress phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005039 ! freeze/thawing stress phenotype
-is_a: OMP:0007158 ! altered stress response phenotype
+is_a: OMP:0007158 ! altered stress response
 created_by: wmeza
 creation_date: 2014-07-11T13:00:23Z
 
@@ -3528,7 +3528,7 @@ creation_date: 2014-07-15T17:31:56Z
 
 [Term]
 id: OMP:0005129
-name: altered biofilm phenotype
+name: altered biofilm
 def: "A biofilm phenotype that is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0000176 ! biofilm phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -3745,7 +3745,7 @@ id: OMP:0006017
 name: altered aminoglycoside resistance phenotype
 def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:04:53Z
 
@@ -3754,7 +3754,7 @@ id: OMP:0006018
 name: altered aminopyrimidine resistance phenotype
 def: "An aminopyrimidine resistance phenotype where resistance to an aminopyrimidine compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:13:02Z
 
@@ -3763,7 +3763,7 @@ id: OMP:0006019
 name: altered azole resistance phenotype
 def: "An azole resistance phenotype where resistance to an azole compound is altered relative to a designated control." [OMp:JCH]
 is_a: OMP:0006028 ! azole resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:20:23Z
 
@@ -3772,7 +3772,7 @@ id: OMP:0006020
 name: altered bacteriocin resistance phenotype
 def: "A bacteriocin resistance phenotype where resistance to a bacteriocin is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:21:28Z
 
@@ -3781,7 +3781,7 @@ id: OMP:0006021
 name: altered beta-lactam resistance phenotype
 def: "A beta-lactam resistance phenotype where resistance to a beta-lactam compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:26:03Z
 
@@ -3815,7 +3815,7 @@ id: OMP:0006025
 name: altered chloramphenicol resistance phenotype
 def: "A chloramphenicol resistance phenotype where resistance to chloramphenicol is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:39:51Z
 
@@ -3879,7 +3879,7 @@ id: OMP:0006031
 name: altered macrolide resistance phenotype
 def: "A macrolide resistance phenotype where resistance to a macrolide compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:40:33Z
 
@@ -3888,7 +3888,7 @@ id: OMP:0006032
 name: altered pteridine resistance phenotype
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007065 ! pteridine resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:42:30Z
 
@@ -3913,7 +3913,7 @@ id: OMP:0006035
 name: altered budding phenotype
 def: "A budding phenotype where the process of budding is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000089 ! budding phenotype
-is_a: OMP:0007144 ! altered asexual reproduction phenotype
+is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
 creation_date: 2014-07-24T18:10:38Z
 
@@ -5003,7 +5003,7 @@ id: OMP:0006168
 name: altered binary fission phenotype
 def: "A binary fission phenotype where the process of binary fission is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007067 ! binary fission phenotype
-is_a: OMP:0007144 ! altered asexual reproduction phenotype
+is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
 creation_date: 2014-08-08T15:59:42Z
 
@@ -5044,7 +5044,7 @@ id: OMP:0006174
 name: altered multiple fission phenotype
 def: "A multiple fission phenotype where the process of multiple fission is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007068 ! multiple fission phenotype
-is_a: OMP:0007144 ! altered asexual reproduction phenotype
+is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:42:12Z
 
@@ -5083,7 +5083,7 @@ creation_date: 2014-06-29T14:10:40Z
 
 [Term]
 id: OMP:0007001
-name: altered cell motility phenotype
+name: altered cell motility
 def: "A cell motility phenotype where cell motility is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000001 ! cell motility phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -5243,7 +5243,7 @@ creation_date: 2013-09-16T17:30:07Z
 id: OMP:0007020
 name: increased biofilm formation
 def: "An altered biofilm phenotype where the amount of biofilm is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0005129 ! altered biofilm phenotype
+is_a: OMP:0005129 ! altered biofilm
 created_by: siegele
 creation_date: 2014-08-01T00:12:56Z
 
@@ -5292,7 +5292,7 @@ creation_date: 2013-09-17T16:33:34Z
 id: OMP:0007026
 name: decreased biofilm formation
 def: "An altered biofilm phenotype where the amount of biofilm is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0005129 ! altered biofilm phenotype
+is_a: OMP:0005129 ! altered biofilm
 created_by: siegele
 creation_date: 2014-08-01T00:12:56Z
 
@@ -5701,7 +5701,7 @@ id: OMP:0007076
 name: altered aerotaxis phenotype
 def: "An aerotaxis phenotype where directed movement in response to environmental oxygen is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000047 ! aerotaxis phenotype
-is_a: OMP:0007127 ! altered taxis phenotype
+is_a: OMP:0007127 ! altered taxis
 created_by: siegele
 creation_date: 2014-04-24T17:41:34Z
 
@@ -5710,7 +5710,7 @@ id: OMP:0007077
 name: altered chemotaxis phenotype
 def: "A chemotaxis phenotype where directed movement in response to a specific chemical gradient is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000048 ! chemotaxis phenotype
-is_a: OMP:0007127 ! altered taxis phenotype
+is_a: OMP:0007127 ! altered taxis
 created_by: siegele
 creation_date: 2014-04-24T17:43:04Z
 
@@ -5719,7 +5719,7 @@ id: OMP:0007078
 name: altered carbon source utilization phenotype
 def: "An altered nutrient utilization phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006023 ! carbon source utilization phenotype
-is_a: OMP:0007104 ! altered nutrient utilization phenotype
+is_a: OMP:0007104 ! altered nutrient utilization
 created_by: siegele
 creation_date: 2014-04-30T15:40:12Z
 
@@ -5733,7 +5733,7 @@ creation_date: 2014-04-30T15:52:18Z
 
 [Term]
 id: OMP:0007080
-name: altered gene expression phenotype
+name: altered gene expression
 def: "A gene expression phenotype where expression of a gene or genes is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000253 ! gene expression phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -5758,10 +5758,10 @@ creation_date: 2014-04-30T16:07:16Z
 
 [Term]
 id: OMP:0007083
-name: altered cell size phenotype
+name: altered cell size
 def: "A cell size phenotype where the size of a cell is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000074 ! cell size phenotype
-is_a: OMP:0007103 ! altered cell morphology phenotype
+is_a: OMP:0007103 ! altered cell morphology
 created_by: siegele
 creation_date: 2014-07-06T14:41:49Z
 
@@ -5769,7 +5769,7 @@ creation_date: 2014-07-06T14:41:49Z
 id: OMP:0007084
 name: decreased cell length
 def: "An altered cell size phenotype where the long axis of a cell or cells is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007083 ! altered cell size phenotype
+is_a: OMP:0007083 ! altered cell size
 created_by: siegele
 creation_date: 2014-07-06T14:43:59Z
 
@@ -5819,7 +5819,7 @@ id: OMP:0007090
 name: more rod-like
 def: "An altered cell shape phenotype where a cell's shape is more rod-like than that of a designated control." [OMP:DAS]
 is_a: OMP:0007099 ! cylindrical cell phenotype
-is_a: OMP:0007101 ! altered cell shape phenotype
+is_a: OMP:0007101 ! altered cell shape
 created_by: siegele
 creation_date: 2014-07-10T21:50:33Z
 
@@ -5907,10 +5907,10 @@ creation_date: 2014-07-10T20:13:46Z
 
 [Term]
 id: OMP:0007101
-name: altered cell shape phenotype
+name: altered cell shape
 def: "A cell shape phenotype where the shape of a cell is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000073 ! cell shape phenotype
-is_a: OMP:0007103 ! altered cell morphology phenotype
+is_a: OMP:0007103 ! altered cell morphology
 created_by: siegele
 creation_date: 2014-07-10T20:24:53Z
 
@@ -5919,13 +5919,13 @@ id: OMP:0007102
 name: rounder
 def: "An altered cell shape phenotype where a cell's shape is rounder than that of a designated control." [OMP:DAS]
 is_a: OMP:0007100 ! spheroid cell phenotype
-is_a: OMP:0007101 ! altered cell shape phenotype
+is_a: OMP:0007101 ! altered cell shape
 created_by: siegele
 creation_date: 2014-07-10T21:51:13Z
 
 [Term]
 id: OMP:0007103
-name: altered cell morphology phenotype
+name: altered cell morphology
 def: "A cell morphology phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000071 ! cell morphology phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -5934,7 +5934,7 @@ creation_date: 2014-07-10T22:43:40Z
 
 [Term]
 id: OMP:0007104
-name: altered nutrient utilization phenotype
+name: altered nutrient utilization
 def: "A nutrient utilization phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0006022 ! nutrient utilization phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -5971,7 +5971,7 @@ creation_date: 2014-08-11T16:37:39Z
 id: OMP:0007108
 name: altered transcription phenotype
 def: "A transcription phenotype where transcription of a gene or genes is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007080 ! altered gene expression phenotype
+is_a: OMP:0007080 ! altered gene expression
 is_a: OMP:0007106 ! transcription phenotype
 created_by: dsiegele
 creation_date: 2014-08-11T16:37:59Z
@@ -6031,16 +6031,16 @@ id: OMP:0007115
 name: altered growth rate phenotype
 def: "A growth phenotype where the growth rate of a cell or cells is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007156 ! growth rate phenotype
-is_a: OMP:0007157 ! altered growth phenotype
+is_a: OMP:0007157 ! altered growth
 created_by: siegele
 creation_date: 2014-07-17T16:29:34Z
 
 [Term]
 id: OMP:0007116
-name: altered cell stalk phenotype
+name: altered cell stalk
 def: "An altered cell shape phenotype where the stalk of a stalk-shaped cell is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000128 ! stalked cell phenotype
-is_a: OMP:0007101 ! altered cell shape phenotype
+is_a: OMP:0007101 ! altered cell shape
 created_by: siegele
 creation_date: 2014-07-18T13:53:13Z
 
@@ -6090,7 +6090,7 @@ creation_date: 2014-08-11T17:02:37Z
 id: OMP:0007122
 name: altered translation phenotype
 def: "A translation phenotype where translation of one or more mRNAs is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007080 ! altered gene expression phenotype
+is_a: OMP:0007080 ! altered gene expression
 is_a: OMP:0007107 ! translation phenotype
 created_by: dsiegele
 creation_date: 2014-08-11T17:07:54Z
@@ -6130,7 +6130,7 @@ creation_date: 2014-08-11T17:58:30Z
 
 [Term]
 id: OMP:0007127
-name: altered taxis phenotype
+name: altered taxis
 def: "A taxis phenotype where directed movement of a motile cell or organism in response to an external stimulus is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000004 ! taxis phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -6139,7 +6139,7 @@ creation_date: 2014-08-12T13:30:01Z
 
 [Term]
 id: OMP:0007128
-name: altered cell arrangement phenotype
+name: altered cell arrangement
 def: "A cell arrangement phenotype where the arrangement of cells is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000003 ! cell arrangement phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -6189,7 +6189,7 @@ creation_date: 2014-08-17T12:52:35Z
 
 [Term]
 id: OMP:0007134
-name: altered antimicrobial compound resistance phenotype
+name: altered antimicrobial compound resistance
 def: "An antimicrobial compound resistance phenotype where resistance to an antimicrobial compound is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -6217,7 +6217,7 @@ id: OMP:0007137
 name: altered alkaloid resistance phenotype
 def: "An alkaloid resistance phenotype where resistance to an alkaloid compound is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000455 ! alkaloid resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial compound resistance
 created_by: siegele
 creation_date: 2014-08-17T13:19:30Z
 
@@ -6276,7 +6276,7 @@ creation_date: 2014-08-18T17:19:11Z
 
 [Term]
 id: OMP:0007144
-name: altered asexual reproduction phenotype
+name: altered asexual reproduction
 def: "An asexual reproduction phenotype where the process of asexual reproduction is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007066 ! asexual reproduction phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -6288,7 +6288,7 @@ id: OMP:0007145
 name: altered asexual sporulation phenotype
 def: "An asexual sporulation phenotype where the process of forming mitotic spores is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007142 ! asexual sporulation phenotype
-is_a: OMP:0007144 ! altered asexual reproduction phenotype
+is_a: OMP:0007144 ! altered asexual reproduction
 created_by: siegele
 creation_date: 2014-08-18T17:23:30Z
 
@@ -6357,7 +6357,7 @@ id: OMP:0007153
 name: altered persister cell phenotype
 def: "A persister cell phenotype where the character or frequency of persister cells in a microbial population is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007152 ! persister cell phenotype
-is_a: OMP:0007157 ! altered growth phenotype
+is_a: OMP:0007157 ! altered growth
 created_by: siegele
 creation_date: 2014-08-28T11:57:56Z
 
@@ -6387,7 +6387,7 @@ creation_date: 2014-08-28T12:14:20Z
 
 [Term]
 id: OMP:0007157
-name: altered growth phenotype
+name: altered growth
 def: "A growth phenotype where some aspect of growth of a microbial cell, entity, organism, or population is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000174 ! growth phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -6396,7 +6396,7 @@ creation_date: 2014-08-28T12:15:47Z
 
 [Term]
 id: OMP:0007158
-name: altered stress response phenotype
+name: altered stress response
 def: "A stress response phenotype where the response of a cell or organism to a stress is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000173 ! stress response phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -6407,13 +6407,13 @@ creation_date: 2014-08-28T16:51:03Z
 id: OMP:0007159
 name: altered radiation resistance phenotype
 is_a: OMP:0005081 ! radiation stress phenotype
-is_a: OMP:0007158 ! altered stress response phenotype
+is_a: OMP:0007158 ! altered stress response
 created_by: siegele
 creation_date: 2014-08-28T17:03:47Z
 
 [Term]
 id: OMP:0007160
-name: altered colony morphology phenotype
+name: altered colony morphology
 def: "A colony morphology phenotype where the morphology of a colony or colonies is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000100 ! colony morphology phenotype
 is_a: OMP:0007085 ! altered phenotype
