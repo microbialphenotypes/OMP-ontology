@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 01:10:2014 11:14
+date: 02:10:2014 14:40
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 default-namespace: microbial_phenotype
@@ -16,6 +16,7 @@ creation_date: 2011-03-10T04:01:50Z
 id: OMP:0000001
 name: cell motility phenotype
 def: "A locomotion phenotype where the trait in question is the self-propelled movement of a cell or cells from one location to another." [OMP:MCC]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 xref: PATO:0001488
 is_a: OMP:0000312 ! locomotion phenotype
 creation_date: 2011-03-10T06:55:06Z
@@ -2260,6 +2261,7 @@ synonym: "Spectinomycin" NARROW []
 synonym: "Spiramycin" NARROW []
 synonym: "Telithromycin" NARROW []
 synonym: "Troleandomycin" NARROW []
+xref: CHEBI:25105
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:51:04Z
@@ -2276,6 +2278,7 @@ synonym: "piritrexim" NARROW []
 synonym: "pyrimethamine" NARROW [CHEBI:8673]
 synonym: "trimethoprim" NARROW [CHEBI:45924]
 synonym: "trimetrexate" NARROW []
+xref: CHEBI:38338
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:02:58Z
@@ -2301,7 +2304,7 @@ creation_date: 2012-11-02T02:04:58Z
 [Term]
 id: OMP:0000336
 name: beta-lactam resistance phenotype
-def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds that contain a beta-lactam ring in their molecular structure." [OMP:MCC]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds that contain a beta-lactam ring in their molecular structure." [CHEBI:27933, OMP:MCC]
 synonym: "ampicillin" NARROW [CHEBI:28971]
 synonym: "beta-lactam sensitivity phenotype" RELATED []
 synonym: "carbapenams" NARROW [CHEBI:64510]
@@ -2311,6 +2314,7 @@ synonym: "cephaloxporins" NARROW []
 synonym: "cephamycin" NARROW [CHEBI:55429]
 synonym: "monobactams" NARROW [CHEBI:50695]
 synonym: "penicillin" NARROW [CHEBI:51356]
+xref: CHEBI:27933
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:06:13Z
@@ -2397,6 +2401,7 @@ id: OMP:0000455
 name: alkaloid resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds containing basic nitrogen in a heterocyclic structure." [CHEBI:22315, OMP:WAM]
 synonym: "alkaloid sensitivity phenotype" RELATED []
+xref: CHEBI:22315
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:53:57Z
@@ -2736,7 +2741,7 @@ id: OMP:0005029
 name: altered tetracycline resistance phenotype
 def: "A tetracycline resistance phenotype where resistance to a tetracycline compound is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0006062 ! tetracycline resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: wmeza
 creation_date: 2014-07-23T17:05:20Z
 
@@ -2777,7 +2782,7 @@ id: OMP:0005034
 name: altered quinolone resistance phenotype
 def: "A quinolone resistance phenotype where resistance to a quinolone compound is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0006029 ! quinolone resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: wmeza
 creation_date: 2014-07-23T17:13:45Z
 
@@ -3745,7 +3750,7 @@ id: OMP:0006017
 name: altered aminoglycoside resistance phenotype
 def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:04:53Z
 
@@ -3754,7 +3759,7 @@ id: OMP:0006018
 name: altered aminopyrimidine resistance phenotype
 def: "An aminopyrimidine resistance phenotype where resistance to an aminopyrimidine compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:13:02Z
 
@@ -3763,7 +3768,7 @@ id: OMP:0006019
 name: altered azole resistance phenotype
 def: "An azole resistance phenotype where resistance to an azole compound is altered relative to a designated control." [OMp:JCH]
 is_a: OMP:0006028 ! azole resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:20:23Z
 
@@ -3772,7 +3777,7 @@ id: OMP:0006020
 name: altered bacteriocin resistance phenotype
 def: "A bacteriocin resistance phenotype where resistance to a bacteriocin is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:21:28Z
 
@@ -3781,7 +3786,7 @@ id: OMP:0006021
 name: altered beta-lactam resistance phenotype
 def: "A beta-lactam resistance phenotype where resistance to a beta-lactam compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:26:03Z
 
@@ -3815,7 +3820,7 @@ id: OMP:0006025
 name: altered chloramphenicol resistance phenotype
 def: "A chloramphenicol resistance phenotype where resistance to chloramphenicol is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:39:51Z
 
@@ -3851,6 +3856,7 @@ def: "An antimicrobial compound resistance phenotype related to resistance or se
 comment: Azoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
 synonym: "azole sensitivity phenotype" RELATED []
 synonym: "Triazole" NARROW [CHEBI:38597]
+xref: CHEBI:68452
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-10T19:15:32Z
@@ -3860,6 +3866,7 @@ id: OMP:0006029
 name: quinolone resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a aromatic heterocyclic compounds each of which contains a benzene ring ortho fused to carbons 2 and 3 of a pyridine ring." [CHEBI:26513, ISBN:9780072992915, OMP:JCH]
 synonym: "quinoline sensitivity phenotype" RELATED []
+xref: CHEBI:26513
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-10T19:15:32Z
@@ -3879,7 +3886,7 @@ id: OMP:0006031
 name: altered macrolide resistance phenotype
 def: "A macrolide resistance phenotype where resistance to a macrolide compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:40:33Z
 
@@ -3888,7 +3895,7 @@ id: OMP:0006032
 name: altered pteridine resistance phenotype
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007065 ! pteridine resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:42:30Z
 
@@ -4102,6 +4109,7 @@ synonym: "kanamycin" NARROW []
 synonym: "neomycin" NARROW []
 synonym: "streptomycin" NARROW []
 synonym: "tobramycin" NARROW []
+xref: CHEBI:22507
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T13:29:22Z
@@ -4158,6 +4166,7 @@ synonym: "Bacteriostatic" BROAD []
 synonym: "chlortetracycline" RELATED []
 synonym: "oxytetracycline " NARROW [CHEBI:27701]
 synonym: "tetracycline sensitivity phenotype" RELATED []
+xref: CHEBI:27902
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T17:21:25Z
@@ -4193,6 +4202,7 @@ id: OMP:0006066
 name: chloramphenicol resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, ISBN:9780072992915, OMP:JCH]
 synonym: "chloramphenicol sensitivity phenotype" RELATED []
+xref: CHEBI:17698
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T12:57:25Z
@@ -5608,6 +5618,7 @@ def: "An antimicrobial compound resistance phenotype where resistance is to a or
 synonym: "antifolate resistance" BROAD [CHEBI:73913]
 synonym: "methotrexate resistance" NARROW [CHEBI:44185]
 synonym: "pteridine sensitivity phenotype" RELATED []
+xref: CHEBI:26373
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: siegele
 creation_date: 2014-02-03T15:39:56Z
@@ -6189,7 +6200,7 @@ creation_date: 2014-08-17T12:52:35Z
 
 [Term]
 id: OMP:0007134
-name: altered antimicrobial compound resistance
+name: altered antimicrobial compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance to an antimicrobial compound is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -6217,7 +6228,7 @@ id: OMP:0007137
 name: altered alkaloid resistance phenotype
 def: "An alkaloid resistance phenotype where resistance to an alkaloid compound is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000455 ! alkaloid resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial compound resistance
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
 created_by: siegele
 creation_date: 2014-08-17T13:19:30Z
 
