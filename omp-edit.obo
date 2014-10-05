@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 04:10:2014 19:39
+date: 05:10:2014 12:14
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -33,11 +33,256 @@ subsetdef: value_slim "Value slim"
 subsetdef: virus_checked "Viral overhaul terms"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: microbial_phenotype
-namespace-id-rule: * OMP:$sequence(7,0007001,0008000)$
-remark: did not include is_a closure
+remark: xx
 ontology: omp
 ontology: go
 ontology: pato
+
+[Term]
+id: GO:0000003
+name: reproduction
+namespace: biological_process
+alt_id: GO:0019952
+alt_id: GO:0050876
+def: "The production of new individuals that contain some portion of genetic material inherited from one or more parent organisms." [GOC:go_curators, GOC:isa_complete, GOC:jl, ISBN:0198506732]
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "reproductive physiological process" EXACT []
+xref: Wikipedia:Reproduction
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0005575
+name: cellular_component
+namespace: cellular_component
+alt_id: GO:0008372
+def: "The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together." [GOC:go_curators, NIF_Subcellular:sao-1337158144]
+comment: Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. Note that when this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "cellular component" EXACT []
+synonym: "subcellular entity" RELATED [NIF_Subcellular:nlx_subcell_100315]
+xref: NIF_Subcellular:sao1337158144
+
+[Term]
+id: GO:0005623
+name: cell
+namespace: cellular_component
+def: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope." [GOC:go_curators]
+subset: goslim_generic
+subset: goslim_plant
+subset: gosubset_prok
+xref: NIF_Subcellular:sao1813327414
+xref: Wikipedia:Cell_(biology)
+is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0008150
+name: biological_process
+namespace: biological_process
+alt_id: GO:0000004
+alt_id: GO:0007582
+def: "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." [GOC:go_curators, GOC:isa_complete]
+comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_pombe
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "biological process" EXACT []
+synonym: "physiological process" EXACT []
+xref: Wikipedia:Biological_process
+
+[Term]
+id: GO:0009987
+name: cellular process
+namespace: biological_process
+alt_id: GO:0008151
+alt_id: GO:0050875
+def: "Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." [GOC:go_curators, GOC:isa_complete]
+subset: goslim_pir
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "cell growth and/or maintenance" NARROW []
+synonym: "cell physiology" EXACT []
+synonym: "cellular physiological process" EXACT []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0019954
+name: asexual reproduction
+namespace: biological_process
+def: "The biological process in which new individuals are produced by either a single cell or a group of cells, in the absence of any sexual process." [ISBN:0387520546]
+subset: gosubset_prok
+xref: Wikipedia:Asexual_reproduction
+is_a: GO:0000003 ! reproduction
+
+[Term]
+id: GO:0030154
+name: cell differentiation
+namespace: biological_process
+def: "The process in which relatively unspecialized cells, e.g. embryonic or regenerative cells, acquire specialized structural and/or functional features that characterize the cells, tissues, or organs of the mature organism or some other relatively stable phase of the organism's life history. Differentiation includes the processes involved in commitment of a cell to a specific fate and its subsequent development to the mature state." [ISBN:0198506732]
+subset: goslim_generic
+subset: goslim_plant
+subset: gosubset_prok
+xref: Wikipedia:Cellular_differentiation
+is_a: GO:0048869 ! cellular developmental process
+
+[Term]
+id: GO:0030435
+name: sporulation resulting in formation of a cellular spore
+namespace: biological_process
+def: "The process in which a relatively unspecialized cell acquires the specialized features of a cellular spore, a cell form that can be used for dissemination, for survival of adverse conditions because of its heat and dessication resistance, and/or for reproduction." [GOC:mah, GOC:pamgo_curators, ISBN:0072992913]
+comment: Note that the synonym 'spore differentiation', like the term name and definition, refers to differentiation into a spore rather than any subsequent developmental changes that a spore may undergo.
+subset: gosubset_prok
+synonym: "cellular spore formation by sporulation" EXACT [GOC:dph, GOC:tb]
+synonym: "spore biosynthesis" EXACT []
+synonym: "spore differentiation" EXACT []
+synonym: "spore formation" EXACT []
+xref: Wikipedia:Sporogenesis
+is_a: GO:0030154 ! cell differentiation
+is_a: GO:0043934 ! sporulation
+is_a: GO:0048646 ! anatomical structure formation involved in morphogenesis
+
+[Term]
+id: GO:0030436
+name: asexual sporulation
+namespace: biological_process
+def: "The formation of spores derived from the products of mitosis. Examples of this process are found in Bacterial species." [GOC:mah, PMID:9529886]
+subset: goslim_aspergillus
+subset: gosubset_prok
+synonym: "asexual spore formation" EXACT []
+synonym: "mitotic spore formation" EXACT []
+synonym: "mitotic sporulation" EXACT []
+is_a: GO:0019954 ! asexual reproduction
+is_a: GO:0043934 ! sporulation
+
+[Term]
+id: GO:0031975
+name: envelope
+namespace: cellular_component
+def: "A multilayered structure surrounding all or part of a cell; encompasses one or more lipid bilayers, and may include a cell wall layer; also includes the space between layers." [GOC:mah, GOC:pz]
+subset: gosubset_prok
+is_a: GO:0044464 ! cell part
+
+[Term]
+id: GO:0032502
+name: developmental process
+namespace: biological_process
+def: "A biological process whose specific outcome is the progression of an integrated living unit: an anatomical structure (which may be a subcellular structure, cell, tissue, or organ), or organism over time from an initial condition to a later condition." [GOC:isa_complete]
+subset: goslim_aspergillus
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "development" NARROW []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0034301
+name: endospore formation
+namespace: biological_process
+def: "The process in which a cell gives rise to an endospore, a dormant, highly resistant spore with a thick wall that forms within the mother cell. Endospores are produced by some low G+C Gram-positive bacteria in response to harsh conditions." [GOC:ds, GOC:mah, ISBN:0470090278]
+is_a: GO:0043936 ! asexual sporulation resulting in formation of a cellular spore
+
+[Term]
+id: GO:0042995
+name: cell projection
+namespace: cellular_component
+def: "A prolongation or process extending from a cell, e.g. a flagellum or axon." [GOC:jl, http://www.cogsci.princeton.edu/~wn/]
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "cell process" BROAD []
+synonym: "cellular process" BROAD []
+synonym: "cellular projection" EXACT []
+is_a: GO:0044464 ! cell part
+
+[Term]
+id: GO:0043934
+name: sporulation
+namespace: biological_process
+def: "The process whose specific outcome is the progression of a spore over time, from its initiation to the mature structure. A spore is a structure that can be used for dissemination, for survival of adverse conditions because of its heat and dessication resistance, and/or for reproduction." [GOC:pamgo_curators]
+subset: goslim_metagenomics
+subset: goslim_yeast
+xref: Wikipedia:Spore
+is_a: GO:0044767 ! single-organism developmental process
+
+[Term]
+id: GO:0043936
+name: asexual sporulation resulting in formation of a cellular spore
+namespace: biological_process
+def: "The formation of a cellular spore derived from the products of mitosis. A cellular spore is a cell form that can be used for dissemination, for survival of adverse conditions because of its heat and dessication resistance, and/or for reproduction." [GOC:pamgo_curators]
+is_a: GO:0030435 ! sporulation resulting in formation of a cellular spore
+is_a: GO:0030436 ! asexual sporulation
+
+[Term]
+id: GO:0044464
+name: cell part
+namespace: cellular_component
+def: "Any constituent part of a cell, the basic structural and functional unit of all organisms." [GOC:jl]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: goantislim_grouping
+subset: gocheck_do_not_annotate
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "cellular subcomponent" EXACT [NIF_Subcellular:sao628508602]
+synonym: "protoplast" RELATED [GOC:mah]
+is_a: GO:0005575 ! cellular_component
+relationship: part_of GO:0005623 ! cell
+
+[Term]
+id: GO:0044699
+name: single-organism process
+namespace: biological_process
+def: "A biological process that involves only one organism." [GOC:jl]
+synonym: "single organism process" EXACT []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0044763
+name: single-organism cellular process
+namespace: biological_process
+def: "Any process that is carried out at the cellular level, occurring within a single organism." [GOC:jl]
+is_a: GO:0009987 ! cellular process
+is_a: GO:0044699 ! single-organism process
+
+[Term]
+id: GO:0044767
+name: single-organism developmental process
+namespace: biological_process
+def: "A biological process whose specific outcome is the progression of an integrated living unit: an anatomical structure (which may be a subcellular structure, cell, tissue, or organ), or organism over time from an initial condition to a later condition, involving only one organism." [GOC:jl]
+is_a: GO:0032502 ! developmental process
+is_a: GO:0044699 ! single-organism process
+
+[Term]
+id: GO:0048646
+name: anatomical structure formation involved in morphogenesis
+namespace: biological_process
+def: "The developmental process pertaining to the initial formation of an anatomical structure from unspecified parts. This process begins with the specific processes that contribute to the appearance of the discrete structure and ends when the structural rudiment is recognizable. An anatomical structure is any biological entity that occupies space and is distinguished from its surroundings. Anatomical structures can be macroscopic such as a carpel, or microscopic such as an acrosome." [GOC:dph, GOC:jid, GOC:tb]
+comment: Note that, for example, the formation of a pseudopod in an amoeba would not be considered formation involved in morphogenesis because it would not be thought of as the formation of an anatomical structure that was part of the shaping of the amoeba during its development. The formation of an axon from a neuron would be considered the formation of an anatomical structure involved in morphogenesis because it contributes to the creation of the form of the neuron in a developmental sense.
+subset: goslim_generic
+synonym: "formation of an anatomical structure involved in morphogenesis" EXACT [GOC:dph, GOC:tb]
+is_a: GO:0032502 ! developmental process
+relationship: part_of GO:0009653
+
+[Term]
+id: GO:0048869
+name: cellular developmental process
+namespace: biological_process
+def: "A biological process whose specific outcome is the progression of a cell over time from an initial condition to a later condition." [GOC:isa_complete]
+subset: gosubset_prok
+is_a: GO:0044763 ! single-organism cellular process
+is_a: GO:0044767 ! single-organism developmental process
 
 [Term]
 id: OMP:0000000
@@ -179,7 +424,6 @@ name: endospore forming
 def: "An endospore formation phenotype where the cell possesses the ability to form an endospore." [OMP:MCC]
 is_a: OMP:0000094 ! endospore formation phenotype
 intersection_of: OMP:0000094 ! endospore formation phenotype
-intersection_of: inheres_in GO:0034301
 intersection_of: RO:0000086 PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-26T03:09:10Z
@@ -190,7 +434,6 @@ name: non-endospore forming
 def: "An endospore formation phenotype where the cell does not possess the ability to form an endospore." [OMP:MCC]
 is_a: OMP:0000094 ! endospore formation phenotype
 intersection_of: OMP:0000094 ! endospore formation phenotype
-intersection_of: inheres_in GO:0034301
 intersection_of: RO:0000086 PATO:0000462 ! absent
 created_by: mchibucos
 creation_date: 2011-04-26T03:09:25Z
@@ -342,8 +585,6 @@ def: "A growth range phenotype dealing with oxygen requirements and the range of
 is_a: OMP:0007192 ! growth range phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:36:04Z
-modified_by: siegele
-modification_date: 2014-10-04T18:48:33Z
 
 [Term]
 id: OMP:0000040
@@ -583,7 +824,7 @@ comment: This term was created to organize terms beneath it in the ontology. We 
 xref: GO:0048869 "cellular developmental process"
 is_a: OMP:0000000 ! microbial phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
-intersection_of: inheres_in GO:0048869
+intersection_of: inheres_in GO:0048869 ! cellular developmental process
 created_by: adrienne
 creation_date: 2011-02-02T03:11:48Z
 
@@ -597,8 +838,6 @@ intersection_of: PATO:0000051 ! morphology
 intersection_of: inheres_in GO:0005623 ! cell
 created_by: adrienne
 creation_date: 2011-02-02T03:15:16Z
-modified_by: siegele
-modification_date: 2014-10-04T19:21:39Z
 
 [Term]
 id: OMP:0000072
@@ -617,8 +856,6 @@ intersection_of: PATO:0000052 ! shape
 intersection_of: inheres_in GO:0005623 ! cell
 created_by: adrienne
 creation_date: 2011-02-02T03:18:02Z
-modified_by: siegele
-modification_date: 2014-10-04T19:24:15Z
 
 [Term]
 id: OMP:0000074
@@ -629,8 +866,6 @@ intersection_of: PATO:0000117 ! size
 intersection_of: inheres_in GO:0005623 ! cell
 created_by: adrienne
 creation_date: 2011-02-02T03:18:19Z
-modified_by: siegele
-modification_date: 2014-10-04T19:24:41Z
 
 [Term]
 id: OMP:0000075
@@ -704,12 +939,12 @@ id: OMP:0000083
 name: cell projection phenotype
 def: "A cell morphology phenotype where the structure in question is a prolongation or process extending from a cell." [OMP:MCC]
 synonym: "cell appendage phenotype" EXACT []
+xref: GO:0042995 "cell projection"
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: PATO:0001241 ! physical object quality
+intersection_of: inheres_in GO:0042995 ! cell projection
 created_by: adrienne
 creation_date: 2011-02-02T03:47:44Z
-modified_by: siegele
-modification_date: 2014-10-04T19:33:09Z
 
 [Term]
 id: OMP:0000084
@@ -729,8 +964,6 @@ intersection_of: PATO:0001241 ! physical object quality
 intersection_of: inheres_in GO:0031975 ! envelope
 created_by: adrienne
 creation_date: 2011-02-02T03:49:03Z
-modified_by: siegele
-modification_date: 2014-10-04T19:32:29Z
 
 [Term]
 id: OMP:0000086
@@ -786,7 +1019,7 @@ comment: This term was created to organize terms beneath it in the ontology. We 
 xref: GO:0043934 "sporulation"
 is_a: OMP:0000070 ! cell development phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
-intersection_of: inheres_in GO:0043934
+intersection_of: increased_in_magnitude_relative_to GO:0043934 ! sporulation
 created_by: adrienne
 creation_date: 2011-02-02T03:24:24Z
 
@@ -814,7 +1047,7 @@ comment: This is a high-level term whose primary purpose is to organize terms be
 xref: GO:0034301 "endospore formation"
 is_a: OMP:0000091 ! sporulation phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
-intersection_of: inheres_in GO:0034301
+intersection_of: inheres_in GO:0034301 ! endospore formation
 created_by: adrienne
 creation_date: 2011-02-02T03:25:29Z
 
@@ -1481,8 +1714,6 @@ xref: GO:0040007 "growth"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:59Z
-modified_by: siegele
-modification_date: 2014-10-04T18:43:10Z
 
 [Term]
 id: OMP:0000175
@@ -2633,8 +2864,6 @@ def: "A growth phenotype where the trait in question is the temperature requirem
 is_a: OMP:0000039 ! oxygen growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:06:05Z
-modified_by: siegele
-modification_date: 2014-10-04T18:47:25Z
 
 [Term]
 id: OMP:0005003
@@ -2683,8 +2912,6 @@ def: "A growth range phenotype related to the pH range that allows growth of a c
 is_a: OMP:0007192 ! growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:57:28Z
-modified_by: siegele
-modification_date: 2014-10-04T18:49:05Z
 
 [Term]
 id: OMP:0005009
@@ -2717,8 +2944,6 @@ def: "A growth range phenotype dealing with the pressure requirements for growth
 is_a: OMP:0007192 ! growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:42:28Z
-modified_by: siegele
-modification_date: 2014-10-04T18:49:31Z
 
 [Term]
 id: OMP:0005013
@@ -2727,8 +2952,6 @@ def: "A growth range phenotype dealing with the range of solute concentrations (
 is_a: OMP:0007192 ! growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:43:45Z
-modified_by: siegele
-modification_date: 2014-10-04T18:50:20Z
 
 [Term]
 id: OMP:0005014
@@ -5903,8 +6126,6 @@ intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-07-10T12:28:36Z
-modified_by: siegele
-modification_date: 2014-10-04T18:34:31Z
 
 [Term]
 id: OMP:0007086
@@ -6057,8 +6278,6 @@ intersection_of: OMP:0000071 ! cell morphology phenotype
 intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-07-10T22:43:40Z
-modified_by: siegele
-modification_date: 2014-10-04T19:22:43Z
 
 [Term]
 id: OMP:0007104
@@ -6776,8 +6995,6 @@ xref: PATO:0000001 "quality"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-10-03T17:22:57Z
-modified_by: siegele
-modification_date: 2014-10-04T19:34:54Z
 
 [Term]
 id: OMP:0007188
@@ -6820,8 +7037,6 @@ def: "A growth phenotype related to non-nutrient environmental factors and the r
 is_a: OMP:0000174 ! growth phenotype
 created_by: siegele
 creation_date: 2014-10-04T18:41:07Z
-modified_by: siegele
-modification_date: 2014-10-04T18:47:05Z
 
 [Term]
 id: OMP:0007193
@@ -6833,8 +7048,182 @@ intersection_of: PATO:0001241 ! physical object quality
 intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-10-04T19:34:54Z
-modified_by: siegele
-modification_date: 2014-10-04T19:37:00Z
+
+[Term]
+id: PATO:0000001
+name: quality
+namespace: quality
+alt_id: PATO:0000072
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities." [PATOC:GVG]
+synonym: "trait" EXACT []
+
+[Term]
+id: PATO:0000051
+name: morphology
+namespace: quality
+def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0001241 ! physical object quality
+
+[Term]
+id: PATO:0000052
+name: shape
+namespace: quality
+alt_id: PATO:0001647
+def: "A morphological quality inhering in a bearer by virtue of the bearer's ratios of distances between its features (points, edges, surfaces and also holes etc)." [PATOC:GVG]
+comment: Shapes are invariant on size transformations. Shapes can be subdivided into 2D and 3D shapes, We can also make a distinction between shapes of complete self-connected objects, and shapes of parts of objects.
+subset: attribute_slim
+synonym: "relational shape quality" EXACT []
+is_a: PATO:0000051 ! morphology
+
+[Term]
+id: PATO:0000068
+name: qualitative
+namespace: quality
+comment: TODO: define this or obsolete it and move children somewhere else.
+is_a: PATO:0000001 ! quality
+
+[Term]
+id: PATO:0000069
+name: deviation(from_normal)
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the whether the bearer differs from normal or average." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0000068 ! qualitative
+
+[Term]
+id: PATO:0000070
+name: count
+namespace: quality
+alt_id: PATO:0000053
+alt_id: PATO:0000071
+alt_id: PATO:0001169
+alt_id: PATO:0001226
+def: "The number of entities of this type that are part of the whole organism." [PATOC:GVG]
+comment: This term was originally named "presence". It has been renamed to reduce ambiguity. Consider annotating with the reciprocal relation,PATO:0001555, has_number_of. For example, rather than E=fin ray Q=count in organism C=10, say E=organism Q=has number of E2= fin ray C=10.
+subset: attribute_slim
+synonym: "amount" RELATED []
+synonym: "count in organism" RELATED []
+synonym: "number" RELATED []
+synonym: "presence" RELATED []
+synonym: "presence or absence in organism" EXACT []
+synonym: "quantitative" EXACT []
+is_a: PATO:0000068 ! qualitative
+relationship: reciprocal_of PATO:0001555
+
+[Term]
+id: PATO:0000117
+name: size
+namespace: quality
+def: "A morphology quality inhering in a bearer by virtue of the bearer's physical magnitude." [WordNet:WordNet]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0000051 ! morphology
+
+[Term]
+id: PATO:0000462
+name: absent
+namespace: quality
+alt_id: PATO:0001996
+def: "A quality denoting the lack of an entity." [thefreedictionary.:thefreedictionary.]
+comment: Example: [ E=wing Q=absent ] -applies to an organism that lacks wings. Note that this is the reciprocal quality to the relational quality "lacks all parts of type". This means that [E=wing Q=absent] is replaceable with [E=organism Q=lacks_all_parts_of_type E2=Wing]. The latter is preferable as it allows greater precision in stating what is lacking from where. E.g. We can say [E=spermatocyte Q=lacks_all_parts_of_type E2=aster] to describe spermatocytes that have no asters.
+subset: absent_slim
+subset: mpath_slim
+subset: value_slim
+synonym: "absence" EXACT []
+synonym: "absent from organism" EXACT []
+is_a: PATO:0000070 ! count
+relationship: reciprocal_of PATO:0001558
+relationship: reciprocal_of PATO:0002000
+
+[Term]
+id: PATO:0000467
+name: present
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's existence." [PATOC:GVG]
+subset: absent_slim
+subset: value_slim
+synonym: "present in organism" RELATED []
+is_a: PATO:0000070 ! count
+
+[Term]
+id: PATO:0001236
+name: process quality
+namespace: quality
+alt_id: PATO:0001239
+alt_id: PATO:0001240
+def: "A quality which inheres in an process." [PATOC:GVG]
+comment: See comments of relational quality of a physical entity.
+synonym: "quality of a process" EXACT []
+synonym: "quality of occurrent" EXACT []
+synonym: "quality of process" EXACT []
+synonym: "relational quality of occurrent" EXACT []
+is_a: PATO:0000001 ! quality
+
+[Term]
+id: PATO:0001241
+name: physical object quality
+namespace: quality
+alt_id: PATO:0001237
+alt_id: PATO:0001238
+def: "A quality which inheres in a continuant." [PATOC:GVG]
+comment: Relational qualities are qualities that hold between multiple entities. Normal (monadic) qualities such as the shape of a eyeball exist purely as a quality of that eyeball. A relational quality such as sensitivity to light is a quality of that eyeball (and connecting nervous system) as it relates to incoming light waves/particles.
+synonym: "monadic quality of a continuant" EXACT []
+synonym: "monadic quality of an object" NARROW []
+synonym: "monadic quality of continuant" NARROW []
+synonym: "multiply inhering quality of a physical entity " EXACT []
+synonym: "quality of a continuant" EXACT []
+synonym: "quality of a single physical entity" EXACT []
+synonym: "quality of an object" EXACT []
+synonym: "quality of continuant" EXACT []
+xref: snap:Quality
+is_a: PATO:0000001 ! quality
+
+[Term]
+id: PATO:0002300
+name: increased quality
+namespace: quality
+def: "A quality that has a value that is increased compared to normal or average." [PATOC:GVG]
+is_a: PATO:0000069 ! deviation(from_normal)
+intersection_of: PATO:0000001 ! quality
+intersection_of: increased_in_magnitude_relative_to PATO:0000461
+created_by: George Gkoutos
+creation_date: 2011-06-16T06:39:43Z
+
+[Term]
+id: PATO:0002301
+name: decreased quality
+namespace: quality
+def: "A quality that has a value that is decreased compared to normal or average." [PATOC:GVG]
+is_a: PATO:0000069 ! deviation(from_normal)
+intersection_of: PATO:0000001 ! quality
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461
+created_by: George Gkoutos
+creation_date: 2011-06-16T06:40:15Z
+
+[Term]
+id: PATO:0002302
+name: decreased process quality
+namespace: quality
+def: "A quality of a process that has a value that is decreased compared to normal or average." [PATOC:GVG]
+is_a: PATO:0001236 ! process quality
+is_a: PATO:0002301 ! decreased quality
+intersection_of: PATO:0001236 ! process quality
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461
+created_by: George Gkoutos
+creation_date: 2011-06-16T06:50:59Z
+
+[Term]
+id: PATO:0002304
+name: increased process quality
+namespace: quality
+def: "A quality of a process that has a value that is increased compared to normal or average." [PATOC:GVG]
+is_a: PATO:0001236 ! process quality
+is_a: PATO:0002300 ! increased quality
+intersection_of: PATO:0001236 ! process quality
+intersection_of: increased_in_magnitude_relative_to PATO:0000461
+created_by: George Gkoutos
+creation_date: 2011-06-16T06:53:08Z
 
 [Typedef]
 id: correlates_with
@@ -6847,8 +7236,8 @@ name: decreased_in_magnitude_relative_to
 namespace: quality
 def: "q1 decreased_in_magnitude_relative_to q2 if and only if magnitude(q1) < magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [PATOC:CJM]
 comment: This relation is used to determine the 'directionality' of relative qualities such as 'decreased strength', relative to the parent type, 'strength'.
-domain: PATO:0000001
-range: PATO:0000001
+domain: PATO:0000001 ! quality
+range: PATO:0000001 ! quality
 is_transitive: true
 is_a: different_in_magnitude_relative_to ! different_in_magnitude_relative_to
 
@@ -6866,8 +7255,8 @@ id: different_in_magnitude_relative_to
 name: different_in_magnitude_relative_to
 namespace: quality
 def: "q1 different_in_magnitude_relative_to q2 if and only if magnitude(q1) NOT =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [PATOC:CJM]
-domain: PATO:0000001
-range: PATO:0000001
+domain: PATO:0000001 ! quality
+range: PATO:0000001 ! quality
 
 [Typedef]
 id: directly_associated_with
@@ -6875,8 +7264,8 @@ name: directly_associated_with
 namespace: quality
 def: "q1 directly_associated_with q2 iff q1 is dependent on q2, and the magnitude of q1 increases if the magnitude of q2 is increased, or the magnitude of q1 decreases if the magnitude of q2 is decreased. The relationship is not necessarily linear." [PATOC:cjm, Wikipedia:Association_(statistics)]
 comment: Example: 'Lewy bodies increased number related to dystrophic neurite increased number' (from annotation of PMID:8740227 in http://ccdb.ucsd.edu/1.0/NDPO.owl#ndpo_404). Here the increase in the number of lewy bodies is directly_associated_with the increase in the number of dystrophic neurites.\nAssociation is weaker than correlation or proportionality. These relations may be later added to PATO.
-domain: PATO:0000001
-range: PATO:0000001
+domain: PATO:0000001 ! quality
+range: PATO:0000001 ! quality
 created_by: cjm
 creation_date: 2009-08-26T02:50:08Z
 
@@ -6898,7 +7287,7 @@ id: has_dividend_quality
 name: has_dividend_quality
 namespace: quality
 domain: PATO:0001470
-range: PATO:0000001
+range: PATO:0000001 ! quality
 is_a: has_ratio_quality ! has_ratio_quality
 
 [Typedef]
@@ -6912,7 +7301,7 @@ id: has_divisor_quality
 name: has_divisor_quality
 namespace: quality
 domain: PATO:0001470
-range: PATO:0000001
+range: PATO:0000001 ! quality
 is_a: has_ratio_quality ! has_ratio_quality
 
 [Typedef]
@@ -6928,7 +7317,7 @@ id: has_ratio_quality
 name: has_ratio_quality
 namespace: quality
 domain: PATO:0001470
-range: PATO:0000001
+range: PATO:0000001 ! quality
 
 [Typedef]
 id: has_relative_magnitude
@@ -6941,8 +7330,8 @@ name: increased_in_magnitude_relative_to
 namespace: quality
 def: "q1 increased_in_magnitude_relative_to q2 if and only if magnitude(q1) > magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [PATOC:CJM]
 comment: This relation is used to determine the 'directionality' of relative qualities such as 'increased strength', relative to the parent type, 'strength'.
-domain: PATO:0000001
-range: PATO:0000001
+domain: PATO:0000001 ! quality
+range: PATO:0000001 ! quality
 is_transitive: true
 is_a: different_in_magnitude_relative_to ! different_in_magnitude_relative_to
 
@@ -6966,8 +7355,8 @@ name: inversely_associated_with
 namespace: quality
 def: "q1 inversely_associated_with q2 iff q1 is dependent on q2, and the magnitude of q1 decreases if the magnitude of q2 is increased, or the magnitude of q1 increases if the magnitude of q2 is decreased. The relationship is not necessarily linear." [PATOC:cjm, Wikipedia:Association_(statistics)]
 comment: Association is weaker than correlation or proportionality. These relations may be later added to PATO.
-domain: PATO:0000001
-range: PATO:0000001
+domain: PATO:0000001 ! quality
+range: PATO:0000001 ! quality
 created_by: cjm
 creation_date: 2009-08-26T02:50:24Z
 
@@ -7054,8 +7443,8 @@ id: similar_in_magnitude_relative_to
 name: similar_in_magnitude_relative_to
 namespace: quality
 def: "q1 similar_in_magnitude_relative_to q2 if and only if magnitude(q1) =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [PATOC:CJM]
-domain: PATO:0000001
-range: PATO:0000001
+domain: PATO:0000001 ! quality
+range: PATO:0000001 ! quality
 
 [Typedef]
 id: singly_occurring_form_of
