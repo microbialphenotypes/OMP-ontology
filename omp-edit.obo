@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 04:10:2014 01:58
+date: 04:10:2014 19:39
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -33,7 +33,8 @@ subsetdef: value_slim "Value slim"
 subsetdef: virus_checked "Viral overhaul terms"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: microbial_phenotype
-remark: do not include is_a closure
+namespace-id-rule: * OMP:$sequence(7,0007001,0008000)$
+remark: did not include is_a closure
 ontology: omp
 ontology: go
 ontology: pato
@@ -142,7 +143,7 @@ name: decreased endospore formation
 def: "An altered endospore formation phenotype where endospore formation is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006161 ! altered endospore formation
 intersection_of: OMP:0006161 ! altered endospore formation
-intersection_of: RO:0000086 PATO:0002302
+intersection_of: RO:0000086 PATO:0002302 ! decreased process quality
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:15Z
 
@@ -152,7 +153,7 @@ name: increased endospore formation
 def: "An altered endospore formation phenotype where endospore formation is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006161 ! altered endospore formation
 intersection_of: OMP:0006161 ! altered endospore formation
-intersection_of: RO:0000086 PATO:0002304
+intersection_of: RO:0000086 PATO:0002304 ! increased process quality
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:39Z
 
@@ -179,7 +180,7 @@ def: "An endospore formation phenotype where the cell possesses the ability to f
 is_a: OMP:0000094 ! endospore formation phenotype
 intersection_of: OMP:0000094 ! endospore formation phenotype
 intersection_of: inheres_in GO:0034301
-intersection_of: RO:0000086 PATO:0000467
+intersection_of: RO:0000086 PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-26T03:09:10Z
 
@@ -190,7 +191,7 @@ def: "An endospore formation phenotype where the cell does not possess the abili
 is_a: OMP:0000094 ! endospore formation phenotype
 intersection_of: OMP:0000094 ! endospore formation phenotype
 intersection_of: inheres_in GO:0034301
-intersection_of: RO:0000086 PATO:0000462
+intersection_of: RO:0000086 PATO:0000462 ! absent
 created_by: mchibucos
 creation_date: 2011-04-26T03:09:25Z
 
@@ -336,11 +337,13 @@ creation_date: 2011-06-07T11:25:05Z
 
 [Term]
 id: OMP:0000039
-name: oxygen requirement for growth phenotype
-def: "A growth phenotype dealing with oxygen requirements and ranges for growth." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
+name: oxygen growth range phenotype
+def: "A growth range phenotype dealing with oxygen requirements and the range of oxygen concentrations that allow for growth." [OMP:WAM]
+is_a: OMP:0007192 ! growth range phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:36:04Z
+modified_by: siegele
+modification_date: 2014-10-04T18:48:33Z
 
 [Term]
 id: OMP:0000040
@@ -587,11 +590,15 @@ creation_date: 2011-02-02T03:11:48Z
 [Term]
 id: OMP:0000071
 name: cell morphology phenotype
-def: "A microbial phenotype, where the trait in question is the form and structure of the cell." [OMP:MCC]
+def: "A microbial phenotype related to the form and structure of an organism, cell, or cells." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
+intersection_of: PATO:0000051 ! morphology
+intersection_of: inheres_in GO:0005623 ! cell
 created_by: adrienne
 creation_date: 2011-02-02T03:15:16Z
+modified_by: siegele
+modification_date: 2014-10-04T19:21:39Z
 
 [Term]
 id: OMP:0000072
@@ -606,16 +613,24 @@ id: OMP:0000073
 name: cell shape phenotype
 def: "A cell morphology phenotype where the trait in question is the shape of a cell." [OMP:MCC]
 is_a: OMP:0000071 ! cell morphology phenotype
+intersection_of: PATO:0000052 ! shape
+intersection_of: inheres_in GO:0005623 ! cell
 created_by: adrienne
 creation_date: 2011-02-02T03:18:02Z
+modified_by: siegele
+modification_date: 2014-10-04T19:24:15Z
 
 [Term]
 id: OMP:0000074
 name: cell size phenotype
 def: "A cell morphology phenotype where the trait in question is the size of a cell." [OMP:MCC]
 is_a: OMP:0000071 ! cell morphology phenotype
+intersection_of: PATO:0000117 ! size
+intersection_of: inheres_in GO:0005623 ! cell
 created_by: adrienne
 creation_date: 2011-02-02T03:18:19Z
+modified_by: siegele
+modification_date: 2014-10-04T19:24:41Z
 
 [Term]
 id: OMP:0000075
@@ -690,8 +705,11 @@ name: cell projection phenotype
 def: "A cell morphology phenotype where the structure in question is a prolongation or process extending from a cell." [OMP:MCC]
 synonym: "cell appendage phenotype" EXACT []
 is_a: OMP:0000071 ! cell morphology phenotype
+intersection_of: PATO:0001241 ! physical object quality
 created_by: adrienne
 creation_date: 2011-02-02T03:47:44Z
+modified_by: siegele
+modification_date: 2014-10-04T19:33:09Z
 
 [Term]
 id: OMP:0000084
@@ -704,11 +722,15 @@ creation_date: 2011-02-02T03:47:57Z
 
 [Term]
 id: OMP:0000085
-name: cell envelope phenotype
-def: "A cell morphology phenotype where the structure in question is the envelope that surrounds a bacterial cell and includes the cytoplasmic membrane and everything external to the cytoplasmic membrane, encompassing the periplasmic space, cell wall, and outer membrane if present." [OMP:MCC]
+name: envelope phenotype
+def: "A cell morphology phenotype relating to the envelope that surrounds a microbial cell and includes the cytoplasmic membrane and everything external to the cytoplasmic membrane, encompassing the periplasmic space, cell wall, and outer membrane.  Additional layers, such as capsules or S-layers, are also part of the envelope." [OMP:MCC]
 is_a: OMP:0000071 ! cell morphology phenotype
+intersection_of: PATO:0001241 ! physical object quality
+intersection_of: inheres_in GO:0031975 ! envelope
 created_by: adrienne
 creation_date: 2011-02-02T03:49:03Z
+modified_by: siegele
+modification_date: 2014-10-04T19:32:29Z
 
 [Term]
 id: OMP:0000086
@@ -726,7 +748,7 @@ creation_date: 2011-02-02T03:19:47Z
 id: OMP:0000087
 name: facultative anaerobe phenotype
 def: "An oxygen requirement for growth phenotype where growth does not require oxygen but growth is better in its presence." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+is_a: OMP:0000039 ! oxygen growth range phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:42:26Z
 
@@ -884,7 +906,7 @@ creation_date: 2011-02-02T02:42:12Z
 id: OMP:0000105
 name: aerotolerant anaerobe phenotype
 def: "An oxygen requirement for growth phenotype, where growth occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+is_a: OMP:0000039 ! oxygen growth range phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:43:38Z
 
@@ -1429,7 +1451,7 @@ creation_date: 2011-02-02T02:52:30Z
 id: OMP:0000171
 name: microaerophile phenotype
 def: "An oxygen requirement for growth phenotype where growth requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+is_a: OMP:0000039 ! oxygen growth range phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
 
@@ -1453,12 +1475,14 @@ creation_date: 2011-02-02T03:13:32Z
 [Term]
 id: OMP:0000174
 name: growth phenotype
-def: "A microbial phenotype related to the environmental factors and requirements for microbial growth." [OMP:WAM]
+def: "A microbial phenotype related to the increase in size or mass of an organism, a part of an organism, or a cell." [GO:0040007, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0040007 "growth"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:59Z
+modified_by: siegele
+modification_date: 2014-10-04T18:43:10Z
 
 [Term]
 id: OMP:0000175
@@ -1543,7 +1567,7 @@ creation_date: 2011-02-07T03:52:44Z
 id: OMP:0000184
 name: obligate anaerobe phenotype
 def: "An oxygen requirement for growth phenotype where growth does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+is_a: OMP:0000039 ! oxygen growth range phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:34Z
 
@@ -1551,7 +1575,7 @@ creation_date: 2011-02-02T03:29:34Z
 id: OMP:0000185
 name: obligate aerobe phenotype
 def: "An oxygen requirement for growth phenotype where growth is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen requirement for growth phenotype
+is_a: OMP:0000039 ! oxygen growth range phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
 
@@ -1678,7 +1702,7 @@ creation_date: 2011-03-02T01:41:52Z
 id: OMP:0000202
 name: outer membrane vesicles phenotype
 def: "A cell envelope phenotype where a cell or cells have the ability to produce outer membrane vesicles." [OMP:JCH, PMID:20825345]
-is_a: OMP:0000085 ! cell envelope phenotype
+is_a: OMP:0000085 ! envelope phenotype
 created_by: Adrienne
 creation_date: 2011-03-02T01:43:12Z
 
@@ -1688,7 +1712,7 @@ name: capsule phenotype
 def: "A cell envelope phenotype where the trait in question is the capsule, a layer of polysaccharide or poly-amino acids surrounding a microbial cell.  When present, the capsule is the outermost layer of the cell envelope." [ISBN:9780073402406, OMP:DAS]
 synonym: "glycocalyx" RELATED []
 synonym: "slime layer" RELATED []
-is_a: OMP:0000085 ! cell envelope phenotype
+is_a: OMP:0000085 ! envelope phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:44:51Z
 
@@ -2514,7 +2538,7 @@ creation_date: 2013-05-23T01:58:55Z
 id: OMP:0000461
 name: outer membrane phenotype
 def: "A cell envelope phenotype where the trait in question is the presence or absence of  a lipid bilayer membrane located outside the peptidoglycan cell wall." [ISBN:9780073402406, OMP:DAS]
-is_a: OMP:0000085 ! cell envelope phenotype
+is_a: OMP:0000085 ! envelope phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:43:06Z
 
@@ -2606,9 +2630,11 @@ creation_date: 2014-07-23T12:18:08Z
 id: OMP:0005002
 name: temperature growth range phenotype
 def: "A growth phenotype where the trait in question is the temperature requirements and range needed for microbial growth." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0000039 ! oxygen growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:06:05Z
+modified_by: siegele
+modification_date: 2014-10-04T18:47:25Z
 
 [Term]
 id: OMP:0005003
@@ -2653,10 +2679,12 @@ creation_date: 2013-09-04T13:40:27Z
 [Term]
 id: OMP:0005008
 name: pH growth range phenotype
-def: "A growth phenotype related to the pH range required for growth of a cell or organism." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
+def: "A growth range phenotype related to the pH range that allows growth of a cell or organism." [OMP:WAM]
+is_a: OMP:0007192 ! growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:57:28Z
+modified_by: siegele
+modification_date: 2014-10-04T18:49:05Z
 
 [Term]
 id: OMP:0005009
@@ -2685,18 +2713,22 @@ creation_date: 2013-09-04T16:24:24Z
 [Term]
 id: OMP:0005012
 name: pressure growth range phenotype
-def: "A growth phenotype dealing with the pressure requirements for growth." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
+def: "A growth range phenotype dealing with the pressure requirements for growth of an organism or cell." [OMP:WAM]
+is_a: OMP:0007192 ! growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:42:28Z
+modified_by: siegele
+modification_date: 2014-10-04T18:49:31Z
 
 [Term]
 id: OMP:0005013
-name: solute and water activity phenotype
-def: "A growth phenotype dealing with the osmotic requirements for growth." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
+name: solute and water activity growth range phenotype
+def: "A growth range phenotype dealing with the range of solute concentrations (water activity) that allow for growth of an organism or cell." [OMP:WAM]
+is_a: OMP:0007192 ! growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:43:45Z
+modified_by: siegele
+modification_date: 2014-10-04T18:50:20Z
 
 [Term]
 id: OMP:0005014
@@ -2711,7 +2743,7 @@ creation_date: 2013-09-09T11:49:53Z
 id: OMP:0005015
 name: osmotolerant growth
 def: "A solute and water activity phenotype where the growth can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005013 ! solute and water activity phenotype
+is_a: OMP:0005013 ! solute and water activity growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:05:24Z
 
@@ -2719,7 +2751,7 @@ creation_date: 2013-09-09T13:05:24Z
 id: OMP:0005016
 name: halophilic growth
 def: "A solute and water activity phenotype where the growth requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005013 ! solute and water activity phenotype
+is_a: OMP:0005013 ! solute and water activity growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:06:03Z
 
@@ -5867,8 +5899,12 @@ name: altered phenotype
 def: "A microbial phenotype that is altered in some way relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
+intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-07-10T12:28:36Z
+modified_by: siegele
+modification_date: 2014-10-04T18:34:31Z
 
 [Term]
 id: OMP:0007086
@@ -6017,8 +6053,12 @@ name: altered cell morphology
 def: "A cell morphology phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000071 ! cell morphology phenotype
 is_a: OMP:0007085 ! altered phenotype
+intersection_of: OMP:0000071 ! cell morphology phenotype
+intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-07-10T22:43:40Z
+modified_by: siegele
+modification_date: 2014-10-04T19:22:43Z
 
 [Term]
 id: OMP:0007104
@@ -6736,13 +6776,15 @@ xref: PATO:0000001 "quality"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-10-03T17:22:57Z
+modified_by: siegele
+modification_date: 2014-10-04T19:34:54Z
 
 [Term]
 id: OMP:0007188
 name: altered_process_quality
 def: "A quality which inheres in an process that is altered in same way relative to a designated control." [OMP:DAS, PATO:0001236]
 is_a: OMP:0007187 ! quality (Interim)
-intersection_of: PATO:0001236
+intersection_of: PATO:0001236 ! process quality
 intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-10-03T17:27:01Z
@@ -6770,6 +6812,29 @@ def: "A dinitrogen utilization phenotype where an organism lacks the ability to 
 is_a: OMP:0006030 ! dinitrogen utilization phenotype
 created_by: siegele
 creation_date: 2014-10-04T01:44:57Z
+
+[Term]
+id: OMP:0007192
+name: growth range phenotype
+def: "A growth phenotype related to non-nutrient environmental factors and the requirements for microbial growth." [ISBN:9780073402406, OMP:DAS]
+is_a: OMP:0000174 ! growth phenotype
+created_by: siegele
+creation_date: 2014-10-04T18:41:07Z
+modified_by: siegele
+modification_date: 2014-10-04T18:47:05Z
+
+[Term]
+id: OMP:0007193
+name: altered_physical_object_quality
+def: "A physical object quality that is altered relative to a designated control." [OMP:DAS]
+xref: PATO:0001241 "physical object quality"
+is_a: OMP:0007187 ! quality (Interim)
+intersection_of: PATO:0001241 ! physical object quality
+intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
+created_by: siegele
+creation_date: 2014-10-04T19:34:54Z
+modified_by: siegele
+modification_date: 2014-10-04T19:37:00Z
 
 [Typedef]
 id: correlates_with
