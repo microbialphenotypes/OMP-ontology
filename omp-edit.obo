@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 05:10:2014 12:14
+date: 06:10:2014 16:57
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -7109,7 +7109,7 @@ synonym: "presence" RELATED []
 synonym: "presence or absence in organism" EXACT []
 synonym: "quantitative" EXACT []
 is_a: PATO:0000068 ! qualitative
-relationship: reciprocal_of PATO:0001555
+relationship: reciprocal_of PATO:0001555 ! has number of
 
 [Term]
 id: PATO:0000117
@@ -7133,8 +7133,8 @@ subset: value_slim
 synonym: "absence" EXACT []
 synonym: "absent from organism" EXACT []
 is_a: PATO:0000070 ! count
-relationship: reciprocal_of PATO:0001558
-relationship: reciprocal_of PATO:0002000
+relationship: reciprocal_of PATO:0001558 ! lacking processual parts
+relationship: reciprocal_of PATO:0002000 ! lacks all parts of type
 
 [Term]
 id: PATO:0000467
@@ -7180,13 +7180,57 @@ xref: snap:Quality
 is_a: PATO:0000001 ! quality
 
 [Term]
+id: PATO:0001555
+name: has number of
+namespace: quality
+def: "The number of parts of a particular type that the bearer entity has. This is a relational quality, and thus holds between two entities: the bearer of the quality, and the type of parts." [PATOC:CJM]
+subset: attribute_slim
+subset: relational_slim
+synonym: "cardinality" RELATED []
+synonym: "extra or missing physical or functional parts" EXACT []
+synonym: "has or lacks parts of type" EXACT []
+synonym: "mereological quality" EXACT []
+synonym: "number" RELATED []
+synonym: "number of" EXACT []
+xref: OBO_REL:has_part
+is_a: PATO:0001241 ! physical object quality
+
+[Term]
+id: PATO:0001564
+name: extra or missing processual parts
+namespace: quality
+def: "A quality of a process inhering in a bearer by virtue of the bearer's processual parts." [PATOC:GVG]
+subset: relational_slim
+is_a: PATO:0001236 ! process quality
+
+[Term]
+id: PATO:0001999
+name: lacks parts or has fewer parts of type
+namespace: quality
+def: "The bearer of this quality has_part < n of the indicated entity type, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part. Formally: If a bearer entity e has fewer parts of type X at time t, then the number of instances x of X at t such that x part_of e is < n, where n is either the normal number for comparable entities, or n is stated explicitly. This case includes the limit case, where the bearer lacks all parts of the specified type." [PATOC:CJM]
+subset: relational_slim
+synonym: "loss of" EXACT []
+is_a: PATO:0002083 ! altered number of
+
+[Term]
+id: PATO:0002083
+name: altered number of
+namespace: quality
+def: "Having extra or fewer parts." [PATOC:GVG]
+subset: attribute_slim
+subset: relational_slim
+is_a: PATO:0001555 ! has number of
+created_by: George Gkoutos
+creation_date: 2009-09-21T10:41:58Z
+
+[Term]
 id: PATO:0002300
 name: increased quality
 namespace: quality
 def: "A quality that has a value that is increased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
 intersection_of: PATO:0000001 ! quality
-intersection_of: increased_in_magnitude_relative_to PATO:0000461
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:39:43Z
 
@@ -7197,7 +7241,7 @@ namespace: quality
 def: "A quality that has a value that is decreased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
 intersection_of: PATO:0000001 ! quality
-intersection_of: decreased_in_magnitude_relative_to PATO:0000461
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:40:15Z
 
@@ -7209,7 +7253,7 @@ def: "A quality of a process that has a value that is decreased compared to norm
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002301 ! decreased quality
 intersection_of: PATO:0001236 ! process quality
-intersection_of: decreased_in_magnitude_relative_to PATO:0000461
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:50:59Z
 
@@ -7221,7 +7265,7 @@ def: "A quality of a process that has a value that is increased compared to norm
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002300 ! increased quality
 intersection_of: PATO:0001236 ! process quality
-intersection_of: increased_in_magnitude_relative_to PATO:0000461
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:53:08Z
 
