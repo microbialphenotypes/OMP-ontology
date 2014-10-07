@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 06:10:2014 16:57
+date: 07:10:2014 17:03
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -33,7 +33,8 @@ subsetdef: value_slim "Value slim"
 subsetdef: virus_checked "Viral overhaul terms"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: microbial_phenotype
-remark: xx
+namespace-id-rule: * OMP:$sequence(7,0007001,0008000)$
+remark: none
 ontology: omp
 ontology: go
 ontology: pato
@@ -83,6 +84,18 @@ subset: gosubset_prok
 xref: NIF_Subcellular:sao1813327414
 xref: Wikipedia:Cell_(biology)
 is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0006928
+name: cellular component movement
+namespace: biological_process
+def: "The directed, self-propelled movement of a cellular component without the involvement of an external agent such as a transporter or a pore." [GOC:dgh, GOC:dph, GOC:jl, GOC:mlg]
+comment: Note that in GO cellular components include whole cells (cell is_a cellular component).
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "cell movement" RELATED []
+synonym: "cellular component motion" EXACT [GOC:dph, GOC:jl]
+is_a: GO:0044763 ! single-organism cellular process
 
 [Term]
 id: GO:0008150
@@ -196,6 +209,16 @@ def: "The process in which a cell gives rise to an endospore, a dormant, highly 
 is_a: GO:0043936 ! asexual sporulation resulting in formation of a cellular spore
 
 [Term]
+id: GO:0040011
+name: locomotion
+namespace: biological_process
+def: "Self-propelled movement of a cell or organism from one location to another." [GOC:dgh]
+subset: goslim_generic
+subset: goslim_pir
+subset: gosubset_prok
+is_a: GO:0008150 ! biological_process
+
+[Term]
 id: GO:0042995
 name: cell projection
 namespace: cellular_component
@@ -273,7 +296,7 @@ comment: Note that, for example, the formation of a pseudopod in an amoeba would
 subset: goslim_generic
 synonym: "formation of an anatomical structure involved in morphogenesis" EXACT [GOC:dph, GOC:tb]
 is_a: GO:0032502 ! developmental process
-relationship: part_of GO:0009653
+relationship: part_of GO:0009653 ! anatomical structure morphogenesis
 
 [Term]
 id: GO:0048869
@@ -283,6 +306,45 @@ def: "A biological process whose specific outcome is the progression of a cell o
 subset: gosubset_prok
 is_a: GO:0044763 ! single-organism cellular process
 is_a: GO:0044767 ! single-organism developmental process
+
+[Term]
+id: GO:0048870
+name: cell motility
+namespace: biological_process
+def: "Any process involved in the controlled self-propelled movement of a cell that results in translocation of the cell from one place to another." [GOC:dgh, GOC:dph, GOC:isa_complete, GOC:mlg]
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: gosubset_prok
+synonym: "cell locomotion" EXACT []
+synonym: "cell movement" RELATED []
+synonym: "movement of a cell" EXACT []
+is_a: GO:0006928 ! cellular component movement
+is_a: GO:0040011 ! locomotion
+relationship: part_of GO:0051674 ! localization of cell
+
+[Term]
+id: GO:0051179
+name: localization
+namespace: biological_process
+def: "Any process in which a cell, a substance, or a cellular entity, such as a protein complex or organelle, is transported to or maintained in a specific location." [GOC:ai]
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "establishment and maintenance of cellular component location" NARROW []
+synonym: "establishment and maintenance of localization" EXACT []
+synonym: "establishment and maintenance of position" EXACT []
+synonym: "establishment and maintenance of substance location" NARROW []
+synonym: "establishment and maintenance of substrate location" NARROW []
+synonym: "localisation" EXACT [GOC:mah]
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0071976
+name: cell gliding
+namespace: biological_process
+def: "Cell motility that results in the smooth movement of a cell along a solid surface." [PMID:18461074]
+subset: gosubset_prok
+synonym: "cell gliding motility" EXACT [GOC:mah]
+is_a: GO:0048870 ! cell motility
 
 [Term]
 id: OMP:0000000
@@ -295,8 +357,12 @@ id: OMP:0000001
 name: cell motility phenotype
 def: "A locomotion phenotype where the trait in question is the self-propelled movement of a cell or cells from one location to another." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0048870 "cell motility"
 xref: PATO:0001488
 is_a: OMP:0000312 ! locomotion phenotype
+intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: inheres_in GO:0005623 ! cell
+intersection_of: inheres_in GO:0048870 ! cell motility
 creation_date: 2011-03-10T06:55:06Z
 
 [Term]
@@ -305,6 +371,8 @@ name: decreased cell motility
 def: "An altered cell motility phenotype where cell motility is decreased relative to a designated control." [OMP:MCC]
 xref: PATO:0002297
 is_a: OMP:0007001 ! altered cell motility
+intersection_of: OMP:0007001 ! altered cell motility
+intersection_of: RO:0000086 PATO:0002302 ! decreased process quality
 creation_date: 2011-03-10T07:02:42Z
 
 [Term]
@@ -331,6 +399,8 @@ name: presence of cell motility
 def: "A cell motility phenotype where a cell or cells possess the ability to perform controlled self-propelled movement that results in translocation from one place to another." [OMP:MCC]
 synonym: "motile" RELATED []
 is_a: OMP:0000001 ! cell motility phenotype
+intersection_of: OMP:0000001 ! cell motility phenotype
+intersection_of: RO:0000086 PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-14T03:35:35Z
 
@@ -624,6 +694,8 @@ name: increased cell motility
 def: "An altered cell motility phenotype where cell motility is increased relative to a designated control." [OMP:MCC]
 xref: PATO:0002298
 is_a: OMP:0007001 ! altered cell motility
+intersection_of: OMP:0007001 ! altered cell motility
+intersection_of: RO:0000086 PATO:0002304 ! increased process quality
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:26Z
 
@@ -1198,6 +1270,8 @@ id: OMP:0000112
 name: cell motility by gliding
 def: "A presence of cell motility phenotype where a cell or cells exhibits smooth movement along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
+intersection_of: OMP:0000005 ! presence of cell motility
+intersection_of: inheres_in GO:0071976 ! cell gliding
 created_by: adrienne
 creation_date: 2011-02-07T03:18:03Z
 
@@ -1375,6 +1449,8 @@ name: absence of cell motility
 def: "A cell motility phenotype where a cell or cells lacks the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
 synonym: "non-motile" RELATED []
 is_a: OMP:0000001 ! cell motility phenotype
+intersection_of: OMP:0000001 ! cell motility phenotype
+intersection_of: RO:0000086 PATO:0000462 ! absent
 created_by: adrienne
 creation_date: 2011-02-18T03:33:32Z
 
@@ -2553,7 +2629,10 @@ id: OMP:0000312
 name: locomotion phenotype
 def: "A microbial phenotype, where the trait in question is the self-propelled movement of a cell from one location to another." [GO:0040011, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0040011 "locomotion"
 is_a: OMP:0000000 ! microbial phenotype
+intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: inheres_in GO:0040011 ! locomotion
 created_by: mchibucos
 creation_date: 2012-04-05T11:43:53Z
 
@@ -5416,6 +5495,8 @@ name: abolished cell motility
 def: "A decreased cell motility phenotype where the ability of a cell or cells to be motile is abolished." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 is_a: OMP:0000133 ! absence of cell motility
+intersection_of: OMP:0000002 ! decreased cell motility
+intersection_of: RO:0000086 PATO:0000462 ! absent
 created_by: siegele
 creation_date: 2014-06-29T14:10:40Z
 
@@ -5425,6 +5506,8 @@ name: altered cell motility
 def: "A cell motility phenotype where cell motility is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000001 ! cell motility phenotype
 is_a: OMP:0007085 ! altered phenotype
+intersection_of: OMP:0000001 ! cell motility phenotype
+intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-04-24T17:38:06Z
 
@@ -7133,8 +7216,8 @@ subset: value_slim
 synonym: "absence" EXACT []
 synonym: "absent from organism" EXACT []
 is_a: PATO:0000070 ! count
-relationship: reciprocal_of PATO:0001558 ! lacking processual parts
-relationship: reciprocal_of PATO:0002000 ! lacks all parts of type
+relationship: reciprocal_of PATO:0001558
+relationship: reciprocal_of PATO:0002000
 
 [Term]
 id: PATO:0000467
@@ -7180,57 +7263,13 @@ xref: snap:Quality
 is_a: PATO:0000001 ! quality
 
 [Term]
-id: PATO:0001555
-name: has number of
-namespace: quality
-def: "The number of parts of a particular type that the bearer entity has. This is a relational quality, and thus holds between two entities: the bearer of the quality, and the type of parts." [PATOC:CJM]
-subset: attribute_slim
-subset: relational_slim
-synonym: "cardinality" RELATED []
-synonym: "extra or missing physical or functional parts" EXACT []
-synonym: "has or lacks parts of type" EXACT []
-synonym: "mereological quality" EXACT []
-synonym: "number" RELATED []
-synonym: "number of" EXACT []
-xref: OBO_REL:has_part
-is_a: PATO:0001241 ! physical object quality
-
-[Term]
-id: PATO:0001564
-name: extra or missing processual parts
-namespace: quality
-def: "A quality of a process inhering in a bearer by virtue of the bearer's processual parts." [PATOC:GVG]
-subset: relational_slim
-is_a: PATO:0001236 ! process quality
-
-[Term]
-id: PATO:0001999
-name: lacks parts or has fewer parts of type
-namespace: quality
-def: "The bearer of this quality has_part < n of the indicated entity type, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part. Formally: If a bearer entity e has fewer parts of type X at time t, then the number of instances x of X at t such that x part_of e is < n, where n is either the normal number for comparable entities, or n is stated explicitly. This case includes the limit case, where the bearer lacks all parts of the specified type." [PATOC:CJM]
-subset: relational_slim
-synonym: "loss of" EXACT []
-is_a: PATO:0002083 ! altered number of
-
-[Term]
-id: PATO:0002083
-name: altered number of
-namespace: quality
-def: "Having extra or fewer parts." [PATOC:GVG]
-subset: attribute_slim
-subset: relational_slim
-is_a: PATO:0001555 ! has number of
-created_by: George Gkoutos
-creation_date: 2009-09-21T10:41:58Z
-
-[Term]
 id: PATO:0002300
 name: increased quality
 namespace: quality
 def: "A quality that has a value that is increased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
 intersection_of: PATO:0000001 ! quality
-intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+intersection_of: increased_in_magnitude_relative_to PATO:0000461
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:39:43Z
 
@@ -7241,7 +7280,7 @@ namespace: quality
 def: "A quality that has a value that is decreased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
 intersection_of: PATO:0000001 ! quality
-intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:40:15Z
 
@@ -7253,7 +7292,7 @@ def: "A quality of a process that has a value that is decreased compared to norm
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002301 ! decreased quality
 intersection_of: PATO:0001236 ! process quality
-intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:50:59Z
 
@@ -7265,7 +7304,7 @@ def: "A quality of a process that has a value that is increased compared to norm
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002300 ! increased quality
 intersection_of: PATO:0001236 ! process quality
-intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+intersection_of: increased_in_magnitude_relative_to PATO:0000461
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:53:08Z
 
