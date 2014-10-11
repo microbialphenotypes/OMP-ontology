@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 10:10:2014 00:56
+date: 11:10:2014 18:53
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -53,6 +53,18 @@ subset: gosubset_prok
 synonym: "reproductive physiological process" EXACT []
 xref: Wikipedia:Reproduction
 is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0001539
+name: cilium or flagellum-dependent cell motility
+namespace: biological_process
+def: "Cell motility due to movement of eukaryotic cilia or bacterial-type flagella or archaeal-type flagella." [GOC:cilia, GOC:hjd, GOC:krc]
+comment: Note that we deem eukaryotic cilia and microtubule-based flagella to be equivalent, while the bacterial- and archaeal-type flagella have a different structure. The former are microtubule-based structures that lash back and forth and are present only in eukaryotes, while the latter achieve motility by rotation. Bacterial- and archaeal-type flagella are superficially similar but have a different molecular composition and fine structure. These three structures never co-exist in the same organism. Therefore, GO:0001539 'cilium or flagellum-dependent cell motility' is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term. Direct annotations to GO:0001539 'cilium or flagellum-dependent cell motility' may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: gosubset_prok
+synonym: "ciliary or bacterial-type flagellar motility" RELATED []
+synonym: "ciliary/flagellar motility" EXACT []
+is_a: GO:0048870 ! cell motility
 
 [Term]
 id: GO:0005575
@@ -327,6 +339,18 @@ synonym: "cellular component motion" EXACT [GOC:dph, GOC:jl]
 is_a: GO:0044763 ! single-organism cellular process
 
 [Term]
+id: GO:0006935
+name: chemotaxis
+namespace: biological_process
+def: "The directed movement of a motile cell or organism, or the directed growth of a cell guided by a specific chemical concentration gradient. Movement may be towards a higher concentration (positive chemotaxis) or towards a lower concentration (negative chemotaxis)." [ISBN:0198506732]
+subset: goslim_metagenomics
+subset: gosubset_prok
+synonym: "taxis in response to chemical stimulus" EXACT []
+xref: Wikipedia:Chemotaxis
+is_a: GO:0042221 ! response to chemical
+is_a: GO:0042330 ! taxis
+
+[Term]
 id: GO:0007059
 name: chromosome segregation
 namespace: biological_process
@@ -409,6 +433,53 @@ is_a: GO:0043170 ! macromolecule metabolic process
 is_a: GO:1901576 ! organic substance biosynthetic process
 
 [Term]
+id: GO:0009453
+name: energy taxis
+namespace: biological_process
+def: "The directed movement of a motile cell or organism in response to physical parameters involved in energy generation, such as light, oxygen, and oxidizable substrates." [GOC:jl, PMID:11029423]
+subset: gosubset_prok
+synonym: "energytaxis" EXACT []
+synonym: "taxis in response to energy source" EXACT []
+is_a: GO:0042330 ! taxis
+
+[Term]
+id: GO:0009454
+name: aerotaxis
+namespace: biological_process
+def: "The directed movement of a motile cell or organism in response to environmental oxygen." [GOC:jl, ISBN:0192801023]
+subset: gosubset_prok
+synonym: "taxis in response to atmospheric oxygen" EXACT []
+is_a: GO:0006935 ! chemotaxis
+is_a: GO:0009453 ! energy taxis
+
+[Term]
+id: GO:0009605
+name: response to external stimulus
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an external stimulus." [GOC:hb]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_plant
+subset: gosubset_prok
+synonym: "response to environmental stimulus" EXACT []
+is_a: GO:0050896 ! response to stimulus
+
+[Term]
+id: GO:0009892
+name: negative regulation of metabolic process
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism." [GOC:go_curators]
+subset: gosubset_prok
+synonym: "down regulation of metabolic process" EXACT []
+synonym: "down-regulation of metabolic process" EXACT []
+synonym: "downregulation of metabolic process" EXACT []
+synonym: "inhibition of metabolic process" NARROW []
+synonym: "negative regulation of metabolism" EXACT []
+is_a: GO:0019222 ! regulation of metabolic process
+is_a: GO:0048519 ! negative regulation of biological process
+relationship: negatively_regulates GO:0008152 ! metabolic process
+
+[Term]
 id: GO:0009987
 name: cellular process
 namespace: biological_process
@@ -454,6 +525,36 @@ xref: Wikipedia:Gene_expression
 is_a: GO:0043170 ! macromolecule metabolic process
 
 [Term]
+id: GO:0010468
+name: regulation of gene expression
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of gene expression. Gene expression is the process in which a gene's coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA (for protein-coding genes) and the translation of that mRNA into protein. Some protein processing events may be included when they are required to form an active form of a product from an inactive precursor form." [GOC:dph, GOC:tb]
+subset: gosubset_prok
+synonym: "regulation of gene product expression" RELATED [GOC:curators]
+synonym: "regulation of protein expression" NARROW [GOC:curators]
+xref: Wikipedia:Regulation_of_gene_expression
+is_a: GO:0060255 ! regulation of macromolecule metabolic process
+relationship: regulates GO:0010467 ! gene expression
+
+[Term]
+id: GO:0010605
+name: negative regulation of macromolecule metabolic process
+namespace: biological_process
+def: "Any process that decreases the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [GOC:dph, GOC:tb]
+is_a: GO:0009892 ! negative regulation of metabolic process
+is_a: GO:0060255 ! regulation of macromolecule metabolic process
+relationship: negatively_regulates GO:0043170 ! macromolecule metabolic process
+
+[Term]
+id: GO:0010629
+name: negative regulation of gene expression
+namespace: biological_process
+def: "Any process that decreases the frequency, rate or extent of gene expression. Gene expression is the process in which a gene's coding sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA (for protein-coding genes) and the translation of that mRNA into protein. Some protein processing events may be included when they are required to form an active form of a product from an inactive precursor form." [GOC:dph, GOC:tb]
+is_a: GO:0010468 ! regulation of gene expression
+is_a: GO:0010605 ! negative regulation of macromolecule metabolic process
+relationship: negatively_regulates GO:0010467 ! gene expression
+
+[Term]
 id: GO:0016070
 name: RNA metabolic process
 namespace: biological_process
@@ -486,6 +587,18 @@ is_a: GO:0044260 ! cellular macromolecule metabolic process
 is_a: GO:0090304 ! nucleic acid metabolic process
 
 [Term]
+id: GO:0016458
+name: gene silencing
+namespace: biological_process
+def: "Any transcriptional or post-transcriptional process carried out at the cellular level that results in long-term gene inactivation." [GOC:dph, GOC:jid, GOC:tb]
+comment: Note that this process is the opposite of long-term maintenance of gene activation.
+subset: goslim_pir
+synonym: "long-term maintenance of gene inactivation" RELATED []
+xref: Wikipedia:Gene_silencing
+is_a: GO:0010629 ! negative regulation of gene expression
+is_a: GO:0044763 ! single-organism cellular process
+
+[Term]
 id: GO:0018130
 name: heterocycle biosynthetic process
 namespace: biological_process
@@ -497,6 +610,16 @@ synonym: "heterocycle formation" EXACT []
 synonym: "heterocycle synthesis" EXACT []
 is_a: GO:0044249 ! cellular biosynthetic process
 is_a: GO:0046483 ! heterocycle metabolic process
+
+[Term]
+id: GO:0019222
+name: regulation of metabolic process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions and pathways within a cell or an organism." [GOC:go_curators]
+subset: gosubset_prok
+synonym: "regulation of metabolism" EXACT []
+is_a: GO:0050789 ! regulation of biological process
+relationship: regulates GO:0008152 ! metabolic process
 
 [Term]
 id: GO:0019438
@@ -547,7 +670,7 @@ def: "The cellular process that ensures successive accurate and complete genome 
 subset: gocheck_do_not_manually_annotate
 subset: gosubset_prok
 is_a: GO:0044763 ! single-organism cellular process
-relationship: part_of GO:0007049 ! cell cycle
+relationship: part_of GO:0007049
 
 [Term]
 id: GO:0030154
@@ -596,6 +719,21 @@ namespace: cellular_component
 def: "A multilayered structure surrounding all or part of a cell; encompasses one or more lipid bilayers, and may include a cell wall layer; also includes the space between layers." [GOC:mah, GOC:pz]
 subset: gosubset_prok
 is_a: GO:0044464 ! cell part
+
+[Term]
+id: GO:0032196
+name: transposition
+namespace: biological_process
+def: "Any process involved in mediating the movement of discrete segments of DNA between nonhomologous sites." [GOC:jp, ISBN:1555812090]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_generic
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_yeast
+subset: gosubset_prok
+xref: Wikipedia:Transposon
+is_a: GO:0044763 ! single-organism cellular process
 
 [Term]
 id: GO:0032502
@@ -717,6 +855,32 @@ subset: gosubset_prok
 is_a: GO:0008150 ! biological_process
 
 [Term]
+id: GO:0042221
+name: response to chemical
+namespace: biological_process
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a chemical stimulus." [GOC:jl]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: goslim_yeast
+subset: gosubset_prok
+synonym: "response to chemical stimulus" EXACT [GOC:dos]
+synonym: "response to chemical substance" EXACT []
+is_a: GO:0050896 ! response to stimulus
+
+[Term]
+id: GO:0042330
+name: taxis
+namespace: biological_process
+def: "The directed movement of a motile cell or organism in response to an external stimulus." [GOC:jl, ISBN:0192801023]
+subset: gosubset_prok
+synonym: "directed movement in response to stimulus" EXACT []
+xref: Wikipedia:Taxis
+is_a: GO:0009605 ! response to external stimulus
+is_a: GO:0040011 ! locomotion
+
+[Term]
 id: GO:0042995
 name: cell projection
 namespace: cellular_component
@@ -727,6 +891,20 @@ synonym: "cell process" BROAD []
 synonym: "cellular process" BROAD []
 synonym: "cellular projection" EXACT []
 is_a: GO:0044464 ! cell part
+
+[Term]
+id: GO:0043107
+name: type IV pilus-dependent motility
+namespace: biological_process
+def: "Any process involved in the controlled movement of a bacterial cell which is dependent on the presence of type IV pili. Includes social gliding motility and twitching motility." [GOC:go_curators, PMID:12704238]
+subset: gosubset_prok
+synonym: "social gliding motility" NARROW []
+synonym: "TFP-dependent motility" EXACT []
+synonym: "TFP-dependent movement" EXACT []
+synonym: "twitching motility" NARROW []
+synonym: "type 4 pilus-dependent motility" EXACT []
+synonym: "type four pilus-dependent motility" EXACT []
+is_a: GO:0048870 ! cell motility
 
 [Term]
 id: GO:0043170
@@ -922,6 +1100,21 @@ synonym: "heterocycle metabolism" EXACT []
 is_a: GO:0044237 ! cellular metabolic process
 
 [Term]
+id: GO:0048519
+name: negative regulation of biological process
+namespace: biological_process
+alt_id: GO:0043118
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of a biological process. Biological processes are regulated by many means; examples include the control of gene expression, protein modification or interaction with a protein or substrate molecule." [GOC:jid]
+subset: gosubset_prok
+synonym: "down regulation of biological process" EXACT []
+synonym: "down-regulation of biological process" EXACT []
+synonym: "downregulation of biological process" EXACT []
+synonym: "inhibition of biological process" NARROW []
+synonym: "negative regulation of physiological process" EXACT []
+is_a: GO:0050789 ! regulation of biological process
+relationship: negatively_regulates GO:0008150 ! biological_process
+
+[Term]
 id: GO:0048646
 name: anatomical structure formation involved in morphogenesis
 namespace: biological_process
@@ -930,7 +1123,7 @@ comment: Note that, for example, the formation of a pseudopod in an amoeba would
 subset: goslim_generic
 synonym: "formation of an anatomical structure involved in morphogenesis" EXACT [GOC:dph, GOC:tb]
 is_a: GO:0032502 ! developmental process
-relationship: part_of GO:0009653 ! anatomical structure morphogenesis
+relationship: part_of GO:0009653
 
 [Term]
 id: GO:0048869
@@ -954,21 +1147,51 @@ synonym: "cell movement" RELATED []
 synonym: "movement of a cell" EXACT []
 is_a: GO:0006928 ! cellular component movement
 is_a: GO:0040011 ! locomotion
-relationship: part_of GO:0051674 ! localization of cell
+relationship: part_of GO:0051674
 
 [Term]
-id: GO:0051179
-name: localization
+id: GO:0050789
+name: regulation of biological process
 namespace: biological_process
-def: "Any process in which a cell, a substance, or a cellular entity, such as a protein complex or organelle, is transported to or maintained in a specific location." [GOC:ai]
+alt_id: GO:0050791
+def: "Any process that modulates the frequency, rate or extent of a biological process. Biological processes are regulated by many means; examples include the control of gene expression, protein modification or interaction with a protein or substrate molecule." [GOC:ai, GOC:go_curators]
+subset: goslim_aspergillus
+subset: goslim_candida
+subset: gosubset_prok
+synonym: "regulation of physiological process" EXACT []
+is_a: GO:0065007 ! biological regulation
+relationship: regulates GO:0008150 ! biological_process
+
+[Term]
+id: GO:0050896
+name: response to stimulus
+namespace: biological_process
+alt_id: GO:0051869
+def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism." [GOC:ai, GOC:bf]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_manually_annotate
 subset: goslim_pir
 subset: gosubset_prok
-synonym: "establishment and maintenance of cellular component location" NARROW []
-synonym: "establishment and maintenance of localization" EXACT []
-synonym: "establishment and maintenance of position" EXACT []
-synonym: "establishment and maintenance of substance location" NARROW []
-synonym: "establishment and maintenance of substrate location" NARROW []
-synonym: "localisation" EXACT [GOC:mah]
+synonym: "physiological response to stimulus" EXACT []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0060255
+name: regulation of macromolecule metabolic process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of the chemical reactions and pathways involving macromolecules, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [GOC:dph, GOC:tb]
+subset: gosubset_prok
+is_a: GO:0019222 ! regulation of metabolic process
+relationship: regulates GO:0043170 ! macromolecule metabolic process
+
+[Term]
+id: GO:0065007
+name: biological regulation
+namespace: biological_process
+def: "Any process that modulates a measurable attribute of any biological process, quality or function." [GOC:dph, GOC:isa_complete, GOC:mah, GOC:pr, GOC:vw]
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "regulation" BROAD []
 is_a: GO:0008150 ! biological_process
 
 [Term]
@@ -982,6 +1205,25 @@ synonym: "organic substance metabolism" EXACT []
 is_a: GO:0008152 ! metabolic process
 
 [Term]
+id: GO:0071973
+name: bacterial-type flagellum-dependent cell motility
+namespace: biological_process
+def: "Cell motility due to the motion of one or more bacterial-type flagella. A bacterial-type flagellum is a motor complex composed of an extracellular helical protein filament coupled to a rotary motor embedded in the cell envelope." [GOC:cilia, GOC:krc, GOC:mah]
+subset: gosubset_prok
+synonym: "bacterial-type flagellar cell motility" RELATED []
+synonym: "flagellin-based flagellar cell motility" EXACT [GOC:mah]
+is_a: GO:0097588 ! archaeal or bacterial-type flagellum-dependent cell motility
+
+[Term]
+id: GO:0071975
+name: cell swimming
+namespace: biological_process
+def: "Cell motility that results in the smooth movement of a cell through a liquid medium." [PMID:18461074]
+subset: gosubset_prok
+synonym: "cell swimming motility" EXACT [GOC:mah]
+is_a: GO:0048870 ! cell motility
+
+[Term]
 id: GO:0071976
 name: cell gliding
 namespace: biological_process
@@ -991,12 +1233,30 @@ synonym: "cell gliding motility" EXACT [GOC:mah]
 is_a: GO:0048870 ! cell motility
 
 [Term]
+id: GO:0071978
+name: bacterial-type flagellum-dependent swarming motility
+namespace: biological_process
+def: "Bacterial-type flagellum-dependent cell motility in which the action of numerous flagella results in the smooth movement of a group of cells along a solid surface. Swarming motility is observed in groups of bacteria." [GOC:cilia, PMID:14527279, PMID:18461074]
+subset: gosubset_prok
+synonym: "bacterial-type flagellar swarming motility" RELATED []
+synonym: "bacterial-type flagellum-mediated cell swarming" EXACT [GOC:mah]
+is_a: GO:0071973 ! bacterial-type flagellum-dependent cell motility
+
+[Term]
 id: GO:0090304
 name: nucleic acid metabolic process
 namespace: biological_process
 def: "Any cellular metabolic process involving nucleic acids." [GOC:dph, GOC:tb]
 is_a: GO:0006139 ! nucleobase-containing compound metabolic process
 is_a: GO:0043170 ! macromolecule metabolic process
+
+[Term]
+id: GO:0097588
+name: archaeal or bacterial-type flagellum-dependent cell motility
+namespace: biological_process
+def: "Cell motility due to movement of bacterial- or archaeal-type flagella." [GOC:cilia, GOC:krc]
+comment: Bacterial- and archaeal-type flagella are superficially similar but have a different molecular composition and fine structure. This term was added for mapping to the UniProt keyword "flagellar rotation". For manual annotation, please use one of the child terms of GO:0097588 that refer specifically to either archaeal- or bacterial-type flagella.
+is_a: GO:0001539 ! cilium or flagellum-dependent cell motility
 
 [Term]
 id: GO:1901360
@@ -1079,6 +1339,8 @@ name: taxis phenotype
 def: "A locomotion phenotype where the directed movement of a motile cell or organism is in response to an external stimulus." [ISBN:0192800329, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000312 ! locomotion phenotype
+intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: inheres_in GO:0042330 ! taxis
 created_by: mchibucos
 creation_date: 2011-04-14T03:29:20Z
 
@@ -1400,8 +1662,10 @@ creation_date: 2011-04-26T04:17:42Z
 id: OMP:0000047
 name: aerotaxis phenotype
 def: "A taxis phenotype where directed movement of a motile cell or organism is in response to environmental oxygen (O2)." [ISBN:0192800329, OMP:MCC]
-xref: GO:0009454
+xref: GO:0009454 "aerotaxis"
 is_a: OMP:0000004 ! taxis phenotype
+intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: inheres_in GO:0009454 ! aerotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:18:11Z
 
@@ -1420,6 +1684,8 @@ id: OMP:0000049
 name: presence of aerotaxis
 def: "An aerotaxis phenotype where a motile cell or organism displays directed movement in response to environmental oxygen (O2)." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
+intersection_of: OMP:0000047 ! aerotaxis phenotype
+intersection_of: RO:0000086 PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-26T04:27:42Z
 
@@ -1556,6 +1822,8 @@ id: OMP:0000067
 name: cell motility by swarming
 def: "A presence of cell motility phenotype where a population of cells exhibit coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
+intersection_of: OMP:0000005 ! presence of cell motility
+intersection_of: inheres_in GO:0071978 ! bacterial-type flagellum-dependent swarming motility
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
 
@@ -1951,6 +2219,8 @@ id: OMP:0000111
 name: cell motility by swimming
 def: "A presence of cell motility phenotype where a cell or cells exhibits smooth movement through a liquid medium." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
+intersection_of: OMP:0000005 ! presence of cell motility
+intersection_of: inheres_in GO:0071975 ! cell swimming
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
 
@@ -1968,7 +2238,10 @@ creation_date: 2011-02-07T03:18:03Z
 id: OMP:0000113
 name: cell motility by twitching
 def: "A presence of cell motility phenotype where a cell or cells exhibit movement over moist surfaces by the extension, tethering and then retraction of polar pili, usually type IV pili." [OMP:MCC, PMID:12142488]
+xref: GO:0043107 "type IV pilus-dependent motility"
 is_a: OMP:0000005 ! presence of cell motility
+intersection_of: OMP:0000005 ! presence of cell motility
+intersection_of: inheres_in GO:0043107 ! type IV pilus-dependent motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:13Z
 
@@ -2354,6 +2627,8 @@ id: OMP:0000159
 name: absence of aerotaxis
 def: "An aerotaxis phenotype where a motile cell or organism doesn't display directed movement in response to environmental oxygen (O2)." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
+intersection_of: OMP:0000047 ! aerotaxis phenotype
+intersection_of: RO:0000086 PATO:0000462 ! absent
 created_by: adrienne
 creation_date: 2011-03-02T02:06:09Z
 
@@ -2617,6 +2892,7 @@ creation_date: 2011-02-02T03:34:58Z
 id: OMP:0000191
 name: gram stain phenotype
 def: "A cell staining phenotype where microorganisms are grouped based on their ability to retain crystal violet stain when decolorized with an organic solvent such as ethanol." [ISBN:978-0-07-340240-6, OMP:DAS]
+xref: SNOMEDCT:385484003 "Gram stain"
 is_a: OMP:0000214 ! cell staining phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:35:15Z
@@ -2642,7 +2918,7 @@ creation_date: 2011-06-06T04:28:49Z
 id: OMP:0000195
 name: decreased catalase activity
 def: "An altered catalase activity phenotype where catalase activity is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006077 ! altered catalase activity
+is_a: OMP:0006077 ! altered catalase test result
 created_by: mchibucos
 creation_date: 2011-06-06T04:29:20Z
 
@@ -2651,7 +2927,7 @@ id: OMP:0000196
 name: increased catalase activity
 def: "An altered catalase activity phenotype where catalase activity is increased relative to a designated control." [OMP:JCH]
 synonym: "positive regulation of catalase activity" NARROW [GO:1902553]
-is_a: OMP:0006077 ! altered catalase activity
+is_a: OMP:0006077 ! altered catalase test result
 created_by: mchibucos
 creation_date: 2011-06-06T04:29:39Z
 
@@ -3291,7 +3567,7 @@ creation_date: 2011-07-21T05:45:47Z
 id: OMP:0000308
 name: over-initiation of DNA replication
 def: "A DNA replication phenotype where the frequency of initiating new rounds of DNA replication is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007147 ! altered DNA replication phenotype
+is_a: OMP:0007147 ! altered DNA replication
 created_by: mchibucos
 creation_date: 2011-07-21T05:46:05Z
 
@@ -3581,7 +3857,9 @@ creation_date: 2013-08-22T01:53:29Z
 id: OMP:0000500
 name: decreased aerotaxis
 def: "An altered aerotaxis phenotype where aerotaxis is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007076 ! altered aerotaxis phenotype
+is_a: OMP:0007076 ! altered aerotaxis
+intersection_of: OMP:0007076 ! altered aerotaxis
+intersection_of: RO:0000086 PATO:0002302 ! decreased process quality
 created_by: mchibucos
 creation_date: 2012-11-02T01:20:31Z
 
@@ -3589,7 +3867,7 @@ creation_date: 2012-11-02T01:20:31Z
 id: OMP:0000502
 name: increased aerotaxis
 def: "An altered aerotaxis phenotype where aerotaxis is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007076 ! altered aerotaxis phenotype
+is_a: OMP:0007076 ! altered aerotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:21:21Z
 
@@ -3842,7 +4120,7 @@ creation_date: 2014-07-23T17:05:20Z
 id: OMP:0005030
 name: increased stress-induced mutagenesis
 def: "An altered stress-induced mutagenesis phenotype where mutagenesis is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006034 ! altered stress-induced mutagenesis phenotype
+is_a: OMP:0006034 ! altered stress-induced mutagenesis
 created_by: wmeza
 creation_date: 2013-09-25T15:57:03Z
 
@@ -3850,7 +4128,7 @@ creation_date: 2013-09-25T15:57:03Z
 id: OMP:0005031
 name: decreased stress-induced mutagenesis
 def: "An altered stress-induced mutagenesis phenotype where the frequency of mutagenesis is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006034 ! altered stress-induced mutagenesis phenotype
+is_a: OMP:0006034 ! altered stress-induced mutagenesis
 created_by: wmeza
 creation_date: 2013-09-25T15:57:46Z
 
@@ -3883,7 +4161,7 @@ creation_date: 2014-07-23T17:13:45Z
 id: OMP:0005035
 name: quick-stop DNA replication
 def: "A conditional DNA replication phenotype where incorporation of dNTPs into DNA ceases at the same rate as inactivation or depletion of a required gene product upon shift to a restrictive condition." [OMP:JHU, OMP:WAM]
-is_a: OMP:0007147 ! altered DNA replication phenotype
+is_a: OMP:0007147 ! altered DNA replication
 created_by: wmeza
 creation_date: 2013-10-15T17:51:12Z
 
@@ -3891,7 +4169,7 @@ creation_date: 2013-10-15T17:51:12Z
 id: OMP:0005036
 name: slow-stop DNA replication
 def: "A conditional DNA replication phenotype where incorporation of dNTPs into DNA does not stop at the same rate as inactivation or depletion of a required gene product upon shift to a restrictive condition. Incorporation of dNTPs stops only after completion of any rounds of replication that had initiated prior to the shift." [OMP:JHU, OMP:WAM]
-is_a: OMP:0007147 ! altered DNA replication phenotype
+is_a: OMP:0007147 ! altered DNA replication
 created_by: wmeza
 creation_date: 2013-10-15T17:51:40Z
 
@@ -3899,7 +4177,7 @@ creation_date: 2013-10-15T17:51:40Z
 id: OMP:0005037
 name: origin-independent replication
 def: "A DNA replication phenotype in which replication of the chromosome(s) is independent of the origin of replication." [OMP:WAM]
-is_a: OMP:0007147 ! altered DNA replication phenotype
+is_a: OMP:0007147 ! altered DNA replication
 created_by: wmeza
 creation_date: 2013-10-15T18:53:12Z
 
@@ -3975,7 +4253,10 @@ id: OMP:0005046
 name: gene silencing phenotype
 def: "A genetic material phenotype dealing with the transcriptional or post-transcriptional processes carried out at the cellular level that results in long-term gene inactivation." [GO:0016458, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0016458 "gene silencing"
 is_a: OMP:0000290 ! genetic material phenotype
+intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: inheres_in GO:0016458 ! gene silencing
 created_by: wmeza
 creation_date: 2013-10-18T18:38:43Z
 
@@ -4004,7 +4285,7 @@ creation_date: 2013-10-18T18:39:27Z
 id: OMP:0005049
 name: increased frequency of homologous recombination
 def: "A homologous recombination phenotype where the prevalence of homologous recombination is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006002 ! altered homologous recombination phenotype
+is_a: OMP:0006002 ! altered homologous recombination
 created_by: wmeza
 creation_date: 2013-10-23T19:46:15Z
 
@@ -4012,7 +4293,7 @@ creation_date: 2013-10-23T19:46:15Z
 id: OMP:0005050
 name: decreased frequency of homologous recombination
 def: "A homologous recombination phenotype where homologous recombination is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006002 ! altered homologous recombination phenotype
+is_a: OMP:0006002 ! altered homologous recombination
 created_by: wmeza
 creation_date: 2013-10-24T12:52:41Z
 
@@ -4050,9 +4331,9 @@ creation_date: 2014-07-30T12:58:59Z
 
 [Term]
 id: OMP:0005055
-name: increased frequency of site specific recombination
+name: increased frequency of site-specific recombination
 def: "A site specific recombination phenotype where the prevalence of site specific recombination is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006005 ! altered site specific recombination phenotype
+is_a: OMP:0006005 ! altered site-specific recombination
 created_by: wmeza
 creation_date: 2013-10-29T13:14:25Z
 
@@ -4060,7 +4341,7 @@ creation_date: 2013-10-29T13:14:25Z
 id: OMP:0005056
 name: decreased frequency of site-specific recombination
 def: "A site specific recombination phenotype where site specific recombination is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006005 ! altered site specific recombination phenotype
+is_a: OMP:0006005 ! altered site-specific recombination
 created_by: wmeza
 creation_date: 2013-10-29T13:15:06Z
 
@@ -4085,7 +4366,10 @@ id: OMP:0005059
 name: transposable element transposition phenotype
 def: "A genetic material phenotype dealing with DNA sequences that change positions within the genome." [ISBN:9780198529170, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0032196 "transposition"
 is_a: OMP:0000290 ! genetic material phenotype
+intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: inheres_in GO:0032196 ! transposition
 created_by: wmeza
 creation_date: 2013-10-30T18:35:34Z
 
@@ -4093,7 +4377,7 @@ creation_date: 2013-10-30T18:35:34Z
 id: OMP:0005060
 name: increased frequency of chromosome segregation
 def: "A chromosome segregation phenotype where chromosome segregation is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006001 ! altered chromosome segregation phenotype
+is_a: OMP:0006001 ! altered chromosome segregation
 created_by: wmeza
 creation_date: 2013-11-04T18:09:09Z
 
@@ -4101,7 +4385,7 @@ creation_date: 2013-11-04T18:09:09Z
 id: OMP:0005061
 name: decreased frequency of chromosome segregation
 def: "An altered chromosome segregation phenotype where the occurrence of chromosome segregation is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006001 ! altered chromosome segregation phenotype
+is_a: OMP:0006001 ! altered chromosome segregation
 created_by: wmeza
 creation_date: 2013-11-04T18:09:38Z
 
@@ -4109,7 +4393,7 @@ creation_date: 2013-11-04T18:09:38Z
 id: OMP:0005064
 name: increased frequency of gene silencing
 def: "An altered gene silencing phenotype where the incidence of gene silencing is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006003 ! altered gene silencing phenotype
+is_a: OMP:0006003 ! altered gene silencing
 created_by: wmeza
 creation_date: 2013-11-04T18:21:37Z
 
@@ -4117,7 +4401,7 @@ creation_date: 2013-11-04T18:21:37Z
 id: OMP:0005065
 name: decreased frequency of gene silencing
 def: "An gene silencing phenotype where gene silencing is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006003 ! altered gene silencing phenotype
+is_a: OMP:0006003 ! altered gene silencing
 created_by: wmeza
 creation_date: 2013-11-04T18:21:56Z
 
@@ -4141,7 +4425,7 @@ creation_date: 2013-11-04T18:34:20Z
 id: OMP:0005068
 name: increased mutation frequency
 def: "An altered mutation frequency phenotype where the mutation frequency is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006071 ! altered mutation frequency phenotype
+is_a: OMP:0006071 ! altered mutation frequency
 created_by: wmeza
 creation_date: 2013-11-08T17:05:44Z
 
@@ -4149,7 +4433,7 @@ creation_date: 2013-11-08T17:05:44Z
 id: OMP:0005069
 name: decreased mutation frequency
 def: "An altered mutation frequency phenotype where the mutation frequency is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006071 ! altered mutation frequency phenotype
+is_a: OMP:0006071 ! altered mutation frequency
 created_by: wmeza
 creation_date: 2013-11-08T17:11:14Z
 
@@ -4716,7 +5000,7 @@ creation_date: 2014-08-07T14:58:34Z
 
 [Term]
 id: OMP:0006001
-name: altered chromosome segregation phenotype
+name: altered chromosome segregation
 def: "A chromosome segregation phenotype where chromosome segregation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: jonathanherrera
@@ -4724,7 +5008,7 @@ creation_date: 2014-07-24T14:14:37Z
 
 [Term]
 id: OMP:0006002
-name: altered homologous recombination phenotype
+name: altered homologous recombination
 def: "A homologous recombination phenotype where recombination is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: jonathanherrera
@@ -4732,7 +5016,7 @@ creation_date: 2014-07-24T15:04:15Z
 
 [Term]
 id: OMP:0006003
-name: altered gene silencing phenotype
+name: altered gene silencing
 def: "A gene silencing phenotype where gene silencing is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: jonathanherrera
@@ -4749,7 +5033,7 @@ creation_date: 2014-03-26T21:33:14Z
 
 [Term]
 id: OMP:0006005
-name: altered site specific recombination phenotype
+name: altered site-specific recombination
 def: "A site specific recombination phenotype where recombination is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005043 ! site-specific recombination phenotype
 created_by: jonathanherrera
@@ -5014,7 +5298,7 @@ creation_date: 2014-07-24T17:52:43Z
 
 [Term]
 id: OMP:0006034
-name: altered stress-induced mutagenesis phenotype
+name: altered stress-induced mutagenesis
 def: "A stress-induced mutagenesis phenotype that is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: jonathanherrera
@@ -5350,7 +5634,7 @@ creation_date: 2013-10-24T19:41:11Z
 
 [Term]
 id: OMP:0006071
-name: altered mutation frequency phenotype
+name: altered mutation frequency
 def: "A mutation frequency phenotype that is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005048 ! mutation frequency phenotype
 created_by: jonathanherrera
@@ -5401,9 +5685,10 @@ creation_date: 2014-05-12T13:04:40Z
 
 [Term]
 id: OMP:0006077
-name: altered catalase activity
+name: altered catalase test result
 def: "A catalase test phenotype where catalase activity is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000218 ! catalase test phenotype
+is_a: OMP:0007131 ! altered differential test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T14:55:03Z
 
@@ -5417,9 +5702,10 @@ creation_date: 2014-07-15T19:59:58Z
 
 [Term]
 id: OMP:0006079
-name: altered decarboxylase test phenotype
+name: altered decarboxylase test result
 def: "A decarboxylase test phenotype where the phenotype of an organism on a decarboxylase test medium is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000219 ! decarboxylase test phenotype
+is_a: OMP:0007131 ! altered differential test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
 
@@ -5435,7 +5721,7 @@ creation_date: 2014-07-15T19:59:58Z
 id: OMP:0006081
 name: increased decarboxylase activity
 def: "An altered decarboxylase test phenotype where decarboxylase activity is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006079 ! altered decarboxylase test phenotype
+is_a: OMP:0006079 ! altered decarboxylase test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
 
@@ -5443,15 +5729,16 @@ creation_date: 2014-07-15T20:00:41Z
 id: OMP:0006082
 name: decreased decarboxylase activity
 def: "An altered decarboxylase test phenotype where decarboxylase activity is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006079 ! altered decarboxylase test phenotype
+is_a: OMP:0006079 ! altered decarboxylase test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:00:41Z
 
 [Term]
 id: OMP:0006083
-name: altered oxidase test phenotype
+name: altered oxidase test result
 def: "An oxidase test phenotype where the phenotype of an organism is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000220 ! oxidase test phenotype
+is_a: OMP:0007131 ! altered differential test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
 
@@ -5476,7 +5763,7 @@ creation_date: 2014-07-15T20:06:25Z
 id: OMP:0006086
 name: increased oxidase activity
 def: "An altered oxidase test phenotype where oxidase activity is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006083 ! altered oxidase test phenotype
+is_a: OMP:0006083 ! altered oxidase test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
 
@@ -5484,15 +5771,16 @@ creation_date: 2014-07-15T20:06:48Z
 id: OMP:0006087
 name: decreased oxidase activity
 def: "An altered oxidase test phenotype where oxidase activity is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006083 ! altered oxidase test phenotype
+is_a: OMP:0006083 ! altered oxidase test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:48Z
 
 [Term]
 id: OMP:0006088
-name: altered urease test phenotype
+name: altered urease test result
 def: "A urease test phenotype where urease activity is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000222 ! urease test phenotype
+is_a: OMP:0007131 ! altered differential test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
 
@@ -5517,7 +5805,7 @@ creation_date: 2014-07-15T20:07:31Z
 id: OMP:0006091
 name: increased urease activity
 def: "An altered urease activity phenotype where urease activity is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006088 ! altered urease test phenotype
+is_a: OMP:0006088 ! altered urease test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
 
@@ -5525,7 +5813,7 @@ creation_date: 2014-07-15T20:07:54Z
 id: OMP:0006092
 name: decreased urease activity
 def: "An altered urease activity phenotype where there urease activity is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0006088 ! altered urease test phenotype
+is_a: OMP:0006088 ! altered urease test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:54Z
 
@@ -5573,6 +5861,7 @@ creation_date: 2014-07-24T20:17:01Z
 id: OMP:0006098
 name: abolished aerotaxis
 def: "A decreased aerotaxis phenotype where a cell or organism the ability to perform aerotaxis is abolished." [OMP:JCH]
+is_a: OMP:0000159 ! absence of aerotaxis
 is_a: OMP:0000500 ! decreased aerotaxis
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:18:01Z
@@ -6824,10 +7113,12 @@ creation_date: 2014-02-21T15:42:44Z
 
 [Term]
 id: OMP:0007076
-name: altered aerotaxis phenotype
+name: altered aerotaxis
 def: "An aerotaxis phenotype where directed movement in response to environmental oxygen is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000047 ! aerotaxis phenotype
 is_a: OMP:0007127 ! altered taxis
+intersection_of: OMP:0000047 ! aerotaxis phenotype
+intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-04-24T17:41:34Z
 
@@ -7281,6 +7572,8 @@ name: altered taxis
 def: "A taxis phenotype where directed movement of a motile cell or organism in response to an external stimulus is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000004 ! taxis phenotype
 is_a: OMP:0007085 ! altered phenotype
+intersection_of: OMP:0000047 ! aerotaxis phenotype
+intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
 created_by: dsiegele
 creation_date: 2014-08-12T13:30:01Z
 
@@ -7312,7 +7605,7 @@ creation_date: 2014-08-16T16:40:58Z
 
 [Term]
 id: OMP:0007131
-name: altered differential test phenotype
+name: altered differential test result
 def: "A differential media phenotype where the results of a differential test are altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007130 ! differential test phenotype
 created_by: siegele
@@ -7450,7 +7743,7 @@ creation_date: 2014-08-18T17:24:18Z
 
 [Term]
 id: OMP:0007147
-name: altered DNA replication phenotype
+name: altered DNA replication
 def: "A DNA replication phenotype in which the process of DNA replication is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000307 ! DNA replication phenotype
 is_a: OMP:0005136 ! altered cell cycle phenotype
@@ -7554,7 +7847,8 @@ creation_date: 2014-08-28T16:51:03Z
 
 [Term]
 id: OMP:0007159
-name: altered radiation resistance phenotype
+name: altered radiation resistance
+def: "A radiation stress phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0005081 ! radiation stress phenotype
 is_a: OMP:0007158 ! altered stress response
 created_by: siegele
@@ -8234,6 +8528,7 @@ creation_date: 2014-08-17T12:05:35Z
 [Typedef]
 id: RO:0000086
 name: has_quality
+namespace: external
 created_by: siegele
 creation_date: 2014-08-17T12:15:53Z
 
