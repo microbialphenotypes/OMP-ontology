@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 11:10:2014 18:53
+date: 12:10:2014 22:36
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1427,7 +1427,7 @@ creation_date: 2011-06-07T10:14:39Z
 id: OMP:0000015
 name: decreased heterocyst formation
 def: "A heterocyst formation phenotype where heterocyst formation is decreased relative to a designated control." [OMP:MCC]
-is_a: OMP:0006007 ! altered heterocyst formation phenotype
+is_a: OMP:0006007 ! altered heterocyst formation
 created_by: mchibucos
 creation_date: 2011-04-26T03:05:35Z
 
@@ -1479,7 +1479,7 @@ creation_date: 2011-04-26T03:10:51Z
 id: OMP:0000022
 name: decreased myxospore formation
 def: "A myxospore formation phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
-is_a: OMP:0006009 ! altered myxospore formation phenotype
+is_a: OMP:0006009 ! altered myxospore formation
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
 
@@ -1880,6 +1880,7 @@ creation_date: 2011-02-02T03:31:35Z
 id: OMP:0000073
 name: cell shape phenotype
 def: "A cell morphology phenotype where the trait in question is the shape of a cell." [OMP:MCC]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: PATO:0000052 ! shape
 intersection_of: inheres_in GO:0005623 ! cell
@@ -1890,6 +1891,7 @@ creation_date: 2011-02-02T03:18:02Z
 id: OMP:0000074
 name: cell size phenotype
 def: "A cell morphology phenotype where the trait in question is the size of a cell." [OMP:MCC]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: PATO:0000117 ! size
 intersection_of: inheres_in GO:0005623 ! cell
@@ -1901,7 +1903,7 @@ id: OMP:0000075
 name: coccus
 def: "A spheroid cell phenotype where a cell is spherical or nearly spherical." [ISBN:9780073402406, OMP:MCC]
 synonym: "spherical-shaped" EXACT []
-is_a: OMP:0007100 ! spheroid cell phenotype
+is_a: OMP:0007100 ! spheroid cell shape
 created_by: adrienne
 creation_date: 2011-02-02T03:18:29Z
 
@@ -1910,7 +1912,7 @@ id: OMP:0000076
 name: bacillus
 def: "A cylindrical cell phenotype where an organism has rod-shaped cells." [ISBN:9780073402406, OMP:MCC]
 synonym: "rod-shaped" EXACT []
-is_a: OMP:0007099 ! cylindrical cell phenotype
+is_a: OMP:0007099 ! cylindrical cell shape
 created_by: adrienne
 creation_date: 2011-02-02T03:18:47Z
 
@@ -1918,7 +1920,7 @@ creation_date: 2011-02-02T03:18:47Z
 id: OMP:0000077
 name: vibrio
 def: "A spiral cell shape phenotype where a rod-shaped cell is curved to form a comma-like shape or incomplete spiral." [ISBN:9780073402406, OMP:AEZ]
-is_a: OMP:0000086 ! spiral cell shape phenotype
+is_a: OMP:0000086 ! spiral cell shape
 created_by: adrienne
 creation_date: 2011-02-02T03:19:31Z
 
@@ -1967,6 +1969,7 @@ creation_date: 2011-02-02T03:46:44Z
 id: OMP:0000083
 name: cell projection phenotype
 def: "A cell morphology phenotype where the structure in question is a prolongation or process extending from a cell." [OMP:MCC]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "cell appendage phenotype" EXACT []
 xref: GO:0042995 "cell projection"
 is_a: OMP:0000071 ! cell morphology phenotype
@@ -1988,6 +1991,7 @@ creation_date: 2011-02-02T03:47:57Z
 id: OMP:0000085
 name: envelope phenotype
 def: "A cell morphology phenotype relating to the envelope that surrounds a microbial cell and includes the cytoplasmic membrane and everything external to the cytoplasmic membrane, encompassing the periplasmic space, cell wall, and outer membrane.  Additional layers, such as capsules or S-layers, are also part of the envelope." [OMP:MCC]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: PATO:0001241 ! physical object quality
 intersection_of: inheres_in GO:0031975 ! envelope
@@ -1996,7 +2000,7 @@ creation_date: 2011-02-02T03:49:03Z
 
 [Term]
 id: OMP:0000086
-name: spiral cell shape phenotype
+name: spiral cell shape
 def: "A cell shape phenotype where a cell is helical or cork-screw shaped." [OMP:MCC]
 synonym: "curved rod" RELATED []
 synonym: "spirillum" NARROW []
@@ -2056,6 +2060,7 @@ creation_date: 2011-02-02T03:24:24Z
 id: OMP:0000092
 name: heterocyst formation phenotype
 def: "A cell development phenotype where development concerns differentiation into a specialized cell whose purpose is to fix nitrogen." [OMP:MCC]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000070 ! cell development phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:24:43Z
@@ -2072,7 +2077,7 @@ creation_date: 2011-02-02T03:25:02Z
 id: OMP:0000094
 name: endospore formation phenotype
 def: "A sporulation phenotype where development concerns formation of an endospore, a dormant, highly resistant spore with a thick wall that forms within the mother cell." [OMP:MCC]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0034301 "endospore formation"
 is_a: OMP:0000091 ! sporulation phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -2084,6 +2089,7 @@ creation_date: 2011-02-02T03:25:29Z
 id: OMP:0000095
 name: spore germination phenotype
 def: "A cell development phenotype where development concerns the physiological and developmental changes that occur in a spore following release from dormancy up to the earliest signs of growth (e.g. emergence from a spore wall)." [OMP:MCC]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000070 ! cell development phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:25:47Z
@@ -2323,7 +2329,7 @@ creation_date: 2011-02-18T02:47:10Z
 
 [Term]
 id: OMP:0000123
-name: coccobacillus cell phenotype
+name: coccobacillus cell shape
 def: "A cell shape phenotype where a cell is intermediate in shape between a coccus (sphere) and a bacillus (rod)." [ISBN:9780073402406, OMP:MCC]
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -2333,7 +2339,7 @@ creation_date: 2011-02-18T02:48:21Z
 id: OMP:0000124
 name: spirillum
 def: "A spiral cell shape phenotype where a cell forms a rigid spiral." [ISBN:9780073402406, OMP:AEZ]
-is_a: OMP:0000086 ! spiral cell shape phenotype
+is_a: OMP:0000086 ! spiral cell shape
 created_by: adrienne
 creation_date: 2011-02-18T02:51:54Z
 
@@ -2341,7 +2347,7 @@ creation_date: 2011-02-18T02:51:54Z
 id: OMP:0000125
 name: spirochete
 def: "A spiral cell shape phenotype where a cell forms a flexible spiral." [ISBN:9780073402406, OMP:AEZ]
-is_a: OMP:0000086 ! spiral cell shape phenotype
+is_a: OMP:0000086 ! spiral cell shape
 created_by: adrienne
 creation_date: 2011-02-18T02:52:33Z
 
@@ -2363,7 +2369,7 @@ creation_date: 2011-02-18T02:59:18Z
 
 [Term]
 id: OMP:0000128
-name: stalked cell phenotype
+name: stalked cell shape
 def: "A cell shape phenotype where a cell possesses an appendage called a stalk or prostheca (plural, prosthecae), which is a tubular extension of the cell envelope and contains cytosol." [OMP:MCC, PMID:14245437]
 synonym: "prosthecate bacterium" EXACT [URL:http\://en.wikipedia.org/wiki/Prosthecate_bacteria]
 is_a: OMP:0000073 ! cell shape phenotype
@@ -2372,7 +2378,7 @@ creation_date: 2011-02-18T02:59:38Z
 
 [Term]
 id: OMP:0000129
-name: cuboidal cell phenotype
+name: cuboidal cell shape
 def: "A cell shape phenotype where a cell has a cube-like shape; there are six sides and the width is approximately equal to the height of the cell." [OMP:MCC]
 synonym: "square" RELATED []
 is_a: OMP:0000073 ! cell shape phenotype
@@ -2381,7 +2387,7 @@ creation_date: 2011-02-18T02:59:57Z
 
 [Term]
 id: OMP:0000130
-name: star-shaped cell phenotype
+name: star-shaped cell shape
 def: "A cell shape phenotype where a cell has projections that form points." [OMP:MCC]
 is_a: OMP:0000073 ! cell shape phenotype
 created_by: adrienne
@@ -2389,7 +2395,7 @@ creation_date: 2011-02-18T03:00:30Z
 
 [Term]
 id: OMP:0000131
-name: lobed cell phenotype
+name: lobed cell shape
 def: "A cell shape phenotype where a cell has curved or rounded projections or divisions (lobes)." [OMP:MCC]
 xref: PATO:0001979 "lobed"
 is_a: OMP:0000073 ! cell shape phenotype
@@ -2398,7 +2404,7 @@ creation_date: 2011-02-18T03:00:58Z
 
 [Term]
 id: OMP:0000132
-name: pleomorphic cell shape phenotype
+name: pleomorphic cell shape
 def: "A cell shape phenotype where a cell is variable in shape and lacks a single, characteristic form." [ISBN:9780073402406, OMP:MCC]
 xref: PATO:0001356
 is_a: OMP:0000073 ! cell shape phenotype
@@ -3116,7 +3122,7 @@ creation_date: 2011-06-07T03:19:00Z
 id: OMP:0000218
 name: catalase test phenotype
 def: "A differential test phenotype that relates to the presence or absence of catalase, an enzyme that catalyzes the decomposition of hydrogen peroxide into oxygen and water." [ISBN:9780895828309, OMP:JCH]
-comment: Catalysis of the reaction: 2 hydrogen peroxide = O2 + 2 H2O [EC:1.11.1.6].
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nCatalysis of the reaction: 2 hydrogen peroxide = O2 + 2 H2O [EC:1.11.1.6].
 xref: GO:0004096 "catalase activity"
 is_a: OMP:0007130 ! differential test phenotype
 created_by: Adrienne
@@ -3126,6 +3132,7 @@ creation_date: 2011-02-03T04:43:28Z
 id: OMP:0000219
 name: decarboxylase test phenotype
 def: "A differential test phenotype that describes the ability of an organism to catalyze the removal of a carboxyl group from an amino acid, typically lysine, ornithine, or arginine." [ISBN:9780895828309, OMP:JCH]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0007130 ! differential test phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:43:53Z
@@ -3134,7 +3141,7 @@ creation_date: 2011-02-03T04:43:53Z
 id: OMP:0000220
 name: oxidase test phenotype
 def: "A differential test phenotype that relates to the presence or absence of cytochrome oxidase based on the ability of an organism to oxidize certain aromatic amines to form colored end products." [ISBN:9780895828309, OMP:JCH]
-comment: The oxidase test is used in identification of bacterial species.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0007130 ! differential test phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:44:11Z
@@ -3152,6 +3159,7 @@ creation_date: 2011-02-03T04:44:39Z
 id: OMP:0000222
 name: urease test phenotype
 def: "A differential test phenotype that relates to the presence or absence of urease, an enzyme that hydrolyzes urea to ammonia and carbon dioxide." [ISBN:9780895828309, OMP:JCH]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0009039 "urease activity"
 is_a: OMP:0007130 ! differential test phenotype
 created_by: Adrienne
@@ -3613,7 +3621,7 @@ creation_date: 2012-04-05T11:43:53Z
 id: OMP:0000321
 name: macrolide resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars which exhibit antimicrobial properties." [CHEBI:25105, ISBN:9780073375267, OMP:MCC]
-comment: Macrolide antibiotics are effective inhibitors of bacterial protein biosynthesis. They bind to the large 50S ribosomal subunit at or near the peptidyl transferase center and block the elongation of the peptide chain.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "Azithromycin" NARROW [CHEBI:2955]
 synonym: "Bacteriostatic" BROAD []
 synonym: "Carvomycin A" NARROW []
@@ -3636,6 +3644,7 @@ creation_date: 2012-11-02T01:51:04Z
 id: OMP:0000331
 name: aminopyrimidine resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "aminopyrimidine sensitivity phenotype" RELATED []
 synonym: "antifolate" BROAD [CHEBI:73913]
 synonym: "diaveridine" NARROW [CHEBI:123115]
@@ -3654,7 +3663,7 @@ id: OMP:0000334
 name: increased resistance to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance is increased relative to a designated control." [OMP:DAS]
 synonym: "decreased sensitivity to antifolates" RELATED []
-is_a: OMP:0006018 ! altered aminopyrimidine resistance phenotype
+is_a: OMP:0006018 ! altered aminopyrimidine resistance
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:38Z
 
@@ -3663,7 +3672,7 @@ id: OMP:0000335
 name: decreased resistance to aminopyrimidine
 def: "An aminopyrimidine resistance phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
 synonym: "increased sensitivity to aminopyrimidine" RELATED []
-is_a: OMP:0006018 ! altered aminopyrimidine resistance phenotype
+is_a: OMP:0006018 ! altered aminopyrimidine resistance
 created_by: mchibucos
 creation_date: 2012-11-02T02:04:58Z
 
@@ -3671,6 +3680,7 @@ creation_date: 2012-11-02T02:04:58Z
 id: OMP:0000336
 name: beta-lactam resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds that contain a beta-lactam ring in their molecular structure." [CHEBI:27933, OMP:MCC]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "ampicillin" NARROW [CHEBI:28971]
 synonym: "beta-lactam sensitivity phenotype" RELATED []
 synonym: "carbapenams" NARROW [CHEBI:64510]
@@ -3767,6 +3777,7 @@ creation_date: 2013-05-23T01:40:40Z
 id: OMP:0000455
 name: alkaloid resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds containing basic nitrogen in a heterocyclic structure." [CHEBI:22315 "alkaloid", OMP:WAM]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "alkaloid sensitivity phenotype" RELATED []
 xref: CHEBI:22315 "alkaloid"
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
@@ -3891,7 +3902,7 @@ creation_date: 2012-11-02T01:23:12Z
 id: OMP:0001001
 name: Increased negative supercoiling
 def: "An altered DNA supercoiling phenotype where negative supercoiling is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006126 ! altered DNA supercoiling phenotype
+is_a: OMP:0006126 ! altered DNA supercoiling
 created_by: wmeza
 creation_date: 2013-08-22T05:57:07Z
 
@@ -3899,7 +3910,7 @@ creation_date: 2013-08-22T05:57:07Z
 id: OMP:0001002
 name: decreased negative supercoiling
 def: "An altered DNA supercoiling phenotype where negative supercoiling is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006126 ! altered DNA supercoiling phenotype
+is_a: OMP:0006126 ! altered DNA supercoiling
 created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
 
@@ -3908,7 +3919,7 @@ id: OMP:0005001
 name: altered caffeine resistance phenotype
 def: "A caffeine resistance phenotype that is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0000456 ! caffeine resistance phenotype
-is_a: OMP:0007137 ! altered alkaloid resistance phenotype
+is_a: OMP:0007137 ! altered alkaloid resistance
 created_by: wmeza
 creation_date: 2014-07-23T12:18:08Z
 
@@ -4109,7 +4120,7 @@ creation_date: 2013-09-20T15:00:09Z
 
 [Term]
 id: OMP:0005029
-name: altered tetracycline resistance phenotype
+name: altered tetracycline resistance
 def: "A tetracycline resistance phenotype where resistance to a tetracycline compound is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0006062 ! tetracycline resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
@@ -4150,7 +4161,7 @@ creation_date: 2013-09-25T18:20:22Z
 
 [Term]
 id: OMP:0005034
-name: altered quinolone resistance phenotype
+name: altered quinolone resistance
 def: "A quinolone resistance phenotype where resistance to a quinolone compound is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0006029 ! quinolone resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
@@ -5050,7 +5061,7 @@ creation_date: 2014-03-26T21:33:14Z
 
 [Term]
 id: OMP:0006007
-name: altered heterocyst formation phenotype
+name: altered heterocyst formation
 def: "A heterocyst formation phenotype where formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000092 ! heterocyst formation phenotype
 created_by: jonathanherrera
@@ -5066,7 +5077,7 @@ creation_date: 2014-04-01T14:18:12Z
 
 [Term]
 id: OMP:0006009
-name: altered myxospore formation phenotype
+name: altered myxospore formation
 def: "A myxospore formation phenotype where myxospore formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000096 ! myxospore formation phenotype
 created_by: jonathanherrera
@@ -5133,7 +5144,7 @@ creation_date: 2014-07-24T16:34:28Z
 
 [Term]
 id: OMP:0006017
-name: altered aminoglycoside resistance phenotype
+name: altered aminoglycoside resistance
 def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
@@ -5142,7 +5153,7 @@ creation_date: 2014-07-24T17:04:53Z
 
 [Term]
 id: OMP:0006018
-name: altered aminopyrimidine resistance phenotype
+name: altered aminopyrimidine resistance
 def: "An aminopyrimidine resistance phenotype where resistance to an aminopyrimidine compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
@@ -5151,7 +5162,7 @@ creation_date: 2014-07-24T17:13:02Z
 
 [Term]
 id: OMP:0006019
-name: altered azole resistance phenotype
+name: altered azole resistance
 def: "An azole resistance phenotype where resistance to an azole compound is altered relative to a designated control." [OMp:JCH]
 is_a: OMP:0006028 ! azole resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
@@ -5160,7 +5171,7 @@ creation_date: 2014-07-24T17:20:23Z
 
 [Term]
 id: OMP:0006020
-name: altered bacteriocin resistance phenotype
+name: altered bacteriocin resistance
 def: "A bacteriocin resistance phenotype where resistance to a bacteriocin is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
@@ -5169,7 +5180,7 @@ creation_date: 2014-07-24T17:21:28Z
 
 [Term]
 id: OMP:0006021
-name: altered beta-lactam resistance phenotype
+name: altered beta-lactam resistance
 def: "A beta-lactam resistance phenotype where resistance to a beta-lactam compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
@@ -5204,7 +5215,7 @@ creation_date: 2013-09-10T18:39:02Z
 
 [Term]
 id: OMP:0006025
-name: altered chloramphenicol resistance phenotype
+name: altered chloramphenicol resistance
 def: "A chloramphenicol resistance phenotype where resistance to chloramphenicol is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
@@ -5224,6 +5235,7 @@ creation_date: 2013-09-10T17:51:21Z
 id: OMP:0006027
 name: bacteriocin resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to bacteriocins, which are polypeptides synthesized by specific strains of bacteria that are active against other cells of the same or different species." [CHEBI:48081]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "bacteriocin sensitivity phenotype" RELATED []
 synonym: "colicins" NARROW [GO:0015468]
 synonym: "lantibiotic " NARROW [CHEBI:71644]
@@ -5232,7 +5244,7 @@ synonym: "Nisin" NARROW [ChEBI:71629]
 synonym: "subtilin" NARROW [Bactibase:BAC045]
 synonym: "type A lantibiotic" NARROW [CHEBI:71645]
 synonym: "type B lantibiotic" NARROW [CHEBI:71647]
-xref: CHEBI:48081
+xref: CHEBI:48081 "bacteriocin"
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-04T16:57:43Z
@@ -5241,10 +5253,10 @@ creation_date: 2013-10-04T16:57:43Z
 id: OMP:0006028
 name: azole resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to heteromonocyclic organic compounds consisting of a five-membered mancude-ring containing nitrogen." [CHEBI:68452, OMP:DAS]
-comment: Azoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nAzoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
 synonym: "azole sensitivity phenotype" RELATED []
 synonym: "Triazole" NARROW [CHEBI:38597]
-xref: CHEBI:68452
+xref: CHEBI:68452 "azole"
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-10T19:15:32Z
@@ -5253,6 +5265,7 @@ creation_date: 2013-10-10T19:15:32Z
 id: OMP:0006029
 name: quinolone resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a aromatic heterocyclic compounds each of which contains a benzene ring ortho fused to carbons 2 and 3 of a pyridine ring." [CHEBI:26513, ISBN:9780072992915, OMP:JCH]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "quinoline sensitivity phenotype" RELATED []
 xref: CHEBI:26513
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
@@ -5272,7 +5285,7 @@ creation_date: 2013-09-10T17:54:07Z
 
 [Term]
 id: OMP:0006031
-name: altered macrolide resistance phenotype
+name: altered macrolide resistance
 def: "A macrolide resistance phenotype where resistance to a macrolide compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
@@ -5281,7 +5294,7 @@ creation_date: 2014-07-24T17:40:33Z
 
 [Term]
 id: OMP:0006032
-name: altered pteridine resistance phenotype
+name: altered pteridine resistance
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007065 ! pteridine resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
@@ -5318,7 +5331,7 @@ id: OMP:0006036
 name: decreased resistance to macrolide
 def: "A macrolide compound resistance phenotype where resistance to a macrolide compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "increased sensitivity to macrolide" RELATED []
-is_a: OMP:0006031 ! altered macrolide resistance phenotype
+is_a: OMP:0006031 ! altered macrolide resistance
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
@@ -5327,7 +5340,7 @@ id: OMP:0006037
 name: increased resistance to macrolide
 def: "A macrolide compound resistance phenotype where resistance to a macrolide compound is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to macrolide" RELATED []
-is_a: OMP:0006031 ! altered macrolide resistance phenotype
+is_a: OMP:0006031 ! altered macrolide resistance
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
@@ -5353,7 +5366,7 @@ id: OMP:0006040
 name: decreased resistance to quinolone
 def: "A quinolone compound resistance phenotype where resistance to a quinolone compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "increased sensitivity to quinoline" RELATED []
-is_a: OMP:0005034 ! altered quinolone resistance phenotype
+is_a: OMP:0005034 ! altered quinolone resistance
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
 
@@ -5362,7 +5375,7 @@ id: OMP:0006041
 name: increased resistance to quinolone
 def: "A quinolone compound resistance phenotype where resistance to a quinolone compound is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to quinoline" RELATED []
-is_a: OMP:0005034 ! altered quinolone resistance phenotype
+is_a: OMP:0005034 ! altered quinolone resistance
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:38:00Z
 
@@ -5388,7 +5401,7 @@ id: OMP:0006044
 name: decreased resistance to beta-lactam
 def: "A beta-lactam compound resistance phenotype where resistance to a beta-lactam compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "increased sensitivity to beta-lactam" RELATED []
-is_a: OMP:0006021 ! altered beta-lactam resistance phenotype
+is_a: OMP:0006021 ! altered beta-lactam resistance
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
 
@@ -5397,7 +5410,7 @@ id: OMP:0006045
 name: increased resistance to beta-lactam compound
 def: "A beta-lactam compound resistance phenotype where resistance to a beta-lactam compound is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to beta-lactam" RELATED []
-is_a: OMP:0006021 ! altered beta-lactam resistance phenotype
+is_a: OMP:0006021 ! altered beta-lactam resistance
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
 
@@ -5423,7 +5436,7 @@ id: OMP:0006048
 name: decreased resistance to bacteriocin
 def: "An altered bacteriocin resistance phenotype where resistance is decreased relative to a designated control." [OMP:JCH]
 synonym: "increased sensitivity to bacteriocin" RELATED []
-is_a: OMP:0006020 ! altered bacteriocin resistance phenotype
+is_a: OMP:0006020 ! altered bacteriocin resistance
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
 
@@ -5432,7 +5445,7 @@ id: OMP:0006049
 name: increased resistance to bacteriocin
 def: "A bacteriocin compound resistance phenotype where resistance to a bacteriocin is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to a bacteriocin" RELATED []
-is_a: OMP:0006020 ! altered bacteriocin resistance phenotype
+is_a: OMP:0006020 ! altered bacteriocin resistance
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
 
@@ -5458,7 +5471,7 @@ id: OMP:0006052
 name: decreased resistance to azole
 def: "An azole compound resistance phenotype where resistance to an azole compound is decreased relative to a designated control." [OMP:DAS]
 synonym: "increased sensitivity to azole" RELATED []
-is_a: OMP:0006019 ! altered azole resistance phenotype
+is_a: OMP:0006019 ! altered azole resistance
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
@@ -5467,7 +5480,7 @@ id: OMP:0006053
 name: increased resistance to azole compound
 def: "An azole compound resistance phenotype where resistance to an azole compound is increased relative to a designated control." [OMP:DAS]
 synonym: "decreased sensitivity to azole" RELATED []
-is_a: OMP:0006019 ! altered azole resistance phenotype
+is_a: OMP:0006019 ! altered azole resistance
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
@@ -5492,6 +5505,7 @@ creation_date: 2013-10-11T17:45:44Z
 id: OMP:0006056
 name: aminoglycoside resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:22507, ISBN:978-0-07-299291-5, OMP:JCH]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
 synonym: "kanamycin" NARROW []
@@ -5508,7 +5522,7 @@ id: OMP:0006057
 name: decreased resistance to aminoglycoside
 def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside is decreased relative to a designated control." [OMP:JCH]
 synonym: "increased sensitivity to aminoglycoside" RELATED []
-is_a: OMP:0006017 ! altered aminoglycoside resistance phenotype
+is_a: OMP:0006017 ! altered aminoglycoside resistance
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -5517,7 +5531,7 @@ id: OMP:0006058
 name: increased resistance to aminoglycoside
 def: "An aminoglycoside compound resistance phenotype where resistance is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to aminoglycoside" RELATED []
-is_a: OMP:0006017 ! altered aminoglycoside resistance phenotype
+is_a: OMP:0006017 ! altered aminoglycoside resistance
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -5543,7 +5557,7 @@ id: OMP:0006061
 name: decreased resistance to tetracycline
 def: "A tetracycline compound resistance phenotype where resistance to a tetracycline compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "increased sensitivity to tetracycline" RELATED []
-is_a: OMP:0005029 ! altered tetracycline resistance phenotype
+is_a: OMP:0005029 ! altered tetracycline resistance
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
 
@@ -5551,6 +5565,7 @@ creation_date: 2013-10-23T19:27:35Z
 id: OMP:0006062
 name: tetracycline resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a subclass of polyketides having an octahydrotetracene-2-carboxamide skeleton." [CHEBI:27902, ISBN:978-0-07-299291-5, OMP:JCH]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "Bacteriostatic" BROAD []
 synonym: "chlortetracycline" RELATED []
 synonym: "oxytetracycline " NARROW [CHEBI:27701]
@@ -5565,7 +5580,7 @@ id: OMP:0006063
 name: increased resistance to tetracycline
 def: "A tetracycline compound resistance phenotype where resistance to a tetracycline compound is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to tetracycline" RELATED []
-is_a: OMP:0005029 ! altered tetracycline resistance phenotype
+is_a: OMP:0005029 ! altered tetracycline resistance
 created_by: jonathanherrera
 creation_date: 2013-10-23T19:27:35Z
 
@@ -5590,6 +5605,7 @@ creation_date: 2013-10-23T19:27:35Z
 id: OMP:0006066
 name: chloramphenicol resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, ISBN:9780072992915, OMP:JCH]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "chloramphenicol sensitivity phenotype" RELATED []
 xref: CHEBI:17698
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
@@ -5601,7 +5617,7 @@ id: OMP:0006067
 name: decreased resistance to chloramphenicol
 def: "A chloramphenicol compound resistance phenotype where resistance to a chloramphenicol compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "increased sensitivity to chloramphenicol" RELATED []
-is_a: OMP:0006025 ! altered chloramphenicol resistance phenotype
+is_a: OMP:0006025 ! altered chloramphenicol resistance
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
 
@@ -5611,7 +5627,7 @@ name: increased resistance to chloramphenicol
 def: "A chloramphenicol compound resistance phenotype where resistance to a chloramphenicol compound is increased relative to a designated control." [OMP:JCH]
 synonym: "<new synonym>" RELATED []
 synonym: "decreased sensitivity to chloramphenicol" RELATED []
-is_a: OMP:0006025 ! altered chloramphenicol resistance phenotype
+is_a: OMP:0006025 ! altered chloramphenicol resistance
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
 
@@ -5662,7 +5678,7 @@ id: OMP:0006074
 name: increased resistance to pteridine
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is increased relative to a designated control." [CHEBI:27601, OMP:DAS]
 synonym: "decreased sensitivity to pteridine" RELATED []
-is_a: OMP:0006032 ! altered pteridine resistance phenotype
+is_a: OMP:0006032 ! altered pteridine resistance
 created_by: jonathanherrera
 creation_date: 2014-05-12T13:04:39Z
 
@@ -6063,7 +6079,7 @@ creation_date: 2014-07-25T14:07:02Z
 
 [Term]
 id: OMP:0006126
-name: altered DNA supercoiling phenotype
+name: altered DNA supercoiling
 def: "A DNA supercoiling phenotype where supercoiling is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000294 ! DNA supercoiling phenotype
 created_by: jonathanherrera
@@ -6504,7 +6520,7 @@ creation_date: 2014-04-24T17:38:06Z
 id: OMP:0007002
 name: decreased positive supercoiling
 def: "An altered DNA supercoiling phenotype where positive supercoiling is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006126 ! altered DNA supercoiling phenotype
+is_a: OMP:0006126 ! altered DNA supercoiling
 created_by: siegele
 creation_date: 2013-09-05T16:08:29Z
 
@@ -6512,7 +6528,7 @@ creation_date: 2013-09-05T16:08:29Z
 id: OMP:0007003
 name: increased positive supercoiling
 def: "An altered DNA supercoiling phenotype where positive supercoiling is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0006126 ! altered DNA supercoiling phenotype
+is_a: OMP:0006126 ! altered DNA supercoiling
 created_by: siegele
 creation_date: 2013-09-05T16:09:28Z
 
@@ -6521,7 +6537,7 @@ id: OMP:0007004
 name: decreased resistance to pteridine
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is decreased relative to a designated control." [CHEBI:27601, OMP:DAS]
 synonym: "increased sensitivity to pteridine" RELATED []
-is_a: OMP:0006032 ! altered pteridine resistance phenotype
+is_a: OMP:0006032 ! altered pteridine resistance
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:03:55Z
 
@@ -6992,7 +7008,7 @@ creation_date: 2013-10-01T15:46:38Z
 id: OMP:0007062
 name: increased heterocyst formation
 def: "A heterocyst formation phenotype where the ability to form heterocysts is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0006007 ! altered heterocyst formation phenotype
+is_a: OMP:0006007 ! altered heterocyst formation
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:31:01Z
 
@@ -7000,7 +7016,7 @@ creation_date: 2014-01-31T18:31:01Z
 id: OMP:0007063
 name: increased myxospore formation
 def: "A myxospore formation phenotype where the ability to form myxospores is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0006009 ! altered myxospore formation phenotype
+is_a: OMP:0006009 ! altered myxospore formation
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:45:09Z
 
@@ -7018,6 +7034,7 @@ creation_date: 2014-01-31T18:49:00Z
 id: OMP:0007065
 name: pteridine resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance is to a organonitrogen heterocyclic compound." [CHEBI:26373, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "antifolate resistance" BROAD [CHEBI:73913]
 synonym: "methotrexate resistance" NARROW [CHEBI:44185]
 synonym: "pteridine sensitivity phenotype" RELATED []
@@ -7239,7 +7256,7 @@ creation_date: 2014-07-10T12:51:30Z
 id: OMP:0007090
 name: more rod-like
 def: "An altered cell shape phenotype where a cell's shape is more rod-like than that of a designated control." [OMP:DAS]
-is_a: OMP:0007099 ! cylindrical cell phenotype
+is_a: OMP:0007099 ! cylindrical cell shape
 is_a: OMP:0007101 ! altered cell shape
 created_by: siegele
 creation_date: 2014-07-10T21:50:33Z
@@ -7310,7 +7327,7 @@ creation_date: 2014-07-10T20:10:11Z
 
 [Term]
 id: OMP:0007099
-name: cylindrical cell phenotype
+name: cylindrical cell shape
 def: "A cell shape phenotype where a cell has a consistently-sized round cross section.  The long axis of the cell is typically longer than the cell diameter." [OMP:DAS]
 xref: PATO:0001873
 is_a: OMP:0000073 ! cell shape phenotype
@@ -7319,7 +7336,7 @@ creation_date: 2014-07-10T20:13:46Z
 
 [Term]
 id: OMP:0007100
-name: spheroid cell phenotype
+name: spheroid cell shape
 def: "A cell shape phenotype where a cell has a sphere-like shape, i.e. quadric surface in three dimensions obtained by rotating an ellipse about one of its principle axes." [OMP:DAS]
 xref: PATO:0001865
 is_a: OMP:0000073 ! cell shape phenotype
@@ -7339,7 +7356,7 @@ creation_date: 2014-07-10T20:24:53Z
 id: OMP:0007102
 name: rounder
 def: "An altered cell shape phenotype where a cell's shape is rounder than that of a designated control." [OMP:DAS]
-is_a: OMP:0007100 ! spheroid cell phenotype
+is_a: OMP:0007100 ! spheroid cell shape
 is_a: OMP:0007101 ! altered cell shape
 created_by: siegele
 creation_date: 2014-07-10T21:51:13Z
@@ -7377,6 +7394,7 @@ creation_date: 2014-07-10T23:00:30Z
 id: OMP:0007106
 name: transcription phenotype
 def: "A gene expression phenotype that affects DNA-dependent transcription." [GO:0006351 "transcription, DNA-templated", OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0006351 "transcription, DNA-templated"
 is_a: OMP:0000253 ! gene expression phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -7388,6 +7406,7 @@ creation_date: 2014-08-11T16:37:39Z
 id: OMP:0007107
 name: translation phenotype
 def: "A gene expression phenotype that affects translation of one or more mRNAs." [GO:0006412 "translation", OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: FYPO:0000291 "translation phenotype"
 xref: GO:0006412 "translation"
 is_a: OMP:0000253 ! gene expression phenotype
@@ -7398,7 +7417,7 @@ creation_date: 2014-08-11T16:37:39Z
 
 [Term]
 id: OMP:0007108
-name: altered transcription phenotype
+name: altered transcription
 def: "A transcription phenotype where transcription of a gene or genes is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007080 ! altered gene expression
 is_a: OMP:0007106 ! transcription phenotype
@@ -7472,7 +7491,7 @@ creation_date: 2014-07-17T16:29:34Z
 id: OMP:0007116
 name: altered cell stalk
 def: "An altered cell shape phenotype where the stalk of a stalk-shaped cell is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000128 ! stalked cell phenotype
+is_a: OMP:0000128 ! stalked cell shape
 is_a: OMP:0007101 ! altered cell shape
 created_by: siegele
 creation_date: 2014-07-18T13:53:13Z
@@ -7481,8 +7500,8 @@ creation_date: 2014-07-18T13:53:13Z
 id: OMP:0007117
 name: increased transcription
 def: "An altered transcription phenotype where transcription of a gene or genes is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007108 ! altered transcription phenotype
-intersection_of: OMP:0007108 ! altered transcription phenotype
+is_a: OMP:0007108 ! altered transcription
+intersection_of: OMP:0007108 ! altered transcription
 intersection_of: RO:0000086 OMP:0007009 ! increased growth at acidic pH
 created_by: dsiegele
 creation_date: 2014-08-11T16:41:06Z
@@ -7491,7 +7510,7 @@ creation_date: 2014-08-11T16:41:06Z
 id: OMP:0007118
 name: decreased transcription
 def: "An altered transcription phenotype where transcription of a gene or genes is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007108 ! altered transcription phenotype
+is_a: OMP:0007108 ! altered transcription
 intersection_of: RO:0000086 PATO:0002302 ! decreased process quality
 created_by: dsiegele
 creation_date: 2014-08-11T16:41:06Z
@@ -7526,7 +7545,7 @@ creation_date: 2014-08-11T17:02:37Z
 
 [Term]
 id: OMP:0007122
-name: altered translation phenotype
+name: altered translation
 def: "A translation phenotype where translation of one or more mRNAs is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007080 ! altered gene expression
 is_a: OMP:0007107 ! translation phenotype
@@ -7537,7 +7556,7 @@ creation_date: 2014-08-11T17:07:54Z
 id: OMP:0007123
 name: Increased translation
 def: "An altered translation phenotype where translation of one or more mRNAs is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007122 ! altered translation phenotype
+is_a: OMP:0007122 ! altered translation
 created_by: dsiegele
 creation_date: 2014-08-11T17:10:06Z
 
@@ -7545,7 +7564,7 @@ creation_date: 2014-08-11T17:10:06Z
 id: OMP:0007124
 name: decreased translation
 def: "An altered translation phenotype where translation of one or more mRNAs is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007122 ! altered translation phenotype
+is_a: OMP:0007122 ! altered translation
 created_by: dsiegele
 creation_date: 2014-08-11T17:10:06Z
 
@@ -7631,6 +7650,7 @@ creation_date: 2014-08-17T12:52:35Z
 id: OMP:0007134
 name: altered antimicrobial compound resistance phenotype
 def: "An antimicrobial compound resistance phenotype where resistance to an antimicrobial compound is altered relative to a designated control." [OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 is_a: OMP:0007085 ! altered phenotype
 created_by: siegele
@@ -7654,7 +7674,7 @@ creation_date: 2014-08-17T13:19:30Z
 
 [Term]
 id: OMP:0007137
-name: altered alkaloid resistance phenotype
+name: altered alkaloid resistance
 def: "An alkaloid resistance phenotype where resistance to an alkaloid compound is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000455 ! alkaloid resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
@@ -7675,7 +7695,7 @@ name: altered lantibiotic resistance phenotype
 def: "A lantibiotic resistance phenotype where resistance to one or more lantibiotics is altered relative to a designated control." [OMP:DAS]
 synonym: "lantibiotic sensitivity phenotype" RELATED []
 is_a: OMP:0006011 ! lantibiotic resistance phenotype
-is_a: OMP:0006020 ! altered bacteriocin resistance phenotype
+is_a: OMP:0006020 ! altered bacteriocin resistance
 created_by: siegele
 creation_date: 2014-08-17T18:03:16Z
 
@@ -7940,6 +7960,7 @@ creation_date: 2014-09-25T17:18:11Z
 id: OMP:0007169
 name: antimicrobial peptide resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to antimicrobial peptides produced by a variety of vertebrate, invertebrate, and plant species." [doi:10.1038/nrmicro1098, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
 created_by: siegele
 creation_date: 2014-09-26T15:57:03Z
