@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 15:10:2014 19:02
+date: 15:10:2014 19:14
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -7511,6 +7511,7 @@ id: OMP:0007118
 name: decreased transcription
 def: "An altered transcription phenotype where transcription of a gene or genes is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007108 ! altered transcription
+intersection_of: OMP:0007108 ! altered transcription
 intersection_of: has_quality PATO:0002302 ! decreased process quality
 created_by: dsiegele
 creation_date: 2014-08-11T16:41:06Z
@@ -8555,6 +8556,10 @@ name: regulates
 namespace: external
 xref: RO:0002211
 transitive_over: part_of ! part_of
+
+[Typedef]
+id: RO:0000086
+name: RO:0000086 (UNDECLARED)
 
 [Typedef]
 id: similar_in_magnitude_relative_to
