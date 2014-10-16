@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 12:10:2014 22:36
+date: 15:10:2014 19:02
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1321,7 +1321,7 @@ def: "An altered cell motility phenotype where cell motility is decreased relati
 xref: PATO:0002297
 is_a: OMP:0007001 ! altered cell motility
 intersection_of: OMP:0007001 ! altered cell motility
-intersection_of: RO:0000086 PATO:0002302 ! decreased process quality
+intersection_of: has_quality PATO:0002302 ! decreased process quality
 creation_date: 2011-03-10T07:02:42Z
 
 [Term]
@@ -1351,7 +1351,7 @@ def: "A cell motility phenotype where a cell or cells possess the ability to per
 synonym: "motile" RELATED []
 is_a: OMP:0000001 ! cell motility phenotype
 intersection_of: OMP:0000001 ! cell motility phenotype
-intersection_of: RO:0000086 PATO:0000467 ! present
+intersection_of: has_quality PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-14T03:35:35Z
 
@@ -1409,7 +1409,7 @@ name: decreased endospore formation
 def: "An altered endospore formation phenotype where endospore formation is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006161 ! altered endospore formation
 intersection_of: OMP:0006161 ! altered endospore formation
-intersection_of: RO:0000086 PATO:0002302 ! decreased process quality
+intersection_of: has_quality PATO:0002302 ! decreased process quality
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:15Z
 
@@ -1419,7 +1419,7 @@ name: increased endospore formation
 def: "An altered endospore formation phenotype where endospore formation is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006161 ! altered endospore formation
 intersection_of: OMP:0006161 ! altered endospore formation
-intersection_of: RO:0000086 PATO:0002304 ! increased process quality
+intersection_of: has_quality PATO:0002304 ! increased process quality
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:39Z
 
@@ -1455,7 +1455,7 @@ name: non-endospore forming
 def: "An endospore formation phenotype where the cell does not possess the ability to form an endospore." [OMP:MCC]
 is_a: OMP:0000094 ! endospore formation phenotype
 intersection_of: OMP:0000094 ! endospore formation phenotype
-intersection_of: RO:0000086 PATO:0000462 ! absent
+intersection_of: has_quality PATO:0000462 ! absent
 created_by: mchibucos
 creation_date: 2011-04-26T03:09:25Z
 
@@ -1646,7 +1646,7 @@ def: "An altered cell motility phenotype where cell motility is increased relati
 xref: PATO:0002298
 is_a: OMP:0007001 ! altered cell motility
 intersection_of: OMP:0007001 ! altered cell motility
-intersection_of: RO:0000086 PATO:0002304 ! increased process quality
+intersection_of: has_quality PATO:0002304 ! increased process quality
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:26Z
 
@@ -1685,7 +1685,7 @@ name: presence of aerotaxis
 def: "An aerotaxis phenotype where a motile cell or organism displays directed movement in response to environmental oxygen (O2)." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
 intersection_of: OMP:0000047 ! aerotaxis phenotype
-intersection_of: RO:0000086 PATO:0000467 ! present
+intersection_of: has_quality PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-26T04:27:42Z
 
@@ -2418,7 +2418,7 @@ def: "A cell motility phenotype where a cell or cells lacks the ability to perfo
 synonym: "non-motile" RELATED []
 is_a: OMP:0000001 ! cell motility phenotype
 intersection_of: OMP:0000001 ! cell motility phenotype
-intersection_of: RO:0000086 PATO:0000462 ! absent
+intersection_of: has_quality PATO:0000462 ! absent
 created_by: adrienne
 creation_date: 2011-02-18T03:33:32Z
 
@@ -2634,7 +2634,7 @@ name: absence of aerotaxis
 def: "An aerotaxis phenotype where a motile cell or organism doesn't display directed movement in response to environmental oxygen (O2)." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
 intersection_of: OMP:0000047 ! aerotaxis phenotype
-intersection_of: RO:0000086 PATO:0000462 ! absent
+intersection_of: has_quality PATO:0000462 ! absent
 created_by: adrienne
 creation_date: 2011-03-02T02:06:09Z
 
@@ -3870,7 +3870,7 @@ name: decreased aerotaxis
 def: "An altered aerotaxis phenotype where aerotaxis is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007076 ! altered aerotaxis
 intersection_of: OMP:0007076 ! altered aerotaxis
-intersection_of: RO:0000086 PATO:0002302 ! decreased process quality
+intersection_of: has_quality PATO:0002302 ! decreased process quality
 created_by: mchibucos
 creation_date: 2012-11-02T01:20:31Z
 
@@ -6367,7 +6367,7 @@ name: altered endospore formation
 def: "A endospore formation phenotype where endospore formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000094 ! endospore formation phenotype
 intersection_of: OMP:0000094 ! endospore formation phenotype
-intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
+intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: jonathanherrera
 creation_date: 2014-07-29T15:37:45Z
 
@@ -6501,7 +6501,7 @@ def: "A decreased cell motility phenotype where the ability of a cell or cells t
 is_a: OMP:0000002 ! decreased cell motility
 is_a: OMP:0000133 ! absence of cell motility
 intersection_of: OMP:0000002 ! decreased cell motility
-intersection_of: RO:0000086 PATO:0000462 ! absent
+intersection_of: has_quality PATO:0000462 ! absent
 created_by: siegele
 creation_date: 2014-06-29T14:10:40Z
 
@@ -6512,7 +6512,7 @@ def: "A cell motility phenotype where cell motility is altered relative to a des
 is_a: OMP:0000001 ! cell motility phenotype
 is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0000001 ! cell motility phenotype
-intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
+intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-04-24T17:38:06Z
 
@@ -7135,7 +7135,7 @@ def: "An aerotaxis phenotype where directed movement in response to environmenta
 is_a: OMP:0000047 ! aerotaxis phenotype
 is_a: OMP:0007127 ! altered taxis
 intersection_of: OMP:0000047 ! aerotaxis phenotype
-intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
+intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-04-24T17:41:34Z
 
@@ -7172,7 +7172,7 @@ def: "A gene expression phenotype where expression of a gene or genes is altered
 is_a: OMP:0000253 ! gene expression phenotype
 is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0000253 ! gene expression phenotype
-intersection_of: RO:0000086 OMP:0007188 ! altered_process_quality
+intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: dsiegele
 creation_date: 2014-08-11T16:32:07Z
 
@@ -7216,7 +7216,7 @@ def: "A microbial phenotype that is altered in some way relative to a designated
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
-intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
+intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-07-10T12:28:36Z
 
@@ -7368,7 +7368,7 @@ def: "A cell morphology phenotype that is altered relative to a designated contr
 is_a: OMP:0000071 ! cell morphology phenotype
 is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
-intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
+intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-07-10T22:43:40Z
 
@@ -7422,7 +7422,7 @@ def: "A transcription phenotype where transcription of a gene or genes is altere
 is_a: OMP:0007080 ! altered gene expression
 is_a: OMP:0007106 ! transcription phenotype
 intersection_of: OMP:0007106 ! transcription phenotype
-intersection_of: RO:0000086 OMP:0007188 ! altered_process_quality
+intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: dsiegele
 creation_date: 2014-08-11T16:37:59Z
 
@@ -7502,7 +7502,7 @@ name: increased transcription
 def: "An altered transcription phenotype where transcription of a gene or genes is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007108 ! altered transcription
 intersection_of: OMP:0007108 ! altered transcription
-intersection_of: RO:0000086 OMP:0007009 ! increased growth at acidic pH
+intersection_of: has_quality OMP:0007009 ! increased growth at acidic pH
 created_by: dsiegele
 creation_date: 2014-08-11T16:41:06Z
 
@@ -7511,7 +7511,7 @@ id: OMP:0007118
 name: decreased transcription
 def: "An altered transcription phenotype where transcription of a gene or genes is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007108 ! altered transcription
-intersection_of: RO:0000086 PATO:0002302 ! decreased process quality
+intersection_of: has_quality PATO:0002302 ! decreased process quality
 created_by: dsiegele
 creation_date: 2014-08-11T16:41:06Z
 
@@ -7521,7 +7521,7 @@ name: abolished transcription
 def: "A decreased transcription phenotype where transcription of a gene or genes is abolished relative to a designated control." [OMP:DAS]
 is_a: OMP:0007118 ! decreased transcription
 intersection_of: OMP:0007118 ! decreased transcription
-intersection_of: RO:0000086 PATO:0000462 ! absent
+intersection_of: has_quality PATO:0000462 ! absent
 created_by: dsiegele
 creation_date: 2014-08-11T16:42:21Z
 
@@ -7592,7 +7592,7 @@ def: "A taxis phenotype where directed movement of a motile cell or organism in 
 is_a: OMP:0000004 ! taxis phenotype
 is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0000047 ! aerotaxis phenotype
-intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
+intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: dsiegele
 creation_date: 2014-08-12T13:30:01Z
 
@@ -7768,7 +7768,7 @@ def: "A DNA replication phenotype in which the process of DNA replication is alt
 is_a: OMP:0000307 ! DNA replication phenotype
 is_a: OMP:0005136 ! altered cell cycle phenotype
 intersection_of: OMP:0000307 ! DNA replication phenotype
-intersection_of: RO:0000086 OMP:0007188 ! altered_process_quality
+intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
 creation_date: 2014-08-19T14:26:57Z
 
@@ -8116,7 +8116,7 @@ name: altered_process_quality
 def: "A quality which inheres in an process that is altered in same way relative to a designated control." [OMP:DAS, PATO:0001236]
 is_a: OMP:0007187 ! quality (Interim)
 intersection_of: PATO:0001236 ! process quality
-intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
+intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-10-03T17:27:01Z
 
@@ -8159,7 +8159,7 @@ def: "A physical object quality that is altered relative to a designated control
 xref: PATO:0001241 "physical object quality"
 is_a: OMP:0007187 ! quality (Interim)
 intersection_of: PATO:0001241 ! physical object quality
-intersection_of: RO:0000086 OMP:0007189 ! altered_relative_to
+intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-10-04T19:34:54Z
 
@@ -8427,6 +8427,14 @@ comment: We use the has_part relation to relate complex qualities to more primit
 xref: BFO:0000051
 
 [Typedef]
+id: has_quality
+name: has_quality
+namespace: external
+xref: RO:0000086 "has quality"
+created_by: siegele
+creation_date: 2014-08-17T12:15:53Z
+
+[Typedef]
 id: has_ratio_quality
 name: has_ratio_quality
 namespace: quality
@@ -8515,6 +8523,14 @@ xref: BFO:0000050
 is_transitive: true
 
 [Typedef]
+id: participates_in
+name: participates_in
+namespace: external
+xref: RO:0000056 "participates in"
+created_by: siegele
+creation_date: 2014-08-17T12:05:35Z
+
+[Typedef]
 id: positively_regulates
 name: positively regulates
 namespace: external
@@ -8539,19 +8555,6 @@ name: regulates
 namespace: external
 xref: RO:0002211
 transitive_over: part_of ! part_of
-
-[Typedef]
-id: RO:0000056
-name: participates_in
-created_by: siegele
-creation_date: 2014-08-17T12:05:35Z
-
-[Typedef]
-id: RO:0000086
-name: has_quality
-namespace: external
-created_by: siegele
-creation_date: 2014-08-17T12:15:53Z
 
 [Typedef]
 id: similar_in_magnitude_relative_to
