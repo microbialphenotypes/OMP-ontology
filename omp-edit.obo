@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 15:10:2014 21:47
+date: 15:10:2014 22:46
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1441,17 +1441,17 @@ creation_date: 2011-04-26T03:07:11Z
 
 [Term]
 id: OMP:0000017
-name: endospore forming
+name: presence of endospore formation
 def: "An endospore formation phenotype where the cell possesses the ability to form an endospore." [OMP:MCC]
 is_a: OMP:0000094 ! endospore formation phenotype
 intersection_of: OMP:0000094 ! endospore formation phenotype
-intersection_of: RO:0000086 PATO:0000467 ! present
+intersection_of: has_quality PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-26T03:09:10Z
 
 [Term]
 id: OMP:0000018
-name: non-endospore forming
+name: absence of endospore formation
 def: "An endospore formation phenotype where the cell does not possess the ability to form an endospore." [OMP:MCC]
 is_a: OMP:0000094 ! endospore formation phenotype
 intersection_of: OMP:0000094 ! endospore formation phenotype
@@ -5961,6 +5961,9 @@ id: OMP:0006110
 name: abolished endospore formation
 def: "A decreased endospore formation phenotype where the ability to form endospores is abolished." [OMP:JCH]
 is_a: OMP:0000013 ! decreased endospore formation
+is_a: OMP:0000018 ! absence of endospore formation
+intersection_of: OMP:0000013 ! decreased endospore formation
+intersection_of: has_quality PATO:0000462 ! absent
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:21:50Z
 
@@ -8428,6 +8431,7 @@ xref: BFO:0000051
 id: has_quality
 name: has_quality
 namespace: external
+xref: RO:0000086
 created_by: siegele
 creation_date: 2014-10-15T20:39:22Z
 
@@ -8523,6 +8527,7 @@ is_transitive: true
 id: participates_in
 name: participates_in
 namespace: external
+xref: RO:0000056
 created_by: siegele
 creation_date: 2014-10-15T21:13:30Z
 
@@ -8551,10 +8556,6 @@ name: regulates
 namespace: external
 xref: RO:0002211
 transitive_over: part_of ! part_of
-
-[Typedef]
-id: RO:0000086
-name: RO:0000086 (UNDECLARED)
 
 [Typedef]
 id: similar_in_magnitude_relative_to
