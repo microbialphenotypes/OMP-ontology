@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 15:10:2014 19:14
+date: 15:10:2014 21:47
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -7592,7 +7592,7 @@ name: altered taxis
 def: "A taxis phenotype where directed movement of a motile cell or organism in response to an external stimulus is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000004 ! taxis phenotype
 is_a: OMP:0007085 ! altered phenotype
-intersection_of: OMP:0000047 ! aerotaxis phenotype
+intersection_of: OMP:0000004 ! taxis phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: dsiegele
 creation_date: 2014-08-12T13:30:01Z
@@ -8105,9 +8105,7 @@ creation_date: 2014-09-29T14:08:46Z
 [Term]
 id: OMP:0007187
 name: quality (Interim)
-def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities." [PATO:0000001, PATO:0000072]
-xref: PATO:0000001 "quality"
-is_a: OMP:0000000 ! microbial phenotype
+is_obsolete: true
 created_by: siegele
 creation_date: 2014-10-03T17:22:57Z
 
@@ -8115,7 +8113,7 @@ creation_date: 2014-10-03T17:22:57Z
 id: OMP:0007188
 name: altered_process_quality
 def: "A quality which inheres in an process that is altered in same way relative to a designated control." [OMP:DAS, PATO:0001236]
-is_a: OMP:0007187 ! quality (Interim)
+is_a: PATO:0001236 ! process quality
 intersection_of: PATO:0001236 ! process quality
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
@@ -8125,7 +8123,7 @@ creation_date: 2014-10-03T17:27:01Z
 id: OMP:0007189
 name: altered_relative_to
 def: "A quality which inheres in a bearer that is altered relative to the quality that inheres in a designated control entity." [OMP:DAS]
-is_a: OMP:0007187 ! quality (Interim)
+is_a: PATO:0000068 ! qualitative
 created_by: siegele
 creation_date: 2014-10-03T17:45:57Z
 
@@ -8157,8 +8155,7 @@ creation_date: 2014-10-04T18:41:07Z
 id: OMP:0007193
 name: altered_physical_object_quality
 def: "A physical object quality that is altered relative to a designated control." [OMP:DAS]
-xref: PATO:0001241 "physical object quality"
-is_a: OMP:0007187 ! quality (Interim)
+is_a: PATO:0001241 ! physical object quality
 intersection_of: PATO:0001241 ! physical object quality
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
@@ -8431,9 +8428,8 @@ xref: BFO:0000051
 id: has_quality
 name: has_quality
 namespace: external
-xref: RO:0000086 "has quality"
 created_by: siegele
-creation_date: 2014-08-17T12:15:53Z
+creation_date: 2014-10-15T20:39:22Z
 
 [Typedef]
 id: has_ratio_quality
@@ -8527,9 +8523,8 @@ is_transitive: true
 id: participates_in
 name: participates_in
 namespace: external
-xref: RO:0000056 "participates in"
 created_by: siegele
-creation_date: 2014-08-17T12:05:35Z
+creation_date: 2014-10-15T21:13:30Z
 
 [Typedef]
 id: positively_regulates
