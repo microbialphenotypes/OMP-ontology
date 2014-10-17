@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 15:10:2014 22:46
+date: 16:10:2014 20:28
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2897,7 +2897,7 @@ creation_date: 2011-02-02T03:34:58Z
 [Term]
 id: OMP:0000191
 name: gram stain phenotype
-def: "A cell staining phenotype where microorganisms are grouped based on their ability to retain crystal violet stain when decolorized with an organic solvent such as ethanol." [ISBN:978-0-07-340240-6, OMP:DAS]
+def: "A cell staining phenotype where microorganisms are grouped based on their ability to retain crystal violet stain when decolorized with an organic solvent such as ethanol." [ISBN:978-0-07-340240-6, ISBN:978-0077292812, OMP:DAS]
 xref: SNOMEDCT:385484003 "Gram stain"
 is_a: OMP:0000214 ! cell staining phenotype
 created_by: Adrienne
@@ -2955,8 +2955,8 @@ creation_date: 2011-06-06T04:30:12Z
 
 [Term]
 id: OMP:0000199
-name: acid-fast stain
-def: "A cell-staining phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol." [ISBN:978-0-07-729281-1, OMP:DAS]
+name: acid-fast stain phenotype
+def: "A cell-staining phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol." [ISBN:978-0-07-729281-1, ISBN:978-0077292812, OMP:DAS]
 is_a: OMP:0000214 ! cell staining phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:38:46Z
@@ -3048,7 +3048,7 @@ id: OMP:0000209
 name: fluorescent colony
 def: "A plating phenotype where the prominent morphological characteristic of the colony(ies) is that is fluorescence." [OMP:WAM]
 is_a: OMP:0000107 ! colony pigmentation phenotype
-is_a: OMP:0000255 ! plating  morphology phenotype
+is_a: OMP:0000255 ! plating morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:20:31Z
 
@@ -3384,8 +3384,8 @@ creation_date: 2011-07-21T01:05:42Z
 
 [Term]
 id: OMP:0000255
-name: plating  morphology phenotype
-def: "A growth phenotype dealing with colony morphological characteristics." [OMP:WAM]
+name: plating morphology phenotype
+def: "A growth phenotype related to the morphology of colonies on solid medium." [OMP:WAM]
 is_a: OMP:0000174 ! growth phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:34:48Z
@@ -4397,6 +4397,8 @@ id: OMP:0005061
 name: decreased frequency of chromosome segregation
 def: "An altered chromosome segregation phenotype where the occurrence of chromosome segregation is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006001 ! altered chromosome segregation
+intersection_of: OMP:0006001 ! altered chromosome segregation
+intersection_of: has_quality PATO:0002302 ! decreased process quality
 created_by: wmeza
 creation_date: 2013-11-04T18:09:38Z
 
@@ -4466,7 +4468,7 @@ creation_date: 2013-11-08T17:12:27Z
 
 [Term]
 id: OMP:0005072
-name: absence of  mitotic recombination
+name: absence of mitotic recombination
 def: "A mitotic recombination phenotype where a cell or cells lack the ability to perform mitotic recombination." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
@@ -5014,6 +5016,8 @@ id: OMP:0006001
 name: altered chromosome segregation
 def: "A chromosome segregation phenotype where chromosome segregation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005047 ! chromosome segregation phenotype
+intersection_of: OMP:0005047 ! chromosome segregation phenotype
+intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: jonathanherrera
 creation_date: 2014-07-24T14:14:37Z
 
@@ -5969,9 +5973,11 @@ creation_date: 2014-07-25T12:21:50Z
 
 [Term]
 id: OMP:0006111
-name: abolished frequency  of chromosome segregation
+name: abolished chromosome segregation
 def: "A decreased frequency of chromosome segregation phenotype where the ability to segregate chromosomes is abolished." [OMP:JCH]
 is_a: OMP:0005061 ! decreased frequency of chromosome segregation
+intersection_of: OMP:0005061 ! decreased frequency of chromosome segregation
+intersection_of: has_quality PATO:0000462 ! absent
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:24:27Z
 
