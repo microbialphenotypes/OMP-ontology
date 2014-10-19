@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 16:10:2014 20:28
+date: 18:10:2014 22:01
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -31,6 +31,13 @@ subsetdef: scalar_slim "Scalar slim"
 subsetdef: termgenie_unvetted "Terms created by TermGenie that do not follow a template and require additional vetting by editors"
 subsetdef: value_slim "Value slim"
 subsetdef: virus_checked "Viral overhaul terms"
+synonymtypedef: BRAND_NAME "BRAND NAME"
+synonymtypedef: FORMULA "FORMULA"
+synonymtypedef: InChI "InChI"
+synonymtypedef: InChIKey "InChIKey"
+synonymtypedef: INN "INN"
+synonymtypedef: IUPAC_NAME "IUPAC NAME"
+synonymtypedef: SMILES "SMILES"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: microbial_phenotype
 namespace-id-rule: * OMP:$sequence(7,0007001,0008000)$
@@ -38,6 +45,57 @@ remark: select is_a closure
 ontology: omp
 ontology: go
 ontology: pato
+
+[Term]
+id: CHEBI:24431
+name: chemical entity
+namespace: chebi_ontology
+def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." []
+
+[Term]
+id: CHEBI:24432
+name: biological role
+namespace: chebi_ontology
+def: "A role played by the molecular entity or part thereof within a biological context." []
+synonym: "biological function" RELATED [ChEBI:]
+is_a: CHEBI:50906 ! role
+
+[Term]
+id: CHEBI:25944
+name: pesticide
+namespace: chebi_ontology
+def: "Strictly, a substance intended to kill pests. In common usage, any substance used for controlling, preventing, or destroying animal, microbiological or plant pests." []
+synonym: "pesticide" EXACT IUPAC_NAME [IUPAC:]
+synonym: "pesticides" RELATED [ChEBI:]
+synonym: "Pestizid" RELATED [ChEBI:]
+synonym: "Pestizide" RELATED [ChEBI:]
+xref: Wikipedia:Pesticide "Wikipedia"
+is_a: CHEBI:33232 ! application
+
+[Term]
+id: CHEBI:33232
+name: application
+namespace: chebi_ontology
+def: "Intended use of the molecular entity or part thereof by humans." []
+is_a: CHEBI:50906 ! role
+
+[Term]
+id: CHEBI:33281
+name: antimicrobial agent
+namespace: chebi_ontology
+def: "A substance that kills or slows the growth of microorganisms, including bacteria, viruses, fungi and protozoans." []
+synonym: "antimicrobial" RELATED [ChEBI:]
+synonym: "antimicrobials" RELATED [ChEBI:]
+synonym: "microbicide" RELATED [ChEBI:]
+synonym: "microbicides" RELATED [ChEBI:]
+is_a: CHEBI:24432 ! biological role
+is_a: CHEBI:25944 ! pesticide
+
+[Term]
+id: CHEBI:50906
+name: role
+namespace: chebi_ontology
+def: "A role is particular behaviour which a material entity may exhibit." []
 
 [Term]
 id: GO:0000003
@@ -3435,8 +3493,8 @@ creation_date: 2011-07-21T02:05:51Z
 
 [Term]
 id: OMP:0000274
-name: antimicrobial compound resistance phenotype
-def: "A microbial phenotype related to resistance or sensitivity to compounds that kill (microbiocidal) or inhibit growth (microbiostatic) of a microbe." [OMP:MCC]
+name: antimicrobial agent resistance phenotype
+def: "A microbial phenotype related to resistance or sensitivity to agents that kill (microbiocidal) or inhibit growth (microbiostatic) of a microbe." [CHEBI:33281, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "antibiotic resistance phenotype" NARROW []
 synonym: "antibiotic sensitivity phenotype" RELATED []
@@ -3444,7 +3502,10 @@ synonym: "antifungal resistance phenotype" NARROW []
 synonym: "antimetabolite resistance phenotype" NARROW []
 synonym: "antimicrobial compound sensitivity phenotype" RELATED []
 synonym: "antiviral resistance phenotype" NARROW []
+xref: CHEBI:33281 "antimicrobial agent"
 is_a: OMP:0000000 ! microbial phenotype
+intersection_of: OMP:0007195 ! resistance to chemical
+intersection_of: towards CHEBI:33281 ! antimicrobial agent
 created_by: mchibucos
 creation_date: 2011-07-21T02:21:21Z
 
@@ -3620,7 +3681,7 @@ creation_date: 2012-04-05T11:43:53Z
 [Term]
 id: OMP:0000321
 name: macrolide resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars which exhibit antimicrobial properties." [CHEBI:25105, ISBN:9780073375267, OMP:MCC]
+def: "An antimicrobial compound resistance phenotype where resistance is to a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars which exhibit antimicrobial properties." [CHEBI:25106, ISBN:9780073375267, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "Azithromycin" NARROW [CHEBI:2955]
 synonym: "Bacteriostatic" BROAD []
@@ -3635,15 +3696,15 @@ synonym: "Spectinomycin" NARROW []
 synonym: "Spiramycin" NARROW []
 synonym: "Telithromycin" NARROW []
 synonym: "Troleandomycin" NARROW []
-xref: CHEBI:25105
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+xref: CHEBI:25105 "macrolide antibiotic"
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T01:51:04Z
 
 [Term]
 id: OMP:0000331
 name: aminopyrimidine resistance phenotype
-def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "aminopyrimidine sensitivity phenotype" RELATED []
 synonym: "antifolate" BROAD [CHEBI:73913]
@@ -3654,7 +3715,7 @@ synonym: "pyrimethamine" NARROW [CHEBI:8673]
 synonym: "trimethoprim" NARROW [CHEBI:45924]
 synonym: "trimetrexate" NARROW []
 xref: CHEBI:38338
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:02:58Z
 
@@ -3679,7 +3740,7 @@ creation_date: 2012-11-02T02:04:58Z
 [Term]
 id: OMP:0000336
 name: beta-lactam resistance phenotype
-def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds that contain a beta-lactam ring in their molecular structure." [CHEBI:27933, OMP:MCC]
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to compounds that contain a beta-lactam ring in their molecular structure." [CHEBI:35627 "beta-lactam", OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "ampicillin" NARROW [CHEBI:28971]
 synonym: "beta-lactam sensitivity phenotype" RELATED []
@@ -3690,8 +3751,8 @@ synonym: "cephaloxporins" NARROW []
 synonym: "cephamycin" NARROW [CHEBI:55429]
 synonym: "monobactams" NARROW [CHEBI:50695]
 synonym: "penicillin" NARROW [CHEBI:51356]
-xref: CHEBI:27933
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+xref: CHEBI:27933 "beta-lactam antibiotic"
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:06:13Z
 
@@ -3776,11 +3837,11 @@ creation_date: 2013-05-23T01:40:40Z
 [Term]
 id: OMP:0000455
 name: alkaloid resistance phenotype
-def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds containing basic nitrogen in a heterocyclic structure." [CHEBI:22315 "alkaloid", OMP:WAM]
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to compounds containing basic nitrogen in a heterocyclic structure." [CHEBI:22315 "alkaloid", OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "alkaloid sensitivity phenotype" RELATED []
 xref: CHEBI:22315 "alkaloid"
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:53:57Z
 
@@ -5238,7 +5299,7 @@ creation_date: 2013-09-10T17:51:21Z
 [Term]
 id: OMP:0006027
 name: bacteriocin resistance phenotype
-def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to bacteriocins, which are polypeptides synthesized by specific strains of bacteria that are active against other cells of the same or different species." [CHEBI:48081]
+def: "An antimicrobial peptide resistance phenotype related to resistance or sensitivity to bacteriocins, which are polypeptides synthesized by specific strains of bacteria that are active against other cells of the same or different species." [CHEBI:48081]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "bacteriocin sensitivity phenotype" RELATED []
 synonym: "colicins" NARROW [GO:0015468]
@@ -5249,19 +5310,19 @@ synonym: "subtilin" NARROW [Bactibase:BAC045]
 synonym: "type A lantibiotic" NARROW [CHEBI:71645]
 synonym: "type B lantibiotic" NARROW [CHEBI:71647]
 xref: CHEBI:48081 "bacteriocin"
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-04T16:57:43Z
 
 [Term]
 id: OMP:0006028
 name: azole resistance phenotype
-def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to heteromonocyclic organic compounds consisting of a five-membered mancude-ring containing nitrogen." [CHEBI:68452, OMP:DAS]
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to heteromonocyclic organic compounds consisting of a five-membered mancude-ring containing nitrogen." [CHEBI:68452, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nAzoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
 synonym: "azole sensitivity phenotype" RELATED []
 synonym: "Triazole" NARROW [CHEBI:38597]
 xref: CHEBI:68452 "azole"
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-10T19:15:32Z
 
@@ -5272,7 +5333,7 @@ def: "An antimicrobial compound resistance phenotype where resistance is to a ar
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "quinoline sensitivity phenotype" RELATED []
 xref: CHEBI:26513
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-10T19:15:32Z
 
@@ -5508,7 +5569,7 @@ creation_date: 2013-10-11T17:45:44Z
 [Term]
 id: OMP:0006056
 name: aminoglycoside resistance phenotype
-def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:22507, ISBN:978-0-07-299291-5, OMP:JCH]
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:47779 "aminoglycoside", ISBN:978-0-07-299291-5, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
@@ -5516,8 +5577,8 @@ synonym: "kanamycin" NARROW []
 synonym: "neomycin" NARROW []
 synonym: "streptomycin" NARROW []
 synonym: "tobramycin" NARROW []
-xref: CHEBI:22507
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+xref: CHEBI:22507 "aminoglycoside antibiotic"
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T13:29:22Z
 
@@ -5575,7 +5636,7 @@ synonym: "chlortetracycline" RELATED []
 synonym: "oxytetracycline " NARROW [CHEBI:27701]
 synonym: "tetracycline sensitivity phenotype" RELATED []
 xref: CHEBI:27902
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-23T17:21:25Z
 
@@ -5608,11 +5669,11 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006066
 name: chloramphenicol resistance phenotype
-def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, ISBN:9780072992915, OMP:JCH]
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "chloramphenicol sensitivity phenotype" RELATED []
-xref: CHEBI:17698
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+xref: CHEBI:17698 "chloramphenicol"
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-24T12:57:25Z
 
@@ -7048,7 +7109,7 @@ synonym: "antifolate resistance" BROAD [CHEBI:73913]
 synonym: "methotrexate resistance" NARROW [CHEBI:44185]
 synonym: "pteridine sensitivity phenotype" RELATED []
 xref: CHEBI:26373
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2014-02-03T15:39:56Z
 
@@ -7659,9 +7720,9 @@ creation_date: 2014-08-17T12:52:35Z
 [Term]
 id: OMP:0007134
 name: altered antimicrobial compound resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance to an antimicrobial compound is altered relative to a designated control." [OMP:DAS]
+def: "An antimicrobial agent resistance phenotype where resistance to an antimicrobial compound is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 is_a: OMP:0007085 ! altered phenotype
 created_by: siegele
 creation_date: 2014-08-17T13:12:31Z
@@ -7969,9 +8030,10 @@ creation_date: 2014-09-25T17:18:11Z
 [Term]
 id: OMP:0007169
 name: antimicrobial peptide resistance phenotype
-def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to antimicrobial peptides produced by a variety of vertebrate, invertebrate, and plant species." [doi:10.1038/nrmicro1098, OMP:DAS]
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an antimicrobial peptide." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000274 ! antimicrobial compound resistance phenotype
+xref: CHEBI:25903 "peptide antibiotic"
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2014-09-26T15:57:03Z
 
@@ -7980,6 +8042,8 @@ id: OMP:0007170
 name: altered antimicrobial peptide resistance phenotype
 def: "An antimicrobial peptide resistance phenotype where resistance or sensitivity to one or more antimicrobial peptides is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
+intersection_of: OMP:0007169 ! antimicrobial peptide resistance phenotype
+intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
 creation_date: 2014-09-26T16:02:16Z
 
@@ -7988,6 +8052,8 @@ id: OMP:0007171
 name: resistant to antimicrobial peptide
 def: "An antimicrobial peptide resistance phenotype where an organism or cell is resistant to one or more antimicrobial peptides." [OMP:DAS]
 is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
+intersection_of: OMP:0007169 ! antimicrobial peptide resistance phenotype
+intersection_of: has_quality PATO:0000467 ! present
 created_by: siegele
 creation_date: 2014-09-26T16:02:16Z
 
@@ -7996,6 +8062,8 @@ id: OMP:0007172
 name: not resistant to antimicrobial peptide
 def: "An antimicrobial peptide resistance phenotype where an organism or cell is sensitive to one or more antimicrobial peptides." [OMP:DAS]
 is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
+intersection_of: OMP:0007169 ! antimicrobial peptide resistance phenotype
+intersection_of: has_quality PATO:0000462 ! absent
 created_by: siegele
 creation_date: 2014-09-26T16:02:16Z
 
@@ -8171,6 +8239,28 @@ created_by: siegele
 creation_date: 2014-10-04T19:34:54Z
 
 [Term]
+id: OMP:0007194
+name: biological process phenotype
+def: "A microbial phenotype that affects a biological process." [FYPO:0000300, OMP:DAS]
+xref: FYPO:0000300 "biological process phenotype"
+is_a: OMP:0000000 ! microbial phenotype
+intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: inheres_in GO:0008150 ! biological_process
+created_by: siegele
+creation_date: 2014-10-18T21:38:46Z
+
+[Term]
+id: OMP:0007195
+name: resistance to chemical
+def: "A biological process phenotype related to the resistance or sensitivity of a cell, cells, or microbe to a chemical entity." [OMP:DAS]
+is_a: OMP:0007194 ! biological process phenotype
+intersection_of: OMP:0007194 ! biological process phenotype
+intersection_of: has_quality PATO:0001457 ! sensitivity of a process
+intersection_of: towards CHEBI:24431 ! chemical entity
+created_by: siegele
+creation_date: 2014-10-18T21:39:28Z
+
+[Term]
 id: PATO:0000001
 name: quality
 namespace: quality
@@ -8230,7 +8320,7 @@ synonym: "presence" RELATED []
 synonym: "presence or absence in organism" EXACT []
 synonym: "quantitative" EXACT []
 is_a: PATO:0000068 ! qualitative
-relationship: reciprocal_of PATO:0001555
+relationship: reciprocal_of PATO:0001555 ! has number of
 
 [Term]
 id: PATO:0000117
@@ -8254,8 +8344,8 @@ subset: value_slim
 synonym: "absence" EXACT []
 synonym: "absent from organism" EXACT []
 is_a: PATO:0000070 ! count
-relationship: reciprocal_of PATO:0001558
-relationship: reciprocal_of PATO:0002000
+relationship: reciprocal_of PATO:0001558 ! lacking processual parts
+relationship: reciprocal_of PATO:0002000 ! lacks all parts of type
 
 [Term]
 id: PATO:0000467
@@ -8301,13 +8391,77 @@ xref: snap:Quality
 is_a: PATO:0000001 ! quality
 
 [Term]
+id: PATO:0001457
+name: sensitivity of a process
+namespace: quality
+def: "A quality of a process inhering in bearer by virtue of the bearer's disposition to respond to stimulation." [PATOC:GVG]
+subset: attribute_slim
+subset: disposition_slim
+subset: relational_slim
+synonym: "sensitivity of occurrent" EXACT []
+is_a: PATO:0002062 ! physical quality of a process
+
+[Term]
+id: PATO:0001555
+name: has number of
+namespace: quality
+def: "The number of parts of a particular type that the bearer entity has. This is a relational quality, and thus holds between two entities: the bearer of the quality, and the type of parts." [PATOC:CJM]
+subset: attribute_slim
+subset: relational_slim
+synonym: "cardinality" RELATED []
+synonym: "extra or missing physical or functional parts" EXACT []
+synonym: "has or lacks parts of type" EXACT []
+synonym: "mereological quality" EXACT []
+synonym: "number" RELATED []
+synonym: "number of" EXACT []
+xref: OBO_REL:has_part
+is_a: PATO:0001241 ! physical object quality
+
+[Term]
+id: PATO:0001564
+name: extra or missing processual parts
+namespace: quality
+def: "A quality of a process inhering in a bearer by virtue of the bearer's processual parts." [PATOC:GVG]
+subset: relational_slim
+is_a: PATO:0001236 ! process quality
+
+[Term]
+id: PATO:0001999
+name: lacks parts or has fewer parts of type
+namespace: quality
+def: "The bearer of this quality has_part < n of the indicated entity type, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part. Formally: If a bearer entity e has fewer parts of type X at time t, then the number of instances x of X at t such that x part_of e is < n, where n is either the normal number for comparable entities, or n is stated explicitly. This case includes the limit case, where the bearer lacks all parts of the specified type." [PATOC:CJM]
+subset: relational_slim
+synonym: "loss of" EXACT []
+is_a: PATO:0002083 ! altered number of
+
+[Term]
+id: PATO:0002062
+name: physical quality of a process
+namespace: quality
+subset: attribute_slim
+is_a: PATO:0001236 ! process quality
+created_by: george
+creation_date: 2009-06-05T09:16:46Z
+
+[Term]
+id: PATO:0002083
+name: altered number of
+namespace: quality
+def: "Having extra or fewer parts." [PATOC:GVG]
+subset: attribute_slim
+subset: relational_slim
+is_a: PATO:0001555 ! has number of
+created_by: George Gkoutos
+creation_date: 2009-09-21T10:41:58Z
+
+[Term]
 id: PATO:0002300
 name: increased quality
 namespace: quality
 def: "A quality that has a value that is increased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
 intersection_of: PATO:0000001 ! quality
-intersection_of: increased_in_magnitude_relative_to PATO:0000461
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:39:43Z
 
@@ -8318,7 +8472,7 @@ namespace: quality
 def: "A quality that has a value that is decreased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
 intersection_of: PATO:0000001 ! quality
-intersection_of: decreased_in_magnitude_relative_to PATO:0000461
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:40:15Z
 
@@ -8330,7 +8484,7 @@ def: "A quality of a process that has a value that is decreased compared to norm
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002301 ! decreased quality
 intersection_of: PATO:0001236 ! process quality
-intersection_of: decreased_in_magnitude_relative_to PATO:0000461
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:50:59Z
 
@@ -8342,7 +8496,7 @@ def: "A quality of a process that has a value that is increased compared to norm
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002300 ! increased quality
 intersection_of: PATO:0001236 ! process quality
-intersection_of: increased_in_magnitude_relative_to PATO:0000461
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:53:08Z
 
@@ -8426,6 +8580,16 @@ range: PATO:0000001 ! quality
 is_a: has_ratio_quality ! has_ratio_quality
 
 [Typedef]
+id: has_functional_parent
+name: has functional parent
+namespace: chebi_ontology
+
+[Typedef]
+id: has_parent_hydride
+name: has parent hydride
+namespace: chebi_ontology
+
+[Typedef]
 id: has_part
 name: has_part
 namespace: quality
@@ -8452,6 +8616,12 @@ range: PATO:0000001 ! quality
 id: has_relative_magnitude
 name: has_relative_magnitude
 namespace: quality
+
+[Typedef]
+id: has_role
+name: has role
+namespace: chebi_ontology
+xref: RO:0000087
 
 [Typedef]
 id: increased_in_magnitude_relative_to
@@ -8490,6 +8660,24 @@ created_by: cjm
 creation_date: 2009-08-26T02:50:24Z
 
 [Typedef]
+id: is_conjugate_acid_of
+name: is conjugate acid of
+namespace: chebi_ontology
+is_cyclic: true
+
+[Typedef]
+id: is_conjugate_base_of
+name: is conjugate base of
+namespace: chebi_ontology
+is_cyclic: true
+
+[Typedef]
+id: is_enantiomer_of
+name: is enantiomer of
+namespace: chebi_ontology
+is_cyclic: true
+
+[Typedef]
 id: is_magnitude_of
 name: is_magnitude_of
 namespace: pato.ontology
@@ -8498,6 +8686,18 @@ namespace: pato.ontology
 id: is_measurement_of
 name: is_measurement_of
 namespace: pato.ontology
+
+[Typedef]
+id: is_substituent_group_from
+name: is substituent group from
+namespace: chebi_ontology
+
+[Typedef]
+id: is_tautomer_of
+name: is tautomer of
+namespace: chebi_ontology
+is_cyclic: true
+is_transitive: true
 
 [Typedef]
 id: is_unit_of
