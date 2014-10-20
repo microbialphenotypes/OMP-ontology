@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 18:10:2014 22:01
+date: 20:10:2014 15:16
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -523,6 +523,14 @@ synonym: "response to environmental stimulus" EXACT []
 is_a: GO:0050896 ! response to stimulus
 
 [Term]
+id: GO:0009847
+name: spore germination
+namespace: biological_process
+def: "The physiological and developmental changes that occur in a spore following release from dormancy up to the earliest signs of growth (e.g. emergence from a spore wall)." [GOC:lr]
+subset: gosubset_prok
+is_a: GO:0032502 ! developmental process
+
+[Term]
 id: GO:0009892
 name: negative regulation of metabolic process
 namespace: biological_process
@@ -728,7 +736,7 @@ def: "The cellular process that ensures successive accurate and complete genome 
 subset: gocheck_do_not_manually_annotate
 subset: gosubset_prok
 is_a: GO:0044763 ! single-organism cellular process
-relationship: part_of GO:0007049
+relationship: part_of GO:0007049 ! cell cycle
 
 [Term]
 id: GO:0030154
@@ -822,6 +830,13 @@ id: GO:0034301
 name: endospore formation
 namespace: biological_process
 def: "The process in which a cell gives rise to an endospore, a dormant, highly resistant spore with a thick wall that forms within the mother cell. Endospores are produced by some low G+C Gram-positive bacteria in response to harsh conditions." [GOC:ds, GOC:mah, ISBN:0470090278]
+is_a: GO:0043936 ! asexual sporulation resulting in formation of a cellular spore
+
+[Term]
+id: GO:0034303
+name: myxospore formation
+namespace: biological_process
+def: "The process in which differentiated, resting cells are formed, usually within a fruiting body by Myxobacteria. The myxospore is more resistant to high temperature, dessication, and UV than vegetative myxobacteria." [GOC:ds, ISBN:0122268008]
 is_a: GO:0043936 ! asexual sporulation resulting in formation of a cellular spore
 
 [Term]
@@ -963,6 +978,17 @@ synonym: "twitching motility" NARROW []
 synonym: "type 4 pilus-dependent motility" EXACT []
 synonym: "type four pilus-dependent motility" EXACT []
 is_a: GO:0048870 ! cell motility
+
+[Term]
+id: GO:0043158
+name: heterocyst differentiation
+namespace: biological_process
+def: "The process in which a relatively unspecialized cell acquires specialized features of a heterocyst, a differentiated cell in certain cyanobacteria whose purpose is to fix nitrogen." [GOC:jl]
+subset: gosubset_prok
+synonym: "heterocyst biosynthesis" EXACT []
+synonym: "heterocyst cell differentiation" EXACT []
+synonym: "heterocyst formation" EXACT []
+is_a: GO:0030154 ! cell differentiation
 
 [Term]
 id: GO:0043170
@@ -1181,7 +1207,7 @@ comment: Note that, for example, the formation of a pseudopod in an amoeba would
 subset: goslim_generic
 synonym: "formation of an anatomical structure involved in morphogenesis" EXACT [GOC:dph, GOC:tb]
 is_a: GO:0032502 ! developmental process
-relationship: part_of GO:0009653
+relationship: part_of GO:0009653 ! anatomical structure morphogenesis
 
 [Term]
 id: GO:0048869
@@ -1205,7 +1231,7 @@ synonym: "cell movement" RELATED []
 synonym: "movement of a cell" EXACT []
 is_a: GO:0006928 ! cellular component movement
 is_a: GO:0040011 ! locomotion
-relationship: part_of GO:0051674
+relationship: part_of GO:0051674 ! localization of cell
 
 [Term]
 id: GO:0050789
@@ -1231,6 +1257,21 @@ subset: gocheck_do_not_manually_annotate
 subset: goslim_pir
 subset: gosubset_prok
 synonym: "physiological response to stimulus" EXACT []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0051179
+name: localization
+namespace: biological_process
+def: "Any process in which a cell, a substance, or a cellular entity, such as a protein complex or organelle, is transported to or maintained in a specific location." [GOC:ai]
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "establishment and maintenance of cellular component location" NARROW []
+synonym: "establishment and maintenance of localization" EXACT []
+synonym: "establishment and maintenance of position" EXACT []
+synonym: "establishment and maintenance of substance location" NARROW []
+synonym: "establishment and maintenance of substrate location" NARROW []
+synonym: "localisation" EXACT [GOC:mah]
 is_a: GO:0008150 ! biological_process
 
 [Term]
@@ -1415,17 +1456,21 @@ creation_date: 2011-04-14T03:35:35Z
 
 [Term]
 id: OMP:0000006
-name: akinete forming
-def: "An akinete formation phenotype where the organism has the ability to form an akinete." [OMP:MCC]
+name: presence of akinete formation
+def: "An akinete formation phenotype where a cell or cells have the ability to differentiate into an akinete." [OMP:MCC]
 is_a: OMP:0000093 ! akinete formation phenotype
+intersection_of: OMP:0000093 ! akinete formation phenotype
+intersection_of: has_quality PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-26T02:51:36Z
 
 [Term]
 id: OMP:0000007
-name: non-akinete forming
-def: "An akinete formation phenotype where an organism does not possess the ability to form an akinete." [OMP:MCC]
+name: absence of akinete formation
+def: "An akinete formation phenotype where a cell or cells do not possess the ability to form an akinete." [OMP:MCC]
 is_a: OMP:0000093 ! akinete formation phenotype
+intersection_of: OMP:0000093 ! akinete formation phenotype
+intersection_of: has_quality PATO:0000462 ! absent
 created_by: mchibucos
 creation_date: 2011-04-26T02:52:52Z
 
@@ -1519,25 +1564,31 @@ creation_date: 2011-04-26T03:09:25Z
 
 [Term]
 id: OMP:0000020
-name: myxospore forming
+name: presence of myxospore formation
 def: "A myxospore formation phenotype where an organism possesses the ability to form myxospores." [OMP:MCC]
 is_a: OMP:0000096 ! myxospore formation phenotype
+intersection_of: OMP:0000096 ! myxospore formation phenotype
+intersection_of: has_quality PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
 
 [Term]
 id: OMP:0000021
-name: non-myxospore forming
+name: absence of myxospore formation
 def: "A myxospore formation phenotype where an organism does not possess the ability to form myxospores." [OMP:MCC]
 is_a: OMP:0000096 ! myxospore formation phenotype
+intersection_of: OMP:0000096 ! myxospore formation phenotype
+intersection_of: has_quality PATO:0000462 ! absent
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
 
 [Term]
 id: OMP:0000022
 name: decreased myxospore formation
-def: "A myxospore formation phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
+def: "An altered myxospore formation phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
 is_a: OMP:0006009 ! altered myxospore formation
+intersection_of: OMP:0006009 ! altered myxospore formation
+intersection_of: has_quality PATO:0002302 ! decreased process quality
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
 
@@ -2105,7 +2156,7 @@ creation_date: 2011-02-02T03:24:11Z
 [Term]
 id: OMP:0000091
 name: sporulation phenotype
-def: "A cell development phenotype where development concerns formation of a spore, a structure that can be used for dissemination, survival in adverse conditions, or reproduction." [OMP:MCC]
+def: "A cell development phenotype related to formation of a spore, a dormant differentiated cell that can be used for dissemination, survival in adverse conditions, or reproduction." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0043934 "sporulation"
 is_a: OMP:0000070 ! cell development phenotype
@@ -2117,17 +2168,24 @@ creation_date: 2011-02-02T03:24:24Z
 [Term]
 id: OMP:0000092
 name: heterocyst formation phenotype
-def: "A cell development phenotype where development concerns differentiation into a specialized cell whose purpose is to fix nitrogen." [OMP:MCC]
+def: "A cell development phenotype related to development of a heterocyst, a differentiated cell in certain cyanobacteria whose purpose is to fix nitrogen." [DOI:10.1046/j.1469-8137.1999.00505.x, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0043158 "heterocyst differentiation"
 is_a: OMP:0000070 ! cell development phenotype
+intersection_of: OMP:0000070 ! cell development phenotype
+intersection_of: inheres_in GO:0043158 ! heterocyst differentiation
 created_by: adrienne
 creation_date: 2011-02-02T03:24:43Z
 
 [Term]
 id: OMP:0000093
 name: akinete formation phenotype
-def: "A cell development phenotype where development concerns a special thick-walled cell that has the ability to withstand desiccation for long periods of time." [OMP:MCC]
-is_a: OMP:0000070 ! cell development phenotype
+def: "A cell development phenotype related to the development of an akinete, a thick-walled dormant cell derived from the enlargement of a vegetative cell." [doi:10.1046/j.1469-8137.1999.00505.x, OMP:MCC]
+comment: Akinetes typically are more resistant to dessication and other environmental stresses than vegetative cells.
+xref: GO:0034302 "akinete formation"
+is_a: OMP:0000091 ! sporulation phenotype
+intersection_of: OMP:0000070 ! cell development phenotype
+intersection_of: inheres_in OMP:0000006 ! presence of akinete formation
 created_by: adrienne
 creation_date: 2011-02-02T03:25:02Z
 
@@ -2146,18 +2204,24 @@ creation_date: 2011-02-02T03:25:29Z
 [Term]
 id: OMP:0000095
 name: spore germination phenotype
-def: "A cell development phenotype where development concerns the physiological and developmental changes that occur in a spore following release from dormancy up to the earliest signs of growth (e.g. emergence from a spore wall)." [OMP:MCC]
+def: "A cell development phenotype regarding the physiological and developmental changes that occur in a spore following release from dormancy up to the earliest signs of growth (e.g. emergence from a spore wall)." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0009847 "spore germination"
 is_a: OMP:0000070 ! cell development phenotype
+intersection_of: OMP:0000070 ! cell development phenotype
+intersection_of: inheres_in GO:0009847 ! spore germination
 created_by: adrienne
 creation_date: 2011-02-02T03:25:47Z
 
 [Term]
 id: OMP:0000096
 name: myxospore formation phenotype
-def: "A sporulation phenotype where development concerns formation of a myxospore, a differentiated, resting cell usually within a fruiting body by Myxobacteria." [OMP:MCC]
+def: "A sporulation phenotype related to development of a myxospore, a differentiated, resting cell usually within a fruiting body by Myxobacteria." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0034303 "myxospore formation"
 is_a: OMP:0000091 ! sporulation phenotype
+intersection_of: OMP:0000091 ! sporulation phenotype
+intersection_of: inheres_in GO:0034303 ! myxospore formation
 created_by: adrienne
 creation_date: 2011-02-02T03:26:41Z
 
@@ -2484,7 +2548,7 @@ creation_date: 2011-02-18T03:33:32Z
 id: OMP:0000134
 name: spherical akinete
 def: "An akinete forming phenotype where the organism forms a spherical shaped akinete." [OMP:JCH]
-is_a: OMP:0000006 ! akinete forming
+is_a: OMP:0000006 ! presence of akinete formation
 created_by: adrienne
 creation_date: 2011-02-18T03:40:27Z
 
@@ -5145,6 +5209,8 @@ id: OMP:0006009
 name: altered myxospore formation
 def: "A myxospore formation phenotype where myxospore formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000096 ! myxospore formation phenotype
+intersection_of: OMP:0000096 ! myxospore formation phenotype
+intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:26:38Z
 
@@ -6143,7 +6209,10 @@ creation_date: 2014-07-25T14:05:31Z
 id: OMP:0006125
 name: abolished myxospore formation
 def: "A decreased myxospore formation phenotype where the ability to form myxospores is abolished." [OMP:JCH]
+is_a: OMP:0000021 ! absence of myxospore formation
 is_a: OMP:0000022 ! decreased myxospore formation
+intersection_of: OMP:0000022 ! decreased myxospore formation
+intersection_of: has_quality PATO:0000462 ! absent
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:07:02Z
 
@@ -6469,7 +6538,7 @@ creation_date: 2014-08-05T13:44:09Z
 id: OMP:0006165
 name: cylindrical akinete
 def: "An akinete forming phenotype where the organism forms a cylindrical shaped akinete." [OMP:JCH]
-is_a: OMP:0000006 ! akinete forming
+is_a: OMP:0000006 ! presence of akinete formation
 created_by: jonathanherrera
 creation_date: 2014-08-06T17:30:58Z
 
@@ -7085,8 +7154,10 @@ creation_date: 2014-01-31T18:31:01Z
 [Term]
 id: OMP:0007063
 name: increased myxospore formation
-def: "A myxospore formation phenotype where the ability to form myxospores is increased relative to a designated control." [OMP:DAS]
+def: "An altered myxospore formation phenotype where the ability to form myxospores is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006009 ! altered myxospore formation
+intersection_of: OMP:0006009 ! altered myxospore formation
+intersection_of: has_quality PATO:0002304 ! increased process quality
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:45:09Z
 
@@ -7419,6 +7490,8 @@ name: altered cell shape
 def: "A cell shape phenotype where the shape of a cell is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000073 ! cell shape phenotype
 is_a: OMP:0007103 ! altered cell morphology
+intersection_of: OMP:0000073 ! cell shape phenotype
+intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-07-10T20:24:53Z
 
@@ -7724,6 +7797,8 @@ def: "An antimicrobial agent resistance phenotype where resistance to an antimic
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 is_a: OMP:0007085 ! altered phenotype
+intersection_of: OMP:0000274 ! antimicrobial agent resistance phenotype
+intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
 creation_date: 2014-08-17T13:12:31Z
 
@@ -8261,6 +8336,16 @@ created_by: siegele
 creation_date: 2014-10-18T21:39:28Z
 
 [Term]
+id: OMP:0007196
+name: altered akinete formation
+def: "An akinete formation phenotype where the process of akinete formation is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000093 ! akinete formation phenotype
+intersection_of: OMP:0000093 ! akinete formation phenotype
+intersection_of: has_quality OMP:0007188 ! altered_process_quality
+created_by: siegele
+creation_date: 2014-10-20T15:08:04Z
+
+[Term]
 id: PATO:0000001
 name: quality
 namespace: quality
@@ -8344,8 +8429,8 @@ subset: value_slim
 synonym: "absence" EXACT []
 synonym: "absent from organism" EXACT []
 is_a: PATO:0000070 ! count
-relationship: reciprocal_of PATO:0001558 ! lacking processual parts
-relationship: reciprocal_of PATO:0002000 ! lacks all parts of type
+relationship: reciprocal_of PATO:0001558
+relationship: reciprocal_of PATO:0002000
 
 [Term]
 id: PATO:0000467
@@ -8402,39 +8487,6 @@ synonym: "sensitivity of occurrent" EXACT []
 is_a: PATO:0002062 ! physical quality of a process
 
 [Term]
-id: PATO:0001555
-name: has number of
-namespace: quality
-def: "The number of parts of a particular type that the bearer entity has. This is a relational quality, and thus holds between two entities: the bearer of the quality, and the type of parts." [PATOC:CJM]
-subset: attribute_slim
-subset: relational_slim
-synonym: "cardinality" RELATED []
-synonym: "extra or missing physical or functional parts" EXACT []
-synonym: "has or lacks parts of type" EXACT []
-synonym: "mereological quality" EXACT []
-synonym: "number" RELATED []
-synonym: "number of" EXACT []
-xref: OBO_REL:has_part
-is_a: PATO:0001241 ! physical object quality
-
-[Term]
-id: PATO:0001564
-name: extra or missing processual parts
-namespace: quality
-def: "A quality of a process inhering in a bearer by virtue of the bearer's processual parts." [PATOC:GVG]
-subset: relational_slim
-is_a: PATO:0001236 ! process quality
-
-[Term]
-id: PATO:0001999
-name: lacks parts or has fewer parts of type
-namespace: quality
-def: "The bearer of this quality has_part < n of the indicated entity type, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part. Formally: If a bearer entity e has fewer parts of type X at time t, then the number of instances x of X at t such that x part_of e is < n, where n is either the normal number for comparable entities, or n is stated explicitly. This case includes the limit case, where the bearer lacks all parts of the specified type." [PATOC:CJM]
-subset: relational_slim
-synonym: "loss of" EXACT []
-is_a: PATO:0002083 ! altered number of
-
-[Term]
 id: PATO:0002062
 name: physical quality of a process
 namespace: quality
@@ -8444,24 +8496,13 @@ created_by: george
 creation_date: 2009-06-05T09:16:46Z
 
 [Term]
-id: PATO:0002083
-name: altered number of
-namespace: quality
-def: "Having extra or fewer parts." [PATOC:GVG]
-subset: attribute_slim
-subset: relational_slim
-is_a: PATO:0001555 ! has number of
-created_by: George Gkoutos
-creation_date: 2009-09-21T10:41:58Z
-
-[Term]
 id: PATO:0002300
 name: increased quality
 namespace: quality
 def: "A quality that has a value that is increased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
 intersection_of: PATO:0000001 ! quality
-intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+intersection_of: increased_in_magnitude_relative_to PATO:0000461
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:39:43Z
 
@@ -8472,7 +8513,7 @@ namespace: quality
 def: "A quality that has a value that is decreased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
 intersection_of: PATO:0000001 ! quality
-intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:40:15Z
 
@@ -8484,7 +8525,7 @@ def: "A quality of a process that has a value that is decreased compared to norm
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002301 ! decreased quality
 intersection_of: PATO:0001236 ! process quality
-intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:50:59Z
 
@@ -8496,7 +8537,7 @@ def: "A quality of a process that has a value that is increased compared to norm
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002300 ! increased quality
 intersection_of: PATO:0001236 ! process quality
-intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+intersection_of: increased_in_magnitude_relative_to PATO:0000461
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:53:08Z
 
