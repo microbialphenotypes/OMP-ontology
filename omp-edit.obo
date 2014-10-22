@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 21:10:2014 23:29
+date: 21:10:2014 23:31
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -8303,6 +8303,7 @@ id: OMP:0007194
 name: biological process phenotype
 def: "A microbial phenotype that affects a biological process." [FYPO:0000300, OMP:DAS]
 xref: FYPO:0000300 "biological process phenotype"
+xref: GO:0008150 "biological_process"
 is_a: OMP:0000000 ! microbial phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0008150 ! biological_process
@@ -8334,7 +8335,10 @@ creation_date: 2014-10-20T15:08:04Z
 id: OMP:0007197
 name: cellular component phenotype
 def: "A microbial phenotype that affects a cellular component." [OMP:DAS]
+xref: GO:0005575 "cellular_component"
 is_a: OMP:0000000 ! microbial phenotype
+intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: inheres_in GO:0005575 ! cellular_component
 created_by: siegele
 creation_date: 2014-10-21T23:28:25Z
 
