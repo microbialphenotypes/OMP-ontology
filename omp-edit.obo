@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 20:10:2014 15:16
+date: 21:10:2014 23:29
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -736,7 +736,7 @@ def: "The cellular process that ensures successive accurate and complete genome 
 subset: gocheck_do_not_manually_annotate
 subset: gosubset_prok
 is_a: GO:0044763 ! single-organism cellular process
-relationship: part_of GO:0007049 ! cell cycle
+relationship: part_of GO:0007049
 
 [Term]
 id: GO:0030154
@@ -1207,7 +1207,7 @@ comment: Note that, for example, the formation of a pseudopod in an amoeba would
 subset: goslim_generic
 synonym: "formation of an anatomical structure involved in morphogenesis" EXACT [GOC:dph, GOC:tb]
 is_a: GO:0032502 ! developmental process
-relationship: part_of GO:0009653 ! anatomical structure morphogenesis
+relationship: part_of GO:0009653
 
 [Term]
 id: GO:0048869
@@ -1231,7 +1231,7 @@ synonym: "cell movement" RELATED []
 synonym: "movement of a cell" EXACT []
 is_a: GO:0006928 ! cellular component movement
 is_a: GO:0040011 ! locomotion
-relationship: part_of GO:0051674 ! localization of cell
+relationship: part_of GO:0051674
 
 [Term]
 id: GO:0050789
@@ -1257,21 +1257,6 @@ subset: gocheck_do_not_manually_annotate
 subset: goslim_pir
 subset: gosubset_prok
 synonym: "physiological response to stimulus" EXACT []
-is_a: GO:0008150 ! biological_process
-
-[Term]
-id: GO:0051179
-name: localization
-namespace: biological_process
-def: "Any process in which a cell, a substance, or a cellular entity, such as a protein complex or organelle, is transported to or maintained in a specific location." [GOC:ai]
-subset: goslim_pir
-subset: gosubset_prok
-synonym: "establishment and maintenance of cellular component location" NARROW []
-synonym: "establishment and maintenance of localization" EXACT []
-synonym: "establishment and maintenance of position" EXACT []
-synonym: "establishment and maintenance of substance location" NARROW []
-synonym: "establishment and maintenance of substrate location" NARROW []
-synonym: "localisation" EXACT [GOC:mah]
 is_a: GO:0008150 ! biological_process
 
 [Term]
@@ -3568,7 +3553,7 @@ synonym: "antimicrobial compound sensitivity phenotype" RELATED []
 synonym: "antiviral resistance phenotype" NARROW []
 xref: CHEBI:33281 "antimicrobial agent"
 is_a: OMP:0000000 ! microbial phenotype
-intersection_of: OMP:0007195 ! resistance to chemical
+intersection_of: OMP:0007195 ! resistance to chemical phenotype
 intersection_of: towards CHEBI:33281 ! antimicrobial agent
 created_by: mchibucos
 creation_date: 2011-07-21T02:21:21Z
@@ -8326,7 +8311,7 @@ creation_date: 2014-10-18T21:38:46Z
 
 [Term]
 id: OMP:0007195
-name: resistance to chemical
+name: resistance to chemical phenotype
 def: "A biological process phenotype related to the resistance or sensitivity of a cell, cells, or microbe to a chemical entity." [OMP:DAS]
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0007194 ! biological process phenotype
@@ -8344,6 +8329,14 @@ intersection_of: OMP:0000093 ! akinete formation phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
 creation_date: 2014-10-20T15:08:04Z
+
+[Term]
+id: OMP:0007197
+name: cellular component phenotype
+def: "A microbial phenotype that affects a cellular component." [OMP:DAS]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2014-10-21T23:28:25Z
 
 [Term]
 id: PATO:0000001
@@ -8405,7 +8398,7 @@ synonym: "presence" RELATED []
 synonym: "presence or absence in organism" EXACT []
 synonym: "quantitative" EXACT []
 is_a: PATO:0000068 ! qualitative
-relationship: reciprocal_of PATO:0001555 ! has number of
+relationship: reciprocal_of PATO:0001555
 
 [Term]
 id: PATO:0000117
