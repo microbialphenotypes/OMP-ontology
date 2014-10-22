@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 21:10:2014 23:31
+date: 21:10:2014 23:33
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1946,6 +1946,7 @@ def: "A microbial phenotype, where the trait in question is the progression of a
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0048869 "cellular developmental process"
 is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0048869 ! cellular developmental process
 created_by: adrienne
@@ -2865,6 +2866,7 @@ def: "A microbial phenotype related to the increase in size or mass of an organi
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0040007 "growth"
 is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0040007 ! growth
 created_by: Adrienne
@@ -3722,6 +3724,7 @@ def: "A microbial phenotype, where the trait in question is the self-propelled m
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0040011 "locomotion"
 is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0040011 ! locomotion
 created_by: mchibucos
