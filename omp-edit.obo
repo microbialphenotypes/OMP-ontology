@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 21:10:2014 23:33
+date: 23:10:2014 22:02
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -42,6 +42,7 @@ synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: microbial_phenotype
 namespace-id-rule: * OMP:$sequence(7,0007001,0008000)$
 remark: select is_a closure
+ontology: go
 ontology: omp
 ontology: go
 ontology: pato
@@ -736,7 +737,7 @@ def: "The cellular process that ensures successive accurate and complete genome 
 subset: gocheck_do_not_manually_annotate
 subset: gosubset_prok
 is_a: GO:0044763 ! single-organism cellular process
-relationship: part_of GO:0007049
+relationship: part_of GO:0007049 ! cell cycle
 
 [Term]
 id: GO:0030154
@@ -1207,7 +1208,7 @@ comment: Note that, for example, the formation of a pseudopod in an amoeba would
 subset: goslim_generic
 synonym: "formation of an anatomical structure involved in morphogenesis" EXACT [GOC:dph, GOC:tb]
 is_a: GO:0032502 ! developmental process
-relationship: part_of GO:0009653
+relationship: part_of GO:0009653 ! anatomical structure morphogenesis
 
 [Term]
 id: GO:0048869
@@ -1231,7 +1232,7 @@ synonym: "cell movement" RELATED []
 synonym: "movement of a cell" EXACT []
 is_a: GO:0006928 ! cellular component movement
 is_a: GO:0040011 ! locomotion
-relationship: part_of GO:0051674
+relationship: part_of GO:0051674 ! localization of cell
 
 [Term]
 id: GO:0050789
@@ -1257,6 +1258,21 @@ subset: gocheck_do_not_manually_annotate
 subset: goslim_pir
 subset: gosubset_prok
 synonym: "physiological response to stimulus" EXACT []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0051179
+name: localization
+namespace: biological_process
+def: "Any process in which a cell, a substance, or a cellular entity, such as a protein complex or organelle, is transported to or maintained in a specific location." [GOC:ai]
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "establishment and maintenance of cellular component location" NARROW []
+synonym: "establishment and maintenance of localization" EXACT []
+synonym: "establishment and maintenance of position" EXACT []
+synonym: "establishment and maintenance of substance location" NARROW []
+synonym: "establishment and maintenance of substrate location" NARROW []
+synonym: "localisation" EXACT [GOC:mah]
 is_a: GO:0008150 ! biological_process
 
 [Term]
@@ -7179,6 +7195,8 @@ def: "A microbial phenotype related to asexual reproduction, the biological proc
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 xref: GO:0019954 "asexual reproduction"
 is_a: OMP:0007167 ! reproduction phenotype
+intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: inheres_in GO:0019954 ! asexual reproduction
 created_by: siegele
 creation_date: 2014-02-03T15:55:25Z
 
@@ -8077,8 +8095,12 @@ creation_date: 2014-09-14T15:36:38Z
 [Term]
 id: OMP:0007167
 name: reproduction phenotype
-def: "A microbial phenotype related to reproduction, the biological process in which new individuals are produced by either a single cell or by a group of cells." [OMP:DAS]
+def: "A microbial phenotype related to reproduction, the biological process of producing new individuals from one or two organisms." [OMP:DAS]
+xref: GO:0000003 "reproduction"
 is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0007194 ! biological process phenotype
+intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: inheres_in GO:0000003 ! reproduction
 created_by: siegele
 creation_date: 2014-09-25T17:14:07Z
 
