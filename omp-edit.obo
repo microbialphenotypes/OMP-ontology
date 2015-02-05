@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 04:02:2015 23:11
+date: 05:02:2015 11:41
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -4698,7 +4698,7 @@ creation_date: 2013-11-22T15:55:45Z
 [Term]
 id: OMP:0005084
 name: UV radiation resistance phenotype
-def: "A radiation stress phenotype dealing with resistance to irradiation of wavelengths 100-400 nm." [ISBN:1555810489, OMP:WAM]
+def: "A radiation stress phenotype dealing with resistance to irradiation of wavelengths 100-400 nm." [ISO:21348, OMP:WAM]
 is_a: OMP:0005081 ! radiation stress phenotype
 created_by: wmeza
 creation_date: 2013-11-22T15:56:27Z
@@ -5031,6 +5031,7 @@ id: OMP:0005125
 name: altered UV radiation resistance
 def: "A UV radiation resistance phenotype where resistance to UV light is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005084 ! UV radiation resistance phenotype
+is_a: OMP:0007159 ! altered response to radiation
 created_by: wmeza
 creation_date: 2014-07-11T13:56:51Z
 
@@ -5120,6 +5121,7 @@ id: OMP:0005136
 name: altered cell cycle phenotype
 def: "A cell cycle phenotype where progression of the cell cycle is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005115 ! cell cycle phenotype
+is_a: OMP:0007085 ! altered phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:55:46Z
 
@@ -8018,7 +8020,7 @@ creation_date: 2014-08-28T16:51:03Z
 
 [Term]
 id: OMP:0007159
-name: altered radiation resistance
+name: altered response to radiation
 def: "A radiation stress phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0005081 ! radiation stress phenotype
 is_a: OMP:0007158 ! altered stress response
@@ -8405,6 +8407,55 @@ def: "A decreased resistance to UV-C radiation phenotype where resistance to UV-
 is_a: OMP:0007201 ! decreased resistance to UV-C radiation
 created_by: siegele
 creation_date: 2015-02-04T22:05:25Z
+
+[Term]
+id: OMP:0007203
+name: altered gene expressiion regulation
+def: "A gene expression regulation phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007162 ! gene expression regulation phenotype
+created_by: siegele
+creation_date: 2015-02-05T11:12:46Z
+
+[Term]
+id: OMP:0007204
+name: decreased resistance to UV-A radiation
+def: "A decreased resistance to UV radiation phenotype where resistance to UV-A radiation (315-400 nm) is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0005098 ! decreased resistance to UV radiation
+created_by: siegele
+creation_date: 2015-02-05T11:30:34Z
+
+[Term]
+id: OMP:0007205
+name: decreased resistance to UV-B radiation
+def: "A decreased resistance to UV radiation phenotype where resistance to UV-B radiation (280-315 nm) is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0005098 ! decreased resistance to UV radiation
+created_by: siegele
+creation_date: 2015-02-05T11:31:00Z
+
+[Term]
+id: OMP:0007206
+name: increased resistance to UV-A
+def: "An increased resistance to UV phenotype where resistance to UV-A (315-400 nm) is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0005097 ! increased resistance to UV radiation
+created_by: siegele
+creation_date: 2015-02-05T11:35:37Z
+
+[Term]
+id: OMP:0007207
+name: increased resistance to UV-B
+def: "An increased resistance to UV phenotype where resistance to UV-B (280-315 nm) is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0005097 ! increased resistance to UV radiation
+created_by: siegele
+creation_date: 2015-02-05T11:35:59Z
+
+[Term]
+id: OMP:0007208
+name: increased resistance to UV-C
+def: "An increased resistance to UV phenotype where resistance to UV-C (100-280 nm) is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0005097 ! increased resistance to UV radiation
+created_by: siegele
+creation_date: 2015-02-05T11:36:16Z
 
 [Term]
 id: PATO:0000001
