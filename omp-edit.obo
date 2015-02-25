@@ -8377,7 +8377,7 @@ creation_date: 2014-10-21T23:28:25Z
 [Term]
 id: OMP:0007198
 name: UV-A radiation resistance
-def: "A UV radiation resistance phenotype related to resistance to\nirradiation of wavelengths of  315-400 nm." [ISO:21348, OMP:DAS]
+def: "A UV radiation resistance phenotype related to resistance to irradiation of wavelengths of 315-400 nm." [ISO:21348, OMP:DAS]
 is_a: OMP:0005084 ! UV radiation resistance phenotype
 created_by: siegele
 creation_date: 2015-02-04T21:53:26Z
@@ -8385,7 +8385,7 @@ creation_date: 2015-02-04T21:53:26Z
 [Term]
 id: OMP:0007199
 name: UV-B radiation resistance
-def: "A UV radiation resistance phenotype related to resistance to\nirradiation of wavelengths of  280-315 nm." [ISO:21348, OMP:DAS]
+def: "A UV radiation resistance phenotype related to resistance to irradiation of wavelengths of 280-315 nm." [ISO:21348, OMP:DAS]
 is_a: OMP:0005084 ! UV radiation resistance phenotype
 created_by: siegele
 creation_date: 2015-02-04T22:00:52Z
@@ -8393,7 +8393,7 @@ creation_date: 2015-02-04T22:00:52Z
 [Term]
 id: OMP:0007200
 name: UV-C radiation resistance
-def: "A UV radiation resistance phenotype related to resistance to\nirradiation of wavelengths of 100-280 nm." [ISO:21348, OMP:DAS]
+def: "A UV radiation resistance phenotype related to resistance to irradiation of wavelengths of 100-280 nm." [ISO:21348, OMP:DAS]
 is_a: OMP:0005084 ! UV radiation resistance phenotype
 created_by: siegele
 creation_date: 2015-02-04T22:02:13Z
