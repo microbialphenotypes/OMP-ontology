@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 17:02:2015 12:18
-saved-by: dsiegele
-auto-generated-by: OBO-Edit 2.3.1
+date: 13:03:2015 15:50
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -3727,7 +3727,7 @@ creation_date: 2011-07-21T05:49:51Z
 [Term]
 id: OMP:0000311
 name: amino acid biosynthesis phenotype
-def: "A small molecule biosynthesis phenotype dealing with the metabolic pathways which takes precursor molecules and synthesize amino acids by remodeling the carbon skeleton and adding an amino group or sulfur." [OMP:JCH]
+def: "A small molecule biosynthesis phenotype dealing with the metabolic pathways that take precursor molecules and synthesize amino acids by remodeling the carbon skeleton and adding an amino group or sulfur." [OMP:JCH]
 is_a: OMP:0000310 ! small molecule biosynthesis phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:50:25Z
@@ -6780,6 +6780,7 @@ id: OMP:0007015
 name: altered nutrient import phenotype
 def: "A nutrient uptake phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007007 ! nutrient import phenotype
+is_a: OMP:0007104 ! altered nutrient utilization phenotype
 created_by: siegele
 creation_date: 2014-07-31T16:16:15Z
 
@@ -7019,16 +7020,16 @@ creation_date: 2013-10-01T15:07:53Z
 
 [Term]
 id: OMP:0007045
-name: inorganic phosphorus source phenotype
-def: "A phosphorus source utilization phenotype where an inorganic P-containing compound is the source of phosphorus." [OMP:DAS]
+name: inorganic phosphorus source utilization
+def: "A phosphorus source utilization phenotype where an inorganic P-containing compound is used as the source of phosphorus." [OMP:DAS]
 is_a: OMP:0007043 ! phosphorus source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:17:10Z
 
 [Term]
 id: OMP:0007046
-name: organic phosphorus source phenotype
-def: "A phosphorus source utilization phenotype where an organic P-containing compound is the source of phosphorus." [OMP:DAS]
+name: organic phosphorus source utilization
+def: "A phosphorus source utilization phenotype where an organic P-containing compound is used as the source of phosphorus." [OMP:DAS]
 is_a: OMP:0007043 ! phosphorus source utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:17:10Z
@@ -7037,7 +7038,7 @@ creation_date: 2013-10-01T15:17:10Z
 id: OMP:0007047
 name: decreased utilization of inorganic phosphorus source
 def: "An inorganic phosphorus source utilization phenotype where the ability to use an inorganic P-containing compound as the source of phosphorus is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007045 ! inorganic phosphorus source phenotype
+is_a: OMP:0007213 ! altered inorganic phosphorus source utilization
 created_by: siegele
 creation_date: 2013-10-01T15:19:36Z
 
@@ -7045,7 +7046,7 @@ creation_date: 2013-10-01T15:19:36Z
 id: OMP:0007048
 name: increased utilization of inorganic phosphorus source
 def: "An inorganic phosphorus source utilization phenotype where the ability to use an inorganic P-containing compound as the source of phosphorus is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007045 ! inorganic phosphorus source phenotype
+is_a: OMP:0007213 ! altered inorganic phosphorus source utilization
 created_by: siegele
 creation_date: 2013-10-01T15:19:36Z
 
@@ -7053,7 +7054,8 @@ creation_date: 2013-10-01T15:19:36Z
 id: OMP:0007049
 name: utilization of inorganic phosphorus phenotype
 def: "An inorganic phosphorus source utilization phenotype where an organism can use an inorganic P-containing compound as the source of phosphorus." [OMP:DAS]
-is_a: OMP:0007045 ! inorganic phosphorus source phenotype
+comment: This term was made obsolete because it is redundant with OMP:0007045.
+is_obsolete: true
 created_by: siegele
 creation_date: 2013-10-01T15:19:36Z
 
@@ -7061,7 +7063,7 @@ creation_date: 2013-10-01T15:19:36Z
 id: OMP:0007050
 name: decreased utilization of organic phosphorus source
 def: "An organic phosphorus source utilization phenotype where the ability to use an organic P-containing compound as the source of phosphorus is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007046 ! organic phosphorus source phenotype
+is_a: OMP:0007214 ! altered organic phosphorus source utilization
 created_by: siegele
 creation_date: 2013-10-01T15:20:22Z
 
@@ -7069,15 +7071,16 @@ creation_date: 2013-10-01T15:20:22Z
 id: OMP:0007051
 name: increased utilization of organic phosphorus source
 def: "An organic phosphorus source utilization phenotype where the ability to use an organic P-containing compound as the source of phosphorus is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007046 ! organic phosphorus source phenotype
+is_a: OMP:0007214 ! altered organic phosphorus source utilization
 created_by: siegele
 creation_date: 2013-10-01T15:20:22Z
 
 [Term]
 id: OMP:0007052
-name: utilization of organic phosphorus phenotype
+name: utilization of organic phosphorus
 def: "An organic phosphorus source utilization phenotype where an organism can use an organic P-containing compound as the source of phosphorus." [OMP:DAS]
-is_a: OMP:0007046 ! organic phosphorus source phenotype
+comment: This term was made obsolete because it is redunant with OMP:0007046.
+is_obsolete: true
 created_by: siegele
 creation_date: 2013-10-01T15:20:22Z
 
@@ -7316,6 +7319,7 @@ id: OMP:0007079
 name: altered growth factor requirement
 def: "A nutrient utilization phenotype altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007044 ! growth factor requirement phenotype
+is_a: OMP:0007104 ! altered nutrient utilization phenotype
 created_by: siegele
 creation_date: 2014-04-30T15:52:18Z
 
@@ -7387,6 +7391,7 @@ id: OMP:0007087
 name: altered iron source utilization phenotype
 def: "An iron source utilization phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007061 ! iron source utilization phenotype
+is_a: OMP:0007104 ! altered nutrient utilization phenotype
 created_by: siegele
 creation_date: 2014-07-10T12:48:21Z
 
@@ -8478,6 +8483,41 @@ def: "A homologous recombination phenotype where homologous recombination in a c
 is_a: OMP:0005051 ! presence of homologous recombination
 created_by: dsiegele
 creation_date: 2015-02-17T12:13:27Z
+
+[Term]
+id: OMP:0007211
+name: altered trace element utilization
+def: "A trace element utilization phenotype that is altered relative to a designated control." [OMP:DAS]
+synonym: "altered micronutrient utilization" EXACT []
+is_a: OMP:0000450 ! trace element utilization phenotype
+is_a: OMP:0007104 ! altered nutrient utilization phenotype
+created_by: siegele
+creation_date: 2015-03-13T15:13:30Z
+
+[Term]
+id: OMP:0007212
+name: altered phosphorus source utilization
+def: "A phosphorus source utilization phenotype where the ability to utilize one or more sources of phosphorus is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007043 ! phosphorus source utilization phenotype
+is_a: OMP:0007104 ! altered nutrient utilization phenotype
+created_by: siegele
+creation_date: 2015-03-13T15:23:04Z
+
+[Term]
+id: OMP:0007213
+name: altered inorganic phosphorus source utilization
+is_a: OMP:0007045 ! inorganic phosphorus source utilization
+is_a: OMP:0007212 ! altered phosphorus source utilization
+created_by: siegele
+creation_date: 2015-03-13T15:25:43Z
+
+[Term]
+id: OMP:0007214
+name: altered organic phosphorus source utilization
+is_a: OMP:0007046 ! organic phosphorus source utilization
+is_a: OMP:0007212 ! altered phosphorus source utilization
+created_by: siegele
+creation_date: 2015-03-13T15:29:56Z
 
 [Term]
 id: PATO:0000001
