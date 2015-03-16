@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 13:03:2015 15:50
+date: 15:03:2015 22:57
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -3781,7 +3781,7 @@ synonym: "piritrexim" NARROW []
 synonym: "pyrimethamine" NARROW [CHEBI:8673]
 synonym: "trimethoprim" NARROW [CHEBI:45924]
 synonym: "trimetrexate" NARROW []
-xref: CHEBI:38338
+xref: CHEBI:38338 "aminopyrimidine"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:02:58Z
@@ -5662,7 +5662,7 @@ creation_date: 2013-10-22T13:29:22Z
 [Term]
 id: OMP:0006057
 name: decreased resistance to aminoglycoside
-def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside is decreased relative to a designated control." [OMP:JCH]
+def: "An altered aminoglycoside resistance phenotype where resistance to an aminoglycoside is decreased relative to a designated control." [OMP:JCH]
 synonym: "increased sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006017 ! altered aminoglycoside resistance
 created_by: jonathanherrera
@@ -5671,7 +5671,7 @@ creation_date: 2013-10-22T19:24:20Z
 [Term]
 id: OMP:0006058
 name: increased resistance to aminoglycoside
-def: "An aminoglycoside compound resistance phenotype where resistance is increased relative to a designated control." [OMP:JCH]
+def: "An altered aminoglycoside compound resistance phenotype where resistance is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to aminoglycoside" RELATED []
 is_a: OMP:0006017 ! altered aminoglycoside resistance
 created_by: jonathanherrera
@@ -8518,6 +8518,68 @@ is_a: OMP:0007046 ! organic phosphorus source utilization
 is_a: OMP:0007212 ! altered phosphorus source utilization
 created_by: siegele
 creation_date: 2015-03-13T15:29:56Z
+
+[Term]
+id: OMP:0007215
+name: rifamycin resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to one or more rifamycin compound." [CHEBI:26580, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "rifabutin" NARROW [CHEBI:45367]
+synonym: "rifampicin" NARROW [CHEBI:28077]
+synonym: "rifapentine" NARROW [CHEBI:45304]
+xref: CHEBI:26580 "rifamycin"
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2015-03-15T22:30:48Z
+
+[Term]
+id: OMP:0007216
+name: altered rifamycin resistance
+def: "A rifamycin resistance phenotype where resistance to one or more rifamycin compounds is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007134 ! altered antimicrobial compound resistance phenotype
+is_a: OMP:0007215 ! rifamycin resistance phenotype
+created_by: siegele
+creation_date: 2015-03-15T22:32:58Z
+
+[Term]
+id: OMP:0007217
+name: not resistant to rifamycin
+def: "A rifamycin resistance phenotype where an organism or cell is sensitive to one or more rifamycins." [OMP:DAS]
+is_a: OMP:0007215 ! rifamycin resistance phenotype
+created_by: siegele
+creation_date: 2015-03-15T22:32:58Z
+
+[Term]
+id: OMP:0007218
+name: resistant to rifamycin
+def: "A rifamycin resistance phenotype where an organism or cell is resistant to one or more rifamycins." [OMP:DAS]
+is_a: OMP:0007215 ! rifamycin resistance phenotype
+created_by: siegele
+creation_date: 2015-03-15T22:32:58Z
+
+[Term]
+id: OMP:0007219
+name: decreased resistance to rifamycin
+def: "An altered rifamycin resistance phenotype where resistance to one or more rifamycins is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007216 ! altered rifamycin resistance
+created_by: siegele
+creation_date: 2015-03-15T22:37:30Z
+
+[Term]
+id: OMP:0007220
+name: increased resistance to rifamycin
+def: "An altered rifamycin resistance phenotype where resistance to one or more rifamycins is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007216 ! altered rifamycin resistance
+created_by: siegele
+creation_date: 2015-03-15T22:39:31Z
+
+[Term]
+id: OMP:0007221
+name: abolished resistance to rifamycin
+def: "A decreased resistance to rifamycin phenotype where resistance to one or more rifamycins  is abolished." [OMP:DAS]
+is_a: OMP:0007219 ! decreased resistance to rifamycin
+created_by: siegele
+creation_date: 2015-03-15T22:40:32Z
 
 [Term]
 id: PATO:0000001
