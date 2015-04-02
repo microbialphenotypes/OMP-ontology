@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 16:03:2015 18:27
-saved-by: siegele
+date: 02:04:2015 14:09
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -2949,9 +2949,9 @@ creation_date: 2011-06-07T12:18:54Z
 
 [Term]
 id: OMP:0000182
-name: uncharacterized gas production
-def: "A chemical production phenotype where an uncharacterized gas is produced." [OMP:JCH]
-is_a: OMP:0000192 ! chemical production phenotype
+name: gas production
+def: "A differential test phenotype that describes ability of an organism to produce a gas, such as CO2, as the result of metabolic activities during growth." [OMP:JCH]
+is_a: OMP:0007130 ! differential test phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:52:30Z
 
@@ -3040,7 +3040,7 @@ creation_date: 2011-02-03T11:24:08Z
 id: OMP:0000194
 name: catalase positive
 def: "A catalase test phenotype where an organism exhibits catalase activity." [OMP:JCH]
-is_a: OMP:0000218 ! catalase test phenotype
+is_a: OMP:0000218 ! catalase test
 created_by: mchibucos
 creation_date: 2011-06-06T04:28:49Z
 
@@ -3073,7 +3073,7 @@ creation_date: 2011-02-03T11:25:01Z
 id: OMP:0000198
 name: catalase negative
 def: "A catalase test phenotype where an organism doesn't exhibit catalase activity." [OMP:JCH]
-is_a: OMP:0000218 ! catalase test phenotype
+is_a: OMP:0000218 ! catalase test
 created_by: mchibucos
 creation_date: 2011-06-06T04:30:12Z
 
@@ -3244,7 +3244,7 @@ creation_date: 2011-06-07T03:19:00Z
 
 [Term]
 id: OMP:0000218
-name: catalase test phenotype
+name: catalase test
 def: "A differential test phenotype that relates to the presence or absence of catalase, an enzyme that catalyzes the decomposition of hydrogen peroxide into oxygen and water." [ISBN:9780895828309, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nCatalysis of the reaction: 2 hydrogen peroxide = O2 + 2 H2O [EC:1.11.1.6].
 xref: GO:0004096 "catalase activity"
@@ -3254,7 +3254,7 @@ creation_date: 2011-02-03T04:43:28Z
 
 [Term]
 id: OMP:0000219
-name: decarboxylase test phenotype
+name: decarboxylase test
 def: "A differential test phenotype that describes the ability of an organism to catalyze the removal of a carboxyl group from an amino acid, typically lysine, ornithine, or arginine." [ISBN:9780895828309, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0007130 ! differential test phenotype
@@ -3263,7 +3263,7 @@ creation_date: 2011-02-03T04:43:53Z
 
 [Term]
 id: OMP:0000220
-name: oxidase test phenotype
+name: oxidase test
 def: "A differential test phenotype that relates to the presence or absence of cytochrome oxidase based on the ability of an organism to oxidize certain aromatic amines to form colored end products." [ISBN:9780895828309, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0007130 ! differential test phenotype
@@ -3281,7 +3281,7 @@ creation_date: 2011-02-03T04:44:39Z
 
 [Term]
 id: OMP:0000222
-name: urease test phenotype
+name: urease test
 def: "A differential test phenotype that relates to the presence or absence of urease, an enzyme that hydrolyzes urea to ammonia and carbon dioxide." [ISBN:9780895828309, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0009039 "urease activity"
@@ -5846,7 +5846,7 @@ creation_date: 2014-05-12T13:04:40Z
 id: OMP:0006077
 name: altered catalase test result
 def: "A catalase test phenotype where catalase activity is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0000218 ! catalase test phenotype
+is_a: OMP:0000218 ! catalase test
 is_a: OMP:0007131 ! altered differential test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T14:55:03Z
@@ -5855,7 +5855,7 @@ creation_date: 2014-07-15T14:55:03Z
 id: OMP:0006078
 name: decarboxylase negative
 def: "A decarboxylase test phenotype where an organism doesn't exhibit decarboxylase activity." [OMP:JCH]
-is_a: OMP:0000219 ! decarboxylase test phenotype
+is_a: OMP:0000219 ! decarboxylase test
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
 
@@ -5863,7 +5863,7 @@ creation_date: 2014-07-15T19:59:58Z
 id: OMP:0006079
 name: altered decarboxylase test result
 def: "A decarboxylase test phenotype where the phenotype of an organism on a decarboxylase test medium is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0000219 ! decarboxylase test phenotype
+is_a: OMP:0000219 ! decarboxylase test
 is_a: OMP:0007131 ! altered differential test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
@@ -5872,7 +5872,7 @@ creation_date: 2014-07-15T19:59:58Z
 id: OMP:0006080
 name: decarboxylase positive
 def: "A decarboxylase test phenotype where an organism exhibits decarboxylase activity." [OMP:JCH]
-is_a: OMP:0000219 ! decarboxylase test phenotype
+is_a: OMP:0000219 ! decarboxylase test
 created_by: jonathanherrera
 creation_date: 2014-07-15T19:59:58Z
 
@@ -5896,7 +5896,7 @@ creation_date: 2014-07-15T20:00:41Z
 id: OMP:0006083
 name: altered oxidase test result
 def: "An oxidase test phenotype where the phenotype of an organism is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0000220 ! oxidase test phenotype
+is_a: OMP:0000220 ! oxidase test
 is_a: OMP:0007131 ! altered differential test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
@@ -5906,7 +5906,7 @@ id: OMP:0006084
 name: oxidase negative
 def: "An oxidase test phenotype where an organism doesn't exhibit oxidase activity." [OMP:JCH]
 synonym: "oxidase deficient" RELATED []
-is_a: OMP:0000220 ! oxidase test phenotype
+is_a: OMP:0000220 ! oxidase test
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
 
@@ -5914,7 +5914,7 @@ creation_date: 2014-07-15T20:06:25Z
 id: OMP:0006085
 name: oxidase positive
 def: "An oxidase test phenotype where an organism exhibits oxidase activity." [OMP:JCH]
-is_a: OMP:0000220 ! oxidase test phenotype
+is_a: OMP:0000220 ! oxidase test
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:06:25Z
 
@@ -5938,7 +5938,7 @@ creation_date: 2014-07-15T20:06:48Z
 id: OMP:0006088
 name: altered urease test result
 def: "A urease test phenotype where urease activity is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0000222 ! urease test phenotype
+is_a: OMP:0000222 ! urease test
 is_a: OMP:0007131 ! altered differential test result
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
@@ -5947,7 +5947,7 @@ creation_date: 2014-07-15T20:07:31Z
 id: OMP:0006089
 name: urease positive
 def: "A urease test phenotype where an organism exhibits urease activity." [OMP:JCH]
-is_a: OMP:0000222 ! urease test phenotype
+is_a: OMP:0000222 ! urease test
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
 
@@ -5956,7 +5956,7 @@ id: OMP:0006090
 name: urease negative
 def: "A urease test phenotype where an organism doesn't exhibit urease activity." [OMP:JCH]
 synonym: "urease deficient" RELATED []
-is_a: OMP:0000222 ! urease test phenotype
+is_a: OMP:0000222 ! urease test
 created_by: jonathanherrera
 creation_date: 2014-07-15T20:07:31Z
 
