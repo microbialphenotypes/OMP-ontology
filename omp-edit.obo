@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 02:04:2015 14:09
-saved-by: dsiegele
+date: 13:05:2015 22:49
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -2949,7 +2949,7 @@ creation_date: 2011-06-07T12:18:54Z
 
 [Term]
 id: OMP:0000182
-name: gas production
+name: gas production test
 def: "A differential test phenotype that describes ability of an organism to produce a gas, such as CO2, as the result of metabolic activities during growth." [OMP:JCH]
 is_a: OMP:0007130 ! differential test phenotype
 created_by: Adrienne
@@ -8281,6 +8281,7 @@ creation_date: 2014-09-29T14:08:46Z
 [Term]
 id: OMP:0007187
 name: quality (Interim)
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities." [XX:<new dbxref>]
 is_obsolete: true
 created_by: siegele
 creation_date: 2014-10-03T17:22:57Z
@@ -8508,6 +8509,7 @@ creation_date: 2015-03-13T15:23:04Z
 [Term]
 id: OMP:0007213
 name: altered inorganic phosphorus source utilization
+def: "An altered phosphorus source utilization phenotype  where the ability to utilize one or more inorganic sources of phosphorus is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007045 ! inorganic phosphorus source utilization
 is_a: OMP:0007212 ! altered phosphorus source utilization
 created_by: siegele
@@ -8516,6 +8518,7 @@ creation_date: 2015-03-13T15:25:43Z
 [Term]
 id: OMP:0007214
 name: altered organic phosphorus source utilization
+def: "An altered phosphorus source utilization phenotype  where the ability to utilize one or more organic sources of phosphorus is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007046 ! organic phosphorus source utilization
 is_a: OMP:0007212 ! altered phosphorus source utilization
 created_by: siegele
