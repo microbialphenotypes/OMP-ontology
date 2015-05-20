@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 13:05:2015 22:49
+date: 20:05:2015 18:15
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -8585,6 +8585,14 @@ def: "A decreased resistance to rifamycin phenotype where resistance to one or m
 is_a: OMP:0007219 ! decreased resistance to rifamycin
 created_by: siegele
 creation_date: 2015-03-15T22:40:32Z
+
+[Term]
+id: OMP:0007222
+name: growth rate control of transcription
+def: "A transcription regulation phenotype where the level of a transcript(s) increases as the growth rate of the culture increases." [OMP:DAS, PMID:11844765]
+is_a: OMP:0007163 ! transcription regulation phenotype
+created_by: siegele
+creation_date: 2015-05-20T16:23:34Z
 
 [Term]
 id: PATO:0000001
