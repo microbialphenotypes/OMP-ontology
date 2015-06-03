@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 03:06:2015 13:16
-saved-by: kanderson
+date: 03:06:2015 17:22
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -8619,9 +8619,25 @@ created_by: dsiegele
 creation_date: 2015-06-01T16:03:03Z
 
 [Term]
+id: OMP:0007224
+name: spore shape phenotype
+def: "A spore morphology phenotype that describes the shape of a spore or spores." [OMP:KDA]
+is_a: OMP:0008000 ! spore morphology phenotype
+created_by: dsiegele
+creation_date: 2015-06-03T16:03:42Z
+
+[Term]
+id: OMP:0007225
+name: spherical spore
+def: "A spore shape phenotype where a spore or spores are spherical or almost spherical in shape." [OMP:DAS]
+is_a: OMP:0007224 ! spore shape phenotype
+created_by: dsiegele
+creation_date: 2015-06-03T16:06:06Z
+
+[Term]
 id: OMP:0008000
 name: spore morphology phenotype
-def: "A microbial phenotype that describes the morphology of a spore or spores." [OMP:KDA]
+def: "A microbial phenotype that is related to the form and structure of a spore or spores." [OMP:KDA]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: kanderson
