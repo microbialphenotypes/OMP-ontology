@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 01:06:2015 17:34
-saved-by: dsiegele
+date: 03:06:2015 13:16
+saved-by: kanderson
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -736,7 +736,6 @@ def: "The cellular process that ensures successive accurate and complete genome 
 subset: gocheck_do_not_manually_annotate
 subset: gosubset_prok
 is_a: GO:0044763 ! single-organism cellular process
-relationship: part_of GO:0007049
 
 [Term]
 id: GO:0030154
@@ -1207,7 +1206,6 @@ comment: Note that, for example, the formation of a pseudopod in an amoeba would
 subset: goslim_generic
 synonym: "formation of an anatomical structure involved in morphogenesis" EXACT [GOC:dph, GOC:tb]
 is_a: GO:0032502 ! developmental process
-relationship: part_of GO:0009653
 
 [Term]
 id: GO:0048869
@@ -1231,7 +1229,6 @@ synonym: "cell movement" RELATED []
 synonym: "movement of a cell" EXACT []
 is_a: GO:0006928 ! cellular component movement
 is_a: GO:0040011 ! locomotion
-relationship: part_of GO:0051674
 
 [Term]
 id: GO:0050789
@@ -8622,6 +8619,15 @@ created_by: dsiegele
 creation_date: 2015-06-01T16:03:03Z
 
 [Term]
+id: OMP:0008000
+name: spore morphology phenotype
+def: "A microbial phenotype that describes the morphology of a spore or spores." [OMP:KDA]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0000000 ! microbial phenotype
+created_by: kanderson
+creation_date: 2015-06-03T13:12:00Z
+
+[Term]
 id: PATO:0000001
 name: quality
 namespace: quality
@@ -8681,7 +8687,6 @@ synonym: "presence" RELATED []
 synonym: "presence or absence in organism" EXACT []
 synonym: "quantitative" EXACT []
 is_a: PATO:0000068 ! qualitative
-relationship: reciprocal_of PATO:0001555
 
 [Term]
 id: PATO:0000117
@@ -8705,8 +8710,6 @@ subset: value_slim
 synonym: "absence" EXACT []
 synonym: "absent from organism" EXACT []
 is_a: PATO:0000070 ! count
-relationship: reciprocal_of PATO:0001558
-relationship: reciprocal_of PATO:0002000
 
 [Term]
 id: PATO:0000467
@@ -8778,7 +8781,6 @@ namespace: quality
 def: "A quality that has a value that is increased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
 intersection_of: PATO:0000001 ! quality
-intersection_of: increased_in_magnitude_relative_to PATO:0000461
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:39:43Z
 
@@ -8789,7 +8791,6 @@ namespace: quality
 def: "A quality that has a value that is decreased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
 intersection_of: PATO:0000001 ! quality
-intersection_of: decreased_in_magnitude_relative_to PATO:0000461
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:40:15Z
 
@@ -8801,7 +8802,6 @@ def: "A quality of a process that has a value that is decreased compared to norm
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002301 ! decreased quality
 intersection_of: PATO:0001236 ! process quality
-intersection_of: decreased_in_magnitude_relative_to PATO:0000461
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:50:59Z
 
@@ -8813,7 +8813,6 @@ def: "A quality of a process that has a value that is increased compared to norm
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002300 ! increased quality
 intersection_of: PATO:0001236 ! process quality
-intersection_of: increased_in_magnitude_relative_to PATO:0000461
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:53:08Z
 
@@ -8872,13 +8871,11 @@ comment: Example: a spherical object has the quality of being spherical, and the
 id: has_dividend_entity
 name: has_dividend_entity
 namespace: quality
-domain: PATO:0001470
 
 [Typedef]
 id: has_dividend_quality
 name: has_dividend_quality
 namespace: quality
-domain: PATO:0001470
 range: PATO:0000001 ! quality
 is_a: has_ratio_quality ! has_ratio_quality
 
@@ -8886,13 +8883,11 @@ is_a: has_ratio_quality ! has_ratio_quality
 id: has_divisor_entity
 name: has_divisor_entity
 namespace: quality
-domain: PATO:0001470
 
 [Typedef]
 id: has_divisor_quality
 name: has_divisor_quality
 namespace: quality
-domain: PATO:0001470
 range: PATO:0000001 ! quality
 is_a: has_ratio_quality ! has_ratio_quality
 
@@ -8926,7 +8921,6 @@ creation_date: 2014-10-15T20:39:22Z
 id: has_ratio_quality
 name: has_ratio_quality
 namespace: quality
-domain: PATO:0001470
 range: PATO:0000001 ! quality
 
 [Typedef]
