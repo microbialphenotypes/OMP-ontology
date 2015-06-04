@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 03:06:2015 17:22
+date: 04:06:2015 16:36
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2161,7 +2161,7 @@ comment: This term was created to organize terms beneath it in the ontology. We 
 xref: GO:0043934 "sporulation"
 is_a: OMP:0000070 ! cell development phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
-intersection_of: increased_in_magnitude_relative_to GO:0043934 ! sporulation
+intersection_of: inheres_in GO:0043934 ! sporulation
 created_by: adrienne
 creation_date: 2011-02-02T03:24:24Z
 
@@ -8620,19 +8620,77 @@ creation_date: 2015-06-01T16:03:03Z
 
 [Term]
 id: OMP:0007224
-name: spore shape phenotype
-def: "A spore morphology phenotype that describes the shape of a spore or spores." [OMP:KDA]
-is_a: OMP:0008000 ! spore morphology phenotype
+name: endospore location phenotype
+def: "An endospore morphology phenotype that describes the characteristic  location of the mature spore in the mother cell (the sporangium)." [OMP:KDA]
+is_a: OMP:0007228 ! endospore morphology phenotype
 created_by: dsiegele
 creation_date: 2015-06-03T16:03:42Z
 
 [Term]
 id: OMP:0007225
-name: spherical spore
-def: "A spore shape phenotype where a spore or spores are spherical or almost spherical in shape." [OMP:DAS]
-is_a: OMP:0007224 ! spore shape phenotype
+name: central location of endospore
+def: "An endospore location phenotype where mature spores are located in the center of the mother cell (sporangium)." [OMP:DAS]
+is_a: OMP:0007224 ! endospore location phenotype
 created_by: dsiegele
 creation_date: 2015-06-03T16:06:06Z
+
+[Term]
+id: OMP:0007226
+name: terminal location of endospore
+def: "An endospore location phenotype where mature spores are located at one terminus of  the mother cell (sporangium)." [OMP:DAS]
+is_a: OMP:0007224 ! endospore location phenotype
+created_by: dsiegele
+creation_date: 2015-06-04T15:40:39Z
+
+[Term]
+id: OMP:0007227
+name: swollen sporangium
+def: "A xx." [OMP:DAS]
+is_a: OMP:0007224 ! endospore location phenotype
+created_by: dsiegele
+creation_date: 2015-06-04T15:42:45Z
+
+[Term]
+id: OMP:0007228
+name: endospore morphology phenotype
+def: "A spore morphology phenotype that is related to the form and structure of an endospore." [OMP:DAS]
+is_a: OMP:0008000 ! spore morphology phenotype
+created_by: dsiegele
+creation_date: 2015-06-04T16:05:37Z
+
+[Term]
+id: OMP:0007229
+name: endospore external encapsulating structure phenotype
+def: "An endospore morphology phenotype that relates to the structures that lie outside the inner membrane and surround the entire endospore." [GO:0043591, OMP:DAS]
+xref: GO:0043591 "endospore external encapsulating structure"
+is_a: OMP:0007228 ! endospore morphology phenotype
+created_by: dsiegele
+creation_date: 2015-06-04T16:17:34Z
+
+[Term]
+id: OMP:0007230
+name: exosporium phenotype
+def: "An endospore external encapsulating structure phenotype related to the exposporium, which is the outermost layer of a mature spore.  The exosporium of bacterial endospores is typically loosely attached and located outside of the endospore coat. It is generally composed of protein, carbohydrate, and perhaps lipid." [GO:0043592, OMP:DAS]
+xref: GO:0043592 "exosporium"
+is_a: OMP:0007229 ! endospore external encapsulating structure phenotype
+created_by: dsiegele
+creation_date: 2015-06-04T16:22:54Z
+
+[Term]
+id: OMP:0007231
+name: presence of an exosporium
+def: "An exosporium phenotype where an exosporium is present as a component of the mature endospore." [OMP:DAS]
+is_a: OMP:0007230 ! exosporium phenotype
+created_by: dsiegele
+creation_date: 2015-06-04T16:29:52Z
+
+[Term]
+id: OMP:0007232
+name: absence of an exosporium
+def: "An exosporium phenotype where the mature endospore lacks an exosporium." [OMP:DAS]
+is_a: OMP:0007230 ! exosporium phenotype
+created_by: dsiegele
+creation_date: 2015-06-04T16:29:52Z
 
 [Term]
 id: OMP:0008000
