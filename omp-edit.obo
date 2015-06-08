@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 04:06:2015 16:36
-saved-by: dsiegele
+date: 08:06:2015 13:28
+saved-by: kanderson
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -8700,6 +8700,221 @@ comment: This term was created to organize terms beneath it in the ontology. We 
 is_a: OMP:0000000 ! microbial phenotype
 created_by: kanderson
 creation_date: 2015-06-03T13:12:00Z
+
+[Term]
+id: OMP:0008001
+name: endospore germ cell wall phenotype
+def: "An endospore external encapsulating structure phenotype that relates to the primordial cell wall, which is composed of peptidoglycan and is the precursor to the vegetative cell wall." [OMP:KDA]
+is_a: OMP:0007229 ! endospore external encapsulating structure phenotype
+created_by: kanderson
+creation_date: 2015-06-08T12:07:41Z
+
+[Term]
+id: OMP:0008002
+name: absence of a germ cell wall
+def: "An endospore germ cell wall phenotype where a cell or cells lack a cell wall." [OMP:KDA]
+is_a: OMP:0008001 ! endospore germ cell wall phenotype
+created_by: kanderson
+creation_date: 2015-06-08T12:10:22Z
+
+[Term]
+id: OMP:0008003
+name: presence of a germ cell wall
+def: "An endospore germ cell wall phenotype where a cell or cells have a cell wall." [OMP:KDA]
+is_a: OMP:0008001 ! endospore germ cell wall phenotype
+created_by: kanderson
+creation_date: 2015-06-08T12:10:22Z
+
+[Term]
+id: OMP:0008004
+name: core phenotype
+def: "An endospore internal encapsulating structure phenotype that relates to the core, which is the innermost layer of an endospore containing the bacterial genome." [ISBN:9780073402406, OMP:KDA]
+is_a: OMP:0008013 ! endospore internal encapsulating structure phenotype 
+created_by: kanderson
+creation_date: 2015-06-08T12:14:34Z
+
+[Term]
+id: OMP:0008005
+name: absence of a core
+def: "A core phenotype where a cell or cell lacks a core." [OMP:KDA]
+is_a: OMP:0008004 ! core phenotype
+created_by: kanderson
+creation_date: 2015-06-08T12:16:08Z
+
+[Term]
+id: OMP:0008006
+name: presence of a core
+def: "A core phenotype where a cell or cells have a core." [OMP:KDA]
+is_a: OMP:0008004 ! core phenotype
+created_by: kanderson
+creation_date: 2015-06-08T12:16:08Z
+
+[Term]
+id: OMP:0008007
+name: coat phenotype
+def: "An endospore external encapsulating structure phenotype related to the coat, which is on the exterior of all spores and is composed of many structural proteins that confer additional resistance." [OMP:KDA, PMID:3101583]
+is_a: OMP:0007229 ! endospore external encapsulating structure phenotype
+created_by: kanderson
+creation_date: 2015-06-08T12:18:25Z
+
+[Term]
+id: OMP:0008008
+name: absence of a coat 
+def: "A coat phenotype where a cell or cells lack a coat." [OMP:KDA]
+is_a: OMP:0008007 ! coat phenotype
+created_by: kanderson
+creation_date: 2015-06-08T12:19:49Z
+
+[Term]
+id: OMP:0008009
+name: presence of a coat 
+def: "A coat phenotype where a cell or cells have a coat." [OMP:KDA]
+is_a: OMP:0008007 ! coat phenotype
+created_by: kanderson
+creation_date: 2015-06-08T12:19:49Z
+
+[Term]
+id: OMP:0008010
+name: outer membrane phenotype 
+def: "An endospore external encapsulating structure phenotype related to the outer membrane, which is a phospholipid bilayer originally from the mother cell that engulfed the forespore." [OMP:KDA, PMID:3101583]
+is_a: OMP:0007229 ! endospore external encapsulating structure phenotype
+created_by: kanderson
+creation_date: 2015-06-08T12:21:48Z
+
+[Term]
+id: OMP:0008011
+name: absence of an outer membrane
+def: "An outer membrane phenotype where a cell or cells lack an outer membrane." [OMP:KDA]
+is_a: OMP:0008010 ! outer membrane phenotype 
+created_by: kanderson
+creation_date: 2015-06-08T12:23:37Z
+
+[Term]
+id: OMP:0008012
+name: presence of an outer membrane
+def: "An outer membrane phenotype where a cell or cells have an outer membrane." [OMP:KDA]
+is_a: OMP:0008010 ! outer membrane phenotype 
+created_by: kanderson
+creation_date: 2015-06-08T12:23:37Z
+
+[Term]
+id: OMP:0008013
+name: endospore internal encapsulating structure phenotype 
+def: "An endospore morphology phenotype that refers to the layers of the inner membrane and within and surround the entire endospore." [OMP:KDA]
+is_a: OMP:0007228 ! endospore morphology phenotype
+created_by: kanderson
+creation_date: 2015-06-08T12:43:22Z
+
+[Term]
+id: OMP:0008014
+name: inner membrane phenotype
+def: "An endospore internal encapsulating structure phenotype related to the inner membrane, which surrounds the core and combines with the outer membrane to provide protection for the protoplast within the mother cell." [OMP:KDA, PMID:3101583]
+is_a: OMP:0008013 ! endospore internal encapsulating structure phenotype 
+created_by: kanderson
+creation_date: 2015-06-08T12:45:57Z
+
+[Term]
+id: OMP:0008015
+name: absence of an inner membrane
+def: "An inner membrane phenotype where a cell or cells lack an inner membrane." [OMP:KDA]
+is_a: OMP:0008014 ! inner membrane phenotype
+created_by: kanderson
+creation_date: 2015-06-08T12:50:07Z
+
+[Term]
+id: OMP:0008016
+name: presence of an inner membrane
+def: "An inner membrane phenotype where a cell or cells have an inner membrane." [OMP:KDA]
+is_a: OMP:0008014 ! inner membrane phenotype
+created_by: kanderson
+creation_date: 2015-06-08T12:50:07Z
+
+[Term]
+id: OMP:0008017
+name: stopped at stage 0
+def: "A defective endospore formation in relation to a designated control, where the cell is prevented from proceeding into the sporulation process because of a block in formation of the asymmetrical septum. This prevents the forespore from forming in the mother cell during stage II." [OMP:KDA, PMID:3101583]
+is_a: OMP:0008018 ! defective endospore formation
+created_by: kanderson
+creation_date: 2015-06-08T13:04:15Z
+
+[Term]
+id: OMP:0008018
+name: defective endospore formation
+def: "An altered endospore formation where a cell or cells show defective properties caused by mutations at different stages in the sporulation forming process." [OMP:KDA]
+is_a: OMP:0006161 ! altered endospore formation
+created_by: kanderson
+creation_date: 2015-06-08T13:06:18Z
+
+[Term]
+id: OMP:0008019
+name: stopped at stage II
+def: "A defective endospore formation in relation to a designated control, where septum formation has been completed, but engulfment of the forespore by the mother cell cannot proceed." [OMP:KDA, PMID:3101583]
+is_a: OMP:0008018 ! defective endospore formation
+created_by: kanderson
+creation_date: 2015-06-08T13:07:39Z
+
+[Term]
+id: OMP:0008020
+name: stopped at stage III
+def: "A defective endospore formation in relation to a designated control, where the completion of protoplast formation has occurred within the mother cell, but subsequent cortex and coat production is halted." [OMP:KDA, PMID:3101583]
+is_a: OMP:0008018 ! defective endospore formation
+created_by: kanderson
+creation_date: 2015-06-08T13:08:51Z
+
+[Term]
+id: OMP:0008021
+name: stopped at stage IV
+def: "A defective endospore formation in relation to a designated control, where cortex formation has been completed but coat synthesis cannot proceed for the endospore within the mother cell." [OMP:KDA, PMID:3101583]
+is_a: OMP:0008018 ! defective endospore formation
+created_by: kanderson
+creation_date: 2015-06-08T13:09:45Z
+
+[Term]
+id: OMP:0008022
+name: stopped at stage V
+def: "A defective endospore formation in relation to a designated control, where the endospore within the mother cell has acquired all layers, but related resistance factors have been diminished." [OMP:KDA, PMID:3101583]
+is_a: OMP:0008018 ! defective endospore formation
+created_by: kanderson
+creation_date: 2015-06-08T13:10:24Z
+
+[Term]
+id: OMP:0008023
+name: stopped at stage VI
+def: "A defective endospore formation in relation to a designated control, where the endospore is completely functional, but lysis of the spore by the mother cell cannot proceed." [OMP:KDA, PMID:3101583]
+is_a: OMP:0008018 ! defective endospore formation
+created_by: kanderson
+creation_date: 2015-06-08T13:11:05Z
+
+[Term]
+id: OMP:0008024
+name: cortex phenotype
+def: "An endospore external encapsulating structure phenotype that relates to the cortex, which is a layer that is comprised of less covalently bonded cross-linked peptidoglycan in comparison to the primordial cell wall." [ISBN:9780073402406, OMP:KDA]
+is_a: OMP:0007229 ! endospore external encapsulating structure phenotype
+created_by: kanderson
+creation_date: 2015-06-08T13:20:48Z
+
+[Term]
+id: OMP:0008025
+name: absence of a cortex
+def: "A cortex phenotype where a cell or cells lack a cortex." [OMP:KDA]
+is_a: OMP:0008024 ! cortex phenotype
+created_by: kanderson
+creation_date: 2015-06-08T13:22:06Z
+
+[Term]
+id: OMP:0008026
+name: presence of a cortex
+def: "A cortex phenotype where a cell or cells have a cortex." [OMP:KDA]
+is_a: OMP:0008024 ! cortex phenotype
+created_by: kanderson
+creation_date: 2015-06-08T13:22:06Z
+
+[Term]
+id: OMP:0008027
+name: altered coat
+is_a: OMP:0008007 ! coat phenotype
+created_by: kanderson
+creation_date: 2015-06-08T13:24:49Z
 
 [Term]
 id: PATO:0000001
