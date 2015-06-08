@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 08:06:2015 13:28
+date: 08:06:2015 13:38
 saved-by: kanderson
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -8912,9 +8912,65 @@ creation_date: 2015-06-08T13:22:06Z
 [Term]
 id: OMP:0008027
 name: altered coat
+def: "A coat phenotype that relates to an altered state relative to a designated control." [OMP:KDA]
 is_a: OMP:0008007 ! coat phenotype
 created_by: kanderson
 creation_date: 2015-06-08T13:24:49Z
+
+[Term]
+id: OMP:0008028
+name: <new term>
+is_obsolete: true
+created_by: kanderson
+creation_date: 2015-06-08T13:30:11Z
+
+[Term]
+id: OMP:0008029
+name: altered cortex
+def: "A cortex phenotype related to an altered state relative to  designated control." [OMP:KDA]
+is_a: OMP:0008024 ! cortex phenotype
+created_by: kanderson
+creation_date: 2015-06-08T13:30:48Z
+
+[Term]
+id: OMP:0008030
+name: altered germ cell wall
+def: "An endospore germ cell wall phenotype related to an altered state relative to a designated control." [OMP:KDA]
+is_a: OMP:0008001 ! endospore germ cell wall phenotype
+created_by: kanderson
+creation_date: 2015-06-08T13:31:51Z
+
+[Term]
+id: OMP:0008031
+name: altered exosporium
+def: "An exosporium phenotype related to an altered state relative to a designated control." [OMP:KDA]
+is_a: OMP:0007230 ! exosporium phenotype
+created_by: kanderson
+creation_date: 2015-06-08T13:32:47Z
+
+[Term]
+id: OMP:0008032
+name: altered outer membrane
+def: "An outer membrane phenotype related to an altered state relative to a designated control." [OMP:KDA]
+is_a: OMP:0008010 ! outer membrane phenotype 
+created_by: kanderson
+creation_date: 2015-06-08T13:33:31Z
+
+[Term]
+id: OMP:0008033
+name: altered core
+def: "A core phenotype related to an altered state relative to a designated control." [OMP:KDA]
+is_a: OMP:0008004 ! core phenotype
+created_by: kanderson
+creation_date: 2015-06-08T13:34:26Z
+
+[Term]
+id: OMP:0008034
+name: altered inner membrane
+def: "An inner membrane phenotype related to an altered state relative to a designated control." [OMP:KDA]
+is_a: OMP:0008014 ! inner membrane phenotype
+created_by: kanderson
+creation_date: 2015-06-08T13:35:10Z
 
 [Term]
 id: PATO:0000001
