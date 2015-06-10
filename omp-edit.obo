@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 08:06:2015 13:38
-saved-by: kanderson
+date: 09:06:2015 16:45
+saved-by: tkveton
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -5162,6 +5162,14 @@ created_by: wmeza
 creation_date: 2014-08-07T14:58:34Z
 
 [Term]
+id: OMP:0006000
+name: secondary metabolite production phenotype
+def: "A small molecule biosynthesis phenotype where an organism produces a secondary metabolite, which is a compound not directly involved in normal growth, development or reproduction." [APO:0000292, OMP:TCK]
+is_a: OMP:0000310 ! small molecule biosynthesis phenotype
+created_by: tkveton
+creation_date: 2015-06-09T15:06:53Z
+
+[Term]
 id: OMP:0006001
 name: altered chromosome segregation
 def: "A chromosome segregation phenotype where chromosome segregation is altered relative to a designated control." [OMP:JCH]
@@ -6089,6 +6097,22 @@ created_by: jonathanherrera
 creation_date: 2014-07-25T11:59:12Z
 
 [Term]
+id: OMP:0006105
+name: antimicrobial peptide production phenotype
+def: "A secondary metabolite production phenotype where the metabolite produced is an antimicrobial peptide, which can have protective properties against bacteria, fungi, viruses, or protozoa." [GO:0000276, OMP:TCK]
+is_a: OMP:0006000 ! secondary metabolite production phenotype
+created_by: tkveton
+creation_date: 2015-06-09T15:14:37Z
+
+[Term]
+id: OMP:0006106
+name: altered antimicrobial peptide production 
+def: "An antimicrobial peptide production phenotype where the production of an antimicrobial peptide is altered relative to a designated control." [OMP:TCK]
+is_a: OMP:0006105 ! antimicrobial peptide production phenotype
+created_by: tkveton
+creation_date: 2015-06-09T15:16:13Z
+
+[Term]
 id: OMP:0006107
 name: presence of outer membrane vesicles
 def: "A outer membrane vesicles phenotype where a cell or cells produce outer membrane vesicles." [OMP:JCH]
@@ -6181,6 +6205,14 @@ def: "A decreased growth at alkaline pH phenotype where the ability to grow at a
 is_a: OMP:0007010 ! decreased growth at alkaline pH
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:02:17Z
+
+[Term]
+id: OMP:0006118
+name: decreased antimicrobial peptide production
+def: "An antimicrobial peptide production phenotype where the amount of antimicrobial peptide produced is decreased relative to a designated control." [OMP:TCK]
+is_a: OMP:0006106 ! altered antimicrobial peptide production 
+created_by: tkveton
+creation_date: 2015-06-09T15:17:23Z
 
 [Term]
 id: OMP:0006119
@@ -6619,6 +6651,14 @@ created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:54Z
 
 [Term]
+id: OMP:0006172
+name: increased antimicrobial peptide production
+def: "An antimicrobial peptide production phenotype where the amount of antimicrobial peptide produced is increased relative to a designated control." [OMP:TCK]
+is_a: OMP:0006106 ! altered antimicrobial peptide production 
+created_by: tkveton
+creation_date: 2015-06-09T15:17:53Z
+
+[Term]
 id: OMP:0006173
 name: presence of multiple fission
 def: "A multiple fission phenotype where an organism reproduces by the process of multiple fission." [OMP:JCH]
@@ -6658,6 +6698,30 @@ def: "A decreased multiple fission phenotype where the ability to perform multip
 is_a: OMP:0006175 ! decreased multiple fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:49:27Z
+
+[Term]
+id: OMP:0006178
+name: abolished antimicrobial peptide production
+def: "An antimicrobial peptide production phenotype where the organisms ability to produce an antimicrobial peptide is abolished." [OMP:TCK]
+is_a: OMP:0006118 ! decreased antimicrobial peptide production
+created_by: tkveton
+creation_date: 2015-06-09T15:18:24Z
+
+[Term]
+id: OMP:0006179
+name: presence of antimicrobial peptide production
+def: "An antimicrobial peptide production phenotype where an organism has the ability to produce antimicrobial peptides." [OMP:TCK]
+is_a: OMP:0006105 ! antimicrobial peptide production phenotype
+created_by: tkveton
+creation_date: 2015-06-09T15:19:02Z
+
+[Term]
+id: OMP:0006180
+name: absence of antimicrobial peptide production
+def: "An antimicrobial peptide production phenotype where an organism does not have ability to produce antimicrobial peptides." [OMP:TCK]
+is_a: OMP:0006105 ! antimicrobial peptide production phenotype
+created_by: tkveton
+creation_date: 2015-06-09T15:19:38Z
 
 [Term]
 id: OMP:0007000
@@ -8729,7 +8793,7 @@ creation_date: 2015-06-08T12:10:22Z
 id: OMP:0008004
 name: core phenotype
 def: "An endospore internal encapsulating structure phenotype that relates to the core, which is the innermost layer of an endospore containing the bacterial genome." [ISBN:9780073402406, OMP:KDA]
-is_a: OMP:0008013 ! endospore internal encapsulating structure phenotype 
+is_a: OMP:0008013 ! endospore internal encapsulating structure phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:14:34Z
 
@@ -8759,7 +8823,7 @@ creation_date: 2015-06-08T12:18:25Z
 
 [Term]
 id: OMP:0008008
-name: absence of a coat 
+name: absence of a coat
 def: "A coat phenotype where a cell or cells lack a coat." [OMP:KDA]
 is_a: OMP:0008007 ! coat phenotype
 created_by: kanderson
@@ -8767,7 +8831,7 @@ creation_date: 2015-06-08T12:19:49Z
 
 [Term]
 id: OMP:0008009
-name: presence of a coat 
+name: presence of a coat
 def: "A coat phenotype where a cell or cells have a coat." [OMP:KDA]
 is_a: OMP:0008007 ! coat phenotype
 created_by: kanderson
@@ -8775,7 +8839,7 @@ creation_date: 2015-06-08T12:19:49Z
 
 [Term]
 id: OMP:0008010
-name: outer membrane phenotype 
+name: outer membrane phenotype
 def: "An endospore external encapsulating structure phenotype related to the outer membrane, which is a phospholipid bilayer originally from the mother cell that engulfed the forespore." [OMP:KDA, PMID:3101583]
 is_a: OMP:0007229 ! endospore external encapsulating structure phenotype
 created_by: kanderson
@@ -8785,7 +8849,7 @@ creation_date: 2015-06-08T12:21:48Z
 id: OMP:0008011
 name: absence of an outer membrane
 def: "An outer membrane phenotype where a cell or cells lack an outer membrane." [OMP:KDA]
-is_a: OMP:0008010 ! outer membrane phenotype 
+is_a: OMP:0008010 ! outer membrane phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:23:37Z
 
@@ -8793,13 +8857,13 @@ creation_date: 2015-06-08T12:23:37Z
 id: OMP:0008012
 name: presence of an outer membrane
 def: "An outer membrane phenotype where a cell or cells have an outer membrane." [OMP:KDA]
-is_a: OMP:0008010 ! outer membrane phenotype 
+is_a: OMP:0008010 ! outer membrane phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:23:37Z
 
 [Term]
 id: OMP:0008013
-name: endospore internal encapsulating structure phenotype 
+name: endospore internal encapsulating structure phenotype
 def: "An endospore morphology phenotype that refers to the layers of the inner membrane and within and surround the entire endospore." [OMP:KDA]
 is_a: OMP:0007228 ! endospore morphology phenotype
 created_by: kanderson
@@ -8809,7 +8873,7 @@ creation_date: 2015-06-08T12:43:22Z
 id: OMP:0008014
 name: inner membrane phenotype
 def: "An endospore internal encapsulating structure phenotype related to the inner membrane, which surrounds the core and combines with the outer membrane to provide protection for the protoplast within the mother cell." [OMP:KDA, PMID:3101583]
-is_a: OMP:0008013 ! endospore internal encapsulating structure phenotype 
+is_a: OMP:0008013 ! endospore internal encapsulating structure phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:45:57Z
 
@@ -8918,13 +8982,6 @@ created_by: kanderson
 creation_date: 2015-06-08T13:24:49Z
 
 [Term]
-id: OMP:0008028
-name: <new term>
-is_obsolete: true
-created_by: kanderson
-creation_date: 2015-06-08T13:30:11Z
-
-[Term]
 id: OMP:0008029
 name: altered cortex
 def: "A cortex phenotype related to an altered state relative to  designated control." [OMP:KDA]
@@ -8952,7 +9009,7 @@ creation_date: 2015-06-08T13:32:47Z
 id: OMP:0008032
 name: altered outer membrane
 def: "An outer membrane phenotype related to an altered state relative to a designated control." [OMP:KDA]
-is_a: OMP:0008010 ! outer membrane phenotype 
+is_a: OMP:0008010 ! outer membrane phenotype
 created_by: kanderson
 creation_date: 2015-06-08T13:33:31Z
 
