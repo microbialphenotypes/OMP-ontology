@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 09:06:2015 16:45
-saved-by: tkveton
+date: 11:06:2015 15:46
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -2184,8 +2184,6 @@ def: "A cell development phenotype related to the development of an akinete, a t
 comment: Akinetes typically are more resistant to dessication and other environmental stresses than vegetative cells.
 xref: GO:0034302 "akinete formation"
 is_a: OMP:0000091 ! sporulation phenotype
-intersection_of: OMP:0000070 ! cell development phenotype
-intersection_of: inheres_in OMP:0000006 ! presence of akinete formation
 created_by: adrienne
 creation_date: 2011-02-02T03:25:02Z
 
@@ -6106,7 +6104,7 @@ creation_date: 2015-06-09T15:14:37Z
 
 [Term]
 id: OMP:0006106
-name: altered antimicrobial peptide production 
+name: altered antimicrobial peptide production
 def: "An antimicrobial peptide production phenotype where the production of an antimicrobial peptide is altered relative to a designated control." [OMP:TCK]
 is_a: OMP:0006105 ! antimicrobial peptide production phenotype
 created_by: tkveton
@@ -6210,7 +6208,7 @@ creation_date: 2014-07-25T13:02:17Z
 id: OMP:0006118
 name: decreased antimicrobial peptide production
 def: "An antimicrobial peptide production phenotype where the amount of antimicrobial peptide produced is decreased relative to a designated control." [OMP:TCK]
-is_a: OMP:0006106 ! altered antimicrobial peptide production 
+is_a: OMP:0006106 ! altered antimicrobial peptide production
 created_by: tkveton
 creation_date: 2015-06-09T15:17:23Z
 
@@ -6654,7 +6652,7 @@ creation_date: 2014-08-08T16:01:54Z
 id: OMP:0006172
 name: increased antimicrobial peptide production
 def: "An antimicrobial peptide production phenotype where the amount of antimicrobial peptide produced is increased relative to a designated control." [OMP:TCK]
-is_a: OMP:0006106 ! altered antimicrobial peptide production 
+is_a: OMP:0006106 ! altered antimicrobial peptide production
 created_by: tkveton
 creation_date: 2015-06-09T15:17:53Z
 
@@ -8693,7 +8691,7 @@ creation_date: 2015-06-03T16:03:42Z
 [Term]
 id: OMP:0007225
 name: central location of endospore
-def: "An endospore location phenotype where mature spores are located in the center of the mother cell (sporangium)." [OMP:DAS]
+def: "An endospore location phenotype where mature spores are located in the center of the mother cell (sporangium)." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0007224 ! endospore location phenotype
 created_by: dsiegele
 creation_date: 2015-06-03T16:06:06Z
@@ -8709,7 +8707,7 @@ creation_date: 2015-06-04T15:40:39Z
 [Term]
 id: OMP:0007227
 name: swollen sporangium
-def: "A xx." [OMP:DAS]
+def: "A xx." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0007224 ! endospore location phenotype
 created_by: dsiegele
 creation_date: 2015-06-04T15:42:45Z
@@ -8725,7 +8723,7 @@ creation_date: 2015-06-04T16:05:37Z
 [Term]
 id: OMP:0007229
 name: endospore external encapsulating structure phenotype
-def: "An endospore morphology phenotype that relates to the structures that lie outside the inner membrane and surround the entire endospore." [GO:0043591, OMP:DAS]
+def: "An endospore morphology phenotype that relates to the structures that lie outside the inner membrane of and surround the entire endospore." [GO:0043591, OMP:DAS]
 xref: GO:0043591 "endospore external encapsulating structure"
 is_a: OMP:0007228 ! endospore morphology phenotype
 created_by: dsiegele
@@ -8733,8 +8731,8 @@ creation_date: 2015-06-04T16:17:34Z
 
 [Term]
 id: OMP:0007230
-name: exosporium phenotype
-def: "An endospore external encapsulating structure phenotype related to the exposporium, which is the outermost layer of a mature spore.  The exosporium of bacterial endospores is typically loosely attached and located outside of the endospore coat. It is generally composed of protein, carbohydrate, and perhaps lipid." [GO:0043592, OMP:DAS]
+name: endospore exosporium phenotype
+def: "An endospore external encapsulating structure phenotype related to the exposporium, which when present is the outermost layer of a mature spore.  The exosporium of bacterial endospores is typically loosely attached and located outside of the endospore coat. It is generally composed of protein, carbohydrate, and perhaps lipid." [GO:0043592, OMP:DAS]
 xref: GO:0043592 "exosporium"
 is_a: OMP:0007229 ! endospore external encapsulating structure phenotype
 created_by: dsiegele
@@ -8743,8 +8741,8 @@ creation_date: 2015-06-04T16:22:54Z
 [Term]
 id: OMP:0007231
 name: presence of an exosporium
-def: "An exosporium phenotype where an exosporium is present as a component of the mature endospore." [OMP:DAS]
-is_a: OMP:0007230 ! exosporium phenotype
+def: "An endospore exosporium phenotype where an exosporium is present as a component of the mature endospore." [OMP:DAS]
+is_a: OMP:0007230 ! endospore exosporium phenotype
 created_by: dsiegele
 creation_date: 2015-06-04T16:29:52Z
 
@@ -8752,7 +8750,7 @@ creation_date: 2015-06-04T16:29:52Z
 id: OMP:0007232
 name: absence of an exosporium
 def: "An exosporium phenotype where the mature endospore lacks an exosporium." [OMP:DAS]
-is_a: OMP:0007230 ! exosporium phenotype
+is_a: OMP:0007230 ! endospore exosporium phenotype
 created_by: dsiegele
 creation_date: 2015-06-04T16:29:52Z
 
@@ -8768,23 +8766,23 @@ creation_date: 2015-06-03T13:12:00Z
 [Term]
 id: OMP:0008001
 name: endospore germ cell wall phenotype
-def: "An endospore external encapsulating structure phenotype that relates to the primordial cell wall, which is composed of peptidoglycan and is the precursor to the vegetative cell wall." [OMP:KDA]
+def: "An endospore external encapsulating structure phenotype that relates to the germ cell wall, a separate layer of peptidoglycan located underneath the cortex and that will become the vegetative cell wall upon endospore germination." [OMP:KDA, PMID:3101583]
 is_a: OMP:0007229 ! endospore external encapsulating structure phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:07:41Z
 
 [Term]
 id: OMP:0008002
-name: absence of a germ cell wall
-def: "An endospore germ cell wall phenotype where a cell or cells lack a cell wall." [OMP:KDA]
+name: absence of an endospore germ cell wall
+def: "An endospore germ cell wall phenotype where an endospore lacks a germ cell wall." [OMP:KDA]
 is_a: OMP:0008001 ! endospore germ cell wall phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:10:22Z
 
 [Term]
 id: OMP:0008003
-name: presence of a germ cell wall
-def: "An endospore germ cell wall phenotype where a cell or cells have a cell wall." [OMP:KDA]
+name: presence of an endospore germ cell wall
+def: "An endospore germ cell wall phenotype where an endospore has a germ cell wall." [OMP:KDA]
 is_a: OMP:0008001 ! endospore germ cell wall phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:10:22Z
@@ -8815,49 +8813,50 @@ creation_date: 2015-06-08T12:16:08Z
 
 [Term]
 id: OMP:0008007
-name: coat phenotype
-def: "An endospore external encapsulating structure phenotype related to the coat, which is on the exterior of all spores and is composed of many structural proteins that confer additional resistance." [OMP:KDA, PMID:3101583]
+name: endospore coat phenotype
+def: "An endospore external encapsulating structure phenotype related to the endospore coat, which is on the exterior of all spores and is composed of many structural proteins that confer additional resistance." [OMP:KDA, PMID:3101583]
 is_a: OMP:0007229 ! endospore external encapsulating structure phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:18:25Z
 
 [Term]
 id: OMP:0008008
-name: absence of a coat
-def: "A coat phenotype where a cell or cells lack a coat." [OMP:KDA]
-is_a: OMP:0008007 ! coat phenotype
+name: absence of an endospore coat
+def: "An endospore coat phenotype where an endospore lacks a coat layer." [OMP:KDA]
+is_a: OMP:0008007 ! endospore coat phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:19:49Z
 
 [Term]
 id: OMP:0008009
-name: presence of a coat
-def: "A coat phenotype where a cell or cells have a coat." [OMP:KDA]
-is_a: OMP:0008007 ! coat phenotype
+name: presence of an endospore coat
+def: "An endospore coat phenotype where an endospore has a coat layer." [OMP:KDA]
+is_a: OMP:0008007 ! endospore coat phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:19:49Z
 
 [Term]
 id: OMP:0008010
-name: outer membrane phenotype
-def: "An endospore external encapsulating structure phenotype related to the outer membrane, which is a phospholipid bilayer originally from the mother cell that engulfed the forespore." [OMP:KDA, PMID:3101583]
+name: outer endospore membrane phenotype
+def: "An endospore external encapsulating structure phenotype related to the outer endospore membrane, a phospholipid bilayer, derived from the mother cell, located between the endospore cortex and endospore coat." [GO:0043594, OMP:KDA, PMID:3101583]
+xref: GO:0043594 "outer endospore membrane"
 is_a: OMP:0007229 ! endospore external encapsulating structure phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:21:48Z
 
 [Term]
 id: OMP:0008011
-name: absence of an outer membrane
-def: "An outer membrane phenotype where a cell or cells lack an outer membrane." [OMP:KDA]
-is_a: OMP:0008010 ! outer membrane phenotype
+name: absence of an outer endospore membrane
+def: "An outer endospore membrane phenotype where an endospore lacks an outer membrane." [OMP:KDA]
+is_a: OMP:0008010 ! outer endospore membrane phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:23:37Z
 
 [Term]
 id: OMP:0008012
-name: presence of an outer membrane
-def: "An outer membrane phenotype where a cell or cells have an outer membrane." [OMP:KDA]
-is_a: OMP:0008010 ! outer membrane phenotype
+name: presence of an outer endospore membrane
+def: "An outer endospore membrane phenotype where an endospore has an outer membrane." [OMP:KDA]
+is_a: OMP:0008010 ! outer endospore membrane phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:23:37Z
 
@@ -8951,48 +8950,49 @@ creation_date: 2015-06-08T13:11:05Z
 
 [Term]
 id: OMP:0008024
-name: cortex phenotype
-def: "An endospore external encapsulating structure phenotype that relates to the cortex, which is a layer that is comprised of less covalently bonded cross-linked peptidoglycan in comparison to the primordial cell wall." [ISBN:9780073402406, OMP:KDA]
+name: endospore cortex phenotype
+def: "An endospore external encapsulating structure phenotype that relates to the endospore cortex, a layer surrounding an endospore that lies between the outer and inner endospore membranes and consists of peptidoglycan which is typically less cross-linked than that found in vegetable cell walls." [GO:0043595, OMP:KDA]
+xref: GO:0043595 "endospore cortex"
 is_a: OMP:0007229 ! endospore external encapsulating structure phenotype
 created_by: kanderson
 creation_date: 2015-06-08T13:20:48Z
 
 [Term]
 id: OMP:0008025
-name: absence of a cortex
-def: "A cortex phenotype where a cell or cells lack a cortex." [OMP:KDA]
-is_a: OMP:0008024 ! cortex phenotype
+name: absence of an endospore cortex
+def: "An endospore cortex phenotype where an endospore lacks a cortex." [OMP:KDA]
+is_a: OMP:0008024 ! endospore cortex phenotype
 created_by: kanderson
 creation_date: 2015-06-08T13:22:06Z
 
 [Term]
 id: OMP:0008026
 name: presence of a cortex
-def: "A cortex phenotype where a cell or cells have a cortex." [OMP:KDA]
-is_a: OMP:0008024 ! cortex phenotype
+def: "An endospore cortex phenotype where an endospore has a cortex." [OMP:KDA]
+is_a: OMP:0008024 ! endospore cortex phenotype
 created_by: kanderson
 creation_date: 2015-06-08T13:22:06Z
 
 [Term]
 id: OMP:0008027
-name: altered coat
-def: "A coat phenotype that relates to an altered state relative to a designated control." [OMP:KDA]
-is_a: OMP:0008007 ! coat phenotype
+name: altered endospore coat
+def: "An endospore coat phenotype where the endospore coat is altered relative to a designated control." [OMP:KDA]
+is_a: OMP:0008007 ! endospore coat phenotype
 created_by: kanderson
 creation_date: 2015-06-08T13:24:49Z
 
 [Term]
 id: OMP:0008029
-name: altered cortex
-def: "A cortex phenotype related to an altered state relative to  designated control." [OMP:KDA]
-is_a: OMP:0008024 ! cortex phenotype
+name: altered endospore cortex
+def: "An endospore cortex phenotype where the endospore cortex is altered relative to a designated control." [OMP:KDA]
+is_a: OMP:0008024 ! endospore cortex phenotype
 created_by: kanderson
 creation_date: 2015-06-08T13:30:48Z
 
 [Term]
 id: OMP:0008030
-name: altered germ cell wall
-def: "An endospore germ cell wall phenotype related to an altered state relative to a designated control." [OMP:KDA]
+name: altered endospore germ cell wall
+def: "An endospore germ cell wall phenotype where the germ cell wall is altered relative to a designated control." [OMP:KDA]
 is_a: OMP:0008001 ! endospore germ cell wall phenotype
 created_by: kanderson
 creation_date: 2015-06-08T13:31:51Z
@@ -9000,16 +9000,16 @@ creation_date: 2015-06-08T13:31:51Z
 [Term]
 id: OMP:0008031
 name: altered exosporium
-def: "An exosporium phenotype related to an altered state relative to a designated control." [OMP:KDA]
-is_a: OMP:0007230 ! exosporium phenotype
+def: "An endospore exosporium phenotype where the exposporium is altered relative to a designated control." [OMP:KDA]
+is_a: OMP:0007230 ! endospore exosporium phenotype
 created_by: kanderson
 creation_date: 2015-06-08T13:32:47Z
 
 [Term]
 id: OMP:0008032
 name: altered outer membrane
-def: "An outer membrane phenotype related to an altered state relative to a designated control." [OMP:KDA]
-is_a: OMP:0008010 ! outer membrane phenotype
+def: "An outer endospore membrane phenotype where the outer membrane is altered relative to a designated control." [OMP:KDA]
+is_a: OMP:0008010 ! outer endospore membrane phenotype
 created_by: kanderson
 creation_date: 2015-06-08T13:33:31Z
 
