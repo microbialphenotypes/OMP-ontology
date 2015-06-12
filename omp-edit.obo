@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2014-10-01
-date: 11:06:2015 15:46
+date: 12:06:2015 13:50
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -6700,7 +6700,7 @@ creation_date: 2014-08-08T16:49:27Z
 [Term]
 id: OMP:0006178
 name: abolished antimicrobial peptide production
-def: "An antimicrobial peptide production phenotype where the organisms ability to produce an antimicrobial peptide is abolished." [OMP:TCK]
+def: "An antimicrobial peptide production phenotype where the organism's ability to produce an antimicrobial peptide is abolished." [OMP:TCK]
 is_a: OMP:0006118 ! decreased antimicrobial peptide production
 created_by: tkveton
 creation_date: 2015-06-09T15:18:24Z
@@ -6708,7 +6708,7 @@ creation_date: 2015-06-09T15:18:24Z
 [Term]
 id: OMP:0006179
 name: presence of antimicrobial peptide production
-def: "An antimicrobial peptide production phenotype where an organism has the ability to produce antimicrobial peptides." [OMP:TCK]
+def: "An antimicrobial peptide production phenotype where an organism has the ability to produce an antimicrobial peptide." [OMP:TCK]
 is_a: OMP:0006105 ! antimicrobial peptide production phenotype
 created_by: tkveton
 creation_date: 2015-06-09T15:19:02Z
@@ -6716,7 +6716,7 @@ creation_date: 2015-06-09T15:19:02Z
 [Term]
 id: OMP:0006180
 name: absence of antimicrobial peptide production
-def: "An antimicrobial peptide production phenotype where an organism does not have ability to produce antimicrobial peptides." [OMP:TCK]
+def: "An antimicrobial peptide production phenotype where an organism does not have the ability to produce an antimicrobial peptide." [OMP:TCK]
 is_a: OMP:0006105 ! antimicrobial peptide production phenotype
 created_by: tkveton
 creation_date: 2015-06-09T15:19:38Z
@@ -8789,25 +8789,25 @@ creation_date: 2015-06-08T12:10:22Z
 
 [Term]
 id: OMP:0008004
-name: core phenotype
-def: "An endospore internal encapsulating structure phenotype that relates to the core, which is the innermost layer of an endospore containing the bacterial genome." [ISBN:9780073402406, OMP:KDA]
-is_a: OMP:0008013 ! endospore internal encapsulating structure phenotype
+name: endospore core phenotype
+def: "An endospore internal structure phenotype that relates to the endospore core, the center of an endospore, which exists in a dehydrated state and contains the bacterial genome, ribosomes, and a large amount of  dipicolinic acid." [ISBN:9780073402406, OMP:KDA]
+is_a: OMP:0008013 ! endospore internal structure phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:14:34Z
 
 [Term]
 id: OMP:0008005
-name: absence of a core
-def: "A core phenotype where a cell or cell lacks a core." [OMP:KDA]
-is_a: OMP:0008004 ! core phenotype
+name: absence of the endospore core
+def: "An endospore core phenotype where an endospore lacks a central core." [OMP:KDA]
+is_a: OMP:0008004 ! endospore core phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:16:08Z
 
 [Term]
 id: OMP:0008006
 name: presence of a core
-def: "A core phenotype where a cell or cells have a core." [OMP:KDA]
-is_a: OMP:0008004 ! core phenotype
+def: "An endospore core phenotype where the central core is present in an endospore." [OMP:KDA]
+is_a: OMP:0008004 ! endospore core phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:16:08Z
 
@@ -8862,89 +8862,90 @@ creation_date: 2015-06-08T12:23:37Z
 
 [Term]
 id: OMP:0008013
-name: endospore internal encapsulating structure phenotype
-def: "An endospore morphology phenotype that refers to the layers of the inner membrane and within and surround the entire endospore." [OMP:KDA]
+name: endospore internal structure phenotype
+def: "An endospore morphology phenotype that relates to the inner membrane or core of an endospore." [OMP:KDA]
 is_a: OMP:0007228 ! endospore morphology phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:43:22Z
 
 [Term]
 id: OMP:0008014
-name: inner membrane phenotype
-def: "An endospore internal encapsulating structure phenotype related to the inner membrane, which surrounds the core and combines with the outer membrane to provide protection for the protoplast within the mother cell." [OMP:KDA, PMID:3101583]
-is_a: OMP:0008013 ! endospore internal encapsulating structure phenotype
+name: inner endospore membrane phenotype
+def: "An endospore internal structure phenotype related to the inner membrane, which surrounds the core." [OMP:KDA, PMID:3101583]
+is_a: OMP:0008013 ! endospore internal structure phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:45:57Z
 
 [Term]
 id: OMP:0008015
-name: absence of an inner membrane
-def: "An inner membrane phenotype where a cell or cells lack an inner membrane." [OMP:KDA]
-is_a: OMP:0008014 ! inner membrane phenotype
+name: absence of an inner endospore membrane
+def: "An inner endospore membrane phenotype where an endospore lacks an inner membrane." [OMP:KDA]
+is_a: OMP:0008014 ! inner endospore membrane phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:50:07Z
 
 [Term]
 id: OMP:0008016
-name: presence of an inner membrane
-def: "An inner membrane phenotype where a cell or cells have an inner membrane." [OMP:KDA]
-is_a: OMP:0008014 ! inner membrane phenotype
+name: presence of an inner endospore membrane
+def: "An inner endospore membrane phenotype where the endospore has an inner membrane." [OMP:KDA]
+is_a: OMP:0008014 ! inner endospore membrane phenotype
 created_by: kanderson
 creation_date: 2015-06-08T12:50:07Z
 
 [Term]
 id: OMP:0008017
-name: stopped at stage 0
-def: "A defective endospore formation in relation to a designated control, where the cell is prevented from proceeding into the sporulation process because of a block in formation of the asymmetrical septum. This prevents the forespore from forming in the mother cell during stage II." [OMP:KDA, PMID:3101583]
-is_a: OMP:0008018 ! defective endospore formation
+name: endospore formation stopped at stage 0
+def: "An interrupted endospore formation phenotype where sporulation is stopped before any visible morphological changes have occurred, and the cell or cells have the appearance of vegetative cells." [OMP:KDA, PMID:3101583]
+comment: In many bacteria, the first visible morphological change in sporulation is formation of an asymmetric septum that separates the mother cell and forespore compartments.
+is_a: OMP:0008018 ! interrupted endospore formation
 created_by: kanderson
 creation_date: 2015-06-08T13:04:15Z
 
 [Term]
 id: OMP:0008018
-name: defective endospore formation
-def: "An altered endospore formation where a cell or cells show defective properties caused by mutations at different stages in the sporulation forming process." [OMP:KDA]
+name: interrupted endospore formation
+def: "An altered endospore formation phenotype where development of the endospore is interrupted before the process is complete." [OMP:KDA]
 is_a: OMP:0006161 ! altered endospore formation
 created_by: kanderson
 creation_date: 2015-06-08T13:06:18Z
 
 [Term]
 id: OMP:0008019
-name: stopped at stage II
-def: "A defective endospore formation in relation to a designated control, where septum formation has been completed, but engulfment of the forespore by the mother cell cannot proceed." [OMP:KDA, PMID:3101583]
-is_a: OMP:0008018 ! defective endospore formation
+name: endospore formation stopped at stage II
+def: "An interrupted endospore formation phenotype where sporulation is stopped after formation of the septum, but before engulfment of the forespore by the mother cell." [OMP:KDA, PMID:3101583]
+is_a: OMP:0008018 ! interrupted endospore formation
 created_by: kanderson
 creation_date: 2015-06-08T13:07:39Z
 
 [Term]
 id: OMP:0008020
-name: stopped at stage III
-def: "A defective endospore formation in relation to a designated control, where the completion of protoplast formation has occurred within the mother cell, but subsequent cortex and coat production is halted." [OMP:KDA, PMID:3101583]
-is_a: OMP:0008018 ! defective endospore formation
+name: endospore formation stopped at stage III
+def: "An interrupted endospore formation phenotype where sporulation is stopped after engulfment but before production of the endospore cortex and coat." [OMP:KDA, PMID:3101583]
+is_a: OMP:0008018 ! interrupted endospore formation
 created_by: kanderson
 creation_date: 2015-06-08T13:08:51Z
 
 [Term]
 id: OMP:0008021
-name: stopped at stage IV
-def: "A defective endospore formation in relation to a designated control, where cortex formation has been completed but coat synthesis cannot proceed for the endospore within the mother cell." [OMP:KDA, PMID:3101583]
-is_a: OMP:0008018 ! defective endospore formation
+name: endospore formation stopped at stage IV
+def: "An interrupted endospore formation phenotype where sporulation is stopped after deposition of the cortex and germ cell wall, but before formation of the endospore coat." [OMP:KDA, PMID:3101583]
+is_a: OMP:0008018 ! interrupted endospore formation
 created_by: kanderson
 creation_date: 2015-06-08T13:09:45Z
 
 [Term]
 id: OMP:0008022
-name: stopped at stage V
-def: "A defective endospore formation in relation to a designated control, where the endospore within the mother cell has acquired all layers, but related resistance factors have been diminished." [OMP:KDA, PMID:3101583]
-is_a: OMP:0008018 ! defective endospore formation
+name: endospore formation stopped at stage V
+def: "An interrupted endospore formation phenotype where sporulation is stopped after formation of the coat, but before the endospore has developed its characteristic resistance properties." [OMP:KDA, PMID:3101583]
+is_a: OMP:0008018 ! interrupted endospore formation
 created_by: kanderson
 creation_date: 2015-06-08T13:10:24Z
 
 [Term]
 id: OMP:0008023
-name: stopped at stage VI
-def: "A defective endospore formation in relation to a designated control, where the endospore is completely functional, but lysis of the spore by the mother cell cannot proceed." [OMP:KDA, PMID:3101583]
-is_a: OMP:0008018 ! defective endospore formation
+name: endospore formation stopped at stage VI
+def: "An interrupted endospore formation phenotype where endospore formation and maturation is complete, but before lysis of the mother cell." [OMP:KDA, PMID:3101583]
+is_a: OMP:0008018 ! interrupted endospore formation
 created_by: kanderson
 creation_date: 2015-06-08T13:11:05Z
 
@@ -9016,16 +9017,16 @@ creation_date: 2015-06-08T13:33:31Z
 [Term]
 id: OMP:0008033
 name: altered core
-def: "A core phenotype related to an altered state relative to a designated control." [OMP:KDA]
-is_a: OMP:0008004 ! core phenotype
+def: "An endospore core phenotype where the core is altered relative to a designated control." [OMP:KDA]
+is_a: OMP:0008004 ! endospore core phenotype
 created_by: kanderson
 creation_date: 2015-06-08T13:34:26Z
 
 [Term]
 id: OMP:0008034
-name: altered inner membrane
-def: "An inner membrane phenotype related to an altered state relative to a designated control." [OMP:KDA]
-is_a: OMP:0008014 ! inner membrane phenotype
+name: altered inner endospore membrane
+def: "An inner endospore membrane phenotype where the inner membrane is altered relative to a designated control." [OMP:KDA]
+is_a: OMP:0008014 ! inner endospore membrane phenotype
 created_by: kanderson
 creation_date: 2015-06-08T13:35:10Z
 
