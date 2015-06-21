@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: releases/2014-10-01
-date: 12:06:2015 13:50
-saved-by: dsiegele
+data-version: releases/2015-02-19
+date: 20:06:2015 19:19
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -41,7 +41,6 @@ synonymtypedef: SMILES "SMILES"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: microbial_phenotype
 remark: select is_a closure
-ontology: go
 ontology: omp
 ontology: go
 ontology: pato
@@ -4274,7 +4273,7 @@ creation_date: 2013-09-25T15:57:46Z
 
 [Term]
 id: OMP:0005032
-name: presence of stress induced mutagenesis
+name: presence of stress-induced mutagenesis
 def: "A stress-induced mutagenesis phenotype where a cell or cells exhibit stress-induced mutagenesis." [OMP:WAM]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: wmeza
@@ -5198,7 +5197,7 @@ id: OMP:0006004
 name: increased budding
 def: "An altered budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is increased relative to a designated control." [OMP:WAM]
 synonym: "increased budding index" EXACT []
-is_a: OMP:0006035 ! altered budding phenotype
+is_a: OMP:0006035 ! altered budding
 created_by: jonathanherrera
 creation_date: 2014-03-26T21:33:14Z
 
@@ -5215,7 +5214,7 @@ id: OMP:0006006
 name: decreased budding
 def: "An altered budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is decreased relative to a designated control." [OMP:WAM]
 synonym: "decreased budding index" EXACT []
-is_a: OMP:0006035 ! altered budding phenotype
+is_a: OMP:0006035 ! altered budding
 created_by: jonathanherrera
 creation_date: 2014-03-26T21:33:14Z
 
@@ -5482,7 +5481,7 @@ creation_date: 2014-07-24T17:57:37Z
 
 [Term]
 id: OMP:0006035
-name: altered budding phenotype
+name: altered budding
 def: "A budding phenotype where the process of budding is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000089 ! budding phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
@@ -6456,6 +6455,7 @@ id: OMP:0006148
 name: abolished stress-induced mutagenesis
 def: "A decreased stress-induced mutagenesis phenotype where stress-induced mutagenesis is abolished." [OMP:JCH]
 is_a: OMP:0005031 ! decreased stress-induced mutagenesis
+is_a: OMP:0005033 ! absence of stress-induced mutagenesis
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:19:48Z
 
@@ -8755,6 +8755,38 @@ created_by: dsiegele
 creation_date: 2015-06-04T16:29:52Z
 
 [Term]
+id: OMP:0007233
+name: absence of binary fission
+def: "A binary fission phenotype where an organism lacks the ability to multiply by the process of binary fission." [OMP:JCH]
+is_a: OMP:0007067 ! binary fission phenotype
+created_by: siegele
+creation_date: 2015-06-20T18:21:53Z
+
+[Term]
+id: OMP:0007234
+name: absence of budding
+def: "A budding phenotype where an organism lacks to the ability to multiply by the process of budding." [OMP:JCH]
+is_a: OMP:0000089 ! budding phenotype
+created_by: siegele
+creation_date: 2015-06-20T18:24:03Z
+
+[Term]
+id: OMP:0007235
+name: absence of multiple fission
+def: "A multiple fission phenotype where an organism lacks the ability to multiply by the process of multiple fission." [OMP:JCH]
+is_a: OMP:0007068 ! multiple fission phenotype
+created_by: siegele
+creation_date: 2015-06-20T18:25:24Z
+
+[Term]
+id: OMP:0007236
+name: absence of asexual sporulation
+def: "An asexual sporulation phenotype where an organism lacks the ability to multiple by the formation of mitotic spores." [OMP:JCH]
+is_a: OMP:0007142 ! asexual sporulation phenotype
+created_by: siegele
+creation_date: 2015-06-20T18:26:28Z
+
+[Term]
 id: OMP:0008000
 name: spore morphology phenotype
 def: "A microbial phenotype that is related to the form and structure of a spore or spores." [OMP:KDA]
@@ -9183,7 +9215,6 @@ name: increased quality
 namespace: quality
 def: "A quality that has a value that is increased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
-intersection_of: PATO:0000001 ! quality
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:39:43Z
 
@@ -9193,7 +9224,6 @@ name: decreased quality
 namespace: quality
 def: "A quality that has a value that is decreased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
-intersection_of: PATO:0000001 ! quality
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:40:15Z
 
@@ -9204,7 +9234,6 @@ namespace: quality
 def: "A quality of a process that has a value that is decreased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002301 ! decreased quality
-intersection_of: PATO:0001236 ! process quality
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:50:59Z
 
@@ -9215,7 +9244,6 @@ namespace: quality
 def: "A quality of a process that has a value that is increased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002300 ! increased quality
-intersection_of: PATO:0001236 ! process quality
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:53:08Z
 
