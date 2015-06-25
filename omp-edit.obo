@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 20:06:2015 19:19
+date: 25:06:2015 15:26
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -1402,9 +1402,8 @@ name: cell motility phenotype
 def: "A locomotion phenotype where the trait in question is the self-propelled movement of a cell or cells from one location to another." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0048870 "cell motility"
-xref: PATO:0001488
 is_a: OMP:0000312 ! locomotion phenotype
-intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: OMP:0000312 ! locomotion phenotype
 intersection_of: inheres_in GO:0005623 ! cell
 intersection_of: inheres_in GO:0048870 ! cell motility
 creation_date: 2011-03-10T06:55:06Z
@@ -3734,7 +3733,7 @@ creation_date: 2011-07-21T05:50:25Z
 [Term]
 id: OMP:0000312
 name: locomotion phenotype
-def: "A microbial phenotype, where the trait in question is the self-propelled movement of a cell from one location to another." [GO:0040011, OMP:MCC]
+def: "A microbial phenotype where the trait in question is the self-propelled movement of a cell from one location to another." [GO:0040011, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0040011 "locomotion"
 is_a: OMP:0000000 ! microbial phenotype
@@ -5674,7 +5673,7 @@ synonym: "kanamycin" NARROW []
 synonym: "neomycin" NARROW []
 synonym: "streptomycin" NARROW []
 synonym: "tobramycin" NARROW []
-xref: CHEBI:22507 "aminoglycoside antibiotic"
+xref: CHEBI:47779 "aminoglycoside"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T13:29:22Z
@@ -8205,7 +8204,7 @@ creation_date: 2014-09-25T17:18:11Z
 [Term]
 id: OMP:0007169
 name: antimicrobial peptide resistance phenotype
-def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an antimicrobial peptide." [OMP:DAS]
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an antimicrobial peptide." [CHEBI:25903, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: CHEBI:25903 "peptide antibiotic"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
