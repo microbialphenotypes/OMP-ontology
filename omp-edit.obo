@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 25:06:2015 15:26
+date: 29:06:2015 18:31
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -49,44 +49,37 @@ ontology: pato
 id: CHEBI:24431
 name: chemical entity
 namespace: chebi_ontology
-def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." []
+def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." [CHEBI:Team]
 
 [Term]
 id: CHEBI:24432
 name: biological role
 namespace: chebi_ontology
-def: "A role played by the molecular entity or part thereof within a biological context." []
-synonym: "biological function" RELATED [ChEBI:]
+def: "A role played by the molecular entity or part thereof within a biological context." [CHEBI:Team]
 is_a: CHEBI:50906 ! role
 
 [Term]
 id: CHEBI:25944
 name: pesticide
 namespace: chebi_ontology
-def: "Strictly, a substance intended to kill pests. In common usage, any substance used for controlling, preventing, or destroying animal, microbiological or plant pests." []
-synonym: "pesticide" EXACT IUPAC_NAME [IUPAC:]
-synonym: "pesticides" RELATED [ChEBI:]
-synonym: "Pestizid" RELATED [ChEBI:]
-synonym: "Pestizide" RELATED [ChEBI:]
-xref: Wikipedia:Pesticide "Wikipedia"
+def: "Strictly, a substance intended to kill pests. In common usage, any substance used for controlling, preventing, or destroying animal, microbiological or plant pests." [CHEBI:Team]
+xref: Wikipedia:Pesticide
 is_a: CHEBI:33232 ! application
 
 [Term]
 id: CHEBI:33232
 name: application
 namespace: chebi_ontology
-def: "Intended use of the molecular entity or part thereof by humans." []
+def: "Intended use of the molecular entity or part thereof by humans." [CHEBI:Team]
 is_a: CHEBI:50906 ! role
 
 [Term]
 id: CHEBI:33281
 name: antimicrobial agent
 namespace: chebi_ontology
-def: "A substance that kills or slows the growth of microorganisms, including bacteria, viruses, fungi and protozoans." []
-synonym: "antimicrobial" RELATED [ChEBI:]
-synonym: "antimicrobials" RELATED [ChEBI:]
-synonym: "microbicide" RELATED [ChEBI:]
-synonym: "microbicides" RELATED [ChEBI:]
+def: "A substance that kills or slows the growth of microorganisms, including bacteria, viruses, fungi and protozoans." [CHEBI:Team]
+synonym: "antimicrobial" RELATED []
+synonym: "microbiocides" RELATED []
 is_a: CHEBI:24432 ! biological role
 is_a: CHEBI:25944 ! pesticide
 
@@ -94,7 +87,7 @@ is_a: CHEBI:25944 ! pesticide
 id: CHEBI:50906
 name: role
 namespace: chebi_ontology
-def: "A role is particular behaviour which a material entity may exhibit." []
+def: "A role is a particular behaviour which a material entity may exhibit." [CHEBI:Team]
 
 [Term]
 id: GO:0000003
@@ -1608,11 +1601,12 @@ creation_date: 2011-06-07T11:19:56Z
 
 [Term]
 id: OMP:0000026
-name: virus-host interaction phenotype
-def: "A virulence phenotype, where the trait in question is the ability of a virus to cause disease in another organism (the host)." [OMP:JCH]
-synonym: "bacteriophage-host interaction phenotype" NARROW []
-synonym: "phage-host interaction phenotype" NARROW []
-is_a: OMP:0000068 ! virulence phenotype
+name: host-virus interaction phenotype
+def: "A microbial phenotype  related to the ability of a host to support growth of a virus." [OMP:JCH]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "host-bacteriophage interaction phenotype" NARROW []
+synonym: "host-phage interaction phenotype" NARROW []
+is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T02:39:55Z
 
@@ -2865,7 +2859,7 @@ creation_date: 2011-06-06T04:16:08Z
 id: OMP:0000173
 name: stress response phenotype
 def: "A microbial phenotype related to a cell or organism's response to environmental stress." [OMP:WAM]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:32Z
@@ -3148,7 +3142,7 @@ creation_date: 2011-06-07T03:17:46Z
 id: OMP:0000207
 name: serotype phenotype
 def: "A microbial phenotype that is distinguished by the presence a specific surface antigen." [OMP:MCC]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "antigenic typing phenotype" RELATED []
 synonym: "serological test phenotype" RELATED []
 synonym: "serovar" EXACT []
@@ -3550,7 +3544,7 @@ creation_date: 2011-07-21T02:02:26Z
 id: OMP:0000269
 name: protein activity phenotype
 def: "A microbial phenotype dealing with enzymatic or other type of protein activity." [OMP:WAM]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:05:51Z
@@ -4965,7 +4959,7 @@ creation_date: 2014-08-07T14:54:52Z
 id: OMP:0005116
 name: multicellular phenotype
 def: "A microbial phenotype involving two or more cells of the same or different species." [OMP:DAS]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: wmeza
 creation_date: 2014-07-08T17:10:17Z
@@ -5352,7 +5346,7 @@ creation_date: 2014-07-24T17:26:03Z
 id: OMP:0006022
 name: nutrient utilization phenotype
 def: "A microbial phenotype involving the utilization of a nutrient, which is a substance used for biosynthesis or energy release." [ISBN:9780073402406]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:40:06Z
@@ -7278,7 +7272,7 @@ creation_date: 2014-02-03T15:39:56Z
 id: OMP:0007066
 name: asexual reproduction phenotype
 def: "A microbial phenotype related to asexual reproduction, the biological process in which new individuals are produced by either a single cell or by a group of cells in the absence of any sexual process." [ISBN:0673521435, OMP:DAS]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0019954 "asexual reproduction"
 is_a: OMP:0007167 ! reproduction phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -8128,7 +8122,7 @@ creation_date: 2014-08-29T12:27:50Z
 id: OMP:0007161
 name: regulation phenotype
 def: "A microbial phenotype that affects the regulation of a molecular function, biological process, or biological quality." [OMP:DAS]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: FYPO:0000145 "regulation phenotype"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
@@ -8138,7 +8132,7 @@ creation_date: 2014-09-14T14:45:03Z
 id: OMP:0007162
 name: gene expression regulation phenotype
 def: "A regulation phenotype that affects the regulation of gene expression. Regulation can occur at the level transcription, translation, or turnover." [OMP:DAS]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: FYPO:0000288 "gene expression regulation phenotype"
 is_a: OMP:0007161 ! regulation phenotype
 created_by: siegele
@@ -8148,7 +8142,7 @@ creation_date: 2014-09-14T14:47:50Z
 id: OMP:0007163
 name: transcription regulation phenotype
 def: "A gene expression phenotype that affects the regulation of DNA-dependent or RNA-dependent transcription." [OMP:DAS]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: FYPO:0000143 "transcription regulation phenotype"
 is_a: OMP:0007162 ! gene expression regulation phenotype
 created_by: siegele
@@ -8158,7 +8152,7 @@ creation_date: 2014-09-14T14:52:31Z
 id: OMP:0007164
 name: translation regulation phenotype
 def: "A gene expression regulation phenotype that affects the regulation of translation." [OMP:DAS]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "protein synthesis regulation" EXACT []
 xref: FYPO:0000289 "translation regulation phenotype"
 is_a: OMP:0007162 ! gene expression regulation phenotype
@@ -8418,6 +8412,7 @@ creation_date: 2014-10-04T19:34:54Z
 id: OMP:0007194
 name: biological process phenotype
 def: "A microbial phenotype that affects a biological process." [FYPO:0000300, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: FYPO:0000300 "biological process phenotype"
 xref: GO:0008150 "biological_process"
 is_a: OMP:0000000 ! microbial phenotype
@@ -8451,6 +8446,7 @@ creation_date: 2014-10-20T15:08:04Z
 id: OMP:0007197
 name: cellular component phenotype
 def: "A microbial phenotype that affects a cellular component." [OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0005575 "cellular_component"
 is_a: OMP:0000000 ! microbial phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -8784,6 +8780,48 @@ def: "An asexual sporulation phenotype where an organism lacks the ability to mu
 is_a: OMP:0007142 ! asexual sporulation phenotype
 created_by: siegele
 creation_date: 2015-06-20T18:26:28Z
+
+[Term]
+id: OMP:0007237
+name: bacteriophage sensitivity phenotype
+def: "A host-virus interaction phenotype related to whether a bacterium can be infected by and/or support growth of a bacteriophage." [OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0000026 ! host-virus interaction phenotype
+created_by: siegele
+creation_date: 2015-06-29T17:35:29Z
+
+[Term]
+id: OMP:0007238
+name: presence of bacteriophage sensitivity
+def: "A bacteriophage sensitivity phenotype where a bacterium is sensitive to infection by a bacteriophage." [OMP:DAS]
+is_a: OMP:0007237 ! bacteriophage sensitivity phenotype
+created_by: siegele
+creation_date: 2015-06-29T17:56:42Z
+
+[Term]
+id: OMP:0007239
+name: absence of bacteriophage sensitivity
+def: "A bacteriophage sensitivity phenotype where a bacterium exhibits resistance to a bacteriophage." [OMP:DAS]
+synonym: "bacteriophage resistance" EXACT []
+is_a: OMP:0007237 ! bacteriophage sensitivity phenotype
+created_by: siegele
+creation_date: 2015-06-29T18:02:50Z
+
+[Term]
+id: OMP:0007240
+name: injection defect
+def: "An absence of bacteriophage sensitivity phenotype where a bacterium is resistant to a bacteriophage because the cell or cells are defective for adsorption or injection of the bacteriophage." [OMP:DAS]
+is_a: OMP:0007239 ! absence of bacteriophage sensitivity
+created_by: siegele
+creation_date: 2015-06-29T18:05:20Z
+
+[Term]
+id: OMP:0007241
+name: post-injection defect
+def: "An absence of bacteriophage sensitivity phenotype where a bacterium is resistant to a bacteriophage because it cannot support reproduction of the bacteriophage." [OMP:DAS]
+is_a: OMP:0007239 ! absence of bacteriophage sensitivity
+created_by: siegele
+creation_date: 2015-06-29T18:09:11Z
 
 [Term]
 id: OMP:0008000
