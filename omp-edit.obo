@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 29:06:2015 18:31
+date: 30:06:2015 01:14
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -8793,7 +8793,7 @@ creation_date: 2015-06-29T17:35:29Z
 [Term]
 id: OMP:0007238
 name: presence of bacteriophage sensitivity
-def: "A bacteriophage sensitivity phenotype where a bacterium is sensitive to infection by a bacteriophage." [OMP:DAS]
+def: "A bacteriophage sensitivity phenotype where a bacterium exhibits sensitivity to infection by a bacteriophage." [OMP:DAS]
 is_a: OMP:0007237 ! bacteriophage sensitivity phenotype
 created_by: siegele
 creation_date: 2015-06-29T17:56:42Z
@@ -9322,7 +9322,7 @@ id: directly_associated_with
 name: directly_associated_with
 namespace: quality
 def: "q1 directly_associated_with q2 iff q1 is dependent on q2, and the magnitude of q1 increases if the magnitude of q2 is increased, or the magnitude of q1 decreases if the magnitude of q2 is decreased. The relationship is not necessarily linear." [PATOC:cjm, Wikipedia:Association_(statistics)]
-comment: Example: 'Lewy bodies increased number related to dystrophic neurite increased number' (from annotation of PMID:8740227 in http://ccdb.ucsd.edu/1.0/NDPO.owl#ndpo_404). Here the increase in the number of lewy bodies is directly_associated_with the increase in the number of dystrophic neurites.\nAssociation is weaker than correlation or proportionality. These relations may be later added to PATO.
+comment: Example: 'Lewy bodies increased number related to dystrophic neurite increased number' (from annotation of PMID:8740227 in 'http://ccdb.ucsd.edu/1.0/NDPO.owl#ndpo_404'). Here the increase in the number of lewy bodies is directly_associated_with the increase in the number of dystrophic neurites. Association is weaker than correlation or proportionality. These relations may be later added to PATO.
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
 created_by: cjm
