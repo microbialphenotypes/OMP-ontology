@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 30:06:2015 01:14
+date: 02:07:2015 20:18
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1426,7 +1426,8 @@ name: taxis phenotype
 def: "A locomotion phenotype where the directed movement of a motile cell or organism is in response to an external stimulus." [ISBN:0192800329, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000312 ! locomotion phenotype
-intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: OMP:0000312 ! locomotion phenotype
+intersection_of: inheres_in GO:0005623 ! cell
 intersection_of: inheres_in GO:0042330 ! taxis
 created_by: mchibucos
 creation_date: 2011-04-14T03:29:20Z
@@ -1763,7 +1764,7 @@ name: aerotaxis phenotype
 def: "A taxis phenotype where directed movement of a motile cell or organism is in response to environmental oxygen (O2)." [ISBN:0192800329, OMP:MCC]
 xref: GO:0009454 "aerotaxis"
 is_a: OMP:0000004 ! taxis phenotype
-intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: OMP:0000004 ! taxis phenotype
 intersection_of: inheres_in GO:0009454 ! aerotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:18:11Z
@@ -1964,7 +1965,8 @@ name: cell morphology phenotype
 def: "A microbial phenotype related to the form and structure of an organism, cell, or cells." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
-intersection_of: PATO:0000051 ! morphology
+intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: has_quality PATO:0000051 ! morphology
 intersection_of: inheres_in GO:0005623 ! cell
 created_by: adrienne
 creation_date: 2011-02-02T03:15:16Z
@@ -1983,8 +1985,8 @@ name: cell shape phenotype
 def: "A cell morphology phenotype where the trait in question is the shape of a cell." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000071 ! cell morphology phenotype
-intersection_of: PATO:0000052 ! shape
-intersection_of: inheres_in GO:0005623 ! cell
+intersection_of: OMP:0000071 ! cell morphology phenotype
+intersection_of: has_quality PATO:0000052 ! shape
 created_by: adrienne
 creation_date: 2011-02-02T03:18:02Z
 
@@ -1994,8 +1996,8 @@ name: cell size phenotype
 def: "A cell morphology phenotype where the trait in question is the size of a cell." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000071 ! cell morphology phenotype
-intersection_of: PATO:0000117 ! size
-intersection_of: inheres_in GO:0005623 ! cell
+intersection_of: OMP:0000071 ! cell morphology phenotype
+intersection_of: has_quality PATO:0000117 ! size
 created_by: adrienne
 creation_date: 2011-02-02T03:18:19Z
 
@@ -2074,7 +2076,7 @@ comment: This term was created to organize terms beneath it in the ontology. We 
 synonym: "cell appendage phenotype" EXACT []
 xref: GO:0042995 "cell projection"
 is_a: OMP:0000071 ! cell morphology phenotype
-intersection_of: PATO:0001241 ! physical object quality
+intersection_of: OMP:0000071 ! cell morphology phenotype
 intersection_of: inheres_in GO:0042995 ! cell projection
 created_by: adrienne
 creation_date: 2011-02-02T03:47:44Z
@@ -2090,11 +2092,11 @@ creation_date: 2011-02-02T03:47:57Z
 
 [Term]
 id: OMP:0000085
-name: envelope phenotype
+name: cell envelope phenotype
 def: "A cell morphology phenotype relating to the envelope that surrounds a microbial cell and includes the cytoplasmic membrane and everything external to the cytoplasmic membrane, encompassing the periplasmic space, cell wall, and outer membrane.  Additional layers, such as capsules or S-layers, are also part of the envelope." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000071 ! cell morphology phenotype
-intersection_of: PATO:0001241 ! physical object quality
+intersection_of: OMP:0000071 ! cell morphology phenotype
 intersection_of: inheres_in GO:0031975 ! envelope
 created_by: adrienne
 creation_date: 2011-02-02T03:49:03Z
@@ -2152,7 +2154,7 @@ def: "A cell development phenotype related to formation of a spore, a dormant di
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0043934 "sporulation"
 is_a: OMP:0000070 ! cell development phenotype
-intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: OMP:0000070 ! cell development phenotype
 intersection_of: inheres_in GO:0043934 ! sporulation
 created_by: adrienne
 creation_date: 2011-02-02T03:24:24Z
@@ -2186,7 +2188,7 @@ def: "A sporulation phenotype where development concerns formation of an endospo
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0034301 "endospore formation"
 is_a: OMP:0000091 ! sporulation phenotype
-intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: OMP:0000091 ! sporulation phenotype
 intersection_of: inheres_in GO:0034301 ! endospore formation
 created_by: adrienne
 creation_date: 2011-02-02T03:25:29Z
@@ -3097,7 +3099,7 @@ id: OMP:0000202
 name: outer membrane vesicles phenotype
 def: "A cell envelope phenotype that describes the ability of a cell or cells to produce outer membrane vesicles." [OMP:JCH, PMID:20825345]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000085 ! envelope phenotype
+is_a: OMP:0000085 ! cell envelope phenotype
 created_by: Adrienne
 creation_date: 2011-03-02T01:43:12Z
 
@@ -3107,7 +3109,7 @@ name: capsule phenotype
 def: "A cell envelope phenotype where the trait in question is the capsule, a layer of polysaccharide or poly-amino acids surrounding a microbial cell.  When present, the capsule is the outermost layer of the cell envelope." [ISBN:9780073402406, OMP:DAS]
 synonym: "glycocalyx" RELATED []
 synonym: "slime layer" RELATED []
-is_a: OMP:0000085 ! envelope phenotype
+is_a: OMP:0000085 ! cell envelope phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:44:51Z
 
@@ -3685,7 +3687,7 @@ xref: GO:0044786 "cell cycle DNA replication"
 is_a: OMP:0000290 ! genetic material phenotype
 is_a: OMP:0000306 ! macromolecular biosynthesis phenotype
 is_a: OMP:0005115 ! cell cycle phenotype
-intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: OMP:0005115 ! cell cycle phenotype
 intersection_of: inheres_in GO:0044786 ! cell cycle DNA replication
 created_by: mchibucos
 creation_date: 2011-07-21T05:45:47Z
@@ -3954,7 +3956,7 @@ id: OMP:0000461
 name: outer membrane phenotype
 def: "A cell envelope phenotype where the trait in question is the presence or absence of  a lipid bilayer membrane located outside the peptidoglycan cell wall." [ISBN:9780073402406, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000085 ! envelope phenotype
+is_a: OMP:0000085 ! cell envelope phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:43:06Z
 
@@ -7275,7 +7277,7 @@ def: "A microbial phenotype related to asexual reproduction, the biological proc
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0019954 "asexual reproduction"
 is_a: OMP:0007167 ! reproduction phenotype
-intersection_of: OMP:0000000 ! microbial phenotype
+intersection_of: OMP:0007167 ! reproduction phenotype
 intersection_of: inheres_in GO:0019954 ! asexual reproduction
 created_by: siegele
 creation_date: 2014-02-03T15:55:25Z
@@ -7733,7 +7735,7 @@ name: increased transcription
 def: "An altered transcription phenotype where transcription of a gene or genes is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007108 ! altered transcription
 intersection_of: OMP:0007108 ! altered transcription
-intersection_of: has_quality OMP:0007009 ! increased growth at acidic pH
+intersection_of: has_quality PATO:0002304 ! increased process quality
 created_by: dsiegele
 creation_date: 2014-08-11T16:41:06Z
 
