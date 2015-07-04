@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 02:07:2015 20:18
+date: 04:07:2015 01:11
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1603,7 +1603,7 @@ creation_date: 2011-06-07T11:19:56Z
 [Term]
 id: OMP:0000026
 name: host-virus interaction phenotype
-def: "A microbial phenotype  related to the ability of a host to support growth of a virus." [OMP:JCH]
+def: "A microbial phenotype related to the ability of a host to support growth of a virus." [OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "host-bacteriophage interaction phenotype" NARROW []
 synonym: "host-phage interaction phenotype" NARROW []
@@ -8826,11 +8826,46 @@ created_by: siegele
 creation_date: 2015-06-29T18:09:11Z
 
 [Term]
+id: OMP:0007242
+name: altered host-virus interaction
+def: "A host-virus interaction phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000026 ! host-virus interaction phenotype
+is_a: OMP:0007085 ! altered phenotype
+created_by: siegele
+creation_date: 2015-07-04T00:13:56Z
+
+[Term]
+id: OMP:0007243
+name: altered bacteriophage sensitivity
+def: "A bacteriophage sensitivity phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007237 ! bacteriophage sensitivity phenotype
+is_a: OMP:0007242 ! altered host-virus interaction
+created_by: siegele
+creation_date: 2015-07-04T00:16:40Z
+
+[Term]
+id: OMP:0007244
+name: decreased sensitivity to bacteriophage
+def: "An altered bacteriophage sensitivity phenotype where the sensitivity of a cell or cells to a bacteriophage is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007243 ! altered bacteriophage sensitivity
+created_by: siegele
+creation_date: 2015-07-04T00:18:12Z
+
+[Term]
+id: OMP:0007245
+name: abolished sensitivity to bacteriophage
+def: "A decreased bacteriophage sensitivity phenotype where the sensitivity of a cell or cells to a bacteriophage is abolished." [OMP:DAS]
+is_a: OMP:0007239 ! absence of bacteriophage sensitivity
+is_a: OMP:0007244 ! decreased sensitivity to bacteriophage
+created_by: siegele
+creation_date: 2015-07-04T00:20:54Z
+
+[Term]
 id: OMP:0008000
 name: spore morphology phenotype
 def: "A microbial phenotype that is related to the form and structure of a spore or spores." [OMP:KDA]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0000071 ! cell morphology phenotype
 created_by: kanderson
 creation_date: 2015-06-03T13:12:00Z
 
