@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 09:07:2015 17:27
+date: 09:07:2015 16:50
 saved-by: snadendla
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -40,93 +40,30 @@ synonymtypedef: IUPAC_NAME "IUPAC NAME"
 synonymtypedef: SMILES "SMILES"
 synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: microbial_phenotype
-namespace-id-rule: * OMP:$sequence(7,0006001,0007000)$
-remark: ChEBI subsumes and replaces the Chemical Ontology first
-remark: developed by Michael Ashburner & Pankaj Jaiswal.
-remark: Author: ChEBI curation team
-remark: ChEBI Release version 129
-remark: For any queries contact chebi-help@ebi.ac.uk
-ontology: chebi
+remark: select is_a closure
 ontology: omp
 ontology: go
 ontology: pato
-
-[Term]
-id: CHEBI:22315
-name: alkaloid
-namespace: chebi_ontology
-def: "Any of the naturally occurring, basic nitrogen compounds (mostly heterocyclic) occurring mostly in the plant kingdom, but also found in bacteria, fungi, and animals. By extension, certain neutral compounds biogenetically related to basic alkaloids are also classed as alkaloids. Amino acids, peptides, proteins, nucleotides, nucleic acids, amino sugars and antibiotics are not normally regarded as alkaloids. Compounds in which the nitrogen is  exocyclic (dopamine, mescaline, serotonin, etc.) are usually classed as amines rather than alkaloids." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "alcaloide" RELATED [ChEBI:]
-synonym: "alcaloides" RELATED [ChEBI:]
-synonym: "Alkaloid" EXACT [ChEBI:]
-synonym: "Alkaloide" RELATED [ChEBI:]
-synonym: "alkaloids" EXACT IUPAC_NAME [IUPAC:]
-xref: Wikipedia:Alkaloid "Wikipedia"
-is_a: CHEBI:35352 ! organonitrogen compound
-relationship: has_role CHEBI:25212 ! metabolite
-
-[Term]
-id: CHEBI:23367
-name: molecular entity
-namespace: chebi_ontology
-def: "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "entidad molecular" RELATED [IUPAC:]
-synonym: "entidades moleculares" RELATED [IUPAC:]
-synonym: "entite moleculaire" RELATED [IUPAC:]
-synonym: "molecular entities" RELATED [IUPAC:]
-synonym: "molecular entity" EXACT IUPAC_NAME [IUPAC:]
-synonym: "molekulare Entitaet" RELATED [ChEBI:]
-is_a: CHEBI:24431 ! chemical entity
 
 [Term]
 id: CHEBI:24431
 name: chemical entity
 namespace: chebi_ontology
 def: "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." [CHEBI:Team]
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "chemical entity" EXACT [UniProt:]
-synonym: "grouped_by_chemistry" RELATED [ChEBI:]
 
 [Term]
 id: CHEBI:24432
 name: biological role
 namespace: chebi_ontology
 def: "A role played by the molecular entity or part thereof within a biological context." [CHEBI:Team]
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "biological function" RELATED [ChEBI:]
-synonym: "grouped_by_functions" RELATED [ChEBI:]
 is_a: CHEBI:50906 ! role
-
-[Term]
-id: CHEBI:25585
-name: nonmetal atom
-namespace: chebi_ontology
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "Nichtmetall" RELATED [ChEBI:]
-synonym: "Nichtmetalle" RELATED [ChEBI:]
-synonym: "no metal" RELATED [ChEBI:]
-synonym: "no metales" RELATED [ChEBI:]
-synonym: "non-metal" RELATED [ChEBI:]
-synonym: "non-metaux" RELATED [ChEBI:]
-synonym: "nonmetal" RELATED [ChEBI:]
-synonym: "nonmetal" EXACT IUPAC_NAME [IUPAC:]
-synonym: "nonmetals" RELATED [ChEBI:]
-is_a: CHEBI:33250 ! atom
 
 [Term]
 id: CHEBI:25944
 name: pesticide
 namespace: chebi_ontology
 def: "Strictly, a substance intended to kill pests. In common usage, any substance used for controlling, preventing, or destroying animal, microbiological or plant pests." [CHEBI:Team]
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "pesticide" EXACT IUPAC_NAME [IUPAC:]
-synonym: "pesticides" RELATED [ChEBI:]
-synonym: "Pestizid" RELATED [ChEBI:]
-synonym: "Pestizide" RELATED [ChEBI:]
 xref: Wikipedia:Pesticide
-xref: Wikipedia:Pesticide "Wikipedia"
 is_a: CHEBI:33232 ! application
 
 [Term]
@@ -134,300 +71,23 @@ id: CHEBI:33232
 name: application
 namespace: chebi_ontology
 def: "Intended use of the molecular entity or part thereof by humans." [CHEBI:Team]
-synonym: "." RELATED FORMULA [ChEBI:]
 is_a: CHEBI:50906 ! role
-
-[Term]
-id: CHEBI:33233
-name: fundamental particle
-namespace: chebi_ontology
-def: "A particle not known to have substructure." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "elementary particle" EXACT IUPAC_NAME [IUPAC:]
-synonym: "elementary particles" RELATED [ChEBI:]
-is_a: CHEBI:36342 ! subatomic particle
-
-[Term]
-id: CHEBI:33250
-name: atom
-namespace: chebi_ontology
-alt_id: CHEBI:22671
-alt_id: CHEBI:23907
-def: "A chemical entity constituting the smallest component of an element having the chemical properties of the element." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "atom" EXACT IUPAC_NAME [IUPAC:]
-synonym: "atome" RELATED [IUPAC:]
-synonym: "atomo" RELATED [IUPAC:]
-synonym: "atoms" RELATED [ChEBI:]
-synonym: "atomus" RELATED [ChEBI:]
-synonym: "element" RELATED [ChEBI:]
-synonym: "elements" RELATED [ChEBI:]
-is_a: CHEBI:24431 ! chemical entity
-relationship: has_part CHEBI:10545 ! electron
-relationship: has_part CHEBI:33252 ! atomic nucleus
 
 [Term]
 id: CHEBI:33281
 name: antimicrobial agent
 namespace: chebi_ontology
 def: "A substance that kills or slows the growth of microorganisms, including bacteria, viruses, fungi and protozoans." [CHEBI:Team]
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "antimicrobial" RELATED [ChEBI:]
 synonym: "antimicrobial" RELATED []
-synonym: "antimicrobials" RELATED [ChEBI:]
-synonym: "microbicide" RELATED [ChEBI:]
-synonym: "microbicides" RELATED [ChEBI:]
 synonym: "microbiocides" RELATED []
 is_a: CHEBI:24432 ! biological role
 is_a: CHEBI:25944 ! pesticide
-
-[Term]
-id: CHEBI:33284
-name: nutrient
-namespace: chebi_ontology
-def: "A nutrient is a chemical element needed by all life forms." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "nutrients" RELATED [ChEBI:]
-is_a: CHEBI:78295 ! food component
-
-[Term]
-id: CHEBI:33285
-name: heteroorganic entity
-namespace: chebi_ontology
-def: "A heteroorganic entity is an organic molecular entity in which carbon atoms or organic groups are bonded directly to one or more heteroatoms." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "heteroorganic entities" RELATED [ChEBI:]
-synonym: "organoelement compounds" RELATED [ChEBI:]
-is_a: CHEBI:50860 ! organic molecular entity
-
-[Term]
-id: CHEBI:33300
-name: pnictogen
-namespace: chebi_ontology
-def: "Any p-block element atom that is in group 15 of the periodic table: nitrogen, phosphorus, arsenic, antimony and bismuth." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "group 15 elements" RELATED [ChEBI:]
-synonym: "group V elements" RELATED [ChEBI:]
-synonym: "nitrogenoideos" RELATED [ChEBI:]
-synonym: "nitrogenoides" RELATED [ChEBI:]
-synonym: "pnictogene" RELATED [ChEBI:]
-synonym: "pnictogenes" RELATED [ChEBI:]
-synonym: "pnictogens" EXACT IUPAC_NAME [IUPAC:]
-is_a: CHEBI:33560 ! p-block element atom
-
-[Term]
-id: CHEBI:33302
-name: pnictogen molecular entity
-namespace: chebi_ontology
-def: "A p-block molecular entity containing any pnictogen." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "pnictogen molecular entities" RELATED [ChEBI:]
-synonym: "pnictogen molecular entity" EXACT [ChEBI:]
-is_a: CHEBI:33675 ! p-block molecular entity
-relationship: has_part CHEBI:33300 ! pnictogen
-
-[Term]
-id: CHEBI:33306
-name: carbon group element atom
-namespace: chebi_ontology
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "carbon group element" RELATED [ChEBI:]
-synonym: "carbon group elements" RELATED [ChEBI:]
-synonym: "carbonoides" RELATED [ChEBI:]
-synonym: "cristallogene" RELATED [ChEBI:]
-synonym: "cristallogenes" RELATED [ChEBI:]
-synonym: "group 14 elements" EXACT IUPAC_NAME [IUPAC:]
-synonym: "group IV elements" RELATED [ChEBI:]
-is_a: CHEBI:33560 ! p-block element atom
-
-[Term]
-id: CHEBI:33318
-name: main group element atom
-namespace: chebi_ontology
-def: "An atom belonging to one of the main groups (found in the s- and p- blocks) of the periodic table." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "Hauptgruppenelement" RELATED [ChEBI:]
-synonym: "Hauptgruppenelemente" RELATED [ChEBI:]
-synonym: "main group element" RELATED [ChEBI:]
-synonym: "main group elements" EXACT IUPAC_NAME [IUPAC:]
-is_a: CHEBI:33250 ! atom
-
-[Term]
-id: CHEBI:33560
-name: p-block element atom
-namespace: chebi_ontology
-def: "Any main group element atom belonging to the p-block of the periodic table." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "p-block element" RELATED [ChEBI:]
-synonym: "p-block elements" RELATED [ChEBI:]
-is_a: CHEBI:33318 ! main group element atom
-
-[Term]
-id: CHEBI:33579
-name: main group molecular entity
-namespace: chebi_ontology
-def: "A molecular entity containing one or more atoms from any of groups 1, 2, 13, 14, 15, 16, 17, and 18 of the periodic table." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "main group compounds" RELATED [ChEBI:]
-synonym: "main group molecular entities" RELATED [ChEBI:]
-is_a: CHEBI:23367 ! molecular entity
-relationship: has_part CHEBI:33318 ! main group element atom
-
-[Term]
-id: CHEBI:33582
-name: carbon group molecular entity
-namespace: chebi_ontology
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "carbon group molecular entities" RELATED [ChEBI:]
-synonym: "carbon group molecular entity" EXACT [ChEBI:]
-is_a: CHEBI:33675 ! p-block molecular entity
-relationship: has_part CHEBI:33306 ! carbon group element atom
-
-[Term]
-id: CHEBI:33675
-name: p-block molecular entity
-namespace: chebi_ontology
-def: "A p-block molecular entity is a molecular entity containing one or more atoms of a p-block element." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "p-block compounds" RELATED [ChEBI:]
-synonym: "p-block molecular entities" RELATED [ChEBI:]
-synonym: "p-block molecular entitiy" RELATED [ChEBI:]
-is_a: CHEBI:33579 ! main group molecular entity
-relationship: has_part CHEBI:33560 ! p-block element atom
-
-[Term]
-id: CHEBI:35352
-name: organonitrogen compound
-namespace: chebi_ontology
-def: "Any heteroorganic entity containing at least one carbon-nitrogen bond." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "organonitrogen compounds" EXACT IUPAC_NAME [IUPAC:]
-synonym: "organonitrogens" RELATED [ChEBI:]
-is_a: CHEBI:33285 ! heteroorganic entity
-is_a: CHEBI:51143 ! nitrogen molecular entity
-
-[Term]
-id: CHEBI:36338
-name: lepton
-namespace: chebi_ontology
-def: "Lepton is a fermion that does not experience the strong force (strong interaction). The term is derived from the Greek lambdaepsilonpitauomicronsigma (small, thin)." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "leptons" RELATED [ChEBI:]
-is_a: CHEBI:33233 ! fundamental particle
-is_a: CHEBI:36340 ! fermion
-
-[Term]
-id: CHEBI:36339
-name: baryon
-namespace: chebi_ontology
-def: "Baryon is a fermion that does experience the strong force (strong interaction). The term is derived from the Greek betaalpharhoupsilonsigma (heavy)." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "baryons" RELATED [ChEBI:]
-is_a: CHEBI:36340 ! fermion
-is_a: CHEBI:36344 ! hadron
-
-[Term]
-id: CHEBI:36340
-name: fermion
-namespace: chebi_ontology
-def: "Particle of half-integer spin quantum number following Fermi-Dirac statistics. Fermions are named after Enrico Fermi." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "fermion" EXACT IUPAC_NAME [IUPAC:]
-synonym: "fermions" RELATED [ChEBI:]
-is_a: CHEBI:36342 ! subatomic particle
-
-[Term]
-id: CHEBI:36342
-name: subatomic particle
-namespace: chebi_ontology
-def: "A particle smaller than an atom." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "subatomic particles" RELATED [ChEBI:]
-
-[Term]
-id: CHEBI:36343
-name: composite particle
-namespace: chebi_ontology
-def: "A subatomic particle known to have substructure (i.e. consisting of smaller particles)." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "composite particles" RELATED [ChEBI:]
-is_a: CHEBI:36342 ! subatomic particle
-
-[Term]
-id: CHEBI:36344
-name: hadron
-namespace: chebi_ontology
-def: "Hadron is a subatomic particle which experiences the strong force." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "hadrons" RELATED [ChEBI:]
-is_a: CHEBI:36343 ! composite particle
-
-[Term]
-id: CHEBI:36347
-name: nuclear particle
-namespace: chebi_ontology
-def: "A nucleus or any of its constituents in any of their energy states." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "nuclear particle" EXACT IUPAC_NAME [IUPAC:]
-is_a: CHEBI:36342 ! subatomic particle
-
-[Term]
-id: CHEBI:50860
-name: organic molecular entity
-namespace: chebi_ontology
-alt_id: CHEBI:25700
-alt_id: CHEBI:33244
-def: "Any molecular entity that contains carbon." []
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "organic compounds" RELATED [ChEBI:]
-synonym: "organic entity" RELATED [ChEBI:]
-synonym: "organic molecular entities" RELATED [ChEBI:]
-synonym: "organic molecules" RELATED [ChEBI:]
-is_a: CHEBI:33582 ! carbon group molecular entity
-relationship: has_part CHEBI:27594 ! carbon atom
 
 [Term]
 id: CHEBI:50906
 name: role
 namespace: chebi_ontology
 def: "A role is a particular behaviour which a material entity may exhibit." [CHEBI:Team]
-
-[Term]
-id: CHEBI:51143
-name: nitrogen molecular entity
-namespace: chebi_ontology
-alt_id: CHEBI:25556
-alt_id: CHEBI:7594
-synonym: "." RELATED FORMULA [ChEBI:]
-synonym: "nitrogen compounds" RELATED [ChEBI:]
-synonym: "nitrogen molecular entities" RELATED [ChEBI:]
-synonym: "Nitrogenous compounds" RELATED [KEGG COMPOUND:]
-xref: KEGG COMPOUND:C06061 "KEGG COMPOUND"
-is_a: CHEBI:33302 ! pnictogen molecular entity
-relationship: has_part CHEBI:25555 ! nitrogen atom
-
-[Term]
-id: CHEBI:52206
-name: biochemical role
-namespace: chebi_ontology
-def: "A biological role played by the molecular entity or part thereof within a biochemical context." []
-is_a: CHEBI:24432 ! biological role
-
-[Term]
-id: CHEBI:52211
-name: physiological role
-namespace: chebi_ontology
-is_a: CHEBI:24432 ! biological role
-
-[Term]
-id: CHEBI:78295
-name: food component
-namespace: chebi_ontology
-def: "Any substance that is distributed in foodstuffs. It includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental contaminants." []
-synonym: "dietary component" RELATED [ChEBI:]
-synonym: "dietary components" RELATED [ChEBI:]
-synonym: "food components" RELATED [ChEBI:]
-is_a: CHEBI:52211 ! physiological role
 
 [Term]
 id: GO:0000003
@@ -1586,6 +1246,21 @@ subset: gocheck_do_not_manually_annotate
 subset: goslim_pir
 subset: gosubset_prok
 synonym: "physiological response to stimulus" EXACT []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0051179
+name: localization
+namespace: biological_process
+def: "Any process in which a cell, a substance, or a cellular entity, such as a protein complex or organelle, is transported to or maintained in a specific location." [GOC:ai]
+subset: goslim_pir
+subset: gosubset_prok
+synonym: "establishment and maintenance of cellular component location" NARROW []
+synonym: "establishment and maintenance of localization" EXACT []
+synonym: "establishment and maintenance of position" EXACT []
+synonym: "establishment and maintenance of substance location" NARROW []
+synonym: "establishment and maintenance of substrate location" NARROW []
+synonym: "localisation" EXACT [GOC:mah]
 is_a: GO:0008150 ! biological_process
 
 [Term]
@@ -4228,8 +3903,6 @@ comment: This term was created to organize terms beneath it in the ontology. We 
 synonym: "alkaloid sensitivity phenotype" RELATED []
 xref: CHEBI:22315 "alkaloid"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
-intersection_of: OMP:0000274 ! antimicrobial agent resistance phenotype
-intersection_of: towards CHEBI:22315 ! alkaloid
 created_by: mchibucos
 creation_date: 2013-05-23T01:53:57Z
 
@@ -8996,6 +8669,15 @@ created_by: siegele
 creation_date: 2015-05-20T16:23:34Z
 
 [Term]
+id: OMP:0007223
+name: decreased spore germination
+namespace: pato.ontology
+def: "A spore germination phenotype where the percentage of spores that germinate is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0000095 ! spore germination phenotype
+created_by: dsiegele
+creation_date: 2015-06-01T16:03:03Z
+
+[Term]
 id: OMP:0007224
 name: endospore location phenotype
 def: "An endospore morphology phenotype that describes the characteristic  location of the mature spore in the mother cell (the sporangium)." [OMP:KDA]
@@ -9730,9 +9412,7 @@ name: has_part
 namespace: quality
 def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." [PATOC:CJM]
 comment: We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality 'swollen' necessarily comes with the qualities of 'protruding' and 'increased size'.
-xref: :BFO_0000051
 xref: BFO:0000051
-is_transitive: true
 
 [Typedef]
 id: has_quality
