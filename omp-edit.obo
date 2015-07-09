@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 04:07:2015 01:11
+date: 08:07:2015 22:18
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1603,7 +1603,7 @@ creation_date: 2011-06-07T11:19:56Z
 [Term]
 id: OMP:0000026
 name: host-virus interaction phenotype
-def: "A microbial phenotype related to the ability of a host to support growth of a virus." [OMP:JCH]
+def: "A microbial phenotype related to the ability of a host to be infected by and/or support reproduction of a virus." [OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "host-bacteriophage interaction phenotype" NARROW []
 synonym: "host-phage interaction phenotype" NARROW []
@@ -8803,7 +8803,7 @@ creation_date: 2015-06-29T17:56:42Z
 [Term]
 id: OMP:0007239
 name: absence of bacteriophage sensitivity
-def: "A bacteriophage sensitivity phenotype where a bacterium exhibits resistance to a bacteriophage." [OMP:DAS]
+def: "A bacteriophage sensitivity phenotype where a bacterium cannot be infected by and/or support reproduction of a bacteriophage." [OMP:DAS]
 synonym: "bacteriophage resistance" EXACT []
 is_a: OMP:0007237 ! bacteriophage sensitivity phenotype
 created_by: siegele
@@ -8837,7 +8837,7 @@ creation_date: 2015-07-04T00:13:56Z
 [Term]
 id: OMP:0007243
 name: altered bacteriophage sensitivity
-def: "A bacteriophage sensitivity phenotype that is altered relative to a designated control." [OMP:DAS]
+def: "A bacteriophage sensitivity phenotype where sensitivity of a bacterial cell or cells to a bacteriophage is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007237 ! bacteriophage sensitivity phenotype
 is_a: OMP:0007242 ! altered host-virus interaction
 created_by: siegele
@@ -8854,7 +8854,7 @@ creation_date: 2015-07-04T00:18:12Z
 [Term]
 id: OMP:0007245
 name: abolished sensitivity to bacteriophage
-def: "A decreased bacteriophage sensitivity phenotype where the sensitivity of a cell or cells to a bacteriophage is abolished." [OMP:DAS]
+def: "A decreased bacteriophage sensitivity phenotype where the sensitivity of a bacterial cell or cells to a bacteriophage is abolished." [OMP:DAS]
 is_a: OMP:0007239 ! absence of bacteriophage sensitivity
 is_a: OMP:0007244 ! decreased sensitivity to bacteriophage
 created_by: siegele
