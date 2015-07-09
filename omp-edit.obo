@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 08:07:2015 22:18
-saved-by: siegele
+date: 09:07:2015 16:50
+saved-by: snadendla
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -3564,7 +3564,7 @@ synonym: "antimicrobial compound sensitivity phenotype" RELATED []
 synonym: "antiviral resistance phenotype" NARROW []
 xref: CHEBI:33281 "antimicrobial agent"
 is_a: OMP:0000000 ! microbial phenotype
-intersection_of: OMP:0007195 ! resistance to chemical phenotype
+intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: towards CHEBI:33281 ! antimicrobial agent
 created_by: mchibucos
 creation_date: 2011-07-21T02:21:21Z
