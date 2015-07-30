@@ -8908,7 +8908,7 @@ creation_date: 2015-06-29T18:05:20Z
 [Term]
 id: OMP:0007241
 name: post-injection defect
-def: "An absence of bacteriophage sensitivity phenotype where a bacterium is resistant to a bacteriophage because it cannot support reproduction of the bacteriophage after absorption and injection.” [OMP:DAS]" []
+def: "An absence of bacteriophage sensitivity phenotype where a bacterium is resistant to a bacteriophage because it cannot support reproduction of the bacteriophage after absorption and injection." [OMP:DAS]
 is_a: OMP:0007239 ! absence of bacteriophage sensitivity
 created_by: siegele
 creation_date: 2015-06-29T18:09:11Z
