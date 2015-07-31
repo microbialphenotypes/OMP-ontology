@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 31:07:2015 00:21
+date: 31:07:2015 14:26
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3057,7 +3057,7 @@ creation_date: 2011-06-06T04:29:39Z
 id: OMP:0000197
 name: microbe-host interaction phenotype
 def: "A multiorganism interaction phenotype dealing with the interactions between microbial organisms and their hosts." [OMP:WAM]
-is_a: OMP:0005116 ! multicellular phenotype
+is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:25:01Z
 
@@ -8907,6 +8907,91 @@ def: "An altered chemical sensitivity phenotype where the sensitivity of a cell,
 is_a: OMP:0007250 ! decreased sensitivity to a chemical
 created_by: siegele
 creation_date: 2015-07-16T00:42:17Z
+
+[Term]
+id: OMP:0007252
+name: host colonization phenotype
+def: "A microbe-host interaction phenotype that relates to the ability of a microbe to colonize a host organism." [OMP:DAS]
+is_a: OMP:0000197 ! microbe-host interaction phenotype
+created_by: siegele
+creation_date: 2015-07-31T13:22:28Z
+
+[Term]
+id: OMP:0007253
+name: presence of colonization
+is_a: OMP:0007252 ! host colonization phenotype
+created_by: siegele
+creation_date: 2015-07-31T13:25:08Z
+
+[Term]
+id: OMP:0007254
+name: absence of colonization
+is_a: OMP:0007252 ! host colonization phenotype
+created_by: siegele
+creation_date: 2015-07-31T13:25:08Z
+
+[Term]
+id: OMP:0007255
+name: altered colonization
+is_a: OMP:0007252 ! host colonization phenotype
+created_by: siegele
+creation_date: 2015-07-31T13:25:08Z
+
+[Term]
+id: OMP:0007256
+name: Increased colonization
+is_a: OMP:0007255 ! altered colonization
+created_by: siegele
+creation_date: 2015-07-31T13:26:07Z
+
+[Term]
+id: OMP:0007257
+name: decreased colonization
+is_a: OMP:0007255 ! altered colonization
+created_by: siegele
+creation_date: 2015-07-31T13:26:07Z
+
+[Term]
+id: OMP:0007258
+name: abolished colonization
+is_a: OMP:0007257 ! decreased colonization
+created_by: siegele
+creation_date: 2015-07-31T13:26:07Z
+
+[Term]
+id: OMP:0007259
+name: viability phenotype
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2015-07-31T13:47:33Z
+
+[Term]
+id: OMP:0007260
+name: altered viability
+is_a: OMP:0007259 ! viability phenotype
+created_by: siegele
+creation_date: 2015-07-31T14:00:54Z
+
+[Term]
+id: OMP:0007261
+name: decreased viability
+is_a: OMP:0007260 ! altered viability
+created_by: siegele
+creation_date: 2015-07-31T14:00:54Z
+
+[Term]
+id: OMP:0007262
+name: increased viability
+is_a: OMP:0007260 ! altered viability
+created_by: siegele
+creation_date: 2015-07-31T14:00:54Z
+
+[Term]
+id: OMP:0007263
+name: viable but nonculturable
+is_a: OMP:0007260 ! altered viability
+created_by: siegele
+creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0008000
