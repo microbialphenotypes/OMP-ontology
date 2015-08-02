@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 31:07:2015 14:26
+date: 02:08:2015 14:17
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2143,7 +2143,7 @@ creation_date: 2011-02-02T03:23:41Z
 id: OMP:0000090
 name: lifespan phenotype
 def: "A growth phenotype dealing with the lifespan of a cell or organism." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0007259 ! viability phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:24:11Z
 
@@ -2868,8 +2868,8 @@ creation_date: 2011-02-02T03:13:32Z
 
 [Term]
 id: OMP:0000174
-name: growth phenotype
-def: "A microbial phenotype related to the increase in size or mass of an organism, a part of an organism, or a cell." [GO:0040007, OMP:WAM]
+name: organismal growth phenotype
+def: "A microbial phenotype related to the increase in size or mass of an organism or a part of an organism." [GO:0040007, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0040007 "growth"
 is_a: OMP:0000000 ! microbial phenotype
@@ -2899,7 +2899,7 @@ creation_date: 2011-02-02T03:17:19Z
 id: OMP:0000177
 name: liquid culture morphology phenotype
 def: "A growth phenotype dealing with the morphological characteristics of a culture growing in a liquid medium." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0007167 ! population growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:20:39Z
 
@@ -3504,7 +3504,7 @@ creation_date: 2011-07-21T01:05:42Z
 id: OMP:0000255
 name: plating morphology phenotype
 def: "A growth phenotype related to the morphology of colonies on solid medium." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0007167 ! population growth phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T01:34:48Z
 
@@ -3580,18 +3580,21 @@ creation_date: 2011-07-21T02:37:15Z
 
 [Term]
 id: OMP:0000282
-name: increased growth rate
-def: "An altered growth phenotype where the growth rate is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007115 ! altered growth rate phenotype
+name: slower growth rate
+def: "An altered growth rate phenotype where the rate at which a cell or cells multiplies is decreased relative to a designated control." [OMP:DAS]
+synonym: "decreased growth rate (generations per unit time)" RELATED []
+synonym: "increased generation time" EXACT []
+is_a: OMP:0007115 ! altered growth rate
 created_by: mchibucos
 creation_date: 2011-07-21T02:43:01Z
 
 [Term]
 id: OMP:0000283
-name: decreased growth rate
-def: "An altered growth phenotype where the growth rate is decreased relative to a designated control." [OMP:DAS]
-synonym: "slow growth rate" RELATED []
-is_a: OMP:0007115 ! altered growth rate phenotype
+name: faster growth rate
+def: "An altered growth rate phenotype where the rate at which a cell or cells multiplies is increased relative to a designated control." [OMP:DAS]
+synonym: "decreased generation time" EXACT []
+synonym: "increased growth rate (generations per unit time)" RELATED []
+is_a: OMP:0007115 ! altered growth rate
 created_by: mchibucos
 creation_date: 2011-07-21T02:43:22Z
 
@@ -4843,9 +4846,10 @@ creation_date: 2014-01-21T12:13:04Z
 
 [Term]
 id: OMP:0005100
-name: erythromycin dependent growth
-def: "A growth phenotype where growth is dependent on the presence of erythromycin." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
+name: macrolide dependent growth
+def: "A growth phenotype where growth is dependent on the presence of a macrolide." [OMP:WAM]
+synonym: "erythromycin dependent growth" NARROW []
+is_a: OMP:0007167 ! population growth phenotype
 created_by: wmeza
 creation_date: 2014-02-11T11:53:51Z
 
@@ -4853,7 +4857,8 @@ creation_date: 2014-02-11T11:53:51Z
 id: OMP:0005101
 name: aminoglycoside dependent growth
 def: "A growth phenotype where growth is dependent on the presence of an aminoglycoside." [OMP:WAM]
-is_a: OMP:0000174 ! growth phenotype
+synonym: "streptomycin dependent growth" NARROW []
+is_a: OMP:0007167 ! population growth phenotype
 created_by: wmeza
 creation_date: 2014-02-11T11:54:51Z
 
@@ -4953,7 +4958,7 @@ def: "A growth phenotype that relates to the progression of biochemical and morp
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "cell division phenotype" RELATED []
 xref: GO:0007049 "cell cycle"
-is_a: OMP:0007167 ! reproduction phenotype
+is_a: OMP:0007167 ! population growth phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:54:52Z
 
@@ -7276,8 +7281,8 @@ name: asexual reproduction phenotype
 def: "A microbial phenotype related to asexual reproduction, the biological process in which new individuals are produced by either a single cell or by a group of cells in the absence of any sexual process." [ISBN:0673521435, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0019954 "asexual reproduction"
-is_a: OMP:0007167 ! reproduction phenotype
-intersection_of: OMP:0007167 ! reproduction phenotype
+is_a: OMP:0007167 ! population growth phenotype
+intersection_of: OMP:0007167 ! population growth phenotype
 intersection_of: inheres_in GO:0019954 ! asexual reproduction
 created_by: siegele
 creation_date: 2014-02-03T15:55:25Z
@@ -7713,10 +7718,12 @@ creation_date: 2014-07-17T14:28:35Z
 
 [Term]
 id: OMP:0007115
-name: altered growth rate phenotype
-def: "A growth phenotype where the growth rate of a cell or cells is altered relative to a designated control." [OMP:DAS]
+name: altered growth rate
+def: "A population growth phenotype where the rate at which a cell or cells multiplies is altered relative to a designated control." [OMP:DAS]
+synonym: "altered doubling time" EXACT []
+synonym: "altered generation time" RELATED []
 is_a: OMP:0007156 ! growth rate phenotype
-is_a: OMP:0007157 ! altered growth
+is_a: OMP:0007157 ! altered population growth
 created_by: siegele
 creation_date: 2014-07-17T16:29:34Z
 
@@ -8046,7 +8053,7 @@ creation_date: 2014-08-27T22:56:03Z
 id: OMP:0007152
 name: persister cell phenotype
 def: "A growth phenotype related to persister cells, which are dormant variants of vegetatively growing cells that form stochastically in microbial populations. Persister cells are highly resistant to antibiotics." [OMP:DAS, PMID:20528688]
-is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0007167 ! population growth phenotype
 created_by: siegele
 creation_date: 2014-08-28T11:55:19Z
 
@@ -8055,7 +8062,7 @@ id: OMP:0007153
 name: altered persister cell phenotype
 def: "A persister cell phenotype where the character or frequency of persister cells in a microbial population is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007152 ! persister cell phenotype
-is_a: OMP:0007157 ! altered growth
+is_a: OMP:0007157 ! altered population growth
 created_by: siegele
 creation_date: 2014-08-28T11:57:56Z
 
@@ -8079,16 +8086,16 @@ creation_date: 2014-08-28T12:00:42Z
 id: OMP:0007156
 name: growth rate phenotype
 def: "A growth phenotype concerning the rate at which the number of organisms or cells in a microbial population increases over time." [OMP:DAS]
-is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0007167 ! population growth phenotype
 created_by: siegele
 creation_date: 2014-08-28T12:14:20Z
 
 [Term]
 id: OMP:0007157
-name: altered growth
-def: "A growth phenotype where some aspect of growth of a microbial cell, entity, organism, or population is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000174 ! growth phenotype
+name: altered population growth
+def: "A population growth phenotype where reproduction of a microbial population is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007167 ! population growth phenotype
 created_by: siegele
 creation_date: 2014-08-28T12:15:47Z
 
@@ -8179,7 +8186,7 @@ creation_date: 2014-09-14T15:36:38Z
 
 [Term]
 id: OMP:0007167
-name: reproduction phenotype
+name: population growth phenotype
 def: "A microbial phenotype related to reproduction, the biological process of producing new individuals from one or two organisms." [OMP:DAS]
 xref: GO:0000003 "reproduction"
 is_a: OMP:0000000 ! microbial phenotype
@@ -8396,7 +8403,7 @@ creation_date: 2014-10-04T01:44:57Z
 id: OMP:0007192
 name: growth range phenotype
 def: "A growth phenotype related to non-nutrient environmental factors and the requirements for microbial growth." [ISBN:9780073402406, OMP:DAS]
-is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0007167 ! population growth phenotype
 created_by: siegele
 creation_date: 2014-10-04T18:41:07Z
 
