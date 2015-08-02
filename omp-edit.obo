@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 02:08:2015 14:17
+date: 02:08:2015 17:04
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -8968,6 +8968,7 @@ creation_date: 2015-07-31T13:26:07Z
 [Term]
 id: OMP:0007259
 name: viability phenotype
+def: "A microbial phenotype related to the ability of an organism to survive and/or reproduce." [OMP:DAS]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:47:33Z
@@ -8975,6 +8976,7 @@ creation_date: 2015-07-31T13:47:33Z
 [Term]
 id: OMP:0007260
 name: altered viability
+def: "A viability phenotype where the ability of an organism to survive and/or reproduce is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007259 ! viability phenotype
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
