@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 11:08:2015 16:49
+date: 11:08:2015 16:55
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -9051,6 +9051,14 @@ name: abolished drug dependence for growth
 is_a: OMP:0007269 ! decreased drug dependence for growth
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
+
+[Term]
+id: OMP:0007271
+name: increased sensitivity to bacteriophage
+def: "An altered bacteriophage sensitivity phenotype where the sensitivity of a cell or cells to a bacteriophage is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007243 ! altered bacteriophage sensitivity
+created_by: siegele
+creation_date: 2015-08-11T16:54:13Z
 
 [Term]
 id: OMP:0008000
