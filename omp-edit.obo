@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 11:08:2015 16:55
+date: 15:08:2015 19:26
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -8678,7 +8678,6 @@ creation_date: 2015-05-20T16:23:34Z
 [Term]
 id: OMP:0007223
 name: decreased spore germination
-namespace: pato.ontology
 def: "A spore germination phenotype where the percentage of spores that germinate is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000095 ! spore germination phenotype
 created_by: dsiegele
@@ -9004,51 +9003,57 @@ creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007264
-name: drug dependent growth phenotype
-def: "A population growth phenotype related to whether multiplication of an organism is dependent upon the presence of a drug in the growth medium." [OMP:DAS]
+name: drug-dependent population growth phenotype
+def: "A population growth phenotype related to whether reproduction of an organism is dependent on the presence of a drug in the growth medium." [OMP:DAS]
 is_a: OMP:0007167 ! population growth phenotype
 created_by: siegele
 creation_date: 2015-08-03T14:04:45Z
 
 [Term]
 id: OMP:0007265
-name: presence of drug dependent growth
-is_a: OMP:0007264 ! drug dependent growth phenotype
+name: presence of drug-dependent population growth
+def: "A drug-dependent population growth phenotype where reproduction of an organism is dependent on the presence of a drug in the growth medium." [OMP:DAS]
+is_a: OMP:0007264 ! drug-dependent population growth phenotype
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
 
 [Term]
 id: OMP:0007266
-name: absence of drug dependent growth
-is_a: OMP:0007264 ! drug dependent growth phenotype
+name: absence of drug-dependent population growth
+def: "A drug-dependent population growth phenotype where reproduction of an organism is NOT dependent on the presence of a drug in the growth medium." [OMP:DAS]
+is_a: OMP:0007264 ! drug-dependent population growth phenotype
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
 
 [Term]
 id: OMP:0007267
-name: altered drug dependence for growth
-is_a: OMP:0007264 ! drug dependent growth phenotype
+name: altered drug-dependent population growth
+def: "A drug-dependent population growth phenotype where dependence of reproduction on the presence of a drug in the growth medium is altered relative to a designated control." [OMP:REF]
+is_a: OMP:0007264 ! drug-dependent population growth phenotype
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
 
 [Term]
 id: OMP:0007268
 name: increased drug dependence for growth
-is_a: OMP:0007267 ! altered drug dependence for growth
+def: "An altered drug-dependent population growth phenotype where dependence of reproduction on the presence of a drug in the growth medium is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007267 ! altered drug-dependent population growth
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
 
 [Term]
 id: OMP:0007269
-name: decreased drug dependence for growth
-is_a: OMP:0007267 ! altered drug dependence for growth
+name: decreased drug-dependent population growth
+def: "An altered drug-dependent population growth phenotype where dependence of reproduction on the presence of a drug in the growth medium is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007267 ! altered drug-dependent population growth
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
 
 [Term]
 id: OMP:0007270
-name: abolished drug dependence for growth
-is_a: OMP:0007269 ! decreased drug dependence for growth
+name: abolished drug-dependent population growth
+def: "A decreased drug-dependent population growth phenotype where dependence of reproduction on the presence of a drug in the growth medium is abolished." [OMP:DAS]
+is_a: OMP:0007269 ! decreased drug-dependent population growth
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
 
