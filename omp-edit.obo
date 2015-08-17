@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 15:08:2015 19:26
+date: 16:08:2015 20:26
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -9027,7 +9027,7 @@ creation_date: 2015-08-03T14:07:51Z
 
 [Term]
 id: OMP:0007267
-name: altered drug-dependent population growth
+name: altered drug-dependence of population growth
 def: "A drug-dependent population growth phenotype where dependence of reproduction on the presence of a drug in the growth medium is altered relative to a designated control." [OMP:REF]
 is_a: OMP:0007264 ! drug-dependent population growth phenotype
 created_by: siegele
@@ -9035,25 +9035,25 @@ creation_date: 2015-08-03T14:07:51Z
 
 [Term]
 id: OMP:0007268
-name: increased drug dependence for growth
+name: increased drug-dependence of population growth
 def: "An altered drug-dependent population growth phenotype where dependence of reproduction on the presence of a drug in the growth medium is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007267 ! altered drug-dependent population growth
+is_a: OMP:0007267 ! altered drug-dependence of population growth
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
 
 [Term]
 id: OMP:0007269
-name: decreased drug-dependent population growth
+name: decreased drug-dependence of population growth
 def: "An altered drug-dependent population growth phenotype where dependence of reproduction on the presence of a drug in the growth medium is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007267 ! altered drug-dependent population growth
+is_a: OMP:0007267 ! altered drug-dependence of population growth
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
 
 [Term]
 id: OMP:0007270
-name: abolished drug-dependent population growth
+name: abolished drug-dependence of population growth
 def: "A decreased drug-dependent population growth phenotype where dependence of reproduction on the presence of a drug in the growth medium is abolished." [OMP:DAS]
-is_a: OMP:0007269 ! decreased drug-dependent population growth
+is_a: OMP:0007269 ! decreased drug-dependence of population growth
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
 
