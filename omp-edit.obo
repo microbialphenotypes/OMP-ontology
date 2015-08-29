@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 16:08:2015 20:26
+date: 28:08:2015 15:42
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2962,6 +2962,7 @@ creation_date: 2011-02-07T03:52:44Z
 id: OMP:0000184
 name: obligate anaerobe
 def: "An oxygen growth range phenotype where growth does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
+synonym: "strict anaerobe" EXACT []
 is_a: OMP:0000039 ! oxygen growth range phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:34Z
@@ -2970,6 +2971,7 @@ creation_date: 2011-02-02T03:29:34Z
 id: OMP:0000185
 name: obligate aerobe
 def: "An oxygen growth range phenotype where growth is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
+synonym: "strict aerobe" EXACT []
 is_a: OMP:0000039 ! oxygen growth range phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
@@ -5670,7 +5672,7 @@ def: "An antimicrobial agent resistance phenotype related to resistance or sensi
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
-synonym: "kanamycin" NARROW []
+synonym: "kanamycin (CHEBI:6104)" NARROW []
 synonym: "neomycin" NARROW []
 synonym: "streptomycin" NARROW []
 synonym: "tobramycin" NARROW []
@@ -8976,6 +8978,7 @@ creation_date: 2015-07-31T13:47:33Z
 id: OMP:0007260
 name: altered viability
 def: "A viability phenotype where the ability of an organism to survive and/or reproduce is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007085 ! altered phenotype
 is_a: OMP:0007259 ! viability phenotype
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
