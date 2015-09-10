@@ -5,7 +5,7 @@ The master branch is the main development trunk for OMP and contains the followi
      ii) archived_files - Do not use these files. They exist only for archival reasons.
      iii) microbial_phenotypes.obo - previous version of OMP, now deprecated. Upon commits to version r75 and r76, this file became omp.obo and omp-edit.obo.
 
-Tags contains stable release files.  The newest release is found in the directory LATEST.
+The tags branch contains stable release files.  The newest release is found in the directory LATEST.
 
 Other files:
 The deprecated file "microbial_observable_ontology" was previously removed
