@@ -1,16 +1,14 @@
-This directory contains ontology files for the Ontology of Microbial Phenotypes (OMP). 
+This repository contains the ontology files for the Ontology of Microbial Phenotypes (OMP). 
 
-The master branch is the main development trunk for OMP and contains the following files:
-     i) omp-edit.obo - Editors' version of OMP. This is a working copy and should not be considered stable.
-     ii) archived_files - Do not use these files. They exist only for archival reasons.
-     iii) microbial_phenotypes.obo - previous version of OMP, now deprecated. Upon commits to version r75 and r76, this file became omp.obo and omp-edit.obo.
+The master branch contains the following files:
+     - archived_files - Do not use these files. They exist only for archival reasons.
+     - omp-edit.obo - Editors' version of OMP. This is a working copy and should not be considered stable.
+     - most recent stable releases of the ontology:
+          omp-simple.obo - The file 'omp-simple.obo' contains only OMP terms
+          omp.obo - The file 'omp.obo' includes both OMP terms, terms from external ontologies, and logical definitions. 
+          omp.owl - The file 'omp.owl' 
+     - other files - The deprecated file 'microbial_observable_ontology' (r23) was previously removed.
+     
+Previous releases of OMP can be accessed from the tags branch. 
 
-The tags branch contains stable release files.  The newest release is found in the directory LATEST.
-
-Other files:
-The deprecated file "microbial_observable_ontology" was previously removed
-(r23).
-
-
-Please submit term requests and questions to: 
-You can also contact us at microbialphenotypes@gmail.com
+Please submit term requests and questions using the Issues tracker in the right side bar. You can also contact us at microbialphenotypes@gmail.com
