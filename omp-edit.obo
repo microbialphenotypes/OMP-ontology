@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 28:08:2015 15:42
+date: 28:09:2015 15:31
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -5616,7 +5616,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006050
 name: not resistant to bacteriocin
-def: "A bacteriocin compound resistance phenotype where an organism or cell is sensitive to one or more bacteriocins." [OMP:JCH]
+def: "A bacteriocin resistance phenotype where an organism or cell is sensitive to one or more bacteriocins." [OMP:JCH]
 synonym: "bacteriocin sensitivity" RELATED []
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
@@ -5625,7 +5625,7 @@ creation_date: 2013-10-11T17:44:39Z
 [Term]
 id: OMP:0006051
 name: resistant to bacteriocin
-def: "A bacteriocin compound resistance phenotype where an organism or cell is resistant to one or more bacteriocins." [OMP:JCH]
+def: "A bacteriocin resistance phenotype where an organism or cell is resistant to one or more bacteriocins." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:44:39Z
@@ -7892,7 +7892,7 @@ creation_date: 2014-08-17T12:52:35Z
 [Term]
 id: OMP:0007134
 name: altered antimicrobial agent resistance phenotype
-def: "An antimicrobial agent resistance phenotype where resistance to an antimicrobial compound is altered relative to a designated control." [OMP:DAS]
+def: "An antimicrobial agent resistance phenotype where resistance to an antimicrobial agent is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -8189,7 +8189,7 @@ creation_date: 2014-09-14T15:36:38Z
 [Term]
 id: OMP:0007167
 name: population growth phenotype
-def: "A microbial phenotype related to reproduction, the biological process of producing new individuals from one or two organisms." [OMP:DAS]
+def: "A microbial phenotype where the trait in question is the increase in the number of individuals in a population as the result of sexual or asexual reproduction." [OMP:DAS]
 xref: GO:0000003 "reproduction"
 is_a: OMP:0000000 ! microbial phenotype
 is_a: OMP:0007194 ! biological process phenotype
@@ -8802,15 +8802,15 @@ creation_date: 2015-06-29T17:35:29Z
 
 [Term]
 id: OMP:0007238
-name: presence of bacteriophage sensitivity
-def: "A bacteriophage sensitivity phenotype where a bacterium exhibits sensitivity to infection by a bacteriophage." [OMP:DAS]
+name: sensitive to bacteriophage
+def: "A bacteriophage sensitivity phenotype where a bacterium exhibits sensitivity to a bacteriophage." [OMP:DAS]
 is_a: OMP:0007237 ! bacteriophage sensitivity phenotype
 created_by: siegele
 creation_date: 2015-06-29T17:56:42Z
 
 [Term]
 id: OMP:0007239
-name: absence of bacteriophage sensitivity
+name: not sensitive to bacteriophage
 def: "A bacteriophage sensitivity phenotype where a bacterium cannot be infected by and/or support reproduction of a bacteriophage." [OMP:DAS]
 synonym: "bacteriophage resistance" EXACT []
 is_a: OMP:0007237 ! bacteriophage sensitivity phenotype
@@ -8819,9 +8819,9 @@ creation_date: 2015-06-29T18:02:50Z
 
 [Term]
 id: OMP:0007240
-name: injection defect
-def: "An absence of bacteriophage sensitivity phenotype where a bacterium is resistant to a bacteriophage because the cell or cells are defective for adsorption or injection of the bacteriophage." [OMP:DAS]
-is_a: OMP:0007239 ! absence of bacteriophage sensitivity
+name: decreased bacteriophage absorption
+def: "An absence of bacteriophage sensitivity phenotype where a bacterium is resistant to a bacteriophage because the cell or cells are defective for adsorption of the bacteriophage." [OMP:DAS]
+is_a: OMP:0007244 ! decreased sensitivity to bacteriophage
 created_by: siegele
 creation_date: 2015-06-29T18:05:20Z
 
@@ -8829,7 +8829,7 @@ creation_date: 2015-06-29T18:05:20Z
 id: OMP:0007241
 name: post-injection defect
 def: "An absence of bacteriophage sensitivity phenotype where a bacterium is resistant to a bacteriophage because it cannot support reproduction of the bacteriophage after absorption and injection." [OMP:DAS]
-is_a: OMP:0007239 ! absence of bacteriophage sensitivity
+is_a: OMP:0007244 ! decreased sensitivity to bacteriophage
 created_by: siegele
 creation_date: 2015-06-29T18:09:11Z
 
@@ -8863,7 +8863,7 @@ creation_date: 2015-07-04T00:18:12Z
 id: OMP:0007245
 name: abolished sensitivity to bacteriophage
 def: "A decreased bacteriophage sensitivity phenotype where the sensitivity of a bacterial cell or cells to a bacteriophage is abolished." [OMP:DAS]
-is_a: OMP:0007239 ! absence of bacteriophage sensitivity
+is_a: OMP:0007239 ! not sensitive to bacteriophage
 is_a: OMP:0007244 ! decreased sensitivity to bacteriophage
 created_by: siegele
 creation_date: 2015-07-04T00:20:54Z
@@ -9067,6 +9067,33 @@ def: "An altered bacteriophage sensitivity phenotype where the sensitivity of a 
 is_a: OMP:0007243 ! altered bacteriophage sensitivity
 created_by: siegele
 creation_date: 2015-08-11T16:54:13Z
+
+[Term]
+id: OMP:0007272
+name: decreased absorption of bacteriocin
+def: "An increased resistance to bacteriocin phenotype that results from decreased absorption of the bacteriocin to cells." [OMP:DAS]
+synonym: "bacteriocin tolerance" EXACT []
+synonym: "colicin tolerance" NARROW []
+is_a: OMP:0006049 ! increased resistance to bacteriocin
+created_by: siegele
+creation_date: 2015-09-24T20:41:51Z
+
+[Term]
+id: OMP:0007273
+name: bacteriocin post-absorption defect
+def: "An increased resistance to bacteriocin phenotype due to a xx." [OMP:DAS]
+is_a: OMP:0006049 ! increased resistance to bacteriocin
+created_by: siegele
+creation_date: 2015-09-24T20:45:00Z
+
+[Term]
+id: OMP:0007274
+name: mixotrophic phenotype
+def: "A metabolic phenotype where an organism can switch between using different sources of energy and/or carbon instead of having a single trophic mode. For example, an organism may switch between autotrophic and heterotrophic growth or between phototrophic and chemoorganotrophic growth." [OMP:DAS]
+is_a: OMP:0000224 ! energy metabolism phenotype
+is_a: OMP:0006023 ! carbon source utilization phenotype
+created_by: siegele
+creation_date: 2015-09-28T15:12:37Z
 
 [Term]
 id: OMP:0008000
