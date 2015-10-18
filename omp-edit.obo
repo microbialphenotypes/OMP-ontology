@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 17:10:2015 17:46
+date: 17:10:2015 20:02
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -9093,6 +9093,14 @@ is_a: OMP:0000224 ! energy metabolism phenotype
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: siegele
 creation_date: 2015-09-28T15:12:37Z
+
+[Term]
+id: OMP:0007275
+name: altered frequency of flagellar rotation reversal 
+def: "An altered motility phenotype where the frequency with which the direction of flagellar rotation reverses is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007001 ! altered cell motility
+created_by: siegele
+creation_date: 2015-10-17T19:56:02Z
 
 [Term]
 id: OMP:0008000
