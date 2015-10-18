@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 28:09:2015 15:31
+date: 17:10:2015 17:46
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -9071,17 +9071,16 @@ creation_date: 2015-08-11T16:54:13Z
 [Term]
 id: OMP:0007272
 name: decreased absorption of bacteriocin
-def: "An increased resistance to bacteriocin phenotype that results from decreased absorption of the bacteriocin to cells." [OMP:DAS]
-synonym: "bacteriocin tolerance" EXACT []
-synonym: "colicin tolerance" NARROW []
+def: "An increased resistance to bacteriocin phenotype that results from decreased binding of the bacteriocin to cells." [OMP:DAS]
 is_a: OMP:0006049 ! increased resistance to bacteriocin
 created_by: siegele
 creation_date: 2015-09-24T20:41:51Z
 
 [Term]
 id: OMP:0007273
-name: bacteriocin post-absorption defect
-def: "An increased resistance to bacteriocin phenotype due to a xx." [OMP:DAS]
+name: bacteriocin tolerant
+def: "An increased resistance to bacteriocin phenotype where cells still bind the bacteriocin but are resistant to its effects." [OMP:DAS, PMID:4860908]
+synonym: "colicin tolerant" NARROW []
 is_a: OMP:0006049 ! increased resistance to bacteriocin
 created_by: siegele
 creation_date: 2015-09-24T20:45:00Z
