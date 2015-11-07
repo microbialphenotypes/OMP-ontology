@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 17:10:2015 20:28
+date: 07:11:2015 13:37
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -9098,9 +9098,17 @@ creation_date: 2015-09-28T15:12:37Z
 id: OMP:0007275
 name: altered frequency of flagellar rotation reversal
 def: "An altered motility phenotype where the frequency with which the direction of flagellar rotation reverses is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007001 ! altered cell motility
+is_a: OMP:0007127 ! altered taxis
 created_by: siegele
 creation_date: 2015-10-17T19:56:02Z
+
+[Term]
+id: OMP:0007276
+name: increased threshold for positive chemotaxis
+def: "A decreased positive chemotaxis phenotype where the threshold concentration for responding to an attractant is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007275 ! altered frequency of flagellar rotation reversal
+created_by: siegele
+creation_date: 2015-11-07T13:32:21Z
 
 [Term]
 id: OMP:0008000
