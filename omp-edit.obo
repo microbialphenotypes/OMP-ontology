@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 10:11:2015 19:31
+date: 12:11:2015 00:50
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -9109,6 +9109,23 @@ def: "A decreased positive chemotaxis phenotype where the threshold concentratio
 is_a: OMP:0007275 ! altered frequency of reversing direction of flagellar rotation
 created_by: siegele
 creation_date: 2015-11-07T13:32:21Z
+
+[Term]
+id: OMP:0007277
+name: cell wall phenotype
+def: "A cell envelope phenotype where the trait in question is the cell wall, a usually rigid, permeable structure that surrounds the plasma membrane and provides some degree of  physical support to cells." [OMP:DAS]
+is_a: OMP:0000085 ! cell envelope phenotype
+created_by: siegele
+creation_date: 2015-11-11T15:41:37Z
+
+[Term]
+id: OMP:0007278
+name: disproportionation of thiosulfate
+def: "A chemolithotrophic phenotype where the biological disproportionation of thiosulfate occurs via an intramolecular redox change at each of the sulfur atoms and produces 1 mol of sulfate and 1 mol of sulfide." [OMP:DAS, PMID:10919837]
+comment: thiosulfate + H2O --> SO42- + HS- + H+.
+is_a: OMP:0007110 ! chemolithotrophic
+created_by: siegele
+creation_date: 2015-11-12T00:46:14Z
 
 [Term]
 id: OMP:0008000
