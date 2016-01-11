@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 10:01:2016 01:05
+date: 11:01:2016 01:18
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -6166,8 +6166,6 @@ id: OMP:0006111
 name: abolished chromosome segregation
 def: "A decreased frequency of chromosome segregation phenotype where the ability to segregate chromosomes is abolished." [OMP:JCH]
 is_a: OMP:0005061 ! decreased frequency of chromosome segregation
-intersection_of: OMP:0005061 ! decreased frequency of chromosome segregation
-intersection_of: has_quality PATO:0000462 ! absent
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:24:27Z
 
