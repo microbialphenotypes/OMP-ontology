@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2015-12-04
-date: 12:11:2015 00:50
+data-version: releases/2016-01-15
+date: 10:01:2016 01:05
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -129,7 +129,7 @@ creation_date: 2011-04-26T02:59:42Z
 
 [Term]
 id: OMP:0000011
-name: non-heterocyst forming
+name: absence of heterocysts
 def: "A heterocyst formation phenotype where an organism does not possess the ability to differentiate into a heterocyst." [OMP:MCC]
 is_a: OMP:0000092 ! heterocyst formation phenotype
 created_by: mchibucos
@@ -137,9 +137,9 @@ creation_date: 2011-04-26T02:59:42Z
 
 [Term]
 id: OMP:0000012
-name: abolished spore germination
+name: abolished spore germination efficiency
 def: "A decreased spore germination phenotype where no spores germinate." [OMP:MCC]
-is_a: OMP:0007223 ! decreased spore germination
+is_a: OMP:0007223 ! decreased spore germination efficiency
 created_by: mchibucos
 creation_date: 2011-04-26T03:01:38Z
 
@@ -170,7 +170,7 @@ creation_date: 2011-04-26T03:05:35Z
 [Term]
 id: OMP:0000016
 name: delayed spore germination
-def: "A spore germination phenotype where a spore undergoes germination after a longer dormancy period than usual." [OMP:MCC]
+def: "A spore germination phenotype where a spore undergoes germination after a longer than usual dormancy period." [OMP:MCC]
 is_a: OMP:0000095 ! spore germination phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:07:11Z
@@ -542,6 +542,7 @@ id: OMP:0000066
 name: abolished virulence
 def: "A decreased virulence phenotype where the ability to cause disease is abolished." [OMP:MCC]
 is_a: OMP:0000061 ! decreased virulence
+is_a: OMP:0000065 ! avirulent
 created_by: mchibucos
 creation_date: 2011-04-26T05:09:24Z
 
@@ -852,7 +853,7 @@ creation_date: 2011-06-07T03:17:22Z
 id: OMP:0000100
 name: colony morphology phenotype
 def: "A multicellular phenotype dealing with the physical characteristics of an assemblage of microorganisms growing on a solid surface such as the surface of an agar culture medium." [ISBN:9780073302089, OMP:WAM]
-is_a: OMP:0005116 ! multicellular phenotype
+is_a: OMP:0007167 ! population growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:14:39Z
 
@@ -1859,7 +1860,7 @@ creation_date: 2011-02-03T04:44:11Z
 [Term]
 id: OMP:0000221
 name: enzymatic activity phenotype
-def: "A metabolic phenotype that deals with selective catalysts that modify rate and specificity of metabolic reactions." [OMP:JCH]
+def: "A protein activity phenotype where the trait in question is the activity of an enzyme." [OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000180 ! metabolic phenotype
 is_a: OMP:0000269 ! protein activity phenotype
@@ -2136,8 +2137,9 @@ creation_date: 2011-07-21T02:02:26Z
 [Term]
 id: OMP:0000269
 name: protein activity phenotype
-def: "A microbial phenotype dealing with enzymatic or other type of protein activity." [OMP:WAM]
+def: "A microbial phenotype related to the enzymatic or other activity of a protein." [APO:0000022, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000022 "protein activity"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:05:51Z
@@ -3439,7 +3441,7 @@ creation_date: 2014-02-11T11:54:51Z
 id: OMP:0005102
 name: increased enzyme activity
 def: "An altered enzyme activity phenotype where enzyme activity is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0005130 ! altered enzymatic activity phenotype
+is_a: OMP:0005130 ! altered enzymatic activity
 created_by: wmeza
 creation_date: 2014-04-17T10:54:45Z
 
@@ -3447,7 +3449,7 @@ creation_date: 2014-04-17T10:54:45Z
 id: OMP:0005103
 name: decreased enzyme activity
 def: "An altered enzyme activity phenotype where there the activity of an enzyme is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0005130 ! altered enzymatic activity phenotype
+is_a: OMP:0005130 ! altered enzymatic activity
 created_by: wmeza
 creation_date: 2014-04-17T10:55:05Z
 
@@ -3658,9 +3660,11 @@ creation_date: 2014-07-16T12:36:13Z
 
 [Term]
 id: OMP:0005130
-name: altered enzymatic activity phenotype
+name: altered enzymatic activity
 def: "An enzymatic activity phenotype where the activity of a particular enzyme is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000221 ! enzymatic activity phenotype
+is_a: OMP:0007279 ! altered protein activity phenotype
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: wmeza
 creation_date: 2014-07-16T17:48:24Z
 
@@ -3693,6 +3697,7 @@ id: OMP:0005134
 name: abolished resistance to UV radiation
 def: "A decreased resistance to UV radiation phenotype where resistance to UV radiation is abolished." [OMP:WAM]
 is_a: OMP:0005098 ! decreased resistance to UV radiation
+is_a: OMP:0007283 ! absence of UV radiation resistance
 created_by: wmeza
 creation_date: 2014-07-17T17:22:15Z
 
@@ -4578,6 +4583,7 @@ creation_date: 2014-07-24T18:43:39Z
 id: OMP:0006094
 name: abolished decarboxylase activity
 def: "A decreased decarboxylase activity phenotype where decarboxylase activity is abolished." [OMP:JCH]
+is_a: OMP:0006078 ! decarboxylase negative
 is_a: OMP:0006082 ! decreased decarboxylase activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:05:39Z
@@ -4587,6 +4593,7 @@ id: OMP:0006095
 name: abolished enzyme activity
 def: "A decreased enzyme activity phenotype where an enzyme activity is abolished." [OMP:JCH]
 is_a: OMP:0005103 ! decreased enzyme activity
+is_a: OMP:0007281 ! absence of enzymatic activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:09:28Z
 
@@ -4594,6 +4601,7 @@ creation_date: 2014-07-24T20:09:28Z
 id: OMP:0006096
 name: abolished oxidase activity
 def: "A decreased oxidase activity phenotype where oxidase activity is abolished." [OMP:JCH]
+is_a: OMP:0006084 ! oxidase negative
 is_a: OMP:0006087 ! decreased oxidase activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:11:44Z
@@ -4602,6 +4610,7 @@ creation_date: 2014-07-24T20:11:44Z
 id: OMP:0006097
 name: abolished urease activity
 def: "A decreased urease activity phenotype where urease activity is abolished." [OMP:JCH]
+is_a: OMP:0006090 ! urease negative
 is_a: OMP:0006092 ! decreased urease activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:17:01Z
@@ -4627,6 +4636,7 @@ creation_date: 2014-07-25T11:08:59Z
 id: OMP:0006100
 name: abolished cell motility by swimming
 def: "A decreased cell motility by swimming phenotype where the ability of a cell or cells to swim is abolished." [OMP:JCH]
+is_a: OMP:0007000 ! abolished cell motility
 is_a: OMP:0007093 ! decreased cell motility by swimming
 created_by: jonathanherrera
 creation_date: 2014-08-15T19:12:43Z
@@ -4645,6 +4655,7 @@ id: OMP:0006102
 name: abolished capsule formation
 def: "A decreased amount of capsule phenotype where capsule is abolished." [OMP:JCH]
 is_a: OMP:0000050 ! decreased amount of capsule
+is_a: OMP:0000211 ! absence of capsule
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:52:24Z
 
@@ -4658,9 +4669,10 @@ creation_date: 2014-07-25T11:54:11Z
 
 [Term]
 id: OMP:0006104
-name: abolished catalase acitivity
+name: abolished catalase activity
 def: "A decreased catalase activity phenotype where catalase activity is abolished." [OMP:JCH]
 is_a: OMP:0000195 ! decreased catalase activity
+is_a: OMP:0000198 ! catalase negative
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:59:12Z
 
@@ -4693,6 +4705,7 @@ creation_date: 2014-07-28T18:19:45Z
 id: OMP:0006108
 name: abolished chemotaxis
 def: "A decreased chemotaxis phenotype where a motile cell or organism no longer displays chemotaxis in response to a gradient of a specific chemical." [OMP:JCH]
+is_a: OMP:0000097 ! absence of chemotaxis
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:11:10Z
@@ -4735,6 +4748,7 @@ id: OMP:0006113
 name: abolished homologous recombination
 def: "A decreased frequency of homologous recombination phenotype where the ability to perform homologous recombination is abolished." [OMP:JCH]
 is_a: OMP:0005050 ! decreased frequency of homologous recombination
+is_a: OMP:0005052 ! absence of homologous recombination
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:45:20Z
 
@@ -4743,6 +4757,7 @@ id: OMP:0006114
 name: abolished site-specific recombination
 def: "A decreased frequency of site-specific recombination phenotype where the ability to perform site-specific recombination is abolished." [OMP:JCH]
 is_a: OMP:0005056 ! decreased frequency of site-specific recombination
+is_a: OMP:0005057 ! absence of site-specific recombination
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:47:43Z
 
@@ -4782,6 +4797,7 @@ creation_date: 2015-06-09T15:17:23Z
 id: OMP:0006119
 name: abolished hemolysis
 def: "A decreased hemolysis phenotype where hemolysis is abolished." [OMP:JCH]
+is_a: OMP:0000208 ! absence of hemolysis
 is_a: OMP:0000249 ! decreased hemolysis
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:17:12Z
@@ -4790,6 +4806,7 @@ creation_date: 2014-07-25T13:17:12Z
 id: OMP:0006120
 name: abolished heterocyst formation
 def: "A decreased heterocyst formation phenotype where the ability to form heterocysts is abolished." [OMP:JCH]
+is_a: OMP:0000011 ! absence of heterocysts
 is_a: OMP:0000015 ! decreased heterocyst formation
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:19:17Z
@@ -4798,6 +4815,7 @@ creation_date: 2014-07-25T13:19:17Z
 id: OMP:0006121
 name: abolished induced expression of the SOS response
 def: "A decreased induced expression of the SOS response phenotype where induced expression of one or more genes in the SOS response is abolished." [OMP:JCH]
+is_a: OMP:0005022 ! absence of an SOS response
 is_a: OMP:0005025 ! decreased induced expression of the SOS response
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:22:37Z
@@ -4849,6 +4867,7 @@ id: OMP:0006127
 name: abolished negative DNA supercoiling
 def: "A decrease negative DNA supercoiling phenotype where the ability to form negative supercoils in DNA is abolished." [OMP:JCH]
 is_a: OMP:0001002 ! decreased negative supercoiling
+is_a: OMP:0006129 ! absence of negative supercoiling
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:16:09Z
 
@@ -4856,6 +4875,7 @@ creation_date: 2014-07-25T14:16:09Z
 id: OMP:0006128
 name: abolished positive DNA supercoiling
 def: "A decreased positive DNA supercoiling phenotype where the ability to form positive supercoils in DNA is abolished." [OMP:JCH]
+is_a: OMP:0006130 ! absence of positive supercoiling
 is_a: OMP:0007002 ! decreased positive supercoiling
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:16:27Z
@@ -4880,6 +4900,7 @@ creation_date: 2014-07-25T14:32:42Z
 id: OMP:0006131
 name: abolished number of flagella
 def: "A decreased number of flagella phenotype where the number of flagella per cell is decreased to zero." [OMP:JCH]
+is_a: OMP:0000030 ! absence of flagellum
 is_a: OMP:0000215 ! decreased number of flagella
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:43:31Z
@@ -4889,6 +4910,7 @@ id: OMP:0006132
 name: abolished number of pili
 def: "A decreased number of pili phenotype where the number of pili is decreased to zero." [OMP:JCH]
 is_a: OMP:0000028 ! decreased number of pili
+is_a: OMP:0000033 ! absence of pilus
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:46:12Z
 
@@ -4904,6 +4926,7 @@ creation_date: 2014-07-25T14:47:24Z
 id: OMP:0006134
 name: abolished quorum sensing
 def: "A decreased quorum sensing phenotype where the ability to perform quorum sensing is abolished." [OMP:JCH]
+is_a: OMP:0000063 ! absence of quorum sensing
 is_a: OMP:0007028 ! decreased quorum sensing
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:49:11Z
@@ -4928,8 +4951,8 @@ creation_date: 2014-07-25T14:52:06Z
 id: OMP:0006137
 name: abolished resistance to aminoglycoside
 def: "A decreased resistance to aminoglycoside phenotype where resistance to an aminoglycoside is abolished." [OMP:JCH]
-is_a: OMP:0000458 ! not resistant to caffeine
 is_a: OMP:0006057 ! decreased resistance to aminoglycoside
+is_a: OMP:0006059 ! not resistant to aminoglycoside
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:54:43Z
 
@@ -4956,6 +4979,7 @@ id: OMP:0006140
 name: abolished resistance to bacteriocin
 def: "A decreased resistance to bacteriocin phenotype where resistance to one or more bacteriocins is abolished." [OMP:JCH]
 is_a: OMP:0006048 ! decreased resistance to bacteriocin
+is_a: OMP:0006050 ! not resistant to bacteriocin
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:02:13Z
 
@@ -4964,6 +4988,7 @@ id: OMP:0006141
 name: abolished resistance to beta-lactam
 def: "A decreased resistance to beta-lactam phenotype where resistance to beta-lactam is abolished." [OMP:JCh]
 is_a: OMP:0006044 ! decreased resistance to beta-lactam
+is_a: OMP:0006046 ! not resistant to beta-lactam
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:04:08Z
 
@@ -4972,6 +4997,7 @@ id: OMP:0006142
 name: abolished resistance to chloramphenicol
 def: "A decreased resistance to chloramphenicol phenotype where resistance to chloramphenicol is abolished." [OMP:JCH]
 is_a: OMP:0006067 ! decreased resistance to chloramphenicol
+is_a: OMP:0006069 ! not resistant to chloramphenicol
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:05:24Z
 
@@ -4980,6 +5006,7 @@ id: OMP:0006143
 name: abolished resistance to lantibiotic
 def: "A decreased resistance to lantibiotics phenotype where resistance to lantibiotics is abolished." [OMP:JCh]
 is_a: OMP:0006012 ! decreased resistance to lantibiotic
+is_a: OMP:0006072 ! not resistant to lantibiotic
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:07:57Z
 
@@ -4988,6 +5015,7 @@ id: OMP:0006144
 name: abolished resistance to macrolide
 def: "A decreased resistance to macrolide phenotype where resistance to macrolides is abolished." [OMP:JCH]
 is_a: OMP:0006036 ! decreased resistance to macrolide
+is_a: OMP:0006038 ! not resistant to macrolide
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:09:24Z
 
@@ -4995,6 +5023,7 @@ creation_date: 2014-07-25T15:09:24Z
 id: OMP:0006145
 name: abolished resistance to pteridine
 def: "A decreased resistance to pteridine phenotype where resistance to pteridine is abolished." [OMP:JCH]
+is_a: OMP:0006075 ! not resistant to pteridine
 is_a: OMP:0007004 ! decreased resistance to pteridine
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:11:04Z
@@ -5004,6 +5033,7 @@ id: OMP:0006146
 name: abolished resistance to quinolone
 def: "A decreased resistance to quinolone phenotype where resistance to a quinolone is abolished." [OMP:JCH]
 is_a: OMP:0006040 ! decreased resistance to quinolone
+is_a: OMP:0006042 ! not resistant to quinolone
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:12:28Z
 
@@ -5012,6 +5042,7 @@ id: OMP:0006147
 name: abolished resistance to tetracycline
 def: "A decreased resistance to tetracycline phenotype where resistance to tetracycline is abolished." [OMP:JCH]
 is_a: OMP:0006061 ! decreased resistance to tetracycline
+is_a: OMP:0006064 ! not resistant to tetracycline
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:18:09Z
 
@@ -5117,6 +5148,7 @@ creation_date: 2014-07-28T18:45:05Z
 id: OMP:0006160
 name: abolished outer membrane vesicle
 def: "A decreased outer membrane vesicle phenotype where the ability to produce outer membrane vesicles is abolished." [OMP:JCH]
+is_a: OMP:0006109 ! absence of outer membrane vesicles
 is_a: OMP:0006159 ! decreased outer membrane vesicle production
 created_by: jonathanherrera
 creation_date: 2014-07-28T20:49:39Z
@@ -5267,6 +5299,7 @@ id: OMP:0006178
 name: abolished antimicrobial peptide production
 def: "An antimicrobial peptide production phenotype where the organism's ability to produce an antimicrobial peptide is abolished." [OMP:TCK]
 is_a: OMP:0006118 ! decreased antimicrobial peptide production
+is_a: OMP:0006180 ! absence of antimicrobial peptide production
 created_by: tkveton
 creation_date: 2015-06-09T15:18:24Z
 
@@ -5341,9 +5374,9 @@ creation_date: 2014-08-07T18:35:51Z
 [Term]
 id: OMP:0007006
 name: cell population phenotype
-def: "A microbial phenotype observation at the level of a population of cells belonging to the same species." [OMP:DAS]
+def: "A microbial phenotype where the phenotype is observed at the level of a population of cells." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-xref: CMPO:0000002 "cell phenotype"
+xref: CMPO:0000002 "cell population"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-07-21T10:25:43Z
@@ -6040,6 +6073,7 @@ id: OMP:0007089
 name: abolished heme utilization
 def: "A decreased heme utilization phenotype where the ability to utilize heme as a source of iron is abolished." [OMP:JCH]
 is_a: OMP:0000453 ! decreased heme utilization
+is_a: OMP:0000454 ! absence of heme utilization
 created_by: siegele
 creation_date: 2014-07-10T12:51:30Z
 
@@ -6408,6 +6442,7 @@ creation_date: 2014-08-16T16:40:58Z
 id: OMP:0007131
 name: altered differential test result
 def: "A differential media phenotype where the results of a differential test are altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007085 ! altered phenotype
 is_a: OMP:0007130 ! differential test phenotype
 created_by: siegele
 creation_date: 2014-08-16T16:44:03Z
@@ -6837,6 +6872,7 @@ creation_date: 2014-09-29T14:06:33Z
 id: OMP:0007180
 name: abolished aerobic respiration
 def: "A decreased aerobic respiration phenotype where the ability to perform aerobic respiration is abolished." [OMP:DAS]
+is_a: OMP:0007176 ! absence of aerobic respiration
 is_a: OMP:0007179 ! decreased aerobic respiration
 created_by: siegele
 creation_date: 2014-09-29T14:07:17Z
@@ -6885,6 +6921,7 @@ creation_date: 2014-09-29T14:08:46Z
 id: OMP:0007186
 name: abolished anaerobic respiration
 def: "A decreased anaerobic respiration phenotype where the ability to perform anaerobic respiration is abolished." [OMP:DAS]
+is_a: OMP:0007182 ! absence of anaerobic respiration
 is_a: OMP:0007185 ! decreased anaerobic respiration
 created_by: siegele
 creation_date: 2014-09-29T14:08:46Z
@@ -6984,25 +7021,25 @@ creation_date: 2014-10-21T23:28:25Z
 
 [Term]
 id: OMP:0007198
-name: UV-A radiation resistance
-def: "A UV radiation resistance phenotype related to resistance to irradiation of wavelengths of 315-400 nm." [ISO:21348, OMP:DAS]
-is_a: OMP:0005084 ! UV radiation resistance phenotype
+name: presence of UV-A radiation resistance
+def: "A presence of UV radiation resistance where a cell or cells exhibit some resistance to irradiation of wavelengths of 315-400 nm." [ISO:21348, OMP:DAS]
+is_a: OMP:0007282 ! presence of UV radiation resistance
 created_by: siegele
 creation_date: 2015-02-04T21:53:26Z
 
 [Term]
 id: OMP:0007199
-name: UV-B radiation resistance
-def: "A UV radiation resistance phenotype related to resistance to irradiation of wavelengths of 280-315 nm." [ISO:21348, OMP:DAS]
-is_a: OMP:0005084 ! UV radiation resistance phenotype
+name: presence of UV-B radiation resistance
+def: "A presence of UV radiation resistance where a cell or cells exhibit some resistance to irradiation of wavelengths of 280-315 nm." [ISO:21348, OMP:DAS]
+is_a: OMP:0007282 ! presence of UV radiation resistance
 created_by: siegele
 creation_date: 2015-02-04T22:00:52Z
 
 [Term]
 id: OMP:0007200
-name: UV-C radiation resistance
-def: "A UV radiation resistance phenotype related to resistance to irradiation of wavelengths of 100-280 nm." [ISO:21348, OMP:DAS]
-is_a: OMP:0005084 ! UV radiation resistance phenotype
+name: presence of UV-C radiation resistance
+def: "A presence of UV radiation resistance where a cell or cells exhibit some resistance to irradiation of wavelengths of 100-280 nm." [ISO:21348, OMP:DAS]
+is_a: OMP:0007282 ! presence of UV radiation resistance
 created_by: siegele
 creation_date: 2015-02-04T22:02:13Z
 
@@ -7182,6 +7219,7 @@ creation_date: 2015-03-15T22:39:31Z
 id: OMP:0007221
 name: abolished resistance to rifamycin
 def: "A decreased resistance to rifamycin phenotype where resistance to one or more rifamycins  is abolished." [OMP:DAS]
+is_a: OMP:0007217 ! not resistant to rifamycin
 is_a: OMP:0007219 ! decreased resistance to rifamycin
 created_by: siegele
 creation_date: 2015-03-15T22:40:32Z
@@ -7196,9 +7234,9 @@ creation_date: 2015-05-20T16:23:34Z
 
 [Term]
 id: OMP:0007223
-name: decreased spore germination
+name: decreased spore germination efficiency
 def: "A spore germination phenotype where the percentage of spores that germinate is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0000095 ! spore germination phenotype
+is_a: OMP:0007292 ! altered spore germination efficiency
 created_by: dsiegele
 creation_date: 2015-06-01T16:03:03Z
 
@@ -7429,6 +7467,7 @@ creation_date: 2015-07-16T00:42:17Z
 id: OMP:0007251
 name: abolished chemical sensitivity
 def: "An altered chemical sensitivity phenotype where the sensitivity of a cell, cells, or microbe to a chemical is abolished." [OMP:DAS]
+is_a: OMP:0007247 ! not sensitive to a chemical
 is_a: OMP:0007250 ! decreased sensitivity to a chemical
 created_by: siegele
 creation_date: 2015-07-16T00:42:17Z
@@ -7443,43 +7482,44 @@ creation_date: 2015-07-31T13:22:28Z
 
 [Term]
 id: OMP:0007253
-name: presence of colonization
+name: presence of host colonization
 is_a: OMP:0007252 ! host colonization phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
 
 [Term]
 id: OMP:0007254
-name: absence of colonization
+name: absence of host colonization
 is_a: OMP:0007252 ! host colonization phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
 
 [Term]
 id: OMP:0007255
-name: altered colonization
+name: altered host colonization
 is_a: OMP:0007252 ! host colonization phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
 
 [Term]
 id: OMP:0007256
-name: Increased colonization
-is_a: OMP:0007255 ! altered colonization
+name: Increased host colonization
+is_a: OMP:0007255 ! altered host colonization
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
 
 [Term]
 id: OMP:0007257
-name: decreased colonization
-is_a: OMP:0007255 ! altered colonization
+name: decreased host colonization
+is_a: OMP:0007255 ! altered host colonization
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
 
 [Term]
 id: OMP:0007258
-name: abolished colonization
-is_a: OMP:0007257 ! decreased colonization
+name: abolished host colonization
+is_a: OMP:0007254 ! absence of host colonization
+is_a: OMP:0007257 ! decreased host colonization
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
 
@@ -7573,6 +7613,7 @@ creation_date: 2015-08-03T14:07:51Z
 id: OMP:0007270
 name: abolished drug-dependence of population growth
 def: "A decreased drug-dependent population growth phenotype where dependence of reproduction on the presence of a drug in the growth medium is abolished." [OMP:DAS]
+is_a: OMP:0007266 ! absence of drug-dependent population growth
 is_a: OMP:0007269 ! decreased drug-dependence of population growth
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
@@ -7639,10 +7680,134 @@ creation_date: 2015-11-11T15:41:37Z
 id: OMP:0007278
 name: disproportionation of thiosulfate
 def: "A chemolithotrophic phenotype where the biological disproportionation of thiosulfate occurs via an intramolecular redox change at each of the sulfur atoms and produces 1 mol of sulfate and 1 mol of sulfide." [OMP:DAS, PMID:10919837]
-comment: thiosulfate + H2O --> SO42- + HS- + H+.
+comment: Disproportionation of thiosulfate is the reaction: thiosulfate + H2O --> SO42- + HS- + H+.
 is_a: OMP:0007110 ! chemolithotrophic
 created_by: siegele
 creation_date: 2015-11-12T00:46:14Z
+
+[Term]
+id: OMP:0007279
+name: altered protein activity phenotype
+def: "A protein activity phenotype where the enzymatic or other activity of a protein is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000269 ! protein activity phenotype
+is_a: OMP:0007085 ! altered phenotype
+relationship: has_quality OMP:0007189 ! altered_relative_to
+created_by: siegele
+creation_date: 2016-01-07T22:48:43Z
+
+[Term]
+id: OMP:0007280
+name: presence of enzymatic activity
+def: "An enzymatic activity phenotype where a particular enzyme activity is present in a cell, cells, or organism." [OMP:DAS]
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: siegele
+creation_date: 2016-01-09T18:04:12Z
+
+[Term]
+id: OMP:0007281
+name: absence of enzymatic activity
+def: "An enzymatic activity phenotype where a particular enzyme activity is absent in a cell, cells, or organism." [OMP:DAS]
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: siegele
+creation_date: 2016-01-09T18:05:38Z
+
+[Term]
+id: OMP:0007282
+name: presence of UV radiation resistance
+def: "A UV radiation resistance phenotype where a cell or cells exhibit some ability to survive exposure to UV radiation (100-400 nm)." [OMP:DAS]
+is_a: OMP:0005084 ! UV radiation resistance phenotype
+created_by: siegele
+creation_date: 2016-01-09T18:37:25Z
+
+[Term]
+id: OMP:0007283
+name: absence of UV radiation resistance
+def: "A UV radiation resistance phenotype where a cell or cells exhibit no ability to survive exposure to UV radiation (100-400 nm)." [OMP:DAS]
+is_a: OMP:0005084 ! UV radiation resistance phenotype
+created_by: siegele
+creation_date: 2016-01-09T18:39:51Z
+
+[Term]
+id: OMP:0007284
+name: presence of virulence
+def: "A virulence phenotype where an organism possesses the ability to cause disease in another organism." [OMP:DAS]
+is_a: OMP:0000068 ! virulence phenotype
+created_by: siegele
+creation_date: 2016-01-09T18:47:01Z
+
+[Term]
+id: OMP:0007285
+name: fungal laccase test
+def: "A differential test phenotype that relates to the presence or absence of laccase, an enzyme involved in the synthesis of fungal melanin." [OMP:DAS]
+is_a: OMP:0007130 ! differential test phenotype
+created_by: siegele
+creation_date: 2016-01-10T00:30:53Z
+
+[Term]
+id: OMP:0007286
+name: presence of fungal laccase activity
+def: "A fungal laccase phenotype where an organism exhibits laccase activity." [OMP:DAS]
+is_a: OMP:0007285 ! fungal laccase test
+created_by: siegele
+creation_date: 2016-01-10T00:36:59Z
+
+[Term]
+id: OMP:0007287
+name: absence of fungal laccase activity
+def: "A fungal laccase phenotype where an organism doesn't exhibit laccase activity." [OMP:DAS]
+is_a: OMP:0007285 ! fungal laccase test
+created_by: siegele
+creation_date: 2016-01-10T00:37:17Z
+
+[Term]
+id: OMP:0007288
+name: altered fungal laccase activity
+def: "A fungal laccase phenotype where fungal laccase activity is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007285 ! fungal laccase test
+created_by: siegele
+creation_date: 2016-01-10T00:37:57Z
+
+[Term]
+id: OMP:0007289
+name: increased laccase activity
+def: "An altered fungal laccase activity phenotype where fungal laccase activity is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007288 ! altered fungal laccase activity
+created_by: siegele
+creation_date: 2016-01-10T00:45:01Z
+
+[Term]
+id: OMP:0007290
+name: decreased laccase activity
+is_a: OMP:0007288 ! altered fungal laccase activity
+created_by: siegele
+creation_date: 2016-01-10T00:45:01Z
+
+[Term]
+id: OMP:0007291
+name: abolished laccase activity
+def: "A decreased fungal laccase activity phenotype where fungal laccase activity is abolished." [OMP:DAS]
+is_a: OMP:0007287 ! absence of fungal laccase activity
+is_a: OMP:0007290 ! decreased laccase activity
+created_by: siegele
+creation_date: 2016-01-10T00:45:01Z
+
+[Term]
+id: OMP:0007292
+name: altered spore germination efficiency
+def: "A spore germination phenotype where the percentage of spores that germinate is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000095 ! spore germination phenotype
+is_a: OMP:0007085 ! altered phenotype
+relationship: has_quality OMP:0007189 ! altered_relative_to
+created_by: siegele
+creation_date: 2016-01-10T00:55:26Z
+
+[Term]
+id: OMP:0007293
+name: increased spore germination efficiency
+def: "A spore germination phenotype where the percentage of spores that germinate is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007292 ! altered spore germination efficiency
+created_by: siegele
+creation_date: 2016-01-10T00:57:49Z
 
 [Term]
 id: OMP:0008000
