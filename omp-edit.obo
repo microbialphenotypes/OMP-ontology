@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 15:01:2016 17:12
+date: 15:01:2016 17:32
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3137,9 +3137,10 @@ creation_date: 2011-06-07T02:26:30Z
 
 [Term]
 id: OMP:0000206
-name: altered hemolysis
+name: altered hemolysis test result
 def: "A hemolysis test phenotype where the ability to cause hemolysis is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0000099 ! hemolysis test
+is_a: OMP:0007131 ! altered differential test result
 created_by: mchibucos
 creation_date: 2011-06-07T03:17:46Z
 
@@ -3234,7 +3235,7 @@ creation_date: 2011-02-07T03:53:18Z
 id: OMP:0000217
 name: increased hemolysis
 def: "An altered hemolysis phenotype where hemolysis is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0000206 ! altered hemolysis
+is_a: OMP:0000206 ! altered hemolysis test result
 created_by: mchibucos
 creation_date: 2011-06-07T03:19:00Z
 
@@ -3469,7 +3470,7 @@ creation_date: 2011-06-07T03:05:56Z
 id: OMP:0000249
 name: decreased hemolysis
 def: "An altered hemolysis phenotype where hemolysis is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0000206 ! altered hemolysis
+is_a: OMP:0000206 ! altered hemolysis test result
 created_by: mchibucos
 creation_date: 2011-06-07T03:19:25Z
 
@@ -9247,6 +9248,7 @@ creation_date: 2016-01-10T00:37:17Z
 id: OMP:0007288
 name: altered fungal laccase activity
 def: "A fungal laccase phenotype where fungal laccase activity is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007131 ! altered differential test result
 is_a: OMP:0007285 ! fungal laccase test
 created_by: siegele
 creation_date: 2016-01-10T00:37:57Z
