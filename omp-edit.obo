@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 11:01:2016 01:18
+date: 15:01:2016 17:12
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2239,9 +2239,9 @@ creation_date: 2011-04-28T02:11:35Z
 
 [Term]
 id: OMP:0000099
-name: hemolysis phenotype
-def: "A microbe-host interaction phenotype dealing with microbial breakdown of red blood cells." [OMP:WAM]
-is_a: OMP:0000197 ! microbe-host interaction phenotype
+name: hemolysis test
+def: "A differential test phenotype that describes whether a cell or cells exhibits the ability to lyse red blood cells." [OMP:WAM]
+is_a: OMP:0007130 ! differential test phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:17:22Z
 
@@ -3059,7 +3059,7 @@ creation_date: 2011-06-06T04:29:39Z
 [Term]
 id: OMP:0000197
 name: microbe-host interaction phenotype
-def: "A multiorganism interaction phenotype dealing with the interactions between microbial organisms and their hosts." [OMP:WAM]
+def: "A microbial phenotype related to the interactions between microbial organisms and their hosts." [OMP:WAM]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:25:01Z
@@ -3137,9 +3137,9 @@ creation_date: 2011-06-07T02:26:30Z
 
 [Term]
 id: OMP:0000206
-name: altered hemolysis phenotype
-def: "A hemolysis phenotype were the rate of hemolysis is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0000099 ! hemolysis phenotype
+name: altered hemolysis
+def: "A hemolysis test phenotype where the ability to cause hemolysis is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0000099 ! hemolysis test
 created_by: mchibucos
 creation_date: 2011-06-07T03:17:46Z
 
@@ -3158,8 +3158,8 @@ creation_date: 2011-03-02T02:16:33Z
 [Term]
 id: OMP:0000208
 name: absence of hemolysis
-def: "A hemolysis phenotype where hemolysis is absent." [OMP:WAM]
-is_a: OMP:0000099 ! hemolysis phenotype
+def: "A hemolysis test phenotype where a cell or cells does not cause hemolysis." [OMP:WAM]
+is_a: OMP:0000099 ! hemolysis test
 created_by: mchibucos
 creation_date: 2011-06-07T03:18:33Z
 
@@ -3233,8 +3233,8 @@ creation_date: 2011-02-07T03:53:18Z
 [Term]
 id: OMP:0000217
 name: increased hemolysis
-def: "An altered hemolysis phenotype where the rate of hemolysis is enhanced relative to a designated control." [OMP:WAM]
-is_a: OMP:0000206 ! altered hemolysis phenotype
+def: "An altered hemolysis phenotype where hemolysis is increased relative to a designated control." [OMP:WAM]
+is_a: OMP:0000206 ! altered hemolysis
 created_by: mchibucos
 creation_date: 2011-06-07T03:19:00Z
 
@@ -3469,7 +3469,7 @@ creation_date: 2011-06-07T03:05:56Z
 id: OMP:0000249
 name: decreased hemolysis
 def: "An altered hemolysis phenotype where hemolysis is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0000206 ! altered hemolysis phenotype
+is_a: OMP:0000206 ! altered hemolysis
 created_by: mchibucos
 creation_date: 2011-06-07T03:19:25Z
 
@@ -4978,8 +4978,8 @@ creation_date: 2014-07-08T17:10:17Z
 [Term]
 id: OMP:0005117
 name: presence of hemolysis
-def: "A hemolysis phenotype where an organism or cell causes hemolysis." [OMP:WAM]
-is_a: OMP:0000099 ! hemolysis phenotype
+def: "A hemolysis test phenotype where a cell or cells causes hemolysis." [OMP:WAM]
+is_a: OMP:0000099 ! hemolysis test
 created_by: wmeza
 creation_date: 2014-07-08T17:55:17Z
 
@@ -9222,6 +9222,7 @@ creation_date: 2016-01-09T18:47:01Z
 id: OMP:0007285
 name: fungal laccase test
 def: "A differential test phenotype that relates to the presence or absence of laccase, an enzyme involved in the synthesis of fungal melanin." [OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0007130 ! differential test phenotype
 created_by: siegele
 creation_date: 2016-01-10T00:30:53Z
@@ -9261,6 +9262,7 @@ creation_date: 2016-01-10T00:45:01Z
 [Term]
 id: OMP:0007290
 name: decreased laccase activity
+def: "An altered fungal laccase activity phenotype where fungal laccase activity is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007288 ! altered fungal laccase activity
 created_by: siegele
 creation_date: 2016-01-10T00:45:01Z
