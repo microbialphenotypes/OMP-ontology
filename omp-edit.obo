@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 15:01:2016 17:32
+date: 23:01:2016 20:23
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3269,11 +3269,11 @@ creation_date: 2011-02-03T04:44:11Z
 
 [Term]
 id: OMP:0000221
-name: enzymatic activity phenotype
-def: "A protein activity phenotype where the trait in question is the activity of an enzyme." [OMP:JCH]
+name: catalytic activity phenotype
+def: "A microbial phenotype that affects a catalytic activity." [FYPO:0000654, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0000000 ! microbial phenotype
 is_a: OMP:0000180 ! metabolic phenotype
-is_a: OMP:0000269 ! protein activity phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:44:39Z
 
@@ -4869,17 +4869,17 @@ creation_date: 2014-02-11T11:54:51Z
 
 [Term]
 id: OMP:0005102
-name: increased enzyme activity
-def: "An altered enzyme activity phenotype where enzyme activity is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0005130 ! altered enzymatic activity
+name: increased catalytic activity
+def: "An altered catalytic activity phenotype where a specified catalytic activity is increased relative to a designated control." [OMP:WAM]
+is_a: OMP:0005130 ! altered catalytic activity
 created_by: wmeza
 creation_date: 2014-04-17T10:54:45Z
 
 [Term]
 id: OMP:0005103
-name: decreased enzyme activity
-def: "An altered enzyme activity phenotype where there the activity of an enzyme is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0005130 ! altered enzymatic activity
+name: decreased catalytic activity
+def: "An altered catalytic activity phenotype where a specified catalytic activity is decreased relative to a designated control." [OMP:WAM]
+is_a: OMP:0005130 ! altered catalytic activity
 created_by: wmeza
 creation_date: 2014-04-17T10:55:05Z
 
@@ -5091,11 +5091,10 @@ creation_date: 2014-07-16T12:36:13Z
 
 [Term]
 id: OMP:0005130
-name: altered enzymatic activity
-def: "An enzymatic activity phenotype where the activity of a particular enzyme is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0000221 ! enzymatic activity phenotype
-is_a: OMP:0007279 ! altered protein activity phenotype
-intersection_of: OMP:0000221 ! enzymatic activity phenotype
+name: altered catalytic activity
+def: "A catalytic activity phenotype where a specified catalytic activity is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0000221 ! catalytic activity phenotype
+intersection_of: OMP:0000221 ! catalytic activity phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: wmeza
 creation_date: 2014-07-16T17:48:24Z
@@ -6023,10 +6022,10 @@ creation_date: 2014-07-24T20:05:39Z
 
 [Term]
 id: OMP:0006095
-name: abolished enzyme activity
-def: "A decreased enzyme activity phenotype where an enzyme activity is abolished." [OMP:JCH]
-is_a: OMP:0005103 ! decreased enzyme activity
-is_a: OMP:0007281 ! absence of enzymatic activity
+name: abolished catalytic activity
+def: "A decreased catalytic activity phenotype where a specified catalytic activity is abolished." [OMP:JCH]
+is_a: OMP:0005103 ! decreased catalytic activity
+is_a: OMP:0007281 ! absence of catalytic activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:09:28Z
 
@@ -9181,17 +9180,17 @@ creation_date: 2016-01-07T22:48:43Z
 
 [Term]
 id: OMP:0007280
-name: presence of enzymatic activity
-def: "An enzymatic activity phenotype where a particular enzyme activity is present in a cell, cells, or organism." [OMP:DAS]
-is_a: OMP:0000221 ! enzymatic activity phenotype
+name: presence of catalytic activity
+def: "A catalytic activity phenotype where a specified catalytic activity is present in a cell, cells, or organism." [OMP:DAS]
+is_a: OMP:0000221 ! catalytic activity phenotype
 created_by: siegele
 creation_date: 2016-01-09T18:04:12Z
 
 [Term]
 id: OMP:0007281
-name: absence of enzymatic activity
-def: "An enzymatic activity phenotype where a particular enzyme activity is absent in a cell, cells, or organism." [OMP:DAS]
-is_a: OMP:0000221 ! enzymatic activity phenotype
+name: absence of catalytic activity
+def: "A catalytic activity phenotype where a specified catalytic activity is absent in a cell, cells, or organism." [OMP:DAS]
+is_a: OMP:0000221 ! catalytic activity phenotype
 created_by: siegele
 creation_date: 2016-01-09T18:05:38Z
 
@@ -9221,59 +9220,61 @@ creation_date: 2016-01-09T18:47:01Z
 
 [Term]
 id: OMP:0007285
-name: fungal laccase test
-def: "A differential test phenotype that relates to the presence or absence of laccase, an enzyme involved in the synthesis of fungal melanin." [OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+name: laccase activity phenotype
+def: "A catalytic activity phenotype that relates to the presence or absence of laccase, a family of oxidoreductases that act on diphenols and related substances as donors and use oxygen as the acceptor." [OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nLaccase is involved in the synthesis of fungal melanin.
+synonym: "benzenediol:oxygen oxidoreductase activity" RELATED [EC:1.10.3.2]
+is_a: OMP:0000221 ! catalytic activity phenotype
 is_a: OMP:0007130 ! differential test phenotype
 created_by: siegele
 creation_date: 2016-01-10T00:30:53Z
 
 [Term]
 id: OMP:0007286
-name: presence of fungal laccase activity
-def: "A fungal laccase phenotype where an organism exhibits laccase activity." [OMP:DAS]
-is_a: OMP:0007285 ! fungal laccase test
+name: presence of laccase activity
+def: "A laccase phenotype where an organism exhibits laccase activity." [OMP:DAS]
+is_a: OMP:0007285 ! laccase activity phenotype
 created_by: siegele
 creation_date: 2016-01-10T00:36:59Z
 
 [Term]
 id: OMP:0007287
-name: absence of fungal laccase activity
-def: "A fungal laccase phenotype where an organism doesn't exhibit laccase activity." [OMP:DAS]
-is_a: OMP:0007285 ! fungal laccase test
+name: absence of  laccase activity
+def: "A laccase phenotype where an organism doesn't exhibit laccase activity." [OMP:DAS]
+is_a: OMP:0007285 ! laccase activity phenotype
 created_by: siegele
 creation_date: 2016-01-10T00:37:17Z
 
 [Term]
 id: OMP:0007288
-name: altered fungal laccase activity
-def: "A fungal laccase phenotype where fungal laccase activity is altered relative to a designated control." [OMP:DAS]
+name: altered laccase activity
+def: "A laccase activity phenotype where laccase activity is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007131 ! altered differential test result
-is_a: OMP:0007285 ! fungal laccase test
+is_a: OMP:0007285 ! laccase activity phenotype
 created_by: siegele
 creation_date: 2016-01-10T00:37:57Z
 
 [Term]
 id: OMP:0007289
 name: increased laccase activity
-def: "An altered fungal laccase activity phenotype where fungal laccase activity is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007288 ! altered fungal laccase activity
+def: "An altered laccase activity phenotype where laccase activity is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007288 ! altered laccase activity
 created_by: siegele
 creation_date: 2016-01-10T00:45:01Z
 
 [Term]
 id: OMP:0007290
 name: decreased laccase activity
-def: "An altered fungal laccase activity phenotype where fungal laccase activity is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007288 ! altered fungal laccase activity
+def: "An altered laccase activity phenotype where laccase activity is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007288 ! altered laccase activity
 created_by: siegele
 creation_date: 2016-01-10T00:45:01Z
 
 [Term]
 id: OMP:0007291
 name: abolished laccase activity
-def: "A decreased fungal laccase activity phenotype where fungal laccase activity is abolished." [OMP:DAS]
-is_a: OMP:0007287 ! absence of fungal laccase activity
+def: "A decreased laccase activity phenotype where laccase activity is abolished." [OMP:DAS]
+is_a: OMP:0007287 ! absence of  laccase activity
 is_a: OMP:0007290 ! decreased laccase activity
 created_by: siegele
 creation_date: 2016-01-10T00:45:01Z
