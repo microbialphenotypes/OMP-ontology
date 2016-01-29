@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 29:01:2016 00:51
-saved-by: siegele
+date: 29:01:2016 16:42
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -3270,9 +3270,11 @@ creation_date: 2011-02-03T04:44:11Z
 [Term]
 id: OMP:0000221
 name: enzymatic activity phenotype
-def: "A microbial phenotype that affects an enzymatic activity." [FYPO:0000654, OMP:JCH]
+def: "A microbial phenotype that affects an enzymatic activity. Enzymes are biological molecules that catalyze biochemical reactions at physiological temperatures. Enzymes possess specific binding sites for their substrates (reactants) and are usually composed wholly or largely of protein or RNA. Catalytic RNAs are also called ribozymes." [ISBN:0198506732, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "catalytic activity" RELATED [APO:0000654]
+synonym: "catalytic activity" RELATED []
+xref: FYPO:0000654 "catalytic activity phenotype"
+xref: GO:0003824 "catalytic activity"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:44:39Z
