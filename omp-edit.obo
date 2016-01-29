@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 26:01:2016 15:20
-saved-by: Jesus
+date: 29:01:2016 00:51
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -3269,11 +3269,11 @@ creation_date: 2011-02-03T04:44:11Z
 
 [Term]
 id: OMP:0000221
-name: catalytic activity phenotype
-def: "A microbial phenotype that affects a catalytic activity." [FYPO:0000654, OMP:JCH]
+name: enzymatic activity phenotype
+def: "A microbial phenotype that affects an enzymatic activity." [FYPO:0000654, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "catalytic activity" RELATED [APO:0000654]
 is_a: OMP:0000000 ! microbial phenotype
-is_a: OMP:0000180 ! metabolic phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:44:39Z
 
@@ -4047,10 +4047,10 @@ creation_date: 2013-08-22T05:57:56Z
 
 [Term]
 id: OMP:0005000
-name: phospholipase activity phenotype 
-def: "An enzymatic activity phenotype that relates to phospholipase, a family of enzymes that catalyzes the hydrolysis of a glycerophospholipid." [OMP:JG]
+name: phospholipase activity phenotype
+def: "An enzymatic activity phenotype that alters phospholipase activity. Phospholipases are a family of enzymes that catalyze the hydrolysis of a glycerophospholipid." [OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-xref: GO:0004620  "phospholipase activity"
+xref: GO:0004620 "phospholipase activity"
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
 creation_date: 2016-01-26T15:01:05Z
@@ -4206,7 +4206,7 @@ creation_date: 2013-09-19T13:39:34Z
 id: OMP:0005019
 name: absence of phospholipase activity
 def: "A phospholipase activity phenotype where an organism doesn't exhibit phospholipase activity." []
-is_a: OMP:0005000 ! phospholipase activity phenotype 
+is_a: OMP:0005000 ! phospholipase activity phenotype
 created_by: Jesus
 creation_date: 2016-01-26T15:16:42Z
 
@@ -4260,9 +4260,9 @@ creation_date: 2013-09-20T13:26:46Z
 
 [Term]
 id: OMP:0005026
-name: presence of phospholipase activity 
-def: "A phospholipase activity phenotype where an organism exhibits phospholipase activity." []
-is_a: OMP:0005000 ! phospholipase activity phenotype 
+name: presence of phospholipase activity
+def: "A phospholipase activity phenotype where an organism exhibits phospholipase activity." [OMP:JG]
+is_a: OMP:0005000 ! phospholipase activity phenotype
 created_by: Jesus
 creation_date: 2016-01-26T15:17:15Z
 
@@ -4277,9 +4277,9 @@ creation_date: 2013-09-20T15:00:09Z
 
 [Term]
 id: OMP:0005028
-name: altered phospolipase activity 
-def: "A phospholipase activity phenotype where there the activity of phospholipase is altered relative to a designated control." []
-is_a: OMP:0005000 ! phospholipase activity phenotype 
+name: altered phospolipase activity
+def: "A phospholipase activity phenotype where phospholipase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005000 ! phospholipase activity phenotype
 created_by: Jesus
 creation_date: 2016-01-26T15:17:51Z
 
@@ -4573,17 +4573,17 @@ creation_date: 2013-11-04T18:09:38Z
 
 [Term]
 id: OMP:0005062
-name: increased phospholipase activity 
-def: "An altered phospholipase activity phenotype where the activity of phospholipase is increased relative to a designated control." []
-is_a: OMP:0005028 ! altered phospolipase activity 
+name: increased phospholipase activity
+def: "An altered phospholipase activity phenotype where phospholipase activity is increased relative to a designated control." []
+is_a: OMP:0005028 ! altered phospolipase activity
 created_by: Jesus
 creation_date: 2016-01-26T15:18:34Z
 
 [Term]
 id: OMP:0005063
-name: decreased phospholipase activity 
-def: "An altered phospholipase activity phenotype where the activity of phospholipase is decreased relative to a designated control." []
-is_a: OMP:0005028 ! altered phospolipase activity 
+name: decreased phospholipase activity
+def: "An altered phospholipase activity phenotype where phospholipase activity is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005028 ! altered phospolipase activity
 created_by: Jesus
 creation_date: 2016-01-26T15:19:23Z
 
@@ -4919,17 +4919,17 @@ creation_date: 2014-02-11T11:54:51Z
 
 [Term]
 id: OMP:0005102
-name: increased catalytic activity
-def: "An altered catalytic activity phenotype where a specified catalytic activity is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0005130 ! altered catalytic activity
+name: increased enzymatic activity
+def: "An altered enzymatic activity phenotype where a specified enzymatic activity is increased relative to a designated control." [OMP:WAM]
+is_a: OMP:0005130 ! altered enzymatic activity
 created_by: wmeza
 creation_date: 2014-04-17T10:54:45Z
 
 [Term]
 id: OMP:0005103
 name: decreased catalytic activity
-def: "An altered catalytic activity phenotype where a specified catalytic activity is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0005130 ! altered catalytic activity
+def: "An altered enzymatic activity phenotype where a specified enzymatic activity is decreased relative to a designated control." [OMP:WAM]
+is_a: OMP:0005130 ! altered enzymatic activity
 created_by: wmeza
 creation_date: 2014-04-17T10:55:05Z
 
@@ -4983,9 +4983,9 @@ creation_date: 2014-07-02T18:46:00Z
 
 [Term]
 id: OMP:0005110
-name: abolished phospholipase activity 
+name: abolished phospholipase activity
 def: "A decreased phospholipase activity phenotype where phospholipase activity is abolished." []
-is_a: OMP:0005063 ! decreased phospholipase activity 
+is_a: OMP:0005063 ! decreased phospholipase activity
 created_by: Jesus
 creation_date: 2016-01-26T15:19:53Z
 
@@ -5149,10 +5149,10 @@ creation_date: 2014-07-16T12:36:13Z
 
 [Term]
 id: OMP:0005130
-name: altered catalytic activity
-def: "A catalytic activity phenotype where a specified catalytic activity is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0000221 ! catalytic activity phenotype
-intersection_of: OMP:0000221 ! catalytic activity phenotype
+name: altered enzymatic activity
+def: "An enzymatic activity phenotype where a specified enzymatic activity is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0000221 ! enzymatic activity phenotype
+intersection_of: OMP:0000221 ! enzymatic activity phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: wmeza
 creation_date: 2014-07-16T17:48:24Z
@@ -6080,10 +6080,10 @@ creation_date: 2014-07-24T20:05:39Z
 
 [Term]
 id: OMP:0006095
-name: abolished catalytic activity
-def: "A decreased catalytic activity phenotype where a specified catalytic activity is abolished." [OMP:JCH]
+name: abolished enzymatic activity
+def: "A decreased enzymatic activity phenotype where a specified enzymatic activity is abolished." [OMP:JCH]
 is_a: OMP:0005103 ! decreased catalytic activity
-is_a: OMP:0007281 ! absence of catalytic activity
+is_a: OMP:0007281 ! absence of enzymatic activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:09:28Z
 
@@ -9238,17 +9238,17 @@ creation_date: 2016-01-07T22:48:43Z
 
 [Term]
 id: OMP:0007280
-name: presence of catalytic activity
-def: "A catalytic activity phenotype where a specified catalytic activity is present in a cell, cells, or organism." [OMP:DAS]
-is_a: OMP:0000221 ! catalytic activity phenotype
+name: presence of enzymatic activity
+def: "An enzymatic activity phenotype where a specified enzymatic activity is present in a cell, cells, or organism." [OMP:DAS]
+is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: siegele
 creation_date: 2016-01-09T18:04:12Z
 
 [Term]
 id: OMP:0007281
-name: absence of catalytic activity
-def: "A catalytic activity phenotype where a specified catalytic activity is absent in a cell, cells, or organism." [OMP:DAS]
-is_a: OMP:0000221 ! catalytic activity phenotype
+name: absence of enzymatic activity
+def: "An enzymatic activity phenotype where a specified enzymatic activity is absent in a cell, cells, or organism." [OMP:DAS]
+is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: siegele
 creation_date: 2016-01-09T18:05:38Z
 
@@ -9282,7 +9282,7 @@ name: laccase activity phenotype
 def: "A catalytic activity phenotype that relates to the presence or absence of laccase, a family of oxidoreductases that act on diphenols and related substances as donors and use oxygen as the acceptor." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nLaccase is involved in the synthesis of fungal melanin.
 synonym: "benzenediol:oxygen oxidoreductase activity" RELATED [EC:1.10.3.2]
-is_a: OMP:0000221 ! catalytic activity phenotype
+is_a: OMP:0000221 ! enzymatic activity phenotype
 is_a: OMP:0007130 ! differential test phenotype
 created_by: siegele
 creation_date: 2016-01-10T00:30:53Z
