@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 29:01:2016 16:42
-saved-by: dsiegele
+date: 29:01:2016 23:34
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -3075,7 +3075,7 @@ creation_date: 2011-06-06T04:30:12Z
 [Term]
 id: OMP:0000199
 name: acid-fast stain phenotype
-def: "A cell-staining phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol." [ISBN:978-0-07-729281-1, ISBN:978-0077292812, OMP:DAS]
+def: "A cell-staining phenotype where a cell or cells are classified based on whether they are decolorized by an acid-alcohol mixture after staining, typically with carbolfuchsin." [ISBN:978-0-07-729281-1, OMP:DAS]
 is_a: OMP:0000214 ! cell staining phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:38:46Z
@@ -4207,7 +4207,7 @@ creation_date: 2013-09-19T13:39:34Z
 [Term]
 id: OMP:0005019
 name: absence of phospholipase activity
-def: "A phospholipase activity phenotype where an organism doesn't exhibit phospholipase activity." []
+def: "A phospholipase activity phenotype where an organism doesn't exhibit phospholipase activity." [OMP:JG]
 is_a: OMP:0005000 ! phospholipase activity phenotype
 created_by: Jesus
 creation_date: 2016-01-26T15:16:42Z
@@ -4576,7 +4576,7 @@ creation_date: 2013-11-04T18:09:38Z
 [Term]
 id: OMP:0005062
 name: increased phospholipase activity
-def: "An altered phospholipase activity phenotype where phospholipase activity is increased relative to a designated control." []
+def: "An altered phospholipase activity phenotype where phospholipase activity is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005028 ! altered phospolipase activity
 created_by: Jesus
 creation_date: 2016-01-26T15:18:34Z
@@ -4986,7 +4986,7 @@ creation_date: 2014-07-02T18:46:00Z
 [Term]
 id: OMP:0005110
 name: abolished phospholipase activity
-def: "A decreased phospholipase activity phenotype where phospholipase activity is abolished." []
+def: "A decreased phospholipase activity phenotype where phospholipase activity is abolished." [OMP:JG]
 is_a: OMP:0005063 ! decreased phospholipase activity
 created_by: Jesus
 creation_date: 2016-01-26T15:19:53Z
@@ -9356,6 +9356,63 @@ def: "A spore germination phenotype where the percentage of spores that germinat
 is_a: OMP:0007292 ! altered spore germination efficiency
 created_by: siegele
 creation_date: 2016-01-10T00:57:49Z
+
+[Term]
+id: OMP:0007294
+name: diazonium blue B stain phenotype
+def: "A cell staining phenotype where microorganisms are classified based on their color after staining with diazonium blue B." [OMP:DAS, PMID:60081]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "fast blue B stain phenotype" EXACT []
+xref: CHEBI:87629 "fast blue B"
+is_a: OMP:0000214 ! cell staining phenotype
+created_by: siegele
+creation_date: 2016-01-29T22:48:37Z
+
+[Term]
+id: OMP:0007295
+name: presence of diazonium blue B staining
+is_a: OMP:0007294 ! diazonium blue B stain phenotype
+created_by: siegele
+creation_date: 2016-01-29T23:13:37Z
+
+[Term]
+id: OMP:0007296
+name: absence of diazonium blue B staining
+is_a: OMP:0007294 ! diazonium blue B stain phenotype
+created_by: siegele
+creation_date: 2016-01-29T23:13:37Z
+
+[Term]
+id: OMP:0007297
+name: altered diazonium blue B staining
+is_a: OMP:0007294 ! diazonium blue B stain phenotype
+created_by: siegele
+creation_date: 2016-01-29T23:13:37Z
+
+[Term]
+id: OMP:0007298
+name: presence of acid-fast stain
+def: "An acid-fast stain phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol." [OMP:DAS]
+is_a: OMP:0000199 ! acid-fast stain phenotype
+created_by: siegele
+creation_date: 2016-01-29T23:18:08Z
+
+[Term]
+id: OMP:0007299
+name: absence of acid-fast stain
+def: "An acid-fast stain phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol." [OMP:DAS]
+synonym: "non-acid-fast staining" EXACT []
+is_a: OMP:0000199 ! acid-fast stain phenotype
+created_by: siegele
+creation_date: 2016-01-29T23:19:38Z
+
+[Term]
+id: OMP:0007300
+name: altered acid-fast stain
+def: "An acid-fast stain phenotype where the resistance of a cell or cells to decolorization by an acid-alcohol mixture during staining is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000199 ! acid-fast stain phenotype
+created_by: siegele
+creation_date: 2016-01-29T23:29:27Z
 
 [Term]
 id: OMP:0008000
