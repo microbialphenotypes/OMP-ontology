@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 29:01:2016 23:34
+date: 30:01:2016 13:52
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3074,7 +3074,7 @@ creation_date: 2011-06-06T04:30:12Z
 
 [Term]
 id: OMP:0000199
-name: acid-fast stain phenotype
+name: acid-fast staining phenotype
 def: "A cell-staining phenotype where a cell or cells are classified based on whether they are decolorized by an acid-alcohol mixture after staining, typically with carbolfuchsin." [ISBN:978-0-07-729281-1, OMP:DAS]
 is_a: OMP:0000214 ! cell staining phenotype
 created_by: Adrienne
@@ -3211,6 +3211,7 @@ id: OMP:0000214
 name: cell staining phenotype
 def: "A microbial phenotype where a cell or cells are treated with a dye or dyes for purposes of identification and classification." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000061 "colony color"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T01:33:37Z
@@ -9359,11 +9360,11 @@ creation_date: 2016-01-10T00:57:49Z
 
 [Term]
 id: OMP:0007294
-name: diazonium blue B stain phenotype
-def: "A cell staining phenotype where microorganisms are classified based on their color after staining with diazonium blue B." [OMP:DAS, PMID:60081]
+name: diazonium blue B staining phenotype
+def: "A cell staining phenotype where microorganisms are classified based on their color after staining with diazonium blue B (DBB).  DBB staining is used to differentiate ascomycetous and basidiomycetous yeasts." [doi:10.1099/00207713-31-2-204, OMP:DAS, PMID:60081]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "fast blue B stain phenotype" EXACT []
-xref: CHEBI:87629 "fast blue B"
+synonym: "fast blue B staining phenotype" EXACT [CHEBI:87629]
+xref: APO:0000061 "colony color"
 is_a: OMP:0000214 ! cell staining phenotype
 created_by: siegele
 creation_date: 2016-01-29T22:48:37Z
@@ -9371,21 +9372,24 @@ creation_date: 2016-01-29T22:48:37Z
 [Term]
 id: OMP:0007295
 name: presence of diazonium blue B staining
-is_a: OMP:0007294 ! diazonium blue B stain phenotype
+def: "A diazonium blue B staining phenotype where cells appear pink to red or violet after staining with diazonium blue B." [OMP:DAS]
+is_a: OMP:0007294 ! diazonium blue B staining phenotype
 created_by: siegele
 creation_date: 2016-01-29T23:13:37Z
 
 [Term]
 id: OMP:0007296
 name: absence of diazonium blue B staining
-is_a: OMP:0007294 ! diazonium blue B stain phenotype
+def: "A diazonium blue B staining phenotype where cells appear yellow or brown after staining with diazonium blue B." [OMP:DAS]
+is_a: OMP:0007294 ! diazonium blue B staining phenotype
 created_by: siegele
 creation_date: 2016-01-29T23:13:37Z
 
 [Term]
 id: OMP:0007297
 name: altered diazonium blue B staining
-is_a: OMP:0007294 ! diazonium blue B stain phenotype
+def: "A diazonium blue B (DBB) staining phenotype where the appearance of cells after staining with DBB is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007294 ! diazonium blue B staining phenotype
 created_by: siegele
 creation_date: 2016-01-29T23:13:37Z
 
@@ -9393,7 +9397,7 @@ creation_date: 2016-01-29T23:13:37Z
 id: OMP:0007298
 name: presence of acid-fast stain
 def: "An acid-fast stain phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol." [OMP:DAS]
-is_a: OMP:0000199 ! acid-fast stain phenotype
+is_a: OMP:0000199 ! acid-fast staining phenotype
 created_by: siegele
 creation_date: 2016-01-29T23:18:08Z
 
@@ -9402,7 +9406,7 @@ id: OMP:0007299
 name: absence of acid-fast stain
 def: "An acid-fast stain phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol." [OMP:DAS]
 synonym: "non-acid-fast staining" EXACT []
-is_a: OMP:0000199 ! acid-fast stain phenotype
+is_a: OMP:0000199 ! acid-fast staining phenotype
 created_by: siegele
 creation_date: 2016-01-29T23:19:38Z
 
@@ -9410,9 +9414,33 @@ creation_date: 2016-01-29T23:19:38Z
 id: OMP:0007300
 name: altered acid-fast stain
 def: "An acid-fast stain phenotype where the resistance of a cell or cells to decolorization by an acid-alcohol mixture during staining is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000199 ! acid-fast stain phenotype
+is_a: OMP:0000199 ! acid-fast staining phenotype
 created_by: siegele
 creation_date: 2016-01-29T23:29:27Z
+
+[Term]
+id: OMP:0007301
+name: decreased diazonium blue B staining
+def: "An altered diazonium blue B (DBB) staining phenotype where DBB staining of cells is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007297 ! altered diazonium blue B staining
+created_by: siegele
+creation_date: 2016-01-30T00:33:19Z
+
+[Term]
+id: OMP:0007302
+name: increased diazonium blue B staining
+def: "An altered diazonium blue B (DBB) staining phenotype where DBB staining of cells is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007297 ! altered diazonium blue B staining
+created_by: siegele
+creation_date: 2016-01-30T00:33:19Z
+
+[Term]
+id: OMP:0007303
+name: abolished diazonium blue B staining
+def: "A decreased diazonium blue B (DBB) staining phenotype where DBB staining of cells is abolished." [OMP:DAS]
+is_a: OMP:0007301 ! decreased diazonium blue B staining
+created_by: siegele
+creation_date: 2016-01-30T13:32:56Z
 
 [Term]
 id: OMP:0008000
