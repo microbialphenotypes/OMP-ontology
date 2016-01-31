@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 30:01:2016 13:52
+date: 31:01:2016 00:46
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1985,6 +1985,7 @@ id: OMP:0000073
 name: cell shape phenotype
 def: "A cell morphology phenotype where the trait in question is the shape of a cell." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000051 "cell shape"
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
 intersection_of: has_quality PATO:0000052 ! shape
@@ -1996,6 +1997,7 @@ id: OMP:0000074
 name: cell size phenotype
 def: "A cell morphology phenotype where the trait in question is the size of a cell." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000052 "cell size"
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
 intersection_of: has_quality PATO:0000117 ! size
@@ -3553,9 +3555,8 @@ creation_date: 2011-07-21T02:02:26Z
 id: OMP:0000269
 name: protein activity phenotype
 def: "A microbial phenotype related to the enzymatic or other activity of a protein." [APO:0000022, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-xref: APO:0000022 "protein activity"
-is_a: OMP:0000000 ! microbial phenotype
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nDuring OMP call on 2016-01-27 we decided to delete the term OMP:0000269 \! protein activity phenotype because when observing a phenotype we don't know what kind of molecule is doing something, just that a particular activity is absent, present, or altered.
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T02:05:51Z
 
@@ -4280,9 +4281,10 @@ creation_date: 2013-09-20T15:00:09Z
 
 [Term]
 id: OMP:0005028
-name: altered phospolipase activity
+name: altered phospholipase activity
 def: "A phospholipase activity phenotype where phospholipase activity is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005000 ! phospholipase activity phenotype
+is_a: OMP:0005130 ! altered enzymatic activity
 created_by: Jesus
 creation_date: 2016-01-26T15:17:51Z
 
@@ -4578,7 +4580,7 @@ creation_date: 2013-11-04T18:09:38Z
 id: OMP:0005062
 name: increased phospholipase activity
 def: "An altered phospholipase activity phenotype where phospholipase activity is increased relative to a designated control." [OMP:JG]
-is_a: OMP:0005028 ! altered phospolipase activity
+is_a: OMP:0005028 ! altered phospholipase activity
 created_by: Jesus
 creation_date: 2016-01-26T15:18:34Z
 
@@ -4586,7 +4588,7 @@ creation_date: 2016-01-26T15:18:34Z
 id: OMP:0005063
 name: decreased phospholipase activity
 def: "An altered phospholipase activity phenotype where phospholipase activity is decreased relative to a designated control." [OMP:JG]
-is_a: OMP:0005028 ! altered phospolipase activity
+is_a: OMP:0005028 ! altered phospholipase activity
 created_by: Jesus
 creation_date: 2016-01-26T15:19:23Z
 
@@ -4988,6 +4990,7 @@ creation_date: 2014-07-02T18:46:00Z
 id: OMP:0005110
 name: abolished phospholipase activity
 def: "A decreased phospholipase activity phenotype where phospholipase activity is abolished." [OMP:JG]
+is_a: OMP:0005019 ! absence of phospholipase activity
 is_a: OMP:0005063 ! decreased phospholipase activity
 created_by: Jesus
 creation_date: 2016-01-26T15:19:53Z
@@ -5155,6 +5158,7 @@ id: OMP:0005130
 name: altered enzymatic activity
 def: "An enzymatic activity phenotype where a specified enzymatic activity is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000221 ! enzymatic activity phenotype
+is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0000221 ! enzymatic activity phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: wmeza
@@ -6557,6 +6561,7 @@ id: OMP:0006149
 name: abolished utilization of dinitrogen
 def: "A decreased dinitrogen utilization phenotype where the ability to fix dinitrogen is abolished." [OMP:JCH]
 is_a: OMP:0007029 ! decreased utilization of dinitrogen
+is_a: OMP:0007191 ! absence of dinitrogen utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:22:06Z
 
@@ -6565,6 +6570,7 @@ id: OMP:0006150
 name: abolished utilization of inorganic nitrogen
 def: "A decreased utilization of inorganic nitrogen phenotype where an organism loses the ability to utilize inorganic nitrogen." [OMP:JCH]
 is_a: OMP:0007032 ! decreased utilization of inorganic nitrogen source
+is_a: OMP:0007307 ! absence of inorganic nitrogen utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:23:03Z
 
@@ -7089,7 +7095,7 @@ creation_date: 2013-09-28T21:02:26Z
 id: OMP:0007032
 name: decreased utilization of inorganic nitrogen source
 def: "An inorganic nitrogen source utilization phenotype where the ability to use an inorganic N-containing compound as the source of nitrogen is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
+is_a: OMP:0007305 ! altered utilization of inorganic nitrogen source
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:03:56Z
 
@@ -7097,7 +7103,7 @@ creation_date: 2013-09-28T21:03:56Z
 id: OMP:0007033
 name: increased utilization of inorganic nitrogen source
 def: "An inorganic nitrogen source utilization phenotype where the ability to use an inorganic N-containing compound as the source of nitrogen is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
+is_a: OMP:0007305 ! altered utilization of inorganic nitrogen source
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:05:18Z
 
@@ -7679,6 +7685,7 @@ creation_date: 2014-07-10T20:13:46Z
 id: OMP:0007101
 name: altered cell shape
 def: "A cell shape phenotype where the shape of a cell is altered relative to a designated control." [OMP:DAS]
+xref: APO:\:0000051 "cell shape"
 is_a: OMP:0000073 ! cell shape phenotype
 is_a: OMP:0007103 ! altered cell morphology
 intersection_of: OMP:0000073 ! cell shape phenotype
@@ -8286,7 +8293,7 @@ id: OMP:0007167
 name: population growth phenotype
 def: "A microbial phenotype where the trait in question is the increase in the number of individuals in a population as the result of sexual or asexual reproduction." [OMP:DAS]
 xref: GO:0000003 "reproduction"
-is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0007006 ! cell population phenotype
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0000003 ! reproduction
@@ -9232,10 +9239,7 @@ creation_date: 2015-11-12T00:46:14Z
 id: OMP:0007279
 name: altered protein activity phenotype
 def: "A protein activity phenotype where the enzymatic or other activity of a protein is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000269 ! protein activity phenotype
 is_a: OMP:0007085 ! altered phenotype
-intersection_of: OMP:0000269 ! protein activity phenotype
-intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2016-01-07T22:48:43Z
 
@@ -9390,6 +9394,7 @@ id: OMP:0007297
 name: altered diazonium blue B staining
 def: "A diazonium blue B (DBB) staining phenotype where the appearance of cells after staining with DBB is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007294 ! diazonium blue B staining phenotype
+is_a: OMP:0007304 ! altered cell staining phenotype
 created_by: siegele
 creation_date: 2016-01-29T23:13:37Z
 
@@ -9415,6 +9420,7 @@ id: OMP:0007300
 name: altered acid-fast stain
 def: "An acid-fast stain phenotype where the resistance of a cell or cells to decolorization by an acid-alcohol mixture during staining is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000199 ! acid-fast staining phenotype
+is_a: OMP:0007304 ! altered cell staining phenotype
 created_by: siegele
 creation_date: 2016-01-29T23:29:27Z
 
@@ -9438,9 +9444,44 @@ creation_date: 2016-01-30T00:33:19Z
 id: OMP:0007303
 name: abolished diazonium blue B staining
 def: "A decreased diazonium blue B (DBB) staining phenotype where DBB staining of cells is abolished." [OMP:DAS]
+is_a: OMP:0007296 ! absence of diazonium blue B staining
 is_a: OMP:0007301 ! decreased diazonium blue B staining
 created_by: siegele
 creation_date: 2016-01-30T13:32:56Z
+
+[Term]
+id: OMP:0007304
+name: altered cell staining phenotype
+def: "A cell staining phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000214 ! cell staining phenotype
+is_a: OMP:0007085 ! altered phenotype
+created_by: siegele
+creation_date: 2016-01-31T00:30:08Z
+
+[Term]
+id: OMP:0007305
+name: altered utilization of inorganic nitrogen source
+def: "An inorganic nitrogen source utilization phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
+is_a: OMP:0007104 ! altered nutrient utilization
+created_by: siegele
+creation_date: 2016-01-31T00:41:26Z
+
+[Term]
+id: OMP:0007306
+name: presence of inorganic nitrogen source utilization
+def: "An inorganic nitrogen source utilization phenotype where a cell or cells can use an inorganic compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
+created_by: siegele
+creation_date: 2016-01-31T00:43:21Z
+
+[Term]
+id: OMP:0007307
+name: absence of inorganic nitrogen utilization
+def: "An inorganic nitrogen source utilization phenotype where a cell or cells lacks the ability to use inorganic compounds as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
+created_by: siegele
+creation_date: 2016-01-31T00:44:37Z
 
 [Term]
 id: OMP:0008000
