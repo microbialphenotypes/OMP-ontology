@@ -1901,7 +1901,7 @@ creation_date: 2011-04-26T05:06:00Z
 
 [Term]
 id: OMP:0000065
-name: avirulent
+name: absence of virulence
 def: "A virulence phenotype where an organism does not possess the ability to cause disease in another organism." [OMP:MCC]
 synonym: "avirulence" EXACT []
 synonym: "incompatible interaction" EXACT []
@@ -1914,7 +1914,7 @@ id: OMP:0000066
 name: abolished virulence
 def: "A decreased virulence phenotype where the ability to cause disease is abolished." [OMP:MCC]
 is_a: OMP:0000061 ! decreased virulence
-is_a: OMP:0000065 ! avirulent
+is_a: OMP:0000065 ! absence of virulence
 created_by: mchibucos
 creation_date: 2011-04-26T05:09:24Z
 
@@ -3064,6 +3064,7 @@ creation_date: 2011-06-06T04:29:39Z
 id: OMP:0000197
 name: microbe-host interaction phenotype
 def: "A microbial phenotype related to the interactions between microbial organisms and their hosts." [OMP:WAM]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: APO:0000287 "interaction with host/environment"
 xref: GO:0051704 "multi-organism process"
 is_a: OMP:0000000 ! microbial phenotype
@@ -5001,6 +5002,15 @@ created_by: Jesus
 creation_date: 2016-01-26T15:19:53Z
 
 [Term]
+id: OMP:0005111
+name: resistance to killing by host cells phenotype
+def: "A microbe-host interaction phenotype that relates to the ability of a microbe  to resist killing by host cells." [OMP:JG]
+xref: APO:0000324 "resistance to killing by host cells"
+is_a: OMP:0000197 ! microbe-host interaction phenotype
+created_by: Jesus
+creation_date: 2016-02-02T13:52:43Z
+
+[Term]
 id: OMP:0005112
 name: SDS-EDTA stress phenotype
 def: "A stress response phenotype dealing with the response to exposure to SDS-EDTA." [OMP:WAM]
@@ -5235,6 +5245,46 @@ def: "An altered septation phenotype where formation of new cell septa is decrea
 is_a: OMP:0007165 ! altered septation phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:58:34Z
+
+[Term]
+id: OMP:0005139
+name: presence of  resistance to killing by host cells
+def: "A resistance to killing by host cells phenotype where microbes are resistant to killing by host cells." [OMP:JG]
+is_a: OMP:0005111 ! resistance to killing by host cells phenotype
+created_by: Jesus
+creation_date: 2016-02-02T13:54:09Z
+
+[Term]
+id: OMP:0005140
+name: absence of resistance to killing by host cells
+def: "A resistance to killing by host cells phenotype where microbes are killed by host cells." [OMP:JG]
+is_a: OMP:0005111 ! resistance to killing by host cells phenotype
+created_by: Jesus
+creation_date: 2016-02-02T13:54:58Z
+
+[Term]
+id: OMP:0005141
+name: altered resistance to killing by host cells
+def: "A resistance to killing by host cells phenotype where the microbe's ability to be killed by host cells  is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005111 ! resistance to killing by host cells phenotype
+created_by: Jesus
+creation_date: 2016-02-02T13:55:50Z
+
+[Term]
+id: OMP:0005142
+name: increased resistance to killing by host cells
+def: "An altered resistance to killing by hosts cells phenotype where the ability to resist killing is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005141 ! altered resistance to killing by host cells
+created_by: Jesus
+creation_date: 2016-02-02T13:57:14Z
+
+[Term]
+id: OMP:0005143
+name: decreased resistance to killing by host cells
+def: "An altered resistance to killing by hosts cells phenotype where the ability to resist killing is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005141 ! altered resistance to killing by host cells
+created_by: Jesus
+creation_date: 2016-02-02T13:57:57Z
 
 [Term]
 id: OMP:0006000
