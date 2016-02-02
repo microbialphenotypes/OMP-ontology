@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 02:02:2016 14:29
+date: 02:02:2016 14:57
 saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -5245,8 +5245,8 @@ creation_date: 2014-08-07T14:58:34Z
 
 [Term]
 id: OMP:0005139
-name: presence of killing by host cells
-def: "A resistance to killing by host cells phenotype where microbes possess the ability to be killed by host cells." [OMP:JG]
+name: presence of  resistance to killing by host cells
+def: "A resistance to killing by host cells phenotype where microbes are resistant to killing by host cells." [OMP:JG]
 is_a: OMP:0005111 ! resistance to killing by host cells phenotype
 created_by: Jesus
 creation_date: 2016-02-02T13:54:09Z
@@ -5254,7 +5254,7 @@ creation_date: 2016-02-02T13:54:09Z
 [Term]
 id: OMP:0005140
 name: absence of resistance to killing by host cells
-def: "A resistance to killing by host cells phenotype where microbes lacks the ability to be killed by host cells." [OMP:JG]
+def: "A resistance to killing by host cells phenotype where microbes are killed by host cells." [OMP:JG]
 is_a: OMP:0005111 ! resistance to killing by host cells phenotype
 created_by: Jesus
 creation_date: 2016-02-02T13:54:58Z
