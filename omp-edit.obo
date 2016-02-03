@@ -1934,6 +1934,8 @@ name: virulence phenotype
 def: "A microbial phenotype, where the trait in question is the ability of an organism to cause disease in another organism (the host)." [OMP:MCC]
 synonym: "infectious agent" BROAD []
 synonym: "pathogen" BROAD []
+xref: APO:0000048 "virulence"
+xref: GO:0009405 "pathogenesis"
 is_a: OMP:0000197 ! microbe-host interaction phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:59Z
@@ -3063,6 +3065,8 @@ id: OMP:0000197
 name: microbe-host interaction phenotype
 def: "A microbial phenotype related to the interactions between microbial organisms and their hosts." [OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000287 "interaction with host/environment"
+xref: GO:0051704 "multi-organism process"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:25:01Z
@@ -3115,7 +3119,6 @@ name: capsule phenotype
 def: "A cell envelope phenotype where the trait in question is the capsule, a layer of polysaccharide or poly-amino acids surrounding a microbial cell.  When present, the capsule is the outermost layer of the cell envelope." [ISBN:9780073402406, OMP:DAS]
 synonym: "glycocalyx" RELATED []
 synonym: "slime layer" RELATED []
-xref: :<new xref>
 xref: APO:0000331 "capsule formation"
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: mchibucos
@@ -9571,6 +9574,62 @@ def: "An inorganic nitrogen source utilization phenotype where a cell or cells l
 is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
 created_by: siegele
 creation_date: 2016-01-31T00:44:37Z
+
+[Term]
+id: OMP:0007308
+name: cell death phenotype
+def: "A biological process phenotype that relates to the cessation of life of an individual cell." [APO:0000312, OMP:DAS]
+xref: APO:0000312 "cell death"
+is_a: OMP:0007194 ! biological process phenotype
+created_by: dsiegele
+creation_date: 2016-02-02T14:15:49Z
+
+[Term]
+id: OMP:0007309
+name: apoptosis phenotype
+def: "An energy-dependent, programmed form of cell death that is characterized by phenotypic markers such as increased levels of reactive oxygen species (often detected via DHE staining), externalization of phosphatidylserine (measured by annexin V staining), and DNA fragmentation (detected using the TUNEL assay). Other processes observed during apoptosis include chromosome condensation and breakdown of mitochondria, including loss of membrane potential and release of cytochrome c. Cells undergoing apoptosis do not lose plasma membrane integrity (measured by propidium iodide staining) until late in the process." [APO:0000155, OMP:DAS]
+xref: GO:0006915 "apoptotic process"
+is_a: OMP:0007308 ! cell death phenotype
+created_by: dsiegele
+creation_date: 2016-02-02T14:27:37Z
+
+[Term]
+id: OMP:0007310
+name: absence of apoptosis
+def: "An apoptosis phenotype where apoptosis is absent." [OMP:DAS]
+is_a: OMP:0007309 ! apoptosis phenotype
+created_by: dsiegele
+creation_date: 2016-02-02T14:31:24Z
+
+[Term]
+id: OMP:0007311
+name: presence of apoptosis
+def: "An apoptosis phenotype where apoptosis is present." [OMP:DAS]
+is_a: OMP:0007309 ! apoptosis phenotype
+created_by: dsiegele
+creation_date: 2016-02-02T14:31:24Z
+
+[Term]
+id: OMP:0007312
+name: altered apoptosis
+def: "An apoptosis phenotype where the occurrence of apoptosis is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007309 ! apoptosis phenotype
+created_by: dsiegele
+creation_date: 2016-02-02T14:31:24Z
+
+[Term]
+id: OMP:0007313
+name: decreased apoptosis
+is_a: OMP:0007312 ! altered apoptosis
+created_by: dsiegele
+creation_date: 2016-02-02T14:58:50Z
+
+[Term]
+id: OMP:0007314
+name: increased apoptosis
+is_a: OMP:0007312 ! altered apoptosis
+created_by: dsiegele
+creation_date: 2016-02-02T14:58:50Z
 
 [Term]
 id: OMP:0008000
