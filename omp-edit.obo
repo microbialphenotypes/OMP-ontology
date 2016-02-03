@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 02:02:2016 14:57
+date: 03:02:2016 16:46
 saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3765,6 +3765,7 @@ synonym: "Carvomycin A" NARROW []
 synonym: "clarithromycin" NARROW [CHEBi:3732]
 synonym: "Dirithromycin" NARROW [CHEBI:474014]
 synonym: "Erythromycin" NARROW [CHEBI:25105]
+synonym: "FK506" NARROW []
 synonym: "Josamycin" NARROW [CHEBI:31739]
 synonym: "macrolide sensitivity phenotype" RELATED []
 synonym: "roxithromycin" NARROW [CHEBI:48844]
@@ -5282,6 +5283,40 @@ def: "An altered resistance to killing by hosts cells phenotype where the abilit
 is_a: OMP:0005141 ! altered resistance to killing by host cells
 created_by: Jesus
 creation_date: 2016-02-02T13:57:57Z
+
+[Term]
+id: OMP:0005144
+name: vacuolar morphology phenotype 
+def: "Cell morphology phenotype that relates to the presence of a vacuole in cell." [GO:0005773, OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0005773 "vacuole "
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: Jesus
+creation_date: 2016-02-03T16:33:50Z
+
+[Term]
+id: OMP:0005145
+name: altered vacuolar morphology 
+def: "A vacuolar morphology phenotype in a cell  that is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005144 ! vacuolar morphology phenotype 
+created_by: Jesus
+creation_date: 2016-02-03T16:37:58Z
+
+[Term]
+id: OMP:0005146
+name: decreased vacuolar size
+def: "An altered vacuolar morphology phenotype where the vacuole size is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005145 ! altered vacuolar morphology 
+created_by: Jesus
+creation_date: 2016-02-03T16:39:06Z
+
+[Term]
+id: OMP:0005147
+name: increased vacuolar size
+def: "An altered vacuolar morphology phenotype where the vacuole size is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005145 ! altered vacuolar morphology 
+created_by: Jesus
+creation_date: 2016-02-03T16:39:51Z
 
 [Term]
 id: OMP:0006000
