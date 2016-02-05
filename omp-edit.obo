@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 03:02:2016 16:46
-saved-by: Jesus
+date: 04:02:2016 18:38
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -5289,35 +5289,36 @@ creation_date: 2016-02-02T13:57:57Z
 
 [Term]
 id: OMP:0005144
-name: vacuolar morphology phenotype 
-def: "Cell morphology phenotype that relates to the presence of a vacuole in cell." [GO:0005773, OMP:JG]
+name: vacuolar morphology phenotype
+def: "A cell morphology phenotype that relates to the morphology of the vacuole, a closed structure, found primarily in eukaryotic cells, that is completely surrounded by a unit membrane and contains liquid material. Cells contain one or several vacuoles, which may have different functions from each other. Vacuoles have a diverse array of functions." [GO:0005773, OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-xref: GO:0005773 "vacuole "
+xref: GO:0005773 "vacuole"
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: Jesus
 creation_date: 2016-02-03T16:33:50Z
 
 [Term]
 id: OMP:0005145
-name: altered vacuolar morphology 
-def: "A vacuolar morphology phenotype in a cell  that is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0005144 ! vacuolar morphology phenotype 
+name: altered vacuolar morphology
+def: "A vacuolar morphology phenotype where the morphology of a vacuole or vacuoles in a cell is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005144 ! vacuolar morphology phenotype
+is_a: OMP:0007103 ! altered cell morphology
 created_by: Jesus
 creation_date: 2016-02-03T16:37:58Z
 
 [Term]
 id: OMP:0005146
 name: decreased vacuolar size
-def: "An altered vacuolar morphology phenotype where the vacuole size is decreased relative to a designated control." [OMP:JG]
-is_a: OMP:0005145 ! altered vacuolar morphology 
+def: "An altered vacuolar morphology phenotype where the size of the vacuole is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005145 ! altered vacuolar morphology
 created_by: Jesus
 creation_date: 2016-02-03T16:39:06Z
 
 [Term]
 id: OMP:0005147
 name: increased vacuolar size
-def: "An altered vacuolar morphology phenotype where the vacuole size is increased relative to a designated control." [OMP:JG]
-is_a: OMP:0005145 ! altered vacuolar morphology 
+def: "An altered vacuolar morphology phenotype where the size of the vacuole is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005145 ! altered vacuolar morphology
 created_by: Jesus
 creation_date: 2016-02-03T16:39:51Z
 
