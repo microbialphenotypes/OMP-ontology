@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 04:02:2016 18:38
+date: 05:02:2016 23:39
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1967,6 +1967,7 @@ id: OMP:0000071
 name: cell morphology phenotype
 def: "A microbial phenotype related to the form and structure of an organism, cell, or cells." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000050 "cellular morphology"
 is_a: OMP:0000000 ! microbial phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: has_quality PATO:0000051 ! morphology
@@ -2253,7 +2254,9 @@ creation_date: 2011-06-07T03:17:22Z
 id: OMP:0000100
 name: colony morphology phenotype
 def: "A multicellular phenotype dealing with the physical characteristics of an assemblage of microorganisms growing on a solid surface such as the surface of an agar culture medium." [ISBN:9780073302089, OMP:WAM]
-is_a: OMP:0007167 ! population growth phenotype
+synonym: "colony appearance phenotype" RELATED []
+xref: APO:0000060 "colony appearance"
+is_a: OMP:0007315 ! population morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:14:39Z
 
@@ -2904,7 +2907,8 @@ creation_date: 2011-02-02T03:17:19Z
 id: OMP:0000177
 name: liquid culture morphology phenotype
 def: "A growth phenotype dealing with the morphological characteristics of a culture growing in a liquid medium." [OMP:WAM]
-is_a: OMP:0007167 ! population growth phenotype
+xref: APO:0000064 "liquid culture appearance"
+is_a: OMP:0007315 ! population morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:20:39Z
 
@@ -2914,6 +2918,7 @@ name: flocculated liquid culture
 def: "A liquid culture morphology phenotype where cells clump together to form small masses in the medium." [ISBN:9780763743031, OMP:WAM]
 synonym: "clumping" BROAD []
 synonym: "flocculation" EXACT []
+xref: APO:0000065 "flocculation"
 is_a: OMP:0000177 ! liquid culture morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:21:00Z
@@ -3175,9 +3180,9 @@ creation_date: 2011-06-07T03:18:33Z
 [Term]
 id: OMP:0000209
 name: fluorescent colony
-def: "A plating phenotype where the prominent morphological characteristic of the colony(ies) is that is fluorescence." [OMP:WAM]
+def: "A colony pigmentation phenotype where the prominent morphological characteristic of the colony(ies) is the presence of fluorescence." [OMP:WAM]
+is_a: OMP:0000100 ! colony morphology phenotype
 is_a: OMP:0000107 ! colony pigmentation phenotype
-is_a: OMP:0000255 ! plating morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:20:31Z
 
@@ -3338,6 +3343,7 @@ creation_date: 2011-06-07T12:34:58Z
 id: OMP:0000230
 name: rugose colony
 def: "A colony surface phenotype that is characterized by a surface that is wrinkled." [OMP:JCH]
+synonym: "rugose colony" RELATED []
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:35:30Z
@@ -3519,7 +3525,8 @@ creation_date: 2011-07-21T01:05:42Z
 id: OMP:0000255
 name: plating morphology phenotype
 def: "A growth phenotype related to the morphology of colonies on solid medium." [OMP:WAM]
-is_a: OMP:0007167 ! population growth phenotype
+comment: This term was made obsolete because it is redundant with OMP:0000100 \! colony morphology phenotype.
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:34:48Z
 
@@ -4558,6 +4565,8 @@ id: OMP:0005059
 name: transposable element transposition phenotype
 def: "A genetic material phenotype dealing with DNA sequences that change positions within the genome." [ISBN:9780198529170, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "<new synonym>" RELATED []
+xref: APO:0000047 "transposable element transposition"
 xref: GO:0032196 "transposition"
 is_a: OMP:0000290 ! genetic material phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -4917,6 +4926,7 @@ name: macrolide dependent growth
 def: "A growth phenotype where growth is dependent on the presence of a macrolide." [OMP:WAM]
 synonym: "erythromycin dependent growth" NARROW []
 is_a: OMP:0007167 ! population growth phenotype
+is_a: OMP:0007264 ! drug-dependent population growth phenotype
 created_by: wmeza
 creation_date: 2014-02-11T11:53:51Z
 
@@ -4925,7 +4935,7 @@ id: OMP:0005101
 name: aminoglycoside dependent growth
 def: "A growth phenotype where growth is dependent on the presence of an aminoglycoside." [OMP:WAM]
 synonym: "streptomycin dependent growth" NARROW []
-is_a: OMP:0007167 ! population growth phenotype
+is_a: OMP:0007264 ! drug-dependent population growth phenotype
 created_by: wmeza
 creation_date: 2014-02-11T11:54:51Z
 
@@ -8631,6 +8641,7 @@ creation_date: 2014-10-18T21:38:46Z
 id: OMP:0007195
 name: chemical sensitivity phenotype
 def: "A biological process phenotype related to the resistance or sensitivity of a cell, cells, or microbe to a chemical entity." [OMP:DAS]
+xref: APO:0000087 "resistance to chemicals"
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0007194 ! biological process phenotype
 intersection_of: has_quality PATO:0001457 ! sensitivity of a process
@@ -9631,6 +9642,14 @@ name: increased apoptosis
 is_a: OMP:0007312 ! altered apoptosis
 created_by: dsiegele
 creation_date: 2016-02-02T14:58:50Z
+
+[Term]
+id: OMP:0007315
+name: population morphology phenotype
+def: "A microbial phenotype related to the appearance of a microbial population, such as a colony, liquid culture, or biofilm." [OMP:DAS]
+is_a: OMP:0007194 ! biological process phenotype
+created_by: siegele
+creation_date: 2016-02-05T20:20:28Z
 
 [Term]
 id: OMP:0008000
