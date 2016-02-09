@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2016-01-15
-date: 10:01:2016 01:05
+data-version: releases/2016-02-09
+date: 05:02:2016 23:39
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -529,7 +529,7 @@ creation_date: 2011-04-26T05:06:00Z
 
 [Term]
 id: OMP:0000065
-name: avirulent
+name: absence of virulence
 def: "A virulence phenotype where an organism does not possess the ability to cause disease in another organism." [OMP:MCC]
 synonym: "avirulence" EXACT []
 synonym: "incompatible interaction" EXACT []
@@ -542,7 +542,7 @@ id: OMP:0000066
 name: abolished virulence
 def: "A decreased virulence phenotype where the ability to cause disease is abolished." [OMP:MCC]
 is_a: OMP:0000061 ! decreased virulence
-is_a: OMP:0000065 ! avirulent
+is_a: OMP:0000065 ! absence of virulence
 created_by: mchibucos
 creation_date: 2011-04-26T05:09:24Z
 
@@ -560,6 +560,8 @@ name: virulence phenotype
 def: "A microbial phenotype, where the trait in question is the ability of an organism to cause disease in another organism (the host)." [OMP:MCC]
 synonym: "infectious agent" BROAD []
 synonym: "pathogen" BROAD []
+xref: APO:0000048 "virulence"
+xref: GO:0009405 "pathogenesis"
 is_a: OMP:0000197 ! microbe-host interaction phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:59Z
@@ -588,6 +590,7 @@ id: OMP:0000071
 name: cell morphology phenotype
 def: "A microbial phenotype related to the form and structure of an organism, cell, or cells." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000050 "cellular morphology"
 is_a: OMP:0007197 ! cellular component phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:15:16Z
@@ -605,6 +608,7 @@ id: OMP:0000073
 name: cell shape phenotype
 def: "A cell morphology phenotype where the trait in question is the shape of a cell." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000051 "cell shape"
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:02Z
@@ -614,6 +618,7 @@ id: OMP:0000074
 name: cell size phenotype
 def: "A cell morphology phenotype where the trait in question is the size of a cell." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000052 "cell size"
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:18:19Z
@@ -843,9 +848,9 @@ creation_date: 2011-04-28T02:11:35Z
 
 [Term]
 id: OMP:0000099
-name: hemolysis phenotype
-def: "A microbe-host interaction phenotype dealing with microbial breakdown of red blood cells." [OMP:WAM]
-is_a: OMP:0000197 ! microbe-host interaction phenotype
+name: hemolysis test
+def: "A differential test phenotype that describes whether a cell or cells exhibits the ability to lyse red blood cells." [OMP:WAM]
+is_a: OMP:0007130 ! differential test phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:17:22Z
 
@@ -853,7 +858,9 @@ creation_date: 2011-06-07T03:17:22Z
 id: OMP:0000100
 name: colony morphology phenotype
 def: "A multicellular phenotype dealing with the physical characteristics of an assemblage of microorganisms growing on a solid surface such as the surface of an agar culture medium." [ISBN:9780073302089, OMP:WAM]
-is_a: OMP:0007167 ! population growth phenotype
+synonym: "colony appearance phenotype" RELATED []
+xref: APO:0000060 "colony appearance"
+is_a: OMP:0007315 ! population morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T02:14:39Z
 
@@ -1491,7 +1498,8 @@ creation_date: 2011-02-02T03:17:19Z
 id: OMP:0000177
 name: liquid culture morphology phenotype
 def: "A growth phenotype dealing with the morphological characteristics of a culture growing in a liquid medium." [OMP:WAM]
-is_a: OMP:0007167 ! population growth phenotype
+xref: APO:0000064 "liquid culture appearance"
+is_a: OMP:0007315 ! population morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:20:39Z
 
@@ -1501,6 +1509,7 @@ name: flocculated liquid culture
 def: "A liquid culture morphology phenotype where cells clump together to form small masses in the medium." [ISBN:9780763743031, OMP:WAM]
 synonym: "clumping" BROAD []
 synonym: "flocculation" EXACT []
+xref: APO:0000065 "flocculation"
 is_a: OMP:0000177 ! liquid culture morphology phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:21:00Z
@@ -1650,7 +1659,10 @@ creation_date: 2011-06-06T04:29:39Z
 [Term]
 id: OMP:0000197
 name: microbe-host interaction phenotype
-def: "A multiorganism interaction phenotype dealing with the interactions between microbial organisms and their hosts." [OMP:WAM]
+def: "A microbial phenotype related to the interactions between microbial organisms and their hosts." [OMP:WAM]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000287 "interaction with host/environment"
+xref: GO:0051704 "multi-organism process"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:25:01Z
@@ -1665,8 +1677,8 @@ creation_date: 2011-06-06T04:30:12Z
 
 [Term]
 id: OMP:0000199
-name: acid-fast stain phenotype
-def: "A cell-staining phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol." [ISBN:978-0-07-729281-1, ISBN:978-0077292812, OMP:DAS]
+name: acid-fast staining phenotype
+def: "A cell-staining phenotype where a cell or cells are classified based on whether they are decolorized by an acid-alcohol mixture after staining, typically with carbolfuchsin." [ISBN:978-0-07-729281-1, OMP:DAS]
 is_a: OMP:0000214 ! cell staining phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:38:46Z
@@ -1703,6 +1715,7 @@ name: capsule phenotype
 def: "A cell envelope phenotype where the trait in question is the capsule, a layer of polysaccharide or poly-amino acids surrounding a microbial cell.  When present, the capsule is the outermost layer of the cell envelope." [ISBN:9780073402406, OMP:DAS]
 synonym: "glycocalyx" RELATED []
 synonym: "slime layer" RELATED []
+xref: APO:0000331 "capsule formation"
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:44:51Z
@@ -1728,9 +1741,10 @@ creation_date: 2011-06-07T02:26:30Z
 
 [Term]
 id: OMP:0000206
-name: altered hemolysis phenotype
-def: "A hemolysis phenotype were the rate of hemolysis is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0000099 ! hemolysis phenotype
+name: altered hemolysis test result
+def: "A hemolysis test phenotype where the ability to cause hemolysis is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0000099 ! hemolysis test
+is_a: OMP:0007131 ! altered differential test result
 created_by: mchibucos
 creation_date: 2011-06-07T03:17:46Z
 
@@ -1749,17 +1763,16 @@ creation_date: 2011-03-02T02:16:33Z
 [Term]
 id: OMP:0000208
 name: absence of hemolysis
-def: "A hemolysis phenotype where hemolysis is absent." [OMP:WAM]
-is_a: OMP:0000099 ! hemolysis phenotype
+def: "A hemolysis test phenotype where a cell or cells does not cause hemolysis." [OMP:WAM]
+is_a: OMP:0000099 ! hemolysis test
 created_by: mchibucos
 creation_date: 2011-06-07T03:18:33Z
 
 [Term]
 id: OMP:0000209
 name: fluorescent colony
-def: "A plating phenotype where the prominent morphological characteristic of the colony(ies) is that is fluorescence." [OMP:WAM]
+def: "A colony pigmentation phenotype where the prominent morphological characteristic of the colony(ies) is the presence of fluorescence." [OMP:WAM]
 is_a: OMP:0000107 ! colony pigmentation phenotype
-is_a: OMP:0000255 ! plating morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:20:31Z
 
@@ -1801,6 +1814,7 @@ id: OMP:0000214
 name: cell staining phenotype
 def: "A microbial phenotype where a cell or cells are treated with a dye or dyes for purposes of identification and classification." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000061 "colony color"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T01:33:37Z
@@ -1824,8 +1838,8 @@ creation_date: 2011-02-07T03:53:18Z
 [Term]
 id: OMP:0000217
 name: increased hemolysis
-def: "An altered hemolysis phenotype where the rate of hemolysis is enhanced relative to a designated control." [OMP:WAM]
-is_a: OMP:0000206 ! altered hemolysis phenotype
+def: "An altered hemolysis phenotype where hemolysis is increased relative to a designated control." [OMP:WAM]
+is_a: OMP:0000206 ! altered hemolysis test result
 created_by: mchibucos
 creation_date: 2011-06-07T03:19:00Z
 
@@ -1860,10 +1874,12 @@ creation_date: 2011-02-03T04:44:11Z
 [Term]
 id: OMP:0000221
 name: enzymatic activity phenotype
-def: "A protein activity phenotype where the trait in question is the activity of an enzyme." [OMP:JCH]
+def: "A microbial phenotype that affects an enzymatic activity. Enzymes are biological molecules that catalyze biochemical reactions at physiological temperatures. Enzymes possess specific binding sites for their substrates (reactants) and are usually composed wholly or largely of protein or RNA. Catalytic RNAs are also called ribozymes." [ISBN:0198506732, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000180 ! metabolic phenotype
-is_a: OMP:0000269 ! protein activity phenotype
+synonym: "catalytic activity" RELATED []
+xref: FYPO:0000654 "catalytic activity phenotype"
+xref: GO:0003824 "catalytic activity"
+is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T04:44:39Z
 
@@ -1917,6 +1933,7 @@ creation_date: 2011-06-07T12:34:58Z
 id: OMP:0000230
 name: rugose colony
 def: "A colony surface phenotype that is characterized by a surface that is wrinkled." [OMP:JCH]
+synonym: "rugose colony" RELATED []
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:35:30Z
@@ -2060,7 +2077,7 @@ creation_date: 2011-06-07T03:05:56Z
 id: OMP:0000249
 name: decreased hemolysis
 def: "An altered hemolysis phenotype where hemolysis is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0000206 ! altered hemolysis phenotype
+is_a: OMP:0000206 ! altered hemolysis test result
 created_by: mchibucos
 creation_date: 2011-06-07T03:19:25Z
 
@@ -2096,7 +2113,8 @@ creation_date: 2011-07-21T01:05:42Z
 id: OMP:0000255
 name: plating morphology phenotype
 def: "A growth phenotype related to the morphology of colonies on solid medium." [OMP:WAM]
-is_a: OMP:0007167 ! population growth phenotype
+comment: This term was made obsolete because it is redundant with OMP:0000100 ! colony morphology phenotype.
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:34:48Z
 
@@ -2138,9 +2156,8 @@ creation_date: 2011-07-21T02:02:26Z
 id: OMP:0000269
 name: protein activity phenotype
 def: "A microbial phenotype related to the enzymatic or other activity of a protein." [APO:0000022, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-xref: APO:0000022 "protein activity"
-is_a: OMP:0000000 ! microbial phenotype
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nDuring OMP call on 2016-01-27 we decided to delete the term OMP:0000269 ! protein activity phenotype because when observing a phenotype we don't know what kind of molecule is doing something, just that a particular activity is absent, present, or altered.
+is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T02:05:51Z
 
@@ -2339,6 +2356,7 @@ synonym: "Carvomycin A" NARROW []
 synonym: "clarithromycin" NARROW [CHEBi:3732]
 synonym: "Dirithromycin" NARROW [CHEBI:474014]
 synonym: "Erythromycin" NARROW [CHEBI:25105]
+synonym: "FK506" NARROW []
 synonym: "Josamycin" NARROW [CHEBI:31739]
 synonym: "macrolide sensitivity phenotype" RELATED []
 synonym: "roxithromycin" NARROW [CHEBI:48844]
@@ -2625,6 +2643,16 @@ created_by: wmeza
 creation_date: 2013-08-22T05:57:56Z
 
 [Term]
+id: OMP:0005000
+name: phospholipase activity phenotype
+def: "An enzymatic activity phenotype that alters phospholipase activity. Phospholipases are a family of enzymes that catalyze the hydrolysis of a glycerophospholipid." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0004620 "phospholipase activity"
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: Jesus
+creation_date: 2016-01-26T15:01:05Z
+
+[Term]
 id: OMP:0005001
 name: altered caffeine resistance
 def: "A caffeine resistance phenotype that is altered relative to a designated control." [OMP:WAM]
@@ -2772,6 +2800,14 @@ created_by: wmeza
 creation_date: 2013-09-19T13:39:34Z
 
 [Term]
+id: OMP:0005019
+name: absence of phospholipase activity
+def: "A phospholipase activity phenotype where an organism doesn't exhibit phospholipase activity." [OMP:JG]
+is_a: OMP:0005000 ! phospholipase activity phenotype
+created_by: Jesus
+creation_date: 2016-01-26T15:16:42Z
+
+[Term]
 id: OMP:0005020
 name: increased basal expression of the SOS response
 def: "An altered basal expression of the SOS response phenotype where basal expression of one or more genes in the SOS response is increased relative to a designated control." [OMP:WAM]
@@ -2820,6 +2856,14 @@ created_by: wmeza
 creation_date: 2013-09-20T13:26:46Z
 
 [Term]
+id: OMP:0005026
+name: presence of phospholipase activity
+def: "A phospholipase activity phenotype where an organism exhibits phospholipase activity." [OMP:JG]
+is_a: OMP:0005000 ! phospholipase activity phenotype
+created_by: Jesus
+creation_date: 2016-01-26T15:17:15Z
+
+[Term]
 id: OMP:0005027
 name: stress-induced mutagenesis phenotype
 def: "A genetic material phenotype that refers to the process(es) that give rise to mutations that occur after imposition of a non-lethal stress." [OMP:WAM, PMID:17917874, PMID:3045565]
@@ -2827,6 +2871,15 @@ comment: This term was created to organize terms beneath it in the ontology. We 
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-09-20T15:00:09Z
+
+[Term]
+id: OMP:0005028
+name: altered phospholipase activity
+def: "A phospholipase activity phenotype where phospholipase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005000 ! phospholipase activity phenotype
+is_a: OMP:0005130 ! altered enzymatic activity
+created_by: Jesus
+creation_date: 2016-01-26T15:17:51Z
 
 [Term]
 id: OMP:0005029
@@ -3089,6 +3142,8 @@ id: OMP:0005059
 name: transposable element transposition phenotype
 def: "A genetic material phenotype dealing with DNA sequences that change positions within the genome." [ISBN:9780198529170, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "<new synonym>" RELATED []
+xref: APO:0000047 "transposable element transposition"
 xref: GO:0032196 "transposition"
 is_a: OMP:0000290 ! genetic material phenotype
 is_a: OMP:0007194 ! biological process phenotype
@@ -3110,6 +3165,22 @@ def: "An altered chromosome segregation phenotype where the occurrence of chromo
 is_a: OMP:0006001 ! altered chromosome segregation
 created_by: wmeza
 creation_date: 2013-11-04T18:09:38Z
+
+[Term]
+id: OMP:0005062
+name: increased phospholipase activity
+def: "An altered phospholipase activity phenotype where phospholipase activity is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005028 ! altered phospholipase activity
+created_by: Jesus
+creation_date: 2016-01-26T15:18:34Z
+
+[Term]
+id: OMP:0005063
+name: decreased phospholipase activity
+def: "An altered phospholipase activity phenotype where phospholipase activity is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005028 ! altered phospholipase activity
+created_by: Jesus
+creation_date: 2016-01-26T15:19:23Z
 
 [Term]
 id: OMP:0005064
@@ -3424,7 +3495,7 @@ id: OMP:0005100
 name: macrolide dependent growth
 def: "A growth phenotype where growth is dependent on the presence of a macrolide." [OMP:WAM]
 synonym: "erythromycin dependent growth" NARROW []
-is_a: OMP:0007167 ! population growth phenotype
+is_a: OMP:0007264 ! drug-dependent population growth phenotype
 created_by: wmeza
 creation_date: 2014-02-11T11:53:51Z
 
@@ -3433,22 +3504,22 @@ id: OMP:0005101
 name: aminoglycoside dependent growth
 def: "A growth phenotype where growth is dependent on the presence of an aminoglycoside." [OMP:WAM]
 synonym: "streptomycin dependent growth" NARROW []
-is_a: OMP:0007167 ! population growth phenotype
+is_a: OMP:0007264 ! drug-dependent population growth phenotype
 created_by: wmeza
 creation_date: 2014-02-11T11:54:51Z
 
 [Term]
 id: OMP:0005102
-name: increased enzyme activity
-def: "An altered enzyme activity phenotype where enzyme activity is increased relative to a designated control." [OMP:WAM]
+name: increased enzymatic activity
+def: "An altered enzymatic activity phenotype where a specified enzymatic activity is increased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005130 ! altered enzymatic activity
 created_by: wmeza
 creation_date: 2014-04-17T10:54:45Z
 
 [Term]
 id: OMP:0005103
-name: decreased enzyme activity
-def: "An altered enzyme activity phenotype where there the activity of an enzyme is decreased relative to a designated control." [OMP:WAM]
+name: decreased catalytic activity
+def: "An altered enzymatic activity phenotype where a specified enzymatic activity is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0005130 ! altered enzymatic activity
 created_by: wmeza
 creation_date: 2014-04-17T10:55:05Z
@@ -3502,6 +3573,24 @@ created_by: wmeza
 creation_date: 2014-07-02T18:46:00Z
 
 [Term]
+id: OMP:0005110
+name: abolished phospholipase activity
+def: "A decreased phospholipase activity phenotype where phospholipase activity is abolished." [OMP:JG]
+is_a: OMP:0005019 ! absence of phospholipase activity
+is_a: OMP:0005063 ! decreased phospholipase activity
+created_by: Jesus
+creation_date: 2016-01-26T15:19:53Z
+
+[Term]
+id: OMP:0005111
+name: resistance to killing by host cells phenotype
+def: "A microbe-host interaction phenotype that relates to the ability of a microbe  to resist killing by host cells." [OMP:JG]
+xref: APO:0000324 "resistance to killing by host cells"
+is_a: OMP:0000197 ! microbe-host interaction phenotype
+created_by: Jesus
+creation_date: 2016-02-02T13:52:43Z
+
+[Term]
 id: OMP:0005112
 name: SDS-EDTA stress phenotype
 def: "A stress response phenotype dealing with the response to exposure to SDS-EDTA." [OMP:WAM]
@@ -3549,8 +3638,8 @@ creation_date: 2014-07-08T17:10:17Z
 [Term]
 id: OMP:0005117
 name: presence of hemolysis
-def: "A hemolysis phenotype where an organism or cell causes hemolysis." [OMP:WAM]
-is_a: OMP:0000099 ! hemolysis phenotype
+def: "A hemolysis test phenotype where a cell or cells causes hemolysis." [OMP:WAM]
+is_a: OMP:0000099 ! hemolysis test
 created_by: wmeza
 creation_date: 2014-07-08T17:55:17Z
 
@@ -3661,9 +3750,9 @@ creation_date: 2014-07-16T12:36:13Z
 [Term]
 id: OMP:0005130
 name: altered enzymatic activity
-def: "An enzymatic activity phenotype where the activity of a particular enzyme is altered relative to a designated control." [OMP:JCH]
+def: "An enzymatic activity phenotype where a specified enzymatic activity is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000221 ! enzymatic activity phenotype
-is_a: OMP:0007279 ! altered protein activity phenotype
+is_a: OMP:0007085 ! altered phenotype
 relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: wmeza
 creation_date: 2014-07-16T17:48:24Z
@@ -3734,6 +3823,81 @@ def: "An altered septation phenotype where formation of new cell septa is decrea
 is_a: OMP:0007165 ! altered septation phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:58:34Z
+
+[Term]
+id: OMP:0005139
+name: presence of  resistance to killing by host cells
+def: "A resistance to killing by host cells phenotype where microbes are resistant to killing by host cells." [OMP:JG]
+is_a: OMP:0005111 ! resistance to killing by host cells phenotype
+created_by: Jesus
+creation_date: 2016-02-02T13:54:09Z
+
+[Term]
+id: OMP:0005140
+name: absence of resistance to killing by host cells
+def: "A resistance to killing by host cells phenotype where microbes are killed by host cells." [OMP:JG]
+is_a: OMP:0005111 ! resistance to killing by host cells phenotype
+created_by: Jesus
+creation_date: 2016-02-02T13:54:58Z
+
+[Term]
+id: OMP:0005141
+name: altered resistance to killing by host cells
+def: "A resistance to killing by host cells phenotype where the microbe's ability to be killed by host cells  is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005111 ! resistance to killing by host cells phenotype
+created_by: Jesus
+creation_date: 2016-02-02T13:55:50Z
+
+[Term]
+id: OMP:0005142
+name: increased resistance to killing by host cells
+def: "An altered resistance to killing by hosts cells phenotype where the ability to resist killing is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005141 ! altered resistance to killing by host cells
+created_by: Jesus
+creation_date: 2016-02-02T13:57:14Z
+
+[Term]
+id: OMP:0005143
+name: decreased resistance to killing by host cells
+def: "An altered resistance to killing by hosts cells phenotype where the ability to resist killing is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005141 ! altered resistance to killing by host cells
+created_by: Jesus
+creation_date: 2016-02-02T13:57:57Z
+
+[Term]
+id: OMP:0005144
+name: vacuolar morphology phenotype
+def: "A cell morphology phenotype that relates to the morphology of the vacuole, a closed structure, found primarily in eukaryotic cells, that is completely surrounded by a unit membrane and contains liquid material. Cells contain one or several vacuoles, which may have different functions from each other. Vacuoles have a diverse array of functions." [GO:0005773, OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0005773 "vacuole"
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: Jesus
+creation_date: 2016-02-03T16:33:50Z
+
+[Term]
+id: OMP:0005145
+name: altered vacuolar morphology
+def: "A vacuolar morphology phenotype where the morphology of a vacuole or vacuoles in a cell is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005144 ! vacuolar morphology phenotype
+is_a: OMP:0007103 ! altered cell morphology
+created_by: Jesus
+creation_date: 2016-02-03T16:37:58Z
+
+[Term]
+id: OMP:0005146
+name: decreased vacuolar size
+def: "An altered vacuolar morphology phenotype where the size of the vacuole is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005145 ! altered vacuolar morphology
+created_by: Jesus
+creation_date: 2016-02-03T16:39:06Z
+
+[Term]
+id: OMP:0005147
+name: increased vacuolar size
+def: "An altered vacuolar morphology phenotype where the size of the vacuole is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005145 ! altered vacuolar morphology
+created_by: Jesus
+creation_date: 2016-02-03T16:39:51Z
 
 [Term]
 id: OMP:0006000
@@ -4590,9 +4754,9 @@ creation_date: 2014-07-24T20:05:39Z
 
 [Term]
 id: OMP:0006095
-name: abolished enzyme activity
-def: "A decreased enzyme activity phenotype where an enzyme activity is abolished." [OMP:JCH]
-is_a: OMP:0005103 ! decreased enzyme activity
+name: abolished enzymatic activity
+def: "A decreased enzymatic activity phenotype where a specified enzymatic activity is abolished." [OMP:JCH]
+is_a: OMP:0005103 ! decreased catalytic activity
 is_a: OMP:0007281 ! absence of enzymatic activity
 created_by: jonathanherrera
 creation_date: 2014-07-24T20:09:28Z
@@ -5060,6 +5224,7 @@ id: OMP:0006149
 name: abolished utilization of dinitrogen
 def: "A decreased dinitrogen utilization phenotype where the ability to fix dinitrogen is abolished." [OMP:JCH]
 is_a: OMP:0007029 ! decreased utilization of dinitrogen
+is_a: OMP:0007191 ! absence of dinitrogen utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:22:06Z
 
@@ -5068,6 +5233,7 @@ id: OMP:0006150
 name: abolished utilization of inorganic nitrogen
 def: "A decreased utilization of inorganic nitrogen phenotype where an organism loses the ability to utilize inorganic nitrogen." [OMP:JCH]
 is_a: OMP:0007032 ! decreased utilization of inorganic nitrogen source
+is_a: OMP:0007307 ! absence of inorganic nitrogen utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:23:03Z
 
@@ -5589,7 +5755,7 @@ creation_date: 2013-09-28T21:02:26Z
 id: OMP:0007032
 name: decreased utilization of inorganic nitrogen source
 def: "An inorganic nitrogen source utilization phenotype where the ability to use an inorganic N-containing compound as the source of nitrogen is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
+is_a: OMP:0007305 ! altered utilization of inorganic nitrogen source
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:03:56Z
 
@@ -5597,7 +5763,7 @@ creation_date: 2013-09-28T21:03:56Z
 id: OMP:0007033
 name: increased utilization of inorganic nitrogen source
 def: "An inorganic nitrogen source utilization phenotype where the ability to use an inorganic N-containing compound as the source of nitrogen is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
+is_a: OMP:0007305 ! altered utilization of inorganic nitrogen source
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:05:18Z
 
@@ -6172,6 +6338,7 @@ creation_date: 2014-07-10T20:13:46Z
 id: OMP:0007101
 name: altered cell shape
 def: "A cell shape phenotype where the shape of a cell is altered relative to a designated control." [OMP:DAS]
+xref: APO:\:0000051 "cell shape"
 is_a: OMP:0000073 ! cell shape phenotype
 is_a: OMP:0007103 ! altered cell morphology
 relationship: has_quality OMP:0007189 ! altered_relative_to
@@ -6763,6 +6930,7 @@ id: OMP:0007167
 name: population growth phenotype
 def: "A microbial phenotype where the trait in question is the increase in the number of individuals in a population as the result of sexual or asexual reproduction." [OMP:DAS]
 xref: GO:0000003 "reproduction"
+is_a: OMP:0007006 ! cell population phenotype
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
 creation_date: 2014-09-25T17:14:07Z
@@ -6996,6 +7164,7 @@ creation_date: 2014-10-18T21:38:46Z
 id: OMP:0007195
 name: chemical sensitivity phenotype
 def: "A biological process phenotype related to the resistance or sensitivity of a cell, cells, or microbe to a chemical entity." [OMP:DAS]
+xref: APO:0000087 "resistance to chemicals"
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
 creation_date: 2014-10-18T21:39:28Z
@@ -7483,6 +7652,7 @@ creation_date: 2015-07-31T13:22:28Z
 [Term]
 id: OMP:0007253
 name: presence of host colonization
+def: "A host colonization phenotype where the ability of a microbe to colonize a host organism is present." [OMP:JG]
 is_a: OMP:0007252 ! host colonization phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
@@ -7490,6 +7660,7 @@ creation_date: 2015-07-31T13:25:08Z
 [Term]
 id: OMP:0007254
 name: absence of host colonization
+def: "A host colonization phenotype where the ability of a microbe to colonize a host organism is absent." [OMP:JG]
 is_a: OMP:0007252 ! host colonization phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
@@ -7689,16 +7860,14 @@ creation_date: 2015-11-12T00:46:14Z
 id: OMP:0007279
 name: altered protein activity phenotype
 def: "A protein activity phenotype where the enzymatic or other activity of a protein is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000269 ! protein activity phenotype
 is_a: OMP:0007085 ! altered phenotype
-relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2016-01-07T22:48:43Z
 
 [Term]
 id: OMP:0007280
 name: presence of enzymatic activity
-def: "An enzymatic activity phenotype where a particular enzyme activity is present in a cell, cells, or organism." [OMP:DAS]
+def: "An enzymatic activity phenotype where a specified enzymatic activity is present in a cell, cells, or organism." [OMP:DAS]
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: siegele
 creation_date: 2016-01-09T18:04:12Z
@@ -7706,7 +7875,7 @@ creation_date: 2016-01-09T18:04:12Z
 [Term]
 id: OMP:0007281
 name: absence of enzymatic activity
-def: "An enzymatic activity phenotype where a particular enzyme activity is absent in a cell, cells, or organism." [OMP:DAS]
+def: "An enzymatic activity phenotype where a specified enzymatic activity is absent in a cell, cells, or organism." [OMP:DAS]
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: siegele
 creation_date: 2016-01-09T18:05:38Z
@@ -7737,56 +7906,62 @@ creation_date: 2016-01-09T18:47:01Z
 
 [Term]
 id: OMP:0007285
-name: fungal laccase test
-def: "A differential test phenotype that relates to the presence or absence of laccase, an enzyme involved in the synthesis of fungal melanin." [OMP:DAS]
+name: laccase activity phenotype
+def: "A catalytic activity phenotype that relates to the presence or absence of laccase, a family of oxidoreductases that act on diphenols and related substances as donors and use oxygen as the acceptor." [OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nLaccase is involved in the synthesis of fungal melanin.
+synonym: "benzenediol:oxygen oxidoreductase activity" RELATED [EC:1.10.3.2]
+is_a: OMP:0000221 ! enzymatic activity phenotype
 is_a: OMP:0007130 ! differential test phenotype
 created_by: siegele
 creation_date: 2016-01-10T00:30:53Z
 
 [Term]
 id: OMP:0007286
-name: presence of fungal laccase activity
-def: "A fungal laccase phenotype where an organism exhibits laccase activity." [OMP:DAS]
-is_a: OMP:0007285 ! fungal laccase test
+name: presence of laccase activity
+def: "A laccase phenotype where an organism exhibits laccase activity." [OMP:DAS]
+is_a: OMP:0007285 ! laccase activity phenotype
 created_by: siegele
 creation_date: 2016-01-10T00:36:59Z
 
 [Term]
 id: OMP:0007287
-name: absence of fungal laccase activity
-def: "A fungal laccase phenotype where an organism doesn't exhibit laccase activity." [OMP:DAS]
-is_a: OMP:0007285 ! fungal laccase test
+name: absence of  laccase activity
+def: "A laccase phenotype where an organism doesn't exhibit laccase activity." [OMP:DAS]
+is_a: OMP:0007285 ! laccase activity phenotype
 created_by: siegele
 creation_date: 2016-01-10T00:37:17Z
 
 [Term]
 id: OMP:0007288
-name: altered fungal laccase activity
-def: "A fungal laccase phenotype where fungal laccase activity is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007285 ! fungal laccase test
+name: altered laccase activity
+def: "A laccase activity phenotype where laccase activity is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0005130 ! altered enzymatic activity
+is_a: OMP:0007131 ! altered differential test result
+is_a: OMP:0007285 ! laccase activity phenotype
 created_by: siegele
 creation_date: 2016-01-10T00:37:57Z
 
 [Term]
 id: OMP:0007289
 name: increased laccase activity
-def: "An altered fungal laccase activity phenotype where fungal laccase activity is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007288 ! altered fungal laccase activity
+def: "An altered laccase activity phenotype where laccase activity is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007288 ! altered laccase activity
 created_by: siegele
 creation_date: 2016-01-10T00:45:01Z
 
 [Term]
 id: OMP:0007290
 name: decreased laccase activity
-is_a: OMP:0007288 ! altered fungal laccase activity
+def: "An altered laccase activity phenotype where laccase activity is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007288 ! altered laccase activity
 created_by: siegele
 creation_date: 2016-01-10T00:45:01Z
 
 [Term]
 id: OMP:0007291
 name: abolished laccase activity
-def: "A decreased fungal laccase activity phenotype where fungal laccase activity is abolished." [OMP:DAS]
-is_a: OMP:0007287 ! absence of fungal laccase activity
+def: "A decreased laccase activity phenotype where laccase activity is abolished." [OMP:DAS]
+is_a: OMP:0007287 ! absence of  laccase activity
 is_a: OMP:0007290 ! decreased laccase activity
 created_by: siegele
 creation_date: 2016-01-10T00:45:01Z
@@ -7808,6 +7983,191 @@ def: "A spore germination phenotype where the percentage of spores that germinat
 is_a: OMP:0007292 ! altered spore germination efficiency
 created_by: siegele
 creation_date: 2016-01-10T00:57:49Z
+
+[Term]
+id: OMP:0007294
+name: diazonium blue B staining phenotype
+def: "A cell staining phenotype where microorganisms are classified based on their color after staining with diazonium blue B (DBB).  DBB staining is used to differentiate ascomycetous and basidiomycetous yeasts." [doi:10.1099/00207713-31-2-204, OMP:DAS, PMID:60081]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "fast blue B staining phenotype" EXACT [CHEBI:87629]
+xref: APO:0000061 "colony color"
+is_a: OMP:0000214 ! cell staining phenotype
+created_by: siegele
+creation_date: 2016-01-29T22:48:37Z
+
+[Term]
+id: OMP:0007295
+name: presence of diazonium blue B staining
+def: "A diazonium blue B staining phenotype where cells appear pink to red or violet after staining with diazonium blue B." [OMP:DAS]
+is_a: OMP:0007294 ! diazonium blue B staining phenotype
+created_by: siegele
+creation_date: 2016-01-29T23:13:37Z
+
+[Term]
+id: OMP:0007296
+name: absence of diazonium blue B staining
+def: "A diazonium blue B staining phenotype where cells appear yellow or brown after staining with diazonium blue B." [OMP:DAS]
+is_a: OMP:0007294 ! diazonium blue B staining phenotype
+created_by: siegele
+creation_date: 2016-01-29T23:13:37Z
+
+[Term]
+id: OMP:0007297
+name: altered diazonium blue B staining
+def: "A diazonium blue B (DBB) staining phenotype where the appearance of cells after staining with DBB is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007294 ! diazonium blue B staining phenotype
+is_a: OMP:0007304 ! altered cell staining phenotype
+created_by: siegele
+creation_date: 2016-01-29T23:13:37Z
+
+[Term]
+id: OMP:0007298
+name: presence of acid-fast stain
+def: "An acid-fast stain phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol." [OMP:DAS]
+is_a: OMP:0000199 ! acid-fast staining phenotype
+created_by: siegele
+creation_date: 2016-01-29T23:18:08Z
+
+[Term]
+id: OMP:0007299
+name: absence of acid-fast stain
+def: "An acid-fast stain phenotype where a cell or cells that have been stained, typically with carbolfuchsin, are not easily decolorized by acid--alcohol." [OMP:DAS]
+synonym: "non-acid-fast staining" EXACT []
+is_a: OMP:0000199 ! acid-fast staining phenotype
+created_by: siegele
+creation_date: 2016-01-29T23:19:38Z
+
+[Term]
+id: OMP:0007300
+name: altered acid-fast stain
+def: "An acid-fast stain phenotype where the resistance of a cell or cells to decolorization by an acid-alcohol mixture during staining is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000199 ! acid-fast staining phenotype
+is_a: OMP:0007304 ! altered cell staining phenotype
+created_by: siegele
+creation_date: 2016-01-29T23:29:27Z
+
+[Term]
+id: OMP:0007301
+name: decreased diazonium blue B staining
+def: "An altered diazonium blue B (DBB) staining phenotype where DBB staining of cells is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007297 ! altered diazonium blue B staining
+created_by: siegele
+creation_date: 2016-01-30T00:33:19Z
+
+[Term]
+id: OMP:0007302
+name: increased diazonium blue B staining
+def: "An altered diazonium blue B (DBB) staining phenotype where DBB staining of cells is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007297 ! altered diazonium blue B staining
+created_by: siegele
+creation_date: 2016-01-30T00:33:19Z
+
+[Term]
+id: OMP:0007303
+name: abolished diazonium blue B staining
+def: "A decreased diazonium blue B (DBB) staining phenotype where DBB staining of cells is abolished." [OMP:DAS]
+is_a: OMP:0007296 ! absence of diazonium blue B staining
+is_a: OMP:0007301 ! decreased diazonium blue B staining
+created_by: siegele
+creation_date: 2016-01-30T13:32:56Z
+
+[Term]
+id: OMP:0007304
+name: altered cell staining phenotype
+def: "A cell staining phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000214 ! cell staining phenotype
+is_a: OMP:0007085 ! altered phenotype
+created_by: siegele
+creation_date: 2016-01-31T00:30:08Z
+
+[Term]
+id: OMP:0007305
+name: altered utilization of inorganic nitrogen source
+def: "An inorganic nitrogen source utilization phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
+is_a: OMP:0007104 ! altered nutrient utilization
+created_by: siegele
+creation_date: 2016-01-31T00:41:26Z
+
+[Term]
+id: OMP:0007306
+name: presence of inorganic nitrogen source utilization
+def: "An inorganic nitrogen source utilization phenotype where a cell or cells can use an inorganic compound as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
+created_by: siegele
+creation_date: 2016-01-31T00:43:21Z
+
+[Term]
+id: OMP:0007307
+name: absence of inorganic nitrogen utilization
+def: "An inorganic nitrogen source utilization phenotype where a cell or cells lacks the ability to use inorganic compounds as the source of nitrogen." [OMP:DAS]
+is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
+created_by: siegele
+creation_date: 2016-01-31T00:44:37Z
+
+[Term]
+id: OMP:0007308
+name: cell death phenotype
+def: "A biological process phenotype that relates to the cessation of life of an individual cell." [APO:0000312, OMP:DAS]
+xref: APO:0000312 "cell death"
+is_a: OMP:0007194 ! biological process phenotype
+created_by: dsiegele
+creation_date: 2016-02-02T14:15:49Z
+
+[Term]
+id: OMP:0007309
+name: apoptosis phenotype
+def: "An energy-dependent, programmed form of cell death that is characterized by phenotypic markers such as increased levels of reactive oxygen species (often detected via DHE staining), externalization of phosphatidylserine (measured by annexin V staining), and DNA fragmentation (detected using the TUNEL assay). Other processes observed during apoptosis include chromosome condensation and breakdown of mitochondria, including loss of membrane potential and release of cytochrome c. Cells undergoing apoptosis do not lose plasma membrane integrity (measured by propidium iodide staining) until late in the process." [APO:0000155, OMP:DAS]
+xref: GO:0006915 "apoptotic process"
+is_a: OMP:0007308 ! cell death phenotype
+created_by: dsiegele
+creation_date: 2016-02-02T14:27:37Z
+
+[Term]
+id: OMP:0007310
+name: absence of apoptosis
+def: "An apoptosis phenotype where apoptosis is absent." [OMP:DAS]
+is_a: OMP:0007309 ! apoptosis phenotype
+created_by: dsiegele
+creation_date: 2016-02-02T14:31:24Z
+
+[Term]
+id: OMP:0007311
+name: presence of apoptosis
+def: "An apoptosis phenotype where apoptosis is present." [OMP:DAS]
+is_a: OMP:0007309 ! apoptosis phenotype
+created_by: dsiegele
+creation_date: 2016-02-02T14:31:24Z
+
+[Term]
+id: OMP:0007312
+name: altered apoptosis
+def: "An apoptosis phenotype where the occurrence of apoptosis is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007309 ! apoptosis phenotype
+created_by: dsiegele
+creation_date: 2016-02-02T14:31:24Z
+
+[Term]
+id: OMP:0007313
+name: decreased apoptosis
+is_a: OMP:0007312 ! altered apoptosis
+created_by: dsiegele
+creation_date: 2016-02-02T14:58:50Z
+
+[Term]
+id: OMP:0007314
+name: increased apoptosis
+is_a: OMP:0007312 ! altered apoptosis
+created_by: dsiegele
+creation_date: 2016-02-02T14:58:50Z
+
+[Term]
+id: OMP:0007315
+name: population morphology phenotype
+def: "A microbial phenotype related to the appearance of a microbial population, such as a colony, liquid culture, or biofilm." [OMP:DAS]
+is_a: OMP:0007194 ! biological process phenotype
+created_by: siegele
+creation_date: 2016-02-05T20:20:28Z
 
 [Term]
 id: OMP:0008000
