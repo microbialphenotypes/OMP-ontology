@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 05:02:2016 23:39
-saved-by: siegele
+date: 11:02:2016 14:02
+saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -5331,6 +5331,153 @@ def: "An altered vacuolar morphology phenotype where the size of the vacuole is 
 is_a: OMP:0005145 ! altered vacuolar morphology
 created_by: Jesus
 creation_date: 2016-02-03T16:39:51Z
+
+[Term]
+id: OMP:0005148
+name: ferric reductase activity phenotype
+def: "An enzymatic activity phenotype that relates to the presence or absence of ferric reductase, a class of flavin reductases. Ferric reducatases act on ferric iron to reduce it by using NADH or NADPH as the electron donor." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T12:43:04Z
+
+[Term]
+id: OMP:0005149
+name: absence of ferric reductase activity
+def: "A ferric reductase phenotype where an organism does not exhibit ferric reductase activity." [OMP:JG]
+is_a: OMP:0005148 ! ferric reductase activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T12:44:19Z
+
+[Term]
+id: OMP:0005150
+name: altered ferric reductase activity
+def: "A ferric reductase phenotype where ferric reductase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005148 ! ferric reductase activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T12:44:51Z
+
+[Term]
+id: OMP:0005151
+name: decreased ferric reductase activity 
+def: "An altered ferric reductase activity phenotype where ferric reductase activity is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005150 ! altered ferric reductase activity
+created_by: Jesus
+creation_date: 2016-02-11T12:45:18Z
+
+[Term]
+id: OMP:0005152
+name: increased ferric reductase activity
+def: "An altered ferric reductase activity phenotype where ferric reductase activity is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005150 ! altered ferric reductase activity
+created_by: Jesus
+creation_date: 2016-02-11T12:45:43Z
+
+[Term]
+id: OMP:0005153
+name: presence of ferric reductase activity
+def: "A ferric reductase phenotype where an organism exhibits ferric reductase activity." [OMP:JG]
+is_a: OMP:0005148 ! ferric reductase activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T12:46:10Z
+
+[Term]
+id: OMP:0005154
+name: protein kinase a activity phenotype
+def: "An enzymatic activity phenotype that relates to the presence or absence of protein kinase a, an enzyme that belongs to the kinase AGC group. Protein kinase a acts by phosphorylating a wide array of enzymes, ion channels, chromosomal proteins, and transcription factors." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:11:51Z
+
+[Term]
+id: OMP:0005155
+name: absence of protein kinase a activity
+def: "A protein kinase a phenotype where an organism does not exhibit protein kinase a activity." [OMP:JG]
+is_a: OMP:0005154 ! protein kinase a activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:12:38Z
+
+[Term]
+id: OMP:0005156
+name: altered protein kinase a activity
+def: "A protein kinase a phenotype where protein kinase a activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005154 ! protein kinase a activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:14:19Z
+
+[Term]
+id: OMP:0005157
+name: decreased Protein kinase a activity 
+def: "A protein kinase a activity phenotype where protein kinase a activity is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005156 ! altered protein kinase a activity
+created_by: Jesus
+creation_date: 2016-02-11T13:14:52Z
+
+[Term]
+id: OMP:0005158
+name: increased protein kinase a activity
+def: "An altered protein kinase a activity phenotype where protein kinase a activity is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005156 ! altered protein kinase a activity
+created_by: Jesus
+creation_date: 2016-02-11T13:15:29Z
+
+[Term]
+id: OMP:0005159
+name: presence of protein kinase a activity
+def: "A protein kinase a phenotype where an organism exhibits protein kinase a activity." [OMP:JG]
+is_a: OMP:0005154 ! protein kinase a activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:16:11Z
+
+[Term]
+id: OMP:0005160
+name: phosphatase activity phenotype
+def: "An enzymatic activity phenotype that relates to the presence or absence of phosphatase, an enzyme that acts to modulate protein activity in cells. Phosphatase acts by removing phosphate groups off of active proteins making them enzymatically inactive." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:29:38Z
+
+[Term]
+id: OMP:0005161
+name: absence of phosphatase activity
+def: "A phosphatase phenotype where an organism does not exhibit Phosphatase activity." [OMP:JG]
+is_a: OMP:0005160 ! phosphatase activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:31:39Z
+
+[Term]
+id: OMP:0005162
+name: altered phosphatase activity
+def: "A phosphatase phenotype where phosphatase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005160 ! phosphatase activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:32:34Z
+
+[Term]
+id: OMP:0005163
+name: decreased phosphatase activity 
+def: "A phosphatase activity phenotype where phosphatase activity is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005162 ! altered phosphatase activity
+created_by: Jesus
+creation_date: 2016-02-11T13:33:05Z
+
+[Term]
+id: OMP:0005164
+name: increased phosphatase activity
+def: "An altered phosphatase activity phenotype where phosphatase activity is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005162 ! altered phosphatase activity
+created_by: Jesus
+creation_date: 2016-02-11T13:35:13Z
+
+[Term]
+id: OMP:0005165
+name: presence of phosphatase activity
+def: "A phosphatase phenotype where an organism exhibits phosphatase activity." [OMP:JG]
+is_a: OMP:0005160 ! phosphatase activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:37:34Z
 
 [Term]
 id: OMP:0006000
