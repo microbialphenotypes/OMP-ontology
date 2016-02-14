@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 11:02:2016 14:02
-saved-by: Jesus
+date: 14:02:2016 17:30
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -1943,8 +1943,9 @@ creation_date: 2011-02-02T03:28:59Z
 [Term]
 id: OMP:0000069
 name: quorum sensing phenotype
-def: "A microbial communication phenotype where the trait in question is the ability of an organism to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:MCC\,DAS]
+def: "A microbial communication phenotype where the their population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [GO:0009372, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0009372 "quorum sensing"
 is_a: OMP:0000101 ! microbial communication phenotype
 created_by: adrienne
 creation_date: 2011-02-07T03:47:50Z
@@ -2263,8 +2264,8 @@ creation_date: 2011-02-02T02:14:39Z
 [Term]
 id: OMP:0000101
 name: microbial communication phenotype
-def: "A multicellular phenotype where microbial organisms communicate and coordinate their activities through chemical signals that either diffuse through the environment or remain cell associated." [OMP:JCH]
-is_a: OMP:0005116 ! multicellular phenotype
+def: "A multi-organism phenotype where microbial organisms communicate and coordinate their activities through chemical signals that either diffuse through the environment or remain cell associated." [OMP:JCH]
+is_a: OMP:0005116 ! multi-organism phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:45:44Z
 
@@ -2898,8 +2899,8 @@ creation_date: 2011-06-07T02:59:54Z
 [Term]
 id: OMP:0000176
 name: biofilm phenotype
-def: "A multicellular phenotype dealing with the process in which microorganisms attach to and grow on a surface and produce extracellular polymers that facilitate attachment and matrix formation." [GO:0042710, OMP:WAM]
-is_a: OMP:0005116 ! multicellular phenotype
+def: "A multi-organism phenotype dealing with the process in which microorganisms attach to and grow on a surface and produce extracellular polymers that facilitate attachment and matrix formation." [GO:0042710, OMP:WAM]
+is_a: OMP:0005116 ! multi-organism phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:17:19Z
 
@@ -5059,9 +5060,10 @@ creation_date: 2014-08-07T14:54:52Z
 
 [Term]
 id: OMP:0005116
-name: multicellular phenotype
-def: "A microbial phenotype involving two or more cells of the same or different species." [OMP:DAS]
+name: multi-organism phenotype
+def: "A microbial phenotype related to a biological process that involves two or more organisms of the same or different species." [GO:0051704, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0051704 "multi-organism process"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: wmeza
 creation_date: 2014-07-08T17:10:17Z
@@ -5359,7 +5361,7 @@ creation_date: 2016-02-11T12:44:51Z
 
 [Term]
 id: OMP:0005151
-name: decreased ferric reductase activity 
+name: decreased ferric reductase activity
 def: "An altered ferric reductase activity phenotype where ferric reductase activity is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005150 ! altered ferric reductase activity
 created_by: Jesus
@@ -5408,7 +5410,7 @@ creation_date: 2016-02-11T13:14:19Z
 
 [Term]
 id: OMP:0005157
-name: decreased Protein kinase a activity 
+name: decreased Protein kinase a activity
 def: "A protein kinase a activity phenotype where protein kinase a activity is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005156 ! altered protein kinase a activity
 created_by: Jesus
@@ -5457,7 +5459,7 @@ creation_date: 2016-02-11T13:32:34Z
 
 [Term]
 id: OMP:0005163
-name: decreased phosphatase activity 
+name: decreased phosphatase activity
 def: "A phosphatase activity phenotype where phosphatase activity is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005162 ! altered phosphatase activity
 created_by: Jesus
@@ -6319,7 +6321,7 @@ creation_date: 2014-07-15T20:07:54Z
 [Term]
 id: OMP:0006093
 name: altered quorum sensing phenotype
-def: "A quorum sensing phenotype were the quorum sensing is altered relative to a designated control." [OMP:JCH]
+def: "A quorum sensing phenotype were quorum sensing is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T18:43:39Z
@@ -7302,7 +7304,7 @@ creation_date: 2014-08-01T00:12:56Z
 [Term]
 id: OMP:0007027
 name: increased quorum sensing
-def: "A quorum sensing phenotype where an organism's ability to monitor its population density is increased relative to a designated control." [OMP:DAS]
+def: "A quorum sensing phenotype where organisms ability to monitor their population density is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006093 ! altered quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:02Z
@@ -7310,7 +7312,7 @@ creation_date: 2013-09-17T16:45:02Z
 [Term]
 id: OMP:0007028
 name: decreased quorum sensing
-def: "An altered quorum sensing phenotype where the ability to monitor the population density is decreased relative to a designated control." [OMP:DAS]
+def: "An altered quorum sensing phenotype where the ability of organisms to monitor their population density is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006093 ! altered quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:18Z
