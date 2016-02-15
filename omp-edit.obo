@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 15:02:2016 15:33
+date: 15:02:2016 16:36
 saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -5483,10 +5483,10 @@ creation_date: 2016-02-11T13:37:34Z
 
 [Term]
 id: OMP:0005166
-name: superoxide dismutase activity: 
+name: superoxide dismutase activity:
 def: "An enzymatic activity phenotype that relates to the presence or absence of  superoxide dismutase, an enzyme that catalyzes the reaction:  2 superoxide + 2 H+ = O2 + hydrogen peroxide." [OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-xref: GO:0004784  "superoxide dismutase activity "
+xref: GO:0004784 "superoxide dismutase activity"
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
 creation_date: 2016-02-15T15:25:14Z
@@ -5495,7 +5495,7 @@ creation_date: 2016-02-15T15:25:14Z
 id: OMP:0005167
 name: absence of superoxide dismutase activity
 def: "A superoxide dismutase phenotype where an organism does not exhibit superoxide dismutase activity." [OMP:JG]
-is_a: OMP:0005166 ! superoxide dismutase activity: 
+is_a: OMP:0005166 ! superoxide dismutase activity:
 created_by: Jesus
 creation_date: 2016-02-15T15:28:14Z
 
@@ -5503,13 +5503,13 @@ creation_date: 2016-02-15T15:28:14Z
 id: OMP:0005168
 name: altered superoxide dismutase activity
 def: "A superoxide dismutase phenotype where superoxide dismutase activity is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0005166 ! superoxide dismutase activity: 
+is_a: OMP:0005166 ! superoxide dismutase activity:
 created_by: Jesus
 creation_date: 2016-02-15T15:29:30Z
 
 [Term]
 id: OMP:0005169
-name: decreased superoxide dismutase activity 
+name: decreased superoxide dismutase activity
 def: "A superoxide dismutase activity phenotype where superoxide dismutase activity is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005168 ! altered superoxide dismutase activity
 created_by: Jesus
@@ -5517,7 +5517,7 @@ creation_date: 2016-02-15T15:30:28Z
 
 [Term]
 id: OMP:0005170
-name: increased superoxide dismutase activity 
+name: increased superoxide dismutase activity
 def: "An altered superoxide dismutase activity phenotype where superoxide dismutase \nactivity is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005168 ! altered superoxide dismutase activity
 created_by: Jesus
@@ -5527,9 +5527,17 @@ creation_date: 2016-02-15T15:31:28Z
 id: OMP:0005171
 name: presence of superoxide dismutase activity
 def: "A superoxide dismutase phenotype where an organism exhibits superoxide \ndismutase activity." [OMP:JG]
-is_a: OMP:0005166 ! superoxide dismutase activity: 
+is_a: OMP:0005166 ! superoxide dismutase activity:
 created_by: Jesus
 creation_date: 2016-02-15T15:32:13Z
+
+[Term]
+id: OMP:0005172
+name: delayed cell cycle progression:
+def: "An altered cell cycle phenotype where progression of the cell cycle is delayed relative to a designated control." [OMP:JG]
+is_a: OMP:0005136 ! altered cell cycle phenotype
+created_by: Jesus
+creation_date: 2016-02-15T16:34:58Z
 
 [Term]
 id: OMP:0006000
