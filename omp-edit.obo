@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 15:02:2016 16:36
-saved-by: Jesus
+date: 18:02:2016 13:24
+saved-by: jguzman
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -2193,6 +2193,7 @@ id: OMP:0000094
 name: endospore formation phenotype
 def: "A sporulation phenotype where development concerns formation of an endospore, a dormant, highly resistant spore with a thick wall that forms within the mother cell." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: FAO:0000019 "spore"
 xref: GO:0034301 "endospore formation"
 is_a: OMP:0000091 ! sporulation phenotype
 intersection_of: OMP:0000091 ! sporulation phenotype
@@ -9863,6 +9864,7 @@ id: OMP:0008000
 name: spore morphology phenotype
 def: "A microbial phenotype that is related to the form and structure of a spore or spores." [OMP:KDA]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: FAO:0000019 "spore"
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: kanderson
 creation_date: 2015-06-03T13:12:00Z
