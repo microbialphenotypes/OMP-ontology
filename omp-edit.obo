@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 18:02:2016 13:24
+date: 19:02:2016 16:22
 saved-by: jguzman
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -4599,6 +4599,8 @@ id: OMP:0005062
 name: increased phospholipase activity
 def: "An altered phospholipase activity phenotype where phospholipase activity is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005028 ! altered phospholipase activity
+intersection_of: OMP:0005028 ! altered phospholipase activity
+intersection_of: has_quality PATO:0002304 ! increased process quality
 created_by: Jesus
 creation_date: 2016-01-26T15:18:34Z
 
@@ -4607,6 +4609,8 @@ id: OMP:0005063
 name: decreased phospholipase activity
 def: "An altered phospholipase activity phenotype where phospholipase activity is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005028 ! altered phospholipase activity
+intersection_of: OMP:0005028 ! altered phospholipase activity
+intersection_of: has_quality PATO:0002302 ! decreased process quality
 created_by: Jesus
 creation_date: 2016-01-26T15:19:23Z
 
@@ -5365,6 +5369,8 @@ id: OMP:0005151
 name: decreased ferric reductase activity
 def: "An altered ferric reductase activity phenotype where ferric reductase activity is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005150 ! altered ferric reductase activity
+intersection_of: OMP:0005150 ! altered ferric reductase activity
+intersection_of: has_quality PATO:0002302 ! decreased process quality
 created_by: Jesus
 creation_date: 2016-02-11T12:45:18Z
 
@@ -5373,6 +5379,8 @@ id: OMP:0005152
 name: increased ferric reductase activity
 def: "An altered ferric reductase activity phenotype where ferric reductase activity is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005150 ! altered ferric reductase activity
+intersection_of: OMP:0005150 ! altered ferric reductase activity
+intersection_of: has_quality PATO:0002304 ! increased process quality
 created_by: Jesus
 creation_date: 2016-02-11T12:45:43Z
 
@@ -5411,9 +5419,11 @@ creation_date: 2016-02-11T13:14:19Z
 
 [Term]
 id: OMP:0005157
-name: decreased Protein kinase a activity
+name: decreased protein kinase a activity
 def: "A protein kinase a activity phenotype where protein kinase a activity is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005156 ! altered protein kinase a activity
+intersection_of: OMP:0005156 ! altered protein kinase a activity
+intersection_of: has_quality PATO:0002302 ! decreased process quality
 created_by: Jesus
 creation_date: 2016-02-11T13:14:52Z
 
@@ -5422,6 +5432,8 @@ id: OMP:0005158
 name: increased protein kinase a activity
 def: "An altered protein kinase a activity phenotype where protein kinase a activity is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005156 ! altered protein kinase a activity
+intersection_of: OMP:0005156 ! altered protein kinase a activity
+intersection_of: has_quality PATO:0002304 ! increased process quality
 created_by: Jesus
 creation_date: 2016-02-11T13:15:29Z
 
@@ -5463,6 +5475,8 @@ id: OMP:0005163
 name: decreased phosphatase activity
 def: "A phosphatase activity phenotype where phosphatase activity is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005162 ! altered phosphatase activity
+intersection_of: OMP:0005162 ! altered phosphatase activity
+intersection_of: has_quality PATO:0002302 ! decreased process quality
 created_by: Jesus
 creation_date: 2016-02-11T13:33:05Z
 
@@ -5471,6 +5485,8 @@ id: OMP:0005164
 name: increased phosphatase activity
 def: "An altered phosphatase activity phenotype where phosphatase activity is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005162 ! altered phosphatase activity
+intersection_of: OMP:0005162 ! altered phosphatase activity
+intersection_of: has_quality PATO:0002304 ! increased process quality
 created_by: Jesus
 creation_date: 2016-02-11T13:35:13Z
 
@@ -5513,6 +5529,8 @@ id: OMP:0005169
 name: decreased superoxide dismutase activity
 def: "A superoxide dismutase activity phenotype where superoxide dismutase activity is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005168 ! altered superoxide dismutase activity
+intersection_of: OMP:0005168 ! altered superoxide dismutase activity
+intersection_of: has_quality PATO:0002302 ! decreased process quality
 created_by: Jesus
 creation_date: 2016-02-15T15:30:28Z
 
@@ -5521,6 +5539,8 @@ id: OMP:0005170
 name: increased superoxide dismutase activity
 def: "An altered superoxide dismutase activity phenotype where superoxide dismutase \nactivity is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005168 ! altered superoxide dismutase activity
+intersection_of: OMP:0005168 ! altered superoxide dismutase activity
+intersection_of: has_quality PATO:0002304 ! increased process quality
 created_by: Jesus
 creation_date: 2016-02-15T15:31:28Z
 
@@ -9636,6 +9656,8 @@ id: OMP:0007289
 name: increased laccase activity
 def: "An altered laccase activity phenotype where laccase activity is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007288 ! altered laccase activity
+intersection_of: OMP:0007288 ! altered laccase activity
+intersection_of: has_quality PATO:0002304 ! increased process quality
 created_by: siegele
 creation_date: 2016-01-10T00:45:01Z
 
@@ -9644,6 +9666,8 @@ id: OMP:0007290
 name: decreased laccase activity
 def: "An altered laccase activity phenotype where laccase activity is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007288 ! altered laccase activity
+intersection_of: OMP:0007288 ! altered laccase activity
+intersection_of: has_quality PATO:0002302 ! decreased process quality
 created_by: siegele
 creation_date: 2016-01-10T00:45:01Z
 
