@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 23:02:2016 02:17
-saved-by: siegele
+date: 23:02:2016 13:18
+saved-by: jguzman
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -5360,6 +5360,7 @@ creation_date: 2016-02-11T12:44:19Z
 id: OMP:0005150
 name: altered ferric reductase activity
 def: "A ferric reductase phenotype where ferric reductase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005130 ! altered enzymatic activity
 is_a: OMP:0005148 ! ferric reductase activity phenotype
 created_by: Jesus
 creation_date: 2016-02-11T12:44:51Z
@@ -5413,6 +5414,7 @@ creation_date: 2016-02-11T13:12:38Z
 id: OMP:0005156
 name: altered protein kinase A activity
 def: "A protein kinase A phenotype where protein kinase A activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005130 ! altered enzymatic activity
 is_a: OMP:0005154 ! protein kinase A activity phenotype
 created_by: Jesus
 creation_date: 2016-02-11T13:14:19Z
@@ -5466,6 +5468,7 @@ creation_date: 2016-02-11T13:31:39Z
 id: OMP:0005162
 name: altered phosphatase activity
 def: "A phosphatase phenotype where phosphatase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005130 ! altered enzymatic activity
 is_a: OMP:0005160 ! phosphatase activity phenotype
 created_by: Jesus
 creation_date: 2016-02-11T13:32:34Z
@@ -5520,6 +5523,7 @@ creation_date: 2016-02-15T15:28:14Z
 id: OMP:0005168
 name: altered superoxide dismutase activity
 def: "A superoxide dismutase phenotype where superoxide dismutase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005130 ! altered enzymatic activity
 is_a: OMP:0005166 ! superoxide dismutase activity:
 created_by: Jesus
 creation_date: 2016-02-15T15:29:30Z
@@ -9646,6 +9650,7 @@ creation_date: 2016-01-10T00:37:17Z
 id: OMP:0007288
 name: altered laccase activity
 def: "A laccase activity phenotype where laccase activity is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0005130 ! altered enzymatic activity
 is_a: OMP:0007131 ! altered differential test result
 is_a: OMP:0007285 ! laccase activity phenotype
 created_by: siegele
