@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 23:02:2016 13:18
-saved-by: jguzman
+date: 25:02:2016 18:50
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -1398,7 +1398,6 @@ xref: GO:0048870 "cell motility"
 is_a: OMP:0000312 ! locomotion phenotype
 intersection_of: OMP:0000312 ! locomotion phenotype
 intersection_of: inheres_in GO:0005623 ! cell
-intersection_of: inheres_in GO:0048870 ! cell motility
 creation_date: 2011-03-10T06:55:06Z
 
 [Term]
@@ -1427,7 +1426,6 @@ def: "A locomotion phenotype where the directed movement of a motile cell or org
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000312 ! locomotion phenotype
 intersection_of: OMP:0000312 ! locomotion phenotype
-intersection_of: inheres_in GO:0005623 ! cell
 intersection_of: inheres_in GO:0042330 ! taxis
 created_by: mchibucos
 creation_date: 2011-04-14T03:29:20Z
@@ -2328,10 +2326,10 @@ creation_date: 2011-02-02T02:43:46Z
 
 [Term]
 id: OMP:0000109
-name: mucoid colony
-def: "A colony surface phenotype that is characterized by a surface with a slimy or gummy appearance." [ISBN:1555810489, OMP:WAM]
+name: presence of mucoid colonies
+def: "A mucoid colony phenotype where the colonies are mucoid." [ISBN:1555810489, OMP:WAM]
 synonym: "viscous colony texture" RELATED [OMP:WAM]
-is_a: OMP:0000210 ! colony surface phenotype
+is_a: OMP:0007319 ! mucoid colony phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:38:08Z
 
@@ -3183,7 +3181,6 @@ creation_date: 2011-06-07T03:18:33Z
 id: OMP:0000209
 name: fluorescent colony
 def: "A colony pigmentation phenotype where the prominent morphological characteristic of the colony(ies) is the presence of fluorescence." [OMP:WAM]
-is_a: OMP:0000100 ! colony morphology phenotype
 is_a: OMP:0000107 ! colony pigmentation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:20:31Z
@@ -7020,6 +7017,7 @@ id: OMP:0006164
 name: altered colony size phenotype
 def: "An colony size phenotype where size is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000179 ! colony size phenotype
+is_a: OMP:0007160 ! altered colony morphology
 created_by: jonathanherrera
 creation_date: 2014-08-05T13:44:09Z
 
@@ -9914,6 +9912,54 @@ is_a: OMP:0005149 ! absence of ferric reductase activity
 is_a: OMP:0005151 ! decreased ferric reductase activity
 created_by: siegele
 creation_date: 2016-02-23T02:16:03Z
+
+[Term]
+id: OMP:0007319
+name: mucoid colony phenotype
+def: "A colony surface phenotype that is characterized by a surface with a viscous, slimy, or gummy appearance, typically due to the presence of extracellular polysaccharides produced by cells in the colony." [OMP:DAS]
+is_a: OMP:0000210 ! colony surface phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:35:28Z
+
+[Term]
+id: OMP:0007320
+name: absence of mucoid colonies
+def: "A mucoid colony phenotype where the organism forms nonmucoid colonies." [OMP:DAS]
+is_a: OMP:0007319 ! mucoid colony phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:43:57Z
+
+[Term]
+id: OMP:0007321
+name: altered mucoid colony phenotype
+def: "A mucoid colony phenotype where the mucoid or nonmucoid appearance of colonies is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007319 ! mucoid colony phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:44:52Z
+
+[Term]
+id: OMP:0007322
+name: increased mucoidy
+is_a: OMP:0007321 ! altered mucoid colony phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:46:37Z
+
+[Term]
+id: OMP:0007323
+name: decreased mucoidy
+def: "An altered mucoid colony pheotype where colonies are less mucoid than a designated control." [OMP:DAS]
+is_a: OMP:0007321 ! altered mucoid colony phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:46:37Z
+
+[Term]
+id: OMP:0007324
+name: abolished mucoidy
+def: "A decreased mucoidy phenotype where mucoid colonies are abolished." [OMP:DAS]
+is_a: OMP:0007320 ! absence of mucoid colonies
+is_a: OMP:0007323 ! decreased mucoidy
+created_by: siegele
+creation_date: 2016-02-25T18:46:37Z
 
 [Term]
 id: OMP:0008000
