@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 25:02:2016 18:50
+date: 25:02:2016 19:03
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2329,7 +2329,7 @@ id: OMP:0000109
 name: presence of mucoid colonies
 def: "A mucoid colony phenotype where the colonies are mucoid." [ISBN:1555810489, OMP:WAM]
 synonym: "viscous colony texture" RELATED [OMP:WAM]
-is_a: OMP:0007319 ! mucoid colony phenotype
+is_a: OMP:0007319 ! mucoid colony surface phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:38:08Z
 
@@ -3203,7 +3203,7 @@ creation_date: 2011-06-07T09:49:20Z
 
 [Term]
 id: OMP:0000212
-name: smooth colony
+name: smooth colony surface
 def: "A colony surface phenotype where colonies have a shiny glistening surface." [ISBN:1555810489, OMP:WAM]
 xref: SNOMEDCT:90926009 "Bacterial colony surface, smooth"
 is_a: OMP:0000210 ! colony surface phenotype
@@ -3322,7 +3322,7 @@ creation_date: 2011-02-07T03:53:37Z
 
 [Term]
 id: OMP:0000228
-name: rough colony
+name: rough colony surface
 def: "A colony surface phenotype where a colony or colonies have a dull, bumpy, granular, or matte surface." [ISBN:1555810489, OMP:WAM]
 xref: SNOMEDCT:77092005 "Bacterial colony surface, rough"
 is_a: OMP:0000210 ! colony surface phenotype
@@ -3340,9 +3340,9 @@ creation_date: 2011-06-07T12:34:58Z
 
 [Term]
 id: OMP:0000230
-name: rugose colony
+name: rugose colony surface
 def: "A colony surface phenotype that is characterized by a surface that is wrinkled." [OMP:JCH]
-synonym: "rugose colony" RELATED []
+synonym: "wrinkled colony surface" RELATED []
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:35:30Z
@@ -3401,7 +3401,7 @@ creation_date: 2011-06-07T01:11:04Z
 
 [Term]
 id: OMP:0000239
-name: plicate colony
+name: plicate colony surface
 def: "A colony surface phenotype that is characterized by a surface arranged in parallel folds or ridges; pleated." [OMP:JCH]
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
@@ -3426,7 +3426,7 @@ creation_date: 2011-06-07T01:55:22Z
 
 [Term]
 id: OMP:0000242
-name: concentrically ringed colony
+name: concentrically ringed surface colony
 def: "A colony surface phenotype characterized by rippled surface that radiate outward from a central point or axis." [OMP:JCH]
 synonym: "concentric colony surface texture" EXACT []
 is_a: OMP:0000210 ! colony surface phenotype
@@ -9915,7 +9915,7 @@ creation_date: 2016-02-23T02:16:03Z
 
 [Term]
 id: OMP:0007319
-name: mucoid colony phenotype
+name: mucoid colony surface phenotype
 def: "A colony surface phenotype that is characterized by a surface with a viscous, slimy, or gummy appearance, typically due to the presence of extracellular polysaccharides produced by cells in the colony." [OMP:DAS]
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: siegele
@@ -9925,7 +9925,7 @@ creation_date: 2016-02-25T18:35:28Z
 id: OMP:0007320
 name: absence of mucoid colonies
 def: "A mucoid colony phenotype where the organism forms nonmucoid colonies." [OMP:DAS]
-is_a: OMP:0007319 ! mucoid colony phenotype
+is_a: OMP:0007319 ! mucoid colony surface phenotype
 created_by: siegele
 creation_date: 2016-02-25T18:43:57Z
 
@@ -9933,7 +9933,7 @@ creation_date: 2016-02-25T18:43:57Z
 id: OMP:0007321
 name: altered mucoid colony phenotype
 def: "A mucoid colony phenotype where the mucoid or nonmucoid appearance of colonies is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007319 ! mucoid colony phenotype
+is_a: OMP:0007319 ! mucoid colony surface phenotype
 created_by: siegele
 creation_date: 2016-02-25T18:44:52Z
 
