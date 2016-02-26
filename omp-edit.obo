@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 25:02:2016 19:03
+date: 25:02:2016 22:46
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -4928,7 +4928,6 @@ id: OMP:0005100
 name: macrolide dependent growth
 def: "A growth phenotype where growth is dependent on the presence of a macrolide." [OMP:WAM]
 synonym: "erythromycin dependent growth" NARROW []
-is_a: OMP:0007167 ! population growth phenotype
 is_a: OMP:0007264 ! drug-dependent population growth phenotype
 created_by: wmeza
 creation_date: 2014-02-11T11:53:51Z
@@ -6456,6 +6455,7 @@ id: OMP:0006099
 name: abolished budding
 def: "A decreased budding phenotype where the fraction of budding cells is decreased to zero." [OMP:JCH]
 is_a: OMP:0006006 ! decreased budding
+is_a: OMP:0007234 ! absence of budding
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:08:59Z
 
@@ -6917,6 +6917,7 @@ id: OMP:0006152
 name: abolished utilization of inorganic sulfur
 def: "A decreased utilization of inorganic sulfur phenotype where the ability to utilize an inorganic sulfur source is abolished." [OMP:JCH]
 is_a: OMP:0007055 ! decreased utilization of inorganic sulfur
+is_a: OMP:0007325 ! absence of inorganic sulfur utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:33:11Z
 
@@ -6941,6 +6942,7 @@ id: OMP:0006155
 name: abolished utilization of organic sulfur
 def: "A decreased utilization of organic sulfur phenotype where the ability to utilize an organic sulfur source is abolished." [OMP:JCH]
 is_a: OMP:0007058 ! decreased utilization of organic sulfur source
+is_a: OMP:0007326 ! absence of organic sulfur utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:40:13Z
 
@@ -7627,7 +7629,7 @@ creation_date: 2013-10-01T15:33:32Z
 
 [Term]
 id: OMP:0007057
-name: utilization of inorganic sulfur
+name: presence of inorganic sulfur utilization
 def: "A sulfur source utilization phenotype where an organism uses an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
 is_a: OMP:0007042 ! sulfur source utilization phenotype
 created_by: siegele
@@ -7651,7 +7653,7 @@ creation_date: 2013-10-01T15:34:05Z
 
 [Term]
 id: OMP:0007060
-name: utilization of organic sulfur
+name: presence of organic sulfur utilization
 def: "A sulfur source utilization phenotype where an organism uses an organic S-containing compound as the source of sulfur." [OMP:DAS]
 is_a: OMP:0007042 ! sulfur source utilization phenotype
 created_by: siegele
@@ -9473,6 +9475,7 @@ creation_date: 2015-08-03T14:07:51Z
 id: OMP:0007267
 name: altered drug-dependence of population growth
 def: "A drug-dependent population growth phenotype where dependence of reproduction on the presence of a drug in the growth medium is altered relative to a designated control." [OMP:REF]
+is_a: OMP:0007157 ! altered population growth
 is_a: OMP:0007264 ! drug-dependent population growth phenotype
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
@@ -9960,6 +9963,22 @@ is_a: OMP:0007320 ! absence of mucoid colonies
 is_a: OMP:0007323 ! decreased mucoidy
 created_by: siegele
 creation_date: 2016-02-25T18:46:37Z
+
+[Term]
+id: OMP:0007325
+name: absence of inorganic sulfur utilization
+def: "A sulfur source utilization phenotype where an organism cannot use an inorganic S-containing chemical as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007042 ! sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2016-02-25T22:42:30Z
+
+[Term]
+id: OMP:0007326
+name: absence of organic sulfur utilization
+def: "A sulfur source utilization phenotype where an organism cannot use an organic S-containing chemical as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007042 ! sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2016-02-25T22:42:30Z
 
 [Term]
 id: OMP:0008000
