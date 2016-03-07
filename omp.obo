@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: releases/2015-02-19
-date: 18:02:2016 13:22
-saved-by: jguzman
+data-version: releases/2016-03-06
+date: 25:02:2016 22:46
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -42,8 +42,6 @@ synonymtypedef: systematic_synonym "Systematic synonym" EXACT
 default-namespace: microbial_phenotype
 remark: select is_a closure
 ontology: omp
-ontology: go
-ontology: pato
 
 [Term]
 id: CHEBI:24431
@@ -1396,9 +1394,10 @@ def: "A locomotion phenotype where the trait in question is the self-propelled m
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0048870 "cell motility"
 is_a: OMP:0000312 ! locomotion phenotype
+is_a: OMP:0007197 ! cellular component phenotype
 intersection_of: OMP:0000312 ! locomotion phenotype
 intersection_of: inheres_in GO:0005623 ! cell
-intersection_of: inheres_in GO:0048870 ! cell motility
+relationship: inheres_in GO:0005623 ! cell
 creation_date: 2011-03-10T06:55:06Z
 
 [Term]
@@ -1409,6 +1408,7 @@ xref: PATO:0002297
 is_a: OMP:0007001 ! altered cell motility
 intersection_of: OMP:0007001 ! altered cell motility
 intersection_of: has_quality PATO:0002302 ! decreased process quality
+relationship: has_quality PATO:0002302 ! decreased process quality
 creation_date: 2011-03-10T07:02:42Z
 
 [Term]
@@ -1427,8 +1427,8 @@ def: "A locomotion phenotype where the directed movement of a motile cell or org
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000312 ! locomotion phenotype
 intersection_of: OMP:0000312 ! locomotion phenotype
-intersection_of: inheres_in GO:0005623 ! cell
 intersection_of: inheres_in GO:0042330 ! taxis
+relationship: inheres_in GO:0042330 ! taxis
 created_by: mchibucos
 creation_date: 2011-04-14T03:29:20Z
 
@@ -1440,6 +1440,7 @@ synonym: "motile" RELATED []
 is_a: OMP:0000001 ! cell motility phenotype
 intersection_of: OMP:0000001 ! cell motility phenotype
 intersection_of: has_quality PATO:0000467 ! present
+relationship: has_quality PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-14T03:35:35Z
 
@@ -1450,6 +1451,7 @@ def: "An akinete formation phenotype where a cell or cells have the ability to d
 is_a: OMP:0000093 ! akinete formation phenotype
 intersection_of: OMP:0000093 ! akinete formation phenotype
 intersection_of: has_quality PATO:0000467 ! present
+relationship: has_quality PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-26T02:51:36Z
 
@@ -1460,6 +1462,7 @@ def: "An akinete formation phenotype where a cell or cells do not possess the ab
 is_a: OMP:0000093 ! akinete formation phenotype
 intersection_of: OMP:0000093 ! akinete formation phenotype
 intersection_of: has_quality PATO:0000462 ! absent
+relationship: has_quality PATO:0000462 ! absent
 created_by: mchibucos
 creation_date: 2011-04-26T02:52:52Z
 
@@ -1502,6 +1505,7 @@ def: "An altered endospore formation phenotype where endospore formation is decr
 is_a: OMP:0006161 ! altered endospore formation
 intersection_of: OMP:0006161 ! altered endospore formation
 intersection_of: has_quality PATO:0002302 ! decreased process quality
+relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:15Z
 
@@ -1512,6 +1516,7 @@ def: "An altered endospore formation phenotype where endospore formation is incr
 is_a: OMP:0006161 ! altered endospore formation
 intersection_of: OMP:0006161 ! altered endospore formation
 intersection_of: has_quality PATO:0002304 ! increased process quality
+relationship: has_quality PATO:0002304 ! increased process quality
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:39Z
 
@@ -1538,6 +1543,7 @@ def: "An endospore formation phenotype where the cell possesses the ability to f
 is_a: OMP:0000094 ! endospore formation phenotype
 intersection_of: OMP:0000094 ! endospore formation phenotype
 intersection_of: has_quality PATO:0000467 ! present
+relationship: has_quality PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-26T03:09:10Z
 
@@ -1548,6 +1554,7 @@ def: "An endospore formation phenotype where the cell does not possess the abili
 is_a: OMP:0000094 ! endospore formation phenotype
 intersection_of: OMP:0000094 ! endospore formation phenotype
 intersection_of: has_quality PATO:0000462 ! absent
+relationship: has_quality PATO:0000462 ! absent
 created_by: mchibucos
 creation_date: 2011-04-26T03:09:25Z
 
@@ -1558,6 +1565,7 @@ def: "A myxospore formation phenotype where an organism possesses the ability to
 is_a: OMP:0000096 ! myxospore formation phenotype
 intersection_of: OMP:0000096 ! myxospore formation phenotype
 intersection_of: has_quality PATO:0000467 ! present
+relationship: has_quality PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
 
@@ -1568,6 +1576,7 @@ def: "A myxospore formation phenotype where an organism does not possess the abi
 is_a: OMP:0000096 ! myxospore formation phenotype
 intersection_of: OMP:0000096 ! myxospore formation phenotype
 intersection_of: has_quality PATO:0000462 ! absent
+relationship: has_quality PATO:0000462 ! absent
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
 
@@ -1578,6 +1587,7 @@ def: "An altered myxospore formation phenotype where the ability to form myxospo
 is_a: OMP:0006009 ! altered myxospore formation
 intersection_of: OMP:0006009 ! altered myxospore formation
 intersection_of: has_quality PATO:0002302 ! decreased process quality
+relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
 
@@ -1747,6 +1757,7 @@ xref: PATO:0002298
 is_a: OMP:0007001 ! altered cell motility
 intersection_of: OMP:0007001 ! altered cell motility
 intersection_of: has_quality PATO:0002304 ! increased process quality
+relationship: has_quality PATO:0002304 ! increased process quality
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:26Z
 
@@ -1766,6 +1777,7 @@ xref: GO:0009454 "aerotaxis"
 is_a: OMP:0000004 ! taxis phenotype
 intersection_of: OMP:0000004 ! taxis phenotype
 intersection_of: inheres_in GO:0009454 ! aerotaxis
+relationship: inheres_in GO:0009454 ! aerotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:18:11Z
 
@@ -1786,6 +1798,7 @@ def: "An aerotaxis phenotype where a motile cell or organism displays directed m
 is_a: OMP:0000047 ! aerotaxis phenotype
 intersection_of: OMP:0000047 ! aerotaxis phenotype
 intersection_of: has_quality PATO:0000467 ! present
+relationship: has_quality PATO:0000467 ! present
 created_by: mchibucos
 creation_date: 2011-04-26T04:27:42Z
 
@@ -1925,6 +1938,7 @@ def: "A presence of cell motility phenotype where a population of cells exhibit 
 is_a: OMP:0000005 ! presence of cell motility
 intersection_of: OMP:0000005 ! presence of cell motility
 intersection_of: inheres_in GO:0071978 ! bacterial-type flagellum-dependent swarming motility
+relationship: inheres_in GO:0071978 ! bacterial-type flagellum-dependent swarming motility
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
 
@@ -1956,10 +1970,10 @@ name: cell development phenotype
 def: "A microbial phenotype, where the trait in question is the progression of a cell from an initial condition to a later condition." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0048869 "cellular developmental process"
-is_a: OMP:0000000 ! microbial phenotype
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0048869 ! cellular developmental process
+relationship: inheres_in GO:0048869 ! cellular developmental process
 created_by: adrienne
 creation_date: 2011-02-02T03:11:48Z
 
@@ -1969,10 +1983,12 @@ name: cell morphology phenotype
 def: "A microbial phenotype related to the form and structure of an organism, cell, or cells." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: APO:0000050 "cellular morphology"
-is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0007197 ! cellular component phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: has_quality PATO:0000051 ! morphology
 intersection_of: inheres_in GO:0005623 ! cell
+relationship: has_quality PATO:0000051 ! morphology
+relationship: inheres_in GO:0005623 ! cell
 created_by: adrienne
 creation_date: 2011-02-02T03:15:16Z
 
@@ -1993,6 +2009,7 @@ xref: APO:0000051 "cell shape"
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
 intersection_of: has_quality PATO:0000052 ! shape
+relationship: has_quality PATO:0000052 ! shape
 created_by: adrienne
 creation_date: 2011-02-02T03:18:02Z
 
@@ -2005,6 +2022,7 @@ xref: APO:0000052 "cell size"
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
 intersection_of: has_quality PATO:0000117 ! size
+relationship: has_quality PATO:0000117 ! size
 created_by: adrienne
 creation_date: 2011-02-02T03:18:19Z
 
@@ -2085,6 +2103,7 @@ xref: GO:0042995 "cell projection"
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
 intersection_of: inheres_in GO:0042995 ! cell projection
+relationship: inheres_in GO:0042995 ! cell projection
 created_by: adrienne
 creation_date: 2011-02-02T03:47:44Z
 
@@ -2105,6 +2124,7 @@ comment: This term was created to organize terms beneath it in the ontology. We 
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
 intersection_of: inheres_in GO:0031975 ! envelope
+relationship: inheres_in GO:0031975 ! envelope
 created_by: adrienne
 creation_date: 2011-02-02T03:49:03Z
 
@@ -2163,6 +2183,7 @@ xref: GO:0043934 "sporulation"
 is_a: OMP:0000070 ! cell development phenotype
 intersection_of: OMP:0000070 ! cell development phenotype
 intersection_of: inheres_in GO:0043934 ! sporulation
+relationship: inheres_in GO:0043934 ! sporulation
 created_by: adrienne
 creation_date: 2011-02-02T03:24:24Z
 
@@ -2175,6 +2196,7 @@ xref: GO:0043158 "heterocyst differentiation"
 is_a: OMP:0000070 ! cell development phenotype
 intersection_of: OMP:0000070 ! cell development phenotype
 intersection_of: inheres_in GO:0043158 ! heterocyst differentiation
+relationship: inheres_in GO:0043158 ! heterocyst differentiation
 created_by: adrienne
 creation_date: 2011-02-02T03:24:43Z
 
@@ -2196,8 +2218,10 @@ comment: This term was created to organize terms beneath it in the ontology. We 
 xref: FAO:0000019 "spore"
 xref: GO:0034301 "endospore formation"
 is_a: OMP:0000091 ! sporulation phenotype
+is_a: OMP:0007066 ! asexual reproduction phenotype
 intersection_of: OMP:0000091 ! sporulation phenotype
 intersection_of: inheres_in GO:0034301 ! endospore formation
+relationship: inheres_in GO:0034301 ! endospore formation
 created_by: adrienne
 creation_date: 2011-02-02T03:25:29Z
 
@@ -2210,6 +2234,7 @@ xref: GO:0009847 "spore germination"
 is_a: OMP:0000070 ! cell development phenotype
 intersection_of: OMP:0000070 ! cell development phenotype
 intersection_of: inheres_in GO:0009847 ! spore germination
+relationship: inheres_in GO:0009847 ! spore germination
 created_by: adrienne
 creation_date: 2011-02-02T03:25:47Z
 
@@ -2220,8 +2245,10 @@ def: "A sporulation phenotype related to development of a myxospore, a different
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0034303 "myxospore formation"
 is_a: OMP:0000091 ! sporulation phenotype
+is_a: OMP:0007066 ! asexual reproduction phenotype
 intersection_of: OMP:0000091 ! sporulation phenotype
 intersection_of: inheres_in GO:0034303 ! myxospore formation
+relationship: inheres_in GO:0034303 ! myxospore formation
 created_by: adrienne
 creation_date: 2011-02-02T03:26:41Z
 
@@ -2328,10 +2355,10 @@ creation_date: 2011-02-02T02:43:46Z
 
 [Term]
 id: OMP:0000109
-name: mucoid colony
-def: "A colony surface phenotype that is characterized by a surface with a slimy or gummy appearance." [ISBN:1555810489, OMP:WAM]
+name: presence of mucoid colonies
+def: "A mucoid colony phenotype where the colonies are mucoid." [ISBN:1555810489, OMP:WAM]
 synonym: "viscous colony texture" RELATED [OMP:WAM]
-is_a: OMP:0000210 ! colony surface phenotype
+is_a: OMP:0007319 ! mucoid colony surface phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:38:08Z
 
@@ -2351,6 +2378,7 @@ def: "A presence of cell motility phenotype where a cell or cells exhibits smoot
 is_a: OMP:0000005 ! presence of cell motility
 intersection_of: OMP:0000005 ! presence of cell motility
 intersection_of: inheres_in GO:0071975 ! cell swimming
+relationship: inheres_in GO:0071975 ! cell swimming
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
 
@@ -2361,6 +2389,7 @@ def: "A presence of cell motility phenotype where a cell or cells exhibits smoot
 is_a: OMP:0000005 ! presence of cell motility
 intersection_of: OMP:0000005 ! presence of cell motility
 intersection_of: inheres_in GO:0071976 ! cell gliding
+relationship: inheres_in GO:0071976 ! cell gliding
 created_by: adrienne
 creation_date: 2011-02-07T03:18:03Z
 
@@ -2372,6 +2401,7 @@ xref: GO:0043107 "type IV pilus-dependent motility"
 is_a: OMP:0000005 ! presence of cell motility
 intersection_of: OMP:0000005 ! presence of cell motility
 intersection_of: inheres_in GO:0043107 ! type IV pilus-dependent motility
+relationship: inheres_in GO:0043107 ! type IV pilus-dependent motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:13Z
 
@@ -2543,6 +2573,7 @@ synonym: "non-motile" RELATED []
 is_a: OMP:0000001 ! cell motility phenotype
 intersection_of: OMP:0000001 ! cell motility phenotype
 intersection_of: has_quality PATO:0000462 ! absent
+relationship: has_quality PATO:0000462 ! absent
 created_by: adrienne
 creation_date: 2011-02-18T03:33:32Z
 
@@ -2759,6 +2790,7 @@ def: "An aerotaxis phenotype where a motile cell or organism doesn't display dir
 is_a: OMP:0000047 ! aerotaxis phenotype
 intersection_of: OMP:0000047 ! aerotaxis phenotype
 intersection_of: has_quality PATO:0000462 ! absent
+relationship: has_quality PATO:0000462 ! absent
 created_by: adrienne
 creation_date: 2011-03-02T02:06:09Z
 
@@ -2882,10 +2914,10 @@ name: organismal growth phenotype
 def: "A microbial phenotype related to the increase in size or mass of an organism or a part of an organism." [GO:0040007, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0040007 "growth"
-is_a: OMP:0000000 ! microbial phenotype
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0040007 ! growth
+relationship: inheres_in GO:0040007 ! growth
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:59Z
 
@@ -3183,7 +3215,6 @@ creation_date: 2011-06-07T03:18:33Z
 id: OMP:0000209
 name: fluorescent colony
 def: "A colony pigmentation phenotype where the prominent morphological characteristic of the colony(ies) is the presence of fluorescence." [OMP:WAM]
-is_a: OMP:0000100 ! colony morphology phenotype
 is_a: OMP:0000107 ! colony pigmentation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:20:31Z
@@ -3206,7 +3237,7 @@ creation_date: 2011-06-07T09:49:20Z
 
 [Term]
 id: OMP:0000212
-name: smooth colony
+name: smooth colony surface
 def: "A colony surface phenotype where colonies have a shiny glistening surface." [ISBN:1555810489, OMP:WAM]
 xref: SNOMEDCT:90926009 "Bacterial colony surface, smooth"
 is_a: OMP:0000210 ! colony surface phenotype
@@ -3325,7 +3356,7 @@ creation_date: 2011-02-07T03:53:37Z
 
 [Term]
 id: OMP:0000228
-name: rough colony
+name: rough colony surface
 def: "A colony surface phenotype where a colony or colonies have a dull, bumpy, granular, or matte surface." [ISBN:1555810489, OMP:WAM]
 xref: SNOMEDCT:77092005 "Bacterial colony surface, rough"
 is_a: OMP:0000210 ! colony surface phenotype
@@ -3343,9 +3374,9 @@ creation_date: 2011-06-07T12:34:58Z
 
 [Term]
 id: OMP:0000230
-name: rugose colony
+name: rugose colony surface
 def: "A colony surface phenotype that is characterized by a surface that is wrinkled." [OMP:JCH]
-synonym: "rugose colony" RELATED []
+synonym: "wrinkled colony surface" RELATED []
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:35:30Z
@@ -3404,7 +3435,7 @@ creation_date: 2011-06-07T01:11:04Z
 
 [Term]
 id: OMP:0000239
-name: plicate colony
+name: plicate colony surface
 def: "A colony surface phenotype that is characterized by a surface arranged in parallel folds or ridges; pleated." [OMP:JCH]
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
@@ -3429,7 +3460,7 @@ creation_date: 2011-06-07T01:55:22Z
 
 [Term]
 id: OMP:0000242
-name: concentrically ringed colony
+name: concentrically ringed surface colony
 def: "A colony surface phenotype characterized by rippled surface that radiate outward from a central point or axis." [OMP:JCH]
 synonym: "concentric colony surface texture" EXACT []
 is_a: OMP:0000210 ! colony surface phenotype
@@ -3508,9 +3539,10 @@ def: "A microbial phenotype that affects expression of a gene or genes.  Gene ex
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: FYPO:0000142 "gene expression phenotype"
 xref: GO:0010467 "gene expression"
-is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0010467 ! gene expression
+relationship: inheres_in GO:0010467 ! gene expression
 created_by: mchibucos
 creation_date: 2011-07-21T01:03:06Z
 
@@ -3527,7 +3559,7 @@ creation_date: 2011-07-21T01:05:42Z
 id: OMP:0000255
 name: plating morphology phenotype
 def: "A growth phenotype related to the morphology of colonies on solid medium." [OMP:WAM]
-comment: This term was made obsolete because it is redundant with OMP:0000100 \! colony morphology phenotype.
+comment: This term was made obsolete because it is redundant with OMP:0000100 ! colony morphology phenotype.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:34:48Z
@@ -3570,7 +3602,7 @@ creation_date: 2011-07-21T02:02:26Z
 id: OMP:0000269
 name: protein activity phenotype
 def: "A microbial phenotype related to the enzymatic or other activity of a protein." [APO:0000022, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nDuring OMP call on 2016-01-27 we decided to delete the term OMP:0000269 \! protein activity phenotype because when observing a phenotype we don't know what kind of molecule is doing something, just that a particular activity is absent, present, or altered.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nDuring OMP call on 2016-01-27 we decided to delete the term OMP:0000269 ! protein activity phenotype because when observing a phenotype we don't know what kind of molecule is doing something, just that a particular activity is absent, present, or altered.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T02:05:51Z
@@ -3590,6 +3622,7 @@ xref: CHEBI:33281 "antimicrobial agent"
 is_a: OMP:0000000 ! microbial phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: towards CHEBI:33281 ! antimicrobial agent
+relationship: towards CHEBI:33281 ! antimicrobial agent
 created_by: mchibucos
 creation_date: 2011-07-21T02:21:21Z
 
@@ -3716,6 +3749,7 @@ is_a: OMP:0000306 ! macromolecular biosynthesis phenotype
 is_a: OMP:0005115 ! cell cycle phenotype
 intersection_of: OMP:0005115 ! cell cycle phenotype
 intersection_of: inheres_in GO:0044786 ! cell cycle DNA replication
+relationship: inheres_in GO:0044786 ! cell cycle DNA replication
 created_by: mchibucos
 creation_date: 2011-07-21T05:45:47Z
 
@@ -3759,10 +3793,10 @@ name: locomotion phenotype
 def: "A microbial phenotype where the trait in question is the self-propelled movement of a cell from one location to another." [GO:0040011, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0040011 "locomotion"
-is_a: OMP:0000000 ! microbial phenotype
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0040011 ! locomotion
+relationship: inheres_in GO:0040011 ! locomotion
 created_by: mchibucos
 creation_date: 2012-04-05T11:43:53Z
 
@@ -4022,6 +4056,7 @@ def: "An altered aerotaxis phenotype where aerotaxis is decreased relative to a 
 is_a: OMP:0007076 ! altered aerotaxis
 intersection_of: OMP:0007076 ! altered aerotaxis
 intersection_of: has_quality PATO:0002302 ! decreased process quality
+relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: mchibucos
 creation_date: 2012-11-02T01:20:31Z
 
@@ -4456,8 +4491,10 @@ def: "A genetic material phenotype dealing with the transcriptional or post-tran
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0016458 "gene silencing"
 is_a: OMP:0000290 ! genetic material phenotype
+is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0016458 ! gene silencing
+relationship: inheres_in GO:0016458 ! gene silencing
 created_by: wmeza
 creation_date: 2013-10-18T18:38:43Z
 
@@ -4468,8 +4505,10 @@ def: "A genetic material phenotype concerning the process in which replicated ch
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:\:0007059 "chromosome segregation"
 is_a: OMP:0000290 ! genetic material phenotype
+is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0007059 ! chromosome segregation
+relationship: inheres_in GO:0007059 ! chromosome segregation
 created_by: wmeza
 creation_date: 2013-10-18T18:39:04Z
 
@@ -4571,8 +4610,10 @@ synonym: "<new synonym>" RELATED []
 xref: APO:0000047 "transposable element transposition"
 xref: GO:0032196 "transposition"
 is_a: OMP:0000290 ! genetic material phenotype
+is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0032196 ! transposition
+relationship: inheres_in GO:0032196 ! transposition
 created_by: wmeza
 creation_date: 2013-10-30T18:35:34Z
 
@@ -4591,6 +4632,7 @@ def: "An altered chromosome segregation phenotype where the occurrence of chromo
 is_a: OMP:0006001 ! altered chromosome segregation
 intersection_of: OMP:0006001 ! altered chromosome segregation
 intersection_of: has_quality PATO:0002302 ! decreased process quality
+relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: wmeza
 creation_date: 2013-11-04T18:09:38Z
 
@@ -4599,6 +4641,9 @@ id: OMP:0005062
 name: increased phospholipase activity
 def: "An altered phospholipase activity phenotype where phospholipase activity is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005028 ! altered phospholipase activity
+intersection_of: OMP:0005028 ! altered phospholipase activity
+intersection_of: has_quality PATO:0002304 ! increased process quality
+relationship: has_quality PATO:0002304 ! increased process quality
 created_by: Jesus
 creation_date: 2016-01-26T15:18:34Z
 
@@ -4607,6 +4652,9 @@ id: OMP:0005063
 name: decreased phospholipase activity
 def: "An altered phospholipase activity phenotype where phospholipase activity is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005028 ! altered phospholipase activity
+intersection_of: OMP:0005028 ! altered phospholipase activity
+intersection_of: has_quality PATO:0002302 ! decreased process quality
+relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: Jesus
 creation_date: 2016-01-26T15:19:23Z
 
@@ -4899,6 +4947,7 @@ synonym: "decreased UV sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005125 ! altered UV radiation resistance
 intersection_of: OMP:0005125 ! altered UV radiation resistance
 intersection_of: has_quality PATO:0002304 ! increased process quality
+relationship: has_quality PATO:0002304 ! increased process quality
 created_by: wmeza
 creation_date: 2013-12-17T13:41:53Z
 
@@ -4910,6 +4959,7 @@ synonym: "increased UV sensitivity " RELATED [OMP:WAM]
 is_a: OMP:0005125 ! altered UV radiation resistance
 intersection_of: OMP:0005125 ! altered UV radiation resistance
 intersection_of: has_quality PATO:0002302 ! decreased process quality
+relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: wmeza
 creation_date: 2013-12-17T13:43:32Z
 
@@ -4927,7 +4977,6 @@ id: OMP:0005100
 name: macrolide dependent growth
 def: "A growth phenotype where growth is dependent on the presence of a macrolide." [OMP:WAM]
 synonym: "erythromycin dependent growth" NARROW []
-is_a: OMP:0007167 ! population growth phenotype
 is_a: OMP:0007264 ! drug-dependent population growth phenotype
 created_by: wmeza
 creation_date: 2014-02-11T11:53:51Z
@@ -5146,6 +5195,7 @@ is_a: OMP:0005084 ! UV radiation resistance phenotype
 is_a: OMP:0007159 ! altered response to radiation
 intersection_of: OMP:0005084 ! UV radiation resistance phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: wmeza
 creation_date: 2014-07-11T13:56:51Z
 
@@ -5190,6 +5240,7 @@ is_a: OMP:0000221 ! enzymatic activity phenotype
 is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0000221 ! enzymatic activity phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: wmeza
 creation_date: 2014-07-16T17:48:24Z
 
@@ -5338,7 +5389,7 @@ creation_date: 2016-02-03T16:39:51Z
 [Term]
 id: OMP:0005148
 name: ferric reductase activity phenotype
-def: "An enzymatic activity phenotype that relates to the presence or absence of ferric reductase, a class of flavin reductases. Ferric reducatases act on ferric iron to reduce it by using NADH or NADPH as the electron donor." [OMP:JG]
+def: "An enzymatic activity phenotype that relates to the presence or absence of ferric reductase, a class of flavin reductases. Ferric reductases act on ferric iron to reduce it by using NADH or NADPH as the electron donor." [OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
@@ -5356,6 +5407,7 @@ creation_date: 2016-02-11T12:44:19Z
 id: OMP:0005150
 name: altered ferric reductase activity
 def: "A ferric reductase phenotype where ferric reductase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005130 ! altered enzymatic activity
 is_a: OMP:0005148 ! ferric reductase activity phenotype
 created_by: Jesus
 creation_date: 2016-02-11T12:44:51Z
@@ -5365,6 +5417,9 @@ id: OMP:0005151
 name: decreased ferric reductase activity
 def: "An altered ferric reductase activity phenotype where ferric reductase activity is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005150 ! altered ferric reductase activity
+intersection_of: OMP:0005150 ! altered ferric reductase activity
+intersection_of: has_quality PATO:0002302 ! decreased process quality
+relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: Jesus
 creation_date: 2016-02-11T12:45:18Z
 
@@ -5373,6 +5428,9 @@ id: OMP:0005152
 name: increased ferric reductase activity
 def: "An altered ferric reductase activity phenotype where ferric reductase activity is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005150 ! altered ferric reductase activity
+intersection_of: OMP:0005150 ! altered ferric reductase activity
+intersection_of: has_quality PATO:0002304 ! increased process quality
+relationship: has_quality PATO:0002304 ! increased process quality
 created_by: Jesus
 creation_date: 2016-02-11T12:45:43Z
 
@@ -5386,8 +5444,8 @@ creation_date: 2016-02-11T12:46:10Z
 
 [Term]
 id: OMP:0005154
-name: protein kinase a activity phenotype
-def: "An enzymatic activity phenotype that relates to the presence or absence of protein kinase a, an enzyme that belongs to the kinase AGC group. Protein kinase a acts by phosphorylating a wide array of enzymes, ion channels, chromosomal proteins, and transcription factors." [OMP:JG]
+name: protein kinase A activity phenotype
+def: "An enzymatic activity phenotype that relates to the presence or absence of protein kinase A, an enzyme that belongs to the kinase AGC group. Protein kinase A acts by phosphorylating a wide array of enzymes, ion channels, chromosomal proteins, and transcription factors." [OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
@@ -5395,41 +5453,48 @@ creation_date: 2016-02-11T13:11:51Z
 
 [Term]
 id: OMP:0005155
-name: absence of protein kinase a activity
-def: "A protein kinase a phenotype where an organism does not exhibit protein kinase a activity." [OMP:JG]
-is_a: OMP:0005154 ! protein kinase a activity phenotype
+name: absence of protein kinase A activity
+def: "A protein kinase A phenotype where an organism does not exhibit protein kinase A activity." [OMP:JG]
+is_a: OMP:0005154 ! protein kinase A activity phenotype
 created_by: Jesus
 creation_date: 2016-02-11T13:12:38Z
 
 [Term]
 id: OMP:0005156
-name: altered protein kinase a activity
-def: "A protein kinase a phenotype where protein kinase a activity is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0005154 ! protein kinase a activity phenotype
+name: altered protein kinase A activity
+def: "A protein kinase A phenotype where protein kinase A activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005130 ! altered enzymatic activity
+is_a: OMP:0005154 ! protein kinase A activity phenotype
 created_by: Jesus
 creation_date: 2016-02-11T13:14:19Z
 
 [Term]
 id: OMP:0005157
-name: decreased Protein kinase a activity
-def: "A protein kinase a activity phenotype where protein kinase a activity is decreased relative to a designated control." [OMP:JG]
-is_a: OMP:0005156 ! altered protein kinase a activity
+name: decreased protein kinase A activity
+def: "An altered protein kinase A activity phenotype where protein kinase A activity is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005156 ! altered protein kinase A activity
+intersection_of: OMP:0005156 ! altered protein kinase A activity
+intersection_of: has_quality PATO:0002302 ! decreased process quality
+relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: Jesus
 creation_date: 2016-02-11T13:14:52Z
 
 [Term]
 id: OMP:0005158
-name: increased protein kinase a activity
-def: "An altered protein kinase a activity phenotype where protein kinase a activity is increased relative to a designated control." [OMP:JG]
-is_a: OMP:0005156 ! altered protein kinase a activity
+name: increased protein kinase A activity
+def: "An altered protein kinase A activity phenotype where protein kinase A activity is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005156 ! altered protein kinase A activity
+intersection_of: OMP:0005156 ! altered protein kinase A activity
+intersection_of: has_quality PATO:0002304 ! increased process quality
+relationship: has_quality PATO:0002304 ! increased process quality
 created_by: Jesus
 creation_date: 2016-02-11T13:15:29Z
 
 [Term]
 id: OMP:0005159
-name: presence of protein kinase a activity
-def: "A protein kinase a phenotype where an organism exhibits protein kinase a activity." [OMP:JG]
-is_a: OMP:0005154 ! protein kinase a activity phenotype
+name: presence of protein kinase A activity
+def: "A protein kinase A phenotype where an organism exhibits protein kinase A activity." [OMP:JG]
+is_a: OMP:0005154 ! protein kinase A activity phenotype
 created_by: Jesus
 creation_date: 2016-02-11T13:16:11Z
 
@@ -5454,6 +5519,7 @@ creation_date: 2016-02-11T13:31:39Z
 id: OMP:0005162
 name: altered phosphatase activity
 def: "A phosphatase phenotype where phosphatase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005130 ! altered enzymatic activity
 is_a: OMP:0005160 ! phosphatase activity phenotype
 created_by: Jesus
 creation_date: 2016-02-11T13:32:34Z
@@ -5463,6 +5529,9 @@ id: OMP:0005163
 name: decreased phosphatase activity
 def: "A phosphatase activity phenotype where phosphatase activity is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005162 ! altered phosphatase activity
+intersection_of: OMP:0005162 ! altered phosphatase activity
+intersection_of: has_quality PATO:0002302 ! decreased process quality
+relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: Jesus
 creation_date: 2016-02-11T13:33:05Z
 
@@ -5471,6 +5540,9 @@ id: OMP:0005164
 name: increased phosphatase activity
 def: "An altered phosphatase activity phenotype where phosphatase activity is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005162 ! altered phosphatase activity
+intersection_of: OMP:0005162 ! altered phosphatase activity
+intersection_of: has_quality PATO:0002304 ! increased process quality
+relationship: has_quality PATO:0002304 ! increased process quality
 created_by: Jesus
 creation_date: 2016-02-11T13:35:13Z
 
@@ -5504,6 +5576,7 @@ creation_date: 2016-02-15T15:28:14Z
 id: OMP:0005168
 name: altered superoxide dismutase activity
 def: "A superoxide dismutase phenotype where superoxide dismutase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005130 ! altered enzymatic activity
 is_a: OMP:0005166 ! superoxide dismutase activity:
 created_by: Jesus
 creation_date: 2016-02-15T15:29:30Z
@@ -5513,21 +5586,27 @@ id: OMP:0005169
 name: decreased superoxide dismutase activity
 def: "A superoxide dismutase activity phenotype where superoxide dismutase activity is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005168 ! altered superoxide dismutase activity
+intersection_of: OMP:0005168 ! altered superoxide dismutase activity
+intersection_of: has_quality PATO:0002302 ! decreased process quality
+relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: Jesus
 creation_date: 2016-02-15T15:30:28Z
 
 [Term]
 id: OMP:0005170
 name: increased superoxide dismutase activity
-def: "An altered superoxide dismutase activity phenotype where superoxide dismutase \nactivity is increased relative to a designated control." [OMP:JG]
+def: "An altered superoxide dismutase activity phenotype where superoxide dismutase activity is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005168 ! altered superoxide dismutase activity
+intersection_of: OMP:0005168 ! altered superoxide dismutase activity
+intersection_of: has_quality PATO:0002304 ! increased process quality
+relationship: has_quality PATO:0002304 ! increased process quality
 created_by: Jesus
 creation_date: 2016-02-15T15:31:28Z
 
 [Term]
 id: OMP:0005171
 name: presence of superoxide dismutase activity
-def: "A superoxide dismutase phenotype where an organism exhibits superoxide \ndismutase activity." [OMP:JG]
+def: "A superoxide dismutase phenotype where an organism exhibits superoxide dismutase activity." [OMP:JG]
 is_a: OMP:0005166 ! superoxide dismutase activity:
 created_by: Jesus
 creation_date: 2016-02-15T15:32:13Z
@@ -5553,8 +5632,10 @@ id: OMP:0006001
 name: altered chromosome segregation
 def: "A chromosome segregation phenotype where chromosome segregation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005047 ! chromosome segregation phenotype
+is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0005047 ! chromosome segregation phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: jonathanherrera
 creation_date: 2014-07-24T14:14:37Z
 
@@ -5623,6 +5704,7 @@ def: "A myxospore formation phenotype where myxospore formation is altered relat
 is_a: OMP:0000096 ! myxospore formation phenotype
 intersection_of: OMP:0000096 ! myxospore formation phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
+relationship: has_quality OMP:0007188 ! altered_process_quality
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:26:38Z
 
@@ -6435,6 +6517,7 @@ id: OMP:0006099
 name: abolished budding
 def: "A decreased budding phenotype where the fraction of budding cells is decreased to zero." [OMP:JCH]
 is_a: OMP:0006006 ! decreased budding
+is_a: OMP:0007234 ! absence of budding
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:08:59Z
 
@@ -6442,7 +6525,7 @@ creation_date: 2014-07-25T11:08:59Z
 id: OMP:0006100
 name: abolished cell motility by swimming
 def: "A decreased cell motility by swimming phenotype where the ability of a cell or cells to swim is abolished." [OMP:JCH]
-is_a: OMP:0000133 ! absence of cell motility
+is_a: OMP:0007000 ! abolished cell motility
 is_a: OMP:0007093 ! decreased cell motility by swimming
 created_by: jonathanherrera
 creation_date: 2014-08-15T19:12:43Z
@@ -6532,6 +6615,7 @@ is_a: OMP:0000013 ! decreased endospore formation
 is_a: OMP:0000018 ! absence of endospore formation
 intersection_of: OMP:0000013 ! decreased endospore formation
 intersection_of: has_quality PATO:0000462 ! absent
+relationship: has_quality PATO:0000462 ! absent
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:21:50Z
 
@@ -6661,6 +6745,7 @@ is_a: OMP:0000021 ! absence of myxospore formation
 is_a: OMP:0000022 ! decreased myxospore formation
 intersection_of: OMP:0000022 ! decreased myxospore formation
 intersection_of: has_quality PATO:0000462 ! absent
+relationship: has_quality PATO:0000462 ! absent
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:07:02Z
 
@@ -6896,6 +6981,7 @@ id: OMP:0006152
 name: abolished utilization of inorganic sulfur
 def: "A decreased utilization of inorganic sulfur phenotype where the ability to utilize an inorganic sulfur source is abolished." [OMP:JCH]
 is_a: OMP:0007055 ! decreased utilization of inorganic sulfur
+is_a: OMP:0007325 ! absence of inorganic sulfur utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:33:11Z
 
@@ -6920,6 +7006,7 @@ id: OMP:0006155
 name: abolished utilization of organic sulfur
 def: "A decreased utilization of organic sulfur phenotype where the ability to utilize an organic sulfur source is abolished." [OMP:JCH]
 is_a: OMP:0007058 ! decreased utilization of organic sulfur source
+is_a: OMP:0007326 ! absence of organic sulfur utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:40:13Z
 
@@ -6970,8 +7057,10 @@ id: OMP:0006161
 name: altered endospore formation
 def: "A endospore formation phenotype where endospore formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000094 ! endospore formation phenotype
+is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0000094 ! endospore formation phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: jonathanherrera
 creation_date: 2014-07-29T15:37:45Z
 
@@ -6996,6 +7085,7 @@ id: OMP:0006164
 name: altered colony size phenotype
 def: "An colony size phenotype where size is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000179 ! colony size phenotype
+is_a: OMP:0007160 ! altered colony morphology
 created_by: jonathanherrera
 creation_date: 2014-08-05T13:44:09Z
 
@@ -7019,7 +7109,7 @@ creation_date: 2014-08-08T15:51:18Z
 id: OMP:0006167
 name: abolished cell motility by swarming
 def: "A decreased cell motility by swarming phenotype where the ability of cells to swarm is abolished." [OMP:JCH]
-is_a: OMP:0000133 ! absence of cell motility
+is_a: OMP:0007000 ! abolished cell motility
 is_a: OMP:0007092 ! decreased cell motility by swarming
 created_by: jonathanherrera
 creation_date: 2014-08-13T17:25:47Z
@@ -7139,6 +7229,7 @@ is_a: OMP:0000002 ! decreased cell motility
 is_a: OMP:0000133 ! absence of cell motility
 intersection_of: OMP:0000002 ! decreased cell motility
 intersection_of: has_quality PATO:0000462 ! absent
+relationship: has_quality PATO:0000462 ! absent
 created_by: siegele
 creation_date: 2014-06-29T14:10:40Z
 
@@ -7150,6 +7241,7 @@ is_a: OMP:0000001 ! cell motility phenotype
 is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0000001 ! cell motility phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-04-24T17:38:06Z
 
@@ -7605,7 +7697,7 @@ creation_date: 2013-10-01T15:33:32Z
 
 [Term]
 id: OMP:0007057
-name: utilization of inorganic sulfur
+name: presence of inorganic sulfur utilization
 def: "A sulfur source utilization phenotype where an organism uses an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
 is_a: OMP:0007042 ! sulfur source utilization phenotype
 created_by: siegele
@@ -7629,7 +7721,7 @@ creation_date: 2013-10-01T15:34:05Z
 
 [Term]
 id: OMP:0007060
-name: utilization of organic sulfur
+name: presence of organic sulfur utilization
 def: "A sulfur source utilization phenotype where an organism uses an organic S-containing compound as the source of sulfur." [OMP:DAS]
 is_a: OMP:0007042 ! sulfur source utilization phenotype
 created_by: siegele
@@ -7659,6 +7751,7 @@ def: "An altered myxospore formation phenotype where the ability to form myxospo
 is_a: OMP:0006009 ! altered myxospore formation
 intersection_of: OMP:0006009 ! altered myxospore formation
 intersection_of: has_quality PATO:0002304 ! increased process quality
+relationship: has_quality PATO:0002304 ! increased process quality
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:45:09Z
 
@@ -7694,6 +7787,7 @@ xref: GO:0019954 "asexual reproduction"
 is_a: OMP:0007167 ! population growth phenotype
 intersection_of: OMP:0007167 ! population growth phenotype
 intersection_of: inheres_in GO:0019954 ! asexual reproduction
+relationship: inheres_in GO:0019954 ! asexual reproduction
 created_by: siegele
 creation_date: 2014-02-03T15:55:25Z
 
@@ -7780,6 +7874,7 @@ is_a: OMP:0000047 ! aerotaxis phenotype
 is_a: OMP:0007127 ! altered taxis
 intersection_of: OMP:0000047 ! aerotaxis phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-04-24T17:41:34Z
 
@@ -7818,6 +7913,7 @@ is_a: OMP:0000253 ! gene expression phenotype
 is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0000253 ! gene expression phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
+relationship: has_quality OMP:0007188 ! altered_process_quality
 created_by: dsiegele
 creation_date: 2014-08-11T16:32:07Z
 
@@ -7862,6 +7958,7 @@ comment: This term was created to organize terms beneath it in the ontology. We 
 is_a: OMP:0000000 ! microbial phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-07-10T12:28:36Z
 
@@ -7999,6 +8096,7 @@ is_a: OMP:0000073 ! cell shape phenotype
 is_a: OMP:0007103 ! altered cell morphology
 intersection_of: OMP:0000073 ! cell shape phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-07-10T20:24:53Z
 
@@ -8019,6 +8117,7 @@ is_a: OMP:0000071 ! cell morphology phenotype
 is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-07-10T22:43:40Z
 
@@ -8049,6 +8148,7 @@ xref: GO:0006351 "transcription, DNA-templated"
 is_a: OMP:0000253 ! gene expression phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0006351 ! transcription, DNA-templated
+relationship: inheres_in GO:0006351 ! transcription, DNA-templated
 created_by: dsiegele
 creation_date: 2014-08-11T16:37:39Z
 
@@ -8062,6 +8162,7 @@ xref: GO:0006412 "translation"
 is_a: OMP:0000253 ! gene expression phenotype
 intersection_of: OMP:0000253 ! gene expression phenotype
 intersection_of: inheres_in GO:0006412 ! translation
+relationship: inheres_in GO:0006412 ! translation
 created_by: dsiegele
 creation_date: 2014-08-11T16:37:39Z
 
@@ -8073,6 +8174,7 @@ is_a: OMP:0007080 ! altered gene expression
 is_a: OMP:0007106 ! transcription phenotype
 intersection_of: OMP:0007106 ! transcription phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
+relationship: has_quality OMP:0007188 ! altered_process_quality
 created_by: dsiegele
 creation_date: 2014-08-11T16:37:59Z
 
@@ -8155,6 +8257,7 @@ def: "An altered transcription phenotype where transcription of a gene or genes 
 is_a: OMP:0007108 ! altered transcription
 intersection_of: OMP:0007108 ! altered transcription
 intersection_of: has_quality PATO:0002304 ! increased process quality
+relationship: has_quality PATO:0002304 ! increased process quality
 created_by: dsiegele
 creation_date: 2014-08-11T16:41:06Z
 
@@ -8165,6 +8268,7 @@ def: "An altered transcription phenotype where transcription of a gene or genes 
 is_a: OMP:0007108 ! altered transcription
 intersection_of: OMP:0007108 ! altered transcription
 intersection_of: has_quality PATO:0002302 ! decreased process quality
+relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: dsiegele
 creation_date: 2014-08-11T16:41:06Z
 
@@ -8175,6 +8279,7 @@ def: "A decreased transcription phenotype where transcription of a gene or genes
 is_a: OMP:0007118 ! decreased transcription
 intersection_of: OMP:0007118 ! decreased transcription
 intersection_of: has_quality PATO:0000462 ! absent
+relationship: has_quality PATO:0000462 ! absent
 created_by: dsiegele
 creation_date: 2014-08-11T16:42:21Z
 
@@ -8246,6 +8351,7 @@ is_a: OMP:0000004 ! taxis phenotype
 is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0000004 ! taxis phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: dsiegele
 creation_date: 2014-08-12T13:30:01Z
 
@@ -8309,6 +8415,7 @@ is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0000274 ! antimicrobial agent resistance phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
+relationship: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
 creation_date: 2014-08-17T13:12:31Z
 
@@ -8425,6 +8532,7 @@ is_a: OMP:0000307 ! DNA replication phenotype
 is_a: OMP:0005136 ! altered cell cycle phenotype
 intersection_of: OMP:0000307 ! DNA replication phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
+relationship: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
 creation_date: 2014-08-19T14:26:57Z
 
@@ -8449,7 +8557,7 @@ creation_date: 2014-08-19T14:52:08Z
 id: OMP:0007150
 name: abolished cell motility by gliding
 def: "A decreased cell motility by gliding phenotype where the ability of a cell or cells to move by gliding motility is abolished." [OMP:DAS]
-is_a: OMP:0000133 ! absence of cell motility
+is_a: OMP:0007000 ! abolished cell motility
 is_a: OMP:0007091 ! decreased cell motility by gliding
 created_by: siegele
 creation_date: 2014-08-20T23:57:11Z
@@ -8606,6 +8714,7 @@ is_a: OMP:0007006 ! cell population phenotype
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0000003 ! reproduction
+relationship: inheres_in GO:0000003 ! reproduction
 created_by: siegele
 creation_date: 2014-09-25T17:14:07Z
 
@@ -8632,9 +8741,11 @@ id: OMP:0007170
 name: altered antimicrobial peptide resistance
 def: "An antimicrobial peptide resistance phenotype where resistance or sensitivity to one or more antimicrobial peptides is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
 intersection_of: OMP:0007169 ! antimicrobial peptide resistance phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
+relationship: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
 creation_date: 2014-09-26T16:02:16Z
 
@@ -8645,6 +8756,7 @@ def: "An antimicrobial peptide resistance phenotype where an organism or cell is
 is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
 intersection_of: OMP:0007169 ! antimicrobial peptide resistance phenotype
 intersection_of: has_quality PATO:0000467 ! present
+relationship: has_quality PATO:0000467 ! present
 created_by: siegele
 creation_date: 2014-09-26T16:02:16Z
 
@@ -8655,6 +8767,7 @@ def: "An antimicrobial peptide resistance phenotype where an organism or cell is
 is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
 intersection_of: OMP:0007169 ! antimicrobial peptide resistance phenotype
 intersection_of: has_quality PATO:0000462 ! absent
+relationship: has_quality PATO:0000462 ! absent
 created_by: siegele
 creation_date: 2014-09-26T16:02:16Z
 
@@ -8787,6 +8900,7 @@ def: "A quality which inheres in an process that is altered in same way relative
 is_a: PATO:0001236 ! process quality
 intersection_of: PATO:0001236 ! process quality
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-10-03T17:27:01Z
 
@@ -8829,6 +8943,7 @@ def: "A physical object quality that is altered relative to a designated control
 is_a: PATO:0001241 ! physical object quality
 intersection_of: PATO:0001241 ! physical object quality
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-10-04T19:34:54Z
 
@@ -8842,6 +8957,7 @@ xref: GO:0008150 "biological_process"
 is_a: OMP:0000000 ! microbial phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0008150 ! biological_process
+relationship: inheres_in GO:0008150 ! biological_process
 created_by: siegele
 creation_date: 2014-10-18T21:38:46Z
 
@@ -8854,6 +8970,8 @@ is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0007194 ! biological process phenotype
 intersection_of: has_quality PATO:0001457 ! sensitivity of a process
 intersection_of: towards CHEBI:24431 ! chemical entity
+relationship: has_quality PATO:0001457 ! sensitivity of a process
+relationship: towards CHEBI:24431 ! chemical entity
 created_by: siegele
 creation_date: 2014-10-18T21:39:28Z
 
@@ -8864,6 +8982,7 @@ def: "An akinete formation phenotype where the process of akinete formation is a
 is_a: OMP:0000093 ! akinete formation phenotype
 intersection_of: OMP:0000093 ! akinete formation phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
+relationship: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
 creation_date: 2014-10-20T15:08:04Z
 
@@ -8876,6 +8995,7 @@ xref: GO:0005575 "cellular_component"
 is_a: OMP:0000000 ! microbial phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0005575 ! cellular_component
+relationship: inheres_in GO:0005575 ! cellular_component
 created_by: siegele
 creation_date: 2014-10-21T23:28:25Z
 
@@ -9451,6 +9571,7 @@ creation_date: 2015-08-03T14:07:51Z
 id: OMP:0007267
 name: altered drug-dependence of population growth
 def: "A drug-dependent population growth phenotype where dependence of reproduction on the presence of a drug in the growth medium is altered relative to a designated control." [OMP:REF]
+is_a: OMP:0007157 ! altered population growth
 is_a: OMP:0007264 ! drug-dependent population growth phenotype
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
@@ -9526,7 +9647,7 @@ creation_date: 2015-10-17T19:56:02Z
 id: OMP:0007276
 name: increased threshold for positive chemotaxis
 def: "A decreased positive chemotaxis phenotype where the threshold concentration for responding to an attractant is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007275 ! altered frequency of reversing direction of flagellar rotation
+is_a: OMP:0007077 ! altered chemotaxis
 created_by: siegele
 creation_date: 2015-11-07T13:32:21Z
 
@@ -9626,6 +9747,7 @@ creation_date: 2016-01-10T00:37:17Z
 id: OMP:0007288
 name: altered laccase activity
 def: "A laccase activity phenotype where laccase activity is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0005130 ! altered enzymatic activity
 is_a: OMP:0007131 ! altered differential test result
 is_a: OMP:0007285 ! laccase activity phenotype
 created_by: siegele
@@ -9636,6 +9758,9 @@ id: OMP:0007289
 name: increased laccase activity
 def: "An altered laccase activity phenotype where laccase activity is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007288 ! altered laccase activity
+intersection_of: OMP:0007288 ! altered laccase activity
+intersection_of: has_quality PATO:0002304 ! increased process quality
+relationship: has_quality PATO:0002304 ! increased process quality
 created_by: siegele
 creation_date: 2016-01-10T00:45:01Z
 
@@ -9644,6 +9769,9 @@ id: OMP:0007290
 name: decreased laccase activity
 def: "An altered laccase activity phenotype where laccase activity is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007288 ! altered laccase activity
+intersection_of: OMP:0007288 ! altered laccase activity
+intersection_of: has_quality PATO:0002302 ! decreased process quality
+relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: siegele
 creation_date: 2016-01-10T00:45:01Z
 
@@ -9661,8 +9789,10 @@ id: OMP:0007292
 name: altered spore germination efficiency
 def: "A spore germination phenotype where the percentage of spores that germinate is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000095 ! spore germination phenotype
+is_a: OMP:0007085 ! altered phenotype
 intersection_of: OMP:0000095 ! spore germination phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2016-01-10T00:55:26Z
 
@@ -9858,6 +9988,97 @@ def: "A microbial phenotype related to the appearance of a microbial population,
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
 creation_date: 2016-02-05T20:20:28Z
+
+[Term]
+id: OMP:0007316
+name: abolished superoxide dismutase activity
+def: "A decreased superoxide dismutase activity phenotype where superoxide dismutase activity is abolished." [OMP:DAS]
+is_a: OMP:0005167 ! absence of superoxide dismutase activity
+is_a: OMP:0005169 ! decreased superoxide dismutase activity
+created_by: siegele
+creation_date: 2016-02-23T02:09:35Z
+
+[Term]
+id: OMP:0007317
+name: abolished protein kinase A activity
+def: "A decreased protein kinase A activity phenotype where the activity is abolished." [OMP:DAS]
+is_a: OMP:0005155 ! absence of protein kinase A activity
+is_a: OMP:0005157 ! decreased protein kinase A activity
+created_by: siegele
+creation_date: 2016-02-23T02:13:30Z
+
+[Term]
+id: OMP:0007318
+name: abolished ferric reductase activity
+def: "A decreased ferric reductase activity phenotype where ferric reductase activity is abolished." [OMP:DAS]
+is_a: OMP:0005149 ! absence of ferric reductase activity
+is_a: OMP:0005151 ! decreased ferric reductase activity
+created_by: siegele
+creation_date: 2016-02-23T02:16:03Z
+
+[Term]
+id: OMP:0007319
+name: mucoid colony surface phenotype
+def: "A colony surface phenotype that is characterized by a surface with a viscous, slimy, or gummy appearance, typically due to the presence of extracellular polysaccharides produced by cells in the colony." [OMP:DAS]
+is_a: OMP:0000210 ! colony surface phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:35:28Z
+
+[Term]
+id: OMP:0007320
+name: absence of mucoid colonies
+def: "A mucoid colony phenotype where the organism forms nonmucoid colonies." [OMP:DAS]
+is_a: OMP:0007319 ! mucoid colony surface phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:43:57Z
+
+[Term]
+id: OMP:0007321
+name: altered mucoid colony phenotype
+def: "A mucoid colony phenotype where the mucoid or nonmucoid appearance of colonies is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007319 ! mucoid colony surface phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:44:52Z
+
+[Term]
+id: OMP:0007322
+name: increased mucoidy
+is_a: OMP:0007321 ! altered mucoid colony phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:46:37Z
+
+[Term]
+id: OMP:0007323
+name: decreased mucoidy
+def: "An altered mucoid colony pheotype where colonies are less mucoid than a designated control." [OMP:DAS]
+is_a: OMP:0007321 ! altered mucoid colony phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:46:37Z
+
+[Term]
+id: OMP:0007324
+name: abolished mucoidy
+def: "A decreased mucoidy phenotype where mucoid colonies are abolished." [OMP:DAS]
+is_a: OMP:0007320 ! absence of mucoid colonies
+is_a: OMP:0007323 ! decreased mucoidy
+created_by: siegele
+creation_date: 2016-02-25T18:46:37Z
+
+[Term]
+id: OMP:0007325
+name: absence of inorganic sulfur utilization
+def: "A sulfur source utilization phenotype where an organism cannot use an inorganic S-containing chemical as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007042 ! sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2016-02-25T22:42:30Z
+
+[Term]
+id: OMP:0007326
+name: absence of organic sulfur utilization
+def: "A sulfur source utilization phenotype where an organism cannot use an organic S-containing chemical as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007042 ! sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2016-02-25T22:42:30Z
 
 [Term]
 id: OMP:0008000
@@ -10534,8 +10755,8 @@ namespace: external
 xref: RO:0002161
 expand_assertion_to: "Class: <http://www.w3.org/2002/07/owl#Nothing> EquivalentTo: ?X and (RO_0002162 some ?Y)" []
 expand_assertion_to: "Class: ?X DisjointWith: RO_0002162 some ?Y" []
-is_class_level: true
 is_metadata_tag: true
+is_class_level: true
 
 [Typedef]
 id: part_of

@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2016-02-09
-date: 05:02:2016 23:39
+data-version: releases/2016-03-06
+date: 25:02:2016 22:46
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -82,7 +82,6 @@ name: taxis phenotype
 def: "A locomotion phenotype where the directed movement of a motile cell or organism is in response to an external stimulus." [ISBN:0192800329, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000312 ! locomotion phenotype
-is_a: OMP:0007197 ! cellular component phenotype
 created_by: mchibucos
 creation_date: 2011-04-14T03:29:20Z
 
@@ -569,8 +568,9 @@ creation_date: 2011-02-02T03:28:59Z
 [Term]
 id: OMP:0000069
 name: quorum sensing phenotype
-def: "A microbial communication phenotype where the trait in question is the ability of an organism to monitor its population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [OMP:MCC\,DAS]
+def: "A microbial communication phenotype where the their population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [GO:0009372, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0009372 "quorum sensing"
 is_a: OMP:0000101 ! microbial communication phenotype
 created_by: adrienne
 creation_date: 2011-02-07T03:47:50Z
@@ -800,6 +800,7 @@ id: OMP:0000094
 name: endospore formation phenotype
 def: "A sporulation phenotype where development concerns formation of an endospore, a dormant, highly resistant spore with a thick wall that forms within the mother cell." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: FAO:0000019 "spore"
 xref: GO:0034301 "endospore formation"
 is_a: OMP:0000091 ! sporulation phenotype
 is_a: OMP:0007066 ! asexual reproduction phenotype
@@ -867,8 +868,8 @@ creation_date: 2011-02-02T02:14:39Z
 [Term]
 id: OMP:0000101
 name: microbial communication phenotype
-def: "A multicellular phenotype where microbial organisms communicate and coordinate their activities through chemical signals that either diffuse through the environment or remain cell associated." [OMP:JCH]
-is_a: OMP:0005116 ! multicellular phenotype
+def: "A multi-organism phenotype where microbial organisms communicate and coordinate their activities through chemical signals that either diffuse through the environment or remain cell associated." [OMP:JCH]
+is_a: OMP:0005116 ! multi-organism phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:45:44Z
 
@@ -930,10 +931,10 @@ creation_date: 2011-02-02T02:43:46Z
 
 [Term]
 id: OMP:0000109
-name: mucoid colony
-def: "A colony surface phenotype that is characterized by a surface with a slimy or gummy appearance." [ISBN:1555810489, OMP:WAM]
+name: presence of mucoid colonies
+def: "A mucoid colony phenotype where the colonies are mucoid." [ISBN:1555810489, OMP:WAM]
 synonym: "viscous colony texture" RELATED [OMP:WAM]
-is_a: OMP:0000210 ! colony surface phenotype
+is_a: OMP:0007319 ! mucoid colony surface phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:38:08Z
 
@@ -1489,8 +1490,8 @@ creation_date: 2011-06-07T02:59:54Z
 [Term]
 id: OMP:0000176
 name: biofilm phenotype
-def: "A multicellular phenotype dealing with the process in which microorganisms attach to and grow on a surface and produce extracellular polymers that facilitate attachment and matrix formation." [GO:0042710, OMP:WAM]
-is_a: OMP:0005116 ! multicellular phenotype
+def: "A multi-organism phenotype dealing with the process in which microorganisms attach to and grow on a surface and produce extracellular polymers that facilitate attachment and matrix formation." [GO:0042710, OMP:WAM]
+is_a: OMP:0005116 ! multi-organism phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:17:19Z
 
@@ -1794,7 +1795,7 @@ creation_date: 2011-06-07T09:49:20Z
 
 [Term]
 id: OMP:0000212
-name: smooth colony
+name: smooth colony surface
 def: "A colony surface phenotype where colonies have a shiny glistening surface." [ISBN:1555810489, OMP:WAM]
 xref: SNOMEDCT:90926009 "Bacterial colony surface, smooth"
 is_a: OMP:0000210 ! colony surface phenotype
@@ -1913,7 +1914,7 @@ creation_date: 2011-02-07T03:53:37Z
 
 [Term]
 id: OMP:0000228
-name: rough colony
+name: rough colony surface
 def: "A colony surface phenotype where a colony or colonies have a dull, bumpy, granular, or matte surface." [ISBN:1555810489, OMP:WAM]
 xref: SNOMEDCT:77092005 "Bacterial colony surface, rough"
 is_a: OMP:0000210 ! colony surface phenotype
@@ -1931,9 +1932,9 @@ creation_date: 2011-06-07T12:34:58Z
 
 [Term]
 id: OMP:0000230
-name: rugose colony
+name: rugose colony surface
 def: "A colony surface phenotype that is characterized by a surface that is wrinkled." [OMP:JCH]
-synonym: "rugose colony" RELATED []
+synonym: "wrinkled colony surface" RELATED []
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:35:30Z
@@ -1992,7 +1993,7 @@ creation_date: 2011-06-07T01:11:04Z
 
 [Term]
 id: OMP:0000239
-name: plicate colony
+name: plicate colony surface
 def: "A colony surface phenotype that is characterized by a surface arranged in parallel folds or ridges; pleated." [OMP:JCH]
 is_a: OMP:0000210 ! colony surface phenotype
 created_by: mchibucos
@@ -2017,7 +2018,7 @@ creation_date: 2011-06-07T01:55:22Z
 
 [Term]
 id: OMP:0000242
-name: concentrically ringed colony
+name: concentrically ringed surface colony
 def: "A colony surface phenotype characterized by rippled surface that radiate outward from a central point or axis." [OMP:JCH]
 synonym: "concentric colony surface texture" EXACT []
 is_a: OMP:0000210 ! colony surface phenotype
@@ -3628,9 +3629,10 @@ creation_date: 2014-08-07T14:54:52Z
 
 [Term]
 id: OMP:0005116
-name: multicellular phenotype
-def: "A microbial phenotype involving two or more cells of the same or different species." [OMP:DAS]
+name: multi-organism phenotype
+def: "A microbial phenotype related to a biological process that involves two or more organisms of the same or different species." [GO:0051704, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0051704 "multi-organism process"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: wmeza
 creation_date: 2014-07-08T17:10:17Z
@@ -3898,6 +3900,215 @@ def: "An altered vacuolar morphology phenotype where the size of the vacuole is 
 is_a: OMP:0005145 ! altered vacuolar morphology
 created_by: Jesus
 creation_date: 2016-02-03T16:39:51Z
+
+[Term]
+id: OMP:0005148
+name: ferric reductase activity phenotype
+def: "An enzymatic activity phenotype that relates to the presence or absence of ferric reductase, a class of flavin reductases. Ferric reductases act on ferric iron to reduce it by using NADH or NADPH as the electron donor." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T12:43:04Z
+
+[Term]
+id: OMP:0005149
+name: absence of ferric reductase activity
+def: "A ferric reductase phenotype where an organism does not exhibit ferric reductase activity." [OMP:JG]
+is_a: OMP:0005148 ! ferric reductase activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T12:44:19Z
+
+[Term]
+id: OMP:0005150
+name: altered ferric reductase activity
+def: "A ferric reductase phenotype where ferric reductase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005130 ! altered enzymatic activity
+is_a: OMP:0005148 ! ferric reductase activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T12:44:51Z
+
+[Term]
+id: OMP:0005151
+name: decreased ferric reductase activity
+def: "An altered ferric reductase activity phenotype where ferric reductase activity is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005150 ! altered ferric reductase activity
+created_by: Jesus
+creation_date: 2016-02-11T12:45:18Z
+
+[Term]
+id: OMP:0005152
+name: increased ferric reductase activity
+def: "An altered ferric reductase activity phenotype where ferric reductase activity is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005150 ! altered ferric reductase activity
+created_by: Jesus
+creation_date: 2016-02-11T12:45:43Z
+
+[Term]
+id: OMP:0005153
+name: presence of ferric reductase activity
+def: "A ferric reductase phenotype where an organism exhibits ferric reductase activity." [OMP:JG]
+is_a: OMP:0005148 ! ferric reductase activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T12:46:10Z
+
+[Term]
+id: OMP:0005154
+name: protein kinase A activity phenotype
+def: "An enzymatic activity phenotype that relates to the presence or absence of protein kinase A, an enzyme that belongs to the kinase AGC group. Protein kinase A acts by phosphorylating a wide array of enzymes, ion channels, chromosomal proteins, and transcription factors." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:11:51Z
+
+[Term]
+id: OMP:0005155
+name: absence of protein kinase A activity
+def: "A protein kinase A phenotype where an organism does not exhibit protein kinase A activity." [OMP:JG]
+is_a: OMP:0005154 ! protein kinase A activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:12:38Z
+
+[Term]
+id: OMP:0005156
+name: altered protein kinase A activity
+def: "A protein kinase A phenotype where protein kinase A activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005130 ! altered enzymatic activity
+is_a: OMP:0005154 ! protein kinase A activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:14:19Z
+
+[Term]
+id: OMP:0005157
+name: decreased protein kinase A activity
+def: "An altered protein kinase A activity phenotype where protein kinase A activity is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005156 ! altered protein kinase A activity
+created_by: Jesus
+creation_date: 2016-02-11T13:14:52Z
+
+[Term]
+id: OMP:0005158
+name: increased protein kinase A activity
+def: "An altered protein kinase A activity phenotype where protein kinase A activity is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005156 ! altered protein kinase A activity
+created_by: Jesus
+creation_date: 2016-02-11T13:15:29Z
+
+[Term]
+id: OMP:0005159
+name: presence of protein kinase A activity
+def: "A protein kinase A phenotype where an organism exhibits protein kinase A activity." [OMP:JG]
+is_a: OMP:0005154 ! protein kinase A activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:16:11Z
+
+[Term]
+id: OMP:0005160
+name: phosphatase activity phenotype
+def: "An enzymatic activity phenotype that relates to the presence or absence of phosphatase, an enzyme that acts to modulate protein activity in cells. Phosphatase acts by removing phosphate groups off of active proteins making them enzymatically inactive." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:29:38Z
+
+[Term]
+id: OMP:0005161
+name: absence of phosphatase activity
+def: "A phosphatase phenotype where an organism does not exhibit Phosphatase activity." [OMP:JG]
+is_a: OMP:0005160 ! phosphatase activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:31:39Z
+
+[Term]
+id: OMP:0005162
+name: altered phosphatase activity
+def: "A phosphatase phenotype where phosphatase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005130 ! altered enzymatic activity
+is_a: OMP:0005160 ! phosphatase activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:32:34Z
+
+[Term]
+id: OMP:0005163
+name: decreased phosphatase activity
+def: "A phosphatase activity phenotype where phosphatase activity is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005162 ! altered phosphatase activity
+created_by: Jesus
+creation_date: 2016-02-11T13:33:05Z
+
+[Term]
+id: OMP:0005164
+name: increased phosphatase activity
+def: "An altered phosphatase activity phenotype where phosphatase activity is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005162 ! altered phosphatase activity
+created_by: Jesus
+creation_date: 2016-02-11T13:35:13Z
+
+[Term]
+id: OMP:0005165
+name: presence of phosphatase activity
+def: "A phosphatase phenotype where an organism exhibits phosphatase activity." [OMP:JG]
+is_a: OMP:0005160 ! phosphatase activity phenotype
+created_by: Jesus
+creation_date: 2016-02-11T13:37:34Z
+
+[Term]
+id: OMP:0005166
+name: superoxide dismutase activity:
+def: "An enzymatic activity phenotype that relates to the presence or absence of  superoxide dismutase, an enzyme that catalyzes the reaction:  2 superoxide + 2 H+ = O2 + hydrogen peroxide." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0004784 "superoxide dismutase activity"
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: Jesus
+creation_date: 2016-02-15T15:25:14Z
+
+[Term]
+id: OMP:0005167
+name: absence of superoxide dismutase activity
+def: "A superoxide dismutase phenotype where an organism does not exhibit superoxide dismutase activity." [OMP:JG]
+is_a: OMP:0005166 ! superoxide dismutase activity:
+created_by: Jesus
+creation_date: 2016-02-15T15:28:14Z
+
+[Term]
+id: OMP:0005168
+name: altered superoxide dismutase activity
+def: "A superoxide dismutase phenotype where superoxide dismutase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005130 ! altered enzymatic activity
+is_a: OMP:0005166 ! superoxide dismutase activity:
+created_by: Jesus
+creation_date: 2016-02-15T15:29:30Z
+
+[Term]
+id: OMP:0005169
+name: decreased superoxide dismutase activity
+def: "A superoxide dismutase activity phenotype where superoxide dismutase activity is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005168 ! altered superoxide dismutase activity
+created_by: Jesus
+creation_date: 2016-02-15T15:30:28Z
+
+[Term]
+id: OMP:0005170
+name: increased superoxide dismutase activity
+def: "An altered superoxide dismutase activity phenotype where superoxide dismutase activity is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005168 ! altered superoxide dismutase activity
+created_by: Jesus
+creation_date: 2016-02-15T15:31:28Z
+
+[Term]
+id: OMP:0005171
+name: presence of superoxide dismutase activity
+def: "A superoxide dismutase phenotype where an organism exhibits superoxide dismutase activity." [OMP:JG]
+is_a: OMP:0005166 ! superoxide dismutase activity:
+created_by: Jesus
+creation_date: 2016-02-15T15:32:13Z
+
+[Term]
+id: OMP:0005172
+name: delayed cell cycle progression:
+def: "An altered cell cycle phenotype where progression of the cell cycle is delayed relative to a designated control." [OMP:JG]
+is_a: OMP:0005136 ! altered cell cycle phenotype
+created_by: Jesus
+creation_date: 2016-02-15T16:34:58Z
 
 [Term]
 id: OMP:0006000
@@ -4738,7 +4949,7 @@ creation_date: 2014-07-15T20:07:54Z
 [Term]
 id: OMP:0006093
 name: altered quorum sensing phenotype
-def: "A quorum sensing phenotype were the quorum sensing is altered relative to a designated control." [OMP:JCH]
+def: "A quorum sensing phenotype were quorum sensing is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T18:43:39Z
@@ -4793,6 +5004,7 @@ id: OMP:0006099
 name: abolished budding
 def: "A decreased budding phenotype where the fraction of budding cells is decreased to zero." [OMP:JCH]
 is_a: OMP:0006006 ! decreased budding
+is_a: OMP:0007234 ! absence of budding
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:08:59Z
 
@@ -5250,6 +5462,7 @@ id: OMP:0006152
 name: abolished utilization of inorganic sulfur
 def: "A decreased utilization of inorganic sulfur phenotype where the ability to utilize an inorganic sulfur source is abolished." [OMP:JCH]
 is_a: OMP:0007055 ! decreased utilization of inorganic sulfur
+is_a: OMP:0007325 ! absence of inorganic sulfur utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:33:11Z
 
@@ -5274,6 +5487,7 @@ id: OMP:0006155
 name: abolished utilization of organic sulfur
 def: "A decreased utilization of organic sulfur phenotype where the ability to utilize an organic sulfur source is abolished." [OMP:JCH]
 is_a: OMP:0007058 ! decreased utilization of organic sulfur source
+is_a: OMP:0007326 ! absence of organic sulfur utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:40:13Z
 
@@ -5350,6 +5564,7 @@ id: OMP:0006164
 name: altered colony size phenotype
 def: "An colony size phenotype where size is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000179 ! colony size phenotype
+is_a: OMP:0007160 ! altered colony morphology
 created_by: jonathanherrera
 creation_date: 2014-08-05T13:44:09Z
 
@@ -5714,7 +5929,7 @@ creation_date: 2014-08-01T00:12:56Z
 [Term]
 id: OMP:0007027
 name: increased quorum sensing
-def: "A quorum sensing phenotype where an organism's ability to monitor its population density is increased relative to a designated control." [OMP:DAS]
+def: "A quorum sensing phenotype where organisms ability to monitor their population density is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006093 ! altered quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:02Z
@@ -5722,7 +5937,7 @@ creation_date: 2013-09-17T16:45:02Z
 [Term]
 id: OMP:0007028
 name: decreased quorum sensing
-def: "An altered quorum sensing phenotype where the ability to monitor the population density is decreased relative to a designated control." [OMP:DAS]
+def: "An altered quorum sensing phenotype where the ability of organisms to monitor their population density is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006093 ! altered quorum sensing phenotype
 created_by: siegele
 creation_date: 2013-09-17T16:45:18Z
@@ -5956,7 +6171,7 @@ creation_date: 2013-10-01T15:33:32Z
 
 [Term]
 id: OMP:0007057
-name: utilization of inorganic sulfur
+name: presence of inorganic sulfur utilization
 def: "A sulfur source utilization phenotype where an organism uses an inorganic S-containing compound as the source of sulfur." [OMP:DAS]
 is_a: OMP:0007042 ! sulfur source utilization phenotype
 created_by: siegele
@@ -5980,7 +6195,7 @@ creation_date: 2013-10-01T15:34:05Z
 
 [Term]
 id: OMP:0007060
-name: utilization of organic sulfur
+name: presence of organic sulfur utilization
 def: "A sulfur source utilization phenotype where an organism uses an organic S-containing compound as the source of sulfur." [OMP:DAS]
 is_a: OMP:0007042 ! sulfur source utilization phenotype
 created_by: siegele
@@ -7760,6 +7975,7 @@ creation_date: 2015-08-03T14:07:51Z
 id: OMP:0007267
 name: altered drug-dependence of population growth
 def: "A drug-dependent population growth phenotype where dependence of reproduction on the presence of a drug in the growth medium is altered relative to a designated control." [OMP:REF]
+is_a: OMP:0007157 ! altered population growth
 is_a: OMP:0007264 ! drug-dependent population growth phenotype
 created_by: siegele
 creation_date: 2015-08-03T14:07:51Z
@@ -7835,7 +8051,7 @@ creation_date: 2015-10-17T19:56:02Z
 id: OMP:0007276
 name: increased threshold for positive chemotaxis
 def: "A decreased positive chemotaxis phenotype where the threshold concentration for responding to an attractant is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007275 ! altered frequency of reversing direction of flagellar rotation
+is_a: OMP:0007077 ! altered chemotaxis
 created_by: siegele
 creation_date: 2015-11-07T13:32:21Z
 
@@ -8170,10 +8386,102 @@ created_by: siegele
 creation_date: 2016-02-05T20:20:28Z
 
 [Term]
+id: OMP:0007316
+name: abolished superoxide dismutase activity
+def: "A decreased superoxide dismutase activity phenotype where superoxide dismutase activity is abolished." [OMP:DAS]
+is_a: OMP:0005167 ! absence of superoxide dismutase activity
+is_a: OMP:0005169 ! decreased superoxide dismutase activity
+created_by: siegele
+creation_date: 2016-02-23T02:09:35Z
+
+[Term]
+id: OMP:0007317
+name: abolished protein kinase A activity
+def: "A decreased protein kinase A activity phenotype where the activity is abolished." [OMP:DAS]
+is_a: OMP:0005155 ! absence of protein kinase A activity
+is_a: OMP:0005157 ! decreased protein kinase A activity
+created_by: siegele
+creation_date: 2016-02-23T02:13:30Z
+
+[Term]
+id: OMP:0007318
+name: abolished ferric reductase activity
+def: "A decreased ferric reductase activity phenotype where ferric reductase activity is abolished." [OMP:DAS]
+is_a: OMP:0005149 ! absence of ferric reductase activity
+is_a: OMP:0005151 ! decreased ferric reductase activity
+created_by: siegele
+creation_date: 2016-02-23T02:16:03Z
+
+[Term]
+id: OMP:0007319
+name: mucoid colony surface phenotype
+def: "A colony surface phenotype that is characterized by a surface with a viscous, slimy, or gummy appearance, typically due to the presence of extracellular polysaccharides produced by cells in the colony." [OMP:DAS]
+is_a: OMP:0000210 ! colony surface phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:35:28Z
+
+[Term]
+id: OMP:0007320
+name: absence of mucoid colonies
+def: "A mucoid colony phenotype where the organism forms nonmucoid colonies." [OMP:DAS]
+is_a: OMP:0007319 ! mucoid colony surface phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:43:57Z
+
+[Term]
+id: OMP:0007321
+name: altered mucoid colony phenotype
+def: "A mucoid colony phenotype where the mucoid or nonmucoid appearance of colonies is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007319 ! mucoid colony surface phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:44:52Z
+
+[Term]
+id: OMP:0007322
+name: increased mucoidy
+is_a: OMP:0007321 ! altered mucoid colony phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:46:37Z
+
+[Term]
+id: OMP:0007323
+name: decreased mucoidy
+def: "An altered mucoid colony pheotype where colonies are less mucoid than a designated control." [OMP:DAS]
+is_a: OMP:0007321 ! altered mucoid colony phenotype
+created_by: siegele
+creation_date: 2016-02-25T18:46:37Z
+
+[Term]
+id: OMP:0007324
+name: abolished mucoidy
+def: "A decreased mucoidy phenotype where mucoid colonies are abolished." [OMP:DAS]
+is_a: OMP:0007320 ! absence of mucoid colonies
+is_a: OMP:0007323 ! decreased mucoidy
+created_by: siegele
+creation_date: 2016-02-25T18:46:37Z
+
+[Term]
+id: OMP:0007325
+name: absence of inorganic sulfur utilization
+def: "A sulfur source utilization phenotype where an organism cannot use an inorganic S-containing chemical as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007042 ! sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2016-02-25T22:42:30Z
+
+[Term]
+id: OMP:0007326
+name: absence of organic sulfur utilization
+def: "A sulfur source utilization phenotype where an organism cannot use an organic S-containing chemical as the source of sulfur." [OMP:DAS]
+is_a: OMP:0007042 ! sulfur source utilization phenotype
+created_by: siegele
+creation_date: 2016-02-25T22:42:30Z
+
+[Term]
 id: OMP:0008000
 name: spore morphology phenotype
 def: "A microbial phenotype that is related to the form and structure of a spore or spores." [OMP:KDA]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: FAO:0000019 "spore"
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: kanderson
 creation_date: 2015-06-03T13:12:00Z
