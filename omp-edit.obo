@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 23:02:2016 13:18
+date: 22:03:2016 14:06
 saved-by: jguzman
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -5057,6 +5057,7 @@ id: OMP:0005115
 name: cell cycle phenotype
 def: "A growth phenotype that relates to the progression of biochemical and morphological events that occur in a cell during cell replication or nuclear replication events.  Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in some cells or organisms DNA replication and/or nuclear division may not be immediately followed by cell division." [GO:0007049, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "cell division cycle " EXACT []
 synonym: "cell division phenotype" RELATED []
 xref: GO:0007049 "cell cycle"
 is_a: OMP:0007167 ! population growth phenotype
