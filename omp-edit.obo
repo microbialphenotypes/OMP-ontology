@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 22:03:2016 14:06
-saved-by: jguzman
+date: 18:05:2016 14:44
+saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -5560,6 +5560,64 @@ def: "An altered cell cycle phenotype where progression of the cell cycle is del
 is_a: OMP:0005136 ! altered cell cycle phenotype
 created_by: Jesus
 creation_date: 2016-02-15T16:34:58Z
+
+[Term]
+id: OMP:0005173
+name: acid phosphatase activity phenotype
+def: "An enzymatic activity phenotype that relates to the presence or absence of acid phosphatase, an enzyme that removes phosphoryl groups from other molecules. Acid phosphatase catalyzes the reaction: an orthophosphoric monoester + H2O -> an alcohol + phosphate, with an acid pH optimum." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0003993 "acid phosphatase activity "
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: Jesus
+creation_date: 2016-05-18T14:29:30Z
+
+[Term]
+id: OMP:0005174
+name: presence of acid phosphatase activity
+def: "An acid phosphatase activity phenotype where a cell or cells exhibits acid phosphatase activity." [OMP:JG]
+is_a: OMP:0005173 ! acid phosphatase activity phenotype
+created_by: Jesus
+creation_date: 2016-05-18T14:33:20Z
+
+[Term]
+id: OMP:0005175
+name: absence of acid phosphatase activity
+def: "An acid phosphatase activity phenotype where a cell or cells lacks acid phosphatase activity." [OMP:JG]
+is_a: OMP:0005173 ! acid phosphatase activity phenotype
+created_by: Jesus
+creation_date: 2016-05-18T14:39:41Z
+
+[Term]
+id: OMP:0005176
+name: altered acid phosphatase activity
+def: "An acid phosphatase activity phenotype where acid phosphatase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005173 ! acid phosphatase activity phenotype
+created_by: Jesus
+creation_date: 2016-05-18T14:40:33Z
+
+[Term]
+id: OMP:0005177
+name: decreased acid phosphatase activity
+def: "An altered acid phosphatase activity phenotype where acid phosphatase activity is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005176 ! altered acid phosphatase activity
+created_by: Jesus
+creation_date: 2016-05-18T14:41:06Z
+
+[Term]
+id: OMP:0005178
+name: abolished acid phosphatase activity
+def: "A decreased acid phosphatase activity phenotype where acid phosphatase activity is abolished." [OMP:JG]
+is_a: OMP:0005176 ! altered acid phosphatase activity
+created_by: Jesus
+creation_date: 2016-05-18T14:41:52Z
+
+[Term]
+id: OMP:0005179
+name: increased acid phosphatase activity
+def: "An altered acid phosphatase activity phenotype where acid phosphatase activity is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005176 ! altered acid phosphatase activity
+created_by: Jesus
+creation_date: 2016-05-18T14:43:12Z
 
 [Term]
 id: OMP:0006000
