@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 18:05:2016 14:44
-saved-by: Jesus
+date: 18:05:2016 19:34
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -1941,7 +1941,7 @@ creation_date: 2011-02-02T03:28:59Z
 [Term]
 id: OMP:0000069
 name: quorum sensing phenotype
-def: "A microbial communication phenotype where the their population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [GO:0009372, OMP:MCC]
+def: "A microbial communication phenotype where cells sense their population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [GO:0009372, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0009372 "quorum sensing"
 is_a: OMP:0000101 ! microbial communication phenotype
@@ -2264,7 +2264,7 @@ creation_date: 2011-02-02T02:14:39Z
 id: OMP:0000101
 name: microbial communication phenotype
 def: "A multi-organism phenotype where microbial organisms communicate and coordinate their activities through chemical signals that either diffuse through the environment or remain cell associated." [OMP:JCH]
-is_a: OMP:0005116 ! multi-organism phenotype
+is_a: OMP:0005116 ! multi-organism process phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:45:44Z
 
@@ -2899,7 +2899,7 @@ creation_date: 2011-06-07T02:59:54Z
 id: OMP:0000176
 name: biofilm phenotype
 def: "A multi-organism phenotype dealing with the process in which microorganisms attach to and grow on a surface and produce extracellular polymers that facilitate attachment and matrix formation." [GO:0042710, OMP:WAM]
-is_a: OMP:0005116 ! multi-organism phenotype
+is_a: OMP:0005116 ! multi-organism process phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:17:19Z
 
@@ -5062,7 +5062,7 @@ creation_date: 2014-08-07T14:54:52Z
 
 [Term]
 id: OMP:0005116
-name: multi-organism phenotype
+name: multi-organism process phenotype
 def: "A microbial phenotype related to a biological process that involves two or more organisms of the same or different species." [GO:0051704, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0051704 "multi-organism process"
@@ -5566,7 +5566,7 @@ id: OMP:0005173
 name: acid phosphatase activity phenotype
 def: "An enzymatic activity phenotype that relates to the presence or absence of acid phosphatase, an enzyme that removes phosphoryl groups from other molecules. Acid phosphatase catalyzes the reaction: an orthophosphoric monoester + H2O -> an alcohol + phosphate, with an acid pH optimum." [OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-xref: GO:0003993 "acid phosphatase activity "
+xref: GO:0003993 "acid phosphatase activity"
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
 creation_date: 2016-05-18T14:29:30Z
