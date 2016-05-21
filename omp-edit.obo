@@ -1,7 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 18:05:2016 19:34
-saved-by: siegele
+date: 21:05:2016 10:13
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -5607,7 +5606,7 @@ creation_date: 2016-05-18T14:41:06Z
 id: OMP:0005178
 name: abolished acid phosphatase activity
 def: "A decreased acid phosphatase activity phenotype where acid phosphatase activity is abolished." [OMP:JG]
-is_a: OMP:0005176 ! altered acid phosphatase activity
+is_a: OMP:0005177 ! decreased acid phosphatase activity
 created_by: Jesus
 creation_date: 2016-05-18T14:41:52Z
 
@@ -5618,6 +5617,83 @@ def: "An altered acid phosphatase activity phenotype where acid phosphatase acti
 is_a: OMP:0005176 ! altered acid phosphatase activity
 created_by: Jesus
 creation_date: 2016-05-18T14:43:12Z
+
+[Term]
+id: OMP:0005180
+name: cytoskeleton morphology phenotype
+def: "A cell morphology phenotype relating to the form and function of the cytoskeleton, any of the various filamentous elements that form the internal framework of cells." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0005856 "cytoskeleton "
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: Jesus
+creation_date: 2016-05-21T09:09:03Z
+
+[Term]
+id: OMP:0005181
+name: altered cytoskeleton morphology phenotype
+def: "A cytoskeleton morphology phenotype where the morphology of the cytoskeleton is altered relative to a designated control." [GO:JG]
+is_a: OMP:0005180 ! cytoskeleton morphology phenotype
+is_a: OMP:0007085 ! altered phenotype
+created_by: Jesus
+creation_date: 2016-05-21T09:57:50Z
+
+[Term]
+id: OMP:0005182
+name: actin cytoskeleton morphology phenotype
+def: "A cytoskeleton morphology phenotype relating to the part of the cytoskeleton that is composed of actin and associated proteins." [OMP:JG]
+xref: GO:00015629
+is_a: OMP:0005180 ! cytoskeleton morphology phenotype
+created_by: Jesus
+creation_date: 2016-05-21T09:59:30Z
+
+[Term]
+id: OMP:0005183
+name: absence of actin cytoskeleton
+def: "An actin cytoskeleton morphology phenotype where a cell or cells lack an actin cytoskeleton." [OMP:JG]
+is_a: OMP:0005182 ! actin cytoskeleton morphology phenotype
+created_by: Jesus
+creation_date: 2016-05-21T10:01:36Z
+
+[Term]
+id: OMP:0005184
+name: presence of actin cytoskeleton
+def: "An actin cytoskeleton morphology phenotype where a cell or cells exhibit an actin cytoskeleton." [OMP:JG]
+is_a: OMP:0005182 ! actin cytoskeleton morphology phenotype
+created_by: Jesus
+creation_date: 2016-05-21T10:03:01Z
+
+[Term]
+id: OMP:0005185
+name: altered actin cytoskeleton morphology
+def: "An actin cytoskeleton morphology phenotype where the morphology of the actin cytoskeleton is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005181 ! altered cytoskeleton morphology phenotype
+is_a: OMP:0005182 ! actin cytoskeleton morphology phenotype
+created_by: Jesus
+creation_date: 2016-05-21T10:03:47Z
+
+[Term]
+id: OMP:0005186
+name: decreased cytoskeleton phenotype
+def: "An altered cytoskeleton morphology phenotype where \ncytoskeleton morphology is decreased relative to a designated control." [OMP:JG]
+is_obsolete: true
+created_by: Jesus
+creation_date: 2016-05-21T10:04:40Z
+
+[Term]
+id: OMP:0005187
+name: abolished cytoskeleton morphology
+def: "A decreased cytoskeleton morphology phenotype where cytoskeleton morphology is abolished." [OMP:JG]
+is_obsolete: true
+created_by: Jesus
+creation_date: 2016-05-21T10:05:21Z
+
+[Term]
+id: OMP:0005188
+name: increased cytoskeleton morphology
+def: "An altered cytoskeleton morphology phenotype where \ncytoskeleton morphology is increased relative to a designated control." [OMP:JG]
+is_obsolete: true
+created_by: Jesus
+creation_date: 2016-05-21T10:06:05Z
 
 [Term]
 id: OMP:0006000
