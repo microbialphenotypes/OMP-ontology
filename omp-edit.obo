@@ -1,6 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 21:05:2016 10:13
+date: 21:05:2016 23:06
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -5623,7 +5624,7 @@ id: OMP:0005180
 name: cytoskeleton morphology phenotype
 def: "A cell morphology phenotype relating to the form and function of the cytoskeleton, any of the various filamentous elements that form the internal framework of cells." [OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-xref: GO:0005856 "cytoskeleton "
+xref: GO:0005856 "cytoskeleton"
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: Jesus
 creation_date: 2016-05-21T09:09:03Z
@@ -5633,7 +5634,7 @@ id: OMP:0005181
 name: altered cytoskeleton morphology phenotype
 def: "A cytoskeleton morphology phenotype where the morphology of the cytoskeleton is altered relative to a designated control." [GO:JG]
 is_a: OMP:0005180 ! cytoskeleton morphology phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007103 ! altered cell morphology
 created_by: Jesus
 creation_date: 2016-05-21T09:57:50Z
 
@@ -10114,6 +10115,43 @@ def: "A sulfur source utilization phenotype where an organism cannot use an orga
 is_a: OMP:0007042 ! sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2016-02-25T22:42:30Z
+
+[Term]
+id: OMP:0007327
+name: bud morphology phenotype
+def: "A cell morphology phenotype relating to the size, shape, or appearance of a bud, a protuberance from a cell of an organism that reproduces by budding." [GO:0005933, OMP:DAS]
+xref: APO:0000212 "bud morphology"
+xref: GO:0005933 "cellular bud"
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: siegele
+creation_date: 2016-05-21T22:43:21Z
+
+[Term]
+id: OMP:0007328
+name: altered bud morphology
+def: "A bud morphology phenotype where the size, shape, or appearance of a bud is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007103 ! altered cell morphology
+is_a: OMP:0007327 ! bud morphology phenotype
+created_by: siegele
+creation_date: 2016-05-21T22:52:05Z
+
+[Term]
+id: OMP:0007329
+name: bud neck morphology
+def: "A bud morphology phenotype relating to the size, shape, or appearance of the bud neck, which is the region where the bud joins the mother cell." [GO:0005935, OMP:DAS]
+xref: APO:0000056 "bud neck morphology"
+is_a: OMP:0007327 ! bud morphology phenotype
+created_by: siegele
+creation_date: 2016-05-21T22:59:29Z
+
+[Term]
+id: OMP:0007330
+name: altered bud neck morphology
+def: "A bud neck morphology phenotype where the size, shape, or appearance of the bud neck is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007328 ! altered bud morphology
+is_a: OMP:0007329 ! bud neck morphology
+created_by: siegele
+creation_date: 2016-05-21T23:02:47Z
 
 [Term]
 id: OMP:0008000
