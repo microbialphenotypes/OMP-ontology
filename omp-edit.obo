@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 21:05:2016 23:06
+date: 26:05:2016 23:29
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -9503,7 +9503,7 @@ creation_date: 2015-07-31T13:22:28Z
 [Term]
 id: OMP:0007253
 name: presence of host colonization
-def: "A host colonization phenotype where the ability of a microbe to colonize a host organism is present." [OMP:JG]
+def: "A host colonization phenotype where a microbe is able to colonize a host organism." [OMP:JG]
 is_a: OMP:0007252 ! host colonization phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
@@ -9511,7 +9511,7 @@ creation_date: 2015-07-31T13:25:08Z
 [Term]
 id: OMP:0007254
 name: absence of host colonization
-def: "A host colonization phenotype where the ability of a microbe to colonize a host organism is absent." [OMP:JG]
+def: "A host colonization phenotype where a microbe lacks the ability to colonize a host organism." [OMP:JG]
 is_a: OMP:0007252 ! host colonization phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
@@ -9519,6 +9519,7 @@ creation_date: 2015-07-31T13:25:08Z
 [Term]
 id: OMP:0007255
 name: altered host colonization
+def: "A host colonization phenotype where the ability of a microbe to colonize a host organism is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007252 ! host colonization phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
@@ -9526,6 +9527,7 @@ creation_date: 2015-07-31T13:25:08Z
 [Term]
 id: OMP:0007256
 name: Increased host colonization
+def: "An altered host colonization phenotype where the ability of a microbe to colonize a host organism is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007255 ! altered host colonization
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
@@ -9533,6 +9535,7 @@ creation_date: 2015-07-31T13:26:07Z
 [Term]
 id: OMP:0007257
 name: decreased host colonization
+def: "An altered host colonization phenotype where the ability of a microbe to colonize a host organism is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007255 ! altered host colonization
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
@@ -9540,6 +9543,7 @@ creation_date: 2015-07-31T13:26:07Z
 [Term]
 id: OMP:0007258
 name: abolished host colonization
+def: "A decreased host colonization phenotype where the ability of a microbe to colonize a host organism is abolished." [OMP:DAS]
 is_a: OMP:0007254 ! absence of host colonization
 is_a: OMP:0007257 ! decreased host colonization
 created_by: siegele
@@ -9982,7 +9986,7 @@ creation_date: 2016-02-02T14:27:37Z
 [Term]
 id: OMP:0007310
 name: absence of apoptosis
-def: "An apoptosis phenotype where apoptosis is absent." [OMP:DAS]
+def: "An apoptosis phenotype where a cell or cells cannot undergo apoptosis." [OMP:DAS]
 is_a: OMP:0007309 ! apoptosis phenotype
 created_by: dsiegele
 creation_date: 2016-02-02T14:31:24Z
@@ -9990,7 +9994,7 @@ creation_date: 2016-02-02T14:31:24Z
 [Term]
 id: OMP:0007311
 name: presence of apoptosis
-def: "An apoptosis phenotype where apoptosis is present." [OMP:DAS]
+def: "An apoptosis phenotype where a cell or cells can undergo apoptosis." [OMP:DAS]
 is_a: OMP:0007309 ! apoptosis phenotype
 created_by: dsiegele
 creation_date: 2016-02-02T14:31:24Z
@@ -10006,6 +10010,7 @@ creation_date: 2016-02-02T14:31:24Z
 [Term]
 id: OMP:0007313
 name: decreased apoptosis
+def: "An altered apoptosis phenotype where the occurrence of apoptosis is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007312 ! altered apoptosis
 created_by: dsiegele
 creation_date: 2016-02-02T14:58:50Z
@@ -10013,6 +10018,7 @@ creation_date: 2016-02-02T14:58:50Z
 [Term]
 id: OMP:0007314
 name: increased apoptosis
+def: "An altered apoptosis phenotype where the occurrence of apoptosis is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007312 ! altered apoptosis
 created_by: dsiegele
 creation_date: 2016-02-02T14:58:50Z
@@ -10152,6 +10158,14 @@ is_a: OMP:0007328 ! altered bud morphology
 is_a: OMP:0007329 ! bud neck morphology
 created_by: siegele
 creation_date: 2016-05-21T23:02:47Z
+
+[Term]
+id: OMP:0007331
+name: abolished apoptosis
+def: "A decreased apoptosis phenotype where the ability of a cell or cells to undergo apoptosis is abolished." [OMP:DAS]
+is_a: OMP:0007313 ! decreased apoptosis
+created_by: siegele
+creation_date: 2016-05-26T23:29:02Z
 
 [Term]
 id: OMP:0008000
