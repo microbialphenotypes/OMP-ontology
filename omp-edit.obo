@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:05:2016 22:48
+date: 27:05:2016 23:18
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -9979,7 +9979,7 @@ id: OMP:0007308
 name: cell death phenotype
 def: "A biological process phenotype that relates to the cessation of life of an individual cell." [APO:0000312, OMP:DAS]
 xref: APO:0000312 "cell death"
-is_a: OMP:0007194 ! biological process phenotype
+is_a: OMP:0007332 ! cellular process phenotype
 created_by: dsiegele
 creation_date: 2016-02-02T14:15:49Z
 
@@ -10175,6 +10175,67 @@ def: "A decreased apoptosis phenotype where the ability of a cell or cells to un
 is_a: OMP:0007313 ! decreased apoptosis
 created_by: siegele
 creation_date: 2016-05-26T23:29:02Z
+
+[Term]
+id: OMP:0007332
+name: cellular process phenotype
+def: "A biological process phenotype that affects a cellular process." [OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: FYPO:0000114 "cellular process phenotype"
+is_a: OMP:0007194 ! biological process phenotype
+created_by: siegele
+creation_date: 2016-05-27T23:03:44Z
+
+[Term]
+id: OMP:0007333
+name: autophagy phenotype
+def: "A cellular process phenotype related to the process of autophagy in which cells digest parts of their own cytoplasm." [GO:0006914, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "autolysosome formation" NARROW []
+synonym: "autophagosome formation" NARROW []
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: siegele
+creation_date: 2016-05-27T23:08:08Z
+
+[Term]
+id: OMP:0007334
+name: autophagic vesicle formation phenotype
+def: "An autophagy phenotype related to the formation of autophagic vesicles." [OMP:DAS]
+is_a: OMP:0007333 ! autophagy phenotype
+created_by: siegele
+creation_date: 2016-05-27T23:09:01Z
+
+[Term]
+id: OMP:0007335
+name: altered autophagic vesicle formation
+def: "An autophagic vesicle formation phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007334 ! autophagic vesicle formation phenotype
+created_by: siegele
+creation_date: 2016-05-27T23:09:26Z
+
+[Term]
+id: OMP:0007336
+name: increased autophagic vesicle formation
+def: "An altered autophagic vesicle formation phenotype where autophagic vesicle formation is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007335 ! altered autophagic vesicle formation
+created_by: siegele
+creation_date: 2016-05-27T23:10:53Z
+
+[Term]
+id: OMP:0007337
+name: decreased autophagic vesicle formation
+def: "An altered autophagic vesicle formation phenotype where autophagic vesicle formation is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007335 ! altered autophagic vesicle formation
+created_by: siegele
+creation_date: 2016-05-27T23:10:53Z
+
+[Term]
+id: OMP:0007338
+name: abolished autophagic vesicle formation
+def: "A decreased autophagic vesicle formation phenotype where autophagic vesicle formation is abolished." [OMP:DAS]
+is_a: OMP:0007337 ! decreased autophagic vesicle formation
+created_by: siegele
+creation_date: 2016-05-27T23:10:53Z
 
 [Term]
 id: OMP:0008000
