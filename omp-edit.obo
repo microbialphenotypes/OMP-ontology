@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 26:05:2016 23:29
+date: 27:05:2016 22:48
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -5955,7 +5955,15 @@ name: azole resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to heteromonocyclic organic compounds consisting of a five-membered mancude-ring containing nitrogen." [CHEBI:68452, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nAzoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
 synonym: "azole sensitivity phenotype" RELATED []
+synonym: "benomyl" NARROW [CHEBI:3015]
+synonym: "fluconazole" NARROW [CHEBI:46081]
+synonym: "itraconazole" NARROW [CHEBI:6076]
+synonym: "ketoconazole" NARROW [CHEBI:47519]
+synonym: "miconazole" NARROW [CHEBI:6923]
+synonym: "posaconazole" NARROW [CHEBI:64355]
+synonym: "thiabendazole" NARROW [CHEBI:45979]
 synonym: "Triazole" NARROW [CHEBI:38597]
+synonym: "voriconazole" NARROW [CHEBI:10023]
 xref: CHEBI:68452 "azole"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
@@ -6208,7 +6216,8 @@ def: "An antimicrobial agent resistance phenotype related to resistance or sensi
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
-synonym: "kanamycin (CHEBI:6104)" NARROW []
+synonym: "hygromycin B" NARROW [CHEBI:16976]
+synonym: "kanamycin" NARROW [CHEBI:CHEBI\:6104]
 synonym: "neomycin" NARROW []
 synonym: "streptomycin" NARROW []
 synonym: "tobramycin" NARROW []
