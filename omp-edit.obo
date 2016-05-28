@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:05:2016 23:18
+date: 28:05:2016 02:38
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -10013,6 +10013,7 @@ id: OMP:0007312
 name: altered apoptosis
 def: "An apoptosis phenotype where the occurrence of apoptosis is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007309 ! apoptosis phenotype
+is_a: OMP:0007341 ! altered cell death
 created_by: dsiegele
 creation_date: 2016-02-02T14:31:24Z
 
@@ -10210,6 +10211,7 @@ id: OMP:0007335
 name: altered autophagic vesicle formation
 def: "An autophagic vesicle formation phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007334 ! autophagic vesicle formation phenotype
+is_a: OMP:0007343 ! altered autophagy
 created_by: siegele
 creation_date: 2016-05-27T23:09:26Z
 
@@ -10236,6 +10238,71 @@ def: "A decreased autophagic vesicle formation phenotype where autophagic vesicl
 is_a: OMP:0007337 ! decreased autophagic vesicle formation
 created_by: siegele
 creation_date: 2016-05-27T23:10:53Z
+
+[Term]
+id: OMP:0007339
+name: nuclear morphology phenotype
+def: "A cell morphology phenotype related to the size, shape, or appearance of the nucleus." [OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000057 "nuclear morphology"
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: siegele
+creation_date: 2016-05-28T02:18:45Z
+
+[Term]
+id: OMP:0007340
+name: altered nuclear morphology
+def: "A nuclear morphology phenotype where the size, shape, or appearance of the nucleus is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007103 ! altered cell morphology
+is_a: OMP:0007339 ! nuclear morphology phenotype
+created_by: siegele
+creation_date: 2016-05-28T02:21:05Z
+
+[Term]
+id: OMP:0007341
+name: altered cell death
+def: "A cell death phenotype where death of a cell or cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007308 ! cell death phenotype
+is_a: OMP:0007342 ! altered cellular process
+created_by: siegele
+creation_date: 2016-05-28T02:24:07Z
+
+[Term]
+id: OMP:0007342
+name: altered cellular process
+def: "A cellular process phenotype where a cellular process is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: siegele
+creation_date: 2016-05-28T02:25:03Z
+
+[Term]
+id: OMP:0007343
+name: altered autophagy
+def: "An autophagy phenotype where autophagy in a cell or cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007333 ! autophagy phenotype
+is_a: OMP:0007342 ! altered cellular process
+created_by: siegele
+creation_date: 2016-05-28T02:28:04Z
+
+[Term]
+id: OMP:0007344
+name: nuclear position phenotype
+def: "A cell morphology phenotype related to the location of a nucleus or nucleus within a cell or between separating cells." [APO:0000118, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: siegele
+creation_date: 2016-05-28T02:34:23Z
+
+[Term]
+id: OMP:0007345
+name: altered nuclear position
+def: "A nuclear position phenotype where the location of the nucleus or nuclei within a cell or between separating cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007344 ! nuclear position phenotype
+intersection_of: OMP:0007344 ! nuclear position phenotype
+intersection_of: has_quality OMP:0007189 ! altered_relative_to
+created_by: siegele
+creation_date: 2016-05-28T02:36:59Z
 
 [Term]
 id: OMP:0008000
