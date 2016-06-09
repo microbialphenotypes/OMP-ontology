@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 08:06:2016 22:00
-saved-by: siegele
+date: 09:06:2016 15:22
+saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -5695,6 +5695,78 @@ def: "An altered cytoskeleton morphology phenotype where \ncytoskeleton morpholo
 is_obsolete: true
 created_by: Jesus
 creation_date: 2016-05-21T10:06:05Z
+
+[Term]
+id: OMP:0005189
+name: anaerobic growth phenotype
+def: "An oxygen growth range phenotype related to the ability of a cell or cells to grow or reproduce in the absence of oxygen." [OMP:JG]
+is_a: OMP:0000039 ! oxygen growth range phenotype
+created_by: Jesus
+creation_date: 2016-06-09T15:08:16Z
+
+[Term]
+id: OMP:0005190
+name: presence of anaerobic growth
+def: "An anaerobic growth phenotype where a cell or cells exhibit anaerobic growth." [OMP:JG]
+is_a: OMP:0005189 ! anaerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-09T15:10:36Z
+
+[Term]
+id: OMP:0005191
+name: absence of anaerobic growth
+def: "An anaerobic growth phenotype where a cell or cells lack the ability to undergo anaerobic growth." [OMP:JG]
+is_a: OMP:0005189 ! anaerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-09T15:12:13Z
+
+[Term]
+id: OMP:0005192
+name: altered anaerobic growth
+def: "An anaerobic growth phenotype where the ability of a cell or cells to undergo anaerobic growth is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005189 ! anaerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-09T15:12:52Z
+
+[Term]
+id: OMP:0005193
+name: increased anaerobic growth yield
+def: "An altered anaerobic growth phenotype where the anaerobic growth yield is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005192 ! altered anaerobic growth
+created_by: Jesus
+creation_date: 2016-06-09T15:13:45Z
+
+[Term]
+id: OMP:0005194
+name: decreased anaerobic growth yield
+def: "An altered anaerobic growth phenotype where the anaerobic growth yield is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005192 ! altered anaerobic growth
+created_by: Jesus
+creation_date: 2016-06-09T15:14:35Z
+
+[Term]
+id: OMP:0005195
+name: abolished anaerobic growth
+def: "An altered anaerobic growth phenotype where anaerobic growth is abolished." [OMP:JG]
+is_a: OMP:0005192 ! altered anaerobic growth
+created_by: Jesus
+creation_date: 2016-06-09T15:15:50Z
+
+[Term]
+id: OMP:0005196
+name: increased rate of anaerobic growth
+def: "An altered anaerobic growth phenotype where the anaerobic growth rate is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005192 ! altered anaerobic growth
+created_by: Jesus
+creation_date: 2016-06-09T15:19:53Z
+
+[Term]
+id: OMP:0005197
+name: decreased rate of anaerobic growth
+def: "An altered anaerobic growth phenotype where the anaerobic growth rate is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005192 ! altered anaerobic growth
+created_by: Jesus
+creation_date: 2016-06-09T15:21:49Z
 
 [Term]
 id: OMP:0006000
