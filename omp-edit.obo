@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 28:05:2016 02:38
+date: 08:06:2016 21:55
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2017,9 +2017,9 @@ creation_date: 2011-02-02T03:18:29Z
 
 [Term]
 id: OMP:0000076
-name: bacillus
+name: rod
 def: "A cylindrical cell phenotype where an organism has rod-shaped cells." [ISBN:9780073402406, OMP:MCC]
-synonym: "rod-shaped" EXACT []
+synonym: "bacillus" EXACT []
 is_a: OMP:0007099 ! cylindrical cell shape
 created_by: adrienne
 creation_date: 2011-02-02T03:18:47Z
@@ -8173,7 +8173,7 @@ creation_date: 2014-07-10T20:24:53Z
 
 [Term]
 id: OMP:0007102
-name: rounder
+name: more round
 def: "An altered cell shape phenotype where a cell's shape is rounder than that of a designated control." [OMP:DAS]
 is_a: OMP:0007100 ! spheroid cell shape
 is_a: OMP:0007101 ! altered cell shape
@@ -10037,6 +10037,7 @@ creation_date: 2016-02-02T14:58:50Z
 id: OMP:0007315
 name: population morphology phenotype
 def: "A microbial phenotype related to the appearance of a microbial population, such as a colony, liquid culture, or biofilm." [OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
 creation_date: 2016-02-05T20:20:28Z
@@ -10303,6 +10304,15 @@ intersection_of: OMP:0007344 ! nuclear position phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2016-05-28T02:36:59Z
+
+[Term]
+id: OMP:0007346
+name: protein secretion phenotype
+def: "A biological process phenotype related to the controlled release of proteins from a cell." [GO:0009306, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0007194 ! biological process phenotype
+created_by: siegele
+creation_date: 2016-06-08T17:02:00Z
 
 [Term]
 id: OMP:0008000
