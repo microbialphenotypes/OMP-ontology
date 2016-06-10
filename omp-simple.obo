@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: releases/2016-05-06
-date: 22:03:2016 14:06
-saved-by: jguzman
+data-version: releases/2016-06-10
+date: 09:06:2016 23:08
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -170,7 +170,7 @@ creation_date: 2011-04-26T03:05:35Z
 id: OMP:0000016
 name: delayed spore germination
 def: "A spore germination phenotype where a spore undergoes germination after a longer than usual dormancy period." [OMP:MCC]
-is_a: OMP:0000095 ! spore germination phenotype
+is_a: OMP:0007353 ! altered spore germination
 created_by: mchibucos
 creation_date: 2011-04-26T03:07:11Z
 
@@ -568,7 +568,7 @@ creation_date: 2011-02-02T03:28:59Z
 [Term]
 id: OMP:0000069
 name: quorum sensing phenotype
-def: "A microbial communication phenotype where the their population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [GO:0009372, OMP:MCC]
+def: "A microbial communication phenotype where cells sense their population density by detecting the concentration of small, diffusible signal molecules produced by the cells themselves." [GO:0009372, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0009372 "quorum sensing"
 is_a: OMP:0000101 ! microbial communication phenotype
@@ -581,7 +581,7 @@ name: cell development phenotype
 def: "A microbial phenotype, where the trait in question is the progression of a cell from an initial condition to a later condition." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0048869 "cellular developmental process"
-is_a: OMP:0007194 ! biological process phenotype
+is_a: OMP:0007332 ! cellular process phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:11:48Z
 
@@ -634,9 +634,9 @@ creation_date: 2011-02-02T03:18:29Z
 
 [Term]
 id: OMP:0000076
-name: bacillus
+name: rod
 def: "A cylindrical cell phenotype where an organism has rod-shaped cells." [ISBN:9780073402406, OMP:MCC]
-synonym: "rod-shaped" EXACT []
+synonym: "bacillus" EXACT []
 is_a: OMP:0007099 ! cylindrical cell shape
 created_by: adrienne
 creation_date: 2011-02-02T03:18:47Z
@@ -869,7 +869,7 @@ creation_date: 2011-02-02T02:14:39Z
 id: OMP:0000101
 name: microbial communication phenotype
 def: "A multi-organism phenotype where microbial organisms communicate and coordinate their activities through chemical signals that either diffuse through the environment or remain cell associated." [OMP:JCH]
-is_a: OMP:0005116 ! multi-organism phenotype
+is_a: OMP:0005116 ! multi-organism process phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:45:44Z
 
@@ -1491,7 +1491,7 @@ creation_date: 2011-06-07T02:59:54Z
 id: OMP:0000176
 name: biofilm phenotype
 def: "A multi-organism phenotype dealing with the process in which microorganisms attach to and grow on a surface and produce extracellular polymers that facilitate attachment and matrix formation." [GO:0042710, OMP:WAM]
-is_a: OMP:0005116 ! multi-organism phenotype
+is_a: OMP:0005116 ! multi-organism process phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:17:19Z
 
@@ -3630,7 +3630,7 @@ creation_date: 2014-08-07T14:54:52Z
 
 [Term]
 id: OMP:0005116
-name: multi-organism phenotype
+name: multi-organism process phenotype
 def: "A microbial phenotype related to a biological process that involves two or more organisms of the same or different species." [GO:0051704, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0051704 "multi-organism process"
@@ -4112,6 +4112,213 @@ created_by: Jesus
 creation_date: 2016-02-15T16:34:58Z
 
 [Term]
+id: OMP:0005173
+name: acid phosphatase activity phenotype
+def: "An enzymatic activity phenotype that relates to the presence or absence of acid phosphatase, an enzyme that removes phosphoryl groups from other molecules. Acid phosphatase catalyzes the reaction: an orthophosphoric monoester + H2O -> an alcohol + phosphate, with an acid pH optimum." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0003993 "acid phosphatase activity"
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: Jesus
+creation_date: 2016-05-18T14:29:30Z
+
+[Term]
+id: OMP:0005174
+name: presence of acid phosphatase activity
+def: "An acid phosphatase activity phenotype where a cell or cells exhibits acid phosphatase activity." [OMP:JG]
+is_a: OMP:0005173 ! acid phosphatase activity phenotype
+created_by: Jesus
+creation_date: 2016-05-18T14:33:20Z
+
+[Term]
+id: OMP:0005175
+name: absence of acid phosphatase activity
+def: "An acid phosphatase activity phenotype where a cell or cells lacks acid phosphatase activity." [OMP:JG]
+is_a: OMP:0005173 ! acid phosphatase activity phenotype
+created_by: Jesus
+creation_date: 2016-05-18T14:39:41Z
+
+[Term]
+id: OMP:0005176
+name: altered acid phosphatase activity
+def: "An acid phosphatase activity phenotype where acid phosphatase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005173 ! acid phosphatase activity phenotype
+created_by: Jesus
+creation_date: 2016-05-18T14:40:33Z
+
+[Term]
+id: OMP:0005177
+name: decreased acid phosphatase activity
+def: "An altered acid phosphatase activity phenotype where acid phosphatase activity is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005176 ! altered acid phosphatase activity
+created_by: Jesus
+creation_date: 2016-05-18T14:41:06Z
+
+[Term]
+id: OMP:0005178
+name: abolished acid phosphatase activity
+def: "A decreased acid phosphatase activity phenotype where acid phosphatase activity is abolished." [OMP:JG]
+is_a: OMP:0005177 ! decreased acid phosphatase activity
+created_by: Jesus
+creation_date: 2016-05-18T14:41:52Z
+
+[Term]
+id: OMP:0005179
+name: increased acid phosphatase activity
+def: "An altered acid phosphatase activity phenotype where acid phosphatase activity is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005176 ! altered acid phosphatase activity
+created_by: Jesus
+creation_date: 2016-05-18T14:43:12Z
+
+[Term]
+id: OMP:0005180
+name: cytoskeleton morphology phenotype
+def: "A cell morphology phenotype relating to the form and function of the cytoskeleton, any of the various filamentous elements that form the internal framework of cells." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0005856 "cytoskeleton"
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: Jesus
+creation_date: 2016-05-21T09:09:03Z
+
+[Term]
+id: OMP:0005181
+name: altered cytoskeleton morphology phenotype
+def: "A cytoskeleton morphology phenotype where the morphology of the cytoskeleton is altered relative to a designated control." [GO:JG]
+is_a: OMP:0005180 ! cytoskeleton morphology phenotype
+is_a: OMP:0007103 ! altered cell morphology
+created_by: Jesus
+creation_date: 2016-05-21T09:57:50Z
+
+[Term]
+id: OMP:0005182
+name: actin cytoskeleton morphology phenotype
+def: "A cytoskeleton morphology phenotype relating to the part of the cytoskeleton that is composed of actin and associated proteins." [OMP:JG]
+xref: GO:00015629
+is_a: OMP:0005180 ! cytoskeleton morphology phenotype
+created_by: Jesus
+creation_date: 2016-05-21T09:59:30Z
+
+[Term]
+id: OMP:0005183
+name: absence of actin cytoskeleton
+def: "An actin cytoskeleton morphology phenotype where a cell or cells lack an actin cytoskeleton." [OMP:JG]
+is_a: OMP:0005182 ! actin cytoskeleton morphology phenotype
+created_by: Jesus
+creation_date: 2016-05-21T10:01:36Z
+
+[Term]
+id: OMP:0005184
+name: presence of actin cytoskeleton
+def: "An actin cytoskeleton morphology phenotype where a cell or cells exhibit an actin cytoskeleton." [OMP:JG]
+is_a: OMP:0005182 ! actin cytoskeleton morphology phenotype
+created_by: Jesus
+creation_date: 2016-05-21T10:03:01Z
+
+[Term]
+id: OMP:0005185
+name: altered actin cytoskeleton morphology
+def: "An actin cytoskeleton morphology phenotype where the morphology of the actin cytoskeleton is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005181 ! altered cytoskeleton morphology phenotype
+is_a: OMP:0005182 ! actin cytoskeleton morphology phenotype
+created_by: Jesus
+creation_date: 2016-05-21T10:03:47Z
+
+[Term]
+id: OMP:0005186
+name: decreased cytoskeleton phenotype
+def: "An altered cytoskeleton morphology phenotype where \ncytoskeleton morphology is decreased relative to a designated control." [OMP:JG]
+is_obsolete: true
+created_by: Jesus
+creation_date: 2016-05-21T10:04:40Z
+
+[Term]
+id: OMP:0005187
+name: abolished cytoskeleton morphology
+def: "A decreased cytoskeleton morphology phenotype where cytoskeleton morphology is abolished." [OMP:JG]
+is_obsolete: true
+created_by: Jesus
+creation_date: 2016-05-21T10:05:21Z
+
+[Term]
+id: OMP:0005188
+name: increased cytoskeleton morphology
+def: "An altered cytoskeleton morphology phenotype where \ncytoskeleton morphology is increased relative to a designated control." [OMP:JG]
+is_obsolete: true
+created_by: Jesus
+creation_date: 2016-05-21T10:06:05Z
+
+[Term]
+id: OMP:0005189
+name: anaerobic growth phenotype
+def: "An oxygen growth range phenotype related to the ability of a cell or cells to grow or reproduce in the absence of oxygen." [OMP:JG]
+is_a: OMP:0000039 ! oxygen growth range phenotype
+created_by: Jesus
+creation_date: 2016-06-09T15:08:16Z
+
+[Term]
+id: OMP:0005190
+name: presence of anaerobic growth
+def: "An anaerobic growth phenotype where a cell or cells exhibit anaerobic growth." [OMP:JG]
+is_a: OMP:0005189 ! anaerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-09T15:10:36Z
+
+[Term]
+id: OMP:0005191
+name: absence of anaerobic growth
+def: "An anaerobic growth phenotype where a cell or cells lack the ability to undergo anaerobic growth." [OMP:JG]
+is_a: OMP:0005189 ! anaerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-09T15:12:13Z
+
+[Term]
+id: OMP:0005192
+name: altered anaerobic growth
+def: "An anaerobic growth phenotype where the ability of a cell or cells to undergo anaerobic growth is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005189 ! anaerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-09T15:12:52Z
+
+[Term]
+id: OMP:0005193
+name: increased anaerobic growth yield
+def: "An altered anaerobic growth phenotype where the anaerobic growth yield is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005192 ! altered anaerobic growth
+created_by: Jesus
+creation_date: 2016-06-09T15:13:45Z
+
+[Term]
+id: OMP:0005194
+name: decreased anaerobic growth yield
+def: "An altered anaerobic growth phenotype where the anaerobic growth yield is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005192 ! altered anaerobic growth
+created_by: Jesus
+creation_date: 2016-06-09T15:14:35Z
+
+[Term]
+id: OMP:0005195
+name: abolished anaerobic growth
+def: "An altered anaerobic growth phenotype where anaerobic growth is abolished." [OMP:JG]
+is_a: OMP:0005192 ! altered anaerobic growth
+created_by: Jesus
+creation_date: 2016-06-09T15:15:50Z
+
+[Term]
+id: OMP:0005196
+name: increased rate of anaerobic growth
+def: "An altered anaerobic growth phenotype where the anaerobic growth rate is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005192 ! altered anaerobic growth
+created_by: Jesus
+creation_date: 2016-06-09T15:19:53Z
+
+[Term]
+id: OMP:0005197
+name: decreased rate of anaerobic growth
+def: "An altered anaerobic growth phenotype where the anaerobic growth rate is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005192 ! altered anaerobic growth
+created_by: Jesus
+creation_date: 2016-06-09T15:21:49Z
+
+[Term]
 id: OMP:0006000
 name: secondary metabolite production phenotype
 def: "A small molecule biosynthesis phenotype where an organism produces a secondary metabolite, which is a compound not directly involved in normal growth, development or reproduction." [APO:0000292, OMP:TCK]
@@ -4176,6 +4383,7 @@ id: OMP:0006007
 name: altered heterocyst formation
 def: "A heterocyst formation phenotype where formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000092 ! heterocyst formation phenotype
+is_a: OMP:0007352 ! altered cell development
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:24:44Z
 
@@ -4369,7 +4577,15 @@ name: azole resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to heteromonocyclic organic compounds consisting of a five-membered mancude-ring containing nitrogen." [CHEBI:68452, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nAzoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
 synonym: "azole sensitivity phenotype" RELATED []
+synonym: "benomyl" NARROW [CHEBI:3015]
+synonym: "fluconazole" NARROW [CHEBI:46081]
+synonym: "itraconazole" NARROW [CHEBI:6076]
+synonym: "ketoconazole" NARROW [CHEBI:47519]
+synonym: "miconazole" NARROW [CHEBI:6923]
+synonym: "posaconazole" NARROW [CHEBI:64355]
+synonym: "thiabendazole" NARROW [CHEBI:45979]
 synonym: "Triazole" NARROW [CHEBI:38597]
+synonym: "voriconazole" NARROW [CHEBI:10023]
 xref: CHEBI:68452 "azole"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
@@ -4622,7 +4838,8 @@ def: "An antimicrobial agent resistance phenotype related to resistance or sensi
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
-synonym: "kanamycin (CHEBI:6104)" NARROW []
+synonym: "hygromycin B" NARROW [CHEBI:16976]
+synonym: "kanamycin" NARROW [CHEBI:CHEBI\:6104]
 synonym: "neomycin" NARROW []
 synonym: "streptomycin" NARROW []
 synonym: "tobramycin" NARROW []
@@ -6563,7 +6780,7 @@ creation_date: 2014-07-10T20:24:53Z
 
 [Term]
 id: OMP:0007102
-name: rounder
+name: more round
 def: "An altered cell shape phenotype where a cell's shape is rounder than that of a designated control." [OMP:DAS]
 is_a: OMP:0007100 ! spheroid cell shape
 is_a: OMP:0007101 ! altered cell shape
@@ -7868,7 +8085,7 @@ creation_date: 2015-07-31T13:22:28Z
 [Term]
 id: OMP:0007253
 name: presence of host colonization
-def: "A host colonization phenotype where the ability of a microbe to colonize a host organism is present." [OMP:JG]
+def: "A host colonization phenotype where a microbe is able to colonize a host organism." [OMP:JG]
 is_a: OMP:0007252 ! host colonization phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
@@ -7876,7 +8093,7 @@ creation_date: 2015-07-31T13:25:08Z
 [Term]
 id: OMP:0007254
 name: absence of host colonization
-def: "A host colonization phenotype where the ability of a microbe to colonize a host organism is absent." [OMP:JG]
+def: "A host colonization phenotype where a microbe lacks the ability to colonize a host organism." [OMP:JG]
 is_a: OMP:0007252 ! host colonization phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
@@ -7884,6 +8101,7 @@ creation_date: 2015-07-31T13:25:08Z
 [Term]
 id: OMP:0007255
 name: altered host colonization
+def: "A host colonization phenotype where the ability of a microbe to colonize a host organism is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007252 ! host colonization phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
@@ -7891,6 +8109,7 @@ creation_date: 2015-07-31T13:25:08Z
 [Term]
 id: OMP:0007256
 name: Increased host colonization
+def: "An altered host colonization phenotype where the ability of a microbe to colonize a host organism is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007255 ! altered host colonization
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
@@ -7898,6 +8117,7 @@ creation_date: 2015-07-31T13:26:07Z
 [Term]
 id: OMP:0007257
 name: decreased host colonization
+def: "An altered host colonization phenotype where the ability of a microbe to colonize a host organism is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007255 ! altered host colonization
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
@@ -7905,6 +8125,7 @@ creation_date: 2015-07-31T13:26:07Z
 [Term]
 id: OMP:0007258
 name: abolished host colonization
+def: "A decreased host colonization phenotype where the ability of a microbe to colonize a host organism is abolished." [OMP:DAS]
 is_a: OMP:0007254 ! absence of host colonization
 is_a: OMP:0007257 ! decreased host colonization
 created_by: siegele
@@ -8187,8 +8408,8 @@ creation_date: 2016-01-10T00:45:01Z
 id: OMP:0007292
 name: altered spore germination efficiency
 def: "A spore germination phenotype where the percentage of spores that germinate is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000095 ! spore germination phenotype
 is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007353 ! altered spore germination
 relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2016-01-10T00:55:26Z
@@ -8327,7 +8548,7 @@ id: OMP:0007308
 name: cell death phenotype
 def: "A biological process phenotype that relates to the cessation of life of an individual cell." [APO:0000312, OMP:DAS]
 xref: APO:0000312 "cell death"
-is_a: OMP:0007194 ! biological process phenotype
+is_a: OMP:0007332 ! cellular process phenotype
 created_by: dsiegele
 creation_date: 2016-02-02T14:15:49Z
 
@@ -8343,7 +8564,7 @@ creation_date: 2016-02-02T14:27:37Z
 [Term]
 id: OMP:0007310
 name: absence of apoptosis
-def: "An apoptosis phenotype where apoptosis is absent." [OMP:DAS]
+def: "An apoptosis phenotype where a cell or cells cannot undergo apoptosis." [OMP:DAS]
 is_a: OMP:0007309 ! apoptosis phenotype
 created_by: dsiegele
 creation_date: 2016-02-02T14:31:24Z
@@ -8351,7 +8572,7 @@ creation_date: 2016-02-02T14:31:24Z
 [Term]
 id: OMP:0007311
 name: presence of apoptosis
-def: "An apoptosis phenotype where apoptosis is present." [OMP:DAS]
+def: "An apoptosis phenotype where a cell or cells can undergo apoptosis." [OMP:DAS]
 is_a: OMP:0007309 ! apoptosis phenotype
 created_by: dsiegele
 creation_date: 2016-02-02T14:31:24Z
@@ -8361,12 +8582,14 @@ id: OMP:0007312
 name: altered apoptosis
 def: "An apoptosis phenotype where the occurrence of apoptosis is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007309 ! apoptosis phenotype
+is_a: OMP:0007341 ! altered cell death
 created_by: dsiegele
 creation_date: 2016-02-02T14:31:24Z
 
 [Term]
 id: OMP:0007313
 name: decreased apoptosis
+def: "An altered apoptosis phenotype where the occurrence of apoptosis is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007312 ! altered apoptosis
 created_by: dsiegele
 creation_date: 2016-02-02T14:58:50Z
@@ -8374,6 +8597,7 @@ creation_date: 2016-02-02T14:58:50Z
 [Term]
 id: OMP:0007314
 name: increased apoptosis
+def: "An altered apoptosis phenotype where the occurrence of apoptosis is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007312 ! altered apoptosis
 created_by: dsiegele
 creation_date: 2016-02-02T14:58:50Z
@@ -8382,6 +8606,7 @@ creation_date: 2016-02-02T14:58:50Z
 id: OMP:0007315
 name: population morphology phenotype
 def: "A microbial phenotype related to the appearance of a microbial population, such as a colony, liquid culture, or biofilm." [OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
 creation_date: 2016-02-05T20:20:28Z
@@ -8476,6 +8701,245 @@ def: "A sulfur source utilization phenotype where an organism cannot use an orga
 is_a: OMP:0007042 ! sulfur source utilization phenotype
 created_by: siegele
 creation_date: 2016-02-25T22:42:30Z
+
+[Term]
+id: OMP:0007327
+name: bud morphology phenotype
+def: "A cell morphology phenotype relating to the size, shape, or appearance of a bud, a protuberance from a cell of an organism that reproduces by budding." [GO:0005933, OMP:DAS]
+xref: APO:0000212 "bud morphology"
+xref: GO:0005933 "cellular bud"
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: siegele
+creation_date: 2016-05-21T22:43:21Z
+
+[Term]
+id: OMP:0007328
+name: altered bud morphology
+def: "A bud morphology phenotype where the size, shape, or appearance of a bud is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007103 ! altered cell morphology
+is_a: OMP:0007327 ! bud morphology phenotype
+created_by: siegele
+creation_date: 2016-05-21T22:52:05Z
+
+[Term]
+id: OMP:0007329
+name: bud neck morphology
+def: "A bud morphology phenotype relating to the size, shape, or appearance of the bud neck, which is the region where the bud joins the mother cell." [GO:0005935, OMP:DAS]
+xref: APO:0000056 "bud neck morphology"
+is_a: OMP:0007327 ! bud morphology phenotype
+created_by: siegele
+creation_date: 2016-05-21T22:59:29Z
+
+[Term]
+id: OMP:0007330
+name: altered bud neck morphology
+def: "A bud neck morphology phenotype where the size, shape, or appearance of the bud neck is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007328 ! altered bud morphology
+is_a: OMP:0007329 ! bud neck morphology
+created_by: siegele
+creation_date: 2016-05-21T23:02:47Z
+
+[Term]
+id: OMP:0007331
+name: abolished apoptosis
+def: "A decreased apoptosis phenotype where the ability of a cell or cells to undergo apoptosis is abolished." [OMP:DAS]
+is_a: OMP:0007313 ! decreased apoptosis
+created_by: siegele
+creation_date: 2016-05-26T23:29:02Z
+
+[Term]
+id: OMP:0007332
+name: cellular process phenotype
+def: "A biological process phenotype that affects a cellular process." [OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: FYPO:0000114 "cellular process phenotype"
+is_a: OMP:0007194 ! biological process phenotype
+created_by: siegele
+creation_date: 2016-05-27T23:03:44Z
+
+[Term]
+id: OMP:0007333
+name: autophagy phenotype
+def: "A cellular process phenotype related to the process of autophagy in which cells digest parts of their own cytoplasm." [GO:0006914, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "autolysosome formation" NARROW []
+synonym: "autophagosome formation" NARROW []
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: siegele
+creation_date: 2016-05-27T23:08:08Z
+
+[Term]
+id: OMP:0007334
+name: autophagic vesicle formation phenotype
+def: "An autophagy phenotype related to the formation of autophagic vesicles." [OMP:DAS]
+is_a: OMP:0007333 ! autophagy phenotype
+created_by: siegele
+creation_date: 2016-05-27T23:09:01Z
+
+[Term]
+id: OMP:0007335
+name: altered autophagic vesicle formation
+def: "An autophagic vesicle formation phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007334 ! autophagic vesicle formation phenotype
+is_a: OMP:0007343 ! altered autophagy
+created_by: siegele
+creation_date: 2016-05-27T23:09:26Z
+
+[Term]
+id: OMP:0007336
+name: increased autophagic vesicle formation
+def: "An altered autophagic vesicle formation phenotype where autophagic vesicle formation is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007335 ! altered autophagic vesicle formation
+created_by: siegele
+creation_date: 2016-05-27T23:10:53Z
+
+[Term]
+id: OMP:0007337
+name: decreased autophagic vesicle formation
+def: "An altered autophagic vesicle formation phenotype where autophagic vesicle formation is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007335 ! altered autophagic vesicle formation
+created_by: siegele
+creation_date: 2016-05-27T23:10:53Z
+
+[Term]
+id: OMP:0007338
+name: abolished autophagic vesicle formation
+def: "A decreased autophagic vesicle formation phenotype where autophagic vesicle formation is abolished." [OMP:DAS]
+is_a: OMP:0007337 ! decreased autophagic vesicle formation
+created_by: siegele
+creation_date: 2016-05-27T23:10:53Z
+
+[Term]
+id: OMP:0007339
+name: nuclear morphology phenotype
+def: "A cell morphology phenotype related to the size, shape, or appearance of the nucleus." [OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000057 "nuclear morphology"
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: siegele
+creation_date: 2016-05-28T02:18:45Z
+
+[Term]
+id: OMP:0007340
+name: altered nuclear morphology
+def: "A nuclear morphology phenotype where the size, shape, or appearance of the nucleus is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007103 ! altered cell morphology
+is_a: OMP:0007339 ! nuclear morphology phenotype
+created_by: siegele
+creation_date: 2016-05-28T02:21:05Z
+
+[Term]
+id: OMP:0007341
+name: altered cell death
+def: "A cell death phenotype where death of a cell or cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007308 ! cell death phenotype
+is_a: OMP:0007342 ! altered cellular process
+created_by: siegele
+creation_date: 2016-05-28T02:24:07Z
+
+[Term]
+id: OMP:0007342
+name: altered cellular process
+def: "A cellular process phenotype where a cellular process is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007332 ! cellular process phenotype
+is_a: OMP:0007351 ! altered biological process
+created_by: siegele
+creation_date: 2016-05-28T02:25:03Z
+
+[Term]
+id: OMP:0007343
+name: altered autophagy
+def: "An autophagy phenotype where autophagy in a cell or cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007333 ! autophagy phenotype
+is_a: OMP:0007342 ! altered cellular process
+created_by: siegele
+creation_date: 2016-05-28T02:28:04Z
+
+[Term]
+id: OMP:0007344
+name: nuclear position phenotype
+def: "A cell morphology phenotype related to the location of a nucleus or nucleus within a cell or between separating cells." [APO:0000118, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: siegele
+creation_date: 2016-05-28T02:34:23Z
+
+[Term]
+id: OMP:0007345
+name: altered nuclear position
+def: "A nuclear position phenotype where the location of the nucleus or nuclei within a cell or between separating cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007103 ! altered cell morphology
+is_a: OMP:0007344 ! nuclear position phenotype
+relationship: has_quality OMP:0007189 ! altered_relative_to
+created_by: siegele
+creation_date: 2016-05-28T02:36:59Z
+
+[Term]
+id: OMP:0007346
+name: protein secretion phenotype
+def: "A biological process phenotype related to the controlled release of proteins from a cell." [GO:0009306, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0007194 ! biological process phenotype
+created_by: siegele
+creation_date: 2016-06-08T17:02:00Z
+
+[Term]
+id: OMP:0007347
+name: altered protein secretion
+def: "A protein secretion phenotype where secretion of a protein or proteins is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007346 ! protein secretion phenotype
+created_by: siegele
+creation_date: 2016-06-09T22:42:13Z
+
+[Term]
+id: OMP:0007348
+name: increased protein secretion
+def: "An altered protein secretion phenotype where the amount of a protein or proteins that is secreted is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007347 ! altered protein secretion
+created_by: siegele
+creation_date: 2016-06-09T22:43:50Z
+
+[Term]
+id: OMP:0007349
+name: decreased protein secretion
+def: "An altered protein secretion phenotype where the amount of a protein or proteins that is secreted is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007347 ! altered protein secretion
+created_by: siegele
+creation_date: 2016-06-09T22:47:42Z
+
+[Term]
+id: OMP:0007350
+name: abolished protein secretion
+def: "A decreased protein secretion phenotype where secretion of a protein or proteins is abolished." [OMP:DAS]
+is_a: OMP:0007349 ! decreased protein secretion
+created_by: siegele
+creation_date: 2016-06-09T22:48:16Z
+
+[Term]
+id: OMP:0007351
+name: altered biological process
+def: "A biological process phenotype where a biological process is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007194 ! biological process phenotype
+created_by: siegele
+creation_date: 2016-06-09T22:50:27Z
+
+[Term]
+id: OMP:0007352
+name: altered cell development
+def: "A cell development phenotype where development of a cell or cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000070 ! cell development phenotype
+is_a: OMP:0007342 ! altered cellular process
+created_by: siegele
+creation_date: 2016-06-09T22:58:20Z
+
+[Term]
+id: OMP:0007353
+name: altered spore germination
+def: "A spore germination phenotype where germination of a spore or spores is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000095 ! spore germination phenotype
+created_by: siegele
+creation_date: 2016-06-09T23:07:17Z
 
 [Term]
 id: OMP:0008000
