@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 09:06:2016 15:22
-saved-by: Jesus
+date: 09:06:2016 23:08
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -1525,7 +1525,7 @@ creation_date: 2011-04-26T03:05:35Z
 id: OMP:0000016
 name: delayed spore germination
 def: "A spore germination phenotype where a spore undergoes germination after a longer than usual dormancy period." [OMP:MCC]
-is_a: OMP:0000095 ! spore germination phenotype
+is_a: OMP:0007353 ! altered spore germination
 created_by: mchibucos
 creation_date: 2011-04-26T03:07:11Z
 
@@ -1954,8 +1954,7 @@ name: cell development phenotype
 def: "A microbial phenotype, where the trait in question is the progression of a cell from an initial condition to a later condition." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0048869 "cellular developmental process"
-is_a: OMP:0000000 ! microbial phenotype
-is_a: OMP:0007194 ! biological process phenotype
+is_a: OMP:0007332 ! cellular process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0048869 ! cellular developmental process
 created_by: adrienne
@@ -5833,6 +5832,7 @@ id: OMP:0006007
 name: altered heterocyst formation
 def: "A heterocyst formation phenotype where formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000092 ! heterocyst formation phenotype
+is_a: OMP:0007352 ! altered cell development
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:24:44Z
 
@@ -9911,7 +9911,7 @@ creation_date: 2016-01-10T00:45:01Z
 id: OMP:0007292
 name: altered spore germination efficiency
 def: "A spore germination phenotype where the percentage of spores that germinate is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000095 ! spore germination phenotype
+is_a: OMP:0007353 ! altered spore germination
 intersection_of: OMP:0000095 ! spore germination phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
@@ -10344,8 +10344,8 @@ creation_date: 2016-05-28T02:24:07Z
 id: OMP:0007342
 name: altered cellular process
 def: "A cellular process phenotype where a cellular process is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
 is_a: OMP:0007332 ! cellular process phenotype
+is_a: OMP:0007351 ! altered biological process
 created_by: siegele
 creation_date: 2016-05-28T02:25:03Z
 
@@ -10385,6 +10385,64 @@ comment: This term was created to organize terms beneath it in the ontology. We 
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
 creation_date: 2016-06-08T17:02:00Z
+
+[Term]
+id: OMP:0007347
+name: altered protein secretion
+def: "A protein secretion phenotype where secretion of a protein or proteins is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007346 ! protein secretion phenotype
+created_by: siegele
+creation_date: 2016-06-09T22:42:13Z
+
+[Term]
+id: OMP:0007348
+name: increased protein secretion
+def: "An altered protein secretion phenotype where the amount of a protein or proteins that is secreted is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007347 ! altered protein secretion
+created_by: siegele
+creation_date: 2016-06-09T22:43:50Z
+
+[Term]
+id: OMP:0007349
+name: decreased protein secretion
+def: "An altered protein secretion phenotype where the amount of a protein or proteins that is secreted is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007347 ! altered protein secretion
+created_by: siegele
+creation_date: 2016-06-09T22:47:42Z
+
+[Term]
+id: OMP:0007350
+name: abolished protein secretion
+def: "A decreased protein secretion phenotype where secretion of a protein or proteins is abolished." [OMP:DAS]
+is_a: OMP:0007349 ! decreased protein secretion
+created_by: siegele
+creation_date: 2016-06-09T22:48:16Z
+
+[Term]
+id: OMP:0007351
+name: altered biological process
+def: "A biological process phenotype where a biological process is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007194 ! biological process phenotype
+created_by: siegele
+creation_date: 2016-06-09T22:50:27Z
+
+[Term]
+id: OMP:0007352
+name: altered cell development
+def: "A cell development phenotype where development of a cell or cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000070 ! cell development phenotype
+is_a: OMP:0007342 ! altered cellular process
+created_by: siegele
+creation_date: 2016-06-09T22:58:20Z
+
+[Term]
+id: OMP:0007353
+name: altered spore germination
+def: "A spore germination phenotype where germination of a spore or spores is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000095 ! spore germination phenotype
+created_by: siegele
+creation_date: 2016-06-09T23:07:17Z
 
 [Term]
 id: OMP:0008000
