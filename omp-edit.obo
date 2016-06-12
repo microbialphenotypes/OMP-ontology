@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 09:06:2016 23:08
+date: 11:06:2016 22:50
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3791,6 +3791,7 @@ id: OMP:0000331
 name: aminopyrimidine resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "5-flucytosine" NARROW [CHEBI:5100]
 synonym: "aminopyrimidine sensitivity phenotype" RELATED []
 synonym: "antifolate" BROAD [CHEBI:73913]
 synonym: "diaveridine" NARROW [CHEBI:123115]
