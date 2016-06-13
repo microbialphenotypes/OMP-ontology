@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 11:06:2016 22:50
+date: 13:06:2016 00:17
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2867,9 +2867,11 @@ creation_date: 2011-06-06T04:16:08Z
 [Term]
 id: OMP:0000173
 name: stress response phenotype
-def: "A microbial phenotype related to a cell or organism's response to environmental stress." [OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000000 ! microbial phenotype
+def: "A microbial phenotype related to whether cells in a population are sensitive or resistant to a stress. Typically, a cell population is deemed sensitive to a stress if cells in the population stop growing and dividing (and may die) when exposed to a stress." [FYPO:0002549, OMP:WAM]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested. Use a descendant of this term if you have assayed growth of cells exposed to a stress in culture.
+synonym: "stress resistance" NARROW []
+synonym: "stress sensitivity" NARROW []
+is_a: OMP:0007167 ! population growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:32Z
 
@@ -8749,8 +8751,8 @@ creation_date: 2014-08-28T12:14:20Z
 id: OMP:0007157
 name: altered population growth
 def: "A population growth phenotype where reproduction of a microbial population is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
 is_a: OMP:0007167 ! population growth phenotype
+is_a: OMP:0007351 ! altered biological process
 created_by: siegele
 creation_date: 2014-08-28T12:15:47Z
 
@@ -8760,7 +8762,7 @@ name: altered stress response phenotype
 def: "A stress response phenotype where the response of a cell or organism to a stress is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000173 ! stress response phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007157 ! altered population growth
 created_by: siegele
 creation_date: 2014-08-28T16:51:03Z
 
