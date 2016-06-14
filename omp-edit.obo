@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 11:06:2016 22:50
-saved-by: siegele
+date: 14:06:2016 15:34
+saved-by: jguzman
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -1382,6 +1382,65 @@ synonym: "organic substance formation" EXACT []
 synonym: "organic substance synthesis" EXACT []
 is_a: GO:0009058 ! biosynthetic process
 is_a: GO:0071704 ! organic substance metabolic process
+
+[Term]
+id: ID:0000000
+name: alpha-1,3- mannosyltransferase activity phenotype
+def: "An enzymatic activity phenotype that relates to the presence or absence of alpha-1,3-\nmannosyltransferase. Alpha-1,3- mannosyltransferase promotes the catalysis of the transfer of a mannose residue to an oligosaccharide, forming an alpha-(1,3) linkage." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0000033 "alpha-1,3- mannosyltransferase activity"
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: jguzman
+creation_date: 2016-06-14T15:21:01Z
+
+[Term]
+id: ID:0000001
+name: presence of alpha-1,3- mannosyltransferase activity
+def: "An alpha-1,3-mannosyltransferase activity phenotype where an organism exhibits alpha-1,3-mannosyltransferase activity." [OMP:JG]
+is_a: ID:0000000 ! alpha-1,3- mannosyltransferase activity phenotype
+created_by: jguzman
+creation_date: 2016-06-14T15:23:20Z
+
+[Term]
+id: ID:0000002
+name: absence of alpha-1,3- mannosyltransferase activity
+def: "An alpha-1,3-mannosyltransferase activity phenotype where an organism lacks alpha-1,3-\nmannosyltransferase activity." [OMP:JG]
+is_a: ID:0000000 ! alpha-1,3- mannosyltransferase activity phenotype
+is_a: OMP:0007281 ! absence of enzymatic activity
+created_by: jguzman
+creation_date: 2016-06-14T15:25:16Z
+
+[Term]
+id: ID:0000003
+name: altered alpha-1,3- mannosyltransferase activity
+def: "An alpha-1,3- mannosyltransferase activity phenotype where alpha-1,3- mannosyltransferase activity is altered relative to a designated control." [OMP:JG]
+is_a: ID:0000000 ! alpha-1,3- mannosyltransferase activity phenotype
+created_by: jguzman
+creation_date: 2016-06-14T15:26:04Z
+
+[Term]
+id: ID:0000004
+name: increased alpha-1,3-mannosyltransferase activity
+def: "An altered alpha-1,3-mannosyltransferase activity phenotype where alpha-1,3- mannosyltransferase activity is increased relative to a designated control." [OMP:JG]
+is_a: ID:0000003 ! altered alpha-1,3- mannosyltransferase activity
+created_by: jguzman
+creation_date: 2016-06-14T15:28:27Z
+
+[Term]
+id: ID:0000005
+name: decreased alpha-1,3- mannosyltransferase activity
+def: "An altered alpha-1,3-mannosyltransferase activity phenotype where alpha-1,3- mannosyltransferase activity is decreased relative to a designated control." [OMP:JG]
+is_a: ID:0000003 ! altered alpha-1,3- mannosyltransferase activity
+created_by: jguzman
+creation_date: 2016-06-14T15:29:43Z
+
+[Term]
+id: ID:0000006
+name: abolished alpha-1,3- mannosyltransferase activity
+def: "A decreased alpha-1,3-mannosyltransferase activity phenotype where alpha-1,3- mannosyltransferase activity is abolished." [OMP:JG]
+is_a: ID:0000005 ! decreased alpha-1,3- mannosyltransferase activity
+created_by: jguzman
+creation_date: 2016-06-14T15:32:34Z
 
 [Term]
 id: OMP:0000000
