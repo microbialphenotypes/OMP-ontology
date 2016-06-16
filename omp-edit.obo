@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 15:06:2016 15:36
-saved-by: Jesus
+date: 16:06:2016 16:41
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -5773,7 +5773,7 @@ creation_date: 2016-06-09T15:21:49Z
 [Term]
 id: OMP:0005198
 name: alpha-1,3-mannosyltransferase activity phenotype
-def: "An enzymatic activity phenotype that relates to the presence or absence of alpha-1,3-\nmannosyltransferase. Alpha-1,3- mannosyltransferase promotes the catalysis of the transfer of a mannose residue to an oligosaccharide, forming an alpha-(1,3) linkage." [OMP:JG]
+def: "An enzymatic activity phenotype that relates to the presence or absence of alpha-1,3- mannosyltransferase. Alpha-1,3- mannosyltransferase promotes the catalysis of the transfer of a mannose residue to an oligosaccharide, forming an alpha-(1,3) linkage." [OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0000033 "alpha-1,3- mannosyltransferase activity"
 is_a: OMP:0000221 ! enzymatic activity phenotype
@@ -5783,7 +5783,7 @@ creation_date: 2016-06-09T23:05:33Z
 [Term]
 id: OMP:0005199
 name: presence of alpha-1,3-mannosyltransferase activity
-def: "An alpha-1,3-mannosyltransferase activity phenotype where an organism exhibits alpha-1,3-\nmannosyltransferase activity." [OMP:JG]
+def: "An alpha-1,3-mannosyltransferase activity phenotype where an organism exhibits alpha-1,3-mannosyltransferase activity." [OMP:JG]
 is_a: OMP:0005198 ! alpha-1,3-mannosyltransferase activity phenotype
 created_by: Jesus
 creation_date: 2016-06-09T23:08:19Z
@@ -5807,7 +5807,7 @@ creation_date: 2016-06-09T23:13:17Z
 [Term]
 id: OMP:0005202
 name: increased alpha-1,3-mannosyltransferase activity
-def: "An altered alpha-1,3-mannosyltransferase activity phenotype where alpha-1,3- mannosyltransferase\nactivity is increased relative to a designated control." [OMP:JG]
+def: "An altered alpha-1,3-mannosyltransferase activity phenotype where alpha-1,3- mannosyltransferase activity is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005201 ! altered alpha-1,3-mannosyltransferase activity
 created_by: Jesus
 creation_date: 2016-06-09T23:14:41Z
@@ -7592,16 +7592,17 @@ creation_date: 2014-07-31T16:18:02Z
 [Term]
 id: OMP:0007018
 name: prototrophic
-def: "A growth factor utilization phenotype where an organism can synthesize all organic compounds essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
+def: "A growth factor requirement phenotype where an organism can synthesize all organic compounds essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
 is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:29:19Z
 
 [Term]
 id: OMP:0007019
-name: increased requirement for amino acid(s)
-def: "An amino acid requirement phenotype where an organism's requirement for one or more amino acids is increased relative to a designated control." [OMP:DAS]
+name: increased amino acid requirement
+def: "An amino acid requirement phenotype where an organism's requirement for an amino acid in the growth medium is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007074 ! increased growth factor requirement
+is_a: OMP:0007354 ! altered amino acid requirement
 created_by: siegele
 creation_date: 2013-09-16T17:30:07Z
 
@@ -7615,10 +7616,10 @@ creation_date: 2014-08-01T00:12:56Z
 
 [Term]
 id: OMP:0007021
-name: decreased requirement for amino acid(s)
-def: "An amino acid requirement phenotype where the requirement for one or more amino acids is decreased requirement relative to a designated control." [OMP:DAS]
-is_a: OMP:0007074 ! increased growth factor requirement
+name: decreased amino acid requirement
+def: "An altered amino acid requirement phenotype where an organism's requirement for an amino acid in the growth medium is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007075 ! decreased growth factor requirement
+is_a: OMP:0007354 ! altered amino acid requirement
 created_by: siegele
 creation_date: 2013-09-17T16:13:20Z
 
@@ -7626,6 +7627,7 @@ creation_date: 2013-09-17T16:13:20Z
 id: OMP:0007022
 name: decreased purine/pyrimidine requirement
 def: "A purine/pyrimidine requirement phenotype where an organism's requirement for a purine or pyrimidine base is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007075 ! decreased growth factor requirement
 is_a: OMP:0007081 ! altered purine/pyrimidine requirement
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
@@ -7649,7 +7651,8 @@ creation_date: 2013-09-17T16:31:05Z
 [Term]
 id: OMP:0007025
 name: decreased vitamin/enzyme cofactor requirement
-def: "A vitamin/enzyme cofactor requirement phenotype the requirement for a vitamin/enzyme cofactor is decreased relative to a designated control." [OMP:DAS]
+def: "A vitamin/enzyme cofactor requirement phenotype the requirement for a vitamin/enzyme cofactor in the growth medium is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007075 ! decreased growth factor requirement
 is_a: OMP:0007082 ! altered vitamin/enzyme cofactor requirement
 created_by: siegele
 creation_date: 2013-09-17T16:33:34Z
@@ -7801,7 +7804,7 @@ creation_date: 2013-09-29T09:41:48Z
 [Term]
 id: OMP:0007044
 name: growth factor requirement phenotype
-def: "A nutrient utilization phenotype where the nutrient is an essential organic compound." [OMP:DAS]
+def: "A nutrient utilization phenotype related to whether an organism requires an essential organic compound (growth factor) for growth and reproduction." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: siegele
@@ -8020,7 +8023,7 @@ creation_date: 2014-02-03T16:09:27Z
 [Term]
 id: OMP:0007069
 name: auxotrophic phenotype
-def: "A growth factor utilization phenotype where an organism requires one or more growth factors." [OMP:DAS]
+def: "A growth factor requirement phenotype where an organism is unable to synthesize an organic compound required for its growth and reproduction." [OMP:DAS]
 is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:07:59Z
@@ -8106,7 +8109,7 @@ creation_date: 2014-04-30T15:40:12Z
 [Term]
 id: OMP:0007079
 name: altered growth factor requirement
-def: "A nutrient utilization phenotype altered relative to a designated control." [OMP:JCH]
+def: "A growth factor requirement phenotype where an organism's requirement for a growth factor for growth and reproduction is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007044 ! growth factor requirement phenotype
 is_a: OMP:0007104 ! altered nutrient utilization
 created_by: siegele
@@ -8126,7 +8129,7 @@ creation_date: 2014-08-11T16:32:07Z
 [Term]
 id: OMP:0007081
 name: altered purine/pyrimidine requirement
-def: "An altered growth factor requirement phenotype where purine/pyrimidine requirement is altered relative to a designated control." [OMP:JCH]
+def: "An altered growth factor requirement phenotype where the requirement for a purine/pyrimidine base as a growth factor is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-04-30T16:03:42Z
@@ -8134,7 +8137,7 @@ creation_date: 2014-04-30T16:03:42Z
 [Term]
 id: OMP:0007082
 name: altered vitamin/enzyme cofactor requirement
-def: "An altered growth factor requirement phenotype where vitamin/enzyme cofactor requirement is altered relative to a designated control." [OMP:JCH]
+def: "An altered growth factor requirement phenotype where the requirement for a vitamin/enzyme cofactor in the growth medium s altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-04-30T16:07:16Z
@@ -10504,6 +10507,22 @@ def: "A spore germination phenotype where germination of a spore or spores is al
 is_a: OMP:0000095 ! spore germination phenotype
 created_by: siegele
 creation_date: 2016-06-09T23:07:17Z
+
+[Term]
+id: OMP:0007354
+name: altered amino acid requirement
+def: "An altered growth factor requirement phenotype where the requirement for an amino acid in the growth medium is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007079 ! altered growth factor requirement
+created_by: dsiegele
+creation_date: 2016-06-16T15:56:40Z
+
+[Term]
+id: OMP:0007355
+name: abolished amino acid requirement
+def: "A decreased amino acid requirement phenotype where an organism's requirement for an amino acid in the growth medium is abolished." [OMP:DAS]
+is_a: OMP:0007021 ! decreased amino acid requirement
+created_by: dsiegele
+creation_date: 2016-06-16T16:20:47Z
 
 [Term]
 id: OMP:0008000
