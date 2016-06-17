@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 17:06:2016 01:14
+date: 17:06:2016 01:31
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -10524,6 +10524,16 @@ def: "A decreased amino acid requirement phenotype where an organism's requireme
 is_a: OMP:0007021 ! decreased amino acid requirement
 created_by: dsiegele
 creation_date: 2016-06-16T16:20:47Z
+
+[Term]
+id: OMP:0007356
+name: quinone resistance phenotype
+def: "An antimicrobial resistance phenotype related to resistance or sensitivity to a quinone. Quinones are compounds having a fully conjugated cyclic dione structure, such as that of benzoquinones, This class includes some polycyclic and heterocyclic compounds." [CHEBI:36141, OMP:DAS]
+synonym: "streptonigrin" NARROW [CHEBI:9287]
+xref: CHEBI:36141 "quinone"
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2016-06-17T01:16:57Z
 
 [Term]
 id: OMP:0008000
