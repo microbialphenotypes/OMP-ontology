@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 16:06:2016 16:41
-saved-by: dsiegele
+date: 17:06:2016 01:14
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -3767,7 +3767,7 @@ creation_date: 2012-04-05T11:43:53Z
 [Term]
 id: OMP:0000321
 name: macrolide resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars which exhibit antimicrobial properties." [CHEBI:25106, ISBN:9780073375267, OMP:MCC]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds with a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars which exhibit antimicrobial properties." [CHEBI:25106, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "Azithromycin" NARROW [CHEBI:2955]
 synonym: "Bacteriostatic" BROAD []
@@ -6067,7 +6067,7 @@ creation_date: 2013-09-10T17:51:21Z
 [Term]
 id: OMP:0006027
 name: bacteriocin resistance phenotype
-def: "An antimicrobial peptide resistance phenotype related to resistance or sensitivity to bacteriocins, which are polypeptides synthesized by specific strains of bacteria that are active against other cells of the same or different species." [CHEBI:48081]
+def: "An antimicrobial peptide resistance phenotype related to resistance or sensitivity to bacteriocins, which are polypeptides synthesized by specific strains of bacteria that are active against other cells of the same or different species." [CHEBI:48081, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "bacteriocin sensitivity phenotype" RELATED []
 synonym: "colicins" NARROW [GO:0015468]
@@ -6105,10 +6105,11 @@ creation_date: 2013-10-10T19:15:32Z
 [Term]
 id: OMP:0006029
 name: quinolone resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a aromatic heterocyclic compounds each of which contains a benzene ring ortho fused to carbons 2 and 3 of a pyridine ring." [CHEBI:26513, ISBN:9780072992915, OMP:JCH]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "quinoline sensitivity phenotype" RELATED []
-xref: CHEBI:26513
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to a quinolone: an organonitrogen heterocyclic compound whose structure contains a quinolone or quinolone-related structure." [CHEBI:23765, OMP:JCH]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nQuinolones are a class of quinolines, which are aromatic heterocyclic  compounds that contain a benzene ring ortho fused to carbons 2 and 3 of a pyridine ring.
+synonym: "quinolines " BROAD [CHEBI:26513]
+synonym: "quinolone sensitivity phenotype" RELATED []
+xref: CHEBI:23765 "quinolone"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-10T19:15:32Z
@@ -6345,7 +6346,7 @@ creation_date: 2013-10-11T17:45:44Z
 [Term]
 id: OMP:0006056
 name: aminoglycoside resistance phenotype
-def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:47779, ISBN:978-0-07-299291-5, OMP:JCH]
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:47779, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
@@ -6406,7 +6407,7 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006062
 name: tetracycline resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a subclass of polyketides having an octahydrotetracene-2-carboxamide skeleton." [CHEBI:27902, ISBN:978-0-07-299291-5, OMP:JCH]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to tetracyclines: a subclass of polyketides having an octahydrotetracene-2-carboxamide skeleton." [CHEBI:27902, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "Bacteriostatic" BROAD []
 synonym: "chlortetracycline" RELATED []
@@ -7980,7 +7981,7 @@ creation_date: 2014-01-31T18:49:00Z
 [Term]
 id: OMP:0007065
 name: pteridine resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a organonitrogen heterocyclic compound." [CHEBI:26373, OMP:DAS]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to an organonitrogen heterocyclic compound." [CHEBI:26373, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "antifolate resistance" BROAD [CHEBI:73913]
 synonym: "methotrexate resistance" NARROW [CHEBI:44185]
@@ -8608,7 +8609,7 @@ creation_date: 2014-08-17T12:52:35Z
 [Term]
 id: OMP:0007134
 name: altered antimicrobial agent resistance phenotype
-def: "An antimicrobial agent resistance phenotype where resistance to an antimicrobial agent is altered relative to a designated control." [OMP:DAS]
+def: "An antimicrobial agent resistance phenotype where resistance or sensitivity to an antimicrobial agent is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 is_a: OMP:0007085 ! altered phenotype
