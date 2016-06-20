@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 20:06:2016 15:50
+date: 20:06:2016 16:43
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -10652,6 +10652,72 @@ xref: CHEBI:36141 "quinone"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-17T01:16:57Z
+
+[Term]
+id: OMP:0007357
+name: altered cellular component phenotype
+def: "A cellular component phenotype where a quality of a cellular component is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007197 ! cellular component phenotype
+created_by: dsiegele
+creation_date: 2016-06-20T16:01:53Z
+
+[Term]
+id: OMP:0007358
+name: nucleoside resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a compound that is a nucleoside: an N-glycosyl compound that has both a nucleobase, normally adenine, guanine, xanthine, thymine, cytosine or uracil, and either a ribose or deoxyribose as functional parents." [CHEBI:33838, OMP:DAS]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-20T16:23:54Z
+
+[Term]
+id: OMP:0007359
+name: resistant to a nucleoside
+def: "A nucleoside resistance phenotype where an organism, cell, or cells is resistant to a nucleoside." [OMP:DAS]
+is_a: OMP:0007358 ! nucleoside resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-20T16:27:19Z
+
+[Term]
+id: OMP:0007360
+name: not resistant to a nucleoside
+def: "A nucleoside resistance phenotype where an organism, cell, or cells is not resistant to a nucleoside." [OMP:DAS]
+is_a: OMP:0007358 ! nucleoside resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-20T16:27:19Z
+
+[Term]
+id: OMP:0007361
+name: altered resistance to a nucleoside
+def: "A nucleoside resistance phenotype where resistance of an organism, cell, or cells to a nucleoside is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007358 ! nucleoside resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-20T16:27:19Z
+
+[Term]
+id: OMP:0007362
+name: Increased resistance to a nucleoside
+def: "An altered resistance to a nucleoside phenotype where resistance to a nucleoside is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007361 ! altered resistance to a nucleoside
+created_by: dsiegele
+creation_date: 2016-06-20T16:40:21Z
+
+[Term]
+id: OMP:0007363
+name: decreased resistance to a nucleoside
+def: "An altered resistance to a nucleoside phenotype where resistance to a nucleoside is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007361 ! altered resistance to a nucleoside
+created_by: dsiegele
+creation_date: 2016-06-20T16:40:21Z
+
+[Term]
+id: OMP:0007364
+name: abolished resistance to a nucleoside
+def: "An decreased resistance to a nucleoside phenotype where resistance to a nucleoside is abolished." [OMP:DAS]
+is_a: OMP:0007360 ! not resistant to a nucleoside
+is_a: OMP:0007363 ! decreased resistance to a nucleoside
+created_by: dsiegele
+creation_date: 2016-06-20T16:40:21Z
 
 [Term]
 id: OMP:0008000
