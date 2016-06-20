@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 20:06:2016 14:25
-saved-by: Jesus
+date: 20:06:2016 15:50
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -2878,10 +2878,9 @@ creation_date: 2011-02-02T03:13:32Z
 [Term]
 id: OMP:0000174
 name: organismal growth phenotype
-def: "A microbial phenotype related to the increase in size or mass of an organism or a part of an organism." [GO:0040007, OMP:WAM]
+def: "A microbial phenotype related to the increase in size or mass of an organism, a part of an organism, or a cell." [GO:0040007, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0040007 "growth"
-is_a: OMP:0000000 ! microbial phenotype
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0040007 ! growth
@@ -3133,7 +3132,7 @@ creation_date: 2011-06-07T09:44:51Z
 [Term]
 id: OMP:0000204
 name: presence of capsule
-def: "A capsule phenotype where a cell or cells have capsule." [OMP:DAS]
+def: "A capsule phenotype where a cell or cells have a capsule." [OMP:DAS]
 comment: When present, the capsule layer lies outside the cell wall and/or outer membrane.
 synonym: "glycocalyx" RELATED [OMP:DAS]
 synonym: "slime layer" RELATED [OMP:DAS]
@@ -9294,8 +9293,9 @@ creation_date: 2014-10-20T15:08:04Z
 [Term]
 id: OMP:0007197
 name: cellular component phenotype
-def: "A microbial phenotype that affects a cellular component." [OMP:DAS]
+def: "A microbial phenotype that affects a quality of a cellular component." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "cellular component phenotype" EXACT [CMPO:0000259]
 xref: GO:0005575 "cellular_component"
 is_a: OMP:0000000 ! microbial phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -9962,7 +9962,7 @@ creation_date: 2015-11-07T13:32:21Z
 [Term]
 id: OMP:0007277
 name: cell wall phenotype
-def: "A cell envelope phenotype where the trait in question is the cell wall, a usually rigid, permeable structure that surrounds the plasma membrane and provides some degree of  physical support to cells." [OMP:DAS]
+def: "A cell envelope phenotype where the trait in question is the cell wall, a rigid or semi-rigid layer that surrounds the plasma membrane and maintains cell shape and helps protect against osmotic lysis." [GO:0005618, OMP:DAS]
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: siegele
 creation_date: 2015-11-11T15:41:37Z
