@@ -5947,6 +5947,196 @@ created_by: Jesus
 creation_date: 2016-06-20T14:22:55Z
 
 [Term]
+id: OMP:0005219
+name: cell fusion phenotype
+def: "A cellular process phenotype involving the fusion of individual cells from different organisms." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:02:09Z
+
+[Term]
+id: OMP:0005220
+name: presence of cell fusion
+def: "A cell fusion phenotype where fusion of individual cells from different organisms occurs." [OMP:JG]
+is_a: OMP:0005219 ! cell fusion phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:03:39Z
+
+[Term]
+id: OMP:0005221
+name: altered cell fusion
+def: "A cell fusion phenotype where the frequency, rate, or extent of cell fusion is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005219 ! cell fusion phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:04:36Z
+
+[Term]
+id: OMP:0005222
+name: increased cell fusion
+def: "An altered cell fusion phenotype where the frequency, rate, or extent of cell fusion is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005221 ! altered cell fusion
+created_by: Jesus
+creation_date: 2016-06-20T23:07:58Z
+
+[Term]
+id: OMP:0005223
+name: decreased cell fusion
+def: "An altered cell fusion phenotype where the frequency, rate, or extent of fusion is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005221 ! altered cell fusion
+created_by: Jesus
+creation_date: 2016-06-20T23:08:40Z
+
+[Term]
+id: OMP:0005224
+name: abolished cell fusion
+def: "A decreased cell fusion phenotype where the frequency, rate, or extent of cell fusion is abolished." [OMP:JG]
+is_a: OMP:0005223 ! decreased cell fusion
+created_by: Jesus
+creation_date: 2016-06-20T23:09:29Z
+
+[Term]
+id: OMP:0005225
+name: delayed cell fusion
+def: "An altered cell fusion phenotype where the occurrence of cell fusion is delayed relative to a designated control." [OMP:JG]
+is_a: OMP:0005221 ! altered cell fusion
+created_by: Jesus
+creation_date: 2016-06-20T23:10:02Z
+
+[Term]
+id: OMP:0005226
+name: cell fusion during mating phenotype
+def: "A cell fusion phenotype relating to the fusion of individual cells from each partner during mating." [OMP:JG]
+synonym: "conjugation with cellular fusion" RELATED [GO:0000747]
+xref: APO:0000033 "cell fusion"
+is_a: OMP:0005219 ! cell fusion phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:11:14Z
+
+[Term]
+id: OMP:0005227
+name: presence of cell fusion during mating
+def: "A cell fusion during mating phenotype where individual cells from each partner fuse during mating." [OMP:JG]
+is_a: OMP:0005226 ! cell fusion during mating phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:15:38Z
+
+[Term]
+id: OMP:0005228
+name: absence of cell fusion during mating
+def: "A cell fusion during mating phenotype where cell fusion does not occur during mating." [OMP:JG]
+is_a: OMP:0005226 ! cell fusion during mating phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:16:33Z
+
+[Term]
+id: OMP:0005229
+name: altered cell fusion during mating
+def: "A cell fusion during mating phenotype where the frequency, rate, or extent of cell fusion during mating is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005226 ! cell fusion during mating phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:17:17Z
+
+[Term]
+id: OMP:0005230
+name: increased cell fusion during mating
+def: "An altered cell fusion during mating phenotype where the frequency, rate, or extent of cell fusion is increased during mating." [OMP:JG]
+is_a: OMP:0005229 ! altered cell fusion during mating
+created_by: Jesus
+creation_date: 2016-06-20T23:17:51Z
+
+[Term]
+id: OMP:0005231
+name: decreased cell fusion during mating
+def: "An altered cell fusion during mating phenotype where the frequency, rate, or extent of cell fusion is decreased during mating." [OMP:JG]
+is_a: OMP:0005229 ! altered cell fusion during mating
+created_by: Jesus
+creation_date: 2016-06-20T23:21:08Z
+
+[Term]
+id: OMP:0005232
+name: abolished cell fusion during mating
+def: "A decreased cell fusion during mating phenotype where the frequency, rate, or extent of fusion during mating is abolished." [OMP:JG]
+is_a: OMP:0005231 ! decreased cell fusion during mating
+created_by: Jesus
+creation_date: 2016-06-20T23:21:44Z
+
+[Term]
+id: OMP:0005233
+name: cell wall morphology phenotype
+def: "A cell wall phenotype relating to the size, shape, or appearance of the cell wall." [OMP:JG]
+xref: APO:0000053 "Cell wall morphology"
+is_a: OMP:0007277 ! cell wall phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:33:27Z
+
+[Term]
+id: OMP:0005234
+name: altered cell wall morphology
+def: "A cell wall morphology phenotype where the morphology of the cell wall is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005233 ! cell wall morphology phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:36:20Z
+
+[Term]
+id: OMP:0005235
+name: presence of cell wall
+def: "A cell wall morphology phenotype where a cell or cells exhibit a cell wall." [OMP:JG]
+is_a: OMP:0005233 ! cell wall morphology phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:37:37Z
+
+[Term]
+id: OMP:0005236
+name: absence of cell wall
+def: "A cell wall morphology phenotype where a cell or cells lack a cell wall." [OMP:JG]
+is_a: OMP:0005233 ! cell wall morphology phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:38:17Z
+
+[Term]
+id: OMP:0005237
+name: golgi apparatus phenotype
+def: "A cellular component phenotype relating to the golgi apparatus, which is the endomembranous cytoplasmic eukaryotic organelle involved in secretion and intracellular transport." [OMP:JG]
+xref: GO:0005794 "golgi apparatus "
+is_a: OMP:0007197 ! cellular component phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:41:43Z
+
+[Term]
+id: OMP:0005238
+name: golgi apparatus morphology phenotype
+def: "A golgi apparatus phenotype that relates to the size, shape, or appearance of the Golgi apparatus or its parts. The golgi apparatus usually appears as flattened ribosome-free vesicles arranged in a more or less regular stack." [OMP:JG]
+xref: APO:0000243 "Golgi morphology "
+is_a: OMP:0005237 ! golgi apparatus phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:43:17Z
+
+[Term]
+id: OMP:0005239
+name: altered golgi morphology
+def: "A golgi apparatus morphology phenotype where the morphology of the golgi apparatus is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005238 ! golgi apparatus morphology phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:44:33Z
+
+[Term]
+id: OMP:0005240
+name: presence of golgi apparatus
+def: "A golgi apparatus morphology phenotype where a cell or cells exhibit a golgi apparatus." [OMP:JG]
+is_a: OMP:0005238 ! golgi apparatus morphology phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:45:22Z
+
+[Term]
+id: OMP:0005241
+name: absence of golgi apparatus
+def: "A golgi apparatus morphology phenotype where a cell or cells lack a golgi apparatus." [OMP:JG]
+is_a: OMP:0005238 ! golgi apparatus morphology phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:46:03Z
+
+[Term]
 id: OMP:0006000
 name: secondary metabolite production phenotype
 def: "A small molecule biosynthesis phenotype where an organism produces a secondary metabolite, which is a compound not directly involved in normal growth, development or reproduction." [APO:0000292, OMP:TCK]
