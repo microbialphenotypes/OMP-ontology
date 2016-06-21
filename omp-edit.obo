@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 21:06:2016 01:21
+date: 21:06:2016 01:28
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -6098,7 +6098,7 @@ creation_date: 2016-06-20T23:38:17Z
 id: OMP:0005237
 name: golgi apparatus phenotype
 def: "A cellular component phenotype relating to the golgi apparatus, which is the endomembranous cytoplasmic eukaryotic organelle involved in secretion and intracellular transport." [OMP:JG]
-xref: GO:0005794 "golgi apparatus "
+xref: GO:0005794 "golgi apparatus"
 is_a: OMP:0007197 ! cellular component phenotype
 created_by: Jesus
 creation_date: 2016-06-20T23:41:43Z
@@ -6107,7 +6107,7 @@ creation_date: 2016-06-20T23:41:43Z
 id: OMP:0005238
 name: golgi apparatus morphology phenotype
 def: "A golgi apparatus phenotype that relates to the size, shape, or appearance of the Golgi apparatus or its parts. The golgi apparatus usually appears as flattened ribosome-free vesicles arranged in a more or less regular stack." [OMP:JG]
-xref: APO:0000243 "Golgi morphology "
+xref: APO:0000243 "Golgi morphology"
 is_a: OMP:0005237 ! golgi apparatus phenotype
 created_by: Jesus
 creation_date: 2016-06-20T23:43:17Z
@@ -10945,6 +10945,7 @@ creation_date: 2016-06-21T01:17:16Z
 id: OMP:0007368
 name: altered resistance to an acridine
 def: "An acridine resistance phenotype where resistance of an organism, cell, or cells is to an acridine is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 is_a: OMP:0007365 ! acridine resistance phenotype
 created_by: siegele
 creation_date: 2016-06-21T01:17:16Z
@@ -10969,6 +10970,7 @@ creation_date: 2016-06-21T01:17:16Z
 id: OMP:0007371
 name: abolished resistance to an acridine
 def: "A decreased resistance to an acridine phenotype where resistance abolished." [OMP:DAS]
+is_a: OMP:0007367 ! not resistant to an acridine
 is_a: OMP:0007370 ! decreased resistance to an acridine
 created_by: siegele
 creation_date: 2016-06-21T01:17:16Z
