@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 20:06:2016 16:43
-saved-by: dsiegele
+date: 21:06:2016 01:21
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -3836,6 +3836,7 @@ synonym: "cefoxitin" NARROW [CHEBI:209807]
 synonym: "cephalosporins" NARROW []
 synonym: "cephaloxporins" NARROW []
 synonym: "cephamycin" NARROW [CHEBI:55429]
+synonym: "mecillinam" RELATED [CHEBI:51208]
 synonym: "monobactams" NARROW [CHEBI:50695]
 synonym: "penicillin" NARROW [CHEBI:51356]
 xref: CHEBI:27933 "beta-lactam antibiotic"
@@ -5501,8 +5502,8 @@ creation_date: 2016-02-11T13:37:34Z
 
 [Term]
 id: OMP:0005166
-name: superoxide dismutase activity:
-def: "An enzymatic activity phenotype that relates to the presence or absence of  superoxide dismutase, an enzyme that catalyzes the reaction:  2 superoxide + 2 H+ = O2 + hydrogen peroxide." [OMP:JG]
+name: superoxide dismutase activity phenotype
+def: "An enzymatic activity phenotype relating to the presence or absence of  superoxide dismutase, an enzyme that catalyzes the reaction:  2 superoxide + 2 H+ = O2 + hydrogen peroxide." [GO:0004784, OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0004784 "superoxide dismutase activity"
 is_a: OMP:0000221 ! enzymatic activity phenotype
@@ -5513,7 +5514,7 @@ creation_date: 2016-02-15T15:25:14Z
 id: OMP:0005167
 name: absence of superoxide dismutase activity
 def: "A superoxide dismutase phenotype where an organism does not exhibit superoxide dismutase activity." [OMP:JG]
-is_a: OMP:0005166 ! superoxide dismutase activity:
+is_a: OMP:0005166 ! superoxide dismutase activity phenotype
 created_by: Jesus
 creation_date: 2016-02-15T15:28:14Z
 
@@ -5522,7 +5523,7 @@ id: OMP:0005168
 name: altered superoxide dismutase activity
 def: "A superoxide dismutase phenotype where superoxide dismutase activity is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005130 ! altered enzymatic activity
-is_a: OMP:0005166 ! superoxide dismutase activity:
+is_a: OMP:0005166 ! superoxide dismutase activity phenotype
 created_by: Jesus
 creation_date: 2016-02-15T15:29:30Z
 
@@ -5550,7 +5551,7 @@ creation_date: 2016-02-15T15:31:28Z
 id: OMP:0005171
 name: presence of superoxide dismutase activity
 def: "A superoxide dismutase phenotype where an organism exhibits superoxide dismutase activity." [OMP:JG]
-is_a: OMP:0005166 ! superoxide dismutase activity:
+is_a: OMP:0005166 ! superoxide dismutase activity phenotype
 created_by: Jesus
 creation_date: 2016-02-15T15:32:13Z
 
@@ -6226,6 +6227,7 @@ def: "An antimicrobial compound resistance phenotype related to resistance or se
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nQuinolones are a class of quinolines, which are aromatic heterocyclic  compounds that contain a benzene ring ortho fused to carbons 2 and 3 of a pyridine ring.
 synonym: "quinolines " BROAD [CHEBI:26513]
 synonym: "quinolone sensitivity phenotype" RELATED []
+synonym: "streptonigrin" NARROW [CHEBI:9287]
 xref: CHEBI:23765 "quinolone"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
@@ -6527,7 +6529,8 @@ name: tetracycline resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to tetracyclines: a subclass of polyketides having an octahydrotetracene-2-carboxamide skeleton." [CHEBI:27902, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "Bacteriostatic" BROAD []
-synonym: "chlortetracycline" RELATED []
+synonym: "chlortetracycline" NARROW []
+synonym: "minocycline" NARROW [CHEBI:50694]
 synonym: "oxytetracycline " NARROW [CHEBI:27701]
 synonym: "tetracycline sensitivity phenotype" RELATED []
 xref: CHEBI:27902
@@ -10665,6 +10668,9 @@ creation_date: 2016-06-20T16:01:53Z
 id: OMP:0007358
 name: nucleoside resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a compound that is a nucleoside: an N-glycosyl compound that has both a nucleobase, normally adenine, guanine, xanthine, thymine, cytosine or uracil, and either a ribose or deoxyribose as functional parents." [CHEBI:33838, OMP:DAS]
+synonym: "azidothymidine" NARROW [CHEBI:10110]
+synonym: "puromycin" NARROW [CHEBI:17939]
+synonym: "zidovudine" NARROW [CHEBI:10110]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-20T16:23:54Z
@@ -10718,6 +10724,64 @@ is_a: OMP:0007360 ! not resistant to a nucleoside
 is_a: OMP:0007363 ! decreased resistance to a nucleoside
 created_by: dsiegele
 creation_date: 2016-06-20T16:40:21Z
+
+[Term]
+id: OMP:0007365
+name: acridine resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a compound that includes an acridine moiety: a polycyclic heteroarene that is anthracene in which one of the central CH groups is replaced by a nitrogen atom." [CHEBI:36420, OMP:DAS]
+synonym: "acridine orange" NARROW [CHEBI:51739]
+synonym: "acriflavine" NARROW [CHEBI:74728]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2016-06-21T01:11:35Z
+
+[Term]
+id: OMP:0007366
+name: resistant to an acridine
+def: "An acridine resistance phenotype where an organism, cell, or cells is resistant to an acridine." [OMP:DAS]
+is_a: OMP:0007365 ! acridine resistance phenotype
+created_by: siegele
+creation_date: 2016-06-21T01:17:16Z
+
+[Term]
+id: OMP:0007367
+name: not resistant to an acridine
+def: "An acridine resistance phenotype where an organism, cell, or cells is not resistant to an acridine." [OMP:DAS]
+is_a: OMP:0007365 ! acridine resistance phenotype
+created_by: siegele
+creation_date: 2016-06-21T01:17:16Z
+
+[Term]
+id: OMP:0007368
+name: altered resistance to an acridine
+def: "An acridine resistance phenotype where resistance of an organism, cell, or cells is to an acridine is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007365 ! acridine resistance phenotype
+created_by: siegele
+creation_date: 2016-06-21T01:17:16Z
+
+[Term]
+id: OMP:0007369
+name: increased resistance to an acridine
+def: "An altered resistance to an acridine phenotype where resistance is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007368 ! altered resistance to an acridine
+created_by: siegele
+creation_date: 2016-06-21T01:17:16Z
+
+[Term]
+id: OMP:0007370
+name: decreased resistance to an acridine
+def: "An altered resistance to an acridine phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007368 ! altered resistance to an acridine
+created_by: siegele
+creation_date: 2016-06-21T01:17:16Z
+
+[Term]
+id: OMP:0007371
+name: abolished resistance to an acridine
+def: "A decreased resistance to an acridine phenotype where resistance abolished." [OMP:DAS]
+is_a: OMP:0007370 ! decreased resistance to an acridine
+created_by: siegele
+creation_date: 2016-06-21T01:17:16Z
 
 [Term]
 id: OMP:0008000
