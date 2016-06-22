@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 21:06:2016 01:28
-saved-by: siegele
+date: 21:06:2016 23:56
+saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -6123,16 +6123,16 @@ creation_date: 2016-06-20T23:44:33Z
 [Term]
 id: OMP:0005240
 name: presence of golgi apparatus
-def: "A golgi apparatus morphology phenotype where a cell or cells exhibit a golgi apparatus." [OMP:JG]
-is_a: OMP:0005238 ! golgi apparatus morphology phenotype
+def: "A golgi apparatus phenotype where a cell or cells exhibit a golgi apparatus." [OMP:JG]
+is_a: OMP:0005237 ! golgi apparatus phenotype
 created_by: Jesus
 creation_date: 2016-06-20T23:45:22Z
 
 [Term]
 id: OMP:0005241
 name: absence of golgi apparatus
-def: "A golgi apparatus morphology phenotype where a cell or cells lack a golgi apparatus." [OMP:JG]
-is_a: OMP:0005238 ! golgi apparatus morphology phenotype
+def: "A golgi apparatus phenotype where a cell or cells lack a golgi apparatus." [OMP:JG]
+is_a: OMP:0005237 ! golgi apparatus phenotype
 created_by: Jesus
 creation_date: 2016-06-20T23:46:03Z
 
