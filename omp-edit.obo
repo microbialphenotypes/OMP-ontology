@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 21:06:2016 23:56
-saved-by: Jesus
+date: 22:06:2016 16:46
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -2850,7 +2850,8 @@ creation_date: 2011-02-02T02:52:30Z
 [Term]
 id: OMP:0000171
 name: microaerophile
-def: "An oxygen growth range phenotype where growth requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen growth range phenotype where growth and reproduction requires oxygen but at levels below that found in air (approx. 21%)." [ISBN:9780073402406, OMP:WAM]
+comment: Optimal oxygen levels for growth of typical  microaerophilic bacteria is 2 to 10% O2, and growth is impaired by atmospheric oxygen levels (approx. 21%).
 is_a: OMP:0000039 ! oxygen growth range phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
@@ -2980,7 +2981,7 @@ creation_date: 2011-02-02T03:29:34Z
 [Term]
 id: OMP:0000185
 name: obligate aerobe
-def: "An oxygen growth range phenotype where growth is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen growth range phenotype where growth and reproduction is dependent on atmospheric oxygen (approx. 21%)." [ISBN:9780073402406, OMP:WAM]
 synonym: "strict aerobe" EXACT []
 is_a: OMP:0000039 ! oxygen growth range phenotype
 created_by: Adrienne
@@ -4087,7 +4088,7 @@ creation_date: 2014-07-23T12:18:08Z
 id: OMP:0005002
 name: temperature growth range phenotype
 def: "A growth phenotype where the trait in question is the temperature requirements and range needed for microbial growth." [OMP:WAM]
-is_a: OMP:0000039 ! oxygen growth range phenotype
+is_a: OMP:0007192 ! growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:06:05Z
 
@@ -10974,6 +10975,15 @@ is_a: OMP:0007367 ! not resistant to an acridine
 is_a: OMP:0007370 ! decreased resistance to an acridine
 created_by: siegele
 creation_date: 2016-06-21T01:17:16Z
+
+[Term]
+id: OMP:0007372
+name: alkylating agent resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to an alkylating agent: a highly reactive chemical that introduces alkyl radicals into biologically active molecules and thereby prevents their proper functioning." [CHEBI:22333, OMP:DAS]
+synonym: "methyl methanesulfonate" RELATED [CHEBI:25255]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-22T16:41:33Z
 
 [Term]
 id: OMP:0008000
