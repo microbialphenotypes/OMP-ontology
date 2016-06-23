@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 23:06:2016 15:16
-saved-by: Jesus
+date: 23:06:2016 16:00
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -6151,7 +6151,7 @@ name: filamentous growth phenotype
 def: "An organismal growth phenotype relating to the process by which a multicellular organism, a unicellular organism, or a group of unicellular organisms grow in a threadlike, filamentous shape." [OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: APO:0000027 "development"
-xref: GO:0030447 "filamentous growth "
+xref: GO:0030447 "filamentous growth"
 is_a: OMP:0000174 ! organismal growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T14:38:44Z
@@ -8050,8 +8050,10 @@ creation_date: 2014-07-31T16:18:02Z
 
 [Term]
 id: OMP:0007018
-name: prototrophic
-def: "A growth factor requirement phenotype where an organism can synthesize all organic compounds essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
+name: does not require a growth factor(s)
+def: "A growth factor requirement phenotype where an organism can synthesize all organic compounds essential for its growth from a single carbon substrate and inorganic chemicals." [OMP:DAS]
+synonym: "prototroph" EXACT []
+synonym: "prototrophic" EXACT []
 is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:29:19Z
@@ -8215,24 +8217,24 @@ creation_date: 2013-09-28T21:08:02Z
 [Term]
 id: OMP:0007038
 name: amino acid requirement
-def: "A auxotrophic phenotype where the required growth factor is an amino acid." [OMP:DAS]
-is_a: OMP:0007069 ! auxotrophic phenotype
+def: "A requires growth factor(s) phenotype where the required growth factor is an amino acid." [OMP:DAS]
+is_a: OMP:0007069 ! requires growth factor(s)
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:27:05Z
 
 [Term]
 id: OMP:0007039
-name: purine/pyrimidine requirement
-def: "An auxotrophic phenotype where the required growth factor is a purine or pyrimidine base." [OMP:DAS]
-is_a: OMP:0007069 ! auxotrophic phenotype
+name: purine requirement
+def: "A requires growth factor(s) phenotype where the required growth factor is a purine base." [OMP:DAS]
+is_a: OMP:0007069 ! requires growth factor(s)
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:33:05Z
 
 [Term]
 id: OMP:0007040
 name: vitamin/enzyme cofactor requirement
-def: "An auxotrophic phenotype where the required growth factor is a vitamin or enzyme cofactor." [OMP:DAS]
-is_a: OMP:0007069 ! auxotrophic phenotype
+def: "A requires growth factor(s) phenotype where the required growth factor is a vitamin or enzyme cofactor." [OMP:DAS]
+is_a: OMP:0007069 ! requires growth factor(s)
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:36:46Z
 
@@ -8263,7 +8265,7 @@ creation_date: 2013-09-29T09:41:48Z
 [Term]
 id: OMP:0007044
 name: growth factor requirement phenotype
-def: "A nutrient utilization phenotype related to whether an organism requires an essential organic compound (growth factor) for growth and reproduction." [OMP:DAS]
+def: "A nutrient utilization phenotype related to whether an organism requires an essential organic compound (growth factor) for growth and reproduction." [ISBN:9780878936083, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: siegele
@@ -8481,8 +8483,10 @@ creation_date: 2014-02-03T16:09:27Z
 
 [Term]
 id: OMP:0007069
-name: auxotrophic phenotype
+name: requires growth factor(s)
 def: "A growth factor requirement phenotype where an organism is unable to synthesize an organic compound required for its growth and reproduction." [OMP:DAS]
+synonym: "auxotroph" EXACT []
+synonym: "auxotrophic" EXACT []
 is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:07:59Z
@@ -11127,10 +11131,68 @@ creation_date: 2016-06-21T01:17:16Z
 id: OMP:0007372
 name: alkylating agent resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to an alkylating agent: a highly reactive chemical that introduces alkyl radicals into biologically active molecules and thereby prevents their proper functioning." [CHEBI:22333, OMP:DAS]
-synonym: "methyl methanesulfonate" RELATED [CHEBI:25255]
+synonym: "methyl methanesulfonate" NARROW [CHEBI:25255]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-22T16:41:33Z
+
+[Term]
+id: OMP:0007373
+name: resistant to alkylating agent
+def: "An alkylating agent resistance phenotype where an organism, cell, or cells is resistant to an alkylating agent." [OMP:DAS]
+is_a: OMP:0007372 ! alkylating agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-23T15:27:23Z
+
+[Term]
+id: OMP:0007374
+name: not resistant to alkylating agent
+def: "An alkylating agent resistance phenotype where an organism, cell, or cells is not resistant to an alkylating agent." [OMP:DAS]
+is_a: OMP:0007372 ! alkylating agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-23T15:27:23Z
+
+[Term]
+id: OMP:0007375
+name: altered resistance to alkylating agent
+def: "An alkylating agent resistance phenotype where resistance of an organism, cell, or cells to an alkylating agent is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007372 ! alkylating agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-23T15:27:23Z
+
+[Term]
+id: OMP:0007376
+name: increased resistance to alkylating agent
+def: "An altered alkylating agent resistance phenotype where resistance of an organism, cell, or cells to an alkylating agent is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007375 ! altered resistance to alkylating agent
+created_by: dsiegele
+creation_date: 2016-06-23T15:27:23Z
+
+[Term]
+id: OMP:0007377
+name: decreased resistance to alkylating agent
+def: "An altered alkylating agent resistance phenotype where resistance of an organism, cell, or cells to an alkylating agent is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007375 ! altered resistance to alkylating agent
+created_by: dsiegele
+creation_date: 2016-06-23T15:27:23Z
+
+[Term]
+id: OMP:0007378
+name: abolished resistance to alkylating agent
+def: "A decreased resistance to alkylating agent where resistance of an organism, cell, or cells to an alkylating agent is abolished." [OMP:DAS]
+is_a: OMP:0007374 ! not resistant to alkylating agent
+is_a: OMP:0007377 ! decreased resistance to alkylating agent
+created_by: dsiegele
+creation_date: 2016-06-23T15:27:23Z
+
+[Term]
+id: OMP:0007379
+name: pyrimidine requirement
+def: "A requires growth factor(s) phenotype where the required growth factor is a pyrimidine base." []
+is_a: OMP:0007069 ! requires growth factor(s)
+created_by: dsiegele
+creation_date: 2016-06-23T15:57:42Z
 
 [Term]
 id: OMP:0008000
