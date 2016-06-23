@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 22:06:2016 16:46
-saved-by: dsiegele
+date: 23:06:2016 15:16
+saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -2852,7 +2852,7 @@ id: OMP:0000171
 name: microaerophile
 def: "An oxygen growth range phenotype where growth and reproduction requires oxygen but at levels below that found in air (approx. 21%)." [ISBN:9780073402406, OMP:WAM]
 comment: Optimal oxygen levels for growth of typical  microaerophilic bacteria is 2 to 10% O2, and growth is impaired by atmospheric oxygen levels (approx. 21%).
-is_a: OMP:0000039 ! oxygen growth range phenotype
+is_a: OMP:0005255 ! presence of hypoxic growth
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
 
@@ -2983,7 +2983,7 @@ id: OMP:0000185
 name: obligate aerobe
 def: "An oxygen growth range phenotype where growth and reproduction is dependent on atmospheric oxygen (approx. 21%)." [ISBN:9780073402406, OMP:WAM]
 synonym: "strict aerobe" EXACT []
-is_a: OMP:0000039 ! oxygen growth range phenotype
+is_a: OMP:0005253 ! presence of aerobic growth
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
 
@@ -6136,6 +6136,153 @@ def: "A golgi apparatus phenotype where a cell or cells lack a golgi apparatus."
 is_a: OMP:0005237 ! golgi apparatus phenotype
 created_by: Jesus
 creation_date: 2016-06-20T23:46:03Z
+
+[Term]
+id: OMP:0005242
+name: delayed cell fusion during mating
+def: "An altered cell fusion during mating phenotype where the timing of cell fusion during mating is delayed relative to a designated control." [OMP:JG]
+is_a: OMP:0005229 ! altered cell fusion during mating
+created_by: Jesus
+creation_date: 2016-06-23T14:28:58Z
+
+[Term]
+id: OMP:0005243
+name: filamentous growth phenotype
+def: "An organismal growth phenotype relating to the process by which a multicellular organism, a unicellular organism, or a group of unicellular organisms grow in a threadlike, filamentous shape." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000027 "development"
+xref: GO:0030447 "filamentous growth "
+is_a: OMP:0000174 ! organismal growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T14:38:44Z
+
+[Term]
+id: OMP:0005244
+name: altered filamentous growth
+def: "A filamentous growth phenotype where the frequency, rate, or extent of  filamentous growth is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005243 ! filamentous growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T14:41:10Z
+
+[Term]
+id: OMP:0005245
+name: increased filamentous growth
+def: "An altered filamentous growth phenotype where the frequency, rate, or extent of filamentous growth is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005244 ! altered filamentous growth
+created_by: Jesus
+creation_date: 2016-06-23T14:41:44Z
+
+[Term]
+id: OMP:0005246
+name: decreased filamentous growth
+def: "An altered filamentous growth phenotype where the frequency, rate, or extent of filamentous is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005244 ! altered filamentous growth
+created_by: Jesus
+creation_date: 2016-06-23T14:42:18Z
+
+[Term]
+id: OMP:0005247
+name: abolished filamentous growth
+def: "A decreased filamentous growth phenotype where the ability of a microorganism to exhibit filamentous growth is abolished." [OMP:JG]
+is_a: OMP:0005246 ! decreased filamentous growth
+created_by: Jesus
+creation_date: 2016-06-23T14:42:45Z
+
+[Term]
+id: OMP:0005248
+name: presence of filamentous growth
+def: "A filamentous growth phenotype where a microorganism exhibits filamentous growth." [OMP:JG]
+is_a: OMP:0005243 ! filamentous growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T14:43:53Z
+
+[Term]
+id: OMP:0005249
+name: absence of filamentous growth
+def: "A filamentous growth phenotype where a microorganism does not exhibit filamentous growth." [OMP:JG]
+is_a: OMP:0005243 ! filamentous growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T14:44:33Z
+
+[Term]
+id: OMP:0005250
+name: aerobic growth phenotype
+def: "An oxygen growth range phenotype related to the ability of a cell or cells to grow and/or reproduce in the presence of oxygen at the level found in air (approximately 21%)." [OMP:JG]
+is_a: OMP:0000039 ! oxygen growth range phenotype
+created_by: Jesus
+creation_date: 2016-06-23T14:59:55Z
+
+[Term]
+id: OMP:0005251
+name: absence of aerobic growth
+def: "An aerobic growth phenotype where a cell or cells lack the ability to undergo aerobic growth." [OMP:JG]
+is_a: OMP:0005250 ! aerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:00:52Z
+
+[Term]
+id: OMP:0005252
+name: altered of aerobic growth
+def: "An aerobic growth phenotype where the ability of a cell or cells to undergo aerobic growth is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005250 ! aerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:01:40Z
+
+[Term]
+id: OMP:0005253
+name: presence of aerobic growth
+def: "An aerobic growth phenotype where a cell or cells are able to undergo aerobic growth." [OMP:JG]
+is_a: OMP:0005250 ! aerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:02:38Z
+
+[Term]
+id: OMP:0005254
+name: hypoxic growth phenotype
+def: "An aerobic growth phenotype relating to the ability of a cell or cells to grow and/or reproduce in a hypoxic condition, which is one where O2 levels are below that found in air (approximately 21%)." [OMP:JG]
+is_a: OMP:0005250 ! aerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:04:24Z
+
+[Term]
+id: OMP:0005255
+name: presence of hypoxic growth
+def: "A hypoxic growth phenotype in which a cell or cells are able to grow and/or reproduce in hypoxic conditions." [OMP:JG]
+is_a: OMP:0005254 ! hypoxic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:05:26Z
+
+[Term]
+id: OMP:0005256
+name: absence of hypoxic growth
+def: "A hypoxic growth phenotype in which a cell or cells are unable to grow and/or reproduce in hypoxic conditions." [JG:OMP]
+is_a: OMP:0005254 ! hypoxic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:06:52Z
+
+[Term]
+id: OMP:0005257
+name: altered hypoxic growth
+def: "A hypoxic growth phenotype where the frequency, rate, or extent  of hypoxic growth is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005254 ! hypoxic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:07:30Z
+
+[Term]
+id: OMP:0005258
+name: increased hypoxic growth rate
+def: "An altered hypoxic growth phenotype where the rate of growth under hypoxic conditions is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005257 ! altered hypoxic growth
+created_by: Jesus
+creation_date: 2016-06-23T15:07:51Z
+
+[Term]
+id: OMP:0005259
+name: decreased hypoxic growth rate
+def: "An altered hypoxic growth phenotype where the rate of growth under hypoxic conditions is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005257 ! altered hypoxic growth
+created_by: Jesus
+creation_date: 2016-06-23T15:08:31Z
 
 [Term]
 id: OMP:0006000
