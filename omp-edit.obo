@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 23:06:2016 16:00
-saved-by: dsiegele
+date: 26:06:2016 14:58
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -11096,7 +11096,7 @@ creation_date: 2016-06-21T01:17:16Z
 [Term]
 id: OMP:0007368
 name: altered resistance to an acridine
-def: "An acridine resistance phenotype where resistance of an organism, cell, or cells is to an acridine is altered relative to a designated control." [OMP:DAS]
+def: "An acridine resistance phenotype where resistance of an organism, cell, or cells to an acridine is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 is_a: OMP:0007365 ! acridine resistance phenotype
 created_by: siegele
@@ -11193,6 +11193,64 @@ def: "A requires growth factor(s) phenotype where the required growth factor is 
 is_a: OMP:0007069 ! requires growth factor(s)
 created_by: dsiegele
 creation_date: 2016-06-23T15:57:42Z
+
+[Term]
+id: OMP:0007380
+name: benzamides resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a benzamide. Benzamides are compounds based on benzamide, which consists of benzene bearing a single carboxamido substituent." [CHEBI:28179, OMP:DAS]
+synonym: "benzamides" BROAD [CHEBI:22702]
+synonym: "CHIR-090" NARROW [CID\::11546620]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007381
+name: resistant to benzamides
+def: "A benzamides resistance phenotype where an organism, cell, or cells is resistant to a benzamide." [OMP:DAS]
+is_a: OMP:0007380 ! benzamides resistance phenotype
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007382
+name: not resistant to benzamides
+def: "A benzamides resistance phenotype where an organism, cell, or cells is not resistant to a benzamide." [OMP:DAS]
+is_a: OMP:0007380 ! benzamides resistance phenotype
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007383
+name: altered resistance to benzamides
+def: "A benzamides resistance phenotype where the resistance of an organism, cell, or cells to a benzamide is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007380 ! benzamides resistance phenotype
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007384
+name: increased resistance to a benzamide
+def: "An altered benzamides resistance phenotype where the resistance of an organism, cell, or cells to a benzamide is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007383 ! altered resistance to benzamides
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007385
+name: decreased resistance benzamides
+def: "An altered benzamides resistance phenotype where the resistance of an organism, cell, or cells to a benzamide is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007383 ! altered resistance to benzamides
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007386
+name: abolished resistance to benzamides
+def: "A decreased resistance to benzamides resistance phenotype where the resistance of an organism, cell, or cells to a benzamide is abolished." [OMP:DAS]
+is_a: OMP:0007385 ! decreased resistance benzamides
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
 
 [Term]
 id: OMP:0008000
