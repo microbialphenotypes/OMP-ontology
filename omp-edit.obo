@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 26:06:2016 14:58
-saved-by: siegele
+date: 27:06:2016 14:55
+saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -6099,6 +6099,7 @@ creation_date: 2016-06-20T23:38:17Z
 id: OMP:0005237
 name: golgi apparatus phenotype
 def: "A cellular component phenotype relating to the golgi apparatus, which is the endomembranous cytoplasmic eukaryotic organelle involved in secretion and intracellular transport." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0005794 "golgi apparatus"
 is_a: OMP:0007197 ! cellular component phenotype
 created_by: Jesus
@@ -6283,6 +6284,133 @@ def: "An altered hypoxic growth phenotype where the rate of growth under hypoxic
 is_a: OMP:0005257 ! altered hypoxic growth
 created_by: Jesus
 creation_date: 2016-06-23T15:08:31Z
+
+[Term]
+id: OMP:0005260
+name: transport phenotype
+def: "A cellular process phenotype relating to transport, which is the directed movement of substances (such as macromolecules, small molecules, ions) or cellular components (such as complexes and organelles) into, out of, or within a cell, or between cells, or within a multicellular organism by means of some agent such as a transporter, pore or motor protein." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0006810
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:17:43Z
+
+[Term]
+id: OMP:0005261
+name: endocytosis phenotype
+def: "A transport phenotype relating to endocytosis, which is a vesicle-mediated transport process in which cells take up external materials or membrane constituents by the invagination of a small region of the plasma membrane to form a new membrane-bounded vesicle. A phenotype may affect endocytosis of all cargoes, or of specific cargo such as a particular protein." [OMP:JG]
+xref: APO:0000075
+xref: FYPO:0003886
+xref: GO:0006897
+is_a: OMP:0005260 ! transport phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:20:19Z
+
+[Term]
+id: OMP:0005262
+name: altered endocytosis
+def: "An endocytosis phenotype where the frequency, rate, extent, or timing of the process of endocytosis is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005261 ! endocytosis phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:23:04Z
+
+[Term]
+id: OMP:0005263
+name: increased endocytosis
+def: "An altered endocytosis phenotype where the occurrence of endocytosis is increased relative to a designated control. A phenotype may affect endocytosis of all cargoes, or of specific cargo such as a particular protein." [OMP:JG]
+synonym: "increased endocytosis during vegetative growth" NARROW [FYPO:0000425]
+xref: FYPO:0000425
+is_a: OMP:0005262 ! altered endocytosis
+created_by: Jesus
+creation_date: 2016-06-27T14:23:59Z
+
+[Term]
+id: OMP:0005264
+name: decreased endocytosis
+def: "An altered endocytosis phenotype where the occurrence of endocytosis is decreased relative to a designated control. A phenotype may affect endocytosis of all cargoes, or of specific cargo such as a particular protein." [OMP:JG]
+synonym: "decreased endocytosis during vegetative growth" NARROW [FYPO:0000422]
+xref: FYPO:0000422
+is_a: OMP:0005262 ! altered endocytosis
+created_by: Jesus
+creation_date: 2016-06-27T14:26:10Z
+
+[Term]
+id: OMP:0005265
+name: abolished endocytosis
+def: "A decreased endocytosis phenotype where endocytosis is abolished." [OMP:JG]
+synonym: "abolished endocytosis during vegetative growth " NARROW [FYPO:0000421]
+is_a: OMP:0005264 ! decreased endocytosis
+created_by: Jesus
+creation_date: 2016-06-27T14:29:14Z
+
+[Term]
+id: OMP:0005266
+name: delayed onset of endocytosis
+def: "An altered endocytosis phenotype where endocytosis begins later than in a designated control. A phenotype may affect endocytosis of all cargoes, or of specific cargo such as a particular protein." [OMP:JG]
+synonym: "delayed onset of endocytosis during vegetative growth " RELATED [FYPO:0000424]
+is_a: OMP:0005262 ! altered endocytosis
+created_by: Jesus
+creation_date: 2016-06-27T14:31:13Z
+
+[Term]
+id: OMP:0005267
+name: presence of endocytosis
+def: "An endocytosis phenotype where an organism, cell,or cells possess the ability to perform endocytosis." [OMP:JG]
+is_a: OMP:0005261 ! endocytosis phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:32:32Z
+
+[Term]
+id: OMP:0005268
+name: absence of endocytosis
+def: "An endocytosis phenotype where an organism, cell, or cells lacks the ability to perform endocytosis." [OMP:JG]
+is_a: OMP:0005261 ! endocytosis phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:33:03Z
+
+[Term]
+id: OMP:0005269
+name: endomembrane system phenotype
+def: "A cellular component phenotype relating to the endomembrane, a collection of membranous structures involved in transport within the cell. The endomembrane system includes the nuclear envelope, endoplasmic reticulum, Golgi apparatus, vacuoles, vesicles, and the plasma membrane. Members of the endomembrane system pass materials through each other or through the use of vesicles." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0012505 "endomembrane system"
+xref: PMID:19121819
+is_a: OMP:0007197 ! cellular component phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:45:57Z
+
+[Term]
+id: OMP:0005270
+name: endomembrane system morphology phenotype
+def: "An endomembrane system phenotype that relates to the form and structure of components of the endomembrane system." [OMP:JG]
+xref: APO:0000303 "endomembrane system morphology"
+is_a: OMP:0005269 ! endomembrane system phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:48:31Z
+
+[Term]
+id: OMP:0005271
+name: altered endomembrane system morphology
+def: "An endomembrane system morphology phenotype where the morphology of the endomembrane system is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005270 ! endomembrane system morphology phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:51:21Z
+
+[Term]
+id: OMP:0005272
+name: presence of endomembrane system
+def: "An endomembrane system phenotype where an organism,  cell, or cells exhibit an endomembrane system." [OMP:JG]
+is_a: OMP:0005269 ! endomembrane system phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:52:02Z
+
+[Term]
+id: OMP:0005273
+name: absence of endomembrane system
+def: "An endomembrane system phenotype where an organism, cell, or cells lack an endomembrane system." [OMP:JG]
+is_a: OMP:0005269 ! endomembrane system phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:52:45Z
 
 [Term]
 id: OMP:0006000
@@ -11199,7 +11327,7 @@ id: OMP:0007380
 name: benzamides resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a benzamide. Benzamides are compounds based on benzamide, which consists of benzene bearing a single carboxamido substituent." [CHEBI:28179, OMP:DAS]
 synonym: "benzamides" BROAD [CHEBI:22702]
-synonym: "CHIR-090" NARROW [CID\::11546620]
+synonym: "CHIR-090" NARROW [CID:\:11546620]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-26T14:45:16Z
