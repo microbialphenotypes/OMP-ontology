@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:06:2016 14:55
-saved-by: Jesus
+date: 29:06:2016 16:02
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -7612,9 +7612,9 @@ creation_date: 2014-07-25T14:46:12Z
 
 [Term]
 id: OMP:0006133
-name: abolished purine/pyrimidine requirement
-def: "A decreased purine/pyrimidine requirement phenotype where the requirement for a purine/pyrimidine compound as a growth factor is abolished." [OMP:JCH]
-is_a: OMP:0007022 ! decreased purine/pyrimidine requirement
+name: abolished purine requirement
+def: "A decreased purine requirement phenotype where the requirement for a purine base as a growth factor is abolished." [OMP:JCH]
+is_a: OMP:0007022 ! decreased purine requirement
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:47:24Z
 
@@ -8178,7 +8178,7 @@ creation_date: 2014-07-31T16:18:02Z
 
 [Term]
 id: OMP:0007018
-name: does not require a growth factor(s)
+name: does not require growth factor(s)
 def: "A growth factor requirement phenotype where an organism can synthesize all organic compounds essential for its growth from a single carbon substrate and inorganic chemicals." [OMP:DAS]
 synonym: "prototroph" EXACT []
 synonym: "prototrophic" EXACT []
@@ -8214,18 +8214,19 @@ creation_date: 2013-09-17T16:13:20Z
 
 [Term]
 id: OMP:0007022
-name: decreased purine/pyrimidine requirement
-def: "A purine/pyrimidine requirement phenotype where an organism's requirement for a purine or pyrimidine base is decreased relative to a designated control." [OMP:DAS]
+name: decreased purine requirement
+def: "An altered purine requirement phenotype where an organism's requirement for a purine base is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007075 ! decreased growth factor requirement
-is_a: OMP:0007081 ! altered purine/pyrimidine requirement
+is_a: OMP:0007081 ! altered purine requirement
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
 
 [Term]
 id: OMP:0007023
-name: increased purine/pyrimidine requirement
-def: "A purine/pyrimidine requirement phenotype where an organism's requirement for purine or pyrimidine bases is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007081 ! altered purine/pyrimidine requirement
+name: increased purine requirement
+def: "An altered purine requirement phenotype where an organism's requirement for a purine base is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007074 ! increased growth factor requirement
+is_a: OMP:0007081 ! altered purine requirement
 created_by: siegele
 creation_date: 2013-09-17T16:30:36Z
 
@@ -8233,6 +8234,7 @@ creation_date: 2013-09-17T16:30:36Z
 id: OMP:0007024
 name: increased vitamin/enzyme cofactor requirement
 def: "A vitamin/enzyme cofactor requirement phenotype the requirement for a vitamin/enzyme cofactor is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007074 ! increased growth factor requirement
 is_a: OMP:0007082 ! altered vitamin/enzyme cofactor requirement
 created_by: siegele
 creation_date: 2013-09-17T16:31:05Z
@@ -8719,8 +8721,8 @@ creation_date: 2014-08-11T16:32:07Z
 
 [Term]
 id: OMP:0007081
-name: altered purine/pyrimidine requirement
-def: "An altered growth factor requirement phenotype where the requirement for a purine/pyrimidine base as a growth factor is altered relative to a designated control." [OMP:JCH]
+name: altered purine requirement
+def: "An altered growth factor requirement phenotype where the requirement for a purine base as a growth factor is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-04-30T16:03:42Z
@@ -11379,6 +11381,40 @@ def: "A decreased resistance to benzamides resistance phenotype where the resist
 is_a: OMP:0007385 ! decreased resistance benzamides
 created_by: siegele
 creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007387
+name: altered pyrimidine requirement
+def: "An altered growth factor requirement phenotype where the requirement for a pyrimidine base as a growth factor is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007079 ! altered growth factor requirement
+created_by: dsiegele
+creation_date: 2016-06-29T15:45:39Z
+
+[Term]
+id: OMP:0007388
+name: increased pyrimidine requirement
+def: "An altered pyrimidine requirement phenotype where an organism's requirement for a purine base is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007074 ! increased growth factor requirement
+is_a: OMP:0007387 ! altered pyrimidine requirement
+created_by: dsiegele
+creation_date: 2016-06-29T15:47:23Z
+
+[Term]
+id: OMP:0007389
+name: decreased pyrimidine requirement
+def: "An altered pyrimidine requirement phenotype where an organism's requirement for a purine base is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007075 ! decreased growth factor requirement
+is_a: OMP:0007387 ! altered pyrimidine requirement
+created_by: dsiegele
+creation_date: 2016-06-29T15:47:23Z
+
+[Term]
+id: OMP:0007390
+name: abolished pyrimidine requirement
+def: "A decreased pyrimidine requirement phenotype where the requirement for a pyrimidine base as a growth factor is abolished." [OMP:DAS]
+is_a: OMP:0007389 ! decreased pyrimidine requirement
+created_by: dsiegele
+creation_date: 2016-06-29T15:47:23Z
 
 [Term]
 id: OMP:0008000
