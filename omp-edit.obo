@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 29:06:2016 16:02
-saved-by: dsiegele
+date: 30:06:2016 00:15
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -10308,6 +10308,7 @@ creation_date: 2015-07-31T14:00:54Z
 [Term]
 id: OMP:0007261
 name: decreased viability
+def: "An altered viability phenotype where the ability of an organism to survive and/or reproduce is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007260 ! altered viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
@@ -10315,6 +10316,7 @@ creation_date: 2015-07-31T14:00:54Z
 [Term]
 id: OMP:0007262
 name: increased viability
+def: "An altered viability phenotype where the ability of an organism to survive and/or reproduce is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007260 ! altered viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
@@ -11040,6 +11042,7 @@ id: OMP:0007346
 name: protein secretion phenotype
 def: "A biological process phenotype related to the controlled release of proteins from a cell." [GO:0009306, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "protein secretion" NARROW [APO:0000078]
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
 creation_date: 2016-06-08T17:02:00Z
@@ -11319,7 +11322,7 @@ creation_date: 2016-06-23T15:27:23Z
 [Term]
 id: OMP:0007379
 name: pyrimidine requirement
-def: "A requires growth factor(s) phenotype where the required growth factor is a pyrimidine base." []
+def: "A requires growth factor(s) phenotype where the required growth factor is a pyrimidine base." [OMP:DAS]
 is_a: OMP:0007069 ! requires growth factor(s)
 created_by: dsiegele
 creation_date: 2016-06-23T15:57:42Z
@@ -11415,6 +11418,14 @@ def: "A decreased pyrimidine requirement phenotype where the requirement for a p
 is_a: OMP:0007389 ! decreased pyrimidine requirement
 created_by: dsiegele
 creation_date: 2016-06-29T15:47:23Z
+
+[Term]
+id: OMP:0007391
+name: abolished viability
+def: "A decreased viability phenotype where the ability of an organism to survive and/or reproduce is abolished." [OMP:DAS]
+is_a: OMP:0007261 ! decreased viability
+created_by: siegele
+creation_date: 2016-06-29T19:15:29Z
 
 [Term]
 id: OMP:0008000
