@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 30:06:2016 00:15
-saved-by: siegele
+date: 30:06:2016 16:45
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -9770,7 +9770,7 @@ id: OMP:0007197
 name: cellular component phenotype
 def: "A microbial phenotype that affects a quality of a cellular component." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "cellular component phenotype" EXACT [CMPO:0000259]
+xref: CMPO:0000259 "cellular component phenotype"
 xref: GO:0005575 "cellular_component"
 is_a: OMP:0000000 ! microbial phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -11040,7 +11040,7 @@ creation_date: 2016-05-28T02:36:59Z
 [Term]
 id: OMP:0007346
 name: protein secretion phenotype
-def: "A biological process phenotype related to the controlled release of proteins from a cell." [GO:0009306, OMP:DAS]
+def: "A biological process phenotype related to the process of protein secretion, which is the controlled release of proteins from a cell." [GO:0009306, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "protein secretion" NARROW [APO:0000078]
 is_a: OMP:0007194 ! biological process phenotype
@@ -11050,7 +11050,7 @@ creation_date: 2016-06-08T17:02:00Z
 [Term]
 id: OMP:0007347
 name: altered protein secretion
-def: "A protein secretion phenotype where secretion of a protein or proteins is altered relative to a designated control." [OMP:DAS]
+def: "A protein secretion phenotype where the frequency, rate, timing or extent of the process of protein secretion is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007346 ! protein secretion phenotype
 created_by: siegele
 creation_date: 2016-06-09T22:42:13Z
@@ -11058,7 +11058,8 @@ creation_date: 2016-06-09T22:42:13Z
 [Term]
 id: OMP:0007348
 name: increased protein secretion
-def: "An altered protein secretion phenotype where the amount of a protein or proteins that is secreted is increased relative to a designated control." [OMP:DAS]
+def: "An altered protein secretion phenotype where the frequency, rate, timing or extent of the process of protein secretion is increased relative to a designated control." [OMP:DAS]
+xref: FYPO:0000539 "increased protein secretion"
 is_a: OMP:0007347 ! altered protein secretion
 created_by: siegele
 creation_date: 2016-06-09T22:43:50Z
@@ -11066,7 +11067,8 @@ creation_date: 2016-06-09T22:43:50Z
 [Term]
 id: OMP:0007349
 name: decreased protein secretion
-def: "An altered protein secretion phenotype where the amount of a protein or proteins that is secreted is decreased relative to a designated control." [OMP:DAS]
+def: "An altered protein secretion phenotype where the frequency, rate, timing or extent of the process of protein secretion is decreased relative to a designated control." [OMP:DAS]
+xref: FYPO:0000538 "decreased protein secretion"
 is_a: OMP:0007347 ! altered protein secretion
 created_by: siegele
 creation_date: 2016-06-09T22:47:42Z
@@ -11074,7 +11076,8 @@ creation_date: 2016-06-09T22:47:42Z
 [Term]
 id: OMP:0007350
 name: abolished protein secretion
-def: "A decreased protein secretion phenotype where secretion of a protein or proteins is abolished." [OMP:DAS]
+def: "A decreased protein secretion phenotype where the process of protein secretion is abolished." [OMP:DAS]
+xref: FYPO:0000537 "abolished protein secretion"
 is_a: OMP:0007349 ! decreased protein secretion
 created_by: siegele
 creation_date: 2016-06-09T22:48:16Z
