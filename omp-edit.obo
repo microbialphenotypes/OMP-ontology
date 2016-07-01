@@ -1403,7 +1403,7 @@ creation_date: 2011-03-10T06:55:06Z
 [Term]
 id: OMP:0000002
 name: decreased cell motility
-def: "An altered cell motility phenotype where cell motility is decreased relative to a designated control." [OMP:MCC]
+def: "An altered cell motility phenotype where the frequency, rate, timing, or extent of cell motility is decreased relative to a designated control." [OMP:MCC]
 xref: PATO:0002297
 is_a: OMP:0007001 ! altered cell motility
 intersection_of: OMP:0007001 ! altered cell motility
@@ -4440,7 +4440,7 @@ creation_date: 2013-10-18T18:34:58Z
 [Term]
 id: OMP:0005044
 name: altered mitotic recombination
-def: "A mitotic recombination phenotype term where mitotic recombination is altered relative to a designated control." [OMP:WAM]
+def: "A mitotic recombination phenotype term where the frequency, rate, timing, or extent of mitotic recombination is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2014-07-24T13:27:41Z
@@ -5150,7 +5150,7 @@ creation_date: 2014-07-11T13:16:47Z
 [Term]
 id: OMP:0005125
 name: altered UV radiation resistance
-def: "A UV radiation resistance phenotype where resistance to UV light is altered relative to a designated control." [OMP:WAM]
+def: "A UV radiation resistance phenotype where the frequency, rate, timing, or extent of resistance to UV light is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005084 ! UV radiation resistance phenotype
 is_a: OMP:0007159 ! altered response to radiation
 intersection_of: OMP:0005084 ! UV radiation resistance phenotype
@@ -5161,7 +5161,7 @@ creation_date: 2014-07-11T13:56:51Z
 [Term]
 id: OMP:0005126
 name: altered SDS-EDTA stress phenotype
-def: "A SDS-EDTA stress phenotype altered relative to a designated control." [OMP:WAM]
+def: "A SDS-EDTA stress phenotype where the frequency, rate, timing, or extent of resistance to SDS-EDTA is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005112 ! SDS-EDTA stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T13:57:22Z
@@ -5288,7 +5288,7 @@ creation_date: 2016-02-02T13:54:58Z
 [Term]
 id: OMP:0005141
 name: altered resistance to killing by host cells
-def: "A resistance to killing by host cells phenotype where the microbe's ability to be killed by host cells  is altered relative to a designated control." [OMP:JG]
+def: "A resistance to killing by host cells phenotype where the microbe's ability to be killed by host cells is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005111 ! resistance to killing by host cells phenotype
 created_by: Jesus
 creation_date: 2016-02-02T13:55:50Z
@@ -5873,7 +5873,7 @@ creation_date: 2016-06-20T14:14:40Z
 [Term]
 id: OMP:0005209
 name: altered adhesion to host
-def: "An adhesion to host phenotype where the frequency, rate, or extent of attachment of a microbe to a host is altered relative to a designated control." [OMP:JG]
+def: "An adhesion to host phenotype where the frequency, rate, timing, or extent of attachment of a microbe to a host is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005206 ! adhesion to host phenotype
 is_a: OMP:0007351 ! altered biological process
 created_by: Jesus
@@ -5922,7 +5922,7 @@ creation_date: 2016-06-20T14:19:34Z
 [Term]
 id: OMP:0005215
 name: altered adhesion
-def: "An adhesion phenotype where the frequency, rate, or extent of attachment of a microbe to a surface is altered relative to a designated control." [OMP:JG]
+def: "An adhesion phenotype where the frequency, rate, timing, or extent of attachment of a microbe to a surface is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005205 ! adhesion phenotype
 is_a: OMP:0007351 ! altered biological process
 created_by: Jesus
@@ -5972,7 +5972,7 @@ creation_date: 2016-06-20T23:03:39Z
 [Term]
 id: OMP:0005221
 name: altered cell fusion
-def: "A cell fusion phenotype where the frequency, rate, or extent of cell fusion is altered relative to a designated control." [OMP:JG]
+def: "A cell fusion phenotype where the frequency, rate, timing, or extent of cell fusion is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005219 ! cell fusion phenotype
 created_by: Jesus
 creation_date: 2016-06-20T23:04:36Z
@@ -5980,7 +5980,7 @@ creation_date: 2016-06-20T23:04:36Z
 [Term]
 id: OMP:0005222
 name: increased cell fusion
-def: "An altered cell fusion phenotype where the frequency, rate, or extent of cell fusion is increased relative to a designated control." [OMP:JG]
+def: "An altered cell fusion phenotype where the frequency, rate, timing, or extent of cell fusion is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005221 ! altered cell fusion
 created_by: Jesus
 creation_date: 2016-06-20T23:07:58Z
@@ -5988,7 +5988,7 @@ creation_date: 2016-06-20T23:07:58Z
 [Term]
 id: OMP:0005223
 name: decreased cell fusion
-def: "An altered cell fusion phenotype where the frequency, rate, or extent of fusion is decreased relative to a designated control." [OMP:JG]
+def: "An altered cell fusion phenotype where the frequency, rate, timing, or extent of fusion is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005221 ! altered cell fusion
 created_by: Jesus
 creation_date: 2016-06-20T23:08:40Z
@@ -5996,7 +5996,7 @@ creation_date: 2016-06-20T23:08:40Z
 [Term]
 id: OMP:0005224
 name: abolished cell fusion
-def: "A decreased cell fusion phenotype where the frequency, rate, or extent of cell fusion is abolished." [OMP:JG]
+def: "A decreased cell fusion phenotype where the frequency, rate, timing or extent of cell fusion is abolished." [OMP:JG]
 is_a: OMP:0005223 ! decreased cell fusion
 created_by: Jesus
 creation_date: 2016-06-20T23:09:29Z
@@ -6038,7 +6038,7 @@ creation_date: 2016-06-20T23:16:33Z
 [Term]
 id: OMP:0005229
 name: altered cell fusion during mating
-def: "A cell fusion during mating phenotype where the frequency, rate, or extent of cell fusion during mating is altered relative to a designated control." [OMP:JG]
+def: "A cell fusion during mating phenotype where the frequency, rate, timing, or extent of cell fusion during mating is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005226 ! cell fusion during mating phenotype
 created_by: Jesus
 creation_date: 2016-06-20T23:17:17Z
@@ -6046,7 +6046,7 @@ creation_date: 2016-06-20T23:17:17Z
 [Term]
 id: OMP:0005230
 name: increased cell fusion during mating
-def: "An altered cell fusion during mating phenotype where the frequency, rate, or extent of cell fusion is increased during mating." [OMP:JG]
+def: "An altered cell fusion during mating phenotype where the frequency, rate, timing, or extent of cell fusion is increased during mating." [OMP:JG]
 is_a: OMP:0005229 ! altered cell fusion during mating
 created_by: Jesus
 creation_date: 2016-06-20T23:17:51Z
@@ -6054,7 +6054,7 @@ creation_date: 2016-06-20T23:17:51Z
 [Term]
 id: OMP:0005231
 name: decreased cell fusion during mating
-def: "An altered cell fusion during mating phenotype where the frequency, rate, or extent of cell fusion is decreased during mating." [OMP:JG]
+def: "An altered cell fusion during mating phenotype where the frequency, rate, timing,  or extent of cell fusion is decreased during mating." [OMP:JG]
 is_a: OMP:0005229 ! altered cell fusion during mating
 created_by: Jesus
 creation_date: 2016-06-20T23:21:08Z
@@ -6062,7 +6062,7 @@ creation_date: 2016-06-20T23:21:08Z
 [Term]
 id: OMP:0005232
 name: abolished cell fusion during mating
-def: "A decreased cell fusion during mating phenotype where the frequency, rate, or extent of fusion during mating is abolished." [OMP:JG]
+def: "A decreased cell fusion during mating phenotype where the frequency, rate, timing, or extent of fusion during mating is abolished." [OMP:JG]
 is_a: OMP:0005231 ! decreased cell fusion during mating
 created_by: Jesus
 creation_date: 2016-06-20T23:21:44Z
@@ -6314,7 +6314,7 @@ creation_date: 2016-06-27T14:20:19Z
 [Term]
 id: OMP:0005262
 name: altered endocytosis
-def: "An endocytosis phenotype where the frequency, rate, extent, or timing of the process of endocytosis is altered relative to a designated control." [OMP:JG]
+def: "An endocytosis phenotype where the frequency, rate, timing, or extent of the process of endocytosis is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005261 ! endocytosis phenotype
 created_by: Jesus
 creation_date: 2016-06-27T14:23:04Z
@@ -6322,7 +6322,7 @@ creation_date: 2016-06-27T14:23:04Z
 [Term]
 id: OMP:0005263
 name: increased endocytosis
-def: "An altered endocytosis phenotype where the occurrence of endocytosis is increased relative to a designated control. A phenotype may affect endocytosis of all cargoes, or of specific cargo such as a particular protein." [OMP:JG]
+def: "An altered endocytosis phenotype where the frequency, rate, timing, or extent of endocytosis is increased relative to a designated control. A phenotype may affect endocytosis of all cargoes, or of specific cargo such as a particular protein." [OMP:JG]
 synonym: "increased endocytosis during vegetative growth" NARROW [FYPO:0000425]
 xref: FYPO:0000425
 is_a: OMP:0005262 ! altered endocytosis
@@ -6332,7 +6332,7 @@ creation_date: 2016-06-27T14:23:59Z
 [Term]
 id: OMP:0005264
 name: decreased endocytosis
-def: "An altered endocytosis phenotype where the occurrence of endocytosis is decreased relative to a designated control. A phenotype may affect endocytosis of all cargoes, or of specific cargo such as a particular protein." [OMP:JG]
+def: "An altered endocytosis phenotype where the frequency, rate, timing, or extent of endocytosis is decreased relative to a designated control. A phenotype may affect endocytosis of all cargoes, or of specific cargo such as a particular protein." [OMP:JG]
 synonym: "decreased endocytosis during vegetative growth" NARROW [FYPO:0000422]
 xref: FYPO:0000422
 is_a: OMP:0005262 ! altered endocytosis
@@ -6342,7 +6342,7 @@ creation_date: 2016-06-27T14:26:10Z
 [Term]
 id: OMP:0005265
 name: abolished endocytosis
-def: "A decreased endocytosis phenotype where endocytosis is abolished." [OMP:JG]
+def: "A decreased endocytosis phenotype where the frequency, rate, timing, or extent of endocytosis is abolished." [OMP:JG]
 synonym: "abolished endocytosis during vegetative growth " NARROW [FYPO:0000421]
 is_a: OMP:0005264 ! decreased endocytosis
 created_by: Jesus
@@ -6428,7 +6428,7 @@ creation_date: 2015-06-09T15:06:53Z
 [Term]
 id: OMP:0006001
 name: altered chromosome segregation
-def: "A chromosome segregation phenotype where chromosome segregation is altered relative to a designated control." [OMP:JCH]
+def: "A chromosome segregation phenotype where the frequency, rate, timing, or extent of chromosome segregation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 intersection_of: OMP:0005047 ! chromosome segregation phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
@@ -6438,7 +6438,7 @@ creation_date: 2014-07-24T14:14:37Z
 [Term]
 id: OMP:0006002
 name: altered homologous recombination
-def: "A homologous recombination phenotype where recombination is altered relative to a designated control." [OMP:JCH]
+def: "A homologous recombination phenotype where the frequency, rate, timing, or extent of recombination is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T15:04:15Z
@@ -6446,7 +6446,7 @@ creation_date: 2014-07-24T15:04:15Z
 [Term]
 id: OMP:0006003
 name: altered gene silencing
-def: "A gene silencing phenotype where gene silencing is altered relative to a designated control." [OMP:JCH]
+def: "A gene silencing phenotype where the frequency, rate, timing, or extent of gene silencing is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T15:10:50Z
@@ -6463,7 +6463,7 @@ creation_date: 2014-03-26T21:33:14Z
 [Term]
 id: OMP:0006005
 name: altered site-specific recombination
-def: "A site specific recombination phenotype where recombination is altered relative to a designated control." [OMP:JCH]
+def: "A site specific recombination phenotype where the frequency, rate, timing, or extent of site-specific recombination is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005043 ! site-specific recombination phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T15:21:56Z
@@ -6480,7 +6480,7 @@ creation_date: 2014-03-26T21:33:14Z
 [Term]
 id: OMP:0006007
 name: altered heterocyst formation
-def: "A heterocyst formation phenotype where formation is altered relative to a designated control." [OMP:JCH]
+def: "A heterocyst formation phenotype where the rate, frequency, timing, or extent of heterocyst formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000092 ! heterocyst formation phenotype
 is_a: OMP:0007352 ! altered cell development
 created_by: jonathanherrera
@@ -6497,7 +6497,7 @@ creation_date: 2014-04-01T14:18:12Z
 [Term]
 id: OMP:0006009
 name: altered myxospore formation
-def: "A myxospore formation phenotype where myxospore formation is altered relative to a designated control." [OMP:JCH]
+def: "A myxospore formation phenotype where the rate, frequency, timing, or extent of myxospore formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000096 ! myxospore formation phenotype
 intersection_of: OMP:0000096 ! myxospore formation phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
@@ -6507,7 +6507,7 @@ creation_date: 2014-07-24T16:26:38Z
 [Term]
 id: OMP:0006010
 name: altered pilus phenotype
-def: "A pilus phenotype where the pilus is altered relative to a designated control." [OMP:JCH]
+def: "A pilus phenotype where the morphology, number, or location of a pilus is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000084 ! pilus phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:28:24Z
@@ -6534,7 +6534,7 @@ creation_date: 2014-04-30T22:48:59Z
 [Term]
 id: OMP:0006013
 name: altered transposable element transposition phenotype
-def: "A transposable element transposition phenotype where transposable element transposition is altered relative to a designated control." [OMP:JCH]
+def: "A transposable element transposition phenotype where the frequency, rate, timing, or extent of transposable element transposition is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005059 ! transposable element transposition phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:30:53Z
@@ -6744,7 +6744,7 @@ creation_date: 2014-07-24T17:52:43Z
 [Term]
 id: OMP:0006034
 name: altered stress-induced mutagenesis
-def: "A stress-induced mutagenesis phenotype that is altered relative to a designated control." [OMP:JCH]
+def: "A stress-induced mutagenesis phenotype where the frequency, rate, timing, or extent of stress-induced mutagenesis is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:57:37Z
@@ -6752,7 +6752,7 @@ creation_date: 2014-07-24T17:57:37Z
 [Term]
 id: OMP:0006035
 name: altered budding
-def: "A budding phenotype where the process of budding is altered relative to a designated control." [OMP:JCH]
+def: "A budding phenotype where the frequency, rate, timing, or extent of process of budding is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000089 ! budding phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
@@ -7085,7 +7085,7 @@ creation_date: 2013-10-24T19:41:11Z
 [Term]
 id: OMP:0006071
 name: altered mutation frequency
-def: "A mutation frequency phenotype that is altered relative to a designated control." [OMP:JCH]
+def: "A mutation frequency phenotype where the frequency, rate, timing, or extent of mutations is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005048 ! mutation frequency phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T18:18:59Z
@@ -7270,7 +7270,7 @@ creation_date: 2014-07-15T20:07:54Z
 [Term]
 id: OMP:0006093
 name: altered quorum sensing phenotype
-def: "A quorum sensing phenotype were quorum sensing is altered relative to a designated control." [OMP:JCH]
+def: "A quorum sensing phenotype where the frequency, rate, timing, or extent of quorum sensing is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T18:43:39Z
@@ -7819,7 +7819,7 @@ creation_date: 2014-07-25T15:40:13Z
 [Term]
 id: OMP:0006156
 name: altered outer membrane vesicles
-def: "An outer membrane vesicle phenotype where production of outer membrane vesicles is altered relative to a designated control." [OMP:JCH]
+def: "An outer membrane vesicle phenotype where the frequency, rate, timing, or extent of production of outer membrane vesicles is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000202 ! outer membrane vesicles phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:44:09Z
@@ -7861,7 +7861,7 @@ creation_date: 2014-07-28T20:49:39Z
 [Term]
 id: OMP:0006161
 name: altered endospore formation
-def: "A endospore formation phenotype where endospore formation is altered relative to a designated control." [OMP:JCH]
+def: "A endospore formation phenotype where the frequency, rate, timing, or extent of endospore formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000094 ! endospore formation phenotype
 intersection_of: OMP:0000094 ! endospore formation phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
@@ -7871,7 +7871,7 @@ creation_date: 2014-07-29T15:37:45Z
 [Term]
 id: OMP:0006162
 name: altered nanotube phenotype
-def: "A nanotube phenotype where formation of the tube structure is altered relative to a designated control." [OMP:JCH]
+def: "A nanotube phenotype where the frequency, rate, timing, or extent of formation of the tube structure is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000175 ! nanotube phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-29T18:03:06Z
@@ -7921,7 +7921,7 @@ creation_date: 2014-08-13T17:25:47Z
 [Term]
 id: OMP:0006168
 name: altered binary fission
-def: "A binary fission phenotype where the process of binary fission is altered relative to a designated control." [OMP:JCH]
+def: "A binary fission phenotype where the frequency, rate, timing, or extent of binary fission is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007067 ! binary fission phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
@@ -7930,7 +7930,7 @@ creation_date: 2014-08-08T15:59:42Z
 [Term]
 id: OMP:0006169
 name: increased binary fission
-def: "An altered binary fission phenotype where binary fission is increased relative to a designated control." [OMP:JCH]
+def: "An altered binary fission phenotype where the frequency, rate, timing, or extent of binary fission is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006168 ! altered binary fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:46Z
@@ -7938,7 +7938,7 @@ creation_date: 2014-08-08T16:01:46Z
 [Term]
 id: OMP:0006170
 name: decreased binary fission
-def: "An altered binary fission phenotype where binary fission is decreased relative to a designated control." [OMP:JCH]
+def: "An altered binary fission phenotype where the frequency, rate, timing, or extent of binary fission is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006168 ! altered binary fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:46Z
@@ -7970,7 +7970,7 @@ creation_date: 2014-08-08T16:42:12Z
 [Term]
 id: OMP:0006174
 name: altered multiple fission
-def: "A multiple fission phenotype where the process of multiple fission is altered relative to a designated control." [OMP:JCH]
+def: "A multiple fission phenotype where the frequency, rate, timing, or extent of the process of multiple fission is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007068 ! multiple fission phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
@@ -7979,7 +7979,7 @@ creation_date: 2014-08-08T16:42:12Z
 [Term]
 id: OMP:0006175
 name: decreased multiple fission
-def: "An altered multiple fission phenotype where multiple fission is decreased relative to a designated control." [OMP:JCH]
+def: "An altered multiple fission phenotype where the frequency, rate, timing, or extent of multiple fission is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006174 ! altered multiple fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:46:45Z
@@ -7987,7 +7987,7 @@ creation_date: 2014-08-08T16:46:45Z
 [Term]
 id: OMP:0006176
 name: increased multiple fission
-def: "An altered multiple fission phenotype where multiple fission is increased relative to a designated control." [OMP:JCH]
+def: "An altered multiple fission phenotype where the frequency, rate, timing, or extent of multiple fission is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006174 ! altered multiple fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:46:45Z
