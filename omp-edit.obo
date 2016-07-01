@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 30:06:2016 16:45
+date: 01:07:2016 16:17
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3769,15 +3769,20 @@ id: OMP:0000321
 name: macrolide resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds with a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars which exhibit antimicrobial properties." [CHEBI:25106, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "amphotericin B" NARROW [CHEBI:2682]
 synonym: "Azithromycin" NARROW [CHEBI:2955]
 synonym: "Bacteriostatic" BROAD []
+synonym: "bafilomycin A1" NARROW [CHEBI:22689]
+synonym: "brefeldin A" NARROW [CHEBI:48080]
 synonym: "Carvomycin A" NARROW []
 synonym: "clarithromycin" NARROW [CHEBi:3732]
 synonym: "Dirithromycin" NARROW [CHEBI:474014]
 synonym: "Erythromycin" NARROW [CHEBI:25105]
 synonym: "FK506" NARROW []
 synonym: "Josamycin" NARROW [CHEBI:31739]
+synonym: "latrunculin B" NARROW [CHEBI:49703]
 synonym: "macrolide sensitivity phenotype" RELATED []
+synonym: "rapamycin" RELATED [CHEBI:9168]
 synonym: "roxithromycin" NARROW [CHEBI:48844]
 synonym: "Spectinomycin" NARROW []
 synonym: "Spiramycin" NARROW []
@@ -8348,6 +8353,10 @@ creation_date: 2013-09-28T21:08:02Z
 id: OMP:0007038
 name: amino acid requirement
 def: "A requires growth factor(s) phenotype where the required growth factor is an amino acid." [OMP:DAS]
+synonym: "homocysteine requirement" NARROW [CHEBI:17230]
+synonym: "isoleucine requirement" NARROW [CHEBI:24898]
+synonym: "methionine requirement" NARROW [CHEBI:16811]
+synonym: "valine requirement" NARROW [CHEBI:27266]
 is_a: OMP:0007069 ! requires growth factor(s)
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:27:05Z
@@ -8356,6 +8365,7 @@ creation_date: 2013-09-29T00:27:05Z
 id: OMP:0007039
 name: purine requirement
 def: "A requires growth factor(s) phenotype where the required growth factor is a purine base." [OMP:DAS]
+synonym: "adenine requirement" NARROW [CHEBI:16708]
 is_a: OMP:0007069 ! requires growth factor(s)
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:33:05Z
@@ -11042,6 +11052,7 @@ id: OMP:0007346
 name: protein secretion phenotype
 def: "A biological process phenotype related to the process of protein secretion, which is the controlled release of proteins from a cell." [GO:0009306, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "exocytosis" NARROW []
 synonym: "protein secretion" NARROW [APO:0000078]
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
@@ -11326,6 +11337,7 @@ creation_date: 2016-06-23T15:27:23Z
 id: OMP:0007379
 name: pyrimidine requirement
 def: "A requires growth factor(s) phenotype where the required growth factor is a pyrimidine base." [OMP:DAS]
+synonym: "uracil requirement" NARROW [CHEBI:17568]
 is_a: OMP:0007069 ! requires growth factor(s)
 created_by: dsiegele
 creation_date: 2016-06-23T15:57:42Z
