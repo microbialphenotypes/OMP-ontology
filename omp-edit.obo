@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 01:07:2016 16:17
-saved-by: dsiegele
+date: 01:07:2016 22:15
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -2146,8 +2146,8 @@ creation_date: 2011-02-02T03:23:41Z
 [Term]
 id: OMP:0000090
 name: lifespan phenotype
-def: "A growth phenotype dealing with the lifespan of a cell or organism." [OMP:WAM]
-is_a: OMP:0007259 ! viability phenotype
+def: "An organismal growth phenotype dealing with the lifespan of a microorganism, cell, or cells." [OMP:WAM]
+is_a: OMP:0000174 ! organismal growth phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:24:11Z
 
@@ -10300,18 +10300,18 @@ creation_date: 2015-07-31T13:26:07Z
 
 [Term]
 id: OMP:0007259
-name: viability phenotype
-def: "A microbial phenotype related to the ability of an organism to survive and/or reproduce." [OMP:DAS]
+name: cell viability phenotype
+def: "A microbial phenotype related to the ability of a microorganism, cell, or cells to survive and go on to grow and reproduce." [FYPO:0000004, OMP:DAS]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:47:33Z
 
 [Term]
 id: OMP:0007260
-name: altered viability
-def: "A viability phenotype where the ability of an organism to survive and/or reproduce is altered relative to a designated control." [OMP:DAS]
+name: altered cell viability
+def: "A cell viability phenotype where the ability of a microorganism, cell, or cells to survive, grow, and reproduce is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007085 ! altered phenotype
-is_a: OMP:0007259 ! viability phenotype
+is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
@@ -10319,7 +10319,7 @@ creation_date: 2015-07-31T14:00:54Z
 id: OMP:0007261
 name: decreased viability
 def: "An altered viability phenotype where the ability of an organism to survive and/or reproduce is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007260 ! altered viability
+is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
@@ -10327,14 +10327,14 @@ creation_date: 2015-07-31T14:00:54Z
 id: OMP:0007262
 name: increased viability
 def: "An altered viability phenotype where the ability of an organism to survive and/or reproduce is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007260 ! altered viability
+is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007263
 name: viable but nonculturable
-is_a: OMP:0007260 ! altered viability
+is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
@@ -11441,6 +11441,20 @@ def: "A decreased viability phenotype where the ability of an organism to surviv
 is_a: OMP:0007261 ! decreased viability
 created_by: siegele
 creation_date: 2016-06-29T19:15:29Z
+
+[Term]
+id: OMP:0007392
+name: viable cell
+is_a: OMP:0007259 ! cell viability phenotype
+created_by: siegele
+creation_date: 2016-07-01T22:15:10Z
+
+[Term]
+id: OMP:0007393
+name: nonviable cell
+is_a: OMP:0007259 ! cell viability phenotype
+created_by: siegele
+creation_date: 2016-07-01T22:15:10Z
 
 [Term]
 id: OMP:0008000
