@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 01:07:2016 22:15
+date: 07:07:2016 00:06
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -11455,6 +11455,77 @@ name: nonviable cell
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2016-07-01T22:15:10Z
+
+[Term]
+id: OMP:0007394
+name: lethality phenotype
+def: "A microbe-host interaction phenotype related to the ability of a microbe to infect and cause death of a host." [OMP:DAS]
+is_a: OMP:0000197 ! microbe-host interaction phenotype
+created_by: siegele
+creation_date: 2016-07-06T13:10:19Z
+
+[Term]
+id: OMP:0007395
+name: presence of lethality
+def: "A lethality phenotype where infection by a microbe can cause death of the host." [OMP:DAS]
+is_a: OMP:0007394 ! lethality phenotype
+created_by: siegele
+creation_date: 2016-07-06T13:12:26Z
+
+[Term]
+id: OMP:0007396
+name: absence of lethality
+def: "A lethality phenotype where infection by a microbe does not cause death of the host." [OMP:DAS]
+is_a: OMP:0007394 ! lethality phenotype
+created_by: siegele
+creation_date: 2016-07-06T13:12:26Z
+
+[Term]
+id: OMP:0007397
+name: altered lethality
+def: "A lethality phenotype where the ability of an infectious  microbe to cause death of the host is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007394 ! lethality phenotype
+created_by: siegele
+creation_date: 2016-07-06T13:12:26Z
+
+[Term]
+id: OMP:0007398
+name: decreased lethality
+def: "An altered lethality phenotype where the ability of an infectious microbe to cause death of the host is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007397 ! altered lethality
+created_by: siegele
+creation_date: 2016-07-06T13:12:26Z
+
+[Term]
+id: OMP:0007399
+name: abolished lethality
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of the host is abolished." [OMP:DAS]
+is_a: OMP:0007398 ! decreased lethality
+created_by: siegele
+creation_date: 2016-07-06T13:12:26Z
+
+[Term]
+id: OMP:0007400
+name: increased lethality
+def: "An altered lethality phenotype where the ability of an infectious microbe to cause death of the host is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007397 ! altered lethality
+created_by: siegele
+creation_date: 2016-07-06T13:12:26Z
+
+[Term]
+id: OMP:0007401
+name: ascospore formation phenotype
+def: "A sporulation phenotype where development concerns formation of an ascospore, a dormant, highly resistant spore with a thick wall that forms within the mother cell. The process in which cells that are products of meiosis acquire the specialized features of ascospores. Ascospores are generally found in clusters of four or eight spores within a single mother cell, the ascus, and are characteristic of the ascomycete fungi (phylum Ascomycota) xx." [OMP:DAS]
+is_a: OMP:0000091 ! sporulation phenotype
+created_by: siegele
+creation_date: 2016-07-06T14:29:13Z
+
+[Term]
+id: OMP:0007402
+name: presence of ascospores
+is_a: OMP:0007401 ! ascospore formation phenotype
+created_by: siegele
+creation_date: 2016-07-06T14:32:46Z
 
 [Term]
 id: OMP:0008000
