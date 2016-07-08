@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2016-06-10
-date: 09:06:2016 23:08
+data-version: releases/2016-07-08
+date: 01:07:2016 22:15
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -62,7 +62,7 @@ creation_date: 2011-03-10T06:55:06Z
 [Term]
 id: OMP:0000002
 name: decreased cell motility
-def: "An altered cell motility phenotype where cell motility is decreased relative to a designated control." [OMP:MCC]
+def: "An altered cell motility phenotype where the frequency, rate, timing, or extent of cell motility is decreased relative to a designated control." [OMP:MCC]
 xref: PATO:0002297
 is_a: OMP:0007001 ! altered cell motility
 creation_date: 2011-03-10T07:02:42Z
@@ -760,8 +760,8 @@ creation_date: 2011-02-02T03:23:41Z
 [Term]
 id: OMP:0000090
 name: lifespan phenotype
-def: "A growth phenotype dealing with the lifespan of a cell or organism." [OMP:WAM]
-is_a: OMP:0007259 ! viability phenotype
+def: "An organismal growth phenotype dealing with the lifespan of a microorganism, cell, or cells." [OMP:WAM]
+is_a: OMP:0000174 ! organismal growth phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:24:11Z
 
@@ -1446,8 +1446,9 @@ creation_date: 2011-02-02T02:52:30Z
 [Term]
 id: OMP:0000171
 name: microaerophile
-def: "An oxygen growth range phenotype where growth requires oxygen levels between 2 to 10 percent for growth and is impaired by atmospheric oxygen levels (20 percent)." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen growth range phenotype
+def: "An oxygen growth range phenotype where growth and reproduction requires oxygen but at levels below that found in air (approx. 21%)." [ISBN:9780073402406, OMP:WAM]
+comment: Optimal oxygen levels for growth of typical  microaerophilic bacteria is 2 to 10% O2, and growth is impaired by atmospheric oxygen levels (approx. 21%).
+is_a: OMP:0005255 ! presence of hypoxic growth
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
 
@@ -1463,16 +1464,18 @@ creation_date: 2011-06-06T04:16:08Z
 [Term]
 id: OMP:0000173
 name: stress response phenotype
-def: "A microbial phenotype related to a cell or organism's response to environmental stress." [OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000000 ! microbial phenotype
+def: "A microbial phenotype related to whether cells in a population are sensitive or resistant to a stress. Typically, a cell population is deemed sensitive to a stress if cells in the population stop growing and dividing (and may die) when exposed to a stress." [FYPO:0002549, OMP:WAM]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested. Use a descendant of this term if you have assayed growth of cells exposed to a stress in culture.
+synonym: "stress resistance" NARROW []
+synonym: "stress sensitivity" NARROW []
+is_a: OMP:0007167 ! population growth phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:32Z
 
 [Term]
 id: OMP:0000174
 name: organismal growth phenotype
-def: "A microbial phenotype related to the increase in size or mass of an organism or a part of an organism." [GO:0040007, OMP:WAM]
+def: "A microbial phenotype related to the increase in size or mass of an organism, a part of an organism, or a cell." [GO:0040007, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0040007 "growth"
 is_a: OMP:0007194 ! biological process phenotype
@@ -1572,9 +1575,9 @@ creation_date: 2011-02-02T03:29:34Z
 [Term]
 id: OMP:0000185
 name: obligate aerobe
-def: "An oxygen growth range phenotype where growth is dependent on atmospheric oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen growth range phenotype where growth and reproduction is dependent on atmospheric oxygen (approx. 21%)." [ISBN:9780073402406, OMP:WAM]
 synonym: "strict aerobe" EXACT []
-is_a: OMP:0000039 ! oxygen growth range phenotype
+is_a: OMP:0005253 ! presence of aerobic growth
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
 
@@ -1724,7 +1727,7 @@ creation_date: 2011-06-07T09:44:51Z
 [Term]
 id: OMP:0000204
 name: presence of capsule
-def: "A capsule phenotype where a cell or cells have capsule." [OMP:DAS]
+def: "A capsule phenotype where a cell or cells have a capsule." [OMP:DAS]
 comment: When present, the capsule layer lies outside the cell wall and/or outer membrane.
 synonym: "glycocalyx" RELATED [OMP:DAS]
 synonym: "slime layer" RELATED [OMP:DAS]
@@ -2349,17 +2352,22 @@ creation_date: 2012-04-05T11:43:53Z
 [Term]
 id: OMP:0000321
 name: macrolide resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars which exhibit antimicrobial properties." [CHEBI:25106, ISBN:9780073375267, OMP:MCC]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds with a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars which exhibit antimicrobial properties." [CHEBI:25106, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "amphotericin B" NARROW [CHEBI:2682]
 synonym: "Azithromycin" NARROW [CHEBI:2955]
 synonym: "Bacteriostatic" BROAD []
+synonym: "bafilomycin A1" NARROW [CHEBI:22689]
+synonym: "brefeldin A" NARROW [CHEBI:48080]
 synonym: "Carvomycin A" NARROW []
 synonym: "clarithromycin" NARROW [CHEBi:3732]
 synonym: "Dirithromycin" NARROW [CHEBI:474014]
 synonym: "Erythromycin" NARROW [CHEBI:25105]
 synonym: "FK506" NARROW []
 synonym: "Josamycin" NARROW [CHEBI:31739]
+synonym: "latrunculin B" NARROW [CHEBI:49703]
 synonym: "macrolide sensitivity phenotype" RELATED []
+synonym: "rapamycin" RELATED [CHEBI:9168]
 synonym: "roxithromycin" NARROW [CHEBI:48844]
 synonym: "Spectinomycin" NARROW []
 synonym: "Spiramycin" NARROW []
@@ -2375,6 +2383,7 @@ id: OMP:0000331
 name: aminopyrimidine resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "5-flucytosine " NARROW [CHEBI:5100]
 synonym: "aminopyrimidine sensitivity phenotype" RELATED []
 synonym: "antifolate" BROAD [CHEBI:73913]
 synonym: "diaveridine" NARROW [CHEBI:123115]
@@ -2418,6 +2427,7 @@ synonym: "cefoxitin" NARROW [CHEBI:209807]
 synonym: "cephalosporins" NARROW []
 synonym: "cephaloxporins" NARROW []
 synonym: "cephamycin" NARROW [CHEBI:55429]
+synonym: "mecillinam" RELATED [CHEBI:51208]
 synonym: "monobactams" NARROW [CHEBI:50695]
 synonym: "penicillin" NARROW [CHEBI:51356]
 xref: CHEBI:27933 "beta-lactam antibiotic"
@@ -2666,7 +2676,7 @@ creation_date: 2014-07-23T12:18:08Z
 id: OMP:0005002
 name: temperature growth range phenotype
 def: "A growth phenotype where the trait in question is the temperature requirements and range needed for microbial growth." [OMP:WAM]
-is_a: OMP:0000039 ! oxygen growth range phenotype
+is_a: OMP:0007192 ! growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:06:05Z
 
@@ -3013,7 +3023,7 @@ creation_date: 2013-10-18T18:34:58Z
 [Term]
 id: OMP:0005044
 name: altered mitotic recombination
-def: "A mitotic recombination phenotype term where mitotic recombination is altered relative to a designated control." [OMP:WAM]
+def: "A mitotic recombination phenotype term where the frequency, rate, timing, or extent of mitotic recombination is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005045 ! mitotic recombination phenotype
 created_by: wmeza
 creation_date: 2014-07-24T13:27:41Z
@@ -3710,7 +3720,7 @@ creation_date: 2014-07-11T13:16:47Z
 [Term]
 id: OMP:0005125
 name: altered UV radiation resistance
-def: "A UV radiation resistance phenotype where resistance to UV light is altered relative to a designated control." [OMP:WAM]
+def: "A UV radiation resistance phenotype where the frequency, rate, timing, or extent of resistance to UV light is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005084 ! UV radiation resistance phenotype
 is_a: OMP:0007159 ! altered response to radiation
 relationship: has_quality OMP:0007189 ! altered_relative_to
@@ -3720,7 +3730,7 @@ creation_date: 2014-07-11T13:56:51Z
 [Term]
 id: OMP:0005126
 name: altered SDS-EDTA stress phenotype
-def: "A SDS-EDTA stress phenotype altered relative to a designated control." [OMP:WAM]
+def: "A SDS-EDTA stress phenotype where the frequency, rate, timing, or extent of resistance to SDS-EDTA is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005112 ! SDS-EDTA stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T13:57:22Z
@@ -3846,7 +3856,7 @@ creation_date: 2016-02-02T13:54:58Z
 [Term]
 id: OMP:0005141
 name: altered resistance to killing by host cells
-def: "A resistance to killing by host cells phenotype where the microbe's ability to be killed by host cells  is altered relative to a designated control." [OMP:JG]
+def: "A resistance to killing by host cells phenotype where the microbe's ability to be killed by host cells is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005111 ! resistance to killing by host cells phenotype
 created_by: Jesus
 creation_date: 2016-02-02T13:55:50Z
@@ -4054,8 +4064,8 @@ creation_date: 2016-02-11T13:37:34Z
 
 [Term]
 id: OMP:0005166
-name: superoxide dismutase activity:
-def: "An enzymatic activity phenotype that relates to the presence or absence of  superoxide dismutase, an enzyme that catalyzes the reaction:  2 superoxide + 2 H+ = O2 + hydrogen peroxide." [OMP:JG]
+name: superoxide dismutase activity phenotype
+def: "An enzymatic activity phenotype relating to the presence or absence of  superoxide dismutase, an enzyme that catalyzes the reaction:  2 superoxide + 2 H+ = O2 + hydrogen peroxide." [GO:0004784, OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0004784 "superoxide dismutase activity"
 is_a: OMP:0000221 ! enzymatic activity phenotype
@@ -4066,7 +4076,7 @@ creation_date: 2016-02-15T15:25:14Z
 id: OMP:0005167
 name: absence of superoxide dismutase activity
 def: "A superoxide dismutase phenotype where an organism does not exhibit superoxide dismutase activity." [OMP:JG]
-is_a: OMP:0005166 ! superoxide dismutase activity:
+is_a: OMP:0005166 ! superoxide dismutase activity phenotype
 created_by: Jesus
 creation_date: 2016-02-15T15:28:14Z
 
@@ -4075,7 +4085,7 @@ id: OMP:0005168
 name: altered superoxide dismutase activity
 def: "A superoxide dismutase phenotype where superoxide dismutase activity is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005130 ! altered enzymatic activity
-is_a: OMP:0005166 ! superoxide dismutase activity:
+is_a: OMP:0005166 ! superoxide dismutase activity phenotype
 created_by: Jesus
 creation_date: 2016-02-15T15:29:30Z
 
@@ -4099,7 +4109,7 @@ creation_date: 2016-02-15T15:31:28Z
 id: OMP:0005171
 name: presence of superoxide dismutase activity
 def: "A superoxide dismutase phenotype where an organism exhibits superoxide dismutase activity." [OMP:JG]
-is_a: OMP:0005166 ! superoxide dismutase activity:
+is_a: OMP:0005166 ! superoxide dismutase activity phenotype
 created_by: Jesus
 creation_date: 2016-02-15T15:32:13Z
 
@@ -4319,6 +4329,647 @@ created_by: Jesus
 creation_date: 2016-06-09T15:21:49Z
 
 [Term]
+id: OMP:0005198
+name: alpha-1,3-mannosyltransferase activity phenotype
+def: "An enzymatic activity phenotype that relates to the presence or absence of alpha-1,3- mannosyltransferase. Alpha-1,3- mannosyltransferase promotes the catalysis of the transfer of a mannose residue to an oligosaccharide, forming an alpha-(1,3) linkage." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0000033 "alpha-1,3- mannosyltransferase activity"
+is_a: OMP:0000221 ! enzymatic activity phenotype
+created_by: Jesus
+creation_date: 2016-06-09T23:05:33Z
+
+[Term]
+id: OMP:0005199
+name: presence of alpha-1,3-mannosyltransferase activity
+def: "An alpha-1,3-mannosyltransferase activity phenotype where an organism exhibits alpha-1,3-mannosyltransferase activity." [OMP:JG]
+is_a: OMP:0005198 ! alpha-1,3-mannosyltransferase activity phenotype
+created_by: Jesus
+creation_date: 2016-06-09T23:08:19Z
+
+[Term]
+id: OMP:0005200
+name: absence of alpha-1,3-mannosyltransferase activity
+def: "An alpha-1,3-mannosyltransferase activity phenotype where an organism lacks alpha-1,3-mannosyltransferase activity." [GO:JG]
+is_a: OMP:0005198 ! alpha-1,3-mannosyltransferase activity phenotype
+created_by: Jesus
+creation_date: 2016-06-09T23:09:26Z
+
+[Term]
+id: OMP:0005201
+name: altered alpha-1,3-mannosyltransferase activity
+def: "An alpha-1,3- mannosyltransferase activity phenotype where alpha-1,3-mannosyltransferase activity is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005198 ! alpha-1,3-mannosyltransferase activity phenotype
+created_by: Jesus
+creation_date: 2016-06-09T23:13:17Z
+
+[Term]
+id: OMP:0005202
+name: increased alpha-1,3-mannosyltransferase activity
+def: "An altered alpha-1,3-mannosyltransferase activity phenotype where alpha-1,3- mannosyltransferase activity is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005201 ! altered alpha-1,3-mannosyltransferase activity
+created_by: Jesus
+creation_date: 2016-06-09T23:14:41Z
+
+[Term]
+id: OMP:0005203
+name: decreased alpha-1,3-mannosyltransferase activity
+def: "An altered alpha-1,3-mannosyltransferase activity phenotype where alpha-1,3- mannosyltransferase activity is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005201 ! altered alpha-1,3-mannosyltransferase activity
+created_by: Jesus
+creation_date: 2016-06-09T23:15:42Z
+
+[Term]
+id: OMP:0005204
+name: abolished alpha-1,3-mannosyltransferase activity
+def: "An altered alpha-1,3-mannosyltransferase activity phenotype where alpha-1,3- mannosyltransferase activity is abolished." [OMP:JG]
+is_a: OMP:0005201 ! altered alpha-1,3-mannosyltransferase activity
+created_by: Jesus
+creation_date: 2016-06-09T23:16:29Z
+
+[Term]
+id: OMP:0005205
+name: adhesion phenotype
+def: "A biological process phenotype that relates to the ability of a microbe to attach to a substrate in the environment or in a host, either directly or indirectly." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000288 "adhesion"
+xref: GO:0022610 "biological adhesion"
+is_a: OMP:0007194 ! biological process phenotype
+created_by: Jesus
+creation_date: 2016-06-20T14:06:30Z
+
+[Term]
+id: OMP:0005206
+name: adhesion to host phenotype
+def: "An adhesion phenotype that relates to the ability of a microbe to attach to a host via adhesion molecules, general stickiness, etc., either directly or indirectly. The host is defined as the larger of the organisms involved in a symbiotic relationship." [OMP:JG]
+xref: GO:0044406 "adhesion to host"
+is_a: OMP:0005205 ! adhesion phenotype
+created_by: Jesus
+creation_date: 2016-06-20T14:10:51Z
+
+[Term]
+id: OMP:0005207
+name: absence of adhesion to host
+def: "An adhesion to host phenotype where a microbe lacks the ability to attach to a host." [OMP:JG]
+is_a: OMP:0005206 ! adhesion to host phenotype
+created_by: Jesus
+creation_date: 2016-06-20T14:12:43Z
+
+[Term]
+id: OMP:0005208
+name: presence of adhesion to host
+def: "An adhesion to host phenotype where a microbe has the ability to attach to a host." [OMP:JG]
+is_a: OMP:0005206 ! adhesion to host phenotype
+created_by: Jesus
+creation_date: 2016-06-20T14:14:40Z
+
+[Term]
+id: OMP:0005209
+name: altered adhesion to host
+def: "An adhesion to host phenotype where the frequency, rate, timing, or extent of attachment of a microbe to a host is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005206 ! adhesion to host phenotype
+is_a: OMP:0007351 ! altered biological process
+created_by: Jesus
+creation_date: 2016-06-20T14:15:04Z
+
+[Term]
+id: OMP:0005210
+name: decreased adhesion to host
+def: "An altered adhesion to host phenotype where the frequency, rate, or extent of attachment of a microbe to a host is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005209 ! altered adhesion to host
+created_by: Jesus
+creation_date: 2016-06-20T14:16:04Z
+
+[Term]
+id: OMP:0005211
+name: abolished adhesion to host
+def: "A decreased adhesion to host phenotype where attachment of a microbe to a host is abolished." [OMP:JG]
+is_a: OMP:0005210 ! decreased adhesion to host
+created_by: Jesus
+creation_date: 2016-06-20T14:16:42Z
+
+[Term]
+id: OMP:0005212
+name: increased adhesion to host
+def: "An altered adhesion to host phenotype where the frequency, rate, or extent of attachment of a microbe to a host is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005209 ! altered adhesion to host
+created_by: Jesus
+creation_date: 2016-06-20T14:17:26Z
+
+[Term]
+id: OMP:0005213
+name: presence of adhesion
+def: "An adhesion phenotype where a microbe has the ability to a substrate in the environment or in a host, either directly or indirectly." [OMP:JG]
+is_a: OMP:0005205 ! adhesion phenotype
+created_by: Jesus
+creation_date: 2016-06-20T14:19:00Z
+
+[Term]
+id: OMP:0005214
+name: absence of adhesion
+def: "An adhesion phenotype where a microbe lacks the ability to attach to a substrate in the environment or in a host, either directly or indirectly." [OMP:JG]
+is_a: OMP:0005205 ! adhesion phenotype
+created_by: Jesus
+creation_date: 2016-06-20T14:19:34Z
+
+[Term]
+id: OMP:0005215
+name: altered adhesion
+def: "An adhesion phenotype where the frequency, rate, timing, or extent of attachment of a microbe to a surface is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005205 ! adhesion phenotype
+is_a: OMP:0007351 ! altered biological process
+created_by: Jesus
+creation_date: 2016-06-20T14:20:13Z
+
+[Term]
+id: OMP:0005216
+name: increased adhesion
+def: "An altered adhesion phenotype where the frequency, rate, or extent of attachment of a microbe to a surface is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005215 ! altered adhesion
+created_by: Jesus
+creation_date: 2016-06-20T14:20:57Z
+
+[Term]
+id: OMP:0005217
+name: decreased adhesion
+def: "An altered adhesion phenotype where the frequency, rate, or extent of attachment of a microbe to a surface is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005215 ! altered adhesion
+created_by: Jesus
+creation_date: 2016-06-20T14:21:29Z
+
+[Term]
+id: OMP:0005218
+name: abolished adhesion
+def: "A decreased adhesion phenotype where the frequency, rate, or extent of attachment of a microbe to a surface is abolished." [OMP:JG]
+is_a: OMP:0005217 ! decreased adhesion
+created_by: Jesus
+creation_date: 2016-06-20T14:22:55Z
+
+[Term]
+id: OMP:0005219
+name: cell fusion phenotype
+def: "A cellular process phenotype involving the fusion of individual cells from different organisms." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:02:09Z
+
+[Term]
+id: OMP:0005220
+name: presence of cell fusion
+def: "A cell fusion phenotype where fusion of individual cells from different organisms occurs." [OMP:JG]
+is_a: OMP:0005219 ! cell fusion phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:03:39Z
+
+[Term]
+id: OMP:0005221
+name: altered cell fusion
+def: "A cell fusion phenotype where the frequency, rate, timing, or extent of cell fusion is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005219 ! cell fusion phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:04:36Z
+
+[Term]
+id: OMP:0005222
+name: increased cell fusion
+def: "An altered cell fusion phenotype where the frequency, rate, timing, or extent of cell fusion is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005221 ! altered cell fusion
+created_by: Jesus
+creation_date: 2016-06-20T23:07:58Z
+
+[Term]
+id: OMP:0005223
+name: decreased cell fusion
+def: "An altered cell fusion phenotype where the frequency, rate, timing, or extent of fusion is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005221 ! altered cell fusion
+created_by: Jesus
+creation_date: 2016-06-20T23:08:40Z
+
+[Term]
+id: OMP:0005224
+name: abolished cell fusion
+def: "A decreased cell fusion phenotype where the frequency, rate, timing or extent of cell fusion is abolished." [OMP:JG]
+is_a: OMP:0005223 ! decreased cell fusion
+created_by: Jesus
+creation_date: 2016-06-20T23:09:29Z
+
+[Term]
+id: OMP:0005225
+name: delayed cell fusion
+def: "An altered cell fusion phenotype where the occurrence of cell fusion is delayed relative to a designated control." [OMP:JG]
+is_a: OMP:0005221 ! altered cell fusion
+created_by: Jesus
+creation_date: 2016-06-20T23:10:02Z
+
+[Term]
+id: OMP:0005226
+name: cell fusion during mating phenotype
+def: "A cell fusion phenotype relating to the fusion of individual cells from each partner during mating." [OMP:JG]
+synonym: "conjugation with cellular fusion" RELATED [GO:0000747]
+xref: APO:0000033 "cell fusion"
+is_a: OMP:0005219 ! cell fusion phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:11:14Z
+
+[Term]
+id: OMP:0005227
+name: presence of cell fusion during mating
+def: "A cell fusion during mating phenotype where individual cells from each partner fuse during mating." [OMP:JG]
+is_a: OMP:0005226 ! cell fusion during mating phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:15:38Z
+
+[Term]
+id: OMP:0005228
+name: absence of cell fusion during mating
+def: "A cell fusion during mating phenotype where cell fusion does not occur during mating." [OMP:JG]
+is_a: OMP:0005226 ! cell fusion during mating phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:16:33Z
+
+[Term]
+id: OMP:0005229
+name: altered cell fusion during mating
+def: "A cell fusion during mating phenotype where the frequency, rate, timing, or extent of cell fusion during mating is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005226 ! cell fusion during mating phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:17:17Z
+
+[Term]
+id: OMP:0005230
+name: increased cell fusion during mating
+def: "An altered cell fusion during mating phenotype where the frequency, rate, timing, or extent of cell fusion is increased during mating." [OMP:JG]
+is_a: OMP:0005229 ! altered cell fusion during mating
+created_by: Jesus
+creation_date: 2016-06-20T23:17:51Z
+
+[Term]
+id: OMP:0005231
+name: decreased cell fusion during mating
+def: "An altered cell fusion during mating phenotype where the frequency, rate, timing,  or extent of cell fusion is decreased during mating." [OMP:JG]
+is_a: OMP:0005229 ! altered cell fusion during mating
+created_by: Jesus
+creation_date: 2016-06-20T23:21:08Z
+
+[Term]
+id: OMP:0005232
+name: abolished cell fusion during mating
+def: "A decreased cell fusion during mating phenotype where the frequency, rate, timing, or extent of fusion during mating is abolished." [OMP:JG]
+is_a: OMP:0005231 ! decreased cell fusion during mating
+created_by: Jesus
+creation_date: 2016-06-20T23:21:44Z
+
+[Term]
+id: OMP:0005233
+name: cell wall morphology phenotype
+def: "A cell wall phenotype relating to the size, shape, or appearance of the cell wall." [OMP:JG]
+xref: APO:0000053 "Cell wall morphology"
+is_a: OMP:0007277 ! cell wall phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:33:27Z
+
+[Term]
+id: OMP:0005234
+name: altered cell wall morphology
+def: "A cell wall morphology phenotype where the morphology of the cell wall is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005233 ! cell wall morphology phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:36:20Z
+
+[Term]
+id: OMP:0005235
+name: presence of cell wall
+def: "A cell wall morphology phenotype where a cell or cells exhibit a cell wall." [OMP:JG]
+is_a: OMP:0005233 ! cell wall morphology phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:37:37Z
+
+[Term]
+id: OMP:0005236
+name: absence of cell wall
+def: "A cell wall morphology phenotype where a cell or cells lack a cell wall." [OMP:JG]
+is_a: OMP:0005233 ! cell wall morphology phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:38:17Z
+
+[Term]
+id: OMP:0005237
+name: golgi apparatus phenotype
+def: "A cellular component phenotype relating to the golgi apparatus, which is the endomembranous cytoplasmic eukaryotic organelle involved in secretion and intracellular transport." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0005794 "golgi apparatus"
+is_a: OMP:0007197 ! cellular component phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:41:43Z
+
+[Term]
+id: OMP:0005238
+name: golgi apparatus morphology phenotype
+def: "A golgi apparatus phenotype that relates to the size, shape, or appearance of the Golgi apparatus or its parts. The golgi apparatus usually appears as flattened ribosome-free vesicles arranged in a more or less regular stack." [OMP:JG]
+xref: APO:0000243 "Golgi morphology"
+is_a: OMP:0005237 ! golgi apparatus phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:43:17Z
+
+[Term]
+id: OMP:0005239
+name: altered golgi morphology
+def: "A golgi apparatus morphology phenotype where the morphology of the golgi apparatus is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005238 ! golgi apparatus morphology phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:44:33Z
+
+[Term]
+id: OMP:0005240
+name: presence of golgi apparatus
+def: "A golgi apparatus phenotype where a cell or cells exhibit a golgi apparatus." [OMP:JG]
+is_a: OMP:0005237 ! golgi apparatus phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:45:22Z
+
+[Term]
+id: OMP:0005241
+name: absence of golgi apparatus
+def: "A golgi apparatus phenotype where a cell or cells lack a golgi apparatus." [OMP:JG]
+is_a: OMP:0005237 ! golgi apparatus phenotype
+created_by: Jesus
+creation_date: 2016-06-20T23:46:03Z
+
+[Term]
+id: OMP:0005242
+name: delayed cell fusion during mating
+def: "An altered cell fusion during mating phenotype where the timing of cell fusion during mating is delayed relative to a designated control." [OMP:JG]
+is_a: OMP:0005229 ! altered cell fusion during mating
+created_by: Jesus
+creation_date: 2016-06-23T14:28:58Z
+
+[Term]
+id: OMP:0005243
+name: filamentous growth phenotype
+def: "An organismal growth phenotype relating to the process by which a multicellular organism, a unicellular organism, or a group of unicellular organisms grow in a threadlike, filamentous shape." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: APO:0000027 "development"
+xref: GO:0030447 "filamentous growth"
+is_a: OMP:0000174 ! organismal growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T14:38:44Z
+
+[Term]
+id: OMP:0005244
+name: altered filamentous growth
+def: "A filamentous growth phenotype where the frequency, rate, or extent of  filamentous growth is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005243 ! filamentous growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T14:41:10Z
+
+[Term]
+id: OMP:0005245
+name: increased filamentous growth
+def: "An altered filamentous growth phenotype where the frequency, rate, or extent of filamentous growth is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005244 ! altered filamentous growth
+created_by: Jesus
+creation_date: 2016-06-23T14:41:44Z
+
+[Term]
+id: OMP:0005246
+name: decreased filamentous growth
+def: "An altered filamentous growth phenotype where the frequency, rate, or extent of filamentous is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005244 ! altered filamentous growth
+created_by: Jesus
+creation_date: 2016-06-23T14:42:18Z
+
+[Term]
+id: OMP:0005247
+name: abolished filamentous growth
+def: "A decreased filamentous growth phenotype where the ability of a microorganism to exhibit filamentous growth is abolished." [OMP:JG]
+is_a: OMP:0005246 ! decreased filamentous growth
+created_by: Jesus
+creation_date: 2016-06-23T14:42:45Z
+
+[Term]
+id: OMP:0005248
+name: presence of filamentous growth
+def: "A filamentous growth phenotype where a microorganism exhibits filamentous growth." [OMP:JG]
+is_a: OMP:0005243 ! filamentous growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T14:43:53Z
+
+[Term]
+id: OMP:0005249
+name: absence of filamentous growth
+def: "A filamentous growth phenotype where a microorganism does not exhibit filamentous growth." [OMP:JG]
+is_a: OMP:0005243 ! filamentous growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T14:44:33Z
+
+[Term]
+id: OMP:0005250
+name: aerobic growth phenotype
+def: "An oxygen growth range phenotype related to the ability of a cell or cells to grow and/or reproduce in the presence of oxygen at the level found in air (approximately 21%)." [OMP:JG]
+is_a: OMP:0000039 ! oxygen growth range phenotype
+created_by: Jesus
+creation_date: 2016-06-23T14:59:55Z
+
+[Term]
+id: OMP:0005251
+name: absence of aerobic growth
+def: "An aerobic growth phenotype where a cell or cells lack the ability to undergo aerobic growth." [OMP:JG]
+is_a: OMP:0005250 ! aerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:00:52Z
+
+[Term]
+id: OMP:0005252
+name: altered of aerobic growth
+def: "An aerobic growth phenotype where the ability of a cell or cells to undergo aerobic growth is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005250 ! aerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:01:40Z
+
+[Term]
+id: OMP:0005253
+name: presence of aerobic growth
+def: "An aerobic growth phenotype where a cell or cells are able to undergo aerobic growth." [OMP:JG]
+is_a: OMP:0005250 ! aerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:02:38Z
+
+[Term]
+id: OMP:0005254
+name: hypoxic growth phenotype
+def: "An aerobic growth phenotype relating to the ability of a cell or cells to grow and/or reproduce in a hypoxic condition, which is one where O2 levels are below that found in air (approximately 21%)." [OMP:JG]
+is_a: OMP:0005250 ! aerobic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:04:24Z
+
+[Term]
+id: OMP:0005255
+name: presence of hypoxic growth
+def: "A hypoxic growth phenotype in which a cell or cells are able to grow and/or reproduce in hypoxic conditions." [OMP:JG]
+is_a: OMP:0005254 ! hypoxic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:05:26Z
+
+[Term]
+id: OMP:0005256
+name: absence of hypoxic growth
+def: "A hypoxic growth phenotype in which a cell or cells are unable to grow and/or reproduce in hypoxic conditions." [JG:OMP]
+is_a: OMP:0005254 ! hypoxic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:06:52Z
+
+[Term]
+id: OMP:0005257
+name: altered hypoxic growth
+def: "A hypoxic growth phenotype where the frequency, rate, or extent  of hypoxic growth is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005254 ! hypoxic growth phenotype
+created_by: Jesus
+creation_date: 2016-06-23T15:07:30Z
+
+[Term]
+id: OMP:0005258
+name: increased hypoxic growth rate
+def: "An altered hypoxic growth phenotype where the rate of growth under hypoxic conditions is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005257 ! altered hypoxic growth
+created_by: Jesus
+creation_date: 2016-06-23T15:07:51Z
+
+[Term]
+id: OMP:0005259
+name: decreased hypoxic growth rate
+def: "An altered hypoxic growth phenotype where the rate of growth under hypoxic conditions is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005257 ! altered hypoxic growth
+created_by: Jesus
+creation_date: 2016-06-23T15:08:31Z
+
+[Term]
+id: OMP:0005260
+name: transport phenotype
+def: "A cellular process phenotype relating to transport, which is the directed movement of substances (such as macromolecules, small molecules, ions) or cellular components (such as complexes and organelles) into, out of, or within a cell, or between cells, or within a multicellular organism by means of some agent such as a transporter, pore or motor protein." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0006810
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:17:43Z
+
+[Term]
+id: OMP:0005261
+name: endocytosis phenotype
+def: "A transport phenotype relating to endocytosis, which is a vesicle-mediated transport process in which cells take up external materials or membrane constituents by the invagination of a small region of the plasma membrane to form a new membrane-bounded vesicle. A phenotype may affect endocytosis of all cargoes, or of specific cargo such as a particular protein." [OMP:JG]
+xref: APO:0000075
+xref: FYPO:0003886
+xref: GO:0006897
+is_a: OMP:0005260 ! transport phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:20:19Z
+
+[Term]
+id: OMP:0005262
+name: altered endocytosis
+def: "An endocytosis phenotype where the frequency, rate, timing, or extent of the process of endocytosis is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005261 ! endocytosis phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:23:04Z
+
+[Term]
+id: OMP:0005263
+name: increased endocytosis
+def: "An altered endocytosis phenotype where the frequency, rate, timing, or extent of endocytosis is increased relative to a designated control. A phenotype may affect endocytosis of all cargoes, or of specific cargo such as a particular protein." [OMP:JG]
+synonym: "increased endocytosis during vegetative growth" NARROW [FYPO:0000425]
+xref: FYPO:0000425
+is_a: OMP:0005262 ! altered endocytosis
+created_by: Jesus
+creation_date: 2016-06-27T14:23:59Z
+
+[Term]
+id: OMP:0005264
+name: decreased endocytosis
+def: "An altered endocytosis phenotype where the frequency, rate, timing, or extent of endocytosis is decreased relative to a designated control. A phenotype may affect endocytosis of all cargoes, or of specific cargo such as a particular protein." [OMP:JG]
+synonym: "decreased endocytosis during vegetative growth" NARROW [FYPO:0000422]
+xref: FYPO:0000422
+is_a: OMP:0005262 ! altered endocytosis
+created_by: Jesus
+creation_date: 2016-06-27T14:26:10Z
+
+[Term]
+id: OMP:0005265
+name: abolished endocytosis
+def: "A decreased endocytosis phenotype where the frequency, rate, timing, or extent of endocytosis is abolished." [OMP:JG]
+synonym: "abolished endocytosis during vegetative growth " NARROW [FYPO:0000421]
+is_a: OMP:0005264 ! decreased endocytosis
+created_by: Jesus
+creation_date: 2016-06-27T14:29:14Z
+
+[Term]
+id: OMP:0005266
+name: delayed onset of endocytosis
+def: "An altered endocytosis phenotype where endocytosis begins later than in a designated control. A phenotype may affect endocytosis of all cargoes, or of specific cargo such as a particular protein." [OMP:JG]
+synonym: "delayed onset of endocytosis during vegetative growth " RELATED [FYPO:0000424]
+is_a: OMP:0005262 ! altered endocytosis
+created_by: Jesus
+creation_date: 2016-06-27T14:31:13Z
+
+[Term]
+id: OMP:0005267
+name: presence of endocytosis
+def: "An endocytosis phenotype where an organism, cell,or cells possess the ability to perform endocytosis." [OMP:JG]
+is_a: OMP:0005261 ! endocytosis phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:32:32Z
+
+[Term]
+id: OMP:0005268
+name: absence of endocytosis
+def: "An endocytosis phenotype where an organism, cell, or cells lacks the ability to perform endocytosis." [OMP:JG]
+is_a: OMP:0005261 ! endocytosis phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:33:03Z
+
+[Term]
+id: OMP:0005269
+name: endomembrane system phenotype
+def: "A cellular component phenotype relating to the endomembrane, a collection of membranous structures involved in transport within the cell. The endomembrane system includes the nuclear envelope, endoplasmic reticulum, Golgi apparatus, vacuoles, vesicles, and the plasma membrane. Members of the endomembrane system pass materials through each other or through the use of vesicles." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0012505 "endomembrane system"
+xref: PMID:19121819
+is_a: OMP:0007197 ! cellular component phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:45:57Z
+
+[Term]
+id: OMP:0005270
+name: endomembrane system morphology phenotype
+def: "An endomembrane system phenotype that relates to the form and structure of components of the endomembrane system." [OMP:JG]
+xref: APO:0000303 "endomembrane system morphology"
+is_a: OMP:0005269 ! endomembrane system phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:48:31Z
+
+[Term]
+id: OMP:0005271
+name: altered endomembrane system morphology
+def: "An endomembrane system morphology phenotype where the morphology of the endomembrane system is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005270 ! endomembrane system morphology phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:51:21Z
+
+[Term]
+id: OMP:0005272
+name: presence of endomembrane system
+def: "An endomembrane system phenotype where an organism,  cell, or cells exhibit an endomembrane system." [OMP:JG]
+is_a: OMP:0005269 ! endomembrane system phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:52:02Z
+
+[Term]
+id: OMP:0005273
+name: absence of endomembrane system
+def: "An endomembrane system phenotype where an organism, cell, or cells lack an endomembrane system." [OMP:JG]
+is_a: OMP:0005269 ! endomembrane system phenotype
+created_by: Jesus
+creation_date: 2016-06-27T14:52:45Z
+
+[Term]
 id: OMP:0006000
 name: secondary metabolite production phenotype
 def: "A small molecule biosynthesis phenotype where an organism produces a secondary metabolite, which is a compound not directly involved in normal growth, development or reproduction." [APO:0000292, OMP:TCK]
@@ -4329,7 +4980,7 @@ creation_date: 2015-06-09T15:06:53Z
 [Term]
 id: OMP:0006001
 name: altered chromosome segregation
-def: "A chromosome segregation phenotype where chromosome segregation is altered relative to a designated control." [OMP:JCH]
+def: "A chromosome segregation phenotype where the frequency, rate, timing, or extent of chromosome segregation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005047 ! chromosome segregation phenotype
 is_a: OMP:0007085 ! altered phenotype
 relationship: has_quality OMP:0007189 ! altered_relative_to
@@ -4339,7 +4990,7 @@ creation_date: 2014-07-24T14:14:37Z
 [Term]
 id: OMP:0006002
 name: altered homologous recombination
-def: "A homologous recombination phenotype where recombination is altered relative to a designated control." [OMP:JCH]
+def: "A homologous recombination phenotype where the frequency, rate, timing, or extent of recombination is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005042 ! homologous recombination phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T15:04:15Z
@@ -4347,7 +4998,7 @@ creation_date: 2014-07-24T15:04:15Z
 [Term]
 id: OMP:0006003
 name: altered gene silencing
-def: "A gene silencing phenotype where gene silencing is altered relative to a designated control." [OMP:JCH]
+def: "A gene silencing phenotype where the frequency, rate, timing, or extent of gene silencing is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005046 ! gene silencing phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T15:10:50Z
@@ -4364,7 +5015,7 @@ creation_date: 2014-03-26T21:33:14Z
 [Term]
 id: OMP:0006005
 name: altered site-specific recombination
-def: "A site specific recombination phenotype where recombination is altered relative to a designated control." [OMP:JCH]
+def: "A site specific recombination phenotype where the frequency, rate, timing, or extent of site-specific recombination is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005043 ! site-specific recombination phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T15:21:56Z
@@ -4381,7 +5032,7 @@ creation_date: 2014-03-26T21:33:14Z
 [Term]
 id: OMP:0006007
 name: altered heterocyst formation
-def: "A heterocyst formation phenotype where formation is altered relative to a designated control." [OMP:JCH]
+def: "A heterocyst formation phenotype where the rate, frequency, timing, or extent of heterocyst formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000092 ! heterocyst formation phenotype
 is_a: OMP:0007352 ! altered cell development
 created_by: jonathanherrera
@@ -4398,7 +5049,7 @@ creation_date: 2014-04-01T14:18:12Z
 [Term]
 id: OMP:0006009
 name: altered myxospore formation
-def: "A myxospore formation phenotype where myxospore formation is altered relative to a designated control." [OMP:JCH]
+def: "A myxospore formation phenotype where the rate, frequency, timing, or extent of myxospore formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000096 ! myxospore formation phenotype
 relationship: has_quality OMP:0007188 ! altered_process_quality
 created_by: jonathanherrera
@@ -4407,7 +5058,7 @@ creation_date: 2014-07-24T16:26:38Z
 [Term]
 id: OMP:0006010
 name: altered pilus phenotype
-def: "A pilus phenotype where the pilus is altered relative to a designated control." [OMP:JCH]
+def: "A pilus phenotype where the morphology, number, or location of a pilus is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000084 ! pilus phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:28:24Z
@@ -4434,7 +5085,7 @@ creation_date: 2014-04-30T22:48:59Z
 [Term]
 id: OMP:0006013
 name: altered transposable element transposition phenotype
-def: "A transposable element transposition phenotype where transposable element transposition is altered relative to a designated control." [OMP:JCH]
+def: "A transposable element transposition phenotype where the frequency, rate, timing, or extent of transposable element transposition is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005059 ! transposable element transposition phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:30:53Z
@@ -4556,7 +5207,7 @@ creation_date: 2013-09-10T17:51:21Z
 [Term]
 id: OMP:0006027
 name: bacteriocin resistance phenotype
-def: "An antimicrobial peptide resistance phenotype related to resistance or sensitivity to bacteriocins, which are polypeptides synthesized by specific strains of bacteria that are active against other cells of the same or different species." [CHEBI:48081]
+def: "An antimicrobial peptide resistance phenotype related to resistance or sensitivity to bacteriocins, which are polypeptides synthesized by specific strains of bacteria that are active against other cells of the same or different species." [CHEBI:48081, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "bacteriocin sensitivity phenotype" RELATED []
 synonym: "colicins" NARROW [GO:0015468]
@@ -4594,10 +5245,12 @@ creation_date: 2013-10-10T19:15:32Z
 [Term]
 id: OMP:0006029
 name: quinolone resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a aromatic heterocyclic compounds each of which contains a benzene ring ortho fused to carbons 2 and 3 of a pyridine ring." [CHEBI:26513, ISBN:9780072992915, OMP:JCH]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "quinoline sensitivity phenotype" RELATED []
-xref: CHEBI:26513
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to a quinolone: an organonitrogen heterocyclic compound whose structure contains a quinolone or quinolone-related structure." [CHEBI:23765, OMP:JCH]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nQuinolones are a class of quinolines, which are aromatic heterocyclic  compounds that contain a benzene ring ortho fused to carbons 2 and 3 of a pyridine ring.
+synonym: "quinolines " BROAD [CHEBI:26513]
+synonym: "quinolone sensitivity phenotype" RELATED []
+synonym: "streptonigrin" NARROW [CHEBI:9287]
+xref: CHEBI:23765 "quinolone"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-10T19:15:32Z
@@ -4642,7 +5295,7 @@ creation_date: 2014-07-24T17:52:43Z
 [Term]
 id: OMP:0006034
 name: altered stress-induced mutagenesis
-def: "A stress-induced mutagenesis phenotype that is altered relative to a designated control." [OMP:JCH]
+def: "A stress-induced mutagenesis phenotype where the frequency, rate, timing, or extent of stress-induced mutagenesis is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005027 ! stress-induced mutagenesis phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:57:37Z
@@ -4650,7 +5303,7 @@ creation_date: 2014-07-24T17:57:37Z
 [Term]
 id: OMP:0006035
 name: altered budding
-def: "A budding phenotype where the process of budding is altered relative to a designated control." [OMP:JCH]
+def: "A budding phenotype where the frequency, rate, timing, or extent of process of budding is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000089 ! budding phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
@@ -4834,7 +5487,7 @@ creation_date: 2013-10-11T17:45:44Z
 [Term]
 id: OMP:0006056
 name: aminoglycoside resistance phenotype
-def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:47779, ISBN:978-0-07-299291-5, OMP:JCH]
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:47779, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
@@ -4895,10 +5548,11 @@ creation_date: 2013-10-23T19:27:35Z
 [Term]
 id: OMP:0006062
 name: tetracycline resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a subclass of polyketides having an octahydrotetracene-2-carboxamide skeleton." [CHEBI:27902, ISBN:978-0-07-299291-5, OMP:JCH]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to tetracyclines: a subclass of polyketides having an octahydrotetracene-2-carboxamide skeleton." [CHEBI:27902, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "Bacteriostatic" BROAD []
-synonym: "chlortetracycline" RELATED []
+synonym: "chlortetracycline" NARROW []
+synonym: "minocycline" NARROW [CHEBI:50694]
 synonym: "oxytetracycline " NARROW [CHEBI:27701]
 synonym: "tetracycline sensitivity phenotype" RELATED []
 xref: CHEBI:27902
@@ -4982,7 +5636,7 @@ creation_date: 2013-10-24T19:41:11Z
 [Term]
 id: OMP:0006071
 name: altered mutation frequency
-def: "A mutation frequency phenotype that is altered relative to a designated control." [OMP:JCH]
+def: "A mutation frequency phenotype where the frequency, rate, timing, or extent of mutations is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005048 ! mutation frequency phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T18:18:59Z
@@ -5167,7 +5821,7 @@ creation_date: 2014-07-15T20:07:54Z
 [Term]
 id: OMP:0006093
 name: altered quorum sensing phenotype
-def: "A quorum sensing phenotype were quorum sensing is altered relative to a designated control." [OMP:JCH]
+def: "A quorum sensing phenotype where the frequency, rate, timing, or extent of quorum sensing is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T18:43:39Z
@@ -5510,9 +6164,9 @@ creation_date: 2014-07-25T14:46:12Z
 
 [Term]
 id: OMP:0006133
-name: abolished purine/pyrimidine requirement
-def: "A decreased purine/pyrimidine requirement phenotype where the requirement for a purine/pyrimidine compound as a growth factor is abolished." [OMP:JCH]
-is_a: OMP:0007022 ! decreased purine/pyrimidine requirement
+name: abolished purine requirement
+def: "A decreased purine requirement phenotype where the requirement for a purine base as a growth factor is abolished." [OMP:JCH]
+is_a: OMP:0007022 ! decreased purine requirement
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:47:24Z
 
@@ -5712,7 +6366,7 @@ creation_date: 2014-07-25T15:40:13Z
 [Term]
 id: OMP:0006156
 name: altered outer membrane vesicles
-def: "An outer membrane vesicle phenotype where production of outer membrane vesicles is altered relative to a designated control." [OMP:JCH]
+def: "An outer membrane vesicle phenotype where the frequency, rate, timing, or extent of production of outer membrane vesicles is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000202 ! outer membrane vesicles phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-28T18:44:09Z
@@ -5754,7 +6408,7 @@ creation_date: 2014-07-28T20:49:39Z
 [Term]
 id: OMP:0006161
 name: altered endospore formation
-def: "A endospore formation phenotype where endospore formation is altered relative to a designated control." [OMP:JCH]
+def: "A endospore formation phenotype where the frequency, rate, timing, or extent of endospore formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000094 ! endospore formation phenotype
 is_a: OMP:0007085 ! altered phenotype
 relationship: has_quality OMP:0007189 ! altered_relative_to
@@ -5764,7 +6418,7 @@ creation_date: 2014-07-29T15:37:45Z
 [Term]
 id: OMP:0006162
 name: altered nanotube phenotype
-def: "A nanotube phenotype where formation of the tube structure is altered relative to a designated control." [OMP:JCH]
+def: "A nanotube phenotype where the frequency, rate, timing, or extent of formation of the tube structure is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000175 ! nanotube phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-29T18:03:06Z
@@ -5814,7 +6468,7 @@ creation_date: 2014-08-13T17:25:47Z
 [Term]
 id: OMP:0006168
 name: altered binary fission
-def: "A binary fission phenotype where the process of binary fission is altered relative to a designated control." [OMP:JCH]
+def: "A binary fission phenotype where the frequency, rate, timing, or extent of binary fission is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007067 ! binary fission phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
@@ -5823,7 +6477,7 @@ creation_date: 2014-08-08T15:59:42Z
 [Term]
 id: OMP:0006169
 name: increased binary fission
-def: "An altered binary fission phenotype where binary fission is increased relative to a designated control." [OMP:JCH]
+def: "An altered binary fission phenotype where the frequency, rate, timing, or extent of binary fission is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006168 ! altered binary fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:46Z
@@ -5831,7 +6485,7 @@ creation_date: 2014-08-08T16:01:46Z
 [Term]
 id: OMP:0006170
 name: decreased binary fission
-def: "An altered binary fission phenotype where binary fission is decreased relative to a designated control." [OMP:JCH]
+def: "An altered binary fission phenotype where the frequency, rate, timing, or extent of binary fission is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006168 ! altered binary fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:46Z
@@ -5863,7 +6517,7 @@ creation_date: 2014-08-08T16:42:12Z
 [Term]
 id: OMP:0006174
 name: altered multiple fission
-def: "A multiple fission phenotype where the process of multiple fission is altered relative to a designated control." [OMP:JCH]
+def: "A multiple fission phenotype where the frequency, rate, timing, or extent of the process of multiple fission is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007068 ! multiple fission phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
@@ -5872,7 +6526,7 @@ creation_date: 2014-08-08T16:42:12Z
 [Term]
 id: OMP:0006175
 name: decreased multiple fission
-def: "An altered multiple fission phenotype where multiple fission is decreased relative to a designated control." [OMP:JCH]
+def: "An altered multiple fission phenotype where the frequency, rate, timing, or extent of multiple fission is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006174 ! altered multiple fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:46:45Z
@@ -5880,7 +6534,7 @@ creation_date: 2014-08-08T16:46:45Z
 [Term]
 id: OMP:0006176
 name: increased multiple fission
-def: "An altered multiple fission phenotype where multiple fission is increased relative to a designated control." [OMP:JCH]
+def: "An altered multiple fission phenotype where the frequency, rate, timing, or extent of multiple fission is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006174 ! altered multiple fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:46:45Z
@@ -6073,17 +6727,20 @@ creation_date: 2014-07-31T16:18:02Z
 
 [Term]
 id: OMP:0007018
-name: prototrophic
-def: "A growth factor utilization phenotype where an organism can synthesize all organic compounds essential for its growth from a single carbon substrate and inorganic chemicals." [ISBN:9780878936083]
+name: does not require growth factor(s)
+def: "A growth factor requirement phenotype where an organism can synthesize all organic compounds essential for its growth from a single carbon substrate and inorganic chemicals." [OMP:DAS]
+synonym: "prototroph" EXACT []
+synonym: "prototrophic" EXACT []
 is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2013-09-16T17:29:19Z
 
 [Term]
 id: OMP:0007019
-name: increased requirement for amino acid(s)
-def: "An amino acid requirement phenotype where an organism's requirement for one or more amino acids is increased relative to a designated control." [OMP:DAS]
+name: increased amino acid requirement
+def: "An amino acid requirement phenotype where an organism's requirement for an amino acid in the growth medium is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007074 ! increased growth factor requirement
+is_a: OMP:0007354 ! altered amino acid requirement
 created_by: siegele
 creation_date: 2013-09-16T17:30:07Z
 
@@ -6097,26 +6754,28 @@ creation_date: 2014-08-01T00:12:56Z
 
 [Term]
 id: OMP:0007021
-name: decreased requirement for amino acid(s)
-def: "An amino acid requirement phenotype where the requirement for one or more amino acids is decreased requirement relative to a designated control." [OMP:DAS]
-is_a: OMP:0007074 ! increased growth factor requirement
+name: decreased amino acid requirement
+def: "An altered amino acid requirement phenotype where an organism's requirement for an amino acid in the growth medium is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007075 ! decreased growth factor requirement
+is_a: OMP:0007354 ! altered amino acid requirement
 created_by: siegele
 creation_date: 2013-09-17T16:13:20Z
 
 [Term]
 id: OMP:0007022
-name: decreased purine/pyrimidine requirement
-def: "A purine/pyrimidine requirement phenotype where an organism's requirement for a purine or pyrimidine base is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007081 ! altered purine/pyrimidine requirement
+name: decreased purine requirement
+def: "An altered purine requirement phenotype where an organism's requirement for a purine base is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007075 ! decreased growth factor requirement
+is_a: OMP:0007081 ! altered purine requirement
 created_by: siegele
 creation_date: 2013-09-17T16:30:10Z
 
 [Term]
 id: OMP:0007023
-name: increased purine/pyrimidine requirement
-def: "A purine/pyrimidine requirement phenotype where an organism's requirement for purine or pyrimidine bases is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007081 ! altered purine/pyrimidine requirement
+name: increased purine requirement
+def: "An altered purine requirement phenotype where an organism's requirement for a purine base is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007074 ! increased growth factor requirement
+is_a: OMP:0007081 ! altered purine requirement
 created_by: siegele
 creation_date: 2013-09-17T16:30:36Z
 
@@ -6124,6 +6783,7 @@ creation_date: 2013-09-17T16:30:36Z
 id: OMP:0007024
 name: increased vitamin/enzyme cofactor requirement
 def: "A vitamin/enzyme cofactor requirement phenotype the requirement for a vitamin/enzyme cofactor is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007074 ! increased growth factor requirement
 is_a: OMP:0007082 ! altered vitamin/enzyme cofactor requirement
 created_by: siegele
 creation_date: 2013-09-17T16:31:05Z
@@ -6131,7 +6791,8 @@ creation_date: 2013-09-17T16:31:05Z
 [Term]
 id: OMP:0007025
 name: decreased vitamin/enzyme cofactor requirement
-def: "A vitamin/enzyme cofactor requirement phenotype the requirement for a vitamin/enzyme cofactor is decreased relative to a designated control." [OMP:DAS]
+def: "A vitamin/enzyme cofactor requirement phenotype the requirement for a vitamin/enzyme cofactor in the growth medium is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007075 ! decreased growth factor requirement
 is_a: OMP:0007082 ! altered vitamin/enzyme cofactor requirement
 created_by: siegele
 creation_date: 2013-09-17T16:33:34Z
@@ -6235,24 +6896,29 @@ creation_date: 2013-09-28T21:08:02Z
 [Term]
 id: OMP:0007038
 name: amino acid requirement
-def: "A auxotrophic phenotype where the required growth factor is an amino acid." [OMP:DAS]
-is_a: OMP:0007069 ! auxotrophic phenotype
+def: "A requires growth factor(s) phenotype where the required growth factor is an amino acid." [OMP:DAS]
+synonym: "homocysteine requirement" NARROW [CHEBI:17230]
+synonym: "isoleucine requirement" NARROW [CHEBI:24898]
+synonym: "methionine requirement" NARROW [CHEBI:16811]
+synonym: "valine requirement" NARROW [CHEBI:27266]
+is_a: OMP:0007069 ! requires growth factor(s)
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:27:05Z
 
 [Term]
 id: OMP:0007039
-name: purine/pyrimidine requirement
-def: "An auxotrophic phenotype where the required growth factor is a purine or pyrimidine base." [OMP:DAS]
-is_a: OMP:0007069 ! auxotrophic phenotype
+name: purine requirement
+def: "A requires growth factor(s) phenotype where the required growth factor is a purine base." [OMP:DAS]
+synonym: "adenine requirement" NARROW [CHEBI:16708]
+is_a: OMP:0007069 ! requires growth factor(s)
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:33:05Z
 
 [Term]
 id: OMP:0007040
 name: vitamin/enzyme cofactor requirement
-def: "An auxotrophic phenotype where the required growth factor is a vitamin or enzyme cofactor." [OMP:DAS]
-is_a: OMP:0007069 ! auxotrophic phenotype
+def: "A requires growth factor(s) phenotype where the required growth factor is a vitamin or enzyme cofactor." [OMP:DAS]
+is_a: OMP:0007069 ! requires growth factor(s)
 created_by: DeborahSiegele
 creation_date: 2013-09-29T00:36:46Z
 
@@ -6283,7 +6949,7 @@ creation_date: 2013-09-29T09:41:48Z
 [Term]
 id: OMP:0007044
 name: growth factor requirement phenotype
-def: "A nutrient utilization phenotype where the nutrient is an essential organic compound." [OMP:DAS]
+def: "A nutrient utilization phenotype related to whether an organism requires an essential organic compound (growth factor) for growth and reproduction." [ISBN:9780878936083, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: siegele
@@ -6457,7 +7123,7 @@ creation_date: 2014-01-31T18:49:00Z
 [Term]
 id: OMP:0007065
 name: pteridine resistance phenotype
-def: "An antimicrobial compound resistance phenotype where resistance is to a organonitrogen heterocyclic compound." [CHEBI:26373, OMP:DAS]
+def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to an organonitrogen heterocyclic compound." [CHEBI:26373, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "antifolate resistance" BROAD [CHEBI:73913]
 synonym: "methotrexate resistance" NARROW [CHEBI:44185]
@@ -6497,8 +7163,10 @@ creation_date: 2014-02-03T16:09:27Z
 
 [Term]
 id: OMP:0007069
-name: auxotrophic phenotype
-def: "A growth factor utilization phenotype where an organism requires one or more growth factors." [OMP:DAS]
+name: requires growth factor(s)
+def: "A growth factor requirement phenotype where an organism is unable to synthesize an organic compound required for its growth and reproduction." [OMP:DAS]
+synonym: "auxotroph" EXACT []
+synonym: "auxotrophic" EXACT []
 is_a: OMP:0007044 ! growth factor requirement phenotype
 created_by: siegele
 creation_date: 2014-02-21T15:07:59Z
@@ -6583,7 +7251,7 @@ creation_date: 2014-04-30T15:40:12Z
 [Term]
 id: OMP:0007079
 name: altered growth factor requirement
-def: "A nutrient utilization phenotype altered relative to a designated control." [OMP:JCH]
+def: "A growth factor requirement phenotype where an organism's requirement for a growth factor for growth and reproduction is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007044 ! growth factor requirement phenotype
 is_a: OMP:0007104 ! altered nutrient utilization
 created_by: siegele
@@ -6601,8 +7269,8 @@ creation_date: 2014-08-11T16:32:07Z
 
 [Term]
 id: OMP:0007081
-name: altered purine/pyrimidine requirement
-def: "An altered growth factor requirement phenotype where purine/pyrimidine requirement is altered relative to a designated control." [OMP:JCH]
+name: altered purine requirement
+def: "An altered growth factor requirement phenotype where the requirement for a purine base as a growth factor is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-04-30T16:03:42Z
@@ -6610,7 +7278,7 @@ creation_date: 2014-04-30T16:03:42Z
 [Term]
 id: OMP:0007082
 name: altered vitamin/enzyme cofactor requirement
-def: "An altered growth factor requirement phenotype where vitamin/enzyme cofactor requirement is altered relative to a designated control." [OMP:JCH]
+def: "An altered growth factor requirement phenotype where the requirement for a vitamin/enzyme cofactor in the growth medium s altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-04-30T16:07:16Z
@@ -7066,7 +7734,7 @@ creation_date: 2014-08-17T12:52:35Z
 [Term]
 id: OMP:0007134
 name: altered antimicrobial agent resistance phenotype
-def: "An antimicrobial agent resistance phenotype where resistance to an antimicrobial agent is altered relative to a designated control." [OMP:DAS]
+def: "An antimicrobial agent resistance phenotype where resistance or sensitivity to an antimicrobial agent is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 is_a: OMP:0007085 ! altered phenotype
@@ -7268,8 +7936,8 @@ creation_date: 2014-08-28T12:14:20Z
 id: OMP:0007157
 name: altered population growth
 def: "A population growth phenotype where reproduction of a microbial population is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
 is_a: OMP:0007167 ! population growth phenotype
+is_a: OMP:0007351 ! altered biological process
 created_by: siegele
 creation_date: 2014-08-28T12:15:47Z
 
@@ -7279,7 +7947,7 @@ name: altered stress response phenotype
 def: "A stress response phenotype where the response of a cell or organism to a stress is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000173 ! stress response phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007157 ! altered population growth
 created_by: siegele
 creation_date: 2014-08-28T16:51:03Z
 
@@ -7614,8 +8282,9 @@ creation_date: 2014-10-20T15:08:04Z
 [Term]
 id: OMP:0007197
 name: cellular component phenotype
-def: "A microbial phenotype that affects a cellular component." [OMP:DAS]
+def: "A microbial phenotype that affects a quality of a cellular component." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: CMPO:0000259 "cellular component phenotype"
 xref: GO:0005575 "cellular_component"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
@@ -8133,39 +8802,41 @@ creation_date: 2015-07-31T13:26:07Z
 
 [Term]
 id: OMP:0007259
-name: viability phenotype
-def: "A microbial phenotype related to the ability of an organism to survive and/or reproduce." [OMP:DAS]
+name: cell viability phenotype
+def: "A microbial phenotype related to the ability of a microorganism, cell, or cells to survive and go on to grow and reproduce." [FYPO:0000004, OMP:DAS]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:47:33Z
 
 [Term]
 id: OMP:0007260
-name: altered viability
-def: "A viability phenotype where the ability of an organism to survive and/or reproduce is altered relative to a designated control." [OMP:DAS]
+name: altered cell viability
+def: "A cell viability phenotype where the ability of a microorganism, cell, or cells to survive, grow, and reproduce is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007085 ! altered phenotype
-is_a: OMP:0007259 ! viability phenotype
+is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007261
 name: decreased viability
-is_a: OMP:0007260 ! altered viability
+def: "An altered viability phenotype where the ability of an organism to survive and/or reproduce is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007262
 name: increased viability
-is_a: OMP:0007260 ! altered viability
+def: "An altered viability phenotype where the ability of an organism to survive and/or reproduce is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007263
 name: viable but nonculturable
-is_a: OMP:0007260 ! altered viability
+is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
@@ -8280,7 +8951,7 @@ creation_date: 2015-11-07T13:32:21Z
 [Term]
 id: OMP:0007277
 name: cell wall phenotype
-def: "A cell envelope phenotype where the trait in question is the cell wall, a usually rigid, permeable structure that surrounds the plasma membrane and provides some degree of  physical support to cells." [OMP:DAS]
+def: "A cell envelope phenotype where the trait in question is the cell wall, a rigid or semi-rigid layer that surrounds the plasma membrane and maintains cell shape and helps protect against osmotic lysis." [GO:0005618, OMP:DAS]
 is_a: OMP:0000085 ! cell envelope phenotype
 created_by: siegele
 creation_date: 2015-11-11T15:41:37Z
@@ -8877,8 +9548,10 @@ creation_date: 2016-05-28T02:36:59Z
 [Term]
 id: OMP:0007346
 name: protein secretion phenotype
-def: "A biological process phenotype related to the controlled release of proteins from a cell." [GO:0009306, OMP:DAS]
+def: "A biological process phenotype related to the process of protein secretion, which is the controlled release of proteins from a cell." [GO:0009306, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "exocytosis" NARROW []
+synonym: "protein secretion" NARROW [APO:0000078]
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
 creation_date: 2016-06-08T17:02:00Z
@@ -8886,7 +9559,7 @@ creation_date: 2016-06-08T17:02:00Z
 [Term]
 id: OMP:0007347
 name: altered protein secretion
-def: "A protein secretion phenotype where secretion of a protein or proteins is altered relative to a designated control." [OMP:DAS]
+def: "A protein secretion phenotype where the frequency, rate, timing or extent of the process of protein secretion is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007346 ! protein secretion phenotype
 created_by: siegele
 creation_date: 2016-06-09T22:42:13Z
@@ -8894,7 +9567,8 @@ creation_date: 2016-06-09T22:42:13Z
 [Term]
 id: OMP:0007348
 name: increased protein secretion
-def: "An altered protein secretion phenotype where the amount of a protein or proteins that is secreted is increased relative to a designated control." [OMP:DAS]
+def: "An altered protein secretion phenotype where the frequency, rate, timing or extent of the process of protein secretion is increased relative to a designated control." [OMP:DAS]
+xref: FYPO:0000539 "increased protein secretion"
 is_a: OMP:0007347 ! altered protein secretion
 created_by: siegele
 creation_date: 2016-06-09T22:43:50Z
@@ -8902,7 +9576,8 @@ creation_date: 2016-06-09T22:43:50Z
 [Term]
 id: OMP:0007349
 name: decreased protein secretion
-def: "An altered protein secretion phenotype where the amount of a protein or proteins that is secreted is decreased relative to a designated control." [OMP:DAS]
+def: "An altered protein secretion phenotype where the frequency, rate, timing or extent of the process of protein secretion is decreased relative to a designated control." [OMP:DAS]
+xref: FYPO:0000538 "decreased protein secretion"
 is_a: OMP:0007347 ! altered protein secretion
 created_by: siegele
 creation_date: 2016-06-09T22:47:42Z
@@ -8910,7 +9585,8 @@ creation_date: 2016-06-09T22:47:42Z
 [Term]
 id: OMP:0007350
 name: abolished protein secretion
-def: "A decreased protein secretion phenotype where secretion of a protein or proteins is abolished." [OMP:DAS]
+def: "A decreased protein secretion phenotype where the process of protein secretion is abolished." [OMP:DAS]
+xref: FYPO:0000537 "abolished protein secretion"
 is_a: OMP:0007349 ! decreased protein secretion
 created_by: siegele
 creation_date: 2016-06-09T22:48:16Z
@@ -8940,6 +9616,343 @@ def: "A spore germination phenotype where germination of a spore or spores is al
 is_a: OMP:0000095 ! spore germination phenotype
 created_by: siegele
 creation_date: 2016-06-09T23:07:17Z
+
+[Term]
+id: OMP:0007354
+name: altered amino acid requirement
+def: "An altered growth factor requirement phenotype where the requirement for an amino acid in the growth medium is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007079 ! altered growth factor requirement
+created_by: dsiegele
+creation_date: 2016-06-16T15:56:40Z
+
+[Term]
+id: OMP:0007355
+name: abolished amino acid requirement
+def: "A decreased amino acid requirement phenotype where an organism's requirement for an amino acid in the growth medium is abolished." [OMP:DAS]
+is_a: OMP:0007021 ! decreased amino acid requirement
+created_by: dsiegele
+creation_date: 2016-06-16T16:20:47Z
+
+[Term]
+id: OMP:0007356
+name: quinone resistance phenotype
+def: "An antimicrobial resistance phenotype related to resistance or sensitivity to a quinone. Quinones are compounds having a fully conjugated cyclic dione structure, such as that of benzoquinones, This class includes some polycyclic and heterocyclic compounds." [CHEBI:36141, OMP:DAS]
+synonym: "streptonigrin" NARROW [CHEBI:9287]
+xref: CHEBI:36141 "quinone"
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2016-06-17T01:16:57Z
+
+[Term]
+id: OMP:0007357
+name: altered cellular component phenotype
+def: "A cellular component phenotype where a quality of a cellular component is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007197 ! cellular component phenotype
+created_by: dsiegele
+creation_date: 2016-06-20T16:01:53Z
+
+[Term]
+id: OMP:0007358
+name: nucleoside resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a compound that is a nucleoside: an N-glycosyl compound that has both a nucleobase, normally adenine, guanine, xanthine, thymine, cytosine or uracil, and either a ribose or deoxyribose as functional parents." [CHEBI:33838, OMP:DAS]
+synonym: "azidothymidine" NARROW [CHEBI:10110]
+synonym: "puromycin" NARROW [CHEBI:17939]
+synonym: "zidovudine" NARROW [CHEBI:10110]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-20T16:23:54Z
+
+[Term]
+id: OMP:0007359
+name: resistant to a nucleoside
+def: "A nucleoside resistance phenotype where an organism, cell, or cells is resistant to a nucleoside." [OMP:DAS]
+is_a: OMP:0007358 ! nucleoside resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-20T16:27:19Z
+
+[Term]
+id: OMP:0007360
+name: not resistant to a nucleoside
+def: "A nucleoside resistance phenotype where an organism, cell, or cells is not resistant to a nucleoside." [OMP:DAS]
+is_a: OMP:0007358 ! nucleoside resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-20T16:27:19Z
+
+[Term]
+id: OMP:0007361
+name: altered resistance to a nucleoside
+def: "A nucleoside resistance phenotype where resistance of an organism, cell, or cells to a nucleoside is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007358 ! nucleoside resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-20T16:27:19Z
+
+[Term]
+id: OMP:0007362
+name: Increased resistance to a nucleoside
+def: "An altered resistance to a nucleoside phenotype where resistance to a nucleoside is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007361 ! altered resistance to a nucleoside
+created_by: dsiegele
+creation_date: 2016-06-20T16:40:21Z
+
+[Term]
+id: OMP:0007363
+name: decreased resistance to a nucleoside
+def: "An altered resistance to a nucleoside phenotype where resistance to a nucleoside is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007361 ! altered resistance to a nucleoside
+created_by: dsiegele
+creation_date: 2016-06-20T16:40:21Z
+
+[Term]
+id: OMP:0007364
+name: abolished resistance to a nucleoside
+def: "An decreased resistance to a nucleoside phenotype where resistance to a nucleoside is abolished." [OMP:DAS]
+is_a: OMP:0007360 ! not resistant to a nucleoside
+is_a: OMP:0007363 ! decreased resistance to a nucleoside
+created_by: dsiegele
+creation_date: 2016-06-20T16:40:21Z
+
+[Term]
+id: OMP:0007365
+name: acridine resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a compound that includes an acridine moiety: a polycyclic heteroarene that is anthracene in which one of the central CH groups is replaced by a nitrogen atom." [CHEBI:36420, OMP:DAS]
+synonym: "acridine orange" NARROW [CHEBI:51739]
+synonym: "acriflavine" NARROW [CHEBI:74728]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2016-06-21T01:11:35Z
+
+[Term]
+id: OMP:0007366
+name: resistant to an acridine
+def: "An acridine resistance phenotype where an organism, cell, or cells is resistant to an acridine." [OMP:DAS]
+is_a: OMP:0007365 ! acridine resistance phenotype
+created_by: siegele
+creation_date: 2016-06-21T01:17:16Z
+
+[Term]
+id: OMP:0007367
+name: not resistant to an acridine
+def: "An acridine resistance phenotype where an organism, cell, or cells is not resistant to an acridine." [OMP:DAS]
+is_a: OMP:0007365 ! acridine resistance phenotype
+created_by: siegele
+creation_date: 2016-06-21T01:17:16Z
+
+[Term]
+id: OMP:0007368
+name: altered resistance to an acridine
+def: "An acridine resistance phenotype where resistance of an organism, cell, or cells to an acridine is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007365 ! acridine resistance phenotype
+created_by: siegele
+creation_date: 2016-06-21T01:17:16Z
+
+[Term]
+id: OMP:0007369
+name: increased resistance to an acridine
+def: "An altered resistance to an acridine phenotype where resistance is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007368 ! altered resistance to an acridine
+created_by: siegele
+creation_date: 2016-06-21T01:17:16Z
+
+[Term]
+id: OMP:0007370
+name: decreased resistance to an acridine
+def: "An altered resistance to an acridine phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007368 ! altered resistance to an acridine
+created_by: siegele
+creation_date: 2016-06-21T01:17:16Z
+
+[Term]
+id: OMP:0007371
+name: abolished resistance to an acridine
+def: "A decreased resistance to an acridine phenotype where resistance abolished." [OMP:DAS]
+is_a: OMP:0007367 ! not resistant to an acridine
+is_a: OMP:0007370 ! decreased resistance to an acridine
+created_by: siegele
+creation_date: 2016-06-21T01:17:16Z
+
+[Term]
+id: OMP:0007372
+name: alkylating agent resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to an alkylating agent: a highly reactive chemical that introduces alkyl radicals into biologically active molecules and thereby prevents their proper functioning." [CHEBI:22333, OMP:DAS]
+synonym: "methyl methanesulfonate" NARROW [CHEBI:25255]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-22T16:41:33Z
+
+[Term]
+id: OMP:0007373
+name: resistant to alkylating agent
+def: "An alkylating agent resistance phenotype where an organism, cell, or cells is resistant to an alkylating agent." [OMP:DAS]
+is_a: OMP:0007372 ! alkylating agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-23T15:27:23Z
+
+[Term]
+id: OMP:0007374
+name: not resistant to alkylating agent
+def: "An alkylating agent resistance phenotype where an organism, cell, or cells is not resistant to an alkylating agent." [OMP:DAS]
+is_a: OMP:0007372 ! alkylating agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-23T15:27:23Z
+
+[Term]
+id: OMP:0007375
+name: altered resistance to alkylating agent
+def: "An alkylating agent resistance phenotype where resistance of an organism, cell, or cells to an alkylating agent is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007372 ! alkylating agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-06-23T15:27:23Z
+
+[Term]
+id: OMP:0007376
+name: increased resistance to alkylating agent
+def: "An altered alkylating agent resistance phenotype where resistance of an organism, cell, or cells to an alkylating agent is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007375 ! altered resistance to alkylating agent
+created_by: dsiegele
+creation_date: 2016-06-23T15:27:23Z
+
+[Term]
+id: OMP:0007377
+name: decreased resistance to alkylating agent
+def: "An altered alkylating agent resistance phenotype where resistance of an organism, cell, or cells to an alkylating agent is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007375 ! altered resistance to alkylating agent
+created_by: dsiegele
+creation_date: 2016-06-23T15:27:23Z
+
+[Term]
+id: OMP:0007378
+name: abolished resistance to alkylating agent
+def: "A decreased resistance to alkylating agent where resistance of an organism, cell, or cells to an alkylating agent is abolished." [OMP:DAS]
+is_a: OMP:0007374 ! not resistant to alkylating agent
+is_a: OMP:0007377 ! decreased resistance to alkylating agent
+created_by: dsiegele
+creation_date: 2016-06-23T15:27:23Z
+
+[Term]
+id: OMP:0007379
+name: pyrimidine requirement
+def: "A requires growth factor(s) phenotype where the required growth factor is a pyrimidine base." [OMP:DAS]
+synonym: "uracil requirement" NARROW [CHEBI:17568]
+is_a: OMP:0007069 ! requires growth factor(s)
+created_by: dsiegele
+creation_date: 2016-06-23T15:57:42Z
+
+[Term]
+id: OMP:0007380
+name: benzamides resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a benzamide. Benzamides are compounds based on benzamide, which consists of benzene bearing a single carboxamido substituent." [CHEBI:28179, OMP:DAS]
+synonym: "benzamides" BROAD [CHEBI:22702]
+synonym: "CHIR-090" NARROW [CID:\:11546620]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007381
+name: resistant to benzamides
+def: "A benzamides resistance phenotype where an organism, cell, or cells is resistant to a benzamide." [OMP:DAS]
+is_a: OMP:0007380 ! benzamides resistance phenotype
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007382
+name: not resistant to benzamides
+def: "A benzamides resistance phenotype where an organism, cell, or cells is not resistant to a benzamide." [OMP:DAS]
+is_a: OMP:0007380 ! benzamides resistance phenotype
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007383
+name: altered resistance to benzamides
+def: "A benzamides resistance phenotype where the resistance of an organism, cell, or cells to a benzamide is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007380 ! benzamides resistance phenotype
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007384
+name: increased resistance to a benzamide
+def: "An altered benzamides resistance phenotype where the resistance of an organism, cell, or cells to a benzamide is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007383 ! altered resistance to benzamides
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007385
+name: decreased resistance benzamides
+def: "An altered benzamides resistance phenotype where the resistance of an organism, cell, or cells to a benzamide is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007383 ! altered resistance to benzamides
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007386
+name: abolished resistance to benzamides
+def: "A decreased resistance to benzamides resistance phenotype where the resistance of an organism, cell, or cells to a benzamide is abolished." [OMP:DAS]
+is_a: OMP:0007385 ! decreased resistance benzamides
+created_by: siegele
+creation_date: 2016-06-26T14:45:16Z
+
+[Term]
+id: OMP:0007387
+name: altered pyrimidine requirement
+def: "An altered growth factor requirement phenotype where the requirement for a pyrimidine base as a growth factor is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007079 ! altered growth factor requirement
+created_by: dsiegele
+creation_date: 2016-06-29T15:45:39Z
+
+[Term]
+id: OMP:0007388
+name: increased pyrimidine requirement
+def: "An altered pyrimidine requirement phenotype where an organism's requirement for a purine base is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007074 ! increased growth factor requirement
+is_a: OMP:0007387 ! altered pyrimidine requirement
+created_by: dsiegele
+creation_date: 2016-06-29T15:47:23Z
+
+[Term]
+id: OMP:0007389
+name: decreased pyrimidine requirement
+def: "An altered pyrimidine requirement phenotype where an organism's requirement for a purine base is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007075 ! decreased growth factor requirement
+is_a: OMP:0007387 ! altered pyrimidine requirement
+created_by: dsiegele
+creation_date: 2016-06-29T15:47:23Z
+
+[Term]
+id: OMP:0007390
+name: abolished pyrimidine requirement
+def: "A decreased pyrimidine requirement phenotype where the requirement for a pyrimidine base as a growth factor is abolished." [OMP:DAS]
+is_a: OMP:0007389 ! decreased pyrimidine requirement
+created_by: dsiegele
+creation_date: 2016-06-29T15:47:23Z
+
+[Term]
+id: OMP:0007391
+name: abolished viability
+def: "A decreased viability phenotype where the ability of an organism to survive and/or reproduce is abolished." [OMP:DAS]
+is_a: OMP:0007261 ! decreased viability
+created_by: siegele
+creation_date: 2016-06-29T19:15:29Z
+
+[Term]
+id: OMP:0007392
+name: viable cell
+is_a: OMP:0007259 ! cell viability phenotype
+created_by: siegele
+creation_date: 2016-07-01T22:15:10Z
+
+[Term]
+id: OMP:0007393
+name: nonviable cell
+is_a: OMP:0007259 ! cell viability phenotype
+created_by: siegele
+creation_date: 2016-07-01T22:15:10Z
 
 [Term]
 id: OMP:0008000
