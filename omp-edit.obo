@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 09:07:2016 14:31
+date: 09:07:2016 14:53
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -11521,14 +11521,15 @@ creation_date: 2016-07-06T13:12:26Z
 [Term]
 id: OMP:0007401
 name: ascospore formation phenotype
-def: "A sporulation phenotype where development concerns formation of an ascospore, a dormant, highly resistant spore with a thick wall that forms within the mother cell. The process in which cells that are products of meiosis acquire the specialized features of ascospores. Ascospores are generally found in clusters of four or eight spores within a single mother cell, the ascus, and are characteristic of the ascomycete fungi (phylum Ascomycota) xx." [OMP:DAS]
+def: "A sexual sporulation phenotype related to the formation of an ascospore, a dormant, highly resistant, sexual spore with a thick wall that forms within the mother cell.  Ascospores are generally found in clusters of four or eight spores within a single mother cell, the ascus, and are characteristic of the ascomycete fungi (phylum Ascomycota)." [GO:0030437, OMP:DAS]
 is_a: OMP:0007405 ! sexual sporulation phenotype
 created_by: siegele
 creation_date: 2016-07-06T14:29:13Z
 
 [Term]
 id: OMP:0007402
-name: presence of ascospores
+name: presence of ascospore formation
+def: "An ascospore formation phenotype where a microbe has the ability to form ascospores." [OMP:DAS]
 is_a: OMP:0007401 ! ascospore formation phenotype
 created_by: siegele
 creation_date: 2016-07-06T14:32:46Z
@@ -11570,6 +11571,22 @@ xref: GO:0019953
 is_a: OMP:0007167 ! population growth phenotype
 created_by: siegele
 creation_date: 2016-07-09T14:24:56Z
+
+[Term]
+id: OMP:0007407
+name: absence of ascospore formation
+def: "An ascospore formation phenotype where a microbe lacks the ability to form ascospores." [OMP:DAS]
+is_a: OMP:0007401 ! ascospore formation phenotype
+created_by: siegele
+creation_date: 2016-07-09T14:47:12Z
+
+[Term]
+id: OMP:0007408
+name: altered ascospore formation
+def: "An ascospore formation phenotype where the formation of ascospores is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007401 ! ascospore formation phenotype
+created_by: siegele
+creation_date: 2016-07-09T14:51:28Z
 
 [Term]
 id: OMP:0008000
