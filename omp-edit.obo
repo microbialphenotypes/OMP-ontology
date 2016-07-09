@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 07:07:2016 00:06
+date: 09:07:2016 14:31
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1929,7 +1929,7 @@ creation_date: 2011-02-02T03:28:43Z
 [Term]
 id: OMP:0000068
 name: virulence phenotype
-def: "A microbial phenotype, where the trait in question is the ability of an organism to cause disease in another organism (the host)." [OMP:MCC]
+def: "A microbial phenotype, where the trait in question is the ability of a microbe to cause disease in another organism (the host)." [OMP:MCC]
 synonym: "infectious agent" BROAD []
 synonym: "pathogen" BROAD []
 xref: APO:0000048 "virulence"
@@ -2181,7 +2181,7 @@ name: akinete formation phenotype
 def: "A cell development phenotype related to the development of an akinete, a thick-walled dormant cell derived from the enlargement of a vegetative cell." [doi:10.1046/j.1469-8137.1999.00505.x, OMP:MCC]
 comment: Akinetes typically are more resistant to dessication and other environmental stresses than vegetative cells.
 xref: GO:0034302 "akinete formation"
-is_a: OMP:0000091 ! sporulation phenotype
+is_a: OMP:0007142 ! asexual sporulation phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:25:02Z
 
@@ -2192,7 +2192,7 @@ def: "A sporulation phenotype where development concerns formation of an endospo
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: FAO:0000019 "spore"
 xref: GO:0034301 "endospore formation"
-is_a: OMP:0000091 ! sporulation phenotype
+is_a: OMP:0007142 ! asexual sporulation phenotype
 intersection_of: OMP:0000091 ! sporulation phenotype
 intersection_of: inheres_in GO:0034301 ! endospore formation
 created_by: adrienne
@@ -2216,7 +2216,7 @@ name: myxospore formation phenotype
 def: "A sporulation phenotype related to development of a myxospore, a differentiated, resting cell usually within a fruiting body by Myxobacteria." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0034303 "myxospore formation"
-is_a: OMP:0000091 ! sporulation phenotype
+is_a: OMP:0007142 ! asexual sporulation phenotype
 intersection_of: OMP:0000091 ! sporulation phenotype
 intersection_of: inheres_in GO:0034303 ! myxospore formation
 created_by: adrienne
@@ -5187,7 +5187,7 @@ id: OMP:0005129
 name: altered biofilm
 def: "A biofilm phenotype that is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0000176 ! biofilm phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: wmeza
 creation_date: 2014-07-16T12:36:13Z
 
@@ -5196,7 +5196,7 @@ id: OMP:0005130
 name: altered enzymatic activity
 def: "An enzymatic activity phenotype where a specified enzymatic activity is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000221 ! enzymatic activity phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 intersection_of: OMP:0000221 ! enzymatic activity phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: wmeza
@@ -5249,7 +5249,7 @@ name: altered cell cycle phenotype
 def: "A cell cycle phenotype where progression of the cell cycle is altered relative to a designated control." [OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0005115 ! cell cycle phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:55:46Z
 
@@ -5290,6 +5290,7 @@ id: OMP:0005141
 name: altered resistance to killing by host cells
 def: "A resistance to killing by host cells phenotype where the microbe's ability to be killed by host cells is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005111 ! resistance to killing by host cells phenotype
+is_a: OMP:0007403 ! altered microbe-host interaction phenotype
 created_by: Jesus
 creation_date: 2016-02-02T13:55:50Z
 
@@ -8041,7 +8042,7 @@ id: OMP:0007001
 name: altered cell motility
 def: "A cell motility phenotype where cell motility is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000001 ! cell motility phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 intersection_of: OMP:0000001 ! cell motility phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
@@ -8723,7 +8724,7 @@ id: OMP:0007080
 name: altered gene expression
 def: "A gene expression phenotype where expression of a gene or genes is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000253 ! gene expression phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 intersection_of: OMP:0000253 ! gene expression phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: dsiegele
@@ -8764,7 +8765,7 @@ creation_date: 2014-07-06T14:43:59Z
 
 [Term]
 id: OMP:0007085
-name: altered phenotype
+name: altered microbial phenotype
 def: "A microbial phenotype that is altered in some way relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
@@ -8924,7 +8925,7 @@ id: OMP:0007103
 name: altered cell morphology
 def: "A cell morphology phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000071 ! cell morphology phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
@@ -8936,7 +8937,7 @@ name: altered nutrient utilization
 def: "A nutrient utilization phenotype that is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0006022 ! nutrient utilization phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2014-07-10T22:45:48Z
 
@@ -9151,7 +9152,7 @@ id: OMP:0007127
 name: altered taxis
 def: "A taxis phenotype where directed movement of a motile cell or organism in response to an external stimulus is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000004 ! taxis phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 intersection_of: OMP:0000004 ! taxis phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: dsiegele
@@ -9162,7 +9163,7 @@ id: OMP:0007128
 name: altered cell arrangement
 def: "A cell arrangement phenotype where the arrangement of cells is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000003 ! cell arrangement phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: dsiegele
 creation_date: 2014-08-12T13:36:13Z
 
@@ -9187,7 +9188,7 @@ creation_date: 2014-08-16T16:40:58Z
 id: OMP:0007131
 name: altered differential test result
 def: "A differential media phenotype where the results of a differential test are altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007130 ! differential test phenotype
 created_by: siegele
 creation_date: 2014-08-16T16:44:03Z
@@ -9214,7 +9215,7 @@ name: altered antimicrobial agent resistance phenotype
 def: "An antimicrobial agent resistance phenotype where resistance or sensitivity to an antimicrobial agent is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 intersection_of: OMP:0000274 ! antimicrobial agent resistance phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
@@ -9283,9 +9284,11 @@ creation_date: 2014-08-18T17:12:34Z
 [Term]
 id: OMP:0007142
 name: asexual sporulation phenotype
-def: "An asexual reproduction phenotype related to the process where reproduction occurs through the formation of spores derived from the products of mitosis." [OMP:DAS, PMID:9781593392925]
+def: "A sporulation phenotype related to the formation of spores derived from the products of mitosis." [GO:0030436, OMP:DAS, PMID:9781593392925]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "mitotic spore formation" RELATED []
 xref: GO:0030436 "asexual sporulation"
+is_a: OMP:0000091 ! sporulation phenotype
 is_a: OMP:0007066 ! asexual reproduction phenotype
 created_by: siegele
 creation_date: 2014-08-18T17:15:43Z
@@ -9303,7 +9306,7 @@ id: OMP:0007144
 name: altered asexual reproduction
 def: "An asexual reproduction phenotype where the process of asexual reproduction is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007066 ! asexual reproduction phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2014-08-18T17:22:42Z
 
@@ -9444,7 +9447,7 @@ id: OMP:0007160
 name: altered colony morphology
 def: "A colony morphology phenotype where the morphology of a colony or colonies is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000100 ! colony morphology phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2014-08-29T12:27:50Z
 
@@ -9832,7 +9835,7 @@ creation_date: 2015-02-04T22:05:25Z
 id: OMP:0007203
 name: altered gene expression regulation
 def: "A gene expression regulation phenotype that is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007162 ! gene expression regulation phenotype
 created_by: siegele
 creation_date: 2015-02-05T11:12:46Z
@@ -10162,7 +10165,7 @@ id: OMP:0007242
 name: altered host-virus interaction
 def: "A host-virus interaction phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000026 ! host-virus interaction phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2015-07-04T00:13:56Z
 
@@ -10270,6 +10273,7 @@ id: OMP:0007255
 name: altered host colonization
 def: "A host colonization phenotype where the ability of a microbe to colonize a host organism is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007252 ! host colonization phenotype
+is_a: OMP:0007403 ! altered microbe-host interaction phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
 
@@ -10310,7 +10314,7 @@ creation_date: 2015-07-31T13:47:33Z
 id: OMP:0007260
 name: altered cell viability
 def: "A cell viability phenotype where the ability of a microorganism, cell, or cells to survive, grow, and reproduce is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
@@ -10467,7 +10471,7 @@ creation_date: 2015-11-12T00:46:14Z
 id: OMP:0007279
 name: altered protein activity phenotype
 def: "A protein activity phenotype where the enzymatic or other activity of a protein is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2016-01-07T22:48:43Z
 
@@ -10687,7 +10691,7 @@ id: OMP:0007304
 name: altered cell staining phenotype
 def: "A cell staining phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000214 ! cell staining phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2016-01-31T00:30:08Z
 
@@ -11097,7 +11101,7 @@ creation_date: 2016-06-09T22:48:16Z
 id: OMP:0007351
 name: altered biological process
 def: "A biological process phenotype where a biological process is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
 creation_date: 2016-06-09T22:50:27Z
@@ -11485,6 +11489,7 @@ id: OMP:0007397
 name: altered lethality
 def: "A lethality phenotype where the ability of an infectious  microbe to cause death of the host is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007394 ! lethality phenotype
+is_a: OMP:0007403 ! altered microbe-host interaction phenotype
 created_by: siegele
 creation_date: 2016-07-06T13:12:26Z
 
@@ -11500,6 +11505,7 @@ creation_date: 2016-07-06T13:12:26Z
 id: OMP:0007399
 name: abolished lethality
 def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of the host is abolished." [OMP:DAS]
+is_a: OMP:0007396 ! absence of lethality
 is_a: OMP:0007398 ! decreased lethality
 created_by: siegele
 creation_date: 2016-07-06T13:12:26Z
@@ -11516,7 +11522,7 @@ creation_date: 2016-07-06T13:12:26Z
 id: OMP:0007401
 name: ascospore formation phenotype
 def: "A sporulation phenotype where development concerns formation of an ascospore, a dormant, highly resistant spore with a thick wall that forms within the mother cell. The process in which cells that are products of meiosis acquire the specialized features of ascospores. Ascospores are generally found in clusters of four or eight spores within a single mother cell, the ascus, and are characteristic of the ascomycete fungi (phylum Ascomycota) xx." [OMP:DAS]
-is_a: OMP:0000091 ! sporulation phenotype
+is_a: OMP:0007405 ! sexual sporulation phenotype
 created_by: siegele
 creation_date: 2016-07-06T14:29:13Z
 
@@ -11526,6 +11532,44 @@ name: presence of ascospores
 is_a: OMP:0007401 ! ascospore formation phenotype
 created_by: siegele
 creation_date: 2016-07-06T14:32:46Z
+
+[Term]
+id: OMP:0007403
+name: altered microbe-host interaction phenotype
+def: "A microbe-host interaction phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000197 ! microbe-host interaction phenotype
+created_by: siegele
+creation_date: 2016-07-09T13:22:30Z
+
+[Term]
+id: OMP:0007404
+name: abolished resistance to killing by host cells
+def: "A decreased resistance to killing by host cells phenotype where resistance to killing by host cells is abolished." [OMP:DAS]
+is_a: OMP:0005140 ! absence of resistance to killing by host cells
+is_a: OMP:0005143 ! decreased resistance to killing by host cells
+created_by: siegele
+creation_date: 2016-07-09T13:24:32Z
+
+[Term]
+id: OMP:0007405
+name: sexual sporulation phenotype
+def: "A sporulation phenotype related to the formation of spores derived from the products of meiosis." [GO:0034293, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0034293 "sexual sporulation"
+is_a: OMP:0000091 ! sporulation phenotype
+is_a: OMP:0007406 ! sexual reproduction phenotype
+created_by: siegele
+creation_date: 2016-07-09T14:14:51Z
+
+[Term]
+id: OMP:0007406
+name: sexual reproduction phenotype
+def: "A microbial phenotype related to sexual reproduction: the biological process that creates a new organism by combining the genetic material of two organisms. It occurs both in eukaryotes and prokaryotes: in multicellular eukaryotic organisms, an individual is created anew; in prokaryotes, the initial cell has additional or transformed genetic material. In a process called genetic recombination, genetic material (DNA) originating from two different individuals (parents) join up so that homologous sequences are aligned with each other, and this is followed by exchange of genetic information. After the new recombinant chromosome is formed, it is passed on to progeny." [GO:0019953, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0019953
+is_a: OMP:0007167 ! population growth phenotype
+created_by: siegele
+creation_date: 2016-07-09T14:24:56Z
 
 [Term]
 id: OMP:0008000
