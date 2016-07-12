@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 09:07:2016 14:53
-saved-by: siegele
+date: 12:07:2016 16:41
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -1740,7 +1740,7 @@ creation_date: 2011-04-26T03:53:34Z
 [Term]
 id: OMP:0000045
 name: increased cell motility
-def: "An altered cell motility phenotype where cell motility is increased relative to a designated control." [OMP:MCC]
+def: "An altered cell motility phenotype where the frequency, rate, timing, or extent of cell motility is increased relative to a designated control." [OMP:MCC]
 xref: PATO:0002298
 is_a: OMP:0007001 ! altered cell motility
 intersection_of: OMP:0007001 ! altered cell motility
@@ -1951,7 +1951,7 @@ creation_date: 2011-02-07T03:47:50Z
 [Term]
 id: OMP:0000070
 name: cell development phenotype
-def: "A microbial phenotype, where the trait in question is the progression of a cell from an initial condition to a later condition." [OMP:MCC]
+def: "A microbial phenotype where the trait in question is the progression of a cell from an initial condition to a later condition." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0048869 "cellular developmental process"
 is_a: OMP:0007332 ! cellular process phenotype
@@ -4023,7 +4023,7 @@ creation_date: 2013-08-22T01:53:29Z
 [Term]
 id: OMP:0000500
 name: decreased aerotaxis
-def: "An altered aerotaxis phenotype where aerotaxis is decreased relative to a designated control." [OMP:DAS]
+def: "An altered aerotaxis phenotype where the frequency, rate, timing, or extent of aerotaxis is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007076 ! altered aerotaxis
 intersection_of: OMP:0007076 ! altered aerotaxis
 intersection_of: has_quality PATO:0002302 ! decreased process quality
@@ -4033,7 +4033,7 @@ creation_date: 2012-11-02T01:20:31Z
 [Term]
 id: OMP:0000502
 name: increased aerotaxis
-def: "An altered aerotaxis phenotype where aerotaxis is increased relative to a designated control." [OMP:DAS]
+def: "An altered aerotaxis phenotype where the frequency, rate, timing, or extent of aerotaxis is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007076 ! altered aerotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:21:21Z
@@ -4041,7 +4041,7 @@ creation_date: 2012-11-02T01:21:21Z
 [Term]
 id: OMP:0000503
 name: decreased chemotaxis
-def: "An altered chemotaxis phenotype where directed movement of a motile cell or organism in response to a specific chemical gradient is decreased relative to a designated control." [OMP:DAS]
+def: "An altered chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism in response to a specific chemical gradient is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007077 ! altered chemotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:22:28Z
@@ -4049,7 +4049,7 @@ creation_date: 2012-11-02T01:22:28Z
 [Term]
 id: OMP:0000505
 name: increased chemotaxis
-def: "An altered chemotaxis phenotype where directed movement of a motile cell or organism in response to a specific chemical gradient is increased relative to a designated control." [OMP:DAS]
+def: "An altered chemotaxis phenotype where the frequency, rate, timing, or extent of  directed movement of a motile cell or organism in response to a specific chemical gradient is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007077 ! altered chemotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:23:12Z
@@ -8040,7 +8040,7 @@ creation_date: 2014-06-29T14:10:40Z
 [Term]
 id: OMP:0007001
 name: altered cell motility
-def: "A cell motility phenotype where cell motility is altered relative to a designated control." [OMP:DAS]
+def: "A cell motility phenotype where the frequency, rate, timing, or extent of cell motility is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000001 ! cell motility phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 intersection_of: OMP:0000001 ! cell motility phenotype
@@ -8076,7 +8076,7 @@ creation_date: 2014-01-31T18:03:55Z
 [Term]
 id: OMP:0007005
 name: decreased negative chemotaxis
-def: "A decreased chemotaxis phenotype where directed movement of a motile cell or organism toward a lower concentration of a specific chemical is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism toward a lower concentration of a specific chemical is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-07T18:35:51Z
@@ -8382,7 +8382,7 @@ creation_date: 2013-09-29T00:36:46Z
 [Term]
 id: OMP:0007041
 name: decreased positive chemotaxis
-def: "A decreased chemotaxis phenotype where directed movement of a motile cell or organism toward a higher concentration of a specific chemical is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism toward a higher concentration of a specific chemical is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-07T18:37:42Z
@@ -8684,7 +8684,7 @@ creation_date: 2014-02-21T15:42:44Z
 [Term]
 id: OMP:0007076
 name: altered aerotaxis
-def: "An aerotaxis phenotype where directed movement in response to environmental oxygen is altered relative to a designated control." [OMP:JCH]
+def: "An aerotaxis phenotype where the frequency, rate, timing, or extent of directed movement in response to environmental oxygen is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000047 ! aerotaxis phenotype
 is_a: OMP:0007127 ! altered taxis
 intersection_of: OMP:0000047 ! aerotaxis phenotype
@@ -8695,7 +8695,7 @@ creation_date: 2014-04-24T17:41:34Z
 [Term]
 id: OMP:0007077
 name: altered chemotaxis
-def: "A chemotaxis phenotype where directed movement in response to a specific chemical gradient is altered relative to a designated control." [OMP:JCH]
+def: "A chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement in response to a specific chemical gradient is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000048 ! chemotaxis phenotype
 is_a: OMP:0007127 ! altered taxis
 created_by: siegele
@@ -8820,7 +8820,7 @@ creation_date: 2014-07-10T21:50:33Z
 [Term]
 id: OMP:0007091
 name: decreased cell motility by gliding
-def: "A decreased cell motility phenotype where cell motility by gliding is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by gliding is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -8828,7 +8828,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007092
 name: decreased cell motility by swarming
-def: "A decreased cell motility phenotype where cell motility by swarming is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swarming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -8836,7 +8836,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007093
 name: decreased cell motility by swimming
-def: "A decreased motility phenotype where cell motility by swimming is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased motility phenotype where the frequency, rate, timing, or extent of cell motility by swimming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -8844,7 +8844,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007094
 name: decreased cell motility by twitching
-def: "A decreased cell motility phenotype where cell motility by twitching is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by twitching is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -8852,7 +8852,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007095
 name: increased cell motility by gliding
-def: "An increased cell motility phenotype where cell motility by gliding is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by gliding is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -8860,7 +8860,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007096
 name: increased cell motility by swarming
-def: "An increased cell motility phenotype where cell motility by swarming is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swarming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -8868,7 +8868,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007097
 name: increased cell motility by swimming
-def: "An increased cell motility phenotype where cell motility by swimming is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swimming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -8876,7 +8876,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007098
 name: increased cell motility by twitching
-def: "An increased cell motility phenotype where cell motility by twitching is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by twitching is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -9150,7 +9150,7 @@ creation_date: 2014-08-11T17:58:30Z
 [Term]
 id: OMP:0007127
 name: altered taxis
-def: "A taxis phenotype where directed movement of a motile cell or organism in response to an external stimulus is altered relative to a designated control." [OMP:DAS]
+def: "A taxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism in response to an external stimulus is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000004 ! taxis phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 intersection_of: OMP:0000004 ! taxis phenotype
@@ -10446,7 +10446,7 @@ creation_date: 2015-10-17T19:56:02Z
 id: OMP:0007276
 name: increased threshold for positive chemotaxis
 def: "A decreased positive chemotaxis phenotype where the threshold concentration for responding to an attractant is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007077 ! altered chemotaxis
+is_a: OMP:0000503 ! decreased chemotaxis
 created_by: siegele
 creation_date: 2015-11-07T13:32:21Z
 
