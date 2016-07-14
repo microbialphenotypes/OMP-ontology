@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 13:07:2016 18:55
-saved-by: siegele
+date: 14:07:2016 16:46
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -2185,7 +2185,7 @@ creation_date: 2011-02-02T03:24:43Z
 id: OMP:0000093
 name: akinete formation phenotype
 def: "A cell development phenotype related to the development of an akinete, a thick-walled dormant cell derived from the enlargement of a vegetative cell." [doi:10.1046/j.1469-8137.1999.00505.x, OMP:MCC]
-comment: Akinetes typically are more resistant to dessication and other environmental stresses than vegetative cells.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nAkinetes typically are more resistant to dessication and other environmental stresses than vegetative cells.
 xref: GO:0034302 "akinete formation"
 is_a: OMP:0007142 ! asexual sporulation phenotype
 created_by: adrienne
@@ -11600,7 +11600,7 @@ creation_date: 2016-07-09T14:51:28Z
 [Term]
 id: OMP:0007409
 name: akinete morphology phenotype
-def: "A spore morphology phenotype relating to the form and structure of an akinete, which is a thick-walled (encysted) dormant cell derived from the enlargement of a vegetative cell. Akinetes typically have granular cytoplasm, are more resistant to environmental extremes than vegetative cells, and are characteristic of several groups of Cyanobacteria. PMID:11948167" [doi:10.1046/j.1469-8137.1999.00505.x, OMP:DAS]
+def: "A spore morphology phenotype relating to the form and structure of an akinete, which is a thick-walled (encysted) dormant cell derived from the enlargement of a vegetative cell. Akinetes typically have granular cytoplasm, are more resistant to environmental extremes than vegetative cells, and are characteristic of several groups of Cyanobacteria." [doi:10.1046/j.1469-8137.1999.00505.x, OMP:DAS, PMID:11948167]
 comment: Akinetes are typically more resistant to dessication and other environmental stresses than vegetative cells.
 is_a: OMP:0008000 ! spore morphology phenotype
 created_by: siegele
@@ -11623,6 +11623,72 @@ is_a: OMP:0007103 ! altered cell morphology
 is_a: OMP:0008000 ! spore morphology phenotype
 created_by: siegele
 creation_date: 2016-07-13T18:45:02Z
+
+[Term]
+id: OMP:0007412
+name: mating phenotype
+def: "A biological process phenotype that affects the process of mating." []
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0007194 ! biological process phenotype
+created_by: dsiegele
+creation_date: 2016-07-14T16:21:02Z
+
+[Term]
+id: OMP:0007413
+name: conjugation phenotype
+def: "A mating phenotype relating to the union or introduction of genetic information from compatible mating types that results in a genetically different individual. Conjugation requires direct cellular contact between the organisms." [GO:0000746, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0007412 ! mating phenotype
+created_by: dsiegele
+creation_date: 2016-07-14T16:25:26Z
+
+[Term]
+id: OMP:0007414
+name: absence of conjugation
+def: "A conjugation phenotype where mating does not occur through the process of conjugation." [OMP:DAS]
+is_a: OMP:0007413 ! conjugation phenotype
+created_by: dsiegele
+creation_date: 2016-07-14T16:32:10Z
+
+[Term]
+id: OMP:0007415
+name: presence of conjugation
+def: "A conjugation phenotype where mating occurs through the process of conjugation." [OMP:DAS]
+is_a: OMP:0007413 ! conjugation phenotype
+created_by: dsiegele
+creation_date: 2016-07-14T16:32:10Z
+
+[Term]
+id: OMP:0007416
+name: altered conjugation
+def: "A conjugation phenotype where the frequency, rate, timing, or extent of conjugation is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007413 ! conjugation phenotype
+created_by: dsiegele
+creation_date: 2016-07-14T16:32:10Z
+
+[Term]
+id: OMP:0007417
+name: decreased conjugation
+def: "An altered conjugation phenotype where the frequency, rate, timing, or extent of conjugation is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007416 ! altered conjugation
+created_by: dsiegele
+creation_date: 2016-07-14T16:36:35Z
+
+[Term]
+id: OMP:0007418
+name: increased conjugation
+def: "An altered conjugation phenotype where the frequency, rate, timing, or extent of conjugation is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007416 ! altered conjugation
+created_by: dsiegele
+creation_date: 2016-07-14T16:36:35Z
+
+[Term]
+id: OMP:0007419
+name: abolished conjugation
+def: "A decreased conjugation phenotype where conjugation is abolished." [OMP:DAS]
+is_a: OMP:0007417 ! decreased conjugation
+created_by: dsiegele
+creation_date: 2016-07-14T16:36:35Z
 
 [Term]
 id: OMP:0008000
