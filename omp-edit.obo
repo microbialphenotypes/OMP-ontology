@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 12:07:2016 16:41
-saved-by: dsiegele
+date: 13:07:2016 18:55
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -1446,6 +1446,7 @@ id: OMP:0000006
 name: presence of akinete formation
 def: "An akinete formation phenotype where a cell or cells have the ability to differentiate into an akinete." [OMP:MCC]
 is_a: OMP:0000093 ! akinete formation phenotype
+is_a: OMP:0007143 ! presence of asexual sporulation
 intersection_of: OMP:0000093 ! akinete formation phenotype
 intersection_of: has_quality PATO:0000467 ! present
 created_by: mchibucos
@@ -1456,6 +1457,7 @@ id: OMP:0000007
 name: absence of akinete formation
 def: "An akinete formation phenotype where a cell or cells do not possess the ability to form an akinete." [OMP:MCC]
 is_a: OMP:0000093 ! akinete formation phenotype
+is_a: OMP:0007236 ! absence of asexual sporulation
 intersection_of: OMP:0000093 ! akinete formation phenotype
 intersection_of: has_quality PATO:0000462 ! absent
 created_by: mchibucos
@@ -1534,6 +1536,7 @@ id: OMP:0000017
 name: presence of endospore formation
 def: "An endospore formation phenotype where the cell possesses the ability to form an endospore." [OMP:MCC]
 is_a: OMP:0000094 ! endospore formation phenotype
+is_a: OMP:0007143 ! presence of asexual sporulation
 intersection_of: OMP:0000094 ! endospore formation phenotype
 intersection_of: has_quality PATO:0000467 ! present
 created_by: mchibucos
@@ -1544,6 +1547,7 @@ id: OMP:0000018
 name: absence of endospore formation
 def: "An endospore formation phenotype where the cell does not possess the ability to form an endospore." [OMP:MCC]
 is_a: OMP:0000094 ! endospore formation phenotype
+is_a: OMP:0007236 ! absence of asexual sporulation
 intersection_of: OMP:0000094 ! endospore formation phenotype
 intersection_of: has_quality PATO:0000462 ! absent
 created_by: mchibucos
@@ -1554,6 +1558,7 @@ id: OMP:0000020
 name: presence of myxospore formation
 def: "A myxospore formation phenotype where an organism possesses the ability to form myxospores." [OMP:MCC]
 is_a: OMP:0000096 ! myxospore formation phenotype
+is_a: OMP:0007143 ! presence of asexual sporulation
 intersection_of: OMP:0000096 ! myxospore formation phenotype
 intersection_of: has_quality PATO:0000467 ! present
 created_by: mchibucos
@@ -1564,6 +1569,7 @@ id: OMP:0000021
 name: absence of myxospore formation
 def: "A myxospore formation phenotype where an organism does not possess the ability to form myxospores." [OMP:MCC]
 is_a: OMP:0000096 ! myxospore formation phenotype
+is_a: OMP:0007236 ! absence of asexual sporulation
 intersection_of: OMP:0000096 ! myxospore formation phenotype
 intersection_of: has_quality PATO:0000462 ! absent
 created_by: mchibucos
@@ -2546,8 +2552,8 @@ creation_date: 2011-02-18T03:33:32Z
 [Term]
 id: OMP:0000134
 name: spherical akinete
-def: "An akinete forming phenotype where the organism forms a spherical shaped akinete." [OMP:JCH]
-is_a: OMP:0000006 ! presence of akinete formation
+def: "An akinete morphology phenotype where the organism forms a spherical akinete." [OMP:JCH]
+is_a: OMP:0007409 ! akinete morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:40:27Z
 
@@ -2555,7 +2561,7 @@ creation_date: 2011-02-18T03:40:27Z
 id: OMP:0000135
 name: akinete envelope attribute
 def: "An akinete formation phenotype where the traits described are from the cells thick-walled outer membrane." [OMP:JCH]
-is_a: OMP:0000093 ! akinete formation phenotype
+is_a: OMP:0007409 ! akinete morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:41:16Z
 
@@ -6500,6 +6506,7 @@ id: OMP:0006009
 name: altered myxospore formation
 def: "A myxospore formation phenotype where the rate, frequency, timing, or extent of myxospore formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000096 ! myxospore formation phenotype
+is_a: OMP:0007145 ! altered asexual sporulation
 intersection_of: OMP:0000096 ! myxospore formation phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: jonathanherrera
@@ -7864,6 +7871,7 @@ id: OMP:0006161
 name: altered endospore formation
 def: "A endospore formation phenotype where the frequency, rate, timing, or extent of endospore formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000094 ! endospore formation phenotype
+is_a: OMP:0007145 ! altered asexual sporulation
 intersection_of: OMP:0000094 ! endospore formation phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: jonathanherrera
@@ -7897,8 +7905,8 @@ creation_date: 2014-08-05T13:44:09Z
 [Term]
 id: OMP:0006165
 name: cylindrical akinete
-def: "An akinete forming phenotype where the organism forms a cylindrical shaped akinete." [OMP:JCH]
-is_a: OMP:0000006 ! presence of akinete formation
+def: "An akinete morphology phenotype where the organism forms a cylindrical akinete." [OMP:JCH]
+is_a: OMP:0007409 ! akinete morphology phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-06T17:30:58Z
 
@@ -9773,6 +9781,7 @@ id: OMP:0007196
 name: altered akinete formation
 def: "An akinete formation phenotype where the process of akinete formation is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000093 ! akinete formation phenotype
+is_a: OMP:0007145 ! altered asexual sporulation
 intersection_of: OMP:0000093 ! akinete formation phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
@@ -11587,6 +11596,33 @@ def: "An ascospore formation phenotype where the formation of ascospores is alte
 is_a: OMP:0007401 ! ascospore formation phenotype
 created_by: siegele
 creation_date: 2016-07-09T14:51:28Z
+
+[Term]
+id: OMP:0007409
+name: akinete morphology phenotype
+def: "A spore morphology phenotype relating to the form and structure of an akinete, which is a thick-walled (encysted) dormant cell derived from the enlargement of a vegetative cell. Akinetes typically have granular cytoplasm, are more resistant to environmental extremes than vegetative cells, and are characteristic of several groups of Cyanobacteria. PMID:11948167" [doi:10.1046/j.1469-8137.1999.00505.x, OMP:DAS]
+comment: Akinetes are typically more resistant to dessication and other environmental stresses than vegetative cells.
+is_a: OMP:0008000 ! spore morphology phenotype
+created_by: siegele
+creation_date: 2016-07-13T18:36:45Z
+
+[Term]
+id: OMP:0007410
+name: altered akinete morphology
+def: "An akinete morphology phenotype where the morphology of the akinetes produced by an organism is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007409 ! akinete morphology phenotype
+is_a: OMP:0007411 ! altered spore morphology
+created_by: siegele
+creation_date: 2016-07-13T18:43:01Z
+
+[Term]
+id: OMP:0007411
+name: altered spore morphology
+def: "A spore morphology phenotype where the morphology of spores produced by an organism is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007103 ! altered cell morphology
+is_a: OMP:0008000 ! spore morphology phenotype
+created_by: siegele
+creation_date: 2016-07-13T18:45:02Z
 
 [Term]
 id: OMP:0008000
