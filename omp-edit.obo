@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 13:07:2016 18:55
-saved-by: siegele
+date: 15:07:2016 15:39
+saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -6423,6 +6423,64 @@ def: "An endomembrane system phenotype where an organism, cell, or cells lack an
 is_a: OMP:0005269 ! endomembrane system phenotype
 created_by: Jesus
 creation_date: 2016-06-27T14:52:45Z
+
+[Term]
+id: OMP:0005274
+name: organic heterocyclic compound resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic heterocyclic compound." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "Cycloheximide" NARROW [CHEBI:27641]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: Jesus
+creation_date: 2016-07-15T15:29:19Z
+
+[Term]
+id: OMP:0005275
+name: altered organic heterocyclic compound resistance
+def: "An organic heterocyclic compound resistance phenotype where the frequency, rate, timing, or extent of resistance to an organic heterocyclic compound is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005274 ! organic heterocyclic compound resistance phenotype
+created_by: Jesus
+creation_date: 2016-07-15T15:33:41Z
+
+[Term]
+id: OMP:0005276
+name: decreased resistance to organic heterocyclic compound
+def: "An altered organic heterocyclic compound resistance phenotype where the frequency, rate, timing, or extent of resistance to one or more organic heterocyclic compounds is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005275 ! altered organic heterocyclic compound resistance
+created_by: Jesus
+creation_date: 2016-07-15T15:34:14Z
+
+[Term]
+id: OMP:0005277
+name: abolished resistance to organic heterocyclic compound
+def: "A decreased resistance to organic heterocyclic compounds phenotype where resistance to one or more organic heterocyclic compounds is abolished." [OMP:JG]
+is_a: OMP:0005276 ! decreased resistance to organic heterocyclic compound
+created_by: Jesus
+creation_date: 2016-07-15T15:34:45Z
+
+[Term]
+id: OMP:0005278
+name: increased resistance to organic heterocyclic compound
+def: "An altered organic heterocyclic compound resistance phenotype where the frequency, rate, timing, or extent of resistance to one or more organic heterocyclic compounds is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005275 ! altered organic heterocyclic compound resistance
+created_by: Jesus
+creation_date: 2016-07-15T15:35:37Z
+
+[Term]
+id: OMP:0005279
+name: not resistant to organic heterocyclic compound
+def: "An organic heterocyclic compound resistance phenotype where an organism or cell is sensitive to one or more organic heterocyclic compounds." [OMP:JG]
+is_a: OMP:0005274 ! organic heterocyclic compound resistance phenotype
+created_by: Jesus
+creation_date: 2016-07-15T15:36:29Z
+
+[Term]
+id: OMP:0005280
+name: resistant to organic heterocyclic compound
+def: "An organic heterocyclic compound resistance phenotype where an organism or cell is resistant to one or more organic heterocyclic compounds." [OMP:JG]
+is_a: OMP:0005274 ! organic heterocyclic compound resistance phenotype
+created_by: Jesus
+creation_date: 2016-07-15T15:37:34Z
 
 [Term]
 id: OMP:0006000
