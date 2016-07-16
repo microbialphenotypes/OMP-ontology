@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 16:07:2016 17:03
+date: 16:07:2016 17:20
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -9338,7 +9338,7 @@ id: OMP:0007140
 name: schizogeny phenotype
 def: "A multiple fission phenotype related to the process of schizogeny, where the nucleus of  the parent cell divides multiple times before the cytoplasm separates and each nucleus is encased in its own membrane to form an individual cell." [ISBN:9781593392925, OMP:DAS]
 xref: GO:0020014 "schizogeny"
-is_a: OMP:0006173 ! presence of multiple fission
+is_a: OMP:0007068 ! multiple fission phenotype
 created_by: siegele
 creation_date: 2014-08-18T17:02:12Z
 
@@ -9346,6 +9346,7 @@ creation_date: 2014-08-18T17:02:12Z
 id: OMP:0007141
 name: presence of schizogeny
 def: "A schizogeny phenotype where an organism reproduces by the process of schizogeny." [OMP:DAS]
+is_a: OMP:0006173 ! presence of multiple fission
 is_a: OMP:0007140 ! schizogeny phenotype
 created_by: siegele
 creation_date: 2014-08-18T17:12:34Z
@@ -9390,7 +9391,7 @@ creation_date: 2014-08-18T17:23:30Z
 
 [Term]
 id: OMP:0007146
-name: altered schizogeny phenotype
+name: altered schizogeny
 def: "A schizogeny phenotype where the rate, frequency, timing, or extent of schizogeny is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0006174 ! altered multiple fission
 is_a: OMP:0007140 ! schizogeny phenotype
@@ -11778,7 +11779,7 @@ creation_date: 2016-07-16T16:44:37Z
 
 [Term]
 id: OMP:0007423
-name: decreased budding index
+name: decreased budding frequency
 def: "A decreased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006006 ! decreased budding
 created_by: siegele
@@ -11786,11 +11787,45 @@ creation_date: 2016-07-16T16:56:11Z
 
 [Term]
 id: OMP:0007424
-name: increased budding index
+name: increased budding frequency
 def: "An increased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006004 ! increased budding
 created_by: siegele
 creation_date: 2016-07-16T16:58:06Z
+
+[Term]
+id: OMP:0007425
+name: absence of schizogeny
+def: "A schizogeny phenotype where an organism does not reproduce by the process of schizogeny." [OMP:DAS]
+is_a: OMP:0007140 ! schizogeny phenotype
+is_a: OMP:0007235 ! absence of multiple fission
+created_by: siegele
+creation_date: 2016-07-16T17:12:16Z
+
+[Term]
+id: OMP:0007426
+name: increased schizogeny
+def: "An altered schizogeny phenotype where the rate, frequency, timing, or extent of schizogeny is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007146 ! altered schizogeny
+created_by: siegele
+creation_date: 2016-07-16T17:14:28Z
+
+[Term]
+id: OMP:0007427
+name: decreased schizogeny
+def: "An altered schizogeny phenotype where the rate, frequency, timing, or extent of schizogeny is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007146 ! altered schizogeny
+created_by: siegele
+creation_date: 2016-07-16T17:14:28Z
+
+[Term]
+id: OMP:0007428
+name: abolished schizogeny
+def: "A decreased schizogeny phenotype where the rate, frequency, timing, or extent of schizogeny is abolished." [OMP:DAS]
+is_a: OMP:0007425 ! absence of schizogeny
+is_a: OMP:0007427 ! decreased schizogeny
+created_by: siegele
+creation_date: 2016-07-16T17:14:28Z
 
 [Term]
 id: OMP:0008000
