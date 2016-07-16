@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 16:07:2016 16:49
+date: 16:07:2016 17:03
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -6520,7 +6520,7 @@ creation_date: 2014-07-24T15:10:50Z
 [Term]
 id: OMP:0006004
 name: increased budding
-def: "An altered budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is increased relative to a designated control." [OMP:WAM]
+def: "An altered budding phenotype where the rate, frequency, timing, or extent of budding is increased relative to a designated control." [OMP:WAM]
 synonym: "increased budding index" EXACT []
 is_a: OMP:0006035 ! altered budding
 created_by: jonathanherrera
@@ -6537,7 +6537,7 @@ creation_date: 2014-07-24T15:21:56Z
 [Term]
 id: OMP:0006006
 name: decreased budding
-def: "An altered budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is decreased relative to a designated control." [OMP:WAM]
+def: "An altered budding phenotype where the rate, frequency, timing, or extent of budding is decreased relative to a designated control." [OMP:WAM]
 synonym: "decreased budding index" EXACT []
 is_a: OMP:0006035 ! altered budding
 created_by: jonathanherrera
@@ -6819,7 +6819,7 @@ creation_date: 2014-07-24T17:57:37Z
 [Term]
 id: OMP:0006035
 name: altered budding
-def: "A budding phenotype where the frequency, rate, timing, or extent of process of budding is altered relative to a designated control." [OMP:JCH]
+def: "A budding phenotype where the rate, frequency, timing, or extent of the process of budding is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000089 ! budding phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
@@ -7989,7 +7989,7 @@ creation_date: 2014-08-13T17:25:47Z
 [Term]
 id: OMP:0006168
 name: altered binary fission
-def: "A binary fission phenotype where the frequency, rate, timing, or extent of binary fission is altered relative to a designated control." [OMP:JCH]
+def: "A binary fission phenotype where the rate, frequency, timing, or extent of binary fission is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007067 ! binary fission phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
@@ -8006,7 +8006,7 @@ creation_date: 2014-08-08T16:01:46Z
 [Term]
 id: OMP:0006170
 name: decreased binary fission
-def: "An altered binary fission phenotype where the frequency, rate, timing, or extent of binary fission is decreased relative to a designated control." [OMP:JCH]
+def: "An altered binary fission phenotype where the rate, frequency, timing, or extent of binary fission is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006168 ! altered binary fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:46Z
@@ -8014,8 +8014,9 @@ creation_date: 2014-08-08T16:01:46Z
 [Term]
 id: OMP:0006171
 name: abolished binary fission
-def: "A decreased binary fission phenotype where the ability to perform binary fission is abolished." [OMP:JCH]
+def: "A decreased binary fission phenotype where the rate, frequency, timing, or extent of binary fission is abolished." [OMP:JCH]
 is_a: OMP:0006170 ! decreased binary fission
+is_a: OMP:0007233 ! absence of binary fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:54Z
 
@@ -8038,7 +8039,7 @@ creation_date: 2014-08-08T16:42:12Z
 [Term]
 id: OMP:0006174
 name: altered multiple fission
-def: "A multiple fission phenotype where the frequency, rate, timing, or extent of the process of multiple fission is altered relative to a designated control." [OMP:JCH]
+def: "A multiple fission phenotype where the rate, frequency, timing, or extent of the process of multiple fission is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007068 ! multiple fission phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
@@ -8047,7 +8048,7 @@ creation_date: 2014-08-08T16:42:12Z
 [Term]
 id: OMP:0006175
 name: decreased multiple fission
-def: "An altered multiple fission phenotype where the frequency, rate, timing, or extent of multiple fission is decreased relative to a designated control." [OMP:JCH]
+def: "An altered multiple fission phenotype where the rate, frequency, timing, or extent of multiple fission is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006174 ! altered multiple fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:46:45Z
@@ -8063,8 +8064,9 @@ creation_date: 2014-08-08T16:46:45Z
 [Term]
 id: OMP:0006177
 name: abolished multiple fission
-def: "A decreased multiple fission phenotype where the ability to perform multiple fission is abolished." [OMP:JCH]
+def: "A decreased multiple fission phenotype where the rate, frequency, timing, or extent of the process of multiple fission is abolished." [OMP:JCH]
 is_a: OMP:0006175 ! decreased multiple fission
+is_a: OMP:0007235 ! absence of multiple fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:49:27Z
 
@@ -9389,7 +9391,7 @@ creation_date: 2014-08-18T17:23:30Z
 [Term]
 id: OMP:0007146
 name: altered schizogeny phenotype
-def: "A schizogeny phenotype where the process of schizogeny is altered relative to a designated control." [OMP:DAS]
+def: "A schizogeny phenotype where the rate, frequency, timing, or extent of schizogeny is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0006174 ! altered multiple fission
 is_a: OMP:0007140 ! schizogeny phenotype
 created_by: siegele
@@ -11773,6 +11775,22 @@ is_a: OMP:0000007 ! absence of akinete formation
 is_a: OMP:0007421 ! decreased akinete formation
 created_by: siegele
 creation_date: 2016-07-16T16:44:37Z
+
+[Term]
+id: OMP:0007423
+name: decreased budding index
+def: "A decreased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0006006 ! decreased budding
+created_by: siegele
+creation_date: 2016-07-16T16:56:11Z
+
+[Term]
+id: OMP:0007424
+name: increased budding index
+def: "An increased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0006004 ! increased budding
+created_by: siegele
+creation_date: 2016-07-16T16:58:06Z
 
 [Term]
 id: OMP:0008000
