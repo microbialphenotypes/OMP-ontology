@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 16:07:2016 16:11
+date: 16:07:2016 16:49
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1498,7 +1498,7 @@ creation_date: 2011-04-26T03:01:38Z
 [Term]
 id: OMP:0000013
 name: decreased endospore formation
-def: "An altered endospore formation phenotype where endospore formation is decreased relative to a designated control." [OMP:JCH]
+def: "An altered endospore formation phenotype where the rate, frequency, timing, or extent of  endospore formation is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006161 ! altered endospore formation
 intersection_of: OMP:0006161 ! altered endospore formation
 intersection_of: has_quality PATO:0002302 ! decreased process quality
@@ -1508,7 +1508,7 @@ creation_date: 2011-06-07T10:14:15Z
 [Term]
 id: OMP:0000014
 name: increased endospore formation
-def: "An altered endospore formation phenotype where endospore formation is increased relative to a designated control." [OMP:JCH]
+def: "An altered endospore formation phenotype where the rate, frequency, timing, or extent of endospore formation is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006161 ! altered endospore formation
 intersection_of: OMP:0006161 ! altered endospore formation
 intersection_of: has_quality PATO:0002304 ! increased process quality
@@ -1578,7 +1578,7 @@ creation_date: 2011-04-26T03:10:51Z
 [Term]
 id: OMP:0000022
 name: decreased myxospore formation
-def: "An altered myxospore formation phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
+def: "An altered myxospore formation phenotype where the rate, frequency, timing, or extent of myxospore formation is decreased relative to a designated control." [OMP:MCC]
 is_a: OMP:0006009 ! altered myxospore formation
 intersection_of: OMP:0006009 ! altered myxospore formation
 intersection_of: has_quality PATO:0002302 ! decreased process quality
@@ -7485,7 +7485,7 @@ creation_date: 2014-07-28T18:19:45Z
 [Term]
 id: OMP:0006110
 name: abolished endospore formation
-def: "A decreased endospore formation phenotype where the ability to form endospores is abolished." [OMP:JCH]
+def: "A decreased endospore formation phenotype where the rate, frequency, timing, or extent of endospore formation is abolished." [OMP:JCH]
 is_a: OMP:0000013 ! decreased endospore formation
 is_a: OMP:0000018 ! absence of endospore formation
 intersection_of: OMP:0000013 ! decreased endospore formation
@@ -7614,7 +7614,7 @@ creation_date: 2014-07-25T14:05:31Z
 [Term]
 id: OMP:0006125
 name: abolished myxospore formation
-def: "A decreased myxospore formation phenotype where the ability to form myxospores is abolished." [OMP:JCH]
+def: "A decreased myxospore formation phenotype where the rate, frequency, timing, or extent of myxospore formation is abolished." [OMP:JCH]
 is_a: OMP:0000021 ! absence of myxospore formation
 is_a: OMP:0000022 ! decreased myxospore formation
 intersection_of: OMP:0000022 ! decreased myxospore formation
@@ -8629,7 +8629,7 @@ creation_date: 2014-01-31T18:31:01Z
 [Term]
 id: OMP:0007063
 name: increased myxospore formation
-def: "An altered myxospore formation phenotype where the ability to form myxospores is increased relative to a designated control." [OMP:DAS]
+def: "An altered myxospore formation phenotype where the rate, frequency, timing, or extent of myxospore formation is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006009 ! altered myxospore formation
 intersection_of: OMP:0006009 ! altered myxospore formation
 intersection_of: has_quality PATO:0002304 ! increased process quality
@@ -9371,7 +9371,7 @@ creation_date: 2014-08-18T17:19:11Z
 [Term]
 id: OMP:0007144
 name: altered asexual reproduction
-def: "An asexual reproduction phenotype where the process of asexual reproduction is altered relative to a designated control." [OMP:DAS]
+def: "An asexual reproduction phenotype where the rate, frequency, timing, or extent of  asexual reproduction is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007066 ! asexual reproduction phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
@@ -9380,7 +9380,7 @@ creation_date: 2014-08-18T17:22:42Z
 [Term]
 id: OMP:0007145
 name: altered asexual sporulation
-def: "An asexual sporulation phenotype where the process of forming mitotic spores is altered relative to a designated control." [OMP:DAS]
+def: "An asexual sporulation phenotype where the rate, frequency, timing, or extent of the process of forming mitotic spores is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007142 ! asexual sporulation phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: siegele
@@ -9838,7 +9838,7 @@ creation_date: 2014-10-18T21:39:28Z
 [Term]
 id: OMP:0007196
 name: altered akinete formation
-def: "An akinete formation phenotype where the process of akinete formation is altered relative to a designated control." [OMP:DAS]
+def: "An akinete formation phenotype where the rate, frequency, timing, or extent of akinete formation is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000093 ! akinete formation phenotype
 is_a: OMP:0007145 ! altered asexual sporulation
 intersection_of: OMP:0000093 ! akinete formation phenotype
@@ -11748,6 +11748,31 @@ def: "A decreased conjugation phenotype where conjugation is abolished." [OMP:DA
 is_a: OMP:0007417 ! decreased conjugation
 created_by: dsiegele
 creation_date: 2016-07-14T16:36:35Z
+
+[Term]
+id: OMP:0007420
+name: increased akinete formation
+def: "An altered akinete formation phenotype where the rate, frequency, timing, or extent of akinete formation is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007196 ! altered akinete formation
+created_by: siegele
+creation_date: 2016-07-16T16:44:37Z
+
+[Term]
+id: OMP:0007421
+name: decreased akinete formation
+def: "An altered akinete formation phenotype where the rate, frequency, timing, or extent of akinete formation is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007196 ! altered akinete formation
+created_by: siegele
+creation_date: 2016-07-16T16:44:37Z
+
+[Term]
+id: OMP:0007422
+name: abolished akinete formation
+def: "A decreased akinete formation phenotype where the rate, frequency, timing, or extent of akinete formation is abolished." [OMP:DAS]
+is_a: OMP:0000007 ! absence of akinete formation
+is_a: OMP:0007421 ! decreased akinete formation
+created_by: siegele
+creation_date: 2016-07-16T16:44:37Z
 
 [Term]
 id: OMP:0008000
