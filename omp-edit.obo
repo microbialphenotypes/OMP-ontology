@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 16:07:2016 17:20
+date: 16:07:2016 17:43
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1878,7 +1878,7 @@ creation_date: 2011-04-26T05:02:51Z
 [Term]
 id: OMP:0000061
 name: decreased virulence
-def: "An altered virulence phenotype where the ability to cause disease is decreased relative to a designated control." [OMP:MCC]
+def: "An altered virulence phenotype where the rate, frequency, timing, or extent of the ability of a microbe to cause disease in another organism (the host) is decreased relative to a designated control." [OMP:MCC]
 synonym: "less virulent" EXACT []
 xref: PATO:0002147
 is_a: OMP:0000098 ! altered virulence
@@ -1888,7 +1888,7 @@ creation_date: 2011-04-26T05:02:57Z
 [Term]
 id: OMP:0000062
 name: increased virulence
-def: "An altered virulence phenotype where the ability to cause disease is increased relative to a designated phenotype." [OMP:MCC]
+def: "An altered virulence phenotype where the rate, frequency, timing, or extent of the ability of a microbe to cause disease in another organism (the host) is increased relative to a designated control." [OMP:MCC]
 synonym: "more virulent" RELATED []
 xref: PATO:0002148
 is_a: OMP:0000098 ! altered virulence
@@ -1906,7 +1906,7 @@ creation_date: 2011-04-26T05:06:00Z
 [Term]
 id: OMP:0000065
 name: absence of virulence
-def: "A virulence phenotype where an organism does not possess the ability to cause disease in another organism." [OMP:MCC]
+def: "A virulence phenotype where an organism does not possess the ability to cause disease in another organism (host)." [OMP:MCC]
 synonym: "avirulence" EXACT []
 synonym: "incompatible interaction" EXACT []
 is_a: OMP:0000068 ! virulence phenotype
@@ -1916,7 +1916,7 @@ creation_date: 2011-04-26T05:06:35Z
 [Term]
 id: OMP:0000066
 name: abolished virulence
-def: "A decreased virulence phenotype where the ability to cause disease is abolished." [OMP:MCC]
+def: "A decreased virulence phenotype where rate, frequency, timing, or extent of the ability of a microbe to cause disease in a host is abolished." [OMP:MCC]
 is_a: OMP:0000061 ! decreased virulence
 is_a: OMP:0000065 ! absence of virulence
 created_by: mchibucos
@@ -1935,7 +1935,7 @@ creation_date: 2011-02-02T03:28:43Z
 [Term]
 id: OMP:0000068
 name: virulence phenotype
-def: "A microbial phenotype, where the trait in question is the ability of a microbe to cause disease in another organism (the host)." [OMP:MCC]
+def: "A microbe-host interaction phenotype related to the ability of a microbe to cause disease in another organism (the host)." [OMP:MCC]
 synonym: "infectious agent" BROAD []
 synonym: "pathogen" BROAD []
 xref: APO:0000048 "virulence"
@@ -2239,7 +2239,7 @@ creation_date: 2011-02-02T03:28:13Z
 [Term]
 id: OMP:0000098
 name: altered virulence
-def: "A virulence phenotype where an organisms ability to cause disease in another organism is altered relative to a designated control." [OMP:MCC]
+def: "A virulence phenotype where the rate, frequency, time, or extent of the ability of a microbe to cause disease in another organism (host) is altered relative to a designated control." [OMP:MCC]
 synonym: "compatible interaction" EXACT []
 synonym: "virulence" EXACT []
 xref: PATO:0002146
@@ -10581,7 +10581,7 @@ creation_date: 2016-01-09T18:39:51Z
 [Term]
 id: OMP:0007284
 name: presence of virulence
-def: "A virulence phenotype where an organism possesses the ability to cause disease in another organism." [OMP:DAS]
+def: "A virulence phenotype where a microbe possesses the ability to cause disease in another organism (the host)." [OMP:DAS]
 is_a: OMP:0000068 ! virulence phenotype
 created_by: siegele
 creation_date: 2016-01-09T18:47:01Z
