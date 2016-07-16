@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 15:07:2016 15:39
-saved-by: Jesus
+date: 16:07:2016 16:11
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -6445,7 +6445,7 @@ creation_date: 2016-07-15T15:33:41Z
 [Term]
 id: OMP:0005276
 name: decreased resistance to organic heterocyclic compound
-def: "An altered organic heterocyclic compound resistance phenotype where the frequency, rate, timing, or extent of resistance to one or more organic heterocyclic compounds is decreased relative to a designated control." [OMP:JG]
+def: "An altered organic heterocyclic compound resistance phenotype where the frequency, rate, timing, or extent of resistance to an organic heterocyclic compound is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005275 ! altered organic heterocyclic compound resistance
 created_by: Jesus
 creation_date: 2016-07-15T15:34:14Z
@@ -6453,7 +6453,7 @@ creation_date: 2016-07-15T15:34:14Z
 [Term]
 id: OMP:0005277
 name: abolished resistance to organic heterocyclic compound
-def: "A decreased resistance to organic heterocyclic compounds phenotype where resistance to one or more organic heterocyclic compounds is abolished." [OMP:JG]
+def: "A decreased resistance to organic heterocyclic compounds phenotype where resistance an organic heterocyclic compound is abolished." [OMP:JG]
 is_a: OMP:0005276 ! decreased resistance to organic heterocyclic compound
 created_by: Jesus
 creation_date: 2016-07-15T15:34:45Z
@@ -6461,7 +6461,7 @@ creation_date: 2016-07-15T15:34:45Z
 [Term]
 id: OMP:0005278
 name: increased resistance to organic heterocyclic compound
-def: "An altered organic heterocyclic compound resistance phenotype where the frequency, rate, timing, or extent of resistance to one or more organic heterocyclic compounds is increased relative to a designated control." [OMP:JG]
+def: "An altered organic heterocyclic compound resistance phenotype where the frequency, rate, timing, or extent of resistance to an organic heterocyclic compound is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0005275 ! altered organic heterocyclic compound resistance
 created_by: Jesus
 creation_date: 2016-07-15T15:35:37Z
@@ -6469,7 +6469,7 @@ creation_date: 2016-07-15T15:35:37Z
 [Term]
 id: OMP:0005279
 name: not resistant to organic heterocyclic compound
-def: "An organic heterocyclic compound resistance phenotype where an organism or cell is sensitive to one or more organic heterocyclic compounds." [OMP:JG]
+def: "An organic heterocyclic compound resistance phenotype where an organism or cell is sensitive to an organic heterocyclic compound." [OMP:JG]
 is_a: OMP:0005274 ! organic heterocyclic compound resistance phenotype
 created_by: Jesus
 creation_date: 2016-07-15T15:36:29Z
@@ -6477,7 +6477,8 @@ creation_date: 2016-07-15T15:36:29Z
 [Term]
 id: OMP:0005280
 name: resistant to organic heterocyclic compound
-def: "An organic heterocyclic compound resistance phenotype where an organism or cell is resistant to one or more organic heterocyclic compounds." [OMP:JG]
+def: "An organic heterocyclic compound resistance phenotype where an organism, cell, or cells is resistant to an organic heterocyclic compounds." [OMP:JG]
+synonym: "cycloheximide" NARROW [CHEBI:27641]
 is_a: OMP:0005274 ! organic heterocyclic compound resistance phenotype
 created_by: Jesus
 creation_date: 2016-07-15T15:37:34Z
@@ -11685,7 +11686,7 @@ creation_date: 2016-07-13T18:45:02Z
 [Term]
 id: OMP:0007412
 name: mating phenotype
-def: "A biological process phenotype that affects the process of mating." []
+def: "A biological process phenotype that affects the process of mating, which is the pairwise union of individuals for the purpose of sexual reproduction, ultimately resulting in the formation of zygotes." [GO:0007618, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0007194 ! biological process phenotype
 created_by: dsiegele
