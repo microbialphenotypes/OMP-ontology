@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 19:07:2016 15:24
+date: 19:07:2016 15:40
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -11830,6 +11830,30 @@ is_a: OMP:0007425 ! absence of schizogeny
 is_a: OMP:0007427 ! decreased schizogeny
 created_by: siegele
 creation_date: 2016-07-16T17:14:28Z
+
+[Term]
+id: OMP:0007429
+name: increased asexual spore formation
+def: "An altered asexual sporulation phenotype where the rate, frequency, timing, or extent of the process of forming asexual (mitotic) spores is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007145 ! altered asexual sporulation
+created_by: siegele
+creation_date: 2016-07-19T15:37:25Z
+
+[Term]
+id: OMP:0007430
+name: decreased asexual spore formation
+def: "An altered asexual sporulation phenotype where the rate, frequency, timing, or extent of the process of forming asexual (mitotic) spores is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007145 ! altered asexual sporulation
+created_by: siegele
+creation_date: 2016-07-19T15:37:25Z
+
+[Term]
+id: OMP:0007431
+name: abolished asexual spore formation
+def: "A decreased asexual spore formation phenotype where the process of forming asexual (mitotic) spores is abolished." [OMP:DAS]
+is_a: OMP:0007430 ! decreased asexual spore formation
+created_by: siegele
+creation_date: 2016-07-19T15:37:25Z
 
 [Term]
 id: OMP:0008000
