@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 16:07:2016 17:43
+date: 19:07:2016 15:24
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -6429,7 +6429,11 @@ id: OMP:0005274
 name: organic heterocyclic compound resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic heterocyclic compound." [OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "Cycloheximide" NARROW [CHEBI:27641]
+synonym: "coumarins" NARROW [CHEBI:28794]
+synonym: "cycloheximide" NARROW [CHEBI:27641]
+synonym: "novobiocin" NARROW [CHEBI:28368]
+synonym: "thiolactomycin" NARROW [CID:445629]
+synonym: "thiolactone" NARROW [CHEBI:60317]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: Jesus
 creation_date: 2016-07-15T15:29:19Z
