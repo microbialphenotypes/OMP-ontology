@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 19:07:2016 15:40
+date: 20:07:2016 17:06
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1600,7 +1600,7 @@ creation_date: 2011-06-07T11:12:48Z
 id: OMP:0000024
 name: altered flagellum length
 def: "An altered flagellum phenotype where the length of the flagellum is altered relative to a designated control." [OMP:MCC]
-is_a: OMP:0007105 ! altered flagellum phenotype
+is_a: OMP:0007105 ! altered flagellum
 created_by: mchibucos
 creation_date: 2011-06-07T11:19:56Z
 
@@ -1655,7 +1655,7 @@ creation_date: 2011-04-26T03:29:50Z
 id: OMP:0000031
 name: altered flagellum shape
 def: "An altered flagellum phenotype where the shape of the flagellum is altered relative to a designated control." [OMP:MCC]
-is_a: OMP:0007105 ! altered flagellum phenotype
+is_a: OMP:0007105 ! altered flagellum
 created_by: mchibucos
 creation_date: 2011-04-26T03:41:37Z
 
@@ -3221,7 +3221,7 @@ creation_date: 2011-06-07T12:32:12Z
 id: OMP:0000213
 name: increased number of flagella
 def: "An altered flagellum phenotype where the number of flagella per cell is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007105 ! altered flagellum phenotype
+is_a: OMP:0007432 ! altered number of flagella
 created_by: mchibucos
 creation_date: 2011-06-07T09:53:17Z
 
@@ -3239,7 +3239,7 @@ creation_date: 2011-02-03T01:33:37Z
 id: OMP:0000215
 name: decreased number of flagella
 def: "An altered flagellum phenotype where the number of flagella per cell is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007105 ! altered flagellum phenotype
+is_a: OMP:0007432 ! altered number of flagella
 created_by: mchibucos
 creation_date: 2011-06-07T09:54:51Z
 
@@ -7670,7 +7670,7 @@ creation_date: 2014-07-25T14:32:42Z
 
 [Term]
 id: OMP:0006131
-name: abolished number of flagella
+name: abolished flagella
 def: "A decreased number of flagella phenotype where the number of flagella per cell is decreased to zero." [OMP:JCH]
 is_a: OMP:0000030 ! absence of flagellum
 is_a: OMP:0000215 ! decreased number of flagella
@@ -9016,8 +9016,8 @@ creation_date: 2014-07-10T22:45:48Z
 
 [Term]
 id: OMP:0007105
-name: altered flagellum phenotype
-def: "A flagellum phenotype that is altered relative to a designated control." [OMP:DAS]
+name: altered flagellum
+def: "A flagellum phenotype where the composition, structure, or number of flagella is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000027 ! flagellum phenotype
 created_by: siegele
 creation_date: 2014-07-10T23:00:30Z
@@ -11854,6 +11854,14 @@ def: "A decreased asexual spore formation phenotype where the process of forming
 is_a: OMP:0007430 ! decreased asexual spore formation
 created_by: siegele
 creation_date: 2016-07-19T15:37:25Z
+
+[Term]
+id: OMP:0007432
+name: altered number of flagella
+def: "An altered flagellum phenotype where the number of flagella per cell or cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007105 ! altered flagellum
+created_by: siegele
+creation_date: 2016-07-20T15:45:00Z
 
 [Term]
 id: OMP:0008000
