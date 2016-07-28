@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:07:2016 22:18
+date: 27:07:2016 22:42
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -11929,6 +11929,88 @@ name: altered sexual reproduction
 is_a: OMP:0007406 ! sexual reproduction phenotype
 created_by: siegele
 creation_date: 2016-07-27T19:32:00Z
+
+[Term]
+id: OMP:0007442
+name: presence of lethality in mice
+def: "A presence of lethality phenotype where the host of the infection is a mouse (or mice) (Mus musculus)." [OMP:DAS]
+is_a: OMP:0007395 ! presence of lethality
+created_by: siegele
+creation_date: 2016-07-27T22:27:42Z
+
+[Term]
+id: OMP:0007443
+name: presence of lethality in immunocompromised mice
+def: "A presence of lethality phenotype where the host of the infection is an immunocompromised mouse (or mice) (Mus musculus)." [OMP:DAS]
+is_a: OMP:0007395 ! presence of lethality
+created_by: siegele
+creation_date: 2016-07-27T22:27:43Z
+
+[Term]
+id: OMP:0007444
+name: absence of lethality in mice
+def: "An absence of lethality phenotype where the host of the infection is a mouse (or mice) (Mus musculus)." [OMP:DAS]
+is_a: OMP:0007396 ! absence of lethality
+created_by: siegele
+creation_date: 2016-07-27T22:28:22Z
+
+[Term]
+id: OMP:0007445
+name: absence of lethality in immunocompromised mice
+def: "An absence of lethality phenotype where the host of the infection is an immunocompromised mouse (or mice) (Mus musculus)." [OMP:DAS]
+is_a: OMP:0007396 ! absence of lethality
+created_by: siegele
+creation_date: 2016-07-27T22:28:22Z
+
+[Term]
+id: OMP:0007446
+name: decreased lethality in mice
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of its murine host is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007398 ! decreased lethality
+created_by: siegele
+creation_date: 2016-07-27T22:29:04Z
+
+[Term]
+id: OMP:0007447
+name: decreased lethality in immunocompromised mice
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of an immunocompromised mouse host is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007398 ! decreased lethality
+created_by: siegele
+creation_date: 2016-07-27T22:31:31Z
+
+[Term]
+id: OMP:0007448
+name: abolished lethality in mice
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of its murine host is abolished." [OMP:DAS]
+is_a: OMP:0007399 ! abolished lethality
+is_a: OMP:0007446 ! decreased lethality in mice
+created_by: siegele
+creation_date: 2016-07-27T22:33:19Z
+
+[Term]
+id: OMP:0007449
+name: abolished lethality in immunocompromised mice
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of its immunocompromised murine host is abolished." [OMP:DAS]
+is_a: OMP:0007399 ! abolished lethality
+is_a: OMP:0007447 ! decreased lethality in immunocompromised mice
+created_by: siegele
+creation_date: 2016-07-27T22:33:19Z
+
+[Term]
+id: OMP:0007450
+name: increased lethality in mice
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of its murine host is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007400 ! increased lethality
+created_by: siegele
+creation_date: 2016-07-27T22:40:08Z
+
+[Term]
+id: OMP:0007451
+name: increased lethality in immunocompromised mice
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of an immunocompromised murine host is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007400 ! increased lethality
+created_by: siegele
+creation_date: 2016-07-27T22:40:08Z
 
 [Term]
 id: OMP:0008000
