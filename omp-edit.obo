@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 20:07:2016 17:06
+date: 27:07:2016 22:18
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -11862,6 +11862,73 @@ def: "An altered flagellum phenotype where the number of flagella per cell or ce
 is_a: OMP:0007105 ! altered flagellum
 created_by: siegele
 creation_date: 2016-07-20T15:45:00Z
+
+[Term]
+id: OMP:0007433
+name: presence of sexual sporulation
+is_a: OMP:0007405 ! sexual sporulation phenotype
+is_a: OMP:0007439 ! presence of sexual reproduction
+created_by: siegele
+creation_date: 2016-07-27T19:29:30Z
+
+[Term]
+id: OMP:0007434
+name: absence of sexual sporulation
+is_a: OMP:0007405 ! sexual sporulation phenotype
+is_a: OMP:0007440 ! absence of sexual reproduction
+created_by: siegele
+creation_date: 2016-07-27T19:29:30Z
+
+[Term]
+id: OMP:0007435
+name: altered sexual sporulation
+is_a: OMP:0007405 ! sexual sporulation phenotype
+is_a: OMP:0007441 ! altered sexual reproduction
+created_by: siegele
+creation_date: 2016-07-27T19:29:30Z
+
+[Term]
+id: OMP:0007436
+name: increased sexual sporulation
+is_a: OMP:0007435 ! altered sexual sporulation
+created_by: siegele
+creation_date: 2016-07-27T19:29:30Z
+
+[Term]
+id: OMP:0007437
+name: decreased sexual sporulation
+is_a: OMP:0007435 ! altered sexual sporulation
+created_by: siegele
+creation_date: 2016-07-27T19:29:30Z
+
+[Term]
+id: OMP:0007438
+name: abolished sexual sporulation
+is_a: OMP:0007434 ! absence of sexual sporulation
+is_a: OMP:0007437 ! decreased sexual sporulation
+created_by: siegele
+creation_date: 2016-07-27T19:29:30Z
+
+[Term]
+id: OMP:0007439
+name: presence of sexual reproduction
+is_a: OMP:0007406 ! sexual reproduction phenotype
+created_by: siegele
+creation_date: 2016-07-27T19:32:00Z
+
+[Term]
+id: OMP:0007440
+name: absence of sexual reproduction
+is_a: OMP:0007406 ! sexual reproduction phenotype
+created_by: siegele
+creation_date: 2016-07-27T19:32:00Z
+
+[Term]
+id: OMP:0007441
+name: altered sexual reproduction
+is_a: OMP:0007406 ! sexual reproduction phenotype
+created_by: siegele
+creation_date: 2016-07-27T19:32:00Z
 
 [Term]
 id: OMP:0008000
