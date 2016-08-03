@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2016-07-08
-date: 01:07:2016 22:15
+data-version: releases/2016-08-03
+date: 27:07:2016 22:42
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -99,6 +99,7 @@ id: OMP:0000006
 name: presence of akinete formation
 def: "An akinete formation phenotype where a cell or cells have the ability to differentiate into an akinete." [OMP:MCC]
 is_a: OMP:0000093 ! akinete formation phenotype
+is_a: OMP:0007143 ! presence of asexual sporulation
 created_by: mchibucos
 creation_date: 2011-04-26T02:51:36Z
 
@@ -107,6 +108,7 @@ id: OMP:0000007
 name: absence of akinete formation
 def: "An akinete formation phenotype where a cell or cells do not possess the ability to form an akinete." [OMP:MCC]
 is_a: OMP:0000093 ! akinete formation phenotype
+is_a: OMP:0007236 ! absence of asexual sporulation
 created_by: mchibucos
 creation_date: 2011-04-26T02:52:52Z
 
@@ -145,7 +147,7 @@ creation_date: 2011-04-26T03:01:38Z
 [Term]
 id: OMP:0000013
 name: decreased endospore formation
-def: "An altered endospore formation phenotype where endospore formation is decreased relative to a designated control." [OMP:JCH]
+def: "An altered endospore formation phenotype where the rate, frequency, timing, or extent of  endospore formation is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006161 ! altered endospore formation
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:15Z
@@ -153,7 +155,7 @@ creation_date: 2011-06-07T10:14:15Z
 [Term]
 id: OMP:0000014
 name: increased endospore formation
-def: "An altered endospore formation phenotype where endospore formation is increased relative to a designated control." [OMP:JCH]
+def: "An altered endospore formation phenotype where the rate, frequency, timing, or extent of endospore formation is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006161 ! altered endospore formation
 created_by: mchibucos
 creation_date: 2011-06-07T10:14:39Z
@@ -179,6 +181,7 @@ id: OMP:0000017
 name: presence of endospore formation
 def: "An endospore formation phenotype where the cell possesses the ability to form an endospore." [OMP:MCC]
 is_a: OMP:0000094 ! endospore formation phenotype
+is_a: OMP:0007143 ! presence of asexual sporulation
 created_by: mchibucos
 creation_date: 2011-04-26T03:09:10Z
 
@@ -187,6 +190,7 @@ id: OMP:0000018
 name: absence of endospore formation
 def: "An endospore formation phenotype where the cell does not possess the ability to form an endospore." [OMP:MCC]
 is_a: OMP:0000094 ! endospore formation phenotype
+is_a: OMP:0007236 ! absence of asexual sporulation
 created_by: mchibucos
 creation_date: 2011-04-26T03:09:25Z
 
@@ -195,6 +199,7 @@ id: OMP:0000020
 name: presence of myxospore formation
 def: "A myxospore formation phenotype where an organism possesses the ability to form myxospores." [OMP:MCC]
 is_a: OMP:0000096 ! myxospore formation phenotype
+is_a: OMP:0007143 ! presence of asexual sporulation
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
 
@@ -203,13 +208,14 @@ id: OMP:0000021
 name: absence of myxospore formation
 def: "A myxospore formation phenotype where an organism does not possess the ability to form myxospores." [OMP:MCC]
 is_a: OMP:0000096 ! myxospore formation phenotype
+is_a: OMP:0007236 ! absence of asexual sporulation
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
 
 [Term]
 id: OMP:0000022
 name: decreased myxospore formation
-def: "An altered myxospore formation phenotype where the ability to form myxospores is decreased relative to a designated control." [OMP:MCC]
+def: "An altered myxospore formation phenotype where the rate, frequency, timing, or extent of myxospore formation is decreased relative to a designated control." [OMP:MCC]
 is_a: OMP:0006009 ! altered myxospore formation
 created_by: mchibucos
 creation_date: 2011-04-26T03:10:51Z
@@ -229,7 +235,7 @@ creation_date: 2011-06-07T11:12:48Z
 id: OMP:0000024
 name: altered flagellum length
 def: "An altered flagellum phenotype where the length of the flagellum is altered relative to a designated control." [OMP:MCC]
-is_a: OMP:0007105 ! altered flagellum phenotype
+is_a: OMP:0007105 ! altered flagellum
 created_by: mchibucos
 creation_date: 2011-06-07T11:19:56Z
 
@@ -284,7 +290,7 @@ creation_date: 2011-04-26T03:29:50Z
 id: OMP:0000031
 name: altered flagellum shape
 def: "An altered flagellum phenotype where the shape of the flagellum is altered relative to a designated control." [OMP:MCC]
-is_a: OMP:0007105 ! altered flagellum phenotype
+is_a: OMP:0007105 ! altered flagellum
 created_by: mchibucos
 creation_date: 2011-04-26T03:41:37Z
 
@@ -375,7 +381,7 @@ creation_date: 2011-04-26T03:53:34Z
 [Term]
 id: OMP:0000045
 name: increased cell motility
-def: "An altered cell motility phenotype where cell motility is increased relative to a designated control." [OMP:MCC]
+def: "An altered cell motility phenotype where the frequency, rate, timing, or extent of cell motility is increased relative to a designated control." [OMP:MCC]
 xref: PATO:0002298
 is_a: OMP:0007001 ! altered cell motility
 created_by: mchibucos
@@ -501,7 +507,7 @@ creation_date: 2011-04-26T05:02:51Z
 [Term]
 id: OMP:0000061
 name: decreased virulence
-def: "An altered virulence phenotype where the ability to cause disease is decreased relative to a designated control." [OMP:MCC]
+def: "An altered virulence phenotype where the rate, frequency, timing, or extent of the ability of a microbe to cause disease in another organism (the host) is decreased relative to a designated control." [OMP:MCC]
 synonym: "less virulent" EXACT []
 xref: PATO:0002147
 is_a: OMP:0000098 ! altered virulence
@@ -511,7 +517,7 @@ creation_date: 2011-04-26T05:02:57Z
 [Term]
 id: OMP:0000062
 name: increased virulence
-def: "An altered virulence phenotype where the ability to cause disease is increased relative to a designated phenotype." [OMP:MCC]
+def: "An altered virulence phenotype where the rate, frequency, timing, or extent of the ability of a microbe to cause disease in another organism (the host) is increased relative to a designated control." [OMP:MCC]
 synonym: "more virulent" RELATED []
 xref: PATO:0002148
 is_a: OMP:0000098 ! altered virulence
@@ -529,7 +535,7 @@ creation_date: 2011-04-26T05:06:00Z
 [Term]
 id: OMP:0000065
 name: absence of virulence
-def: "A virulence phenotype where an organism does not possess the ability to cause disease in another organism." [OMP:MCC]
+def: "A virulence phenotype where an organism does not possess the ability to cause disease in another organism (host)." [OMP:MCC]
 synonym: "avirulence" EXACT []
 synonym: "incompatible interaction" EXACT []
 is_a: OMP:0000068 ! virulence phenotype
@@ -539,7 +545,7 @@ creation_date: 2011-04-26T05:06:35Z
 [Term]
 id: OMP:0000066
 name: abolished virulence
-def: "A decreased virulence phenotype where the ability to cause disease is abolished." [OMP:MCC]
+def: "A decreased virulence phenotype where rate, frequency, timing, or extent of the ability of a microbe to cause disease in a host is abolished." [OMP:MCC]
 is_a: OMP:0000061 ! decreased virulence
 is_a: OMP:0000065 ! absence of virulence
 created_by: mchibucos
@@ -556,7 +562,7 @@ creation_date: 2011-02-02T03:28:43Z
 [Term]
 id: OMP:0000068
 name: virulence phenotype
-def: "A microbial phenotype, where the trait in question is the ability of an organism to cause disease in another organism (the host)." [OMP:MCC]
+def: "A microbe-host interaction phenotype related to the ability of a microbe to cause disease in another organism (the host)." [OMP:MCC]
 synonym: "infectious agent" BROAD []
 synonym: "pathogen" BROAD []
 xref: APO:0000048 "virulence"
@@ -578,7 +584,7 @@ creation_date: 2011-02-07T03:47:50Z
 [Term]
 id: OMP:0000070
 name: cell development phenotype
-def: "A microbial phenotype, where the trait in question is the progression of a cell from an initial condition to a later condition." [OMP:MCC]
+def: "A microbial phenotype where the trait in question is the progression of a cell from an initial condition to a later condition." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0048869 "cellular developmental process"
 is_a: OMP:0007332 ! cellular process phenotype
@@ -789,9 +795,9 @@ creation_date: 2011-02-02T03:24:43Z
 id: OMP:0000093
 name: akinete formation phenotype
 def: "A cell development phenotype related to the development of an akinete, a thick-walled dormant cell derived from the enlargement of a vegetative cell." [doi:10.1046/j.1469-8137.1999.00505.x, OMP:MCC]
-comment: Akinetes typically are more resistant to dessication and other environmental stresses than vegetative cells.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nAkinetes typically are more resistant to dessication and other environmental stresses than vegetative cells.
 xref: GO:0034302 "akinete formation"
-is_a: OMP:0000091 ! sporulation phenotype
+is_a: OMP:0007142 ! asexual sporulation phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:25:02Z
 
@@ -802,8 +808,7 @@ def: "A sporulation phenotype where development concerns formation of an endospo
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: FAO:0000019 "spore"
 xref: GO:0034301 "endospore formation"
-is_a: OMP:0000091 ! sporulation phenotype
-is_a: OMP:0007066 ! asexual reproduction phenotype
+is_a: OMP:0007142 ! asexual sporulation phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:25:29Z
 
@@ -823,8 +828,7 @@ name: myxospore formation phenotype
 def: "A sporulation phenotype related to development of a myxospore, a differentiated, resting cell usually within a fruiting body by Myxobacteria." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0034303 "myxospore formation"
-is_a: OMP:0000091 ! sporulation phenotype
-is_a: OMP:0007066 ! asexual reproduction phenotype
+is_a: OMP:0007142 ! asexual sporulation phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:26:41Z
 
@@ -839,7 +843,7 @@ creation_date: 2011-02-02T03:28:13Z
 [Term]
 id: OMP:0000098
 name: altered virulence
-def: "A virulence phenotype where an organisms ability to cause disease in another organism is altered relative to a designated control." [OMP:MCC]
+def: "A virulence phenotype where the rate, frequency, time, or extent of the ability of a microbe to cause disease in another organism (host) is altered relative to a designated control." [OMP:MCC]
 synonym: "compatible interaction" EXACT []
 synonym: "virulence" EXACT []
 xref: PATO:0002146
@@ -1144,8 +1148,8 @@ creation_date: 2011-02-18T03:33:32Z
 [Term]
 id: OMP:0000134
 name: spherical akinete
-def: "An akinete forming phenotype where the organism forms a spherical shaped akinete." [OMP:JCH]
-is_a: OMP:0000006 ! presence of akinete formation
+def: "An akinete morphology phenotype where the organism forms a spherical akinete." [OMP:JCH]
+is_a: OMP:0007409 ! akinete morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:40:27Z
 
@@ -1153,7 +1157,7 @@ creation_date: 2011-02-18T03:40:27Z
 id: OMP:0000135
 name: akinete envelope attribute
 def: "An akinete formation phenotype where the traits described are from the cells thick-walled outer membrane." [OMP:JCH]
-is_a: OMP:0000093 ! akinete formation phenotype
+is_a: OMP:0007409 ! akinete morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:41:16Z
 
@@ -1809,7 +1813,7 @@ creation_date: 2011-06-07T12:32:12Z
 id: OMP:0000213
 name: increased number of flagella
 def: "An altered flagellum phenotype where the number of flagella per cell is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007105 ! altered flagellum phenotype
+is_a: OMP:0007432 ! altered number of flagella
 created_by: mchibucos
 creation_date: 2011-06-07T09:53:17Z
 
@@ -1827,7 +1831,7 @@ creation_date: 2011-02-03T01:33:37Z
 id: OMP:0000215
 name: decreased number of flagella
 def: "An altered flagellum phenotype where the number of flagella per cell is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007105 ! altered flagellum phenotype
+is_a: OMP:0007432 ! altered number of flagella
 created_by: mchibucos
 creation_date: 2011-06-07T09:54:51Z
 
@@ -2608,7 +2612,7 @@ creation_date: 2013-08-22T01:53:29Z
 [Term]
 id: OMP:0000500
 name: decreased aerotaxis
-def: "An altered aerotaxis phenotype where aerotaxis is decreased relative to a designated control." [OMP:DAS]
+def: "An altered aerotaxis phenotype where the frequency, rate, timing, or extent of aerotaxis is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007076 ! altered aerotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:20:31Z
@@ -2616,7 +2620,7 @@ creation_date: 2012-11-02T01:20:31Z
 [Term]
 id: OMP:0000502
 name: increased aerotaxis
-def: "An altered aerotaxis phenotype where aerotaxis is increased relative to a designated control." [OMP:DAS]
+def: "An altered aerotaxis phenotype where the frequency, rate, timing, or extent of aerotaxis is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007076 ! altered aerotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:21:21Z
@@ -2624,7 +2628,7 @@ creation_date: 2012-11-02T01:21:21Z
 [Term]
 id: OMP:0000503
 name: decreased chemotaxis
-def: "An altered chemotaxis phenotype where directed movement of a motile cell or organism in response to a specific chemical gradient is decreased relative to a designated control." [OMP:DAS]
+def: "An altered chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism in response to a specific chemical gradient is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007077 ! altered chemotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:22:28Z
@@ -2632,7 +2636,7 @@ creation_date: 2012-11-02T01:22:28Z
 [Term]
 id: OMP:0000505
 name: increased chemotaxis
-def: "An altered chemotaxis phenotype where directed movement of a motile cell or organism in response to a specific chemical gradient is increased relative to a designated control." [OMP:DAS]
+def: "An altered chemotaxis phenotype where the frequency, rate, timing, or extent of  directed movement of a motile cell or organism in response to a specific chemical gradient is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007077 ! altered chemotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:23:12Z
@@ -3756,7 +3760,7 @@ id: OMP:0005129
 name: altered biofilm
 def: "A biofilm phenotype that is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0000176 ! biofilm phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: wmeza
 creation_date: 2014-07-16T12:36:13Z
 
@@ -3765,7 +3769,7 @@ id: OMP:0005130
 name: altered enzymatic activity
 def: "An enzymatic activity phenotype where a specified enzymatic activity is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000221 ! enzymatic activity phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: wmeza
 creation_date: 2014-07-16T17:48:24Z
@@ -3817,7 +3821,7 @@ name: altered cell cycle phenotype
 def: "A cell cycle phenotype where progression of the cell cycle is altered relative to a designated control." [OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0005115 ! cell cycle phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:55:46Z
 
@@ -3858,6 +3862,7 @@ id: OMP:0005141
 name: altered resistance to killing by host cells
 def: "A resistance to killing by host cells phenotype where the microbe's ability to be killed by host cells is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005111 ! resistance to killing by host cells phenotype
+is_a: OMP:0007403 ! altered microbe-host interaction phenotype
 created_by: Jesus
 creation_date: 2016-02-02T13:55:50Z
 
@@ -4970,6 +4975,69 @@ created_by: Jesus
 creation_date: 2016-06-27T14:52:45Z
 
 [Term]
+id: OMP:0005274
+name: organic heterocyclic compound resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic heterocyclic compound." [OMP:JG]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "coumarins" NARROW [CHEBI:28794]
+synonym: "cycloheximide" NARROW [CHEBI:27641]
+synonym: "novobiocin" NARROW [CHEBI:28368]
+synonym: "thiolactomycin" NARROW [CID:445629]
+synonym: "thiolactone" NARROW [CHEBI:60317]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: Jesus
+creation_date: 2016-07-15T15:29:19Z
+
+[Term]
+id: OMP:0005275
+name: altered organic heterocyclic compound resistance
+def: "An organic heterocyclic compound resistance phenotype where the frequency, rate, timing, or extent of resistance to an organic heterocyclic compound is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005274 ! organic heterocyclic compound resistance phenotype
+created_by: Jesus
+creation_date: 2016-07-15T15:33:41Z
+
+[Term]
+id: OMP:0005276
+name: decreased resistance to organic heterocyclic compound
+def: "An altered organic heterocyclic compound resistance phenotype where the frequency, rate, timing, or extent of resistance to an organic heterocyclic compound is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005275 ! altered organic heterocyclic compound resistance
+created_by: Jesus
+creation_date: 2016-07-15T15:34:14Z
+
+[Term]
+id: OMP:0005277
+name: abolished resistance to organic heterocyclic compound
+def: "A decreased resistance to organic heterocyclic compounds phenotype where resistance an organic heterocyclic compound is abolished." [OMP:JG]
+is_a: OMP:0005276 ! decreased resistance to organic heterocyclic compound
+created_by: Jesus
+creation_date: 2016-07-15T15:34:45Z
+
+[Term]
+id: OMP:0005278
+name: increased resistance to organic heterocyclic compound
+def: "An altered organic heterocyclic compound resistance phenotype where the frequency, rate, timing, or extent of resistance to an organic heterocyclic compound is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005275 ! altered organic heterocyclic compound resistance
+created_by: Jesus
+creation_date: 2016-07-15T15:35:37Z
+
+[Term]
+id: OMP:0005279
+name: not resistant to organic heterocyclic compound
+def: "An organic heterocyclic compound resistance phenotype where an organism or cell is sensitive to an organic heterocyclic compound." [OMP:JG]
+is_a: OMP:0005274 ! organic heterocyclic compound resistance phenotype
+created_by: Jesus
+creation_date: 2016-07-15T15:36:29Z
+
+[Term]
+id: OMP:0005280
+name: resistant to organic heterocyclic compound
+def: "An organic heterocyclic compound resistance phenotype where an organism, cell, or cells is resistant to an organic heterocyclic compounds." [OMP:JG]
+synonym: "cycloheximide" NARROW [CHEBI:27641]
+is_a: OMP:0005274 ! organic heterocyclic compound resistance phenotype
+created_by: Jesus
+creation_date: 2016-07-15T15:37:34Z
+
+[Term]
 id: OMP:0006000
 name: secondary metabolite production phenotype
 def: "A small molecule biosynthesis phenotype where an organism produces a secondary metabolite, which is a compound not directly involved in normal growth, development or reproduction." [APO:0000292, OMP:TCK]
@@ -4982,7 +5050,7 @@ id: OMP:0006001
 name: altered chromosome segregation
 def: "A chromosome segregation phenotype where the frequency, rate, timing, or extent of chromosome segregation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005047 ! chromosome segregation phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: jonathanherrera
 creation_date: 2014-07-24T14:14:37Z
@@ -5006,7 +5074,7 @@ creation_date: 2014-07-24T15:10:50Z
 [Term]
 id: OMP:0006004
 name: increased budding
-def: "An altered budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is increased relative to a designated control." [OMP:WAM]
+def: "An altered budding phenotype where the rate, frequency, timing, or extent of budding is increased relative to a designated control." [OMP:WAM]
 synonym: "increased budding index" EXACT []
 is_a: OMP:0006035 ! altered budding
 created_by: jonathanherrera
@@ -5023,7 +5091,7 @@ creation_date: 2014-07-24T15:21:56Z
 [Term]
 id: OMP:0006006
 name: decreased budding
-def: "An altered budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is decreased relative to a designated control." [OMP:WAM]
+def: "An altered budding phenotype where the rate, frequency, timing, or extent of budding is decreased relative to a designated control." [OMP:WAM]
 synonym: "decreased budding index" EXACT []
 is_a: OMP:0006035 ! altered budding
 created_by: jonathanherrera
@@ -5051,6 +5119,7 @@ id: OMP:0006009
 name: altered myxospore formation
 def: "A myxospore formation phenotype where the rate, frequency, timing, or extent of myxospore formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000096 ! myxospore formation phenotype
+is_a: OMP:0007145 ! altered asexual sporulation
 relationship: has_quality OMP:0007188 ! altered_process_quality
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:26:38Z
@@ -5303,7 +5372,7 @@ creation_date: 2014-07-24T17:57:37Z
 [Term]
 id: OMP:0006035
 name: altered budding
-def: "A budding phenotype where the frequency, rate, timing, or extent of process of budding is altered relative to a designated control." [OMP:JCH]
+def: "A budding phenotype where the rate, frequency, timing, or extent of the process of budding is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000089 ! budding phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
@@ -5969,7 +6038,7 @@ creation_date: 2014-07-28T18:19:45Z
 [Term]
 id: OMP:0006110
 name: abolished endospore formation
-def: "A decreased endospore formation phenotype where the ability to form endospores is abolished." [OMP:JCH]
+def: "A decreased endospore formation phenotype where the rate, frequency, timing, or extent of endospore formation is abolished." [OMP:JCH]
 is_a: OMP:0000013 ! decreased endospore formation
 is_a: OMP:0000018 ! absence of endospore formation
 created_by: jonathanherrera
@@ -6096,7 +6165,7 @@ creation_date: 2014-07-25T14:05:31Z
 [Term]
 id: OMP:0006125
 name: abolished myxospore formation
-def: "A decreased myxospore formation phenotype where the ability to form myxospores is abolished." [OMP:JCH]
+def: "A decreased myxospore formation phenotype where the rate, frequency, timing, or extent of myxospore formation is abolished." [OMP:JCH]
 is_a: OMP:0000021 ! absence of myxospore formation
 is_a: OMP:0000022 ! decreased myxospore formation
 created_by: jonathanherrera
@@ -6146,7 +6215,7 @@ creation_date: 2014-07-25T14:32:42Z
 
 [Term]
 id: OMP:0006131
-name: abolished number of flagella
+name: abolished flagella
 def: "A decreased number of flagella phenotype where the number of flagella per cell is decreased to zero." [OMP:JCH]
 is_a: OMP:0000030 ! absence of flagellum
 is_a: OMP:0000215 ! decreased number of flagella
@@ -6410,7 +6479,7 @@ id: OMP:0006161
 name: altered endospore formation
 def: "A endospore formation phenotype where the frequency, rate, timing, or extent of endospore formation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000094 ! endospore formation phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007145 ! altered asexual sporulation
 relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: jonathanherrera
 creation_date: 2014-07-29T15:37:45Z
@@ -6443,8 +6512,8 @@ creation_date: 2014-08-05T13:44:09Z
 [Term]
 id: OMP:0006165
 name: cylindrical akinete
-def: "An akinete forming phenotype where the organism forms a cylindrical shaped akinete." [OMP:JCH]
-is_a: OMP:0000006 ! presence of akinete formation
+def: "An akinete morphology phenotype where the organism forms a cylindrical akinete." [OMP:JCH]
+is_a: OMP:0007409 ! akinete morphology phenotype
 created_by: jonathanherrera
 creation_date: 2014-08-06T17:30:58Z
 
@@ -6468,7 +6537,7 @@ creation_date: 2014-08-13T17:25:47Z
 [Term]
 id: OMP:0006168
 name: altered binary fission
-def: "A binary fission phenotype where the frequency, rate, timing, or extent of binary fission is altered relative to a designated control." [OMP:JCH]
+def: "A binary fission phenotype where the rate, frequency, timing, or extent of binary fission is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007067 ! binary fission phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
@@ -6485,7 +6554,7 @@ creation_date: 2014-08-08T16:01:46Z
 [Term]
 id: OMP:0006170
 name: decreased binary fission
-def: "An altered binary fission phenotype where the frequency, rate, timing, or extent of binary fission is decreased relative to a designated control." [OMP:JCH]
+def: "An altered binary fission phenotype where the rate, frequency, timing, or extent of binary fission is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006168 ! altered binary fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:46Z
@@ -6493,8 +6562,9 @@ creation_date: 2014-08-08T16:01:46Z
 [Term]
 id: OMP:0006171
 name: abolished binary fission
-def: "A decreased binary fission phenotype where the ability to perform binary fission is abolished." [OMP:JCH]
+def: "A decreased binary fission phenotype where the rate, frequency, timing, or extent of binary fission is abolished." [OMP:JCH]
 is_a: OMP:0006170 ! decreased binary fission
+is_a: OMP:0007233 ! absence of binary fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:01:54Z
 
@@ -6517,7 +6587,7 @@ creation_date: 2014-08-08T16:42:12Z
 [Term]
 id: OMP:0006174
 name: altered multiple fission
-def: "A multiple fission phenotype where the frequency, rate, timing, or extent of the process of multiple fission is altered relative to a designated control." [OMP:JCH]
+def: "A multiple fission phenotype where the rate, frequency, timing, or extent of the process of multiple fission is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007068 ! multiple fission phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: jonathanherrera
@@ -6526,7 +6596,7 @@ creation_date: 2014-08-08T16:42:12Z
 [Term]
 id: OMP:0006175
 name: decreased multiple fission
-def: "An altered multiple fission phenotype where the frequency, rate, timing, or extent of multiple fission is decreased relative to a designated control." [OMP:JCH]
+def: "An altered multiple fission phenotype where the rate, frequency, timing, or extent of multiple fission is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0006174 ! altered multiple fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:46:45Z
@@ -6542,8 +6612,9 @@ creation_date: 2014-08-08T16:46:45Z
 [Term]
 id: OMP:0006177
 name: abolished multiple fission
-def: "A decreased multiple fission phenotype where the ability to perform multiple fission is abolished." [OMP:JCH]
+def: "A decreased multiple fission phenotype where the rate, frequency, timing, or extent of the process of multiple fission is abolished." [OMP:JCH]
 is_a: OMP:0006175 ! decreased multiple fission
+is_a: OMP:0007235 ! absence of multiple fission
 created_by: jonathanherrera
 creation_date: 2014-08-08T16:49:27Z
 
@@ -6584,9 +6655,9 @@ creation_date: 2014-06-29T14:10:40Z
 [Term]
 id: OMP:0007001
 name: altered cell motility
-def: "A cell motility phenotype where cell motility is altered relative to a designated control." [OMP:DAS]
+def: "A cell motility phenotype where the frequency, rate, timing, or extent of cell motility is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000001 ! cell motility phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-04-24T17:38:06Z
@@ -6619,7 +6690,7 @@ creation_date: 2014-01-31T18:03:55Z
 [Term]
 id: OMP:0007005
 name: decreased negative chemotaxis
-def: "A decreased chemotaxis phenotype where directed movement of a motile cell or organism toward a lower concentration of a specific chemical is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism toward a lower concentration of a specific chemical is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-07T18:35:51Z
@@ -6925,7 +6996,7 @@ creation_date: 2013-09-29T00:36:46Z
 [Term]
 id: OMP:0007041
 name: decreased positive chemotaxis
-def: "A decreased chemotaxis phenotype where directed movement of a motile cell or organism toward a higher concentration of a specific chemical is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism toward a higher concentration of a specific chemical is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-07T18:37:42Z
@@ -7105,7 +7176,7 @@ creation_date: 2014-01-31T18:31:01Z
 [Term]
 id: OMP:0007063
 name: increased myxospore formation
-def: "An altered myxospore formation phenotype where the ability to form myxospores is increased relative to a designated control." [OMP:DAS]
+def: "An altered myxospore formation phenotype where the rate, frequency, timing, or extent of myxospore formation is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0006009 ! altered myxospore formation
 created_by: DeborahSiegele
 creation_date: 2014-01-31T18:45:09Z
@@ -7223,7 +7294,7 @@ creation_date: 2014-02-21T15:42:44Z
 [Term]
 id: OMP:0007076
 name: altered aerotaxis
-def: "An aerotaxis phenotype where directed movement in response to environmental oxygen is altered relative to a designated control." [OMP:JCH]
+def: "An aerotaxis phenotype where the frequency, rate, timing, or extent of directed movement in response to environmental oxygen is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000047 ! aerotaxis phenotype
 is_a: OMP:0007127 ! altered taxis
 relationship: has_quality OMP:0007189 ! altered_relative_to
@@ -7233,7 +7304,7 @@ creation_date: 2014-04-24T17:41:34Z
 [Term]
 id: OMP:0007077
 name: altered chemotaxis
-def: "A chemotaxis phenotype where directed movement in response to a specific chemical gradient is altered relative to a designated control." [OMP:JCH]
+def: "A chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement in response to a specific chemical gradient is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000048 ! chemotaxis phenotype
 is_a: OMP:0007127 ! altered taxis
 created_by: siegele
@@ -7262,7 +7333,7 @@ id: OMP:0007080
 name: altered gene expression
 def: "A gene expression phenotype where expression of a gene or genes is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000253 ! gene expression phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 relationship: has_quality OMP:0007188 ! altered_process_quality
 created_by: dsiegele
 creation_date: 2014-08-11T16:32:07Z
@@ -7302,7 +7373,7 @@ creation_date: 2014-07-06T14:43:59Z
 
 [Term]
 id: OMP:0007085
-name: altered phenotype
+name: altered microbial phenotype
 def: "A microbial phenotype that is altered in some way relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
@@ -7356,7 +7427,7 @@ creation_date: 2014-07-10T21:50:33Z
 [Term]
 id: OMP:0007091
 name: decreased cell motility by gliding
-def: "A decreased cell motility phenotype where cell motility by gliding is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by gliding is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -7364,7 +7435,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007092
 name: decreased cell motility by swarming
-def: "A decreased cell motility phenotype where cell motility by swarming is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swarming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -7372,7 +7443,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007093
 name: decreased cell motility by swimming
-def: "A decreased motility phenotype where cell motility by swimming is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased motility phenotype where the frequency, rate, timing, or extent of cell motility by swimming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -7380,7 +7451,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007094
 name: decreased cell motility by twitching
-def: "A decreased cell motility phenotype where cell motility by twitching is decreased relative to a designated control." [OMP:JCH]
+def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by twitching is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -7388,7 +7459,7 @@ creation_date: 2014-07-10T20:08:43Z
 [Term]
 id: OMP:0007095
 name: increased cell motility by gliding
-def: "An increased cell motility phenotype where cell motility by gliding is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by gliding is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -7396,7 +7467,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007096
 name: increased cell motility by swarming
-def: "An increased cell motility phenotype where cell motility by swarming is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swarming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -7404,7 +7475,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007097
 name: increased cell motility by swimming
-def: "An increased cell motility phenotype where cell motility by swimming is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swimming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -7412,7 +7483,7 @@ creation_date: 2014-07-10T20:10:11Z
 [Term]
 id: OMP:0007098
 name: increased cell motility by twitching
-def: "An increased cell motility phenotype where cell motility by twitching is increased relative to a designated control." [OMP:JCH]
+def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by twitching is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -7460,7 +7531,7 @@ id: OMP:0007103
 name: altered cell morphology
 def: "A cell morphology phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000071 ! cell morphology phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2014-07-10T22:43:40Z
@@ -7471,14 +7542,14 @@ name: altered nutrient utilization
 def: "A nutrient utilization phenotype that is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0006022 ! nutrient utilization phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2014-07-10T22:45:48Z
 
 [Term]
 id: OMP:0007105
-name: altered flagellum phenotype
-def: "A flagellum phenotype that is altered relative to a designated control." [OMP:DAS]
+name: altered flagellum
+def: "A flagellum phenotype where the composition, structure, or number of flagella is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000027 ! flagellum phenotype
 created_by: siegele
 creation_date: 2014-07-10T23:00:30Z
@@ -7673,9 +7744,9 @@ creation_date: 2014-08-11T17:58:30Z
 [Term]
 id: OMP:0007127
 name: altered taxis
-def: "A taxis phenotype where directed movement of a motile cell or organism in response to an external stimulus is altered relative to a designated control." [OMP:DAS]
+def: "A taxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism in response to an external stimulus is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000004 ! taxis phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: dsiegele
 creation_date: 2014-08-12T13:30:01Z
@@ -7685,7 +7756,7 @@ id: OMP:0007128
 name: altered cell arrangement
 def: "A cell arrangement phenotype where the arrangement of cells is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000003 ! cell arrangement phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: dsiegele
 creation_date: 2014-08-12T13:36:13Z
 
@@ -7710,7 +7781,7 @@ creation_date: 2014-08-16T16:40:58Z
 id: OMP:0007131
 name: altered differential test result
 def: "A differential media phenotype where the results of a differential test are altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007130 ! differential test phenotype
 created_by: siegele
 creation_date: 2014-08-16T16:44:03Z
@@ -7737,7 +7808,7 @@ name: altered antimicrobial agent resistance phenotype
 def: "An antimicrobial agent resistance phenotype where resistance or sensitivity to an antimicrobial agent is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 relationship: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
 creation_date: 2014-08-17T13:12:31Z
@@ -7790,7 +7861,7 @@ id: OMP:0007140
 name: schizogeny phenotype
 def: "A multiple fission phenotype related to the process of schizogeny, where the nucleus of  the parent cell divides multiple times before the cytoplasm separates and each nucleus is encased in its own membrane to form an individual cell." [ISBN:9781593392925, OMP:DAS]
 xref: GO:0020014 "schizogeny"
-is_a: OMP:0006173 ! presence of multiple fission
+is_a: OMP:0007068 ! multiple fission phenotype
 created_by: siegele
 creation_date: 2014-08-18T17:02:12Z
 
@@ -7798,6 +7869,7 @@ creation_date: 2014-08-18T17:02:12Z
 id: OMP:0007141
 name: presence of schizogeny
 def: "A schizogeny phenotype where an organism reproduces by the process of schizogeny." [OMP:DAS]
+is_a: OMP:0006173 ! presence of multiple fission
 is_a: OMP:0007140 ! schizogeny phenotype
 created_by: siegele
 creation_date: 2014-08-18T17:12:34Z
@@ -7805,9 +7877,11 @@ creation_date: 2014-08-18T17:12:34Z
 [Term]
 id: OMP:0007142
 name: asexual sporulation phenotype
-def: "An asexual reproduction phenotype related to the process where reproduction occurs through the formation of spores derived from the products of mitosis." [OMP:DAS, PMID:9781593392925]
+def: "A sporulation phenotype related to the formation of spores derived from the products of mitosis." [GO:0030436, OMP:DAS, PMID:9781593392925]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "mitotic spore formation" RELATED []
 xref: GO:0030436 "asexual sporulation"
+is_a: OMP:0000091 ! sporulation phenotype
 is_a: OMP:0007066 ! asexual reproduction phenotype
 created_by: siegele
 creation_date: 2014-08-18T17:15:43Z
@@ -7823,16 +7897,16 @@ creation_date: 2014-08-18T17:19:11Z
 [Term]
 id: OMP:0007144
 name: altered asexual reproduction
-def: "An asexual reproduction phenotype where the process of asexual reproduction is altered relative to a designated control." [OMP:DAS]
+def: "An asexual reproduction phenotype where the rate, frequency, timing, or extent of  asexual reproduction is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007066 ! asexual reproduction phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2014-08-18T17:22:42Z
 
 [Term]
 id: OMP:0007145
 name: altered asexual sporulation
-def: "An asexual sporulation phenotype where the process of forming mitotic spores is altered relative to a designated control." [OMP:DAS]
+def: "An asexual sporulation phenotype where the rate, frequency, timing, or extent of the process of forming mitotic spores is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007142 ! asexual sporulation phenotype
 is_a: OMP:0007144 ! altered asexual reproduction
 created_by: siegele
@@ -7840,8 +7914,8 @@ creation_date: 2014-08-18T17:23:30Z
 
 [Term]
 id: OMP:0007146
-name: altered schizogeny phenotype
-def: "A schizogeny phenotype where the process of schizogeny is altered relative to a designated control." [OMP:DAS]
+name: altered schizogeny
+def: "A schizogeny phenotype where the rate, frequency, timing, or extent of schizogeny is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0006174 ! altered multiple fission
 is_a: OMP:0007140 ! schizogeny phenotype
 created_by: siegele
@@ -7965,7 +8039,7 @@ id: OMP:0007160
 name: altered colony morphology
 def: "A colony morphology phenotype where the morphology of a colony or colonies is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000100 ! colony morphology phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2014-08-29T12:27:50Z
 
@@ -8273,8 +8347,9 @@ creation_date: 2014-10-18T21:39:28Z
 [Term]
 id: OMP:0007196
 name: altered akinete formation
-def: "An akinete formation phenotype where the process of akinete formation is altered relative to a designated control." [OMP:DAS]
+def: "An akinete formation phenotype where the rate, frequency, timing, or extent of akinete formation is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000093 ! akinete formation phenotype
+is_a: OMP:0007145 ! altered asexual sporulation
 relationship: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
 creation_date: 2014-10-20T15:08:04Z
@@ -8334,7 +8409,7 @@ creation_date: 2015-02-04T22:05:25Z
 id: OMP:0007203
 name: altered gene expression regulation
 def: "A gene expression regulation phenotype that is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007162 ! gene expression regulation phenotype
 created_by: siegele
 creation_date: 2015-02-05T11:12:46Z
@@ -8664,7 +8739,7 @@ id: OMP:0007242
 name: altered host-virus interaction
 def: "A host-virus interaction phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000026 ! host-virus interaction phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2015-07-04T00:13:56Z
 
@@ -8772,6 +8847,7 @@ id: OMP:0007255
 name: altered host colonization
 def: "A host colonization phenotype where the ability of a microbe to colonize a host organism is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007252 ! host colonization phenotype
+is_a: OMP:0007403 ! altered microbe-host interaction phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
 
@@ -8812,7 +8888,7 @@ creation_date: 2015-07-31T13:47:33Z
 id: OMP:0007260
 name: altered cell viability
 def: "A cell viability phenotype where the ability of a microorganism, cell, or cells to survive, grow, and reproduce is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
@@ -8944,7 +9020,7 @@ creation_date: 2015-10-17T19:56:02Z
 id: OMP:0007276
 name: increased threshold for positive chemotaxis
 def: "A decreased positive chemotaxis phenotype where the threshold concentration for responding to an attractant is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007077 ! altered chemotaxis
+is_a: OMP:0000503 ! decreased chemotaxis
 created_by: siegele
 creation_date: 2015-11-07T13:32:21Z
 
@@ -8969,7 +9045,7 @@ creation_date: 2015-11-12T00:46:14Z
 id: OMP:0007279
 name: altered protein activity phenotype
 def: "A protein activity phenotype where the enzymatic or other activity of a protein is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2016-01-07T22:48:43Z
 
@@ -9008,7 +9084,7 @@ creation_date: 2016-01-09T18:39:51Z
 [Term]
 id: OMP:0007284
 name: presence of virulence
-def: "A virulence phenotype where an organism possesses the ability to cause disease in another organism." [OMP:DAS]
+def: "A virulence phenotype where a microbe possesses the ability to cause disease in another organism (the host)." [OMP:DAS]
 is_a: OMP:0000068 ! virulence phenotype
 created_by: siegele
 creation_date: 2016-01-09T18:47:01Z
@@ -9079,7 +9155,7 @@ creation_date: 2016-01-10T00:45:01Z
 id: OMP:0007292
 name: altered spore germination efficiency
 def: "A spore germination phenotype where the percentage of spores that germinate is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007353 ! altered spore germination
 relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
@@ -9185,7 +9261,7 @@ id: OMP:0007304
 name: altered cell staining phenotype
 def: "A cell staining phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000214 ! cell staining phenotype
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2016-01-31T00:30:08Z
 
@@ -9595,7 +9671,7 @@ creation_date: 2016-06-09T22:48:16Z
 id: OMP:0007351
 name: altered biological process
 def: "A biological process phenotype where a biological process is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
 creation_date: 2016-06-09T22:50:27Z
@@ -9953,6 +10029,483 @@ name: nonviable cell
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2016-07-01T22:15:10Z
+
+[Term]
+id: OMP:0007394
+name: lethality phenotype
+def: "A microbe-host interaction phenotype related to the ability of a microbe to infect and cause death of a host." [OMP:DAS]
+is_a: OMP:0000197 ! microbe-host interaction phenotype
+created_by: siegele
+creation_date: 2016-07-06T13:10:19Z
+
+[Term]
+id: OMP:0007395
+name: presence of lethality
+def: "A lethality phenotype where infection by a microbe can cause death of the host." [OMP:DAS]
+is_a: OMP:0007394 ! lethality phenotype
+created_by: siegele
+creation_date: 2016-07-06T13:12:26Z
+
+[Term]
+id: OMP:0007396
+name: absence of lethality
+def: "A lethality phenotype where infection by a microbe does not cause death of the host." [OMP:DAS]
+is_a: OMP:0007394 ! lethality phenotype
+created_by: siegele
+creation_date: 2016-07-06T13:12:26Z
+
+[Term]
+id: OMP:0007397
+name: altered lethality
+def: "A lethality phenotype where the ability of an infectious  microbe to cause death of the host is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007394 ! lethality phenotype
+is_a: OMP:0007403 ! altered microbe-host interaction phenotype
+created_by: siegele
+creation_date: 2016-07-06T13:12:26Z
+
+[Term]
+id: OMP:0007398
+name: decreased lethality
+def: "An altered lethality phenotype where the ability of an infectious microbe to cause death of the host is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007397 ! altered lethality
+created_by: siegele
+creation_date: 2016-07-06T13:12:26Z
+
+[Term]
+id: OMP:0007399
+name: abolished lethality
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of the host is abolished." [OMP:DAS]
+is_a: OMP:0007396 ! absence of lethality
+is_a: OMP:0007398 ! decreased lethality
+created_by: siegele
+creation_date: 2016-07-06T13:12:26Z
+
+[Term]
+id: OMP:0007400
+name: increased lethality
+def: "An altered lethality phenotype where the ability of an infectious microbe to cause death of the host is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007397 ! altered lethality
+created_by: siegele
+creation_date: 2016-07-06T13:12:26Z
+
+[Term]
+id: OMP:0007401
+name: ascospore formation phenotype
+def: "A sexual sporulation phenotype related to the formation of an ascospore, a dormant, highly resistant, sexual spore with a thick wall that forms within the mother cell.  Ascospores are generally found in clusters of four or eight spores within a single mother cell, the ascus, and are characteristic of the ascomycete fungi (phylum Ascomycota)." [GO:0030437, OMP:DAS]
+is_a: OMP:0007405 ! sexual sporulation phenotype
+created_by: siegele
+creation_date: 2016-07-06T14:29:13Z
+
+[Term]
+id: OMP:0007402
+name: presence of ascospore formation
+def: "An ascospore formation phenotype where a microbe has the ability to form ascospores." [OMP:DAS]
+is_a: OMP:0007401 ! ascospore formation phenotype
+created_by: siegele
+creation_date: 2016-07-06T14:32:46Z
+
+[Term]
+id: OMP:0007403
+name: altered microbe-host interaction phenotype
+def: "A microbe-host interaction phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000197 ! microbe-host interaction phenotype
+created_by: siegele
+creation_date: 2016-07-09T13:22:30Z
+
+[Term]
+id: OMP:0007404
+name: abolished resistance to killing by host cells
+def: "A decreased resistance to killing by host cells phenotype where resistance to killing by host cells is abolished." [OMP:DAS]
+is_a: OMP:0005140 ! absence of resistance to killing by host cells
+is_a: OMP:0005143 ! decreased resistance to killing by host cells
+created_by: siegele
+creation_date: 2016-07-09T13:24:32Z
+
+[Term]
+id: OMP:0007405
+name: sexual sporulation phenotype
+def: "A sporulation phenotype related to the formation of spores derived from the products of meiosis." [GO:0034293, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0034293 "sexual sporulation"
+is_a: OMP:0000091 ! sporulation phenotype
+is_a: OMP:0007406 ! sexual reproduction phenotype
+created_by: siegele
+creation_date: 2016-07-09T14:14:51Z
+
+[Term]
+id: OMP:0007406
+name: sexual reproduction phenotype
+def: "A microbial phenotype related to sexual reproduction: the biological process that creates a new organism by combining the genetic material of two organisms. It occurs both in eukaryotes and prokaryotes: in multicellular eukaryotic organisms, an individual is created anew; in prokaryotes, the initial cell has additional or transformed genetic material. In a process called genetic recombination, genetic material (DNA) originating from two different individuals (parents) join up so that homologous sequences are aligned with each other, and this is followed by exchange of genetic information. After the new recombinant chromosome is formed, it is passed on to progeny." [GO:0019953, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+xref: GO:0019953
+is_a: OMP:0007167 ! population growth phenotype
+created_by: siegele
+creation_date: 2016-07-09T14:24:56Z
+
+[Term]
+id: OMP:0007407
+name: absence of ascospore formation
+def: "An ascospore formation phenotype where a microbe lacks the ability to form ascospores." [OMP:DAS]
+is_a: OMP:0007401 ! ascospore formation phenotype
+created_by: siegele
+creation_date: 2016-07-09T14:47:12Z
+
+[Term]
+id: OMP:0007408
+name: altered ascospore formation
+def: "An ascospore formation phenotype where the formation of ascospores is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007401 ! ascospore formation phenotype
+created_by: siegele
+creation_date: 2016-07-09T14:51:28Z
+
+[Term]
+id: OMP:0007409
+name: akinete morphology phenotype
+def: "A spore morphology phenotype relating to the form and structure of an akinete, which is a thick-walled (encysted) dormant cell derived from the enlargement of a vegetative cell. Akinetes typically have granular cytoplasm, are more resistant to environmental extremes than vegetative cells, and are characteristic of several groups of Cyanobacteria." [doi:10.1046/j.1469-8137.1999.00505.x, OMP:DAS, PMID:11948167]
+comment: Akinetes are typically more resistant to dessication and other environmental stresses than vegetative cells.
+is_a: OMP:0008000 ! spore morphology phenotype
+created_by: siegele
+creation_date: 2016-07-13T18:36:45Z
+
+[Term]
+id: OMP:0007410
+name: altered akinete morphology
+def: "An akinete morphology phenotype where the morphology of the akinetes produced by an organism is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007409 ! akinete morphology phenotype
+is_a: OMP:0007411 ! altered spore morphology
+created_by: siegele
+creation_date: 2016-07-13T18:43:01Z
+
+[Term]
+id: OMP:0007411
+name: altered spore morphology
+def: "A spore morphology phenotype where the morphology of spores produced by an organism is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007103 ! altered cell morphology
+is_a: OMP:0008000 ! spore morphology phenotype
+created_by: siegele
+creation_date: 2016-07-13T18:45:02Z
+
+[Term]
+id: OMP:0007412
+name: mating phenotype
+def: "A biological process phenotype that affects the process of mating, which is the pairwise union of individuals for the purpose of sexual reproduction, ultimately resulting in the formation of zygotes." [GO:0007618, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0007194 ! biological process phenotype
+created_by: dsiegele
+creation_date: 2016-07-14T16:21:02Z
+
+[Term]
+id: OMP:0007413
+name: conjugation phenotype
+def: "A mating phenotype relating to the union or introduction of genetic information from compatible mating types that results in a genetically different individual. Conjugation requires direct cellular contact between the organisms." [GO:0000746, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0007412 ! mating phenotype
+created_by: dsiegele
+creation_date: 2016-07-14T16:25:26Z
+
+[Term]
+id: OMP:0007414
+name: absence of conjugation
+def: "A conjugation phenotype where mating does not occur through the process of conjugation." [OMP:DAS]
+is_a: OMP:0007413 ! conjugation phenotype
+created_by: dsiegele
+creation_date: 2016-07-14T16:32:10Z
+
+[Term]
+id: OMP:0007415
+name: presence of conjugation
+def: "A conjugation phenotype where mating occurs through the process of conjugation." [OMP:DAS]
+is_a: OMP:0007413 ! conjugation phenotype
+created_by: dsiegele
+creation_date: 2016-07-14T16:32:10Z
+
+[Term]
+id: OMP:0007416
+name: altered conjugation
+def: "A conjugation phenotype where the frequency, rate, timing, or extent of conjugation is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007413 ! conjugation phenotype
+created_by: dsiegele
+creation_date: 2016-07-14T16:32:10Z
+
+[Term]
+id: OMP:0007417
+name: decreased conjugation
+def: "An altered conjugation phenotype where the frequency, rate, timing, or extent of conjugation is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007416 ! altered conjugation
+created_by: dsiegele
+creation_date: 2016-07-14T16:36:35Z
+
+[Term]
+id: OMP:0007418
+name: increased conjugation
+def: "An altered conjugation phenotype where the frequency, rate, timing, or extent of conjugation is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007416 ! altered conjugation
+created_by: dsiegele
+creation_date: 2016-07-14T16:36:35Z
+
+[Term]
+id: OMP:0007419
+name: abolished conjugation
+def: "A decreased conjugation phenotype where conjugation is abolished." [OMP:DAS]
+is_a: OMP:0007417 ! decreased conjugation
+created_by: dsiegele
+creation_date: 2016-07-14T16:36:35Z
+
+[Term]
+id: OMP:0007420
+name: increased akinete formation
+def: "An altered akinete formation phenotype where the rate, frequency, timing, or extent of akinete formation is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007196 ! altered akinete formation
+created_by: siegele
+creation_date: 2016-07-16T16:44:37Z
+
+[Term]
+id: OMP:0007421
+name: decreased akinete formation
+def: "An altered akinete formation phenotype where the rate, frequency, timing, or extent of akinete formation is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007196 ! altered akinete formation
+created_by: siegele
+creation_date: 2016-07-16T16:44:37Z
+
+[Term]
+id: OMP:0007422
+name: abolished akinete formation
+def: "A decreased akinete formation phenotype where the rate, frequency, timing, or extent of akinete formation is abolished." [OMP:DAS]
+is_a: OMP:0000007 ! absence of akinete formation
+is_a: OMP:0007421 ! decreased akinete formation
+created_by: siegele
+creation_date: 2016-07-16T16:44:37Z
+
+[Term]
+id: OMP:0007423
+name: decreased budding frequency
+def: "A decreased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0006006 ! decreased budding
+created_by: siegele
+creation_date: 2016-07-16T16:56:11Z
+
+[Term]
+id: OMP:0007424
+name: increased budding frequency
+def: "An increased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0006004 ! increased budding
+created_by: siegele
+creation_date: 2016-07-16T16:58:06Z
+
+[Term]
+id: OMP:0007425
+name: absence of schizogeny
+def: "A schizogeny phenotype where an organism does not reproduce by the process of schizogeny." [OMP:DAS]
+is_a: OMP:0007140 ! schizogeny phenotype
+is_a: OMP:0007235 ! absence of multiple fission
+created_by: siegele
+creation_date: 2016-07-16T17:12:16Z
+
+[Term]
+id: OMP:0007426
+name: increased schizogeny
+def: "An altered schizogeny phenotype where the rate, frequency, timing, or extent of schizogeny is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007146 ! altered schizogeny
+created_by: siegele
+creation_date: 2016-07-16T17:14:28Z
+
+[Term]
+id: OMP:0007427
+name: decreased schizogeny
+def: "An altered schizogeny phenotype where the rate, frequency, timing, or extent of schizogeny is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007146 ! altered schizogeny
+created_by: siegele
+creation_date: 2016-07-16T17:14:28Z
+
+[Term]
+id: OMP:0007428
+name: abolished schizogeny
+def: "A decreased schizogeny phenotype where the rate, frequency, timing, or extent of schizogeny is abolished." [OMP:DAS]
+is_a: OMP:0007425 ! absence of schizogeny
+is_a: OMP:0007427 ! decreased schizogeny
+created_by: siegele
+creation_date: 2016-07-16T17:14:28Z
+
+[Term]
+id: OMP:0007429
+name: increased asexual spore formation
+def: "An altered asexual sporulation phenotype where the rate, frequency, timing, or extent of the process of forming asexual (mitotic) spores is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007145 ! altered asexual sporulation
+created_by: siegele
+creation_date: 2016-07-19T15:37:25Z
+
+[Term]
+id: OMP:0007430
+name: decreased asexual spore formation
+def: "An altered asexual sporulation phenotype where the rate, frequency, timing, or extent of the process of forming asexual (mitotic) spores is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007145 ! altered asexual sporulation
+created_by: siegele
+creation_date: 2016-07-19T15:37:25Z
+
+[Term]
+id: OMP:0007431
+name: abolished asexual spore formation
+def: "A decreased asexual spore formation phenotype where the process of forming asexual (mitotic) spores is abolished." [OMP:DAS]
+is_a: OMP:0007430 ! decreased asexual spore formation
+created_by: siegele
+creation_date: 2016-07-19T15:37:25Z
+
+[Term]
+id: OMP:0007432
+name: altered number of flagella
+def: "An altered flagellum phenotype where the number of flagella per cell or cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007105 ! altered flagellum
+created_by: siegele
+creation_date: 2016-07-20T15:45:00Z
+
+[Term]
+id: OMP:0007433
+name: presence of sexual sporulation
+is_a: OMP:0007405 ! sexual sporulation phenotype
+is_a: OMP:0007439 ! presence of sexual reproduction
+created_by: siegele
+creation_date: 2016-07-27T19:29:30Z
+
+[Term]
+id: OMP:0007434
+name: absence of sexual sporulation
+is_a: OMP:0007405 ! sexual sporulation phenotype
+is_a: OMP:0007440 ! absence of sexual reproduction
+created_by: siegele
+creation_date: 2016-07-27T19:29:30Z
+
+[Term]
+id: OMP:0007435
+name: altered sexual sporulation
+is_a: OMP:0007405 ! sexual sporulation phenotype
+is_a: OMP:0007441 ! altered sexual reproduction
+created_by: siegele
+creation_date: 2016-07-27T19:29:30Z
+
+[Term]
+id: OMP:0007436
+name: increased sexual sporulation
+is_a: OMP:0007435 ! altered sexual sporulation
+created_by: siegele
+creation_date: 2016-07-27T19:29:30Z
+
+[Term]
+id: OMP:0007437
+name: decreased sexual sporulation
+is_a: OMP:0007435 ! altered sexual sporulation
+created_by: siegele
+creation_date: 2016-07-27T19:29:30Z
+
+[Term]
+id: OMP:0007438
+name: abolished sexual sporulation
+is_a: OMP:0007434 ! absence of sexual sporulation
+is_a: OMP:0007437 ! decreased sexual sporulation
+created_by: siegele
+creation_date: 2016-07-27T19:29:30Z
+
+[Term]
+id: OMP:0007439
+name: presence of sexual reproduction
+is_a: OMP:0007406 ! sexual reproduction phenotype
+created_by: siegele
+creation_date: 2016-07-27T19:32:00Z
+
+[Term]
+id: OMP:0007440
+name: absence of sexual reproduction
+is_a: OMP:0007406 ! sexual reproduction phenotype
+created_by: siegele
+creation_date: 2016-07-27T19:32:00Z
+
+[Term]
+id: OMP:0007441
+name: altered sexual reproduction
+is_a: OMP:0007406 ! sexual reproduction phenotype
+created_by: siegele
+creation_date: 2016-07-27T19:32:00Z
+
+[Term]
+id: OMP:0007442
+name: presence of lethality in mice
+def: "A presence of lethality phenotype where the host of the infection is a mouse (or mice) (Mus musculus)." [OMP:DAS]
+is_a: OMP:0007395 ! presence of lethality
+created_by: siegele
+creation_date: 2016-07-27T22:27:42Z
+
+[Term]
+id: OMP:0007443
+name: presence of lethality in immunocompromised mice
+def: "A presence of lethality phenotype where the host of the infection is an immunocompromised mouse (or mice) (Mus musculus)." [OMP:DAS]
+is_a: OMP:0007395 ! presence of lethality
+created_by: siegele
+creation_date: 2016-07-27T22:27:43Z
+
+[Term]
+id: OMP:0007444
+name: absence of lethality in mice
+def: "An absence of lethality phenotype where the host of the infection is a mouse (or mice) (Mus musculus)." [OMP:DAS]
+is_a: OMP:0007396 ! absence of lethality
+created_by: siegele
+creation_date: 2016-07-27T22:28:22Z
+
+[Term]
+id: OMP:0007445
+name: absence of lethality in immunocompromised mice
+def: "An absence of lethality phenotype where the host of the infection is an immunocompromised mouse (or mice) (Mus musculus)." [OMP:DAS]
+is_a: OMP:0007396 ! absence of lethality
+created_by: siegele
+creation_date: 2016-07-27T22:28:22Z
+
+[Term]
+id: OMP:0007446
+name: decreased lethality in mice
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of its murine host is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007398 ! decreased lethality
+created_by: siegele
+creation_date: 2016-07-27T22:29:04Z
+
+[Term]
+id: OMP:0007447
+name: decreased lethality in immunocompromised mice
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of an immunocompromised mouse host is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007398 ! decreased lethality
+created_by: siegele
+creation_date: 2016-07-27T22:31:31Z
+
+[Term]
+id: OMP:0007448
+name: abolished lethality in mice
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of its murine host is abolished." [OMP:DAS]
+is_a: OMP:0007399 ! abolished lethality
+is_a: OMP:0007446 ! decreased lethality in mice
+created_by: siegele
+creation_date: 2016-07-27T22:33:19Z
+
+[Term]
+id: OMP:0007449
+name: abolished lethality in immunocompromised mice
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of its immunocompromised murine host is abolished." [OMP:DAS]
+is_a: OMP:0007399 ! abolished lethality
+is_a: OMP:0007447 ! decreased lethality in immunocompromised mice
+created_by: siegele
+creation_date: 2016-07-27T22:33:19Z
+
+[Term]
+id: OMP:0007450
+name: increased lethality in mice
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of its murine host is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007400 ! increased lethality
+created_by: siegele
+creation_date: 2016-07-27T22:40:08Z
+
+[Term]
+id: OMP:0007451
+name: increased lethality in immunocompromised mice
+def: "A decreased lethality phenotype where the ability of an infectious microbe to cause death of an immunocompromised murine host is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007400 ! increased lethality
+created_by: siegele
+creation_date: 2016-07-27T22:40:08Z
 
 [Term]
 id: OMP:0008000
