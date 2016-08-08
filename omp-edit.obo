@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:07:2016 22:42
-saved-by: siegele
+date: 08:08:2016 15:18
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -5030,8 +5030,8 @@ creation_date: 2016-01-26T15:19:53Z
 
 [Term]
 id: OMP:0005111
-name: resistance to killing by host cells phenotype
-def: "A microbe-host interaction phenotype that relates to the ability of a microbe  to resist killing by host cells." [OMP:JG]
+name: resistance to killing by host phenotype
+def: "A microbe-host interaction phenotype relating to the resistance or sensitivity of a microbe to killing by a host." [OMP:JG]
 xref: APO:0000324 "resistance to killing by host cells"
 is_a: OMP:0000197 ! microbe-host interaction phenotype
 created_by: Jesus
@@ -5277,42 +5277,42 @@ creation_date: 2014-08-07T14:58:34Z
 
 [Term]
 id: OMP:0005139
-name: presence of  resistance to killing by host cells
-def: "A resistance to killing by host cells phenotype where microbes are resistant to killing by host cells." [OMP:JG]
-is_a: OMP:0005111 ! resistance to killing by host cells phenotype
+name: presence of  resistance to killing by host
+def: "A resistance to killing by host phenotype where a microbe is resistant to killing by a host." [OMP:JG]
+is_a: OMP:0005111 ! resistance to killing by host phenotype
 created_by: Jesus
 creation_date: 2016-02-02T13:54:09Z
 
 [Term]
 id: OMP:0005140
-name: absence of resistance to killing by host cells
-def: "A resistance to killing by host cells phenotype where microbes are killed by host cells." [OMP:JG]
-is_a: OMP:0005111 ! resistance to killing by host cells phenotype
+name: absence of resistance to killing by host
+def: "A resistance to killing by host phenotype where a microbe is sensitive to killing by a host." [OMP:JG]
+is_a: OMP:0005111 ! resistance to killing by host phenotype
 created_by: Jesus
 creation_date: 2016-02-02T13:54:58Z
 
 [Term]
 id: OMP:0005141
-name: altered resistance to killing by host cells
-def: "A resistance to killing by host cells phenotype where the microbe's ability to be killed by host cells is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0005111 ! resistance to killing by host cells phenotype
+name: altered resistance to killing by host
+def: "A resistance to killing by host phenotype where the resistance or sensitivity of a microbe to killing by a host cells is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005111 ! resistance to killing by host phenotype
 is_a: OMP:0007403 ! altered microbe-host interaction phenotype
 created_by: Jesus
 creation_date: 2016-02-02T13:55:50Z
 
 [Term]
 id: OMP:0005142
-name: increased resistance to killing by host cells
-def: "An altered resistance to killing by hosts cells phenotype where the ability to resist killing is increased relative to a designated control." [OMP:JG]
-is_a: OMP:0005141 ! altered resistance to killing by host cells
+name: increased resistance to killing by host
+def: "An altered resistance to killing by host phenotype where the ability of a microbe to resist killing by a host is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005141 ! altered resistance to killing by host
 created_by: Jesus
 creation_date: 2016-02-02T13:57:14Z
 
 [Term]
 id: OMP:0005143
-name: decreased resistance to killing by host cells
-def: "An altered resistance to killing by hosts cells phenotype where the ability to resist killing is decreased relative to a designated control." [OMP:JG]
-is_a: OMP:0005141 ! altered resistance to killing by host cells
+name: decreased resistance to killing by host
+def: "An altered resistance to killing by host phenotype where the ability of a microbe to resist killing by a host is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005141 ! altered resistance to killing by host
 created_by: Jesus
 creation_date: 2016-02-02T13:57:57Z
 
@@ -11619,10 +11619,10 @@ creation_date: 2016-07-09T13:22:30Z
 
 [Term]
 id: OMP:0007404
-name: abolished resistance to killing by host cells
-def: "A decreased resistance to killing by host cells phenotype where resistance to killing by host cells is abolished." [OMP:DAS]
-is_a: OMP:0005140 ! absence of resistance to killing by host cells
-is_a: OMP:0005143 ! decreased resistance to killing by host cells
+name: abolished resistance to killing by host
+def: "A decreased resistance to killing by host phenotype where resistance of a microbe to killing by a host is abolished." [OMP:DAS]
+is_a: OMP:0005140 ! absence of resistance to killing by host
+is_a: OMP:0005143 ! decreased resistance to killing by host
 created_by: siegele
 creation_date: 2016-07-09T13:24:32Z
 
@@ -12011,6 +12011,35 @@ def: "A decreased lethality phenotype where the ability of an infectious microbe
 is_a: OMP:0007400 ! increased lethality
 created_by: siegele
 creation_date: 2016-07-27T22:40:08Z
+
+[Term]
+id: OMP:0007452
+name: presence of survival in macrophages
+def: "A presence of resistance to killing by host that describes the ability of a microbe to survive ingestion by host macrophages." [OMP:DAS]
+is_a: OMP:0005139 ! presence of  resistance to killing by host
+created_by: dsiegele
+creation_date: 2016-08-08T14:58:53Z
+
+[Term]
+id: OMP:0007453
+name: absence of survival in macrophages
+is_a: OMP:0005140 ! absence of resistance to killing by host
+created_by: dsiegele
+creation_date: 2016-08-08T15:15:44Z
+
+[Term]
+id: OMP:0007454
+name: altered survival in macrophages
+is_a: OMP:0005141 ! altered resistance to killing by host
+created_by: dsiegele
+creation_date: 2016-08-08T15:16:09Z
+
+[Term]
+id: OMP:0007455
+name: survival in macrophages phenotype
+is_a: OMP:0000197 ! microbe-host interaction phenotype
+created_by: dsiegele
+creation_date: 2016-08-08T15:17:42Z
 
 [Term]
 id: OMP:0008000
