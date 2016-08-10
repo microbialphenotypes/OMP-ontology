@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 09:08:2016 14:58
+date: 10:08:2016 15:19
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -10380,7 +10380,7 @@ creation_date: 2015-07-31T13:26:07Z
 [Term]
 id: OMP:0007259
 name: cell viability phenotype
-def: "A microbial phenotype related to the ability of a microorganism, cell, or cells to survive and go on to grow and reproduce." [FYPO:0000004, OMP:DAS]
+def: "A microbial phenotype related to the ability of a microorganism, cell, or cells to survive and go on to grow and reproduce under the specified conditions." [FYPO:0000004, OMP:DAS]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:47:33Z
@@ -10388,16 +10388,18 @@ creation_date: 2015-07-31T13:47:33Z
 [Term]
 id: OMP:0007260
 name: altered cell viability
-def: "A cell viability phenotype where the ability of a microorganism, cell, or cells to survive, grow, and reproduce is altered relative to a designated control." [OMP:DAS]
+def: "A cell viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007259 ! cell viability phenotype
+intersection_of: OMP:0007259 ! cell viability phenotype
+intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007261
 name: decreased viability
-def: "An altered viability phenotype where the ability of an organism to survive and/or reproduce is decreased relative to a designated control." [OMP:DAS]
+def: "An altered viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
@@ -10405,7 +10407,7 @@ creation_date: 2015-07-31T14:00:54Z
 [Term]
 id: OMP:0007262
 name: increased viability
-def: "An altered viability phenotype where the ability of an organism to survive and/or reproduce is increased relative to a designated control." [OMP:DAS]
+def: "An altered viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
@@ -11516,7 +11518,7 @@ creation_date: 2016-06-29T15:47:23Z
 [Term]
 id: OMP:0007391
 name: abolished viability
-def: "A decreased viability phenotype where the ability of an organism to survive and/or reproduce is abolished." [OMP:DAS]
+def: "A decreased viability phenotype where the viability of a microbe, cell, or cells is abolished under the specified conditions." [OMP:DAS]
 synonym: "inviable" RELATED [APO:0000112]
 is_a: OMP:0007261 ! decreased viability
 created_by: siegele
@@ -11525,7 +11527,8 @@ creation_date: 2016-06-29T19:15:29Z
 [Term]
 id: OMP:0007392
 name: viable cell
-def: "A cell viability phenotype where a cell, cells, or organism is viable." [OMP:DAS]
+def: "A cell viability phenotype where a cell, cells, or organism is viable under the specified conditions." [OMP:DAS]
+xref: FYPO:0000124 "viable cell"
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2016-07-01T22:15:10Z
@@ -11533,8 +11536,9 @@ creation_date: 2016-07-01T22:15:10Z
 [Term]
 id: OMP:0007393
 name: nonviable cell
-def: "A cell viability phenotype where a cell, cells, or organism is nonviable." [OMP:DAS]
+def: "A cell viability phenotype where a cell, cells, or organism is nonviable under the specified conditions." [OMP:DAS]
 synonym: "inviable" RELATED [APO:0000112]
+xref: FYPO:0000049 "inviable cell"
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2016-07-01T22:15:10Z
@@ -12044,6 +12048,59 @@ name: survival in macrophages phenotype
 is_a: OMP:0000197 ! microbe-host interaction phenotype
 created_by: dsiegele
 creation_date: 2016-08-08T15:17:42Z
+
+[Term]
+id: OMP:0007456
+name: cell population viability phenotype
+def: "A cell population phenotype relating to the proportion of a population that are viable under the specified conditions. Viability refers to the ability of a microbe, cell, or cells to survive, grow, and reproduce." [FYPO:0002057, OMP:DAS]
+is_a: OMP:0007006 ! cell population phenotype
+created_by: dsiegele
+creation_date: 2016-08-10T14:51:48Z
+
+[Term]
+id: OMP:0007457
+name: viable cell population
+def: "A cell population viability phenotype where all, or almost all, of the cells are viable under the specified conditions." [OMP:DAS]
+xref: FYPO:0002058 "viable cell population"
+is_a: OMP:0007456 ! cell population viability phenotype
+created_by: dsiegele
+creation_date: 2016-08-10T14:56:12Z
+
+[Term]
+id: OMP:0007458
+name: nonviable cell population
+def: "A cell population viability phenotype where all, or almost all, of the cells are nonviable under the specified conditions." [FYPO:0002059, OMP:DAS]
+synonym: "inviable cell population" EXACT []
+xref: FYPO:0002059 "inviable cell population"
+is_a: OMP:0007456 ! cell population viability phenotype
+created_by: dsiegele
+creation_date: 2016-08-10T14:56:12Z
+
+[Term]
+id: OMP:0007459
+name: altered cell population viability
+def: "A cell population viability phenotype where the proportion of cells that are viable under the specified conditions is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007456 ! cell population viability phenotype
+created_by: dsiegele
+creation_date: 2016-08-10T14:56:12Z
+
+[Term]
+id: OMP:0007460
+name: viable vegetative cell population
+def: "A viable cell population phenotype where the cells in the population are in the vegetative growth phase of the life cycle." [FYPO:0002060, OMP:DAS]
+is_a: OMP:0007457 ! viable cell population
+created_by: dsiegele
+creation_date: 2016-08-10T15:00:12Z
+
+[Term]
+id: OMP:0007461
+name: nonviable vegetative cell population
+def: "A nonviable cell population phenotype where the cells in the population are in the vegetative growth phase of the life cycle." [FYPO:0002061, OMP:DAS]
+synonym: "inviable vegetative cell population" RELATED []
+xref: FYPO:0002061 "inviable vegetative cell population"
+is_a: OMP:0007458 ! nonviable cell population
+created_by: dsiegele
+creation_date: 2016-08-10T15:16:25Z
 
 [Term]
 id: OMP:0008000
