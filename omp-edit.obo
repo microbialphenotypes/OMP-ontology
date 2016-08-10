@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 08:08:2016 15:18
+date: 09:08:2016 14:58
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -11517,6 +11517,7 @@ creation_date: 2016-06-29T15:47:23Z
 id: OMP:0007391
 name: abolished viability
 def: "A decreased viability phenotype where the ability of an organism to survive and/or reproduce is abolished." [OMP:DAS]
+synonym: "inviable" RELATED [APO:0000112]
 is_a: OMP:0007261 ! decreased viability
 created_by: siegele
 creation_date: 2016-06-29T19:15:29Z
@@ -11524,6 +11525,7 @@ creation_date: 2016-06-29T19:15:29Z
 [Term]
 id: OMP:0007392
 name: viable cell
+def: "A cell viability phenotype where a cell, cells, or organism is viable." [OMP:DAS]
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2016-07-01T22:15:10Z
@@ -11531,6 +11533,8 @@ creation_date: 2016-07-01T22:15:10Z
 [Term]
 id: OMP:0007393
 name: nonviable cell
+def: "A cell viability phenotype where a cell, cells, or organism is nonviable." [OMP:DAS]
+synonym: "inviable" RELATED [APO:0000112]
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2016-07-01T22:15:10Z
