@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 10:08:2016 15:19
-saved-by: dsiegele
+date: 16:08:2016 01:52
+saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -6486,6 +6486,118 @@ synonym: "cycloheximide" NARROW [CHEBI:27641]
 is_a: OMP:0005274 ! organic heterocyclic compound resistance phenotype
 created_by: Jesus
 creation_date: 2016-07-15T15:37:34Z
+
+[Term]
+id: OMP:0005281
+name: colonization of host tissue phenotype
+def: "A colonization of a host phenotype that deals with the ability of a microbe to colonize a host's tissue." [OMP:JG]
+is_a: OMP:0007252 ! host colonization phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:05:03Z
+
+[Term]
+id: OMP:0005282
+name: presence of colonization of host tissue
+def: "A colonization of host tissue phenotype where a microbe is able to colonize the tissue of a host." [OMP:JG]
+is_a: OMP:0005281 ! colonization of host tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:06:46Z
+
+[Term]
+id: OMP:0005283
+name: absence of colonization of host tissue
+def: "A colonization of host tissue phenotype where a microbe is unable to colonize the tissue of a host." [OMP:JG]
+is_a: OMP:0005281 ! colonization of host tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:07:20Z
+
+[Term]
+id: OMP:0005284
+name: altered colonization of host tissue
+def: "A colonization of host tissue phenotype where the frequency, rate, timing, or extent of colonization of a host tissue is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005281 ! colonization of host tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:07:57Z
+
+[Term]
+id: OMP:0005285
+name: increased colonization of host tissue
+def: "An altered colonization of host tissue phenotype where the frequency, rate, timing, or extent of colonization of a host tissue is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005284 ! altered colonization of host tissue
+created_by: Jesus
+creation_date: 2016-08-16T01:08:32Z
+
+[Term]
+id: OMP:0005286
+name: decreased colonization of host tissue
+def: "An altered colonization of host tissue phenotype where the frequency, rate, timing, or extent of colonization of a host tissue is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005284 ! altered colonization of host tissue
+created_by: Jesus
+creation_date: 2016-08-16T01:09:04Z
+
+[Term]
+id: OMP:0005287
+name: abolished colonization of host tissue
+def: "A decreased colonization of host tissue phenotype where colonization of  a host tissue is abolished." [OMP:JG]
+is_a: OMP:0005286 ! decreased colonization of host tissue
+created_by: Jesus
+creation_date: 2016-08-16T01:09:35Z
+
+[Term]
+id: OMP:0005288
+name: colonization of tissue in an immunocompromised host phenotype
+def: "A colonization of a host phenotype that deals with the ability of a microbe to colonize tissue of an immunocompromised host." [OMP:JG]
+is_a: OMP:0007252 ! host colonization phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:46:42Z
+
+[Term]
+id: OMP:0005289
+name: presence of colonization of tissue in an immunocompromised host
+def: "A colonization of tissue in an immunocompromised host phenotype where a microbe is able to colonize tissue of an immunocompromised host." [OMP:JG]
+is_a: OMP:0005288 ! colonization of tissue in an immunocompromised host phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:47:48Z
+
+[Term]
+id: OMP:0005290
+name: absence of colonization of immunocompromised host tissue
+def: "A colonization of tissue in an immunocompromised host phenotype where a microbe is unable to colonize tissue of an immunocompromised host." [OMP:JG]
+is_a: OMP:0005288 ! colonization of tissue in an immunocompromised host phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:48:23Z
+
+[Term]
+id: OMP:0005291
+name: altered colonization of tissue in an immunocompromised host
+def: "A colonization of tissue in an immunocompromised host phenotype where the frequency rate, timing, or extent of colonization of tissue of an immunocompromised host is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005288 ! colonization of tissue in an immunocompromised host phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:49:00Z
+
+[Term]
+id: OMP:0005292
+name: increased colonization of tissue in an immunocompromised host
+def: "An altered colonization of tissue in an immunocompromised host phenotype where the frequency rate, timing, or extent of colonization of tissue in an immunocompromised host is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005291 ! altered colonization of tissue in an immunocompromised host
+created_by: Jesus
+creation_date: 2016-08-16T01:49:41Z
+
+[Term]
+id: OMP:0005293
+name: decreased colonization of immunocompromised host tissue
+def: "An altered colonization of tissue in an immunocompromised host phenotype where the frequency rate, timing, or extent of colonization of tissue in an immunocompromised host is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005291 ! altered colonization of tissue in an immunocompromised host
+created_by: Jesus
+creation_date: 2016-08-16T01:50:17Z
+
+[Term]
+id: OMP:0005294
+name: abolished colonization of immunocompromised host tissue
+def: "A decreased colonization of tissue in an immunocompromised host phenotype where colonization of tissue in an immunocompromised host is abolished." [OMP:JG]
+is_a: OMP:0005293 ! decreased colonization of immunocompromised host tissue
+created_by: Jesus
+creation_date: 2016-08-16T01:50:45Z
 
 [Term]
 id: OMP:0006000
