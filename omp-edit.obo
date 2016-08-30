@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 16:08:2016 01:52
+date: 30:08:2016 11:59
 saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -6598,6 +6598,230 @@ def: "A decreased colonization of tissue in an immunocompromised host phenotype 
 is_a: OMP:0005293 ! decreased colonization of immunocompromised host tissue
 created_by: Jesus
 creation_date: 2016-08-16T01:50:45Z
+
+[Term]
+id: OMP:0005295
+name: colonization of mouse tissue 
+def: "A colonization of host tissue phenotype related to the ability of a microbe to colonize mouse tissue." [OMP:JG]
+is_a: OMP:0005281 ! colonization of host tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-29T15:32:17Z
+
+[Term]
+id: OMP:0005296
+name: presence of colonization of mouse tissue
+def: "A colonization of mouse tissue phenotype where a microbe is able to colonize mouse tissue." [OMP:JG]
+is_a: OMP:0005295 ! colonization of mouse tissue 
+created_by: Jesus
+creation_date: 2016-08-29T15:34:02Z
+
+[Term]
+id: OMP:0005297
+name: absence of colonization of mouse tissue
+def: "A colonization of mouse tissue phenotype where a microbe is unable to colonize mouse tissue." [OMP:JG]
+is_a: OMP:0005295 ! colonization of mouse tissue 
+created_by: Jesus
+creation_date: 2016-08-29T15:34:47Z
+
+[Term]
+id: OMP:0005298
+name: altered colonization of mouse tissue
+def: "A colonization of mouse tissue phenotype where the frequency rate, timing, or extent of colonization is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005295 ! colonization of mouse tissue 
+created_by: Jesus
+creation_date: 2016-08-29T15:35:22Z
+
+[Term]
+id: OMP:0005299
+name: increased colonization of mouse tissue
+def: "An altered colonization of mouse tissue phenotype where the frequency rate, timing, or extent of colonization is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005298 ! altered colonization of mouse tissue
+created_by: Jesus
+creation_date: 2016-08-29T15:36:17Z
+
+[Term]
+id: OMP:0005300
+name: decreased colonization of mouse tissue
+def: "An altered colonization of mouse tissue phenotype where the frequency rate, timing, or extent of colonization is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005298 ! altered colonization of mouse tissue
+created_by: Jesus
+creation_date: 2016-08-29T15:36:52Z
+
+[Term]
+id: OMP:0005301
+name: abolished colonization of mouse tissue
+def: "A decreased colonization of mouse tissue phenotype where colonization is abolished." [OMP:JG]
+is_a: OMP:0005300 ! decreased colonization of mouse tissue
+created_by: Jesus
+creation_date: 2016-08-29T15:37:32Z
+
+[Term]
+id: OMP:0005302
+name: colonization of tissue in an immunocompromised mouse phenotype
+def: "A colonization of host tissue phenotype that related to the ability of a microbe to colonize tissue of an immunocompromised mouse." [OMP:JG]
+is_a: OMP:0005288 ! colonization of tissue in an immunocompromised host phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:28:41Z
+
+[Term]
+id: OMP:0005303
+name: presence of colonization of tissue in an immunocompromised mouse
+def: "A colonization of tissue in an immunocompromised mouse phenotype  where a microbe is able to colonize the tissue of an immunocompromised mouse." [OMP:JG]
+is_a: OMP:0005302 ! colonization of tissue in an immunocompromised mouse phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:31:08Z
+
+[Term]
+id: OMP:0005304
+name: absence of colonization of tissue in an immunocompromised mouse
+def: "A colonization of immunocompromised mouse tissue phenotype where a microbe is unable to colonize the tissue of an immunocompromised mouse." [OMP:JG]
+is_a: OMP:0005302 ! colonization of tissue in an immunocompromised mouse phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:32:11Z
+
+[Term]
+id: OMP:0005305
+name: altered colonization of tissue in an immunocompromised mouse
+def: "A colonization of tissue in an immunocompromised mouse phenotype where the frequency, rate, timing, or extent of colonization is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005302 ! colonization of tissue in an immunocompromised mouse phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:33:51Z
+
+[Term]
+id: OMP:0005306
+name: increased colonization of tissue in an immunocompromised mouse
+def: "An altered colonization of tissue in an immunocompromised mouse phenotype  where the frequency, rate, timing, or extent of colonization is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005305 ! altered colonization of tissue in an immunocompromised mouse
+created_by: Jesus
+creation_date: 2016-08-30T11:35:33Z
+
+[Term]
+id: OMP:0005307
+name: decreased colonization of tissue in an immunocompromised mouse
+def: "An altered colonization of tissue in an immunocompromised mouse phenotype where the frequency, rate, timing, or extent of colonization is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005305 ! altered colonization of tissue in an immunocompromised mouse
+created_by: Jesus
+creation_date: 2016-08-30T11:35:57Z
+
+[Term]
+id: OMP:0005308
+name: abolished colonization of tissue in an immunocompromised mouse
+def: "A decreased colonization of tissue in an immunocompromised mouse phenotype where colonization is abolished." [OMP:JG]
+is_a: OMP:0005307 ! decreased colonization of tissue in an immunocompromised mouse
+created_by: Jesus
+creation_date: 2016-08-30T11:36:46Z
+
+[Term]
+id: OMP:0005309
+name: colonization of rabbit tissue phenotype
+def: "A colonization of host tissue phenotype related to the ability of a microbe to colonize rabbit tissue." [OMP:JG]
+is_a: OMP:0005281 ! colonization of host tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:43:47Z
+
+[Term]
+id: OMP:0005310
+name: presence of colonization of rabbit tissue
+def: "A colonization of rabbit tissue phenotype where a microbe is able to colonize rabbit tissue." [OMP:JG]
+is_a: OMP:0005309 ! colonization of rabbit tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:44:31Z
+
+[Term]
+id: OMP:0005311
+name: absence of colonization of rabbit tissue
+def: "A colonization of rabbit tissue phenotype where a microbe is unable to colonize rabbit tissue." [OMP:JG]
+is_a: OMP:0005309 ! colonization of rabbit tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:45:59Z
+
+[Term]
+id: OMP:0005312
+name: altered colonization of rabbit tissue
+def: "A colonization of rabbit tissue phenotype where the frequency, rate, timing, or extent of colonization is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005309 ! colonization of rabbit tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:46:52Z
+
+[Term]
+id: OMP:0005313
+name: increased colonization of rabbit tissue
+def: "An altered colonization of rabbit tissue phenotype where the frequency, rate, timing, or extent of colonization in rabbit tissue is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005312 ! altered colonization of rabbit tissue
+created_by: Jesus
+creation_date: 2016-08-30T11:47:21Z
+
+[Term]
+id: OMP:0005314
+name: decreased colonization of rabbit tissue
+def: "An altered colonization of rabbit tissue phenotype where the frequency, rate, timing, or extent of colonization is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005312 ! altered colonization of rabbit tissue
+created_by: Jesus
+creation_date: 2016-08-30T11:47:50Z
+
+[Term]
+id: OMP:0005315
+name: abolished colonization of rabbit tissue
+def: "A decreased colonization of rabbit tissue phenotype where the colonization of rabbit tissue is abolished." [OMP:JG]
+is_a: OMP:0005314 ! decreased colonization of rabbit tissue
+created_by: Jesus
+creation_date: 2016-08-30T11:48:21Z
+
+[Term]
+id: OMP:0005316
+name: colonization of tissue in an immunocompromised rabbit phenotype
+def: "A colonization of host tissue phenotype related to the ability of a microbe to colonize tissue in an immunocompromised rabbit." [OMP:JG]
+is_a: OMP:0005288 ! colonization of tissue in an immunocompromised host phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:49:36Z
+
+[Term]
+id: OMP:0005317
+name: presence of colonization of tissue in an immunocompromised rabbit
+def: "A colonization of tissue in an immunocompromised rabbit phenotype where a microbe is able to colonize tissue of an immunocompromised rabbit." [OMP:JG]
+is_a: OMP:0005316 ! colonization of tissue in an immunocompromised rabbit phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:50:36Z
+
+[Term]
+id: OMP:0005318
+name: absence of colonization of tissue in an immunocompromised rabbit
+def: "A colonization of tissue in an immunocompromised rabbit phenotype a microbe is unable to colonize the tissue of an immunocompromised rabbit." [OMP:JG]
+is_a: OMP:0005316 ! colonization of tissue in an immunocompromised rabbit phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:52:27Z
+
+[Term]
+id: OMP:0005319
+name: altered colonization of tissue in an immunocompromised rabbit
+def: "A colonization of tissue in an immunocompromised rabbit phenotype where the frequency, rate, timing, or extent of colonization is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005316 ! colonization of tissue in an immunocompromised rabbit phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:52:54Z
+
+[Term]
+id: OMP:0005320
+name: increased colonization of tissue in an immunocompromised rabbit
+def: "An altered colonization of tissue in an immunocompromised rabbit phenotype where the frequency, rate, timing, or extent of colonization is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005319 ! altered colonization of tissue in an immunocompromised rabbit
+created_by: Jesus
+creation_date: 2016-08-30T11:55:35Z
+
+[Term]
+id: OMP:0005321
+name: decreased colonization of tissue in an immunocompromised rabbit
+def: "An altered colonization of tissue in an immunocompromised rabbit phenotype where the frequency, rate, timing, or extent of colonization is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005319 ! altered colonization of tissue in an immunocompromised rabbit
+created_by: Jesus
+creation_date: 2016-08-30T11:56:07Z
+
+[Term]
+id: OMP:0005322
+name: abolished colonization of tissue in an immunocompromised rabbit
+def: "A decreased colonization of tissue in an immunocompromised rabbit phenotype where colonization is abolished." [OMP:JG]
+is_a: OMP:0005321 ! decreased colonization of tissue in an immunocompromised rabbit
+created_by: Jesus
+creation_date: 2016-08-30T11:56:47Z
 
 [Term]
 id: OMP:0006000
