@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 31:08:2016 13:49
-saved-by: jguzman
+date: 04:09:2016 22:45
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -3075,7 +3075,7 @@ creation_date: 2011-06-06T04:29:39Z
 [Term]
 id: OMP:0000197
 name: microbe-host interaction phenotype
-def: "A microbial phenotype related to the interactions between microbial organisms and their hosts." [OMP:WAM]
+def: "A microbial phenotype related to the interactions between a microbe and its host(s)." [OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: APO:0000287 "interaction with host/environment"
 xref: GO:0051704 "multi-organism process"
@@ -6490,7 +6490,7 @@ creation_date: 2016-07-15T15:37:34Z
 [Term]
 id: OMP:0005281
 name: colonization of host tissue phenotype
-def: "A colonization of a host phenotype that deals with the ability of a microbe to colonize a host's tissue." [OMP:JG]
+def: "A colonization of a host phenotype relating to the ability of a microbe to colonize a host tissue." [OMP:JG]
 is_a: OMP:0007252 ! colonization of a host phenotype
 created_by: Jesus
 creation_date: 2016-08-16T01:05:03Z
@@ -6539,6 +6539,7 @@ creation_date: 2016-08-16T01:09:04Z
 id: OMP:0005287
 name: abolished colonization of host tissue
 def: "A decreased colonization of host tissue phenotype where colonization of  a host tissue is abolished." [OMP:JG]
+is_a: OMP:0005283 ! absence of colonization of host tissue
 is_a: OMP:0005286 ! decreased colonization of host tissue
 created_by: Jesus
 creation_date: 2016-08-16T01:09:35Z
@@ -6547,7 +6548,7 @@ creation_date: 2016-08-16T01:09:35Z
 id: OMP:0005288
 name: colonization of tissue in an immunocompromised host phenotype
 def: "A colonization of a host phenotype that deals with the ability of a microbe to colonize tissue of an immunocompromised host." [OMP:JG]
-is_a: OMP:0007252 ! colonization of a host phenotype
+is_a: OMP:0005281 ! colonization of host tissue phenotype
 created_by: Jesus
 creation_date: 2016-08-16T01:46:42Z
 
@@ -6561,7 +6562,7 @@ creation_date: 2016-08-16T01:47:48Z
 
 [Term]
 id: OMP:0005290
-name: absence of colonization of immunocompromised host tissue
+name: absence of colonization of tissue in an immunocompromised host
 def: "A colonization of tissue in an immunocompromised host phenotype where a microbe is unable to colonize tissue of an immunocompromised host." [OMP:JG]
 is_a: OMP:0005288 ! colonization of tissue in an immunocompromised host phenotype
 created_by: Jesus
@@ -6585,17 +6586,18 @@ creation_date: 2016-08-16T01:49:41Z
 
 [Term]
 id: OMP:0005293
-name: decreased colonization of immunocompromised host tissue
-def: "An altered colonization of tissue in an immunocompromised host phenotype where the frequency rate, timing, or extent of colonization of tissue in an immunocompromised host is decreased relative to a designated control." [OMP:JG]
+name: decreased colonization of tissue in an immunocompromised host
+def: "An altered colonization of tissue in an immunocompromised host phenotype where the frequency rate, timing, or extent of colonization of tissue is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0005291 ! altered colonization of tissue in an immunocompromised host
 created_by: Jesus
 creation_date: 2016-08-16T01:50:17Z
 
 [Term]
 id: OMP:0005294
-name: abolished colonization of immunocompromised host tissue
-def: "A decreased colonization of tissue in an immunocompromised host phenotype where colonization of tissue in an immunocompromised host is abolished." [OMP:JG]
-is_a: OMP:0005293 ! decreased colonization of immunocompromised host tissue
+name: abolished colonization of tissue in an immunocompromised host
+def: "A decreased colonization of tissue in an immunocompromised host phenotype where colonization is abolished." [OMP:JG]
+is_a: OMP:0005290 ! absence of colonization of tissue in an immunocompromised host
+is_a: OMP:0005293 ! decreased colonization of tissue in an immunocompromised host
 created_by: Jesus
 creation_date: 2016-08-16T01:50:45Z
 
@@ -6611,6 +6613,7 @@ creation_date: 2016-08-29T15:32:17Z
 id: OMP:0005296
 name: presence of colonization of mouse tissue
 def: "A colonization of mouse tissue phenotype where a microbe is able to colonize mouse tissue." [OMP:JG]
+is_a: OMP:0005282 ! presence of colonization of host tissue
 is_a: OMP:0005295 ! colonization of mouse tissue
 created_by: Jesus
 creation_date: 2016-08-29T15:34:02Z
@@ -6619,6 +6622,7 @@ creation_date: 2016-08-29T15:34:02Z
 id: OMP:0005297
 name: absence of colonization of mouse tissue
 def: "A colonization of mouse tissue phenotype where a microbe is unable to colonize mouse tissue." [OMP:JG]
+is_a: OMP:0005283 ! absence of colonization of host tissue
 is_a: OMP:0005295 ! colonization of mouse tissue
 created_by: Jesus
 creation_date: 2016-08-29T15:34:47Z
@@ -6627,6 +6631,7 @@ creation_date: 2016-08-29T15:34:47Z
 id: OMP:0005298
 name: altered colonization of mouse tissue
 def: "A colonization of mouse tissue phenotype where the frequency rate, timing, or extent of colonization is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005284 ! altered colonization of host tissue
 is_a: OMP:0005295 ! colonization of mouse tissue
 created_by: Jesus
 creation_date: 2016-08-29T15:35:22Z
@@ -6723,6 +6728,7 @@ creation_date: 2016-08-30T11:43:47Z
 id: OMP:0005310
 name: presence of colonization of rabbit tissue
 def: "A colonization of rabbit tissue phenotype where a microbe is able to colonize rabbit tissue." [OMP:JG]
+is_a: OMP:0005282 ! presence of colonization of host tissue
 is_a: OMP:0005309 ! colonization of rabbit tissue phenotype
 created_by: Jesus
 creation_date: 2016-08-30T11:44:31Z
@@ -6731,6 +6737,7 @@ creation_date: 2016-08-30T11:44:31Z
 id: OMP:0005311
 name: absence of colonization of rabbit tissue
 def: "A colonization of rabbit tissue phenotype where a microbe is unable to colonize rabbit tissue." [OMP:JG]
+is_a: OMP:0005283 ! absence of colonization of host tissue
 is_a: OMP:0005309 ! colonization of rabbit tissue phenotype
 created_by: Jesus
 creation_date: 2016-08-30T11:45:59Z
@@ -6739,6 +6746,7 @@ creation_date: 2016-08-30T11:45:59Z
 id: OMP:0005312
 name: altered colonization of rabbit tissue
 def: "A colonization of rabbit tissue phenotype where the frequency, rate, timing, or extent of colonization is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005284 ! altered colonization of host tissue
 is_a: OMP:0005309 ! colonization of rabbit tissue phenotype
 created_by: Jesus
 creation_date: 2016-08-30T11:46:52Z
@@ -10682,7 +10690,7 @@ creation_date: 2015-07-31T13:25:08Z
 [Term]
 id: OMP:0007255
 name: altered colonization of a host
-def: "A colonization of a host phenotype where the ability of a microbe to colonize a host organism is altered relative to a designated control." [OMP:DAS]
+def: "A colonization of a host phenotype where the frequency, rate, timing, or extent of colonization is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007252 ! colonization of a host phenotype
 is_a: OMP:0007403 ! altered microbe-host interaction phenotype
 created_by: siegele
@@ -10691,7 +10699,7 @@ creation_date: 2015-07-31T13:25:08Z
 [Term]
 id: OMP:0007256
 name: increased colonization of a host
-def: "An altered colonozization of a host phenotype where the ability of a microbe to colonize a host organism is increased relative to a designated control." [OMP:DAS]
+def: "An altered colonization of a host phenotype where the frequency, rate, timing, or extent of colonization is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007255 ! altered colonization of a host
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
@@ -10699,7 +10707,7 @@ creation_date: 2015-07-31T13:26:07Z
 [Term]
 id: OMP:0007257
 name: decreased colonization of a host
-def: "An altered colonization of a host phenotype where the ability of a microbe to colonize a host organism is decreased relative to a designated control." [OMP:DAS]
+def: "An altered colonization of a host phenotype where the frequency, rate, timing, or extent of colonization is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007255 ! altered colonization of a host
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
@@ -10707,7 +10715,7 @@ creation_date: 2015-07-31T13:26:07Z
 [Term]
 id: OMP:0007258
 name: abolished colonization of a host
-def: "A decreased colonization of a host phenotype where the ability of a microbe to colonize a host organism is abolished." [OMP:DAS]
+def: "A decreased colonization of a host phenotype where colonization of a host organism is abolished." [OMP:DAS]
 is_a: OMP:0007257 ! decreased colonization of a host
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
@@ -11955,7 +11963,7 @@ creation_date: 2016-07-06T14:32:46Z
 [Term]
 id: OMP:0007403
 name: altered microbe-host interaction phenotype
-def: "A microbe-host interaction phenotype that is altered relative to a designated control." [OMP:DAS]
+def: "A microbe-host interaction phenotype where the frequency, rate, timing, or extent of interaction is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000197 ! microbe-host interaction phenotype
 created_by: siegele
 creation_date: 2016-07-09T13:22:30Z
@@ -12436,6 +12444,15 @@ xref: FYPO:0002061 "inviable vegetative cell population"
 is_a: OMP:0007458 ! nonviable cell population
 created_by: dsiegele
 creation_date: 2016-08-10T15:16:25Z
+
+[Term]
+id: OMP:0007462
+name: colonization of invertebrate host phenotype
+def: "A microbe-host interaction phenotype relating to the ability of a microbe to colonize an invertebrate host." [OMP:DAS]
+synonym: "colonization of silkworm (Bombyx mori)" NARROW [TaxonomyID:7091]
+is_a: OMP:0005281 ! colonization of host tissue phenotype
+created_by: siegele
+creation_date: 2016-09-04T21:42:45Z
 
 [Term]
 id: OMP:0008000
