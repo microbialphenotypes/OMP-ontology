@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 04:09:2016 22:45
-saved-by: siegele
+date: 05:09:2016 14:06
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -5296,7 +5296,7 @@ id: OMP:0005141
 name: altered resistance to killing by host
 def: "A resistance to killing by host phenotype where the resistance or sensitivity of a microbe to killing by a host cells is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005111 ! resistance to killing by host phenotype
-is_a: OMP:0007403 ! altered microbe-host interaction phenotype
+is_a: OMP:0007403 ! altered microbe-host interaction
 created_by: Jesus
 creation_date: 2016-02-02T13:55:50Z
 
@@ -6516,6 +6516,7 @@ id: OMP:0005284
 name: altered colonization of host tissue
 def: "A colonization of host tissue phenotype where the frequency, rate, timing, or extent of colonization of a host tissue is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005281 ! colonization of host tissue phenotype
+is_a: OMP:0007255 ! altered colonization of a host
 created_by: Jesus
 creation_date: 2016-08-16T01:07:57Z
 
@@ -6656,6 +6657,7 @@ creation_date: 2016-08-29T15:36:52Z
 id: OMP:0005301
 name: abolished colonization of mouse tissue
 def: "A decreased colonization of mouse tissue phenotype where colonization is abolished." [OMP:JG]
+is_a: OMP:0005297 ! absence of colonization of mouse tissue
 is_a: OMP:0005300 ! decreased colonization of mouse tissue
 created_by: Jesus
 creation_date: 2016-08-29T15:37:32Z
@@ -6771,6 +6773,7 @@ creation_date: 2016-08-30T11:47:50Z
 id: OMP:0005315
 name: abolished colonization of rabbit tissue
 def: "A decreased colonization of rabbit tissue phenotype where the colonization of rabbit tissue is abolished." [OMP:JG]
+is_a: OMP:0005311 ! absence of colonization of rabbit tissue
 is_a: OMP:0005314 ! decreased colonization of rabbit tissue
 created_by: Jesus
 creation_date: 2016-08-30T11:48:21Z
@@ -10692,7 +10695,7 @@ id: OMP:0007255
 name: altered colonization of a host
 def: "A colonization of a host phenotype where the frequency, rate, timing, or extent of colonization is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007252 ! colonization of a host phenotype
-is_a: OMP:0007403 ! altered microbe-host interaction phenotype
+is_a: OMP:0007403 ! altered microbe-host interaction
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
 
@@ -10716,6 +10719,7 @@ creation_date: 2015-07-31T13:26:07Z
 id: OMP:0007258
 name: abolished colonization of a host
 def: "A decreased colonization of a host phenotype where colonization of a host organism is abolished." [OMP:DAS]
+is_a: OMP:0007254 ! absence of colonization of a host
 is_a: OMP:0007257 ! decreased colonization of a host
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
@@ -11915,7 +11919,7 @@ id: OMP:0007397
 name: altered lethality
 def: "A lethality phenotype where the ability of an infectious  microbe to cause death of the host is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007394 ! lethality phenotype
-is_a: OMP:0007403 ! altered microbe-host interaction phenotype
+is_a: OMP:0007403 ! altered microbe-host interaction
 created_by: siegele
 creation_date: 2016-07-06T13:12:26Z
 
@@ -11962,9 +11966,10 @@ creation_date: 2016-07-06T14:32:46Z
 
 [Term]
 id: OMP:0007403
-name: altered microbe-host interaction phenotype
+name: altered microbe-host interaction
 def: "A microbe-host interaction phenotype where the frequency, rate, timing, or extent of interaction is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000197 ! microbe-host interaction phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2016-07-09T13:22:30Z
 
@@ -12450,7 +12455,7 @@ id: OMP:0007462
 name: colonization of invertebrate host phenotype
 def: "A microbe-host interaction phenotype relating to the ability of a microbe to colonize an invertebrate host." [OMP:DAS]
 synonym: "colonization of silkworm (Bombyx mori)" NARROW [TaxonomyID:7091]
-is_a: OMP:0005281 ! colonization of host tissue phenotype
+is_a: OMP:0007252 ! colonization of a host phenotype
 created_by: siegele
 creation_date: 2016-09-04T21:42:45Z
 
