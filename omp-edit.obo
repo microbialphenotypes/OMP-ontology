@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 12:09:2016 14:42
+date: 12:09:2016 15:21
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -9869,6 +9869,7 @@ name: altered colony morphology
 def: "A colony morphology phenotype where the morphology of a colony or colonies is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000100 ! colony morphology phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
+is_a: OMP:0007470 ! altered population morphology
 created_by: siegele
 creation_date: 2014-08-29T12:27:50Z
 
@@ -12481,6 +12482,7 @@ id: OMP:0007465
 name: altered flocculation
 def: "A flocculation phenotype where the frequency, rate, timing, or extent of flocculation is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0000178 ! flocculation phenotype
+is_a: OMP:0007469 ! altered liquid culture morphology
 created_by: dsiegele
 creation_date: 2016-09-12T14:35:40Z
 
@@ -12504,9 +12506,28 @@ creation_date: 2016-09-12T14:35:40Z
 id: OMP:0007468
 name: abolished flocculation
 def: "A decreased flocculation phenotype where flocculation is abolished." [OMP:JG]
+is_a: OMP:0007464 ! absence of flocculation
 is_a: OMP:0007467 ! decreased flocculation
 created_by: dsiegele
 creation_date: 2016-09-12T14:35:40Z
+
+[Term]
+id: OMP:0007469
+name: altered liquid culture morphology
+def: "A liquid culture morphology phenotype where the visible appearance of a liquid culture is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000177 ! liquid culture morphology phenotype
+is_a: OMP:0007470 ! altered population morphology
+created_by: dsiegele
+creation_date: 2016-09-12T15:14:45Z
+
+[Term]
+id: OMP:0007470
+name: altered population morphology
+def: "A population morphology phenotype where the visible appearance of a microbial population is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007315 ! population morphology phenotype
+is_a: OMP:0007351 ! altered biological process
+created_by: dsiegele
+creation_date: 2016-09-12T15:16:19Z
 
 [Term]
 id: OMP:0008000
