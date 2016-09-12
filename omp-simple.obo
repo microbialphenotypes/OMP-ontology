@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: releases/2016-08-03
-date: 27:07:2016 22:42
-saved-by: siegele
+data-version: releases/2016-09-09
+date: 05:09:2016 14:06
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -1667,7 +1667,7 @@ creation_date: 2011-06-06T04:29:39Z
 [Term]
 id: OMP:0000197
 name: microbe-host interaction phenotype
-def: "A microbial phenotype related to the interactions between microbial organisms and their hosts." [OMP:WAM]
+def: "A microbial phenotype related to the interactions between a microbe and its host(s)." [OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: APO:0000287 "interaction with host/environment"
 xref: GO:0051704 "multi-organism process"
@@ -3598,8 +3598,8 @@ creation_date: 2016-01-26T15:19:53Z
 
 [Term]
 id: OMP:0005111
-name: resistance to killing by host cells phenotype
-def: "A microbe-host interaction phenotype that relates to the ability of a microbe  to resist killing by host cells." [OMP:JG]
+name: resistance to killing by host phenotype
+def: "A microbe-host interaction phenotype relating to the resistance or sensitivity of a microbe to killing by a host." [OMP:JG]
 xref: APO:0000324 "resistance to killing by host cells"
 is_a: OMP:0000197 ! microbe-host interaction phenotype
 created_by: Jesus
@@ -3843,42 +3843,42 @@ creation_date: 2014-08-07T14:58:34Z
 
 [Term]
 id: OMP:0005139
-name: presence of  resistance to killing by host cells
-def: "A resistance to killing by host cells phenotype where microbes are resistant to killing by host cells." [OMP:JG]
-is_a: OMP:0005111 ! resistance to killing by host cells phenotype
+name: presence of  resistance to killing by host
+def: "A resistance to killing by host phenotype where a microbe is resistant to killing by a host." [OMP:JG]
+is_a: OMP:0005111 ! resistance to killing by host phenotype
 created_by: Jesus
 creation_date: 2016-02-02T13:54:09Z
 
 [Term]
 id: OMP:0005140
-name: absence of resistance to killing by host cells
-def: "A resistance to killing by host cells phenotype where microbes are killed by host cells." [OMP:JG]
-is_a: OMP:0005111 ! resistance to killing by host cells phenotype
+name: absence of resistance to killing by host
+def: "A resistance to killing by host phenotype where a microbe is sensitive to killing by a host." [OMP:JG]
+is_a: OMP:0005111 ! resistance to killing by host phenotype
 created_by: Jesus
 creation_date: 2016-02-02T13:54:58Z
 
 [Term]
 id: OMP:0005141
-name: altered resistance to killing by host cells
-def: "A resistance to killing by host cells phenotype where the microbe's ability to be killed by host cells is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0005111 ! resistance to killing by host cells phenotype
-is_a: OMP:0007403 ! altered microbe-host interaction phenotype
+name: altered resistance to killing by host
+def: "A resistance to killing by host phenotype where the resistance or sensitivity of a microbe to killing by a host cells is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005111 ! resistance to killing by host phenotype
+is_a: OMP:0007403 ! altered microbe-host interaction
 created_by: Jesus
 creation_date: 2016-02-02T13:55:50Z
 
 [Term]
 id: OMP:0005142
-name: increased resistance to killing by host cells
-def: "An altered resistance to killing by hosts cells phenotype where the ability to resist killing is increased relative to a designated control." [OMP:JG]
-is_a: OMP:0005141 ! altered resistance to killing by host cells
+name: increased resistance to killing by host
+def: "An altered resistance to killing by host phenotype where the ability of a microbe to resist killing by a host is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005141 ! altered resistance to killing by host
 created_by: Jesus
 creation_date: 2016-02-02T13:57:14Z
 
 [Term]
 id: OMP:0005143
-name: decreased resistance to killing by host cells
-def: "An altered resistance to killing by hosts cells phenotype where the ability to resist killing is decreased relative to a designated control." [OMP:JG]
-is_a: OMP:0005141 ! altered resistance to killing by host cells
+name: decreased resistance to killing by host
+def: "An altered resistance to killing by host phenotype where the ability of a microbe to resist killing by a host is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005141 ! altered resistance to killing by host
 created_by: Jesus
 creation_date: 2016-02-02T13:57:57Z
 
@@ -5036,6 +5036,353 @@ synonym: "cycloheximide" NARROW [CHEBI:27641]
 is_a: OMP:0005274 ! organic heterocyclic compound resistance phenotype
 created_by: Jesus
 creation_date: 2016-07-15T15:37:34Z
+
+[Term]
+id: OMP:0005281
+name: colonization of host tissue phenotype
+def: "A colonization of a host phenotype relating to the ability of a microbe to colonize a host tissue." [OMP:JG]
+is_a: OMP:0007252 ! colonization of a host phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:05:03Z
+
+[Term]
+id: OMP:0005282
+name: presence of colonization of host tissue
+def: "A colonization of host tissue phenotype where a microbe is able to colonize the tissue of a host." [OMP:JG]
+is_a: OMP:0005281 ! colonization of host tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:06:46Z
+
+[Term]
+id: OMP:0005283
+name: absence of colonization of host tissue
+def: "A colonization of host tissue phenotype where a microbe is unable to colonize the tissue of a host." [OMP:JG]
+is_a: OMP:0005281 ! colonization of host tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:07:20Z
+
+[Term]
+id: OMP:0005284
+name: altered colonization of host tissue
+def: "A colonization of host tissue phenotype where the frequency, rate, timing, or extent of colonization of a host tissue is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005281 ! colonization of host tissue phenotype
+is_a: OMP:0007255 ! altered colonization of a host
+created_by: Jesus
+creation_date: 2016-08-16T01:07:57Z
+
+[Term]
+id: OMP:0005285
+name: increased colonization of host tissue
+def: "An altered colonization of host tissue phenotype where the frequency, rate, timing, or extent of colonization of a host tissue is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005284 ! altered colonization of host tissue
+created_by: Jesus
+creation_date: 2016-08-16T01:08:32Z
+
+[Term]
+id: OMP:0005286
+name: decreased colonization of host tissue
+def: "An altered colonization of host tissue phenotype where the frequency, rate, timing, or extent of colonization of a host tissue is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005284 ! altered colonization of host tissue
+created_by: Jesus
+creation_date: 2016-08-16T01:09:04Z
+
+[Term]
+id: OMP:0005287
+name: abolished colonization of host tissue
+def: "A decreased colonization of host tissue phenotype where colonization of  a host tissue is abolished." [OMP:JG]
+is_a: OMP:0005283 ! absence of colonization of host tissue
+is_a: OMP:0005286 ! decreased colonization of host tissue
+created_by: Jesus
+creation_date: 2016-08-16T01:09:35Z
+
+[Term]
+id: OMP:0005288
+name: colonization of tissue in an immunocompromised host phenotype
+def: "A colonization of a host phenotype that deals with the ability of a microbe to colonize tissue of an immunocompromised host." [OMP:JG]
+is_a: OMP:0005281 ! colonization of host tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:46:42Z
+
+[Term]
+id: OMP:0005289
+name: presence of colonization of tissue in an immunocompromised host
+def: "A colonization of tissue in an immunocompromised host phenotype where a microbe is able to colonize tissue of an immunocompromised host." [OMP:JG]
+is_a: OMP:0005288 ! colonization of tissue in an immunocompromised host phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:47:48Z
+
+[Term]
+id: OMP:0005290
+name: absence of colonization of tissue in an immunocompromised host
+def: "A colonization of tissue in an immunocompromised host phenotype where a microbe is unable to colonize tissue of an immunocompromised host." [OMP:JG]
+is_a: OMP:0005288 ! colonization of tissue in an immunocompromised host phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:48:23Z
+
+[Term]
+id: OMP:0005291
+name: altered colonization of tissue in an immunocompromised host
+def: "A colonization of tissue in an immunocompromised host phenotype where the frequency rate, timing, or extent of colonization of tissue of an immunocompromised host is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005288 ! colonization of tissue in an immunocompromised host phenotype
+created_by: Jesus
+creation_date: 2016-08-16T01:49:00Z
+
+[Term]
+id: OMP:0005292
+name: increased colonization of tissue in an immunocompromised host
+def: "An altered colonization of tissue in an immunocompromised host phenotype where the frequency rate, timing, or extent of colonization of tissue in an immunocompromised host is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005291 ! altered colonization of tissue in an immunocompromised host
+created_by: Jesus
+creation_date: 2016-08-16T01:49:41Z
+
+[Term]
+id: OMP:0005293
+name: decreased colonization of tissue in an immunocompromised host
+def: "An altered colonization of tissue in an immunocompromised host phenotype where the frequency rate, timing, or extent of colonization of tissue is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005291 ! altered colonization of tissue in an immunocompromised host
+created_by: Jesus
+creation_date: 2016-08-16T01:50:17Z
+
+[Term]
+id: OMP:0005294
+name: abolished colonization of tissue in an immunocompromised host
+def: "A decreased colonization of tissue in an immunocompromised host phenotype where colonization is abolished." [OMP:JG]
+is_a: OMP:0005290 ! absence of colonization of tissue in an immunocompromised host
+is_a: OMP:0005293 ! decreased colonization of tissue in an immunocompromised host
+created_by: Jesus
+creation_date: 2016-08-16T01:50:45Z
+
+[Term]
+id: OMP:0005295
+name: colonization of mouse tissue
+def: "A colonization of host tissue phenotype related to the ability of a microbe to colonize mouse tissue." [OMP:JG]
+is_a: OMP:0005281 ! colonization of host tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-29T15:32:17Z
+
+[Term]
+id: OMP:0005296
+name: presence of colonization of mouse tissue
+def: "A colonization of mouse tissue phenotype where a microbe is able to colonize mouse tissue." [OMP:JG]
+is_a: OMP:0005282 ! presence of colonization of host tissue
+is_a: OMP:0005295 ! colonization of mouse tissue
+created_by: Jesus
+creation_date: 2016-08-29T15:34:02Z
+
+[Term]
+id: OMP:0005297
+name: absence of colonization of mouse tissue
+def: "A colonization of mouse tissue phenotype where a microbe is unable to colonize mouse tissue." [OMP:JG]
+is_a: OMP:0005283 ! absence of colonization of host tissue
+is_a: OMP:0005295 ! colonization of mouse tissue
+created_by: Jesus
+creation_date: 2016-08-29T15:34:47Z
+
+[Term]
+id: OMP:0005298
+name: altered colonization of mouse tissue
+def: "A colonization of mouse tissue phenotype where the frequency rate, timing, or extent of colonization is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005284 ! altered colonization of host tissue
+is_a: OMP:0005295 ! colonization of mouse tissue
+created_by: Jesus
+creation_date: 2016-08-29T15:35:22Z
+
+[Term]
+id: OMP:0005299
+name: increased colonization of mouse tissue
+def: "An altered colonization of mouse tissue phenotype where the frequency rate, timing, or extent of colonization is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005298 ! altered colonization of mouse tissue
+created_by: Jesus
+creation_date: 2016-08-29T15:36:17Z
+
+[Term]
+id: OMP:0005300
+name: decreased colonization of mouse tissue
+def: "An altered colonization of mouse tissue phenotype where the frequency rate, timing, or extent of colonization is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005298 ! altered colonization of mouse tissue
+created_by: Jesus
+creation_date: 2016-08-29T15:36:52Z
+
+[Term]
+id: OMP:0005301
+name: abolished colonization of mouse tissue
+def: "A decreased colonization of mouse tissue phenotype where colonization is abolished." [OMP:JG]
+is_a: OMP:0005297 ! absence of colonization of mouse tissue
+is_a: OMP:0005300 ! decreased colonization of mouse tissue
+created_by: Jesus
+creation_date: 2016-08-29T15:37:32Z
+
+[Term]
+id: OMP:0005302
+name: colonization of tissue in an immunocompromised mouse phenotype
+def: "A colonization of host tissue phenotype that related to the ability of a microbe to colonize tissue of an immunocompromised mouse." [OMP:JG]
+is_a: OMP:0005288 ! colonization of tissue in an immunocompromised host phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:28:41Z
+
+[Term]
+id: OMP:0005303
+name: presence of colonization of tissue in an immunocompromised mouse
+def: "A colonization of tissue in an immunocompromised mouse phenotype  where a microbe is able to colonize the tissue of an immunocompromised mouse." [OMP:JG]
+is_a: OMP:0005302 ! colonization of tissue in an immunocompromised mouse phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:31:08Z
+
+[Term]
+id: OMP:0005304
+name: absence of colonization of tissue in an immunocompromised mouse
+def: "A colonization of immunocompromised mouse tissue phenotype where a microbe is unable to colonize the tissue of an immunocompromised mouse." [OMP:JG]
+is_a: OMP:0005302 ! colonization of tissue in an immunocompromised mouse phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:32:11Z
+
+[Term]
+id: OMP:0005305
+name: altered colonization of tissue in an immunocompromised mouse
+def: "A colonization of tissue in an immunocompromised mouse phenotype where the frequency, rate, timing, or extent of colonization is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005302 ! colonization of tissue in an immunocompromised mouse phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:33:51Z
+
+[Term]
+id: OMP:0005306
+name: increased colonization of tissue in an immunocompromised mouse
+def: "An altered colonization of tissue in an immunocompromised mouse phenotype  where the frequency, rate, timing, or extent of colonization is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005305 ! altered colonization of tissue in an immunocompromised mouse
+created_by: Jesus
+creation_date: 2016-08-30T11:35:33Z
+
+[Term]
+id: OMP:0005307
+name: decreased colonization of tissue in an immunocompromised mouse
+def: "An altered colonization of tissue in an immunocompromised mouse phenotype where the frequency, rate, timing, or extent of colonization is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005305 ! altered colonization of tissue in an immunocompromised mouse
+created_by: Jesus
+creation_date: 2016-08-30T11:35:57Z
+
+[Term]
+id: OMP:0005308
+name: abolished colonization of tissue in an immunocompromised mouse
+def: "A decreased colonization of tissue in an immunocompromised mouse phenotype where colonization is abolished." [OMP:JG]
+is_a: OMP:0005307 ! decreased colonization of tissue in an immunocompromised mouse
+created_by: Jesus
+creation_date: 2016-08-30T11:36:46Z
+
+[Term]
+id: OMP:0005309
+name: colonization of rabbit tissue phenotype
+def: "A colonization of host tissue phenotype related to the ability of a microbe to colonize rabbit tissue." [OMP:JG]
+is_a: OMP:0005281 ! colonization of host tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:43:47Z
+
+[Term]
+id: OMP:0005310
+name: presence of colonization of rabbit tissue
+def: "A colonization of rabbit tissue phenotype where a microbe is able to colonize rabbit tissue." [OMP:JG]
+is_a: OMP:0005282 ! presence of colonization of host tissue
+is_a: OMP:0005309 ! colonization of rabbit tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:44:31Z
+
+[Term]
+id: OMP:0005311
+name: absence of colonization of rabbit tissue
+def: "A colonization of rabbit tissue phenotype where a microbe is unable to colonize rabbit tissue." [OMP:JG]
+is_a: OMP:0005283 ! absence of colonization of host tissue
+is_a: OMP:0005309 ! colonization of rabbit tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:45:59Z
+
+[Term]
+id: OMP:0005312
+name: altered colonization of rabbit tissue
+def: "A colonization of rabbit tissue phenotype where the frequency, rate, timing, or extent of colonization is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005284 ! altered colonization of host tissue
+is_a: OMP:0005309 ! colonization of rabbit tissue phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:46:52Z
+
+[Term]
+id: OMP:0005313
+name: increased colonization of rabbit tissue
+def: "An altered colonization of rabbit tissue phenotype where the frequency, rate, timing, or extent of colonization in rabbit tissue is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005312 ! altered colonization of rabbit tissue
+created_by: Jesus
+creation_date: 2016-08-30T11:47:21Z
+
+[Term]
+id: OMP:0005314
+name: decreased colonization of rabbit tissue
+def: "An altered colonization of rabbit tissue phenotype where the frequency, rate, timing, or extent of colonization is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005312 ! altered colonization of rabbit tissue
+created_by: Jesus
+creation_date: 2016-08-30T11:47:50Z
+
+[Term]
+id: OMP:0005315
+name: abolished colonization of rabbit tissue
+def: "A decreased colonization of rabbit tissue phenotype where the colonization of rabbit tissue is abolished." [OMP:JG]
+is_a: OMP:0005311 ! absence of colonization of rabbit tissue
+is_a: OMP:0005314 ! decreased colonization of rabbit tissue
+created_by: Jesus
+creation_date: 2016-08-30T11:48:21Z
+
+[Term]
+id: OMP:0005316
+name: colonization of tissue in an immunocompromised rabbit phenotype
+def: "A colonization of host tissue phenotype related to the ability of a microbe to colonize tissue in an immunocompromised rabbit." [OMP:JG]
+is_a: OMP:0005288 ! colonization of tissue in an immunocompromised host phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:49:36Z
+
+[Term]
+id: OMP:0005317
+name: presence of colonization of tissue in an immunocompromised rabbit
+def: "A colonization of tissue in an immunocompromised rabbit phenotype where a microbe is able to colonize tissue of an immunocompromised rabbit." [OMP:JG]
+is_a: OMP:0005316 ! colonization of tissue in an immunocompromised rabbit phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:50:36Z
+
+[Term]
+id: OMP:0005318
+name: absence of colonization of tissue in an immunocompromised rabbit
+def: "A colonization of tissue in an immunocompromised rabbit phenotype a microbe is unable to colonize the tissue of an immunocompromised rabbit." [OMP:JG]
+is_a: OMP:0005316 ! colonization of tissue in an immunocompromised rabbit phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:52:27Z
+
+[Term]
+id: OMP:0005319
+name: altered colonization of tissue in an immunocompromised rabbit
+def: "A colonization of tissue in an immunocompromised rabbit phenotype where the frequency, rate, timing, or extent of colonization is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005316 ! colonization of tissue in an immunocompromised rabbit phenotype
+created_by: Jesus
+creation_date: 2016-08-30T11:52:54Z
+
+[Term]
+id: OMP:0005320
+name: increased colonization of tissue in an immunocompromised rabbit
+def: "An altered colonization of tissue in an immunocompromised rabbit phenotype where the frequency, rate, timing, or extent of colonization is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005319 ! altered colonization of tissue in an immunocompromised rabbit
+created_by: Jesus
+creation_date: 2016-08-30T11:55:35Z
+
+[Term]
+id: OMP:0005321
+name: decreased colonization of tissue in an immunocompromised rabbit
+def: "An altered colonization of tissue in an immunocompromised rabbit phenotype where the frequency, rate, timing, or extent of colonization is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005319 ! altered colonization of tissue in an immunocompromised rabbit
+created_by: Jesus
+creation_date: 2016-08-30T11:56:07Z
+
+[Term]
+id: OMP:0005322
+name: abolished colonization of tissue in an immunocompromised rabbit
+def: "A decreased colonization of tissue in an immunocompromised rabbit phenotype where colonization is abolished." [OMP:JG]
+is_a: OMP:0005321 ! decreased colonization of tissue in an immunocompromised rabbit
+created_by: Jesus
+creation_date: 2016-08-30T11:56:47Z
 
 [Term]
 id: OMP:0006000
@@ -8820,7 +9167,7 @@ creation_date: 2015-07-16T00:42:17Z
 
 [Term]
 id: OMP:0007252
-name: host colonization phenotype
+name: colonization of a host phenotype
 def: "A microbe-host interaction phenotype that relates to the ability of a microbe to colonize a host organism." [OMP:DAS]
 is_a: OMP:0000197 ! microbe-host interaction phenotype
 created_by: siegele
@@ -8828,58 +9175,58 @@ creation_date: 2015-07-31T13:22:28Z
 
 [Term]
 id: OMP:0007253
-name: presence of host colonization
-def: "A host colonization phenotype where a microbe is able to colonize a host organism." [OMP:JG]
-is_a: OMP:0007252 ! host colonization phenotype
+name: presence of colonization of a host
+def: "A colonization of a host phenotype where a microbe is able to colonize a host organism." [OMP:JG]
+is_a: OMP:0007252 ! colonization of a host phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
 
 [Term]
 id: OMP:0007254
-name: absence of host colonization
-def: "A host colonization phenotype where a microbe lacks the ability to colonize a host organism." [OMP:JG]
-is_a: OMP:0007252 ! host colonization phenotype
+name: absence of colonization of a host
+def: "A colonization of a host phenotype where a microbe lacks the ability to colonize a host organism." [OMP:JG]
+is_a: OMP:0007252 ! colonization of a host phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
 
 [Term]
 id: OMP:0007255
-name: altered host colonization
-def: "A host colonization phenotype where the ability of a microbe to colonize a host organism is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007252 ! host colonization phenotype
-is_a: OMP:0007403 ! altered microbe-host interaction phenotype
+name: altered colonization of a host
+def: "A colonization of a host phenotype where the frequency, rate, timing, or extent of colonization is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007252 ! colonization of a host phenotype
+is_a: OMP:0007403 ! altered microbe-host interaction
 created_by: siegele
 creation_date: 2015-07-31T13:25:08Z
 
 [Term]
 id: OMP:0007256
-name: Increased host colonization
-def: "An altered host colonization phenotype where the ability of a microbe to colonize a host organism is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007255 ! altered host colonization
+name: increased colonization of a host
+def: "An altered colonization of a host phenotype where the frequency, rate, timing, or extent of colonization is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007255 ! altered colonization of a host
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
 
 [Term]
 id: OMP:0007257
-name: decreased host colonization
-def: "An altered host colonization phenotype where the ability of a microbe to colonize a host organism is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007255 ! altered host colonization
+name: decreased colonization of a host
+def: "An altered colonization of a host phenotype where the frequency, rate, timing, or extent of colonization is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007255 ! altered colonization of a host
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
 
 [Term]
 id: OMP:0007258
-name: abolished host colonization
-def: "A decreased host colonization phenotype where the ability of a microbe to colonize a host organism is abolished." [OMP:DAS]
-is_a: OMP:0007254 ! absence of host colonization
-is_a: OMP:0007257 ! decreased host colonization
+name: abolished colonization of a host
+def: "A decreased colonization of a host phenotype where colonization of a host organism is abolished." [OMP:DAS]
+is_a: OMP:0007254 ! absence of colonization of a host
+is_a: OMP:0007257 ! decreased colonization of a host
 created_by: siegele
 creation_date: 2015-07-31T13:26:07Z
 
 [Term]
 id: OMP:0007259
 name: cell viability phenotype
-def: "A microbial phenotype related to the ability of a microorganism, cell, or cells to survive and go on to grow and reproduce." [FYPO:0000004, OMP:DAS]
+def: "A microbial phenotype related to the ability of a microorganism, cell, or cells to survive and go on to grow and reproduce under the specified conditions." [FYPO:0000004, OMP:DAS]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:47:33Z
@@ -8887,16 +9234,17 @@ creation_date: 2015-07-31T13:47:33Z
 [Term]
 id: OMP:0007260
 name: altered cell viability
-def: "A cell viability phenotype where the ability of a microorganism, cell, or cells to survive, grow, and reproduce is altered relative to a designated control." [OMP:DAS]
+def: "A cell viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007259 ! cell viability phenotype
+relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007261
 name: decreased viability
-def: "An altered viability phenotype where the ability of an organism to survive and/or reproduce is decreased relative to a designated control." [OMP:DAS]
+def: "An altered viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
@@ -8904,7 +9252,7 @@ creation_date: 2015-07-31T14:00:54Z
 [Term]
 id: OMP:0007262
 name: increased viability
-def: "An altered viability phenotype where the ability of an organism to survive and/or reproduce is increased relative to a designated control." [OMP:DAS]
+def: "An altered viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
@@ -10011,7 +10359,8 @@ creation_date: 2016-06-29T15:47:23Z
 [Term]
 id: OMP:0007391
 name: abolished viability
-def: "A decreased viability phenotype where the ability of an organism to survive and/or reproduce is abolished." [OMP:DAS]
+def: "A decreased viability phenotype where the viability of a microbe, cell, or cells is abolished under the specified conditions." [OMP:DAS]
+synonym: "inviable" RELATED [APO:0000112]
 is_a: OMP:0007261 ! decreased viability
 created_by: siegele
 creation_date: 2016-06-29T19:15:29Z
@@ -10019,6 +10368,8 @@ creation_date: 2016-06-29T19:15:29Z
 [Term]
 id: OMP:0007392
 name: viable cell
+def: "A cell viability phenotype where a cell, cells, or organism is viable under the specified conditions." [OMP:DAS]
+xref: FYPO:0000124 "viable cell"
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2016-07-01T22:15:10Z
@@ -10026,6 +10377,9 @@ creation_date: 2016-07-01T22:15:10Z
 [Term]
 id: OMP:0007393
 name: nonviable cell
+def: "A cell viability phenotype where a cell, cells, or organism is nonviable under the specified conditions." [OMP:DAS]
+synonym: "inviable" RELATED [APO:0000112]
+xref: FYPO:0000049 "inviable cell"
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2016-07-01T22:15:10Z
@@ -10059,7 +10413,7 @@ id: OMP:0007397
 name: altered lethality
 def: "A lethality phenotype where the ability of an infectious  microbe to cause death of the host is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007394 ! lethality phenotype
-is_a: OMP:0007403 ! altered microbe-host interaction phenotype
+is_a: OMP:0007403 ! altered microbe-host interaction
 created_by: siegele
 creation_date: 2016-07-06T13:12:26Z
 
@@ -10106,18 +10460,19 @@ creation_date: 2016-07-06T14:32:46Z
 
 [Term]
 id: OMP:0007403
-name: altered microbe-host interaction phenotype
-def: "A microbe-host interaction phenotype that is altered relative to a designated control." [OMP:DAS]
+name: altered microbe-host interaction
+def: "A microbe-host interaction phenotype where the frequency, rate, timing, or extent of interaction is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000197 ! microbe-host interaction phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
 creation_date: 2016-07-09T13:22:30Z
 
 [Term]
 id: OMP:0007404
-name: abolished resistance to killing by host cells
-def: "A decreased resistance to killing by host cells phenotype where resistance to killing by host cells is abolished." [OMP:DAS]
-is_a: OMP:0005140 ! absence of resistance to killing by host cells
-is_a: OMP:0005143 ! decreased resistance to killing by host cells
+name: abolished resistance to killing by host
+def: "A decreased resistance to killing by host phenotype where resistance of a microbe to killing by a host is abolished." [OMP:DAS]
+is_a: OMP:0005140 ! absence of resistance to killing by host
+is_a: OMP:0005143 ! decreased resistance to killing by host
 created_by: siegele
 creation_date: 2016-07-09T13:24:32Z
 
@@ -10506,6 +10861,97 @@ def: "A decreased lethality phenotype where the ability of an infectious microbe
 is_a: OMP:0007400 ! increased lethality
 created_by: siegele
 creation_date: 2016-07-27T22:40:08Z
+
+[Term]
+id: OMP:0007452
+name: presence of survival in macrophages
+def: "A presence of resistance to killing by host that describes the ability of a microbe to survive ingestion by host macrophages." [OMP:DAS]
+is_a: OMP:0005139 ! presence of  resistance to killing by host
+created_by: dsiegele
+creation_date: 2016-08-08T14:58:53Z
+
+[Term]
+id: OMP:0007453
+name: absence of survival in macrophages
+is_a: OMP:0005140 ! absence of resistance to killing by host
+created_by: dsiegele
+creation_date: 2016-08-08T15:15:44Z
+
+[Term]
+id: OMP:0007454
+name: altered survival in macrophages
+is_a: OMP:0005141 ! altered resistance to killing by host
+created_by: dsiegele
+creation_date: 2016-08-08T15:16:09Z
+
+[Term]
+id: OMP:0007455
+name: survival in macrophages phenotype
+is_a: OMP:0000197 ! microbe-host interaction phenotype
+created_by: dsiegele
+creation_date: 2016-08-08T15:17:42Z
+
+[Term]
+id: OMP:0007456
+name: cell population viability phenotype
+def: "A cell population phenotype relating to the proportion of a population that are viable under the specified conditions. Viability refers to the ability of a microbe, cell, or cells to survive, grow, and reproduce." [FYPO:0002057, OMP:DAS]
+is_a: OMP:0007006 ! cell population phenotype
+created_by: dsiegele
+creation_date: 2016-08-10T14:51:48Z
+
+[Term]
+id: OMP:0007457
+name: viable cell population
+def: "A cell population viability phenotype where all, or almost all, of the cells are viable under the specified conditions." [OMP:DAS]
+xref: FYPO:0002058 "viable cell population"
+is_a: OMP:0007456 ! cell population viability phenotype
+created_by: dsiegele
+creation_date: 2016-08-10T14:56:12Z
+
+[Term]
+id: OMP:0007458
+name: nonviable cell population
+def: "A cell population viability phenotype where all, or almost all, of the cells are nonviable under the specified conditions." [FYPO:0002059, OMP:DAS]
+synonym: "inviable cell population" EXACT []
+xref: FYPO:0002059 "inviable cell population"
+is_a: OMP:0007456 ! cell population viability phenotype
+created_by: dsiegele
+creation_date: 2016-08-10T14:56:12Z
+
+[Term]
+id: OMP:0007459
+name: altered cell population viability
+def: "A cell population viability phenotype where the proportion of cells that are viable under the specified conditions is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007456 ! cell population viability phenotype
+created_by: dsiegele
+creation_date: 2016-08-10T14:56:12Z
+
+[Term]
+id: OMP:0007460
+name: viable vegetative cell population
+def: "A viable cell population phenotype where the cells in the population are in the vegetative growth phase of the life cycle." [FYPO:0002060, OMP:DAS]
+is_a: OMP:0007457 ! viable cell population
+created_by: dsiegele
+creation_date: 2016-08-10T15:00:12Z
+
+[Term]
+id: OMP:0007461
+name: nonviable vegetative cell population
+def: "A nonviable cell population phenotype where the cells in the population are in the vegetative growth phase of the life cycle." [FYPO:0002061, OMP:DAS]
+synonym: "inviable vegetative cell population" RELATED []
+xref: FYPO:0002061 "inviable vegetative cell population"
+is_a: OMP:0007458 ! nonviable cell population
+created_by: dsiegele
+creation_date: 2016-08-10T15:16:25Z
+
+[Term]
+id: OMP:0007462
+name: colonization of invertebrate host phenotype
+def: "A microbe-host interaction phenotype relating to the ability of a microbe to colonize an invertebrate host." [OMP:DAS]
+synonym: "colonization of silkworm (Bombyx mori)" NARROW [TaxonomyID:7091]
+is_a: OMP:0007252 ! colonization of a host phenotype
+created_by: siegele
+creation_date: 2016-09-04T21:42:45Z
 
 [Term]
 id: OMP:0008000
