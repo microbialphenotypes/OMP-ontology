@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 12:09:2016 15:21
+date: 12:09:2016 17:07
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -6023,6 +6023,7 @@ def: "A cell fusion phenotype relating to the fusion of individual cells from ea
 synonym: "conjugation with cellular fusion" RELATED [GO:0000747]
 xref: APO:0000033 "cell fusion"
 is_a: OMP:0005219 ! cell fusion phenotype
+is_a: OMP:0007412 ! mating phenotype
 created_by: Jesus
 creation_date: 2016-06-20T23:11:14Z
 
@@ -12050,18 +12051,19 @@ creation_date: 2016-07-13T18:45:02Z
 [Term]
 id: OMP:0007412
 name: mating phenotype
-def: "A biological process phenotype that affects the process of mating, which is the pairwise union of individuals for the purpose of sexual reproduction, ultimately resulting in the formation of zygotes." [GO:0007618, OMP:DAS]
+def: "A sexual reproduction phenotype that affects the process of mating, which is the pairwise union of individuals for the purpose of sexual reproduction, ultimately resulting in the formation of zygotes." [GO:0007618, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0007194 ! biological process phenotype
+is_a: OMP:0007406 ! sexual reproduction phenotype
 created_by: dsiegele
 creation_date: 2016-07-14T16:21:02Z
 
 [Term]
 id: OMP:0007413
 name: conjugation phenotype
-def: "A mating phenotype relating to the union or introduction of genetic information from compatible mating types that results in a genetically different individual. Conjugation requires direct cellular contact between the organisms." [GO:0000746, OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0007412 ! mating phenotype
+def: "A multi-organism process phenotype relating to the union or introduction of genetic information from compatible cell types that results in a genetically different individual. Conjugation requires direct cellular contact between the organisms." [GO:0000746, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nAn example of conjugation would be the transfer of a conjugative plasmid from a donor bacterium to a recipient bacterium.
+xref: GO:0000746 "conjugation"
+is_a: OMP:0005116 ! multi-organism process phenotype
 created_by: dsiegele
 creation_date: 2016-07-14T16:25:26Z
 
@@ -12223,6 +12225,7 @@ creation_date: 2016-07-20T15:45:00Z
 [Term]
 id: OMP:0007433
 name: presence of sexual sporulation
+def: "A sexual sporulation phenotype where an organism is able to produce sexual spores." [OMP:DAS]
 is_a: OMP:0007405 ! sexual sporulation phenotype
 is_a: OMP:0007439 ! presence of sexual reproduction
 created_by: siegele
@@ -12231,6 +12234,7 @@ creation_date: 2016-07-27T19:29:30Z
 [Term]
 id: OMP:0007434
 name: absence of sexual sporulation
+def: "A sexual sporulation phenotype where an organism is not able to produce sexual spores." [OMP:DAS]
 is_a: OMP:0007405 ! sexual sporulation phenotype
 is_a: OMP:0007440 ! absence of sexual reproduction
 created_by: siegele
@@ -12239,6 +12243,7 @@ creation_date: 2016-07-27T19:29:30Z
 [Term]
 id: OMP:0007435
 name: altered sexual sporulation
+def: "A sexual sporulation phenotype where the frequency, rate, timing, or extent of the process of forming sexual spores is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007405 ! sexual sporulation phenotype
 is_a: OMP:0007441 ! altered sexual reproduction
 created_by: siegele
@@ -12247,6 +12252,7 @@ creation_date: 2016-07-27T19:29:30Z
 [Term]
 id: OMP:0007436
 name: increased sexual sporulation
+def: "An altered sexual sporulation phenotype where the frequency, rate, timing, or extent of the process of forming sexual spores is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007435 ! altered sexual sporulation
 created_by: siegele
 creation_date: 2016-07-27T19:29:30Z
@@ -12254,6 +12260,7 @@ creation_date: 2016-07-27T19:29:30Z
 [Term]
 id: OMP:0007437
 name: decreased sexual sporulation
+def: "An altered sexual sporulation phenotype where the frequency, rate, timing, or extent of the process of forming sexual spores is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007435 ! altered sexual sporulation
 created_by: siegele
 creation_date: 2016-07-27T19:29:30Z
@@ -12261,6 +12268,7 @@ creation_date: 2016-07-27T19:29:30Z
 [Term]
 id: OMP:0007438
 name: abolished sexual sporulation
+def: "A decreased sexual sporulation phenotype where the formation of sexual spores is abolished." [OMP:DAS]
 is_a: OMP:0007434 ! absence of sexual sporulation
 is_a: OMP:0007437 ! decreased sexual sporulation
 created_by: siegele
@@ -12269,6 +12277,7 @@ creation_date: 2016-07-27T19:29:30Z
 [Term]
 id: OMP:0007439
 name: presence of sexual reproduction
+def: "A sexual reproduction phenotype where an organism is able to reproduce sexually." [OMP:DAS]
 is_a: OMP:0007406 ! sexual reproduction phenotype
 created_by: siegele
 creation_date: 2016-07-27T19:32:00Z
@@ -12276,6 +12285,7 @@ creation_date: 2016-07-27T19:32:00Z
 [Term]
 id: OMP:0007440
 name: absence of sexual reproduction
+def: "A sexual reproduction phenotype where an organism is not able to reproduce sexually." [OMP:DAS]
 is_a: OMP:0007406 ! sexual reproduction phenotype
 created_by: siegele
 creation_date: 2016-07-27T19:32:00Z
@@ -12283,6 +12293,7 @@ creation_date: 2016-07-27T19:32:00Z
 [Term]
 id: OMP:0007441
 name: altered sexual reproduction
+def: "A sexual reproduction phenotype where the frequency, rate, timing, or extent of sexual reproduction is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007406 ! sexual reproduction phenotype
 created_by: siegele
 creation_date: 2016-07-27T19:32:00Z
