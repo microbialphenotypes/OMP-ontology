@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 05:09:2016 14:06
+date: 12:09:2016 14:42
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2921,8 +2921,8 @@ creation_date: 2011-02-02T03:20:39Z
 
 [Term]
 id: OMP:0000178
-name: flocculated liquid culture
-def: "A liquid culture morphology phenotype where cells clump together to form small masses in the medium." [ISBN:9780763743031, OMP:WAM]
+name: flocculation phenotype
+def: "A liquid culture morphology phenotype where cells aggregate together in suspension to form clumps of many cells known as flocs." [GO:0000128, ISBN:9780763743031, OMP:WAM]
 synonym: "clumping" BROAD []
 synonym: "flocculation" EXACT []
 xref: APO:0000065 "flocculation"
@@ -2995,7 +2995,7 @@ creation_date: 2011-02-02T03:29:51Z
 
 [Term]
 id: OMP:0000187
-name: granulated liquid culture
+name: granulation phenotype
 def: "A liquid culture morphology phenotype where cells group together and form small particles in the medium." [ISBN:9780763743031, OMP:WAM]
 synonym: "granulation in liquid" EXACT []
 synonym: "precipitation in liquid culture" RELATED []
@@ -12458,6 +12458,55 @@ synonym: "colonization of silkworm (Bombyx mori)" NARROW [TaxonomyID:7091]
 is_a: OMP:0007252 ! colonization of a host phenotype
 created_by: siegele
 creation_date: 2016-09-04T21:42:45Z
+
+[Term]
+id: OMP:0007463
+name: presence of flocculation
+def: "A flocculation phenotype where cells or organisms in liquid culture aggregate to form clumps of many cells." [OMP:DAS]
+xref: APO:0000065 "flocculation"
+is_a: OMP:0000178 ! flocculation phenotype
+created_by: dsiegele
+creation_date: 2016-09-12T14:35:40Z
+
+[Term]
+id: OMP:0007464
+name: absence of flocculation
+def: "A flocculation phenotype where cells or organisms in liquid culture do not aggregate to form clumps of many cells." [OMP:DAS]
+is_a: OMP:0000178 ! flocculation phenotype
+created_by: dsiegele
+creation_date: 2016-09-12T14:35:40Z
+
+[Term]
+id: OMP:0007465
+name: altered flocculation
+def: "A flocculation phenotype where the frequency, rate, timing, or extent of flocculation is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0000178 ! flocculation phenotype
+created_by: dsiegele
+creation_date: 2016-09-12T14:35:40Z
+
+[Term]
+id: OMP:0007466
+name: increased flocculation
+def: "An altered flocculation phenotype where the frequency, rate, timing, or extent of flocculation is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0007465 ! altered flocculation
+created_by: dsiegele
+creation_date: 2016-09-12T14:35:40Z
+
+[Term]
+id: OMP:0007467
+name: decreased flocculation
+def: "An altered flocculation phenotype where the frequency, rate, timing, or extent of flocculation is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0007465 ! altered flocculation
+created_by: dsiegele
+creation_date: 2016-09-12T14:35:40Z
+
+[Term]
+id: OMP:0007468
+name: abolished flocculation
+def: "A decreased flocculation phenotype where flocculation is abolished." [OMP:JG]
+is_a: OMP:0007467 ! decreased flocculation
+created_by: dsiegele
+creation_date: 2016-09-12T14:35:40Z
 
 [Term]
 id: OMP:0008000
