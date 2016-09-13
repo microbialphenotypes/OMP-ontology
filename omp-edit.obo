@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 12:09:2016 17:07
+date: 13:09:2016 14:57
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -11962,6 +11962,8 @@ creation_date: 2016-07-06T14:29:13Z
 id: OMP:0007402
 name: presence of ascospore formation
 def: "An ascospore formation phenotype where a microbe has the ability to form ascospores." [OMP:DAS]
+xref: APO:0000041 "sporulation"
+xref: FYPO:0000590 "normal sporulation"
 is_a: OMP:0007401 ! ascospore formation phenotype
 created_by: siegele
 creation_date: 2016-07-06T14:32:46Z
@@ -12016,8 +12018,10 @@ creation_date: 2016-07-09T14:47:12Z
 [Term]
 id: OMP:0007408
 name: altered ascospore formation
-def: "An ascospore formation phenotype where the formation of ascospores is altered relative to a designated control." [OMP:DAS]
+def: "An ascospore formation phenotype where the frequency, rate, timing, or extent of formation of ascospores is altered relative to a designated control." [OMP:DAS]
+synonym: "abnormal sporulation" RELATED [FYPO:0000121]
 is_a: OMP:0007401 ! ascospore formation phenotype
+is_a: OMP:0007435 ! altered sexual sporulation
 created_by: siegele
 creation_date: 2016-07-09T14:51:28Z
 
@@ -12539,6 +12543,34 @@ is_a: OMP:0007315 ! population morphology phenotype
 is_a: OMP:0007351 ! altered biological process
 created_by: dsiegele
 creation_date: 2016-09-12T15:16:19Z
+
+[Term]
+id: OMP:0007471
+name: increased ascospore formation
+def: "An altered ascospore formation phenotype where the frequency, rate, timing, or extent of formation of ascospores is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007408 ! altered ascospore formation
+is_a: OMP:0007436 ! increased sexual sporulation
+created_by: dsiegele
+creation_date: 2016-09-13T14:35:10Z
+
+[Term]
+id: OMP:0007472
+name: decreased ascospore formation
+def: "An altered ascospore formation phenotype where the frequency, rate, timing, or extent of formation of ascospores is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007408 ! altered ascospore formation
+is_a: OMP:0007437 ! decreased sexual sporulation
+created_by: dsiegele
+creation_date: 2016-09-13T14:35:10Z
+
+[Term]
+id: OMP:0007473
+name: abolished ascospore formation
+def: "An altered ascospore formation phenotype where the formation of ascospores is abolished." [OMP:DAS]
+xref: FYPO:0000583 "abolished sporulation"
+is_a: OMP:0007407 ! absence of ascospore formation
+is_a: OMP:0007472 ! decreased ascospore formation
+created_by: dsiegele
+creation_date: 2016-09-13T14:35:10Z
 
 [Term]
 id: OMP:0008000
