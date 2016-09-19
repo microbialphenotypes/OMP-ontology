@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 19:09:2016 14:06
-saved-by: jguzman
+date: 19:09:2016 17:22
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -4098,7 +4098,8 @@ creation_date: 2014-07-23T12:18:08Z
 [Term]
 id: OMP:0005002
 name: temperature growth range phenotype
-def: "A growth phenotype where the trait in question is the temperature requirements and range needed for microbial growth." [OMP:WAM]
+def: "A growth phenotype where the trait in question is the range of temperatures where growth of the microbe can occur." [OMP:WAM]
+synonym: "temperature requirement for growth" NARROW []
 is_a: OMP:0007192 ! growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:06:05Z
@@ -6428,13 +6429,13 @@ creation_date: 2016-06-27T14:52:45Z
 [Term]
 id: OMP:0005274
 name: organic heterocyclic compound resistance phenotype
-def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic heterocyclic compound." [OMP:JG]
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic heterocyclic compound, which is any cyclic compound having as ring members atoms of carbon and at least of one other element." [CHEBI:24532, OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "coumarins" NARROW [CHEBI:28794]
-synonym: "cycloheximide" NARROW [CHEBI:27641]
-synonym: "novobiocin" NARROW [CHEBI:28368]
-synonym: "thiolactomycin" NARROW [CID:445629]
-synonym: "thiolactone" NARROW [CHEBI:60317]
+synonym: "coumarin resistance phenotype" NARROW [CHEBI:28794]
+synonym: "cycloheximide resistance phenotype" NARROW [CHEBI:27641]
+synonym: "novobiocin resistance phenotype" NARROW [CHEBI:28368]
+synonym: "thiolactomycin resistance phenotype" NARROW [CID:445629]
+synonym: "thiolactone resistance phenotype" NARROW [CHEBI:60317]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: Jesus
 creation_date: 2016-07-15T15:29:19Z
@@ -11791,9 +11792,10 @@ creation_date: 2016-06-23T15:57:42Z
 [Term]
 id: OMP:0007380
 name: benzamides resistance phenotype
-def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a benzamide. Benzamides are compounds based on benzamide, which consists of benzene bearing a single carboxamido substituent." [CHEBI:28179, OMP:DAS]
-synonym: "benzamides" BROAD [CHEBI:22702]
-synonym: "CHIR-090" NARROW [CID:\:11546620]
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a benzamide. Benzamides are compounds based on benzamide, which consists of benzene bearing a single carboxamido substituent." [CHEBI:22702, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "benzamide resistance phenotype" NARROW [CHEBI:28179]
+synonym: "CHIR-090 resistance phenotype" NARROW [CID:\:11546620]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-26T14:45:16Z
@@ -12587,6 +12589,116 @@ is_a: OMP:0007407 ! absence of ascospore formation
 is_a: OMP:0007472 ! decreased ascospore formation
 created_by: dsiegele
 creation_date: 2016-09-13T14:35:10Z
+
+[Term]
+id: OMP:0007474
+name: phenols resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to phenols, which are organic aromatic compounds having one or more hydroxy groups attached to a benzene or other arene ring." [CHEBI:33853, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "phenol red resistance phenotype" NARROW [CHEBI:31991]
+synonym: "phenol resistance phenotype" NARROW [CHEBI:15882]
+synonym: "rose bengal resistance phenotype" NARROW [CHEBI:52261]
+synonym: "triclosan resistance phenotype" NARROW [CHEBI:164200]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T16:00:17Z
+
+[Term]
+id: OMP:0007475
+name: resistant to phenols
+is_a: OMP:0007474 ! phenols resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T16:49:20Z
+
+[Term]
+id: OMP:0007476
+name: not resistant to phenols
+is_a: OMP:0007474 ! phenols resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T16:49:20Z
+
+[Term]
+id: OMP:0007477
+name: altered resistance to phenols
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007474 ! phenols resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T16:49:20Z
+
+[Term]
+id: OMP:0007478
+name: increased resistance to phenols
+is_a: OMP:0007477 ! altered resistance to phenols
+created_by: dsiegele
+creation_date: 2016-09-19T16:49:20Z
+
+[Term]
+id: OMP:0007479
+name: decreased resistance to phenols
+is_a: OMP:0007477 ! altered resistance to phenols
+created_by: dsiegele
+creation_date: 2016-09-19T16:49:20Z
+
+[Term]
+id: OMP:0007480
+name: abolished resistance to phenols
+is_a: OMP:0007476 ! not resistant to phenols
+is_a: OMP:0007479 ! decreased resistance to phenols
+created_by: dsiegele
+creation_date: 2016-09-19T16:49:20Z
+
+[Term]
+id: OMP:0007481
+name: quaternary ammonium salts resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to the resistance or sensitivity of a microbe to a quaternary ammonium salt. These are derivatives of ammonium compounds, (NH4+)Y-, in which all four of the hydrogens bonded to nitrogen have been replaced with univalent (usually organyl) groups." [CHEBI:35273, OMP:DAS]
+synonym: "benzalkonium chloride resistance phenotype" NARROW [CHEBI:3020]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007482
+name: resistant to quaternary ammonium salts
+is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007483
+name: not resistant to quaternary ammonium salts
+is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007484
+name: altered resistance to quaternary ammonium salts
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007485
+name: increased resistance to quaternary ammonium salts
+is_a: OMP:0007484 ! altered resistance to quaternary ammonium salts
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007486
+name: decreased resistance to quaternary ammonium salts
+is_a: OMP:0007484 ! altered resistance to quaternary ammonium salts
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007487
+name: abolished resistance to quaternary ammonium salts
+is_a: OMP:0007483 ! not resistant to quaternary ammonium salts
+is_a: OMP:0007486 ! decreased resistance to quaternary ammonium salts
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
 
 [Term]
 id: OMP:0008000
