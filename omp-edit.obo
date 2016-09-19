@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 13:09:2016 14:57
-saved-by: dsiegele
+date: 19:09:2016 14:06
+saved-by: jguzman
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -6834,6 +6834,22 @@ def: "A decreased colonization of tissue in an immunocompromised rabbit phenotyp
 is_a: OMP:0005321 ! decreased colonization of tissue in an immunocompromised rabbit
 created_by: Jesus
 creation_date: 2016-08-30T11:56:47Z
+
+[Term]
+id: OMP:0005323
+name: altered cell motility by swarming
+def: "A cell motility by swarming phenotype where the frequency, rate, timing, or extent of swarming is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0000067 ! cell motility by swarming
+created_by: jguzman
+creation_date: 2016-09-19T14:01:13Z
+
+[Term]
+id: OMP:0005324
+name: altered cell motility by swimming
+def: "A cell motility by swimming phenotype where the frequency, rate, timing, or extent of swimming is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0000111 ! cell motility by swimming
+created_by: jguzman
+creation_date: 2016-09-19T14:02:03Z
 
 [Term]
 id: OMP:0006000
