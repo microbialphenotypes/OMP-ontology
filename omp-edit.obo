@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 19:09:2016 17:22
-saved-by: dsiegele
+date: 23:09:2016 17:09
+saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -6853,6 +6853,63 @@ created_by: jguzman
 creation_date: 2016-09-19T14:02:03Z
 
 [Term]
+id: OMP:0005325
+name: agar invasion phenotype
+def: "An organismal growth phenotype relating to the ability of a microbe to penetrate agar media during growth." [OMP:JG]
+is_a: OMP:0000174 ! organismal growth phenotype
+created_by: Jesus
+creation_date: 2016-09-23T16:58:54Z
+
+[Term]
+id: OMP:0005326
+name: presence of agar invasion
+def: "An agar invasion phenotype where a microbe has the ability to penetrate agar media during growth." [OMP:JG]
+synonym: "invasive growth" NARROW [APO:0000028]
+is_a: OMP:0005325 ! agar invasion phenotype
+created_by: Jesus
+creation_date: 2016-09-23T17:03:49Z
+
+[Term]
+id: OMP:0005327
+name: absence of agar invasion
+def: "An agar invasion phenotype where a microbe lacks the ability to penetrate agar media during growth." [OMP:JG]
+is_a: OMP:0005325 ! agar invasion phenotype
+created_by: Jesus
+creation_date: 2016-09-23T17:05:49Z
+
+[Term]
+id: OMP:0005328
+name: altered agar invasion
+def: "An agar invasion phenotype where the frequency, rate, timing, or extent of agar invasion is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005325 ! agar invasion phenotype
+created_by: Jesus
+creation_date: 2016-09-23T17:07:22Z
+
+[Term]
+id: OMP:0005329
+name: increased agar invasion
+def: "An altered agar invasion phenotype where the frequency, rate, timing, or extent of agar invasion is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005328 ! altered agar invasion
+created_by: Jesus
+creation_date: 2016-09-23T17:07:59Z
+
+[Term]
+id: OMP:0005330
+name: decreased agar invasion phenotype
+def: "An altered agar invasion phenotype where the frequency, rate, timing, or extent of agar invasion is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005328 ! altered agar invasion
+created_by: Jesus
+creation_date: 2016-09-23T17:08:25Z
+
+[Term]
+id: OMP:0005331
+name: abolished agar invasion
+def: "A decreased agar invasion phenotype where the ability to invade agar media is abolished." [OMP:JG]
+is_a: OMP:0005330 ! decreased agar invasion phenotype
+created_by: Jesus
+creation_date: 2016-09-23T17:08:54Z
+
+[Term]
 id: OMP:0006000
 name: secondary metabolite production phenotype
 def: "A small molecule biosynthesis phenotype where an organism produces a secondary metabolite, which is a compound not directly involved in normal growth, development or reproduction." [APO:0000292, OMP:TCK]
@@ -12606,6 +12663,7 @@ creation_date: 2016-09-19T16:00:17Z
 [Term]
 id: OMP:0007475
 name: resistant to phenols
+def: "A phenols resistance phenotype where an organism, cell, or cells is resistant to phenols." [OMP:JG]
 is_a: OMP:0007474 ! phenols resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T16:49:20Z
@@ -12613,6 +12671,7 @@ creation_date: 2016-09-19T16:49:20Z
 [Term]
 id: OMP:0007476
 name: not resistant to phenols
+def: "A phenols resistance phenotype where an organism or cell is sensitive to phenols." [OMP:JG]
 is_a: OMP:0007474 ! phenols resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T16:49:20Z
@@ -12620,6 +12679,7 @@ creation_date: 2016-09-19T16:49:20Z
 [Term]
 id: OMP:0007477
 name: altered resistance to phenols
+def: "A phenol resistance phenotype where the frequency, rate, timing, or extent of resistance to phenols is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 is_a: OMP:0007474 ! phenols resistance phenotype
 created_by: dsiegele
@@ -12628,6 +12688,7 @@ creation_date: 2016-09-19T16:49:20Z
 [Term]
 id: OMP:0007478
 name: increased resistance to phenols
+def: "An altered resistance to phenols phenotype where the frequency, rate, timing, or extent of resistance to phenols is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0007477 ! altered resistance to phenols
 created_by: dsiegele
 creation_date: 2016-09-19T16:49:20Z
@@ -12635,6 +12696,7 @@ creation_date: 2016-09-19T16:49:20Z
 [Term]
 id: OMP:0007479
 name: decreased resistance to phenols
+def: "An altered resistance to phenols phenotype where the frequency, rate, timing, or extent of resistance to phenols is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0007477 ! altered resistance to phenols
 created_by: dsiegele
 creation_date: 2016-09-19T16:49:20Z
@@ -12642,6 +12704,7 @@ creation_date: 2016-09-19T16:49:20Z
 [Term]
 id: OMP:0007480
 name: abolished resistance to phenols
+def: "A decreased resistance to phenols phenotype where resistance phenols is abolished." [OMP:JG]
 is_a: OMP:0007476 ! not resistant to phenols
 is_a: OMP:0007479 ! decreased resistance to phenols
 created_by: dsiegele
