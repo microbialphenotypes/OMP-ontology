@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 24:09:2016 23:23
+date: 24:09:2016 23:39
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -7825,7 +7825,7 @@ creation_date: 2014-07-25T11:08:59Z
 [Term]
 id: OMP:0006100
 name: abolished cell motility by swimming
-def: "A decreased cell motility by swimming phenotype where the ability of a cell or cells to swim is abolished." [OMP:JCH]
+def: "A decreased cell motility by swimming phenotype where the ability of a microbe to move by swimming motility is abolished." [OMP:JCH]
 is_a: OMP:0007093 ! decreased cell motility by swimming
 is_a: OMP:0007490 ! absence of cell motility by swimming
 created_by: jonathanherrera
@@ -8406,7 +8406,7 @@ creation_date: 2014-08-08T15:51:18Z
 [Term]
 id: OMP:0006167
 name: abolished cell motility by swarming
-def: "A decreased cell motility by swarming phenotype where the ability of cells to swarm is abolished." [OMP:JCH]
+def: "A decreased cell motility by swarming phenotype where the ability of a microbe to move by swarming motility is abolished." [OMP:JCH]
 is_a: OMP:0007092 ! decreased cell motility by swarming
 is_a: OMP:0007489 ! absence of cell motility by swarming
 created_by: jonathanherrera
@@ -9863,7 +9863,7 @@ creation_date: 2014-08-19T14:52:08Z
 [Term]
 id: OMP:0007150
 name: abolished cell motility by gliding
-def: "A decreased cell motility by gliding phenotype where the ability of a cell or cells to move by gliding motility is abolished." [OMP:DAS]
+def: "A decreased cell motility by gliding phenotype where the ability of a microbe to move by gliding motility is abolished." [OMP:DAS]
 is_a: OMP:0007091 ! decreased cell motility by gliding
 is_a: OMP:0007488 ! absence of cell motility by gliding
 created_by: siegele
@@ -12774,6 +12774,7 @@ creation_date: 2016-09-19T17:10:16Z
 [Term]
 id: OMP:0007488
 name: absence of cell motility by gliding
+def: "An absence of cell motility phenotype where a microbe is not capable of gliding motility." [OMP:DAS]
 is_a: OMP:0000133 ! absence of cell motility
 created_by: siegele
 creation_date: 2016-09-24T23:00:10Z
@@ -12781,6 +12782,7 @@ creation_date: 2016-09-24T23:00:10Z
 [Term]
 id: OMP:0007489
 name: absence of cell motility by swarming
+def: "An absence of cell motility phenotype where a microbe is not capable of swarming motility." [OMP:DAS]
 is_a: OMP:0000133 ! absence of cell motility
 created_by: siegele
 creation_date: 2016-09-24T23:00:10Z
@@ -12788,6 +12790,7 @@ creation_date: 2016-09-24T23:00:10Z
 [Term]
 id: OMP:0007490
 name: absence of cell motility by swimming
+def: "An absence of cell motility phenotype where a microbe is not capable of swimming motility." [OMP:DAS]
 is_a: OMP:0000133 ! absence of cell motility
 created_by: siegele
 creation_date: 2016-09-24T23:00:10Z
@@ -12795,6 +12798,7 @@ creation_date: 2016-09-24T23:00:10Z
 [Term]
 id: OMP:0007491
 name: absence of cell motility by twitching
+def: "An absence of cell motility phenotype where a microbe is not capable of twitching motility." [OMP:DAS]
 is_a: OMP:0000133 ! absence of cell motility
 created_by: siegele
 creation_date: 2016-09-24T23:00:10Z
@@ -12802,6 +12806,7 @@ creation_date: 2016-09-24T23:00:10Z
 [Term]
 id: OMP:0007492
 name: altered cell motility by gliding
+def: "A cell motility by gliding phenotype where the frequency, rate, timing, or extent of gliding is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007001 ! altered cell motility
 created_by: siegele
 creation_date: 2016-09-24T23:01:37Z
@@ -12809,6 +12814,7 @@ creation_date: 2016-09-24T23:01:37Z
 [Term]
 id: OMP:0007493
 name: altered cell motility by twitching
+def: "A cell motility by twitching phenotype where the frequency, rate, timing, or extent of twitching is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007001 ! altered cell motility
 created_by: siegele
 creation_date: 2016-09-24T23:01:37Z
@@ -12816,6 +12822,7 @@ creation_date: 2016-09-24T23:01:37Z
 [Term]
 id: OMP:0007494
 name: abolished cell motility by twitching
+def: "A decreased cell motility by twitching phenotype where the ability of a microbe to move by twitching motility is abolished." [OMP:DAS]
 is_a: OMP:0007094 ! decreased cell motility by twitching
 is_a: OMP:0007491 ! absence of cell motility by twitching
 created_by: siegele
