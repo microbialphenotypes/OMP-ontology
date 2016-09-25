@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 25:09:2016 12:14
+date: 25:09:2016 13:58
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2102,8 +2102,8 @@ creation_date: 2011-02-02T03:47:57Z
 
 [Term]
 id: OMP:0000085
-name: cell envelope phenotype
-def: "A cell morphology phenotype relating to the envelope that surrounds a microbial cell and includes the cytoplasmic membrane and everything external to the cytoplasmic membrane, encompassing the periplasmic space, cell wall, and outer membrane.  Additional layers, such as capsules or S-layers, are also part of the envelope." [OMP:MCC]
+name: cell envelope morphology phenotype
+def: "A cell morphology phenotype relating to the size, shape, or appearance of the envelope that surrounds a microbial cell. The envelope includes the cytoplasmic membrane and everything external to the cytoplasmic membrane, encompassing the periplasmic space, cell wall, and outer membrane.  Additional layers, such as capsules or S-layers, are also part of the envelope." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
@@ -3121,7 +3121,7 @@ id: OMP:0000202
 name: outer membrane vesicles phenotype
 def: "A cell envelope phenotype that describes the ability of a cell or cells to produce outer membrane vesicles." [OMP:JCH, PMID:20825345]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000085 ! cell envelope phenotype
+is_a: OMP:0000085 ! cell envelope morphology phenotype
 created_by: Adrienne
 creation_date: 2011-03-02T01:43:12Z
 
@@ -3132,7 +3132,7 @@ def: "A cell envelope phenotype where the trait in question is the capsule, a la
 synonym: "glycocalyx" RELATED []
 synonym: "slime layer" RELATED []
 xref: APO:0000331 "capsule formation"
-is_a: OMP:0000085 ! cell envelope phenotype
+is_a: OMP:0000085 ! cell envelope morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:44:51Z
 
@@ -3995,7 +3995,7 @@ id: OMP:0000461
 name: outer membrane phenotype
 def: "A cell envelope phenotype where the trait in question is the presence or absence of  a lipid bilayer membrane located outside the peptidoglycan cell wall." [ISBN:9780073402406, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000085 ! cell envelope phenotype
+is_a: OMP:0000085 ! cell envelope morphology phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:43:06Z
 
@@ -10962,7 +10962,7 @@ creation_date: 2015-11-07T13:32:21Z
 id: OMP:0007277
 name: cell wall phenotype
 def: "A cell envelope phenotype where the trait in question is the cell wall, a rigid or semi-rigid layer that surrounds the plasma membrane and maintains cell shape and helps protect against osmotic lysis." [GO:0005618, OMP:DAS]
-is_a: OMP:0000085 ! cell envelope phenotype
+is_a: OMP:0000085 ! cell envelope morphology phenotype
 created_by: siegele
 creation_date: 2015-11-11T15:41:37Z
 
@@ -12880,6 +12880,38 @@ is_a: OMP:0007497 ! not resistant to an epoxide
 is_a: OMP:0007500 ! decreased resistance to an epoxide
 created_by: siegele
 creation_date: 2016-09-25T12:12:32Z
+
+[Term]
+id: OMP:0007502
+name: altered capsule morphology
+def: "A capsule morphology phenotype where the size, shape, or appearance of the capsule is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000203 ! capsule phenotype
+created_by: siegele
+creation_date: 2016-09-25T13:45:05Z
+
+[Term]
+id: OMP:0007503
+name: altered capsule size
+def: "An altered capsule morphology phenotype where the size of the capsule is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007502 ! altered capsule morphology
+created_by: siegele
+creation_date: 2016-09-25T13:47:16Z
+
+[Term]
+id: OMP:0007504
+name: Increased capsule size
+def: "An altered capsule size phenotype where the size of the capsule is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007503 ! altered capsule size
+created_by: siegele
+creation_date: 2016-09-25T13:49:19Z
+
+[Term]
+id: OMP:0007505
+name: decreased capsule size
+def: "An altered capsule size phenotype where the size of the capsule is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007503 ! altered capsule size
+created_by: siegele
+creation_date: 2016-09-25T13:49:19Z
 
 [Term]
 id: OMP:0008000
