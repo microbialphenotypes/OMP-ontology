@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 23:09:2016 17:09
-saved-by: Jesus
+date: 24:09:2016 23:23
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -1924,7 +1924,7 @@ creation_date: 2011-04-26T05:09:24Z
 
 [Term]
 id: OMP:0000067
-name: cell motility by swarming
+name: presence of cell motility by swarming
 def: "A presence of cell motility phenotype where a population of cells exhibit coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
 intersection_of: OMP:0000005 ! presence of cell motility
@@ -2349,7 +2349,7 @@ creation_date: 2011-02-02T02:45:02Z
 
 [Term]
 id: OMP:0000111
-name: cell motility by swimming
+name: presence of cell motility by swimming
 def: "A presence of cell motility phenotype where a cell or cells exhibits smooth movement through a liquid medium." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
 intersection_of: OMP:0000005 ! presence of cell motility
@@ -2359,7 +2359,7 @@ creation_date: 2011-02-07T03:17:40Z
 
 [Term]
 id: OMP:0000112
-name: cell motility by gliding
+name: presence of cell motility by gliding
 def: "A presence of cell motility phenotype where a cell or cells exhibits smooth movement along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
 intersection_of: OMP:0000005 ! presence of cell motility
@@ -2369,7 +2369,7 @@ creation_date: 2011-02-07T03:18:03Z
 
 [Term]
 id: OMP:0000113
-name: cell motility by twitching
+name: presence of cell motility by twitching
 def: "A presence of cell motility phenotype where a cell or cells exhibit movement over moist surfaces by the extension, tethering and then retraction of polar pili, usually type IV pili." [OMP:MCC, PMID:12142488]
 xref: GO:0043107 "type IV pilus-dependent motility"
 is_a: OMP:0000005 ! presence of cell motility
@@ -6840,7 +6840,7 @@ creation_date: 2016-08-30T11:56:47Z
 id: OMP:0005323
 name: altered cell motility by swarming
 def: "A cell motility by swarming phenotype where the frequency, rate, timing, or extent of swarming is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0000067 ! cell motility by swarming
+is_a: OMP:0007001 ! altered cell motility
 created_by: jguzman
 creation_date: 2016-09-19T14:01:13Z
 
@@ -6848,7 +6848,7 @@ creation_date: 2016-09-19T14:01:13Z
 id: OMP:0005324
 name: altered cell motility by swimming
 def: "A cell motility by swimming phenotype where the frequency, rate, timing, or extent of swimming is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0000111 ! cell motility by swimming
+is_a: OMP:0007001 ! altered cell motility
 created_by: jguzman
 creation_date: 2016-09-19T14:02:03Z
 
@@ -7826,8 +7826,8 @@ creation_date: 2014-07-25T11:08:59Z
 id: OMP:0006100
 name: abolished cell motility by swimming
 def: "A decreased cell motility by swimming phenotype where the ability of a cell or cells to swim is abolished." [OMP:JCH]
-is_a: OMP:0000133 ! absence of cell motility
 is_a: OMP:0007093 ! decreased cell motility by swimming
+is_a: OMP:0007490 ! absence of cell motility by swimming
 created_by: jonathanherrera
 creation_date: 2014-08-15T19:12:43Z
 
@@ -8407,8 +8407,8 @@ creation_date: 2014-08-08T15:51:18Z
 id: OMP:0006167
 name: abolished cell motility by swarming
 def: "A decreased cell motility by swarming phenotype where the ability of cells to swarm is abolished." [OMP:JCH]
-is_a: OMP:0000133 ! absence of cell motility
 is_a: OMP:0007092 ! decreased cell motility by swarming
+is_a: OMP:0007489 ! absence of cell motility by swarming
 created_by: jonathanherrera
 creation_date: 2014-08-13T17:25:47Z
 
@@ -9317,6 +9317,7 @@ id: OMP:0007091
 name: decreased cell motility by gliding
 def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by gliding is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0007492 ! altered cell motility by gliding
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -9325,6 +9326,7 @@ id: OMP:0007092
 name: decreased cell motility by swarming
 def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swarming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0005323 ! altered cell motility by swarming
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -9333,6 +9335,7 @@ id: OMP:0007093
 name: decreased cell motility by swimming
 def: "A decreased motility phenotype where the frequency, rate, timing, or extent of cell motility by swimming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0005324 ! altered cell motility by swimming
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -9341,6 +9344,7 @@ id: OMP:0007094
 name: decreased cell motility by twitching
 def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by twitching is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0007493 ! altered cell motility by twitching
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -9349,6 +9353,7 @@ id: OMP:0007095
 name: increased cell motility by gliding
 def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by gliding is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
+is_a: OMP:0007492 ! altered cell motility by gliding
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -9357,6 +9362,7 @@ id: OMP:0007096
 name: increased cell motility by swarming
 def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swarming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
+is_a: OMP:0005323 ! altered cell motility by swarming
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -9365,6 +9371,7 @@ id: OMP:0007097
 name: increased cell motility by swimming
 def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swimming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
+is_a: OMP:0005324 ! altered cell motility by swimming
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -9373,6 +9380,7 @@ id: OMP:0007098
 name: increased cell motility by twitching
 def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by twitching is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
+is_a: OMP:0007493 ! altered cell motility by twitching
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -9856,8 +9864,8 @@ creation_date: 2014-08-19T14:52:08Z
 id: OMP:0007150
 name: abolished cell motility by gliding
 def: "A decreased cell motility by gliding phenotype where the ability of a cell or cells to move by gliding motility is abolished." [OMP:DAS]
-is_a: OMP:0000133 ! absence of cell motility
 is_a: OMP:0007091 ! decreased cell motility by gliding
+is_a: OMP:0007488 ! absence of cell motility by gliding
 created_by: siegele
 creation_date: 2014-08-20T23:57:11Z
 
@@ -12762,6 +12770,56 @@ is_a: OMP:0007483 ! not resistant to quaternary ammonium salts
 is_a: OMP:0007486 ! decreased resistance to quaternary ammonium salts
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007488
+name: absence of cell motility by gliding
+is_a: OMP:0000133 ! absence of cell motility
+created_by: siegele
+creation_date: 2016-09-24T23:00:10Z
+
+[Term]
+id: OMP:0007489
+name: absence of cell motility by swarming
+is_a: OMP:0000133 ! absence of cell motility
+created_by: siegele
+creation_date: 2016-09-24T23:00:10Z
+
+[Term]
+id: OMP:0007490
+name: absence of cell motility by swimming
+is_a: OMP:0000133 ! absence of cell motility
+created_by: siegele
+creation_date: 2016-09-24T23:00:10Z
+
+[Term]
+id: OMP:0007491
+name: absence of cell motility by twitching
+is_a: OMP:0000133 ! absence of cell motility
+created_by: siegele
+creation_date: 2016-09-24T23:00:10Z
+
+[Term]
+id: OMP:0007492
+name: altered cell motility by gliding
+is_a: OMP:0007001 ! altered cell motility
+created_by: siegele
+creation_date: 2016-09-24T23:01:37Z
+
+[Term]
+id: OMP:0007493
+name: altered cell motility by twitching
+is_a: OMP:0007001 ! altered cell motility
+created_by: siegele
+creation_date: 2016-09-24T23:01:37Z
+
+[Term]
+id: OMP:0007494
+name: abolished cell motility by twitching
+is_a: OMP:0007094 ! decreased cell motility by twitching
+is_a: OMP:0007491 ! absence of cell motility by twitching
+created_by: siegele
+creation_date: 2016-09-24T23:04:50Z
 
 [Term]
 id: OMP:0008000
