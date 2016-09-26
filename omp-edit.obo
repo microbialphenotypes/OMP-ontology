@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 25:09:2016 23:46
-saved-by: siegele
+date: 26:09:2016 14:36
+saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -12712,7 +12712,7 @@ creation_date: 2016-09-19T16:49:20Z
 [Term]
 id: OMP:0007480
 name: abolished resistance to phenols
-def: "A decreased resistance to phenols phenotype where resistance phenols is abolished." [OMP:JG]
+def: "A decreased resistance to phenols phenotype where resistance to phenols is abolished." [OMP:JG]
 is_a: OMP:0007476 ! not resistant to phenols
 is_a: OMP:0007479 ! decreased resistance to phenols
 created_by: dsiegele
@@ -12840,6 +12840,7 @@ creation_date: 2016-09-25T12:02:01Z
 [Term]
 id: OMP:0007496
 name: resistant to an epoxide
+def: "An epoxide resistance phenotype where an organism, cell, or cells is resistant to an epoxide." [OMP:JG]
 is_a: OMP:0007495 ! epoxide resistance phenotype
 created_by: siegele
 creation_date: 2016-09-25T12:11:27Z
@@ -12847,6 +12848,7 @@ creation_date: 2016-09-25T12:11:27Z
 [Term]
 id: OMP:0007497
 name: not resistant to an epoxide
+def: "An epoxide resistance phenotype where an organism or cell is sensitive to an epoxide." [OMP:JG]
 is_a: OMP:0007495 ! epoxide resistance phenotype
 created_by: siegele
 creation_date: 2016-09-25T12:11:27Z
@@ -12854,6 +12856,7 @@ creation_date: 2016-09-25T12:11:27Z
 [Term]
 id: OMP:0007498
 name: altered epoxide resistance
+def: "An epoxide resistance phenotype where the frequency, rate, timing, or extent of resistance to an epoxide is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 is_a: OMP:0007495 ! epoxide resistance phenotype
 created_by: siegele
@@ -12862,6 +12865,7 @@ creation_date: 2016-09-25T12:11:27Z
 [Term]
 id: OMP:0007499
 name: increased resistance to an epoxide
+def: "An altered epoxide resistance phenotype where the frequency, rate, timing, or extent of resistance to epoxide is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0007498 ! altered epoxide resistance
 created_by: siegele
 creation_date: 2016-09-25T12:12:32Z
@@ -12869,6 +12873,7 @@ creation_date: 2016-09-25T12:12:32Z
 [Term]
 id: OMP:0007500
 name: decreased resistance to an epoxide
+def: "An altered epoxide resistance phenotype where the frequency, rate, timing, or extent of resistance to an epoxide is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0007498 ! altered epoxide resistance
 created_by: siegele
 creation_date: 2016-09-25T12:12:32Z
@@ -12876,6 +12881,7 @@ creation_date: 2016-09-25T12:12:32Z
 [Term]
 id: OMP:0007501
 name: abolished resistance to an epoxide
+def: "A decreased resistance to an epoxide phenotype where resistance to an epoxide is abolished." [OMP:JG]
 is_a: OMP:0007497 ! not resistant to an epoxide
 is_a: OMP:0007500 ! decreased resistance to an epoxide
 created_by: siegele
