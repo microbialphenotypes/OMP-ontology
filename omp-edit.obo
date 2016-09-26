@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 25:09:2016 13:58
+date: 25:09:2016 23:46
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1969,7 +1969,7 @@ creation_date: 2011-02-02T03:11:48Z
 [Term]
 id: OMP:0000071
 name: cell morphology phenotype
-def: "A microbial phenotype related to the form and structure of an organism, cell, or cells." [OMP:MCC]
+def: "A microbial phenotype related to the form and structure of a microbe." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: APO:0000050 "cellular morphology"
 is_a: OMP:0000000 ! microbial phenotype
@@ -12912,6 +12912,47 @@ def: "An altered capsule size phenotype where the size of the capsule is decreas
 is_a: OMP:0007503 ! altered capsule size
 created_by: siegele
 creation_date: 2016-09-25T13:49:19Z
+
+[Term]
+id: OMP:0007506
+name: titan cell phenotype
+def: "A cell morphology phenotype where a microbe, typically a fungus, produces large vegetative cells that typically exhibit altered capsule structure, a thickened cell wall, increased ploidy, and resistance to nitrosative and oxidative stresses." [OMP:DAS, PMID:21821718]
+xref: FAO:0000063 "titan cell"
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: siegele
+creation_date: 2016-09-25T22:33:27Z
+
+[Term]
+id: OMP:0007507
+name: presence of titan cells
+def: "A titan cell phenotype where a microbe is able to form titan cells." [OMP:DAS]
+is_a: OMP:0007506 ! titan cell phenotype
+created_by: siegele
+creation_date: 2016-09-25T23:28:19Z
+
+[Term]
+id: OMP:0007508
+name: absence of titan cells
+def: "A titan cell phenotype where a microbe cannot form titan cells." [OMP:DAS]
+is_a: OMP:0007506 ! titan cell phenotype
+created_by: siegele
+creation_date: 2016-09-25T23:28:19Z
+
+[Term]
+id: OMP:0007509
+name: altered titan cell morphology
+def: "A titan cell phenotype where the size, shape, or appearance of titan cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007506 ! titan cell phenotype
+created_by: siegele
+creation_date: 2016-09-25T23:28:19Z
+
+[Term]
+id: OMP:0007510
+name: altered titan cell formation
+def: "A titan cell phenotype where the frequency, rate, timing, or extent of titan cell formation is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007506 ! titan cell phenotype
+created_by: siegele
+creation_date: 2016-09-25T23:32:51Z
 
 [Term]
 id: OMP:0008000
