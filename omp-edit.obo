@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 26:09:2016 14:36
+date: 05:10:2016 14:20
 saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -6908,6 +6908,39 @@ def: "A decreased agar invasion phenotype where the ability to invade agar media
 is_a: OMP:0005330 ! decreased agar invasion phenotype
 created_by: Jesus
 creation_date: 2016-09-23T17:08:54Z
+
+[Term]
+id: OMP:0005332
+name: protein localization phenotype
+def: "A cellular component phenotype relating to the localization or placement of proteins within a cell." [APO:0000209, OMP:JG]
+xref: APO:0000209 "protein/peptide distribution"
+is_a: OMP:0007197 ! cellular component phenotype
+created_by: Jesus
+creation_date: 2016-10-05T14:17:25Z
+
+[Term]
+id: OMP:0005333
+name: altered protein localization
+def: "A protein localization phenotype in which the localization or placement of proteins within a cell is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005332 ! protein localization phenotype
+created_by: Jesus
+creation_date: 2016-10-05T14:18:53Z
+
+[Term]
+id: OMP:0005334
+name: presence of protein localization
+def: "A protein localization phenotype where an organism,  cell, or cells exhibit protein localization." [OMP:JG]
+is_a: OMP:0005332 ! protein localization phenotype
+created_by: Jesus
+creation_date: 2016-10-05T14:19:21Z
+
+[Term]
+id: OMP:0005335
+name: absence of protein localization
+def: "A protein localization phenotype where an organism, cell, or cells lack protein localization." [OMP:JG]
+is_a: OMP:0005332 ! protein localization phenotype
+created_by: Jesus
+creation_date: 2016-10-05T14:19:51Z
 
 [Term]
 id: OMP:0006000
