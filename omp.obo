@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: releases/2016-09-09
-date: 05:09:2016 14:06
-saved-by: dsiegele
+data-version: releases/2016-10-07
+date: 05:10:2016 14:20
+saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -1939,7 +1939,7 @@ creation_date: 2011-04-26T05:09:24Z
 
 [Term]
 id: OMP:0000067
-name: cell motility by swarming
+name: presence of cell motility by swarming
 def: "A presence of cell motility phenotype where a population of cells exhibit coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
 intersection_of: OMP:0000005 ! presence of cell motility
@@ -1986,7 +1986,7 @@ creation_date: 2011-02-02T03:11:48Z
 [Term]
 id: OMP:0000071
 name: cell morphology phenotype
-def: "A microbial phenotype related to the form and structure of an organism, cell, or cells." [OMP:MCC]
+def: "A microbial phenotype related to the form and structure of a microbe." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: APO:0000050 "cellular morphology"
 is_a: OMP:0007197 ! cellular component phenotype
@@ -2124,8 +2124,8 @@ creation_date: 2011-02-02T03:47:57Z
 
 [Term]
 id: OMP:0000085
-name: cell envelope phenotype
-def: "A cell morphology phenotype relating to the envelope that surrounds a microbial cell and includes the cytoplasmic membrane and everything external to the cytoplasmic membrane, encompassing the periplasmic space, cell wall, and outer membrane.  Additional layers, such as capsules or S-layers, are also part of the envelope." [OMP:MCC]
+name: cell envelope morphology phenotype
+def: "A cell morphology phenotype relating to the size, shape, or appearance of the envelope that surrounds a microbial cell. The envelope includes the cytoplasmic membrane and everything external to the cytoplasmic membrane, encompassing the periplasmic space, cell wall, and outer membrane.  Additional layers, such as capsules or S-layers, are also part of the envelope." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
@@ -2377,7 +2377,7 @@ creation_date: 2011-02-02T02:45:02Z
 
 [Term]
 id: OMP:0000111
-name: cell motility by swimming
+name: presence of cell motility by swimming
 def: "A presence of cell motility phenotype where a cell or cells exhibits smooth movement through a liquid medium." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
 intersection_of: OMP:0000005 ! presence of cell motility
@@ -2388,7 +2388,7 @@ creation_date: 2011-02-07T03:17:40Z
 
 [Term]
 id: OMP:0000112
-name: cell motility by gliding
+name: presence of cell motility by gliding
 def: "A presence of cell motility phenotype where a cell or cells exhibits smooth movement along a solid surface." [OMP:MCC]
 is_a: OMP:0000005 ! presence of cell motility
 intersection_of: OMP:0000005 ! presence of cell motility
@@ -2399,7 +2399,7 @@ creation_date: 2011-02-07T03:18:03Z
 
 [Term]
 id: OMP:0000113
-name: cell motility by twitching
+name: presence of cell motility by twitching
 def: "A presence of cell motility phenotype where a cell or cells exhibit movement over moist surfaces by the extension, tethering and then retraction of polar pili, usually type IV pili." [OMP:MCC, PMID:12142488]
 xref: GO:0043107 "type IV pilus-dependent motility"
 is_a: OMP:0000005 ! presence of cell motility
@@ -2955,8 +2955,8 @@ creation_date: 2011-02-02T03:20:39Z
 
 [Term]
 id: OMP:0000178
-name: flocculated liquid culture
-def: "A liquid culture morphology phenotype where cells clump together to form small masses in the medium." [ISBN:9780763743031, OMP:WAM]
+name: flocculation phenotype
+def: "A liquid culture morphology phenotype where cells aggregate together in suspension to form clumps of many cells known as flocs." [GO:0000128, ISBN:9780763743031, OMP:WAM]
 synonym: "clumping" BROAD []
 synonym: "flocculation" EXACT []
 xref: APO:0000065 "flocculation"
@@ -3029,7 +3029,7 @@ creation_date: 2011-02-02T03:29:51Z
 
 [Term]
 id: OMP:0000187
-name: granulated liquid culture
+name: granulation phenotype
 def: "A liquid culture morphology phenotype where cells group together and form small particles in the medium." [ISBN:9780763743031, OMP:WAM]
 synonym: "granulation in liquid" EXACT []
 synonym: "precipitation in liquid culture" RELATED []
@@ -3155,7 +3155,7 @@ id: OMP:0000202
 name: outer membrane vesicles phenotype
 def: "A cell envelope phenotype that describes the ability of a cell or cells to produce outer membrane vesicles." [OMP:JCH, PMID:20825345]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000085 ! cell envelope phenotype
+is_a: OMP:0000085 ! cell envelope morphology phenotype
 created_by: Adrienne
 creation_date: 2011-03-02T01:43:12Z
 
@@ -3166,7 +3166,7 @@ def: "A cell envelope phenotype where the trait in question is the capsule, a la
 synonym: "glycocalyx" RELATED []
 synonym: "slime layer" RELATED []
 xref: APO:0000331 "capsule formation"
-is_a: OMP:0000085 ! cell envelope phenotype
+is_a: OMP:0000085 ! cell envelope morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T09:44:51Z
 
@@ -4032,7 +4032,7 @@ id: OMP:0000461
 name: outer membrane phenotype
 def: "A cell envelope phenotype where the trait in question is the presence or absence of  a lipid bilayer membrane located outside the peptidoglycan cell wall." [ISBN:9780073402406, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000085 ! cell envelope phenotype
+is_a: OMP:0000085 ! cell envelope morphology phenotype
 created_by: siegele
 creation_date: 2013-08-22T01:43:06Z
 
@@ -4136,7 +4136,8 @@ creation_date: 2014-07-23T12:18:08Z
 [Term]
 id: OMP:0005002
 name: temperature growth range phenotype
-def: "A growth phenotype where the trait in question is the temperature requirements and range needed for microbial growth." [OMP:WAM]
+def: "A growth phenotype where the trait in question is the range of temperatures where growth of the microbe can occur." [OMP:WAM]
+synonym: "temperature requirement for growth" NARROW []
 is_a: OMP:0007192 ! growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:06:05Z
@@ -6082,6 +6083,7 @@ def: "A cell fusion phenotype relating to the fusion of individual cells from ea
 synonym: "conjugation with cellular fusion" RELATED [GO:0000747]
 xref: APO:0000033 "cell fusion"
 is_a: OMP:0005219 ! cell fusion phenotype
+is_a: OMP:0007412 ! mating phenotype
 created_by: Jesus
 creation_date: 2016-06-20T23:11:14Z
 
@@ -6486,13 +6488,13 @@ creation_date: 2016-06-27T14:52:45Z
 [Term]
 id: OMP:0005274
 name: organic heterocyclic compound resistance phenotype
-def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic heterocyclic compound." [OMP:JG]
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic heterocyclic compound, which is any cyclic compound having as ring members atoms of carbon and at least of one other element." [CHEBI:24532, OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "coumarins" NARROW [CHEBI:28794]
-synonym: "cycloheximide" NARROW [CHEBI:27641]
-synonym: "novobiocin" NARROW [CHEBI:28368]
-synonym: "thiolactomycin" NARROW [CID:445629]
-synonym: "thiolactone" NARROW [CHEBI:60317]
+synonym: "coumarin resistance phenotype" NARROW [CHEBI:28794]
+synonym: "cycloheximide resistance phenotype" NARROW [CHEBI:27641]
+synonym: "novobiocin resistance phenotype" NARROW [CHEBI:28368]
+synonym: "thiolactomycin resistance phenotype" NARROW [CID:445629]
+synonym: "thiolactone resistance phenotype" NARROW [CHEBI:60317]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: Jesus
 creation_date: 2016-07-15T15:29:19Z
@@ -6892,6 +6894,112 @@ def: "A decreased colonization of tissue in an immunocompromised rabbit phenotyp
 is_a: OMP:0005321 ! decreased colonization of tissue in an immunocompromised rabbit
 created_by: Jesus
 creation_date: 2016-08-30T11:56:47Z
+
+[Term]
+id: OMP:0005323
+name: altered cell motility by swarming
+def: "A cell motility by swarming phenotype where the frequency, rate, timing, or extent of swarming is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0007001 ! altered cell motility
+created_by: jguzman
+creation_date: 2016-09-19T14:01:13Z
+
+[Term]
+id: OMP:0005324
+name: altered cell motility by swimming
+def: "A cell motility by swimming phenotype where the frequency, rate, timing, or extent of swimming is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0007001 ! altered cell motility
+created_by: jguzman
+creation_date: 2016-09-19T14:02:03Z
+
+[Term]
+id: OMP:0005325
+name: agar invasion phenotype
+def: "An organismal growth phenotype relating to the ability of a microbe to penetrate agar media during growth." [OMP:JG]
+is_a: OMP:0000174 ! organismal growth phenotype
+created_by: Jesus
+creation_date: 2016-09-23T16:58:54Z
+
+[Term]
+id: OMP:0005326
+name: presence of agar invasion
+def: "An agar invasion phenotype where a microbe has the ability to penetrate agar media during growth." [OMP:JG]
+synonym: "invasive growth" NARROW [APO:0000028]
+is_a: OMP:0005325 ! agar invasion phenotype
+created_by: Jesus
+creation_date: 2016-09-23T17:03:49Z
+
+[Term]
+id: OMP:0005327
+name: absence of agar invasion
+def: "An agar invasion phenotype where a microbe lacks the ability to penetrate agar media during growth." [OMP:JG]
+is_a: OMP:0005325 ! agar invasion phenotype
+created_by: Jesus
+creation_date: 2016-09-23T17:05:49Z
+
+[Term]
+id: OMP:0005328
+name: altered agar invasion
+def: "An agar invasion phenotype where the frequency, rate, timing, or extent of agar invasion is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005325 ! agar invasion phenotype
+created_by: Jesus
+creation_date: 2016-09-23T17:07:22Z
+
+[Term]
+id: OMP:0005329
+name: increased agar invasion
+def: "An altered agar invasion phenotype where the frequency, rate, timing, or extent of agar invasion is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005328 ! altered agar invasion
+created_by: Jesus
+creation_date: 2016-09-23T17:07:59Z
+
+[Term]
+id: OMP:0005330
+name: decreased agar invasion phenotype
+def: "An altered agar invasion phenotype where the frequency, rate, timing, or extent of agar invasion is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005328 ! altered agar invasion
+created_by: Jesus
+creation_date: 2016-09-23T17:08:25Z
+
+[Term]
+id: OMP:0005331
+name: abolished agar invasion
+def: "A decreased agar invasion phenotype where the ability to invade agar media is abolished." [OMP:JG]
+is_a: OMP:0005330 ! decreased agar invasion phenotype
+created_by: Jesus
+creation_date: 2016-09-23T17:08:54Z
+
+[Term]
+id: OMP:0005332
+name: protein localization phenotype
+def: "A cellular component phenotype relating to the localization or placement of proteins within a cell." [APO:0000209, OMP:JG]
+xref: APO:0000209 "protein/peptide distribution"
+is_a: OMP:0007197 ! cellular component phenotype
+created_by: Jesus
+creation_date: 2016-10-05T14:17:25Z
+
+[Term]
+id: OMP:0005333
+name: altered protein localization
+def: "A protein localization phenotype in which the localization or placement of proteins within a cell is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005332 ! protein localization phenotype
+created_by: Jesus
+creation_date: 2016-10-05T14:18:53Z
+
+[Term]
+id: OMP:0005334
+name: presence of protein localization
+def: "A protein localization phenotype where an organism,  cell, or cells exhibit protein localization." [OMP:JG]
+is_a: OMP:0005332 ! protein localization phenotype
+created_by: Jesus
+creation_date: 2016-10-05T14:19:21Z
+
+[Term]
+id: OMP:0005335
+name: absence of protein localization
+def: "A protein localization phenotype where an organism, cell, or cells lack protein localization." [OMP:JG]
+is_a: OMP:0005332 ! protein localization phenotype
+created_by: Jesus
+creation_date: 2016-10-05T14:19:51Z
 
 [Term]
 id: OMP:0006000
@@ -7812,9 +7920,10 @@ creation_date: 2014-07-25T11:08:59Z
 [Term]
 id: OMP:0006100
 name: abolished cell motility by swimming
-def: "A decreased cell motility by swimming phenotype where the ability of a cell or cells to swim is abolished." [OMP:JCH]
+def: "A decreased cell motility by swimming phenotype where the ability of a microbe to move by swimming motility is abolished." [OMP:JCH]
 is_a: OMP:0007000 ! abolished cell motility
 is_a: OMP:0007093 ! decreased cell motility by swimming
+is_a: OMP:0007490 ! absence of cell motility by swimming
 created_by: jonathanherrera
 creation_date: 2014-08-15T19:12:43Z
 
@@ -8396,9 +8505,10 @@ creation_date: 2014-08-08T15:51:18Z
 [Term]
 id: OMP:0006167
 name: abolished cell motility by swarming
-def: "A decreased cell motility by swarming phenotype where the ability of cells to swarm is abolished." [OMP:JCH]
+def: "A decreased cell motility by swarming phenotype where the ability of a microbe to move by swarming motility is abolished." [OMP:JCH]
 is_a: OMP:0007000 ! abolished cell motility
 is_a: OMP:0007092 ! decreased cell motility by swarming
+is_a: OMP:0007489 ! absence of cell motility by swarming
 created_by: jonathanherrera
 creation_date: 2014-08-13T17:25:47Z
 
@@ -9314,6 +9424,7 @@ id: OMP:0007091
 name: decreased cell motility by gliding
 def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by gliding is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0007492 ! altered cell motility by gliding
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -9322,6 +9433,7 @@ id: OMP:0007092
 name: decreased cell motility by swarming
 def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swarming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0005323 ! altered cell motility by swarming
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -9330,6 +9442,7 @@ id: OMP:0007093
 name: decreased cell motility by swimming
 def: "A decreased motility phenotype where the frequency, rate, timing, or extent of cell motility by swimming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0005324 ! altered cell motility by swimming
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -9338,6 +9451,7 @@ id: OMP:0007094
 name: decreased cell motility by twitching
 def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by twitching is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0007493 ! altered cell motility by twitching
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
@@ -9346,6 +9460,7 @@ id: OMP:0007095
 name: increased cell motility by gliding
 def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by gliding is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
+is_a: OMP:0007492 ! altered cell motility by gliding
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -9354,6 +9469,7 @@ id: OMP:0007096
 name: increased cell motility by swarming
 def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swarming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
+is_a: OMP:0005323 ! altered cell motility by swarming
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -9362,6 +9478,7 @@ id: OMP:0007097
 name: increased cell motility by swimming
 def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swimming is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
+is_a: OMP:0005324 ! altered cell motility by swimming
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -9370,6 +9487,7 @@ id: OMP:0007098
 name: increased cell motility by twitching
 def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by twitching is increased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000045 ! increased cell motility
+is_a: OMP:0007493 ! altered cell motility by twitching
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
@@ -9863,9 +9981,10 @@ creation_date: 2014-08-19T14:52:08Z
 [Term]
 id: OMP:0007150
 name: abolished cell motility by gliding
-def: "A decreased cell motility by gliding phenotype where the ability of a cell or cells to move by gliding motility is abolished." [OMP:DAS]
+def: "A decreased cell motility by gliding phenotype where the ability of a microbe to move by gliding motility is abolished." [OMP:DAS]
 is_a: OMP:0007000 ! abolished cell motility
 is_a: OMP:0007091 ! decreased cell motility by gliding
+is_a: OMP:0007488 ! absence of cell motility by gliding
 created_by: siegele
 creation_date: 2014-08-20T23:57:11Z
 
@@ -9951,7 +10070,7 @@ id: OMP:0007160
 name: altered colony morphology
 def: "A colony morphology phenotype where the morphology of a colony or colonies is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000100 ! colony morphology phenotype
-is_a: OMP:0007085 ! altered microbial phenotype
+is_a: OMP:0007470 ! altered population morphology
 created_by: siegele
 creation_date: 2014-08-29T12:27:50Z
 
@@ -10974,7 +11093,7 @@ creation_date: 2015-11-07T13:32:21Z
 id: OMP:0007277
 name: cell wall phenotype
 def: "A cell envelope phenotype where the trait in question is the cell wall, a rigid or semi-rigid layer that surrounds the plasma membrane and maintains cell shape and helps protect against osmotic lysis." [GO:0005618, OMP:DAS]
-is_a: OMP:0000085 ! cell envelope phenotype
+is_a: OMP:0000085 ! cell envelope morphology phenotype
 created_by: siegele
 creation_date: 2015-11-11T15:41:37Z
 
@@ -11875,9 +11994,10 @@ creation_date: 2016-06-23T15:57:42Z
 [Term]
 id: OMP:0007380
 name: benzamides resistance phenotype
-def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a benzamide. Benzamides are compounds based on benzamide, which consists of benzene bearing a single carboxamido substituent." [CHEBI:28179, OMP:DAS]
-synonym: "benzamides" BROAD [CHEBI:22702]
-synonym: "CHIR-090" NARROW [CID:\:11546620]
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a benzamide. Benzamides are compounds based on benzamide, which consists of benzene bearing a single carboxamido substituent." [CHEBI:22702, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "benzamide resistance phenotype" NARROW [CHEBI:28179]
+synonym: "CHIR-090 resistance phenotype" NARROW [CID:\:11546620]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-26T14:45:16Z
@@ -12062,6 +12182,8 @@ creation_date: 2016-07-06T14:29:13Z
 id: OMP:0007402
 name: presence of ascospore formation
 def: "An ascospore formation phenotype where a microbe has the ability to form ascospores." [OMP:DAS]
+xref: APO:0000041 "sporulation"
+xref: FYPO:0000590 "normal sporulation"
 is_a: OMP:0007401 ! ascospore formation phenotype
 created_by: siegele
 creation_date: 2016-07-06T14:32:46Z
@@ -12116,8 +12238,10 @@ creation_date: 2016-07-09T14:47:12Z
 [Term]
 id: OMP:0007408
 name: altered ascospore formation
-def: "An ascospore formation phenotype where the formation of ascospores is altered relative to a designated control." [OMP:DAS]
+def: "An ascospore formation phenotype where the frequency, rate, timing, or extent of formation of ascospores is altered relative to a designated control." [OMP:DAS]
+synonym: "abnormal sporulation" RELATED [FYPO:0000121]
 is_a: OMP:0007401 ! ascospore formation phenotype
+is_a: OMP:0007435 ! altered sexual sporulation
 created_by: siegele
 creation_date: 2016-07-09T14:51:28Z
 
@@ -12151,18 +12275,19 @@ creation_date: 2016-07-13T18:45:02Z
 [Term]
 id: OMP:0007412
 name: mating phenotype
-def: "A biological process phenotype that affects the process of mating, which is the pairwise union of individuals for the purpose of sexual reproduction, ultimately resulting in the formation of zygotes." [GO:0007618, OMP:DAS]
+def: "A sexual reproduction phenotype that affects the process of mating, which is the pairwise union of individuals for the purpose of sexual reproduction, ultimately resulting in the formation of zygotes." [GO:0007618, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0007194 ! biological process phenotype
+is_a: OMP:0007406 ! sexual reproduction phenotype
 created_by: dsiegele
 creation_date: 2016-07-14T16:21:02Z
 
 [Term]
 id: OMP:0007413
 name: conjugation phenotype
-def: "A mating phenotype relating to the union or introduction of genetic information from compatible mating types that results in a genetically different individual. Conjugation requires direct cellular contact between the organisms." [GO:0000746, OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0007412 ! mating phenotype
+def: "A multi-organism process phenotype relating to the union or introduction of genetic information from compatible cell types that results in a genetically different individual. Conjugation requires direct cellular contact between the organisms." [GO:0000746, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nAn example of conjugation would be the transfer of a conjugative plasmid from a donor bacterium to a recipient bacterium.
+xref: GO:0000746 "conjugation"
+is_a: OMP:0005116 ! multi-organism process phenotype
 created_by: dsiegele
 creation_date: 2016-07-14T16:25:26Z
 
@@ -12324,6 +12449,7 @@ creation_date: 2016-07-20T15:45:00Z
 [Term]
 id: OMP:0007433
 name: presence of sexual sporulation
+def: "A sexual sporulation phenotype where an organism is able to produce sexual spores." [OMP:DAS]
 is_a: OMP:0007405 ! sexual sporulation phenotype
 is_a: OMP:0007439 ! presence of sexual reproduction
 created_by: siegele
@@ -12332,6 +12458,7 @@ creation_date: 2016-07-27T19:29:30Z
 [Term]
 id: OMP:0007434
 name: absence of sexual sporulation
+def: "A sexual sporulation phenotype where an organism is not able to produce sexual spores." [OMP:DAS]
 is_a: OMP:0007405 ! sexual sporulation phenotype
 is_a: OMP:0007440 ! absence of sexual reproduction
 created_by: siegele
@@ -12340,6 +12467,7 @@ creation_date: 2016-07-27T19:29:30Z
 [Term]
 id: OMP:0007435
 name: altered sexual sporulation
+def: "A sexual sporulation phenotype where the frequency, rate, timing, or extent of the process of forming sexual spores is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007405 ! sexual sporulation phenotype
 is_a: OMP:0007441 ! altered sexual reproduction
 created_by: siegele
@@ -12348,6 +12476,7 @@ creation_date: 2016-07-27T19:29:30Z
 [Term]
 id: OMP:0007436
 name: increased sexual sporulation
+def: "An altered sexual sporulation phenotype where the frequency, rate, timing, or extent of the process of forming sexual spores is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007435 ! altered sexual sporulation
 created_by: siegele
 creation_date: 2016-07-27T19:29:30Z
@@ -12355,6 +12484,7 @@ creation_date: 2016-07-27T19:29:30Z
 [Term]
 id: OMP:0007437
 name: decreased sexual sporulation
+def: "An altered sexual sporulation phenotype where the frequency, rate, timing, or extent of the process of forming sexual spores is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007435 ! altered sexual sporulation
 created_by: siegele
 creation_date: 2016-07-27T19:29:30Z
@@ -12362,6 +12492,7 @@ creation_date: 2016-07-27T19:29:30Z
 [Term]
 id: OMP:0007438
 name: abolished sexual sporulation
+def: "A decreased sexual sporulation phenotype where the formation of sexual spores is abolished." [OMP:DAS]
 is_a: OMP:0007434 ! absence of sexual sporulation
 is_a: OMP:0007437 ! decreased sexual sporulation
 created_by: siegele
@@ -12370,6 +12501,7 @@ creation_date: 2016-07-27T19:29:30Z
 [Term]
 id: OMP:0007439
 name: presence of sexual reproduction
+def: "A sexual reproduction phenotype where an organism is able to reproduce sexually." [OMP:DAS]
 is_a: OMP:0007406 ! sexual reproduction phenotype
 created_by: siegele
 creation_date: 2016-07-27T19:32:00Z
@@ -12377,6 +12509,7 @@ creation_date: 2016-07-27T19:32:00Z
 [Term]
 id: OMP:0007440
 name: absence of sexual reproduction
+def: "A sexual reproduction phenotype where an organism is not able to reproduce sexually." [OMP:DAS]
 is_a: OMP:0007406 ! sexual reproduction phenotype
 created_by: siegele
 creation_date: 2016-07-27T19:32:00Z
@@ -12384,6 +12517,7 @@ creation_date: 2016-07-27T19:32:00Z
 [Term]
 id: OMP:0007441
 name: altered sexual reproduction
+def: "A sexual reproduction phenotype where the frequency, rate, timing, or extent of sexual reproduction is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007406 ! sexual reproduction phenotype
 created_by: siegele
 creation_date: 2016-07-27T19:32:00Z
@@ -12560,6 +12694,409 @@ synonym: "colonization of silkworm (Bombyx mori)" NARROW [TaxonomyID:7091]
 is_a: OMP:0007252 ! colonization of a host phenotype
 created_by: siegele
 creation_date: 2016-09-04T21:42:45Z
+
+[Term]
+id: OMP:0007463
+name: presence of flocculation
+def: "A flocculation phenotype where cells or organisms in liquid culture aggregate to form clumps of many cells." [OMP:DAS]
+xref: APO:0000065 "flocculation"
+is_a: OMP:0000178 ! flocculation phenotype
+created_by: dsiegele
+creation_date: 2016-09-12T14:35:40Z
+
+[Term]
+id: OMP:0007464
+name: absence of flocculation
+def: "A flocculation phenotype where cells or organisms in liquid culture do not aggregate to form clumps of many cells." [OMP:DAS]
+is_a: OMP:0000178 ! flocculation phenotype
+created_by: dsiegele
+creation_date: 2016-09-12T14:35:40Z
+
+[Term]
+id: OMP:0007465
+name: altered flocculation
+def: "A flocculation phenotype where the frequency, rate, timing, or extent of flocculation is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0000178 ! flocculation phenotype
+is_a: OMP:0007469 ! altered liquid culture morphology
+created_by: dsiegele
+creation_date: 2016-09-12T14:35:40Z
+
+[Term]
+id: OMP:0007466
+name: increased flocculation
+def: "An altered flocculation phenotype where the frequency, rate, timing, or extent of flocculation is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0007465 ! altered flocculation
+created_by: dsiegele
+creation_date: 2016-09-12T14:35:40Z
+
+[Term]
+id: OMP:0007467
+name: decreased flocculation
+def: "An altered flocculation phenotype where the frequency, rate, timing, or extent of flocculation is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0007465 ! altered flocculation
+created_by: dsiegele
+creation_date: 2016-09-12T14:35:40Z
+
+[Term]
+id: OMP:0007468
+name: abolished flocculation
+def: "A decreased flocculation phenotype where flocculation is abolished." [OMP:JG]
+is_a: OMP:0007464 ! absence of flocculation
+is_a: OMP:0007467 ! decreased flocculation
+created_by: dsiegele
+creation_date: 2016-09-12T14:35:40Z
+
+[Term]
+id: OMP:0007469
+name: altered liquid culture morphology
+def: "A liquid culture morphology phenotype where the visible appearance of a liquid culture is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000177 ! liquid culture morphology phenotype
+is_a: OMP:0007470 ! altered population morphology
+created_by: dsiegele
+creation_date: 2016-09-12T15:14:45Z
+
+[Term]
+id: OMP:0007470
+name: altered population morphology
+def: "A population morphology phenotype where the visible appearance of a microbial population is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007315 ! population morphology phenotype
+is_a: OMP:0007351 ! altered biological process
+created_by: dsiegele
+creation_date: 2016-09-12T15:16:19Z
+
+[Term]
+id: OMP:0007471
+name: increased ascospore formation
+def: "An altered ascospore formation phenotype where the frequency, rate, timing, or extent of formation of ascospores is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007408 ! altered ascospore formation
+is_a: OMP:0007436 ! increased sexual sporulation
+created_by: dsiegele
+creation_date: 2016-09-13T14:35:10Z
+
+[Term]
+id: OMP:0007472
+name: decreased ascospore formation
+def: "An altered ascospore formation phenotype where the frequency, rate, timing, or extent of formation of ascospores is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007408 ! altered ascospore formation
+is_a: OMP:0007437 ! decreased sexual sporulation
+created_by: dsiegele
+creation_date: 2016-09-13T14:35:10Z
+
+[Term]
+id: OMP:0007473
+name: abolished ascospore formation
+def: "An altered ascospore formation phenotype where the formation of ascospores is abolished." [OMP:DAS]
+xref: FYPO:0000583 "abolished sporulation"
+is_a: OMP:0007407 ! absence of ascospore formation
+is_a: OMP:0007472 ! decreased ascospore formation
+created_by: dsiegele
+creation_date: 2016-09-13T14:35:10Z
+
+[Term]
+id: OMP:0007474
+name: phenols resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to phenols, which are organic aromatic compounds having one or more hydroxy groups attached to a benzene or other arene ring." [CHEBI:33853, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "phenol red resistance phenotype" NARROW [CHEBI:31991]
+synonym: "phenol resistance phenotype" NARROW [CHEBI:15882]
+synonym: "rose bengal resistance phenotype" NARROW [CHEBI:52261]
+synonym: "triclosan resistance phenotype" NARROW [CHEBI:164200]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T16:00:17Z
+
+[Term]
+id: OMP:0007475
+name: resistant to phenols
+def: "A phenols resistance phenotype where an organism, cell, or cells is resistant to phenols." [OMP:JG]
+is_a: OMP:0007474 ! phenols resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T16:49:20Z
+
+[Term]
+id: OMP:0007476
+name: not resistant to phenols
+def: "A phenols resistance phenotype where an organism or cell is sensitive to phenols." [OMP:JG]
+is_a: OMP:0007474 ! phenols resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T16:49:20Z
+
+[Term]
+id: OMP:0007477
+name: altered resistance to phenols
+def: "A phenol resistance phenotype where the frequency, rate, timing, or extent of resistance to phenols is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007474 ! phenols resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T16:49:20Z
+
+[Term]
+id: OMP:0007478
+name: increased resistance to phenols
+def: "An altered resistance to phenols phenotype where the frequency, rate, timing, or extent of resistance to phenols is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0007477 ! altered resistance to phenols
+created_by: dsiegele
+creation_date: 2016-09-19T16:49:20Z
+
+[Term]
+id: OMP:0007479
+name: decreased resistance to phenols
+def: "An altered resistance to phenols phenotype where the frequency, rate, timing, or extent of resistance to phenols is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0007477 ! altered resistance to phenols
+created_by: dsiegele
+creation_date: 2016-09-19T16:49:20Z
+
+[Term]
+id: OMP:0007480
+name: abolished resistance to phenols
+def: "A decreased resistance to phenols phenotype where resistance to phenols is abolished." [OMP:JG]
+is_a: OMP:0007476 ! not resistant to phenols
+is_a: OMP:0007479 ! decreased resistance to phenols
+created_by: dsiegele
+creation_date: 2016-09-19T16:49:20Z
+
+[Term]
+id: OMP:0007481
+name: quaternary ammonium salts resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to the resistance or sensitivity of a microbe to a quaternary ammonium salt. These are derivatives of ammonium compounds, (NH4+)Y-, in which all four of the hydrogens bonded to nitrogen have been replaced with univalent (usually organyl) groups." [CHEBI:35273, OMP:DAS]
+synonym: "benzalkonium chloride resistance phenotype" NARROW [CHEBI:3020]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007482
+name: resistant to quaternary ammonium salts
+is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007483
+name: not resistant to quaternary ammonium salts
+is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007484
+name: altered resistance to quaternary ammonium salts
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007485
+name: increased resistance to quaternary ammonium salts
+is_a: OMP:0007484 ! altered resistance to quaternary ammonium salts
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007486
+name: decreased resistance to quaternary ammonium salts
+is_a: OMP:0007484 ! altered resistance to quaternary ammonium salts
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007487
+name: abolished resistance to quaternary ammonium salts
+is_a: OMP:0007483 ! not resistant to quaternary ammonium salts
+is_a: OMP:0007486 ! decreased resistance to quaternary ammonium salts
+created_by: dsiegele
+creation_date: 2016-09-19T17:10:16Z
+
+[Term]
+id: OMP:0007488
+name: absence of cell motility by gliding
+def: "An absence of cell motility phenotype where a microbe is not capable of gliding motility." [OMP:DAS]
+is_a: OMP:0000133 ! absence of cell motility
+created_by: siegele
+creation_date: 2016-09-24T23:00:10Z
+
+[Term]
+id: OMP:0007489
+name: absence of cell motility by swarming
+def: "An absence of cell motility phenotype where a microbe is not capable of swarming motility." [OMP:DAS]
+is_a: OMP:0000133 ! absence of cell motility
+created_by: siegele
+creation_date: 2016-09-24T23:00:10Z
+
+[Term]
+id: OMP:0007490
+name: absence of cell motility by swimming
+def: "An absence of cell motility phenotype where a microbe is not capable of swimming motility." [OMP:DAS]
+is_a: OMP:0000133 ! absence of cell motility
+created_by: siegele
+creation_date: 2016-09-24T23:00:10Z
+
+[Term]
+id: OMP:0007491
+name: absence of cell motility by twitching
+def: "An absence of cell motility phenotype where a microbe is not capable of twitching motility." [OMP:DAS]
+is_a: OMP:0000133 ! absence of cell motility
+created_by: siegele
+creation_date: 2016-09-24T23:00:10Z
+
+[Term]
+id: OMP:0007492
+name: altered cell motility by gliding
+def: "A cell motility by gliding phenotype where the frequency, rate, timing, or extent of gliding is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007001 ! altered cell motility
+created_by: siegele
+creation_date: 2016-09-24T23:01:37Z
+
+[Term]
+id: OMP:0007493
+name: altered cell motility by twitching
+def: "A cell motility by twitching phenotype where the frequency, rate, timing, or extent of twitching is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007001 ! altered cell motility
+created_by: siegele
+creation_date: 2016-09-24T23:01:37Z
+
+[Term]
+id: OMP:0007494
+name: abolished cell motility by twitching
+def: "A decreased cell motility by twitching phenotype where the ability of a microbe to move by twitching motility is abolished." [OMP:DAS]
+is_a: OMP:0007000 ! abolished cell motility
+is_a: OMP:0007094 ! decreased cell motility by twitching
+is_a: OMP:0007491 ! absence of cell motility by twitching
+created_by: siegele
+creation_date: 2016-09-24T23:04:50Z
+
+[Term]
+id: OMP:0007495
+name: epoxide resistance phenotype
+def: "An antimicrobial resistance phenotype relating to resistance or sensitivity to an epoxide. An epoxide is any cyclic ether in which the oxygen atom forms part of a 3-membered ring." [CHEBI:32955, OMP:DAS]
+synonym: "cerulenin resistance phenotype" NARROW [CHEBI:171741]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2016-09-25T12:02:01Z
+
+[Term]
+id: OMP:0007496
+name: resistant to an epoxide
+def: "An epoxide resistance phenotype where an organism, cell, or cells is resistant to an epoxide." [OMP:JG]
+is_a: OMP:0007495 ! epoxide resistance phenotype
+created_by: siegele
+creation_date: 2016-09-25T12:11:27Z
+
+[Term]
+id: OMP:0007497
+name: not resistant to an epoxide
+def: "An epoxide resistance phenotype where an organism or cell is sensitive to an epoxide." [OMP:JG]
+is_a: OMP:0007495 ! epoxide resistance phenotype
+created_by: siegele
+creation_date: 2016-09-25T12:11:27Z
+
+[Term]
+id: OMP:0007498
+name: altered epoxide resistance
+def: "An epoxide resistance phenotype where the frequency, rate, timing, or extent of resistance to an epoxide is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007495 ! epoxide resistance phenotype
+created_by: siegele
+creation_date: 2016-09-25T12:11:27Z
+
+[Term]
+id: OMP:0007499
+name: increased resistance to an epoxide
+def: "An altered epoxide resistance phenotype where the frequency, rate, timing, or extent of resistance to epoxide is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0007498 ! altered epoxide resistance
+created_by: siegele
+creation_date: 2016-09-25T12:12:32Z
+
+[Term]
+id: OMP:0007500
+name: decreased resistance to an epoxide
+def: "An altered epoxide resistance phenotype where the frequency, rate, timing, or extent of resistance to an epoxide is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0007498 ! altered epoxide resistance
+created_by: siegele
+creation_date: 2016-09-25T12:12:32Z
+
+[Term]
+id: OMP:0007501
+name: abolished resistance to an epoxide
+def: "A decreased resistance to an epoxide phenotype where resistance to an epoxide is abolished." [OMP:JG]
+is_a: OMP:0007497 ! not resistant to an epoxide
+is_a: OMP:0007500 ! decreased resistance to an epoxide
+created_by: siegele
+creation_date: 2016-09-25T12:12:32Z
+
+[Term]
+id: OMP:0007502
+name: altered capsule morphology
+def: "A capsule morphology phenotype where the size, shape, or appearance of the capsule is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000203 ! capsule phenotype
+created_by: siegele
+creation_date: 2016-09-25T13:45:05Z
+
+[Term]
+id: OMP:0007503
+name: altered capsule size
+def: "An altered capsule morphology phenotype where the size of the capsule is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007502 ! altered capsule morphology
+created_by: siegele
+creation_date: 2016-09-25T13:47:16Z
+
+[Term]
+id: OMP:0007504
+name: Increased capsule size
+def: "An altered capsule size phenotype where the size of the capsule is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007503 ! altered capsule size
+created_by: siegele
+creation_date: 2016-09-25T13:49:19Z
+
+[Term]
+id: OMP:0007505
+name: decreased capsule size
+def: "An altered capsule size phenotype where the size of the capsule is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007503 ! altered capsule size
+created_by: siegele
+creation_date: 2016-09-25T13:49:19Z
+
+[Term]
+id: OMP:0007506
+name: titan cell phenotype
+def: "A cell morphology phenotype where a microbe, typically a fungus, produces large vegetative cells that typically exhibit altered capsule structure, a thickened cell wall, increased ploidy, and resistance to nitrosative and oxidative stresses." [OMP:DAS, PMID:21821718]
+xref: FAO:0000063 "titan cell"
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: siegele
+creation_date: 2016-09-25T22:33:27Z
+
+[Term]
+id: OMP:0007507
+name: presence of titan cells
+def: "A titan cell phenotype where a microbe is able to form titan cells." [OMP:DAS]
+is_a: OMP:0007506 ! titan cell phenotype
+created_by: siegele
+creation_date: 2016-09-25T23:28:19Z
+
+[Term]
+id: OMP:0007508
+name: absence of titan cells
+def: "A titan cell phenotype where a microbe cannot form titan cells." [OMP:DAS]
+is_a: OMP:0007506 ! titan cell phenotype
+created_by: siegele
+creation_date: 2016-09-25T23:28:19Z
+
+[Term]
+id: OMP:0007509
+name: altered titan cell morphology
+def: "A titan cell phenotype where the size, shape, or appearance of titan cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007506 ! titan cell phenotype
+created_by: siegele
+creation_date: 2016-09-25T23:28:19Z
+
+[Term]
+id: OMP:0007510
+name: altered titan cell formation
+def: "A titan cell phenotype where the frequency, rate, timing, or extent of titan cell formation is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007506 ! titan cell phenotype
+created_by: siegele
+creation_date: 2016-09-25T23:32:51Z
 
 [Term]
 id: OMP:0008000
