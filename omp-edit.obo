@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 05:10:2016 14:20
+date: 18:10:2016 12:50
 saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -12763,6 +12763,7 @@ creation_date: 2016-09-19T17:10:16Z
 [Term]
 id: OMP:0007482
 name: resistant to quaternary ammonium salts
+def: "A quaternary ammonium salts resistance phenotype where an organism or cell is resistant to one or more quaternary ammonium salts." [OMP:JG]
 is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
@@ -12770,6 +12771,7 @@ creation_date: 2016-09-19T17:10:16Z
 [Term]
 id: OMP:0007483
 name: not resistant to quaternary ammonium salts
+def: "A quaternary ammonium salts resistance phenotype where an organism or cell is sensitive to one or more quaternary ammonium salts." [OMP:JG]
 is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
@@ -12777,6 +12779,7 @@ creation_date: 2016-09-19T17:10:16Z
 [Term]
 id: OMP:0007484
 name: altered resistance to quaternary ammonium salts
+def: "A quaternary ammonium salts resistance phenotype where the frequency, rate, timing, or extent of resistance to quaternary ammonium salts is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
 created_by: dsiegele
@@ -12785,6 +12788,7 @@ creation_date: 2016-09-19T17:10:16Z
 [Term]
 id: OMP:0007485
 name: increased resistance to quaternary ammonium salts
+def: "An altered resistance to quaternary ammonium salts where the frequency, rate, timing, or extent of resistance to quaternary ammonium salts is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0007484 ! altered resistance to quaternary ammonium salts
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
@@ -12792,6 +12796,7 @@ creation_date: 2016-09-19T17:10:16Z
 [Term]
 id: OMP:0007486
 name: decreased resistance to quaternary ammonium salts
+def: "An altered resistance to quaternary ammonium salts where the frequency, rate, timing, or extent of resistance to quaternary ammonium salts is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0007484 ! altered resistance to quaternary ammonium salts
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
@@ -12799,6 +12804,7 @@ creation_date: 2016-09-19T17:10:16Z
 [Term]
 id: OMP:0007487
 name: abolished resistance to quaternary ammonium salts
+def: "A decreased resistance to quaternary ammonium salts where resistance to quaternary ammonium salts is abolished." [OMP:JG]
 is_a: OMP:0007483 ! not resistant to quaternary ammonium salts
 is_a: OMP:0007486 ! decreased resistance to quaternary ammonium salts
 created_by: dsiegele
