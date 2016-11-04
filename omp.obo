@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2016-10-07
-date: 05:10:2016 14:20
+data-version: releases/2016-11-04
+date: 31:10:2016 13:52
 saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -7002,6 +7002,121 @@ created_by: Jesus
 creation_date: 2016-10-05T14:19:51Z
 
 [Term]
+id: OMP:0005336
+name: cell lysis phenotype
+def: "A cell death phenotype relating to cytolysis, which is the rupture of cell membranes and the loss of cytoplasm." [OMP:JG]
+xref: GO:0019835 "cytolysis"
+is_a: OMP:0007308 ! cell death phenotype
+created_by: Jesus
+creation_date: 2016-10-31T13:27:46Z
+
+[Term]
+id: OMP:0005337
+name: absence of cell lysis
+def: "A cell lysis phenotype where cytolysis doesn't occur." [OMP:JG]
+is_a: OMP:0005336 ! cell lysis phenotype
+created_by: Jesus
+creation_date: 2016-10-31T13:29:12Z
+
+[Term]
+id: OMP:0005338
+name: presence of cell lysis
+def: "A cell lysis phenotype where cytolysis occurs." [OMP:JG]
+is_a: OMP:0005336 ! cell lysis phenotype
+created_by: Jesus
+creation_date: 2016-10-31T13:30:04Z
+
+[Term]
+id: OMP:0005339
+name: altered cell lysis
+def: "A cell lysis phenotype where the frequency, rate, timing, or extent of cytolysis is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005336 ! cell lysis phenotype
+created_by: Jesus
+creation_date: 2016-10-31T13:30:56Z
+
+[Term]
+id: OMP:0005340
+name: decreased cell lysis
+def: "An altered cell lysis phenotype where the frequency, rate, timing, or extent of cytolysis is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005339 ! altered cell lysis
+created_by: Jesus
+creation_date: 2016-10-31T13:31:44Z
+
+[Term]
+id: OMP:0005341
+name: abolished cell lysis
+def: "A decreased cell lysis phenotype where cytolysis is abolished." [OMP:JG]
+is_a: OMP:0005340 ! decreased cell lysis
+created_by: Jesus
+creation_date: 2016-10-31T13:32:41Z
+
+[Term]
+id: OMP:0005342
+name: increased cell lysis
+def: "An altered cell lysis phenotype where the frequency, rate, timing, or extent of cytolysis is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005339 ! altered cell lysis
+created_by: Jesus
+creation_date: 2016-10-31T13:33:49Z
+
+[Term]
+id: OMP:0005343
+name: organic aromatic compound resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic aromatic compound." [OMP:JG]
+synonym: "benzalkonium chloride" NARROW [CHEBI:3020]
+synonym: "triclosan" NARROW [CHEBI:164200]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: Jesus
+creation_date: 2016-10-31T13:40:40Z
+
+[Term]
+id: OMP:0005344
+name: altered organic aromatic compound resistance
+def: "An organic aromatic compound resistance phenotype where resistance to an organic aromatic compound is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005343 ! organic aromatic compound resistance phenotype
+created_by: Jesus
+creation_date: 2016-10-31T13:45:41Z
+
+[Term]
+id: OMP:0005345
+name: decreased resistance to organic aromatic compounds
+def: "An altered organic aromatic compound resistance phenotype where resistance to one or more is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005344 ! altered organic aromatic compound resistance
+created_by: Jesus
+creation_date: 2016-10-31T13:46:37Z
+
+[Term]
+id: OMP:0005346
+name: abolished resistance to organic aromatic compounds
+def: "A decreased resistance to organic aromatic compounds phenotype where resistance to one or more organic aromatic compounds is abolished." [OMP:JG]
+is_a: OMP:0005345 ! decreased resistance to organic aromatic compounds
+created_by: Jesus
+creation_date: 2016-10-31T13:47:39Z
+
+[Term]
+id: OMP:0005347
+name: increased resistance to organic aromatic compounds
+def: "An altered organic aromatic compound resistance phenotype where resistance to one or more organic aromatic compounds is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005344 ! altered organic aromatic compound resistance
+created_by: Jesus
+creation_date: 2016-10-31T13:48:38Z
+
+[Term]
+id: OMP:0005348
+name: not resistant to organic aromatic compounds
+def: "An organic aromatic compound resistance phenotype where an organism or cell is sensitive to one or more organic aromatic compounds." [OMP:JG]
+is_a: OMP:0005343 ! organic aromatic compound resistance phenotype
+created_by: Jesus
+creation_date: 2016-10-31T13:49:36Z
+
+[Term]
+id: OMP:0005349
+name: resistant to organic aromatic compounds
+def: "An organic aromatic compound resistance phenotype where an organism or cell is resistant to one or more organic aromatic compounds." [OMP:JG]
+is_a: OMP:0005343 ! organic aromatic compound resistance phenotype
+created_by: Jesus
+creation_date: 2016-10-31T13:50:26Z
+
+[Term]
 id: OMP:0006000
 name: secondary metabolite production phenotype
 def: "A small molecule biosynthesis phenotype where an organism produces a secondary metabolite, which is a compound not directly involved in normal growth, development or reproduction." [APO:0000292, OMP:TCK]
@@ -12867,6 +12982,7 @@ creation_date: 2016-09-19T17:10:16Z
 [Term]
 id: OMP:0007482
 name: resistant to quaternary ammonium salts
+def: "A quaternary ammonium salts resistance phenotype where an organism or cell is resistant to one or more quaternary ammonium salts." [OMP:JG]
 is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
@@ -12874,6 +12990,7 @@ creation_date: 2016-09-19T17:10:16Z
 [Term]
 id: OMP:0007483
 name: not resistant to quaternary ammonium salts
+def: "A quaternary ammonium salts resistance phenotype where an organism or cell is sensitive to one or more quaternary ammonium salts." [OMP:JG]
 is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
@@ -12881,6 +12998,7 @@ creation_date: 2016-09-19T17:10:16Z
 [Term]
 id: OMP:0007484
 name: altered resistance to quaternary ammonium salts
+def: "A quaternary ammonium salts resistance phenotype where the frequency, rate, timing, or extent of resistance to quaternary ammonium salts is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
 created_by: dsiegele
@@ -12889,6 +13007,7 @@ creation_date: 2016-09-19T17:10:16Z
 [Term]
 id: OMP:0007485
 name: increased resistance to quaternary ammonium salts
+def: "An altered resistance to quaternary ammonium salts where the frequency, rate, timing, or extent of resistance to quaternary ammonium salts is increased relative to a designated control." [OMP:JG]
 is_a: OMP:0007484 ! altered resistance to quaternary ammonium salts
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
@@ -12896,6 +13015,7 @@ creation_date: 2016-09-19T17:10:16Z
 [Term]
 id: OMP:0007486
 name: decreased resistance to quaternary ammonium salts
+def: "An altered resistance to quaternary ammonium salts where the frequency, rate, timing, or extent of resistance to quaternary ammonium salts is decreased relative to a designated control." [OMP:JG]
 is_a: OMP:0007484 ! altered resistance to quaternary ammonium salts
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
@@ -12903,6 +13023,7 @@ creation_date: 2016-09-19T17:10:16Z
 [Term]
 id: OMP:0007487
 name: abolished resistance to quaternary ammonium salts
+def: "A decreased resistance to quaternary ammonium salts where resistance to quaternary ammonium salts is abolished." [OMP:JG]
 is_a: OMP:0007483 ! not resistant to quaternary ammonium salts
 is_a: OMP:0007486 ! decreased resistance to quaternary ammonium salts
 created_by: dsiegele
