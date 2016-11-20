@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 31:10:2016 13:52
-saved-by: Jesus
+date: 19:11:2016 14:55
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -12286,8 +12286,10 @@ creation_date: 2016-07-13T18:45:02Z
 [Term]
 id: OMP:0007412
 name: mating phenotype
-def: "A sexual reproduction phenotype that affects the process of mating, which is the pairwise union of individuals for the purpose of sexual reproduction, ultimately resulting in the formation of zygotes." [GO:0007618, OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+def: "A sexual reproduction phenotype that affects conjugation with cellular fusion, which is the union of cellular and genetic information from compatible mating types." [GO:0000747, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nAn example of conjugation with cellular fusion is found in Saccharomyces cerevisiae.
+synonym: "mating response" EXACT [APO:0000032]
+xref: FYPO:0000301 "mating phenotype"
 is_a: OMP:0007406 ! sexual reproduction phenotype
 created_by: dsiegele
 creation_date: 2016-07-14T16:21:02Z
