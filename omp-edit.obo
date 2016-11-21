@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 19:11:2016 14:55
-saved-by: siegele
+date: 21:11:2016 13:44
+saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -7056,6 +7056,94 @@ def: "An organic aromatic compound resistance phenotype where an organism or cel
 is_a: OMP:0005343 ! organic aromatic compound resistance phenotype
 created_by: Jesus
 creation_date: 2016-10-31T13:50:26Z
+
+[Term]
+id: OMP:0005350
+name: presence of mating
+def: "A mating phenotype where an organism uses the process of conjugation for sexual reproduction." [OMP:JG]
+is_a: OMP:0007412 ! mating phenotype
+created_by: Jesus
+creation_date: 2016-11-21T13:08:52Z
+
+[Term]
+id: OMP:0005351
+name: absence of mating
+def: "A mating phenotype where an organism does not use the process of conjugation for sexual reproduction." [OMP:JG]
+is_a: OMP:0007412 ! mating phenotype
+created_by: Jesus
+creation_date: 2016-11-21T13:10:46Z
+
+[Term]
+id: OMP:0005352
+name: altered mating
+def: "A mating phenotype where the frequency, rate, timing, or extent of sexual reproduction by conjugation  is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0007412 ! mating phenotype
+created_by: Jesus
+creation_date: 2016-11-21T13:11:47Z
+
+[Term]
+id: OMP:0005353
+name: increased mating
+def: "An altered mating phenotype where the frequency, rate, timing, or extent of sexual reproduction by conjugation  is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005352 ! altered mating
+created_by: Jesus
+creation_date: 2016-11-21T13:13:40Z
+
+[Term]
+id: OMP:0005354
+name: decreased mating
+def: "An altered mating phenotype where the frequency, rate, timing, or extent of sexual reproduction by conjugation is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005352 ! altered mating
+created_by: Jesus
+creation_date: 2016-11-21T13:14:33Z
+
+[Term]
+id: OMP:0005355
+name: abolished mating
+def: "A decreased mating phenotype where sexual reproduction by conjugation is abolished." [OMP:JG]
+is_a: OMP:0005354 ! decreased mating
+created_by: Jesus
+creation_date: 2016-11-21T13:15:43Z
+
+[Term]
+id: OMP:0005356
+name: mating efficiency phenotype
+def: "A sexual reproduction phenotype relating to the efficiency of mating." [OMP:JG]
+is_a: OMP:0007406 ! sexual reproduction phenotype
+created_by: Jesus
+creation_date: 2016-11-21T13:27:01Z
+
+[Term]
+id: OMP:0005357
+name: altered mating efficiency
+def: "A mating efficiency phenotype where the efficiency of mating is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005356 ! mating efficiency phenotype
+created_by: Jesus
+creation_date: 2016-11-21T13:29:32Z
+
+[Term]
+id: OMP:0005358
+name: increased mating efficiency
+def: "A mating efficiency phenotype where the efficiency of mating is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005357 ! altered mating efficiency
+created_by: Jesus
+creation_date: 2016-11-21T13:30:39Z
+
+[Term]
+id: OMP:0005359
+name: decreased mating efficiency
+def: "A mating efficiency phenotype where the efficiency of mating is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005357 ! altered mating efficiency
+created_by: Jesus
+creation_date: 2016-11-21T13:32:39Z
+
+[Term]
+id: OMP:0005360
+name: abolished mating efficiency
+def: "A decreased mating efficiency phenotype where mating is abolished." [OMP:JG]
+is_a: OMP:0005359 ! decreased mating efficiency
+created_by: Jesus
+creation_date: 2016-11-21T13:33:33Z
 
 [Term]
 id: OMP:0006000
