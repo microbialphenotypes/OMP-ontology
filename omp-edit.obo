@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 18:12:2016 17:14
+date: 18:12:2016 17:34
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1757,7 +1757,7 @@ creation_date: 2011-04-26T04:08:26Z
 [Term]
 id: OMP:0000046
 name: presence of chemotaxis
-def: "A chemotaxis phenotype where a motile cell or organism displays directed movement in response to a specific chemical concentration gradient." [OMP:MCC]
+def: "A chemotaxis phenotype where a motile microbe displays directed movement in response to a specific chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:17:42Z
@@ -1776,7 +1776,7 @@ creation_date: 2011-04-26T04:18:11Z
 [Term]
 id: OMP:0000048
 name: chemotaxis phenotype
-def: "A taxis phenotype where the directed movement of a motile cell or organism is in response to a specific chemical concentration gradient." [ISBN:0198506732, OMP:MCC]
+def: "A taxis phenotype where the directed movement of a motile microbe is in response to a specific chemical concentration gradient." [ISBN:0198506732, OMP:MCC]
 comment: ChEBI cross product candidate (and child terms).
 xref: GO:0006935
 is_a: OMP:0000004 ! taxis phenotype
@@ -1804,7 +1804,7 @@ creation_date: 2011-06-07T10:53:59Z
 [Term]
 id: OMP:0000052
 name: presence of positive chemotaxis
-def: "A presence of chemotaxis phenotype where a motile cell or organism displays directed movement towards a higher concentration of a chemical." [OMP:MCC]
+def: "A presence of chemotaxis phenotype where a motile microbe displays directed movement towards a higher concentration of a chemical." [OMP:MCC]
 is_a: OMP:0000046 ! presence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -1812,7 +1812,8 @@ creation_date: 2011-04-26T04:42:14Z
 [Term]
 id: OMP:0000053
 name: presence of negative chemotaxis
-def: "A presence of chemotaxis phenotype where a motile cell or organism displays directed movement toward a lower concentration of a chemical." [OMP:MCC]
+def: "A presence of chemotaxis phenotype where a motile microbe displays directed movement toward a lower concentration of a chemical (away from a higher concentration of a chemical)." [OMP:MCC]
+synonym: "repellent" RELATED []
 is_a: OMP:0000046 ! presence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -2231,7 +2232,7 @@ creation_date: 2011-02-02T03:26:41Z
 [Term]
 id: OMP:0000097
 name: absence of chemotaxis
-def: "A chemotaxis phenotype where a motile cell or organism doesn't display directed movement in response to a specific chemical concentration gradient." [OMP:MCC]
+def: "A chemotaxis phenotype where a motile microbe doesn't display directed movement in response to a specific chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:13Z
@@ -4048,7 +4049,7 @@ creation_date: 2012-11-02T01:21:21Z
 [Term]
 id: OMP:0000503
 name: decreased chemotaxis
-def: "An altered chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism in response to a specific chemical gradient is decreased relative to a designated control." [OMP:DAS]
+def: "An altered chemotaxis phenotype where the frequency, rate, timing, or extent of chemotaxis by a motile microbe is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007077 ! altered chemotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:22:28Z
@@ -4056,7 +4057,7 @@ creation_date: 2012-11-02T01:22:28Z
 [Term]
 id: OMP:0000505
 name: increased chemotaxis
-def: "An altered chemotaxis phenotype where the frequency, rate, timing, or extent of  directed movement of a motile cell or organism in response to a specific chemical gradient is increased relative to a designated control." [OMP:DAS]
+def: "An altered chemotaxis phenotype where the frequency, rate, timing, or extent of  chemotaxis by a motile microbe is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007077 ! altered chemotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:23:12Z
@@ -8132,7 +8133,7 @@ creation_date: 2014-07-28T18:19:45Z
 [Term]
 id: OMP:0006108
 name: abolished chemotaxis
-def: "A decreased chemotaxis phenotype where a motile cell or organism no longer displays chemotaxis in response to a gradient of a specific chemical." [OMP:JCH]
+def: "A decreased chemotaxis phenotype where chemotaxis by a motile microbe is abolished." [OMP:JCH]
 is_a: OMP:0000097 ! absence of chemotaxis
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: jonathanherrera
@@ -8809,7 +8810,7 @@ creation_date: 2014-01-31T18:03:55Z
 [Term]
 id: OMP:0007005
 name: decreased negative chemotaxis
-def: "A decreased chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism toward a lower concentration of a specific chemical is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased chemotaxis phenotype where the frequency, rate, timing, or extent of negative chemotaxis by a motile microbe is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-07T18:35:51Z
@@ -9115,7 +9116,7 @@ creation_date: 2013-09-29T00:36:46Z
 [Term]
 id: OMP:0007041
 name: decreased positive chemotaxis
-def: "A decreased chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism toward a higher concentration of a specific chemical is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased chemotaxis phenotype where the frequency, rate, timing, or extent of positive chemotaxis by a motile microbe is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-07T18:37:42Z
@@ -9214,7 +9215,7 @@ creation_date: 2013-10-01T15:20:22Z
 [Term]
 id: OMP:0007053
 name: increased positive chemotaxis
-def: "An increased chemotaxis phenotype where directed movement of a motile cell or organism toward a higher concentration of a chemical is increased relative to a designated control." [OMP:DAS]
+def: "An increased chemotaxis phenotype where the frequency, rate, timing, or extent of positive chemotaxis by a motile microbe is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000505 ! increased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-08T18:08:51Z
@@ -9222,7 +9223,7 @@ creation_date: 2014-08-08T18:08:51Z
 [Term]
 id: OMP:0007054
 name: increased negative chemotaxis
-def: "An increased chemotaxis phenotype where directed movement of a motile cell or organism toward a lower concentration of a chemical is increased relative to a designated control." [OMP:DAS]
+def: "An increased chemotaxis phenotype where the frequency, rate, timing, or extent of negative chemotaxis by a motile microbe is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000505 ! increased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-08T18:08:51Z
@@ -9428,7 +9429,7 @@ creation_date: 2014-04-24T17:41:34Z
 [Term]
 id: OMP:0007077
 name: altered chemotaxis
-def: "A chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement in response to a specific chemical gradient is altered relative to a designated control." [OMP:JCH]
+def: "A chemotaxis phenotype where the frequency, rate, timing, or extent of chemotaxis by a motile microbe is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000048 ! chemotaxis phenotype
 is_a: OMP:0007127 ! altered taxis
 created_by: siegele
