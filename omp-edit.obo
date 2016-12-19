@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 18:12:2016 17:34
+date: 19:12:2016 14:25
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -10792,7 +10792,7 @@ creation_date: 2015-06-04T15:42:45Z
 [Term]
 id: OMP:0007228
 name: endospore morphology phenotype
-def: "A spore morphology phenotype that is related to the form and structure of an endospore." [OMP:DAS]
+def: "A spore morphology phenotype that is related to the form and structure of an endospore." [CL:0000563, GO:0034301, OMP:DAS]
 is_a: OMP:0008000 ! spore morphology phenotype
 created_by: dsiegele
 creation_date: 2015-06-04T16:05:37Z
@@ -12368,7 +12368,7 @@ creation_date: 2016-07-13T18:43:01Z
 [Term]
 id: OMP:0007411
 name: altered spore morphology
-def: "A spore morphology phenotype where the morphology of spores produced by an organism is altered relative to a designated control." [OMP:DAS]
+def: "A spore morphology phenotype where the morphology of spores produced by a microbe is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007103 ! altered cell morphology
 is_a: OMP:0008000 ! spore morphology phenotype
 created_by: siegele
@@ -13208,9 +13208,35 @@ created_by: siegele
 creation_date: 2016-09-25T23:32:51Z
 
 [Term]
+id: OMP:0007511
+name: ascospore morphology phenotype
+def: "A spore morphology phenotype that is related to the form and structure of an ascospore, which is a thick-walled spore that stores and protects one or more nuclei following sexual reproduction in an Ascomycete." [CL:0000607, FAO:0000020, OMP:DAS]
+is_a: OMP:0008000 ! spore morphology phenotype
+created_by: siegele
+creation_date: 2016-12-19T14:07:15Z
+
+[Term]
+id: OMP:0007512
+name: altered ascospore morphology
+def: "An ascospore morphology phenotype in which the form and structure of an ascospore is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007411 ! altered spore morphology
+is_a: OMP:0007511 ! ascospore morphology phenotype
+created_by: siegele
+creation_date: 2016-12-19T14:12:30Z
+
+[Term]
+id: OMP:0007513
+name: altered endospore morphology
+def: "An endospore morphology phenotype where the form and structure of an endospore is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007228 ! endospore morphology phenotype
+is_a: OMP:0007411 ! altered spore morphology
+created_by: siegele
+creation_date: 2016-12-19T14:16:33Z
+
+[Term]
 id: OMP:0008000
 name: spore morphology phenotype
-def: "A microbial phenotype that is related to the form and structure of a spore or spores." [OMP:KDA]
+def: "A microbial phenotype that is related to the form and structure of a spore or spores produced by a microbe." [OMP:KDA]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: FAO:0000019 "spore"
 is_a: OMP:0000071 ! cell morphology phenotype
