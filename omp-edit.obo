@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 19:12:2016 14:25
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 20:12:2016 13:36
+saved-by: Jesus
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -7147,6 +7147,181 @@ def: "A decreased mating efficiency phenotype where mating is abolished." [OMP:J
 is_a: OMP:0005359 ! decreased mating efficiency
 created_by: Jesus
 creation_date: 2016-11-21T13:33:33Z
+
+[Term]
+id: OMP:0005361
+name: osmotaxis phenotype
+def: "A taxis phenotype where the directed movement of a motile microbe is in response to an osmotic concentration gradient (formerly called osmolarity). Osmotaxis differs from chemotaxis in that during osmotaxis the microbe is responding to water activity not to the solute per se." [OMP:JG, PMID:3059348]
+is_a: OMP:0000004 ! taxis phenotype
+created_by: Jesus
+creation_date: 2016-12-20T12:48:52Z
+
+[Term]
+id: OMP:0005362
+name: presence of osmotaxis
+def: "An osmotaxis phenotype where a motile microbe displays directed movement in response to an osmotic concentration gradient." [OMP:JG]
+is_a: OMP:0005361 ! osmotaxis phenotype
+created_by: Jesus
+creation_date: 2016-12-20T12:51:45Z
+
+[Term]
+id: OMP:0005363
+name: absence of osmotaxis
+def: "An osmotaxis phenotype where a motile microbe doesn't display directed movement in response to an osmotic concentration gradient." [OMP:JG]
+is_a: OMP:0005361 ! osmotaxis phenotype
+created_by: Jesus
+creation_date: 2016-12-20T12:52:21Z
+
+[Term]
+id: OMP:0005364
+name: presence of positive osmotaxis
+def: "A presence of osmotaxis phenotype where a motile microbe displays osmotaxis towards a higher osmotic concentration." [OMP:JG]
+is_a: OMP:0005362 ! presence of osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T12:53:34Z
+
+[Term]
+id: OMP:0005365
+name: presence of negative osmotaxis
+def: "A presence of osmotaxis phenotype where a motile microbe displays osmotaxis away from a higher osmotic concentration." [OMP:JG]
+is_a: OMP:0005362 ! presence of osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T12:54:30Z
+
+[Term]
+id: OMP:0005366
+name: abolished osmotaxis
+def: "A decreased osmotaxis phenotype where osmotaxis by a motile microbe is abolished." [OMP:JG]
+is_a: OMP:0005361 ! osmotaxis phenotype
+is_a: OMP:0005372 ! decreased osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T12:59:07Z
+
+[Term]
+id: OMP:0005367
+name: absence of negative osmotaxis
+def: "An absence of osmotaxis phenotype where an organism doesn't display negative osmotaxis." [OMP:JG]
+is_a: OMP:0005363 ! absence of osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:00:12Z
+
+[Term]
+id: OMP:0005368
+name: abolished negative osmotaxis
+def: "A decreased negative osmotaxis phenotype where negative osmotaxis by a motile microbe is abolished." [OMP:JG]
+is_a: OMP:0005367 ! absence of negative osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:02:31Z
+
+[Term]
+id: OMP:0005369
+name: absence of positive osmotaxis
+def: "A presence of osmotaxis phenotype where an organism doesn't display positive osmotaxis." [OMP:JG]
+is_a: OMP:0005363 ! absence of osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:03:16Z
+
+[Term]
+id: OMP:0005370
+name: abolished positive osmotaxis
+def: "A decreased positive osmotaxis phenotype where positive osmotaxis by a motile microbe is abolished." [OMP:JG]
+is_a: OMP:0005369 ! absence of positive osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:04:08Z
+
+[Term]
+id: OMP:0005371
+name: altered osmotaxis
+def: "An osmotaxis phenotype where directed movement of a motile microbe in response to an osmotic concentration gradient is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005361 ! osmotaxis phenotype
+created_by: Jesus
+creation_date: 2016-12-20T13:05:17Z
+
+[Term]
+id: OMP:0005372
+name: decreased osmotaxis
+def: "An altered osmotaxis phenotype where osmotaxis by a motile microbe is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005371 ! altered osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:06:09Z
+
+[Term]
+id: OMP:0005373
+name: sporulation frequency phenotype
+def: "A cell population phenotype relating to the fraction of cells in a population that form spores under sporulation-inducing conditions." [OMP:JG]
+is_a: OMP:0000091 ! sporulation phenotype
+is_a: OMP:0007006 ! cell population phenotype
+created_by: Jesus
+creation_date: 2016-12-20T13:17:56Z
+
+[Term]
+id: OMP:0005374
+name: increased osmotaxis
+def: "An altered osmotaxis phenotype where osmotaxis by a motile microbe is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005371 ! altered osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:08:00Z
+
+[Term]
+id: OMP:0005375
+name: increased negative osmotaxis
+def: "An increased osmotaxis phenotype where negative osmotaxis by a motile microbe is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005374 ! increased osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:08:34Z
+
+[Term]
+id: OMP:0005376
+name: increased positive osmotaxis
+def: "An increased osmotaxis phenotype where positive osmotaxis by a motile microbe  is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005374 ! increased osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:09:07Z
+
+[Term]
+id: OMP:0005377
+name: sexual sporulation frequency
+def: "A sporulation frequency phenotype relating to the fraction of cells in a population that undergo meiosis and forms spores under sporulation-inducing conditions." [APO:0000044, OMP:JG]
+synonym: "sporulation efficiency" EXACT [APO:0000044]
+is_a: OMP:0005373 ! sporulation frequency phenotype
+created_by: Jesus
+creation_date: 2016-12-20T13:23:48Z
+
+[Term]
+id: OMP:0005378
+name: altered sexual sporulation frequency
+def: "A sexual sporulation efficiency phenotype where the efficiency of sexual sporulation is altered relative to a designated control." [OMP:JG]
+synonym: "altered sexual sporulation efficiency" EXACT []
+is_a: OMP:0005377 ! sexual sporulation frequency
+created_by: Jesus
+creation_date: 2016-12-20T13:27:44Z
+
+[Term]
+id: OMP:0005379
+name: increased sexual sporulation frequency
+def: "An altered sexual sporulation frequency phenotype where the fraction of cells in a population that undergo meiosis and forms spores under sporulation-inducing conditions is increased relative to a designated control." [OMP:JG]
+synonym: "increased sexual sporulation efficiency" EXACT []
+is_a: OMP:0005378 ! altered sexual sporulation frequency
+created_by: Jesus
+creation_date: 2016-12-20T13:32:18Z
+
+[Term]
+id: OMP:0005380
+name: decreased sexual sporulation frequency
+def: "An altered sexual sporulation frequency phenotype where the fraction of cells in a population that undergo meiosis and forms spores under sporulation-inducing conditions is decreased relative to a designated control." [OMP:JG]
+synonym: "decreased sexual sporulation efficiency" EXACT []
+is_a: OMP:0005378 ! altered sexual sporulation frequency
+created_by: Jesus
+creation_date: 2016-12-20T13:33:55Z
+
+[Term]
+id: OMP:0005381
+name: abolished sexual sporulation frequency
+def: "A decreased sexual sporulation frequency phenotype where the fraction of cells in a population that undergo meiosis and forms spores under sporulation-inducing conditions is below the limits of detection." [OMP:JG]
+synonym: "abolished sexual sporulation efficiency" EXACT []
+is_a: OMP:0005380 ! decreased sexual sporulation frequency
+created_by: Jesus
+creation_date: 2016-12-20T13:35:03Z
 
 [Term]
 id: OMP:0006000
