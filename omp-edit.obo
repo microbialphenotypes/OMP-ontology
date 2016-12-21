@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 19:12:2016 14:25
+date: 19:12:2016 15:12
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -12471,7 +12471,8 @@ creation_date: 2016-07-16T16:44:37Z
 [Term]
 id: OMP:0007423
 name: decreased budding frequency
-def: "A decreased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is decreased relative to a designated control." [APO:0000089, OMP:DAS]
+synonym: "budding index" RELATED []
 is_a: OMP:0006006 ! decreased budding
 created_by: siegele
 creation_date: 2016-07-16T16:56:11Z
@@ -12479,7 +12480,8 @@ creation_date: 2016-07-16T16:56:11Z
 [Term]
 id: OMP:0007424
 name: increased budding frequency
-def: "An increased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is increased relative to a designated control." [OMP:DAS]
+def: "An increased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is increased relative to a designated control." [APO:0000089, OMP:DAS]
+synonym: "budding index" RELATED []
 is_a: OMP:0006004 ! increased budding
 created_by: siegele
 creation_date: 2016-07-16T16:58:06Z
