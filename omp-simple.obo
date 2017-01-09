@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: releases/2016-12-05
-date: 22:11:2016 01:00
-saved-by: siegele
+data-version: releases/2017-01-09
+date: 20:12:2016 13:36
+saved-by: Jesus
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -51,8 +51,8 @@ creation_date: 2011-03-10T04:01:50Z
 
 [Term]
 id: OMP:0000001
-name: cell motility phenotype
-def: "A locomotion phenotype where the trait in question is the self-propelled movement of a cell or cells from one location to another." [OMP:MCC]
+name: motility phenotype
+def: "A locomotion phenotype where the trait in question is the self-propelled movement of a microbe from one location to another." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0048870 "cell motility"
 is_a: OMP:0000312 ! locomotion phenotype
@@ -61,10 +61,10 @@ creation_date: 2011-03-10T06:55:06Z
 
 [Term]
 id: OMP:0000002
-name: decreased cell motility
-def: "An altered cell motility phenotype where the frequency, rate, timing, or extent of cell motility is decreased relative to a designated control." [OMP:MCC]
+name: decreased motility
+def: "An altered motility phenotype where the frequency, rate, timing, or extent of a microbe's motility is decreased relative to a designated control." [OMP:MCC]
 xref: PATO:0002297
-is_a: OMP:0007001 ! altered cell motility
+is_a: OMP:0007001 ! altered motility
 creation_date: 2011-03-10T07:02:42Z
 
 [Term]
@@ -79,7 +79,7 @@ creation_date: 2011-04-14T02:30:07Z
 [Term]
 id: OMP:0000004
 name: taxis phenotype
-def: "A locomotion phenotype where the directed movement of a motile cell or organism is in response to an external stimulus." [ISBN:0192800329, OMP:MCC]
+def: "A locomotion phenotype where the directed movement of a motile microbe is in response to an external stimulus." [ISBN:0192800329, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000312 ! locomotion phenotype
 created_by: mchibucos
@@ -87,10 +87,10 @@ creation_date: 2011-04-14T03:29:20Z
 
 [Term]
 id: OMP:0000005
-name: presence of cell motility
-def: "A cell motility phenotype where a cell or cells possess the ability to perform controlled self-propelled movement that results in translocation from one place to another." [OMP:MCC]
+name: presence of motility
+def: "A motility phenotype where a microbe possesses the ability to perform controlled self-propelled movement that results in translocation from one place to another." [OMP:MCC]
 synonym: "motile" RELATED []
-is_a: OMP:0000001 ! cell motility phenotype
+is_a: OMP:0000001 ! motility phenotype
 created_by: mchibucos
 creation_date: 2011-04-14T03:35:35Z
 
@@ -380,17 +380,17 @@ creation_date: 2011-04-26T03:53:34Z
 
 [Term]
 id: OMP:0000045
-name: increased cell motility
-def: "An altered cell motility phenotype where the frequency, rate, timing, or extent of cell motility is increased relative to a designated control." [OMP:MCC]
+name: increased motility
+def: "An altered motility phenotype where the frequency, rate, timing, or extent of motility of a microbe is increased relative to a designated control." [OMP:MCC]
 xref: PATO:0002298
-is_a: OMP:0007001 ! altered cell motility
+is_a: OMP:0007001 ! altered motility
 created_by: mchibucos
 creation_date: 2011-04-26T04:08:26Z
 
 [Term]
 id: OMP:0000046
 name: presence of chemotaxis
-def: "A chemotaxis phenotype where a motile cell or organism displays directed movement in response to a specific chemical concentration gradient." [OMP:MCC]
+def: "A chemotaxis phenotype where a motile microbe displays directed movement in response to a specific chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:17:42Z
@@ -398,7 +398,7 @@ creation_date: 2011-04-26T04:17:42Z
 [Term]
 id: OMP:0000047
 name: aerotaxis phenotype
-def: "A taxis phenotype where directed movement of a motile cell or organism is in response to environmental oxygen (O2)." [ISBN:0192800329, OMP:MCC]
+def: "A taxis phenotype where directed movement of a motile microbe is in response to environmental oxygen (O2)." [ISBN:0192800329, OMP:MCC]
 xref: GO:0009454 "aerotaxis"
 is_a: OMP:0000004 ! taxis phenotype
 created_by: mchibucos
@@ -407,7 +407,7 @@ creation_date: 2011-04-26T04:18:11Z
 [Term]
 id: OMP:0000048
 name: chemotaxis phenotype
-def: "A taxis phenotype where the directed movement of a motile cell or organism is in response to a specific chemical concentration gradient." [ISBN:0198506732, OMP:MCC]
+def: "A taxis phenotype where the directed movement of a motile microbe is in response to a specific chemical concentration gradient." [ISBN:0198506732, OMP:MCC]
 comment: ChEBI cross product candidate (and child terms).
 xref: GO:0006935
 is_a: OMP:0000004 ! taxis phenotype
@@ -417,7 +417,7 @@ creation_date: 2011-04-26T04:27:11Z
 [Term]
 id: OMP:0000049
 name: presence of aerotaxis
-def: "An aerotaxis phenotype where a motile cell or organism displays directed movement in response to environmental oxygen (O2)." [OMP:MCC]
+def: "An aerotaxis phenotype where a motile microbe displays directed movement in response to environmental oxygen (O2)." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T04:27:42Z
@@ -433,7 +433,7 @@ creation_date: 2011-06-07T10:53:59Z
 [Term]
 id: OMP:0000052
 name: presence of positive chemotaxis
-def: "A presence of chemotaxis phenotype where a motile cell or organism displays directed movement towards a higher concentration of a chemical." [OMP:MCC]
+def: "A presence of chemotaxis phenotype where a motile microbe displays directed movement towards a higher concentration of a chemical." [OMP:MCC]
 is_a: OMP:0000046 ! presence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -441,7 +441,8 @@ creation_date: 2011-04-26T04:42:14Z
 [Term]
 id: OMP:0000053
 name: presence of negative chemotaxis
-def: "A presence of chemotaxis phenotype where a motile cell or organism displays directed movement toward a lower concentration of a chemical." [OMP:MCC]
+def: "A presence of chemotaxis phenotype where a motile microbe displays directed movement toward a lower concentration of a chemical (away from a higher concentration of a chemical)." [OMP:MCC]
+synonym: "repellent" RELATED []
 is_a: OMP:0000046 ! presence of chemotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:42:14Z
@@ -483,7 +484,7 @@ creation_date: 2011-04-26T04:44:17Z
 [Term]
 id: OMP:0000058
 name: absence of positive aerotaxis
-def: "An absence of aerotaxis phenotype where a motile cell or organism doesn't display directed movement towards a higher concentration of environmental oxygen (O2)." [OMP:MCC]
+def: "An absence of aerotaxis phenotype where a motile microbe doesn't display directed movement towards a higher concentration of environmental oxygen (O2)." [OMP:MCC]
 is_a: OMP:0000159 ! absence of aerotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:44:17Z
@@ -491,7 +492,7 @@ creation_date: 2011-04-26T04:44:17Z
 [Term]
 id: OMP:0000059
 name: absence of negative aerotaxis
-def: "An absence of aerotaxis phenotype where a motile cell or organism doesn't display directed movement away from a  higher concentration of environmental oxygen (O2)." [OMP:MCC]
+def: "An absence of aerotaxis phenotype where a motile microbe doesn't display directed movement away from a  higher concentration of environmental oxygen (O2)." [OMP:MCC]
 is_a: OMP:0000159 ! absence of aerotaxis
 created_by: mchibucos
 creation_date: 2011-04-26T04:44:17Z
@@ -553,9 +554,9 @@ creation_date: 2011-04-26T05:09:24Z
 
 [Term]
 id: OMP:0000067
-name: presence of cell motility by swarming
-def: "A presence of cell motility phenotype where a population of cells exhibit coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
-is_a: OMP:0000005 ! presence of cell motility
+name: presence of motility by swarming
+def: "A presence of motility phenotype where a population of microbes exhibit coordinated translocation across solid or semi-solid surfaces." [OMP:MCC]
+is_a: OMP:0000005 ! presence of motility
 created_by: adrienne
 creation_date: 2011-02-02T03:28:43Z
 
@@ -835,7 +836,7 @@ creation_date: 2011-02-02T03:26:41Z
 [Term]
 id: OMP:0000097
 name: absence of chemotaxis
-def: "A chemotaxis phenotype where a motile cell or organism doesn't display directed movement in response to a specific chemical concentration gradient." [OMP:MCC]
+def: "A chemotaxis phenotype where a motile microbe doesn't display directed movement in response to a specific chemical concentration gradient." [OMP:MCC]
 is_a: OMP:0000048 ! chemotaxis phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:28:13Z
@@ -953,26 +954,27 @@ creation_date: 2011-02-02T02:45:02Z
 
 [Term]
 id: OMP:0000111
-name: presence of cell motility by swimming
-def: "A presence of cell motility phenotype where a cell or cells exhibits smooth movement through a liquid medium." [OMP:MCC]
-is_a: OMP:0000005 ! presence of cell motility
+name: presence of motility by swimming
+def: "A presence of motility phenotype where microbe exhibits smooth movement through a liquid medium." [OMP:MCC]
+is_a: OMP:0000005 ! presence of motility
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
 
 [Term]
 id: OMP:0000112
-name: presence of cell motility by gliding
-def: "A presence of cell motility phenotype where a cell or cells exhibits smooth movement along a solid surface." [OMP:MCC]
-is_a: OMP:0000005 ! presence of cell motility
+name: presence of motility by gliding
+def: "A presence of motility phenotype where a microbe exhibits smooth movement along a solid surface." [OMP:MCC]
+is_a: OMP:0000005 ! presence of motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:03Z
 
 [Term]
 id: OMP:0000113
-name: presence of cell motility by twitching
-def: "A presence of cell motility phenotype where a cell or cells exhibit movement over moist surfaces by the extension, tethering and then retraction of polar pili, usually type IV pili." [OMP:MCC, PMID:12142488]
+name: presence of motility by twitching
+def: "A presence of motility phenotype where a microbe exhibits movement over moist surfaces by the extension, tethering, and then retraction of polar pili." [OMP:MCC, PMID:12142488]
+comment: Twitching motility of bacteria typically involves type IV pili.
 xref: GO:0043107 "type IV pilus-dependent motility"
-is_a: OMP:0000005 ! presence of cell motility
+is_a: OMP:0000005 ! presence of motility
 created_by: adrienne
 creation_date: 2011-02-07T03:18:13Z
 
@@ -1138,10 +1140,10 @@ creation_date: 2011-02-18T03:01:18Z
 
 [Term]
 id: OMP:0000133
-name: absence of cell motility
-def: "A cell motility phenotype where a cell or cells lacks the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
+name: absence of motility
+def: "A motility phenotype where a microbe lacks the ability to perform controlled self-propelled movement that results in translocation of the cell from one place to another." [OMP:MCC]
 synonym: "non-motile" RELATED []
-is_a: OMP:0000001 ! cell motility phenotype
+is_a: OMP:0000001 ! motility phenotype
 created_by: adrienne
 creation_date: 2011-02-18T03:33:32Z
 
@@ -1354,7 +1356,7 @@ creation_date: 2011-02-02T02:49:30Z
 [Term]
 id: OMP:0000159
 name: absence of aerotaxis
-def: "An aerotaxis phenotype where a motile cell or organism doesn't display directed movement in response to environmental oxygen (O2)." [OMP:MCC]
+def: "An aerotaxis phenotype where a motile microbe doesn't display directed movement in response to environmental oxygen (O2)." [OMP:MCC]
 is_a: OMP:0000047 ! aerotaxis phenotype
 created_by: adrienne
 creation_date: 2011-03-02T02:06:09Z
@@ -2346,7 +2348,7 @@ creation_date: 2011-07-21T05:50:25Z
 [Term]
 id: OMP:0000312
 name: locomotion phenotype
-def: "A microbial phenotype where the trait in question is the self-propelled movement of a cell from one location to another." [GO:0040011, OMP:MCC]
+def: "A microbial phenotype where the trait in question is the self-propelled movement of a microbe from one location to another." [GO:0040011, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0040011 "locomotion"
 is_a: OMP:0007194 ! biological process phenotype
@@ -2628,7 +2630,7 @@ creation_date: 2012-11-02T01:21:21Z
 [Term]
 id: OMP:0000503
 name: decreased chemotaxis
-def: "An altered chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism in response to a specific chemical gradient is decreased relative to a designated control." [OMP:DAS]
+def: "An altered chemotaxis phenotype where the frequency, rate, timing, or extent of chemotaxis by a motile microbe is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007077 ! altered chemotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:22:28Z
@@ -2636,7 +2638,7 @@ creation_date: 2012-11-02T01:22:28Z
 [Term]
 id: OMP:0000505
 name: increased chemotaxis
-def: "An altered chemotaxis phenotype where the frequency, rate, timing, or extent of  directed movement of a motile cell or organism in response to a specific chemical gradient is increased relative to a designated control." [OMP:DAS]
+def: "An altered chemotaxis phenotype where the frequency, rate, timing, or extent of  chemotaxis by a motile microbe is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007077 ! altered chemotaxis
 created_by: mchibucos
 creation_date: 2012-11-02T01:23:12Z
@@ -5390,7 +5392,7 @@ creation_date: 2016-08-30T11:56:47Z
 id: OMP:0005323
 name: altered cell motility by swarming
 def: "A cell motility by swarming phenotype where the frequency, rate, timing, or extent of swarming is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0007001 ! altered cell motility
+is_a: OMP:0007001 ! altered motility
 created_by: jguzman
 creation_date: 2016-09-19T14:01:13Z
 
@@ -5398,7 +5400,7 @@ creation_date: 2016-09-19T14:01:13Z
 id: OMP:0005324
 name: altered cell motility by swimming
 def: "A cell motility by swimming phenotype where the frequency, rate, timing, or extent of swimming is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0007001 ! altered cell motility
+is_a: OMP:0007001 ! altered motility
 created_by: jguzman
 creation_date: 2016-09-19T14:02:03Z
 
@@ -5695,6 +5697,180 @@ def: "A decreased mating efficiency phenotype where mating is abolished." [OMP:J
 is_a: OMP:0005359 ! decreased mating efficiency
 created_by: Jesus
 creation_date: 2016-11-21T13:33:33Z
+
+[Term]
+id: OMP:0005361
+name: osmotaxis phenotype
+def: "A taxis phenotype where the directed movement of a motile microbe is in response to an osmotic concentration gradient (formerly called osmolarity). Osmotaxis differs from chemotaxis in that during osmotaxis the microbe is responding to water activity not to the solute per se." [OMP:JG, PMID:3059348]
+is_a: OMP:0000004 ! taxis phenotype
+created_by: Jesus
+creation_date: 2016-12-20T12:48:52Z
+
+[Term]
+id: OMP:0005362
+name: presence of osmotaxis
+def: "An osmotaxis phenotype where a motile microbe displays directed movement in response to an osmotic concentration gradient." [OMP:JG]
+is_a: OMP:0005361 ! osmotaxis phenotype
+created_by: Jesus
+creation_date: 2016-12-20T12:51:45Z
+
+[Term]
+id: OMP:0005363
+name: absence of osmotaxis
+def: "An osmotaxis phenotype where a motile microbe doesn't display directed movement in response to an osmotic concentration gradient." [OMP:JG]
+is_a: OMP:0005361 ! osmotaxis phenotype
+created_by: Jesus
+creation_date: 2016-12-20T12:52:21Z
+
+[Term]
+id: OMP:0005364
+name: presence of positive osmotaxis
+def: "A presence of osmotaxis phenotype where a motile microbe displays osmotaxis towards a higher osmotic concentration." [OMP:JG]
+is_a: OMP:0005362 ! presence of osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T12:53:34Z
+
+[Term]
+id: OMP:0005365
+name: presence of negative osmotaxis
+def: "A presence of osmotaxis phenotype where a motile microbe displays osmotaxis away from a higher osmotic concentration." [OMP:JG]
+is_a: OMP:0005362 ! presence of osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T12:54:30Z
+
+[Term]
+id: OMP:0005366
+name: abolished osmotaxis
+def: "A decreased osmotaxis phenotype where osmotaxis by a motile microbe is abolished." [OMP:JG]
+is_a: OMP:0005372 ! decreased osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T12:59:07Z
+
+[Term]
+id: OMP:0005367
+name: absence of negative osmotaxis
+def: "An absence of osmotaxis phenotype where an organism doesn't display negative osmotaxis." [OMP:JG]
+is_a: OMP:0005363 ! absence of osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:00:12Z
+
+[Term]
+id: OMP:0005368
+name: abolished negative osmotaxis
+def: "A decreased negative osmotaxis phenotype where negative osmotaxis by a motile microbe is abolished." [OMP:JG]
+is_a: OMP:0005367 ! absence of negative osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:02:31Z
+
+[Term]
+id: OMP:0005369
+name: absence of positive osmotaxis
+def: "A presence of osmotaxis phenotype where an organism doesn't display positive osmotaxis." [OMP:JG]
+is_a: OMP:0005363 ! absence of osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:03:16Z
+
+[Term]
+id: OMP:0005370
+name: abolished positive osmotaxis
+def: "A decreased positive osmotaxis phenotype where positive osmotaxis by a motile microbe is abolished." [OMP:JG]
+is_a: OMP:0005369 ! absence of positive osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:04:08Z
+
+[Term]
+id: OMP:0005371
+name: altered osmotaxis
+def: "An osmotaxis phenotype where directed movement of a motile microbe in response to an osmotic concentration gradient is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005361 ! osmotaxis phenotype
+created_by: Jesus
+creation_date: 2016-12-20T13:05:17Z
+
+[Term]
+id: OMP:0005372
+name: decreased osmotaxis
+def: "An altered osmotaxis phenotype where osmotaxis by a motile microbe is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0005371 ! altered osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:06:09Z
+
+[Term]
+id: OMP:0005373
+name: sporulation frequency phenotype
+def: "A cell population phenotype relating to the fraction of cells in a population that form spores under sporulation-inducing conditions." [OMP:JG]
+is_a: OMP:0000091 ! sporulation phenotype
+is_a: OMP:0007006 ! cell population phenotype
+created_by: Jesus
+creation_date: 2016-12-20T13:17:56Z
+
+[Term]
+id: OMP:0005374
+name: increased osmotaxis
+def: "An altered osmotaxis phenotype where osmotaxis by a motile microbe is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005371 ! altered osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:08:00Z
+
+[Term]
+id: OMP:0005375
+name: increased negative osmotaxis
+def: "An increased osmotaxis phenotype where negative osmotaxis by a motile microbe is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005374 ! increased osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:08:34Z
+
+[Term]
+id: OMP:0005376
+name: increased positive osmotaxis
+def: "An increased osmotaxis phenotype where positive osmotaxis by a motile microbe  is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0005374 ! increased osmotaxis
+created_by: Jesus
+creation_date: 2016-12-20T13:09:07Z
+
+[Term]
+id: OMP:0005377
+name: sexual sporulation frequency
+def: "A sporulation frequency phenotype relating to the fraction of cells in a population that undergo meiosis and forms spores under sporulation-inducing conditions." [APO:0000044, OMP:JG]
+synonym: "sporulation efficiency" EXACT [APO:0000044]
+is_a: OMP:0005373 ! sporulation frequency phenotype
+created_by: Jesus
+creation_date: 2016-12-20T13:23:48Z
+
+[Term]
+id: OMP:0005378
+name: altered sexual sporulation frequency
+def: "A sexual sporulation efficiency phenotype where the efficiency of sexual sporulation is altered relative to a designated control." [OMP:JG]
+synonym: "altered sexual sporulation efficiency" EXACT []
+is_a: OMP:0005377 ! sexual sporulation frequency
+created_by: Jesus
+creation_date: 2016-12-20T13:27:44Z
+
+[Term]
+id: OMP:0005379
+name: increased sexual sporulation frequency
+def: "An altered sexual sporulation frequency phenotype where the fraction of cells in a population that undergo meiosis and forms spores under sporulation-inducing conditions is increased relative to a designated control." [OMP:JG]
+synonym: "increased sexual sporulation efficiency" EXACT []
+is_a: OMP:0005378 ! altered sexual sporulation frequency
+created_by: Jesus
+creation_date: 2016-12-20T13:32:18Z
+
+[Term]
+id: OMP:0005380
+name: decreased sexual sporulation frequency
+def: "An altered sexual sporulation frequency phenotype where the fraction of cells in a population that undergo meiosis and forms spores under sporulation-inducing conditions is decreased relative to a designated control." [OMP:JG]
+synonym: "decreased sexual sporulation efficiency" EXACT []
+is_a: OMP:0005378 ! altered sexual sporulation frequency
+created_by: Jesus
+creation_date: 2016-12-20T13:33:55Z
+
+[Term]
+id: OMP:0005381
+name: abolished sexual sporulation frequency
+def: "A decreased sexual sporulation frequency phenotype where the fraction of cells in a population that undergo meiosis and forms spores under sporulation-inducing conditions is below the limits of detection." [OMP:JG]
+synonym: "abolished sexual sporulation efficiency" EXACT []
+is_a: OMP:0005380 ! decreased sexual sporulation frequency
+created_by: Jesus
+creation_date: 2016-12-20T13:35:03Z
 
 [Term]
 id: OMP:0006000
@@ -6593,7 +6769,7 @@ creation_date: 2014-07-24T20:17:01Z
 [Term]
 id: OMP:0006098
 name: abolished aerotaxis
-def: "A decreased aerotaxis phenotype where a cell or organism the ability to perform aerotaxis is abolished." [OMP:JCH]
+def: "A decreased aerotaxis phenotype where the ability of a microbe to perform aerotaxis is abolished." [OMP:JCH]
 is_a: OMP:0000159 ! absence of aerotaxis
 is_a: OMP:0000500 ! decreased aerotaxis
 created_by: jonathanherrera
@@ -6610,11 +6786,11 @@ creation_date: 2014-07-25T11:08:59Z
 
 [Term]
 id: OMP:0006100
-name: abolished cell motility by swimming
-def: "A decreased cell motility by swimming phenotype where the ability of a microbe to move by swimming motility is abolished." [OMP:JCH]
-is_a: OMP:0007000 ! abolished cell motility
+name: abolished motility by swimming
+def: "A decreased motility by swimming phenotype where the ability of a microbe to move by swimming motility is abolished." [OMP:JCH]
+is_a: OMP:0007000 ! abolished motility
 is_a: OMP:0007093 ! decreased cell motility by swimming
-is_a: OMP:0007490 ! absence of cell motility by swimming
+is_a: OMP:0007490 ! absence of motility by swimming
 created_by: jonathanherrera
 creation_date: 2014-08-15T19:12:43Z
 
@@ -6681,7 +6857,7 @@ creation_date: 2014-07-28T18:19:45Z
 [Term]
 id: OMP:0006108
 name: abolished chemotaxis
-def: "A decreased chemotaxis phenotype where a motile cell or organism no longer displays chemotaxis in response to a gradient of a specific chemical." [OMP:JCH]
+def: "A decreased chemotaxis phenotype where chemotaxis by a motile microbe is abolished." [OMP:JCH]
 is_a: OMP:0000097 ! absence of chemotaxis
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: jonathanherrera
@@ -7187,11 +7363,11 @@ creation_date: 2014-08-08T15:51:18Z
 
 [Term]
 id: OMP:0006167
-name: abolished cell motility by swarming
-def: "A decreased cell motility by swarming phenotype where the ability of a microbe to move by swarming motility is abolished." [OMP:JCH]
-is_a: OMP:0007000 ! abolished cell motility
-is_a: OMP:0007092 ! decreased cell motility by swarming
-is_a: OMP:0007489 ! absence of cell motility by swarming
+name: abolished motility by swarming
+def: "A decreased motility by swarming phenotype where the ability of a microbe to move by swarming motility is abolished." [OMP:JCH]
+is_a: OMP:0007000 ! abolished motility
+is_a: OMP:0007092 ! decreased motility by swarming
+is_a: OMP:0007489 ! absence of motility by swarming
 created_by: jonathanherrera
 creation_date: 2014-08-13T17:25:47Z
 
@@ -7306,18 +7482,18 @@ creation_date: 2015-06-09T15:19:38Z
 
 [Term]
 id: OMP:0007000
-name: abolished cell motility
-def: "A decreased cell motility phenotype where the ability of a cell or cells to be motile is abolished." [OMP:JCH]
-is_a: OMP:0000002 ! decreased cell motility
-is_a: OMP:0000133 ! absence of cell motility
+name: abolished motility
+def: "A decreased motility phenotype where the ability of a microbe to be motile is abolished." [OMP:JCH]
+is_a: OMP:0000002 ! decreased motility
+is_a: OMP:0000133 ! absence of motility
 created_by: siegele
 creation_date: 2014-06-29T14:10:40Z
 
 [Term]
 id: OMP:0007001
-name: altered cell motility
-def: "A cell motility phenotype where the frequency, rate, timing, or extent of cell motility is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000001 ! cell motility phenotype
+name: altered motility
+def: "A motility phenotype where the frequency, rate, timing, or extent of a microbe's motility is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000001 ! motility phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
@@ -7351,7 +7527,7 @@ creation_date: 2014-01-31T18:03:55Z
 [Term]
 id: OMP:0007005
 name: decreased negative chemotaxis
-def: "A decreased chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism toward a lower concentration of a specific chemical is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased chemotaxis phenotype where the frequency, rate, timing, or extent of negative chemotaxis by a motile microbe is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-07T18:35:51Z
@@ -7657,7 +7833,7 @@ creation_date: 2013-09-29T00:36:46Z
 [Term]
 id: OMP:0007041
 name: decreased positive chemotaxis
-def: "A decreased chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism toward a higher concentration of a specific chemical is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased chemotaxis phenotype where the frequency, rate, timing, or extent of positive chemotaxis by a motile microbe is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000503 ! decreased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-07T18:37:42Z
@@ -7756,7 +7932,7 @@ creation_date: 2013-10-01T15:20:22Z
 [Term]
 id: OMP:0007053
 name: increased positive chemotaxis
-def: "An increased chemotaxis phenotype where directed movement of a motile cell or organism toward a higher concentration of a chemical is increased relative to a designated control." [OMP:DAS]
+def: "An increased chemotaxis phenotype where the frequency, rate, timing, or extent of positive chemotaxis by a motile microbe is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000505 ! increased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-08T18:08:51Z
@@ -7764,7 +7940,7 @@ creation_date: 2014-08-08T18:08:51Z
 [Term]
 id: OMP:0007054
 name: increased negative chemotaxis
-def: "An increased chemotaxis phenotype where directed movement of a motile cell or organism toward a lower concentration of a chemical is increased relative to a designated control." [OMP:DAS]
+def: "An increased chemotaxis phenotype where the frequency, rate, timing, or extent of negative chemotaxis by a motile microbe is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000505 ! increased chemotaxis
 created_by: dsiegele
 creation_date: 2014-08-08T18:08:51Z
@@ -7965,7 +8141,7 @@ creation_date: 2014-04-24T17:41:34Z
 [Term]
 id: OMP:0007077
 name: altered chemotaxis
-def: "A chemotaxis phenotype where the frequency, rate, timing, or extent of directed movement in response to a specific chemical gradient is altered relative to a designated control." [OMP:JCH]
+def: "A chemotaxis phenotype where the frequency, rate, timing, or extent of chemotaxis by a motile microbe is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000048 ! chemotaxis phenotype
 is_a: OMP:0007127 ! altered taxis
 created_by: siegele
@@ -8087,18 +8263,18 @@ creation_date: 2014-07-10T21:50:33Z
 
 [Term]
 id: OMP:0007091
-name: decreased cell motility by gliding
-def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by gliding is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000002 ! decreased cell motility
-is_a: OMP:0007492 ! altered cell motility by gliding
+name: decreased motility by gliding
+def: "A decreased motility phenotype where the frequency, rate, timing, or extent of cell motility by gliding is decreased relative to a designated control." [OMP:JCH]
+is_a: OMP:0000002 ! decreased motility
+is_a: OMP:0007492 ! altered motility by gliding
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
 [Term]
 id: OMP:0007092
-name: decreased cell motility by swarming
-def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swarming is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000002 ! decreased cell motility
+name: decreased motility by swarming
+def: "A decreased motility phenotype where the frequency, rate, timing, or extent of motility by swarming is decreased relative to a designated control." [OMP:JCH]
+is_a: OMP:0000002 ! decreased motility
 is_a: OMP:0005323 ! altered cell motility by swarming
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
@@ -8107,52 +8283,52 @@ creation_date: 2014-07-10T20:08:43Z
 id: OMP:0007093
 name: decreased cell motility by swimming
 def: "A decreased motility phenotype where the frequency, rate, timing, or extent of cell motility by swimming is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000002 ! decreased cell motility
+is_a: OMP:0000002 ! decreased motility
 is_a: OMP:0005324 ! altered cell motility by swimming
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
 [Term]
 id: OMP:0007094
-name: decreased cell motility by twitching
-def: "A decreased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by twitching is decreased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000002 ! decreased cell motility
+name: decreased motility by twitching
+def: "A decreased motility phenotype where the frequency, rate, timing, or extent of motility by twitching is decreased relative to a designated control." [OMP:JCH]
+is_a: OMP:0000002 ! decreased motility
 is_a: OMP:0007493 ! altered cell motility by twitching
 created_by: siegele
 creation_date: 2014-07-10T20:08:43Z
 
 [Term]
 id: OMP:0007095
-name: increased cell motility by gliding
-def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by gliding is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000045 ! increased cell motility
-is_a: OMP:0007492 ! altered cell motility by gliding
+name: increased motility by gliding
+def: "An increased motility phenotype where the frequency, rate, timing, or extent of motility by gliding is increased relative to a designated control." [OMP:JCH]
+is_a: OMP:0000045 ! increased motility
+is_a: OMP:0007492 ! altered motility by gliding
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
 [Term]
 id: OMP:0007096
-name: increased cell motility by swarming
-def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swarming is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000045 ! increased cell motility
+name: increased motility by swarming
+def: "An increased motility phenotype where the frequency, rate, timing, or extent of motility by swarming is increased relative to a designated control." [OMP:JCH]
+is_a: OMP:0000045 ! increased motility
 is_a: OMP:0005323 ! altered cell motility by swarming
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
 [Term]
 id: OMP:0007097
-name: increased cell motility by swimming
-def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by swimming is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000045 ! increased cell motility
+name: increased motility by swimming
+def: "An increased motility phenotype where the frequency, rate, timing, or extent of motility by swimming is increased relative to a designated control." [OMP:JCH]
+is_a: OMP:0000045 ! increased motility
 is_a: OMP:0005324 ! altered cell motility by swimming
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
 
 [Term]
 id: OMP:0007098
-name: increased cell motility by twitching
-def: "An increased cell motility phenotype where the frequency, rate, timing, or extent of cell motility by twitching is increased relative to a designated control." [OMP:JCH]
-is_a: OMP:0000045 ! increased cell motility
+name: increased motility by twitching
+def: "An increased motility phenotype where the frequency, rate, timing, or extent of motility by twitching is increased relative to a designated control." [OMP:JCH]
+is_a: OMP:0000045 ! increased motility
 is_a: OMP:0007493 ! altered cell motility by twitching
 created_by: siegele
 creation_date: 2014-07-10T20:10:11Z
@@ -8413,7 +8589,7 @@ creation_date: 2014-08-11T17:58:30Z
 [Term]
 id: OMP:0007127
 name: altered taxis
-def: "A taxis phenotype where the frequency, rate, timing, or extent of directed movement of a motile cell or organism in response to an external stimulus is altered relative to a designated control." [OMP:DAS]
+def: "A taxis phenotype where the frequency, rate, timing, or extent of directed movement of a microbe in response to an external stimulus is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000004 ! taxis phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 relationship: has_quality OMP:0007189 ! altered_relative_to
@@ -8619,11 +8795,11 @@ creation_date: 2014-08-19T14:52:08Z
 
 [Term]
 id: OMP:0007150
-name: abolished cell motility by gliding
-def: "A decreased cell motility by gliding phenotype where the ability of a microbe to move by gliding motility is abolished." [OMP:DAS]
-is_a: OMP:0007000 ! abolished cell motility
-is_a: OMP:0007091 ! decreased cell motility by gliding
-is_a: OMP:0007488 ! absence of cell motility by gliding
+name: abolished motility by gliding
+def: "A decreased motility by gliding phenotype where the ability of a microbe to move by gliding motility is abolished." [OMP:DAS]
+is_a: OMP:0007000 ! abolished motility
+is_a: OMP:0007091 ! decreased motility by gliding
+is_a: OMP:0007488 ! absence of  motility by gliding
 created_by: siegele
 creation_date: 2014-08-20T23:57:11Z
 
@@ -9291,7 +9467,7 @@ creation_date: 2015-06-04T15:42:45Z
 [Term]
 id: OMP:0007228
 name: endospore morphology phenotype
-def: "A spore morphology phenotype that is related to the form and structure of an endospore." [OMP:DAS]
+def: "A spore morphology phenotype that is related to the form and structure of an endospore." [CL:0000563, GO:0034301, OMP:DAS]
 is_a: OMP:0008000 ! spore morphology phenotype
 created_by: dsiegele
 creation_date: 2015-06-04T16:05:37Z
@@ -10862,7 +11038,7 @@ creation_date: 2016-07-13T18:43:01Z
 [Term]
 id: OMP:0007411
 name: altered spore morphology
-def: "A spore morphology phenotype where the morphology of spores produced by an organism is altered relative to a designated control." [OMP:DAS]
+def: "A spore morphology phenotype where the morphology of spores produced by a microbe is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007103 ! altered cell morphology
 is_a: OMP:0008000 ! spore morphology phenotype
 created_by: siegele
@@ -10965,7 +11141,8 @@ creation_date: 2016-07-16T16:44:37Z
 [Term]
 id: OMP:0007423
 name: decreased budding frequency
-def: "A decreased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is decreased relative to a designated control." [APO:0000089, OMP:DAS]
+synonym: "budding index" RELATED []
 is_a: OMP:0006006 ! decreased budding
 created_by: siegele
 creation_date: 2016-07-16T16:56:11Z
@@ -10973,7 +11150,8 @@ creation_date: 2016-07-16T16:56:11Z
 [Term]
 id: OMP:0007424
 name: increased budding frequency
-def: "An increased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is increased relative to a designated control." [OMP:DAS]
+def: "An increased budding phenotype where the fraction of budded cells (budding index) in a proliferating cell population is increased relative to a designated control." [APO:0000089, OMP:DAS]
+synonym: "budding index" RELATED []
 is_a: OMP:0006004 ! increased budding
 created_by: siegele
 creation_date: 2016-07-16T16:58:06Z
@@ -11514,41 +11692,41 @@ creation_date: 2016-09-19T17:10:16Z
 
 [Term]
 id: OMP:0007488
-name: absence of cell motility by gliding
-def: "An absence of cell motility phenotype where a microbe is not capable of gliding motility." [OMP:DAS]
-is_a: OMP:0000133 ! absence of cell motility
+name: absence of  motility by gliding
+def: "An absence of  motility phenotype where a microbe is not capable of gliding motility." [OMP:DAS]
+is_a: OMP:0000133 ! absence of motility
 created_by: siegele
 creation_date: 2016-09-24T23:00:10Z
 
 [Term]
 id: OMP:0007489
-name: absence of cell motility by swarming
-def: "An absence of cell motility phenotype where a microbe is not capable of swarming motility." [OMP:DAS]
-is_a: OMP:0000133 ! absence of cell motility
+name: absence of motility by swarming
+def: "An absence of motility phenotype where a microbe is not capable of swarming motility." [OMP:DAS]
+is_a: OMP:0000133 ! absence of motility
 created_by: siegele
 creation_date: 2016-09-24T23:00:10Z
 
 [Term]
 id: OMP:0007490
-name: absence of cell motility by swimming
-def: "An absence of cell motility phenotype where a microbe is not capable of swimming motility." [OMP:DAS]
-is_a: OMP:0000133 ! absence of cell motility
+name: absence of motility by swimming
+def: "An absence of motility phenotype where a microbe is not capable of swimming motility." [OMP:DAS]
+is_a: OMP:0000133 ! absence of motility
 created_by: siegele
 creation_date: 2016-09-24T23:00:10Z
 
 [Term]
 id: OMP:0007491
-name: absence of cell motility by twitching
-def: "An absence of cell motility phenotype where a microbe is not capable of twitching motility." [OMP:DAS]
-is_a: OMP:0000133 ! absence of cell motility
+name: absence of motility by twitching
+def: "An absence of motility phenotype where a microbe is not capable of twitching motility." [OMP:DAS]
+is_a: OMP:0000133 ! absence of motility
 created_by: siegele
 creation_date: 2016-09-24T23:00:10Z
 
 [Term]
 id: OMP:0007492
-name: altered cell motility by gliding
-def: "A cell motility by gliding phenotype where the frequency, rate, timing, or extent of gliding is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007001 ! altered cell motility
+name: altered motility by gliding
+def: "A motility by gliding phenotype where the frequency, rate, timing, or extent of gliding is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007001 ! altered motility
 created_by: siegele
 creation_date: 2016-09-24T23:01:37Z
 
@@ -11556,17 +11734,17 @@ creation_date: 2016-09-24T23:01:37Z
 id: OMP:0007493
 name: altered cell motility by twitching
 def: "A cell motility by twitching phenotype where the frequency, rate, timing, or extent of twitching is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007001 ! altered cell motility
+is_a: OMP:0007001 ! altered motility
 created_by: siegele
 creation_date: 2016-09-24T23:01:37Z
 
 [Term]
 id: OMP:0007494
-name: abolished cell motility by twitching
-def: "A decreased cell motility by twitching phenotype where the ability of a microbe to move by twitching motility is abolished." [OMP:DAS]
-is_a: OMP:0007000 ! abolished cell motility
-is_a: OMP:0007094 ! decreased cell motility by twitching
-is_a: OMP:0007491 ! absence of cell motility by twitching
+name: abolished motility by twitching
+def: "A decreased motility by twitching phenotype where the ability of a microbe to move by twitching motility is abolished." [OMP:DAS]
+is_a: OMP:0007000 ! abolished motility
+is_a: OMP:0007094 ! decreased motility by twitching
+is_a: OMP:0007491 ! absence of motility by twitching
 created_by: siegele
 creation_date: 2016-09-24T23:04:50Z
 
@@ -11703,9 +11881,35 @@ created_by: siegele
 creation_date: 2016-09-25T23:32:51Z
 
 [Term]
+id: OMP:0007511
+name: ascospore morphology phenotype
+def: "A spore morphology phenotype that is related to the form and structure of an ascospore, which is a thick-walled spore that stores and protects one or more nuclei following sexual reproduction in an Ascomycete." [CL:0000607, FAO:0000020, OMP:DAS]
+is_a: OMP:0008000 ! spore morphology phenotype
+created_by: siegele
+creation_date: 2016-12-19T14:07:15Z
+
+[Term]
+id: OMP:0007512
+name: altered ascospore morphology
+def: "An ascospore morphology phenotype in which the form and structure of an ascospore is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007411 ! altered spore morphology
+is_a: OMP:0007511 ! ascospore morphology phenotype
+created_by: siegele
+creation_date: 2016-12-19T14:12:30Z
+
+[Term]
+id: OMP:0007513
+name: altered endospore morphology
+def: "An endospore morphology phenotype where the form and structure of an endospore is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007228 ! endospore morphology phenotype
+is_a: OMP:0007411 ! altered spore morphology
+created_by: siegele
+creation_date: 2016-12-19T14:16:33Z
+
+[Term]
 id: OMP:0008000
 name: spore morphology phenotype
-def: "A microbial phenotype that is related to the form and structure of a spore or spores." [OMP:KDA]
+def: "A microbial phenotype that is related to the form and structure of a spore or spores produced by a microbe." [OMP:KDA]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: FAO:0000019 "spore"
 is_a: OMP:0000071 ! cell morphology phenotype
