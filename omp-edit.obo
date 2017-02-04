@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 20:12:2016 13:36
-saved-by: Jesus
+date: 04:02:2017 01:15
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -4189,7 +4189,7 @@ creation_date: 2013-09-09T11:42:28Z
 [Term]
 id: OMP:0005013
 name: solute and water activity growth range phenotype
-def: "A growth range phenotype dealing with the range of solute concentrations (water activity) that allow for growth of an organism or cell." [OMP:WAM]
+def: "A growth range phenotype dealing with the range of solute concentrations (water activity) that permit growth and proliferation of a microbe." [OMP:WAM]
 is_a: OMP:0007192 ! growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:43:45Z
