@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 04:02:2017 01:15
-saved-by: siegele
+date: 20:02:2017 15:49
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -7192,7 +7192,7 @@ creation_date: 2016-12-20T12:54:30Z
 id: OMP:0005366
 name: abolished osmotaxis
 def: "A decreased osmotaxis phenotype where osmotaxis by a motile microbe is abolished." [OMP:JG]
-is_a: OMP:0005361 ! osmotaxis phenotype
+is_a: OMP:0005363 ! absence of osmotaxis
 is_a: OMP:0005372 ! decreased osmotaxis
 created_by: Jesus
 creation_date: 2016-12-20T12:59:07Z
@@ -7210,6 +7210,7 @@ id: OMP:0005368
 name: abolished negative osmotaxis
 def: "A decreased negative osmotaxis phenotype where negative osmotaxis by a motile microbe is abolished." [OMP:JG]
 is_a: OMP:0005367 ! absence of negative osmotaxis
+is_a: OMP:0007514 ! decreased negative osmotaxis
 created_by: Jesus
 creation_date: 2016-12-20T13:02:31Z
 
@@ -7226,6 +7227,7 @@ id: OMP:0005370
 name: abolished positive osmotaxis
 def: "A decreased positive osmotaxis phenotype where positive osmotaxis by a motile microbe is abolished." [OMP:JG]
 is_a: OMP:0005369 ! absence of positive osmotaxis
+is_a: OMP:0007515 ! decreased positive osmotaxis
 created_by: Jesus
 creation_date: 2016-12-20T13:04:08Z
 
@@ -7234,6 +7236,7 @@ id: OMP:0005371
 name: altered osmotaxis
 def: "An osmotaxis phenotype where directed movement of a motile microbe in response to an osmotic concentration gradient is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005361 ! osmotaxis phenotype
+is_a: OMP:0007127 ! altered taxis
 created_by: Jesus
 creation_date: 2016-12-20T13:05:17Z
 
@@ -13409,6 +13412,22 @@ is_a: OMP:0007228 ! endospore morphology phenotype
 is_a: OMP:0007411 ! altered spore morphology
 created_by: siegele
 creation_date: 2016-12-19T14:16:33Z
+
+[Term]
+id: OMP:0007514
+name: decreased negative osmotaxis
+def: "A decreased osmotaxis phenotype where negative osmotaxis by a motile microbe is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0005372 ! decreased osmotaxis
+created_by: dsiegele
+creation_date: 2017-02-20T15:38:16Z
+
+[Term]
+id: OMP:0007515
+name: decreased positive osmotaxis
+def: "A decreased osmotaxis phenotype where positive osmotaxis by a motile microbe is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0005372 ! decreased osmotaxis
+created_by: dsiegele
+creation_date: 2017-02-20T15:38:16Z
 
 [Term]
 id: OMP:0008000
