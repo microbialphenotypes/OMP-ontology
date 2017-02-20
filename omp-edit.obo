@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 20:02:2017 15:49
+date: 20:02:2017 16:16
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -4206,7 +4206,7 @@ creation_date: 2013-09-09T11:49:53Z
 [Term]
 id: OMP:0005015
 name: osmotolerant growth
-def: "A solute and water activity phenotype where the growth can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
+def: "A solute and water activity phenotype where growth and proliferation can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005013 ! solute and water activity growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:05:24Z
@@ -4214,7 +4214,7 @@ creation_date: 2013-09-09T13:05:24Z
 [Term]
 id: OMP:0005016
 name: halophilic growth
-def: "A solute and water activity phenotype where the growth requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
+def: "A solute and water activity phenotype where growth and proliferation requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005013 ! solute and water activity growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:06:03Z
@@ -13428,6 +13428,73 @@ def: "A decreased osmotaxis phenotype where positive osmotaxis by a motile micro
 is_a: OMP:0005372 ! decreased osmotaxis
 created_by: dsiegele
 creation_date: 2017-02-20T15:38:16Z
+
+[Term]
+id: OMP:0007516
+name: growth under high osmolarity phenotype
+def: "A growth range phenotype relating to the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth." [OMP:DAS]
+is_a: OMP:0005013 ! solute and water activity growth range phenotype
+created_by: dsiegele
+creation_date: 2017-02-20T15:58:54Z
+
+[Term]
+id: OMP:0007517
+name: presence of growth under high osmolarity
+def: "A growth under high osmolarity phenotype where a microbe can grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth." [OMP:DAS]
+is_a: OMP:0007516 ! growth under high osmolarity phenotype
+created_by: dsiegele
+creation_date: 2017-02-20T15:59:09Z
+
+[Term]
+id: OMP:0007518
+name: absence of growth under high osmolarity
+def: "A growth under high osmolarity phenotype where a microbe cannot grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth." [OMP:DAS]
+is_a: OMP:0007516 ! growth under high osmolarity phenotype
+created_by: dsiegele
+creation_date: 2017-02-20T15:59:09Z
+
+[Term]
+id: OMP:0007519
+name: altered growth under high osmolarity
+def: "A growth under high osmolarity phenotype where the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007516 ! growth under high osmolarity phenotype
+is_a: OMP:0007523 ! altered growth range
+created_by: dsiegele
+creation_date: 2017-02-20T15:59:09Z
+
+[Term]
+id: OMP:0007520
+name: increased growth under high osmolarity
+def: "An altered growth under high osmolarity phenotype where the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007519 ! altered growth under high osmolarity
+created_by: dsiegele
+creation_date: 2017-02-20T16:03:09Z
+
+[Term]
+id: OMP:0007521
+name: decreased growth under high osmolarity
+def: "An altered growth under high osmolarity phenotype where the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007519 ! altered growth under high osmolarity
+created_by: dsiegele
+creation_date: 2017-02-20T16:03:09Z
+
+[Term]
+id: OMP:0007522
+name: abolished growth under high osmolarity
+def: "A decreased growth under high osmolarity phenotype where the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth is abolished." [OMP:DAS]
+is_a: OMP:0007518 ! absence of growth under high osmolarity
+is_a: OMP:0007521 ! decreased growth under high osmolarity
+created_by: dsiegele
+creation_date: 2017-02-20T16:03:16Z
+
+[Term]
+id: OMP:0007523
+name: altered growth range
+def: "A growth range phenotype where the ability of a microbe to grow and proliferate under a specified growth condition is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007085 ! altered microbial phenotype
+is_a: OMP:0007192 ! growth range phenotype
+created_by: dsiegele
+creation_date: 2017-02-20T16:06:25Z
 
 [Term]
 id: OMP:0008000
