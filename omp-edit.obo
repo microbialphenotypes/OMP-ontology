@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 20:02:2017 16:16
+date: 20:02:2017 17:01
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -12809,7 +12809,7 @@ creation_date: 2016-07-27T19:32:00Z
 [Term]
 id: OMP:0007442
 name: presence of lethality in mice
-def: "A presence of lethality phenotype where the host of the infection is a mouse (or mice) (Mus musculus)." [OMP:DAS]
+def: "A presence of lethality phenotype where infection by a microbe can cause death of a mouse (or mice) (Mus musculus)." [OMP:DAS]
 is_a: OMP:0007395 ! presence of lethality
 created_by: siegele
 creation_date: 2016-07-27T22:27:42Z
@@ -12817,7 +12817,7 @@ creation_date: 2016-07-27T22:27:42Z
 [Term]
 id: OMP:0007443
 name: presence of lethality in immunocompromised mice
-def: "A presence of lethality phenotype where the host of the infection is an immunocompromised mouse (or mice) (Mus musculus)." [OMP:DAS]
+def: "A presence of lethality phenotype where infection by a microbe can cause death of an immunocompromised mouse (or mice) (Mus musculus)." [OMP:DAS]
 is_a: OMP:0007395 ! presence of lethality
 created_by: siegele
 creation_date: 2016-07-27T22:27:43Z
@@ -13495,6 +13495,79 @@ is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007192 ! growth range phenotype
 created_by: dsiegele
 creation_date: 2017-02-20T16:06:25Z
+
+[Term]
+id: OMP:0007524
+name: presence of lethality in an invertebrate host
+def: "A presence of lethality phenotype where infection by a microbe can cause death of an invertebrate host." [OMP:DAS]
+is_a: OMP:0007395 ! presence of lethality
+created_by: dsiegele
+creation_date: 2017-02-20T16:43:30Z
+
+[Term]
+id: OMP:0007525
+name: absence of lethality in an invertebrate host
+def: "An absence of lethality phenotype where the infected host is an invertebrate." [OMP:DAS]
+is_a: OMP:0007396 ! absence of lethality
+created_by: dsiegele
+creation_date: 2017-02-20T16:46:31Z
+
+[Term]
+id: OMP:0007526
+name: altered lethality in an invertebrate host
+def: "An altered lethality phenotype where the ability of an infectious  microbe to cause death of an invertebrate host is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007397 ! altered lethality
+created_by: dsiegele
+creation_date: 2017-02-20T16:48:08Z
+
+[Term]
+id: OMP:0007527
+name: altered lethality in an amoeba host
+def: "An altered lethality phenotype where the ability of an infectious microbe to cause death of an amoeba host is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007397 ! altered lethality
+created_by: dsiegele
+creation_date: 2017-02-20T16:49:04Z
+
+[Term]
+id: OMP:0007528
+name: presence of lethality in an amoeba host
+def: "A presence of lethality phenotype where infection by a microbe can cause death of an amoeba host." [OMP:DAS]
+is_a: OMP:0007395 ! presence of lethality
+created_by: dsiegele
+creation_date: 2017-02-20T16:54:13Z
+
+[Term]
+id: OMP:0007529
+name: absence of lethality in an amoeba host
+def: "An absence of lethality phenotype where infection by a microbe doesn't cause death of an amoeba host." [OMP:DAS]
+is_a: OMP:0007396 ! absence of lethality
+created_by: dsiegele
+creation_date: 2017-02-20T16:55:05Z
+
+[Term]
+id: OMP:0007530
+name: decreased lethality in an amoeba host
+def: "An altered lethality in an amoeba host phenotype where the ability of an infectious microbe to cause death of an amoeba host is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007527 ! altered lethality in an amoeba host
+created_by: dsiegele
+creation_date: 2017-02-20T16:57:15Z
+
+[Term]
+id: OMP:0007531
+name: increased lethality in an amoeba host
+def: "An altered lethality in an amoeba phenotype where the ability of an infectious microbe to cause death of an amoeba host is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007527 ! altered lethality in an amoeba host
+created_by: dsiegele
+creation_date: 2017-02-20T16:57:15Z
+
+[Term]
+id: OMP:0007532
+name: abolished lethality in an amoeba host
+def: "A decreased lethality in an amoeba host phenotype where the ability of an infectious microbe to cause death of an amoeba host is abolished." [OMP:DAS]
+is_a: OMP:0007529 ! absence of lethality in an amoeba host
+is_a: OMP:0007530 ! decreased lethality in an amoeba host
+created_by: dsiegele
+creation_date: 2017-02-20T16:59:35Z
 
 [Term]
 id: OMP:0008000
