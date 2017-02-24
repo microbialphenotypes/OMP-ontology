@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 20:02:2017 17:01
-saved-by: dsiegele
-auto-generated-by: OBO-Edit 2.3.1
+date: 24:02:2017 14:35
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -13568,6 +13568,69 @@ is_a: OMP:0007529 ! absence of lethality in an amoeba host
 is_a: OMP:0007530 ! decreased lethality in an amoeba host
 created_by: dsiegele
 creation_date: 2017-02-20T16:59:35Z
+
+[Term]
+id: OMP:0007533
+name: urea derivative resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to compounds that are structural derivatives of urea." [CHEBI:47857, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2017-02-24T13:14:38Z
+
+[Term]
+id: OMP:0007534
+name: resistant to a urea derivative
+def: "A ureas resistance phenotype where a microbe is resistant to a derivative of urea." [CHEBI:47857, OMP:DAS]
+is_a: OMP:0007533 ! urea derivative resistance phenotype
+created_by: siegele
+creation_date: 2017-02-24T13:18:35Z
+
+[Term]
+id: OMP:0007535
+name: not resistant to a urea derivative
+def: "A ureas resistance phenotype where a microbe is not resistant to a derivative of urea." [CHEBI:47857, OMP:DAS]
+synonym: "sensitive to a urea derivative" EXACT []
+synonym: "sensitive to hydroxyurea" NARROW []
+is_a: OMP:0007533 ! urea derivative resistance phenotype
+created_by: siegele
+creation_date: 2017-02-24T13:18:35Z
+
+[Term]
+id: OMP:0007536
+name: altered resistance to a urea derivative
+def: "A urea derivative resistance phenotype where resistance or sensitivity to a urea derivative is altered relative to a designated control." [CHEBI:47857, OMP:DAS]
+is_a: OMP:0007533 ! urea derivative resistance phenotype
+created_by: siegele
+creation_date: 2017-02-24T13:18:35Z
+
+[Term]
+id: OMP:0007537
+name: increased resistance to a urea derivative
+def: "An altered resistance to a urea derivative phenotype where resistance to a derivative of urea is increased relative to a designated control." [OMP:DAS]
+synonym: "decreased sensitivity to a urea derivative" EXACT []
+synonym: "decreased sensitivity to hydroxyurea" NARROW [CHEBI:44423]
+is_a: OMP:0007536 ! altered resistance to a urea derivative
+created_by: siegele
+creation_date: 2017-02-24T13:19:13Z
+
+[Term]
+id: OMP:0007538
+name: decreased resistance to a urea derivative
+def: "An altered resistance to a urea derivative phenotype where resistance to a derivative of urea is decreased relative to a designated control." [OMP:DAS]
+synonym: "increased sensitivity to a urea derivative" EXACT []
+synonym: "increased sensitivity to hydroxyurea" NARROW [CHEBI:44423]
+is_a: OMP:0007536 ! altered resistance to a urea derivative
+created_by: siegele
+creation_date: 2017-02-24T13:19:13Z
+
+[Term]
+id: OMP:0007539
+name: abolished resistance to a urea derivative
+def: "A decreased resistance to a urea derivative phenotype where resistance to a structural derivative of urea is abolished." [OMP:DAS]
+is_a: OMP:0007538 ! decreased resistance to a urea derivative
+created_by: siegele
+creation_date: 2017-02-24T13:19:20Z
 
 [Term]
 id: OMP:0008000
