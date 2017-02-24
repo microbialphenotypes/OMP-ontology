@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 24:02:2017 14:35
+date: 24:02:2017 14:38
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -13600,6 +13600,7 @@ creation_date: 2017-02-24T13:18:35Z
 id: OMP:0007536
 name: altered resistance to a urea derivative
 def: "A urea derivative resistance phenotype where resistance or sensitivity to a urea derivative is altered relative to a designated control." [CHEBI:47857, OMP:DAS]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 is_a: OMP:0007533 ! urea derivative resistance phenotype
 created_by: siegele
 creation_date: 2017-02-24T13:18:35Z
@@ -13628,6 +13629,7 @@ creation_date: 2017-02-24T13:19:13Z
 id: OMP:0007539
 name: abolished resistance to a urea derivative
 def: "A decreased resistance to a urea derivative phenotype where resistance to a structural derivative of urea is abolished." [OMP:DAS]
+is_a: OMP:0007535 ! not resistant to a urea derivative
 is_a: OMP:0007538 ! decreased resistance to a urea derivative
 created_by: siegele
 creation_date: 2017-02-24T13:19:20Z
