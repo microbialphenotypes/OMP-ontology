@@ -1,8 +1,8 @@
 format-version: 1.2
-data-version: releases/2017-02-03
-date: 20:12:2016 13:36
-saved-by: Jesus
-auto-generated-by: OBO-Edit 2.3.1
+data-version: releases/2017-03-03
+date: 24:02:2017 14:38
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -2770,7 +2770,7 @@ creation_date: 2013-09-09T11:42:28Z
 [Term]
 id: OMP:0005013
 name: solute and water activity growth range phenotype
-def: "A growth range phenotype dealing with the range of solute concentrations (water activity) that allow for growth of an organism or cell." [OMP:WAM]
+def: "A growth range phenotype dealing with the range of solute concentrations (water activity) that permit growth and proliferation of a microbe." [OMP:WAM]
 is_a: OMP:0007192 ! growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:43:45Z
@@ -2787,7 +2787,7 @@ creation_date: 2013-09-09T11:49:53Z
 [Term]
 id: OMP:0005015
 name: osmotolerant growth
-def: "A solute and water activity phenotype where the growth can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
+def: "A solute and water activity phenotype where growth and proliferation can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005013 ! solute and water activity growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:05:24Z
@@ -2795,7 +2795,7 @@ creation_date: 2013-09-09T13:05:24Z
 [Term]
 id: OMP:0005016
 name: halophilic growth
-def: "A solute and water activity phenotype where the growth requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
+def: "A solute and water activity phenotype where growth and proliferation requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005013 ! solute and water activity growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:06:03Z
@@ -5742,6 +5742,7 @@ creation_date: 2016-12-20T12:54:30Z
 id: OMP:0005366
 name: abolished osmotaxis
 def: "A decreased osmotaxis phenotype where osmotaxis by a motile microbe is abolished." [OMP:JG]
+is_a: OMP:0005363 ! absence of osmotaxis
 is_a: OMP:0005372 ! decreased osmotaxis
 created_by: Jesus
 creation_date: 2016-12-20T12:59:07Z
@@ -5759,6 +5760,7 @@ id: OMP:0005368
 name: abolished negative osmotaxis
 def: "A decreased negative osmotaxis phenotype where negative osmotaxis by a motile microbe is abolished." [OMP:JG]
 is_a: OMP:0005367 ! absence of negative osmotaxis
+is_a: OMP:0007514 ! decreased negative osmotaxis
 created_by: Jesus
 creation_date: 2016-12-20T13:02:31Z
 
@@ -5775,6 +5777,7 @@ id: OMP:0005370
 name: abolished positive osmotaxis
 def: "A decreased positive osmotaxis phenotype where positive osmotaxis by a motile microbe is abolished." [OMP:JG]
 is_a: OMP:0005369 ! absence of positive osmotaxis
+is_a: OMP:0007515 ! decreased positive osmotaxis
 created_by: Jesus
 creation_date: 2016-12-20T13:04:08Z
 
@@ -5783,6 +5786,7 @@ id: OMP:0005371
 name: altered osmotaxis
 def: "An osmotaxis phenotype where directed movement of a motile microbe in response to an osmotic concentration gradient is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005361 ! osmotaxis phenotype
+is_a: OMP:0007127 ! altered taxis
 created_by: Jesus
 creation_date: 2016-12-20T13:05:17Z
 
@@ -11301,7 +11305,7 @@ creation_date: 2016-07-27T19:32:00Z
 [Term]
 id: OMP:0007442
 name: presence of lethality in mice
-def: "A presence of lethality phenotype where the host of the infection is a mouse (or mice) (Mus musculus)." [OMP:DAS]
+def: "A presence of lethality phenotype where infection by a microbe can cause death of a mouse (or mice) (Mus musculus)." [OMP:DAS]
 is_a: OMP:0007395 ! presence of lethality
 created_by: siegele
 creation_date: 2016-07-27T22:27:42Z
@@ -11309,7 +11313,7 @@ creation_date: 2016-07-27T22:27:42Z
 [Term]
 id: OMP:0007443
 name: presence of lethality in immunocompromised mice
-def: "A presence of lethality phenotype where the host of the infection is an immunocompromised mouse (or mice) (Mus musculus)." [OMP:DAS]
+def: "A presence of lethality phenotype where infection by a microbe can cause death of an immunocompromised mouse (or mice) (Mus musculus)." [OMP:DAS]
 is_a: OMP:0007395 ! presence of lethality
 created_by: siegele
 creation_date: 2016-07-27T22:27:43Z
@@ -11905,6 +11909,227 @@ is_a: OMP:0007228 ! endospore morphology phenotype
 is_a: OMP:0007411 ! altered spore morphology
 created_by: siegele
 creation_date: 2016-12-19T14:16:33Z
+
+[Term]
+id: OMP:0007514
+name: decreased negative osmotaxis
+def: "A decreased osmotaxis phenotype where negative osmotaxis by a motile microbe is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0005372 ! decreased osmotaxis
+created_by: dsiegele
+creation_date: 2017-02-20T15:38:16Z
+
+[Term]
+id: OMP:0007515
+name: decreased positive osmotaxis
+def: "A decreased osmotaxis phenotype where positive osmotaxis by a motile microbe is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0005372 ! decreased osmotaxis
+created_by: dsiegele
+creation_date: 2017-02-20T15:38:16Z
+
+[Term]
+id: OMP:0007516
+name: growth under high osmolarity phenotype
+def: "A growth range phenotype relating to the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth." [OMP:DAS]
+is_a: OMP:0005013 ! solute and water activity growth range phenotype
+created_by: dsiegele
+creation_date: 2017-02-20T15:58:54Z
+
+[Term]
+id: OMP:0007517
+name: presence of growth under high osmolarity
+def: "A growth under high osmolarity phenotype where a microbe can grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth." [OMP:DAS]
+is_a: OMP:0007516 ! growth under high osmolarity phenotype
+created_by: dsiegele
+creation_date: 2017-02-20T15:59:09Z
+
+[Term]
+id: OMP:0007518
+name: absence of growth under high osmolarity
+def: "A growth under high osmolarity phenotype where a microbe cannot grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth." [OMP:DAS]
+is_a: OMP:0007516 ! growth under high osmolarity phenotype
+created_by: dsiegele
+creation_date: 2017-02-20T15:59:09Z
+
+[Term]
+id: OMP:0007519
+name: altered growth under high osmolarity
+def: "A growth under high osmolarity phenotype where the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007516 ! growth under high osmolarity phenotype
+is_a: OMP:0007523 ! altered growth range
+created_by: dsiegele
+creation_date: 2017-02-20T15:59:09Z
+
+[Term]
+id: OMP:0007520
+name: increased growth under high osmolarity
+def: "An altered growth under high osmolarity phenotype where the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007519 ! altered growth under high osmolarity
+created_by: dsiegele
+creation_date: 2017-02-20T16:03:09Z
+
+[Term]
+id: OMP:0007521
+name: decreased growth under high osmolarity
+def: "An altered growth under high osmolarity phenotype where the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007519 ! altered growth under high osmolarity
+created_by: dsiegele
+creation_date: 2017-02-20T16:03:09Z
+
+[Term]
+id: OMP:0007522
+name: abolished growth under high osmolarity
+def: "A decreased growth under high osmolarity phenotype where the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth is abolished." [OMP:DAS]
+is_a: OMP:0007518 ! absence of growth under high osmolarity
+is_a: OMP:0007521 ! decreased growth under high osmolarity
+created_by: dsiegele
+creation_date: 2017-02-20T16:03:16Z
+
+[Term]
+id: OMP:0007523
+name: altered growth range
+def: "A growth range phenotype where the ability of a microbe to grow and proliferate under a specified growth condition is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007085 ! altered microbial phenotype
+is_a: OMP:0007192 ! growth range phenotype
+created_by: dsiegele
+creation_date: 2017-02-20T16:06:25Z
+
+[Term]
+id: OMP:0007524
+name: presence of lethality in an invertebrate host
+def: "A presence of lethality phenotype where infection by a microbe can cause death of an invertebrate host." [OMP:DAS]
+is_a: OMP:0007395 ! presence of lethality
+created_by: dsiegele
+creation_date: 2017-02-20T16:43:30Z
+
+[Term]
+id: OMP:0007525
+name: absence of lethality in an invertebrate host
+def: "An absence of lethality phenotype where the infected host is an invertebrate." [OMP:DAS]
+is_a: OMP:0007396 ! absence of lethality
+created_by: dsiegele
+creation_date: 2017-02-20T16:46:31Z
+
+[Term]
+id: OMP:0007526
+name: altered lethality in an invertebrate host
+def: "An altered lethality phenotype where the ability of an infectious  microbe to cause death of an invertebrate host is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007397 ! altered lethality
+created_by: dsiegele
+creation_date: 2017-02-20T16:48:08Z
+
+[Term]
+id: OMP:0007527
+name: altered lethality in an amoeba host
+def: "An altered lethality phenotype where the ability of an infectious microbe to cause death of an amoeba host is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007397 ! altered lethality
+created_by: dsiegele
+creation_date: 2017-02-20T16:49:04Z
+
+[Term]
+id: OMP:0007528
+name: presence of lethality in an amoeba host
+def: "A presence of lethality phenotype where infection by a microbe can cause death of an amoeba host." [OMP:DAS]
+is_a: OMP:0007395 ! presence of lethality
+created_by: dsiegele
+creation_date: 2017-02-20T16:54:13Z
+
+[Term]
+id: OMP:0007529
+name: absence of lethality in an amoeba host
+def: "An absence of lethality phenotype where infection by a microbe doesn't cause death of an amoeba host." [OMP:DAS]
+is_a: OMP:0007396 ! absence of lethality
+created_by: dsiegele
+creation_date: 2017-02-20T16:55:05Z
+
+[Term]
+id: OMP:0007530
+name: decreased lethality in an amoeba host
+def: "An altered lethality in an amoeba host phenotype where the ability of an infectious microbe to cause death of an amoeba host is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007527 ! altered lethality in an amoeba host
+created_by: dsiegele
+creation_date: 2017-02-20T16:57:15Z
+
+[Term]
+id: OMP:0007531
+name: increased lethality in an amoeba host
+def: "An altered lethality in an amoeba phenotype where the ability of an infectious microbe to cause death of an amoeba host is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007527 ! altered lethality in an amoeba host
+created_by: dsiegele
+creation_date: 2017-02-20T16:57:15Z
+
+[Term]
+id: OMP:0007532
+name: abolished lethality in an amoeba host
+def: "A decreased lethality in an amoeba host phenotype where the ability of an infectious microbe to cause death of an amoeba host is abolished." [OMP:DAS]
+is_a: OMP:0007529 ! absence of lethality in an amoeba host
+is_a: OMP:0007530 ! decreased lethality in an amoeba host
+created_by: dsiegele
+creation_date: 2017-02-20T16:59:35Z
+
+[Term]
+id: OMP:0007533
+name: urea derivative resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to compounds that are structural derivatives of urea." [CHEBI:47857, OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2017-02-24T13:14:38Z
+
+[Term]
+id: OMP:0007534
+name: resistant to a urea derivative
+def: "A ureas resistance phenotype where a microbe is resistant to a derivative of urea." [CHEBI:47857, OMP:DAS]
+is_a: OMP:0007533 ! urea derivative resistance phenotype
+created_by: siegele
+creation_date: 2017-02-24T13:18:35Z
+
+[Term]
+id: OMP:0007535
+name: not resistant to a urea derivative
+def: "A ureas resistance phenotype where a microbe is not resistant to a derivative of urea." [CHEBI:47857, OMP:DAS]
+synonym: "sensitive to a urea derivative" EXACT []
+synonym: "sensitive to hydroxyurea" NARROW []
+is_a: OMP:0007533 ! urea derivative resistance phenotype
+created_by: siegele
+creation_date: 2017-02-24T13:18:35Z
+
+[Term]
+id: OMP:0007536
+name: altered resistance to a urea derivative
+def: "A urea derivative resistance phenotype where resistance or sensitivity to a urea derivative is altered relative to a designated control." [CHEBI:47857, OMP:DAS]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007533 ! urea derivative resistance phenotype
+created_by: siegele
+creation_date: 2017-02-24T13:18:35Z
+
+[Term]
+id: OMP:0007537
+name: increased resistance to a urea derivative
+def: "An altered resistance to a urea derivative phenotype where resistance to a derivative of urea is increased relative to a designated control." [OMP:DAS]
+synonym: "decreased sensitivity to a urea derivative" EXACT []
+synonym: "decreased sensitivity to hydroxyurea" NARROW [CHEBI:44423]
+is_a: OMP:0007536 ! altered resistance to a urea derivative
+created_by: siegele
+creation_date: 2017-02-24T13:19:13Z
+
+[Term]
+id: OMP:0007538
+name: decreased resistance to a urea derivative
+def: "An altered resistance to a urea derivative phenotype where resistance to a derivative of urea is decreased relative to a designated control." [OMP:DAS]
+synonym: "increased sensitivity to a urea derivative" EXACT []
+synonym: "increased sensitivity to hydroxyurea" NARROW [CHEBI:44423]
+is_a: OMP:0007536 ! altered resistance to a urea derivative
+created_by: siegele
+creation_date: 2017-02-24T13:19:13Z
+
+[Term]
+id: OMP:0007539
+name: abolished resistance to a urea derivative
+def: "A decreased resistance to a urea derivative phenotype where resistance to a structural derivative of urea is abolished." [OMP:DAS]
+is_a: OMP:0007535 ! not resistant to a urea derivative
+is_a: OMP:0007538 ! decreased resistance to a urea derivative
+created_by: siegele
+creation_date: 2017-02-24T13:19:20Z
 
 [Term]
 id: OMP:0008000
