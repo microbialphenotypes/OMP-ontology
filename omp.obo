@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2017-04-10
-date: 24:02:2017 14:38
+data-version: releases/2017-05-05
+date: 19:04:2017 13:46
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -13738,6 +13738,22 @@ is_a: OMP:0007535 ! not resistant to a urea derivative
 is_a: OMP:0007538 ! decreased resistance to a urea derivative
 created_by: siegele
 creation_date: 2017-02-24T13:19:20Z
+
+[Term]
+id: OMP:0007540
+name: virus phenotype
+def: "A microbial phenotype related to the form and structure of a virus." [OMP:DR]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2017-04-19T13:39:46Z
+
+[Term]
+id: OMP:0007541
+name: virion morphology phenotype
+def: "A virus phenotype related to the form and structure of a virion." [OMP:DR]
+is_a: OMP:0007540 ! virus phenotype
+created_by: siegele
+creation_date: 2017-04-19T13:42:41Z
 
 [Term]
 id: OMP:0008000
