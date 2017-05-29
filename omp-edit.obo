@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 29:05:2017 16:40
+date: 29:05:2017 17:50
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -13655,7 +13655,9 @@ id: OMP:0007542
 name: haploid fruiting phenotype
 def: "An asexual reproduction phenotype where progeny are contained in a fruiting body that forms as the result of mating between strains of the same mating-type or self-mating." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "monokaryotic fruiting" EXACT []
+synonym: "homokaryotic fruiting phenotype" EXACT []
+synonym: "monokaryotic fruiting phenotype" EXACT []
+xref: GO:0000905 "sporocarp development involved in asexual reproduction"
 is_a: OMP:0007066 ! asexual reproduction phenotype
 created_by: siegele
 creation_date: 2017-05-29T16:17:29Z
@@ -13692,7 +13694,7 @@ creation_date: 2017-05-29T16:24:41Z
 id: OMP:0007546
 name: increased haploid fruiting
 def: "An altered haploid fruiting phenotype where the rate, frequency, timing, or extent of the process of haploid fruiting is increased relative to a designated control." [OMP:DAS]
-synonym: "increased monokaryotic fruiting" RELATED []
+synonym: "increased monokaryotic fruiting" EXACT []
 is_a: OMP:0007545 ! altered  haploid fruiting
 created_by: siegele
 creation_date: 2017-05-29T16:27:37Z
@@ -13733,6 +13735,24 @@ is_a: OMP:0007167 ! population growth phenotype
 is_a: OMP:0007549 ! altered biological process phenotype
 created_by: siegele
 creation_date: 2017-05-29T16:37:18Z
+
+[Term]
+id: OMP:0007551
+name: increased rate of haploid fruiting
+def: "An increased haploid fruiting phenotype where the rate of the process of haploid fruiting is increased relative to a designated control." [OMP:DAS]
+synonym: "increased rate of monokaryotic fruiting" EXACT []
+is_a: OMP:0007546 ! increased haploid fruiting
+created_by: siegele
+creation_date: 2017-05-29T17:45:32Z
+
+[Term]
+id: OMP:0007552
+name: decreased rate of haploid fruiting
+def: "A decreased haploid fruiting phenotype where the rate of the process of haploid fruiting is increased relative to a designated control." [OMP:DAS]
+synonym: "decreased rate of monokaryotic fruiting" EXACT []
+is_a: OMP:0007547 ! decreased haploid fruiting
+created_by: siegele
+creation_date: 2017-05-29T17:48:15Z
 
 [Term]
 id: OMP:0008000
