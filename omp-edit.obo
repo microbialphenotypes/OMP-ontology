@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 29:05:2017 17:50
+date: 30:05:2017 17:28
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1413,7 +1413,7 @@ creation_date: 2011-03-10T07:02:42Z
 [Term]
 id: OMP:0000003
 name: cell arrangement phenotype
-def: "A microbial phenotype where the trait in question is the arrangement of cells in relation to one another." [OMP:MCC]
+def: "A microbial phenotype where the trait in question is the arrangement of cells of a microbe in relation to one another." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
@@ -2154,7 +2154,7 @@ creation_date: 2011-02-02T03:23:41Z
 id: OMP:0000090
 name: lifespan phenotype
 def: "An organismal growth phenotype dealing with the lifespan of a microorganism, cell, or cells." [OMP:WAM]
-is_a: OMP:0000174 ! organismal growth phenotype
+is_a: OMP:0000174 ! growth phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:24:11Z
 
@@ -2886,9 +2886,9 @@ creation_date: 2011-02-02T03:13:32Z
 
 [Term]
 id: OMP:0000174
-name: organismal growth phenotype
+name: growth phenotype
 def: "A microbial phenotype related to the increase in size or mass of an organism, a part of an organism, or a cell." [GO:0040007, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nFor phenotypes affecting growth of a population, see OMP:0007167 \! population growth phenotype.
 xref: GO:0040007 "growth"
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -6165,11 +6165,11 @@ creation_date: 2016-06-23T14:28:58Z
 [Term]
 id: OMP:0005243
 name: filamentous growth phenotype
-def: "An organismal growth phenotype relating to the process by which a multicellular organism, a unicellular organism, or a group of unicellular organisms grow in a threadlike, filamentous shape." [OMP:JG]
+def: "An organismal growth phenotype relating to the process by which a multicellular organism, a unicellular organism, or a group of unicellular organisms grow in a threadlike, filamentous shape." [GO:0030447, OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: APO:0000027 "development"
 xref: GO:0030447 "filamentous growth"
-is_a: OMP:0000174 ! organismal growth phenotype
+is_a: OMP:0000174 ! growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T14:38:44Z
 
@@ -6858,7 +6858,7 @@ creation_date: 2016-09-19T14:02:03Z
 id: OMP:0005325
 name: agar invasion phenotype
 def: "An organismal growth phenotype relating to the ability of a microbe to penetrate agar media during growth." [OMP:JG]
-is_a: OMP:0000174 ! organismal growth phenotype
+is_a: OMP:0000174 ! growth phenotype
 created_by: Jesus
 creation_date: 2016-09-23T16:58:54Z
 
@@ -13348,8 +13348,8 @@ creation_date: 2016-09-25T13:49:19Z
 
 [Term]
 id: OMP:0007506
-name: titan cell phenotype
-def: "A cell morphology phenotype where a microbe, typically a fungus, produces large vegetative cells that typically exhibit altered capsule structure, a thickened cell wall, increased ploidy, and resistance to nitrosative and oxidative stresses." [OMP:DAS, PMID:21821718]
+name: titan cell morphology phenotype
+def: "A cell morphology phenotype relating to the form and structure of titan cells, which are large vegetative cells produced by fungi that typically exhibit altered capsule structure, a thickened cell wall, increased ploidy, and resistance to nitrosative and oxidative stresses." [FAO:0000063, OMP:DAS, PMID:21821718]
 xref: FAO:0000063 "titan cell"
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: siegele
@@ -13359,7 +13359,7 @@ creation_date: 2016-09-25T22:33:27Z
 id: OMP:0007507
 name: presence of titan cells
 def: "A titan cell phenotype where a microbe is able to form titan cells." [OMP:DAS]
-is_a: OMP:0007506 ! titan cell phenotype
+is_a: OMP:0007506 ! titan cell morphology phenotype
 created_by: siegele
 creation_date: 2016-09-25T23:28:19Z
 
@@ -13367,7 +13367,7 @@ creation_date: 2016-09-25T23:28:19Z
 id: OMP:0007508
 name: absence of titan cells
 def: "A titan cell phenotype where a microbe cannot form titan cells." [OMP:DAS]
-is_a: OMP:0007506 ! titan cell phenotype
+is_a: OMP:0007506 ! titan cell morphology phenotype
 created_by: siegele
 creation_date: 2016-09-25T23:28:19Z
 
@@ -13375,15 +13375,16 @@ creation_date: 2016-09-25T23:28:19Z
 id: OMP:0007509
 name: altered titan cell morphology
 def: "A titan cell phenotype where the size, shape, or appearance of titan cells is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007506 ! titan cell phenotype
+is_a: OMP:0007103 ! altered cell morphology
+is_a: OMP:0007506 ! titan cell morphology phenotype
 created_by: siegele
 creation_date: 2016-09-25T23:28:19Z
 
 [Term]
 id: OMP:0007510
 name: altered titan cell formation
-def: "A titan cell phenotype where the frequency, rate, timing, or extent of titan cell formation is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007506 ! titan cell phenotype
+def: "A titan cell formation phenotype where the frequency, rate, timing, or extent of titan cell formation is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007554 ! titan cell formation phenotype
 created_by: siegele
 creation_date: 2016-09-25T23:32:51Z
 
@@ -13711,7 +13712,7 @@ creation_date: 2017-05-29T16:27:37Z
 [Term]
 id: OMP:0007548
 name: abolished haploid fruiting
-def: "A decreased fruiting phenotype where the process of haploid fruiting is abolished." []
+def: "A decreased haploid fruiting phenotype where the process of haploid fruiting is abolished." [OMP:DAS]
 synonym: "abolished monokaryotic fruiting" EXACT []
 is_a: OMP:0007544 ! absence of haploid fruiting
 is_a: OMP:0007547 ! decreased haploid fruiting
@@ -13753,6 +13754,61 @@ synonym: "decreased rate of monokaryotic fruiting" EXACT []
 is_a: OMP:0007547 ! decreased haploid fruiting
 created_by: siegele
 creation_date: 2017-05-29T17:48:15Z
+
+[Term]
+id: OMP:0007553
+name: clamp cell morphology phenotype
+def: "A hyphal morphology phenotype relating to the size, shape, or appearance of a clamp cell, which is a hook-like projection that forms on the apical cell of a fungal hypha and will form a clamp connection with the pre-apical cell." [DOI:10.1007/978-3-642-22916-9_10, FAO:0000060, OMP:DAS]
+is_a: OMP:0007556 ! hyphal morphology phenotype
+created_by: siegele
+creation_date: 2017-05-30T14:37:57Z
+
+[Term]
+id: OMP:0007554
+name: titan cell formation phenotype
+def: "A microbial phenotype relating to the formation of titan cells, which are large cells produced by fungi that typically exhibit altered capsule structure, a thickened cell wall, increased ploidy, and resistance to nitrosative and oxidative stresses." [FAO:0000063, OMP:DAS, PMID:21821718]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2017-05-30T15:28:59Z
+
+[Term]
+id: OMP:0007555
+name: multicellular microorganism morphology phenotype
+def: "A microbial phenotype relating to the size, shape, or appearance of a multicellular microorganism." [OMP:DAS]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2017-05-30T15:39:20Z
+
+[Term]
+id: OMP:0007556
+name: hyphal morphology phenotype
+def: "A multicellular microorganism morphology phenotype relating to the size, shape, or appearance of a hypha, which is a branching filamentous structure that consists of one or more cells surrounded by a tubular cell wall." [OMP:DAS]
+is_a: OMP:0007555 ! multicellular microorganism morphology phenotype
+created_by: siegele
+creation_date: 2017-05-30T16:03:57Z
+
+[Term]
+id: OMP:0007557
+name: filamentous growth of a multicellular organism phenotype
+def: "A filamentous growth phenotype in which a multicellular organism grows in a threadlike, filamentous shape." [GO:0044181, OMP:DAS]
+synonym: "hyphal growth phenotype" EXACT []
+is_a: OMP:0005243 ! filamentous growth phenotype
+created_by: siegele
+creation_date: 2017-05-30T16:34:41Z
+
+[Term]
+id: OMP:0007558
+name: clamp cell formation phenotype
+is_a: OMP:0007557 ! filamentous growth of a multicellular organism phenotype
+created_by: siegele
+creation_date: 2017-05-30T16:44:54Z
+
+[Term]
+id: OMP:0007559
+name: clamp connection morphology phenotype
+is_a: OMP:0007556 ! hyphal morphology phenotype
+created_by: siegele
+creation_date: 2017-05-30T17:04:06Z
 
 [Term]
 id: OMP:0008000
