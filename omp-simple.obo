@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2017-05-05
-date: 19:04:2017 13:46
+data-version: releases/2017-06-02
+date: 29:05:2017 17:50
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -8748,7 +8748,7 @@ id: OMP:0007144
 name: altered asexual reproduction
 def: "An asexual reproduction phenotype where the rate, frequency, timing, or extent of  asexual reproduction is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007066 ! asexual reproduction phenotype
-is_a: OMP:0007085 ! altered microbial phenotype
+is_a: OMP:0007550 ! altered population growth phenotype
 created_by: siegele
 creation_date: 2014-08-18T17:22:42Z
 
@@ -12146,6 +12146,110 @@ def: "A virus phenotype related to the form and structure of a virion." [OMP:DR]
 is_a: OMP:0007540 ! virus phenotype
 created_by: siegele
 creation_date: 2017-04-19T13:42:41Z
+
+[Term]
+id: OMP:0007542
+name: haploid fruiting phenotype
+def: "An asexual reproduction phenotype where progeny are contained in a fruiting body that forms as the result of mating between strains of the same mating-type or self-mating." [OMP:DAS]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "homokaryotic fruiting phenotype" EXACT []
+synonym: "monokaryotic fruiting phenotype" EXACT []
+xref: GO:0000905 "sporocarp development involved in asexual reproduction"
+is_a: OMP:0007066 ! asexual reproduction phenotype
+created_by: siegele
+creation_date: 2017-05-29T16:17:29Z
+
+[Term]
+id: OMP:0007543
+name: presence of haploid fruiting
+def: "A haploid fruiting phenotype where a microbe can reproduce by the process of haploid fruiting." [OMP:DAS]
+synonym: "presence of monokaryotic fruiting" EXACT []
+is_a: OMP:0007542 ! haploid fruiting phenotype
+created_by: siegele
+creation_date: 2017-05-29T16:19:54Z
+
+[Term]
+id: OMP:0007544
+name: absence of haploid fruiting
+def: "A haploid fruiting phenotype where a microbe is unable to reproduce by the process of haploid fruiting." [OMP:DAS]
+synonym: "absence of monokaryotic fruiting" EXACT []
+is_a: OMP:0007542 ! haploid fruiting phenotype
+created_by: siegele
+creation_date: 2017-05-29T16:21:37Z
+
+[Term]
+id: OMP:0007545
+name: altered  haploid fruiting
+def: "A haploid fruiting phenotype where the rate, frequency, timing, or extent of the process of haploid fruiting is altered relative to a designated control." [OMP:DAS]
+synonym: "altered monokaryotic fruiting" EXACT []
+is_a: OMP:0007144 ! altered asexual reproduction
+is_a: OMP:0007542 ! haploid fruiting phenotype
+created_by: siegele
+creation_date: 2017-05-29T16:24:41Z
+
+[Term]
+id: OMP:0007546
+name: increased haploid fruiting
+def: "An altered haploid fruiting phenotype where the rate, frequency, timing, or extent of the process of haploid fruiting is increased relative to a designated control." [OMP:DAS]
+synonym: "increased monokaryotic fruiting" EXACT []
+is_a: OMP:0007545 ! altered  haploid fruiting
+created_by: siegele
+creation_date: 2017-05-29T16:27:37Z
+
+[Term]
+id: OMP:0007547
+name: decreased haploid fruiting
+def: "An altered haploid fruiting phenotype where the rate, frequency, timing, or extent of the process of haploid fruiting is decreased relative to a designated control." [OMP:DAS]
+synonym: "decreased monokaryotic fruiting" EXACT []
+is_a: OMP:0007545 ! altered  haploid fruiting
+created_by: siegele
+creation_date: 2017-05-29T16:27:37Z
+
+[Term]
+id: OMP:0007548
+name: abolished haploid fruiting
+def: "A decreased fruiting phenotype where the process of haploid fruiting is abolished." []
+synonym: "abolished monokaryotic fruiting" EXACT []
+is_a: OMP:0007544 ! absence of haploid fruiting
+is_a: OMP:0007547 ! decreased haploid fruiting
+created_by: siegele
+creation_date: 2017-05-29T16:27:37Z
+
+[Term]
+id: OMP:0007549
+name: altered biological process phenotype
+def: "A biological process phenotype where the rate, frequency, timing, or extent of a biological process is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007085 ! altered microbial phenotype
+is_a: OMP:0007194 ! biological process phenotype
+created_by: siegele
+creation_date: 2017-05-29T16:35:44Z
+
+[Term]
+id: OMP:0007550
+name: altered population growth phenotype
+def: "A population growth phenotype where the rate, frequency, timing, or extent of the process of population growth is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007167 ! population growth phenotype
+is_a: OMP:0007549 ! altered biological process phenotype
+created_by: siegele
+creation_date: 2017-05-29T16:37:18Z
+
+[Term]
+id: OMP:0007551
+name: increased rate of haploid fruiting
+def: "An increased haploid fruiting phenotype where the rate of the process of haploid fruiting is increased relative to a designated control." [OMP:DAS]
+synonym: "increased rate of monokaryotic fruiting" EXACT []
+is_a: OMP:0007546 ! increased haploid fruiting
+created_by: siegele
+creation_date: 2017-05-29T17:45:32Z
+
+[Term]
+id: OMP:0007552
+name: decreased rate of haploid fruiting
+def: "A decreased haploid fruiting phenotype where the rate of the process of haploid fruiting is increased relative to a designated control." [OMP:DAS]
+synonym: "decreased rate of monokaryotic fruiting" EXACT []
+is_a: OMP:0007547 ! decreased haploid fruiting
+created_by: siegele
+creation_date: 2017-05-29T17:48:15Z
 
 [Term]
 id: OMP:0008000
