@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 30:05:2017 17:28
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 07:06:2017 16:59
+saved-by: dsiegele
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -3843,6 +3843,7 @@ id: OMP:0000336
 name: beta-lactam resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to compounds that contain a beta-lactam ring in their molecular structure." [CHEBI:35627, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "amoxicillin" NARROW []
 synonym: "ampicillin" NARROW [CHEBI:28971]
 synonym: "beta-lactam sensitivity phenotype" RELATED []
 synonym: "carbapenams" NARROW [CHEBI:64510]
