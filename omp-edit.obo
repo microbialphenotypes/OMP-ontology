@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 07:06:2017 16:59
-saved-by: dsiegele
+date: 14:06:2017 13:52
+saved-by: Tianyizhou
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -7849,11 +7849,14 @@ id: OMP:0006056
 name: aminoglycoside resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:47779, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "<new synonym>" RELATED []
+synonym: "Amikacin" NARROW [CHEBI:2673]
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
 synonym: "hygromycin B" NARROW [CHEBI:16976]
-synonym: "kanamycin" NARROW [CHEBI:CHEBI\:6104]
+synonym: "kanamycin" NARROW [CHEBI:6104]
 synonym: "neomycin" NARROW []
+synonym: "Spectinomycin" NARROW [CHEBI:32158]
 synonym: "streptomycin" NARROW []
 synonym: "tobramycin" NARROW []
 xref: CHEBI:47779 "aminoglycoside"
@@ -10456,6 +10459,9 @@ id: OMP:0007169
 name: antimicrobial peptide resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an antimicrobial peptide." [CHEBI:25903, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "Bacitracin" NARROW [CHEBI:28669]
+synonym: "Bleomycin" NARROW [CHEBI:22907]
+synonym: "Cecropin B" NARROW [CID:16741200]
 xref: CHEBI:25903 "peptide antibiotic"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
