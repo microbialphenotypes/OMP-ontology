@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 19:06:2017 13:58
+date: 19:06:2017 16:35
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -9074,7 +9074,9 @@ creation_date: 2014-08-07T18:35:51Z
 id: OMP:0007006
 name: cell population phenotype
 def: "A microbial phenotype where the phenotype is observed at the level of a population of cells." [OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This high-level term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested. Please consider using a more specific term to annotate each phenotype.
+subset: gocheck_do_not_annotate
+subset: gocheck_do_not_manually_annotate
 xref: CMPO:0000002 "cell population"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
@@ -13900,6 +13902,16 @@ name: clamp connection morphology phenotype
 is_a: OMP:0007556 ! hyphal morphology phenotype
 created_by: siegele
 creation_date: 2017-05-30T17:04:06Z
+
+[Term]
+id: OMP:0007560
+name: conidiation phenotype
+def: "An asexual sporulation phenotype relating to the formation of a conidium, which is a nonmotile spore formed by higher fungi; conidia are typically produced by conversion of hyphal elements, or are borne on sporogenous cells on or within specialized structures termed conidiophores." [FAO:0000024, GO:0048315, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0007142 ! asexual sporulation phenotype
+intersection_of: OMP:0000000 ! microbial phenotype
+created_by: dsiegele
+creation_date: 2017-06-19T15:29:04Z
 
 [Term]
 id: OMP:0008000
