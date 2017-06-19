@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 15:06:2017 16:00
-saved-by: Tianyizhou
+date: 19:06:2017 13:58
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -1617,11 +1617,11 @@ creation_date: 2011-06-06T02:39:55Z
 
 [Term]
 id: OMP:0000027
-name: flagellum phenotype
-def: "A cell projection phenotype where the structure in question is a long, threadlike structure borne either singly or in groups by a motile cell, which propels the cell." [OMP:MCC]
+name: flagellum morphology phenotype
+def: "A cell projection morphology phenotype relating to the size, shape, or appearance of flagella, which are threadlike structures borne either singly or in groups by a motile cell, which propel the cell." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "axial filament phenotype" NARROW []
-is_a: OMP:0000083 ! cell projection phenotype
+is_a: OMP:0000083 ! cell projection morphology phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:26:26Z
 
@@ -1638,7 +1638,7 @@ creation_date: 2011-04-26T03:29:28Z
 id: OMP:0000029
 name: presence of flagellum
 def: "A flagellum phenotype where the organism possesses a flagellum or flagella in at least some environments." [OMP:MCC]
-is_a: OMP:0000027 ! flagellum phenotype
+is_a: OMP:0000027 ! flagellum morphology phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:34Z
 
@@ -1647,7 +1647,7 @@ id: OMP:0000030
 name: absence of flagellum
 def: "A flagellum phenotype where the organism does not possess a flagellum or flagella." [OMP:MCC]
 synonym: "non-flagellated phenotype" RELATED []
-is_a: OMP:0000027 ! flagellum phenotype
+is_a: OMP:0000027 ! flagellum morphology phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:50Z
 
@@ -1664,7 +1664,7 @@ id: OMP:0000033
 name: absence of pilus
 def: "A pilus phenotype where an organism does not possess a pilus." [OMP:MCC]
 synonym: "fimbria absent" EXACT []
-is_a: OMP:0000084 ! pilus phenotype
+is_a: OMP:0000084 ! pilus morphology phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:01Z
 
@@ -1674,7 +1674,7 @@ name: presence of pilus
 def: "A pilus phenotype where an organism does possess a pilus in one or more growth conditions." [OMP:MCC]
 comment: Fimbria (plural, fimbriae) is a common synonym for pilus (plural, pili).
 synonym: "fimbria present" EXACT []
-is_a: OMP:0000084 ! pilus phenotype
+is_a: OMP:0000084 ! pilus morphology phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:22Z
 
@@ -2042,7 +2042,7 @@ creation_date: 2011-02-02T03:19:31Z
 id: OMP:0000078
 name: flagellum arrangement phenotype
 def: "A flagellum phenotype where the trait in question is the location of the flagellum on an organism." [OMP:MCC]
-is_a: OMP:0000027 ! flagellum phenotype
+is_a: OMP:0000027 ! flagellum morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:43:16Z
 
@@ -2081,9 +2081,9 @@ creation_date: 2011-02-02T03:46:44Z
 
 [Term]
 id: OMP:0000083
-name: cell projection phenotype
-def: "A cell morphology phenotype where the structure in question is a prolongation or process extending from a cell." [OMP:MCC]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+name: cell projection morphology phenotype
+def: "A cell morphology phenotype relating to the size, shape, or appearance of a structure that is a prolongation or process extending from a cell." [GO:0042995, OMP:MCC]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
 synonym: "cell appendage phenotype" EXACT []
 xref: GO:0042995 "cell projection"
 is_a: OMP:0000071 ! cell morphology phenotype
@@ -2094,10 +2094,10 @@ creation_date: 2011-02-02T03:47:44Z
 
 [Term]
 id: OMP:0000084
-name: pilus phenotype
+name: pilus morphology phenotype
 def: "A cell projection phenotype where the structure in question is a proteinaceous hair-like appendage on the surface of a microbial cell." [ISBN:9780073402406, OMP:MCC]
 synonym: "fimbria phenotype" EXACT [GO:0009289]
-is_a: OMP:0000083 ! cell projection phenotype
+is_a: OMP:0000083 ! cell projection morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:47:57Z
 
@@ -2900,7 +2900,7 @@ creation_date: 2011-02-02T03:13:59Z
 id: OMP:0000175
 name: nanotube phenotype
 def: "A cell projection phenotype where the structure in question is a tube." [OMP:DAS]
-is_a: OMP:0000083 ! cell projection phenotype
+is_a: OMP:0000083 ! cell projection morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T02:59:54Z
 
@@ -3843,16 +3843,15 @@ id: OMP:0000336
 name: beta-lactam resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to compounds that contain a beta-lactam ring in their molecular structure." [CHEBI:35627, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "<new synonym>" RELATED []
 synonym: "amoxicillin" NARROW []
 synonym: "ampicillin" NARROW [CHEBI:28971]
-synonym: "Aztreonam" NARROW [CHEBI:161680]
+synonym: "aztreonam" NARROW [CHEBI:161680]
 synonym: "beta-lactam sensitivity phenotype" RELATED []
 synonym: "carbapenams" NARROW [CHEBI:64510]
-synonym: "Carbenicillin" NARROW [CHEBI:3393]
+synonym: "carbenicillin" NARROW [CHEBI:3393]
 synonym: "cefoxitin" NARROW [CHEBI:209807]
-synonym: "Cefsulodin" NARROW [CHEBI:3507]
-synonym: "Ceftazidime" NARROW [CHEBI:3508]
+synonym: "cefsulodin" NARROW [CHEBI:3507]
+synonym: "ceftazidime" NARROW [CHEBI:3508]
 synonym: "cephalosporins" NARROW []
 synonym: "cephaloxporins" NARROW []
 synonym: "cephamycin" NARROW [CHEBI:55429]
@@ -7038,22 +7037,20 @@ creation_date: 2016-10-31T13:33:49Z
 id: OMP:0005343
 name: organic aromatic compound resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic aromatic compound." [OMP:JG]
-synonym: "Amoxicillin" NARROW [CHEBI:2676]
-synonym: "Ampicillin" NARROW [CHEBI:28971]
-synonym: "Benzalkonium" NARROW [CHEBI:3020]
+synonym: "benzalkonium" NARROW [CHEBI:3020]
 synonym: "benzalkonium chloride" NARROW [CHEBI:3020]
-synonym: "Bleomycin" NARROW [CHEBI:22907]
+synonym: "bleomycin" NARROW [CHEBI:22907]
 synonym: "Carbenicillin" NARROW [CHEBI:3393]
 synonym: "CCCP (Carbonyl cyanide 3-chlorophenylhydrazone)" NARROW [CHEBI:3259]
 synonym: "Cefaclor" NARROW [CHEBI:3478]
 synonym: "Cefoxitin" NARROW [CHEBI:209807]
-synonym: "Cefsulodin" NARROW [:<new dbxref>]
-synonym: "Chloramphenicol" NARROW [CHEBI:17698]
+synonym: "chloramphenicol" NARROW [CHEBI:17698]
 synonym: "Dibucaine" NARROW [CHEBI:247956]
 synonym: "Doxorubicin" NARROW [CHEBI:28748]
 synonym: "Doxycycline" NARROW [CHEBI:50845]
 synonym: "Epigallocatechin gallate (EGCG)" NARROW [:]
 synonym: "Epinephrine" NARROW [CHEBI:28918]
+synonym: "Irgasan" NARROW [CHEBI:164200]
 synonym: "Levofloxacin" NARROW [CHEBI:63598]
 synonym: "Minocycline" NARROW [CHEBI:50694]
 synonym: "Nalidixic acid" NARROW [CHEBI:100147]
@@ -7064,9 +7061,7 @@ synonym: "Procaine" NARROW [CHEBI:8430]
 synonym: "Propidium iodide" NARROW [CHEBI:51240]
 synonym: "Streptonigrin" NARROW [CHEBI:9287]
 synonym: "Sulfamethizole" NARROW [CHEBI:9331]
-synonym: "Tetracycline hydrochloride" NARROW [CHEBI:27902]
 synonym: "triclosan" NARROW [CHEBI:164200]
-synonym: "Triclosan/Irgasan" NARROW [CHEBI:164200]
 synonym: "Vancomycin" NARROW [CHEBI:28001]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: Jesus
@@ -7479,7 +7474,7 @@ creation_date: 2014-07-24T16:26:38Z
 id: OMP:0006010
 name: altered pilus phenotype
 def: "A pilus phenotype where the morphology, number, or location of a pilus is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0000084 ! pilus phenotype
+is_a: OMP:0000084 ! pilus morphology phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:28:24Z
 
@@ -7594,13 +7589,13 @@ id: OMP:0006023
 name: carbon source utilization phenotype
 def: "A nutrient utilization phenotype where the nutrient is being used as a source of carbon." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "Acetate" NARROW []
-synonym: "Glucosamine" NARROW [XX:<new dbxref>]
-synonym: "Glucose" NARROW []
-synonym: "Glycerol" NARROW []
-synonym: "Maltose" NARROW []
-synonym: "N-acetyl Glucosamine" NARROW []
-synonym: "Succinate " NARROW []
+synonym: "acetate" NARROW []
+synonym: "glucosamine" NARROW []
+synonym: "glucose" NARROW []
+synonym: "glycerol" NARROW []
+synonym: "maltose" NARROW []
+synonym: "N-acetyl glucosamine" NARROW []
+synonym: "succinate " NARROW []
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
@@ -9947,7 +9942,7 @@ creation_date: 2014-07-10T22:45:48Z
 id: OMP:0007105
 name: altered flagellum
 def: "A flagellum phenotype where the composition, structure, or number of flagella is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000027 ! flagellum phenotype
+is_a: OMP:0000027 ! flagellum morphology phenotype
 created_by: siegele
 creation_date: 2014-07-10T23:00:30Z
 
