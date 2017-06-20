@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 20:06:2017 16:45
+date: 20:06:2017 17:46
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -6214,7 +6214,7 @@ creation_date: 2016-06-23T14:42:45Z
 [Term]
 id: OMP:0005248
 name: presence of filamentous growth
-def: "A filamentous growth phenotype where a microorganism exhibits filamentous growth." [OMP:JG]
+def: "A filamentous growth phenotype where a microbe exhibits filamentous growth." [OMP:JG]
 is_a: OMP:0005243 ! filamentous growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T14:43:53Z
@@ -6222,7 +6222,7 @@ creation_date: 2016-06-23T14:43:53Z
 [Term]
 id: OMP:0005249
 name: absence of filamentous growth
-def: "A filamentous growth phenotype where a microorganism does not exhibit filamentous growth." [OMP:JG]
+def: "A filamentous growth phenotype where a microbe does not exhibit filamentous growth." [OMP:JG]
 is_a: OMP:0005243 ! filamentous growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T14:44:33Z
@@ -7040,27 +7040,27 @@ def: "An antimicrobial agent resistance phenotype related to resistance or sensi
 synonym: "benzalkonium" NARROW [CHEBI:3020]
 synonym: "benzalkonium chloride" NARROW [CHEBI:3020]
 synonym: "bleomycin" NARROW [CHEBI:22907]
-synonym: "Carbenicillin" NARROW [CHEBI:3393]
-synonym: "CCCP (Carbonyl cyanide 3-chlorophenylhydrazone)" NARROW [CHEBI:3259]
+synonym: "carbenicillin" NARROW [CHEBI:3393]
+synonym: "CCCP (carbonyl cyanide 3-chlorophenylhydrazone)" NARROW [CHEBI:3259]
 synonym: "Cefaclor" NARROW [CHEBI:3478]
-synonym: "Cefoxitin" NARROW [CHEBI:209807]
+synonym: "cefoxitin" NARROW [CHEBI:209807]
 synonym: "chloramphenicol" NARROW [CHEBI:17698]
-synonym: "Dibucaine" NARROW [CHEBI:247956]
-synonym: "Doxorubicin" NARROW [CHEBI:28748]
-synonym: "Doxycycline" NARROW [CHEBI:50845]
-synonym: "Epigallocatechin gallate (EGCG)" NARROW [:]
-synonym: "Epinephrine" NARROW [CHEBI:28918]
+synonym: "dibucaine" NARROW [CHEBI:247956]
+synonym: "doxorubicin" NARROW [CHEBI:28748]
+synonym: "doxycycline" NARROW [CHEBI:50845]
+synonym: "epigallocatechin gallate (EGCG)" NARROW [:]
+synonym: "epinephrine" NARROW [CHEBI:28918]
 synonym: "Irgasan" NARROW [CHEBI:164200]
-synonym: "Levofloxacin" NARROW [CHEBI:63598]
-synonym: "Minocycline" NARROW [CHEBI:50694]
-synonym: "Nalidixic acid" NARROW [CHEBI:100147]
-synonym: "Norepinephrine" NARROW [CHEBI:18357]
-synonym: "Oxacillin" NARROW [CHEBI:7809]
+synonym: "levofloxacin" NARROW [CHEBI:63598]
+synonym: "minocycline" NARROW [CHEBI:50694]
+synonym: "nalidixic acid" NARROW [CHEBI:100147]
+synonym: "norepinephrine" NARROW [CHEBI:18357]
+synonym: "oxacillin" NARROW [CHEBI:7809]
 synonym: "Polymyxin B" NARROW [CHEBI:8309]
-synonym: "Procaine" NARROW [CHEBI:8430]
+synonym: "procaine" NARROW [CHEBI:8430]
 synonym: "Propidium iodide" NARROW [CHEBI:51240]
 synonym: "Streptonigrin" NARROW [CHEBI:9287]
-synonym: "Sulfamethizole" NARROW [CHEBI:9331]
+synonym: "sulfamethizole" NARROW [CHEBI:9331]
 synonym: "triclosan" NARROW [CHEBI:164200]
 synonym: "Vancomycin" NARROW [CHEBI:28001]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
@@ -13883,7 +13883,7 @@ creation_date: 2017-05-30T16:03:57Z
 [Term]
 id: OMP:0007557
 name: filamentous growth of a multicellular organism phenotype
-def: "A filamentous growth phenotype in which a multicellular organism grows in a threadlike, filamentous shape." [GO:0044181, OMP:DAS]
+def: "A filamentous growth phenotype in which a multicellular microbe grows in a threadlike, filamentous shape." [GO:0044181, OMP:DAS]
 synonym: "hyphal growth phenotype" EXACT []
 is_a: OMP:0005243 ! filamentous growth phenotype
 created_by: siegele
@@ -13892,6 +13892,7 @@ creation_date: 2017-05-30T16:34:41Z
 [Term]
 id: OMP:0007558
 name: clamp cell formation phenotype
+def: "A xxx phenotype relating to the formation of clamp cells, which are hook-shaped cells found at the septa of dikaryotic hyphae. Clamp cells develop from the most apical cells (tip cells) of the dikaryotic hyphae." [OMP:DAS, PMID:15162390]
 is_a: OMP:0007557 ! filamentous growth of a multicellular organism phenotype
 created_by: siegele
 creation_date: 2017-05-30T16:44:54Z
@@ -13909,7 +13910,6 @@ name: conidiation phenotype
 def: "An asexual sporulation phenotype relating to the formation of a conidium, which is a nonmotile spore formed by higher fungi; conidia are typically produced by conversion of hyphal elements, or are borne on sporogenous cells on or within specialized structures termed conidiophores." [FAO:0000024, GO:0048315, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007142 ! asexual sporulation phenotype
-intersection_of: OMP:0000000 ! microbial phenotype
 created_by: dsiegele
 creation_date: 2017-06-19T15:29:04Z
 
