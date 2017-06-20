@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 19:06:2017 16:35
+date: 20:06:2017 16:45
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -11935,7 +11935,7 @@ creation_date: 2016-05-26T23:29:02Z
 [Term]
 id: OMP:0007332
 name: cellular process phenotype
-def: "A biological process phenotype that affects a cellular process." [OMP:DAS]
+def: "A biological process phenotype that affects a cellular process, which is any biological process that is carried out at the cellular level, but not necessarily restricted to a single cell." [GO:0009987, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: FYPO:0000114 "cellular process phenotype"
 is_a: OMP:0007194 ! biological process phenotype
@@ -13912,6 +13912,71 @@ is_a: OMP:0007142 ! asexual sporulation phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 created_by: dsiegele
 creation_date: 2017-06-19T15:29:04Z
+
+[Term]
+id: OMP:0007561
+name: meiotic nuclear division phenotype
+def: "A cellular process phenotype related to one or both of the nuclear divisions that occur as part of the meiotic cell cycle." [GO:0140013, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+synonym: "abnormal meiosis" RELATED [FYPO:0000051]
+synonym: "normal meiosis" NARROW [FYPO:0000478]
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: dsiegele
+creation_date: 2017-06-20T15:55:03Z
+
+[Term]
+id: OMP:0007562
+name: presence of meiotic nuclear division
+def: "A meiotic nuclear division phenotype in which both the first and second meiotic nuclear divisions occur." [GO:00140013, OMP:DAS]
+xref: FYPO:0000478 "normal meiosis"
+is_a: OMP:0007561 ! meiotic nuclear division phenotype
+created_by: dsiegele
+creation_date: 2017-06-20T16:09:31Z
+
+[Term]
+id: OMP:0007563
+name: absence of meiotic nuclear division
+def: "A meiotic nuclear division phenotype in which both the first and second meiotic nuclear divisions are absent." [OMP:DAS]
+is_a: OMP:0007561 ! meiotic nuclear division phenotype
+created_by: dsiegele
+creation_date: 2017-06-20T16:09:31Z
+
+[Term]
+id: OMP:0007564
+name: altered meiotic nuclear division
+def: "A meiotic nuclear division phenotype where one or both of the meiotic nuclear divisons is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007342 ! altered cellular process
+is_a: OMP:0007561 ! meiotic nuclear division phenotype
+created_by: dsiegele
+creation_date: 2017-06-20T16:09:31Z
+
+[Term]
+id: OMP:0007565
+name: abolished meiotic nuclear division
+def: "An altered meiotic nuclear division phenotype in which one or both meiotic nuclear divisions is abolished." [FYPO:0000474, OMP:DAS]
+xref: FYPO:0000474 "abolished meiosis"
+is_a: OMP:0007563 ! absence of meiotic nuclear division
+is_a: OMP:0007564 ! altered meiotic nuclear division
+created_by: dsiegele
+creation_date: 2017-06-20T16:12:11Z
+
+[Term]
+id: OMP:0007566
+name: abolished meiosis I
+def: "An abolished meiotic nuclear division phenotype in which the first meiotic nuclear division, in which homologous chromosomes are normally paired and segregated from each other, does not occur." [GO:0007127, OMP:DAS]
+xref: FYPO:0003378 "abolished meiosis I"
+is_a: OMP:0007565 ! abolished meiotic nuclear division
+created_by: dsiegele
+creation_date: 2017-06-20T16:18:05Z
+
+[Term]
+id: OMP:0007567
+name: abolished meiosis II
+def: "An abolished meiotic nuclear division phenotype in which the second meiotic nuclear division, in which two chromatids in each chromosome are normally separated, does not occur." [GO:0007135, OMP:DAS]
+xref: FYPO:0003379 "abolished meiosis II"
+is_a: OMP:0007565 ! abolished meiotic nuclear division
+created_by: dsiegele
+creation_date: 2017-06-20T16:18:05Z
 
 [Term]
 id: OMP:0008000
