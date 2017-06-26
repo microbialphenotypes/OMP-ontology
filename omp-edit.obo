@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 25:06:2017 20:31
+date: 25:06:2017 22:34
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -7309,7 +7309,7 @@ id: OMP:0005373
 name: sporulation frequency phenotype
 def: "A cell population phenotype relating to the fraction of cells in a population that form spores under sporulation-inducing conditions." [OMP:JG]
 is_a: OMP:0000091 ! sporulation phenotype
-is_a: OMP:0007006 ! cell population phenotype
+is_a: OMP:0007006 ! population phenotype
 created_by: Jesus
 creation_date: 2016-12-20T13:17:56Z
 
@@ -9072,12 +9072,12 @@ creation_date: 2014-08-07T18:35:51Z
 
 [Term]
 id: OMP:0007006
-name: cell population phenotype
-def: "A microbial phenotype where the phenotype is observed at the level of a population of cells." [OMP:DAS]
+name: population phenotype
+def: "A microbial phenotype where the phenotype is observed at the level of a microbial population." [OMP:DAS]
 comment: This high-level term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested. Please consider using a more specific term to annotate each phenotype.
 subset: gocheck_do_not_annotate
 subset: gocheck_do_not_manually_annotate
-xref: CMPO:0000002 "cell population"
+xref: OBI:0000181 "population"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-07-21T10:25:43Z
@@ -10514,7 +10514,7 @@ id: OMP:0007167
 name: population growth phenotype
 def: "A microbial phenotype where the trait in question is the increase in the number of individuals in a population as the result of sexual or asexual reproduction." [OMP:DAS]
 xref: GO:0000003 "reproduction"
-is_a: OMP:0007006 ! cell population phenotype
+is_a: OMP:0007006 ! population phenotype
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0000003 ! reproduction
@@ -13007,9 +13007,9 @@ creation_date: 2016-08-08T15:17:42Z
 
 [Term]
 id: OMP:0007456
-name: cell population viability phenotype
-def: "A cell population phenotype relating to the proportion of a population that are viable under the specified conditions. Viability refers to the ability of a microbe, cell, or cells to survive, grow, and reproduce." [FYPO:0002057, OMP:DAS]
-is_a: OMP:0007006 ! cell population phenotype
+name: population viability phenotype
+def: "A population phenotype relating to the proportion of a population that is viable under the specified conditions. Viability refers to the ability of a microbe to survive, grow, and reproduce." [FYPO:0002057, OMP:DAS]
+is_a: OMP:0007006 ! population phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:51:48Z
 
@@ -13018,7 +13018,7 @@ id: OMP:0007457
 name: viable cell population
 def: "A cell population viability phenotype where all, or almost all, of the cells are viable under the specified conditions." [OMP:DAS]
 xref: FYPO:0002058 "viable cell population"
-is_a: OMP:0007456 ! cell population viability phenotype
+is_a: OMP:0007456 ! population viability phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:56:12Z
 
@@ -13028,7 +13028,7 @@ name: nonviable cell population
 def: "A cell population viability phenotype where all, or almost all, of the cells are nonviable under the specified conditions." [FYPO:0002059, OMP:DAS]
 synonym: "inviable cell population" EXACT []
 xref: FYPO:0002059 "inviable cell population"
-is_a: OMP:0007456 ! cell population viability phenotype
+is_a: OMP:0007456 ! population viability phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:56:12Z
 
@@ -13036,7 +13036,7 @@ creation_date: 2016-08-10T14:56:12Z
 id: OMP:0007459
 name: altered cell population viability
 def: "A cell population viability phenotype where the proportion of cells that are viable under the specified conditions is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007456 ! cell population viability phenotype
+is_a: OMP:0007456 ! population viability phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:56:12Z
 
@@ -14086,6 +14086,8 @@ creation_date: 2017-06-25T18:42:01Z
 id: OMP:0007580
 name: presence of resistance to cold
 def: "A resistance to cold phenotype where microbes in a population continue to grow and divide when exposed to a temperature below the optimal growth temperature of the microbe." [OMP:DAS]
+synonym: "cold resistant" EXACT []
+synonym: "resistant to low temperature" EXACT []
 is_a: OMP:0007578 ! resistance to cold phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:48:47Z
@@ -14094,6 +14096,8 @@ creation_date: 2017-06-25T18:48:47Z
 id: OMP:0007581
 name: absence of resistance to cold
 def: "A resistance to cold phenotype where microbes in a population stop growing (and may die) when exposed to a temperature below the optimal growth temperature of the microbe." [OMP:DAS]
+synonym: "cold sensitive" EXACT [YPO:0000148]
+synonym: "cold sensitivity" EXACT [APO:0000148]
 is_a: OMP:0007578 ! resistance to cold phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:48:47Z
@@ -14122,6 +14126,7 @@ creation_date: 2017-06-25T18:54:38Z
 id: OMP:0007584
 name: absence of resistance to heat
 def: "A resistance to heat phenotype where cells in a population stop growing (and may die) when exposed to a temperature above the optimal growth temperature of the microbe." [OMP:DAS]
+synonym: "heat sensitivity" EXACT [APO:0000147]
 is_a: OMP:0007579 ! resistance to heat phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:54:39Z
@@ -14142,6 +14147,54 @@ def: "A resistance to chemical stress phenotype where the resistance or sensitiv
 is_a: OMP:0007577 ! resistance to chemical stress phenotype
 created_by: siegele
 creation_date: 2017-06-25T19:35:57Z
+
+[Term]
+id: OMP:0007587
+name: increased resistance to cold
+def: "An altered resistance to cold phenotype where the resistance of microbes in a population to temperatures below the optimal growth temperature is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007582 ! altered resistance to cold
+created_by: siegele
+creation_date: 2017-06-25T22:21:53Z
+
+[Term]
+id: OMP:0007588
+name: decreased resistance to cold
+def: "An altered resistance to cold phenotype where the resistance of microbes in a population to temperatures below the optimal growth temperature is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007582 ! altered resistance to cold
+created_by: siegele
+creation_date: 2017-06-25T22:21:53Z
+
+[Term]
+id: OMP:0007589
+name: abolished resistance to cold
+def: "A decreased resistance to cold phenotype where the resistance of microbes in a population to temperature below the optimal growth temperature is abolished." [OMP:DAS]
+is_a: OMP:0007588 ! decreased resistance to cold
+created_by: siegele
+creation_date: 2017-06-25T22:21:53Z
+
+[Term]
+id: OMP:0007590
+name: increased resistance to heat
+def: "An altered resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007585 ! altered resistance to heat
+created_by: siegele
+creation_date: 2017-06-25T22:26:03Z
+
+[Term]
+id: OMP:0007591
+name: decreased resistance to heat
+def: "An altered resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007585 ! altered resistance to heat
+created_by: siegele
+creation_date: 2017-06-25T22:26:03Z
+
+[Term]
+id: OMP:0007592
+name: abolished resistance to heat
+def: "A decreased resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is abolished." [OMP:DAS]
+is_a: OMP:0007591 ! decreased resistance to heat
+created_by: siegele
+creation_date: 2017-06-25T22:26:03Z
 
 [Term]
 id: OMP:0008000
