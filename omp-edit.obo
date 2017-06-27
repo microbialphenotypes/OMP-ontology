@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:06:2017 00:54
+date: 27:06:2017 13:21
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -10307,7 +10307,7 @@ id: OMP:0007144
 name: altered asexual reproduction
 def: "An asexual reproduction phenotype where the rate, frequency, timing, or extent of  asexual reproduction is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007066 ! asexual reproduction phenotype
-is_a: OMP:0007550 ! altered population growth phenotype
+is_a: OMP:0007157 ! altered population growth
 created_by: siegele
 creation_date: 2014-08-18T17:22:42Z
 
@@ -10418,7 +10418,7 @@ creation_date: 2014-08-28T12:14:20Z
 [Term]
 id: OMP:0007157
 name: altered population growth
-def: "A population growth phenotype where reproduction of a microbial population is altered relative to a designated control." [OMP:DAS]
+def: "A population growth phenotype where the rate, frequency, timing, or extent of reproduction of a microbial population is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007167 ! population growth phenotype
 is_a: OMP:0007351 ! altered biological process
 created_by: siegele
@@ -10513,7 +10513,7 @@ creation_date: 2014-09-14T15:36:38Z
 [Term]
 id: OMP:0007167
 name: population growth phenotype
-def: "A microbial phenotype where the trait in question is the increase in the number of individuals in a population as the result of sexual or asexual reproduction." [OMP:DAS]
+def: "A microbial phenotype where the trait in question is the increase in the number of individuals in a microbial population as the result of sexual or asexual reproduction." [OMP:DAS]
 xref: GO:0000003 "reproduction"
 is_a: OMP:0007006 ! population phenotype
 is_a: OMP:0007194 ! biological process phenotype
@@ -13824,10 +13824,10 @@ creation_date: 2017-05-29T16:35:44Z
 
 [Term]
 id: OMP:0007550
-name: altered population growth phenotype
-def: "A population growth phenotype where the rate, frequency, timing, or extent of the process of population growth is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007167 ! population growth phenotype
-is_a: OMP:0007549 ! altered biological process phenotype
+name: altered population growth - duplicate term
+def: "DO NOT USE. This is a duplicate of OMP:0007157, which is the correct term to use for annotations." [OMP:DAS]
+is_obsolete: true
+replaced_by: OMP:0007157
 created_by: siegele
 creation_date: 2017-05-29T16:37:18Z
 
@@ -14128,7 +14128,6 @@ creation_date: 2017-06-25T18:54:38Z
 id: OMP:0007584
 name: absence of resistance to heat
 def: "A resistance to heat phenotype where cells in a population stop growing (and may die) when exposed to a temperature above the optimal growth temperature of the microbe." [OMP:DAS]
-synonym: "heat sensitivity" EXACT [APO:0000147]
 synonym: "sensitive to high temperature" EXACT []
 is_a: OMP:0007579 ! resistance to heat phenotype
 created_by: siegele
@@ -14221,6 +14220,46 @@ is_a: OMP:0007572 ! altered resistance to stress
 is_a: OMP:0007576 ! resistance to radiation stress phenotype
 created_by: siegele
 creation_date: 2017-06-26T20:24:54Z
+
+[Term]
+id: OMP:0007595
+name: presence of population growth
+def: "A population growth phenotype where there is reproduction of a microbial population, i.e. the number of individuals in the population increases." [OMP:DAS]
+is_a: OMP:0007167 ! population growth phenotype
+created_by: siegele
+creation_date: 2017-06-27T12:19:09Z
+
+[Term]
+id: OMP:0007596
+name: absence of population growth
+def: "A population growth phenotype where the number of individuals in a microbial population does not increase." [OMP:DAS]
+is_a: OMP:0007167 ! population growth phenotype
+created_by: siegele
+creation_date: 2017-06-27T12:19:09Z
+
+[Term]
+id: OMP:0007597
+name: increased population growth
+def: "An altered population growth phenotype where the rate, frequency, timing, or extent of reproduction of a microbial population is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007157 ! altered population growth
+created_by: siegele
+creation_date: 2017-06-27T12:40:34Z
+
+[Term]
+id: OMP:0007598
+name: decreased population growth
+def: "An altered population growth phenotype where the rate, frequency, timing, or extent of reproduction of a microbial population is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007157 ! altered population growth
+created_by: siegele
+creation_date: 2017-06-27T12:40:34Z
+
+[Term]
+id: OMP:0007599
+name: abolished population growth
+def: "A decreased population growth phenotype where reproduction of a microbial population is abolished." [OMP:DAS]
+is_a: OMP:0007598 ! decreased population growth
+created_by: siegele
+creation_date: 2017-06-27T12:40:34Z
 
 [Term]
 id: OMP:0008000
