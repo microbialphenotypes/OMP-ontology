@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:06:2017 13:21
+date: 27:06:2017 17:55
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -4482,10 +4482,11 @@ creation_date: 2013-10-18T18:38:43Z
 [Term]
 id: OMP:0005047
 name: chromosome segregation phenotype
-def: "A genetic material phenotype concerning the process in which replicated chromosomes are physically separated and apportioned as sets to daughter cells." [GO:0007059, OMP:WAM]
+def: "A genetic material phenotype concerning the process in which replicated chromosome(s) are physically separated and apportioned as a set to daughter cells." [GO:0007059, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:\:0007059 "chromosome segregation"
 is_a: OMP:0000290 ! genetic material phenotype
+is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0007059 ! chromosome segregation
 created_by: wmeza
@@ -4596,19 +4597,18 @@ creation_date: 2013-10-30T18:35:34Z
 
 [Term]
 id: OMP:0005060
-name: increased frequency of chromosome segregation
-def: "A chromosome segregation phenotype where chromosome segregation is increased relative to a designated control." [OMP:WAM]
+name: decreased frequency of chromosome missegregation
+def: "An altered chromosome segregation phenotype where the frequency of chromosome missegregation is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006001 ! altered chromosome segregation
 created_by: wmeza
 creation_date: 2013-11-04T18:09:09Z
 
 [Term]
 id: OMP:0005061
-name: decreased frequency of chromosome segregation
-def: "An altered chromosome segregation phenotype where the occurrence of chromosome segregation is decreased relative to a designated control." [OMP:WAM]
+name: increased frequency of chromosome missegregation
+def: "An altered chromosome segregation phenotype where the frequency of chromosome missegregation is increased relative to a designated control." [OMP:WAM]
+synonym: "increased aneuploidy" NARROW []
 is_a: OMP:0006001 ! altered chromosome segregation
-intersection_of: OMP:0006001 ! altered chromosome segregation
-intersection_of: has_quality PATO:0002302 ! decreased process quality
 created_by: wmeza
 creation_date: 2013-11-04T18:09:38Z
 
@@ -7396,6 +7396,7 @@ id: OMP:0006001
 name: altered chromosome segregation
 def: "A chromosome segregation phenotype where the frequency, rate, timing, or extent of chromosome segregation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005047 ! chromosome segregation phenotype
+is_a: OMP:0007351 ! altered biological process
 intersection_of: OMP:0005047 ! chromosome segregation phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: jonathanherrera
@@ -8417,8 +8418,9 @@ creation_date: 2014-07-25T12:21:50Z
 [Term]
 id: OMP:0006111
 name: abolished chromosome segregation
-def: "A decreased frequency of chromosome segregation phenotype where the ability to segregate chromosomes is abolished." [OMP:JCH]
-is_a: OMP:0005061 ! decreased frequency of chromosome segregation
+def: "A altered chromosome segregation phenotype where the ability to partition a set of chromosomes to daughter cells is abolished." [OMP:JCH]
+is_a: OMP:0006001 ! altered chromosome segregation
+is_a: OMP:0007601 ! absence of chromosome segregation
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:24:27Z
 
@@ -12109,7 +12111,8 @@ creation_date: 2016-06-09T22:48:16Z
 [Term]
 id: OMP:0007351
 name: altered biological process
-def: "A biological process phenotype where a biological process is altered relative to a designated control." [OMP:DAS]
+def: "A biological process phenotype where the rate, frequency, timing, or extent of a biological process is altered relative to a designated control." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
@@ -13816,9 +13819,9 @@ creation_date: 2017-05-29T16:27:37Z
 [Term]
 id: OMP:0007549
 name: altered biological process phenotype
-def: "A biological process phenotype where the rate, frequency, timing, or extent of a biological process is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered microbial phenotype
-is_a: OMP:0007194 ! biological process phenotype
+def: "This term was made obsolete because it is a duplicate of OMP:0007351." [OMP:DAS]
+is_obsolete: true
+replaced_by: OMP:0007351
 created_by: siegele
 creation_date: 2017-05-29T16:35:44Z
 
@@ -14260,6 +14263,22 @@ def: "A decreased population growth phenotype where reproduction of a microbial 
 is_a: OMP:0007598 ! decreased population growth
 created_by: siegele
 creation_date: 2017-06-27T12:40:34Z
+
+[Term]
+id: OMP:0007600
+name: presence of chromosome segregation
+def: "A chromosome segregation phenotype where replicated chromosome(s) are physically separated and apportioned as a set to daughter cells." [OMP:DAS]
+is_a: OMP:0005047 ! chromosome segregation phenotype
+created_by: siegele
+creation_date: 2017-06-27T17:34:40Z
+
+[Term]
+id: OMP:0007601
+name: absence of chromosome segregation
+def: "A chromosome segregation phenotype where replicated chromosome(s) are not apportioned as a set to daughter cells." [OMP:DAS]
+is_a: OMP:0005047 ! chromosome segregation phenotype
+created_by: siegele
+creation_date: 2017-06-27T17:34:40Z
 
 [Term]
 id: OMP:0008000
