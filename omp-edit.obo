@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 26:06:2017 17:20
+date: 27:06:2017 00:41
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -5103,7 +5103,6 @@ creation_date: 2014-07-08T17:55:17Z
 id: OMP:0005118
 name: altered resistance to acidic pH stress phenotype
 def: "A resistance to acidic pH stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to acidic pH is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0007158 ! altered response to stress phenotype
 is_a: OMP:0007572 ! altered resistance to stress
 is_a: OMP:0007573 ! resistance to acidic pH stress phenotype
 created_by: wmeza
@@ -5113,7 +5112,6 @@ creation_date: 2014-07-11T12:55:53Z
 id: OMP:0005119
 name: altered resistance to alkaline pH stress phenotype
 def: "A resistance to alkaline pH stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to alkaline pH stress is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0007158 ! altered response to stress phenotype
 is_a: OMP:0007572 ! altered resistance to stress
 is_a: OMP:0007574 ! resistance to alkaline pH stress phenotype
 created_by: wmeza
@@ -5123,7 +5121,7 @@ creation_date: 2014-07-11T12:58:56Z
 id: OMP:0005120
 name: altered resistance to dessication stress phenotype
 def: "A resistance to dessication stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to dessication stress is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0007158 ! altered response to stress phenotype
+is_a: OMP:0007572 ! altered resistance to stress
 is_a: OMP:0007575 ! resistance to dessication stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:59:47Z
@@ -5132,7 +5130,7 @@ creation_date: 2014-07-11T12:59:47Z
 id: OMP:0005121
 name: altered resistance to freeze/thaw stress
 def: "A resistance to freeze/thawing stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to cycles of freezing and thawing is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0007158 ! altered response to stress phenotype
+is_a: OMP:0007572 ! altered resistance to stress
 is_a: OMP:0007593 ! resistance to freeze-thaw stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T13:00:23Z
@@ -5151,6 +5149,7 @@ id: OMP:0005123
 name: altered resistance to gamma-ray radiation
 def: "A resistance to gamma-ray radiation phenotype where the resistance or sensitivity that microbes in a population show when exposed to gamma-ray radiation is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005085 ! resistance to gamma-ray radiation phenotype
+is_a: OMP:0007594 ! altered resistance to radiation stress
 created_by: wmeza
 creation_date: 2014-07-11T13:16:15Z
 
@@ -5159,6 +5158,7 @@ id: OMP:0005124
 name: altered resistance to x-ray radiation
 def: "A resistance to x-ray radiation phenotype where the resistance or sensitivity that microbes in a population show when exposed to x-rays is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005086 ! resistance to x-ray radiation
+is_a: OMP:0007594 ! altered resistance to radiation stress
 created_by: wmeza
 creation_date: 2014-07-11T13:16:47Z
 
@@ -5167,6 +5167,7 @@ id: OMP:0005125
 name: altered UV-radiation resistance
 def: "A UV-radiation resistance phenotype where the resistance or sensitivity that microbes in a population show when exposed to UV radiation is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0005084 ! resistance to UV radiation phenotype
+is_a: OMP:0007594 ! altered resistance to radiation stress
 intersection_of: OMP:0005084 ! resistance to UV radiation phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: wmeza
@@ -5185,6 +5186,7 @@ id: OMP:0005127
 name: abolished resistance to acidic pH stress
 def: "A decreased resistance to acidic pH stress phenotype where resistance of microbes in a population to acidic pH is abolished." [OMP:WAM]
 is_a: OMP:0005077 ! decreased resistance to acidic pH stress
+is_a: OMP:0007584 ! absence of resistance to heat
 created_by: wmeza
 creation_date: 2014-07-15T16:46:17Z
 
@@ -10426,7 +10428,7 @@ creation_date: 2014-08-28T12:15:47Z
 [Term]
 id: OMP:0007158
 name: altered response to stress phenotype
-def: "A stress response phenotype where the response of a microbe to stress is altered relative to a designated control." [OMP:DAS]
+def: "A response to stress response phenotype where the change in state or activity of a microbe (in terms of movement, secretion, enzyme production, gene expression, etc.) that occurs as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation) is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000173 ! response to stress phenotype
 is_a: OMP:0007157 ! altered population growth
@@ -14117,8 +14119,8 @@ creation_date: 2017-06-25T18:48:47Z
 id: OMP:0007583
 name: presence of resistance to heat
 def: "A resistance to heat phenotype where cells in a population continue to grow and divide when exposed to a temperature above the optimal growth temperature of the microbe." [OMP:DAS]
-synonym: "heat resistance" EXACT []
-synonym: "resistance to high temperature" EXACT []
+synonym: "heat resistant" EXACT []
+synonym: "resistant to high temperature" EXACT []
 is_a: OMP:0007579 ! resistance to heat phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:54:38Z
@@ -14128,6 +14130,7 @@ id: OMP:0007584
 name: absence of resistance to heat
 def: "A resistance to heat phenotype where cells in a population stop growing (and may die) when exposed to a temperature above the optimal growth temperature of the microbe." [OMP:DAS]
 synonym: "heat sensitivity" EXACT [APO:0000147]
+synonym: "sensitive to high temperature" RELATED []
 is_a: OMP:0007579 ! resistance to heat phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:54:39Z
@@ -14145,6 +14148,7 @@ creation_date: 2017-06-25T18:54:39Z
 id: OMP:0007586
 name: altered resistance to chemical stress
 def: "A resistance to chemical stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to a chemical stress is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007572 ! altered resistance to stress
 is_a: OMP:0007577 ! resistance to chemical stress phenotype
 created_by: siegele
 creation_date: 2017-06-25T19:35:57Z
@@ -14169,6 +14173,7 @@ creation_date: 2017-06-25T22:21:53Z
 id: OMP:0007589
 name: abolished resistance to cold
 def: "A decreased resistance to cold phenotype where the resistance of microbes in a population to temperature below the optimal growth temperature is abolished." [OMP:DAS]
+is_a: OMP:0007581 ! absence of resistance to cold
 is_a: OMP:0007588 ! decreased resistance to cold
 created_by: siegele
 creation_date: 2017-06-25T22:21:53Z
@@ -14177,6 +14182,7 @@ creation_date: 2017-06-25T22:21:53Z
 id: OMP:0007590
 name: increased resistance to heat
 def: "An altered resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is increased relative to a designated control." [OMP:DAS]
+xref: FYPO:0002626 "resistance to heat"
 is_a: OMP:0007585 ! altered resistance to heat
 created_by: siegele
 creation_date: 2017-06-25T22:26:03Z
@@ -14204,6 +14210,15 @@ def: "A resistance to stress phenotype related to the resistance or sensitivity 
 is_a: OMP:0007568 ! resistance to stress phenotype
 created_by: siegele
 creation_date: 2017-06-26T17:11:33Z
+
+[Term]
+id: OMP:0007594
+name: altered resistance to radiation stress
+def: "A resistance to radiation stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to radiation stress is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007572 ! altered resistance to stress
+is_a: OMP:0007576 ! resistance to radiation stress phenotype
+created_by: siegele
+creation_date: 2017-06-26T20:24:54Z
 
 [Term]
 id: OMP:0008000
