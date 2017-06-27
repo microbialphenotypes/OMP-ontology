@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:06:2017 00:41
+date: 27:06:2017 00:54
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -5186,7 +5186,6 @@ id: OMP:0005127
 name: abolished resistance to acidic pH stress
 def: "A decreased resistance to acidic pH stress phenotype where resistance of microbes in a population to acidic pH is abolished." [OMP:WAM]
 is_a: OMP:0005077 ! decreased resistance to acidic pH stress
-is_a: OMP:0007584 ! absence of resistance to heat
 created_by: wmeza
 creation_date: 2014-07-15T16:46:17Z
 
@@ -14130,7 +14129,7 @@ id: OMP:0007584
 name: absence of resistance to heat
 def: "A resistance to heat phenotype where cells in a population stop growing (and may die) when exposed to a temperature above the optimal growth temperature of the microbe." [OMP:DAS]
 synonym: "heat sensitivity" EXACT [APO:0000147]
-synonym: "sensitive to high temperature" RELATED []
+synonym: "sensitive to high temperature" EXACT []
 is_a: OMP:0007579 ! resistance to heat phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:54:39Z
@@ -14199,6 +14198,9 @@ creation_date: 2017-06-25T22:26:03Z
 id: OMP:0007592
 name: abolished resistance to heat
 def: "A decreased resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is abolished." [OMP:DAS]
+synonym: "heat sensitive" EXACT []
+synonym: "heat sensitivity" EXACT [APO:00000147]
+is_a: OMP:0007584 ! absence of resistance to heat
 is_a: OMP:0007591 ! decreased resistance to heat
 created_by: siegele
 creation_date: 2017-06-25T22:26:03Z
