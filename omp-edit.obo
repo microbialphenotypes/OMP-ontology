@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:06:2017 17:55
+date: 27:06:2017 22:04
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -14279,6 +14279,126 @@ def: "A chromosome segregation phenotype where replicated chromosome(s) are not 
 is_a: OMP:0005047 ! chromosome segregation phenotype
 created_by: siegele
 creation_date: 2017-06-27T17:34:40Z
+
+[Term]
+id: OMP:0007602
+name: DNA break phenotype
+def: "A genetic material phenotype related to the occurrence of DNA breaks in chromosomal DNA." [OMP:DAS]
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: siegele
+creation_date: 2017-06-27T21:46:34Z
+
+[Term]
+id: OMP:0007603
+name: presence of DNA breaks
+def: "A DNA break phenotype where breaks in chromosomal DNA occur." [OMP:DAS]
+is_a: OMP:0007602 ! DNA break phenotype
+created_by: siegele
+creation_date: 2017-06-27T21:49:30Z
+
+[Term]
+id: OMP:0007604
+name: absence of DNA breaks
+def: "A DNA break phenotype where breaks in chromosomal DNA don't occur." [OMP:DAS]
+is_a: OMP:0007602 ! DNA break phenotype
+created_by: siegele
+creation_date: 2017-06-27T21:49:30Z
+
+[Term]
+id: OMP:0007605
+name: altered frequency of DNA breaks
+def: "A DNA break phenotype where the frequency of breaks in chromosomal DNA is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007602 ! DNA break phenotype
+created_by: siegele
+creation_date: 2017-06-27T21:49:30Z
+
+[Term]
+id: OMP:0007606
+name: increased frequency of DNA breaks
+def: "An altered frequency of DNA breaks phenotype where the frequency of breaks in chromosomal DNA is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007605 ! altered frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:52:51Z
+
+[Term]
+id: OMP:0007607
+name: decreased frequency of DNA breaks
+def: "An altered frequency of DNA breaks phenotype where the frequency of breaks in chromosomal DNA is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007605 ! altered frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:52:51Z
+
+[Term]
+id: OMP:0007608
+name: abolished DNA breaks
+def: "A decreased frequency of DNA breaks phenotype where DNA breaks are abolished." [OMP:DAS]
+is_a: OMP:0007607 ! decreased frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:52:51Z
+
+[Term]
+id: OMP:0007609
+name: presence of single-strand DNA breaks
+def: "A presence of DNA break phenotype where single-strand breaks in chromosomal DNA occur." [OMP:DAS]
+is_a: OMP:0007603 ! presence of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:53:37Z
+
+[Term]
+id: OMP:0007610
+name: presence of double-strand DNA breaks
+def: "A presence of DNA break phenotype where double-strand breaks in chromosomal DNA occur." [OMP:DAS]
+is_a: OMP:0007603 ! presence of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:53:37Z
+
+[Term]
+id: OMP:0007611
+name: absence of single-strand DNA breaks
+def: "An absence of DNA breaks phenotype where single-strand DNA breaks  don't occur." [OMP:DAS]
+is_a: OMP:0007604 ! absence of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:54:07Z
+
+[Term]
+id: OMP:0007612
+name: absence of double-strand DNA breaks
+def: "An absence of DNA breaks phenotype where double-strand DNA breaks don't occur." [OMP:DAS]
+is_a: OMP:0007604 ! absence of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:54:07Z
+
+[Term]
+id: OMP:0007613
+name: increased frequency of single-strand DNA breaks
+def: "An increased frequency of DNA breaks phenotype where the frequency of single-strand breaks in chromosomal DNA is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007606 ! increased frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:54:53Z
+
+[Term]
+id: OMP:0007614
+name: increased frequency of double-strand DNA breaks
+def: "An increased frequency of DNA breaks phenotype where the frequency of double-strand breaks in chromosomal DNA is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007606 ! increased frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:54:53Z
+
+[Term]
+id: OMP:0007615
+name: decreased frequency of single-strand DNA breaks
+def: "A decreased frequency of DNA breaks phenotype where the frequency of single-strand breaks in chromosomal DNA is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007607 ! decreased frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:55:25Z
+
+[Term]
+id: OMP:0007616
+name: decreased frequency of double-strand DNA breaks
+def: "A decreased frequency of DNA breaks phenotype where the frequency of double-strand breaks in chromosomal DNA is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007607 ! decreased frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:55:25Z
 
 [Term]
 id: OMP:0008000
