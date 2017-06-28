@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:06:2017 22:04
+date: 28:06:2017 14:00
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3640,9 +3640,9 @@ id: OMP:0000290
 name: genetic material phenotype
 def: "A microbial phenotype dealing with the various aspects of the molecular carrier of an organism's primary genetic information." [ISBN:9780198529170, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "double stranded DNA" RELATED [ISBN:9780198529170]
-synonym: "RNA" RELATED [ISBN:9780198529170]
-synonym: "single stranded DNA" RELATED [ISBN:9780198529170]
+synonym: "double stranded DNA" NARROW [ISBN:9780198529170]
+synonym: "RNA" NARROW [ISBN:9780198529170]
+synonym: "single stranded DNA" NARROW [ISBN:9780198529170]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:24:02Z
@@ -3715,6 +3715,7 @@ name: DNA replication phenotype
 def: "A genetic material phenotype related to the process of DNA-dependent DNA replication that takes place as part of the cell cycle." [OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0044786 "cell cycle DNA replication"
+is_a: GO:0008150 ! biological_process
 is_a: OMP:0000290 ! genetic material phenotype
 is_a: OMP:0000306 ! macromolecular biosynthesis phenotype
 is_a: OMP:0005115 ! cell cycle phenotype
@@ -10337,6 +10338,7 @@ name: altered DNA replication
 def: "A DNA replication phenotype in which the process of DNA replication is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000307 ! DNA replication phenotype
 is_a: OMP:0005136 ! altered cell cycle phenotype
+is_a: OMP:0007351 ! altered biological process
 intersection_of: OMP:0000307 ! DNA replication phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
@@ -14399,6 +14401,62 @@ def: "A decreased frequency of DNA breaks phenotype where the frequency of doubl
 is_a: OMP:0007607 ! decreased frequency of DNA breaks
 created_by: siegele
 creation_date: 2017-06-27T21:55:25Z
+
+[Term]
+id: OMP:0007617
+name: Holliday junction structure phenotype
+def: "A genetic material phenotype related to the occurrence of Holliday junction structures in chromosomal DNA." [OMP:DAS]
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: siegele
+creation_date: 2017-06-28T13:51:06Z
+
+[Term]
+id: OMP:0007618
+name: presence of Holliday junction structures
+def: "A Holliday junction structure phenotype where Holliday junction structures are present in chromosomal DNA." [OMP:DAS]
+is_a: OMP:0007617 ! Holliday junction structure phenotype
+created_by: siegele
+creation_date: 2017-06-28T13:53:37Z
+
+[Term]
+id: OMP:0007619
+name: absence of Holliday junction structures
+def: "A Holliday junction structure phenotype where Holliday junction structures are not present in chromosomal DNA." [OMP:DAS]
+is_a: OMP:0007617 ! Holliday junction structure phenotype
+created_by: siegele
+creation_date: 2017-06-28T13:53:37Z
+
+[Term]
+id: OMP:0007620
+name: altered frequency of Holliday junction structures
+def: "A Holliday junction structure phenotype where the frequency of Holliday junction structures in chromosomal DNA is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007617 ! Holliday junction structure phenotype
+created_by: siegele
+creation_date: 2017-06-28T13:53:37Z
+
+[Term]
+id: OMP:0007621
+name: increased frequency of Holliday junction structures
+def: "An altered frequency of Holliday junction phenotype where the frequency of Holliday junction structures in chromosomal DNA is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007620 ! altered frequency of Holliday junction structures
+created_by: siegele
+creation_date: 2017-06-28T13:56:30Z
+
+[Term]
+id: OMP:0007622
+name: decreased frequency of Holliday junction structures
+def: "An altered frequency of Holliday junction phenotype where the frequency of Holliday junction structures in chromosomal DNA is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007620 ! altered frequency of Holliday junction structures
+created_by: siegele
+creation_date: 2017-06-28T13:56:30Z
+
+[Term]
+id: OMP:0007623
+name: abolished Holliday junction structures
+def: "A decreased frequency of Holliday junction structure phenotype where the occurrence of Holliday junction structures in chromosomal DNA is abolished." [OMP:DAS]
+is_a: OMP:0007622 ! decreased frequency of Holliday junction structures
+created_by: siegele
+creation_date: 2017-06-28T13:56:30Z
 
 [Term]
 id: OMP:0008000
