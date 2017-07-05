@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 05:07:2017 14:53
+date: 05:07:2017 16:58
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -14482,6 +14482,7 @@ id: OMP:0007626
 name: altered cell wall chitin level
 def: "An altered cell wall morphology phenotype where the amount of chitin (CHEBI:17029) measured in the cell wall of a microbe is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0005234 ! altered cell wall morphology
+is_a: OMP:0007636 ! altered polysaccharide level
 created_by: dsiegele
 creation_date: 2017-07-05T13:42:09Z
 
@@ -14511,19 +14512,101 @@ creation_date: 2017-07-05T13:44:03Z
 
 [Term]
 id: OMP:0007630
-name: altered cell wall protein accumulation
-def: "An altered cell wall morphology phenotype where the amount of a cell wall protein that accumulates is altered relative to a designated control." [OMP:DAS]
+name: altered cell wall protein level
+def: "An altered cell wall morphology phenotype where the amount of a cell wall protein measured in a cell is altered relative to a designated control. Total cell wall protein or a specific cell wall protein may be affected." [OMP:DAS]
 is_a: OMP:0005234 ! altered cell wall morphology
+is_a: OMP:0007635 ! altered protein level
 created_by: dsiegele
 creation_date: 2017-07-05T14:26:32Z
 
 [Term]
 id: OMP:0007631
-name: cell wall protein phenotype
-def: "A cell wall morphology phenotype related to the" []
-is_a: OMP:0005233 ! cell wall morphology phenotype
+name: increased cell wall protein level
+def: "An altered cell wall protein level where the amount of cell wall protein measured in a cell is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007630 ! altered cell wall protein level
 created_by: dsiegele
-creation_date: 2017-07-05T14:28:43Z
+creation_date: 2017-07-05T16:47:42Z
+
+[Term]
+id: OMP:0007632
+name: cell phenotype
+def: "A microbial phenotype that is observed at the level of an individual cell." [FYPO:0000002, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+xref: FYPO:0000002 "cell phenotype"
+is_a: OMP:0000000 ! microbial phenotype
+created_by: dsiegele
+creation_date: 2017-07-05T16:09:49Z
+
+[Term]
+id: OMP:0007633
+name: cellular physical quality phenotype
+def: "A cell phenotype that affects any physical object quality of a microbe, such as morphology, number, location, etc., of a cell or a cellular component." [FYPO:0000136, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+xref: FYPO:0000136 "cellular physical quality phenotype"
+is_a: OMP:0007632 ! cell phenotype
+created_by: dsiegele
+creation_date: 2017-07-05T16:19:07Z
+
+[Term]
+id: OMP:0007634
+name: altered level of substance in cell
+def: "A cell phenotype in which the amount of a specific substance measured in a cell is altered relative to a designated control." [FYPO:0000989, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0007637 ! altered cellular physical quality phenotype
+created_by: dsiegele
+creation_date: 2017-07-05T16:20:55Z
+
+[Term]
+id: OMP:0007635
+name: altered protein level
+def: "An altered level of substance in a cell phenotype in which the amount of protein measured in a cell is altered relative to a designated control. Total protein or a specific protein may be affected." [FYPO:0000834, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0007634 ! altered level of substance in cell
+created_by: dsiegele
+creation_date: 2017-07-05T16:24:26Z
+
+[Term]
+id: OMP:0007636
+name: altered polysaccharide level
+def: "An altered level of substance in cell phenotype in which the amount of a polysaccharide measured in a cell is altered relative to a designated control." [FYPO:0001085, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0007634 ! altered level of substance in cell
+created_by: dsiegele
+creation_date: 2017-07-05T16:28:00Z
+
+[Term]
+id: OMP:0007637
+name: altered cellular physical quality phenotype
+def: "A cellular physical quality phenotype where any physical object quality of a microbe, such as morphology, number, location, etc., of a cell or a cellular component is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007633 ! cellular physical quality phenotype
+is_a: OMP:0007638 ! altered cell phenotype
+created_by: dsiegele
+creation_date: 2017-07-05T16:31:01Z
+
+[Term]
+id: OMP:0007638
+name: altered cell phenotype
+def: "A cell phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007085 ! altered microbial phenotype
+is_a: OMP:0007632 ! cell phenotype
+created_by: dsiegele
+creation_date: 2017-07-05T16:32:45Z
+
+[Term]
+id: OMP:0007639
+name: decreased cell wall protein level
+def: "An altered cell wall protein level where the amount of cell wall protein measured in a cell is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007630 ! altered cell wall protein level
+created_by: dsiegele
+creation_date: 2017-07-05T16:47:42Z
+
+[Term]
+id: OMP:0007640
+name: abolished cell wall protein level
+def: "A decreased cell wall protein level phenotype where the amount of cell wall protein is abolished." [OMP:DAS]
+is_a: OMP:0007639 ! decreased cell wall protein level
+created_by: dsiegele
+creation_date: 2017-07-05T16:47:42Z
 
 [Term]
 id: OMP:0008000
