@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 28:06:2017 14:00
-saved-by: siegele
+date: 05:07:2017 12:15
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -3715,10 +3715,10 @@ name: DNA replication phenotype
 def: "A genetic material phenotype related to the process of DNA-dependent DNA replication that takes place as part of the cell cycle." [OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0044786 "cell cycle DNA replication"
-is_a: GO:0008150 ! biological_process
 is_a: OMP:0000290 ! genetic material phenotype
 is_a: OMP:0000306 ! macromolecular biosynthesis phenotype
 is_a: OMP:0005115 ! cell cycle phenotype
+is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0005115 ! cell cycle phenotype
 intersection_of: inheres_in GO:0044786 ! cell cycle DNA replication
 created_by: mchibucos
