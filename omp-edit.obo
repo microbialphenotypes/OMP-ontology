@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 05:07:2017 13:58
+date: 05:07:2017 14:53
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -14479,35 +14479,51 @@ creation_date: 2017-07-05T13:40:27Z
 
 [Term]
 id: OMP:0007626
-name: altered amount of chitin in cell wall
-def: "An altered cell wall morphology phenotype where the amount of chitin (CHEBI:17029) in the cell wall of a microbe is altered relative to a designated control." [OMP:DAS]
+name: altered cell wall chitin level
+def: "An altered cell wall morphology phenotype where the amount of chitin (CHEBI:17029) measured in the cell wall of a microbe is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0005234 ! altered cell wall morphology
 created_by: dsiegele
 creation_date: 2017-07-05T13:42:09Z
 
 [Term]
 id: OMP:0007627
-name: increased chitin in cell wall
-def: "An altered amount of chitin in cell wall phenotype where the amount of chitin (CHEBI:17029) in the cell wall of a microbe is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007626 ! altered amount of chitin in cell wall
+name: increased cell wall chitin level
+def: "An altered cell wall chitin level phenotype where the amount of chitin measured in the cell wall of a microbe is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007626 ! altered cell wall chitin level
 created_by: dsiegele
 creation_date: 2017-07-05T13:44:03Z
 
 [Term]
 id: OMP:0007628
-name: decreased chitin in cell wall
-def: "An altered amount of chitin in cell wall phenotype where the amount of chitin (CHEBI:17029) in the cell wall of a microbe is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007626 ! altered amount of chitin in cell wall
+name: decreased cell wall chitin level
+def: "An altered cell wall chitin level phenotype where the amount of chitin measured in the cell wall is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007626 ! altered cell wall chitin level
 created_by: dsiegele
 creation_date: 2017-07-05T13:44:03Z
 
 [Term]
 id: OMP:0007629
 name: abolished chitin in cell wall
-def: "A decreased amount of chitin in cell wall phenotype where the presence of chitin (CHEBI:17029) in the cell wall of a microbe is abolished." [OMP:DAS]
-is_a: OMP:0007628 ! decreased chitin in cell wall
+def: "A decreased cell wall chitin level phenotype where the amount of chitin in the cell wall is abolished." [OMP:DAS]
+is_a: OMP:0007628 ! decreased cell wall chitin level
 created_by: dsiegele
 creation_date: 2017-07-05T13:44:03Z
+
+[Term]
+id: OMP:0007630
+name: altered cell wall protein accumulation
+def: "An altered cell wall morphology phenotype where the amount of a cell wall protein that accumulates is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0005234 ! altered cell wall morphology
+created_by: dsiegele
+creation_date: 2017-07-05T14:26:32Z
+
+[Term]
+id: OMP:0007631
+name: cell wall protein phenotype
+def: "A cell wall morphology phenotype related to the" []
+is_a: OMP:0005233 ! cell wall morphology phenotype
+created_by: dsiegele
+creation_date: 2017-07-05T14:28:43Z
 
 [Term]
 id: OMP:0008000
