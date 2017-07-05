@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 05:07:2017 12:15
+date: 05:07:2017 13:58
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -6089,17 +6089,18 @@ creation_date: 2016-06-20T23:21:44Z
 [Term]
 id: OMP:0005233
 name: cell wall morphology phenotype
-def: "A cell wall phenotype relating to the size, shape, or appearance of the cell wall." [OMP:JG]
+def: "A cell envelope morphology phenotype relating to the structure, size, shape, or appearance of the cell wall, which is a rigid or semi-rigid layer that surrounds the plasma membrane and maintains cell shape and helps protect against osmotic lysis." [GO:0005618, OMP:JG]
 xref: APO:0000053 "Cell wall morphology"
-is_a: OMP:0007277 ! cell wall phenotype
+is_a: OMP:0000085 ! cell envelope morphology phenotype
 created_by: Jesus
 creation_date: 2016-06-20T23:33:27Z
 
 [Term]
 id: OMP:0005234
 name: altered cell wall morphology
-def: "A cell wall morphology phenotype where the morphology of the cell wall is altered relative to a designated control." [OMP:JG]
+def: "A cell wall morphology phenotype where the size, shape, or appearance of the cell wall is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005233 ! cell wall morphology phenotype
+is_a: OMP:0007103 ! altered cell morphology
 created_by: Jesus
 creation_date: 2016-06-20T23:36:20Z
 
@@ -11465,9 +11466,10 @@ creation_date: 2015-11-07T13:32:21Z
 
 [Term]
 id: OMP:0007277
-name: cell wall phenotype
-def: "A cell envelope phenotype where the trait in question is the cell wall, a rigid or semi-rigid layer that surrounds the plasma membrane and maintains cell shape and helps protect against osmotic lysis." [GO:0005618, OMP:DAS]
-is_a: OMP:0000085 ! cell envelope morphology phenotype
+name: cell wall morphology phenotype
+def: "This term was made obsolete because it is a duplicate of OMP:0005233. A cell envelope morphology phenotype where the trait in question is the cell wall, a rigid or semi-rigid layer that surrounds the plasma membrane and maintains cell shape and helps protect against osmotic lysis." [GO:0005618, OMP:DAS]
+is_obsolete: true
+replaced_by: OMP:0005233
 created_by: siegele
 creation_date: 2015-11-11T15:41:37Z
 
@@ -14457,6 +14459,55 @@ def: "A decreased frequency of Holliday junction structure phenotype where the o
 is_a: OMP:0007622 ! decreased frequency of Holliday junction structures
 created_by: siegele
 creation_date: 2017-06-28T13:56:30Z
+
+[Term]
+id: OMP:0007624
+name: presence of chitin in cell wall
+def: "A presence of cell wall phenotype where the cell wall of a microbe contains chitin (CHEBI:17029)." [OMP:DAS]
+xref: APO:0000199 "chitin deposition"
+is_a: OMP:0005235 ! presence of cell wall
+created_by: dsiegele
+creation_date: 2017-07-05T13:24:55Z
+
+[Term]
+id: OMP:0007625
+name: absence of chitin in cell wall
+def: "A presence of cell wall phenotype where the cell wall of a microbe doesn't contain chitin (CHEBI:17029)." [OMP:DAS]
+is_a: OMP:0005235 ! presence of cell wall
+created_by: dsiegele
+creation_date: 2017-07-05T13:40:27Z
+
+[Term]
+id: OMP:0007626
+name: altered amount of chitin in cell wall
+def: "An altered cell wall morphology phenotype where the amount of chitin (CHEBI:17029) in the cell wall of a microbe is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0005234 ! altered cell wall morphology
+created_by: dsiegele
+creation_date: 2017-07-05T13:42:09Z
+
+[Term]
+id: OMP:0007627
+name: increased chitin in cell wall
+def: "An altered amount of chitin in cell wall phenotype where the amount of chitin (CHEBI:17029) in the cell wall of a microbe is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007626 ! altered amount of chitin in cell wall
+created_by: dsiegele
+creation_date: 2017-07-05T13:44:03Z
+
+[Term]
+id: OMP:0007628
+name: decreased chitin in cell wall
+def: "An altered amount of chitin in cell wall phenotype where the amount of chitin (CHEBI:17029) in the cell wall of a microbe is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007626 ! altered amount of chitin in cell wall
+created_by: dsiegele
+creation_date: 2017-07-05T13:44:03Z
+
+[Term]
+id: OMP:0007629
+name: abolished chitin in cell wall
+def: "A decreased amount of chitin in cell wall phenotype where the presence of chitin (CHEBI:17029) in the cell wall of a microbe is abolished." [OMP:DAS]
+is_a: OMP:0007628 ! decreased chitin in cell wall
+created_by: dsiegele
+creation_date: 2017-07-05T13:44:03Z
 
 [Term]
 id: OMP:0008000
