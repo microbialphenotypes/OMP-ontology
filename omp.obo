@@ -1,8 +1,8 @@
 format-version: 1.2
-data-version: releases/2017-06-02
-date: 29:05:2017 17:50
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+data-version: releases/2017-07-07
+date: 05:07:2017 16:58
+saved-by: dsiegele
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -1414,7 +1414,7 @@ creation_date: 2011-03-10T07:02:42Z
 [Term]
 id: OMP:0000003
 name: cell arrangement phenotype
-def: "A microbial phenotype where the trait in question is the arrangement of cells in relation to one another." [OMP:MCC]
+def: "A microbial phenotype where the trait in question is the arrangement of cells of a microbe in relation to one another." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
@@ -1629,11 +1629,11 @@ creation_date: 2011-06-06T02:39:55Z
 
 [Term]
 id: OMP:0000027
-name: flagellum phenotype
-def: "A cell projection phenotype where the structure in question is a long, threadlike structure borne either singly or in groups by a motile cell, which propels the cell." [OMP:MCC]
+name: flagellum morphology phenotype
+def: "A cell projection morphology phenotype relating to the size, shape, or appearance of flagella, which are threadlike structures borne either singly or in groups by a motile cell, which propel the cell." [OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "axial filament phenotype" NARROW []
-is_a: OMP:0000083 ! cell projection phenotype
+is_a: OMP:0000083 ! cell projection morphology phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:26:26Z
 
@@ -1650,7 +1650,7 @@ creation_date: 2011-04-26T03:29:28Z
 id: OMP:0000029
 name: presence of flagellum
 def: "A flagellum phenotype where the organism possesses a flagellum or flagella in at least some environments." [OMP:MCC]
-is_a: OMP:0000027 ! flagellum phenotype
+is_a: OMP:0000027 ! flagellum morphology phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:34Z
 
@@ -1659,7 +1659,7 @@ id: OMP:0000030
 name: absence of flagellum
 def: "A flagellum phenotype where the organism does not possess a flagellum or flagella." [OMP:MCC]
 synonym: "non-flagellated phenotype" RELATED []
-is_a: OMP:0000027 ! flagellum phenotype
+is_a: OMP:0000027 ! flagellum morphology phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:29:50Z
 
@@ -1676,7 +1676,7 @@ id: OMP:0000033
 name: absence of pilus
 def: "A pilus phenotype where an organism does not possess a pilus." [OMP:MCC]
 synonym: "fimbria absent" EXACT []
-is_a: OMP:0000084 ! pilus phenotype
+is_a: OMP:0000084 ! pilus morphology phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:01Z
 
@@ -1686,7 +1686,7 @@ name: presence of pilus
 def: "A pilus phenotype where an organism does possess a pilus in one or more growth conditions." [OMP:MCC]
 comment: Fimbria (plural, fimbriae) is a common synonym for pilus (plural, pili).
 synonym: "fimbria present" EXACT []
-is_a: OMP:0000084 ! pilus phenotype
+is_a: OMP:0000084 ! pilus morphology phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:44:22Z
 
@@ -2063,7 +2063,7 @@ creation_date: 2011-02-02T03:19:31Z
 id: OMP:0000078
 name: flagellum arrangement phenotype
 def: "A flagellum phenotype where the trait in question is the location of the flagellum on an organism." [OMP:MCC]
-is_a: OMP:0000027 ! flagellum phenotype
+is_a: OMP:0000027 ! flagellum morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:43:16Z
 
@@ -2102,9 +2102,9 @@ creation_date: 2011-02-02T03:46:44Z
 
 [Term]
 id: OMP:0000083
-name: cell projection phenotype
-def: "A cell morphology phenotype where the structure in question is a prolongation or process extending from a cell." [OMP:MCC]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+name: cell projection morphology phenotype
+def: "A cell morphology phenotype relating to the size, shape, or appearance of a structure that is a prolongation or process extending from a cell." [GO:0042995, OMP:MCC]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
 synonym: "cell appendage phenotype" EXACT []
 xref: GO:0042995 "cell projection"
 is_a: OMP:0000071 ! cell morphology phenotype
@@ -2116,10 +2116,10 @@ creation_date: 2011-02-02T03:47:44Z
 
 [Term]
 id: OMP:0000084
-name: pilus phenotype
+name: pilus morphology phenotype
 def: "A cell projection phenotype where the structure in question is a proteinaceous hair-like appendage on the surface of a microbial cell." [ISBN:9780073402406, OMP:MCC]
 synonym: "fimbria phenotype" EXACT [GO:0009289]
-is_a: OMP:0000083 ! cell projection phenotype
+is_a: OMP:0000083 ! cell projection morphology phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:47:57Z
 
@@ -2177,7 +2177,7 @@ creation_date: 2011-02-02T03:23:41Z
 id: OMP:0000090
 name: lifespan phenotype
 def: "An organismal growth phenotype dealing with the lifespan of a microorganism, cell, or cells." [OMP:WAM]
-is_a: OMP:0000174 ! organismal growth phenotype
+is_a: OMP:0000174 ! growth phenotype
 created_by: adrienne
 creation_date: 2011-02-02T03:24:11Z
 
@@ -2902,26 +2902,24 @@ id: OMP:0000172
 name: response to chemical stimulus phenotype
 def: "A stress response phenotype dealing with the response to exposure to chemical stimuli." [OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000173 ! stress response phenotype
+is_a: OMP:0000173 ! response to stress phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T04:16:08Z
 
 [Term]
 id: OMP:0000173
-name: stress response phenotype
-def: "A microbial phenotype related to whether cells in a population are sensitive or resistant to a stress. Typically, a cell population is deemed sensitive to a stress if cells in the population stop growing and dividing (and may die) when exposed to a stress." [FYPO:0002549, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested. Use a descendant of this term if you have assayed growth of cells exposed to a stress in culture.
-synonym: "stress resistance" NARROW []
-synonym: "stress sensitivity" NARROW []
-is_a: OMP:0007167 ! population growth phenotype
+name: response to stress phenotype
+def: "A biological process phenotype related to a change in state or activity of a microbe (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [FYPO:0002549, GO:0006950, OMP:WAM]
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0007194 ! biological process phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:32Z
 
 [Term]
 id: OMP:0000174
-name: organismal growth phenotype
+name: growth phenotype
 def: "A microbial phenotype related to the increase in size or mass of an organism, a part of an organism, or a cell." [GO:0040007, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nFor phenotypes affecting growth of a population, see OMP:0007167 ! population growth phenotype.
 xref: GO:0040007 "growth"
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -2934,7 +2932,7 @@ creation_date: 2011-02-02T03:13:59Z
 id: OMP:0000175
 name: nanotube phenotype
 def: "A cell projection phenotype where the structure in question is a tube." [OMP:DAS]
-is_a: OMP:0000083 ! cell projection phenotype
+is_a: OMP:0000083 ! cell projection morphology phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T02:59:54Z
 
@@ -3678,9 +3676,9 @@ id: OMP:0000290
 name: genetic material phenotype
 def: "A microbial phenotype dealing with the various aspects of the molecular carrier of an organism's primary genetic information." [ISBN:9780198529170, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "double stranded DNA" RELATED [ISBN:9780198529170]
-synonym: "RNA" RELATED [ISBN:9780198529170]
-synonym: "single stranded DNA" RELATED [ISBN:9780198529170]
+synonym: "double stranded DNA" NARROW [ISBN:9780198529170]
+synonym: "RNA" NARROW [ISBN:9780198529170]
+synonym: "single stranded DNA" NARROW [ISBN:9780198529170]
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:24:02Z
@@ -3880,15 +3878,21 @@ id: OMP:0000336
 name: beta-lactam resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to compounds that contain a beta-lactam ring in their molecular structure." [CHEBI:35627, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "amoxicillin" NARROW []
 synonym: "ampicillin" NARROW [CHEBI:28971]
+synonym: "aztreonam" NARROW [CHEBI:161680]
 synonym: "beta-lactam sensitivity phenotype" RELATED []
 synonym: "carbapenams" NARROW [CHEBI:64510]
+synonym: "carbenicillin" NARROW [CHEBI:3393]
 synonym: "cefoxitin" NARROW [CHEBI:209807]
+synonym: "cefsulodin" NARROW [CHEBI:3507]
+synonym: "ceftazidime" NARROW [CHEBI:3508]
 synonym: "cephalosporins" NARROW []
 synonym: "cephaloxporins" NARROW []
 synonym: "cephamycin" NARROW [CHEBI:55429]
 synonym: "mecillinam" RELATED [CHEBI:51208]
 synonym: "monobactams" NARROW [CHEBI:50695]
+synonym: "Oxacillin" NARROW [CHEBI:7809]
 synonym: "penicillin" NARROW [CHEBI:51356]
 xref: CHEBI:27933 "beta-lactam antibiotic"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
@@ -4432,37 +4436,37 @@ creation_date: 2013-10-15T18:53:12Z
 
 [Term]
 id: OMP:0005038
-name: oxidative stress phenotype
-def: "A stress response phenotype dealing with a state of metabolic imbalance within cells that favors pro-oxidant substances leading to oxidative damage to all classes of major biomolecules." [ISBN:9780198529170, OMP:WAM]
+name: response to oxidative stress phenotype
+def: "A stress response phenotype dealing with a xxxx." [ISBN:9780198529170, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000173 ! stress response phenotype
+is_a: OMP:0000173 ! response to stress phenotype
 created_by: wmeza
 creation_date: 2013-10-15T18:59:38Z
 
 [Term]
 id: OMP:0005039
-name: freeze/thawing stress phenotype
+name: response to freeze/thawing stress phenotype
 def: "A stress response phenotype dealing with the response to cyclic freezing and melting." [ISBN:1555810489, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000173 ! stress response phenotype
+is_a: OMP:0000173 ! response to stress phenotype
 created_by: wmeza
 creation_date: 2013-10-15T18:59:52Z
 
 [Term]
 id: OMP:0005040
-name: acidic pH stress phenotype
+name: response to acid pH stress phenotype
 def: "A stress response phenotype dealing with the response to the environmental stress of pH at or below 6.5." [OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000173 ! stress response phenotype
+is_a: OMP:0000173 ! response to stress phenotype
 created_by: wmeza
 creation_date: 2013-10-16T17:14:52Z
 
 [Term]
 id: OMP:0005041
-name: alkaline pH stress phenotype
-def: "A stress response phenotype dealing with the response to an environment with a pH at or above 7.5." [OMP:WAM]
+name: response to alkaline pH stress phenotype
+def: "A response to stress phenotype dealing with the response to an environment with a pH at or above 7.5." [OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000173 ! stress response phenotype
+is_a: OMP:0000173 ! response to stress phenotype
 created_by: wmeza
 creation_date: 2013-10-16T17:15:59Z
 
@@ -4518,7 +4522,7 @@ creation_date: 2013-10-18T18:38:43Z
 [Term]
 id: OMP:0005047
 name: chromosome segregation phenotype
-def: "A genetic material phenotype concerning the process in which replicated chromosomes are physically separated and apportioned as sets to daughter cells." [GO:0007059, OMP:WAM]
+def: "A genetic material phenotype concerning the process in which replicated chromosome(s) are physically separated and apportioned as a set to daughter cells." [GO:0007059, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:\:0007059 "chromosome segregation"
 is_a: OMP:0000290 ! genetic material phenotype
@@ -4636,20 +4640,18 @@ creation_date: 2013-10-30T18:35:34Z
 
 [Term]
 id: OMP:0005060
-name: increased frequency of chromosome segregation
-def: "A chromosome segregation phenotype where chromosome segregation is increased relative to a designated control." [OMP:WAM]
+name: decreased frequency of chromosome missegregation
+def: "An altered chromosome segregation phenotype where the frequency of chromosome missegregation is decreased relative to a designated control." [OMP:WAM]
 is_a: OMP:0006001 ! altered chromosome segregation
 created_by: wmeza
 creation_date: 2013-11-04T18:09:09Z
 
 [Term]
 id: OMP:0005061
-name: decreased frequency of chromosome segregation
-def: "An altered chromosome segregation phenotype where the occurrence of chromosome segregation is decreased relative to a designated control." [OMP:WAM]
+name: increased frequency of chromosome missegregation
+def: "An altered chromosome segregation phenotype where the frequency of chromosome missegregation is increased relative to a designated control." [OMP:WAM]
+synonym: "increased aneuploidy" NARROW []
 is_a: OMP:0006001 ! altered chromosome segregation
-intersection_of: OMP:0006001 ! altered chromosome segregation
-intersection_of: has_quality PATO:0002302 ! decreased process quality
-relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: wmeza
 creation_date: 2013-11-04T18:09:38Z
 
@@ -4774,114 +4776,114 @@ creation_date: 2013-11-11T13:42:44Z
 [Term]
 id: OMP:0005076
 name: increased resistance to acidic pH stress
-def: "An altered acidic pH stress phenotype were resistance to acidic pH is increased relative to a designated control." [OMP:WAM]
+def: "An altered acidic pH stress phenotype were resistance of microbes in a population to acidic pH is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased acidic pH sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005118 ! altered acidic pH stress phenotype
+is_a: OMP:0005118 ! altered resistance to acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:09:55Z
 
 [Term]
 id: OMP:0005077
 name: decreased resistance to acidic pH stress
-def: "An altered acidic pH stress phenotype were resistance to acidic pH is decreased relative to a designated control." [OMP:WAM]
-synonym: "increased acidic pH sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005118 ! altered acidic pH stress phenotype
+def: "An altered acidic pH stress phenotype were resistance of microbes in a population to acidic pH is decreased relative to a designated control." [OMP:WAM]
+synonym: "increased sensitivity to acid pH stress" RELATED [OMP:WAM]
+is_a: OMP:0005118 ! altered resistance to acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:12:48Z
 
 [Term]
 id: OMP:0005078
 name: increased resistance to alkaline pH stress
-def: "An altered alkaline pH stress phenotype were resistance to alkaline pH is increased relative to a designated control." [OMP:WAM]
+def: "An altered resistance to alkaline pH stress phenotype where resistance of microbes in a population to alkaline pH is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased alkaline pH sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005119 ! altered alkaline pH stress phenotype
+is_a: OMP:0005119 ! altered resistance to alkaline pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:14:08Z
 
 [Term]
 id: OMP:0005079
 name: decreased resistance to alkaline pH stress
-def: "An altered alkaline pH stress phenotype were resistance to alkaline pH is decreased relative to a designated control." [OMP:WAM]
+def: "An altered resistance to alkaline pH stress phenotype where resistance of microbes in a population to alkaline pH is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased alkaline pH sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005119 ! altered alkaline pH stress phenotype
+is_a: OMP:0005119 ! altered resistance to alkaline pH stress phenotype
 created_by: wmeza
 creation_date: 2013-11-15T18:16:03Z
 
 [Term]
 id: OMP:0005080
-name: dessication stress phenotype
+name: response to dessication stress phenotype
 def: "A stress response phenotype dealing with the removal or immobilisation of water." [ISBN:9780471138228, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000173 ! stress response phenotype
+is_a: OMP:0000173 ! response to stress phenotype
 created_by: wmeza
 creation_date: 2013-11-18T11:42:37Z
 
 [Term]
 id: OMP:0005081
-name: radiation stress phenotype
+name: response to radiation stress phenotype
 def: "A stress response phenotype related to resistance or sensitivity to energy in the form of electromagnetic waves at various wavelengths." [OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "radiation resistance" RELATED []
-is_a: OMP:0000173 ! stress response phenotype
+is_a: OMP:0000173 ! response to stress phenotype
 created_by: wmeza
 creation_date: 2013-11-18T11:50:57Z
 
 [Term]
 id: OMP:0005082
-name: thermotolerance stress phenotype
+name: response to thermotolerance stress phenotype
 def: "A stress response phenotype dealing with the resistance response to normally lethal high temperature levels." [OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000173 ! stress response phenotype
+is_a: OMP:0000173 ! response to stress phenotype
 created_by: wmeza
 creation_date: 2013-11-18T12:22:55Z
 
 [Term]
 id: OMP:0005083
-name: ionizing radiation phenotype
-def: "A radiation stress phenotype dealing with short wavelength, highly energetic radiation." [ISBN:9780471387350, OMP:WAM]
-is_a: OMP:0005081 ! radiation stress phenotype
+name: response to ionizing radiation phenotype
+def: "A response to radiation stress phenotype dealing with short wavelength, highly energetic radiation." [ISBN:9780471387350, OMP:WAM]
+is_a: OMP:0005081 ! response to radiation stress phenotype
 created_by: wmeza
 creation_date: 2013-11-22T15:55:45Z
 
 [Term]
 id: OMP:0005084
-name: UV radiation resistance phenotype
-def: "A radiation stress phenotype dealing with resistance to irradiation of wavelengths 100-400 nm." [ISO:21348, OMP:WAM]
-is_a: OMP:0005081 ! radiation stress phenotype
+name: resistance to UV radiation phenotype
+def: "A resistance to radiation stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to UV radiation (typically, irradiation by wavelengths 100-400 nm)." [ISO:21348, OMP:WAM]
+is_a: OMP:0007576 ! resistance to radiation stress phenotype
 created_by: wmeza
 creation_date: 2013-11-22T15:56:27Z
 
 [Term]
 id: OMP:0005085
-name: gamma ray radiation resistance phenotype
-def: "An ionizing radiation stress phenotype related to resistance or sensitivity to gamma radiation." [OMP:WAM]
-is_a: OMP:0005083 ! ionizing radiation phenotype
+name: resistance to gamma-ray radiation phenotype
+def: "A radiation stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to gamma-ray radiation." [OMP:WAM]
+is_a: OMP:0007576 ! resistance to radiation stress phenotype
 created_by: wmeza
 creation_date: 2013-11-22T16:04:42Z
 
 [Term]
 id: OMP:0005086
-name: x-ray radiation resistance phenotype
-def: "An ionizing radiation stress phenotype related to resistance or sensitivity of a cell (or cells) or organism to x-ray radiation." [OMP:WAM]
-is_a: OMP:0005083 ! ionizing radiation phenotype
+name: resistance to x-ray radiation
+def: "A resistance to radiation stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to x-rays." [OMP:WAM]
+is_a: OMP:0007576 ! resistance to radiation stress phenotype
 created_by: wmeza
 creation_date: 2013-11-22T16:05:02Z
 
 [Term]
 id: OMP:0005087
 name: increased resistance to dessication stress
-def: "An altered dessication stress phenotype where resistance to dessication is increased relative to a designated control." [OMP:WAM]
+def: "An altered dessication stress phenotype where resistance of microbes in a population to dessication stress is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased dessication sensitivity" RELATED [OMP:WAM]
-is_a: OMP:0005120 ! altered dessication stress phenotype
+is_a: OMP:0005120 ! altered resistance to dessication stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:14:31Z
 
 [Term]
 id: OMP:0005088
 name: decreased resistance to dessication stress
-def: "An altered dessication stress phenotype where resistance to dessication is decreased relative to a designated control." [OMP:WAM]
+def: "An altered dessication stress phenotype where resistance of microbes in a population to dessication stress is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased dessication sensitivity " RELATED [OMP:WAM]
-is_a: OMP:0005120 ! altered dessication stress phenotype
+is_a: OMP:0005120 ! altered resistance to dessication stress phenotype
 created_by: wmeza
 creation_date: 2013-12-06T14:15:06Z
 
@@ -4889,7 +4891,7 @@ creation_date: 2013-12-06T14:15:06Z
 id: OMP:0005089
 name: increased resistance to freeze/thawing stress
 def: "An altered freeze/thawing stress phenotype where resistance is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0005121 ! altered freeze/thawing stress phenotype
+is_a: OMP:0005121 ! altered resistance to freeze/thaw stress
 created_by: wmeza
 creation_date: 2013-12-06T14:28:16Z
 
@@ -4898,43 +4900,43 @@ id: OMP:0005090
 name: decreased resistance to freeze/thawing stress
 def: "An altered freeze/thawing stress phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
 synonym: "decreased freeze/thaw sensitivity. " RELATED [OMP:WAM]
-is_a: OMP:0005121 ! altered freeze/thawing stress phenotype
+is_a: OMP:0005121 ! altered resistance to freeze/thaw stress
 created_by: wmeza
 creation_date: 2013-12-06T14:28:46Z
 
 [Term]
 id: OMP:0005091
 name: increased resistance to oxidative stress
-def: "An altered oxidative stress phenotype where resistance is increased relative to a designated control." [OMP:WAM]
-synonym: "decreased oxidative sensitivity " NARROW [OMP:WAM]
-is_a: OMP:0005122 ! altered oxidative stress phenotype
+def: "An altered oxidative stress phenotype where resistance of microbes in a population to an oxidative stress is increased relative to a designated control." [OMP:WAM]
+synonym: "decreased sensitivity to oxidative stress" EXACT [OMP:WAM]
+is_a: OMP:0005122 ! altered resistance to oxidative stress
 created_by: wmeza
 creation_date: 2013-12-06T17:57:46Z
 
 [Term]
 id: OMP:0005092
 name: decreased resistance to oxidative stress
-def: "An altered oxidative stress phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
-synonym: "increased oxidative sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005122 ! altered oxidative stress phenotype
+def: "An altered oxidative stress phenotype where resistance of microbes in a population to an oxidative stress is decreased relative to a designated control." [OMP:WAM]
+synonym: "increased sensitivity to oxidative stress" EXACT [OMP:WAM]
+is_a: OMP:0005122 ! altered resistance to oxidative stress
 created_by: wmeza
 creation_date: 2013-12-06T17:59:14Z
 
 [Term]
 id: OMP:0005093
-name: increased resistance to gamma ray radiation
-def: "An altered gamma ray radiation resistance phenotype where resistance is increased relative to a designated control." [OMP:WAM]
+name: increased resistance to gamma-ray radiation
+def: "An altered resistance to gamma-ray radiation phenotype where the resistance of microbes in a population to gamma-rays is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased gamma ray sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005123 ! altered gamma ray radiation resistance
+is_a: OMP:0005123 ! altered resistance to gamma-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:05:40Z
 
 [Term]
 id: OMP:0005094
-name: decreased resistance to gamma ray radiation
-def: "A decreased gamma ray radiation phenotype where resistance to gamma rays is decreased relative to a designated control." [OMP:WAM]
+name: decreased resistance to gamma-ray radiation
+def: "An altered resistance to gamma-ray radiation phenotype where the resistance of microbes in a population to gamma-rays is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased gamma ray sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005123 ! altered gamma ray radiation resistance
+is_a: OMP:0005123 ! altered resistance to gamma-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:06:05Z
 
@@ -4943,7 +4945,7 @@ id: OMP:0005095
 name: increased resistance to x-ray radiation
 def: "An altered x-ray radiation phenotype were resistance is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased x-ray sensitivity" NARROW [OMP:WAM]
-is_a: OMP:0005124 ! altered x-ray radiation resistance phenotype
+is_a: OMP:0005124 ! altered resistance to x-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:26:43Z
 
@@ -4952,17 +4954,17 @@ id: OMP:0005096
 name: decreased resistance to x-ray radiation
 def: "An altered x-ray radiation phenotype where resistance is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased x-ray sensitivity " NARROW [OMP:WAM]
-is_a: OMP:0005124 ! altered x-ray radiation resistance phenotype
+is_a: OMP:0005124 ! altered resistance to x-ray radiation
 created_by: wmeza
 creation_date: 2013-12-17T13:28:20Z
 
 [Term]
 id: OMP:0005097
 name: increased resistance to UV radiation
-def: "An altered UV radiation resistance phenotype where resistance to UV is increased relative to a designated control." [OMP:WAM]
+def: "An altered UV-radiation resistance phenotype where the resistance of microbes in a population to UV radiation is increased relative to a designated control." [OMP:WAM]
 synonym: "decreased UV sensitivity " RELATED [OMP:WAM]
-is_a: OMP:0005125 ! altered UV radiation resistance
-intersection_of: OMP:0005125 ! altered UV radiation resistance
+is_a: OMP:0005125 ! altered UV-radiation resistance
+intersection_of: OMP:0005125 ! altered UV-radiation resistance
 intersection_of: has_quality PATO:0002304 ! increased process quality
 relationship: has_quality PATO:0002304 ! increased process quality
 created_by: wmeza
@@ -4971,10 +4973,10 @@ creation_date: 2013-12-17T13:41:53Z
 [Term]
 id: OMP:0005098
 name: decreased resistance to UV radiation
-def: "An altered UV radiation resistance phenotype where resistance to UV is decreased relative to a designated control." [OMP:WAM]
+def: "An altered UV radiation resistance phenotype where the resistance of microbes in a population to UV radiation is decreased relative to a designated control." [OMP:WAM]
 synonym: "increased UV sensitivity " RELATED [OMP:WAM]
-is_a: OMP:0005125 ! altered UV radiation resistance
-intersection_of: OMP:0005125 ! altered UV radiation resistance
+is_a: OMP:0005125 ! altered UV-radiation resistance
+intersection_of: OMP:0005125 ! altered UV-radiation resistance
 intersection_of: has_quality PATO:0002302 ! decreased process quality
 relationship: has_quality PATO:0002302 ! decreased process quality
 created_by: wmeza
@@ -4982,10 +4984,10 @@ creation_date: 2013-12-17T13:43:32Z
 
 [Term]
 id: OMP:0005099
-name: starvation stress phenotype
+name: response to starvation stress phenotype
 def: "A stress response phenotype dealing with the response to deprivation of nourishment." [GO:0009267, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000173 ! stress response phenotype
+is_a: OMP:0000173 ! response to stress phenotype
 created_by: wmeza
 creation_date: 2014-01-21T12:13:04Z
 
@@ -5026,7 +5028,7 @@ creation_date: 2014-04-17T10:55:05Z
 [Term]
 id: OMP:0005104
 name: abolished resistance to dessication stress
-def: "A decreased resistance to dessication stress phenotype where resistance to dessication stress is abolished." [OMP:WAM]
+def: "A decreased resistance to dessication stress phenotype where the resistance of microbes in a population to dessication stress is abolished." [OMP:WAM]
 is_a: OMP:0005088 ! decreased resistance to dessication stress
 created_by: wmeza
 creation_date: 2014-07-17T13:11:33Z
@@ -5091,26 +5093,26 @@ creation_date: 2016-02-02T13:52:43Z
 
 [Term]
 id: OMP:0005112
-name: SDS-EDTA stress phenotype
+name: response to SDS-EDTA stress phenotype
 def: "A stress response phenotype dealing with the response to exposure to SDS-EDTA." [OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000173 ! stress response phenotype
+is_a: OMP:0000173 ! response to stress phenotype
 created_by: wmeza
 creation_date: 2014-07-07T13:21:43Z
 
 [Term]
 id: OMP:0005113
 name: decreased resistance to SDS-EDTA stress
-def: "An altered SDS-EDTA stress phenotype where resistance is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0005126 ! altered SDS-EDTA stress phenotype
+def: "An altered resistance to SDS-EDTA stress phenotype where the resistance that microbes in a population show when exposed to SDS-EDTA is decreased relative to a designated control." [OMP:WAM]
+is_a: OMP:0005126 ! altered resistance to SDS-EDTA stress
 created_by: wmeza
 creation_date: 2014-07-07T13:50:24Z
 
 [Term]
 id: OMP:0005114
 name: increased resistance to SDS-EDTA stress
-def: "An altered SDS-EDTA stress phenotype where resistance is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0005126 ! altered SDS-EDTA stress phenotype
+def: "An altered resistance to SDS-EDTA stress phenotype where the resistance that microbes in a population show when exposed to SDS-EDTA is increased relative to a designated control." [OMP:WAM]
+is_a: OMP:0005126 ! altered resistance to SDS-EDTA stress
 created_by: wmeza
 creation_date: 2014-07-07T13:50:45Z
 
@@ -5146,72 +5148,74 @@ creation_date: 2014-07-08T17:55:17Z
 
 [Term]
 id: OMP:0005118
-name: altered acidic pH stress phenotype
-def: "A acidic pH stress phenotype altered relative to a designated control." [OMP:WAM]
-synonym: "acid pH stress" RELATED []
-is_a: OMP:0005040 ! acidic pH stress phenotype
-is_a: OMP:0007158 ! altered stress response phenotype
+name: altered resistance to acidic pH stress phenotype
+def: "A resistance to acidic pH stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to acidic pH is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0007572 ! altered resistance to stress
+is_a: OMP:0007573 ! resistance to acidic pH stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:55:53Z
 
 [Term]
 id: OMP:0005119
-name: altered alkaline pH stress phenotype
-def: "An alkaline pH stress phenotype altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005041 ! alkaline pH stress phenotype
-is_a: OMP:0007158 ! altered stress response phenotype
+name: altered resistance to alkaline pH stress phenotype
+def: "A resistance to alkaline pH stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to alkaline pH stress is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0007572 ! altered resistance to stress
+is_a: OMP:0007574 ! resistance to alkaline pH stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:58:56Z
 
 [Term]
 id: OMP:0005120
-name: altered dessication stress phenotype
-def: "A dessication stress phenotype altered relative to designated control." [OMP:WAM]
-is_a: OMP:0005080 ! dessication stress phenotype
-is_a: OMP:0007158 ! altered stress response phenotype
+name: altered resistance to dessication stress phenotype
+def: "A resistance to dessication stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to dessication stress is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0007572 ! altered resistance to stress
+is_a: OMP:0007575 ! resistance to dessication stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:59:47Z
 
 [Term]
 id: OMP:0005121
-name: altered freeze/thawing stress phenotype
-def: "A freeze/thawing stress phenotype altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0005039 ! freeze/thawing stress phenotype
-is_a: OMP:0007158 ! altered stress response phenotype
+name: altered resistance to freeze/thaw stress
+def: "A resistance to freeze/thawing stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to cycles of freezing and thawing is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0007572 ! altered resistance to stress
+is_a: OMP:0007593 ! resistance to freeze-thaw stress phenotype
 created_by: wmeza
 creation_date: 2014-07-11T13:00:23Z
 
 [Term]
 id: OMP:0005122
-name: altered oxidative stress phenotype
-def: "A oxidative stress phenotype altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005038 ! oxidative stress phenotype
+name: altered resistance to oxidative stress
+def: "A resistance to oxidative stress phenotype where the resistance or sensitivity that microbes in a population show to an oxidative stress is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0007569 ! resistance to oxidative stress phenotype
+is_a: OMP:0007572 ! altered resistance to stress
 created_by: wmeza
 creation_date: 2014-07-11T13:03:36Z
 
 [Term]
 id: OMP:0005123
-name: altered gamma ray radiation resistance
-def: "A gamma ray radiation resistance phenotype where resistance of a cell or organism to gamma rays is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005085 ! gamma ray radiation resistance phenotype
+name: altered resistance to gamma-ray radiation
+def: "A resistance to gamma-ray radiation phenotype where the resistance or sensitivity that microbes in a population show when exposed to gamma-ray radiation is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005085 ! resistance to gamma-ray radiation phenotype
+is_a: OMP:0007594 ! altered resistance to radiation stress
 created_by: wmeza
 creation_date: 2014-07-11T13:16:15Z
 
 [Term]
 id: OMP:0005124
-name: altered x-ray radiation resistance phenotype
-def: "An x-ray radiation phenotype where resistance or sensitivity to x-rays is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005086 ! x-ray radiation resistance phenotype
+name: altered resistance to x-ray radiation
+def: "A resistance to x-ray radiation phenotype where the resistance or sensitivity that microbes in a population show when exposed to x-rays is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005086 ! resistance to x-ray radiation
+is_a: OMP:0007594 ! altered resistance to radiation stress
 created_by: wmeza
 creation_date: 2014-07-11T13:16:47Z
 
 [Term]
 id: OMP:0005125
-name: altered UV radiation resistance
-def: "A UV radiation resistance phenotype where the frequency, rate, timing, or extent of resistance to UV light is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005084 ! UV radiation resistance phenotype
-is_a: OMP:0007159 ! altered response to radiation
-intersection_of: OMP:0005084 ! UV radiation resistance phenotype
+name: altered UV-radiation resistance
+def: "A UV-radiation resistance phenotype where the resistance or sensitivity that microbes in a population show when exposed to UV radiation is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0005084 ! resistance to UV radiation phenotype
+is_a: OMP:0007594 ! altered resistance to radiation stress
+intersection_of: OMP:0005084 ! resistance to UV radiation phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 relationship: has_quality OMP:0007189 ! altered_relative_to
 created_by: wmeza
@@ -5219,16 +5223,16 @@ creation_date: 2014-07-11T13:56:51Z
 
 [Term]
 id: OMP:0005126
-name: altered SDS-EDTA stress phenotype
-def: "A SDS-EDTA stress phenotype where the frequency, rate, timing, or extent of resistance to SDS-EDTA is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0005112 ! SDS-EDTA stress phenotype
+name: altered resistance to SDS-EDTA stress
+def: "An altered chemical stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to SDS-EDTA is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0007586 ! altered resistance to chemical stress
 created_by: wmeza
 creation_date: 2014-07-11T13:57:22Z
 
 [Term]
 id: OMP:0005127
 name: abolished resistance to acidic pH stress
-def: "A decreased resistance to acidic pH stress phenotype where resistance to acidic pH is abolished." [OMP:WAM]
+def: "A decreased resistance to acidic pH stress phenotype where resistance of microbes in a population to acidic pH is abolished." [OMP:WAM]
 is_a: OMP:0005077 ! decreased resistance to acidic pH stress
 created_by: wmeza
 creation_date: 2014-07-15T16:46:17Z
@@ -5236,7 +5240,7 @@ creation_date: 2014-07-15T16:46:17Z
 [Term]
 id: OMP:0005128
 name: abolished resistance to alkaline pH stress
-def: "A decreased resistance to alkaline pH stress phenotype where the ability to resist alkaline pH is abolished." [OMP:WAM]
+def: "A decreased resistance to alkaline pH stress phenotype where the resistance of microbes in a population to alkaline pH is abolished." [OMP:WAM]
 is_a: OMP:0005079 ! decreased resistance to alkaline pH stress
 created_by: wmeza
 creation_date: 2014-07-15T17:31:56Z
@@ -5265,16 +5269,17 @@ creation_date: 2014-07-16T17:48:24Z
 [Term]
 id: OMP:0005131
 name: abolished resistance to oxidative stress
-def: "A decreased resistance to oxidative stress phenotype where resistance to oxidative stress is abolished." [OMP:WAM]
+def: "A decreased resistance to oxidative stress phenotype where the resistance of microbes in a population to oxidative stress is abolished." [OMP:WAM]
 is_a: OMP:0005092 ! decreased resistance to oxidative stress
+is_a: OMP:0007571 ! absence of resistance to oxidative stress
 created_by: wmeza
 creation_date: 2014-07-17T14:18:37Z
 
 [Term]
 id: OMP:0005132
 name: abolished resistance to gamma ray radiation
-def: "A decreased resistance to gamma ray radiation phenotype where resistance to gamma ray radiation is abolished." [OMP:WAM]
-is_a: OMP:0005094 ! decreased resistance to gamma ray radiation
+def: "A decreased resistance to gamma-ray radiation phenotype where the resistance of microbes in a population to gamma-ray radiation is abolished." [OMP:WAM]
+is_a: OMP:0005094 ! decreased resistance to gamma-ray radiation
 created_by: wmeza
 creation_date: 2014-07-17T14:23:39Z
 
@@ -5289,7 +5294,7 @@ creation_date: 2014-07-17T14:28:44Z
 [Term]
 id: OMP:0005134
 name: abolished resistance to UV radiation
-def: "A decreased resistance to UV radiation phenotype where resistance to UV radiation is abolished." [OMP:WAM]
+def: "A decreased resistance to UV radiation phenotype where the resistance of microbes in a population to UV radiation is abolished." [OMP:WAM]
 is_a: OMP:0005098 ! decreased resistance to UV radiation
 is_a: OMP:0007283 ! absence of UV radiation resistance
 created_by: wmeza
@@ -5298,7 +5303,7 @@ creation_date: 2014-07-17T17:22:15Z
 [Term]
 id: OMP:0005135
 name: abolished resistance to SDS-EDTA stress
-def: "A decreased SDS-EDTA stress phenotype where resistance to SDS-EDTA stress is abolished." [OMP:WAM]
+def: "A decreased SDS-EDTA stress phenotype where the resistance that microbes in a population show when exposed to SDS-EDTA is abolished." [OMP:WAM]
 is_a: OMP:0005113 ! decreased resistance to SDS-EDTA stress
 created_by: wmeza
 creation_date: 2014-07-17T17:39:39Z
@@ -6140,17 +6145,18 @@ creation_date: 2016-06-20T23:21:44Z
 [Term]
 id: OMP:0005233
 name: cell wall morphology phenotype
-def: "A cell wall phenotype relating to the size, shape, or appearance of the cell wall." [OMP:JG]
+def: "A cell envelope morphology phenotype relating to the structure, size, shape, or appearance of the cell wall, which is a rigid or semi-rigid layer that surrounds the plasma membrane and maintains cell shape and helps protect against osmotic lysis." [GO:0005618, OMP:JG]
 xref: APO:0000053 "Cell wall morphology"
-is_a: OMP:0007277 ! cell wall phenotype
+is_a: OMP:0000085 ! cell envelope morphology phenotype
 created_by: Jesus
 creation_date: 2016-06-20T23:33:27Z
 
 [Term]
 id: OMP:0005234
 name: altered cell wall morphology
-def: "A cell wall morphology phenotype where the morphology of the cell wall is altered relative to a designated control." [OMP:JG]
+def: "A cell wall morphology phenotype where the size, shape, or appearance of the cell wall is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005233 ! cell wall morphology phenotype
+is_a: OMP:0007103 ! altered cell morphology
 created_by: Jesus
 creation_date: 2016-06-20T23:36:20Z
 
@@ -6224,11 +6230,11 @@ creation_date: 2016-06-23T14:28:58Z
 [Term]
 id: OMP:0005243
 name: filamentous growth phenotype
-def: "An organismal growth phenotype relating to the process by which a multicellular organism, a unicellular organism, or a group of unicellular organisms grow in a threadlike, filamentous shape." [OMP:JG]
+def: "An organismal growth phenotype relating to the process by which a multicellular organism, a unicellular organism, or a group of unicellular organisms grow in a threadlike, filamentous shape." [GO:0030447, OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: APO:0000027 "development"
 xref: GO:0030447 "filamentous growth"
-is_a: OMP:0000174 ! organismal growth phenotype
+is_a: OMP:0000174 ! growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T14:38:44Z
 
@@ -6267,7 +6273,7 @@ creation_date: 2016-06-23T14:42:45Z
 [Term]
 id: OMP:0005248
 name: presence of filamentous growth
-def: "A filamentous growth phenotype where a microorganism exhibits filamentous growth." [OMP:JG]
+def: "A filamentous growth phenotype where a microbe exhibits filamentous growth." [OMP:JG]
 is_a: OMP:0005243 ! filamentous growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T14:43:53Z
@@ -6275,7 +6281,7 @@ creation_date: 2016-06-23T14:43:53Z
 [Term]
 id: OMP:0005249
 name: absence of filamentous growth
-def: "A filamentous growth phenotype where a microorganism does not exhibit filamentous growth." [OMP:JG]
+def: "A filamentous growth phenotype where a microbe does not exhibit filamentous growth." [OMP:JG]
 is_a: OMP:0005243 ! filamentous growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T14:44:33Z
@@ -6492,11 +6498,37 @@ id: OMP:0005274
 name: organic heterocyclic compound resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic heterocyclic compound, which is any cyclic compound having as ring members atoms of carbon and at least of one other element." [CHEBI:24532, OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "A22" NARROW [CID:16741200]
+synonym: "Actinomycin D" NARROW [CHEBI:27666]
+synonym: "Amikacin" NARROW [CHEBI:2637]
+synonym: "Azidothymidine" NARROW [CHEBI:10110]
+synonym: "Aztreonam" NARROW [CHEBI:161680]
+synonym: "Bacitracin" NARROW [CHEBI:28669]
+synonym: "Cecropin B" NARROW [CID:16130488]
+synonym: "Ceftazidime hydrate" NARROW [CHEBI:3508]
+synonym: "CHIR-090" NARROW [CHEBI:134107]
+synonym: "Ciprofloxacin" NARROW [CHEBI:100241]
 synonym: "coumarin resistance phenotype" NARROW [CHEBI:28794]
 synonym: "cycloheximide resistance phenotype" NARROW [CHEBI:27641]
+synonym: "Gentamicin" NARROW [CHEBI:5312]
+synonym: "Indolicidin" NARROW [CHEBI:80180]
+synonym: "Methotrexate" NARROW [CHEBI:44185]
+synonym: "Nitrofurantoin" NARROW [CHEBI:71415]
+synonym: "Norfloxacin" NARROW [CHEBI:100246]
+synonym: "Novobiocin" NARROW [CHEBI:28368]
 synonym: "novobiocin resistance phenotype" NARROW [CHEBI:28368]
+synonym: "Paraquat dichloride" NARROW [CHEBI:34905]
+synonym: "Phenazine methosulfate (PMS)" NARROW [CHEBI:53396]
+synonym: "Phleomycin" NARROW [CHEBI:75044]
+synonym: "Pyocyanin" NARROW [CHEBI:62220]
+synonym: "Radicicol" NARROW [CHEBI:556075]
+synonym: "Rifampicin" NARROW [CHEBI:28077]
+synonym: "Spectinomycin" NARROW [CHEBI:9215]
+synonym: "Thiolactomycin" NARROW [CID:445629]
 synonym: "thiolactomycin resistance phenotype" NARROW [CID:445629]
 synonym: "thiolactone resistance phenotype" NARROW [CHEBI:60317]
+synonym: "Tobramycin" NARROW [CHEBI:28864]
+synonym: "Trimethoprim" NARROW [CHEBI:45924]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: Jesus
 creation_date: 2016-07-15T15:29:19Z
@@ -6917,7 +6949,7 @@ creation_date: 2016-09-19T14:02:03Z
 id: OMP:0005325
 name: agar invasion phenotype
 def: "An organismal growth phenotype relating to the ability of a microbe to penetrate agar media during growth." [OMP:JG]
-is_a: OMP:0000174 ! organismal growth phenotype
+is_a: OMP:0000174 ! growth phenotype
 created_by: Jesus
 creation_date: 2016-09-23T16:58:54Z
 
@@ -7064,8 +7096,32 @@ creation_date: 2016-10-31T13:33:49Z
 id: OMP:0005343
 name: organic aromatic compound resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic aromatic compound." [OMP:JG]
+synonym: "benzalkonium" NARROW [CHEBI:3020]
 synonym: "benzalkonium chloride" NARROW [CHEBI:3020]
+synonym: "bleomycin" NARROW [CHEBI:22907]
+synonym: "carbenicillin" NARROW [CHEBI:3393]
+synonym: "CCCP (carbonyl cyanide 3-chlorophenylhydrazone)" NARROW [CHEBI:3259]
+synonym: "Cefaclor" NARROW [CHEBI:3478]
+synonym: "cefoxitin" NARROW [CHEBI:209807]
+synonym: "chloramphenicol" NARROW [CHEBI:17698]
+synonym: "dibucaine" NARROW [CHEBI:247956]
+synonym: "doxorubicin" NARROW [CHEBI:28748]
+synonym: "doxycycline" NARROW [CHEBI:50845]
+synonym: "epigallocatechin gallate (EGCG)" NARROW [\:]
+synonym: "epinephrine" NARROW [CHEBI:28918]
+synonym: "Irgasan" NARROW [CHEBI:164200]
+synonym: "levofloxacin" NARROW [CHEBI:63598]
+synonym: "minocycline" NARROW [CHEBI:50694]
+synonym: "nalidixic acid" NARROW [CHEBI:100147]
+synonym: "norepinephrine" NARROW [CHEBI:18357]
+synonym: "oxacillin" NARROW [CHEBI:7809]
+synonym: "Polymyxin B" NARROW [CHEBI:8309]
+synonym: "procaine" NARROW [CHEBI:8430]
+synonym: "Propidium iodide" NARROW [CHEBI:51240]
+synonym: "Streptonigrin" NARROW [CHEBI:9287]
+synonym: "sulfamethizole" NARROW [CHEBI:9331]
 synonym: "triclosan" NARROW [CHEBI:164200]
+synonym: "Vancomycin" NARROW [CHEBI:28001]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: Jesus
 creation_date: 2016-10-31T13:40:40Z
@@ -7312,7 +7368,7 @@ id: OMP:0005373
 name: sporulation frequency phenotype
 def: "A cell population phenotype relating to the fraction of cells in a population that form spores under sporulation-inducing conditions." [OMP:JG]
 is_a: OMP:0000091 ! sporulation phenotype
-is_a: OMP:0007006 ! cell population phenotype
+is_a: OMP:0007006 ! population phenotype
 created_by: Jesus
 creation_date: 2016-12-20T13:17:56Z
 
@@ -7398,7 +7454,7 @@ id: OMP:0006001
 name: altered chromosome segregation
 def: "A chromosome segregation phenotype where the frequency, rate, timing, or extent of chromosome segregation is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0005047 ! chromosome segregation phenotype
-is_a: OMP:0007085 ! altered microbial phenotype
+is_a: OMP:0007351 ! altered biological process
 intersection_of: OMP:0005047 ! chromosome segregation phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 relationship: has_quality OMP:0007189 ! altered_relative_to
@@ -7480,7 +7536,7 @@ creation_date: 2014-07-24T16:26:38Z
 id: OMP:0006010
 name: altered pilus phenotype
 def: "A pilus phenotype where the morphology, number, or location of a pilus is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0000084 ! pilus phenotype
+is_a: OMP:0000084 ! pilus morphology phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T16:28:24Z
 
@@ -7595,6 +7651,13 @@ id: OMP:0006023
 name: carbon source utilization phenotype
 def: "A nutrient utilization phenotype where the nutrient is being used as a source of carbon." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "acetate" NARROW []
+synonym: "glucosamine" NARROW []
+synonym: "glucose" NARROW []
+synonym: "glycerol" NARROW []
+synonym: "maltose" NARROW []
+synonym: "N-acetyl glucosamine" NARROW []
+synonym: "succinate " NARROW []
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
@@ -7621,6 +7684,7 @@ id: OMP:0006026
 name: nitrogen source utilization phenotype
 def: "A nutrient utilization phenotype where the nutrient is being utilized as a source of nitrogen." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "NH4Cl (MOPS)" NARROW []
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T17:51:21Z
@@ -7632,6 +7696,7 @@ def: "An antimicrobial peptide resistance phenotype related to resistance or sen
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "bacteriocin sensitivity phenotype" RELATED []
 synonym: "colicins" NARROW [GO:0015468]
+synonym: "Fusidic acid" NARROW [CHEBI:29013]
 synonym: "lantibiotic " NARROW [CHEBI:71644]
 synonym: "microcin" NARROW [CHEBI:64627]
 synonym: "Nisin" NARROW [ChEBI:71629]
@@ -7668,6 +7733,13 @@ id: OMP:0006029
 name: quinolone resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to a quinolone: an organonitrogen heterocyclic compound whose structure contains a quinolone or quinolone-related structure." [CHEBI:23765, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nQuinolones are a class of quinolines, which are aromatic heterocyclic  compounds that contain a benzene ring ortho fused to carbons 2 and 3 of a pyridine ring.
+synonym: "Ciprofloxacin" NARROW [CHEBI:100241]
+synonym: "Dibucaine" NARROW [CHEBI:247956]
+synonym: "Doxorubicin" NARROW [CHEBI:28748]
+synonym: "Levofloxacin" NARROW [CHEBI:63598]
+synonym: "Nalidixic acid" NARROW [CHEBI:100147]
+synonym: "Norfloxacin" NARROW [CHEBI:100246]
+synonym: "Novobiocin" NARROW [CHEBI:28368]
 synonym: "quinolines " BROAD [CHEBI:26513]
 synonym: "quinolone sensitivity phenotype" RELATED []
 synonym: "streptonigrin" NARROW [CHEBI:9287]
@@ -7910,11 +7982,14 @@ id: OMP:0006056
 name: aminoglycoside resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:47779, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "<new synonym>" RELATED []
+synonym: "Amikacin" NARROW [CHEBI:2673]
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin" NARROW []
 synonym: "hygromycin B" NARROW [CHEBI:16976]
-synonym: "kanamycin" NARROW [CHEBI:CHEBI\:6104]
+synonym: "kanamycin" NARROW [CHEBI:6104]
 synonym: "neomycin" NARROW []
+synonym: "Spectinomycin" NARROW [CHEBI:32158]
 synonym: "streptomycin" NARROW []
 synonym: "tobramycin" NARROW []
 xref: CHEBI:47779 "aminoglycoside"
@@ -7973,6 +8048,7 @@ def: "An antimicrobial compound resistance phenotype related to resistance or se
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "Bacteriostatic" BROAD []
 synonym: "chlortetracycline" NARROW []
+synonym: "Doxycycline" NARROW [CHEBI:50845]
 synonym: "minocycline" NARROW [CHEBI:50694]
 synonym: "oxytetracycline " NARROW [CHEBI:27701]
 synonym: "tetracycline sensitivity phenotype" RELATED []
@@ -8012,6 +8088,7 @@ id: OMP:0006066
 name: chloramphenicol resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "Chloramphenicol" NARROW [CHEBI:17698]
 synonym: "chloramphenicol sensitivity phenotype" RELATED []
 xref: CHEBI:17698 "chloramphenicol"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
@@ -8403,8 +8480,9 @@ creation_date: 2014-07-25T12:21:50Z
 [Term]
 id: OMP:0006111
 name: abolished chromosome segregation
-def: "A decreased frequency of chromosome segregation phenotype where the ability to segregate chromosomes is abolished." [OMP:JCH]
-is_a: OMP:0005061 ! decreased frequency of chromosome segregation
+def: "A altered chromosome segregation phenotype where the ability to partition a set of chromosomes to daughter cells is abolished." [OMP:JCH]
+is_a: OMP:0006001 ! altered chromosome segregation
+is_a: OMP:0007601 ! absence of chromosome segregation
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:24:27Z
 
@@ -9064,10 +9142,12 @@ creation_date: 2014-08-07T18:35:51Z
 
 [Term]
 id: OMP:0007006
-name: cell population phenotype
-def: "A microbial phenotype where the phenotype is observed at the level of a population of cells." [OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-xref: CMPO:0000002 "cell population"
+name: population phenotype
+def: "A microbial phenotype where the phenotype is observed at the level of a microbial population." [OMP:DAS]
+comment: This high-level term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested. Please consider using a more specific term to annotate each phenotype.
+subset: gocheck_do_not_annotate
+subset: gocheck_do_not_manually_annotate
+xref: OBI:0000181 "population"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-07-21T10:25:43Z
@@ -9941,7 +10021,7 @@ creation_date: 2014-07-10T22:45:48Z
 id: OMP:0007105
 name: altered flagellum
 def: "A flagellum phenotype where the composition, structure, or number of flagella is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000027 ! flagellum phenotype
+is_a: OMP:0000027 ! flagellum morphology phenotype
 created_by: siegele
 creation_date: 2014-07-10T23:00:30Z
 
@@ -10311,7 +10391,7 @@ id: OMP:0007144
 name: altered asexual reproduction
 def: "An asexual reproduction phenotype where the rate, frequency, timing, or extent of  asexual reproduction is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007066 ! asexual reproduction phenotype
-is_a: OMP:0007550 ! altered population growth phenotype
+is_a: OMP:0007157 ! altered population growth
 created_by: siegele
 creation_date: 2014-08-18T17:22:42Z
 
@@ -10339,6 +10419,7 @@ name: altered DNA replication
 def: "A DNA replication phenotype in which the process of DNA replication is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000307 ! DNA replication phenotype
 is_a: OMP:0005136 ! altered cell cycle phenotype
+is_a: OMP:0007351 ! altered biological process
 intersection_of: OMP:0000307 ! DNA replication phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
 relationship: has_quality OMP:0007188 ! altered_process_quality
@@ -10424,7 +10505,7 @@ creation_date: 2014-08-28T12:14:20Z
 [Term]
 id: OMP:0007157
 name: altered population growth
-def: "A population growth phenotype where reproduction of a microbial population is altered relative to a designated control." [OMP:DAS]
+def: "A population growth phenotype where the rate, frequency, timing, or extent of reproduction of a microbial population is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007167 ! population growth phenotype
 is_a: OMP:0007351 ! altered biological process
 created_by: siegele
@@ -10432,20 +10513,20 @@ creation_date: 2014-08-28T12:15:47Z
 
 [Term]
 id: OMP:0007158
-name: altered stress response phenotype
-def: "A stress response phenotype where the response of a cell or organism to a stress is altered relative to a designated control." [OMP:DAS]
+name: altered response to stress phenotype
+def: "A response to stress response phenotype where the change in state or activity of a microbe (in terms of movement, secretion, enzyme production, gene expression, etc.) that occurs as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation) is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-is_a: OMP:0000173 ! stress response phenotype
+is_a: OMP:0000173 ! response to stress phenotype
 is_a: OMP:0007157 ! altered population growth
 created_by: siegele
 creation_date: 2014-08-28T16:51:03Z
 
 [Term]
 id: OMP:0007159
-name: altered response to radiation
+name: altered response to radiation stress
 def: "A radiation stress phenotype that is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0005081 ! radiation stress phenotype
-is_a: OMP:0007158 ! altered stress response phenotype
+is_a: OMP:0005081 ! response to radiation stress phenotype
+is_a: OMP:0007158 ! altered response to stress phenotype
 created_by: siegele
 creation_date: 2014-08-28T17:03:47Z
 
@@ -10518,9 +10599,9 @@ creation_date: 2014-09-14T15:36:38Z
 [Term]
 id: OMP:0007167
 name: population growth phenotype
-def: "A microbial phenotype where the trait in question is the increase in the number of individuals in a population as the result of sexual or asexual reproduction." [OMP:DAS]
+def: "A microbial phenotype where the trait in question is the increase in the number of individuals in a microbial population as the result of sexual or asexual reproduction." [OMP:DAS]
 xref: GO:0000003 "reproduction"
-is_a: OMP:0007006 ! cell population phenotype
+is_a: OMP:0007006 ! population phenotype
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0000003 ! reproduction
@@ -10541,6 +10622,10 @@ id: OMP:0007169
 name: antimicrobial peptide resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an antimicrobial peptide." [CHEBI:25903, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "Bacitracin" NARROW [CHEBI:28669]
+synonym: "Bleomycin" NARROW [CHEBI:22907]
+synonym: "Cecropin B" NARROW [CID:16741200]
+synonym: "Phleomycin" NARROW [CHEBI:75044]
 xref: CHEBI:25903 "peptide antibiotic"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
@@ -10813,32 +10898,32 @@ creation_date: 2014-10-21T23:28:25Z
 
 [Term]
 id: OMP:0007198
-name: presence of UV-A radiation resistance
-def: "A presence of UV radiation resistance where a cell or cells exhibit some resistance to irradiation of wavelengths of 315-400 nm." [ISO:21348, OMP:DAS]
-is_a: OMP:0007282 ! presence of UV radiation resistance
+name: presence of resistance to UV-A radiation
+def: "A presence of resistance to UV radiation where microbes in a population continue to grow and divide when exposed to UV-A radiation (typically, wavelengths of 315-400 nm)." [ISO:21348, OMP:DAS]
+is_a: OMP:0007282 ! presence of UV-radiation resistance
 created_by: siegele
 creation_date: 2015-02-04T21:53:26Z
 
 [Term]
 id: OMP:0007199
-name: presence of UV-B radiation resistance
-def: "A presence of UV radiation resistance where a cell or cells exhibit some resistance to irradiation of wavelengths of 280-315 nm." [ISO:21348, OMP:DAS]
-is_a: OMP:0007282 ! presence of UV radiation resistance
+name: presence of resistance to UV-B radiation
+def: "A presence of resistance to UV radiation where microbes in a population continue to grow and divide when exposed to UV-B radiation (typically, wavelengths of 280-315 nm)." [ISO:21348, OMP:DAS]
+is_a: OMP:0007282 ! presence of UV-radiation resistance
 created_by: siegele
 creation_date: 2015-02-04T22:00:52Z
 
 [Term]
 id: OMP:0007200
-name: presence of UV-C radiation resistance
-def: "A presence of UV radiation resistance where a cell or cells exhibit some resistance to irradiation of wavelengths of 100-280 nm." [ISO:21348, OMP:DAS]
-is_a: OMP:0007282 ! presence of UV radiation resistance
+name: presence of resistance to UV-C radiation
+def: "A presence of resistance to UV radiation where microbes in a population continue to grow and divide when exposed to UV-C radiation (typically, wavelengths of 100-280 nm)." [ISO:21348, OMP:DAS]
+is_a: OMP:0007282 ! presence of UV-radiation resistance
 created_by: siegele
 creation_date: 2015-02-04T22:02:13Z
 
 [Term]
 id: OMP:0007201
 name: decreased resistance to UV-C radiation
-def: "A decreased resistance to UV radiation phenotype where resistance to UV-C radiation (100-280 nm) is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased resistance to UV-radiation resistance phenotype where the resistance of microbes in a population to UV-C radiation (typically, 100-280 nm) is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0005098 ! decreased resistance to UV radiation
 created_by: siegele
 creation_date: 2015-02-04T22:03:32Z
@@ -10846,7 +10931,7 @@ creation_date: 2015-02-04T22:03:32Z
 [Term]
 id: OMP:0007202
 name: abolished resistance to UV-C radiation
-def: "A decreased resistance to UV-C radiation phenotype where resistance to UV-C radiation (100-280 nm) is abolished." [OMP:DAS]
+def: "A decreased resistance to UV-C radiation phenotype where the resistance of microbes in a population to UV-C radiation (100-280 nm) is abolished." [OMP:DAS]
 is_a: OMP:0007201 ! decreased resistance to UV-C radiation
 created_by: siegele
 creation_date: 2015-02-04T22:05:25Z
@@ -10863,7 +10948,7 @@ creation_date: 2015-02-05T11:12:46Z
 [Term]
 id: OMP:0007204
 name: decreased resistance to UV-A radiation
-def: "A decreased resistance to UV radiation phenotype where resistance to UV-A radiation (315-400 nm) is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased resistance to UV radiation phenotype where the resistance of microbes in a population to UV-A radiation (typically, 315-400 nm) is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0005098 ! decreased resistance to UV radiation
 created_by: siegele
 creation_date: 2015-02-05T11:30:34Z
@@ -10871,7 +10956,7 @@ creation_date: 2015-02-05T11:30:34Z
 [Term]
 id: OMP:0007205
 name: decreased resistance to UV-B radiation
-def: "A decreased resistance to UV radiation phenotype where resistance to UV-B radiation (280-315 nm) is decreased relative to a designated control." [OMP:DAS]
+def: "A decreased resistance to UV radiation phenotype where the resistance of microbes in a population to UV-B radiation (typically, 280-315 nm) is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0005098 ! decreased resistance to UV radiation
 created_by: siegele
 creation_date: 2015-02-05T11:31:00Z
@@ -10879,7 +10964,7 @@ creation_date: 2015-02-05T11:31:00Z
 [Term]
 id: OMP:0007206
 name: increased resistance to UV-A
-def: "An increased resistance to UV phenotype where resistance to UV-A (315-400 nm) is increased relative to a designated control." [OMP:DAS]
+def: "An increased UV-radiation resistance phenotype where the resistance of microbes in a population to UV-A radiation (typically, 315-400 nm) is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0005097 ! increased resistance to UV radiation
 created_by: siegele
 creation_date: 2015-02-05T11:35:37Z
@@ -10887,7 +10972,7 @@ creation_date: 2015-02-05T11:35:37Z
 [Term]
 id: OMP:0007207
 name: increased resistance to UV-B
-def: "An increased resistance to UV phenotype where resistance to UV-B (280-315 nm) is increased relative to a designated control." [OMP:DAS]
+def: "An increased UV-radiation resistance phenotype where the resistance of microbes in a population to UV-B radiation (typically, 280-315 nm) is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0005097 ! increased resistance to UV radiation
 created_by: siegele
 creation_date: 2015-02-05T11:35:59Z
@@ -10895,7 +10980,7 @@ creation_date: 2015-02-05T11:35:59Z
 [Term]
 id: OMP:0007208
 name: increased resistance to UV-C
-def: "An increased resistance to UV phenotype where resistance to UV-C (100-280 nm) is increased relative to a designated control." [OMP:DAS]
+def: "An increased UV-radiation resistance phenotype where the resistance of microbes in a population to UV-C radiation (typically, 100-280 nm) is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0005097 ! increased resistance to UV radiation
 created_by: siegele
 creation_date: 2015-02-05T11:36:16Z
@@ -11475,9 +11560,10 @@ creation_date: 2015-11-07T13:32:21Z
 
 [Term]
 id: OMP:0007277
-name: cell wall phenotype
-def: "A cell envelope phenotype where the trait in question is the cell wall, a rigid or semi-rigid layer that surrounds the plasma membrane and maintains cell shape and helps protect against osmotic lysis." [GO:0005618, OMP:DAS]
-is_a: OMP:0000085 ! cell envelope morphology phenotype
+name: cell wall morphology phenotype
+def: "This term was made obsolete because it is a duplicate of OMP:0005233. A cell envelope morphology phenotype where the trait in question is the cell wall, a rigid or semi-rigid layer that surrounds the plasma membrane and maintains cell shape and helps protect against osmotic lysis." [GO:0005618, OMP:DAS]
+is_obsolete: true
+replaced_by: OMP:0005233
 created_by: siegele
 creation_date: 2015-11-11T15:41:37Z
 
@@ -11516,17 +11602,17 @@ creation_date: 2016-01-09T18:05:38Z
 
 [Term]
 id: OMP:0007282
-name: presence of UV radiation resistance
-def: "A UV radiation resistance phenotype where a cell or cells exhibit some ability to survive exposure to UV radiation (100-400 nm)." [OMP:DAS]
-is_a: OMP:0005084 ! UV radiation resistance phenotype
+name: presence of UV-radiation resistance
+def: "A UV-radiation resistance phenotype where microbes in a population continue to grow and divide when exposed to UV radiation." [OMP:DAS]
+is_a: OMP:0005084 ! resistance to UV radiation phenotype
 created_by: siegele
 creation_date: 2016-01-09T18:37:25Z
 
 [Term]
 id: OMP:0007283
 name: absence of UV radiation resistance
-def: "A UV radiation resistance phenotype where a cell or cells exhibit no ability to survive exposure to UV radiation (100-400 nm)." [OMP:DAS]
-is_a: OMP:0005084 ! UV radiation resistance phenotype
+def: "A UV-radiation resistance phenotype where microbes in a population stop growing (and may die) when exposed to UV radiation." [OMP:DAS]
+is_a: OMP:0005084 ! resistance to UV radiation phenotype
 created_by: siegele
 creation_date: 2016-01-09T18:39:51Z
 
@@ -11954,7 +12040,7 @@ creation_date: 2016-05-26T23:29:02Z
 [Term]
 id: OMP:0007332
 name: cellular process phenotype
-def: "A biological process phenotype that affects a cellular process." [OMP:DAS]
+def: "A biological process phenotype that affects a cellular process, which is any biological process that is carried out at the cellular level, but not necessarily restricted to a single cell." [GO:0009987, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: FYPO:0000114 "cellular process phenotype"
 is_a: OMP:0007194 ! biological process phenotype
@@ -12129,7 +12215,8 @@ creation_date: 2016-06-09T22:48:16Z
 [Term]
 id: OMP:0007351
 name: altered biological process
-def: "A biological process phenotype where a biological process is altered relative to a designated control." [OMP:DAS]
+def: "A biological process phenotype where the rate, frequency, timing, or extent of a biological process is altered relative to a designated control." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
@@ -12192,6 +12279,7 @@ name: nucleoside resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a compound that is a nucleoside: an N-glycosyl compound that has both a nucleobase, normally adenine, guanine, xanthine, thymine, cytosine or uracil, and either a ribose or deoxyribose as functional parents." [CHEBI:33838, OMP:DAS]
 synonym: "azidothymidine" NARROW [CHEBI:10110]
 synonym: "puromycin" NARROW [CHEBI:17939]
+synonym: "Tunicamycin" NARROW [CHEBI:29699]
 synonym: "zidovudine" NARROW [CHEBI:10110]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: dsiegele
@@ -12311,7 +12399,11 @@ creation_date: 2016-06-21T01:17:16Z
 id: OMP:0007372
 name: alkylating agent resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to an alkylating agent: a highly reactive chemical that introduces alkyl radicals into biologically active molecules and thereby prevents their proper functioning." [CHEBI:22333, OMP:DAS]
+synonym: "Benzalkonium" NARROW [CHEBI:3020]
+synonym: "Cisplatin" NARROW [CHEBI:27899]
+synonym: "Hydroxyurea" NARROW [CHEBI:44423]
 synonym: "methyl methanesulfonate" NARROW [CHEBI:25255]
+synonym: "MMS" RELATED [CHEBI:25255]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-22T16:41:33Z
@@ -13023,9 +13115,9 @@ creation_date: 2016-08-08T15:17:42Z
 
 [Term]
 id: OMP:0007456
-name: cell population viability phenotype
-def: "A cell population phenotype relating to the proportion of a population that are viable under the specified conditions. Viability refers to the ability of a microbe, cell, or cells to survive, grow, and reproduce." [FYPO:0002057, OMP:DAS]
-is_a: OMP:0007006 ! cell population phenotype
+name: population viability phenotype
+def: "A population phenotype relating to the proportion of a population that is viable under the specified conditions. Viability refers to the ability of a microbe to survive, grow, and reproduce." [FYPO:0002057, OMP:DAS]
+is_a: OMP:0007006 ! population phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:51:48Z
 
@@ -13034,7 +13126,7 @@ id: OMP:0007457
 name: viable cell population
 def: "A cell population viability phenotype where all, or almost all, of the cells are viable under the specified conditions." [OMP:DAS]
 xref: FYPO:0002058 "viable cell population"
-is_a: OMP:0007456 ! cell population viability phenotype
+is_a: OMP:0007456 ! population viability phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:56:12Z
 
@@ -13044,7 +13136,7 @@ name: nonviable cell population
 def: "A cell population viability phenotype where all, or almost all, of the cells are nonviable under the specified conditions." [FYPO:0002059, OMP:DAS]
 synonym: "inviable cell population" EXACT []
 xref: FYPO:0002059 "inviable cell population"
-is_a: OMP:0007456 ! cell population viability phenotype
+is_a: OMP:0007456 ! population viability phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:56:12Z
 
@@ -13052,7 +13144,7 @@ creation_date: 2016-08-10T14:56:12Z
 id: OMP:0007459
 name: altered cell population viability
 def: "A cell population viability phenotype where the proportion of cells that are viable under the specified conditions is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007456 ! cell population viability phenotype
+is_a: OMP:0007456 ! population viability phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:56:12Z
 
@@ -13185,10 +13277,12 @@ id: OMP:0007474
 name: phenols resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to phenols, which are organic aromatic compounds having one or more hydroxy groups attached to a benzene or other arene ring." [CHEBI:33853, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "Epigallocatechin gallate (EGCG)" NARROW []
 synonym: "phenol red resistance phenotype" NARROW [CHEBI:31991]
 synonym: "phenol resistance phenotype" NARROW [CHEBI:15882]
 synonym: "rose bengal resistance phenotype" NARROW [CHEBI:52261]
 synonym: "triclosan resistance phenotype" NARROW [CHEBI:164200]
+synonym: "Triton X-100" NARROW []
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T16:00:17Z
@@ -13364,7 +13458,9 @@ creation_date: 2016-09-24T23:04:50Z
 id: OMP:0007495
 name: epoxide resistance phenotype
 def: "An antimicrobial resistance phenotype relating to resistance or sensitivity to an epoxide. An epoxide is any cyclic ether in which the oxygen atom forms part of a 3-membered ring." [CHEBI:32955, OMP:DAS]
+synonym: "Cerulenin" NARROW [CHEBI:171741]
 synonym: "cerulenin resistance phenotype" NARROW [CHEBI:171741]
+synonym: "Fosfomycin" NARROW [CHEBI:28915]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-09-25T12:02:01Z
@@ -13453,8 +13549,8 @@ creation_date: 2016-09-25T13:49:19Z
 
 [Term]
 id: OMP:0007506
-name: titan cell phenotype
-def: "A cell morphology phenotype where a microbe, typically a fungus, produces large vegetative cells that typically exhibit altered capsule structure, a thickened cell wall, increased ploidy, and resistance to nitrosative and oxidative stresses." [OMP:DAS, PMID:21821718]
+name: titan cell morphology phenotype
+def: "A cell morphology phenotype relating to the form and structure of titan cells, which are large vegetative cells produced by fungi that typically exhibit altered capsule structure, a thickened cell wall, increased ploidy, and resistance to nitrosative and oxidative stresses." [FAO:0000063, OMP:DAS, PMID:21821718]
 xref: FAO:0000063 "titan cell"
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: siegele
@@ -13464,7 +13560,7 @@ creation_date: 2016-09-25T22:33:27Z
 id: OMP:0007507
 name: presence of titan cells
 def: "A titan cell phenotype where a microbe is able to form titan cells." [OMP:DAS]
-is_a: OMP:0007506 ! titan cell phenotype
+is_a: OMP:0007506 ! titan cell morphology phenotype
 created_by: siegele
 creation_date: 2016-09-25T23:28:19Z
 
@@ -13472,7 +13568,7 @@ creation_date: 2016-09-25T23:28:19Z
 id: OMP:0007508
 name: absence of titan cells
 def: "A titan cell phenotype where a microbe cannot form titan cells." [OMP:DAS]
-is_a: OMP:0007506 ! titan cell phenotype
+is_a: OMP:0007506 ! titan cell morphology phenotype
 created_by: siegele
 creation_date: 2016-09-25T23:28:19Z
 
@@ -13480,15 +13576,16 @@ creation_date: 2016-09-25T23:28:19Z
 id: OMP:0007509
 name: altered titan cell morphology
 def: "A titan cell phenotype where the size, shape, or appearance of titan cells is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007506 ! titan cell phenotype
+is_a: OMP:0007103 ! altered cell morphology
+is_a: OMP:0007506 ! titan cell morphology phenotype
 created_by: siegele
 creation_date: 2016-09-25T23:28:19Z
 
 [Term]
 id: OMP:0007510
 name: altered titan cell formation
-def: "A titan cell phenotype where the frequency, rate, timing, or extent of titan cell formation is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007506 ! titan cell phenotype
+def: "A titan cell formation phenotype where the frequency, rate, timing, or extent of titan cell formation is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007554 ! titan cell formation phenotype
 created_by: siegele
 creation_date: 2016-09-25T23:32:51Z
 
@@ -13679,6 +13776,7 @@ id: OMP:0007533
 name: urea derivative resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to compounds that are structural derivatives of urea." [CHEBI:47857, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+synonym: "Hydroxyurea" NARROW [CHEBI:44423]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2017-02-24T13:14:38Z
@@ -13816,7 +13914,7 @@ creation_date: 2017-05-29T16:27:37Z
 [Term]
 id: OMP:0007548
 name: abolished haploid fruiting
-def: "A decreased fruiting phenotype where the process of haploid fruiting is abolished." []
+def: "A decreased haploid fruiting phenotype where the process of haploid fruiting is abolished." [OMP:DAS]
 synonym: "abolished monokaryotic fruiting" EXACT []
 is_a: OMP:0007544 ! absence of haploid fruiting
 is_a: OMP:0007547 ! decreased haploid fruiting
@@ -13826,18 +13924,18 @@ creation_date: 2017-05-29T16:27:37Z
 [Term]
 id: OMP:0007549
 name: altered biological process phenotype
-def: "A biological process phenotype where the rate, frequency, timing, or extent of a biological process is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered microbial phenotype
-is_a: OMP:0007194 ! biological process phenotype
+def: "This term was made obsolete because it is a duplicate of OMP:0007351." [OMP:DAS]
+is_obsolete: true
+replaced_by: OMP:0007351
 created_by: siegele
 creation_date: 2017-05-29T16:35:44Z
 
 [Term]
 id: OMP:0007550
-name: altered population growth phenotype
-def: "A population growth phenotype where the rate, frequency, timing, or extent of the process of population growth is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007167 ! population growth phenotype
-is_a: OMP:0007549 ! altered biological process phenotype
+name: altered population growth - duplicate term
+def: "DO NOT USE. This is a duplicate of OMP:0007157, which is the correct term to use for annotations." [OMP:DAS]
+is_obsolete: true
+replaced_by: OMP:0007157
 created_by: siegele
 creation_date: 2017-05-29T16:37:18Z
 
@@ -13858,6 +13956,758 @@ synonym: "decreased rate of monokaryotic fruiting" EXACT []
 is_a: OMP:0007547 ! decreased haploid fruiting
 created_by: siegele
 creation_date: 2017-05-29T17:48:15Z
+
+[Term]
+id: OMP:0007553
+name: clamp cell morphology phenotype
+def: "A hyphal morphology phenotype relating to the size, shape, or appearance of a clamp cell, which is a hook-like projection that forms on the apical cell of a fungal hypha and will form a clamp connection with the pre-apical cell." [DOI:10.1007/978-3-642-22916-9_10, FAO:0000060, OMP:DAS]
+is_a: OMP:0007556 ! hyphal morphology phenotype
+created_by: siegele
+creation_date: 2017-05-30T14:37:57Z
+
+[Term]
+id: OMP:0007554
+name: titan cell formation phenotype
+def: "A microbial phenotype relating to the formation of titan cells, which are large cells produced by fungi that typically exhibit altered capsule structure, a thickened cell wall, increased ploidy, and resistance to nitrosative and oxidative stresses." [FAO:0000063, OMP:DAS, PMID:21821718]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2017-05-30T15:28:59Z
+
+[Term]
+id: OMP:0007555
+name: multicellular microorganism morphology phenotype
+def: "A microbial phenotype relating to the size, shape, or appearance of a multicellular microorganism." [OMP:DAS]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2017-05-30T15:39:20Z
+
+[Term]
+id: OMP:0007556
+name: hyphal morphology phenotype
+def: "A multicellular microorganism morphology phenotype relating to the size, shape, or appearance of a hypha, which is a branching filamentous structure that consists of one or more cells surrounded by a tubular cell wall." [OMP:DAS]
+is_a: OMP:0007555 ! multicellular microorganism morphology phenotype
+created_by: siegele
+creation_date: 2017-05-30T16:03:57Z
+
+[Term]
+id: OMP:0007557
+name: filamentous growth of a multicellular organism phenotype
+def: "A filamentous growth phenotype in which a multicellular microbe grows in a threadlike, filamentous shape." [GO:0044181, OMP:DAS]
+synonym: "hyphal growth phenotype" EXACT []
+is_a: OMP:0005243 ! filamentous growth phenotype
+created_by: siegele
+creation_date: 2017-05-30T16:34:41Z
+
+[Term]
+id: OMP:0007558
+name: clamp cell formation phenotype
+def: "A xxx phenotype relating to the formation of clamp cells, which are hook-shaped cells found at the septa of dikaryotic hyphae. Clamp cells develop from the most apical cells (tip cells) of the dikaryotic hyphae." [OMP:DAS, PMID:15162390]
+is_a: OMP:0007557 ! filamentous growth of a multicellular organism phenotype
+created_by: siegele
+creation_date: 2017-05-30T16:44:54Z
+
+[Term]
+id: OMP:0007559
+name: clamp connection morphology phenotype
+is_a: OMP:0007556 ! hyphal morphology phenotype
+created_by: siegele
+creation_date: 2017-05-30T17:04:06Z
+
+[Term]
+id: OMP:0007560
+name: conidiation phenotype
+def: "An asexual sporulation phenotype relating to the formation of a conidium, which is a nonmotile spore formed by higher fungi; conidia are typically produced by conversion of hyphal elements, or are borne on sporogenous cells on or within specialized structures termed conidiophores." [FAO:0000024, GO:0048315, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0007142 ! asexual sporulation phenotype
+created_by: dsiegele
+creation_date: 2017-06-19T15:29:04Z
+
+[Term]
+id: OMP:0007561
+name: meiotic nuclear division phenotype
+def: "A cellular process phenotype related to one or both of the nuclear divisions that occur as part of the meiotic cell cycle." [GO:0140013, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+synonym: "abnormal meiosis" RELATED [FYPO:0000051]
+synonym: "normal meiosis" NARROW [FYPO:0000478]
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: dsiegele
+creation_date: 2017-06-20T15:55:03Z
+
+[Term]
+id: OMP:0007562
+name: presence of meiotic nuclear division
+def: "A meiotic nuclear division phenotype in which both the first and second meiotic nuclear divisions occur." [GO:00140013, OMP:DAS]
+xref: FYPO:0000478 "normal meiosis"
+is_a: OMP:0007561 ! meiotic nuclear division phenotype
+created_by: dsiegele
+creation_date: 2017-06-20T16:09:31Z
+
+[Term]
+id: OMP:0007563
+name: absence of meiotic nuclear division
+def: "A meiotic nuclear division phenotype in which both the first and second meiotic nuclear divisions are absent." [OMP:DAS]
+is_a: OMP:0007561 ! meiotic nuclear division phenotype
+created_by: dsiegele
+creation_date: 2017-06-20T16:09:31Z
+
+[Term]
+id: OMP:0007564
+name: altered meiotic nuclear division
+def: "A meiotic nuclear division phenotype where one or both of the meiotic nuclear divisons is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007342 ! altered cellular process
+is_a: OMP:0007561 ! meiotic nuclear division phenotype
+created_by: dsiegele
+creation_date: 2017-06-20T16:09:31Z
+
+[Term]
+id: OMP:0007565
+name: abolished meiotic nuclear division
+def: "An altered meiotic nuclear division phenotype in which one or both meiotic nuclear divisions is abolished." [FYPO:0000474, OMP:DAS]
+xref: FYPO:0000474 "abolished meiosis"
+is_a: OMP:0007563 ! absence of meiotic nuclear division
+is_a: OMP:0007564 ! altered meiotic nuclear division
+created_by: dsiegele
+creation_date: 2017-06-20T16:12:11Z
+
+[Term]
+id: OMP:0007566
+name: abolished meiosis I
+def: "An abolished meiotic nuclear division phenotype in which the first meiotic nuclear division, in which homologous chromosomes are normally paired and segregated from each other, does not occur." [GO:0007127, OMP:DAS]
+xref: FYPO:0003378 "abolished meiosis I"
+is_a: OMP:0007565 ! abolished meiotic nuclear division
+created_by: dsiegele
+creation_date: 2017-06-20T16:18:05Z
+
+[Term]
+id: OMP:0007567
+name: abolished meiosis II
+def: "An abolished meiotic nuclear division phenotype in which the second meiotic nuclear division, in which two chromatids in each chromosome are normally separated, does not occur." [GO:0007135, OMP:DAS]
+xref: FYPO:0003379 "abolished meiosis II"
+is_a: OMP:0007565 ! abolished meiotic nuclear division
+created_by: dsiegele
+creation_date: 2017-06-20T16:18:05Z
+
+[Term]
+id: OMP:0007568
+name: resistance to stress phenotype
+def: "A population growth phenotype related to the resistance or sensitivity that microbes in a population show when exposed to a stress. Typically, a population is deemed resistant to a stress if microbes in the population continue to grow and multiply when exposed to the stress. A population is deemed sensitive to a stress if microbes in the population stop growing and multiplying (and may die) when exposed to the stress." [FYPO:0002046, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.\n\nUse a descendant of this term if you have assayed growth of cells exposed to a stress in culture. If you have assayed the response to a stress at the subcellular or molecular level, consider annotating to one of the descendants of 'response to stress phenotype' (OMP:0000173).
+synonym: "resistant to a stress" NARROW []
+synonym: "sensitive to a stress" NARROW []
+is_a: OMP:0007167 ! population growth phenotype
+created_by: dsiegele
+creation_date: 2017-06-21T14:34:05Z
+
+[Term]
+id: OMP:0007569
+name: resistance to oxidative stress phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to oxidative stress, such as exposure to reactive oxygen species or reactive nitrogen species." [OMP:DAS]
+synonym: "resistance to hydrogen peroxide stress" NARROW []
+is_a: OMP:0007568 ! resistance to stress phenotype
+created_by: dsiegele
+creation_date: 2017-06-21T14:51:26Z
+
+[Term]
+id: OMP:0007570
+name: presence of resistance to oxidative stress
+def: "A resistance to oxidative stress phenotype where microbes in a population continue to grow and divide when exposed to oxidative stress." [OMP:DAS]
+synonym: "resistant to oxidative stress" EXACT []
+is_a: OMP:0007569 ! resistance to oxidative stress phenotype
+created_by: dsiegele
+creation_date: 2017-06-21T14:58:47Z
+
+[Term]
+id: OMP:0007571
+name: absence of resistance to oxidative stress
+def: "A resistance to oxidative stress phenotype where microbes in a population stop growing (and may die) when exposed to oxidative stress." [OMP:DAS]
+synonym: "sensitive to oxidative stress" EXACT []
+xref: FYPO:0000726 "sensitive to oxidative stress"
+is_a: OMP:0007569 ! resistance to oxidative stress phenotype
+created_by: dsiegele
+creation_date: 2017-06-21T14:59:22Z
+
+[Term]
+id: OMP:0007572
+name: altered resistance to stress
+def: "A resistance to stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to a stress is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007157 ! altered population growth
+is_a: OMP:0007568 ! resistance to stress phenotype
+created_by: dsiegele
+creation_date: 2017-06-21T15:00:53Z
+
+[Term]
+id: OMP:0007573
+name: resistance to acidic pH stress phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to environmental pH at or below 6.5." [OMP:DAS]
+is_a: OMP:0007568 ! resistance to stress phenotype
+created_by: dsiegele
+creation_date: 2017-06-21T16:00:11Z
+
+[Term]
+id: OMP:0007574
+name: resistance to alkaline pH stress phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to environmental alkaline pH (typically, pH >7.5)." [OMP:DAS]
+is_a: OMP:0007568 ! resistance to stress phenotype
+created_by: dsiegele
+creation_date: 2017-06-21T16:01:32Z
+
+[Term]
+id: OMP:0007575
+name: resistance to dessication stress phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to dessication stress." [OMP:DAS]
+is_a: OMP:0007568 ! resistance to stress phenotype
+created_by: dsiegele
+creation_date: 2017-06-21T16:05:55Z
+
+[Term]
+id: OMP:0007576
+name: resistance to radiation stress phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to radiation." [OMP:DAS]
+is_a: OMP:0007568 ! resistance to stress phenotype
+created_by: dsiegele
+creation_date: 2017-06-21T16:08:28Z
+
+[Term]
+id: OMP:0007577
+name: resistance to chemical stress phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to a chemical." [OMP:DAS]
+is_a: OMP:0007568 ! resistance to stress phenotype
+created_by: dsiegele
+creation_date: 2017-06-21T16:14:11Z
+
+[Term]
+id: OMP:0007578
+name: resistance to cold phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to a temperature below the optimal growth temperature of the microbe." [APO:0000148, OMP:DAS]
+is_a: OMP:0007568 ! resistance to stress phenotype
+created_by: siegele
+creation_date: 2017-06-25T18:41:35Z
+
+[Term]
+id: OMP:0007579
+name: resistance to heat phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to a temperature above the optimal growth temperature for the microbe." [OMP:DAS]
+is_a: OMP:0007568 ! resistance to stress phenotype
+created_by: siegele
+creation_date: 2017-06-25T18:42:01Z
+
+[Term]
+id: OMP:0007580
+name: presence of resistance to cold
+def: "A resistance to cold phenotype where microbes in a population continue to grow and divide when exposed to a temperature below the optimal growth temperature of the microbe." [OMP:DAS]
+synonym: "cold resistant" EXACT []
+synonym: "resistant to low temperature" EXACT []
+is_a: OMP:0007578 ! resistance to cold phenotype
+created_by: siegele
+creation_date: 2017-06-25T18:48:47Z
+
+[Term]
+id: OMP:0007581
+name: absence of resistance to cold
+def: "A resistance to cold phenotype where microbes in a population stop growing (and may die) when exposed to a temperature below the optimal growth temperature of the microbe." [OMP:DAS]
+synonym: "cold sensitive" EXACT [YPO:0000148]
+synonym: "cold sensitivity" EXACT [APO:0000148]
+is_a: OMP:0007578 ! resistance to cold phenotype
+created_by: siegele
+creation_date: 2017-06-25T18:48:47Z
+
+[Term]
+id: OMP:0007582
+name: altered resistance to cold
+def: "A resistance to cold phenotype where the resistance or sensitivity that microbes in a population show when exposed to a temperature below the optimal growth temperature of the microbe is altered relative to a designated control." [OMP:DAS]
+synonym: "altered cold sensitivity" EXACT []
+synonym: "altered resistance to low temperature" EXACT []
+is_a: OMP:0007572 ! altered resistance to stress
+is_a: OMP:0007578 ! resistance to cold phenotype
+created_by: siegele
+creation_date: 2017-06-25T18:48:47Z
+
+[Term]
+id: OMP:0007583
+name: presence of resistance to heat
+def: "A resistance to heat phenotype where cells in a population continue to grow and divide when exposed to a temperature above the optimal growth temperature of the microbe." [OMP:DAS]
+synonym: "heat resistant" EXACT []
+synonym: "resistant to high temperature" EXACT []
+is_a: OMP:0007579 ! resistance to heat phenotype
+created_by: siegele
+creation_date: 2017-06-25T18:54:38Z
+
+[Term]
+id: OMP:0007584
+name: absence of resistance to heat
+def: "A resistance to heat phenotype where cells in a population stop growing (and may die) when exposed to a temperature above the optimal growth temperature of the microbe." [OMP:DAS]
+synonym: "sensitive to high temperature" EXACT []
+is_a: OMP:0007579 ! resistance to heat phenotype
+created_by: siegele
+creation_date: 2017-06-25T18:54:39Z
+
+[Term]
+id: OMP:0007585
+name: altered resistance to heat
+def: "A resistance to heat phenotype where the resistance or sensitivity of microbes in a population to a temperature above the optimal growth temperature of the microbe is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007572 ! altered resistance to stress
+is_a: OMP:0007579 ! resistance to heat phenotype
+created_by: siegele
+creation_date: 2017-06-25T18:54:39Z
+
+[Term]
+id: OMP:0007586
+name: altered resistance to chemical stress
+def: "A resistance to chemical stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to a chemical stress is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007572 ! altered resistance to stress
+is_a: OMP:0007577 ! resistance to chemical stress phenotype
+created_by: siegele
+creation_date: 2017-06-25T19:35:57Z
+
+[Term]
+id: OMP:0007587
+name: increased resistance to cold
+def: "An altered resistance to cold phenotype where the resistance of microbes in a population to temperatures below the optimal growth temperature is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007582 ! altered resistance to cold
+created_by: siegele
+creation_date: 2017-06-25T22:21:53Z
+
+[Term]
+id: OMP:0007588
+name: decreased resistance to cold
+def: "An altered resistance to cold phenotype where the resistance of microbes in a population to temperatures below the optimal growth temperature is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007582 ! altered resistance to cold
+created_by: siegele
+creation_date: 2017-06-25T22:21:53Z
+
+[Term]
+id: OMP:0007589
+name: abolished resistance to cold
+def: "A decreased resistance to cold phenotype where the resistance of microbes in a population to temperature below the optimal growth temperature is abolished." [OMP:DAS]
+is_a: OMP:0007581 ! absence of resistance to cold
+is_a: OMP:0007588 ! decreased resistance to cold
+created_by: siegele
+creation_date: 2017-06-25T22:21:53Z
+
+[Term]
+id: OMP:0007590
+name: increased resistance to heat
+def: "An altered resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is increased relative to a designated control." [OMP:DAS]
+xref: FYPO:0002626 "resistance to heat"
+is_a: OMP:0007585 ! altered resistance to heat
+created_by: siegele
+creation_date: 2017-06-25T22:26:03Z
+
+[Term]
+id: OMP:0007591
+name: decreased resistance to heat
+def: "An altered resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007585 ! altered resistance to heat
+created_by: siegele
+creation_date: 2017-06-25T22:26:03Z
+
+[Term]
+id: OMP:0007592
+name: abolished resistance to heat
+def: "A decreased resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is abolished." [OMP:DAS]
+synonym: "heat sensitive" EXACT []
+synonym: "heat sensitivity" EXACT [APO:00000147]
+is_a: OMP:0007584 ! absence of resistance to heat
+is_a: OMP:0007591 ! decreased resistance to heat
+created_by: siegele
+creation_date: 2017-06-25T22:26:03Z
+
+[Term]
+id: OMP:0007593
+name: resistance to freeze-thaw stress phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to repeated cycles of freezing and thawing." [OMP:DAS]
+is_a: OMP:0007568 ! resistance to stress phenotype
+created_by: siegele
+creation_date: 2017-06-26T17:11:33Z
+
+[Term]
+id: OMP:0007594
+name: altered resistance to radiation stress
+def: "A resistance to radiation stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to radiation stress is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007572 ! altered resistance to stress
+is_a: OMP:0007576 ! resistance to radiation stress phenotype
+created_by: siegele
+creation_date: 2017-06-26T20:24:54Z
+
+[Term]
+id: OMP:0007595
+name: presence of population growth
+def: "A population growth phenotype where there is reproduction of a microbial population, i.e. the number of individuals in the population increases." [OMP:DAS]
+is_a: OMP:0007167 ! population growth phenotype
+created_by: siegele
+creation_date: 2017-06-27T12:19:09Z
+
+[Term]
+id: OMP:0007596
+name: absence of population growth
+def: "A population growth phenotype where the number of individuals in a microbial population does not increase." [OMP:DAS]
+is_a: OMP:0007167 ! population growth phenotype
+created_by: siegele
+creation_date: 2017-06-27T12:19:09Z
+
+[Term]
+id: OMP:0007597
+name: increased population growth
+def: "An altered population growth phenotype where the rate, frequency, timing, or extent of reproduction of a microbial population is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007157 ! altered population growth
+created_by: siegele
+creation_date: 2017-06-27T12:40:34Z
+
+[Term]
+id: OMP:0007598
+name: decreased population growth
+def: "An altered population growth phenotype where the rate, frequency, timing, or extent of reproduction of a microbial population is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007157 ! altered population growth
+created_by: siegele
+creation_date: 2017-06-27T12:40:34Z
+
+[Term]
+id: OMP:0007599
+name: abolished population growth
+def: "A decreased population growth phenotype where reproduction of a microbial population is abolished." [OMP:DAS]
+is_a: OMP:0007598 ! decreased population growth
+created_by: siegele
+creation_date: 2017-06-27T12:40:34Z
+
+[Term]
+id: OMP:0007600
+name: presence of chromosome segregation
+def: "A chromosome segregation phenotype where replicated chromosome(s) are physically separated and apportioned as a set to daughter cells." [OMP:DAS]
+is_a: OMP:0005047 ! chromosome segregation phenotype
+created_by: siegele
+creation_date: 2017-06-27T17:34:40Z
+
+[Term]
+id: OMP:0007601
+name: absence of chromosome segregation
+def: "A chromosome segregation phenotype where replicated chromosome(s) are not apportioned as a set to daughter cells." [OMP:DAS]
+is_a: OMP:0005047 ! chromosome segregation phenotype
+created_by: siegele
+creation_date: 2017-06-27T17:34:40Z
+
+[Term]
+id: OMP:0007602
+name: DNA break phenotype
+def: "A genetic material phenotype related to the occurrence of DNA breaks in chromosomal DNA." [OMP:DAS]
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: siegele
+creation_date: 2017-06-27T21:46:34Z
+
+[Term]
+id: OMP:0007603
+name: presence of DNA breaks
+def: "A DNA break phenotype where breaks in chromosomal DNA occur." [OMP:DAS]
+is_a: OMP:0007602 ! DNA break phenotype
+created_by: siegele
+creation_date: 2017-06-27T21:49:30Z
+
+[Term]
+id: OMP:0007604
+name: absence of DNA breaks
+def: "A DNA break phenotype where breaks in chromosomal DNA don't occur." [OMP:DAS]
+is_a: OMP:0007602 ! DNA break phenotype
+created_by: siegele
+creation_date: 2017-06-27T21:49:30Z
+
+[Term]
+id: OMP:0007605
+name: altered frequency of DNA breaks
+def: "A DNA break phenotype where the frequency of breaks in chromosomal DNA is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007602 ! DNA break phenotype
+created_by: siegele
+creation_date: 2017-06-27T21:49:30Z
+
+[Term]
+id: OMP:0007606
+name: increased frequency of DNA breaks
+def: "An altered frequency of DNA breaks phenotype where the frequency of breaks in chromosomal DNA is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007605 ! altered frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:52:51Z
+
+[Term]
+id: OMP:0007607
+name: decreased frequency of DNA breaks
+def: "An altered frequency of DNA breaks phenotype where the frequency of breaks in chromosomal DNA is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007605 ! altered frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:52:51Z
+
+[Term]
+id: OMP:0007608
+name: abolished DNA breaks
+def: "A decreased frequency of DNA breaks phenotype where DNA breaks are abolished." [OMP:DAS]
+is_a: OMP:0007607 ! decreased frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:52:51Z
+
+[Term]
+id: OMP:0007609
+name: presence of single-strand DNA breaks
+def: "A presence of DNA break phenotype where single-strand breaks in chromosomal DNA occur." [OMP:DAS]
+is_a: OMP:0007603 ! presence of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:53:37Z
+
+[Term]
+id: OMP:0007610
+name: presence of double-strand DNA breaks
+def: "A presence of DNA break phenotype where double-strand breaks in chromosomal DNA occur." [OMP:DAS]
+is_a: OMP:0007603 ! presence of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:53:37Z
+
+[Term]
+id: OMP:0007611
+name: absence of single-strand DNA breaks
+def: "An absence of DNA breaks phenotype where single-strand DNA breaks  don't occur." [OMP:DAS]
+is_a: OMP:0007604 ! absence of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:54:07Z
+
+[Term]
+id: OMP:0007612
+name: absence of double-strand DNA breaks
+def: "An absence of DNA breaks phenotype where double-strand DNA breaks don't occur." [OMP:DAS]
+is_a: OMP:0007604 ! absence of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:54:07Z
+
+[Term]
+id: OMP:0007613
+name: increased frequency of single-strand DNA breaks
+def: "An increased frequency of DNA breaks phenotype where the frequency of single-strand breaks in chromosomal DNA is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007606 ! increased frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:54:53Z
+
+[Term]
+id: OMP:0007614
+name: increased frequency of double-strand DNA breaks
+def: "An increased frequency of DNA breaks phenotype where the frequency of double-strand breaks in chromosomal DNA is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007606 ! increased frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:54:53Z
+
+[Term]
+id: OMP:0007615
+name: decreased frequency of single-strand DNA breaks
+def: "A decreased frequency of DNA breaks phenotype where the frequency of single-strand breaks in chromosomal DNA is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007607 ! decreased frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:55:25Z
+
+[Term]
+id: OMP:0007616
+name: decreased frequency of double-strand DNA breaks
+def: "A decreased frequency of DNA breaks phenotype where the frequency of double-strand breaks in chromosomal DNA is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007607 ! decreased frequency of DNA breaks
+created_by: siegele
+creation_date: 2017-06-27T21:55:25Z
+
+[Term]
+id: OMP:0007617
+name: Holliday junction structure phenotype
+def: "A genetic material phenotype related to the occurrence of Holliday junction structures in chromosomal DNA." [OMP:DAS]
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: siegele
+creation_date: 2017-06-28T13:51:06Z
+
+[Term]
+id: OMP:0007618
+name: presence of Holliday junction structures
+def: "A Holliday junction structure phenotype where Holliday junction structures are present in chromosomal DNA." [OMP:DAS]
+is_a: OMP:0007617 ! Holliday junction structure phenotype
+created_by: siegele
+creation_date: 2017-06-28T13:53:37Z
+
+[Term]
+id: OMP:0007619
+name: absence of Holliday junction structures
+def: "A Holliday junction structure phenotype where Holliday junction structures are not present in chromosomal DNA." [OMP:DAS]
+is_a: OMP:0007617 ! Holliday junction structure phenotype
+created_by: siegele
+creation_date: 2017-06-28T13:53:37Z
+
+[Term]
+id: OMP:0007620
+name: altered frequency of Holliday junction structures
+def: "A Holliday junction structure phenotype where the frequency of Holliday junction structures in chromosomal DNA is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007617 ! Holliday junction structure phenotype
+created_by: siegele
+creation_date: 2017-06-28T13:53:37Z
+
+[Term]
+id: OMP:0007621
+name: increased frequency of Holliday junction structures
+def: "An altered frequency of Holliday junction phenotype where the frequency of Holliday junction structures in chromosomal DNA is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007620 ! altered frequency of Holliday junction structures
+created_by: siegele
+creation_date: 2017-06-28T13:56:30Z
+
+[Term]
+id: OMP:0007622
+name: decreased frequency of Holliday junction structures
+def: "An altered frequency of Holliday junction phenotype where the frequency of Holliday junction structures in chromosomal DNA is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007620 ! altered frequency of Holliday junction structures
+created_by: siegele
+creation_date: 2017-06-28T13:56:30Z
+
+[Term]
+id: OMP:0007623
+name: abolished Holliday junction structures
+def: "A decreased frequency of Holliday junction structure phenotype where the occurrence of Holliday junction structures in chromosomal DNA is abolished." [OMP:DAS]
+is_a: OMP:0007622 ! decreased frequency of Holliday junction structures
+created_by: siegele
+creation_date: 2017-06-28T13:56:30Z
+
+[Term]
+id: OMP:0007624
+name: presence of chitin in cell wall
+def: "A presence of cell wall phenotype where the cell wall of a microbe contains chitin (CHEBI:17029)." [OMP:DAS]
+xref: APO:0000199 "chitin deposition"
+is_a: OMP:0005235 ! presence of cell wall
+created_by: dsiegele
+creation_date: 2017-07-05T13:24:55Z
+
+[Term]
+id: OMP:0007625
+name: absence of chitin in cell wall
+def: "A presence of cell wall phenotype where the cell wall of a microbe doesn't contain chitin (CHEBI:17029)." [OMP:DAS]
+is_a: OMP:0005235 ! presence of cell wall
+created_by: dsiegele
+creation_date: 2017-07-05T13:40:27Z
+
+[Term]
+id: OMP:0007626
+name: altered cell wall chitin level
+def: "An altered cell wall morphology phenotype where the amount of chitin (CHEBI:17029) measured in the cell wall of a microbe is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0005234 ! altered cell wall morphology
+is_a: OMP:0007636 ! altered polysaccharide level
+created_by: dsiegele
+creation_date: 2017-07-05T13:42:09Z
+
+[Term]
+id: OMP:0007627
+name: increased cell wall chitin level
+def: "An altered cell wall chitin level phenotype where the amount of chitin measured in the cell wall of a microbe is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007626 ! altered cell wall chitin level
+created_by: dsiegele
+creation_date: 2017-07-05T13:44:03Z
+
+[Term]
+id: OMP:0007628
+name: decreased cell wall chitin level
+def: "An altered cell wall chitin level phenotype where the amount of chitin measured in the cell wall is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007626 ! altered cell wall chitin level
+created_by: dsiegele
+creation_date: 2017-07-05T13:44:03Z
+
+[Term]
+id: OMP:0007629
+name: abolished chitin in cell wall
+def: "A decreased cell wall chitin level phenotype where the amount of chitin in the cell wall is abolished." [OMP:DAS]
+is_a: OMP:0007628 ! decreased cell wall chitin level
+created_by: dsiegele
+creation_date: 2017-07-05T13:44:03Z
+
+[Term]
+id: OMP:0007630
+name: altered cell wall protein level
+def: "An altered cell wall morphology phenotype where the amount of a cell wall protein measured in a cell is altered relative to a designated control. Total cell wall protein or a specific cell wall protein may be affected." [OMP:DAS]
+is_a: OMP:0005234 ! altered cell wall morphology
+is_a: OMP:0007635 ! altered protein level
+created_by: dsiegele
+creation_date: 2017-07-05T14:26:32Z
+
+[Term]
+id: OMP:0007631
+name: increased cell wall protein level
+def: "An altered cell wall protein level where the amount of cell wall protein measured in a cell is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007630 ! altered cell wall protein level
+created_by: dsiegele
+creation_date: 2017-07-05T16:47:42Z
+
+[Term]
+id: OMP:0007632
+name: cell phenotype
+def: "A microbial phenotype that is observed at the level of an individual cell." [FYPO:0000002, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+xref: FYPO:0000002 "cell phenotype"
+is_a: OMP:0000000 ! microbial phenotype
+created_by: dsiegele
+creation_date: 2017-07-05T16:09:49Z
+
+[Term]
+id: OMP:0007633
+name: cellular physical quality phenotype
+def: "A cell phenotype that affects any physical object quality of a microbe, such as morphology, number, location, etc., of a cell or a cellular component." [FYPO:0000136, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+xref: FYPO:0000136 "cellular physical quality phenotype"
+is_a: OMP:0007632 ! cell phenotype
+created_by: dsiegele
+creation_date: 2017-07-05T16:19:07Z
+
+[Term]
+id: OMP:0007634
+name: altered level of substance in cell
+def: "A cell phenotype in which the amount of a specific substance measured in a cell is altered relative to a designated control." [FYPO:0000989, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0007637 ! altered cellular physical quality phenotype
+created_by: dsiegele
+creation_date: 2017-07-05T16:20:55Z
+
+[Term]
+id: OMP:0007635
+name: altered protein level
+def: "An altered level of substance in a cell phenotype in which the amount of protein measured in a cell is altered relative to a designated control. Total protein or a specific protein may be affected." [FYPO:0000834, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0007634 ! altered level of substance in cell
+created_by: dsiegele
+creation_date: 2017-07-05T16:24:26Z
+
+[Term]
+id: OMP:0007636
+name: altered polysaccharide level
+def: "An altered level of substance in cell phenotype in which the amount of a polysaccharide measured in a cell is altered relative to a designated control." [FYPO:0001085, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0007634 ! altered level of substance in cell
+created_by: dsiegele
+creation_date: 2017-07-05T16:28:00Z
+
+[Term]
+id: OMP:0007637
+name: altered cellular physical quality phenotype
+def: "A cellular physical quality phenotype where any physical object quality of a microbe, such as morphology, number, location, etc., of a cell or a cellular component is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007633 ! cellular physical quality phenotype
+is_a: OMP:0007638 ! altered cell phenotype
+created_by: dsiegele
+creation_date: 2017-07-05T16:31:01Z
+
+[Term]
+id: OMP:0007638
+name: altered cell phenotype
+def: "A cell phenotype that is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007085 ! altered microbial phenotype
+is_a: OMP:0007632 ! cell phenotype
+created_by: dsiegele
+creation_date: 2017-07-05T16:32:45Z
+
+[Term]
+id: OMP:0007639
+name: decreased cell wall protein level
+def: "An altered cell wall protein level where the amount of cell wall protein measured in a cell is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007630 ! altered cell wall protein level
+created_by: dsiegele
+creation_date: 2017-07-05T16:47:42Z
+
+[Term]
+id: OMP:0007640
+name: abolished cell wall protein level
+def: "A decreased cell wall protein level phenotype where the amount of cell wall protein is abolished." [OMP:DAS]
+is_a: OMP:0007639 ! decreased cell wall protein level
+created_by: dsiegele
+creation_date: 2017-07-05T16:47:42Z
 
 [Term]
 id: OMP:0008000
