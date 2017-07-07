@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 07:07:2017 16:25
-saved-by: Tianyizhou
+date: 07:07:2017 17:46
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -7551,7 +7551,7 @@ creation_date: 2014-07-24T17:26:03Z
 [Term]
 id: OMP:0006022
 name: nutrient utilization phenotype
-def: "A microbial phenotype involving the utilization of a nutrient, which is a substance used for biosynthesis or energy release." [ISBN:9780073402406]
+def: "A microbial phenotype that affects the utilization of a nutrient, which is a substance used for biosynthesis or energy release." [ISBN:9780073402406]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: jonathanherrera
@@ -9098,7 +9098,7 @@ creation_date: 2013-09-11T17:14:56Z
 [Term]
 id: OMP:0007012
 name: autotrophic
-def: "A carbon source utilization phenotype where an organism can use carbon dioxide (CO2) as the carbon source." [ISBN:9780073402406, OMP:DAS]
+def: "A carbon source utilization phenotype where a microbe can use carbon dioxide (CO2) as the sole or primary carbon source." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:10:16Z
@@ -10485,7 +10485,8 @@ creation_date: 2014-09-14T15:36:38Z
 [Term]
 id: OMP:0007167
 name: population growth phenotype
-def: "A microbial phenotype where the trait in question is the increase in the number of individuals in a microbial population as the result of sexual or asexual reproduction." [OMP:DAS]
+def: "A microbial phenotype that affects the rate or extent of increase in the number of individuals in a microbial population as the result of sexual or asexual reproduction." [FYPO:0001358, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
 xref: GO:0000003 "reproduction"
 is_a: OMP:0007006 ! population phenotype
 is_a: OMP:0007194 ! biological process phenotype
