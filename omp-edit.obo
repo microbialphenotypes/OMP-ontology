@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 07:07:2017 17:46
-saved-by: dsiegele
+date: 11:07:2017 02:28
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -14578,6 +14578,38 @@ created_by: dsiegele
 creation_date: 2017-07-05T16:47:42Z
 
 [Term]
+id: OMP:0007641
+name: population growth yield phenotype
+def: "A population growth phenotype related to the number of individuals in a microbial population produced per amount of nutrient(s) consumed." [OMP:DAS]
+is_a: OMP:0007167 ! population growth phenotype
+created_by: siegele
+creation_date: 2017-07-11T02:11:36Z
+
+[Term]
+id: OMP:0007642
+name: altered population growth yield
+def: "A population growth yield phenotype where the number of microbes produced per amount of nutrient(s) consumed is  altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007641 ! population growth yield phenotype
+created_by: siegele
+creation_date: 2017-07-11T02:22:26Z
+
+[Term]
+id: OMP:0007643
+name: increased population growth yield
+def: "An altered population growth yield phenotype where the number of microbes produced per amount of nutrient(s) consumed is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007642 ! altered population growth yield
+created_by: siegele
+creation_date: 2017-07-11T02:24:32Z
+
+[Term]
+id: OMP:0007644
+name: decreased population growth yield
+def: "An altered population growth yield phenotype where the number of microbes produced per amount of nutrient(s) consumed is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007642 ! altered population growth yield
+created_by: siegele
+creation_date: 2017-07-11T02:24:32Z
+
+[Term]
 id: OMP:0008000
 name: spore morphology phenotype
 def: "A microbial phenotype that is related to the form and structure of a spore or spores produced by a microbe." [OMP:KDA]
@@ -15121,7 +15153,7 @@ subset: cell_quality
 subset: mpath_slim
 subset: value_slim
 is_a: PATO:0000060 ! spatial pattern
-relationship: is_opposite_of PATO:0000440
+relationship: is_opposite_of PATO:0000440 ! regular spatial pattern
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
@@ -15135,7 +15167,7 @@ subset: value_slim
 synonym: "ramified" EXACT []
 synonym: "ramiform" EXACT []
 is_a: PATO:0002009 ! branchiness
-relationship: is_opposite_of PATO:0000414
+relationship: is_opposite_of PATO:0000414 ! unbranched
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
@@ -15181,7 +15213,7 @@ def: "A nutritional quality inhering in a bearer by virtue of the bearer's inabi
 subset: disposition_slim
 subset: value_slim
 is_a: PATO:0000056 ! trophic quality
-relationship: is_opposite_of PATO:0000423
+relationship: is_opposite_of PATO:0000423 ! prototrophic
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
@@ -15244,7 +15276,7 @@ subset: mpath_slim
 subset: value_slim
 synonym: "absence" EXACT []
 synonym: "absent from organism" EXACT []
-is_a: PATO:0000070 ! count
+is_a: PATO:0000070 ! amount
 
 [Term]
 id: PATO:0000467
@@ -15255,7 +15287,7 @@ subset: absent_slim
 subset: value_slim
 synonym: "present in organism" RELATED []
 is_a: PATO:0000070 ! amount
-relationship: is_opposite_of PATO:0000462
+relationship: is_opposite_of PATO:0000462 ! absent
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
@@ -15487,7 +15519,7 @@ synonym: "fused to" EXACT []
 synonym: "joined with" RELATED []
 synonym: "merged with" RELATED []
 is_a: PATO:0000141 ! structure
-relationship: is_opposite_of PATO:0000651
+relationship: is_opposite_of PATO:0000651 ! unfused from
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
@@ -15549,7 +15581,7 @@ subset: mpath_slim
 subset: value_slim
 synonym: "coarse" EXACT []
 is_a: PATO:0000150 ! texture
-relationship: is_opposite_of PATO:0000701
+relationship: is_opposite_of PATO:0000701 ! smooth
 property_value: IAO:0000412 http://purl.obolibrary.org/obo pato.owl
 
 [Term]
@@ -15682,7 +15714,7 @@ subset: disposition_slim
 subset: value_slim
 synonym: "porous" RELATED []
 is_a: PATO:0000970 ! permeability
-relationship: is_opposite_of PATO:0000983
+relationship: is_opposite_of PATO:0000983 ! impermeable
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
@@ -16080,7 +16112,7 @@ is_a: PATO:0002305 ! increased object quality
 intersection_of: PATO:0000982 ! permeable
 intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
 relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
-relationship: is_opposite_of PATO:0001578
+relationship: is_opposite_of PATO:0001578 ! decreased permeability
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
@@ -16235,7 +16267,7 @@ def: "A shape quality in a bearer by virtue of the bearer's curving inward." [Wo
 subset: cell_quality
 subset: value_slim
 is_a: PATO:0002005 ! concavity
-relationship: is_opposite_of PATO:0001355
+relationship: is_opposite_of PATO:0001355 ! convex
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
@@ -16493,7 +16525,7 @@ subset: value_slim
 synonym: "permeable" RELATED []
 synonym: "pierced" RELATED []
 is_a: PATO:0002014 ! structure, cavities
-relationship: is_opposite_of PATO:0001821
+relationship: is_opposite_of PATO:0001821 ! imperforate
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 created_by: george
 creation_date: 2009-10-05T03:37:05Z
@@ -16752,7 +16784,7 @@ namespace: quality
 def: "A structural quality inhering in a bearer by virtue of the bearer's lacking parts or having a reduced form compared to fully formed entities." [PATOC:WD]
 subset: value_slim
 is_a: PATO:0000141 ! structure
-relationship: is_opposite_of PATO:0005012
+relationship: is_opposite_of PATO:0005012 ! complete structure
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 created_by: wasila.dahdul
 creation_date: 2014-09-25T15:12:35Z
@@ -16789,8 +16821,8 @@ name: contains
 namespace: sequence
 def: "The inverse of contained_by." [PMID:20226267]
 comment: Example: pre_miRNA contains miRNA_loop.
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
 is_transitive: true
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
 created_by: kareneilbeck
 creation_date: 2010-10-14T01:32:15Z
 
@@ -16805,11 +16837,11 @@ name: decreased_in_magnitude_relative_to
 namespace: quality
 def: "q1 decreased_in_magnitude_relative_to q2 if and only if magnitude(q1) < magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [PATOC:CJM]
 comment: This relation is used to determine the 'directionality' of relative qualities such as 'decreased strength', relative to the parent type, 'strength'.
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
 is_transitive: true
 is_a: different_in_magnitude_relative_to ! different_in_magnitude_relative_to
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Typedef]
 id: decreased_relative_to
@@ -16825,17 +16857,17 @@ id: derives_from
 name: derives_from
 namespace: sequence
 subset: SOFA
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
 is_transitive: true
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
 
 [Typedef]
 id: different_in_magnitude_relative_to
 name: different_in_magnitude_relative_to
 namespace: quality
 def: "q1 different_in_magnitude_relative_to q2 if and only if magnitude(q1) NOT =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [PATOC:CJM]
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Typedef]
 id: directly_associated_with
@@ -16843,9 +16875,9 @@ name: directly_associated_with
 namespace: quality
 def: "q1 directly_associated_with q2 iff q1 is dependent on q2, and the magnitude of q1 increases if the magnitude of q2 is increased, or the magnitude of q1 decreases if the magnitude of q2 is decreased. The relationship is not necessarily linear." [PATOC:cjm, Wikipedia:Association_(statistics)]
 comment: Example: 'Lewy bodies increased number related to dystrophic neurite increased number' (from annotation of PMID:8740227 in http://ccdb.ucsd.edu/1.0/NDPO.owl#ndpo_404). Here the increase in the number of lewy bodies is directly_associated_with the increase in the number of dystrophic neurites.\nAssociation is weaker than correlation or proportionality. These relations may be later added to PATO.
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 created_by: cjm
 creation_date: 2009-08-26T02:50:08Z
 
@@ -16874,10 +16906,10 @@ name: happens_during
 namespace: external
 xref: GOREL:0000001
 xref: RO:0002092
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
-property_value: usage "Identifies a process, cell cycle stage or life stage during which a phenotype that affects an occurrent, i.e. a biological process or molecular function, is observed or relevant." xsd:string
 is_transitive: true
 is_a: ends_during ! ends_during
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+property_value: usage "Identifies a process, cell cycle stage or life stage during which a phenotype that affects an occurrent, i.e. a biological process or molecular function, is observed or relevant." xsd:string
 
 [Typedef]
 id: has_cross_section
@@ -16896,9 +16928,9 @@ namespace: quality
 id: has_dividend_quality
 name: has_dividend_quality
 namespace: quality
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 range: PATO:0000001 ! quality
 is_a: has_ratio_quality ! has_ratio_quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Typedef]
 id: has_divisor_entity
@@ -16909,9 +16941,9 @@ namespace: quality
 id: has_divisor_quality
 name: has_divisor_quality
 namespace: quality
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 range: PATO:0000001 ! quality
 is_a: has_ratio_quality ! has_ratio_quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Typedef]
 id: has_functional_parent
@@ -16943,9 +16975,9 @@ namespace: sequence
 def: "Inverse of part_of." [http://precedings.nature.com/documents/3495/version/1]
 comment: Example: operon has_part gene.
 xref: BFO:0000051
+is_transitive: true
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
 property_value: usage "Used in FYPO to link phenotypes that are collections of features to phenotypes representing the features." xsd:string
-is_transitive: true
 
 [Typedef]
 id: has_quality
@@ -16958,8 +16990,8 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
 id: has_ratio_quality
 name: has_ratio_quality
 namespace: quality
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 range: PATO:0000001 ! quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Typedef]
 id: has_role
@@ -16973,11 +17005,11 @@ name: increased_in_magnitude_relative_to
 namespace: quality
 def: "q1 increased_in_magnitude_relative_to q2 if and only if magnitude(q1) > magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [PATOC:CJM]
 comment: This relation is used to determine the 'directionality' of relative qualities such as 'increased strength', relative to the parent type, 'strength'.
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
 is_transitive: true
 is_a: different_in_magnitude_relative_to ! different_in_magnitude_relative_to
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Typedef]
 id: increased_relative_to
@@ -17006,9 +17038,9 @@ name: inversely_associated_with
 namespace: quality
 def: "q1 inversely_associated_with q2 iff q1 is dependent on q2, and the magnitude of q1 decreases if the magnitude of q2 is increased, or the magnitude of q1 increases if the magnitude of q2 is decreased. The relationship is not necessarily linear." [PATOC:cjm, Wikipedia:Association_(statistics)]
 comment: Association is weaker than correlation or proportionality. These relations may be later added to PATO.
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 created_by: cjm
 creation_date: 2009-08-26T02:50:24Z
 
@@ -17045,8 +17077,8 @@ id: is_opposite_of
 name: is opposite_of
 namespace: quality
 xref: RO:0002604
-is_metadata_tag: true
 is_class_level: true
+is_metadata_tag: true
 
 [Typedef]
 id: is_substituent_group_from
@@ -17077,17 +17109,17 @@ name: member_of
 namespace: sequence
 comment: A subtype of part_of. Inverse is collection_of. Winston, M, Chaffin, R, Herrmann: A taxonomy of part-whole relations. Cognitive Science 1987, 11:417-444.
 subset: SOFA
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
 is_transitive: true
 is_a: part_of ! part_of
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
 
 [Typedef]
 id: negatively_regulates
 name: negatively regulates
 namespace: external
 xref: RO:0002212
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 is_a: regulates ! regulates
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 
 [Typedef]
 id: never_in_taxon
@@ -17144,9 +17176,9 @@ def: "X part_of Y if X is a subregion of Y." [http://precedings.nature.com/docum
 comment: Example: amino_acid part_of polypeptide.
 subset: SOFA
 xref: BFO:0000050
+is_transitive: true
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
 property_value: usage "Used in FYPO to identify phenotypes that are always observed in the context of another, usually larger-scale, phenotype." xsd:string
-is_transitive: true
 
 [Typedef]
 id: participates_in
@@ -17159,8 +17191,8 @@ id: positively_regulates
 name: positively regulates
 namespace: external
 xref: RO:0002213
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 is_a: regulates ! regulates
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 
 [Typedef]
 id: preceded_by
@@ -17197,17 +17229,17 @@ id: regulates
 name: regulates
 namespace: external
 xref: RO:0002211
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 is_transitive: true
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 
 [Typedef]
 id: similar_in_magnitude_relative_to
 name: similar_in_magnitude_relative_to
 namespace: quality
 def: "q1 similar_in_magnitude_relative_to q2 if and only if magnitude(q1) =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [PATOC:CJM]
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Typedef]
 id: singly_occurring_form_of
@@ -17252,3 +17284,4 @@ namespace: sequence
 def: "A' is a variant (mutation) of A = definition every instance of A' is either an immediate mutation of some instance of A, or there is a chain of immediate mutation processes linking A' to some instance of A." [SO:immuno_workshop]
 comment: Added to SO during the immunology workshop, June 2007.  This relationship was approved by Barry Smith.
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
+
