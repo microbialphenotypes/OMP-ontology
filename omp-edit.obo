@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 11:07:2017 02:28
+date: 24:07:2017 22:25
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -14608,6 +14608,33 @@ def: "An altered population growth yield phenotype where the number of microbes 
 is_a: OMP:0007642 ! altered population growth yield
 created_by: siegele
 creation_date: 2017-07-11T02:24:32Z
+
+[Term]
+id: OMP:0007645
+name: microbial lifestyle phenotype
+def: "A microbial phenotype related to the typical way of life of a microbe." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2017-07-24T14:41:58Z
+
+[Term]
+id: OMP:0007646
+name: free-living lifestyle phenotype
+def: "A microbial lifestyle phenotype that is the summative outcome of multiple phenotypes that, acting together, typically provide an organism some advantage while competing for niche space in a fluid medium, unattached to other organisms or non-living, solid material entities." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.\n\n\nComment: "May include the expression of flagella, sensing apparati used for\nphoto- and chemotactic behaviour, and quorum sensing pathways."
+is_a: OMP:0007645 ! microbial lifestyle phenotype
+created_by: siegele
+creation_date: 2017-07-24T14:45:18Z
+
+[Term]
+id: OMP:0007647
+name: attached lifestyle phenotype
+def: "A microbial lifestyle phenotype where the microbe is growing and reproducing while physically anchored to a solid material.\n\nA microbial lifestyle phenotype that is the summative outcome of multiple phenotypes that, acting together, typically provide an organism some advantage while competing for niche space while it is physically anchored it to some portion of solid material." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.\n\nMay include the expression of pili or other structures used for attachment, antibiotic compounds, extracellular matrix remodelling proteins, and the like.
+is_a: OMP:0007645 ! microbial lifestyle phenotype
+created_by: siegele
+creation_date: 2017-07-24T14:59:31Z
 
 [Term]
 id: OMP:0008000
