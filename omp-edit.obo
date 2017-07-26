@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 24:07:2017 22:25
+date: 26:07:2017 17:53
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -5870,6 +5870,7 @@ name: adhesion to host phenotype
 def: "An adhesion phenotype that relates to the ability of a microbe to attach to a host via adhesion molecules, general stickiness, etc., either directly or indirectly. The host is defined as the larger of the organisms involved in a symbiotic relationship." [OMP:JG]
 xref: GO:0044406 "adhesion to host"
 is_a: OMP:0005205 ! adhesion phenotype
+is_a: OMP:0007252 ! colonization of a host phenotype
 created_by: Jesus
 creation_date: 2016-06-20T14:10:51Z
 
@@ -5925,7 +5926,7 @@ creation_date: 2016-06-20T14:17:26Z
 [Term]
 id: OMP:0005213
 name: presence of adhesion
-def: "An adhesion phenotype where a microbe has the ability to a substrate in the environment or in a host, either directly or indirectly." [OMP:JG]
+def: "An adhesion phenotype where a microbe has the ability to attach to a substrate in the environment or in a host, either directly or indirectly." [OMP:JG]
 is_a: OMP:0005205 ! adhesion phenotype
 created_by: Jesus
 creation_date: 2016-06-20T14:19:00Z
@@ -14630,11 +14631,21 @@ creation_date: 2017-07-24T14:45:18Z
 [Term]
 id: OMP:0007647
 name: attached lifestyle phenotype
-def: "A microbial lifestyle phenotype where the microbe is growing and reproducing while physically anchored to a solid material.\n\nA microbial lifestyle phenotype that is the summative outcome of multiple phenotypes that, acting together, typically provide an organism some advantage while competing for niche space while it is physically anchored it to some portion of solid material." [OMP:DAS]
+def: "A microbial lifestyle phenotype relating to whether a microbe grows and reproduces while physically attached to a surface." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.\n\nMay include the expression of pili or other structures used for attachment, antibiotic compounds, extracellular matrix remodelling proteins, and the like.
+synonym: "anchored lifestyle phenotype " EXACT []
+synonym: "sessile lifestyle phenotype" RELATED []
 is_a: OMP:0007645 ! microbial lifestyle phenotype
 created_by: siegele
 creation_date: 2017-07-24T14:59:31Z
+
+[Term]
+id: OMP:0007648
+name: presence of an attached lifestyle
+def: "An attached lifestyle phenotype where a microbe typically grows and reproduces while physically attached to a \n\n\n is the summative outcome of multiple phenotypes that, acting together, typically provide a microbe some advantage while competing for niche space while it is physically anchored to some portion of solid material.\n\nMay include the expression of pili or other structures used for attachment, antibiotic compounds, extracellular matrix remodelling proteins, and the like." []
+is_a: OMP:0007647 ! attached lifestyle phenotype
+created_by: siegele
+creation_date: 2017-07-26T17:24:06Z
 
 [Term]
 id: OMP:0008000
