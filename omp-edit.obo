@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 26:07:2017 17:53
+date: 02:08:2017 00:56
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -6454,7 +6454,6 @@ synonym: "methotrexate resistance phenotype" NARROW [CHEBI:44185]
 synonym: "nitrofurantoin resistance pheynotype" NARROW [CHEBI:71415]
 synonym: "paraquat dichloride resistance phenotype" NARROW [CHEBI:34905]
 synonym: "phenazine methosulfate resistance phenotype" NARROW [CHEBI:53396]
-synonym: "phleomycin resistance phenotype" NARROW [CHEBI:75044]
 synonym: "pyocyanin resistance phenotype" NARROW [CHEBI:62220]
 synonym: "radicicol resistance phenotype" NARROW [CHEBI:556075]
 synonym: "rifampicin resistance phenotype" NARROW [CHEBI:28077]
@@ -6469,6 +6468,7 @@ id: OMP:0005275
 name: altered organic heterocyclic compound resistance
 def: "An organic heterocyclic compound resistance phenotype where the frequency, rate, timing, or extent of resistance to an organic heterocyclic compound is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005274 ! organic heterocyclic compound resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 created_by: Jesus
 creation_date: 2016-07-15T15:33:41Z
 
@@ -6485,6 +6485,7 @@ id: OMP:0005277
 name: abolished resistance to organic heterocyclic compound
 def: "A decreased resistance to organic heterocyclic compounds phenotype where resistance an organic heterocyclic compound is abolished." [OMP:JG]
 is_a: OMP:0005276 ! decreased resistance to organic heterocyclic compound
+is_a: OMP:0005279 ! not resistant to organic heterocyclic compound
 created_by: Jesus
 creation_date: 2016-07-15T15:34:45Z
 
@@ -7900,7 +7901,6 @@ synonym: "gentamicin resistance phenotype" NARROW [CHEBI:5312]
 synonym: "hygromycin B resistance phenotype" NARROW [CHEBI:16976]
 synonym: "kanamycin resistance phenotype" NARROW [CHEBI:6104]
 synonym: "neomycin resistance phenotype" NARROW [CHEBI:7508]
-synonym: "phleomycin" NARROW [CHEBI:75044]
 synonym: "spectinomycin resistance phenotype" NARROW [CHEBI:32158]
 synonym: "streptomycin resistance phenotype" NARROW [CHEBI:32158]
 synonym: "tobramycin resistance phenotype" NARROW [CHEBI:28864]
@@ -10514,6 +10514,7 @@ synonym: "bacitracin resistance phenotype" NARROW [CHEBI:28669]
 synonym: "bleomycin resistance phenotype" NARROW [CHEBI:22907]
 synonym: "cecropin B resistance phenotype" NARROW [CID:16741200]
 synonym: "indolicidin resistance phenotype" NARROW [CHEBI:80180]
+synonym: "phleomycin resistance phenotype" NARROW [CHEBI:75044]
 xref: CHEBI:25903 "peptide antibiotic"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
@@ -10524,6 +10525,7 @@ id: OMP:0007170
 name: altered antimicrobial peptide resistance
 def: "An antimicrobial peptide resistance phenotype where resistance or sensitivity to one or more antimicrobial peptides is altered relative to a designated control." [OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
 intersection_of: OMP:0007169 ! antimicrobial peptide resistance phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
@@ -10553,7 +10555,10 @@ creation_date: 2014-09-26T16:02:16Z
 [Term]
 id: OMP:0007173
 name: decreased resistance to antimicrobial peptide
-def: "An altered antimicrobial peptide resistance phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
+def: "An altered antimicrobial peptide resistance phenotype where resistance to an antimicrobial peptide is decreased relative to a designated control." [OMP:DAS]
+synonym: "decreased resistance to phleomycin" NARROW [CHEBI:75044]
+synonym: "Increased sensitivity to antimicrobial peptide" EXACT []
+synonym: "increased sensitivity to phleomycin" NARROW [CHEBI\::75044]
 is_a: OMP:0007170 ! altered antimicrobial peptide resistance
 created_by: siegele
 creation_date: 2014-09-26T16:02:54Z
@@ -11198,6 +11203,7 @@ id: OMP:0007248
 name: altered chemical sensitivity
 def: "A chemical sensitivity phenotype where sensitivity of a cell, cells, or microbe to a chemical is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007195 ! chemical sensitivity phenotype
+is_a: OMP:0007351 ! altered biological process
 created_by: siegele
 creation_date: 2015-07-16T00:36:34Z
 
@@ -14646,6 +14652,128 @@ def: "An attached lifestyle phenotype where a microbe typically grows and reprod
 is_a: OMP:0007647 ! attached lifestyle phenotype
 created_by: siegele
 creation_date: 2017-07-26T17:24:06Z
+
+[Term]
+id: OMP:0007649
+name: mitomycin resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a mitomycin. Mitomycins are a family of aziridine-containing natural products isolated from Streptomyces." [CHEBI:25357, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+synonym: "mitomycin C resistance phenotype" NARROW [CHEBI:27504]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2017-08-01T19:36:13Z
+
+[Term]
+id: OMP:0007650
+name: resistant to mitomycin
+is_a: OMP:0007649 ! mitomycin resistance phenotype
+created_by: siegele
+creation_date: 2017-08-01T19:40:50Z
+
+[Term]
+id: OMP:0007651
+name: not resistant to mitomycin
+is_a: OMP:0007649 ! mitomycin resistance phenotype
+created_by: siegele
+creation_date: 2017-08-01T19:40:50Z
+
+[Term]
+id: OMP:0007652
+name: altered mitomycin resistance
+def: "A mitomycin resistance phenotype where resistance to a mitomycin is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007649 ! mitomycin resistance phenotype
+created_by: siegele
+creation_date: 2017-08-01T19:40:50Z
+
+[Term]
+id: OMP:0007653
+name: increased resistance to mitomycin
+def: "An altered resistance to mitomycin phenotype where resistance to a mitomycin is increased relative to a designated control." [OMP:DAS]
+synonym: "decreased sensitivity to mitomycin" EXACT [CHEBI:25357]
+synonym: "increased resistance to mitomycin C" RELATED [CHEBI:27504]
+is_a: OMP:0007652 ! altered mitomycin resistance
+created_by: siegele
+creation_date: 2017-08-01T19:42:07Z
+
+[Term]
+id: OMP:0007654
+name: decreased resistance to mitomycin
+def: "An altered resistance to mitomycin phenotype where resistance to a mitomycin is decreased relative to a designated control." [OMP:DAS]
+synonym: "decreased resistance to mitomycin C" NARROW [CHEBI:27504]
+synonym: "increased sensitivity to mitomycin" EXACT [CHEBI:25357]
+synonym: "increased sensitivity to mitomycin C" NARROW [CHEBI:27504]
+is_a: OMP:0007652 ! altered mitomycin resistance
+created_by: siegele
+creation_date: 2017-08-01T19:42:07Z
+
+[Term]
+id: OMP:0007655
+name: abolished resistance to mitomycin
+def: "A decreased resistance to mitomycin phenotype where resistance to a mitomycin is abolished." [OMP:DAS]
+is_a: OMP:0007651 ! not resistant to mitomycin
+is_a: OMP:0007654 ! decreased resistance to mitomycin
+created_by: siegele
+creation_date: 2017-08-01T19:42:07Z
+
+[Term]
+id: OMP:0007656
+name: level of substance in cell phenotype
+is_a: OMP:0007632 ! cell phenotype
+created_by: siegele
+creation_date: 2017-08-02T00:45:28Z
+
+[Term]
+id: OMP:0007657
+name: level of cellular reactive oxygen species phenotype
+def: "A cell phenotype relating to the amount of reactive oxygen species (ROS) measured in a cell." [FYPO:0003004, OMP:DAS]
+is_a: OMP:0007656 ! level of substance in cell phenotype
+created_by: siegele
+creation_date: 2017-08-02T00:47:58Z
+
+[Term]
+id: OMP:0007658
+name: presence of cellular reactive oxygen species
+is_a: OMP:0007657 ! level of cellular reactive oxygen species phenotype
+created_by: siegele
+creation_date: 2017-08-02T00:49:40Z
+
+[Term]
+id: OMP:0007659
+name: absence of cellular reactive oxygen species
+is_a: OMP:0007657 ! level of cellular reactive oxygen species phenotype
+created_by: siegele
+creation_date: 2017-08-02T00:49:40Z
+
+[Term]
+id: OMP:0007660
+name: altered level of cellular reactive oxygen species
+def: "A cell phenotype where the amount of reactive oxygen species (ROS) measured in a cell is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007657 ! level of cellular reactive oxygen species phenotype
+created_by: siegele
+creation_date: 2017-08-02T00:49:40Z
+
+[Term]
+id: OMP:0007661
+name: increased level of cellular reactive oxygen species
+def: "An altered level of cellular reactive oxygen species where the amount of reactive oxygen species (ROS) measured in a cell is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007660 ! altered level of cellular reactive oxygen species
+created_by: siegele
+creation_date: 2017-08-02T00:49:40Z
+
+[Term]
+id: OMP:0007662
+name: decreased level of cellular reactive oxygen species
+is_a: OMP:0007660 ! altered level of cellular reactive oxygen species
+created_by: siegele
+creation_date: 2017-08-02T00:49:40Z
+
+[Term]
+id: OMP:0007663
+name: abolished cellular reactive oxygen species
+is_a: OMP:0007662 ! decreased level of cellular reactive oxygen species
+created_by: siegele
+creation_date: 2017-08-02T00:49:40Z
 
 [Term]
 id: OMP:0008000
