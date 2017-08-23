@@ -15748,7 +15748,7 @@ subset: value_slim
 synonym: "coarse" EXACT []
 is_a: PATO:0000150 ! texture
 relationship: is_opposite_of PATO:0000701 ! smooth
-property_value: IAO:0000412 http://purl.obolibrary.org/obo pato.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000701
@@ -15757,7 +15757,7 @@ def: "A texture quality inhering in a bearer by virtue of the bearer's processin
 subset: mpath_slim
 subset: value_slim
 is_a: PATO:0000150 ! texture
-property_value: IAO:0000412 http://purl.obolibrary.org/obo pato.owl
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000718
