@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: releases/2017-07-07
-date: 05:07:2017 16:58
-saved-by: dsiegele
+data-version: releases/2017-08-24
+date: 02:08:2017 00:56
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -28,6 +28,7 @@ subsetdef: mf_needs_review "Catalytic activity terms in need of attention"
 subsetdef: mpath_slim "Pathology slim"
 subsetdef: relational_slim "Relational slim: types of quality that require an additional entity in order to exist"
 subsetdef: scalar_slim "Scalar slim"
+subsetdef: SOFA "SO feature annotation"
 subsetdef: termgenie_unvetted "Terms created by TermGenie that do not follow a template and require additional vetting by editors"
 subsetdef: value_slim "Value slim"
 subsetdef: virus_checked "Viral overhaul terms"
@@ -3812,25 +3813,24 @@ id: OMP:0000321
 name: macrolide resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds with a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--linked to one or more sugars which exhibit antimicrobial properties." [CHEBI:25106, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "amphotericin B" NARROW [CHEBI:2682]
-synonym: "Azithromycin" NARROW [CHEBI:2955]
-synonym: "Bacteriostatic" BROAD []
-synonym: "bafilomycin A1" NARROW [CHEBI:22689]
-synonym: "brefeldin A" NARROW [CHEBI:48080]
-synonym: "Carvomycin A" NARROW []
-synonym: "clarithromycin" NARROW [CHEBi:3732]
-synonym: "Dirithromycin" NARROW [CHEBI:474014]
-synonym: "Erythromycin" NARROW [CHEBI:25105]
+synonym: "amphotericin B resistance phenotype" NARROW [CHEBI:2682]
+synonym: "azithromycin resistance phenotype" NARROW [CHEBI:2955]
+synonym: "bacteriostatic" BROAD []
+synonym: "bafilomycin A1 resistance phenotype" NARROW [CHEBI:22689]
+synonym: "brefeldin A resistance phenotype" NARROW [CHEBI:48080]
+synonym: "Carvomycin A resistance phenotype" NARROW []
+synonym: "clarithromycin resistance phenotype" NARROW [CHEBi:3732]
+synonym: "dirithromycin resistance phenotype" NARROW [CHEBI:474014]
+synonym: "erythromycin resistance phenotype" NARROW [CHEBI:25105]
 synonym: "FK506" NARROW []
-synonym: "Josamycin" NARROW [CHEBI:31739]
-synonym: "latrunculin B" NARROW [CHEBI:49703]
+synonym: "josamycin resistance phenotype" NARROW [CHEBI:31739]
+synonym: "latrunculin B resistance phenotype" NARROW [CHEBI:49703]
 synonym: "macrolide sensitivity phenotype" RELATED []
-synonym: "rapamycin" RELATED [CHEBI:9168]
-synonym: "roxithromycin" NARROW [CHEBI:48844]
-synonym: "Spectinomycin" NARROW []
-synonym: "Spiramycin" NARROW []
-synonym: "Telithromycin" NARROW []
-synonym: "Troleandomycin" NARROW []
+synonym: "rapamycin resistance phenotype" RELATED [CHEBI:9168]
+synonym: "roxithromycin resistance phenotype" NARROW [CHEBI:48844]
+synonym: "spiramycin resistance phenotype" NARROW []
+synonym: "telithromycin resistance phenotype" NARROW []
+synonym: "troleandomycin resistance phenotype" NARROW []
 xref: CHEBI:25105 "macrolide antibiotic"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: mchibucos
@@ -3841,15 +3841,15 @@ id: OMP:0000331
 name: aminopyrimidine resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "5-flucytosine " NARROW [CHEBI:5100]
+synonym: "5-flucytosine resistance phenotype" NARROW [CHEBI:5100]
 synonym: "aminopyrimidine sensitivity phenotype" RELATED []
-synonym: "antifolate" BROAD [CHEBI:73913]
-synonym: "diaveridine" NARROW [CHEBI:123115]
-synonym: "Iclaprim" NARROW []
-synonym: "piritrexim" NARROW []
-synonym: "pyrimethamine" NARROW [CHEBI:8673]
-synonym: "trimethoprim" NARROW [CHEBI:45924]
-synonym: "trimetrexate" NARROW []
+synonym: "antifolate resistance phenotype" BROAD [CHEBI:73913]
+synonym: "diaveridine resistance phenotype" NARROW [CHEBI:123115]
+synonym: "iclaprim resistance phenotype" NARROW [CHEBI:131724]
+synonym: "piritrexim resistance phenotype" NARROW []
+synonym: "pyrimethamine resistance phenotype" NARROW [CHEBI:8673]
+synonym: "trimethoprim resistance phenotype" NARROW [CHEBI:45924]
+synonym: "trimetrexate resistance phenotype" NARROW [CID:5583]
 xref: CHEBI:38338 "aminopyrimidine"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: mchibucos
@@ -3878,22 +3878,23 @@ id: OMP:0000336
 name: beta-lactam resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to compounds that contain a beta-lactam ring in their molecular structure." [CHEBI:35627, OMP:MCC]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "amoxicillin" NARROW []
-synonym: "ampicillin" NARROW [CHEBI:28971]
-synonym: "aztreonam" NARROW [CHEBI:161680]
+synonym: "amoxicillin resistance phenotype" NARROW [CHEBI:2676]
+synonym: "ampicillin resistance phenotype" NARROW [CHEBI:28971]
+synonym: "aztreonam resistance phenotype" NARROW [CHEBI:161680]
 synonym: "beta-lactam sensitivity phenotype" RELATED []
-synonym: "carbapenams" NARROW [CHEBI:64510]
-synonym: "carbenicillin" NARROW [CHEBI:3393]
-synonym: "cefoxitin" NARROW [CHEBI:209807]
-synonym: "cefsulodin" NARROW [CHEBI:3507]
-synonym: "ceftazidime" NARROW [CHEBI:3508]
-synonym: "cephalosporins" NARROW []
-synonym: "cephaloxporins" NARROW []
-synonym: "cephamycin" NARROW [CHEBI:55429]
-synonym: "mecillinam" RELATED [CHEBI:51208]
-synonym: "monobactams" NARROW [CHEBI:50695]
-synonym: "Oxacillin" NARROW [CHEBI:7809]
-synonym: "penicillin" NARROW [CHEBI:51356]
+synonym: "carbapenams resistance phenotype" NARROW [CHEBI:64510]
+synonym: "carbenicillin resistance phenotype" NARROW [CHEBI:3393]
+synonym: "cefaclor resistance phenotype" NARROW [CHEBI:3478]
+synonym: "cefoxitin resistance phenotype" NARROW [CHEBI:209807]
+synonym: "cefsulodin resistance phenotype" NARROW [CHEBI:3507]
+synonym: "ceftazidime resistance phenotype" NARROW [CHEBI:3508]
+synonym: "cephalosporins resistance phenotype" NARROW []
+synonym: "cephaloxporins resistance phenotype" NARROW []
+synonym: "cephamycin resistance phenotype" NARROW [CHEBI:55429]
+synonym: "mecillinam resistance phenotype" RELATED [CHEBI:51208]
+synonym: "monobactams resistance phenotype" NARROW [CHEBI:50695]
+synonym: "oxacillin resistance phenotype" NARROW [CHEBI:7809]
+synonym: "penicillin resistance phenotype" NARROW [CHEBI:51356]
 xref: CHEBI:27933 "beta-lactam antibiotic"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: mchibucos
@@ -5925,6 +5926,7 @@ name: adhesion to host phenotype
 def: "An adhesion phenotype that relates to the ability of a microbe to attach to a host via adhesion molecules, general stickiness, etc., either directly or indirectly. The host is defined as the larger of the organisms involved in a symbiotic relationship." [OMP:JG]
 xref: GO:0044406 "adhesion to host"
 is_a: OMP:0005205 ! adhesion phenotype
+is_a: OMP:0007252 ! colonization of a host phenotype
 created_by: Jesus
 creation_date: 2016-06-20T14:10:51Z
 
@@ -5980,7 +5982,7 @@ creation_date: 2016-06-20T14:17:26Z
 [Term]
 id: OMP:0005213
 name: presence of adhesion
-def: "An adhesion phenotype where a microbe has the ability to a substrate in the environment or in a host, either directly or indirectly." [OMP:JG]
+def: "An adhesion phenotype where a microbe has the ability to attach to a substrate in the environment or in a host, either directly or indirectly." [OMP:JG]
 is_a: OMP:0005205 ! adhesion phenotype
 created_by: Jesus
 creation_date: 2016-06-20T14:19:00Z
@@ -6498,37 +6500,21 @@ id: OMP:0005274
 name: organic heterocyclic compound resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic heterocyclic compound, which is any cyclic compound having as ring members atoms of carbon and at least of one other element." [CHEBI:24532, OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "A22" NARROW [CID:16741200]
-synonym: "Actinomycin D" NARROW [CHEBI:27666]
-synonym: "Amikacin" NARROW [CHEBI:2637]
-synonym: "Azidothymidine" NARROW [CHEBI:10110]
-synonym: "Aztreonam" NARROW [CHEBI:161680]
-synonym: "Bacitracin" NARROW [CHEBI:28669]
-synonym: "Cecropin B" NARROW [CID:16130488]
-synonym: "Ceftazidime hydrate" NARROW [CHEBI:3508]
-synonym: "CHIR-090" NARROW [CHEBI:134107]
-synonym: "Ciprofloxacin" NARROW [CHEBI:100241]
+synonym: "A22 resistance phenotype" NARROW [CID:16741200]
+synonym: "actinomycin D resistance phenotype" NARROW [CHEBI:27666]
+synonym: "chloripromazine resistance phenotype" NARROW [CHEBI:3647]
 synonym: "coumarin resistance phenotype" NARROW [CHEBI:28794]
 synonym: "cycloheximide resistance phenotype" NARROW [CHEBI:27641]
-synonym: "Gentamicin" NARROW [CHEBI:5312]
-synonym: "Indolicidin" NARROW [CHEBI:80180]
-synonym: "Methotrexate" NARROW [CHEBI:44185]
-synonym: "Nitrofurantoin" NARROW [CHEBI:71415]
-synonym: "Norfloxacin" NARROW [CHEBI:100246]
-synonym: "Novobiocin" NARROW [CHEBI:28368]
-synonym: "novobiocin resistance phenotype" NARROW [CHEBI:28368]
-synonym: "Paraquat dichloride" NARROW [CHEBI:34905]
-synonym: "Phenazine methosulfate (PMS)" NARROW [CHEBI:53396]
-synonym: "Phleomycin" NARROW [CHEBI:75044]
-synonym: "Pyocyanin" NARROW [CHEBI:62220]
-synonym: "Radicicol" NARROW [CHEBI:556075]
-synonym: "Rifampicin" NARROW [CHEBI:28077]
-synonym: "Spectinomycin" NARROW [CHEBI:9215]
-synonym: "Thiolactomycin" NARROW [CID:445629]
+synonym: "D-cycloserine resistance phenotype" NARROW [CHEBI:40009]
+synonym: "methotrexate resistance phenotype" NARROW [CHEBI:44185]
+synonym: "nitrofurantoin resistance pheynotype" NARROW [CHEBI:71415]
+synonym: "paraquat dichloride resistance phenotype" NARROW [CHEBI:34905]
+synonym: "phenazine methosulfate resistance phenotype" NARROW [CHEBI:53396]
+synonym: "pyocyanin resistance phenotype" NARROW [CHEBI:62220]
+synonym: "radicicol resistance phenotype" NARROW [CHEBI:556075]
+synonym: "rifampicin resistance phenotype" NARROW [CHEBI:28077]
 synonym: "thiolactomycin resistance phenotype" NARROW [CID:445629]
 synonym: "thiolactone resistance phenotype" NARROW [CHEBI:60317]
-synonym: "Tobramycin" NARROW [CHEBI:28864]
-synonym: "Trimethoprim" NARROW [CHEBI:45924]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: Jesus
 creation_date: 2016-07-15T15:29:19Z
@@ -6538,6 +6524,7 @@ id: OMP:0005275
 name: altered organic heterocyclic compound resistance
 def: "An organic heterocyclic compound resistance phenotype where the frequency, rate, timing, or extent of resistance to an organic heterocyclic compound is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005274 ! organic heterocyclic compound resistance phenotype
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 created_by: Jesus
 creation_date: 2016-07-15T15:33:41Z
 
@@ -6554,6 +6541,7 @@ id: OMP:0005277
 name: abolished resistance to organic heterocyclic compound
 def: "A decreased resistance to organic heterocyclic compounds phenotype where resistance an organic heterocyclic compound is abolished." [OMP:JG]
 is_a: OMP:0005276 ! decreased resistance to organic heterocyclic compound
+is_a: OMP:0005279 ! not resistant to organic heterocyclic compound
 created_by: Jesus
 creation_date: 2016-07-15T15:34:45Z
 
@@ -7096,32 +7084,16 @@ creation_date: 2016-10-31T13:33:49Z
 id: OMP:0005343
 name: organic aromatic compound resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic aromatic compound." [OMP:JG]
-synonym: "benzalkonium" NARROW [CHEBI:3020]
-synonym: "benzalkonium chloride" NARROW [CHEBI:3020]
-synonym: "bleomycin" NARROW [CHEBI:22907]
-synonym: "carbenicillin" NARROW [CHEBI:3393]
-synonym: "CCCP (carbonyl cyanide 3-chlorophenylhydrazone)" NARROW [CHEBI:3259]
-synonym: "Cefaclor" NARROW [CHEBI:3478]
-synonym: "cefoxitin" NARROW [CHEBI:209807]
-synonym: "chloramphenicol" NARROW [CHEBI:17698]
-synonym: "dibucaine" NARROW [CHEBI:247956]
-synonym: "doxorubicin" NARROW [CHEBI:28748]
-synonym: "doxycycline" NARROW [CHEBI:50845]
-synonym: "epigallocatechin gallate (EGCG)" NARROW [\:]
-synonym: "epinephrine" NARROW [CHEBI:28918]
-synonym: "Irgasan" NARROW [CHEBI:164200]
-synonym: "levofloxacin" NARROW [CHEBI:63598]
-synonym: "minocycline" NARROW [CHEBI:50694]
-synonym: "nalidixic acid" NARROW [CHEBI:100147]
-synonym: "norepinephrine" NARROW [CHEBI:18357]
-synonym: "oxacillin" NARROW [CHEBI:7809]
-synonym: "Polymyxin B" NARROW [CHEBI:8309]
-synonym: "procaine" NARROW [CHEBI:8430]
-synonym: "Propidium iodide" NARROW [CHEBI:51240]
-synonym: "Streptonigrin" NARROW [CHEBI:9287]
-synonym: "sulfamethizole" NARROW [CHEBI:9331]
-synonym: "triclosan" NARROW [CHEBI:164200]
-synonym: "Vancomycin" NARROW [CHEBI:28001]
+synonym: "CCCP (Carbonyl cyanide 3-chlorophenylhydrazone) resistance phenotype" NARROW [CHEBI:3259]
+synonym: "epinephrine resistance phenotype" NARROW [CHEBI:28918]
+synonym: "nigercin resistance phenotype" NARROW [CHEBI:7569]
+synonym: "norepinephrine resistance phenotype" NARROW [CHEBI:18357]
+synonym: "polymyxin B resistance phenotype" NARROW [CHEBI:8309]
+synonym: "procaine resistance phenotype" NARROW [CHEBI:8430]
+synonym: "propidium iodide resistance phenotype" NARROW [CHEBI:51240]
+synonym: "sulfamethizole resistance phenotype" NARROW [CHEBI:9331]
+synonym: "triclosan resistance phenotype" NARROW [CHEBI:164200]
+synonym: "vancomycin resistance phenotype" NARROW [CHEBI:28001]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: Jesus
 creation_date: 2016-10-31T13:40:40Z
@@ -7640,7 +7612,7 @@ creation_date: 2014-07-24T17:26:03Z
 [Term]
 id: OMP:0006022
 name: nutrient utilization phenotype
-def: "A microbial phenotype involving the utilization of a nutrient, which is a substance used for biosynthesis or energy release." [ISBN:9780073402406]
+def: "A microbial phenotype that affects the utilization of a nutrient, which is a substance used for biosynthesis or energy release." [ISBN:9780073402406]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: jonathanherrera
@@ -7695,14 +7667,14 @@ name: bacteriocin resistance phenotype
 def: "An antimicrobial peptide resistance phenotype related to resistance or sensitivity to bacteriocins, which are polypeptides synthesized by specific strains of bacteria that are active against other cells of the same or different species." [CHEBI:48081, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "bacteriocin sensitivity phenotype" RELATED []
-synonym: "colicins" NARROW [GO:0015468]
-synonym: "Fusidic acid" NARROW [CHEBI:29013]
-synonym: "lantibiotic " NARROW [CHEBI:71644]
-synonym: "microcin" NARROW [CHEBI:64627]
-synonym: "Nisin" NARROW [ChEBI:71629]
-synonym: "subtilin" NARROW [Bactibase:BAC045]
-synonym: "type A lantibiotic" NARROW [CHEBI:71645]
-synonym: "type B lantibiotic" NARROW [CHEBI:71647]
+synonym: "colicins resistance phenotype" NARROW [GO:0015468]
+synonym: "fusidic acid resistance phenotype" NARROW [CHEBI:29013]
+synonym: "iantibiotic resistance phenotype" NARROW [CHEBI:71644]
+synonym: "microcin resistance phenotype" NARROW [CHEBI:64627]
+synonym: "nisin resistance phenotype" NARROW [ChEBI:71629]
+synonym: "subtilin resistance phenotype" NARROW [Bactibase:BAC045]
+synonym: "type A lantibiotic resistance phenotype" NARROW [CHEBI:71645]
+synonym: "type B lantibiotic resistance phenotype" NARROW [CHEBI:71647]
 xref: CHEBI:48081 "bacteriocin"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
@@ -7714,15 +7686,15 @@ name: azole resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to heteromonocyclic organic compounds consisting of a five-membered mancude-ring containing nitrogen." [CHEBI:68452, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nAzoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
 synonym: "azole sensitivity phenotype" RELATED []
-synonym: "benomyl" NARROW [CHEBI:3015]
-synonym: "fluconazole" NARROW [CHEBI:46081]
-synonym: "itraconazole" NARROW [CHEBI:6076]
-synonym: "ketoconazole" NARROW [CHEBI:47519]
-synonym: "miconazole" NARROW [CHEBI:6923]
-synonym: "posaconazole" NARROW [CHEBI:64355]
-synonym: "thiabendazole" NARROW [CHEBI:45979]
-synonym: "Triazole" NARROW [CHEBI:38597]
-synonym: "voriconazole" NARROW [CHEBI:10023]
+synonym: "benomyl resistance phenotype" NARROW [CHEBI:3015]
+synonym: "fluconazole resistance phenotype" NARROW [CHEBI:46081]
+synonym: "itraconazole resistance phenotype" NARROW [CHEBI:6076]
+synonym: "ketoconazole resistance phenotype" NARROW [CHEBI:47519]
+synonym: "miconazole resistance phenotype" NARROW [CHEBI:6923]
+synonym: "posaconazole resistance phenotype" NARROW [CHEBI:64355]
+synonym: "thiabendazole resistance phenotype" NARROW [CHEBI:45979]
+synonym: "triazole resistance phenotype" NARROW [CHEBI:38597]
+synonym: "voriconazole resistance phenotype" NARROW [CHEBI:10023]
 xref: CHEBI:68452 "azole"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
@@ -7733,16 +7705,15 @@ id: OMP:0006029
 name: quinolone resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to a quinolone: an organonitrogen heterocyclic compound whose structure contains a quinolone or quinolone-related structure." [CHEBI:23765, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nQuinolones are a class of quinolines, which are aromatic heterocyclic  compounds that contain a benzene ring ortho fused to carbons 2 and 3 of a pyridine ring.
-synonym: "Ciprofloxacin" NARROW [CHEBI:100241]
-synonym: "Dibucaine" NARROW [CHEBI:247956]
-synonym: "Doxorubicin" NARROW [CHEBI:28748]
-synonym: "Levofloxacin" NARROW [CHEBI:63598]
-synonym: "Nalidixic acid" NARROW [CHEBI:100147]
-synonym: "Norfloxacin" NARROW [CHEBI:100246]
-synonym: "Novobiocin" NARROW [CHEBI:28368]
+synonym: "ciprofloxacin resistance phenotype" NARROW [CHEBI:100241]
+synonym: "dibucaine resistance phenotype" NARROW [CHEBI:247956]
+synonym: "doxorubicin resistance phenotype" NARROW [CHEBI:28748]
+synonym: "levofloxacin resistance phenotype" NARROW [CHEBI:63598]
+synonym: "nalidixic acid resistance phenotype" NARROW [CHEBI:100147]
+synonym: "norfloxacin resistance phenotype" NARROW [CHEBI:100246]
+synonym: "novobiocin resistance phenotype" NARROW [CHEBI:28368]
 synonym: "quinolines " BROAD [CHEBI:26513]
 synonym: "quinolone sensitivity phenotype" RELATED []
-synonym: "streptonigrin" NARROW [CHEBI:9287]
 xref: CHEBI:23765 "quinolone"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
@@ -7982,16 +7953,15 @@ id: OMP:0006056
 name: aminoglycoside resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:47779, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "<new synonym>" RELATED []
-synonym: "Amikacin" NARROW [CHEBI:2673]
+synonym: "amikacin resistance phenotype" NARROW [CHEBI:2673]
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
-synonym: "gentamicin" NARROW []
-synonym: "hygromycin B" NARROW [CHEBI:16976]
-synonym: "kanamycin" NARROW [CHEBI:6104]
-synonym: "neomycin" NARROW []
-synonym: "Spectinomycin" NARROW [CHEBI:32158]
-synonym: "streptomycin" NARROW []
-synonym: "tobramycin" NARROW []
+synonym: "gentamicin resistance phenotype" NARROW [CHEBI:5312]
+synonym: "hygromycin B resistance phenotype" NARROW [CHEBI:16976]
+synonym: "kanamycin resistance phenotype" NARROW [CHEBI:6104]
+synonym: "neomycin resistance phenotype" NARROW [CHEBI:7508]
+synonym: "spectinomycin resistance phenotype" NARROW [CHEBI:32158]
+synonym: "streptomycin resistance phenotype" NARROW [CHEBI:32158]
+synonym: "tobramycin resistance phenotype" NARROW [CHEBI:28864]
 xref: CHEBI:47779 "aminoglycoside"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: jonathanherrera
@@ -8046,11 +8016,11 @@ id: OMP:0006062
 name: tetracycline resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to tetracyclines: a subclass of polyketides having an octahydrotetracene-2-carboxamide skeleton." [CHEBI:27902, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "Bacteriostatic" BROAD []
-synonym: "chlortetracycline" NARROW []
-synonym: "Doxycycline" NARROW [CHEBI:50845]
-synonym: "minocycline" NARROW [CHEBI:50694]
-synonym: "oxytetracycline " NARROW [CHEBI:27701]
+synonym: "bacteriostatic resistance phenotype" BROAD []
+synonym: "chlortetracycline resistance phenotype" NARROW []
+synonym: "doxycycline resistance phenotype" NARROW [CHEBI:50845]
+synonym: "minocycline resistance phenotype" NARROW [CHEBI:50694]
+synonym: "oxytetracycline resistance phenotype" NARROW [CHEBI:27701]
 synonym: "tetracycline sensitivity phenotype" RELATED []
 xref: CHEBI:27902
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
@@ -8088,7 +8058,6 @@ id: OMP:0006066
 name: chloramphenicol resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, OMP:JCH]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "Chloramphenicol" NARROW [CHEBI:17698]
 synonym: "chloramphenicol sensitivity phenotype" RELATED []
 xref: CHEBI:17698 "chloramphenicol"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
@@ -9196,7 +9165,7 @@ creation_date: 2013-09-11T17:14:56Z
 [Term]
 id: OMP:0007012
 name: autotrophic
-def: "A carbon source utilization phenotype where an organism can use carbon dioxide (CO2) as the carbon source." [ISBN:9780073402406, OMP:DAS]
+def: "A carbon source utilization phenotype where a microbe can use carbon dioxide (CO2) as the sole or primary carbon source." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:10:16Z
@@ -9647,7 +9616,7 @@ name: pteridine resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to an organonitrogen heterocyclic compound." [CHEBI:26373, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "antifolate resistance" BROAD [CHEBI:73913]
-synonym: "methotrexate resistance" NARROW [CHEBI:44185]
+synonym: "methotrexate resistance phenotype" NARROW [CHEBI:44185]
 synonym: "pteridine sensitivity phenotype" RELATED []
 xref: CHEBI:26373
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
@@ -10599,7 +10568,8 @@ creation_date: 2014-09-14T15:36:38Z
 [Term]
 id: OMP:0007167
 name: population growth phenotype
-def: "A microbial phenotype where the trait in question is the increase in the number of individuals in a microbial population as the result of sexual or asexual reproduction." [OMP:DAS]
+def: "A microbial phenotype that affects the rate or extent of increase in the number of individuals in a microbial population as the result of sexual or asexual reproduction." [FYPO:0001358, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
 xref: GO:0000003 "reproduction"
 is_a: OMP:0007006 ! population phenotype
 is_a: OMP:0007194 ! biological process phenotype
@@ -10622,10 +10592,11 @@ id: OMP:0007169
 name: antimicrobial peptide resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an antimicrobial peptide." [CHEBI:25903, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "Bacitracin" NARROW [CHEBI:28669]
-synonym: "Bleomycin" NARROW [CHEBI:22907]
-synonym: "Cecropin B" NARROW [CID:16741200]
-synonym: "Phleomycin" NARROW [CHEBI:75044]
+synonym: "bacitracin resistance phenotype" NARROW [CHEBI:28669]
+synonym: "bleomycin resistance phenotype" NARROW [CHEBI:22907]
+synonym: "cecropin B resistance phenotype" NARROW [CID:16741200]
+synonym: "indolicidin resistance phenotype" NARROW [CHEBI:80180]
+synonym: "phleomycin resistance phenotype" NARROW [CHEBI:75044]
 xref: CHEBI:25903 "peptide antibiotic"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
@@ -10669,7 +10640,10 @@ creation_date: 2014-09-26T16:02:16Z
 [Term]
 id: OMP:0007173
 name: decreased resistance to antimicrobial peptide
-def: "An altered antimicrobial peptide resistance phenotype where resistance is decreased relative to a designated control." [OMP:DAS]
+def: "An altered antimicrobial peptide resistance phenotype where resistance to an antimicrobial peptide is decreased relative to a designated control." [OMP:DAS]
+synonym: "decreased resistance to phleomycin" NARROW [CHEBI:75044]
+synonym: "Increased sensitivity to antimicrobial peptide" EXACT []
+synonym: "increased sensitivity to phleomycin" NARROW [CHEBI:\:75044]
 is_a: OMP:0007170 ! altered antimicrobial peptide resistance
 created_by: siegele
 creation_date: 2014-09-26T16:02:54Z
@@ -11043,9 +11017,9 @@ id: OMP:0007215
 name: rifamycin resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to one or more rifamycin compound." [CHEBI:26580, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "rifabutin" NARROW [CHEBI:45367]
-synonym: "rifampicin" NARROW [CHEBI:28077]
-synonym: "rifapentine" NARROW [CHEBI:45304]
+synonym: "rifabutin resistance phenotype" NARROW [CHEBI:45367]
+synonym: "rifampicin resistance phenotype" RELATED [CHEBI:28077]
+synonym: "rifapentine resistance phenotype" NARROW [CHEBI:45304]
 xref: CHEBI:26580 "rifamycin"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
@@ -11321,6 +11295,7 @@ id: OMP:0007248
 name: altered chemical sensitivity
 def: "A chemical sensitivity phenotype where sensitivity of a cell, cells, or microbe to a chemical is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007195 ! chemical sensitivity phenotype
+is_a: OMP:0007351 ! altered biological process
 created_by: siegele
 creation_date: 2015-07-16T00:36:34Z
 
@@ -12277,10 +12252,10 @@ creation_date: 2016-06-20T16:01:53Z
 id: OMP:0007358
 name: nucleoside resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a compound that is a nucleoside: an N-glycosyl compound that has both a nucleobase, normally adenine, guanine, xanthine, thymine, cytosine or uracil, and either a ribose or deoxyribose as functional parents." [CHEBI:33838, OMP:DAS]
-synonym: "azidothymidine" NARROW [CHEBI:10110]
-synonym: "puromycin" NARROW [CHEBI:17939]
-synonym: "Tunicamycin" NARROW [CHEBI:29699]
-synonym: "zidovudine" NARROW [CHEBI:10110]
+synonym: "azidothymidine resistance phenotype" NARROW [CHEBI:10110]
+synonym: "puromycin resistance phenotype" NARROW [CHEBI:17939]
+synonym: "tunicamycin resistance phenotype" NARROW [CHEBI:29699]
+synonym: "zidovudine resistance phenotype" NARROW [CHEBI:10110]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-20T16:23:54Z
@@ -12472,8 +12447,9 @@ id: OMP:0007380
 name: benzamides resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a benzamide. Benzamides are compounds based on benzamide, which consists of benzene bearing a single carboxamido substituent." [CHEBI:22702, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "benzamide resistance phenotype" NARROW [CHEBI:28179]
+synonym: "benzamide resistance phenotype" RELATED [CHEBI:28179]
 synonym: "CHIR-090 resistance phenotype" NARROW [CID:\:11546620]
+synonym: "sulfamonomethoxine resistance phenotype" NARROW [CHBEI:32164<new dbxref>]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-26T14:45:16Z
@@ -13282,7 +13258,7 @@ synonym: "phenol red resistance phenotype" NARROW [CHEBI:31991]
 synonym: "phenol resistance phenotype" NARROW [CHEBI:15882]
 synonym: "rose bengal resistance phenotype" NARROW [CHEBI:52261]
 synonym: "triclosan resistance phenotype" NARROW [CHEBI:164200]
-synonym: "Triton X-100" NARROW []
+synonym: "triton X-100 resistance phenotype" NARROW []
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T16:00:17Z
@@ -13458,9 +13434,8 @@ creation_date: 2016-09-24T23:04:50Z
 id: OMP:0007495
 name: epoxide resistance phenotype
 def: "An antimicrobial resistance phenotype relating to resistance or sensitivity to an epoxide. An epoxide is any cyclic ether in which the oxygen atom forms part of a 3-membered ring." [CHEBI:32955, OMP:DAS]
-synonym: "Cerulenin" NARROW [CHEBI:171741]
 synonym: "cerulenin resistance phenotype" NARROW [CHEBI:171741]
-synonym: "Fosfomycin" NARROW [CHEBI:28915]
+synonym: "fosfomycin resistance phenotype" NARROW [CHEBI:28915]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-09-25T12:02:01Z
@@ -13776,7 +13751,7 @@ id: OMP:0007533
 name: urea derivative resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to compounds that are structural derivatives of urea." [CHEBI:47857, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "Hydroxyurea" NARROW [CHEBI:44423]
+synonym: "hydroxyurea resistance phenotype" NARROW [CHEBI:44423]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2017-02-24T13:14:38Z
@@ -14710,6 +14685,197 @@ created_by: dsiegele
 creation_date: 2017-07-05T16:47:42Z
 
 [Term]
+id: OMP:0007641
+name: population growth yield phenotype
+def: "A population growth phenotype related to the number of individuals in a microbial population produced per amount of nutrient(s) consumed." [OMP:DAS]
+is_a: OMP:0007167 ! population growth phenotype
+created_by: siegele
+creation_date: 2017-07-11T02:11:36Z
+
+[Term]
+id: OMP:0007642
+name: altered population growth yield
+def: "A population growth yield phenotype where the number of microbes produced per amount of nutrient(s) consumed is  altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007641 ! population growth yield phenotype
+created_by: siegele
+creation_date: 2017-07-11T02:22:26Z
+
+[Term]
+id: OMP:0007643
+name: increased population growth yield
+def: "An altered population growth yield phenotype where the number of microbes produced per amount of nutrient(s) consumed is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007642 ! altered population growth yield
+created_by: siegele
+creation_date: 2017-07-11T02:24:32Z
+
+[Term]
+id: OMP:0007644
+name: decreased population growth yield
+def: "An altered population growth yield phenotype where the number of microbes produced per amount of nutrient(s) consumed is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007642 ! altered population growth yield
+created_by: siegele
+creation_date: 2017-07-11T02:24:32Z
+
+[Term]
+id: OMP:0007645
+name: microbial lifestyle phenotype
+def: "A microbial phenotype related to the typical way of life of a microbe." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2017-07-24T14:41:58Z
+
+[Term]
+id: OMP:0007646
+name: free-living lifestyle phenotype
+def: "A microbial lifestyle phenotype that is the summative outcome of multiple phenotypes that, acting together, typically provide an organism some advantage while competing for niche space in a fluid medium, unattached to other organisms or non-living, solid material entities." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.\n\n\nComment: "May include the expression of flagella, sensing apparati used for\nphoto- and chemotactic behaviour, and quorum sensing pathways."
+is_a: OMP:0007645 ! microbial lifestyle phenotype
+created_by: siegele
+creation_date: 2017-07-24T14:45:18Z
+
+[Term]
+id: OMP:0007647
+name: attached lifestyle phenotype
+def: "A microbial lifestyle phenotype relating to whether a microbe grows and reproduces while physically attached to a surface." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.\n\nMay include the expression of pili or other structures used for attachment, antibiotic compounds, extracellular matrix remodelling proteins, and the like.
+synonym: "anchored lifestyle phenotype " EXACT []
+synonym: "sessile lifestyle phenotype" RELATED []
+is_a: OMP:0007645 ! microbial lifestyle phenotype
+created_by: siegele
+creation_date: 2017-07-24T14:59:31Z
+
+[Term]
+id: OMP:0007648
+name: presence of an attached lifestyle
+def: "An attached lifestyle phenotype where a microbe typically grows and reproduces while physically attached to a \n\n\n is the summative outcome of multiple phenotypes that, acting together, typically provide a microbe some advantage while competing for niche space while it is physically anchored to some portion of solid material.\n\nMay include the expression of pili or other structures used for attachment, antibiotic compounds, extracellular matrix remodelling proteins, and the like." []
+is_a: OMP:0007647 ! attached lifestyle phenotype
+created_by: siegele
+creation_date: 2017-07-26T17:24:06Z
+
+[Term]
+id: OMP:0007649
+name: mitomycin resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a mitomycin. Mitomycins are a family of aziridine-containing natural products isolated from Streptomyces." [CHEBI:25357, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+synonym: "mitomycin C resistance phenotype" NARROW [CHEBI:27504]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2017-08-01T19:36:13Z
+
+[Term]
+id: OMP:0007650
+name: resistant to mitomycin
+is_a: OMP:0007649 ! mitomycin resistance phenotype
+created_by: siegele
+creation_date: 2017-08-01T19:40:50Z
+
+[Term]
+id: OMP:0007651
+name: not resistant to mitomycin
+is_a: OMP:0007649 ! mitomycin resistance phenotype
+created_by: siegele
+creation_date: 2017-08-01T19:40:50Z
+
+[Term]
+id: OMP:0007652
+name: altered mitomycin resistance
+def: "A mitomycin resistance phenotype where resistance to a mitomycin is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007649 ! mitomycin resistance phenotype
+created_by: siegele
+creation_date: 2017-08-01T19:40:50Z
+
+[Term]
+id: OMP:0007653
+name: increased resistance to mitomycin
+def: "An altered resistance to mitomycin phenotype where resistance to a mitomycin is increased relative to a designated control." [OMP:DAS]
+synonym: "decreased sensitivity to mitomycin" EXACT [CHEBI:25357]
+synonym: "increased resistance to mitomycin C" RELATED [CHEBI:27504]
+is_a: OMP:0007652 ! altered mitomycin resistance
+created_by: siegele
+creation_date: 2017-08-01T19:42:07Z
+
+[Term]
+id: OMP:0007654
+name: decreased resistance to mitomycin
+def: "An altered resistance to mitomycin phenotype where resistance to a mitomycin is decreased relative to a designated control." [OMP:DAS]
+synonym: "decreased resistance to mitomycin C" NARROW [CHEBI:27504]
+synonym: "increased sensitivity to mitomycin" EXACT [CHEBI:25357]
+synonym: "increased sensitivity to mitomycin C" NARROW [CHEBI:27504]
+is_a: OMP:0007652 ! altered mitomycin resistance
+created_by: siegele
+creation_date: 2017-08-01T19:42:07Z
+
+[Term]
+id: OMP:0007655
+name: abolished resistance to mitomycin
+def: "A decreased resistance to mitomycin phenotype where resistance to a mitomycin is abolished." [OMP:DAS]
+is_a: OMP:0007651 ! not resistant to mitomycin
+is_a: OMP:0007654 ! decreased resistance to mitomycin
+created_by: siegele
+creation_date: 2017-08-01T19:42:07Z
+
+[Term]
+id: OMP:0007656
+name: level of substance in cell phenotype
+is_a: OMP:0007632 ! cell phenotype
+created_by: siegele
+creation_date: 2017-08-02T00:45:28Z
+
+[Term]
+id: OMP:0007657
+name: level of cellular reactive oxygen species phenotype
+def: "A cell phenotype relating to the amount of reactive oxygen species (ROS) measured in a cell." [FYPO:0003004, OMP:DAS]
+is_a: OMP:0007656 ! level of substance in cell phenotype
+created_by: siegele
+creation_date: 2017-08-02T00:47:58Z
+
+[Term]
+id: OMP:0007658
+name: presence of cellular reactive oxygen species
+is_a: OMP:0007657 ! level of cellular reactive oxygen species phenotype
+created_by: siegele
+creation_date: 2017-08-02T00:49:40Z
+
+[Term]
+id: OMP:0007659
+name: absence of cellular reactive oxygen species
+is_a: OMP:0007657 ! level of cellular reactive oxygen species phenotype
+created_by: siegele
+creation_date: 2017-08-02T00:49:40Z
+
+[Term]
+id: OMP:0007660
+name: altered level of cellular reactive oxygen species
+def: "A cell phenotype where the amount of reactive oxygen species (ROS) measured in a cell is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007657 ! level of cellular reactive oxygen species phenotype
+created_by: siegele
+creation_date: 2017-08-02T00:49:40Z
+
+[Term]
+id: OMP:0007661
+name: increased level of cellular reactive oxygen species
+def: "An altered level of cellular reactive oxygen species where the amount of reactive oxygen species (ROS) measured in a cell is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007660 ! altered level of cellular reactive oxygen species
+created_by: siegele
+creation_date: 2017-08-02T00:49:40Z
+
+[Term]
+id: OMP:0007662
+name: decreased level of cellular reactive oxygen species
+is_a: OMP:0007660 ! altered level of cellular reactive oxygen species
+created_by: siegele
+creation_date: 2017-08-02T00:49:40Z
+
+[Term]
+id: OMP:0007663
+name: abolished cellular reactive oxygen species
+is_a: OMP:0007662 ! decreased level of cellular reactive oxygen species
+created_by: siegele
+creation_date: 2017-08-02T00:49:40Z
+
+[Term]
 id: OMP:0008000
 name: spore morphology phenotype
 def: "A microbial phenotype that is related to the form and structure of a spore or spores produced by a microbe." [OMP:KDA]
@@ -14991,8 +15157,43 @@ id: PATO:0000001
 name: quality
 namespace: quality
 alt_id: PATO:0000072
-def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities." [PATOC:GVG]
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
 synonym: "trait" EXACT []
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000004
+name: mobility
+namespace: quality
+def: "A quality of inhering in a bearer by virtue of the bearer's disposition to move freely." [PATOC:GVG]
+comment: Should be defined using translocation.
+subset: attribute_slim
+subset: disposition_slim
+subset: scalar_slim
+is_a: PATO:0001018 ! physical quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000033
+name: concentration of
+namespace: quality
+def: "A quality inhering in a substance by virtue of the amount of the bearer's there is mixed with another substance." [Wikipedia:http\://en.wikipedia.org/wiki/concentration]
+subset: attribute_slim
+subset: relational_slim
+subset: scalar_slim
+synonym: "concentration" EXACT []
+is_a: PATO:0002182 ! molecular quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000044
+name: frequency
+namespace: quality
+def: "A physical quality which inheres in a bearer by virtue of the number of the bearer's repetitive actions in a particular time." [Wikipedia:http\://en.wikipedia.org/wiki/frequency]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0000161 ! rate
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000051
@@ -15001,6 +15202,7 @@ namespace: quality
 def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." [PATOC:GVG]
 subset: attribute_slim
 is_a: PATO:0001241 ! physical object quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000052
@@ -15012,6 +15214,46 @@ comment: Shapes are invariant on size transformations. Shapes can be subdivided 
 subset: attribute_slim
 synonym: "relational shape quality" EXACT []
 is_a: PATO:0000051 ! morphology
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000056
+name: trophic quality
+namespace: quality
+def: "An organismal quality inhering in a bearer by virtue of the bearer's disposition to synthesize a particular organic compound required for its growth." [Wikipedia:http\://en.wikipedia.org/wiki/Trophic_level]
+subset: attribute_slim
+subset: disposition_slim
+synonym: "nutritional quality" RELATED []
+is_a: PATO:0001995 ! organismal quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000057
+name: occurrence
+namespace: quality
+alt_id: PATO:0000156
+alt_id: PATO:0000158
+def: "A quality of a single process inhering in a bearer by virtue of the bearer's occurrence." [PATOC:GVG]
+subset: attribute_slim
+subset: hpo_slim
+synonym: "incidence" EXACT []
+synonym: "temporal" BROAD []
+is_a: PATO:0002323 ! temporal distribution quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000060
+name: spatial pattern
+namespace: quality
+alt_id: PATO:0000132
+alt_id: PATO:0001565
+def: "A spatial quality inhering in a bearer by virtue of the bearer's exhibiting repetition of placement of its parts." [PATOC:GVG]
+subset: attribute_slim
+subset: hpo_slim
+synonym: "distribution" EXACT []
+synonym: "pattern" RELATED []
+is_a: PATO:0000140 ! position
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000068
@@ -15019,6 +15261,7 @@ name: qualitative
 namespace: quality
 comment: TODO: define this or obsolete it and move children somewhere else.
 is_a: PATO:0000001 ! quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000069
@@ -15027,10 +15270,11 @@ namespace: quality
 def: "A quality inhering in a bearer by virtue of the whether the bearer differs from normal or average." [PATOC:GVG]
 subset: attribute_slim
 is_a: PATO:0000068 ! qualitative
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000070
-name: count
+name: amount
 namespace: quality
 alt_id: PATO:0000053
 alt_id: PATO:0000071
@@ -15039,13 +15283,15 @@ alt_id: PATO:0001226
 def: "The number of entities of this type that are part of the whole organism." [PATOC:GVG]
 comment: This term was originally named "presence". It has been renamed to reduce ambiguity. Consider annotating with the reciprocal relation,PATO:0001555, has_number_of. For example, rather than E=fin ray Q=count in organism C=10, say E=organism Q=has number of E2= fin ray C=10.
 subset: attribute_slim
-synonym: "amount" RELATED []
+synonym: "count" EXACT []
 synonym: "count in organism" RELATED []
 synonym: "number" RELATED []
 synonym: "presence" RELATED []
 synonym: "presence or absence in organism" EXACT []
 synonym: "quantitative" EXACT []
 is_a: PATO:0000068 ! qualitative
+relationship: reciprocal_of PATO:0001555 ! has number of
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000117
@@ -15055,6 +15301,234 @@ def: "A morphology quality inhering in a bearer by virtue of the bearer's physic
 subset: attribute_slim
 subset: scalar_slim
 is_a: PATO:0000051 ! morphology
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000122
+name: length
+namespace: quality
+def: "A 1-D extent quality which is equal to the distance between two points." [PATOC:GVG]
+subset: attribute_slim
+subset: mpath_slim
+subset: scalar_slim
+is_a: PATO:0001708 ! 1-D extent
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000133
+name: orientation
+namespace: quality
+alt_id: PATO:0000137
+def: "A spatial quality inhering in a bearer by virtue of the bearer's placement which is defined by the angle between the bearer and an axis, or the angle between the bearer and another object." [PATOC:JE]
+subset: attribute_slim
+subset: relational_slim
+synonym: "amount of rotation" RELATED []
+synonym: "angle" RELATED []
+synonym: "angular magnitude" RELATED []
+synonym: "angular placement" EXACT []
+synonym: "plane angle" RELATED []
+is_a: PATO:0000140 ! position
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000140
+name: position
+namespace: quality
+alt_id: PATO:0001032
+alt_id: PATO:0001631
+def: "A spatial quality inhering in a bearer by virtue of the bearer's spatial location relative to other objects in the vicinity." [PATOC:GVG]
+subset: attribute_slim
+synonym: "location" EXACT []
+synonym: "placement" EXACT []
+synonym: "relational spatial quality" EXACT []
+is_a: PATO:0001018 ! physical quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000141
+name: structure
+namespace: quality
+alt_id: PATO:0001452
+def: "A morphology quality inhering in a bearer by virtue of the bearer's relative position, shape, arrangements and connectivity of an organism's various parts; the pattern underlying its form." [PATOC:GVG]
+subset: attribute_slim
+synonym: "conformation" BROAD [VT:1000738]
+synonym: "relational structural quality" EXACT []
+is_a: PATO:0000051 ! morphology
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000146
+name: temperature
+namespace: quality
+def: "A physical quality of the thermal energy of a system." [PATOC:GVG]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0001018 ! physical quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000150
+name: texture
+namespace: quality
+def: "A morphologic quality inhering in a bearer by virtue of the bearer's relative size, organization and distribution of its surface elements or the representation or invention of the appearance of its surface; visual and tactile surface characteristics." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0000051 ! morphology
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000161
+name: rate
+namespace: quality
+def: "A quality of a single process inhering in a bearer by virtue of the bearer's occurrence per unit time." [PATOC:melissa]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0002062 ! physical quality of a process
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000169
+name: viability
+namespace: quality
+def: "An organismal quality inhering in a bearer or a population by virtue of the bearer's disposition to survive and develop normally or the number of surviving individuals in a given population." [PATOC:GVG]
+subset: attribute_slim
+subset: disposition_slim
+is_a: PATO:0001995 ! organismal quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000297
+name: arrested
+namespace: quality
+alt_id: PATO:0001508
+def: "A quality of a process which ends earlier than the natural end time or reference process." [PATOC:LC]
+comment: TODO: the definition is incorrect. See absent.
+subset: value_slim
+synonym: "abolished" EXACT []
+synonym: "incomplete" RELATED []
+is_a: PATO:0002052 ! decreased occurrence
+is_a: PATO:0002324 ! offset quality
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000330
+name: irregular spatial pattern
+namespace: quality
+def: "A spatial pattern inhering in a bearer by virtue of the bearer's magnitude of or the relationships between its repeated parts lack consistency." [PATOC:GVG]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0000060 ! spatial pattern
+relationship: is_opposite_of PATO:0000440 ! regular spatial pattern
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000402
+name: branched
+namespace: quality
+def: "A branchiness quality inhering in a bearer by virtue of the bearer's having branches." [WordNet:WordNet]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+synonym: "ramified" EXACT []
+synonym: "ramiform" EXACT []
+is_a: PATO:0002009 ! branchiness
+relationship: is_opposite_of PATO:0000414 ! unbranched
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000406
+name: curved
+namespace: quality
+def: "A curvature quality inhering in a bearer by virtue of the bearer's having or being marked by a curve or smoothly rounded bend." [WordNet:WordNet]
+subset: cell_quality
+subset: value_slim
+synonym: "bowing" NARROW []
+synonym: "curled" RELATED []
+is_a: PATO:0001591 ! curvature
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000411
+name: circular
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's being such that every part of the surface or the circumference is equidistant from the center." [thefreedictionary.com:thefreedictionary.com]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+synonym: "round" RELATED []
+synonym: "rounded" RELATED []
+is_a: PATO:0000947 ! elliptic
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000414
+name: unbranched
+def: "A branchiness quality inhering in a bearer by virtue of the bearer's lacking branches." [PATOC:GVG]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0002009 ! branchiness
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000422
+name: auxotrophic
+namespace: quality
+def: "A nutritional quality inhering in a bearer by virtue of the bearer's inability to synthesize a particular organic compound required for its growth." [Wikipedia:http\://en.wikipedia.org/wiki/Auxotrophic]
+subset: disposition_slim
+subset: value_slim
+is_a: PATO:0000056 ! trophic quality
+relationship: is_opposite_of PATO:0000423 ! prototrophic
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000423
+name: prototrophic
+def: "A nutritional quality inhering in a bearer by virtue of the bearer's ability to synthesize a particular organic compound required for its growth." [Wikipedia:http\://en.wikipedia.org/wiki/Prototrophic]
+subset: disposition_slim
+subset: value_slim
+is_a: PATO:0000056 ! trophic quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000440
+name: regular spatial pattern
+def: "A pattern quality inhering in a bearer by virtue of the bearer's having a repeatable or predictable placement." [PATOC:GVG]
+subset: mpath_slim
+subset: relational_slim
+subset: value_slim
+is_a: PATO:0000060 ! spatial pattern
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000460
+name: abnormal
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's deviation from normal or average." [PATOC:GVG]
+subset: abnormal_slim
+subset: mpath_slim
+subset: value_slim
+synonym: "aberrant" RELATED []
+synonym: "atypia" RELATED []
+synonym: "atypical" RELATED []
+synonym: "defective" RELATED []
+is_a: PATO:0000069 ! deviation(from_normal)
+relationship: is_opposite_of PATO:0000461 ! normal
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000461
+name: normal
+namespace: quality
+def: "A quality inhering in a bearer by virtue of the bearer's exhibiting no deviation from normal or average." [PATOC:GVG]
+subset: abnormal_slim
+subset: mpath_slim
+subset: value_slim
+synonym: "average" RELATED []
+is_a: PATO:0000069 ! deviation(from_normal)
+relationship: is_opposite_of PATO:0000460 ! abnormal
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0000462
@@ -15068,7 +15542,7 @@ subset: mpath_slim
 subset: value_slim
 synonym: "absence" EXACT []
 synonym: "absent from organism" EXACT []
-is_a: PATO:0000070 ! count
+is_a: PATO:0000070 ! amount
 
 [Term]
 id: PATO:0000467
@@ -15078,7 +15552,499 @@ def: "A quality inhering in a bearer by virtue of the bearer's existence." [PATO
 subset: absent_slim
 subset: value_slim
 synonym: "present in organism" RELATED []
-is_a: PATO:0000070 ! count
+is_a: PATO:0000070 ! amount
+relationship: is_opposite_of PATO:0000462 ! absent
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000498
+name: increased duration
+namespace: quality
+alt_id: PATO:0000715
+def: "A duration quality of a process which is relatively high." [PATOC:GVG]
+subset: value_slim
+synonym: "chronic" RELATED []
+synonym: "high time" EXACT []
+synonym: "increased period" EXACT []
+synonym: "increased time" EXACT []
+synonym: "prolonged period" RELATED []
+synonym: "slow time" RELATED []
+is_a: PATO:0001309 ! duration
+is_a: PATO:0002304 ! increased process quality
+intersection_of: PATO:0001309 ! duration
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000499 ! decreased duration
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000499
+name: decreased duration
+namespace: quality
+alt_id: PATO:0000716
+def: "A duration quality of a process which is relatively low." [PATOC:GVG]
+subset: value_slim
+synonym: "decreased period" EXACT []
+synonym: "decreased time" EXACT []
+synonym: "fast time" RELATED []
+synonym: "low period" EXACT []
+synonym: "shortened period" EXACT []
+is_a: PATO:0001309 ! duration
+is_a: PATO:0002302 ! decreased process quality
+intersection_of: PATO:0001309 ! duration
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000498 ! increased duration
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000502
+name: delayed
+namespace: quality
+def: "A quality of a process which starts later than the natural start time or the reference process." [PATOC:LC]
+subset: value_slim
+synonym: "late" RELATED []
+is_a: PATO:0002325 ! onset quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000573
+name: increased length
+namespace: quality
+def: "A length quality which is relatively large." [PATOC:GVG]
+subset: value_slim
+synonym: "long" EXACT []
+is_a: PATO:0000122 ! length
+is_a: PATO:0000586 ! increased size
+intersection_of: PATO:0000122 ! length
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000574 ! decreased length
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000574
+name: decreased length
+namespace: quality
+def: "A length quality which is relatively small." [PATOC:GVG]
+subset: value_slim
+synonym: "short" EXACT []
+synonym: "shortened" RELATED []
+synonym: "stubby" RELATED []
+is_a: PATO:0000122 ! length
+is_a: PATO:0000587 ! decreased size
+intersection_of: PATO:0000122 ! length
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000573 ! increased length
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000586
+name: increased size
+namespace: quality
+alt_id: PATO:0001202
+def: "A size quality which is relatively high." [PATOC:GVG]
+subset: value_slim
+synonym: "big" RELATED []
+synonym: "enlarged" RELATED []
+synonym: "expanded" RELATED []
+synonym: "great" RELATED []
+synonym: "large" RELATED []
+is_a: PATO:0000117 ! size
+is_a: PATO:0002305 ! increased object quality
+intersection_of: PATO:0000117 ! size
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000587 ! decreased size
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000587
+name: decreased size
+namespace: quality
+def: "A size quality which is relatively low." [PATOC:GVG]
+subset: value_slim
+synonym: "hypoplasia" NARROW []
+synonym: "reduced" RELATED []
+synonym: "small" RELATED []
+synonym: "tiny" RELATED []
+synonym: "underdeveloped" NARROW []
+is_a: PATO:0000117 ! size
+is_a: PATO:0002303 ! decreased object quality
+intersection_of: PATO:0000117 ! size
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000586 ! increased size
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000591
+name: increased thickness
+namespace: quality
+def: "A thickness which is relatively high." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "high thickness" EXACT []
+synonym: "stout" EXACT []
+synonym: "thick" RELATED []
+synonym: "thickened" EXACT []
+is_a: PATO:0000586 ! increased size
+is_a: PATO:0000915 ! thickness
+intersection_of: PATO:0000915 ! thickness
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000592 ! decreased thickness
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000592
+name: decreased thickness
+namespace: quality
+def: "A thickness which is relatively low." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "low thickness" EXACT []
+synonym: "slender" RELATED []
+synonym: "thin" RELATED []
+is_a: PATO:0000587 ! decreased size
+is_a: PATO:0000915 ! thickness
+intersection_of: PATO:0000915 ! thickness
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000591 ! increased thickness
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000595
+name: increased volume
+namespace: quality
+def: "A volume which is relatively high." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "high volume" EXACT []
+synonym: "large volume" RELATED []
+is_a: PATO:0000586 ! increased size
+is_a: PATO:0000918 ! volume
+intersection_of: PATO:0000918 ! volume
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000596 ! decreased volume
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000596
+name: decreased volume
+namespace: quality
+def: "A volume which is relatively low." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "low volume" EXACT []
+synonym: "small volume" RELATED []
+is_a: PATO:0000587 ! decreased size
+is_a: PATO:0000918 ! volume
+intersection_of: PATO:0000918 ! volume
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000595 ! increased volume
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000617
+name: bent
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's having one or more angle(s) in its length." [PATOC:MAH]
+subset: value_slim
+is_a: PATO:0000052 ! shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000628
+name: mislocalised
+namespace: quality
+alt_id: PATO:0000621
+def: "A positional quality inhering in a bearer by virtue the bearer's being changed in abnormal position." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+synonym: "ectopic" EXACT []
+synonym: "mislocalized" EXACT []
+is_a: PATO:0002181 ! displaced
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000642
+name: fused with
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's being merged with another entity." [PATOC:GVG]
+subset: mpath_slim
+subset: relational_slim
+subset: value_slim
+synonym: "coalesced" RELATED []
+synonym: "fused" EXACT []
+synonym: "fused to" EXACT []
+synonym: "joined with" RELATED []
+synonym: "merged with" RELATED []
+is_a: PATO:0000141 ! structure
+relationship: is_opposite_of PATO:0000651 ! unfused from
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000651
+name: unfused from
+def: "A structural quality inhering in a bearer by virtue of the bearer's being no longer merged with another entity." [PATOC:nw]
+subset: relational_slim
+subset: value_slim
+synonym: "unfused" EXACT []
+is_a: PATO:0000141 ! structure
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000689
+name: continuous
+namespace: quality
+alt_id: PATO:0000429
+def: "A quality of a single process inhering in a bearer by virtue of the bearer's being uninterrupted in time, sequence, substance, or extent." [thefreedictionary.com:thefreedictionary.com]
+subset: value_slim
+synonym: "uninterrupted" EXACT []
+is_a: PATO:0000057 ! occurrence
+relationship: is_opposite_of PATO:0000690 ! discontinuous
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000690
+name: discontinuous
+namespace: quality
+alt_id: PATO:0000426
+def: "A quality of a single process inhering in a bearer by virtue of the bearer's being marked by breaks or interruptions." [thefreedictionary.com:thefreedictionary.com]
+subset: value_slim
+synonym: "intermittent" RELATED []
+synonym: "interrupted" EXACT []
+is_a: PATO:0000057 ! occurrence
+relationship: is_opposite_of PATO:0000689 ! continuous
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000694
+name: premature
+namespace: quality
+alt_id: PATO:0000691
+alt_id: PATO:0002086
+def: "A quality of a process which starts earlier than the natural start time or the reference process." [PATO:LC]
+subset: value_slim
+synonym: "advanced" EXACT []
+synonym: "early" RELATED []
+synonym: "precocious" RELATED []
+is_a: PATO:0002325 ! onset quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000700
+name: rough
+namespace: quality
+alt_id: PATO:0001616
+def: "A texture quality inhering in a bearer by virtue of the bearer's irregular surface." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "coarse" EXACT []
+is_a: PATO:0000150 ! texture
+relationship: is_opposite_of PATO:0000701 ! smooth
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000701
+name: smooth
+def: "A texture quality inhering in a bearer by virtue of the bearer's processing a surface free of roughness or irregularities." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0000150 ! texture
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000718
+name: lethal (sensu genetics)
+namespace: quality
+def: "A viability quality inhering in a population by virtue of the bearer's long term survival inability." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+is_a: PATO:0000169 ! viability
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000719
+name: viable
+namespace: quality
+def: "A viability quality inhering in a bearer or a population by virtue of the bearer's ability to survive or the long term survival ability of a given population." [PATOC:GVG]
+subset: disposition_slim
+subset: value_slim
+is_a: PATO:0000169 ! viability
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000911
+name: decreased rate
+namespace: quality
+def: "A rate which is relatively low." [PATO:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "slow rate" EXACT []
+is_a: PATO:0000161 ! rate
+is_a: PATO:0002302 ! decreased process quality
+intersection_of: PATO:0000161 ! rate
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000912 ! increased rate
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000912
+name: increased rate
+namespace: quality
+def: "A rate which is relatively high." [PATO:GVG]
+subset: mpath_slim
+subset: value_slim
+synonym: "fast rate" EXACT []
+synonym: "high rate" EXACT []
+is_a: PATO:0000161 ! rate
+is_a: PATO:0002304 ! increased process quality
+intersection_of: PATO:0000161 ! rate
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0000911 ! decreased rate
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000915
+name: thickness
+namespace: quality
+def: "A 1-D extent quality which is equal to the dimension through an object as opposed to its length or width." [WordNet:WordNet]
+subset: attribute_slim
+subset: scalar_slim
+is_a: PATO:0001708 ! 1-D extent
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000918
+name: volume
+namespace: quality
+def: "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies." [PATOC:GVG]
+subset: attribute_slim
+subset: mpath_slim
+subset: scalar_slim
+is_a: PATO:0001710 ! 3-D extent
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000944
+name: sharpness
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's having a sharp or tapered end or point." [PATOC:GVG]
+subset: attribute_slim
+subset: cell_quality
+synonym: "apiculate" EXACT []
+is_a: PATO:0000052 ! shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000947
+name: elliptic
+namespace: quality
+def: "A spheroid quality inhering in a bearer by virtue of the bearer's being oval with two axes of symmetry, as produced by a conical section." [PATOC:GVG]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+synonym: "ellipse-shaped" EXACT []
+synonym: "ellipsoid" EXACT []
+synonym: "elliptical" EXACT []
+synonym: "oval" RELATED []
+synonym: "ovoid" RELATED []
+is_a: PATO:0002318 ! superelliptic
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000970
+name: permeability
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's disposition to being permeated or pervaded by a gas or liquid (as by osmosis or diffusion)." [Biology-online:Biology-online]
+subset: attribute_slim
+subset: disposition_slim
+subset: scalar_slim
+is_a: PATO:0000141 ! structure
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000982
+name: permeable
+namespace: quality
+def: "A permeability quality inhering in a bearer by virtue of the bearer's being capable to be permeated or pervaded by a gas or liquid (as by osmosis or diffusion)." [Biology-online:Biology-online]
+subset: disposition_slim
+subset: value_slim
+synonym: "porous" RELATED []
+is_a: PATO:0000970 ! permeability
+relationship: is_opposite_of PATO:0000983 ! impermeable
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0000983
+name: impermeable
+def: "A permeability quality inhering in a bearer by virtue of the bearer's being incapable of being permeated or pervaded by a liquid (as by osmosis or diffusion)." [Biology-online:Biology-online]
+subset: disposition_slim
+subset: value_slim
+is_a: PATO:0000970 ! permeability
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001018
+name: physical quality
+namespace: quality
+alt_id: PATO:0002079
+def: "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities." [PATOC:GVG]
+subset: attribute_slim
+synonym: "relational physical quality" EXACT []
+xref: Wikipedia:Physical_property
+is_a: PATO:0001241 ! physical object quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001159
+name: concentrated
+namespace: quality
+def: "A concentration quality inhering in a bearer by virtue of the bearer's exhibiting concentration." [PATOC:GVG]
+subset: relational_slim
+subset: value_slim
+is_a: PATO:0000033 ! concentration of
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001162
+name: increased concentration
+namespace: quality
+def: "A concentration which is higher relative to the normal or average." [PATOC:GVG]
+subset: relational_slim
+subset: value_slim
+synonym: "high concentration" EXACT []
+is_a: PATO:0001159 ! concentrated
+is_a: PATO:0002305 ! increased object quality
+intersection_of: PATO:0001159 ! concentrated
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001163 ! decreased concentration
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001163
+name: decreased concentration
+namespace: quality
+def: "A concentration which is lower relative to the normal or average." [PATOC:GVG]
+subset: relational_slim
+subset: value_slim
+synonym: "low concentration" EXACT []
+is_a: PATO:0001159 ! concentrated
+is_a: PATO:0002303 ! decreased object quality
+intersection_of: PATO:0001159 ! concentrated
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001162 ! increased concentration
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0001236
@@ -15093,6 +16059,7 @@ synonym: "quality of occurrent" EXACT []
 synonym: "quality of process" EXACT []
 synonym: "relational quality of occurrent" EXACT []
 is_a: PATO:0000001 ! quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0001241
@@ -15105,13 +16072,180 @@ comment: Relational qualities are qualities that hold between multiple entities.
 synonym: "monadic quality of a continuant" EXACT []
 synonym: "monadic quality of an object" NARROW []
 synonym: "monadic quality of continuant" NARROW []
-synonym: "multiply inhering quality of a physical entity " EXACT []
+synonym: "multiply inhering quality of a physical entity" EXACT []
 synonym: "quality of a continuant" EXACT []
 synonym: "quality of a single physical entity" EXACT []
 synonym: "quality of an object" EXACT []
 synonym: "quality of continuant" EXACT []
 xref: snap:Quality
 is_a: PATO:0000001 ! quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001305
+name: increased temperature
+namespace: quality
+alt_id: PATO:0000678
+def: "A temperature which is relatively high." [PATOC:GVG]
+subset: value_slim
+synonym: "high temperature" EXACT []
+synonym: "hot" EXACT []
+is_a: PATO:0000146 ! temperature
+is_a: PATO:0002305 ! increased object quality
+intersection_of: PATO:0000146 ! temperature
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001306 ! decreased temperature
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001306
+name: decreased temperature
+namespace: quality
+alt_id: PATO:0000677
+def: "A temperature which is relatively low." [PATOC:GVG]
+subset: value_slim
+synonym: "cold" EXACT []
+synonym: "low temperature" EXACT []
+is_a: PATO:0000146 ! temperature
+is_a: PATO:0002303 ! decreased object quality
+intersection_of: PATO:0000146 ! temperature
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001305 ! increased temperature
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001309
+name: duration
+namespace: quality
+alt_id: PATO:0000081
+def: "A process quality inhering in a bearer by virtue of the bearer's magnitude of the temporal extent between the starting and ending point." [PATOC:mellybelly]
+subset: attribute_slim
+subset: hpo_slim
+synonym: "period" EXACT []
+synonym: "time" RELATED []
+is_a: PATO:0002062 ! physical quality of a process
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001355
+name: convex
+def: "A shape quality that obtains by virtue of the bearer having inward facing edges; having a surface or boundary that curves or bulges outward, as the exterior of a sphere." [PATOC:GVG]
+subset: cell_quality
+subset: value_slim
+is_a: PATO:0002005 ! concavity
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001367
+name: lobate
+namespace: quality
+def: "A surface feature shape quality inhering in a bearer by virtue of the bearer's having deeply undulating edges forming lobes." [PATOC:GVG]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0001925 ! surface feature shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001396
+name: cellular quality
+namespace: quality
+def: "A monadic quality of continuant that exists at the cellular level of organisation." [PATOC:GVG]
+is_a: PATO:0001241 ! physical object quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001404
+name: nucleate quality
+namespace: quality
+def: "A cellular quality inhering in a bearer by virtue of bearer's number of nuclei." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0001396 ! cellular quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001406
+name: binucleate
+namespace: quality
+def: "A nucleate quality inhering in a bearer by virtue of the bearer's having two nuclei." [Biology-online:Biology-online]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0001908 ! multinucleate
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001407
+name: mononucleate
+namespace: quality
+def: "A nucleate quality inhering in a bearer by virtue of the bearer's having one nucleus." [Biology-online:Biology-online]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0002505 ! nucleated
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001419
+name: sharp
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's terminating in a point or edge." [PATOC:GVG]
+subset: cell_quality
+subset: value_slim
+is_a: PATO:0000944 ! sharpness
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001435
+name: attachment quality
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's having connection or association with another entity." [PATOC:GVG]
+subset: attribute_slim
+subset: relational_slim
+is_a: PATO:0000141 ! structure
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001442
+name: wholeness
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of whether the bearer includes all its components." [thefreedictionary.com:thefreedictionary.com]
+subset: attribute_slim
+is_a: PATO:0000141 ! structure
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001444
+name: broken
+namespace: quality
+alt_id: PATO:0001443
+alt_id: PATO:0001820
+def: "A broken quality inhering in a bearer by virtue of the bearer's being broken open." [PATOC:GVG]
+subset: value_slim
+synonym: "burst" EXACT []
+synonym: "cracked" RELATED []
+synonym: "fractured" EXACT []
+synonym: "fragmented" EXACT []
+synonym: "hemorrhaged" RELATED []
+synonym: "ruptured" EXACT []
+synonym: "split" RELATED []
+synonym: "torn" RELATED []
+is_a: PATO:0001442 ! wholeness
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001453
+name: detached from
+namespace: quality
+def: "An attachment quality inhering in a bearer by virtue of the bearer's lacking connection or association with another entity." [PATOC:GVG]
+subset: mpath_slim
+subset: relational_slim
+subset: value_slim
+synonym: "detached" EXACT []
+is_a: PATO:0001435 ! attachment quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
 id: PATO:0001457
@@ -15123,6 +16257,506 @@ subset: disposition_slim
 subset: relational_slim
 synonym: "sensitivity of occurrent" EXACT []
 is_a: PATO:0002062 ! physical quality of a process
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001499
+name: spherical
+namespace: quality
+alt_id: PATO:0000408
+def: "A spheroid quality inhering in a bearer by virtue of the bearer's resembling a ball (a sphere whose equatorial diameter is equal to the polar diameter)." [WordNet:WordNet]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+synonym: "globular" EXACT []
+synonym: "rotund" RELATED []
+is_a: PATO:0001865 ! spheroid
+relationship: has_cross_section PATO:0000411 ! circular
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001514
+name: delaminated
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's lacking some outer layer." [PATOC:cjm]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0000141 ! structure
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001551
+name: increased sensitivity of a process
+namespace: quality
+def: "A sensitivity of a process which is higher than normal or average." [PATO:GVG]
+subset: relational_slim
+subset: value_slim
+synonym: "high sensitivity of occurrent" EXACT []
+synonym: "increased sensitivity of occurrent" EXACT []
+is_a: PATO:0001457 ! sensitivity of a process
+is_a: PATO:0002304 ! increased process quality
+intersection_of: PATO:0001457 ! sensitivity of a process
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001552 ! decreased sensitivity of a process
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001552
+name: decreased sensitivity of a process
+namespace: quality
+def: "A sensitivity of a process which is lower than normal or average." [PATO:GVG]
+subset: relational_slim
+subset: value_slim
+synonym: "decreased sensitivity of occurrent" EXACT []
+synonym: "low sensitivity of occurrent" EXACT []
+is_a: PATO:0001457 ! sensitivity of a process
+is_a: PATO:0002302 ! decreased process quality
+intersection_of: PATO:0001457 ! sensitivity of a process
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001551 ! increased sensitivity of a process
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001555
+name: has number of
+namespace: quality
+def: "The number of parts of a particular type that the bearer entity has. This is a relational quality, and thus holds between two entities: the bearer of the quality, and the type of parts." [PATOC:CJM]
+subset: attribute_slim
+subset: relational_slim
+synonym: "cardinality" RELATED []
+synonym: "extra or missing physical or functional parts" EXACT []
+synonym: "has or lacks parts of type" EXACT []
+synonym: "mereological quality" EXACT []
+synonym: "number" RELATED []
+synonym: "number of" EXACT []
+xref: OBO_REL:has_part
+is_a: PATO:0001241 ! physical object quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001558
+name: lacking processual parts
+namespace: quality
+def: "A quality of a process inhering in a bearer by virtue of the bearer's lacking a processual part as specified by the additional entity." [PATOC:GVG]
+subset: relational_slim
+subset: value_slim
+is_a: PATO:0001564 ! extra or missing processual parts
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001561
+name: having extra processual parts
+namespace: quality
+def: "A quality of a process inhering in a bearer by virtue of the bearer's having additional processual parts." [PATOC:GVG]
+subset: relational_slim
+subset: value_slim
+synonym: "having supernumerary processual parts" EXACT []
+is_a: PATO:0001564 ! extra or missing processual parts
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001564
+name: extra or missing processual parts
+namespace: quality
+def: "A quality of a process inhering in a bearer by virtue of the bearer's processual parts." [PATOC:GVG]
+subset: relational_slim
+is_a: PATO:0001236 ! process quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001577
+name: increased permeability
+namespace: quality
+def: "A permeability which is relatively high." [PATO:GVG]
+subset: disposition_slim
+subset: value_slim
+synonym: "high permeability" EXACT []
+is_a: PATO:0000982 ! permeable
+is_a: PATO:0002305 ! increased object quality
+intersection_of: PATO:0000982 ! permeable
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0001578 ! decreased permeability
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001578
+name: decreased permeability
+def: "A permeability which is relatively low." [PATO:GVG]
+subset: disposition_slim
+subset: value_slim
+synonym: "low permeability" EXACT []
+is_a: PATO:0000982 ! permeable
+is_a: PATO:0002303 ! decreased object quality
+intersection_of: PATO:0000982 ! permeable
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001591
+name: curvature
+namespace: quality
+def: "A surface shape quality inhering in a bearer by virtue of the bearer's exhibiting a degree of bending." [WordNet:WordNet]
+subset: attribute_slim
+is_a: PATO:0000052 ! shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001598
+name: protruding
+namespace: quality
+alt_id: PATO:0001644
+def: "A quality inhering in a bearer by virtue of the bearer's extending out above or beyond a surface or boundary." [WordNet:WordNet]
+subset: value_slim
+synonym: "protruding" EXACT []
+synonym: "relational protruding quality" EXACT []
+is_a: PATO:0000140 ! position
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001629
+name: aggregated
+namespace: quality
+def: "A spatial pattern inhering in a bearer by virtue of the bearer's being gathered or tending to gather into a mass or whole." [WordNet:WordNet]
+subset: mpath_slim
+subset: value_slim
+synonym: "clumped" EXACT []
+synonym: "clustered" EXACT []
+is_a: PATO:0000330 ! irregular spatial pattern
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001630
+name: dispersed
+namespace: quality
+def: "A positional quality inhering in a bearer by virtue of the bearer's being distributed or spread over a considerable extent." [WordNet:WordNet]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0000140 ! position
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001643
+name: stubby
+namespace: quality
+def: "A size quality inhering in a bearer by virtue of the bearer's having a short, stocky build." [thefreedictionary.com:thefreedictionary.com]
+subset: value_slim
+is_a: PATO:0000052 ! shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001708
+name: 1-D extent
+namespace: quality
+def: "A size quality inhering in an bearer by virtue of the bearer's extension in one dimension." [PATOC:GVG]
+subset: attribute_slim
+synonym: "1-D size" EXACT []
+is_a: PATO:0000117 ! size
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001710
+name: 3-D extent
+namespace: quality
+def: "A size quality inhering in an bearer by virtue of the bearer's extension in three dimensions." [PATOC:GVG]
+subset: attribute_slim
+synonym: "3D size" EXACT []
+is_a: PATO:0000117 ! size
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001786
+name: split
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's being divided or broken up into parts or divisions." [die.net:die.net]
+subset: mpath_slim
+subset: value_slim
+synonym: "clefted" EXACT []
+synonym: "divided" RELATED []
+synonym: "forked" RELATED []
+synonym: "septate" NARROW []
+is_a: PATO:0000052 ! shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001798
+name: kinked
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's having multiple angles in its length." [thefreedictionary.com:thefreedictionary.com]
+subset: cell_quality
+subset: value_slim
+synonym: "tightly curled" RELATED []
+synonym: "twisted" RELATED []
+is_a: PATO:0000617 ! bent
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001821
+name: imperforate
+def: "A structural quality inhering in a bearer by virtue of the bearer's having no opening." [thefreedictionary.com:thefreedictionary.com]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0002014 ! structure, cavities
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001846
+name: tangled
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's being entwined and difficult to unravel." [answers.com:answers.com]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0000141 ! structure
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001847
+name: constricted
+namespace: quality
+alt_id: PATO:0001837
+def: "A structural quality inhering in a bearer by virtue of the bearer's being drawn together, compressed or squeezed physically." [WordNet:WordNet]
+subset: value_slim
+synonym: "stenosis" EXACT []
+synonym: "stenotic" EXACT []
+synonym: "stricture" EXACT []
+is_a: PATO:0000141 ! structure
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001857
+name: concave
+namespace: quality
+def: "A shape quality in a bearer by virtue of the bearer's curving inward." [WordNet:WordNet]
+subset: cell_quality
+subset: value_slim
+is_a: PATO:0002005 ! concavity
+relationship: is_opposite_of PATO:0001355 ! convex
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001865
+name: spheroid
+namespace: quality
+alt_id: PATO:0001864
+def: "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's having a quadric surface in three dimensions obtained by rotating an ellipse about one of its principal axes. Includes spheres and oblate/prolate spheroids." [Wikipedia:http\://en.wikipedia.org/wiki/Spheroid]
+subset: cell_quality
+subset: mpath_slim
+subset: value_slim
+synonym: "sphericality" RELATED []
+is_a: PATO:0002007 ! convex 3-D shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001878
+name: sigmoid
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's consisting of two curves, in opposite directions. S-shaped." [PATOC:CJM]
+subset: cell_quality
+subset: value_slim
+synonym: "S-shaped" EXACT []
+synonym: "sigmoidal" EXACT []
+is_a: PATO:0000052 ! shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001905
+name: has normal numbers of parts of type
+namespace: quality
+def: "The bearer of this quality has_part = n, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part." [PATOC:CJM]
+subset: relational_slim
+synonym: "having physical part" EXACT []
+is_a: PATO:0001555 ! has number of
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001908
+name: multinucleate
+namespace: quality
+def: "A nucleate quality inhering in a bearer by virtue of the bearer's having more than one nucleus." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0002505 ! nucleated
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001925
+name: surface feature shape
+namespace: quality
+def: "A surface shape quality inhering in a bearer by virtue of the bearer's shape of features present on its surface or outer shell." [PATOC:CJM]
+comment: This quality either inheres directly in the surface, or in the entity that has the surface. For example, to say that a particular fly wing is curved is shorthand for saying the wing has a surface which is curved.
+subset: attribute_slim
+is_a: PATO:0000052 ! shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001995
+name: organismal quality
+namespace: quality
+def: "A quality that inheres in an entire organism or part of an organism." [PATOC:CJM]
+is_a: PATO:0001241 ! physical object quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0001999
+name: lacks parts or has fewer parts of type
+namespace: quality
+def: "The bearer of this quality has_part < n of the indicated entity type, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part. Formally: If a bearer entity e has fewer parts of type X at time t, then the number of instances x of X at t such that x part_of e is < n, where n is either the normal number for comparable entities, or n is stated explicitly. This case includes the limit case, where the bearer lacks all parts of the specified type." [PATOC:CJM]
+subset: relational_slim
+synonym: "loss of" EXACT []
+is_a: PATO:0002083 ! altered number of
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0002000
+name: lacks all parts of type
+namespace: quality
+alt_id: PATO:0001557
+def: "A quality of physical entities inhering in a bearer by virtue of the bearer's lacking a physical part as specified by the additional entity." [PATOC:CJM]
+comment: Example: [E=organism Q=lacks_all_parts_of_type E2=Wing] - applies to an organism. A relational quality in which the bearer entity has no parts of the specified type. The bearer of this quality has_part = 0 of the indicated entity type, where a comparable organism usually has at least 1 part of the same type. Note that the bearer of the quality is the whole, not the part. Formally: If a bearer entity e lacks all parts of type X at time t, then there exists no instances x of X at t such that x part_of e that has no wings, where wings are normally present in that organism type. In OWL this is equivalent to a restriction on the OBO_REL:has_part relation with cardinality=0, i.e has_part 0 E2.
+subset: relational_slim
+synonym: "lacks all physical parts of type" EXACT []
+xref: OBO_REL:lacks_part
+is_a: PATO:0001999 ! lacks parts or has fewer parts of type
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0002001
+name: has fewer parts of type
+namespace: quality
+alt_id: PATO:0001569
+def: "The bearer of this quality has_part < n AND has_part > 0 of the indicated entity type, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part. Formally: If a bearer entity e has fewer parts of type X at time t, then the number of instances x of X at t such that x part_of e is < n, where n is either the normal number for comparable entities, or n is stated explicitly." [PATOC:CJM]
+comment: Example: [E=hand Q=has_fewer_parts_of_type E2=digit] - applies to an organism that has no less fingers than is normal for organisms of that type.
+subset: relational_slim
+synonym: "decreased number of" EXACT []
+synonym: "has decreased number of" EXACT []
+synonym: "has fewer physical parts of type" EXACT []
+is_a: PATO:0001999 ! lacks parts or has fewer parts of type
+is_a: PATO:0002303 ! decreased object quality
+intersection_of: PATO:0001999 ! lacks parts or has fewer parts of type
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002002 ! has extra parts of type
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0002002
+name: has extra parts of type
+namespace: quality
+alt_id: PATO:0001560
+def: "The bearer of this quality has_part > n of the indicated entity type, where n is the normal amount for a comparable organism. Note that the bearer of the quality is the whole, not the part." [PATOC:CJM]
+comment: In polydactyly, the bearer of the quality is the hand, and the entity type being counted is 'finger'. In EQ syntax, E=hand, Q=<this> E2=finger.
+subset: relational_slim
+synonym: "has extra parts of" EXACT []
+synonym: "has increased number of" EXACT []
+synonym: "having extra physical parts" EXACT []
+synonym: "having supernumerary physical parts" EXACT []
+synonym: "increased number of" EXACT []
+is_a: PATO:0002083 ! altered number of
+is_a: PATO:0002305 ! increased object quality
+intersection_of: PATO:0002083 ! altered number of
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002001 ! has fewer parts of type
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0002005
+name: concavity
+namespace: quality
+def: "Surface shape that refers to the inward or outward curvature of the surface." [PATOC:MAH]
+subset: attribute_slim
+is_a: PATO:0000052 ! shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0002006
+name: 2-D shape
+namespace: quality
+def: "A shape that inheres in a 2 dimensional entity, such as a cross section or projection of a 3 dimensional entity." [PATOC:CJM]
+subset: attribute_slim
+synonym: "2-D projection" RELATED []
+synonym: "cross-sectional" RELATED []
+is_a: PATO:0000052 ! shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0002007
+name: convex 3-D shape
+namespace: quality
+def: "A complete three dimensional shape in which for every line connecting pair of points on the object is within the object. Or: a shape lacking cavities. Contrast: concave." [PATOC:CJM]
+comment: Use this term or an is_a child of this term when the entire shape of the object is known.
+subset: attribute_slim
+xref: Image:http\://upload.wikimedia.org/wikipedia/commons/0/06/Convex_polygon_illustration1.png
+is_a: PATO:0002266 ! 3-D shape
+relationship: has_cross_section PATO:0002006 ! 2-D shape
+relationship: is_opposite_of PATO:0002008 ! concave 3-D shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0002008
+name: concave 3-D shape
+namespace: quality
+def: "A complete three dimensional shape in which there is a line connecting pair of points on the object that lies outside the object. Or: a shape with cavities. Contrast: concave." [PATOC:CJM]
+subset: attribute_slim
+xref: Image:http\://en.wikipedia.org/wiki/Image\:Convex_polygon_illustration2.png
+is_a: PATO:0002266 ! 3-D shape
+relationship: has_part PATO:0001857 ! concave
+relationship: is_opposite_of PATO:0002007 ! convex 3-D shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0002009
+name: branchiness
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the degree to which there are subdivisions or offshoots in a bearer entity." [PATOC:MAH]
+subset: attribute_slim
+subset: cell_quality
+is_a: PATO:0000052 ! shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0002014
+name: structure, cavities
+namespace: quality
+def: "A structural quality that inheres in a bearer by virtue of the bearer's containing hollow areas." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0000141 ! structure
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0002051
+name: increased occurrence
+namespace: quality
+def: "An occurrence which is relatively high." [PATOC:GVG]
+synonym: "increased incidence" EXACT []
+is_a: PATO:0000057 ! occurrence
+is_a: PATO:0002304 ! increased process quality
+intersection_of: PATO:0000057 ! occurrence
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002052 ! decreased occurrence
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: George Gkoutos
+creation_date: 2009-03-26T11:10:11Z
+
+[Term]
+id: PATO:0002052
+name: decreased occurrence
+namespace: quality
+def: "An occurrence which is relatively low." [PATOC:GVG]
+synonym: "decreased incidence" EXACT []
+is_a: PATO:0000057 ! occurrence
+is_a: PATO:0002302 ! decreased process quality
+intersection_of: PATO:0000057 ! occurrence
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002051 ! increased occurrence
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: George Gkoutos
+creation_date: 2009-03-26T11:12:35Z
 
 [Term]
 id: PATO:0002062
@@ -15130,8 +16764,105 @@ name: physical quality of a process
 namespace: quality
 subset: attribute_slim
 is_a: PATO:0001236 ! process quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 created_by: george
 creation_date: 2009-06-05T09:16:46Z
+
+[Term]
+id: PATO:0002083
+name: altered number of
+namespace: quality
+def: "Having extra or fewer parts." [PATOC:GVG]
+subset: attribute_slim
+subset: relational_slim
+is_a: PATO:0001555 ! has number of
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: George Gkoutos
+creation_date: 2009-09-21T10:41:58Z
+
+[Term]
+id: PATO:0002112
+name: perforate
+namespace: quality
+alt_id: PATO:0000649
+def: "A structural quality inhering in a bearer by virtue of the bearer's having a hole or holes, especially a row or array of small holes." [answers.com:answers.com]
+subset: mpath_slim
+subset: value_slim
+synonym: "permeable" RELATED []
+synonym: "pierced" RELATED []
+is_a: PATO:0002014 ! structure, cavities
+relationship: is_opposite_of PATO:0001821 ! imperforate
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: george
+creation_date: 2009-10-05T03:37:05Z
+
+[Term]
+id: PATO:0002181
+name: displaced
+namespace: quality
+def: "A positional quality inhering in a bearer by virtue the bearer's being changed in position." [PATOC:GVG]
+subset: attribute_slim
+is_a: PATO:0000140 ! position
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: George Gkoutos
+creation_date: 2010-03-01T02:56:33Z
+
+[Term]
+id: PATO:0002182
+name: molecular quality
+namespace: quality
+alt_id: PATO:0002061
+def: "A quality which inheres in a molecular entity, a single molecule, atom, ion, radical etc." [PATOC:GVG]
+synonym: "relational molecular quality" EXACT []
+is_a: PATO:0001241 ! physical object quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: George Gkoutos
+creation_date: 2010-03-10T03:18:15Z
+
+[Term]
+id: PATO:0002213
+name: obclavate
+namespace: quality
+def: "A concave 3-D shape quality inhering in a bearer by virtue of the bearer's shape being inversely clavate." [PATOC:GVG]
+subset: cell_quality
+subset: value_slim
+is_a: PATO:0002008 ! concave 3-D shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: george
+creation_date: 2010-07-08T01:47:09Z
+
+[Term]
+id: PATO:0002240
+name: teardrop-shaped
+namespace: quality
+def: "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's shape resembling falling drop." [url:wordnetweb.princeton.edu/perl/webwn]
+subset: value_slim
+synonym: "drop shaped" EXACT []
+is_a: PATO:0002007 ! convex 3-D shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: george
+creation_date: 2010-07-23T02:31:11Z
+
+[Term]
+id: PATO:0002258
+name: pointed
+namespace: quality
+def: "A shape quality inhering in a bearer by virtue of the bearer's having a point." [PATOC:http\://www.merriam-webster.com/dictionary/pointed]
+subset: value_slim
+is_a: PATO:0001419 ! sharp
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: george
+creation_date: 2010-09-08T03:15:16Z
+
+[Term]
+id: PATO:0002266
+name: 3-D shape
+namespace: quality
+def: "A shape that inheres in a 3 dimensional entity." [PATOC:OREGON]
+is_a: PATO:0000052 ! shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: george
+creation_date: 2010-10-05T12:31:16Z
 
 [Term]
 id: PATO:0002300
@@ -15139,6 +16870,11 @@ name: increased quality
 namespace: quality
 def: "A quality that has a value that is increased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
+intersection_of: PATO:0000001 ! quality
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002301 ! decreased quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:39:43Z
 
@@ -15148,6 +16884,11 @@ name: decreased quality
 namespace: quality
 def: "A quality that has a value that is decreased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0000069 ! deviation(from_normal)
+intersection_of: PATO:0000001 ! quality
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002300 ! increased quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:40:15Z
 
@@ -15158,8 +16899,28 @@ namespace: quality
 def: "A quality of a process that has a value that is decreased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002301 ! decreased quality
+intersection_of: PATO:0001236 ! process quality
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002304 ! increased process quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:50:59Z
+
+[Term]
+id: PATO:0002303
+name: decreased object quality
+namespace: quality
+def: "A quality of an object that has a value that is decreased compared to normal or average." [PATOC:GVG]
+is_a: PATO:0001241 ! physical object quality
+is_a: PATO:0002301 ! decreased quality
+intersection_of: PATO:0001241 ! physical object quality
+intersection_of: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: decreased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002305 ! increased object quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: George Gkoutos
+creation_date: 2011-06-16T06:51:54Z
 
 [Term]
 id: PATO:0002304
@@ -15168,8 +16929,168 @@ namespace: quality
 def: "A quality of a process that has a value that is increased compared to normal or average." [PATOC:GVG]
 is_a: PATO:0001236 ! process quality
 is_a: PATO:0002300 ! increased quality
+intersection_of: PATO:0001236 ! process quality
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002302 ! decreased process quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 created_by: George Gkoutos
 creation_date: 2011-06-16T06:53:08Z
+
+[Term]
+id: PATO:0002305
+name: increased object quality
+namespace: quality
+def: "A quality of an object that has a value that is increased compared to normal or average." [PATOC:GVG]
+is_a: PATO:0001241 ! physical object quality
+is_a: PATO:0002300 ! increased quality
+intersection_of: PATO:0001241 ! physical object quality
+intersection_of: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: increased_in_magnitude_relative_to PATO:0000461 ! normal
+relationship: is_opposite_of PATO:0002303 ! decreased object quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: George Gkoutos
+creation_date: 2011-06-16T06:54:01Z
+
+[Term]
+id: PATO:0002318
+name: superelliptic
+namespace: quality
+def: "A shape constituting a transition between a rectangle and a circle; a closed curve, of which the circle and ellipse are special cases, whose parametric equation is x = a.cos2/rt, y = b.cos2/rt" [wiktionary:superellipse]
+synonym: "Lamé curve" EXACT []
+is_a: PATO:0002006 ! 2-D shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: George Gkoutos
+creation_date: 2011-10-12T12:45:16Z
+
+[Term]
+id: PATO:0002323
+name: temporal distribution quality
+namespace: quality
+def: "A temporal distribution pattern of process occurrences within a regulation/reference process." [PATOC:LC]
+subset: attribute_slim
+is_a: PATO:0002062 ! physical quality of a process
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: George Gkoutos
+creation_date: 2011-11-22T01:12:28Z
+
+[Term]
+id: PATO:0002324
+name: offset quality
+namespace: quality
+def: "The temporal relation between the end of the process with respect to a reference process." [PATOC:LC]
+subset: attribute_slim
+synonym: "completeness" RELATED [GOC:CJM]
+synonym: "extent" RELATED [GOC:CJM]
+is_a: PATO:0002323 ! temporal distribution quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: George Gkoutos
+creation_date: 2011-11-23T11:46:00Z
+
+[Term]
+id: PATO:0002325
+name: onset quality
+namespace: quality
+def: "The temporal relation between the start of the process with respect to a reference process." [PATOC:LC]
+subset: attribute_slim
+synonym: "initiation" RELATED []
+is_a: PATO:0002323 ! temporal distribution quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: George Gkoutos
+creation_date: 2011-11-23T11:47:34Z
+
+[Term]
+id: PATO:0002345
+name: lemon-shaped
+namespace: quality
+def: "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's having a quadric surface in three dimensions obtained by rotating less than half of a circular arc about an axis passing through the endpoints of the arc" [PATOC:MH]
+subset: value_slim
+is_a: PATO:0002007 ! convex 3-D shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: gkoutos
+creation_date: 2012-01-31T03:55:16Z
+
+[Term]
+id: PATO:0002346
+name: snowman-shaped
+namespace: quality
+def: "A concave 3-D shape quality inhering in a bearer by virtue of the bearer's having two connected parts, roughly spherical, of different sizes." [PATOC:MH]
+subset: value_slim
+is_a: PATO:0002008 ! concave 3-D shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: gkoutos
+creation_date: 2012-01-31T03:58:10Z
+
+[Term]
+id: PATO:0002505
+name: nucleated
+namespace: quality
+def: "A nucleate quality inhering in a bearer by virtue of the bearer's having one or more nucleus." [PATOC:GVG]
+subset: mpath_slim
+subset: value_slim
+is_a: PATO:0001404 ! nucleate quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: gkoutos
+creation_date: 2013-10-21T05:44:34Z
+
+[Term]
+id: PATO:0005012
+name: complete structure
+def: "A structural quality inhering in a bearer by virtue of the bearer being fully formed compared to entities lacking parts." [PATOC:WD]
+subset: value_slim
+is_a: PATO:0000141 ! structure
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: wasila.dahdul
+creation_date: 2014-09-25T15:11:47Z
+
+[Term]
+id: PATO:0005013
+name: incomplete structure
+namespace: quality
+def: "A structural quality inhering in a bearer by virtue of the bearer's lacking parts or having a reduced form compared to fully formed entities." [PATOC:WD]
+subset: value_slim
+is_a: PATO:0000141 ! structure
+relationship: is_opposite_of PATO:0005012 ! complete structure
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+created_by: wasila.dahdul
+creation_date: 2014-09-25T15:12:35Z
+
+[Term]
+id: PATO:0015019
+name: C-shaped
+namespace: quality
+def: "A concave 3-D shape quality inhering in a bearer by virtue of the bearer's being shaped in the form of the letter C." [github:mah11, https://github.com/pato-ontology/pato/issues/96]
+subset: value_slim
+is_a: PATO:0002008 ! concave 3-D shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: PATO:0015020
+name: J-shaped
+namespace: quality
+def: "A concave 3-D shape quality inhering in a bearer by virtue of the bearer's being shaped in the form of the letter J." [github:mah11, https://github.com/pato-ontology/pato/issues/96]
+subset: value_slim
+is_a: PATO:0002008 ! concave 3-D shape
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+
+[Typedef]
+id: adjacent_to
+name: adjacent_to
+namespace: sequence
+def: "A geometric operator, specified in Egenhofer 1989. Two features meet if they share a junction on the sequence. X adjacent_to Y iff X and Y share a boundary but do not overlap." [PMID:20226267, SO:ke]
+subset: SOFA
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
+
+[Typedef]
+id: contains
+name: contains
+namespace: sequence
+def: "The inverse of contained_by." [PMID:20226267]
+comment: Example: pre_miRNA contains miRNA_loop.
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
+is_transitive: true
+created_by: kareneilbeck
+creation_date: 2010-10-14T01:32:15Z
 
 [Typedef]
 id: correlates_with
@@ -15182,6 +17103,7 @@ name: decreased_in_magnitude_relative_to
 namespace: quality
 def: "q1 decreased_in_magnitude_relative_to q2 if and only if magnitude(q1) < magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [PATOC:CJM]
 comment: This relation is used to determine the 'directionality' of relative qualities such as 'decreased strength', relative to the parent type, 'strength'.
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
 is_transitive: true
@@ -15197,10 +17119,19 @@ created_by: Marcus
 creation_date: 2014-02-13T01:39:46Z
 
 [Typedef]
+id: derives_from
+name: derives_from
+namespace: sequence
+subset: SOFA
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
+is_transitive: true
+
+[Typedef]
 id: different_in_magnitude_relative_to
 name: different_in_magnitude_relative_to
 namespace: quality
 def: "q1 different_in_magnitude_relative_to q2 if and only if magnitude(q1) NOT =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [PATOC:CJM]
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
 
@@ -15209,11 +17140,42 @@ id: directly_associated_with
 name: directly_associated_with
 namespace: quality
 def: "q1 directly_associated_with q2 iff q1 is dependent on q2, and the magnitude of q1 increases if the magnitude of q2 is increased, or the magnitude of q1 decreases if the magnitude of q2 is decreased. The relationship is not necessarily linear." [PATOC:cjm, Wikipedia:Association_(statistics)]
-comment: Example: 'Lewy bodies increased number related to dystrophic neurite increased number' (from annotation of PMID:8740227 in 'http://ccdb.ucsd.edu/1.0/NDPO.owl#ndpo_404'). Here the increase in the number of lewy bodies is directly_associated_with the increase in the number of dystrophic neurites. Association is weaker than correlation or proportionality. These relations may be later added to PATO.
+comment: Example: 'Lewy bodies increased number related to dystrophic neurite increased number' (from annotation of PMID:8740227 in http://ccdb.ucsd.edu/1.0/NDPO.owl#ndpo_404). Here the increase in the number of lewy bodies is directly_associated_with the increase in the number of dystrophic neurites.\nAssociation is weaker than correlation or proportionality. These relations may be later added to PATO.
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
 created_by: cjm
 creation_date: 2009-08-26T02:50:08Z
+
+[Typedef]
+id: during
+name: during
+xref: GOREL:0000002
+property_value: usage "Identifies a process, cell cycle stage or life stage during which a phenotype is observed or relevant." xsd:string
+
+[Typedef]
+id: ends_during
+name: ends_during
+namespace: external
+xref: RO:0002093
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+
+[Typedef]
+id: exists_during
+name: exists_during
+xref: GOREL:0000032
+property_value: usage "Identifies a process, cell cycle stage or life stage during which a phenotype that affects a continuant, such as a cellular component or the level of a substance, is observed or relevant." xsd:string
+
+[Typedef]
+id: happens_during
+name: happens_during
+namespace: external
+xref: GOREL:0000001
+xref: RO:0002092
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+property_value: usage "Identifies a process, cell cycle stage or life stage during which a phenotype that affects an occurrent, i.e. a biological process or molecular function, is observed or relevant." xsd:string
+is_transitive: true
+is_a: ends_during ! ends_during
 
 [Typedef]
 id: has_cross_section
@@ -15221,6 +17183,7 @@ name: has_cross_section
 namespace: quality
 def: "s3 has_cross_section s3 if and only if : there exists some 2d plane that intersects the bearer of s3, and the impression of s3 upon that plane has shape quality s2." [PATOC:CJM]
 comment: Example: a spherical object has the quality of being spherical, and the spherical quality has_cross_section round.
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Typedef]
 id: has_dividend_entity
@@ -15231,6 +17194,7 @@ namespace: quality
 id: has_dividend_quality
 name: has_dividend_quality
 namespace: quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 range: PATO:0000001 ! quality
 is_a: has_ratio_quality ! has_ratio_quality
 
@@ -15243,6 +17207,7 @@ namespace: quality
 id: has_divisor_quality
 name: has_divisor_quality
 namespace: quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 range: PATO:0000001 ! quality
 is_a: has_ratio_quality ! has_ratio_quality
 
@@ -15252,6 +17217,19 @@ name: has functional parent
 namespace: chebi_ontology
 
 [Typedef]
+id: has_origin
+name: has_origin
+namespace: sequence
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
+
+[Typedef]
+id: has_output
+name: has_output
+def: "p has output c if either: p has direct output c or p has output input c. Implies that if p happens, c always ensues." [GOC:curators]
+xref: RO:0002234
+property_value: usage "Def comes from gorel file. Used in FYPO where one phenotype (p) always results in an additional phenotype (c) as a consequence. There may be other ways to get phenotype (c)." xsd:string
+
+[Typedef]
 id: has_parent_hydride
 name: has parent hydride
 namespace: chebi_ontology
@@ -15259,29 +17237,27 @@ namespace: chebi_ontology
 [Typedef]
 id: has_part
 name: has_part
-namespace: quality
-def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." [PATOC:CJM]
-comment: We use the has_part relation to relate complex qualities to more primitive ones. A complex quality is a collection of qualities. The complex quality cannot exist without the sub-qualities. For example, the quality 'swollen' necessarily comes with the qualities of 'protruding' and 'increased size'.
+namespace: sequence
+def: "Inverse of part_of." [http://precedings.nature.com/documents/3495/version/1]
+comment: Example: operon has_part gene.
 xref: BFO:0000051
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
+property_value: usage "Used in FYPO to link phenotypes that are collections of features to phenotypes representing the features." xsd:string
+is_transitive: true
 
 [Typedef]
 id: has_quality
 name: has_quality
-namespace: external
-xref: RO:0000086
-created_by: siegele
-creation_date: 2014-10-15T20:39:22Z
+namespace: sequence
+comment: The relationship between a feature and an attribute.
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
 
 [Typedef]
 id: has_ratio_quality
 name: has_ratio_quality
 namespace: quality
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 range: PATO:0000001 ! quality
-
-[Typedef]
-id: has_relative_magnitude
-name: has_relative_magnitude
-namespace: quality
 
 [Typedef]
 id: has_role
@@ -15295,6 +17271,7 @@ name: increased_in_magnitude_relative_to
 namespace: quality
 def: "q1 increased_in_magnitude_relative_to q2 if and only if magnitude(q1) > magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [PATOC:CJM]
 comment: This relation is used to determine the 'directionality' of relative qualities such as 'increased strength', relative to the parent type, 'strength'.
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
 is_transitive: true
@@ -15312,7 +17289,14 @@ creation_date: 2014-02-13T01:41:08Z
 [Typedef]
 id: inheres_in
 name: inheres_in
-namespace: quality
+xref: RO:0000052
+property_value: usage "Used in FYPO as described in PATO best practices; identifies an entity that displays a quality in an entity-quality logical definition. Used only in logical definitions (aka xps)." xsd:string
+
+[Typedef]
+id: inheres_in_part_of
+name: inheres in part of
+xref: RO:0002314
+property_value: usage "Used in FYPO as described in MP/HP logical definition best practices for processes, and in an analogous manner for cell/cell part structure; identifies an entity that displays a quality in an entity-quality logical definition. Used only in logical definitions (aka xps)." xsd:string
 
 [Typedef]
 id: inversely_associated_with
@@ -15320,6 +17304,7 @@ name: inversely_associated_with
 namespace: quality
 def: "q1 inversely_associated_with q2 iff q1 is dependent on q2, and the magnitude of q1 decreases if the magnitude of q2 is increased, or the magnitude of q1 increases if the magnitude of q2 is decreased. The relationship is not necessarily linear." [PATOC:cjm, Wikipedia:Association_(statistics)]
 comment: Association is weaker than correlation or proportionality. These relations may be later added to PATO.
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
 created_by: cjm
@@ -15354,6 +17339,14 @@ name: is_measurement_of
 namespace: pato.ontology
 
 [Typedef]
+id: is_opposite_of
+name: is opposite_of
+namespace: quality
+xref: RO:0002604
+is_metadata_tag: true
+is_class_level: true
+
+[Typedef]
 id: is_substituent_group_from
 name: is substituent group from
 namespace: chebi_ontology
@@ -15371,10 +17364,27 @@ name: is_unit_of
 namespace: pato.ontology
 
 [Typedef]
+id: located_in
+name: located in
+xref: RO:0001025
+property_value: usage "Used in FYPO to indicate where a physical quality phenotype is observed." xsd:string
+
+[Typedef]
+id: member_of
+name: member_of
+namespace: sequence
+comment: A subtype of part_of. Inverse is collection_of. Winston, M, Chaffin, R, Herrmann: A taxonomy of part-whole relations. Cognitive Science 1987, 11:417-444.
+subset: SOFA
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
+is_transitive: true
+is_a: part_of ! part_of
+
+[Typedef]
 id: negatively_regulates
 name: negatively regulates
 namespace: external
 xref: RO:0002212
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 is_a: regulates ! regulates
 
 [Typedef]
@@ -15388,11 +17398,52 @@ is_metadata_tag: true
 is_class_level: true
 
 [Typedef]
+id: non_functional_homolog_of
+name: non_functional_homolog_of
+namespace: sequence
+def: "A relationship between a pseudogenic feature and its functional ancestor." [SO:ke]
+subset: SOFA
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
+
+[Typedef]
+id: occurs_at
+name: occurs_at
+xref: GOREL:0000501
+property_value: usage "This relation is not constrained with respect to whether the place where an event occurs completely surrounds, or is adjacent to, the location indicated. Example: chromatin silencing at centromere unfolds_around centromere : Repression of transcription of centromeric DNA by the formation of heterochromatin. Used in FYPO to identify a position where a phenotype is observed or relevant, usually a DNA or RNA sequence feature specified by a SO ID." xsd:string
+
+[Typedef]
+id: occurs_in
+name: occurs in
+xref: BFO:0000066
+property_value: usage "Used in FYPO to identify a location, usually a cellular component or cell type, within which a phenotype is observed or relevant." xsd:string
+
+[Typedef]
+id: output_of
+name: output_of
+synonym: "formation results from" EXACT [PomBase:mah]
+xref: RO:0002353
+property_value: usage "Inverse of has_output. Relation between a structure and a process that forms it, or between one process and a preceding process; A output_of B used where B has_output A isn't always true. Implies that process B is the only way to get output. Used in FYPO where one phenotype (c) always results when another phenotype (p) is present. Phenotype (p) may have other consequences in addition to phenotype (c)." xsd:string
+
+[Typedef]
+id: overlaps
+name: overlaps
+namespace: sequence
+def: "X overlaps Y iff there exists some Z such that Z contained_by X and Z contained_by Y." [PMID:20226267]
+comment: Example: coding_exon overlaps CDS.
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
+created_by: kareneilbeck
+creation_date: 2010-10-14T01:33:15Z
+
+[Typedef]
 id: part_of
 name: part_of
-namespace: external
-xref: BFO:00000050
+namespace: sequence
+def: "X part_of Y if X is a subregion of Y." [http://precedings.nature.com/documents/3495/version/1]
+comment: Example: amino_acid part_of polypeptide.
+subset: SOFA
 xref: BFO:0000050
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
+property_value: usage "Used in FYPO to identify phenotypes that are always observed in the context of another, usually larger-scale, phenotype." xsd:string
 is_transitive: true
 
 [Typedef]
@@ -15400,15 +17451,31 @@ id: participates_in
 name: participates_in
 namespace: external
 xref: RO:0000056
-created_by: siegele
-creation_date: 2014-10-15T21:13:30Z
 
 [Typedef]
 id: positively_regulates
 name: positively regulates
 namespace: external
 xref: RO:0002213
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
 is_a: regulates ! regulates
+
+[Typedef]
+id: preceded_by
+name: preceded_by
+xref: BFO:0000062
+property_value: usage "Used in FYPO when a phenotype is observed after another event, usually a GO biological process, has ended, and where there isn't a suitable process to use with a during relation." xsd:string
+
+[Typedef]
+id: precedes
+name: precedes
+xref: BFO:0000063
+property_value: usage "Used in FYPO when a phenotype is observed before another event, usually a GO biological process, begins, and where there isn't a suitable process to use with a during relation." xsd:string
+
+[Typedef]
+id: qualifier
+name: qualifier
+property_value: usage "Used in FYPO as described in PATO best practices; placeholder relation to indicate normality/abnormality." xsd:string
 
 [Typedef]
 id: realized_by
@@ -15421,19 +17488,22 @@ name: reciprocal_of
 namespace: quality
 def: "q1 reciprocal_of q2 if and only if : q1 and q2 are relational qualities and a phenotype e q1 e2 mutually implies a phenotype e2 q2 e." [PATOC:CJM]
 comment: There are frequently two ways to state the same thing: we can say 'spermatocyte lacks asters' or 'asters absent from spermatocyte'. In this case the quality is 'lacking all parts of type' - it is a (relational) quality of the spermatocyte, and it is with respect to instances of 'aster'. One of the popular requirements of PATO is that it continue to support 'absent', so we need to relate statements which use this quality to the 'lacking all parts of type' quality.
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Typedef]
 id: regulates
 name: regulates
 namespace: external
 xref: RO:0002211
-transitive_over: part_of ! part_of
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/go.owl
+is_transitive: true
 
 [Typedef]
 id: similar_in_magnitude_relative_to
 name: similar_in_magnitude_relative_to
 namespace: quality
 def: "q1 similar_in_magnitude_relative_to q2 if and only if magnitude(q1) =~ magnitude(q2). Here, magnitude(q) is a function that maps a quality to a unit-invariant scale." [PATOC:CJM]
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 domain: PATO:0000001 ! quality
 range: PATO:0000001 ! quality
 
@@ -15449,4 +17519,35 @@ id: towards
 name: towards
 namespace: quality
 comment: Relation binding a relational quality or disposition to the relevant type of entity.
+xref: RO:0002503
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
+property_value: usage "Relation binding a relational quality or disposition to the relevant type of entity. Used in FYPO as described in PATO best practices; identifies abolished GO processes; identifies substances affected by phenotypes." xsd:string
+
+[Typedef]
+id: transcribed_from
+name: transcribed_from
+namespace: sequence
+def: "X is transcribed_from Y if X is synthesized from template Y." [http://precedings.nature.com/documents/3495/version/1]
+comment: Example: primary_transcript transcribed_from gene.
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
+created_by: kareneilbeck
+creation_date: 2009-08-19T12:05:39Z
+
+[Typedef]
+id: transcribed_to
+name: transcribed_to
+namespace: sequence
+def: "Inverse of transcribed_from." [http://precedings.nature.com/documents/3495/version/1]
+comment: Example: gene transcribed_to primary_transcript.
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
+created_by: kareneilbeck
+creation_date: 2009-08-19T12:08:24Z
+
+[Typedef]
+id: variant_of
+name: variant_of
+namespace: sequence
+def: "A' is a variant (mutation) of A = definition every instance of A' is either an immediate mutation of some instance of A, or there is a chain of immediate mutation processes linking A' to some instance of A." [SO:immuno_workshop]
+comment: Added to SO during the immunology workshop, June 2007.  This relationship was approved by Barry Smith.
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/so-xp.obo.owl
 
