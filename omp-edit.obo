@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 23:09:2017 00:49
-saved-by: siegele
+date: 28:09:2017 11:03
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -14790,6 +14790,22 @@ def: "An altered cell size phenotype where the width of a nonspherical microbial
 is_a: OMP:0007083 ! altered cell size
 created_by: siegele
 creation_date: 2017-09-23T00:47:28Z
+
+[Term]
+id: OMP:0007666
+name: bulging cell
+def: "An altered cell shape phenotype where a microbial cell or cells exhibit a prominent bulge not present in the designated control." [OMP:DAS, PMID:27238023]
+is_a: OMP:0007101 ! altered cell shape
+created_by: dsiegele
+creation_date: 2017-09-28T10:15:36Z
+
+[Term]
+id: OMP:0007667
+name: filamenting cells
+def: "An altered cell shape phenotype where microbial cells continue to length" []
+is_a: OMP:0007101 ! altered cell shape
+created_by: dsiegele
+creation_date: 2017-09-28T10:36:55Z
 
 [Term]
 id: OMP:0008000
