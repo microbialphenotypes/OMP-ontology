@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 28:09:2017 11:03
-saved-by: dsiegele
-auto-generated-by: OBO-Edit 2.3.1
+date: 02:10:2017 16:10
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -2024,7 +2024,7 @@ creation_date: 2011-02-02T03:18:29Z
 
 [Term]
 id: OMP:0000076
-name: rod
+name: rod-shaped cells
 def: "A cylindrical cell phenotype where an organism has rod-shaped cells." [ISBN:9780073402406, OMP:MCC]
 synonym: "bacillus" EXACT []
 is_a: OMP:0007099 ! cylindrical cell shape
@@ -14806,6 +14806,120 @@ def: "An altered cell shape phenotype where microbial cells continue to length" 
 is_a: OMP:0007101 ! altered cell shape
 created_by: dsiegele
 creation_date: 2017-09-28T10:36:55Z
+
+[Term]
+id: OMP:0007668
+name: presence of transport
+def: "A transport phenotype where a microbe is able to transport a specific substrate(s) into, out of, or within a cell or between cells." [OMP:DAS]
+is_a: OMP:0005260 ! transport phenotype
+created_by: siegele
+creation_date: 2017-10-02T15:29:18Z
+
+[Term]
+id: OMP:0007669
+name: absence of transport
+def: "A transport phenotype where a microbe doesn't transport a specific substrate(s) into, out of, or within a cell or between cells." [OMP:DAS]
+is_a: OMP:0005260 ! transport phenotype
+created_by: siegele
+creation_date: 2017-10-02T15:29:18Z
+
+[Term]
+id: OMP:0007670
+name: altered transport
+def: "A transport phenotype where transport of a specific substrate(s) into, out of, or within a cell or between cells is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0005260 ! transport phenotype
+created_by: siegele
+creation_date: 2017-10-02T15:29:18Z
+
+[Term]
+id: OMP:0007671
+name: increased transport
+def: "An altered transport phenotype where transport of a substrate(s) is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007670 ! altered transport
+created_by: siegele
+creation_date: 2017-10-02T15:29:18Z
+
+[Term]
+id: OMP:0007672
+name: decreased transport
+def: "An altered transport phenotype where transport of a substrate(s) is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007670 ! altered transport
+created_by: siegele
+creation_date: 2017-10-02T15:29:18Z
+
+[Term]
+id: OMP:0007673
+name: abolished transport
+def: "A decreased transport phenotype where transport of a substrate(s) is abolished." [OMP:DAS]
+is_a: OMP:0007669 ! absence of transport
+is_a: OMP:0007672 ! decreased transport
+created_by: siegele
+creation_date: 2017-10-02T15:29:18Z
+
+[Term]
+id: OMP:0007674
+name: molecular function phenotype
+def: "A microbial phenotype that affects a specific molecular function." [FYPO:0000652, OMP:DAS]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2017-10-02T15:42:03Z
+
+[Term]
+id: OMP:0007675
+name: transporter activity phenotype
+def: "A molecular function phenotype that affects a transporter activity in a microbe." [OMP:DAS]
+is_a: OMP:0007674 ! molecular function phenotype
+created_by: siegele
+creation_date: 2017-10-02T15:43:05Z
+
+[Term]
+id: OMP:0007676
+name: presence of transporter activity
+def: "A transporter activity phenotype where a microbe has a specified transporter activity that translocates its substrate at some observed rate." [OMP:DAS]
+is_a: OMP:0007675 ! transporter activity phenotype
+created_by: siegele
+creation_date: 2017-10-02T15:43:54Z
+
+[Term]
+id: OMP:0007677
+name: absence of transporter activity
+def: "A transporter activity phenotype where a microbe lacks a specific transporter activity." [OMP:DAS]
+is_a: OMP:0007675 ! transporter activity phenotype
+created_by: siegele
+creation_date: 2017-10-02T15:43:54Z
+
+[Term]
+id: OMP:0007678
+name: altered transporter activity
+def: "An transporter activity phenotype where the observed rate of a specified transporter activity is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007675 ! transporter activity phenotype
+created_by: siegele
+creation_date: 2017-10-02T15:43:54Z
+
+[Term]
+id: OMP:0007679
+name: decreased transporter activity
+def: "An altered transporter activity phenotype where the observed rate of a specified transporter activity is decreased relative to a designated control." []
+is_a: OMP:0007678 ! altered transporter activity
+created_by: siegele
+creation_date: 2017-10-02T15:44:25Z
+
+[Term]
+id: OMP:0007680
+name: increased transporter activity
+def: "An altered transporter activity phenotype where the observed rate of a specified transporter activity is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007678 ! altered transporter activity
+created_by: siegele
+creation_date: 2017-10-02T15:44:25Z
+
+[Term]
+id: OMP:0007681
+name: abolished transporter activity
+def: "A decreased transporter activity phenotype where a specified transporter activity is abolished." [OMP:DAS]
+is_a: OMP:0007677 ! absence of transporter activity
+is_a: OMP:0007679 ! decreased transporter activity
+created_by: siegele
+creation_date: 2017-10-02T15:44:25Z
 
 [Term]
 id: OMP:0008000
