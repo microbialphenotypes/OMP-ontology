@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 05:10:2017 11:01
+date: 10:10:2017 10:25
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -14920,6 +14920,14 @@ is_a: OMP:0007677 ! absence of transporter activity
 is_a: OMP:0007679 ! decreased transporter activity
 created_by: siegele
 creation_date: 2017-10-02T15:44:25Z
+
+[Term]
+id: OMP:0007682
+name: terminal phenotype
+def: "A microbial phenotype that is the phenotype exhibited by a microbe as it becomes inviable." [OMP:DAS]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: dsiegele
+creation_date: 2017-10-10T10:22:47Z
 
 [Term]
 id: OMP:0008000
