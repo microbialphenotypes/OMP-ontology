@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 10:10:2017 10:25
-saved-by: dsiegele
+date: 23:10:2017 17:43
+saved-by: Tianyizhou
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -15159,6 +15159,14 @@ created_by: kanderson
 creation_date: 2015-06-08T13:24:49Z
 
 [Term]
+id: OMP:0008028
+name: genetic transfer phenotype
+def: "A genetic material phenotype relating to the ability of microbes to serve as a donor of recipient in the transfer of genetic material." []
+is_a: OMP:0000290 ! genetic material phenotype
+created_by: Tianyizhou
+creation_date: 2017-10-23T14:35:30Z
+
+[Term]
 id: OMP:0008029
 name: altered endospore cortex
 def: "An endospore cortex phenotype where the endospore cortex is altered relative to a designated control." [OMP:KDA]
@@ -15205,6 +15213,54 @@ def: "An inner endospore membrane phenotype where the inner membrane is altered 
 is_a: OMP:0008014 ! inner endospore membrane phenotype
 created_by: kanderson
 creation_date: 2015-06-08T13:35:10Z
+
+[Term]
+id: OMP:0008035
+name: natural competence phenotype
+def: "A genetic transfer phenotype related to the ability of microbes to take up extracellular DNA from the environment under natural conditions." [GO:, OMP:tz]
+is_a: OMP:0008028 ! genetic transfer phenotype
+created_by: Tianyizhou
+creation_date: 2017-10-23T14:46:29Z
+
+[Term]
+id: OMP:0008036
+name: absence of natural competence
+def: "A natural competence phenotype where a microbe lacks the ability to be transformed by taking up extracellular DNA from the environment." [OMP:tz]
+is_a: OMP:0008035 ! natural competence phenotype
+created_by: Tianyizhou
+creation_date: 2017-10-23T14:52:25Z
+
+[Term]
+id: OMP:0008037
+name: altered natural competence
+def: "A natural competence phenotype that the ability of microbes to take up extracellular DNA from environment is altered relative to a designated control." []
+is_a: OMP:0008035 ! natural competence phenotype
+created_by: Tianyizhou
+creation_date: 2017-10-23T14:52:29Z
+
+[Term]
+id: OMP:0008038
+name: presence of natural competence
+def: "A natural competence phenotype where a microbe has the ability to be transformed by taking up extracellular DNA from the environment." [OMP:tz]
+is_a: OMP:0008035 ! natural competence phenotype
+created_by: Tianyizhou
+creation_date: 2017-10-23T14:52:33Z
+
+[Term]
+id: OMP:0008039
+name: decreased natural competence
+def: "An altered natural competence  phenotype where the ability of a microbe to be transformed by taking up extracellular DNA is decreased relative to a designated control." []
+is_a: OMP:0008037 ! altered natural competence
+created_by: Tianyizhou
+creation_date: 2017-10-23T15:15:23Z
+
+[Term]
+id: OMP:0008040
+name: increased natural competence
+def: "An altered natural competence  phenotype where the ability of a microbe to be transformed by taking up extracellular DNA is increased relative to a designated control." [OMP:tz]
+is_a: OMP:0008037 ! altered natural competence
+created_by: Tianyizhou
+creation_date: 2017-10-23T15:15:35Z
 
 [Term]
 id: PATO:0000001
