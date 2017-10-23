@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 23:10:2017 17:43
+date: 23:10:2017 18:01
 saved-by: Tianyizhou
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -15233,7 +15233,8 @@ creation_date: 2017-10-23T14:52:25Z
 [Term]
 id: OMP:0008037
 name: altered natural competence
-def: "A natural competence phenotype that the ability of microbes to take up extracellular DNA from environment is altered relative to a designated control." []
+def: "A natural competence phenotype where the rate, frequency, timing, or extent of natural competence is altered relative to a designated control." []
+is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0008035 ! natural competence phenotype
 created_by: Tianyizhou
 creation_date: 2017-10-23T14:52:29Z
@@ -15249,7 +15250,7 @@ creation_date: 2017-10-23T14:52:33Z
 [Term]
 id: OMP:0008039
 name: decreased natural competence
-def: "An altered natural competence  phenotype where the ability of a microbe to be transformed by taking up extracellular DNA is decreased relative to a designated control." []
+def: "An altered natural competence  phenotype where the where the rate, frequency, timing, or extent of natural competence is decreased relative to a designated control." []
 is_a: OMP:0008037 ! altered natural competence
 created_by: Tianyizhou
 creation_date: 2017-10-23T15:15:23Z
@@ -15257,10 +15258,19 @@ creation_date: 2017-10-23T15:15:23Z
 [Term]
 id: OMP:0008040
 name: increased natural competence
-def: "An altered natural competence  phenotype where the ability of a microbe to be transformed by taking up extracellular DNA is increased relative to a designated control." [OMP:tz]
+def: "An altered natural competence  phenotype where the where the rate, frequency, timing, or extent of natural competence is increased relative to a designated control." [OMP:tz]
 is_a: OMP:0008037 ! altered natural competence
 created_by: Tianyizhou
 creation_date: 2017-10-23T15:15:35Z
+
+[Term]
+id: OMP:0008041
+name: abolished natural competence
+def: "A decreased natural competence phenotype where the ability to be transformed by taking up extracellular DNA is abolished." [OMP:tz]
+is_a: OMP:0008036 ! absence of natural competence
+is_a: OMP:0008039 ! decreased natural competence
+created_by: Tianyizhou
+creation_date: 2017-10-23T17:55:59Z
 
 [Term]
 id: PATO:0000001
