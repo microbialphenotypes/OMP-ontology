@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2017-11-03
-date: 03:11:2017 21:57
-saved-by: MiLaptop
+date: 14:11:2017 11:00
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -7360,7 +7360,7 @@ creation_date: 2016-12-20T13:35:03Z
 [Term]
 id: OMP:0005382
 name: tail morphology phenotype
-def: "A virion morphology phenotype that is referring to the form and structure of tails on viral particles." []
+def: "A virion morphology phenotype that is referring to the form and structure of tails on viral particles." [OMP:dr]
 is_a: OMP:0007541 ! virion morphology phenotype
 created_by: MiLaptop
 creation_date: 2017-11-03T21:07:19Z
@@ -14929,17 +14929,17 @@ creation_date: 2017-09-23T00:47:28Z
 
 [Term]
 id: OMP:0007666
-name: bulging cell shape
-def: "An altered cell shape phenotype where a microbial cell or cells exhibit a prominent bulge not present in the designated control." [OMP:DAS, PMID:27238023]
-is_a: OMP:0007101 ! altered cell shape
+name: bulging cell morphology
+def: "An altered cell morphology phenotype where a microbial cell or cells exhibit a prominent bulge not present in the designated control." [OMP:DAS, PMID:27238023]
+is_a: OMP:0007103 ! altered cell morphology
 created_by: dsiegele
 creation_date: 2017-09-28T10:15:36Z
 
 [Term]
 id: OMP:0007667
-name: filamenting cell shape
-def: "An altered cell shape phenotype where microbial cells continue to grow and lengthen without undergoing cell division under conditions where the designated control cell continues to both grow and divide." [OMP:DAS]
-is_a: OMP:0007101 ! altered cell shape
+name: filamenting cell morphology
+def: "An altered cell shape morphology where microbial cells continue to grow and lengthen without undergoing cell division under conditions where the designated control cell continues to both grow and divide." [OMP:DAS]
+is_a: OMP:0007103 ! altered cell morphology
 created_by: dsiegele
 creation_date: 2017-09-28T10:36:55Z
 
@@ -15064,6 +15064,13 @@ def: "A microbial phenotype that is the phenotype exhibited by a microbe as it b
 is_a: OMP:0000000 ! microbial phenotype
 created_by: dsiegele
 creation_date: 2017-10-10T10:22:47Z
+
+[Term]
+id: OMP:0007683
+name: bending cell morphology
+is_a: OMP:0007103 ! altered cell morphology
+created_by: dsiegele
+creation_date: 2017-11-14T10:52:24Z
 
 [Term]
 id: OMP:0008000
