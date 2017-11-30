@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2017-11-03
-date: 14:11:2017 11:00
+date: 30:11:2017 10:59
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2886,8 +2886,8 @@ creation_date: 2011-02-02T03:13:32Z
 [Term]
 id: OMP:0000174
 name: growth phenotype
-def: "A microbial phenotype related to the increase in size or mass of an organism, a part of an organism, or a cell." [GO:0040007, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nFor phenotypes affecting growth of a population, see OMP:0007167 \! population growth phenotype.
+def: "A microbial phenotype related to the increase in size or mass over time of an entire organism, a part of an organism, or a cell." [GO:0040007, OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.\n\nFor phenotypes affecting growth of a population, see OMP:0007167 \! population growth phenotype.
 xref: GO:0040007 "growth"
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -15071,6 +15071,66 @@ name: bending cell morphology
 is_a: OMP:0007103 ! altered cell morphology
 created_by: dsiegele
 creation_date: 2017-11-14T10:52:24Z
+
+[Term]
+id: OMP:0007684
+name: cell growth phenotype
+def: "A growth phenotype related to cell growth, which is the process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present." [GO:0016049, OMP:das]
+synonym: "normal cell growth" NARROW [FYPO:0002062]
+is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: dsiegele
+creation_date: 2017-11-30T10:36:59Z
+
+[Term]
+id: OMP:0007685
+name: presence of cell growth
+def: "A cell growth phenotype where a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present." [OMP:das]
+is_a: OMP:0007684 ! cell growth phenotype
+created_by: dsiegele
+creation_date: 2017-11-30T10:42:26Z
+
+[Term]
+id: OMP:0007686
+name: absence of cell growth
+def: "A cell growth phenotype where a cell does not irreversibly increase in size over time by accretion and biosynthetic production of matter similar to that already present." [OMP:das]
+is_a: OMP:0007684 ! cell growth phenotype
+created_by: dsiegele
+creation_date: 2017-11-30T10:42:26Z
+
+[Term]
+id: OMP:0007687
+name: altered cell growth
+def: "A cell growth phenotype where the rate, timing, or extent of cell growth is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007342 ! altered cellular process
+is_a: OMP:0007684 ! cell growth phenotype
+created_by: dsiegele
+creation_date: 2017-11-30T10:42:26Z
+
+[Term]
+id: OMP:0007688
+name: decreased cell growth
+def: "An altered cell growth phenotype where the rate, timing, or extent of cell growth is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007687 ! altered cell growth
+created_by: dsiegele
+creation_date: 2017-11-30T10:56:24Z
+
+[Term]
+id: OMP:0007689
+name: increased cell growth
+def: "An altered cell growth phenotype where the rate, timing, or extent of cell growth is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007687 ! altered cell growth
+created_by: dsiegele
+creation_date: 2017-11-30T10:56:24Z
+
+[Term]
+id: OMP:0007690
+name: abolished cell growth
+def: "A decreased cell growth phenotype where cell growth is abolished." [OMP:das]
+is_a: OMP:0007686 ! absence of cell growth
+is_a: OMP:0007688 ! decreased cell growth
+created_by: dsiegele
+creation_date: 2017-11-30T10:56:24Z
 
 [Term]
 id: OMP:0008000
