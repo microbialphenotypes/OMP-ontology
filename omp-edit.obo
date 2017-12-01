@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2017-11-03
-date: 30:11:2017 10:59
-saved-by: dsiegele
-auto-generated-by: OBO-Edit 2.3.1
+date: 01:12:2017 16:21
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -15086,6 +15086,7 @@ creation_date: 2017-11-30T10:36:59Z
 id: OMP:0007685
 name: presence of cell growth
 def: "A cell growth phenotype where a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
 is_a: OMP:0007684 ! cell growth phenotype
 created_by: dsiegele
 creation_date: 2017-11-30T10:42:26Z
@@ -15094,6 +15095,7 @@ creation_date: 2017-11-30T10:42:26Z
 id: OMP:0007686
 name: absence of cell growth
 def: "A cell growth phenotype where a cell does not irreversibly increase in size over time by accretion and biosynthetic production of matter similar to that already present." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
 is_a: OMP:0007684 ! cell growth phenotype
 created_by: dsiegele
 creation_date: 2017-11-30T10:42:26Z
@@ -15102,6 +15104,7 @@ creation_date: 2017-11-30T10:42:26Z
 id: OMP:0007687
 name: altered cell growth
 def: "A cell growth phenotype where the rate, timing, or extent of cell growth is altered relative to a designated control." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
 is_a: OMP:0007342 ! altered cellular process
 is_a: OMP:0007684 ! cell growth phenotype
 created_by: dsiegele
@@ -15111,6 +15114,7 @@ creation_date: 2017-11-30T10:42:26Z
 id: OMP:0007688
 name: decreased cell growth
 def: "An altered cell growth phenotype where the rate, timing, or extent of cell growth is decreased relative to a designated control." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
 is_a: OMP:0007687 ! altered cell growth
 created_by: dsiegele
 creation_date: 2017-11-30T10:56:24Z
@@ -15119,6 +15123,7 @@ creation_date: 2017-11-30T10:56:24Z
 id: OMP:0007689
 name: increased cell growth
 def: "An altered cell growth phenotype where the rate, timing, or extent of cell growth is increased relative to a designated control." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
 is_a: OMP:0007687 ! altered cell growth
 created_by: dsiegele
 creation_date: 2017-11-30T10:56:24Z
@@ -15131,6 +15136,71 @@ is_a: OMP:0007686 ! absence of cell growth
 is_a: OMP:0007688 ! decreased cell growth
 created_by: dsiegele
 creation_date: 2017-11-30T10:56:24Z
+
+[Term]
+id: OMP:0007691
+name: vegetative cell growth phenotype
+def: "A cell growth phenotype related to the growth of a cell in the vegetative growth phase of the life cycle. Cell growth is the process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present." [OMP:das]
+is_a: OMP:0007684 ! cell growth phenotype
+created_by: siegele
+creation_date: 2017-12-01T15:44:00Z
+
+[Term]
+id: OMP:0007692
+name: presence of vegetative cell growth
+def: "A vegetative cell growth phenotype in which cell growth occurs in the vegetative growth phase of the life cycle." [FYPO:0002085, OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
+is_a: OMP:0007691 ! vegetative cell growth phenotype
+created_by: siegele
+creation_date: 2017-12-01T15:47:36Z
+
+[Term]
+id: OMP:0007693
+name: absence of vegetative cell growth
+def: "A vegetative cell growth phenotype in which cell growth does not occur in the vegetative growth phase of the life cycle." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
+is_a: OMP:0007691 ! vegetative cell growth phenotype
+created_by: siegele
+creation_date: 2017-12-01T15:47:36Z
+
+[Term]
+id: OMP:0007694
+name: altered vegetative cell growth
+def: "A vegetative cell growth phenotype in which the rate, timing, or extent of growth of the cell in the vegetative growth phase of the life cycle is altered relative to a designated control." [FYPO:0003154, OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
+xref: FYPO:0003154 "abnormal vegetative cell growth"
+is_a: OMP:0007687 ! altered cell growth
+is_a: OMP:0007691 ! vegetative cell growth phenotype
+created_by: siegele
+creation_date: 2017-12-01T15:47:36Z
+
+[Term]
+id: OMP:0007695
+name: increased vegetative cell growth
+def: "An altered vegetative cell growth phenotype in which the rate, timing, or extent of growth of the cell in the vegetative growth phase of the life cycle is increased relative to a designated control." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
+is_a: OMP:0007694 ! altered vegetative cell growth
+created_by: siegele
+creation_date: 2017-12-01T15:47:36Z
+
+[Term]
+id: OMP:0007696
+name: decreased vegetative cell growth
+def: "An altered vegetative cell growth phenotype in which the rate, timing, or extent of growth of the cell in the vegetative growth phase of the life cycle is decreased relative to a designated control." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
+is_a: OMP:0007694 ! altered vegetative cell growth
+created_by: siegele
+creation_date: 2017-12-01T15:47:37Z
+
+[Term]
+id: OMP:0007697
+name: abolished vegetative cell growth
+def: "A decreased vegetative cell growth phenotype in which growth of the cell in the vegetative growth phase of the life cycle is abolished." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
+is_a: OMP:0007693 ! absence of vegetative cell growth
+is_a: OMP:0007696 ! decreased vegetative cell growth
+created_by: siegele
+creation_date: 2017-12-01T15:47:37Z
 
 [Term]
 id: OMP:0008000
