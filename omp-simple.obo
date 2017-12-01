@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: releases/2017-11-03
-date: 23:10:2017 18:01
-saved-by: Tianyizhou
+data-version: releases/2017-12-01
+date: 30:11:2017 10:59
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -1480,8 +1480,8 @@ creation_date: 2011-02-02T03:13:32Z
 [Term]
 id: OMP:0000174
 name: growth phenotype
-def: "A microbial phenotype related to the increase in size or mass of an organism, a part of an organism, or a cell." [GO:0040007, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nFor phenotypes affecting growth of a population, see OMP:0007167 ! population growth phenotype.
+def: "A microbial phenotype related to the increase in size or mass over time of an entire organism, a part of an organism, or a cell." [GO:0040007, OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.\n\nFor phenotypes affecting growth of a population, see OMP:0007167 ! population growth phenotype.
 xref: GO:0040007 "growth"
 is_a: OMP:0007194 ! biological process phenotype
 created_by: Adrienne
@@ -5906,6 +5906,142 @@ synonym: "abolished sexual sporulation efficiency" EXACT []
 is_a: OMP:0005380 ! decreased sexual sporulation frequency
 created_by: Jesus
 creation_date: 2016-12-20T13:35:03Z
+
+[Term]
+id: OMP:0005382
+name: tail morphology phenotype
+def: "A virion morphology phenotype that is referring to the form and structure of tails on viral particles." [OMP:dr]
+is_a: OMP:0007541 ! virion morphology phenotype
+created_by: MiLaptop
+creation_date: 2017-11-03T21:07:19Z
+
+[Term]
+id: OMP:0005383
+name: presence of tail
+def: "A tail morphology phenotype where the virus has a tail present." []
+is_a: OMP:0005382 ! tail morphology phenotype
+created_by: MiLaptop
+creation_date: 2017-11-03T21:10:23Z
+
+[Term]
+id: OMP:0005384
+name: presence of short tail
+def: "A tail length phenotype where the maximum length of the tail is 17 nm." []
+is_a: OMP:0005383 ! presence of tail
+created_by: MiLaptop
+creation_date: 2017-11-03T21:15:15Z
+
+[Term]
+id: OMP:0005385
+name: presence of normal tail
+def: "A tail length phenotype ranging from 18 nm to 109 nm." []
+is_a: OMP:0005383 ! presence of tail
+created_by: MiLaptop
+creation_date: 2017-11-03T21:17:21Z
+
+[Term]
+id: OMP:0005386
+name: capsid morphology phenotype
+def: "A virion morphology phenotype related to the form and structure of the capsid of the virion." []
+is_a: OMP:0007541 ! virion morphology phenotype
+created_by: MiLaptop
+creation_date: 2017-11-03T21:01:58Z
+
+[Term]
+id: OMP:0005387
+name: presence of long tail
+def: "A tail length phenotype ranging from 110 nm to 300 nm." []
+is_a: OMP:0005383 ! presence of tail
+created_by: MiLaptop
+creation_date: 2017-11-03T21:19:23Z
+
+[Term]
+id: OMP:0005388
+name: presence of contractile tail
+def: "A phage tail phenotype where the tail contracts to inject its DNA into the host." []
+is_a: OMP:0005383 ! presence of tail
+created_by: MiLaptop
+creation_date: 2017-11-03T21:20:42Z
+
+[Term]
+id: OMP:0005389
+name: presence of non-contractile tail
+def: "A phage tail phenotype where the tail does not contract to inject its DNA into the host." []
+is_a: OMP:0005383 ! presence of tail
+created_by: MiLaptop
+creation_date: 2017-11-03T21:33:18Z
+
+[Term]
+id: OMP:0005390
+name: presence of a single tail
+def: "A phage tail phenotype where only one tail per virion is present." []
+is_a: OMP:0005383 ! presence of tail
+created_by: MiLaptop
+creation_date: 2017-11-03T21:34:28Z
+
+[Term]
+id: OMP:0005391
+name: presence of multiple tails
+def: "A phage tail phenotype where more than one tail per virion is present." []
+is_a: OMP:0005383 ! presence of tail
+created_by: MiLaptop
+creation_date: 2017-11-03T21:35:33Z
+
+[Term]
+id: OMP:0005392
+name: absence of tail
+def: "A tail morphology phenotype where the virus has no tail." []
+is_a: OMP:0005382 ! tail morphology phenotype
+created_by: MiLaptop
+creation_date: 2017-11-03T21:36:16Z
+
+[Term]
+id: OMP:0005393
+name: pseudo tail morphology phenotype
+def: "A virion morphology phenotype where the isolated virions do not show presence of a tail, but rather, the tail is only seen during infection or through some other manipulation of the virion." []
+is_a: OMP:0007541 ! virion morphology phenotype
+created_by: MiLaptop
+creation_date: 2017-11-03T21:39:58Z
+
+[Term]
+id: OMP:0005394
+name: polyhedral shape
+def: "A capsid morphology phenotype where the capsid is shaped like a polyhedron which is a solid formed by plane faces." []
+is_a: OMP:0005386 ! capsid morphology phenotype
+created_by: MiLaptop
+creation_date: 2017-11-03T21:42:47Z
+
+[Term]
+id: OMP:0005395
+name: icosahedral
+def: "A capsid morphology phenotype where the capsid is shaped like an icosahedron, which is a polyhedron with 20 faces." []
+is_a: OMP:0005394 ! polyhedral shape
+created_by: MiLaptop
+creation_date: 2017-11-03T21:45:08Z
+
+[Term]
+id: OMP:0005396
+name: isometric
+def: "A capsid morphology phenotype where the capsid is shaped isometrically which is a shape that is characterized by equality of measure." []
+is_a: OMP:0005394 ! polyhedral shape
+created_by: MiLaptop
+creation_date: 2017-11-03T21:52:04Z
+
+[Term]
+id: OMP:0005397
+name: octahedral
+def: "A capsid morphology phenotype where the capsid is shaped like an octahedron which is a polyhedron with 8 plane faces." []
+is_a: OMP:0005394 ! polyhedral shape
+created_by: MiLaptop
+creation_date: 2017-11-03T21:53:27Z
+
+[Term]
+id: OMP:0005398
+name: dodecahedral
+def: "A capsid morphology phenotype where the capsid is shaped like a dodecahedron which is a polyhedron with 12 plane faces." []
+is_a: OMP:0005394 ! polyhedral shape
+created_by: MiLaptop
+creation_date: 2017-11-03T21:55:20Z
 
 [Term]
 id: OMP:0006000
@@ -13288,17 +13424,17 @@ creation_date: 2017-09-23T00:47:28Z
 
 [Term]
 id: OMP:0007666
-name: bulging cell shape
-def: "An altered cell shape phenotype where a microbial cell or cells exhibit a prominent bulge not present in the designated control." [OMP:DAS, PMID:27238023]
-is_a: OMP:0007101 ! altered cell shape
+name: bulging cell morphology
+def: "An altered cell morphology phenotype where a microbial cell or cells exhibit a prominent bulge not present in the designated control." [OMP:DAS, PMID:27238023]
+is_a: OMP:0007103 ! altered cell morphology
 created_by: dsiegele
 creation_date: 2017-09-28T10:15:36Z
 
 [Term]
 id: OMP:0007667
-name: filamenting cell shape
-def: "An altered cell shape phenotype where microbial cells continue to grow and lengthen without undergoing cell division under conditions where the designated control cell continues to both grow and divide." [OMP:DAS]
-is_a: OMP:0007101 ! altered cell shape
+name: filamenting cell morphology
+def: "An altered cell shape morphology where microbial cells continue to grow and lengthen without undergoing cell division under conditions where the designated control cell continues to both grow and divide." [OMP:DAS]
+is_a: OMP:0007103 ! altered cell morphology
 created_by: dsiegele
 creation_date: 2017-09-28T10:36:55Z
 
@@ -13423,6 +13559,73 @@ def: "A microbial phenotype that is the phenotype exhibited by a microbe as it b
 is_a: OMP:0000000 ! microbial phenotype
 created_by: dsiegele
 creation_date: 2017-10-10T10:22:47Z
+
+[Term]
+id: OMP:0007683
+name: bending cell morphology
+is_a: OMP:0007103 ! altered cell morphology
+created_by: dsiegele
+creation_date: 2017-11-14T10:52:24Z
+
+[Term]
+id: OMP:0007684
+name: cell growth phenotype
+def: "A growth phenotype related to cell growth, which is the process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present." [GO:0016049, OMP:das]
+synonym: "normal cell growth" NARROW [FYPO:0002062]
+is_a: OMP:0000174 ! growth phenotype
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: dsiegele
+creation_date: 2017-11-30T10:36:59Z
+
+[Term]
+id: OMP:0007685
+name: presence of cell growth
+def: "A cell growth phenotype where a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present." [OMP:das]
+is_a: OMP:0007684 ! cell growth phenotype
+created_by: dsiegele
+creation_date: 2017-11-30T10:42:26Z
+
+[Term]
+id: OMP:0007686
+name: absence of cell growth
+def: "A cell growth phenotype where a cell does not irreversibly increase in size over time by accretion and biosynthetic production of matter similar to that already present." [OMP:das]
+is_a: OMP:0007684 ! cell growth phenotype
+created_by: dsiegele
+creation_date: 2017-11-30T10:42:26Z
+
+[Term]
+id: OMP:0007687
+name: altered cell growth
+def: "A cell growth phenotype where the rate, timing, or extent of cell growth is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007342 ! altered cellular process
+is_a: OMP:0007684 ! cell growth phenotype
+created_by: dsiegele
+creation_date: 2017-11-30T10:42:26Z
+
+[Term]
+id: OMP:0007688
+name: decreased cell growth
+def: "An altered cell growth phenotype where the rate, timing, or extent of cell growth is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007687 ! altered cell growth
+created_by: dsiegele
+creation_date: 2017-11-30T10:56:24Z
+
+[Term]
+id: OMP:0007689
+name: increased cell growth
+def: "An altered cell growth phenotype where the rate, timing, or extent of cell growth is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007687 ! altered cell growth
+created_by: dsiegele
+creation_date: 2017-11-30T10:56:24Z
+
+[Term]
+id: OMP:0007690
+name: abolished cell growth
+def: "A decreased cell growth phenotype where cell growth is abolished." [OMP:das]
+is_a: OMP:0007686 ! absence of cell growth
+is_a: OMP:0007688 ! decreased cell growth
+created_by: dsiegele
+creation_date: 2017-11-30T10:56:24Z
 
 [Term]
 id: OMP:0008000
