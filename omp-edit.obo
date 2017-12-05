@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2017-11-03
-date: 01:12:2017 16:21
+date: 05:12:2017 00:46
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -13139,7 +13139,7 @@ id: OMP:0007457
 name: viable cell population
 def: "A cell population viability phenotype where all, or almost all, of the cells are viable under the specified conditions." [OMP:DAS]
 xref: FYPO:0002058 "viable cell population"
-is_a: OMP:0007456 ! population viability phenotype
+is_a: OMP:0007705 ! cell population viability phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:56:12Z
 
@@ -13157,14 +13157,15 @@ creation_date: 2016-08-10T14:56:12Z
 id: OMP:0007459
 name: altered cell population viability
 def: "A cell population viability phenotype where the proportion of cells that are viable under the specified conditions is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007456 ! population viability phenotype
+is_a: OMP:0007705 ! cell population viability phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:56:12Z
 
 [Term]
 id: OMP:0007460
 name: viable vegetative cell population
-def: "A viable cell population phenotype where the cells in the population are in the vegetative growth phase of the life cycle." [FYPO:0002060, OMP:DAS]
+def: "A cell population phenotype in which cells in the population are viable in the vegetative growth phase of the life cycle." [FYPO:0002060, OMP:DAS]
+xref: FYPO:0002060 "viable vegetative cell population"
 is_a: OMP:0007457 ! viable cell population
 created_by: dsiegele
 creation_date: 2016-08-10T15:00:12Z
@@ -15201,6 +15202,81 @@ is_a: OMP:0007693 ! absence of vegetative cell growth
 is_a: OMP:0007696 ! decreased vegetative cell growth
 created_by: siegele
 creation_date: 2017-12-01T15:47:37Z
+
+[Term]
+id: OMP:0007698
+name: cell population phenotype
+def: "A cell population phenotype that reflects the proportion of the population that survive and develop normally." [FYPO:0002057, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+xref: FYPO:0002057 "cell population phenotype"
+is_a: OMP:0007006 ! population phenotype
+created_by: siegele
+creation_date: 2017-12-04T20:08:24Z
+
+[Term]
+id: OMP:0007699
+name: inviable cell population
+def: "A cell population phenotype in which none of the cells in the population are viable." [FYPO:0002059, OMP:das]
+xref: FYPO:0002059
+is_a: OMP:0007705 ! cell population viability phenotype
+created_by: siegele
+creation_date: 2017-12-04T20:14:07Z
+
+[Term]
+id: OMP:0007700
+name: inviable vegetative cell population
+def: "A cell population phenotype in which all cells in the population are inviable in the vegetative growth phase of the life cycle." [FYPO:0002061, OMP:das]
+xref: FYPO:0002061 "inviable vegetative cell population"
+is_a: OMP:0007699 ! inviable cell population
+created_by: siegele
+creation_date: 2017-12-04T20:15:43Z
+
+[Term]
+id: OMP:0007701
+name: inviable spore population
+def: "A cell population phenotype in which none of the cells in a population of spores are viable. Inviable spores do not germinate." [FYPO:0000647, OMP:das]
+xref: FYPO:000064 "inviable spore population"
+is_a: OMP:0007699 ! inviable cell population
+created_by: siegele
+creation_date: 2017-12-04T20:19:36Z
+
+[Term]
+id: OMP:0007702
+name: decreased cell population viability
+is_a: OMP:0007459 ! altered cell population viability
+created_by: siegele
+creation_date: 2017-12-04T20:23:38Z
+
+[Term]
+id: OMP:0007703
+name: increased cell population viability
+is_a: OMP:0007459 ! altered cell population viability
+created_by: siegele
+creation_date: 2017-12-04T20:23:38Z
+
+[Term]
+id: OMP:0007704
+name: abolished cell population viability
+is_a: OMP:0007702 ! decreased cell population viability
+created_by: siegele
+creation_date: 2017-12-04T20:23:38Z
+
+[Term]
+id: OMP:0007705
+name: cell population viability phenotype
+is_a: OMP:0007456 ! population viability phenotype
+is_a: OMP:0007698 ! cell population phenotype
+created_by: siegele
+creation_date: 2017-12-04T20:26:35Z
+
+[Term]
+id: OMP:0007706
+name: viable spore population
+def: "A cell population phenotype in which cells in a population of spores are viable." [FYPO:0003612, OMP:das]
+xref: FYPO:0003612 "viable spore population"
+is_a: OMP:0007457 ! viable cell population
+created_by: siegele
+creation_date: 2017-12-05T00:44:44Z
 
 [Term]
 id: OMP:0008000
