@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2017-11-03
-date: 20:12:2017 01:43
+date: 20:12:2017 17:53
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3605,7 +3605,7 @@ def: "An altered cell morphology in which microbial cells are longer than a desi
 comment: The mukB mutant appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
 synonym: "<new synonym>" RELATED []
 xref: FYPO:0000017 "elongated cell"
-is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0000041 ! increased cell size
 created_by: mchibucos
 creation_date: 2011-07-21T02:37:15Z
 
@@ -5018,7 +5018,7 @@ creation_date: 2014-05-07T12:40:14Z
 id: OMP:0005108
 name: increased cell diameter
 def: "An altered cell size phenotype where the diameter of a spherical microbial cell or cells is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0000041 ! increased cell size
 created_by: wmeza
 creation_date: 2014-07-02T18:39:12Z
 
@@ -5026,7 +5026,7 @@ creation_date: 2014-07-02T18:39:12Z
 id: OMP:0005109
 name: decreased cell diameter
 def: "An altered cell size phenotype where the diameter of a spherical microbial cell or cells is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0000040 ! decreased cell size
 created_by: wmeza
 creation_date: 2014-07-02T18:46:00Z
 
@@ -5265,9 +5265,8 @@ creation_date: 2014-07-17T17:39:39Z
 
 [Term]
 id: OMP:0005136
-name: altered cell cycle phenotype
+name: altered cell cycle
 def: "A cell cycle phenotype where progression of the cell cycle is altered relative to a designated control." [OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0005115 ! cell cycle phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 created_by: wmeza
@@ -5584,9 +5583,9 @@ creation_date: 2016-02-15T15:32:13Z
 
 [Term]
 id: OMP:0005172
-name: delayed cell cycle progression:
+name: delayed cell cycle progression
 def: "An altered cell cycle phenotype where progression of the cell cycle is delayed relative to a designated control." [OMP:JG]
-is_a: OMP:0005136 ! altered cell cycle phenotype
+is_a: OMP:0005136 ! altered cell cycle
 created_by: Jesus
 creation_date: 2016-02-15T16:34:58Z
 
@@ -9862,7 +9861,7 @@ creation_date: 2014-07-06T14:41:49Z
 id: OMP:0007084
 name: decreased cell length
 def: "An altered cell size phenotype where the long axis of a cell or cells is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0000040 ! decreased cell size
 created_by: siegele
 creation_date: 2014-07-06T14:43:59Z
 
@@ -10445,7 +10444,7 @@ id: OMP:0007147
 name: altered DNA replication
 def: "A DNA replication phenotype in which the process of DNA replication is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000307 ! DNA replication phenotype
-is_a: OMP:0005136 ! altered cell cycle phenotype
+is_a: OMP:0005136 ! altered cell cycle
 is_a: OMP:0007351 ! altered biological process
 intersection_of: OMP:0000307 ! DNA replication phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
@@ -14918,7 +14917,7 @@ creation_date: 2017-08-02T00:49:40Z
 id: OMP:0007664
 name: increased cell width
 def: "An altered cell size phenotype where the width of a nonspherical microbial cell is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0000041 ! increased cell size
 created_by: siegele
 creation_date: 2017-09-23T00:47:28Z
 
@@ -14926,7 +14925,7 @@ creation_date: 2017-09-23T00:47:28Z
 id: OMP:0007665
 name: decreased cell width
 def: "An altered cell size phenotype where the width of a nonspherical microbial cell is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0000040 ! decreased cell size
 created_by: siegele
 creation_date: 2017-09-23T00:47:28Z
 
@@ -15294,6 +15293,7 @@ creation_date: 2017-12-19T16:16:41Z
 id: OMP:0007708
 name: altered vegetative cell shape
 def: "An altered cell shape phenotype where the shape of a cell in the vegetative growth phase of the life cycle is altered relative to a designated control." [OMP:das]
+synonym: "abnormal vegetative cell shape" NARROW [FYPO:0002196]
 is_a: OMP:0007101 ! altered cell shape
 created_by: siegele
 creation_date: 2017-12-19T16:26:51Z
@@ -15340,7 +15340,7 @@ creation_date: 2017-12-19T17:36:21Z
 
 [Term]
 id: OMP:0007714
-name: increased curving of vegetative cell
+name: curving vegetative cell
 def: "An altered cell shape phenotype seen in the vegetative growth phase of the life cycle where a cell is more curved along the long axis than the designated control. In a curved cell, the long axis follows a smooth bend rather than a straight line." [FYPO:0000016, OMP:das]
 is_a: OMP:0007708 ! altered vegetative cell shape
 created_by: siegele
@@ -15382,7 +15382,7 @@ creation_date: 2017-12-19T17:58:40Z
 id: OMP:0007719
 name: decreased cell volume
 def: "An altered cell size phenotype in which the volume of the cell is decreased relative to a designated control." [OMP:das]
-is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0000040 ! decreased cell size
 created_by: siegele
 creation_date: 2017-12-19T18:18:27Z
 
@@ -15391,9 +15391,76 @@ id: OMP:0007720
 name: decreased vegetative cell volume
 def: "An altered cell size phenotype in which the volume of a cell in the vegetative growth phase of the life cycle is decreased relative to a designated control." [OMP:das]
 synonym: "small vegetative cell" EXACT [FYPO:0000645]
-is_a: OMP:0000280 ! increased cell length
+is_a: OMP:0007713 ! altered vegetative cell size
+is_a: OMP:0007719 ! decreased cell volume
 created_by: siegele
 creation_date: 2017-12-19T18:19:35Z
+
+[Term]
+id: OMP:0007721
+name: increased cell volume
+is_a: OMP:0000041 ! increased cell size
+created_by: siegele
+creation_date: 2017-12-20T16:40:08Z
+
+[Term]
+id: OMP:0007722
+name:  increased vegetative cell diameter
+def: "An altered cell size phenotype where the diameter of cells in the vegetative growth phase of the life cycle is increased relative to a designated control." [OMP:das]
+is_a: OMP:0005108 ! increased cell diameter
+is_a: OMP:0007713 ! altered vegetative cell size
+created_by: siegele
+creation_date: 2017-12-20T16:41:30Z
+
+[Term]
+id: OMP:0007723
+name: decreased vegetative cell length
+def: "An altered cell size phenotype where the length of a cell in the vegetative growth phase of the life cycle is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007084 ! decreased cell length
+is_a: OMP:0007713 ! altered vegetative cell size
+created_by: siegele
+creation_date: 2017-12-20T16:46:25Z
+
+[Term]
+id: OMP:0007724
+name: altered vegetative cell viability
+is_a: OMP:0007260 ! altered cell viability
+created_by: siegele
+creation_date: 2017-12-20T16:59:28Z
+
+[Term]
+id: OMP:0007725
+name: inviable after spore germination
+def: "An altered vegetative cell viability phenotype in which a spore germinates but fails to produce dividing cells that can survive under conditions where spores of the designated control germinate and produce dividing cells." [FYPO:0000316, OMP:das]
+is_a: OMP:0007724 ! altered vegetative cell viability
+created_by: siegele
+creation_date: 2017-12-20T16:59:57Z
+
+[Term]
+id: OMP:0007726
+name: abolished spore viability
+def: "An abolished cell viability phenotype in which a spore is unable to survive under conditions in which spores of the designated control strain are able to survive. An inviable spore does not germinate." [FYPO:0002151, OMP:das]
+synonym: "inviable spore" EXACT [FYPO:0002151]
+is_a: OMP:0007391 ! abolished cell viability
+created_by: siegele
+creation_date: 2017-12-20T17:07:55Z
+
+[Term]
+id: OMP:0007727
+name: tapering vegetative cell
+def: "An altered cell shape phenotype in which a cell in the vegetative growth phase of the life cycle tapers at one end to a diameter smaller than the other. The cell diameter at the narrow end is smaller than that of the designated control." [OMP:das]
+is_a: OMP:0007708 ! altered vegetative cell shape
+created_by: siegele
+creation_date: 2017-12-20T17:25:04Z
+
+[Term]
+id: OMP:0007728
+name: altered mitotic cell cycle
+def: "A cellular process phenotype in which the rate, frequency, or occurrence of progression of a cell through a mitotic cell cycle is altered relative to a designated control." []
+synonym: "abnormal mitotic cell cycle" NARROW [FYPO:0000059]
+is_a: OMP:0005136 ! altered cell cycle
+created_by: siegele
+creation_date: 2017-12-20T17:40:46Z
 
 [Term]
 id: OMP:0008000
