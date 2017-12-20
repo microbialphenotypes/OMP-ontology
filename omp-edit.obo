@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2017-11-03
-date: 05:12:2017 00:46
+date: 20:12:2017 01:43
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3601,8 +3601,10 @@ creation_date: 2011-07-21T02:21:21Z
 [Term]
 id: OMP:0000280
 name: increased cell length
-def: "An altered cell size phenotype where the long axis of a cell or cells is increased relative to a designated control." [OMP:DAS]
+def: "An altered cell morphology in which microbial cells are longer than a designated control; i.e. the maximum distance between the cell ends is greater than a designated control." [OMP:DAS]
 comment: The mukB mutant appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
+synonym: "<new synonym>" RELATED []
+xref: FYPO:0000017 "elongated cell"
 is_a: OMP:0007083 ! altered cell size
 created_by: mchibucos
 creation_date: 2011-07-21T02:37:15Z
@@ -11447,15 +11449,15 @@ creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007261
-name: decreased viability
-def: "An altered viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is decreased relative to a designated control." [OMP:DAS]
+name: decreased cell viability
+def: "An altered cell viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007262
-name: increased viability
+name: increased cell viability
 def: "An altered viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
@@ -11463,7 +11465,7 @@ creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007263
-name: viable but nonculturable
+name: viable but nonculturable cell
 is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
@@ -12575,10 +12577,10 @@ creation_date: 2016-06-29T15:47:23Z
 
 [Term]
 id: OMP:0007391
-name: abolished viability
+name: abolished cell viability
 def: "A decreased viability phenotype where the viability of a microbe, cell, or cells is abolished under the specified conditions." [OMP:DAS]
 synonym: "inviable" RELATED [APO:0000112]
-is_a: OMP:0007261 ! decreased viability
+is_a: OMP:0007261 ! decreased cell viability
 created_by: siegele
 creation_date: 2016-06-29T19:15:29Z
 
@@ -15277,6 +15279,121 @@ xref: FYPO:0003612 "viable spore population"
 is_a: OMP:0007457 ! viable cell population
 created_by: siegele
 creation_date: 2017-12-05T00:44:44Z
+
+[Term]
+id: OMP:0007707
+name: increased vegetative cell length
+def: "An increased cell length phenotype where cells in the vegetative growth phase of the life cycle are longer than a designated control." [OMP:das]
+xref: FYPO:0001122 "elongated vegetative cell"
+is_a: OMP:0000280 ! increased cell length
+is_a: OMP:0007713 ! altered vegetative cell size
+created_by: siegele
+creation_date: 2017-12-19T16:16:41Z
+
+[Term]
+id: OMP:0007708
+name: altered vegetative cell shape
+def: "An altered cell shape phenotype where the shape of a cell in the vegetative growth phase of the life cycle is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007101 ! altered cell shape
+created_by: siegele
+creation_date: 2017-12-19T16:26:51Z
+
+[Term]
+id: OMP:0007709
+name: more convex colony
+def: "An altered colony morphology phenotype in which the colony spreads to a lesser extent  and grows vertically to a greater extent, resulting in a more convex shape, than a designated control colony." [OMP:das]
+synonym: "cone-shaped n" RELATED []
+is_a: OMP:0007160 ! altered colony morphology
+created_by: siegele
+creation_date: 2017-12-19T16:38:38Z
+
+[Term]
+id: OMP:0007710
+name: conjugation without glucose starvation
+def: "An altered conjugation phenotype in which conjugation takes place in cells that are not subject to glucose starvation." [FYPO:0001864, OMP:das]
+is_a: OMP:0007416 ! altered conjugation
+created_by: siegele
+creation_date: 2017-12-19T16:56:43Z
+
+[Term]
+id: OMP:0007711
+name: conjugation without nitrogen starvation
+def: "An altered conjugation phenotype where conjugation takes place in cells that are not subject to nitrogen starvation." [FYPO:0003031, OMP:das]
+is_a: OMP:0007416 ! altered conjugation
+created_by: siegele
+creation_date: 2017-12-19T16:59:49Z
+
+[Term]
+id: OMP:0007712
+name: increased branching of vegetative cell
+def: "An altered cell shape phenotype observed in the vegetative growth phase of the life cycle in which a daughter cell begins to grow from the lateral portion of the long axis of the cell, and at an angle to the septum or cell division site of the mother cell, resulting in the formation of a single cell that has a branch. This phenotype is not observed in the designated control." [FYPO:0000015, OMP:das]
+is_a: OMP:0007708 ! altered vegetative cell shape
+created_by: siegele
+creation_date: 2017-12-19T17:04:41Z
+
+[Term]
+id: OMP:0007713
+name: altered vegetative cell size
+is_a: OMP:0007083 ! altered cell size
+created_by: siegele
+creation_date: 2017-12-19T17:36:21Z
+
+[Term]
+id: OMP:0007714
+name: increased curving of vegetative cell
+def: "An altered cell shape phenotype seen in the vegetative growth phase of the life cycle where a cell is more curved along the long axis than the designated control. In a curved cell, the long axis follows a smooth bend rather than a straight line." [FYPO:0000016, OMP:das]
+is_a: OMP:0007708 ! altered vegetative cell shape
+created_by: siegele
+creation_date: 2017-12-19T17:39:34Z
+
+[Term]
+id: OMP:0007715
+name: altered vegetative cell morphology
+def: "An altered cell morphology phenotype where the cell morphology (i.e. size, shape, and structure) of a cell in the vegetative growth phase of the life cycle is altered relative to a designated control." [FYPO:0001315, OMP:das]
+is_a: OMP:0007103 ! altered cell morphology
+created_by: siegele
+creation_date: 2017-12-19T17:49:16Z
+
+[Term]
+id: OMP:0007716
+name: viable vegetative cell
+def: "A cell phenotype in which a cell in the vegetative growth phase of the life cycle is viable." [FYPO:0001491, OMP:das]
+is_a: OMP:0007392 ! viable cell
+created_by: siegele
+creation_date: 2017-12-19T17:54:52Z
+
+[Term]
+id: OMP:0007717
+name: decreased viability of vegetative cell
+def: "An altered cell viability phenotype in which cells in the vegetative phase of the growth cycle have decreased viability relative to a designated control." [OMP:das]
+is_a: OMP:0007261 ! decreased cell viability
+created_by: siegele
+creation_date: 2017-12-19T17:56:29Z
+
+[Term]
+id: OMP:0007718
+name: abolished viability of vegetative cell
+def: "An altered cell viability phenotype where the viability of cells in the vegetative growth phase of the life cycle is abolished." [OMP:das]
+is_a: OMP:0007717 ! decreased viability of vegetative cell
+created_by: siegele
+creation_date: 2017-12-19T17:58:40Z
+
+[Term]
+id: OMP:0007719
+name: decreased cell volume
+def: "An altered cell size phenotype in which the volume of the cell is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007083 ! altered cell size
+created_by: siegele
+creation_date: 2017-12-19T18:18:27Z
+
+[Term]
+id: OMP:0007720
+name: decreased vegetative cell volume
+def: "An altered cell size phenotype in which the volume of a cell in the vegetative growth phase of the life cycle is decreased relative to a designated control." [OMP:das]
+synonym: "small vegetative cell" EXACT [FYPO:0000645]
+is_a: OMP:0000280 ! increased cell length
+created_by: siegele
+creation_date: 2017-12-19T18:19:35Z
 
 [Term]
 id: OMP:0008000
