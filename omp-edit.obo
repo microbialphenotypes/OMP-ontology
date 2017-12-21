@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2017-11-03
-date: 20:12:2017 17:53
+date: 21:12:2017 02:00
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -15405,7 +15405,7 @@ creation_date: 2017-12-20T16:40:08Z
 
 [Term]
 id: OMP:0007722
-name:  increased vegetative cell diameter
+name: increased vegetative cell diameter
 def: "An altered cell size phenotype where the diameter of cells in the vegetative growth phase of the life cycle is increased relative to a designated control." [OMP:das]
 is_a: OMP:0005108 ! increased cell diameter
 is_a: OMP:0007713 ! altered vegetative cell size
@@ -15461,6 +15461,73 @@ synonym: "abnormal mitotic cell cycle" NARROW [FYPO:0000059]
 is_a: OMP:0005136 ! altered cell cycle
 created_by: siegele
 creation_date: 2017-12-20T17:40:46Z
+
+[Term]
+id: OMP:0007729
+name: altered vegetative cell population viability
+def: "An altered cell population viability phenotype where the viability of cells in the vegetative growth phase of the life cycle is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007459 ! altered cell population viability
+created_by: siegele
+creation_date: 2017-12-20T23:46:00Z
+
+[Term]
+id: OMP:0007730
+name: decreased vegetative cell population viability
+def: "An altered vegetative cell population viability phenotype where the viability of vegetative cells is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007729 ! altered vegetative cell population viability
+created_by: siegele
+creation_date: 2017-12-20T23:47:24Z
+
+[Term]
+id: OMP:0007731
+name: abolished vegetative cell population viability
+def: "An altered vegetative cell population viability phenotype where the viability of vegetative cells is abolished." [OMP:das]
+synonym: "inviable vegetative cell population" EXACT [FYPO:0002061]
+is_a: OMP:0007730 ! decreased vegetative cell population viability
+created_by: siegele
+creation_date: 2017-12-20T23:48:30Z
+
+[Term]
+id: OMP:0007732
+name: septation index phenotype
+def: "A cell population phenotype relating to the septation index of the population. The septation index is the proportion of the population undergoing septation at any given time." [FYPO:0001903, OMP:das]
+is_a: OMP:0007698 ! cell population phenotype
+created_by: siegele
+creation_date: 2017-12-21T00:00:58Z
+
+[Term]
+id: OMP:0007733
+name: presence of a septation index
+is_a: OMP:0007732 ! septation index phenotype
+created_by: siegele
+creation_date: 2017-12-21T00:03:57Z
+
+[Term]
+id: OMP:0007734
+name: altered septation index
+def: "A septation index phenotype where the septation index is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007732 ! septation index phenotype
+created_by: siegele
+creation_date: 2017-12-21T00:04:30Z
+
+[Term]
+id: OMP:0007735
+name: decreased septation index
+def: "An altered septation index phenotype in which the septation index is lower than a designated control." [OMP:das]
+comment: A septation index of zero indicates cell cycle arrest.
+synonym: "decreased septation index" NARROW [FYPO:0001128]
+synonym: "reduced septation index" EXACT []
+is_a: OMP:0007734 ! altered septation index
+created_by: siegele
+creation_date: 2017-12-21T00:05:56Z
+
+[Term]
+id: OMP:0007736
+name: increased septation index
+def: "An altered septation index phenotype where the septation index is increased relative to a designated control." [FYPO:0000650, OMP:das]
+is_a: OMP:0007734 ! altered septation index
+created_by: siegele
+creation_date: 2017-12-21T00:08:19Z
 
 [Term]
 id: OMP:0008000
