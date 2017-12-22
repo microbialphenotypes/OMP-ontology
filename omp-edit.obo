@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2017-11-03
-date: 21:12:2017 02:00
+date: 22:12:2017 00:50
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -15528,6 +15528,39 @@ def: "An altered septation index phenotype where the septation index is increase
 is_a: OMP:0007734 ! altered septation index
 created_by: siegele
 creation_date: 2017-12-21T00:08:19Z
+
+[Term]
+id: OMP:0007737
+name: more irregular colony margin
+def: "An altered colony morphology phenotype where the margin of a colony growing on a solid surface is not symmetrical." [FYPO:0001404, OMP:das]
+synonym: "irregular colony morphology" EXACT [FYPO:0001404]
+is_a: OMP:0007160 ! altered colony morphology
+created_by: siegele
+creation_date: 2017-12-21T13:33:02Z
+
+[Term]
+id: OMP:0007738
+name: spore germ tube morphology phenotype
+def: "A cell morphology phenotype relating to the slender tubular outgrowth first produced by many spores upon germination." [OMP:das]
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: siegele
+creation_date: 2017-12-21T13:50:25Z
+
+[Term]
+id: OMP:0007739
+name: altered spore germ tube morphology
+def: "A spore germ tube morphology phenotype where the shape, size, or structure of a spore germ tube is altered relative to a designated control." [GO:0032179, OMP:das]
+is_a: OMP:0007738 ! spore germ tube morphology phenotype
+created_by: siegele
+creation_date: 2017-12-21T13:52:14Z
+
+[Term]
+id: OMP:0007740
+name: elongated spore germ tube
+def: "An altered spore germ tube morphology phenotype where the length of the germ tube is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007739 ! altered spore germ tube morphology
+created_by: siegele
+creation_date: 2017-12-21T13:56:59Z
 
 [Term]
 id: OMP:0008000
