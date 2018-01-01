@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2017-11-03
-date: 22:12:2017 00:50
+date: 01:01:2018 14:22
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -6971,8 +6971,8 @@ creation_date: 2016-10-05T14:19:51Z
 [Term]
 id: OMP:0005336
 name: cell lysis phenotype
-def: "A cell death phenotype relating to cytolysis, which is the rupture of cell membranes and the loss of cytoplasm." [OMP:JG]
-xref: GO:0019835 "cytolysis"
+def: "A cell death phenotype relating to cytolysis, which is the rupture of cell membranes and the loss of cytoplasm. In some microorganisms, the integrity of the cell wall is also compromised." [FYPO:0002488, GO:\:0019835, OMP:JG]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007308 ! cell death phenotype
 created_by: Jesus
 creation_date: 2016-10-31T13:27:46Z
@@ -6998,6 +6998,7 @@ id: OMP:0005339
 name: altered cell lysis
 def: "A cell lysis phenotype where the frequency, rate, timing, or extent of cytolysis is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005336 ! cell lysis phenotype
+is_a: OMP:0007638 ! altered cell phenotype
 created_by: Jesus
 creation_date: 2016-10-31T13:30:56Z
 
@@ -14700,7 +14701,7 @@ creation_date: 2017-07-05T16:31:01Z
 [Term]
 id: OMP:0007638
 name: altered cell phenotype
-def: "A cell phenotype that is altered relative to a designated control." [OMP:DAS]
+def: "A phenotype observed at the level of an individual cell that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007632 ! cell phenotype
 created_by: dsiegele
@@ -15541,7 +15542,7 @@ creation_date: 2017-12-21T13:33:02Z
 [Term]
 id: OMP:0007738
 name: spore germ tube morphology phenotype
-def: "A cell morphology phenotype relating to the slender tubular outgrowth first produced by many spores upon germination." [OMP:das]
+def: "A cell morphology phenotype relating to the slender tubular outgrowth first produced by many spores upon germination." [BTO:0004822, GO:\:0032179, OMP:das]
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: siegele
 creation_date: 2017-12-21T13:50:25Z
@@ -15561,6 +15562,59 @@ def: "An altered spore germ tube morphology phenotype where the length of the ge
 is_a: OMP:0007739 ! altered spore germ tube morphology
 created_by: siegele
 creation_date: 2017-12-21T13:56:59Z
+
+[Term]
+id: OMP:0007741
+name: vegetative cell lysis phenotype
+def: "A cell lysis phenotype relating to lysis of a cell that is in the vegetative growth phase of the life cycle. In cytolysis the plasma membrane ruptures and cytoplasm is lost." [FYPO:0000647, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0005336 ! cell lysis phenotype
+is_a: OMP:0007745 ! vegetative cell phenotype
+created_by: siegele
+creation_date: 2018-01-01T13:57:14Z
+
+[Term]
+id: OMP:0007742
+name: presence of vegetative cell lysis
+def: "A cell lysis phenotype where cytolysis of a cell in the vegetative growth phase of the life cycle occurs." [OMP:das]
+is_a: OMP:0007741 ! vegetative cell lysis phenotype
+created_by: siegele
+creation_date: 2018-01-01T14:02:32Z
+
+[Term]
+id: OMP:0007743
+name: absence of vegetative cell lysis
+def: "A vegetative cell lysis phenotype where cytolysis of a cell in the vegetative growth phase of the life cycle does not occur." [OMP:das]
+is_a: OMP:0007741 ! vegetative cell lysis phenotype
+created_by: siegele
+creation_date: 2018-01-01T14:02:32Z
+
+[Term]
+id: OMP:0007744
+name: altered vegetative cell lysis
+def: "A cell lysis phenotype where the lysis of cells in the vegetative growth phase of the life cycle is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007741 ! vegetative cell lysis phenotype
+is_a: OMP:0007746 ! altered vegetative cell phenotype
+created_by: siegele
+creation_date: 2018-01-01T14:02:32Z
+
+[Term]
+id: OMP:0007745
+name: vegetative cell phenotype
+def: "A phenotype that is observed at the level of an individual cell, when the cell is in the vegetative growth phase of the cell cycle." [FYPO:0001320, OMP:das]
+is_a: OMP:0007632 ! cell phenotype
+created_by: siegele
+creation_date: 2018-01-01T14:15:57Z
+
+[Term]
+id: OMP:0007746
+name: altered vegetative cell phenotype
+def: "A phenotype observed at the level of an individual vegetative cell that is altered relative to a designated control." [OMP:das]
+synonym: "abnormal vegetative cell phenotype" NARROW [FYPO:FYPO\:0003755]
+is_a: OMP:0007638 ! altered cell phenotype
+is_a: OMP:0007745 ! vegetative cell phenotype
+created_by: siegele
+creation_date: 2018-01-01T14:16:46Z
 
 [Term]
 id: OMP:0008000
