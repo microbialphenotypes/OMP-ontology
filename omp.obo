@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: releases/2017-12-01
-date: 30:11:2017 10:59
-saved-by: dsiegele
+data-version: releases/2018-01-05
+date: 01:01:2018 14:22
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -3637,9 +3637,11 @@ creation_date: 2011-07-21T02:21:21Z
 [Term]
 id: OMP:0000280
 name: increased cell length
-def: "An altered cell size phenotype where the long axis of a cell or cells is increased relative to a designated control." [OMP:DAS]
+def: "An altered cell morphology in which microbial cells are longer than a designated control; i.e. the maximum distance between the cell ends is greater than a designated control." [OMP:DAS]
 comment: The mukB mutant appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
-is_a: OMP:0007083 ! altered cell size
+synonym: "<new synonym>" RELATED []
+xref: FYPO:0000017 "elongated cell"
+is_a: OMP:0000041 ! increased cell size
 created_by: mchibucos
 creation_date: 2011-07-21T02:37:15Z
 
@@ -5062,7 +5064,7 @@ creation_date: 2014-05-07T12:40:14Z
 id: OMP:0005108
 name: increased cell diameter
 def: "An altered cell size phenotype where the diameter of a spherical microbial cell or cells is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0000041 ! increased cell size
 created_by: wmeza
 creation_date: 2014-07-02T18:39:12Z
 
@@ -5070,7 +5072,7 @@ creation_date: 2014-07-02T18:39:12Z
 id: OMP:0005109
 name: decreased cell diameter
 def: "An altered cell size phenotype where the diameter of a spherical microbial cell or cells is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0000040 ! decreased cell size
 created_by: wmeza
 creation_date: 2014-07-02T18:46:00Z
 
@@ -5311,9 +5313,8 @@ creation_date: 2014-07-17T17:39:39Z
 
 [Term]
 id: OMP:0005136
-name: altered cell cycle phenotype
+name: altered cell cycle
 def: "A cell cycle phenotype where progression of the cell cycle is altered relative to a designated control." [OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0005115 ! cell cycle phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 created_by: wmeza
@@ -5638,9 +5639,9 @@ creation_date: 2016-02-15T15:32:13Z
 
 [Term]
 id: OMP:0005172
-name: delayed cell cycle progression:
+name: delayed cell cycle progression
 def: "An altered cell cycle phenotype where progression of the cell cycle is delayed relative to a designated control." [OMP:JG]
-is_a: OMP:0005136 ! altered cell cycle phenotype
+is_a: OMP:0005136 ! altered cell cycle
 created_by: Jesus
 creation_date: 2016-02-15T16:34:58Z
 
@@ -7026,8 +7027,8 @@ creation_date: 2016-10-05T14:19:51Z
 [Term]
 id: OMP:0005336
 name: cell lysis phenotype
-def: "A cell death phenotype relating to cytolysis, which is the rupture of cell membranes and the loss of cytoplasm." [OMP:JG]
-xref: GO:0019835 "cytolysis"
+def: "A cell death phenotype relating to cytolysis, which is the rupture of cell membranes and the loss of cytoplasm. In some microorganisms, the integrity of the cell wall is also compromised." [FYPO:0002488, GO:\:0019835, OMP:JG]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007308 ! cell death phenotype
 created_by: Jesus
 creation_date: 2016-10-31T13:27:46Z
@@ -7053,6 +7054,7 @@ id: OMP:0005339
 name: altered cell lysis
 def: "A cell lysis phenotype where the frequency, rate, timing, or extent of cytolysis is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005336 ! cell lysis phenotype
+is_a: OMP:0007638 ! altered cell phenotype
 created_by: Jesus
 creation_date: 2016-10-31T13:30:56Z
 
@@ -9929,7 +9931,7 @@ creation_date: 2014-07-06T14:41:49Z
 id: OMP:0007084
 name: decreased cell length
 def: "An altered cell size phenotype where the long axis of a cell or cells is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0000040 ! decreased cell size
 created_by: siegele
 creation_date: 2014-07-06T14:43:59Z
 
@@ -10523,7 +10525,7 @@ id: OMP:0007147
 name: altered DNA replication
 def: "A DNA replication phenotype in which the process of DNA replication is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000307 ! DNA replication phenotype
-is_a: OMP:0005136 ! altered cell cycle phenotype
+is_a: OMP:0005136 ! altered cell cycle
 is_a: OMP:0007351 ! altered biological process
 intersection_of: OMP:0000307 ! DNA replication phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
@@ -11540,15 +11542,15 @@ creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007261
-name: decreased viability
-def: "An altered viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is decreased relative to a designated control." [OMP:DAS]
+name: decreased cell viability
+def: "An altered cell viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007262
-name: increased viability
+name: increased cell viability
 def: "An altered viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
@@ -11556,7 +11558,7 @@ creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007263
-name: viable but nonculturable
+name: viable but nonculturable cell
 is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
@@ -12674,10 +12676,10 @@ creation_date: 2016-06-29T15:47:23Z
 
 [Term]
 id: OMP:0007391
-name: abolished viability
+name: abolished cell viability
 def: "A decreased viability phenotype where the viability of a microbe, cell, or cells is abolished under the specified conditions." [OMP:DAS]
 synonym: "inviable" RELATED [APO:0000112]
-is_a: OMP:0007261 ! decreased viability
+is_a: OMP:0007261 ! decreased cell viability
 created_by: siegele
 creation_date: 2016-06-29T19:15:29Z
 
@@ -13238,7 +13240,7 @@ id: OMP:0007457
 name: viable cell population
 def: "A cell population viability phenotype where all, or almost all, of the cells are viable under the specified conditions." [OMP:DAS]
 xref: FYPO:0002058 "viable cell population"
-is_a: OMP:0007456 ! population viability phenotype
+is_a: OMP:0007705 ! cell population viability phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:56:12Z
 
@@ -13256,14 +13258,15 @@ creation_date: 2016-08-10T14:56:12Z
 id: OMP:0007459
 name: altered cell population viability
 def: "A cell population viability phenotype where the proportion of cells that are viable under the specified conditions is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007456 ! population viability phenotype
+is_a: OMP:0007705 ! cell population viability phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:56:12Z
 
 [Term]
 id: OMP:0007460
 name: viable vegetative cell population
-def: "A viable cell population phenotype where the cells in the population are in the vegetative growth phase of the life cycle." [FYPO:0002060, OMP:DAS]
+def: "A cell population phenotype in which cells in the population are viable in the vegetative growth phase of the life cycle." [FYPO:0002060, OMP:DAS]
+xref: FYPO:0002060 "viable vegetative cell population"
 is_a: OMP:0007457 ! viable cell population
 created_by: dsiegele
 creation_date: 2016-08-10T15:00:12Z
@@ -14798,7 +14801,7 @@ creation_date: 2017-07-05T16:31:01Z
 [Term]
 id: OMP:0007638
 name: altered cell phenotype
-def: "A cell phenotype that is altered relative to a designated control." [OMP:DAS]
+def: "A phenotype observed at the level of an individual cell that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007632 ! cell phenotype
 created_by: dsiegele
@@ -15015,7 +15018,7 @@ creation_date: 2017-08-02T00:49:40Z
 id: OMP:0007664
 name: increased cell width
 def: "An altered cell size phenotype where the width of a nonspherical microbial cell is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0000041 ! increased cell size
 created_by: siegele
 creation_date: 2017-09-23T00:47:28Z
 
@@ -15023,7 +15026,7 @@ creation_date: 2017-09-23T00:47:28Z
 id: OMP:0007665
 name: decreased cell width
 def: "An altered cell size phenotype where the width of a nonspherical microbial cell is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0000040 ! decreased cell size
 created_by: siegele
 creation_date: 2017-09-23T00:47:28Z
 
@@ -15186,6 +15189,7 @@ creation_date: 2017-11-30T10:36:59Z
 id: OMP:0007685
 name: presence of cell growth
 def: "A cell growth phenotype where a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
 is_a: OMP:0007684 ! cell growth phenotype
 created_by: dsiegele
 creation_date: 2017-11-30T10:42:26Z
@@ -15194,6 +15198,7 @@ creation_date: 2017-11-30T10:42:26Z
 id: OMP:0007686
 name: absence of cell growth
 def: "A cell growth phenotype where a cell does not irreversibly increase in size over time by accretion and biosynthetic production of matter similar to that already present." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
 is_a: OMP:0007684 ! cell growth phenotype
 created_by: dsiegele
 creation_date: 2017-11-30T10:42:26Z
@@ -15202,6 +15207,7 @@ creation_date: 2017-11-30T10:42:26Z
 id: OMP:0007687
 name: altered cell growth
 def: "A cell growth phenotype where the rate, timing, or extent of cell growth is altered relative to a designated control." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
 is_a: OMP:0007342 ! altered cellular process
 is_a: OMP:0007684 ! cell growth phenotype
 created_by: dsiegele
@@ -15211,6 +15217,7 @@ creation_date: 2017-11-30T10:42:26Z
 id: OMP:0007688
 name: decreased cell growth
 def: "An altered cell growth phenotype where the rate, timing, or extent of cell growth is decreased relative to a designated control." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
 is_a: OMP:0007687 ! altered cell growth
 created_by: dsiegele
 creation_date: 2017-11-30T10:56:24Z
@@ -15219,6 +15226,7 @@ creation_date: 2017-11-30T10:56:24Z
 id: OMP:0007689
 name: increased cell growth
 def: "An altered cell growth phenotype where the rate, timing, or extent of cell growth is increased relative to a designated control." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
 is_a: OMP:0007687 ! altered cell growth
 created_by: dsiegele
 creation_date: 2017-11-30T10:56:24Z
@@ -15231,6 +15239,482 @@ is_a: OMP:0007686 ! absence of cell growth
 is_a: OMP:0007688 ! decreased cell growth
 created_by: dsiegele
 creation_date: 2017-11-30T10:56:24Z
+
+[Term]
+id: OMP:0007691
+name: vegetative cell growth phenotype
+def: "A cell growth phenotype related to the growth of a cell in the vegetative growth phase of the life cycle. Cell growth is the process in which a cell irreversibly increases in size over time by accretion and biosynthetic production of matter similar to that already present." [OMP:das]
+is_a: OMP:0007684 ! cell growth phenotype
+created_by: siegele
+creation_date: 2017-12-01T15:44:00Z
+
+[Term]
+id: OMP:0007692
+name: presence of vegetative cell growth
+def: "A vegetative cell growth phenotype in which cell growth occurs in the vegetative growth phase of the life cycle." [FYPO:0002085, OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
+is_a: OMP:0007691 ! vegetative cell growth phenotype
+created_by: siegele
+creation_date: 2017-12-01T15:47:36Z
+
+[Term]
+id: OMP:0007693
+name: absence of vegetative cell growth
+def: "A vegetative cell growth phenotype in which cell growth does not occur in the vegetative growth phase of the life cycle." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
+is_a: OMP:0007691 ! vegetative cell growth phenotype
+created_by: siegele
+creation_date: 2017-12-01T15:47:36Z
+
+[Term]
+id: OMP:0007694
+name: altered vegetative cell growth
+def: "A vegetative cell growth phenotype in which the rate, timing, or extent of growth of the cell in the vegetative growth phase of the life cycle is altered relative to a designated control." [FYPO:0003154, OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
+xref: FYPO:0003154 "abnormal vegetative cell growth"
+is_a: OMP:0007687 ! altered cell growth
+is_a: OMP:0007691 ! vegetative cell growth phenotype
+created_by: siegele
+creation_date: 2017-12-01T15:47:36Z
+
+[Term]
+id: OMP:0007695
+name: increased vegetative cell growth
+def: "An altered vegetative cell growth phenotype in which the rate, timing, or extent of growth of the cell in the vegetative growth phase of the life cycle is increased relative to a designated control." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
+is_a: OMP:0007694 ! altered vegetative cell growth
+created_by: siegele
+creation_date: 2017-12-01T15:47:36Z
+
+[Term]
+id: OMP:0007696
+name: decreased vegetative cell growth
+def: "An altered vegetative cell growth phenotype in which the rate, timing, or extent of growth of the cell in the vegetative growth phase of the life cycle is decreased relative to a designated control." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
+is_a: OMP:0007694 ! altered vegetative cell growth
+created_by: siegele
+creation_date: 2017-12-01T15:47:37Z
+
+[Term]
+id: OMP:0007697
+name: abolished vegetative cell growth
+def: "A decreased vegetative cell growth phenotype in which growth of the cell in the vegetative growth phase of the life cycle is abolished." [OMP:das]
+comment: Note that this term refers to growth, i.e. increase in size, of an individual cell. If you have measured the rate or extent of growth of a culture in liquid medium or on plates, use one of the 'cell population growth' terms.
+is_a: OMP:0007693 ! absence of vegetative cell growth
+is_a: OMP:0007696 ! decreased vegetative cell growth
+created_by: siegele
+creation_date: 2017-12-01T15:47:37Z
+
+[Term]
+id: OMP:0007698
+name: cell population phenotype
+def: "A cell population phenotype that reflects the proportion of the population that survive and develop normally." [FYPO:0002057, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+xref: FYPO:0002057 "cell population phenotype"
+is_a: OMP:0007006 ! population phenotype
+created_by: siegele
+creation_date: 2017-12-04T20:08:24Z
+
+[Term]
+id: OMP:0007699
+name: inviable cell population
+def: "A cell population phenotype in which none of the cells in the population are viable." [FYPO:0002059, OMP:das]
+xref: FYPO:0002059
+is_a: OMP:0007705 ! cell population viability phenotype
+created_by: siegele
+creation_date: 2017-12-04T20:14:07Z
+
+[Term]
+id: OMP:0007700
+name: inviable vegetative cell population
+def: "A cell population phenotype in which all cells in the population are inviable in the vegetative growth phase of the life cycle." [FYPO:0002061, OMP:das]
+xref: FYPO:0002061 "inviable vegetative cell population"
+is_a: OMP:0007699 ! inviable cell population
+created_by: siegele
+creation_date: 2017-12-04T20:15:43Z
+
+[Term]
+id: OMP:0007701
+name: inviable spore population
+def: "A cell population phenotype in which none of the cells in a population of spores are viable. Inviable spores do not germinate." [FYPO:0000647, OMP:das]
+xref: FYPO:000064 "inviable spore population"
+is_a: OMP:0007699 ! inviable cell population
+created_by: siegele
+creation_date: 2017-12-04T20:19:36Z
+
+[Term]
+id: OMP:0007702
+name: decreased cell population viability
+is_a: OMP:0007459 ! altered cell population viability
+created_by: siegele
+creation_date: 2017-12-04T20:23:38Z
+
+[Term]
+id: OMP:0007703
+name: increased cell population viability
+is_a: OMP:0007459 ! altered cell population viability
+created_by: siegele
+creation_date: 2017-12-04T20:23:38Z
+
+[Term]
+id: OMP:0007704
+name: abolished cell population viability
+is_a: OMP:0007702 ! decreased cell population viability
+created_by: siegele
+creation_date: 2017-12-04T20:23:38Z
+
+[Term]
+id: OMP:0007705
+name: cell population viability phenotype
+is_a: OMP:0007456 ! population viability phenotype
+is_a: OMP:0007698 ! cell population phenotype
+created_by: siegele
+creation_date: 2017-12-04T20:26:35Z
+
+[Term]
+id: OMP:0007706
+name: viable spore population
+def: "A cell population phenotype in which cells in a population of spores are viable." [FYPO:0003612, OMP:das]
+xref: FYPO:0003612 "viable spore population"
+is_a: OMP:0007457 ! viable cell population
+created_by: siegele
+creation_date: 2017-12-05T00:44:44Z
+
+[Term]
+id: OMP:0007707
+name: increased vegetative cell length
+def: "An increased cell length phenotype where cells in the vegetative growth phase of the life cycle are longer than a designated control." [OMP:das]
+xref: FYPO:0001122 "elongated vegetative cell"
+is_a: OMP:0000280 ! increased cell length
+is_a: OMP:0007713 ! altered vegetative cell size
+created_by: siegele
+creation_date: 2017-12-19T16:16:41Z
+
+[Term]
+id: OMP:0007708
+name: altered vegetative cell shape
+def: "An altered cell shape phenotype where the shape of a cell in the vegetative growth phase of the life cycle is altered relative to a designated control." [OMP:das]
+synonym: "abnormal vegetative cell shape" NARROW [FYPO:0002196]
+is_a: OMP:0007101 ! altered cell shape
+created_by: siegele
+creation_date: 2017-12-19T16:26:51Z
+
+[Term]
+id: OMP:0007709
+name: more convex colony
+def: "An altered colony morphology phenotype in which the colony spreads to a lesser extent  and grows vertically to a greater extent, resulting in a more convex shape, than a designated control colony." [OMP:das]
+synonym: "cone-shaped n" RELATED []
+is_a: OMP:0007160 ! altered colony morphology
+created_by: siegele
+creation_date: 2017-12-19T16:38:38Z
+
+[Term]
+id: OMP:0007710
+name: conjugation without glucose starvation
+def: "An altered conjugation phenotype in which conjugation takes place in cells that are not subject to glucose starvation." [FYPO:0001864, OMP:das]
+is_a: OMP:0007416 ! altered conjugation
+created_by: siegele
+creation_date: 2017-12-19T16:56:43Z
+
+[Term]
+id: OMP:0007711
+name: conjugation without nitrogen starvation
+def: "An altered conjugation phenotype where conjugation takes place in cells that are not subject to nitrogen starvation." [FYPO:0003031, OMP:das]
+is_a: OMP:0007416 ! altered conjugation
+created_by: siegele
+creation_date: 2017-12-19T16:59:49Z
+
+[Term]
+id: OMP:0007712
+name: increased branching of vegetative cell
+def: "An altered cell shape phenotype observed in the vegetative growth phase of the life cycle in which a daughter cell begins to grow from the lateral portion of the long axis of the cell, and at an angle to the septum or cell division site of the mother cell, resulting in the formation of a single cell that has a branch. This phenotype is not observed in the designated control." [FYPO:0000015, OMP:das]
+is_a: OMP:0007708 ! altered vegetative cell shape
+created_by: siegele
+creation_date: 2017-12-19T17:04:41Z
+
+[Term]
+id: OMP:0007713
+name: altered vegetative cell size
+is_a: OMP:0007083 ! altered cell size
+created_by: siegele
+creation_date: 2017-12-19T17:36:21Z
+
+[Term]
+id: OMP:0007714
+name: curving vegetative cell
+def: "An altered cell shape phenotype seen in the vegetative growth phase of the life cycle where a cell is more curved along the long axis than the designated control. In a curved cell, the long axis follows a smooth bend rather than a straight line." [FYPO:0000016, OMP:das]
+is_a: OMP:0007708 ! altered vegetative cell shape
+created_by: siegele
+creation_date: 2017-12-19T17:39:34Z
+
+[Term]
+id: OMP:0007715
+name: altered vegetative cell morphology
+def: "An altered cell morphology phenotype where the cell morphology (i.e. size, shape, and structure) of a cell in the vegetative growth phase of the life cycle is altered relative to a designated control." [FYPO:0001315, OMP:das]
+is_a: OMP:0007103 ! altered cell morphology
+created_by: siegele
+creation_date: 2017-12-19T17:49:16Z
+
+[Term]
+id: OMP:0007716
+name: viable vegetative cell
+def: "A cell phenotype in which a cell in the vegetative growth phase of the life cycle is viable." [FYPO:0001491, OMP:das]
+is_a: OMP:0007392 ! viable cell
+created_by: siegele
+creation_date: 2017-12-19T17:54:52Z
+
+[Term]
+id: OMP:0007717
+name: decreased viability of vegetative cell
+def: "An altered cell viability phenotype in which cells in the vegetative phase of the growth cycle have decreased viability relative to a designated control." [OMP:das]
+is_a: OMP:0007261 ! decreased cell viability
+created_by: siegele
+creation_date: 2017-12-19T17:56:29Z
+
+[Term]
+id: OMP:0007718
+name: abolished viability of vegetative cell
+def: "An altered cell viability phenotype where the viability of cells in the vegetative growth phase of the life cycle is abolished." [OMP:das]
+is_a: OMP:0007717 ! decreased viability of vegetative cell
+created_by: siegele
+creation_date: 2017-12-19T17:58:40Z
+
+[Term]
+id: OMP:0007719
+name: decreased cell volume
+def: "An altered cell size phenotype in which the volume of the cell is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0000040 ! decreased cell size
+created_by: siegele
+creation_date: 2017-12-19T18:18:27Z
+
+[Term]
+id: OMP:0007720
+name: decreased vegetative cell volume
+def: "An altered cell size phenotype in which the volume of a cell in the vegetative growth phase of the life cycle is decreased relative to a designated control." [OMP:das]
+synonym: "small vegetative cell" EXACT [FYPO:0000645]
+is_a: OMP:0007713 ! altered vegetative cell size
+is_a: OMP:0007719 ! decreased cell volume
+created_by: siegele
+creation_date: 2017-12-19T18:19:35Z
+
+[Term]
+id: OMP:0007721
+name: increased cell volume
+is_a: OMP:0000041 ! increased cell size
+created_by: siegele
+creation_date: 2017-12-20T16:40:08Z
+
+[Term]
+id: OMP:0007722
+name: increased vegetative cell diameter
+def: "An altered cell size phenotype where the diameter of cells in the vegetative growth phase of the life cycle is increased relative to a designated control." [OMP:das]
+is_a: OMP:0005108 ! increased cell diameter
+is_a: OMP:0007713 ! altered vegetative cell size
+created_by: siegele
+creation_date: 2017-12-20T16:41:30Z
+
+[Term]
+id: OMP:0007723
+name: decreased vegetative cell length
+def: "An altered cell size phenotype where the length of a cell in the vegetative growth phase of the life cycle is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007084 ! decreased cell length
+is_a: OMP:0007713 ! altered vegetative cell size
+created_by: siegele
+creation_date: 2017-12-20T16:46:25Z
+
+[Term]
+id: OMP:0007724
+name: altered vegetative cell viability
+is_a: OMP:0007260 ! altered cell viability
+created_by: siegele
+creation_date: 2017-12-20T16:59:28Z
+
+[Term]
+id: OMP:0007725
+name: inviable after spore germination
+def: "An altered vegetative cell viability phenotype in which a spore germinates but fails to produce dividing cells that can survive under conditions where spores of the designated control germinate and produce dividing cells." [FYPO:0000316, OMP:das]
+is_a: OMP:0007724 ! altered vegetative cell viability
+created_by: siegele
+creation_date: 2017-12-20T16:59:57Z
+
+[Term]
+id: OMP:0007726
+name: abolished spore viability
+def: "An abolished cell viability phenotype in which a spore is unable to survive under conditions in which spores of the designated control strain are able to survive. An inviable spore does not germinate." [FYPO:0002151, OMP:das]
+synonym: "inviable spore" EXACT [FYPO:0002151]
+is_a: OMP:0007391 ! abolished cell viability
+created_by: siegele
+creation_date: 2017-12-20T17:07:55Z
+
+[Term]
+id: OMP:0007727
+name: tapering vegetative cell
+def: "An altered cell shape phenotype in which a cell in the vegetative growth phase of the life cycle tapers at one end to a diameter smaller than the other. The cell diameter at the narrow end is smaller than that of the designated control." [OMP:das]
+is_a: OMP:0007708 ! altered vegetative cell shape
+created_by: siegele
+creation_date: 2017-12-20T17:25:04Z
+
+[Term]
+id: OMP:0007728
+name: altered mitotic cell cycle
+def: "A cellular process phenotype in which the rate, frequency, or occurrence of progression of a cell through a mitotic cell cycle is altered relative to a designated control." []
+synonym: "abnormal mitotic cell cycle" NARROW [FYPO:0000059]
+is_a: OMP:0005136 ! altered cell cycle
+created_by: siegele
+creation_date: 2017-12-20T17:40:46Z
+
+[Term]
+id: OMP:0007729
+name: altered vegetative cell population viability
+def: "An altered cell population viability phenotype where the viability of cells in the vegetative growth phase of the life cycle is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007459 ! altered cell population viability
+created_by: siegele
+creation_date: 2017-12-20T23:46:00Z
+
+[Term]
+id: OMP:0007730
+name: decreased vegetative cell population viability
+def: "An altered vegetative cell population viability phenotype where the viability of vegetative cells is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007729 ! altered vegetative cell population viability
+created_by: siegele
+creation_date: 2017-12-20T23:47:24Z
+
+[Term]
+id: OMP:0007731
+name: abolished vegetative cell population viability
+def: "An altered vegetative cell population viability phenotype where the viability of vegetative cells is abolished." [OMP:das]
+synonym: "inviable vegetative cell population" EXACT [FYPO:0002061]
+is_a: OMP:0007730 ! decreased vegetative cell population viability
+created_by: siegele
+creation_date: 2017-12-20T23:48:30Z
+
+[Term]
+id: OMP:0007732
+name: septation index phenotype
+def: "A cell population phenotype relating to the septation index of the population. The septation index is the proportion of the population undergoing septation at any given time." [FYPO:0001903, OMP:das]
+is_a: OMP:0007698 ! cell population phenotype
+created_by: siegele
+creation_date: 2017-12-21T00:00:58Z
+
+[Term]
+id: OMP:0007733
+name: presence of a septation index
+is_a: OMP:0007732 ! septation index phenotype
+created_by: siegele
+creation_date: 2017-12-21T00:03:57Z
+
+[Term]
+id: OMP:0007734
+name: altered septation index
+def: "A septation index phenotype where the septation index is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007732 ! septation index phenotype
+created_by: siegele
+creation_date: 2017-12-21T00:04:30Z
+
+[Term]
+id: OMP:0007735
+name: decreased septation index
+def: "An altered septation index phenotype in which the septation index is lower than a designated control." [OMP:das]
+comment: A septation index of zero indicates cell cycle arrest.
+synonym: "decreased septation index" NARROW [FYPO:0001128]
+synonym: "reduced septation index" EXACT []
+is_a: OMP:0007734 ! altered septation index
+created_by: siegele
+creation_date: 2017-12-21T00:05:56Z
+
+[Term]
+id: OMP:0007736
+name: increased septation index
+def: "An altered septation index phenotype where the septation index is increased relative to a designated control." [FYPO:0000650, OMP:das]
+is_a: OMP:0007734 ! altered septation index
+created_by: siegele
+creation_date: 2017-12-21T00:08:19Z
+
+[Term]
+id: OMP:0007737
+name: more irregular colony margin
+def: "An altered colony morphology phenotype where the margin of a colony growing on a solid surface is not symmetrical." [FYPO:0001404, OMP:das]
+synonym: "irregular colony morphology" EXACT [FYPO:0001404]
+is_a: OMP:0007160 ! altered colony morphology
+created_by: siegele
+creation_date: 2017-12-21T13:33:02Z
+
+[Term]
+id: OMP:0007738
+name: spore germ tube morphology phenotype
+def: "A cell morphology phenotype relating to the slender tubular outgrowth first produced by many spores upon germination." [BTO:0004822, GO:\:0032179, OMP:das]
+is_a: OMP:0000071 ! cell morphology phenotype
+created_by: siegele
+creation_date: 2017-12-21T13:50:25Z
+
+[Term]
+id: OMP:0007739
+name: altered spore germ tube morphology
+def: "A spore germ tube morphology phenotype where the shape, size, or structure of a spore germ tube is altered relative to a designated control." [GO:0032179, OMP:das]
+is_a: OMP:0007738 ! spore germ tube morphology phenotype
+created_by: siegele
+creation_date: 2017-12-21T13:52:14Z
+
+[Term]
+id: OMP:0007740
+name: elongated spore germ tube
+def: "An altered spore germ tube morphology phenotype where the length of the germ tube is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007739 ! altered spore germ tube morphology
+created_by: siegele
+creation_date: 2017-12-21T13:56:59Z
+
+[Term]
+id: OMP:0007741
+name: vegetative cell lysis phenotype
+def: "A cell lysis phenotype relating to lysis of a cell that is in the vegetative growth phase of the life cycle. In cytolysis the plasma membrane ruptures and cytoplasm is lost." [FYPO:0000647, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0005336 ! cell lysis phenotype
+is_a: OMP:0007745 ! vegetative cell phenotype
+created_by: siegele
+creation_date: 2018-01-01T13:57:14Z
+
+[Term]
+id: OMP:0007742
+name: presence of vegetative cell lysis
+def: "A cell lysis phenotype where cytolysis of a cell in the vegetative growth phase of the life cycle occurs." [OMP:das]
+is_a: OMP:0007741 ! vegetative cell lysis phenotype
+created_by: siegele
+creation_date: 2018-01-01T14:02:32Z
+
+[Term]
+id: OMP:0007743
+name: absence of vegetative cell lysis
+def: "A vegetative cell lysis phenotype where cytolysis of a cell in the vegetative growth phase of the life cycle does not occur." [OMP:das]
+is_a: OMP:0007741 ! vegetative cell lysis phenotype
+created_by: siegele
+creation_date: 2018-01-01T14:02:32Z
+
+[Term]
+id: OMP:0007744
+name: altered vegetative cell lysis
+def: "A cell lysis phenotype where the lysis of cells in the vegetative growth phase of the life cycle is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007741 ! vegetative cell lysis phenotype
+is_a: OMP:0007746 ! altered vegetative cell phenotype
+created_by: siegele
+creation_date: 2018-01-01T14:02:32Z
+
+[Term]
+id: OMP:0007745
+name: vegetative cell phenotype
+def: "A phenotype that is observed at the level of an individual cell, when the cell is in the vegetative growth phase of the cell cycle." [FYPO:0001320, OMP:das]
+is_a: OMP:0007632 ! cell phenotype
+created_by: siegele
+creation_date: 2018-01-01T14:15:57Z
+
+[Term]
+id: OMP:0007746
+name: altered vegetative cell phenotype
+def: "A phenotype observed at the level of an individual vegetative cell that is altered relative to a designated control." [OMP:das]
+synonym: "abnormal vegetative cell phenotype" NARROW [FYPO:FYPO\:0003755]
+is_a: OMP:0007638 ! altered cell phenotype
+is_a: OMP:0007745 ! vegetative cell phenotype
+created_by: siegele
+creation_date: 2018-01-01T14:16:46Z
 
 [Term]
 id: OMP:0008000
