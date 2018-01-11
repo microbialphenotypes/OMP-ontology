@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2017-11-03
-date: 01:01:2018 14:22
+date: 10:01:2018 18:55
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -5650,10 +5650,10 @@ creation_date: 2016-05-18T14:43:12Z
 [Term]
 id: OMP:0005180
 name: cytoskeleton morphology phenotype
-def: "A cell morphology phenotype relating to the form and function of the cytoskeleton, any of the various filamentous elements that form the internal framework of cells." [OMP:JG]
+def: "A physical cellular phenotype relating to the size, shape, or structure of the cytoskeleton of a microbial cell." [OMP:JG]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 xref: GO:0005856 "cytoskeleton"
-is_a: OMP:0000071 ! cell morphology phenotype
+is_a: OMP:0007754 ! cytoskeleton phenotype
 created_by: Jesus
 creation_date: 2016-05-21T09:09:03Z
 
@@ -5662,7 +5662,7 @@ id: OMP:0005181
 name: altered cytoskeleton morphology phenotype
 def: "A cytoskeleton morphology phenotype where the morphology of the cytoskeleton is altered relative to a designated control." [GO:JG]
 is_a: OMP:0005180 ! cytoskeleton morphology phenotype
-is_a: OMP:0007103 ! altered cell morphology
+is_a: OMP:0007752 ! altered cytoskeleton
 created_by: Jesus
 creation_date: 2016-05-21T09:57:50Z
 
@@ -5697,6 +5697,7 @@ name: altered actin cytoskeleton morphology
 def: "An actin cytoskeleton morphology phenotype where the morphology of the actin cytoskeleton is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005181 ! altered cytoskeleton morphology phenotype
 is_a: OMP:0005182 ! actin cytoskeleton morphology phenotype
+is_a: OMP:0007753 ! altered actin cytoskeleton
 created_by: Jesus
 creation_date: 2016-05-21T10:03:47Z
 
@@ -9913,7 +9914,7 @@ creation_date: 2014-07-10T12:51:30Z
 
 [Term]
 id: OMP:0007090
-name: more rod-like
+name: more rod-like cell shape
 def: "An altered cell shape phenotype where a cell's shape is more rod-like than that of a designated control." [OMP:DAS]
 is_a: OMP:0007099 ! cylindrical cell shape
 is_a: OMP:0007101 ! altered cell shape
@@ -10024,7 +10025,7 @@ creation_date: 2014-07-10T20:24:53Z
 
 [Term]
 id: OMP:0007102
-name: more round
+name: more rounded cell shape
 def: "An altered cell shape phenotype where a cell's shape is rounder than that of a designated control." [OMP:DAS]
 is_a: OMP:0007100 ! spheroid cell shape
 is_a: OMP:0007101 ! altered cell shape
@@ -10034,7 +10035,8 @@ creation_date: 2014-07-10T21:51:13Z
 [Term]
 id: OMP:0007103
 name: altered cell morphology
-def: "A cell morphology phenotype that is altered relative to a designated control." [OMP:DAS]
+def: "A cell morphology phenotype where the morphology (i.e., size, shape, and structure) of a cell is altered relative to a designated control." [OMP:DAS]
+synonym: "abnormal cell morphology" NARROW [FYPO:0000005]
 is_a: OMP:0000071 ! cell morphology phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
@@ -14655,7 +14657,7 @@ creation_date: 2017-07-05T16:09:49Z
 [Term]
 id: OMP:0007633
 name: cellular physical quality phenotype
-def: "A cell phenotype that affects any physical object quality of a microbe, such as morphology, number, location, etc., of a cell or a cellular component." [FYPO:0000136, OMP:DAS]
+def: "A cell phenotype that affects any physical object quality of a microbial cell, such as morphology, number, location, etc., of a cell or a cellular component." [FYPO:0000136, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
 xref: FYPO:0000136 "cellular physical quality phenotype"
 is_a: OMP:0007632 ! cell phenotype
@@ -14668,6 +14670,7 @@ name: altered level of substance in cell
 def: "A cell phenotype in which the amount of a specific substance measured in a cell is altered relative to a designated control." [FYPO:0000989, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007637 ! altered cellular physical quality phenotype
+is_a: OMP:0007656 ! level of substance in cell phenotype
 created_by: dsiegele
 creation_date: 2017-07-05T16:20:55Z
 
@@ -14692,7 +14695,8 @@ creation_date: 2017-07-05T16:28:00Z
 [Term]
 id: OMP:0007637
 name: altered cellular physical quality phenotype
-def: "A cellular physical quality phenotype where any physical object quality of a microbe, such as morphology, number, location, etc., of a cell or a cellular component is altered relative to a designated control." [OMP:DAS]
+def: "A cellular physical quality phenotype where any physical object quality such as morphology, number, location, etc., of a microbial cell or a cellular component is altered relative to a designated control." [OMP:DAS]
+synonym: "abnormal cellular physical quality phenotype" NARROW [FYPO:0004638]
 is_a: OMP:0007633 ! cellular physical quality phenotype
 is_a: OMP:0007638 ! altered cell phenotype
 created_by: dsiegele
@@ -14858,7 +14862,7 @@ creation_date: 2017-08-01T19:42:07Z
 [Term]
 id: OMP:0007656
 name: level of substance in cell phenotype
-is_a: OMP:0007632 ! cell phenotype
+is_a: OMP:0007633 ! cellular physical quality phenotype
 created_by: siegele
 creation_date: 2017-08-02T00:45:28Z
 
@@ -15296,6 +15300,7 @@ name: altered vegetative cell shape
 def: "An altered cell shape phenotype where the shape of a cell in the vegetative growth phase of the life cycle is altered relative to a designated control." [OMP:das]
 synonym: "abnormal vegetative cell shape" NARROW [FYPO:0002196]
 is_a: OMP:0007101 ! altered cell shape
+is_a: OMP:0007715 ! altered vegetative cell morphology
 created_by: siegele
 creation_date: 2017-12-19T16:26:51Z
 
@@ -15326,7 +15331,7 @@ creation_date: 2017-12-19T16:59:49Z
 
 [Term]
 id: OMP:0007712
-name: increased branching of vegetative cell
+name: branching of vegetative cell
 def: "An altered cell shape phenotype observed in the vegetative growth phase of the life cycle in which a daughter cell begins to grow from the lateral portion of the long axis of the cell, and at an angle to the septum or cell division site of the mother cell, resulting in the formation of a single cell that has a branch. This phenotype is not observed in the designated control." [FYPO:0000015, OMP:das]
 is_a: OMP:0007708 ! altered vegetative cell shape
 created_by: siegele
@@ -15336,6 +15341,7 @@ creation_date: 2017-12-19T17:04:41Z
 id: OMP:0007713
 name: altered vegetative cell size
 is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0007715 ! altered vegetative cell morphology
 created_by: siegele
 creation_date: 2017-12-19T17:36:21Z
 
@@ -15350,7 +15356,8 @@ creation_date: 2017-12-19T17:39:34Z
 [Term]
 id: OMP:0007715
 name: altered vegetative cell morphology
-def: "An altered cell morphology phenotype where the cell morphology (i.e. size, shape, and structure) of a cell in the vegetative growth phase of the life cycle is altered relative to a designated control." [FYPO:0001315, OMP:das]
+def: "An altered cell morphology phenotype where the morphology (i.e., size, shape, and structure) of a cell in the vegetative growth phase of the life cycle is altered relative to a designated control." [FYPO:0001315, OMP:das]
+synonym: "abnormal vegetative cell morphology" NARROW [FYPO:0001118]
 is_a: OMP:0007103 ! altered cell morphology
 created_by: siegele
 creation_date: 2017-12-19T17:49:16Z
@@ -15615,6 +15622,88 @@ is_a: OMP:0007638 ! altered cell phenotype
 is_a: OMP:0007745 ! vegetative cell phenotype
 created_by: siegele
 creation_date: 2018-01-01T14:16:46Z
+
+[Term]
+id: OMP:0007747
+name: altered actin cytoskeleton morphology during vegetative growth
+def: "An actin cytoskeleton morphology phenotype where the morphology of the actin cytoskeleton in a cell that is in the vegetative phase of the growth cycle is altered relative to a designated control." [OMP:das]
+synonym: "abnormal actin cytoskeleton morphology during vegetative cell growth" NARROW [FYPO:0000350]
+is_a: OMP:0005185 ! altered actin cytoskeleton morphology
+created_by: siegele
+creation_date: 2018-01-10T16:46:28Z
+
+[Term]
+id: OMP:0007748
+name: cellular physical quality phenotype during vegetative growth
+def: "A phenotype related to any physical object quality, such as morphology, number, location, etc., of a microbial cell or a cellular component in the vegetative growth phase of the life cycle." [FYPO:0001321, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0007633 ! cellular physical quality phenotype
+created_by: siegele
+creation_date: 2018-01-10T17:26:54Z
+
+[Term]
+id: OMP:0007749
+name: altered cellular physical quality phenotype during vegetative growth
+is_a: OMP:0007637 ! altered cellular physical quality phenotype
+is_a: OMP:0007748 ! cellular physical quality phenotype during vegetative growth
+created_by: siegele
+creation_date: 2018-01-10T17:32:50Z
+
+[Term]
+id: OMP:0007750
+name: subcellular component phenotype
+def: "A cellular physical quality phenotype relating to the amount, distribution, composition, or morphology of a microbial cell part." [OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0007633 ! cellular physical quality phenotype
+created_by: siegele
+creation_date: 2018-01-10T17:44:33Z
+
+[Term]
+id: OMP:0007751
+name: altered subcellular component phenotype
+def: "A cellular physical quality phenotype where the amount, distribution, composition, or morphology of a microbial cell part is altered relative to a designated control." [OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+synonym: "abnormal subcellular component" NARROW [FYPO:0007751]
+xref: XX:<new xref>
+is_a: OMP:0007637 ! altered cellular physical quality phenotype
+is_a: OMP:0007750 ! subcellular component phenotype
+created_by: siegele
+creation_date: 2018-01-10T17:46:52Z
+
+[Term]
+id: OMP:0007752
+name: altered cytoskeleton
+def: "A cellular physical quality phenotype in which the amount, distribution, or morphology of all or part of the cytoskeleton is altered relative to a designated control." [OMP:das]
+synonym: "abnormal cytoskeleton" NARROW [FYPO:0002397]
+is_a: OMP:0007751 ! altered subcellular component phenotype
+created_by: siegele
+creation_date: 2018-01-10T17:50:16Z
+
+[Term]
+id: OMP:0007753
+name: altered actin cytoskeleton
+def: "A cellular physical phenotype in which the amount, distribution, or morphology of all or part of the actin cytoskeleton is altered relative to a designated control." [OMP:das]
+synonym: "abnormal actin cytoskeleton" NARROW [FYPO:0005665]
+is_a: OMP:0007752 ! altered cytoskeleton
+created_by: siegele
+creation_date: 2018-01-10T17:57:03Z
+
+[Term]
+id: OMP:0007754
+name: cytoskeleton phenotype
+def: "A cellular physical quality phenotype relating to the amount, distribution, composition, or morphology of the cytoskeleton of a microbial cell." [OMP:das]
+is_a: OMP:0007750 ! subcellular component phenotype
+created_by: siegele
+creation_date: 2018-01-10T18:39:44Z
+
+[Term]
+id: OMP:0007755
+name: altered actin cytoskeleton during vegetative growth
+def: "A cellular physical phenotype observed in the vegetative growth phase of the life cycle in which the amount, distribution, or morphology of all or part of the actin cytoskeleton is altered relative to a designated control." [OMP:das]
+synonym: "abnormal actin cytoskeleton during vegetative growth" NARROW [FYPO:0002398]
+is_a: OMP:0007753 ! altered actin cytoskeleton
+created_by: siegele
+creation_date: 2018-01-10T18:48:38Z
 
 [Term]
 id: OMP:0008000
