@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2017-11-03
-date: 10:01:2018 18:55
+date: 20:01:2018 14:13
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -15704,6 +15704,21 @@ synonym: "abnormal actin cytoskeleton during vegetative growth" NARROW [FYPO:000
 is_a: OMP:0007753 ! altered actin cytoskeleton
 created_by: siegele
 creation_date: 2018-01-10T18:48:38Z
+
+[Term]
+id: OMP:0007756
+name: stubby vegetative cell
+def: "An altered cell morphology phenotype observed in the vegetative growth phase of the life cycle in which the cell diameter is larger and the cell length is shorter than the designated control." [FYPO:0000024, OMP:das]
+is_a: OMP:0007715 ! altered vegetative cell morphology
+created_by: siegele
+creation_date: 2018-01-20T00:04:25Z
+
+[Term]
+id: OMP:0007757
+name: more rounded vegetative cell shape
+is_a: OMP:0007102 ! more rounded cell shape
+created_by: siegele
+creation_date: 2018-01-20T00:23:41Z
 
 [Term]
 id: OMP:0008000
