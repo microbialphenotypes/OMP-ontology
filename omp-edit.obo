@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2017-11-03
-date: 20:01:2018 14:13
+date: 29:01:2018 17:24
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -7451,7 +7451,7 @@ creation_date: 2017-11-03T21:36:16Z
 [Term]
 id: OMP:0005393
 name: pseudo tail morphology phenotype
-def: "A virion morphology phenotype where the isolated virions do not show presence of a tail, but rather, the tail is only seen during infection or through some other manipulation of the virion." []
+def: "A virion morphology phenotype where the isolated virions do not show presence of a tail, but rather, the tail is only seen during infection or through some other manipulation of the virion." [OMP:dr]
 is_a: OMP:0007541 ! virion morphology phenotype
 created_by: MiLaptop
 creation_date: 2017-11-03T21:39:58Z
@@ -10027,7 +10027,6 @@ creation_date: 2014-07-10T20:24:53Z
 id: OMP:0007102
 name: more rounded cell shape
 def: "An altered cell shape phenotype where a cell's shape is rounder than that of a designated control." [OMP:DAS]
-is_a: OMP:0007100 ! spheroid cell shape
 is_a: OMP:0007101 ! altered cell shape
 created_by: siegele
 creation_date: 2014-07-10T21:51:13Z
@@ -14772,7 +14771,7 @@ creation_date: 2017-07-24T14:41:58Z
 id: OMP:0007646
 name: free-living lifestyle phenotype
 def: "A microbial lifestyle phenotype that is the summative outcome of multiple phenotypes that, acting together, typically provide an organism some advantage while competing for niche space in a fluid medium, unattached to other organisms or non-living, solid material entities." [OMP:DAS]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.\n\n\nComment: "May include the expression of flagella, sensing apparati used for\nphoto- and chemotactic behaviour, and quorum sensing pathways."
+comment: Free-living lifestyle phenotypes may  include the expression of flagella, sensing apparati used for\nphoto- and chemotactic behaviour, and quorum sensing pathways. Please request more specific child terms, as needed.
 is_a: OMP:0007645 ! microbial lifestyle phenotype
 created_by: siegele
 creation_date: 2017-07-24T14:45:18Z
@@ -15664,7 +15663,6 @@ name: altered subcellular component phenotype
 def: "A cellular physical quality phenotype where the amount, distribution, composition, or morphology of a microbial cell part is altered relative to a designated control." [OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "abnormal subcellular component" NARROW [FYPO:0007751]
-xref: XX:<new xref>
 is_a: OMP:0007637 ! altered cellular physical quality phenotype
 is_a: OMP:0007750 ! subcellular component phenotype
 created_by: siegele
@@ -15715,8 +15713,12 @@ creation_date: 2018-01-20T00:04:25Z
 
 [Term]
 id: OMP:0007757
-name: more rounded vegetative cell shape
+name: more rounded vegetative cell
+def: "An altered cell shape phenotype seen in the vegetative growth phase of the life cycle where a cell's shape is more spherical than that of a designated control. In more rounded cells, there is much less difference between the long and short axes of the cell than in the designated control cells." [OMP:das]
+synonym: "more spherical vegetative cell" EXACT []
+synonym: "spheroid vegetative cell" NARROW [FYPO:0000021]
 is_a: OMP:0007102 ! more rounded cell shape
+is_a: OMP:0007708 ! altered vegetative cell shape
 created_by: siegele
 creation_date: 2018-01-20T00:23:41Z
 
@@ -16024,7 +16026,7 @@ creation_date: 2017-10-23T14:52:25Z
 [Term]
 id: OMP:0008037
 name: altered natural competence
-def: "A natural competence phenotype where the rate, frequency, timing, or extent of natural competence is altered relative to a designated control." []
+def: "A natural competence phenotype where the rate, frequency, timing, or extent of natural competence is altered relative to a designated control." [OMP:das]
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0008035 ! natural competence phenotype
 created_by: Tianyizhou
