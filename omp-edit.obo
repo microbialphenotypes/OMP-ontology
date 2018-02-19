@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 23:10:2017 18:01
+date: 19:02:2018 13:30
 saved-by: Tianyizhou
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -15233,7 +15233,7 @@ creation_date: 2017-10-23T14:52:25Z
 [Term]
 id: OMP:0008037
 name: altered natural competence
-def: "A natural competence phenotype where the rate, frequency, timing, or extent of natural competence is altered relative to a designated control." []
+def: "A natural competence phenotype where the rate, frequency, timing, or extent of natural competence is altered relative to a designated control." [OMP:TZ]
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0008035 ! natural competence phenotype
 created_by: Tianyizhou
@@ -15250,7 +15250,7 @@ creation_date: 2017-10-23T14:52:33Z
 [Term]
 id: OMP:0008039
 name: decreased natural competence
-def: "An altered natural competence  phenotype where the where the rate, frequency, timing, or extent of natural competence is decreased relative to a designated control." []
+def: "An altered natural competence  phenotype where the where the rate, frequency, timing, or extent of natural competence is decreased relative to a designated control." [OMP:TZ]
 is_a: OMP:0008037 ! altered natural competence
 created_by: Tianyizhou
 creation_date: 2017-10-23T15:15:23Z
@@ -15258,7 +15258,7 @@ creation_date: 2017-10-23T15:15:23Z
 [Term]
 id: OMP:0008040
 name: increased natural competence
-def: "An altered natural competence  phenotype where the where the rate, frequency, timing, or extent of natural competence is increased relative to a designated control." [OMP:tz]
+def: "An altered natural competence  phenotype where the where the rate, frequency, timing, or extent of natural competence is increased relative to a designated control." [OMP:TZ]
 is_a: OMP:0008037 ! altered natural competence
 created_by: Tianyizhou
 creation_date: 2017-10-23T15:15:35Z
@@ -15266,11 +15266,207 @@ creation_date: 2017-10-23T15:15:35Z
 [Term]
 id: OMP:0008041
 name: abolished natural competence
-def: "A decreased natural competence phenotype where the ability to be transformed by taking up extracellular DNA is abolished." [OMP:tz]
+def: "A decreased natural competence phenotype where the ability to be transformed by taking up extracellular DNA is abolished." [OMP:TZ]
 is_a: OMP:0008036 ! absence of natural competence
 is_a: OMP:0008039 ! decreased natural competence
 created_by: Tianyizhou
 creation_date: 2017-10-23T17:55:59Z
+
+[Term]
+id: OMP:0008042
+name: <new term>
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2017-12-12T17:15:03Z
+
+[Term]
+id: OMP:0008043
+name: plaque morphology phenotype
+def: "A bacteriophage plaque morphology phenotype that describe the appearance, size of viral plaques." [OMP:TZ]
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2017-12-12T17:17:11Z
+
+[Term]
+id: OMP:0008044
+name: plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype that describe the size of viral plaques." [OMP:TZ]
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2017-12-12T17:33:04Z
+
+[Term]
+id: OMP:0008045
+name: altered plaque morphology phenotype
+def: "A bacteriophage plaque morphology phenotype where the appearance, size of viral plaque is altered relative to a designated control." [OMP:TZ]
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2017-12-12T17:36:55Z
+
+[Term]
+id: OMP:0008046
+name: altered plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype where the size of viral plaque is altered relative to a designated control." []
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2017-12-12T17:39:30Z
+
+[Term]
+id: OMP:0008047
+name: plaque appearance phenotype
+def: "A bacteriophage plaque morphology phenotype that describe the appearance of viral plaques." []
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2017-12-12T17:41:00Z
+
+[Term]
+id: OMP:0008048
+name: altered plaque morphology phenotype
+def: "A bacteriophage plaque morphology phenotype where the appearance and the size of the plaque is altered to a designated control." [OMP:TZ]
+is_a: OMP:0007238 ! sensitive to bacteriophage
+created_by: Tianyizhou
+creation_date: 2017-12-12T17:59:53Z
+
+[Term]
+id: OMP:0008049
+name: altered plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype where the size of viral plaque is altered relative to a designated control." [OMP:TZ]
+is_a: OMP:0008048 ! altered plaque morphology phenotype
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:02:15Z
+
+[Term]
+id: OMP:0008050
+name: plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype that describe the size of viral plaques." []
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:35:39Z
+
+[Term]
+id: OMP:0008051
+name: altered plaque appearance
+def: "A bacteriophage plaque morphology phenotype where the appearance of viral plaque is altered relative to a designated control." []
+is_a: OMP:0008048 ! altered plaque morphology phenotype
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:37:06Z
+
+[Term]
+id: OMP:0008052
+name: turbider plaque appearance
+def: "An altered bacteriophage plaque morphology phenotype where the appearance of viral plaque is more turbid relative to a designated control." []
+is_a: OMP:0008051 ! altered plaque appearance
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:38:28Z
+
+[Term]
+id: OMP:0008053
+name: clearer plaque appearance
+def: "An altered bacteriophage plaque morphology phenotype where the appearance of viral plaque is clearer relative to a designated control." []
+is_a: OMP:0008051 ! altered plaque appearance
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:39:01Z
+
+[Term]
+id: OMP:0008054
+name: increased plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype where the size of viral plaque is increased relative to a designated control." []
+is_a: OMP:0008049 ! altered plaque size phenotype
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:40:37Z
+
+[Term]
+id: OMP:0008055
+name: decreased plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype where the size of viral plaque is decreased relative to a designated control." []
+is_a: OMP:0008049 ! altered plaque size phenotype
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:41:48Z
+
+[Term]
+id: OMP:0008056
+name: <new term>
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2018-02-16T13:31:21Z
+
+[Term]
+id: OMP:0008057
+name: plaque morphology phenotype
+def: "A bacteriophage plaque morphology phenotype where the bacteria shows a certain size and appearance of the plaque." []
+is_a: OMP:0007238 ! sensitive to bacteriophage
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:16:46Z
+
+[Term]
+id: OMP:0008058
+name: plaque appearance phenotype
+def: "A bacteriophage plaque morphology phenotype where bacteria shows an appearance of the viral plaque." []
+is_a: OMP:0008057 ! plaque morphology phenotype
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:21:31Z
+
+[Term]
+id: OMP:0008059
+name: plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype where bacteria shows an size of the viral plaque." []
+is_a: OMP:0008057 ! plaque morphology phenotype
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:24:07Z
+
+[Term]
+id: OMP:0008060
+name: turbid plaque appearance
+def: "A bacteriophage plaque morphology phenotype where the viral plaque appears to be turbid." []
+is_a: OMP:0008058 ! plaque appearance phenotype
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:26:00Z
+
+[Term]
+id: OMP:0008061
+name: clear plaque appearance
+def: "A bacteriophage plaque morphology phenotype where the viral plaque appears to be clear." []
+is_a: OMP:0008058 ! plaque appearance phenotype
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:26:05Z
+
+[Term]
+id: OMP:0008062
+name: bull's eye plaque appearance morphology
+def: "An altered bacteriophage plaque morphology phenotype where the appearance of viral plaque has a high central density of surviving colonies and then a depletion region, followed by a high-colony-density region and then finally an apparently clear zone." []
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:31:45Z
+
+[Term]
+id: OMP:0008063
+name: altered to fuzzy edge plaque appearance
+def: "An altered bacteriophage plaque morphology phenotype where the appearance of viral plaque edge becomes fuzzy relative to a designated control." []
+comment: Some mutant in phage T4 will cause the edge of the plaque become fuzzy.
+is_a: OMP:0008051 ! altered plaque appearance
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:32:23Z
+
+[Term]
+id: OMP:0008064
+name: bull's eye plaque appearance
+def: "A bacteriophage plaque morphology phenotype where the appearance of viral plaque has a high central density of surviving colonies and then a depletion region, followed by a high-colony-density region and then finally an apparently clear zone." []
+comment: T7 will create bull's eye plaque on e.coli Hfr strain.
+synonym: "cocarde bacteriophage plaque phenotype" RELATED []
+synonym: "hazy bacteriophage plaque morphology" RELATED []
+is_a: OMP:0008058 ! plaque appearance phenotype
+created_by: Tianyizhou
+creation_date: 2018-02-16T17:34:00Z
+
+[Term]
+id: OMP:0008065
+name: altered to bull's eye plaque appearance
+def: "An altered bacteriophage plaque morphology phenotype where the appearance of viral plaque change from either clear or turbid to bull's eye." []
+synonym: "cocarde plaque morphology" RELATED []
+synonym: "hazy plaque morphology" RELATED []
+is_a: OMP:0008051 ! altered plaque appearance
+created_by: Tianyizhou
+creation_date: 2018-02-16T17:48:35Z
 
 [Term]
 id: PATO:0000001
