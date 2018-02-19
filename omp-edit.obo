@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 19:02:2018 13:30
+date: 19:02:2018 13:45
 saved-by: Tianyizhou
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -16066,13 +16066,6 @@ created_by: Tianyizhou
 creation_date: 2017-10-23T17:55:59Z
 
 [Term]
-id: OMP:0008042
-name: <new term>
-is_obsolete: true
-created_by: Tianyizhou
-creation_date: 2017-12-12T17:15:03Z
-
-[Term]
 id: OMP:0008043
 name: plaque morphology phenotype
 def: "A bacteriophage plaque morphology phenotype that describe the appearance, size of viral plaques." [OMP:TZ]
@@ -16175,13 +16168,6 @@ def: "A bacteriophage plaque morphology phenotype where the size of viral plaque
 is_a: OMP:0008049 ! altered plaque size phenotype
 created_by: Tianyizhou
 creation_date: 2017-12-12T18:41:48Z
-
-[Term]
-id: OMP:0008056
-name: <new term>
-is_obsolete: true
-created_by: Tianyizhou
-creation_date: 2018-02-16T13:31:21Z
 
 [Term]
 id: OMP:0008057
