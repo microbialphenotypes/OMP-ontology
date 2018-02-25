@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 19:02:2018 13:45
-saved-by: Tianyizhou
+date: 25:02:2018 00:12
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -5076,12 +5076,12 @@ creation_date: 2014-07-07T13:50:45Z
 [Term]
 id: OMP:0005115
 name: cell cycle phenotype
-def: "A growth phenotype that relates to the progression of biochemical and morphological events that occur in a cell during cell replication or nuclear replication events.  Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in some cells or organisms DNA replication and/or nuclear division may not be immediately followed by cell division." [GO:0007049, OMP:WAM]
+def: "A cellular process phenotype that relates to the progression of biochemical and morphological events that occur in a cell during cell replication or nuclear replication events.  Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in some cells or organisms DNA replication and/or nuclear division may not be immediately followed by cell division." [GO:0007049, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "cell division cycle " EXACT []
 synonym: "cell division phenotype" RELATED []
 xref: GO:0007049 "cell cycle"
-is_a: OMP:0007167 ! population growth phenotype
+is_a: OMP:0007332 ! cellular process phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:54:52Z
 
@@ -5266,7 +5266,8 @@ creation_date: 2014-07-17T17:39:39Z
 [Term]
 id: OMP:0005136
 name: altered cell cycle
-def: "A cell cycle phenotype where progression of the cell cycle is altered relative to a designated control." [OMP:WAM]
+def: "A cellular process phenotype where the progression of a microbial cell through the cell cycle is altered relative to a designated control." [OMP:WAM]
+synonym: "abnormal cell cycle" NARROW [FYPO:0000011]
 is_a: OMP:0005115 ! cell cycle phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 created_by: wmeza
@@ -5276,7 +5277,7 @@ creation_date: 2014-08-07T14:55:46Z
 id: OMP:0005137
 name: increased septation
 def: "An altered septation phenotype where formation of new cell septa is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007165 ! altered septation phenotype
+is_a: OMP:0007165 ! altered septation
 created_by: wmeza
 creation_date: 2014-08-07T14:57:39Z
 
@@ -5284,7 +5285,7 @@ creation_date: 2014-08-07T14:57:39Z
 id: OMP:0005138
 name: decreased septation
 def: "An altered septation phenotype where formation of new cell septa is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007165 ! altered septation phenotype
+is_a: OMP:0007165 ! altered septation
 created_by: wmeza
 creation_date: 2014-08-07T14:58:34Z
 
@@ -5669,32 +5670,32 @@ creation_date: 2016-05-21T09:57:50Z
 [Term]
 id: OMP:0005182
 name: actin cytoskeleton morphology phenotype
-def: "A cytoskeleton morphology phenotype relating to the part of the cytoskeleton that is composed of actin and associated proteins." [OMP:JG]
+def: "A subcellular component phenotype relating to the size, shape, or structure of the actin cytoskeleton of a microbial cell." [OMP:JG]
 xref: GO:00015629
-is_a: OMP:0005180 ! cytoskeleton morphology phenotype
+is_a: OMP:0007758 ! actin cytoskeleton phenotype
 created_by: Jesus
 creation_date: 2016-05-21T09:59:30Z
 
 [Term]
 id: OMP:0005183
 name: absence of actin cytoskeleton
-def: "An actin cytoskeleton morphology phenotype where a cell or cells lack an actin cytoskeleton." [OMP:JG]
-is_a: OMP:0005182 ! actin cytoskeleton morphology phenotype
+def: "An actin cytoskeleton phenotype where a microbial cell or cells lack an actin cytoskeleton." [OMP:JG]
+is_a: OMP:0007758 ! actin cytoskeleton phenotype
 created_by: Jesus
 creation_date: 2016-05-21T10:01:36Z
 
 [Term]
 id: OMP:0005184
 name: presence of actin cytoskeleton
-def: "An actin cytoskeleton morphology phenotype where a cell or cells exhibit an actin cytoskeleton." [OMP:JG]
-is_a: OMP:0005182 ! actin cytoskeleton morphology phenotype
+def: "An actin cytoskeleton phenotype where a microbial cell or cells exhibit an actin cytoskeleton." [OMP:JG]
+is_a: OMP:0007758 ! actin cytoskeleton phenotype
 created_by: Jesus
 creation_date: 2016-05-21T10:03:01Z
 
 [Term]
 id: OMP:0005185
 name: altered actin cytoskeleton morphology
-def: "An actin cytoskeleton morphology phenotype where the morphology of the actin cytoskeleton is altered relative to a designated control." [OMP:JG]
+def: "An altered actin cytoskeleton phenotype where the size, shape, or structure of the actin cytoskeleton is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005181 ! altered cytoskeleton morphology phenotype
 is_a: OMP:0005182 ! actin cytoskeleton morphology phenotype
 is_a: OMP:0007753 ! altered actin cytoskeleton
@@ -10466,6 +10467,7 @@ creation_date: 2014-08-19T14:37:21Z
 id: OMP:0007149
 name: septation phenotype
 def: "A cytokinesis phenotype related to the process of forming a septum that separates daughter cells." [OMP:DAS]
+synonym: "abnormal septation" NARROW [FYPO:0000117]
 is_a: OMP:0007148 ! cytokinesis phenotype
 created_by: siegele
 creation_date: 2014-08-19T14:52:08Z
@@ -10609,7 +10611,7 @@ creation_date: 2014-09-14T14:54:10Z
 
 [Term]
 id: OMP:0007165
-name: altered septation phenotype
+name: altered septation
 def: "A septation phenotype where the process of forming a septum between daughter cells is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007149 ! septation phenotype
 created_by: siegele
@@ -15721,6 +15723,73 @@ is_a: OMP:0007102 ! more rounded cell shape
 is_a: OMP:0007708 ! altered vegetative cell shape
 created_by: siegele
 creation_date: 2018-01-20T00:23:41Z
+
+[Term]
+id: OMP:0007758
+name: actin cytoskeleton phenotype
+def: "A subcellular component phenotype relating to the amount, distribution, composition, or morphology of the actin cytoskeleton of a microbial cell." [OMP:das]
+is_a: OMP:0007754 ! cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:27:37Z
+
+[Term]
+id: OMP:0007759
+name: microtubule cytoskeleton phenotype
+def: "A subcellular component phenotype relating to the amount, distribution, composition, or morphology of the microtubule cytoskeleton of a microbial cell." [OMP:das]
+is_a: OMP:0007754 ! cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:27:37Z
+
+[Term]
+id: OMP:0007760
+name: altered actin cytoskeleton
+def: "An actin cytoskeleton phenotype where the amount, distribution, or morphology of all or part of the actin cytoskeleton is altered relative to a designated control." [OMP:das]
+synonym: "abnormal actin cytoskeleton" NARROW [FYPO:0005665]
+is_a: OMP:0007758 ! actin cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:35:18Z
+
+[Term]
+id: OMP:0007761
+name: altered microtubule cytoskeleton
+def: "A microtubule cytoskeleton phenotype where the amount, distribution, or morphology of all or part of the microtubule cytoskeleton is altered relative to a designated control." [OMP:das]
+synonym: "abnormal microtubule cytoskeleton" NARROW [FYPO:0002399]
+is_a: OMP:0007759 ! microtubule cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:37:57Z
+
+[Term]
+id: OMP:0007762
+name: presence of microtubule cytoskeleton
+def: "A microtubule cytoskeleton phenotype where a microbial cell or cells exhibit a microtubule cytoskeleton." [OMP:das]
+is_a: OMP:0007759 ! microtubule cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:40:45Z
+
+[Term]
+id: OMP:0007763
+name: absence of microtubule cytoskeleton
+def: "A microtubule cytoskeleton phenotype where a microbial cell or cells lack a microtubule cytoskeleton." [OMP:das]
+is_a: OMP:0007759 ! microtubule cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:40:45Z
+
+[Term]
+id: OMP:0007764
+name: altered microtubule cytoskeleton morphology
+def: "A microtubule cytoskeleton morphology phenotype where the size, shape, or structure of the microtubule cytoskeleton is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007759 ! microtubule cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:40:45Z
+
+[Term]
+id: OMP:0007765
+name: altered actin cortical patch localization
+def: "A cellular process phenotype observed in the vegetative growth phase of the life cycle in which actin cortical patch localization is altered relative to a designated control." [OMP:das]
+synonym: "abnormal actin cortical patch localization" NARROW [FYPO:0000190]
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:59:02Z
 
 [Term]
 id: OMP:0008000
