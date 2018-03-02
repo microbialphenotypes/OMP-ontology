@@ -1,8 +1,8 @@
 format-version: 1.2
-data-version: releases/2018-02-02
-date: 29:01:2018 17:24
+data-version: releases/2018-03-02
+date: 25:02:2018 00:12
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -5122,12 +5122,12 @@ creation_date: 2014-07-07T13:50:45Z
 [Term]
 id: OMP:0005115
 name: cell cycle phenotype
-def: "A growth phenotype that relates to the progression of biochemical and morphological events that occur in a cell during cell replication or nuclear replication events.  Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in some cells or organisms DNA replication and/or nuclear division may not be immediately followed by cell division." [GO:0007049, OMP:WAM]
+def: "A cellular process phenotype that relates to the progression of biochemical and morphological events that occur in a cell during cell replication or nuclear replication events.  Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in some cells or organisms DNA replication and/or nuclear division may not be immediately followed by cell division." [GO:0007049, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "cell division cycle " EXACT []
 synonym: "cell division phenotype" RELATED []
 xref: GO:0007049 "cell cycle"
-is_a: OMP:0007167 ! population growth phenotype
+is_a: OMP:0007332 ! cellular process phenotype
 created_by: wmeza
 creation_date: 2014-08-07T14:54:52Z
 
@@ -5314,7 +5314,8 @@ creation_date: 2014-07-17T17:39:39Z
 [Term]
 id: OMP:0005136
 name: altered cell cycle
-def: "A cell cycle phenotype where progression of the cell cycle is altered relative to a designated control." [OMP:WAM]
+def: "A cellular process phenotype where the progression of a microbial cell through the cell cycle is altered relative to a designated control." [OMP:WAM]
+synonym: "abnormal cell cycle" NARROW [FYPO:0000011]
 is_a: OMP:0005115 ! cell cycle phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 created_by: wmeza
@@ -5324,7 +5325,7 @@ creation_date: 2014-08-07T14:55:46Z
 id: OMP:0005137
 name: increased septation
 def: "An altered septation phenotype where formation of new cell septa is increased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007165 ! altered septation phenotype
+is_a: OMP:0007165 ! altered septation
 created_by: wmeza
 creation_date: 2014-08-07T14:57:39Z
 
@@ -5332,7 +5333,7 @@ creation_date: 2014-08-07T14:57:39Z
 id: OMP:0005138
 name: decreased septation
 def: "An altered septation phenotype where formation of new cell septa is decreased relative to a designated control." [OMP:WAM]
-is_a: OMP:0007165 ! altered septation phenotype
+is_a: OMP:0007165 ! altered septation
 created_by: wmeza
 creation_date: 2014-08-07T14:58:34Z
 
@@ -5725,32 +5726,32 @@ creation_date: 2016-05-21T09:57:50Z
 [Term]
 id: OMP:0005182
 name: actin cytoskeleton morphology phenotype
-def: "A cytoskeleton morphology phenotype relating to the part of the cytoskeleton that is composed of actin and associated proteins." [OMP:JG]
+def: "A subcellular component phenotype relating to the size, shape, or structure of the actin cytoskeleton of a microbial cell." [OMP:JG]
 xref: GO:00015629
-is_a: OMP:0005180 ! cytoskeleton morphology phenotype
+is_a: OMP:0007758 ! actin cytoskeleton phenotype
 created_by: Jesus
 creation_date: 2016-05-21T09:59:30Z
 
 [Term]
 id: OMP:0005183
 name: absence of actin cytoskeleton
-def: "An actin cytoskeleton morphology phenotype where a cell or cells lack an actin cytoskeleton." [OMP:JG]
-is_a: OMP:0005182 ! actin cytoskeleton morphology phenotype
+def: "An actin cytoskeleton phenotype where a microbial cell or cells lack an actin cytoskeleton." [OMP:JG]
+is_a: OMP:0007758 ! actin cytoskeleton phenotype
 created_by: Jesus
 creation_date: 2016-05-21T10:01:36Z
 
 [Term]
 id: OMP:0005184
 name: presence of actin cytoskeleton
-def: "An actin cytoskeleton morphology phenotype where a cell or cells exhibit an actin cytoskeleton." [OMP:JG]
-is_a: OMP:0005182 ! actin cytoskeleton morphology phenotype
+def: "An actin cytoskeleton phenotype where a microbial cell or cells exhibit an actin cytoskeleton." [OMP:JG]
+is_a: OMP:0007758 ! actin cytoskeleton phenotype
 created_by: Jesus
 creation_date: 2016-05-21T10:03:01Z
 
 [Term]
 id: OMP:0005185
 name: altered actin cytoskeleton morphology
-def: "An actin cytoskeleton morphology phenotype where the morphology of the actin cytoskeleton is altered relative to a designated control." [OMP:JG]
+def: "An altered actin cytoskeleton phenotype where the size, shape, or structure of the actin cytoskeleton is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005181 ! altered cytoskeleton morphology phenotype
 is_a: OMP:0005182 ! actin cytoskeleton morphology phenotype
 is_a: OMP:0007753 ! altered actin cytoskeleton
@@ -10547,6 +10548,7 @@ creation_date: 2014-08-19T14:37:21Z
 id: OMP:0007149
 name: septation phenotype
 def: "A cytokinesis phenotype related to the process of forming a septum that separates daughter cells." [OMP:DAS]
+synonym: "abnormal septation" NARROW [FYPO:0000117]
 is_a: OMP:0007148 ! cytokinesis phenotype
 created_by: siegele
 creation_date: 2014-08-19T14:52:08Z
@@ -10690,7 +10692,7 @@ creation_date: 2014-09-14T14:54:10Z
 
 [Term]
 id: OMP:0007165
-name: altered septation phenotype
+name: altered septation
 def: "A septation phenotype where the process of forming a septum between daughter cells is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007149 ! septation phenotype
 created_by: siegele
@@ -15823,6 +15825,73 @@ created_by: siegele
 creation_date: 2018-01-20T00:23:41Z
 
 [Term]
+id: OMP:0007758
+name: actin cytoskeleton phenotype
+def: "A subcellular component phenotype relating to the amount, distribution, composition, or morphology of the actin cytoskeleton of a microbial cell." [OMP:das]
+is_a: OMP:0007754 ! cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:27:37Z
+
+[Term]
+id: OMP:0007759
+name: microtubule cytoskeleton phenotype
+def: "A subcellular component phenotype relating to the amount, distribution, composition, or morphology of the microtubule cytoskeleton of a microbial cell." [OMP:das]
+is_a: OMP:0007754 ! cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:27:37Z
+
+[Term]
+id: OMP:0007760
+name: altered actin cytoskeleton
+def: "An actin cytoskeleton phenotype where the amount, distribution, or morphology of all or part of the actin cytoskeleton is altered relative to a designated control." [OMP:das]
+synonym: "abnormal actin cytoskeleton" NARROW [FYPO:0005665]
+is_a: OMP:0007758 ! actin cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:35:18Z
+
+[Term]
+id: OMP:0007761
+name: altered microtubule cytoskeleton
+def: "A microtubule cytoskeleton phenotype where the amount, distribution, or morphology of all or part of the microtubule cytoskeleton is altered relative to a designated control." [OMP:das]
+synonym: "abnormal microtubule cytoskeleton" NARROW [FYPO:0002399]
+is_a: OMP:0007759 ! microtubule cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:37:57Z
+
+[Term]
+id: OMP:0007762
+name: presence of microtubule cytoskeleton
+def: "A microtubule cytoskeleton phenotype where a microbial cell or cells exhibit a microtubule cytoskeleton." [OMP:das]
+is_a: OMP:0007759 ! microtubule cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:40:45Z
+
+[Term]
+id: OMP:0007763
+name: absence of microtubule cytoskeleton
+def: "A microtubule cytoskeleton phenotype where a microbial cell or cells lack a microtubule cytoskeleton." [OMP:das]
+is_a: OMP:0007759 ! microtubule cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:40:45Z
+
+[Term]
+id: OMP:0007764
+name: altered microtubule cytoskeleton morphology
+def: "A microtubule cytoskeleton morphology phenotype where the size, shape, or structure of the microtubule cytoskeleton is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007759 ! microtubule cytoskeleton phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:40:45Z
+
+[Term]
+id: OMP:0007765
+name: altered actin cortical patch localization
+def: "A cellular process phenotype observed in the vegetative growth phase of the life cycle in which actin cortical patch localization is altered relative to a designated control." [OMP:das]
+synonym: "abnormal actin cortical patch localization" NARROW [FYPO:0000190]
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: siegele
+creation_date: 2018-02-24T23:59:02Z
+
+[Term]
 id: OMP:0008000
 name: spore morphology phenotype
 def: "A microbial phenotype that is related to the form and structure of a spore or spores produced by a microbe." [OMP:KDA]
@@ -16126,7 +16195,7 @@ creation_date: 2017-10-23T14:52:25Z
 [Term]
 id: OMP:0008037
 name: altered natural competence
-def: "A natural competence phenotype where the rate, frequency, timing, or extent of natural competence is altered relative to a designated control." [OMP:das]
+def: "A natural competence phenotype where the rate, frequency, timing, or extent of natural competence is altered relative to a designated control." [OMP:TZ]
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0008035 ! natural competence phenotype
 created_by: Tianyizhou
@@ -16143,7 +16212,7 @@ creation_date: 2017-10-23T14:52:33Z
 [Term]
 id: OMP:0008039
 name: decreased natural competence
-def: "An altered natural competence  phenotype where the where the rate, frequency, timing, or extent of natural competence is decreased relative to a designated control." []
+def: "An altered natural competence  phenotype where the where the rate, frequency, timing, or extent of natural competence is decreased relative to a designated control." [OMP:TZ]
 is_a: OMP:0008037 ! altered natural competence
 created_by: Tianyizhou
 creation_date: 2017-10-23T15:15:23Z
@@ -16151,7 +16220,7 @@ creation_date: 2017-10-23T15:15:23Z
 [Term]
 id: OMP:0008040
 name: increased natural competence
-def: "An altered natural competence  phenotype where the where the rate, frequency, timing, or extent of natural competence is increased relative to a designated control." [OMP:tz]
+def: "An altered natural competence  phenotype where the where the rate, frequency, timing, or extent of natural competence is increased relative to a designated control." [OMP:TZ]
 is_a: OMP:0008037 ! altered natural competence
 created_by: Tianyizhou
 creation_date: 2017-10-23T15:15:35Z
@@ -16159,11 +16228,193 @@ creation_date: 2017-10-23T15:15:35Z
 [Term]
 id: OMP:0008041
 name: abolished natural competence
-def: "A decreased natural competence phenotype where the ability to be transformed by taking up extracellular DNA is abolished." [OMP:tz]
+def: "A decreased natural competence phenotype where the ability to be transformed by taking up extracellular DNA is abolished." [OMP:TZ]
 is_a: OMP:0008036 ! absence of natural competence
 is_a: OMP:0008039 ! decreased natural competence
 created_by: Tianyizhou
 creation_date: 2017-10-23T17:55:59Z
+
+[Term]
+id: OMP:0008043
+name: plaque morphology phenotype
+def: "A bacteriophage plaque morphology phenotype that describe the appearance, size of viral plaques." [OMP:TZ]
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2017-12-12T17:17:11Z
+
+[Term]
+id: OMP:0008044
+name: plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype that describe the size of viral plaques." [OMP:TZ]
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2017-12-12T17:33:04Z
+
+[Term]
+id: OMP:0008045
+name: altered plaque morphology phenotype
+def: "A bacteriophage plaque morphology phenotype where the appearance, size of viral plaque is altered relative to a designated control." [OMP:TZ]
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2017-12-12T17:36:55Z
+
+[Term]
+id: OMP:0008046
+name: altered plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype where the size of viral plaque is altered relative to a designated control." []
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2017-12-12T17:39:30Z
+
+[Term]
+id: OMP:0008047
+name: plaque appearance phenotype
+def: "A bacteriophage plaque morphology phenotype that describe the appearance of viral plaques." []
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2017-12-12T17:41:00Z
+
+[Term]
+id: OMP:0008048
+name: altered plaque morphology phenotype
+def: "A bacteriophage plaque morphology phenotype where the appearance and the size of the plaque is altered to a designated control." [OMP:TZ]
+is_a: OMP:0007238 ! sensitive to bacteriophage
+created_by: Tianyizhou
+creation_date: 2017-12-12T17:59:53Z
+
+[Term]
+id: OMP:0008049
+name: altered plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype where the size of viral plaque is altered relative to a designated control." [OMP:TZ]
+is_a: OMP:0008048 ! altered plaque morphology phenotype
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:02:15Z
+
+[Term]
+id: OMP:0008050
+name: plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype that describe the size of viral plaques." []
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:35:39Z
+
+[Term]
+id: OMP:0008051
+name: altered plaque appearance
+def: "A bacteriophage plaque morphology phenotype where the appearance of viral plaque is altered relative to a designated control." []
+is_a: OMP:0008048 ! altered plaque morphology phenotype
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:37:06Z
+
+[Term]
+id: OMP:0008052
+name: turbider plaque appearance
+def: "An altered bacteriophage plaque morphology phenotype where the appearance of viral plaque is more turbid relative to a designated control." []
+is_a: OMP:0008051 ! altered plaque appearance
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:38:28Z
+
+[Term]
+id: OMP:0008053
+name: clearer plaque appearance
+def: "An altered bacteriophage plaque morphology phenotype where the appearance of viral plaque is clearer relative to a designated control." []
+is_a: OMP:0008051 ! altered plaque appearance
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:39:01Z
+
+[Term]
+id: OMP:0008054
+name: increased plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype where the size of viral plaque is increased relative to a designated control." []
+is_a: OMP:0008049 ! altered plaque size phenotype
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:40:37Z
+
+[Term]
+id: OMP:0008055
+name: decreased plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype where the size of viral plaque is decreased relative to a designated control." []
+is_a: OMP:0008049 ! altered plaque size phenotype
+created_by: Tianyizhou
+creation_date: 2017-12-12T18:41:48Z
+
+[Term]
+id: OMP:0008057
+name: plaque morphology phenotype
+def: "A bacteriophage plaque morphology phenotype where the bacteria shows a certain size and appearance of the plaque." []
+is_a: OMP:0007238 ! sensitive to bacteriophage
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:16:46Z
+
+[Term]
+id: OMP:0008058
+name: plaque appearance phenotype
+def: "A bacteriophage plaque morphology phenotype where bacteria shows an appearance of the viral plaque." []
+is_a: OMP:0008057 ! plaque morphology phenotype
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:21:31Z
+
+[Term]
+id: OMP:0008059
+name: plaque size phenotype
+def: "A bacteriophage plaque morphology phenotype where bacteria shows an size of the viral plaque." []
+is_a: OMP:0008057 ! plaque morphology phenotype
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:24:07Z
+
+[Term]
+id: OMP:0008060
+name: turbid plaque appearance
+def: "A bacteriophage plaque morphology phenotype where the viral plaque appears to be turbid." []
+is_a: OMP:0008058 ! plaque appearance phenotype
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:26:00Z
+
+[Term]
+id: OMP:0008061
+name: clear plaque appearance
+def: "A bacteriophage plaque morphology phenotype where the viral plaque appears to be clear." []
+is_a: OMP:0008058 ! plaque appearance phenotype
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:26:05Z
+
+[Term]
+id: OMP:0008062
+name: bull's eye plaque appearance morphology
+def: "An altered bacteriophage plaque morphology phenotype where the appearance of viral plaque has a high central density of surviving colonies and then a depletion region, followed by a high-colony-density region and then finally an apparently clear zone." []
+is_obsolete: true
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:31:45Z
+
+[Term]
+id: OMP:0008063
+name: altered to fuzzy edge plaque appearance
+def: "An altered bacteriophage plaque morphology phenotype where the appearance of viral plaque edge becomes fuzzy relative to a designated control." []
+comment: Some mutant in phage T4 will cause the edge of the plaque become fuzzy.
+is_a: OMP:0008051 ! altered plaque appearance
+created_by: Tianyizhou
+creation_date: 2018-02-16T16:32:23Z
+
+[Term]
+id: OMP:0008064
+name: bull's eye plaque appearance
+def: "A bacteriophage plaque morphology phenotype where the appearance of viral plaque has a high central density of surviving colonies and then a depletion region, followed by a high-colony-density region and then finally an apparently clear zone." []
+comment: T7 will create bull's eye plaque on e.coli Hfr strain.
+synonym: "cocarde bacteriophage plaque phenotype" RELATED []
+synonym: "hazy bacteriophage plaque morphology" RELATED []
+is_a: OMP:0008058 ! plaque appearance phenotype
+created_by: Tianyizhou
+creation_date: 2018-02-16T17:34:00Z
+
+[Term]
+id: OMP:0008065
+name: altered to bull's eye plaque appearance
+def: "An altered bacteriophage plaque morphology phenotype where the appearance of viral plaque change from either clear or turbid to bull's eye." []
+synonym: "cocarde plaque morphology" RELATED []
+synonym: "hazy plaque morphology" RELATED []
+is_a: OMP:0008051 ! altered plaque appearance
+created_by: Tianyizhou
+creation_date: 2018-02-16T17:48:35Z
 
 [Term]
 id: PATO:0000001
