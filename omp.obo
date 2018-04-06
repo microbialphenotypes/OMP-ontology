@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2018-03-02
-date: 25:02:2018 00:12
+data-version: releases/2018-04-06
+date: 13:03:2018 01:06
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -15890,6 +15890,50 @@ synonym: "abnormal actin cortical patch localization" NARROW [FYPO:0000190]
 is_a: OMP:0007332 ! cellular process phenotype
 created_by: siegele
 creation_date: 2018-02-24T23:59:02Z
+
+[Term]
+id: OMP:0007766
+name: subcellular component phenotype during vegetative growth
+def: "A physical cellular phenotype affecting the amount, distribution, morphology, or other physical characteristic of a cell part when the cell is in the vegetative growth phase of the life cycle." [FYPO:0001313, OMP:das]
+is_a: OMP:0007748 ! cellular physical quality phenotype during vegetative growth
+created_by: siegele
+creation_date: 2018-03-13T00:37:46Z
+
+[Term]
+id: OMP:0007767
+name: altered subcellular component phenotype during vegetative growth
+def: "A physical cellular phenotype observed in the vegetative growth phase of the life cycle where the amount, distribution, morphology, or other physical characteristic of a cell part is altered relative to a designated control." [OMP:das]
+synonym: "abnormal subcellular component during vegetative growth" NARROW [FYPO:0001322]
+is_a: OMP:0007766 ! subcellular component phenotype during vegetative growth
+created_by: siegele
+creation_date: 2018-03-13T00:41:59Z
+
+[Term]
+id: OMP:0007768
+name: altered septum during vegetative growth
+def: "A physical cellular phenotype observed in the vegetative growth phase of the life cycle in which the position or morphology of all or part of the septum is altered relative to a designated control." [OMP:das]
+synonym: "abnormal septum during vegetative growth" NARROW [FYPO:0002455]
+is_a: OMP:0007767 ! altered subcellular component phenotype during vegetative growth
+created_by: siegele
+creation_date: 2018-03-13T00:45:10Z
+
+[Term]
+id: OMP:0007769
+name: altered septum morphology during vegetative growth
+def: "A physical cellular phenotype observed in the vegetative growth phase of the life cycle in the which the size, shape, or structure of the septum is altered relative to a designated control." [OMP:das]
+synonym: "abnormal septum morphology during vegetative growth" NARROW [FYPO:0002023]
+is_a: OMP:0007768 ! altered septum during vegetative growth
+created_by: siegele
+creation_date: 2018-03-13T00:45:27Z
+
+[Term]
+id: OMP:0007770
+name: multiseptate vegetative cell
+def: "An altered physical cellular phenotype observed in the vegetative growth phase of the life cycle characterized by the presence of more than one septum in a cell." [FYPO:0000118, OMP:das]
+synonym: "multiseptate vegetative cell" EXACT [FYPO:0000118]
+is_a: OMP:0007767 ! altered subcellular component phenotype during vegetative growth
+created_by: siegele
+creation_date: 2018-03-13T01:01:28Z
 
 [Term]
 id: OMP:0008000
