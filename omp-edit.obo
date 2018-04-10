@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 13:03:2018 01:06
+date: 10:04:2018 02:00
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -9458,7 +9458,7 @@ creation_date: 2013-09-28T21:08:02Z
 [Term]
 id: OMP:0007038
 name: amino acid requirement
-def: "A requires growth factor(s) phenotype where the required growth factor is an amino acid." [OMP:DAS]
+def: "A growth factor requirement phenotype where the required growth factor is one or more amino acids." [OMP:DAS]
 synonym: "homocysteine requirement" NARROW [CHEBI:17230]
 synonym: "isoleucine requirement" NARROW [CHEBI:24898]
 synonym: "methionine requirement" NARROW [CHEBI:16811]
@@ -9730,7 +9730,7 @@ creation_date: 2014-02-03T16:09:27Z
 [Term]
 id: OMP:0007069
 name: requires growth factor(s)
-def: "A growth factor requirement phenotype where an organism is unable to synthesize an organic compound required for its growth and reproduction." [OMP:DAS]
+def: "A growth factor requirement phenotype where a microorganism is unable to synthesize an organic compound that is required for growth and reproduction. The required growth factor must be added to the growth medium." [OMP:DAS]
 synonym: "auxotroph" EXACT []
 synonym: "auxotrophic" EXACT []
 is_a: OMP:0007044 ! growth factor requirement phenotype
@@ -9839,6 +9839,7 @@ creation_date: 2014-08-11T16:32:07Z
 id: OMP:0007081
 name: altered purine requirement
 def: "An altered growth factor requirement phenotype where the requirement for a purine base as a growth factor is altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0007039 ! purine requirement
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-04-30T16:03:42Z
@@ -9847,6 +9848,7 @@ creation_date: 2014-04-30T16:03:42Z
 id: OMP:0007082
 name: altered vitamin/enzyme cofactor requirement
 def: "An altered growth factor requirement phenotype where the requirement for a vitamin/enzyme cofactor in the growth medium s altered relative to a designated control." [OMP:JCH]
+is_a: OMP:0007040 ! vitamin/enzyme cofactor requirement
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: siegele
 creation_date: 2014-04-30T16:07:16Z
@@ -12260,6 +12262,7 @@ creation_date: 2016-06-09T23:07:17Z
 id: OMP:0007354
 name: altered amino acid requirement
 def: "An altered growth factor requirement phenotype where the requirement for an amino acid in the growth medium is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007038 ! amino acid requirement
 is_a: OMP:0007079 ! altered growth factor requirement
 created_by: dsiegele
 creation_date: 2016-06-16T15:56:40Z
@@ -12549,6 +12552,7 @@ id: OMP:0007387
 name: altered pyrimidine requirement
 def: "An altered growth factor requirement phenotype where the requirement for a pyrimidine base as a growth factor is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007079 ! altered growth factor requirement
+is_a: OMP:0007379 ! pyrimidine requirement
 created_by: dsiegele
 creation_date: 2016-06-29T15:45:39Z
 
@@ -15836,6 +15840,14 @@ created_by: siegele
 creation_date: 2018-03-13T01:01:28Z
 
 [Term]
+id: OMP:0007772
+name: altered vegetative population growth
+def: "A population growth phenotype observed in the vegetative phase of the life cycle where the rate or extent of reproduction of a microbial population is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007157 ! altered population growth
+created_by: siegele
+creation_date: 2018-04-07T23:03:53Z
+
+[Term]
 id: OMP:0008000
 name: spore morphology phenotype
 def: "A microbial phenotype that is related to the form and structure of a spore or spores produced by a microbe." [OMP:KDA]
@@ -16252,8 +16264,8 @@ creation_date: 2017-12-12T18:37:06Z
 
 [Term]
 id: OMP:0008052
-name: turbider plaque appearance
-def: "An altered bacteriophage plaque morphology phenotype where the appearance of viral plaque is more turbid relative to a designated control." []
+name: more turbid plaque appearance
+def: "An altered bacteriophage plaque morphology phenotype where the appearance of a viral plaque is more turbid than a designated control." [OMP:tz]
 is_a: OMP:0008051 ! altered plaque appearance
 created_by: Tianyizhou
 creation_date: 2017-12-12T18:38:28Z
@@ -16309,7 +16321,7 @@ creation_date: 2018-02-16T16:24:07Z
 [Term]
 id: OMP:0008060
 name: turbid plaque appearance
-def: "A bacteriophage plaque morphology phenotype where the viral plaque appears to be turbid." []
+def: "A bacteriophage plaque morphology phenotype where the viral plaque has a turbid appearance." [OMP:tz]
 is_a: OMP:0008058 ! plaque appearance phenotype
 created_by: Tianyizhou
 creation_date: 2018-02-16T16:26:00Z
