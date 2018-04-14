@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 10:04:2018 02:00
+date: 14:04:2018 18:40
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1708,7 +1708,7 @@ creation_date: 2011-06-07T11:25:05Z
 id: OMP:0000039
 name: oxygen growth range phenotype
 def: "A growth range phenotype dealing with oxygen requirements and the range of oxygen concentrations that allow for growth." [OMP:WAM]
-is_a: OMP:0007192 ! growth range phenotype
+is_a: OMP:0007192 ! population growth range phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:36:04Z
 
@@ -4110,7 +4110,7 @@ id: OMP:0005002
 name: temperature growth range phenotype
 def: "A growth phenotype where the trait in question is the range of temperatures where growth of the microbe can occur." [OMP:WAM]
 synonym: "temperature requirement for growth" NARROW []
-is_a: OMP:0007192 ! growth range phenotype
+is_a: OMP:0007192 ! population growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:06:05Z
 
@@ -4158,7 +4158,7 @@ creation_date: 2013-09-04T13:40:27Z
 id: OMP:0005008
 name: pH growth range phenotype
 def: "A growth range phenotype related to the pH range that allows growth of a cell or organism." [OMP:WAM]
-is_a: OMP:0007192 ! growth range phenotype
+is_a: OMP:0007192 ! population growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:57:28Z
 
@@ -4190,7 +4190,7 @@ creation_date: 2013-09-04T16:24:24Z
 id: OMP:0005012
 name: pressure growth range phenotype
 def: "A growth range phenotype dealing with the pressure requirements for growth of an organism or cell." [OMP:WAM]
-is_a: OMP:0007192 ! growth range phenotype
+is_a: OMP:0007192 ! population growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:42:28Z
 
@@ -4198,7 +4198,7 @@ creation_date: 2013-09-09T11:42:28Z
 id: OMP:0005013
 name: solute and water activity growth range phenotype
 def: "A growth range phenotype dealing with the range of solute concentrations (water activity) that permit growth and proliferation of a microbe." [OMP:WAM]
-is_a: OMP:0007192 ! growth range phenotype
+is_a: OMP:0007192 ! population growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:43:45Z
 
@@ -10856,8 +10856,8 @@ creation_date: 2014-10-04T01:44:57Z
 
 [Term]
 id: OMP:0007192
-name: growth range phenotype
-def: "A growth phenotype related to non-nutrient environmental factors and the requirements for microbial growth." [ISBN:9780073402406, OMP:DAS]
+name: population growth range phenotype
+def: "A population growth phenotype related to non-nutrient environmental factors how they affect growth of microbial populations." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0007167 ! population growth phenotype
 created_by: siegele
 creation_date: 2014-10-04T18:41:07Z
@@ -13654,59 +13654,59 @@ creation_date: 2017-02-20T15:38:16Z
 
 [Term]
 id: OMP:0007516
-name: growth under high osmolarity phenotype
-def: "A growth range phenotype relating to the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth." [OMP:DAS]
+name: population growth in high osmolarity phenotype
+def: "A population growth phenotype relating to the growth of a microbial population in conditions of high osmolarity, which refers to osmotic conditions where the osmolarity of the environment is higher than the osmolarity that allows for optimal population growth. Population growth may refer to growth rate, growth yield, or both." [OMP:DAS]
 is_a: OMP:0005013 ! solute and water activity growth range phenotype
 created_by: dsiegele
 creation_date: 2017-02-20T15:58:54Z
 
 [Term]
 id: OMP:0007517
-name: presence of growth under high osmolarity
-def: "A growth under high osmolarity phenotype where a microbe can grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth." [OMP:DAS]
-is_a: OMP:0007516 ! growth under high osmolarity phenotype
+name: presence of population growth in high osmolarity
+def: "A population growth phenotype where population growth occurs in conditions of high osmolarity." [OMP:DAS]
+is_a: OMP:0007516 ! population growth in high osmolarity phenotype
 created_by: dsiegele
 creation_date: 2017-02-20T15:59:09Z
 
 [Term]
 id: OMP:0007518
-name: absence of growth under high osmolarity
-def: "A growth under high osmolarity phenotype where a microbe cannot grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth." [OMP:DAS]
-is_a: OMP:0007516 ! growth under high osmolarity phenotype
+name: absence of population growth in high osmolarity
+def: "A population growth phenotype where population growth doesn't occur under conditions of high osmolarity." [OMP:DAS]
+is_a: OMP:0007516 ! population growth in high osmolarity phenotype
 created_by: dsiegele
 creation_date: 2017-02-20T15:59:09Z
 
 [Term]
 id: OMP:0007519
-name: altered growth under high osmolarity
-def: "A growth under high osmolarity phenotype where the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007516 ! growth under high osmolarity phenotype
+name: altered population growth in high osmolarity
+def: "A population growth phenotype where the growth of a microbial population in conditions of high osmolarity is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007516 ! population growth in high osmolarity phenotype
 is_a: OMP:0007523 ! altered growth range
 created_by: dsiegele
 creation_date: 2017-02-20T15:59:09Z
 
 [Term]
 id: OMP:0007520
-name: increased growth under high osmolarity
-def: "An altered growth under high osmolarity phenotype where the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007519 ! altered growth under high osmolarity
+name: increased population growth in high osmolarity
+def: "An altered population growth in high osmolarity phenotype where growth of a microbial population in conditions of high osmolarity is increased relative to a designated control. Increased growth may reflect an increased growth rate (i.e., faster growth), increased growth yield, or both." [OMP:DAS]
+is_a: OMP:0007519 ! altered population growth in high osmolarity
 created_by: dsiegele
 creation_date: 2017-02-20T16:03:09Z
 
 [Term]
 id: OMP:0007521
-name: decreased growth under high osmolarity
-def: "An altered growth under high osmolarity phenotype where the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007519 ! altered growth under high osmolarity
+name: decreased population growth in high osmolarity
+def: "An altered growth in high osmolarity phenotype where growth of a microbial population in high osmolarity is decreased relative to a designated control. Decreased growth may reflect a reduced growth rate (i.e., slower growth), reduced growth yield, or both." [OMP:DAS]
+is_a: OMP:0007519 ! altered population growth in high osmolarity
 created_by: dsiegele
 creation_date: 2017-02-20T16:03:09Z
 
 [Term]
 id: OMP:0007522
-name: abolished growth under high osmolarity
-def: "A decreased growth under high osmolarity phenotype where the ability of a microbe to grow and proliferate when the osmolarity of the medium is higher than the osmolarity that allows optimal growth is abolished." [OMP:DAS]
-is_a: OMP:0007518 ! absence of growth under high osmolarity
-is_a: OMP:0007521 ! decreased growth under high osmolarity
+name: abolished population growth in high osmolarity
+def: "A decreased population growth in high osmolarity phenotype where growth of the microbial population is abolished in conditions of high osmolarity." [OMP:DAS]
+is_a: OMP:0007518 ! absence of population growth in high osmolarity
+is_a: OMP:0007521 ! decreased population growth in high osmolarity
 created_by: dsiegele
 creation_date: 2017-02-20T16:03:16Z
 
@@ -13715,7 +13715,7 @@ id: OMP:0007523
 name: altered growth range
 def: "A growth range phenotype where the ability of a microbe to grow and proliferate under a specified growth condition is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007085 ! altered microbial phenotype
-is_a: OMP:0007192 ! growth range phenotype
+is_a: OMP:0007192 ! population growth range phenotype
 created_by: dsiegele
 creation_date: 2017-02-20T16:06:25Z
 
