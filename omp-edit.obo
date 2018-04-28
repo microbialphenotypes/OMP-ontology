@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 14:04:2018 18:40
+date: 27:04:2018 01:17
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -13655,7 +13655,7 @@ creation_date: 2017-02-20T15:38:16Z
 [Term]
 id: OMP:0007516
 name: population growth in high osmolarity phenotype
-def: "A population growth phenotype relating to the growth of a microbial population in conditions of high osmolarity, which refers to osmotic conditions where the osmolarity of the environment is higher than the osmolarity that allows for optimal population growth. Population growth may refer to growth rate, growth yield, or both." [OMP:DAS]
+def: "A population growth phenotype relating to the vegetative growth of a microbial population in conditions of high osmolarity, which refers to osmotic conditions where the osmolarity of the environment is higher than the osmolarity that allows for optimal population growth. Population growth may refer to growth rate, growth yield, or both." [OMP:DAS]
 is_a: OMP:0005013 ! solute and water activity growth range phenotype
 created_by: dsiegele
 creation_date: 2017-02-20T15:58:54Z
@@ -13663,7 +13663,8 @@ creation_date: 2017-02-20T15:58:54Z
 [Term]
 id: OMP:0007517
 name: presence of population growth in high osmolarity
-def: "A population growth phenotype where population growth occurs in conditions of high osmolarity." [OMP:DAS]
+def: "A population growth phenotype where a microbial population can grow in conditions of high osmolarity." [OMP:DAS]
+synonym: "normal growth during cellular response to high osmolarity" RELATED [FYPO:0001022]
 is_a: OMP:0007516 ! population growth in high osmolarity phenotype
 created_by: dsiegele
 creation_date: 2017-02-20T15:59:09Z
@@ -13671,7 +13672,7 @@ creation_date: 2017-02-20T15:59:09Z
 [Term]
 id: OMP:0007518
 name: absence of population growth in high osmolarity
-def: "A population growth phenotype where population growth doesn't occur under conditions of high osmolarity." [OMP:DAS]
+def: "A population growth phenotype where a microbial population doesn't grow in conditions of high osmolarity." [OMP:DAS]
 is_a: OMP:0007516 ! population growth in high osmolarity phenotype
 created_by: dsiegele
 creation_date: 2017-02-20T15:59:09Z
