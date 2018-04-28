@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:04:2018 01:17
+date: 28:04:2018 17:45
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -10535,7 +10535,7 @@ creation_date: 2014-08-28T12:14:20Z
 [Term]
 id: OMP:0007157
 name: altered population growth
-def: "A population growth phenotype where the rate, frequency, timing, or extent of reproduction of a microbial population is altered relative to a designated control." [OMP:DAS]
+def: "A population growth phenotype where the rate and/or extent of reproduction of a microbial population is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007167 ! population growth phenotype
 is_a: OMP:0007351 ! altered biological process
 created_by: siegele
@@ -14354,7 +14354,7 @@ creation_date: 2017-06-26T20:24:54Z
 [Term]
 id: OMP:0007595
 name: presence of population growth
-def: "A population growth phenotype where there is reproduction of a microbial population, i.e. the number of individuals in the population increases." [OMP:DAS]
+def: "A population vegetative growth phenotype where there is reproduction of a microbial population, i.e. the number of individuals in the population increases." [OMP:DAS]
 is_a: OMP:0007167 ! population growth phenotype
 created_by: siegele
 creation_date: 2017-06-27T12:19:09Z
@@ -15841,12 +15841,75 @@ created_by: siegele
 creation_date: 2018-03-13T01:01:28Z
 
 [Term]
+id: OMP:0007771
+name: presence of population growth at alkaline pH
+is_a: OMP:0007595 ! presence of population growth
+created_by: siegele
+creation_date: 2018-04-28T15:51:32Z
+
+[Term]
 id: OMP:0007772
 name: altered vegetative population growth
 def: "A population growth phenotype observed in the vegetative phase of the life cycle where the rate or extent of reproduction of a microbial population is altered relative to a designated control." [OMP:das]
 is_a: OMP:0007157 ! altered population growth
 created_by: siegele
 creation_date: 2018-04-07T23:03:53Z
+
+[Term]
+id: OMP:0007773
+name: presence of population growth on defined medium
+def: "A population growth phenotype where a microbial population is able to grow on a defined medium." [OMP:DAS]
+is_a: OMP:0007774 ! population growth on defined medium phenotype
+created_by: siegele
+creation_date: 2018-04-28T16:17:10Z
+
+[Term]
+id: OMP:0007774
+name: population growth on defined medium phenotype
+def: "A population growth phenotype relating to the growth of a microbial population in the vegetative phase of the life cycle to reproduce on a defined medium." [OMP:das]
+is_a: OMP:0007167 ! population growth phenotype
+created_by: siegele
+creation_date: 2018-04-28T16:19:32Z
+
+[Term]
+id: OMP:0007775
+name: altered population growth on defined medium
+def: "A population growth on defined medium phenotype where the rate and/or extent of growth on defined medium is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007774 ! population growth on defined medium phenotype
+created_by: siegele
+creation_date: 2018-04-28T16:20:12Z
+
+[Term]
+id: OMP:0007776
+name: decreased population growth on defined medium
+def: "An altered population growth on defined medium phenotype where the rate and/or extent of growth on defined medium is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007775 ! altered population growth on defined medium
+created_by: siegele
+creation_date: 2018-04-28T16:22:29Z
+
+[Term]
+id: OMP:0007777
+name: abolished population growth on defined medium
+def: "An altered population growth on defined medium phenotype where the rate or extent of growth on defined medium is abolished." [OMP:das]
+is_a: OMP:0007776 ! decreased population growth on defined medium
+created_by: siegele
+creation_date: 2018-04-28T16:23:22Z
+
+[Term]
+id: OMP:0007778
+name: increased population growth on defined medium
+def: "A population growth on defined medium phenotype where the rate and/or extent of growth is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007775 ! altered population growth on defined medium
+created_by: siegele
+creation_date: 2018-04-28T16:23:56Z
+
+[Term]
+id: OMP:0007779
+name: absence of population growth on defined medium
+def: "A population growth on defined medium phenotype where a microbial population cannot grow on a specified defined medium." [OMP:das]
+is_a: OMP:0007774 ! population growth on defined medium phenotype
+created_by: siegele
+creation_date: 2018-04-28T16:25:49Z
 
 [Term]
 id: OMP:0008000
