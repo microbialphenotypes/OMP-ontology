@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 28:04:2018 17:45
+date: 08:06:2018 17:49
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -11436,8 +11436,9 @@ creation_date: 2015-07-31T13:26:07Z
 [Term]
 id: OMP:0007259
 name: cell viability phenotype
-def: "A microbial phenotype related to the ability of a microorganism, cell, or cells to survive and go on to grow and reproduce under the specified conditions." [FYPO:0000004, OMP:DAS]
-is_a: OMP:0000000 ! microbial phenotype
+def: "A cell phenotype related to the ability of a microbial cell to survive and go on to grow and reproduce under the specified conditions." [FYPO:0000004, OMP:DAS]
+synonym: "cell viability" EXACT [FYPO:0000004]
+is_a: OMP:0007633 ! cellular physical quality phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:47:33Z
 
@@ -12594,7 +12595,7 @@ creation_date: 2016-06-29T19:15:29Z
 [Term]
 id: OMP:0007392
 name: viable cell
-def: "A cell viability phenotype where a cell, cells, or organism is viable under the specified conditions." [OMP:DAS]
+def: "A cell viability phenotype where a microbial cell is viable under the specified conditions." [OMP:DAS]
 xref: FYPO:0000124 "viable cell"
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
@@ -12603,9 +12604,9 @@ creation_date: 2016-07-01T22:15:10Z
 [Term]
 id: OMP:0007393
 name: nonviable cell
-def: "A cell viability phenotype where a cell, cells, or organism is nonviable under the specified conditions." [OMP:DAS]
+def: "A cell viability phenotype where a microbial cell is nonviable under the specified conditions." [FYPO:0000049, OMP:DAS]
 synonym: "inviable" RELATED [APO:0000112]
-xref: FYPO:0000049 "inviable cell"
+synonym: "inviable cell" EXACT [FYPO:0000049]
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2016-07-01T22:15:10Z
@@ -15910,6 +15911,32 @@ def: "A population growth on defined medium phenotype where a microbial populati
 is_a: OMP:0007774 ! population growth on defined medium phenotype
 created_by: siegele
 creation_date: 2018-04-28T16:25:49Z
+
+[Term]
+id: OMP:0007780
+name: nonviable vegetative cell
+def: "A cell phenotype in which a cell in the vegetative growth phase of the life cycle is nonviable." [FYPO:0001489, OMP:das]
+is_a: OMP:0007393 ! nonviable cell
+created_by: siegele
+creation_date: 2018-06-08T17:22:34Z
+
+[Term]
+id: OMP:0007781
+name: septation following abnormal chromosome segregation
+def: "An inviable phenotype observed in the vegetative growth phase of the life cycle in which a cell undergoes septation despite abnormal chromosome segregation and gives rise to inviable daughter cells." [FYPO:0000323, OMP:das]
+synonym: "septation following abnormal mitotic chromosome segregation" NARROW [FYPO:0000323]
+is_a: OMP:0007780 ! nonviable vegetative cell
+created_by: siegele
+creation_date: 2018-06-08T17:31:26Z
+
+[Term]
+id: OMP:0007782
+name: cut cell
+def: "An inviable phenotype observed in the vegetative growth phase of the life cycle in which a cell undergoes septation in the absence of nuclear division, such that the septum physically divides the nucleus into two parts and produces inviable daughter cells." [FYPO:0003165, OMP:das]
+synonym: "cut" EXACT [FYPO:0003165]
+is_a: OMP:0007781 ! septation following abnormal chromosome segregation
+created_by: siegele
+creation_date: 2018-06-08T17:41:11Z
 
 [Term]
 id: OMP:0008000
