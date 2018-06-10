@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 08:06:2018 17:49
+date: 10:06:2018 02:15
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -15651,6 +15651,7 @@ creation_date: 2018-01-10T17:26:54Z
 [Term]
 id: OMP:0007749
 name: altered cellular physical quality phenotype during vegetative growth
+def: "A cellular physical quality phenotype observed during vegetative growth where a cellular physical quality of a microbial cell or cellular component is altered relative to a designated control." [OMP:das]
 is_a: OMP:0007637 ! altered cellular physical quality phenotype
 is_a: OMP:0007748 ! cellular physical quality phenotype during vegetative growth
 created_by: siegele
@@ -15793,7 +15794,7 @@ id: OMP:0007765
 name: altered actin cortical patch localization
 def: "A cellular process phenotype observed in the vegetative growth phase of the life cycle in which actin cortical patch localization is altered relative to a designated control." [OMP:das]
 synonym: "abnormal actin cortical patch localization" NARROW [FYPO:0000190]
-is_a: OMP:0007332 ! cellular process phenotype
+is_a: OMP:0007749 ! altered cellular physical quality phenotype during vegetative growth
 created_by: siegele
 creation_date: 2018-02-24T23:59:02Z
 
@@ -15937,6 +15938,91 @@ synonym: "cut" EXACT [FYPO:0003165]
 is_a: OMP:0007781 ! septation following abnormal chromosome segregation
 created_by: siegele
 creation_date: 2018-06-08T17:41:11Z
+
+[Term]
+id: OMP:0007783
+name: cellular process phenotype during vegetative growth
+def: "A phenotype that affects a cellular process in the vegetative phase of the life cycle." [FYPO:0001331, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+synonym: "cellular process phenotype during vegetative growth" EXACT [FYPO:0001331]
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: siegele
+creation_date: 2018-06-09T19:27:13Z
+
+[Term]
+id: OMP:0007784
+name: altered cellular process during vegetative growth
+def: "A cellular process phenotype where the rate, frequency, timing, or extent of a specified cellular process during vegetative growth is altered relative to a designated control." [OMP:das]
+synonym: "abnormal cellular process during vegetative growth" NARROW [FYPO:0001362]
+is_a: OMP:0007783 ! cellular process phenotype during vegetative growth
+created_by: siegele
+creation_date: 2018-06-09T19:29:28Z
+
+[Term]
+id: OMP:0007785
+name: presence of cellular process during vegetative growth
+is_a: OMP:0007783 ! cellular process phenotype during vegetative growth
+created_by: siegele
+creation_date: 2018-06-09T19:29:58Z
+
+[Term]
+id: OMP:0007786
+name: absence of cellular process during vegetative growth
+def: "A microbial phenotype where a microbe does not carry out the specified cellular process." [OMP:das]
+is_a: OMP:0007783 ! cellular process phenotype during vegetative growth
+created_by: siegele
+creation_date: 2018-06-09T19:30:25Z
+
+[Term]
+id: OMP:0007787
+name: presence of cell separation after cell division
+is_a: OMP:0007785 ! presence of cellular process during vegetative growth
+created_by: siegele
+creation_date: 2018-06-09T19:32:40Z
+
+[Term]
+id: OMP:0007788
+name: altered cell separation after cell division during vegetative growth
+def: "A cellular process phenotype observed during vegetative growth where the rate, frequency, timing, or extent of cell separation after cell division is altered relative to a designated control." [OMP:das]
+synonym: "abnormal cell separation after cytokinesis" NARROW [FYPO:0000164]
+is_a: OMP:0007784 ! altered cellular process during vegetative growth
+created_by: siegele
+creation_date: 2018-06-09T19:33:12Z
+
+[Term]
+id: OMP:0007789
+name: abolished cell separation after cell division
+def: "A cellular process phenotype observed in the vegetative growth phase of the life cycle in which cell separation after cell division is abolished." [FYPO:0006557, OMP:das]
+synonym: "abolished cell separation after cytokinesis" RELATED [FYPO:0006557]
+is_a: OMP:0007790 ! decreased frequency of cell separation after cell division
+is_a: OMP:0007792 ! absence of cell separation after cell division
+created_by: siegele
+creation_date: 2018-06-09T19:52:36Z
+
+[Term]
+id: OMP:0007790
+name: decreased frequency of cell separation after cell division
+def: "A cellular process phenotype observed in the vegetative growth phase of the life cycle in which the frequency of cell separation after cell division is decreased and results in the formation of chains of cells." [OMP:das]
+is_a: OMP:0007788 ! altered cell separation after cell division during vegetative growth
+created_by: siegele
+creation_date: 2018-06-09T20:00:05Z
+
+[Term]
+id: OMP:0007791
+name: dispersed actin cortical patch localization
+def: "A cellular physical quality phenotype observed in the vegetative growth phase of the life cycle in which actin cortical patches are localized throughout the cell cortex rather than concentrated at the cell ends." [FYPO:0002021, OMP:das]
+synonym: "dispersed actin cortical patch localization" EXACT [FYPO:0002021]
+is_a: OMP:0007765 ! altered actin cortical patch localization
+created_by: siegele
+creation_date: 2018-06-10T01:59:18Z
+
+[Term]
+id: OMP:0007792
+name: absence of cell separation after cell division
+def: "A cellular process phenotype observed during the vegetative growth phase of the life cycle where cells do not separate after cell division." [OMP:das]
+is_a: OMP:0007786 ! absence of cellular process during vegetative growth
+created_by: siegele
+creation_date: 2018-06-10T02:08:44Z
 
 [Term]
 id: OMP:0008000
