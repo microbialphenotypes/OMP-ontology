@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 10:06:2018 02:15
+date: 12:06:2018 01:09
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -10630,11 +10630,10 @@ creation_date: 2014-09-14T15:36:38Z
 [Term]
 id: OMP:0007167
 name: population growth phenotype
-def: "A microbial phenotype that affects the rate or extent of increase in the number of individuals in a microbial population as the result of sexual or asexual reproduction." [FYPO:0001358, OMP:DAS]
+def: "A microbial phenotype that affects the rate or extent of increase in the number of individuals in a microbial population." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
 xref: GO:0000003 "reproduction"
 is_a: OMP:0007006 ! population phenotype
-is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0000003 ! reproduction
 created_by: siegele
@@ -14355,7 +14354,7 @@ creation_date: 2017-06-26T20:24:54Z
 [Term]
 id: OMP:0007595
 name: presence of population growth
-def: "A population vegetative growth phenotype where there is reproduction of a microbial population, i.e. the number of individuals in the population increases." [OMP:DAS]
+def: "A population growth phenotype where a microbial population is able to reproduce." [OMP:das]
 is_a: OMP:0007167 ! population growth phenotype
 created_by: siegele
 creation_date: 2017-06-27T12:19:09Z
@@ -15219,9 +15218,9 @@ creation_date: 2017-12-01T15:47:37Z
 [Term]
 id: OMP:0007698
 name: cell population phenotype
-def: "A cell population phenotype that reflects the proportion of the population that survive and develop normally." [FYPO:0002057, OMP:das]
+def: "A population phenotype that is observed at the level of a population of microbial cells." [FYPO:0002057, OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
-xref: FYPO:0002057 "cell population phenotype"
+synonym: "cell population phenotype" EXACT [FYPO:0002057]
 is_a: OMP:0007006 ! population phenotype
 created_by: siegele
 creation_date: 2017-12-04T20:08:24Z
@@ -16023,6 +16022,62 @@ def: "A cellular process phenotype observed during the vegetative growth phase o
 is_a: OMP:0007786 ! absence of cellular process during vegetative growth
 created_by: siegele
 creation_date: 2018-06-10T02:08:44Z
+
+[Term]
+id: OMP:0007793
+name: presence of vegetative cell population growth
+def: "A cell population phenotype where a population of microbial cells in the vegetative growth phase of the life cycle increases in number." [OMP:das]
+is_a: OMP:0007595 ! presence of population growth
+created_by: siegele
+creation_date: 2018-06-10T21:18:22Z
+
+[Term]
+id: OMP:0007794
+name: cell population growth phenotype
+def: "A cell population phenotype that affects the rate or extent of growth of a population of microbial cells." [FYPO:0000139, OMP:das]
+synonym: "cell population growth phenotype" RELATED [FYPO:0000139]
+is_a: OMP:0007698 ! cell population phenotype
+created_by: siegele
+creation_date: 2018-06-10T23:16:48Z
+
+[Term]
+id: OMP:0007795
+name: vegetative cell population growth phenotype
+def: "A cell population phenotype that affects the rate or extent cell population growth in the vegetative growth phase of the life cycle." [FYPO:0000139, OMP:das]
+synonym: "vegetative cell population growth phenotype" RELATED [FYPO:0000139]
+is_a: OMP:0007794 ! cell population growth phenotype
+created_by: siegele
+creation_date: 2018-06-11T00:02:40Z
+
+[Term]
+id: OMP:0007796
+name: presence of vegetative cell population growth
+is_a: OMP:0007795 ! vegetative cell population growth phenotype
+created_by: siegele
+creation_date: 2018-06-12T00:51:39Z
+
+[Term]
+id: OMP:0007797
+name: absence of vegetative cell population growth
+is_a: OMP:0007795 ! vegetative cell population growth phenotype
+created_by: siegele
+creation_date: 2018-06-12T00:51:39Z
+
+[Term]
+id: OMP:0007798
+name: altered vegetative cell population growth
+is_a: OMP:0007795 ! vegetative cell population growth phenotype
+created_by: siegele
+creation_date: 2018-06-12T00:51:39Z
+
+[Term]
+id: OMP:0007799
+name: decreased vegetative cell population growth at high temperature
+def: "A cell population phenotype observed in the vegetative growth phase of the life cycle where the rate and/or extent of growth of a population of microbial cells at a temperature above the optimal growth temperature of the microbe is decreased relative to a designated control." [FYPO:0000082, OMP:das]
+synonym: "decreased vegetative cell population growth at high temperature" NARROW [FYPO:0000082]
+is_a: OMP:0007798 ! altered vegetative cell population growth
+created_by: siegele
+creation_date: 2018-06-12T00:51:53Z
 
 [Term]
 id: OMP:0008000
