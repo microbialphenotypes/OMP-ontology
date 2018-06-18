@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 18:06:2018 03:26
-saved-by: siegele
+date: 18:06:2018 17:42
+saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -10888,8 +10888,10 @@ creation_date: 2014-10-18T21:38:46Z
 
 [Term]
 id: OMP:0007195
-name: chemical sensitivity phenotype
-def: "A biological process phenotype related to the resistance or sensitivity of a cell, cells, or microbe to a chemical entity." [OMP:DAS]
+name: chemical resistance phenotype
+def: "A biological process phenotype related to the resistance or sensitivity of a microbe to a chemical entity." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+synonym: "chemical sensitivity phenotype" EXACT []
 xref: APO:0000087 "resistance to chemicals"
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0007194 ! biological process phenotype
@@ -11328,42 +11330,45 @@ creation_date: 2015-07-04T00:20:54Z
 
 [Term]
 id: OMP:0007246
-name: sensitive to a chemical
-def: "A chemical sensitivity phenotype where a cell, cells, or microbe are sensitive to a chemical." [OMP:DAS]
-is_a: OMP:0007195 ! chemical sensitivity phenotype
+name: not resistant to a chemical
+def: "A chemical resistance phenotype where a microbe is not resistant  to a chemical." [OMP:DAS]
+is_a: OMP:0007195 ! chemical resistance phenotype
 created_by: siegele
 creation_date: 2015-07-16T00:36:34Z
 
 [Term]
 id: OMP:0007247
-name: not sensitive to a chemical
-def: "A chemical sensitivity phenotype where a cell, cells, or microbe are not sensitive to a chemical." [OMP:DAS]
-is_a: OMP:0007195 ! chemical sensitivity phenotype
+name: resistant to a chemical
+def: "A chemical resistance phenotype where a microbe is resistant to a chemical." [OMP:DAS]
+is_a: OMP:0007195 ! chemical resistance phenotype
 created_by: siegele
 creation_date: 2015-07-16T00:36:34Z
 
 [Term]
 id: OMP:0007248
-name: altered chemical sensitivity
-def: "A chemical sensitivity phenotype where sensitivity of a cell, cells, or microbe to a chemical is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007195 ! chemical sensitivity phenotype
+name: altered chemical resistance
+def: "A chemical resistance phenotype where resistance or sensitivity of a microbe to a chemical is altered relative to a designated control." [OMP:DAS]
+synonym: "altered chemical sensitivity" EXACT []
+is_a: OMP:0007195 ! chemical resistance phenotype
 is_a: OMP:0007351 ! altered biological process
 created_by: siegele
 creation_date: 2015-07-16T00:36:34Z
 
 [Term]
 id: OMP:0007249
-name: Increased sensitivity to a chemical
-def: "An altered chemical sensitivity phenotype where the sensitivity of a cell, cells, or microbe to a chemical is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007248 ! altered chemical sensitivity
+name: decreased resistance to a chemical
+def: "An altered chemical resistance phenotype where the resistance of a microbe to a chemical is decreased relative to a designated control." [OMP:DAS]
+synonym: " increased sensitivity to a chemical" EXACT []
+is_a: OMP:0007248 ! altered chemical resistance
 created_by: siegele
 creation_date: 2015-07-16T00:42:17Z
 
 [Term]
 id: OMP:0007250
-name: decreased sensitivity to a chemical
-def: "An altered chemical sensitivity phenotype where the sensitivity of a cell, cells, or microbe to a chemical is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007248 ! altered chemical sensitivity
+name: increased resistance to a chemical
+def: "An altered chemical resistance phenotype where the resistance of a microbe to a chemical is increased relative to a designated control." [OMP:DAS]
+synonym: "decreased sensitivity to a chemical" EXACT []
+is_a: OMP:0007248 ! altered chemical resistance
 created_by: siegele
 creation_date: 2015-07-16T00:42:17Z
 
@@ -11371,8 +11376,8 @@ creation_date: 2015-07-16T00:42:17Z
 id: OMP:0007251
 name: abolished chemical sensitivity
 def: "An altered chemical sensitivity phenotype where the sensitivity of a cell, cells, or microbe to a chemical is abolished." [OMP:DAS]
-is_a: OMP:0007247 ! not sensitive to a chemical
-is_a: OMP:0007250 ! decreased sensitivity to a chemical
+is_a: OMP:0007247 ! resistant to a chemical
+is_a: OMP:0007250 ! increased resistance to a chemical
 created_by: siegele
 creation_date: 2015-07-16T00:42:17Z
 
