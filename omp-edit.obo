@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 19:06:2018 16:42
+date: 20:06:2018 17:22
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -16183,6 +16183,90 @@ name: cell population growth rate phenotype
 is_a: OMP:0007794 ! cell population growth phenotype
 created_by: dsiegele
 creation_date: 2018-06-19T16:39:59Z
+
+[Term]
+id: OMP:0007811
+name: cellular pigment accumulation phenotype
+def: "A cellular process phenotype that affects the occurrence of pigment accumulation in a microbial cell." [OMP:das]
+synonym: "cellular pigment accumulation phenotype" EXACT [FYPO:0000739]
+is_a: OMP:0007332 ! cellular process phenotype
+created_by: dsiegele
+creation_date: 2018-06-20T14:50:41Z
+
+[Term]
+id: OMP:0007812
+name: presence of cellular pigment accumulation
+def: "A cellular process phenotype where the process of accumulating pigment occurs in a cell or cells of a microorganism." [OMP:das]
+synonym: "normal cellular pigment accumulation" NARROW [FYPO:0000740]
+is_a: OMP:0007811 ! cellular pigment accumulation phenotype
+created_by: dsiegele
+creation_date: 2018-06-20T14:55:08Z
+
+[Term]
+id: OMP:0007813
+name: presence of cellular pigment accumulation during vegetative growth
+def: "A cellular process phenotype observed during the vegetative growth phase of the life cycle where a cell or cells of a microorganism accumulate pigment." [OMP:das]
+synonym: "<new synonym>" NARROW [FYPO:0000740]
+is_a: OMP:0007812 ! presence of cellular pigment accumulation
+created_by: dsiegele
+creation_date: 2018-06-20T14:58:28Z
+
+[Term]
+id: OMP:0007814
+name: altered cellular pigment accumulation
+def: "A cellular pigment accumulation phenotype where the rate, extent, or timing of the process of pigment accumulation by a microbial cell or cells is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007811 ! cellular pigment accumulation phenotype
+created_by: dsiegele
+creation_date: 2018-06-20T15:08:52Z
+
+[Term]
+id: OMP:0007815
+name: increased cellular pigment accumulation
+def: "An altered cellular pigment accumulation phenotype where the rate, extent, or timing of the process of pigment accumulation by a microbial cell or cells is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007814 ! altered cellular pigment accumulation
+created_by: dsiegele
+creation_date: 2018-06-20T15:11:51Z
+
+[Term]
+id: OMP:0007816
+name: increased cellular pigment accumulation during vegetative growth
+def: "An altered cellular pigment accumulation phenotype observed in the vegetative growth phase of the life cycle where the rate, extent, or timing of the process of pigment accumulation by a microbial cell or cells is increased relative to a designated control." [OMP:das]
+synonym: "<new synonym>" NARROW [FYPO:0000741]
+is_a: OMP:0007815 ! increased cellular pigment accumulation
+created_by: dsiegele
+creation_date: 2018-06-20T15:15:14Z
+
+[Term]
+id: OMP:0007817
+name: decreased cellular pigment accumulation
+def: "An altered cellular pigment accumulation phenotype  where the rate, extent, or timing of the process of pigment accumulation by a microbial cell or cells is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007814 ! altered cellular pigment accumulation
+created_by: dsiegele
+creation_date: 2018-06-20T15:20:02Z
+
+[Term]
+id: OMP:0007818
+name: decreased cellular pigment accumulation during vegetative growth
+def: "An altered cellular pigment accumulation phenotype observed in the vegetative growth phase of the life cycle where the rate, extent, or timing of the process of pigment accumulation by a microbial cell or cells is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007817 ! decreased cellular pigment accumulation
+created_by: dsiegele
+creation_date: 2018-06-20T15:20:42Z
+
+[Term]
+id: OMP:0007819
+name: absence of cellular pigment accumulation
+def: "A cellular process phenotype where the process of accumulating pigment doesn't occur in a cell or cells of a microorganism." [OMP:das]
+is_a: OMP:0007811 ! cellular pigment accumulation phenotype
+created_by: dsiegele
+creation_date: 2018-06-20T15:29:44Z
+
+[Term]
+id: OMP:0007820
+name: absence of cellular pigment accumulation during vegetative growth
+def: "A phenotype observed in the vegetative growth phase of the life cycle where the process of accumulating pigment does not occur in a cell or cells of a microorganism." [OMP:das]
+is_a: OMP:0007819 ! absence of cellular pigment accumulation
+created_by: dsiegele
+creation_date: 2018-06-20T15:31:24Z
 
 [Term]
 id: OMP:0008000
