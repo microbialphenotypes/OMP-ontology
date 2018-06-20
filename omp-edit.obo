@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 18:06:2018 17:42
+date: 19:06:2018 16:42
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3611,21 +3611,23 @@ creation_date: 2011-07-21T02:37:15Z
 
 [Term]
 id: OMP:0000282
-name: slower growth rate
-def: "An altered growth rate phenotype where the rate at which a cell or cells multiplies is decreased relative to a designated control." [OMP:DAS]
-synonym: "decreased growth rate (generations per unit time)" RELATED []
+name: decreased population growth rate
+def: "An altered population growth rate phenotype where the rate at which a microbial population multiplies is decreased relative to a designated control." [OMP:DAS]
+synonym: "decreased growth rate" EXACT []
+synonym: "increased doubling time" NARROW []
 synonym: "increased generation time" EXACT []
-is_a: OMP:0007115 ! altered growth rate
+is_a: OMP:0007115 ! altered population growth rate
 created_by: mchibucos
 creation_date: 2011-07-21T02:43:01Z
 
 [Term]
 id: OMP:0000283
-name: faster growth rate
-def: "An altered growth rate phenotype where the rate at which a cell or cells multiplies is increased relative to a designated control." [OMP:DAS]
+name: increased population growth rate
+def: "An altered growth rate phenotype where the rate at which a microbial population multiplies is increased relative to a designated control." [OMP:DAS]
+synonym: "decreased doubling time" NARROW []
 synonym: "decreased generation time" EXACT []
-synonym: "increased growth rate (generations per unit time)" RELATED []
-is_a: OMP:0007115 ! altered growth rate
+synonym: "increased growth rate" EXACT []
+is_a: OMP:0007115 ! altered population growth rate
 created_by: mchibucos
 creation_date: 2011-07-21T02:43:22Z
 
@@ -10149,11 +10151,12 @@ creation_date: 2014-07-17T14:28:35Z
 
 [Term]
 id: OMP:0007115
-name: altered growth rate
-def: "A population growth phenotype where the rate at which a cell or cells multiplies is altered relative to a designated control." [OMP:DAS]
-synonym: "altered doubling time" EXACT []
-synonym: "altered generation time" RELATED []
-is_a: OMP:0007156 ! growth rate phenotype
+name: altered population growth rate
+def: "A population growth phenotype where the rate at which a population of microbes multiplies is altered relative to a designated control." [OMP:DAS]
+synonym: "altered doubling time" NARROW []
+synonym: "altered generation time" EXACT []
+synonym: "altered growth rate" EXACT []
+is_a: OMP:0007156 ! population growth rate phenotype
 is_a: OMP:0007157 ! altered population growth
 created_by: siegele
 creation_date: 2014-07-17T16:29:34Z
@@ -10521,8 +10524,8 @@ creation_date: 2014-08-28T12:00:42Z
 
 [Term]
 id: OMP:0007156
-name: growth rate phenotype
-def: "A growth phenotype concerning the rate at which the number of organisms or cells in a microbial population increases over time." [OMP:DAS]
+name: population growth rate phenotype
+def: "A population growth phenotype concerning the rate at which a microbial population multiplies over time." [OMP:DAS]
 is_a: OMP:0007167 ! population growth phenotype
 created_by: siegele
 creation_date: 2014-08-28T12:14:20Z
@@ -13176,7 +13179,7 @@ creation_date: 2016-08-10T14:56:12Z
 [Term]
 id: OMP:0007459
 name: altered cell population viability
-def: "A cell population viability phenotype where the proportion of cells that are viable under the specified conditions is altered relative to a designated control." [OMP:DAS]
+def: "A cell population viability phenotype where the proportion of cells that remain viable under the specified conditions is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007705 ! cell population viability phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:56:12Z
@@ -15268,6 +15271,7 @@ creation_date: 2017-12-04T20:19:36Z
 [Term]
 id: OMP:0007702
 name: decreased cell population viability
+def: "An altered cell population viability phenotype where the proportion of cells that survive a specified treatment is decreased relative to a designated control." [OMP:das]
 is_a: OMP:0007459 ! altered cell population viability
 created_by: siegele
 creation_date: 2017-12-04T20:23:38Z
@@ -15289,6 +15293,8 @@ creation_date: 2017-12-04T20:23:38Z
 [Term]
 id: OMP:0007705
 name: cell population viability phenotype
+def: "A cell population phenotype that describes the proportion of a microbial population that is able to survive a particular treatment." [OMP:das]
+synonym: "cell population viability" EXACT [FYPO:0002057]
 is_a: OMP:0007456 ! population viability phenotype
 is_a: OMP:0007698 ! cell population phenotype
 created_by: siegele
@@ -16049,6 +16055,7 @@ id: OMP:0007794
 name: cell population growth phenotype
 def: "A cell population phenotype that affects the rate or extent of growth of a population of microbial cells." [FYPO:0000139, OMP:das]
 synonym: "cell population growth phenotype" RELATED [FYPO:0000139]
+is_a: OMP:0007167 ! population growth phenotype
 is_a: OMP:0007698 ! cell population phenotype
 created_by: siegele
 creation_date: 2018-06-10T23:16:48Z
@@ -16098,6 +16105,84 @@ name: polyether antimicrobial resistance phenotype
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2018-06-18T03:07:12Z
+
+[Term]
+id: OMP:0007801
+name: altered vegetative cell population growth rate
+is_a: OMP:0007115 ! altered population growth rate
+created_by: dsiegele
+creation_date: 2018-06-19T15:14:26Z
+
+[Term]
+id: OMP:0007802
+name: increased vegetative cell population growth rate
+is_a: OMP:0007801 ! altered vegetative cell population growth rate
+created_by: dsiegele
+creation_date: 2018-06-19T15:15:58Z
+
+[Term]
+id: OMP:0007803
+name: decreased vegetative cell population growth rate
+is_a: OMP:0007801 ! altered vegetative cell population growth rate
+created_by: dsiegele
+creation_date: 2018-06-19T15:15:58Z
+
+[Term]
+id: OMP:0007804
+name: increased cell population viability
+def: "An altered cell population viability phenotype where the proportion of cells that survive a specified treatment is increased relative to a designated control" [OMP:das]
+is_a: OMP:0007729 ! altered vegetative cell population viability
+created_by: dsiegele
+creation_date: 2018-06-19T15:45:43Z
+
+[Term]
+id: OMP:0007805
+name: increased cell population viability upon starvation
+def: "An altered cell population viability phenotype where the proportion of cells that survive starvation for one or more essential nutrients is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007804 ! increased cell population viability
+created_by: dsiegele
+creation_date: 2018-06-19T15:46:20Z
+
+[Term]
+id: OMP:0007806
+name: increased cell population viability upon nitrogen starvation
+def: "An altered cell population viability phenotype where the proportion of cells that survive nitrogen starvation is increased relative to a designated control." [FYPO:0004344, OMP:das]
+synonym: "increased viability upon nitrogen starvation" EXACT [FYPO:0004344]
+is_a: OMP:0007805 ! increased cell population viability upon starvation
+created_by: dsiegele
+creation_date: 2018-06-19T15:48:36Z
+
+[Term]
+id: OMP:0007807
+name: decreased cell population viablity upon starvation
+is_a: OMP:0007702 ! decreased cell population viability
+created_by: dsiegele
+creation_date: 2018-06-19T15:53:27Z
+
+[Term]
+id: OMP:0007808
+name: decreased cell population viability upon nitrogen starvation
+def: "An altered cell population viability phenotype where the proportion of cells that survive nitrogen starvation is decreased relative to a designated control." [OMP:das]
+synonym: "loss of viability upon nitrogen starvation" EXACT [FYPO:1178]
+is_a: OMP:0007807 ! decreased cell population viablity upon starvation
+created_by: dsiegele
+creation_date: 2018-06-19T15:53:53Z
+
+[Term]
+id: OMP:0007809
+name: altered cell population growth
+def: "A cell population growth phenotype where the rate or extent of growth of a population of microbial cells is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007157 ! altered population growth
+is_a: OMP:0007794 ! cell population growth phenotype
+created_by: dsiegele
+creation_date: 2018-06-19T16:14:57Z
+
+[Term]
+id: OMP:0007810
+name: cell population growth rate phenotype
+is_a: OMP:0007794 ! cell population growth phenotype
+created_by: dsiegele
+creation_date: 2018-06-19T16:39:59Z
 
 [Term]
 id: OMP:0008000
