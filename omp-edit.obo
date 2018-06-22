@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 20:06:2018 17:22
-saved-by: dsiegele
+date: 22:06:2018 01:09
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -6455,7 +6455,6 @@ synonym: "coumarin resistance phenotype" NARROW [CHEBI:28794]
 synonym: "cycloheximide resistance phenotype" NARROW [CHEBI:27641]
 synonym: "D-cycloserine resistance phenotype" NARROW [CHEBI:40009]
 synonym: "methotrexate resistance phenotype" NARROW [CHEBI:44185]
-synonym: "nitrofurantoin resistance pheynotype" NARROW [CHEBI:71415]
 synonym: "paraquat dichloride resistance phenotype" NARROW [CHEBI:34905]
 synonym: "phenazine methosulfate resistance phenotype" NARROW [CHEBI:53396]
 synonym: "pyocyanin resistance phenotype" NARROW [CHEBI:62220]
@@ -16267,6 +16266,135 @@ def: "A phenotype observed in the vegetative growth phase of the life cycle wher
 is_a: OMP:0007819 ! absence of cellular pigment accumulation
 created_by: dsiegele
 creation_date: 2018-06-20T15:31:24Z
+
+[Term]
+id: OMP:0007821
+name: nitrofuran resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a nitrofuran compound. Nitrofurans are members of the class of furans in which the furan ring is substituted by a nitro group." [CHEBI:87230, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+synonym: "difurazone (Nitrovin) resistance phenotype" NARROW []
+synonym: "nitrofuran sensitivity phenotype" EXACT []
+synonym: "nitrofurantoin resistance phenotype" NARROW [CHEBI:71415]
+synonym: "nitrofurazone resistance phenotype" NARROW [CHEBI:44368]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-06-21T22:05:44Z
+
+[Term]
+id: OMP:0007822
+name: resistant to nitrofuran
+def: "A nitrofuran resistance phenotype where a microbe is resistant to one or more nitrofuran compounds." [OMP:das]
+is_a: OMP:0007821 ! nitrofuran resistance phenotype
+created_by: siegele
+creation_date: 2018-06-21T22:07:43Z
+
+[Term]
+id: OMP:0007823
+name: not resistant to nitrofuran
+def: "A nitrofuran resistance phenotype where a microbe is sensitive to one or more nitrofuran compounds." [OMP:das]
+is_a: OMP:0007821 ! nitrofuran resistance phenotype
+created_by: siegele
+creation_date: 2018-06-21T22:07:43Z
+
+[Term]
+id: OMP:0007824
+name: altered nitrofuran resistance
+def: "A nitrofuran resistance phenotype where resistance to a nitrofuran compound is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007821 ! nitrofuran resistance phenotype
+created_by: siegele
+creation_date: 2018-06-21T22:07:43Z
+
+[Term]
+id: OMP:0007825
+name: decreased resistance to nitrofuran
+def: "An altered nitrofuran resistance phenotype where resistance to a nitrofuran compound is decreased relative to a designated control." [OMP:das]
+synonym: "increased sensitivity to nitrofuran" EXACT []
+is_a: OMP:0007824 ! altered nitrofuran resistance
+created_by: siegele
+creation_date: 2018-06-21T22:14:44Z
+
+[Term]
+id: OMP:0007826
+name: abolished resistance to nitrofuran
+def: "An altered nitrofuran resistance phenotype where resistance to a nitrofuran compound is abolished." [OMP:das]
+is_a: OMP:0007823 ! not resistant to nitrofuran
+is_a: OMP:0007825 ! decreased resistance to nitrofuran
+created_by: siegele
+creation_date: 2018-06-21T22:15:06Z
+
+[Term]
+id: OMP:0007827
+name: increased resistance to nitrofuran
+def: "An altered nitrofuran resistance phenotype where resistance to a nitrofuran compound is increased relative to a designated control." [OMP:das]
+synonym: "decreased sensitivity to nitrofuran" EXACT []
+is_a: OMP:0007824 ! altered nitrofuran resistance
+created_by: siegele
+creation_date: 2018-06-21T22:15:28Z
+
+[Term]
+id: OMP:0007828
+name: sulfonamide resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity of a microbe to one or more sulfonamide compounds. The sulfonamide function group is -S(=O)2-NH2, a sulfonyl group connected to an amine group." [CHEBI:35358, CHEBI:87228, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+synonym: "sulfamethizole resistance phenotype" NARROW [CHEBI:9331]
+synonym: "sulfamonomethoxine resistance phenotype" NARROW [CHEBI:32164]
+synonym: "sulfonamide sensitivity phenotype" EXACT []
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-06-22T00:39:30Z
+
+[Term]
+id: OMP:0007829
+name: resistant to sulfonamide
+def: "A sulfonamide resistance phenotype where a microbe or microbes is sensitive to one or more sulfonamide compounds." [OMP:das]
+is_a: OMP:0007828 ! sulfonamide resistance phenotype
+created_by: siegele
+creation_date: 2018-06-22T00:47:21Z
+
+[Term]
+id: OMP:0007830
+name: not resistant to sulfonamide
+def: "A nitrofuran resistance phenotype where a microbe is sensitive to one or more nitrofuran compounds." [OMP:das]
+is_a: OMP:0007828 ! sulfonamide resistance phenotype
+created_by: siegele
+creation_date: 2018-06-22T00:47:21Z
+
+[Term]
+id: OMP:0007831
+name: altered sulfonamide resistance
+def: "A sulfonamide resistance phenotype where resistance to a sulfonamide compound is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007828 ! sulfonamide resistance phenotype
+created_by: siegele
+creation_date: 2018-06-22T00:47:21Z
+
+[Term]
+id: OMP:0007832
+name: increased resistance to sulfonamide
+def: "An altered sulfonamide resistance phenotype where resistance to a sulfonamide compound is increased relative to a designated control." [OMP:das]
+synonym: "decreased sensitivity to sulfonamide" EXACT []
+is_a: OMP:0007831 ! altered sulfonamide resistance
+created_by: siegele
+creation_date: 2018-06-22T00:47:21Z
+
+[Term]
+id: OMP:0007833
+name: decreased resistance to sulfonamde
+def: "An altered sulfonamide resistance phenotype where resistance to a sulfonamide compound is decreased relative to a designated control." [OMP:das]
+synonym: "increased sensitivity to sulfonamide" EXACT []
+is_a: OMP:0007831 ! altered sulfonamide resistance
+created_by: siegele
+creation_date: 2018-06-22T00:47:21Z
+
+[Term]
+id: OMP:0007834
+name: abolished resistance to sulfonamide
+def: "A decreased sulfonamide resistance phenotype where resistance to a sulfonamide compound is abolished." [OMP:das]
+is_a: OMP:0007830 ! not resistant to sulfonamide
+is_a: OMP:0007833 ! decreased resistance to sulfonamde
+created_by: siegele
+creation_date: 2018-06-22T00:47:21Z
 
 [Term]
 id: OMP:0008000
