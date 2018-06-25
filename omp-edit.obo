@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 22:06:2018 01:09
+date: 24:06:2018 19:43
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1767,6 +1767,7 @@ creation_date: 2011-04-26T04:17:42Z
 id: OMP:0000047
 name: aerotaxis phenotype
 def: "A taxis phenotype where directed movement of a motile microbe is in response to environmental oxygen (O2)." [ISBN:0192800329, OMP:MCC]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 xref: GO:0009454 "aerotaxis"
 is_a: OMP:0000004 ! taxis phenotype
 intersection_of: OMP:0000004 ! taxis phenotype
@@ -2187,7 +2188,7 @@ creation_date: 2011-02-02T03:24:43Z
 id: OMP:0000093
 name: akinete formation phenotype
 def: "A cell development phenotype related to the development of an akinete, a thick-walled dormant cell derived from the enlargement of a vegetative cell." [doi:10.1046/j.1469-8137.1999.00505.x, OMP:MCC]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nAkinetes typically are more resistant to dessication and other environmental stresses than vegetative cells.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.\n\nAkinetes typically are more resistant to dessication and other environmental stresses than vegetative cells.
 xref: GO:0034302 "akinete formation"
 is_a: OMP:0007142 ! asexual sporulation phenotype
 created_by: adrienne
@@ -3096,6 +3097,7 @@ creation_date: 2011-06-06T04:30:12Z
 id: OMP:0000199
 name: acid-fast staining phenotype
 def: "A cell-staining phenotype where a cell or cells are classified based on whether they are decolorized by an acid-alcohol mixture after staining, typically with carbolfuchsin." [ISBN:978-0-07-729281-1, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000214 ! cell staining phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:38:46Z
@@ -3248,6 +3250,7 @@ creation_date: 2011-06-07T09:54:51Z
 id: OMP:0000216
 name: aerobic respiration phenotype
 def: "A respiration phenotype where oxygen (O2) is used as the terminal electron acceptor." [ISBN:978-0-07-340240-6, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007112 ! respiration phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:53:18Z
@@ -3811,7 +3814,7 @@ name: aminopyrimidine resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 synonym: "5-flucytosine resistance phenotype" NARROW [CHEBI:5100]
-synonym: "aminopyrimidine sensitivity phenotype" RELATED []
+synonym: "aminopyrimidine sensitivity phenotype" EXACT []
 synonym: "antifolate resistance phenotype" BROAD [CHEBI:73913]
 synonym: "diaveridine resistance phenotype" NARROW [CHEBI:123115]
 synonym: "iclaprim resistance phenotype" NARROW [CHEBI:131724]
@@ -3819,7 +3822,6 @@ synonym: "piritrexim resistance phenotype" NARROW []
 synonym: "pyrimethamine resistance phenotype" NARROW [CHEBI:8673]
 synonym: "trimethoprim resistance phenotype" NARROW [CHEBI:45924]
 synonym: "trimetrexate resistance phenotype" NARROW [CID:5583]
-xref: CHEBI:38338 "aminopyrimidine"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:02:58Z
@@ -3917,7 +3919,7 @@ creation_date: 2013-05-23T01:35:26Z
 [Term]
 id: OMP:0000451
 name: heme utilization phenotype
-def: "An iron source utilization phenotype where the trait is a compound of iron complexed in a porphyrin (tetrapyrrole) ring." [OMP:JCH]
+def: "An iron source utilization phenotype where the nutrient being utilized is heme, which is a compound of iron complexed in a porphyrin (tetrapyrrole) ring." [OMP:JCH]
 synonym: "haem" EXACT []
 is_a: OMP:0007061 ! iron source utilization phenotype
 created_by: mchibucos
@@ -3951,19 +3953,20 @@ creation_date: 2013-05-23T01:40:40Z
 id: OMP:0000455
 name: alkaloid resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to compounds containing basic nitrogen in a heterocyclic structure." [CHEBI:22315, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
-synonym: "alkaloid sensitivity phenotype" RELATED []
-xref: CHEBI:22315 "alkaloid"
-is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+synonym: "alkaloid sensitivity phenotype" EXACT []
+synonym: "caffeine resistance phenotype" NARROW []
+synonym: "theophylline resistance phenotype" EXACT [CHEBI:28177]
+is_a: OMP:0007195 ! chemical resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:53:57Z
 
 [Term]
 id: OMP:0000456
 name: caffeine resistance phenotype
-def: "An alkaloid resistance phenotype that is related to resistance or sensitivity to a trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7." [CHEBI:27732, OMP:WAM]
-synonym: "caffeine sensitivity phenotype" RELATED []
-xref: CHEBI:27732 "caffeine"
+def: "An alkaloid resistance phenotype that is related to resistance or sensitivity to caffeine, which is a trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7." [CHEBI:27732, OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+synonym: "caffeine sensitivity phenotype" EXACT []
 is_a: OMP:0000455 ! alkaloid resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:54:51Z
@@ -5597,7 +5600,7 @@ creation_date: 2016-02-15T16:34:58Z
 id: OMP:0005173
 name: acid phosphatase activity phenotype
 def: "An enzymatic activity phenotype that relates to the presence or absence of acid phosphatase, an enzyme that removes phosphoryl groups from other molecules. Acid phosphatase catalyzes the reaction: an orthophosphoric monoester + H2O -> an alcohol + phosphate, with an acid pH optimum." [OMP:JG]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 xref: GO:0003993 "acid phosphatase activity"
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
@@ -5665,6 +5668,7 @@ creation_date: 2016-05-21T09:09:03Z
 id: OMP:0005181
 name: altered cytoskeleton morphology phenotype
 def: "A cytoskeleton morphology phenotype where the morphology of the cytoskeleton is altered relative to a designated control." [GO:JG]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0005180 ! cytoskeleton morphology phenotype
 is_a: OMP:0007752 ! altered cytoskeleton
 created_by: Jesus
@@ -5674,6 +5678,7 @@ creation_date: 2016-05-21T09:57:50Z
 id: OMP:0005182
 name: actin cytoskeleton morphology phenotype
 def: "A subcellular component phenotype relating to the size, shape, or structure of the actin cytoskeleton of a microbial cell." [OMP:JG]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 xref: GO:00015629
 is_a: OMP:0007758 ! actin cytoskeleton phenotype
 created_by: Jesus
@@ -5805,7 +5810,7 @@ creation_date: 2016-06-09T15:21:49Z
 id: OMP:0005198
 name: alpha-1,3-mannosyltransferase activity phenotype
 def: "An enzymatic activity phenotype that relates to the presence or absence of alpha-1,3- mannosyltransferase. Alpha-1,3- mannosyltransferase promotes the catalysis of the transfer of a mannose residue to an oligosaccharide, forming an alpha-(1,3) linkage." [OMP:JG]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 xref: GO:0000033 "alpha-1,3- mannosyltransferase activity"
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
@@ -5863,7 +5868,7 @@ creation_date: 2016-06-09T23:16:29Z
 id: OMP:0005205
 name: adhesion phenotype
 def: "A biological process phenotype that relates to the ability of a microbe to attach to a substrate in the environment or in a host, either directly or indirectly." [OMP:JG]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 xref: APO:0000288 "adhesion"
 xref: GO:0022610 "biological adhesion"
 is_a: OMP:0007194 ! biological process phenotype
@@ -5874,6 +5879,7 @@ creation_date: 2016-06-20T14:06:30Z
 id: OMP:0005206
 name: adhesion to host phenotype
 def: "An adhesion phenotype that relates to the ability of a microbe to attach to a host via adhesion molecules, general stickiness, etc., either directly or indirectly. The host is defined as the larger of the organisms involved in a symbiotic relationship." [OMP:JG]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 xref: GO:0044406 "adhesion to host"
 is_a: OMP:0005205 ! adhesion phenotype
 is_a: OMP:0007252 ! colonization of a host phenotype
@@ -6242,6 +6248,7 @@ creation_date: 2016-06-23T14:44:33Z
 id: OMP:0005250
 name: aerobic growth phenotype
 def: "An oxygen growth range phenotype related to the ability of a cell or cells to grow and/or reproduce in the presence of oxygen at the level found in air (approximately 21%)." [OMP:JG]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000039 ! oxygen growth range phenotype
 created_by: Jesus
 creation_date: 2016-06-23T14:59:55Z
@@ -6884,6 +6891,7 @@ creation_date: 2016-09-19T14:02:03Z
 id: OMP:0005325
 name: agar invasion phenotype
 def: "An organismal growth phenotype relating to the ability of a microbe to penetrate agar media during growth." [OMP:JG]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000174 ! growth phenotype
 created_by: Jesus
 creation_date: 2016-09-23T16:58:54Z
@@ -7690,7 +7698,7 @@ creation_date: 2014-07-24T17:26:03Z
 [Term]
 id: OMP:0006022
 name: nutrient utilization phenotype
-def: "A microbial phenotype that affects the utilization of a nutrient, which is a substance used for biosynthesis or energy release." [ISBN:9780073402406]
+def: "A microbial phenotype that affects the utilization of a nutrient, which is a substance used for biosynthesis or energy release and capture." [ISBN:9780073402406]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
 is_a: OMP:0000000 ! microbial phenotype
 created_by: jonathanherrera
@@ -8986,6 +8994,7 @@ creation_date: 2014-08-05T13:35:01Z
 id: OMP:0006164
 name: altered colony size phenotype
 def: "An colony size phenotype where size is altered relative to a designated control." [OMP:JCH]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000179 ! colony size phenotype
 is_a: OMP:0007160 ! altered colony morphology
 created_by: jonathanherrera
@@ -9898,6 +9907,7 @@ creation_date: 2014-07-10T12:48:21Z
 id: OMP:0007088
 name: altered heme utilization phenotype
 def: "A heme utilization phenotype altered relative to a designated control." [OMP:JCH]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000451 ! heme utilization phenotype
 created_by: siegele
 creation_date: 2014-07-10T12:49:28Z
@@ -10317,6 +10327,7 @@ creation_date: 2014-08-17T00:46:29Z
 id: OMP:0007133
 name: altered capsule phenotype
 def: "A capsule phenotype where the capsule layer is altered relative to a designated control." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000203 ! capsule phenotype
 created_by: siegele
 creation_date: 2014-08-17T12:52:35Z
@@ -11833,6 +11844,7 @@ creation_date: 2016-01-30T13:32:56Z
 id: OMP:0007304
 name: altered cell staining phenotype
 def: "A cell staining phenotype that is altered relative to a designated control." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0000214 ! cell staining phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
@@ -12299,6 +12311,7 @@ creation_date: 2016-06-17T01:16:57Z
 id: OMP:0007357
 name: altered cellular component phenotype
 def: "A cellular component phenotype where a quality of a cellular component is altered relative to a designated control." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007197 ! cellular component phenotype
 created_by: dsiegele
 creation_date: 2016-06-20T16:01:53Z
@@ -12432,7 +12445,7 @@ creation_date: 2016-06-21T01:17:16Z
 id: OMP:0007372
 name: alkylating agent resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to an alkylating agent: a highly reactive chemical that introduces alkyl radicals into biologically active molecules and thereby prevents their proper functioning." [CHEBI:22333, OMP:DAS]
-synonym: "Benzalkonium" NARROW [CHEBI:3020]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "Cisplatin" NARROW [CHEBI:27899]
 synonym: "Hydroxyurea" NARROW [CHEBI:44423]
 synonym: "methyl methanesulfonate" NARROW [CHEBI:25255]
@@ -12760,7 +12773,7 @@ creation_date: 2016-07-09T14:51:28Z
 id: OMP:0007409
 name: akinete morphology phenotype
 def: "A spore morphology phenotype relating to the form and structure of an akinete, which is a thick-walled (encysted) dormant cell derived from the enlargement of a vegetative cell. Akinetes typically have granular cytoplasm, are more resistant to environmental extremes than vegetative cells, and are characteristic of several groups of Cyanobacteria." [doi:10.1046/j.1469-8137.1999.00505.x, OMP:DAS, PMID:11948167]
-comment: Akinetes are typically more resistant to dessication and other environmental stresses than vegetative cells.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.\n\nAkinetes are typically more resistant to dessication and other environmental stresses than vegetative cells.
 is_a: OMP:0008000 ! spore morphology phenotype
 created_by: siegele
 creation_date: 2016-07-13T18:36:45Z
@@ -13376,9 +13389,10 @@ creation_date: 2016-09-19T16:49:20Z
 [Term]
 id: OMP:0007481
 name: quaternary ammonium salts resistance phenotype
-def: "An antimicrobial agent resistance phenotype relating to the resistance or sensitivity of a microbe to a quaternary ammonium salt. These are derivatives of ammonium compounds, (NH4+)Y-, in which all four of the hydrogens bonded to nitrogen have been replaced with univalent (usually organyl) groups." [CHEBI:35273, OMP:DAS]
+def: "An antimicrobial agent resistance phenotype relating to the resistance or sensitivity of a microbe to a quaternary ammonium salt. Quaternary ammonium salts are derivatives of ammonium compounds, (NH4+)Y-, in which all four of the hydrogens bonded to nitrogen have been replaced with univalent (usually organyl) groups." [CHEBI:35273, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "benzalkonium chloride resistance phenotype" NARROW [CHEBI:3020]
+synonym: "quaternium-15 resistance phenotype" NARROW [CHEBI:59607]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
@@ -14717,6 +14731,7 @@ creation_date: 2017-07-05T16:28:00Z
 id: OMP:0007637
 name: altered cellular physical quality phenotype
 def: "A cellular physical quality phenotype where any physical object quality such as morphology, number, location, etc., of a microbial cell or a cellular component is altered relative to a designated control." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "abnormal cellular physical quality phenotype" NARROW [FYPO:0004638]
 is_a: OMP:0007633 ! cellular physical quality phenotype
 is_a: OMP:0007638 ! altered cell phenotype
@@ -14727,6 +14742,7 @@ creation_date: 2017-07-05T16:31:01Z
 id: OMP:0007638
 name: altered cell phenotype
 def: "A phenotype observed at the level of an individual cell that is altered relative to a designated control." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007632 ! cell phenotype
 created_by: dsiegele
@@ -15669,6 +15685,7 @@ creation_date: 2018-01-10T17:26:54Z
 id: OMP:0007749
 name: altered cellular physical quality phenotype during vegetative growth
 def: "A cellular physical quality phenotype observed during vegetative growth where a cellular physical quality of a microbial cell or cellular component is altered relative to a designated control." [OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007637 ! altered cellular physical quality phenotype
 is_a: OMP:0007748 ! cellular physical quality phenotype during vegetative growth
 created_by: siegele
@@ -15752,6 +15769,7 @@ creation_date: 2018-01-20T00:23:41Z
 id: OMP:0007758
 name: actin cytoskeleton phenotype
 def: "A subcellular component phenotype relating to the amount, distribution, composition, or morphology of the actin cytoskeleton of a microbial cell." [OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007754 ! cytoskeleton phenotype
 created_by: siegele
 creation_date: 2018-02-24T23:27:37Z
