@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 25:06:2018 11:32
+date: 25:06:2018 17:32
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -10,8 +10,6 @@ subsetdef: cell_quality "cell_quality"
 subsetdef: Cross_product_review "Involved_in"
 subsetdef: disposition_slim "Disposition slim"
 subsetdef: goantislim_grouping "Grouping classes that can be excluded"
-subsetdef: gocheck_do_not_annotate "Term not to be used for direct annotation"
-subsetdef: gocheck_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: goslim_aspergillus "Aspergillus GO slim"
 subsetdef: goslim_candida "Candida GO slim"
 subsetdef: goslim_generic "Generic GO slim"
@@ -26,6 +24,8 @@ subsetdef: gosubset_prok "Prokaryotic GO subset"
 subsetdef: hpo_slim "Human phenotype slim"
 subsetdef: mf_needs_review "Catalytic activity terms in need of attention"
 subsetdef: mpath_slim "Pathology slim"
+subsetdef: qc_do_not_annotate "Term not to be used for direct annotation"
+subsetdef: qc_do_not_manually_annotate "Term not to be used for direct manual annotation"
 subsetdef: relational_slim "Relational slim: types of quality that require an additional entity in order to exist"
 subsetdef: scalar_slim "Scalar slim"
 subsetdef: SOFA "SO feature annotation"
@@ -111,8 +111,8 @@ name: cilium or flagellum-dependent cell motility
 namespace: biological_process
 def: "Cell motility due to movement of eukaryotic cilia or bacterial-type flagella or archaeal-type flagella." [GOC:cilia, GOC:hjd, GOC:krc]
 comment: Note that we deem eukaryotic cilia and microtubule-based flagella to be equivalent, while the bacterial- and archaeal-type flagella have a different structure. The former are microtubule-based structures that lash back and forth and are present only in eukaryotes, while the latter achieve motility by rotation. Bacterial- and archaeal-type flagella are superficially similar but have a different molecular composition and fine structure. These three structures never co-exist in the same organism. Therefore, GO:0001539 'cilium or flagellum-dependent cell motility' is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term. Direct annotations to GO:0001539 'cilium or flagellum-dependent cell motility' may be amended during annotation QC.
-subset: gocheck_do_not_manually_annotate
 subset: gosubset_prok
+subset: qc_do_not_manually_annotate
 synonym: "ciliary or bacterial-type flagellar motility" RELATED []
 synonym: "ciliary/flagellar motility" EXACT []
 is_a: GO:0048870 ! cell motility
@@ -509,9 +509,9 @@ name: response to external stimulus
 namespace: biological_process
 def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of an external stimulus." [GOC:hb]
 comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
-subset: gocheck_do_not_manually_annotate
 subset: goslim_plant
 subset: gosubset_prok
+subset: qc_do_not_manually_annotate
 synonym: "response to environmental stimulus" EXACT []
 is_a: GO:0050896 ! response to stimulus
 
@@ -726,8 +726,8 @@ id: GO:0022402
 name: cell cycle process
 namespace: biological_process
 def: "The cellular process that ensures successive accurate and complete genome replication and chromosome segregation." [GOC:isa_complete, GOC:mtg_cell_cycle]
-subset: gocheck_do_not_manually_annotate
 subset: gosubset_prok
+subset: qc_do_not_manually_annotate
 is_a: GO:0044763 ! single-organism cellular process
 
 [Term]
@@ -925,11 +925,11 @@ name: response to chemical
 namespace: biological_process
 def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a chemical stimulus." [GOC:jl]
 comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
-subset: gocheck_do_not_manually_annotate
 subset: goslim_aspergillus
 subset: goslim_candida
 subset: goslim_yeast
 subset: gosubset_prok
+subset: qc_do_not_manually_annotate
 synonym: "response to chemical stimulus" EXACT [GOC:dos]
 synonym: "response to chemical substance" EXACT []
 is_a: GO:0050896 ! response to stimulus
@@ -1108,9 +1108,9 @@ namespace: cellular_component
 def: "Any constituent part of a cell, the basic structural and functional unit of all organisms." [GOC:jl]
 comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
 subset: goantislim_grouping
-subset: gocheck_do_not_annotate
 subset: goslim_pir
 subset: gosubset_prok
+subset: qc_do_not_annotate
 synonym: "cellular subcomponent" EXACT [NIF_Subcellular:sao628508602]
 synonym: "protoplast" RELATED [GOC:mah]
 is_a: GO:0005575 ! cellular_component
@@ -1243,9 +1243,9 @@ namespace: biological_process
 alt_id: GO:0051869
 def: "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism." [GOC:ai, GOC:bf]
 comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
-subset: gocheck_do_not_manually_annotate
 subset: goslim_pir
 subset: gosubset_prok
+subset: qc_do_not_manually_annotate
 synonym: "physiological response to stimulus" EXACT []
 is_a: GO:0008150 ! biological_process
 
@@ -9201,8 +9201,8 @@ id: OMP:0007006
 name: population phenotype
 def: "A microbial phenotype where the phenotype is observed at the level of a microbial population." [OMP:DAS]
 comment: This high-level term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested. Please consider using a more specific term to annotate each phenotype.
-subset: gocheck_do_not_annotate
-subset: gocheck_do_not_manually_annotate
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 xref: OBI:0000181 "population"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
@@ -11464,6 +11464,7 @@ id: OMP:0007259
 name: cell viability phenotype
 def: "A cell phenotype related to the ability of a microbial cell to survive and go on to grow and reproduce under the specified conditions." [FYPO:0000004, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "cell viability" EXACT [FYPO:0000004]
 is_a: OMP:0007633 ! cellular physical quality phenotype
 created_by: siegele
@@ -11475,6 +11476,7 @@ name: altered cell viability
 def: "A cell viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007259 ! cell viability phenotype
+is_a: OMP:0007637 ! altered cellular physical quality phenotype
 intersection_of: OMP:0007259 ! cell viability phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
@@ -12628,8 +12630,7 @@ creation_date: 2016-06-29T19:15:29Z
 [Term]
 id: OMP:0007392
 name: viable cell
-def: "A cell viability phenotype where a microbial cell is viable under the specified conditions." [OMP:DAS]
-xref: FYPO:0000124 "viable cell"
+def: "A cell viability phenotype where a microbial cell is able to survive and go on to grow and reproduce under the specified conditions." [FYPO:0000124, OMP:DAS]
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2016-07-01T22:15:10Z
@@ -12637,9 +12638,9 @@ creation_date: 2016-07-01T22:15:10Z
 [Term]
 id: OMP:0007393
 name: nonviable cell
-def: "A cell viability phenotype where a microbial cell is nonviable under the specified conditions." [FYPO:0000049, OMP:DAS]
+def: "A cell viability phenotype where a microbial cell is not viable under the specified conditions." [FYPO:0000049, OMP:DAS]
 synonym: "inviable" RELATED [APO:0000112]
-synonym: "inviable cell" EXACT [FYPO:0000049]
+synonym: "inviable cell" NARROW [FYPO:0000049]
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2016-07-01T22:15:10Z
@@ -15414,16 +15415,18 @@ creation_date: 2017-12-19T17:49:16Z
 [Term]
 id: OMP:0007716
 name: viable vegetative cell
-def: "A cell phenotype in which a cell in the vegetative growth phase of the life cycle is viable." [FYPO:0001491, OMP:das]
+def: "A cell viability phenotype observed in the vegetative growth phase of the life cycle where a microbial cell is able to survive and go on to grow and reproduce in the specified conditions." [FYPO:0001491, OMP:das]
+synonym: "viable vegetative cell" EXACT [FYPO:0001491]
 is_a: OMP:0007392 ! viable cell
 created_by: siegele
 creation_date: 2017-12-19T17:54:52Z
 
 [Term]
 id: OMP:0007717
-name: decreased viability of vegetative cell
-def: "An altered cell viability phenotype in which cells in the vegetative phase of the growth cycle have decreased viability relative to a designated control." [OMP:das]
+name: decreased vegetative cell viability
+def: "An altered cell viability phenotype observed in the vegetative phase of the growth cycle where the viability of a microbial cell is decreased relative to a designated control." [OMP:das]
 is_a: OMP:0007261 ! decreased cell viability
+is_a: OMP:0007724 ! altered vegetative cell viability
 created_by: siegele
 creation_date: 2017-12-19T17:56:29Z
 
@@ -15431,7 +15434,7 @@ creation_date: 2017-12-19T17:56:29Z
 id: OMP:0007718
 name: abolished viability of vegetative cell
 def: "An altered cell viability phenotype where the viability of cells in the vegetative growth phase of the life cycle is abolished." [OMP:das]
-is_a: OMP:0007717 ! decreased viability of vegetative cell
+is_a: OMP:0007717 ! decreased vegetative cell viability
 created_by: siegele
 creation_date: 2017-12-19T17:58:40Z
 
@@ -15481,15 +15484,16 @@ creation_date: 2017-12-20T16:46:25Z
 [Term]
 id: OMP:0007724
 name: altered vegetative cell viability
+def: "A cell viability phenotype observed in the vegetative phase of the growth cycle where the ability of a microbial cell to survive, germinate, and go on to grow and reproduce in the specified conditions is altered relative to a designated control." [OMP:das]
 is_a: OMP:0007260 ! altered cell viability
 created_by: siegele
 creation_date: 2017-12-20T16:59:28Z
 
 [Term]
 id: OMP:0007725
-name: inviable after spore germination
-def: "An altered vegetative cell viability phenotype in which a spore germinates but fails to produce dividing cells that can survive under conditions where spores of the designated control germinate and produce dividing cells." [FYPO:0000316, OMP:das]
-is_a: OMP:0007724 ! altered vegetative cell viability
+name: nonviable after spore germination
+def: "An vegetative cell viability phenotype in which a microbial spore germinates but fails to produce dividing cells that can survive and go on to grow and reproduce under the conditions specified." [FYPO:0000316, OMP:das]
+is_a: OMP:0007780 ! nonviable vegetative cell
 created_by: siegele
 creation_date: 2017-12-20T16:59:57Z
 
@@ -15498,7 +15502,8 @@ id: OMP:0007726
 name: abolished spore viability
 def: "An abolished cell viability phenotype in which a spore is unable to survive under conditions in which spores of the designated control strain are able to survive. An inviable spore does not germinate." [FYPO:0002151, OMP:das]
 synonym: "inviable spore" EXACT [FYPO:0002151]
-is_a: OMP:0007391 ! abolished cell viability
+is_a: OMP:0007837 ! nonviable spore
+is_a: OMP:0007839 ! decreased spore viability
 created_by: siegele
 creation_date: 2017-12-20T17:07:55Z
 
@@ -16426,15 +16431,18 @@ creation_date: 2018-06-22T00:47:21Z
 [Term]
 id: OMP:0007835
 name: spore viability phenotype
-def: "A cell phenotype related to the ability of a microbial spore to survive, germinate, and go on to grow and reproduce under the specified condition." [OMP:das]
+def: "A cell viability phenotype related to the ability of a microbial spore to survive, germinate, and go on to grow and reproduce under the specified conditions." [OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007259 ! cell viability phenotype
 created_by: siegele
 creation_date: 2018-06-25T10:35:25Z
 
 [Term]
 id: OMP:0007836
-name: nonviable spore
+name: viable spore
+def: "A cell viability phenotype in which a microbial spore is able to survive and go on to grow and reproduce under the specified conditions." [OMP:das]
+is_a: OMP:0007392 ! viable cell
 is_a: OMP:0007835 ! spore viability phenotype
 created_by: siegele
 creation_date: 2018-06-25T10:37:49Z
@@ -16442,9 +16450,43 @@ creation_date: 2018-06-25T10:37:49Z
 [Term]
 id: OMP:0007837
 name: nonviable spore
+def: "A cell viability phenotype in which a microbial spore is unable to survive under the specified conditions. An inviable spore does not germinate." [FYPO:0002151, OMP:das]
 is_a: OMP:0007835 ! spore viability phenotype
 created_by: siegele
 creation_date: 2018-06-25T10:39:27Z
+
+[Term]
+id: OMP:0007838
+name: altered spore viability
+def: "A spore viability phenotype where the ability of a microbial spore to survive, germinate, and go on to grow and reproduce is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007260 ! altered cell viability
+is_a: OMP:0007835 ! spore viability phenotype
+created_by: siegele
+creation_date: 2018-06-25T16:17:02Z
+
+[Term]
+id: OMP:0007839
+name: decreased spore viability
+def: "An altered spore viability phenotype where the ability of a microbial cell to survive, germinate, and go on to grow and reproduce is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007838 ! altered spore viability
+created_by: siegele
+creation_date: 2018-06-25T16:18:49Z
+
+[Term]
+id: OMP:0007840
+name: increased spore viability
+def: "An altered spore viability phenotype where the ability of a microbial spore to survive, germinate, and go on to grow and reproduce is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007838 ! altered spore viability
+created_by: siegele
+creation_date: 2018-06-25T16:18:49Z
+
+[Term]
+id: OMP:0007841
+name: increased vegetative cell viability
+is_a: OMP:0007262 ! increased cell viability
+is_a: OMP:0007724 ! altered vegetative cell viability
+created_by: siegele
+creation_date: 2018-06-25T17:18:58Z
 
 [Term]
 id: OMP:0008000
