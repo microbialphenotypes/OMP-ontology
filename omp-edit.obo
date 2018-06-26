@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 25:06:2018 17:32
+date: 25:06:2018 21:10
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -29,7 +29,6 @@ subsetdef: qc_do_not_manually_annotate "Term not to be used for direct manual an
 subsetdef: relational_slim "Relational slim: types of quality that require an additional entity in order to exist"
 subsetdef: scalar_slim "Scalar slim"
 subsetdef: SOFA "SO feature annotation"
-subsetdef: termgenie_unvetted "Terms created by TermGenie that do not follow a template and require additional vetting by editors"
 subsetdef: value_slim "Value slim"
 subsetdef: virus_checked "Viral overhaul terms"
 synonymtypedef: BRAND_NAME "BRAND NAME"
@@ -1394,7 +1393,8 @@ creation_date: 2011-03-10T04:01:50Z
 id: OMP:0000001
 name: motility phenotype
 def: "A locomotion phenotype where the trait in question is the self-propelled movement of a microbe from one location to another." [OMP:MCC]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0048870 "cell motility"
 is_a: OMP:0000312 ! locomotion phenotype
 intersection_of: OMP:0000312 ! locomotion phenotype
@@ -1415,7 +1415,8 @@ creation_date: 2011-03-10T07:02:42Z
 id: OMP:0000003
 name: cell arrangement phenotype
 def: "A microbial phenotype where the trait in question is the arrangement of cells of a microbe in relation to one another." [OMP:MCC]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
 creation_date: 2011-04-14T02:30:07Z
@@ -1424,7 +1425,8 @@ creation_date: 2011-04-14T02:30:07Z
 id: OMP:0000004
 name: taxis phenotype
 def: "A locomotion phenotype where the directed movement of a motile microbe is in response to an external stimulus." [ISBN:0192800329, OMP:MCC]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000312 ! locomotion phenotype
 intersection_of: OMP:0000312 ! locomotion phenotype
 intersection_of: inheres_in GO:0042330 ! taxis
@@ -1609,7 +1611,8 @@ creation_date: 2011-06-07T11:19:56Z
 id: OMP:0000026
 name: host-virus interaction phenotype
 def: "A microbial phenotype related to the ability of a host to be infected by and/or support reproduction of a virus." [OMP:JCH]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "host-bacteriophage interaction phenotype" NARROW []
 synonym: "host-phage interaction phenotype" NARROW []
 is_a: OMP:0000000 ! microbial phenotype
@@ -1768,6 +1771,7 @@ id: OMP:0000047
 name: aerotaxis phenotype
 def: "A taxis phenotype where directed movement of a motile microbe is in response to environmental oxygen (O2)." [ISBN:0192800329, OMP:MCC]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0009454 "aerotaxis"
 is_a: OMP:0000004 ! taxis phenotype
 intersection_of: OMP:0000004 ! taxis phenotype
@@ -1779,7 +1783,8 @@ creation_date: 2011-04-26T04:18:11Z
 id: OMP:0000048
 name: chemotaxis phenotype
 def: "A taxis phenotype where the directed movement of a motile microbe is in response to a specific chemical concentration gradient." [ISBN:0198506732, OMP:MCC]
-comment: ChEBI cross product candidate (and child terms).
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.\n\nChEBI cross product candidate (and child terms).
+subset: qc_do_not_manually_annotate
 xref: GO:0006935
 is_a: OMP:0000004 ! taxis phenotype
 created_by: mchibucos
@@ -1939,6 +1944,8 @@ creation_date: 2011-02-02T03:28:43Z
 id: OMP:0000068
 name: virulence phenotype
 def: "A microbe-host interaction phenotype related to the ability of a microbe to cause disease in another organism (the host)." [OMP:MCC]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "infectious agent" BROAD []
 synonym: "pathogen" BROAD []
 xref: APO:0000048 "virulence"
@@ -1973,7 +1980,8 @@ creation_date: 2011-02-02T03:11:48Z
 id: OMP:0000071
 name: cell morphology phenotype
 def: "A microbial phenotype related to the form and structure of a microbe." [OMP:MCC]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: APO:0000050 "cellular morphology"
 is_a: OMP:0000000 ! microbial phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -1994,7 +2002,8 @@ creation_date: 2011-02-02T03:31:35Z
 id: OMP:0000073
 name: cell shape phenotype
 def: "A cell morphology phenotype where the trait in question is the shape of a cell." [OMP:MCC]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: APO:0000051 "cell shape"
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
@@ -2006,7 +2015,8 @@ creation_date: 2011-02-02T03:18:02Z
 id: OMP:0000074
 name: cell size phenotype
 def: "A cell morphology phenotype where the trait in question is the size of a cell." [OMP:MCC]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: APO:0000052 "cell size"
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
@@ -2086,6 +2096,7 @@ id: OMP:0000083
 name: cell projection morphology phenotype
 def: "A cell morphology phenotype relating to the size, shape, or appearance of a structure that is a prolongation or process extending from a cell." [GO:0042995, OMP:MCC]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "cell appendage phenotype" EXACT []
 xref: GO:0042995 "cell projection"
 is_a: OMP:0000071 ! cell morphology phenotype
@@ -2107,7 +2118,8 @@ creation_date: 2011-02-02T03:47:57Z
 id: OMP:0000085
 name: cell envelope morphology phenotype
 def: "A cell morphology phenotype relating to the size, shape, or appearance of the envelope that surrounds a microbial cell. The envelope includes the cytoplasmic membrane and everything external to the cytoplasmic membrane, encompassing the periplasmic space, cell wall, and outer membrane.  Additional layers, such as capsules or S-layers, are also part of the envelope." [OMP:MCC]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000071 ! cell morphology phenotype
 intersection_of: OMP:0000071 ! cell morphology phenotype
 intersection_of: inheres_in GO:0031975 ! envelope
@@ -2272,6 +2284,8 @@ creation_date: 2011-02-02T02:14:39Z
 id: OMP:0000101
 name: microbial communication phenotype
 def: "A multi-organism phenotype where microbial organisms communicate and coordinate their activities through chemical signals that either diffuse through the environment or remain cell associated." [OMP:JCH]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0005116 ! multi-organism process phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:45:44Z
@@ -2681,7 +2695,8 @@ creation_date: 2011-02-02T02:47:43Z
 id: OMP:0000150
 name: nucleoid phenotype
 def: "A genetic material phenotype where the trait in question is the nucleoid, the region of a bacterial or archaeal cell to which the DNA is confined." [OMP:MCC]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "genophore" RELATED []
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: adrienne
@@ -2879,7 +2894,8 @@ creation_date: 2011-06-06T04:16:08Z
 id: OMP:0000173
 name: response to stress phenotype
 def: "A biological process phenotype related to a change in state or activity of a microbe (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a disturbance in organismal or cellular homeostasis, usually, but not necessarily, exogenous (e.g. temperature, humidity, ionizing radiation)." [FYPO:0002549, GO:0006950, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007194 ! biological process phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:13:32Z
@@ -2889,6 +2905,7 @@ id: OMP:0000174
 name: growth phenotype
 def: "A microbial phenotype related to the increase in size or mass over time of an entire organism, a part of an organism, or a cell." [GO:0040007, OMP:WAM]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.\n\nFor phenotypes affecting growth of a population, see OMP:0007167 \! population growth phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0040007 "growth"
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -2908,6 +2925,8 @@ creation_date: 2011-06-07T02:59:54Z
 id: OMP:0000176
 name: biofilm phenotype
 def: "A multi-organism phenotype dealing with the process in which microorganisms attach to and grow on a surface and produce extracellular polymers that facilitate attachment and matrix formation." [GO:0042710, OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0005116 ! multi-organism process phenotype
 created_by: Adrienne
 creation_date: 2011-02-02T03:17:19Z
@@ -2944,7 +2963,8 @@ creation_date: 2011-02-02T03:22:43Z
 id: OMP:0000180
 name: metabolic phenotype
 def: "A microbial phenotype that deals with the chemical reactions and pathways, including anabolism and catabolism, by which living organisms transform chemical substances." [GO:0008152]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "Metabolism" EXACT []
 is_a: OMP:0000000 ! microbial phenotype
 created_by: mchibucos
@@ -3035,6 +3055,8 @@ creation_date: 2011-02-02T03:34:58Z
 id: OMP:0000191
 name: gram stain phenotype
 def: "A cell staining phenotype where microorganisms are grouped based on their ability to retain crystal violet stain when decolorized with an organic solvent such as ethanol." [ISBN:978-0-07-340240-6, ISBN:978-0077292812, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: SNOMEDCT:385484003 "Gram stain"
 is_a: OMP:0000214 ! cell staining phenotype
 created_by: Adrienne
@@ -3044,7 +3066,8 @@ creation_date: 2011-02-02T03:35:15Z
 id: OMP:0000192
 name: chemical production phenotype
 def: "A metabolic phenotype that deals with the chemical reactions and pathways resulting in the formation of chemicals." [OMP:JCH]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:24:08Z
@@ -3078,7 +3101,8 @@ creation_date: 2011-06-06T04:29:39Z
 id: OMP:0000197
 name: microbe-host interaction phenotype
 def: "A microbial phenotype related to the interactions between a microbe and its host(s)." [OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: APO:0000287 "interaction with host/environment"
 xref: GO:0051704 "multi-organism process"
 is_a: OMP:0000000 ! microbial phenotype
@@ -3098,6 +3122,7 @@ id: OMP:0000199
 name: acid-fast staining phenotype
 def: "A cell-staining phenotype where a cell or cells are classified based on whether they are decolorized by an acid-alcohol mixture after staining, typically with carbolfuchsin." [ISBN:978-0-07-729281-1, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000214 ! cell staining phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:38:46Z
@@ -3171,7 +3196,8 @@ creation_date: 2011-06-07T03:17:46Z
 id: OMP:0000207
 name: serotype phenotype
 def: "A microbial phenotype that is distinguished by the presence a specific surface antigen." [OMP:MCC]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "antigenic typing phenotype" RELATED []
 synonym: "serological test phenotype" RELATED []
 synonym: "serovar" EXACT []
@@ -3232,7 +3258,8 @@ creation_date: 2011-06-07T09:53:17Z
 id: OMP:0000214
 name: cell staining phenotype
 def: "A microbial phenotype where a cell or cells are treated with a dye or dyes for purposes of identification and classification." [OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: APO:0000061 "colony color"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: Adrienne
@@ -3295,7 +3322,8 @@ creation_date: 2011-02-03T04:44:11Z
 id: OMP:0000221
 name: enzymatic activity phenotype
 def: "A microbial phenotype that affects an enzymatic activity. Enzymes are biological molecules that catalyze biochemical reactions at physiological temperatures. Enzymes possess specific binding sites for their substrates (reactants) and are usually composed wholly or largely of protein or RNA. Catalytic RNAs are also called ribozymes." [ISBN:0198506732, OMP:JCH]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "catalytic activity" RELATED []
 xref: FYPO:0000654 "catalytic activity phenotype"
 xref: GO:0003824 "catalytic activity"
@@ -3317,7 +3345,8 @@ creation_date: 2011-02-03T04:45:37Z
 id: OMP:0000224
 name: energy metabolism phenotype
 def: "A metabolic phenotype that deals with the specific process an organism uses to produce energy carriers." [OMP:JCH]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "bioenergetics" EXACT []
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: mchibucos
@@ -3513,7 +3542,8 @@ creation_date: 2011-07-21T12:51:15Z
 id: OMP:0000253
 name: gene expression phenotype
 def: "A microbial phenotype that affects expression of a gene or genes.  Gene expression includes transcription, RNA processing, and, for protein-coding genes, translation and protein maturation." [ISBN:9781615835409, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: FYPO:0000142 "gene expression phenotype"
 xref: GO:0010467 "gene expression"
 is_a: OMP:0000000 ! microbial phenotype
@@ -3588,6 +3618,7 @@ id: OMP:0000274
 name: antimicrobial agent resistance phenotype
 def: "A microbial phenotype related to resistance or sensitivity to agents that kill (microbiocidal) or inhibit growth (microbiostatic) of a microbe." [CHEBI:33281, OMP:MCC]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "antibiotic resistance phenotype" NARROW []
 synonym: "antibiotic sensitivity phenotype" RELATED []
 synonym: "antifungal resistance phenotype" NARROW []
@@ -3647,7 +3678,8 @@ creation_date: 2011-07-21T04:07:44Z
 id: OMP:0000290
 name: genetic material phenotype
 def: "A microbial phenotype dealing with the various aspects of the molecular carrier of an organism's primary genetic information." [ISBN:9780198529170, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "double stranded DNA" NARROW [ISBN:9780198529170]
 synonym: "RNA" NARROW [ISBN:9780198529170]
 synonym: "single stranded DNA" NARROW [ISBN:9780198529170]
@@ -3668,7 +3700,8 @@ creation_date: 2011-07-21T04:25:09Z
 id: OMP:0000294
 name: DNA supercoiling phenotype
 def: "A genetic material phenotype related to supercoiling of a double-stranded DNA molecule." [OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T04:46:29Z
@@ -3713,6 +3746,8 @@ creation_date: 2011-07-21T05:18:58Z
 id: OMP:0000306
 name: macromolecular biosynthesis phenotype
 def: "A biosynthesis phenotype dealing with the chemical reactions and pathways resulting in the formation of a macromolecule, any molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." [GO:0009059, OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000309 ! biosynthetic phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:44:45Z
@@ -3721,7 +3756,8 @@ creation_date: 2011-07-21T05:44:45Z
 id: OMP:0000307
 name: DNA replication phenotype
 def: "A genetic material phenotype related to the process of DNA-dependent DNA replication that takes place as part of the cell cycle." [OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0044786 "cell cycle DNA replication"
 is_a: OMP:0000290 ! genetic material phenotype
 is_a: OMP:0000306 ! macromolecular biosynthesis phenotype
@@ -3744,7 +3780,8 @@ creation_date: 2011-07-21T05:46:05Z
 id: OMP:0000309
 name: biosynthetic phenotype
 def: "A metabolic phenotype dealing with the chemical reactions and pathways resulting in the formation of substances; typically the energy-requiring part of metabolism in which simpler substances are transformed into more complex ones." [GO:0009058]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "Biosynthesis" EXACT []
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: mchibucos
@@ -3754,6 +3791,8 @@ creation_date: 2011-07-21T05:47:06Z
 id: OMP:0000310
 name: small molecule biosynthesis phenotype
 def: "A biosynthetic phenotype dealing with the chemical reactions and pathways resulting in the formation of small molecules, any low molecular weight, monomeric, non-encoded molecule." [OMP:JCH]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000309 ! biosynthetic phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T05:49:51Z
@@ -3770,7 +3809,8 @@ creation_date: 2011-07-21T05:50:25Z
 id: OMP:0000312
 name: locomotion phenotype
 def: "A microbial phenotype where the trait in question is the self-propelled movement of a microbe from one location to another." [GO:0040011, OMP:MCC]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0040011 "locomotion"
 is_a: OMP:0000000 ! microbial phenotype
 is_a: OMP:0007194 ! biological process phenotype
@@ -3784,6 +3824,7 @@ id: OMP:0000321
 name: macrolide resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds with a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--that is linked to one or more sugars and that have antimicrobial properties." [CHEBI:25106, OMP:MCC]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "amphotericin B resistance phenotype" NARROW [CHEBI:2682]
 synonym: "azithromycin resistance phenotype" NARROW [CHEBI:2955]
 synonym: "bafilomycin A1 resistance phenotype" NARROW [CHEBI:22689]
@@ -3812,7 +3853,8 @@ creation_date: 2012-11-02T01:51:04Z
 id: OMP:0000331
 name: aminopyrimidine resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "5-flucytosine resistance phenotype" NARROW [CHEBI:5100]
 synonym: "aminopyrimidine sensitivity phenotype" EXACT []
 synonym: "antifolate resistance phenotype" BROAD [CHEBI:73913]
@@ -3849,6 +3891,7 @@ id: OMP:0000336
 name: beta-lactam resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to compounds that contain a beta-lactam ring in their molecular structure." [CHEBI:35627, OMP:MCC]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "amoxicillin resistance phenotype" NARROW [CHEBI:2676]
 synonym: "ampicillin resistance phenotype" NARROW [CHEBI:28971]
 synonym: "aztreonam resistance phenotype" NARROW [CHEBI:161680]
@@ -3910,7 +3953,8 @@ creation_date: 2012-11-04T02:55:41Z
 id: OMP:0000450
 name: trace element utilization phenotype
 def: "A nutrient utilization phenotype that is related to utilization of chemical elements required by living organisms in minute amounts." [OMP:JCH]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "micronutrient utilization" EXACT []
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: mchibucos
@@ -4096,7 +4140,8 @@ creation_date: 2013-08-22T05:57:56Z
 id: OMP:0005000
 name: phospholipase activity phenotype
 def: "An enzymatic activity phenotype that alters phospholipase activity. Phospholipases are a family of enzymes that catalyze the hydrolysis of a glycerophospholipid." [OMP:JG]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0004620 "phospholipase activity"
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
@@ -4237,6 +4282,8 @@ creation_date: 2013-09-09T13:06:03Z
 id: OMP:0005017
 name: SOS response phenotype
 def: "A gene expression phenotype related to the expression of a gene or genes that are part of the SOS response.  Expression of the SOS response is induced by DNA damage." [ISBN:9781615831838, OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "DNA damage response" RELATED []
 is_a: OMP:0000253 ! gene expression phenotype
 created_by: wmeza
@@ -4317,8 +4364,9 @@ creation_date: 2016-01-26T15:17:15Z
 [Term]
 id: OMP:0005027
 name: stress-induced mutagenesis phenotype
-def: "A genetic material phenotype that refers to the process(es) that give rise to mutations that occur after imposition of a non-lethal stress." [OMP:WAM, PMID:17917874, PMID:3045565]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+def: "A genetic material phenotype relating to the process or processes that give rise to mutations that occur after imposition of a non-lethal stress." [OMP:WAM, PMID:17917874, PMID:3045565]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-09-20T15:00:09Z
@@ -4446,7 +4494,8 @@ creation_date: 2013-10-16T17:15:59Z
 id: OMP:0005042
 name: homologous recombination phenotype
 def: "A genetic material phenotype dealing with the process that occurs when two segments of DNA with identical or very similar sequences pair up and exchange or replace some portion of their DNA." [ISBN:9780471768654, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:34:37Z
@@ -4455,7 +4504,8 @@ creation_date: 2013-10-18T18:34:37Z
 id: OMP:0005043
 name: site-specific recombination phenotype
 def: "A genetic material phenotype where there is non-homologous recombination at a particular sequence of DNA." [ISBN:9780471768654, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:34:58Z
@@ -4473,6 +4523,7 @@ id: OMP:0005045
 name: mitotic recombination phenotype
 def: "A genetic material phenotype dealing with the exchange, reciprocal or nonreciprocal of genetic material between one DNA  molecule and a homologous region of DNA that occurs  during mitotic cell cycles." [ISBN:9780198529170, OMP:WAM]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:38:05Z
@@ -4481,7 +4532,8 @@ creation_date: 2013-10-18T18:38:05Z
 id: OMP:0005046
 name: gene silencing phenotype
 def: "A genetic material phenotype dealing with the transcriptional or post-transcriptional processes carried out at the cellular level that results in long-term gene inactivation." [GO:0016458, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0016458 "gene silencing"
 is_a: OMP:0000290 ! genetic material phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -4493,7 +4545,8 @@ creation_date: 2013-10-18T18:38:43Z
 id: OMP:0005047
 name: chromosome segregation phenotype
 def: "A genetic material phenotype concerning the process in which replicated chromosome(s) are physically separated and apportioned as a set to daughter cells." [GO:0007059, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:\:0007059 "chromosome segregation"
 is_a: OMP:0000290 ! genetic material phenotype
 is_a: OMP:0007194 ! biological process phenotype
@@ -4506,7 +4559,8 @@ creation_date: 2013-10-18T18:39:04Z
 id: OMP:0005048
 name: mutation frequency phenotype
 def: "A genetic material phenotype dealing with the frequency of mutations." [ISBN:9780198529170, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: wmeza
 creation_date: 2013-10-18T18:39:27Z
@@ -4595,7 +4649,8 @@ creation_date: 2013-10-29T13:20:16Z
 id: OMP:0005059
 name: transposable element transposition phenotype
 def: "A genetic material phenotype dealing with DNA sequences that change positions within the genome." [ISBN:9780198529170, OMP:WAM]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "<new synonym>" RELATED []
 xref: APO:0000047 "transposable element transposition"
 xref: GO:0032196 "transposition"
@@ -5049,6 +5104,8 @@ creation_date: 2016-01-26T15:19:53Z
 id: OMP:0005111
 name: resistance to killing by host phenotype
 def: "A microbe-host interaction phenotype relating to the resistance or sensitivity of a microbe to killing by a host." [OMP:JG]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: APO:0000324 "resistance to killing by host cells"
 is_a: OMP:0000197 ! microbe-host interaction phenotype
 created_by: Jesus
@@ -5095,7 +5152,8 @@ creation_date: 2014-08-07T14:54:52Z
 id: OMP:0005116
 name: multi-organism process phenotype
 def: "A microbial phenotype related to a biological process that involves two or more organisms of the same or different species." [GO:0051704, OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0051704 "multi-organism process"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: wmeza
@@ -5340,7 +5398,8 @@ creation_date: 2016-02-02T13:57:57Z
 id: OMP:0005144
 name: vacuolar morphology phenotype
 def: "A cell morphology phenotype that relates to the morphology of the vacuole, a closed structure, found primarily in eukaryotic cells, that is completely surrounded by a unit membrane and contains liquid material. Cells contain one or several vacuoles, which may have different functions from each other. Vacuoles have a diverse array of functions." [GO:0005773, OMP:JG]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0005773 "vacuole"
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: Jesus
@@ -5375,7 +5434,8 @@ creation_date: 2016-02-03T16:39:51Z
 id: OMP:0005148
 name: ferric reductase activity phenotype
 def: "An enzymatic activity phenotype that relates to the presence or absence of ferric reductase, a class of flavin reductases. Ferric reductases act on ferric iron to reduce it by using NADH or NADPH as the electron donor." [OMP:JG]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
 creation_date: 2016-02-11T12:43:04Z
@@ -5429,7 +5489,8 @@ creation_date: 2016-02-11T12:46:10Z
 id: OMP:0005154
 name: protein kinase A activity phenotype
 def: "An enzymatic activity phenotype that relates to the presence or absence of protein kinase A, an enzyme that belongs to the kinase AGC group. Protein kinase A acts by phosphorylating a wide array of enzymes, ion channels, chromosomal proteins, and transcription factors." [OMP:JG]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
 creation_date: 2016-02-11T13:11:51Z
@@ -5483,7 +5544,8 @@ creation_date: 2016-02-11T13:16:11Z
 id: OMP:0005160
 name: phosphatase activity phenotype
 def: "An enzymatic activity phenotype that relates to the presence or absence of phosphatase, an enzyme that acts to modulate protein activity in cells. Phosphatase acts by removing phosphate groups off of active proteins making them enzymatically inactive." [OMP:JG]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
 creation_date: 2016-02-11T13:29:38Z
@@ -5537,7 +5599,8 @@ creation_date: 2016-02-11T13:37:34Z
 id: OMP:0005166
 name: superoxide dismutase activity phenotype
 def: "An enzymatic activity phenotype relating to the presence or absence of  superoxide dismutase, an enzyme that catalyzes the reaction:  2 superoxide + 2 H+ = O2 + hydrogen peroxide." [GO:0004784, OMP:JG]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0004784 "superoxide dismutase activity"
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
@@ -5601,6 +5664,7 @@ id: OMP:0005173
 name: acid phosphatase activity phenotype
 def: "An enzymatic activity phenotype that relates to the presence or absence of acid phosphatase, an enzyme that removes phosphoryl groups from other molecules. Acid phosphatase catalyzes the reaction: an orthophosphoric monoester + H2O -> an alcohol + phosphate, with an acid pH optimum." [OMP:JG]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0003993 "acid phosphatase activity"
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
@@ -5812,6 +5876,7 @@ id: OMP:0005198
 name: alpha-1,3-mannosyltransferase activity phenotype
 def: "An enzymatic activity phenotype that relates to the presence or absence of alpha-1,3- mannosyltransferase. Alpha-1,3- mannosyltransferase promotes the catalysis of the transfer of a mannose residue to an oligosaccharide, forming an alpha-(1,3) linkage." [OMP:JG]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0000033 "alpha-1,3- mannosyltransferase activity"
 is_a: OMP:0000221 ! enzymatic activity phenotype
 created_by: Jesus
@@ -5871,6 +5936,7 @@ id: OMP:0005205
 name: adhesion phenotype
 def: "A biological process phenotype that relates to the ability of a microbe to attach to a substrate in the environment or in a host, either directly or indirectly." [OMP:JG]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: APO:0000288 "adhesion"
 xref: GO:0022610 "biological adhesion"
 is_a: OMP:0007194 ! biological process phenotype
@@ -6142,7 +6208,8 @@ creation_date: 2016-06-20T23:38:17Z
 id: OMP:0005237
 name: golgi apparatus phenotype
 def: "A cellular component phenotype relating to the golgi apparatus, which is the endomembranous cytoplasmic eukaryotic organelle involved in secretion and intracellular transport." [OMP:JG]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0005794 "golgi apparatus"
 is_a: OMP:0007197 ! cellular component phenotype
 created_by: Jesus
@@ -6417,7 +6484,8 @@ creation_date: 2016-06-27T14:33:03Z
 id: OMP:0005269
 name: endomembrane system phenotype
 def: "A cellular component phenotype relating to the endomembrane, a collection of membranous structures involved in transport within the cell. The endomembrane system includes the nuclear envelope, endoplasmic reticulum, Golgi apparatus, vacuoles, vesicles, and the plasma membrane. Members of the endomembrane system pass materials through each other or through the use of vesicles." [OMP:JG]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0012505 "endomembrane system"
 xref: PMID:19121819
 is_a: OMP:0007197 ! cellular component phenotype
@@ -6462,6 +6530,7 @@ id: OMP:0005274
 name: organic heterocyclic compound resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic heterocyclic compound, which is any cyclic compound having as ring members atoms of carbon and at least of one other element." [CHEBI:24532, OMP:JG]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "chloripromazine resistance phenotype" NARROW [CHEBI:3647]
 synonym: "coumarin resistance phenotype" NARROW [CHEBI:28794]
 synonym: "cycloheximide resistance phenotype" NARROW [CHEBI:27641]
@@ -6955,6 +7024,8 @@ creation_date: 2016-09-23T17:08:54Z
 id: OMP:0005332
 name: protein localization phenotype
 def: "A cellular component phenotype relating to the localization or placement of proteins within a cell." [APO:0000209, OMP:JG]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: APO:0000209 "protein/peptide distribution"
 is_a: OMP:0007197 ! cellular component phenotype
 created_by: Jesus
@@ -7047,6 +7118,7 @@ id: OMP:0005343
 name: organic aromatic compound resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organic aromatic compound." [OMP:JG]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "CCCP (Carbonyl cyanide 3-chlorophenylhydrazone) resistance phenotype" NARROW [CHEBI:3259]
 synonym: "procaine resistance phenotype" NARROW [CHEBI:8430]
 synonym: "propidium iodide resistance phenotype" NARROW [CHEBI:51240]
@@ -7197,6 +7269,8 @@ creation_date: 2016-11-21T13:33:33Z
 id: OMP:0005361
 name: osmotaxis phenotype
 def: "A taxis phenotype where the directed movement of a motile microbe is in response to an osmotic concentration gradient (formerly called osmolarity). Osmotaxis differs from chemotaxis in that during osmotaxis the microbe is responding to water activity not to the solute per se." [OMP:JG, PMID:3059348]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000004 ! taxis phenotype
 created_by: Jesus
 creation_date: 2016-12-20T12:48:52Z
@@ -7297,6 +7371,8 @@ creation_date: 2016-12-20T13:06:09Z
 id: OMP:0005373
 name: sporulation frequency phenotype
 def: "A cell population phenotype relating to the fraction of cells in a population that form spores under sporulation-inducing conditions." [OMP:JG]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000091 ! sporulation phenotype
 is_a: OMP:0007006 ! population phenotype
 created_by: Jesus
@@ -7375,6 +7451,7 @@ creation_date: 2016-12-20T13:35:03Z
 id: OMP:0005382
 name: tail morphology phenotype
 def: "A virion morphology phenotype that is referring to the form and structure of tails on viral particles." [OMP:dr]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007541 ! virion morphology phenotype
 created_by: MiLaptop
 creation_date: 2017-11-03T21:07:19Z
@@ -7407,6 +7484,7 @@ creation_date: 2017-11-03T21:17:21Z
 id: OMP:0005386
 name: capsid morphology phenotype
 def: "A virion morphology phenotype related to the form and structure of the capsid of the virion." []
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007541 ! virion morphology phenotype
 created_by: MiLaptop
 creation_date: 2017-11-03T21:01:58Z
@@ -7463,6 +7541,7 @@ creation_date: 2017-11-03T21:36:16Z
 id: OMP:0005393
 name: pseudo tail morphology phenotype
 def: "A virion morphology phenotype where the isolated virions do not show presence of a tail, but rather, the tail is only seen during infection or through some other manipulation of the virion." [OMP:dr]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007541 ! virion morphology phenotype
 created_by: MiLaptop
 creation_date: 2017-11-03T21:39:58Z
@@ -7705,7 +7784,8 @@ creation_date: 2014-07-24T17:26:03Z
 id: OMP:0006022
 name: nutrient utilization phenotype
 def: "A microbial phenotype that affects the utilization of a nutrient, which is a substance used for biosynthesis or energy release and capture." [ISBN:9780073402406]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000000 ! microbial phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T14:40:06Z
@@ -7714,7 +7794,8 @@ creation_date: 2013-09-10T14:40:06Z
 id: OMP:0006023
 name: carbon source utilization phenotype
 def: "A nutrient utilization phenotype where the nutrient is being used as a source of carbon." [OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "acetate" NARROW []
 synonym: "glucosamine" NARROW []
 synonym: "glucose" NARROW []
@@ -7758,6 +7839,7 @@ id: OMP:0006027
 name: bacteriocin resistance phenotype
 def: "An antimicrobial peptide resistance phenotype related to resistance or sensitivity to bacteriocins, which are polypeptides synthesized by specific strains of bacteria that are active against other cells of the same or different species." [CHEBI:48081, OMP:JCH]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "bacteriocin sensitivity phenotype" RELATED []
 synonym: "colicins resistance phenotype" NARROW [GO:0015468]
 synonym: "fusidic acid resistance phenotype" NARROW [CHEBI:29013]
@@ -7777,6 +7859,7 @@ id: OMP:0006028
 name: azole resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to heteromonocyclic organic compounds consisting of a five-membered mancude-ring containing nitrogen." [CHEBI:68452, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.\n\nAzoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
+subset: qc_do_not_manually_annotate
 synonym: "azole sensitivity phenotype" RELATED []
 synonym: "benomyl resistance phenotype" NARROW [CHEBI:3015]
 synonym: "fluconazole resistance phenotype" NARROW [CHEBI:46081]
@@ -7797,6 +7880,7 @@ id: OMP:0006029
 name: quinolone resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to a quinolone: an organonitrogen heterocyclic compound whose structure contains a quinolone or quinolone-related structure." [CHEBI:23765, OMP:JCH]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.\n\nQuinolones are a class of quinolines, which are aromatic heterocyclic  compounds that contain a benzene ring ortho fused to carbons 2 and 3 of a pyridine ring.
+subset: qc_do_not_manually_annotate
 synonym: "ciprofloxacin resistance phenotype" NARROW [CHEBI:100241]
 synonym: "dibucaine resistance phenotype" NARROW [CHEBI:247956]
 synonym: "doxorubicin resistance phenotype" NARROW [CHEBI:28748]
@@ -7815,7 +7899,8 @@ creation_date: 2013-10-10T19:15:32Z
 id: OMP:0006030
 name: dinitrogen utilization phenotype
 def: "A nitrogen source utilization phenotype where dinitrogen (N2) is the source of nitrogen." [OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "diatomic nitrogen utilization phenotype" RELATED []
 synonym: "nitrogen fixation phenotype" RELATED []
 is_a: OMP:0006026 ! nitrogen source utilization phenotype
@@ -8044,7 +8129,8 @@ creation_date: 2013-10-11T17:45:44Z
 id: OMP:0006056
 name: aminoglycoside resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:47779, OMP:JCH]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "amikacin resistance phenotype" NARROW [CHEBI:2673]
 synonym: "aminoglycoside sensitivity phenotype" RELATED []
 synonym: "gentamicin resistance phenotype" NARROW [CHEBI:5312]
@@ -8108,6 +8194,7 @@ id: OMP:0006062
 name: tetracycline resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to tetracyclines: a subclass of polyketides having an octahydrotetracene-2-carboxamide skeleton." [CHEBI:27902, OMP:JCH]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "bacteriostatic resistance phenotype" BROAD []
 synonym: "chlortetracycline resistance phenotype" NARROW []
 synonym: "doxycycline resistance phenotype" NARROW [CHEBI:50845]
@@ -8150,6 +8237,7 @@ id: OMP:0006066
 name: chloramphenicol resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions." [CHEBI:17698, OMP:JCH]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "chloramphenicol sensitivity phenotype" RELATED []
 xref: CHEBI:17698 "chloramphenicol"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
@@ -9201,7 +9289,6 @@ id: OMP:0007006
 name: population phenotype
 def: "A microbial phenotype where the phenotype is observed at the level of a microbial population." [OMP:DAS]
 comment: This high-level term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested. Please consider using a more specific term to annotate each phenotype.
-subset: qc_do_not_annotate
 subset: qc_do_not_manually_annotate
 xref: OBI:0000181 "population"
 is_a: OMP:0000000 ! microbial phenotype
@@ -9212,6 +9299,8 @@ creation_date: 2014-07-21T10:25:43Z
 id: OMP:0007007
 name: nutrient import phenotype
 def: "A nutrient utilization phenotype concerning the uptake of one or more nutrients from the environment." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0098657 "import into cell"
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: siegele
@@ -9261,6 +9350,8 @@ creation_date: 2013-09-13T15:10:16Z
 id: OMP:0007013
 name: inorganic nitrogen source utilization phenotype
 def: "A nitrogen source utilization phenotype where an inorganic nitrogen-containing compound is the source of nitrogen." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "nitrate utilization, phenotype " NARROW []
 is_a: OMP:0006026 ! nitrogen source utilization phenotype
 created_by: siegele
@@ -9270,6 +9361,8 @@ creation_date: 2013-09-13T15:19:33Z
 id: OMP:0007014
 name: organic nitrogen source utilization phenotype
 def: "A nitrogen source utilization phenotype where an organic nitrogen-containing compound is the source of nitrogen." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0006026 ! nitrogen source utilization phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:20:24Z
@@ -9508,6 +9601,8 @@ creation_date: 2014-08-07T18:37:42Z
 id: OMP:0007042
 name: sulfur source utilization phenotype
 def: "A nutrient utilization phenotype where the nutrient is used as a source of sulfur." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T09:39:03Z
@@ -9516,6 +9611,8 @@ creation_date: 2013-09-29T09:39:03Z
 id: OMP:0007043
 name: phosphorus source utilization phenotype
 def: "A nutrient utilization phenotype where the nutrient is being used as a source of phosphorus." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: DeborahSiegele
 creation_date: 2013-09-29T09:41:48Z
@@ -9524,7 +9621,8 @@ creation_date: 2013-09-29T09:41:48Z
 id: OMP:0007044
 name: growth factor requirement phenotype
 def: "A nutrient utilization phenotype related to whether an organism requires an essential organic compound (growth factor) for growth and reproduction." [ISBN:9780878936083, OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:07:53Z
@@ -9663,7 +9761,8 @@ creation_date: 2013-10-01T15:34:09Z
 id: OMP:0007061
 name: iron source utilization phenotype
 def: "A nutrient utilization phenotype where the nutrient is being used as a source of iron." [OMP:JCH]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0006022 ! nutrient utilization phenotype
 created_by: siegele
 creation_date: 2013-10-01T15:46:38Z
@@ -9701,6 +9800,7 @@ id: OMP:0007065
 name: pteridine resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to an organonitrogen heterocyclic compound." [CHEBI:26373, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "antifolate resistance" BROAD [CHEBI:73913]
 synonym: "methotrexate resistance phenotype" NARROW [CHEBI:44185]
 synonym: "pteridine sensitivity phenotype" RELATED []
@@ -9903,7 +10003,7 @@ creation_date: 2014-07-10T12:40:51Z
 
 [Term]
 id: OMP:0007087
-name: altered iron source utilization phenotype
+name: altered iron source utilization
 def: "An iron source utilization phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007061 ! iron source utilization phenotype
 is_a: OMP:0007104 ! altered nutrient utilization
@@ -10081,7 +10181,8 @@ creation_date: 2014-07-10T23:00:30Z
 id: OMP:0007106
 name: transcription phenotype
 def: "A gene expression phenotype that affects DNA-dependent transcription." [GO:0006351, OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0006351 "transcription, DNA-templated"
 is_a: OMP:0000253 ! gene expression phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -10093,7 +10194,8 @@ creation_date: 2014-08-11T16:37:39Z
 id: OMP:0007107
 name: translation phenotype
 def: "A gene expression phenotype that affects translation of one or more mRNAs." [GO:0006412, OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: FYPO:0000291 "translation phenotype"
 xref: GO:0006412 "translation"
 is_a: OMP:0000253 ! gene expression phenotype
@@ -10308,7 +10410,8 @@ creation_date: 2014-08-14T18:22:16Z
 id: OMP:0007130
 name: differential test phenotype
 def: "A microbial phenotype related to the presence or absence of a biochemical activity in a test used to differentiate and identify microorganisms." [ISBN:9780895828309, OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2014-08-16T16:40:58Z
@@ -10344,6 +10447,7 @@ id: OMP:0007134
 name: altered antimicrobial agent resistance phenotype
 def: "An antimicrobial agent resistance phenotype where resistance or sensitivity to an antimicrobial agent is altered relative to a designated control." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 intersection_of: OMP:0000274 ! antimicrobial agent resistance phenotype
@@ -10589,7 +10693,8 @@ creation_date: 2014-08-29T12:27:50Z
 id: OMP:0007161
 name: regulation phenotype
 def: "A microbial phenotype that affects the regulation of a molecular function, biological process, or biological quality." [OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: FYPO:0000145 "regulation phenotype"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
@@ -10647,6 +10752,7 @@ id: OMP:0007167
 name: population growth phenotype
 def: "A microbial phenotype that affects the rate or extent of increase in the number of individuals in a microbial population." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: GO:0000003 "reproduction"
 is_a: OMP:0007006 ! population phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
@@ -10667,6 +10773,7 @@ id: OMP:0007169
 name: antimicrobial peptide resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to peptides with antimicrobial activity. This class includes ribosomally synthesized peptides, nonribosomally synthesized peptides, and peptides with additional groups attached." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "<new synonym>" RELATED []
 synonym: "actinomycin D resistance phenotype" NARROW [CHEBI:27666]
 synonym: "bacitracin resistance phenotype" NARROW [CHEBI:28669]
@@ -10897,7 +11004,8 @@ creation_date: 2014-10-04T19:34:54Z
 id: OMP:0007194
 name: biological process phenotype
 def: "A microbial phenotype that affects a biological process." [FYPO:0000300, OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: FYPO:0000300 "biological process phenotype"
 xref: GO:0008150 "biological_process"
 is_a: OMP:0000000 ! microbial phenotype
@@ -10911,6 +11019,7 @@ id: OMP:0007195
 name: chemical resistance phenotype
 def: "A biological process phenotype related to the resistance or sensitivity of a microbe to a chemical entity." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "chemical sensitivity phenotype" EXACT []
 xref: APO:0000087 "resistance to chemicals"
 is_a: OMP:0007194 ! biological process phenotype
@@ -10935,7 +11044,8 @@ creation_date: 2014-10-20T15:08:04Z
 id: OMP:0007197
 name: cellular component phenotype
 def: "A microbial phenotype that affects a quality of a cellular component." [OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: CMPO:0000259 "cellular component phenotype"
 xref: GO:0005575 "cellular_component"
 is_a: OMP:0000000 ! microbial phenotype
@@ -11091,6 +11201,7 @@ id: OMP:0007215
 name: rifamycin resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to one or more rifamycin compounds." [CHEBI:26580, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "rifabutin resistance phenotype" NARROW [CHEBI:45367]
 synonym: "rifampicin resistance phenotype" RELATED [CHEBI:28077]
 synonym: "rifapentine resistance phenotype" NARROW [CHEBI:45304]
@@ -11275,7 +11386,8 @@ creation_date: 2015-06-20T18:26:28Z
 id: OMP:0007237
 name: bacteriophage sensitivity phenotype
 def: "A host-virus interaction phenotype related to whether a bacterium can be infected by and/or support growth of a bacteriophage." [OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000026 ! host-virus interaction phenotype
 created_by: siegele
 creation_date: 2015-06-29T17:35:29Z
@@ -11405,6 +11517,8 @@ creation_date: 2015-07-16T00:42:17Z
 id: OMP:0007252
 name: colonization of a host phenotype
 def: "A microbe-host interaction phenotype that relates to the ability of a microbe to colonize a host organism." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000197 ! microbe-host interaction phenotype
 created_by: siegele
 creation_date: 2015-07-31T13:22:28Z
@@ -11683,7 +11797,8 @@ creation_date: 2016-01-09T18:47:01Z
 id: OMP:0007285
 name: laccase activity phenotype
 def: "A catalytic activity phenotype that relates to the presence or absence of laccase, a family of oxidoreductases that act on diphenols and related substances as donors and use oxygen as the acceptor." [OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nLaccase is involved in the synthesis of fungal melanin.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.\n\nLaccase is involved in the synthesis of fungal melanin.
+subset: qc_do_not_manually_annotate
 synonym: "benzenediol:oxygen oxidoreductase activity" RELATED [EC:1.10.3.2]
 is_a: OMP:0000221 ! enzymatic activity phenotype
 is_a: OMP:0007130 ! differential test phenotype
@@ -11767,7 +11882,8 @@ creation_date: 2016-01-10T00:57:49Z
 id: OMP:0007294
 name: diazonium blue B staining phenotype
 def: "A cell staining phenotype where microorganisms are classified based on their color after staining with diazonium blue B (DBB).  DBB staining is used to differentiate ascomycetous and basidiomycetous yeasts." [doi:10.1099/00207713-31-2-204, OMP:DAS, PMID:60081]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "fast blue B staining phenotype" EXACT [CHEBI:87629]
 xref: APO:0000061 "colony color"
 is_a: OMP:0000214 ! cell staining phenotype
@@ -11855,6 +11971,7 @@ id: OMP:0007304
 name: altered cell staining phenotype
 def: "A cell staining phenotype that is altered relative to a designated control." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000214 ! cell staining phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 created_by: siegele
@@ -11948,7 +12065,8 @@ creation_date: 2016-02-02T14:58:50Z
 id: OMP:0007315
 name: population morphology phenotype
 def: "A microbial phenotype related to the appearance of a microbial population, such as a colony, liquid culture, or biofilm." [OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
 creation_date: 2016-02-05T20:20:28Z
@@ -12048,6 +12166,8 @@ creation_date: 2016-02-25T22:42:30Z
 id: OMP:0007327
 name: bud morphology phenotype
 def: "A cell morphology phenotype relating to the size, shape, or appearance of a bud, a protuberance from a cell of an organism that reproduces by budding." [GO:0005933, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: APO:0000212 "bud morphology"
 xref: GO:0005933 "cellular bud"
 is_a: OMP:0000071 ! cell morphology phenotype
@@ -12094,6 +12214,7 @@ id: OMP:0007332
 name: cellular process phenotype
 def: "A biological process phenotype that affects a cellular process, which is any biological process that is carried out at the cellular level, but not necessarily restricted to a single cell." [GO:0009987, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+subset: qc_do_not_manually_annotate
 xref: FYPO:0000114 "cellular process phenotype"
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
@@ -12155,7 +12276,8 @@ creation_date: 2016-05-27T23:10:53Z
 id: OMP:0007339
 name: nuclear morphology phenotype
 def: "A cell morphology phenotype related to the size, shape, or appearance of the nucleus." [OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: APO:0000057 "nuclear morphology"
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: siegele
@@ -12201,7 +12323,8 @@ creation_date: 2016-05-28T02:28:04Z
 id: OMP:0007344
 name: nuclear position phenotype
 def: "A cell morphology phenotype related to the location of a nucleus or nucleus within a cell or between separating cells." [APO:0000118, OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: siegele
 creation_date: 2016-05-28T02:34:23Z
@@ -12220,7 +12343,8 @@ creation_date: 2016-05-28T02:36:59Z
 id: OMP:0007346
 name: protein secretion phenotype
 def: "A biological process phenotype related to the process of protein secretion, which is the controlled release of proteins from a cell." [GO:0009306, OMP:DAS]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "exocytosis" NARROW []
 synonym: "protein secretion" NARROW [APO:0000078]
 is_a: OMP:0007194 ! biological process phenotype
@@ -12267,6 +12391,7 @@ id: OMP:0007351
 name: altered biological process
 def: "A biological process phenotype where the rate, frequency, timing, or extent of a biological process is altered relative to a designated control." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007194 ! biological process phenotype
 created_by: siegele
@@ -12311,6 +12436,7 @@ id: OMP:0007356
 name: quinone resistance phenotype
 def: "An antimicrobial resistance phenotype related to resistance or sensitivity to a quinone. Quinones are compounds having a fully conjugated cyclic dione structure, such as that of benzoquinones, This class includes some polycyclic and heterocyclic compounds." [CHEBI:36141, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "mitomycin resistance phenotype" NARROW [CHEBI:25357]
 xref: CHEBI:36141 "quinone"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
@@ -12331,6 +12457,7 @@ id: OMP:0007358
 name: nucleoside resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a compound that is a nucleoside: an N-glycosyl compound that has both a nucleobase, normally adenine, guanine, xanthine, thymine, cytosine or uracil, and either a ribose or deoxyribose as functional parents." [CHEBI:33838, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "azidothymidine resistance phenotype" NARROW [CHEBI:10110]
 synonym: "puromycin resistance phenotype" NARROW [CHEBI:17939]
 synonym: "tunicamycin resistance phenotype" NARROW [CHEBI:29699]
@@ -12394,6 +12521,7 @@ id: OMP:0007365
 name: acridine resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a compound that includes an acridine moiety: a polycyclic heteroarene that is anthracene in which one of the central CH groups is replaced by a nitrogen atom." [CHEBI:36420, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "acridine orange" NARROW [CHEBI:51739]
 synonym: "acriflavine resistance phenotype" NARROW []
 synonym: "acriflavinium chloride" NARROW [CHEBI:74728]
@@ -12456,6 +12584,7 @@ id: OMP:0007372
 name: alkylating agent resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to an alkylating agent: a highly reactive chemical that introduces alkyl radicals into biologically active molecules and thereby prevents their proper functioning." [CHEBI:22333, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "Cisplatin" NARROW [CHEBI:27899]
 synonym: "Hydroxyurea" NARROW [CHEBI:44423]
 synonym: "methyl methanesulfonate" NARROW [CHEBI:25255]
@@ -12528,6 +12657,7 @@ id: OMP:0007380
 name: benzamides resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a benzamide. Benzamides are compounds based on benzamide, which consists of benzene bearing a single carboxamido substituent." [CHEBI:22702, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "benzamide resistance phenotype" RELATED [CHEBI:28179]
 synonym: "CHIR-090 resistance phenotype" NARROW [CID:\:11546620]
 synonym: "sulfamonomethoxine resistance phenotype" NARROW [CHBEI:32164<new dbxref>]
@@ -12649,6 +12779,8 @@ creation_date: 2016-07-01T22:15:10Z
 id: OMP:0007394
 name: lethality phenotype
 def: "A microbe-host interaction phenotype related to the ability of a microbe to infect and cause death of a host." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000197 ! microbe-host interaction phenotype
 created_by: siegele
 creation_date: 2016-07-06T13:10:19Z
@@ -12821,6 +12953,7 @@ id: OMP:0007413
 name: conjugation phenotype
 def: "A multi-organism process phenotype relating to the union or introduction of genetic information from compatible cell types that results in a genetically different individual. Conjugation requires direct cellular contact between the organisms." [GO:0000746, OMP:DAS]
 comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.\n\nAn example of conjugation would be the transfer of a conjugative plasmid from a donor bacterium to a recipient bacterium.
+subset: qc_do_not_manually_annotate
 xref: GO:0000746 "conjugation"
 is_a: OMP:0005116 ! multi-organism process phenotype
 created_by: dsiegele
@@ -13174,6 +13307,8 @@ creation_date: 2016-08-08T15:17:42Z
 id: OMP:0007456
 name: population viability phenotype
 def: "A population phenotype relating to the proportion of a population that is viable under the specified conditions. Viability refers to the ability of a microbe to survive, grow, and reproduce." [FYPO:0002057, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007006 ! population phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:51:48Z
@@ -13335,6 +13470,7 @@ id: OMP:0007474
 name: phenols resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to phenols, which are organic aromatic compounds having one or more hydroxy groups attached to a benzene or other arene ring." [CHEBI:33853, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "Epigallocatechin gallate (EGCG)" NARROW []
 synonym: "phenol red resistance phenotype" NARROW [CHEBI:31991]
 synonym: "phenol resistance phenotype" NARROW [CHEBI:15882]
@@ -13400,6 +13536,7 @@ id: OMP:0007481
 name: quaternary ammonium salts resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to the resistance or sensitivity of a microbe to a quaternary ammonium salt. Quaternary ammonium salts are derivatives of ammonium compounds, (NH4+)Y-, in which all four of the hydrogens bonded to nitrogen have been replaced with univalent (usually organyl) groups." [CHEBI:35273, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "benzalkonium chloride resistance phenotype" NARROW [CHEBI:3020]
 synonym: "quaternium-15 resistance phenotype" NARROW [CHEBI:59607]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
@@ -13518,6 +13655,7 @@ id: OMP:0007495
 name: epoxide resistance phenotype
 def: "An antimicrobial resistance phenotype relating to resistance or sensitivity to an epoxide. An epoxide is any cyclic ether in which the oxygen atom forms part of a 3-membered ring." [CHEBI:32955, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "cerulenin resistance phenotype" NARROW [CHEBI:171741]
 synonym: "fosfomycin resistance phenotype" NARROW [CHEBI:28915]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
@@ -13610,6 +13748,8 @@ creation_date: 2016-09-25T13:49:19Z
 id: OMP:0007506
 name: titan cell morphology phenotype
 def: "A cell morphology phenotype relating to the form and structure of titan cells, which are large vegetative cells produced by fungi that typically exhibit altered capsule structure, a thickened cell wall, increased ploidy, and resistance to nitrosative and oxidative stresses." [FAO:0000063, OMP:DAS, PMID:21821718]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: FAO:0000063 "titan cell"
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: siegele
@@ -13836,6 +13976,7 @@ id: OMP:0007533
 name: urea derivative resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to compounds that are structural derivatives of urea." [CHEBI:47857, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "hydroxyurea resistance phenotype" NARROW [CHEBI:44423]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
@@ -13901,6 +14042,8 @@ creation_date: 2017-02-24T13:19:20Z
 id: OMP:0007540
 name: virus phenotype
 def: "A microbial phenotype related to the form and structure of a virus." [OMP:DR]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2017-04-19T13:39:46Z
@@ -13909,6 +14052,8 @@ creation_date: 2017-04-19T13:39:46Z
 id: OMP:0007541
 name: virion morphology phenotype
 def: "A virus phenotype related to the form and structure of a virion." [OMP:DR]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007540 ! virus phenotype
 created_by: siegele
 creation_date: 2017-04-19T13:42:41Z
@@ -14029,6 +14174,8 @@ creation_date: 2017-05-30T14:37:57Z
 id: OMP:0007554
 name: titan cell formation phenotype
 def: "A microbial phenotype relating to the formation of titan cells, which are large cells produced by fungi that typically exhibit altered capsule structure, a thickened cell wall, increased ploidy, and resistance to nitrosative and oxidative stresses." [FAO:0000063, OMP:DAS, PMID:21821718]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2017-05-30T15:28:59Z
@@ -14037,6 +14184,8 @@ creation_date: 2017-05-30T15:28:59Z
 id: OMP:0007555
 name: multicellular microorganism morphology phenotype
 def: "A microbial phenotype relating to the size, shape, or appearance of a multicellular microorganism." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2017-05-30T15:39:20Z
@@ -14449,6 +14598,8 @@ creation_date: 2017-06-27T17:34:40Z
 id: OMP:0007602
 name: DNA break phenotype
 def: "A genetic material phenotype related to the occurrence of DNA breaks in chromosomal DNA." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: siegele
 creation_date: 2017-06-27T21:46:34Z
@@ -14570,6 +14721,8 @@ creation_date: 2017-06-27T21:55:25Z
 id: OMP:0007617
 name: Holliday junction structure phenotype
 def: "A genetic material phenotype related to the occurrence of Holliday junction structures in chromosomal DNA." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: siegele
 creation_date: 2017-06-28T13:51:06Z
@@ -14694,6 +14847,7 @@ id: OMP:0007632
 name: cell phenotype
 def: "A microbial phenotype that is observed at the level of an individual cell." [FYPO:0000002, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: FYPO:0000002 "cell phenotype"
 is_a: OMP:0000000 ! microbial phenotype
 created_by: dsiegele
@@ -14704,6 +14858,7 @@ id: OMP:0007633
 name: cellular physical quality phenotype
 def: "A cell phenotype that affects any physical object quality of a microbial cell, such as morphology, number, location, etc., of a cell or a cellular component." [FYPO:0000136, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: FYPO:0000136 "cellular physical quality phenotype"
 is_a: OMP:0007632 ! cell phenotype
 created_by: dsiegele
@@ -14753,6 +14908,7 @@ id: OMP:0007638
 name: altered cell phenotype
 def: "A phenotype observed at the level of an individual cell that is altered relative to a designated control." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007632 ! cell phenotype
 created_by: dsiegele
@@ -14811,6 +14967,7 @@ id: OMP:0007645
 name: microbial lifestyle phenotype
 def: "A microbial phenotype related to the typical way of life of a microbe." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2017-07-24T14:41:58Z
@@ -14848,6 +15005,7 @@ id: OMP:0007649
 name: mitomycin resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a mitomycin. Mitomycins are a family of aziridine-containing natural products isolated from Streptomyces." [CHEBI:25357, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "mitomycin C resistance phenotype" NARROW [CHEBI:27504]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
@@ -15050,6 +15208,8 @@ creation_date: 2017-10-02T15:29:18Z
 id: OMP:0007674
 name: molecular function phenotype
 def: "A microbial phenotype that affects a specific molecular function." [FYPO:0000652, OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000000 ! microbial phenotype
 created_by: siegele
 creation_date: 2017-10-02T15:42:03Z
@@ -15058,6 +15218,8 @@ creation_date: 2017-10-02T15:42:03Z
 id: OMP:0007675
 name: transporter activity phenotype
 def: "A molecular function phenotype that affects a transporter activity in a microbe." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007674 ! molecular function phenotype
 created_by: siegele
 creation_date: 2017-10-02T15:43:05Z
@@ -15115,6 +15277,8 @@ creation_date: 2017-10-02T15:44:25Z
 id: OMP:0007682
 name: terminal phenotype
 def: "A microbial phenotype that is the phenotype exhibited by a microbe as it becomes inviable." [OMP:DAS]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000000 ! microbial phenotype
 created_by: dsiegele
 creation_date: 2017-10-10T10:22:47Z
@@ -15261,6 +15425,7 @@ id: OMP:0007698
 name: cell population phenotype
 def: "A population phenotype that is observed at the level of a population of microbial cells." [FYPO:0002057, OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "cell population phenotype" EXACT [FYPO:0002057]
 is_a: OMP:0007006 ! population phenotype
 created_by: siegele
@@ -15604,6 +15769,8 @@ creation_date: 2017-12-21T13:33:02Z
 id: OMP:0007738
 name: spore germ tube morphology phenotype
 def: "A cell morphology phenotype relating to the slender tubular outgrowth first produced by many spores upon germination." [BTO:0004822, GO:\:0032179, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: siegele
 creation_date: 2017-12-21T13:50:25Z
@@ -15663,6 +15830,8 @@ creation_date: 2018-01-01T14:02:32Z
 id: OMP:0007745
 name: vegetative cell phenotype
 def: "A phenotype that is observed at the level of an individual cell, when the cell is in the vegetative growth phase of the cell cycle." [FYPO:0001320, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007632 ! cell phenotype
 created_by: siegele
 creation_date: 2018-01-01T14:15:57Z
@@ -16133,6 +16302,8 @@ creation_date: 2018-06-12T00:51:53Z
 [Term]
 id: OMP:0007800
 name: polyether antimicrobial resistance phenotype
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2018-06-18T03:07:12Z
@@ -16304,6 +16475,7 @@ id: OMP:0007821
 name: nitrofuran resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a nitrofuran compound. Nitrofurans are members of the class of furans in which the furan ring is substituted by a nitro group." [CHEBI:87230, OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "difurazone (Nitrovin) resistance phenotype" NARROW []
 synonym: "nitrofuran sensitivity phenotype" EXACT []
 synonym: "nitrofurantoin resistance phenotype" NARROW [CHEBI:71415]
@@ -16369,6 +16541,7 @@ id: OMP:0007828
 name: sulfonamide resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity of a microbe to one or more sulfonamide compounds. The sulfonamide function group is -S(=O)2-NH2, a sulfonyl group connected to an amine group." [CHEBI:35358, CHEBI:87228, OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 synonym: "sulfamethizole resistance phenotype" NARROW [CHEBI:9331]
 synonym: "sulfamonomethoxine resistance phenotype" NARROW [CHEBI:32164]
 synonym: "sulfonamide sensitivity phenotype" EXACT []
@@ -16492,7 +16665,8 @@ creation_date: 2018-06-25T17:18:58Z
 id: OMP:0008000
 name: spore morphology phenotype
 def: "A microbial phenotype that is related to the form and structure of a spore or spores produced by a microbe." [OMP:KDA]
-comment: This term was created to organize terms beneath it in the ontology. We recommend that it not be used for annotation unless an appropriate child term cannot be found or requested.
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 xref: FAO:0000019 "spore"
 is_a: OMP:0000071 ! cell morphology phenotype
 created_by: kanderson
@@ -16721,6 +16895,8 @@ creation_date: 2015-06-08T13:24:49Z
 id: OMP:0008028
 name: genetic transfer phenotype
 def: "A genetic material phenotype relating to the ability of microbes to serve as a donor of recipient in the transfer of genetic material." []
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_manually_annotate
 is_a: OMP:0000290 ! genetic material phenotype
 created_by: Tianyizhou
 creation_date: 2017-10-23T14:35:30Z
