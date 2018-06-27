@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:06:2018 00:29
+date: 27:06:2018 11:53
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -7585,23 +7585,23 @@ creation_date: 2017-11-03T21:42:47Z
 
 [Term]
 id: OMP:0005395
-name: icosahedral
-def: "A capsid morphology phenotype where the capsid is shaped like an icosahedron, which is a polyhedron with 20 faces." []
+name: icosahedral capsid shape
+def: "A capsid morphology phenotype where the capsid is shaped like an icosahedron, which is a polyhedron with 20 faces." [OMP:dr]
 is_a: OMP:0005394 ! polyhedral shape
 created_by: MiLaptop
 creation_date: 2017-11-03T21:45:08Z
 
 [Term]
 id: OMP:0005396
-name: isometric
-def: "A capsid morphology phenotype where the capsid is shaped isometrically which is a shape that is characterized by equality of measure." []
+name: isometric capsid
+def: "A capsid morphology phenotype where the capsid is shaped isometrically which is a shape that is characterized by equality of measure." [XX:<new dbxref>]
 is_a: OMP:0005394 ! polyhedral shape
 created_by: MiLaptop
 creation_date: 2017-11-03T21:52:04Z
 
 [Term]
 id: OMP:0005397
-name: octahedral
+name: octahedral capsid
 def: "A capsid morphology phenotype where the capsid is shaped like an octahedron which is a polyhedron with 8 plane faces." []
 is_a: OMP:0005394 ! polyhedral shape
 created_by: MiLaptop
@@ -7609,8 +7609,8 @@ creation_date: 2017-11-03T21:53:27Z
 
 [Term]
 id: OMP:0005398
-name: dodecahedral
-def: "A capsid morphology phenotype where the capsid is shaped like a dodecahedron which is a polyhedron with 12 plane faces." []
+name: dodecahedral capsid shape
+def: "A capsid morphology phenotype where the capsid is shaped like a dodecahedron which is a polyhedron with 12 plane faces." [OMP:dr]
 is_a: OMP:0005394 ! polyhedral shape
 created_by: MiLaptop
 creation_date: 2017-11-03T21:55:20Z
@@ -15481,7 +15481,7 @@ creation_date: 2017-12-04T20:08:24Z
 
 [Term]
 id: OMP:0007699
-name: inviable cell population
+name: nonviable cell population
 def: "A cell population phenotype in which none of the cells in the population are viable." [FYPO:0002059, OMP:das]
 xref: FYPO:0002059
 is_a: OMP:0007705 ! cell population viability phenotype
@@ -15490,19 +15490,19 @@ creation_date: 2017-12-04T20:14:07Z
 
 [Term]
 id: OMP:0007700
-name: inviable vegetative cell population
+name: nonviable vegetative cell population
 def: "A cell population phenotype in which all cells in the population are inviable in the vegetative growth phase of the life cycle." [FYPO:0002061, OMP:das]
-xref: FYPO:0002061 "inviable vegetative cell population"
-is_a: OMP:0007699 ! inviable cell population
+synonym: "inviable vegetative cell population" NARROW [FYPO:0002061]
+is_a: OMP:0007699 ! nonviable cell population
 created_by: siegele
 creation_date: 2017-12-04T20:15:43Z
 
 [Term]
 id: OMP:0007701
-name: inviable spore population
+name: nonviable spore population
 def: "A cell population phenotype in which none of the cells in a population of spores are viable. Inviable spores do not germinate." [FYPO:0000647, OMP:das]
 xref: FYPO:000064 "inviable spore population"
-is_a: OMP:0007699 ! inviable cell population
+is_a: OMP:0007699 ! nonviable cell population
 created_by: siegele
 creation_date: 2017-12-04T20:19:36Z
 
@@ -15517,6 +15517,7 @@ creation_date: 2017-12-04T20:23:38Z
 [Term]
 id: OMP:0007703
 name: increased cell population viability
+def: "An altered cell population viability phenotype where the proportion of cells that survive a specified treatment is increased relative to a designated control." [OMP:das]
 is_a: OMP:0007459 ! altered cell population viability
 created_by: siegele
 creation_date: 2017-12-04T20:23:38Z
@@ -15749,6 +15750,7 @@ creation_date: 2017-12-20T23:46:00Z
 id: OMP:0007730
 name: decreased vegetative cell population viability
 def: "An altered vegetative cell population viability phenotype where the viability of vegetative cells is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007702 ! decreased cell population viability
 is_a: OMP:0007729 ! altered vegetative cell population viability
 created_by: siegele
 creation_date: 2017-12-20T23:47:24Z
@@ -16379,8 +16381,9 @@ creation_date: 2018-06-19T15:15:58Z
 
 [Term]
 id: OMP:0007804
-name: increased cell population viability
-def: "An altered cell population viability phenotype where the proportion of cells that survive a specified treatment is increased relative to a designated control" [OMP:das]
+name: increased vegetative cell population viability
+def: "An altered cell population viability phenotype observed in the vegetative phase of the life cycle where the proportion of cells that survive a specified treatment is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007703 ! increased cell population viability
 is_a: OMP:0007729 ! altered vegetative cell population viability
 created_by: dsiegele
 creation_date: 2018-06-19T15:45:43Z
@@ -16389,7 +16392,7 @@ creation_date: 2018-06-19T15:45:43Z
 id: OMP:0007805
 name: increased cell population viability upon starvation
 def: "An altered cell population viability phenotype where the proportion of cells that survive starvation for one or more essential nutrients is increased relative to a designated control." [OMP:das]
-is_a: OMP:0007804 ! increased cell population viability
+is_a: OMP:0007804 ! increased vegetative cell population viability
 created_by: dsiegele
 creation_date: 2018-06-19T15:46:20Z
 
