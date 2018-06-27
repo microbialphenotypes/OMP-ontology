@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 26:06:2018 23:09
+date: 27:06:2018 00:29
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1986,7 +1986,7 @@ def: "A microbial phenotype related to the form and structure of a microbe." [OM
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 xref: APO:0000050 "cellular morphology"
-is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0007633 ! cellular physical quality phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: has_quality PATO:0000051 ! morphology
 intersection_of: inheres_in GO:0005623 ! cell
@@ -15815,8 +15815,8 @@ creation_date: 2017-12-21T13:33:02Z
 
 [Term]
 id: OMP:0007738
-name: spore germ tube morphology phenotype
-def: "A cell morphology phenotype relating to the slender tubular outgrowth first produced by many spores upon germination." [BTO:0004822, GO:\:0032179, OMP:das]
+name: germ tube morphology phenotype
+def: "A cell morphology phenotype relating to the form and structure of the germ tube, which is the slender tubular outgrowth first produced by many spores upon germination." [BTO:0004822, GO:\:0032179, OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 is_a: OMP:0000071 ! cell morphology phenotype
@@ -15825,17 +15825,17 @@ creation_date: 2017-12-21T13:50:25Z
 
 [Term]
 id: OMP:0007739
-name: altered spore germ tube morphology
-def: "A spore germ tube morphology phenotype where the shape, size, or structure of a spore germ tube is altered relative to a designated control." [GO:0032179, OMP:das]
-is_a: OMP:0007738 ! spore germ tube morphology phenotype
+name: altered germ tube morphology
+def: "A cell morphology phenotype where the shape, size, structure, or number of germ tubes is altered relative to a designated control." [GO:0032179, OMP:das]
+is_a: OMP:0007738 ! germ tube morphology phenotype
 created_by: siegele
 creation_date: 2017-12-21T13:52:14Z
 
 [Term]
 id: OMP:0007740
-name: elongated spore germ tube
-def: "An altered spore germ tube morphology phenotype where the length of the germ tube is increased relative to a designated control." [OMP:das]
-is_a: OMP:0007739 ! altered spore germ tube morphology
+name: elongated germ tube morphology
+def: "An altered germ tube morphology phenotype where the length of the germ tube is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007739 ! altered germ tube morphology
 created_by: siegele
 creation_date: 2017-12-21T13:56:59Z
 
@@ -16708,6 +16708,30 @@ is_a: OMP:0007262 ! increased cell viability
 is_a: OMP:0007724 ! altered vegetative cell viability
 created_by: siegele
 creation_date: 2018-06-25T17:18:58Z
+
+[Term]
+id: OMP:0007842
+name: presence of germ tube
+def: "A cell morphology phenotype where a germinating microbial spore has a germ tube." [OMP:das]
+is_a: OMP:0007738 ! germ tube morphology phenotype
+created_by: siegele
+creation_date: 2018-06-27T00:14:46Z
+
+[Term]
+id: OMP:0007843
+name: absence of germ tube
+def: "A cell morphology phenotype where a germinating microbial spore lacks a germ tube." [OMP:das]
+is_a: OMP:0007738 ! germ tube morphology phenotype
+created_by: siegele
+creation_date: 2018-06-27T00:14:46Z
+
+[Term]
+id: OMP:0007844
+name: curved germ tube morphology
+def: "An altered germ tube morphology phenotype where the germ tube is curved along its long axis." [OMP:das]
+is_a: OMP:0007739 ! altered germ tube morphology
+created_by: siegele
+creation_date: 2018-06-27T00:27:16Z
 
 [Term]
 id: OMP:0008000
