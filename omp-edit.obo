@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:06:2018 11:53
+date: 27:06:2018 23:33
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -15324,7 +15324,7 @@ creation_date: 2017-10-02T15:44:25Z
 [Term]
 id: OMP:0007682
 name: terminal phenotype
-def: "A microbial phenotype that is the phenotype exhibited by a microbe as it becomes inviable." [OMP:DAS]
+def: "A microbial phenotype that is the phenotype exhibited by a microbe as it becomes nonviable." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 is_a: OMP:0000000 ! microbial phenotype
@@ -15491,7 +15491,7 @@ creation_date: 2017-12-04T20:14:07Z
 [Term]
 id: OMP:0007700
 name: nonviable vegetative cell population
-def: "A cell population phenotype in which all cells in the population are inviable in the vegetative growth phase of the life cycle." [FYPO:0002061, OMP:das]
+def: "A cell population phenotype in which all cells in the population are nonviable in the vegetative growth phase of the life cycle." [FYPO:0002061, OMP:das]
 synonym: "inviable vegetative cell population" NARROW [FYPO:0002061]
 is_a: OMP:0007699 ! nonviable cell population
 created_by: siegele
@@ -15500,7 +15500,7 @@ creation_date: 2017-12-04T20:15:43Z
 [Term]
 id: OMP:0007701
 name: nonviable spore population
-def: "A cell population phenotype in which none of the cells in a population of spores are viable. Inviable spores do not germinate." [FYPO:0000647, OMP:das]
+def: "A cell population phenotype in which none of the cells in a population of spores are viable. Nonviable spores do not germinate." [FYPO:0000647, OMP:das]
 xref: FYPO:000064 "inviable spore population"
 is_a: OMP:0007699 ! nonviable cell population
 created_by: siegele
@@ -15714,7 +15714,7 @@ creation_date: 2017-12-20T16:59:57Z
 [Term]
 id: OMP:0007726
 name: abolished spore viability
-def: "An abolished cell viability phenotype in which a spore is unable to survive under conditions in which spores of the designated control strain are able to survive. An inviable spore does not germinate." [FYPO:0002151, OMP:das]
+def: "An altered spore viability phenotype in which a spore is unable to survive under conditions in which spores of the designated control strain are able to survive. A nonviable spore does not germinate." [FYPO:0002151, OMP:das]
 synonym: "inviable spore" EXACT [FYPO:0002151]
 is_a: OMP:0007837 ! nonviable spore
 is_a: OMP:0007839 ! decreased spore viability
@@ -16191,8 +16191,8 @@ creation_date: 2018-06-08T17:22:34Z
 
 [Term]
 id: OMP:0007781
-name: septation following abnormal chromosome segregation
-def: "An inviable phenotype observed in the vegetative growth phase of the life cycle in which a cell undergoes septation despite abnormal chromosome segregation and gives rise to inviable daughter cells." [FYPO:0000323, OMP:das]
+name: septation following abnormal chromosome segregation during vegetative growth
+def: "A nonviable cell phenotype observed in the vegetative growth phase of the life cycle in which a cell undergoes septation despite abnormal chromosome segregation and gives rise to nonviable daughter cells." [FYPO:0000323, OMP:das]
 synonym: "septation following abnormal mitotic chromosome segregation" NARROW [FYPO:0000323]
 is_a: OMP:0007780 ! nonviable vegetative cell
 created_by: siegele
@@ -16201,9 +16201,9 @@ creation_date: 2018-06-08T17:31:26Z
 [Term]
 id: OMP:0007782
 name: cut cell
-def: "An inviable phenotype observed in the vegetative growth phase of the life cycle in which a cell undergoes septation in the absence of nuclear division, such that the septum physically divides the nucleus into two parts and produces inviable daughter cells." [FYPO:0003165, OMP:das]
+def: "A nonviable cell phenotype observed in the vegetative growth phase of the life cycle in which a cell undergoes septation in the absence of nuclear division, such that the septum physically divides the nucleus into two parts and produces nonviable daughter cells." [FYPO:0003165, OMP:das]
 synonym: "cut" EXACT [FYPO:0003165]
-is_a: OMP:0007781 ! septation following abnormal chromosome segregation
+is_a: OMP:0007781 ! septation following abnormal chromosome segregation during vegetative growth
 created_by: siegele
 creation_date: 2018-06-08T17:41:11Z
 
@@ -16674,7 +16674,7 @@ creation_date: 2018-06-25T10:37:49Z
 [Term]
 id: OMP:0007837
 name: nonviable spore
-def: "A cell viability phenotype in which a microbial spore is unable to survive under the specified conditions. An inviable spore does not germinate." [FYPO:0002151, OMP:das]
+def: "A cell viability phenotype in which a microbial spore is unable to survive under the specified conditions. A nonviable spore does not germinate." [FYPO:0002151, OMP:das]
 is_a: OMP:0007835 ! spore viability phenotype
 created_by: siegele
 creation_date: 2018-06-25T10:39:27Z
@@ -16735,6 +16735,14 @@ def: "An altered germ tube morphology phenotype where the germ tube is curved al
 is_a: OMP:0007739 ! altered germ tube morphology
 created_by: siegele
 creation_date: 2018-06-27T00:27:16Z
+
+[Term]
+id: OMP:0007845
+name: unseptated germ tube
+def: "An altered germ tube morphology phenotype where the germ tube does not contain any septa and does not go on to form a viable dividing cell." [FYPO:0000311, OMP:das]
+is_a: OMP:0007739 ! altered germ tube morphology
+created_by: siegele
+creation_date: 2018-06-27T20:58:20Z
 
 [Term]
 id: OMP:0008000
