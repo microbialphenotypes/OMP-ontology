@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:06:2018 23:33
+date: 10:07:2018 08:50
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3630,7 +3630,7 @@ creation_date: 2011-07-21T02:05:51Z
 [Term]
 id: OMP:0000274
 name: antimicrobial agent resistance phenotype
-def: "A microbial phenotype related to resistance or sensitivity to agents that kill (microbiocidal) or inhibit growth (microbiostatic) of a microbe." [CHEBI:33281, OMP:MCC]
+def: "A microbial phenotype related to the resistance or sensitivity of a microbe to antimicrobial agents that kill (microbiocidal) or inhibit growth (microbiostatic) of a microbe." [CHEBI:33281, OMP:MCC]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 synonym: "antibiotic resistance phenotype" NARROW []
@@ -3641,6 +3641,7 @@ synonym: "antimicrobial compound sensitivity phenotype" RELATED []
 synonym: "antiviral resistance phenotype" NARROW []
 xref: CHEBI:33281 "antimicrobial agent"
 is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0007195 ! chemical resistance phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: towards CHEBI:33281 ! antimicrobial agent
 created_by: mchibucos
@@ -7769,7 +7770,7 @@ creation_date: 2014-07-24T16:34:28Z
 id: OMP:0006017
 name: altered aminoglycoside resistance
 def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside compound is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0006056 ! aminoglycoside resistance phenotype
+is_a: OMP:0006056 ! aminoglycoside antimicrobial agent resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:04:53Z
@@ -8158,8 +8159,8 @@ creation_date: 2013-10-11T17:45:44Z
 
 [Term]
 id: OMP:0006056
-name: aminoglycoside resistance phenotype
-def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:47779, OMP:JCH]
+name: aminoglycoside antimicrobial agent resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity of a microbe to an aminoglycoside antibiotic. Aminoglycosides contain a cyclohexane ring with amino sugars." [CHEBI:47779, OMP:JCH]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 synonym: "amikacin resistance phenotype" NARROW [CHEBI:2673]
@@ -8199,7 +8200,7 @@ id: OMP:0006059
 name: not resistant to aminoglycoside
 def: "An aminoglycoside resistance phenotype where an organism or cell is sensitive to one or more aminoglycosides." [OMP:JCH]
 synonym: "aminoglycoside sensitivity" RELATED []
-is_a: OMP:0006056 ! aminoglycoside resistance phenotype
+is_a: OMP:0006056 ! aminoglycoside antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -8207,7 +8208,7 @@ creation_date: 2013-10-22T19:24:20Z
 id: OMP:0006060
 name: resistant to aminoglycoside
 def: "An aminoglycoside resistance phenotype where an organism or cell is resistant to one or more aminoglycoside compounds." [OMP:JCH]
-is_a: OMP:0006056 ! aminoglycoside resistance phenotype
+is_a: OMP:0006056 ! aminoglycoside antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -11065,6 +11066,7 @@ comment: This is a high-level term whose primary purpose is to organize terms be
 subset: qc_do_not_manually_annotate
 synonym: "chemical sensitivity phenotype" EXACT []
 xref: APO:0000087 "resistance to chemicals"
+is_a: OMP:0000000 ! microbial phenotype
 is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0007194 ! biological process phenotype
 intersection_of: has_quality PATO:0001457 ! sensitivity of a process
@@ -12562,8 +12564,8 @@ creation_date: 2016-06-20T16:40:21Z
 
 [Term]
 id: OMP:0007365
-name: acridine resistance phenotype
-def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a compound that includes an acridine moiety: a polycyclic heteroarene that is anthracene in which one of the central CH groups is replaced by a nitrogen atom." [CHEBI:36420, OMP:DAS]
+name: acridine antimicrobial agent resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity of a microbe to an antimicrobial agent that includes an acridine moiety: a polycyclic heteroarene that is anthracene in which one of the central CH groups is replaced by a nitrogen atom." [CHEBI:36420, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 synonym: "acridine orange" NARROW [CHEBI:51739]
@@ -12577,7 +12579,7 @@ creation_date: 2016-06-21T01:11:35Z
 id: OMP:0007366
 name: resistant to an acridine
 def: "An acridine resistance phenotype where an organism, cell, or cells is resistant to an acridine." [OMP:DAS]
-is_a: OMP:0007365 ! acridine resistance phenotype
+is_a: OMP:0007365 ! acridine antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-21T01:17:16Z
 
@@ -12585,7 +12587,7 @@ creation_date: 2016-06-21T01:17:16Z
 id: OMP:0007367
 name: not resistant to an acridine
 def: "An acridine resistance phenotype where an organism, cell, or cells is not resistant to an acridine." [OMP:DAS]
-is_a: OMP:0007365 ! acridine resistance phenotype
+is_a: OMP:0007365 ! acridine antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-21T01:17:16Z
 
@@ -12594,7 +12596,7 @@ id: OMP:0007368
 name: altered resistance to an acridine
 def: "An acridine resistance phenotype where resistance of an organism, cell, or cells to an acridine is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
-is_a: OMP:0007365 ! acridine resistance phenotype
+is_a: OMP:0007365 ! acridine antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-21T01:17:16Z
 
@@ -12702,9 +12704,8 @@ name: benzamides resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a benzamide. Benzamides are compounds based on benzamide, which consists of benzene bearing a single carboxamido substituent." [CHEBI:22702, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
-synonym: "benzamide resistance phenotype" RELATED [CHEBI:28179]
-synonym: "CHIR-090 resistance phenotype" NARROW [CID:\:11546620]
-synonym: "sulfamonomethoxine resistance phenotype" NARROW [CHBEI:32164<new dbxref>]
+synonym: "benzamide resistance phenotype" NARROW [CHEBI:28179]
+synonym: "benzamides sensitivity phenotype" EXACT [CHEBI:22702]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-26T14:45:16Z
@@ -16743,6 +16744,14 @@ def: "An altered germ tube morphology phenotype where the germ tube does not con
 is_a: OMP:0007739 ! altered germ tube morphology
 created_by: siegele
 creation_date: 2018-06-27T20:58:20Z
+
+[Term]
+id: OMP:0007846
+name: organic cyclic antimicrobial agent resistance phenotype
+def: "An antimicrobial agent resistance phenotype" [CHEBI:33832, OMP:das]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-06-30T21:27:43Z
 
 [Term]
 id: OMP:0008000
