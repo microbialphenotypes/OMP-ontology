@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 10:07:2018 08:50
+date: 26:07:2018 17:45
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -4010,12 +4010,12 @@ creation_date: 2013-05-23T01:40:40Z
 
 [Term]
 id: OMP:0000455
-name: alkaloid resistance phenotype
+name: alkaloid chemical resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to compounds containing basic nitrogen in a heterocyclic structure." [CHEBI:22315, OMP:WAM]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "alkaloid sensitivity phenotype" EXACT []
 synonym: "caffeine resistance phenotype" NARROW []
-synonym: "theophylline resistance phenotype" EXACT [CHEBI:28177]
+synonym: "theophylline resistance phenotype" NARROW [CHEBI:28177]
 is_a: OMP:0007195 ! chemical resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:53:57Z
@@ -4026,7 +4026,7 @@ name: caffeine resistance phenotype
 def: "An alkaloid resistance phenotype that is related to resistance or sensitivity to caffeine, which is a trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7." [CHEBI:27732, OMP:WAM]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "caffeine sensitivity phenotype" EXACT []
-is_a: OMP:0000455 ! alkaloid resistance phenotype
+is_a: OMP:0000455 ! alkaloid chemical resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:54:51Z
 
@@ -7788,7 +7788,7 @@ creation_date: 2014-07-24T17:13:02Z
 id: OMP:0006019
 name: altered azole resistance
 def: "An azole resistance phenotype where resistance to an azole compound is altered relative to a designated control." [OMp:JCH]
-is_a: OMP:0006028 ! azole resistance phenotype
+is_a: OMP:0006028 ! azole antimicrobial agent resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:20:23Z
@@ -7888,7 +7888,7 @@ creation_date: 2013-10-04T16:57:43Z
 
 [Term]
 id: OMP:0006028
-name: azole resistance phenotype
+name: azole antimicrobial agent resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to heteromonocyclic organic compounds consisting of a five-membered mancude-ring containing nitrogen." [CHEBI:68452, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.\n\nAzoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
 subset: qc_do_not_manually_annotate
@@ -8145,7 +8145,7 @@ id: OMP:0006054
 name: not resistant to azole
 def: "An azole compound resistance phenotype where an organism or cell is sensitive to one or more azole compounds." [OMP:DAS]
 synonym: "azole sensitivity" RELATED []
-is_a: OMP:0006028 ! azole resistance phenotype
+is_a: OMP:0006028 ! azole antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
@@ -8153,7 +8153,7 @@ creation_date: 2013-10-11T17:45:44Z
 id: OMP:0006055
 name: resistant to azole
 def: "An azole compound resistance phenotype where an organism or cell is resistant to one or more azole compounds." [OMP:DAS]
-is_a: OMP:0006028 ! azole resistance phenotype
+is_a: OMP:0006028 ! azole antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
@@ -10498,7 +10498,7 @@ creation_date: 2014-08-17T13:12:31Z
 id: OMP:0007135
 name: not resistant to alkaloid
 def: "An alkaloid resistance phenotype where a cell or cells lack resistance to an alkaloid compound." [OMP:DAS]
-is_a: OMP:0000455 ! alkaloid resistance phenotype
+is_a: OMP:0000455 ! alkaloid chemical resistance phenotype
 created_by: siegele
 creation_date: 2014-08-17T13:19:30Z
 
@@ -10506,7 +10506,7 @@ creation_date: 2014-08-17T13:19:30Z
 id: OMP:0007136
 name: resistant to alkaloid
 def: "An alkaloid resistance phenotype where an organism or cell is resistant to one or more alkaloid compounds." [OMP:DAS]
-is_a: OMP:0000455 ! alkaloid resistance phenotype
+is_a: OMP:0000455 ! alkaloid chemical resistance phenotype
 created_by: siegele
 creation_date: 2014-08-17T13:19:30Z
 
@@ -10514,7 +10514,7 @@ creation_date: 2014-08-17T13:19:30Z
 id: OMP:0007137
 name: altered alkaloid resistance
 def: "An alkaloid resistance phenotype where resistance to an alkaloid compound is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000455 ! alkaloid resistance phenotype
+is_a: OMP:0000455 ! alkaloid chemical resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2014-08-17T13:19:30Z
@@ -13515,16 +13515,14 @@ creation_date: 2016-09-13T14:35:10Z
 
 [Term]
 id: OMP:0007474
-name: phenols resistance phenotype
-def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to phenols, which are organic aromatic compounds having one or more hydroxy groups attached to a benzene or other arene ring." [CHEBI:33853, OMP:DAS]
+name: phenolic antimicrobial agent resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an antimicrobial agent that belongs to the class phenols, which are organic aromatic compounds having one or more hydroxy groups attached to a benzene or other arene ring." [CHEBI:33853, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
-synonym: "Epigallocatechin gallate (EGCG)" NARROW []
-synonym: "phenol red resistance phenotype" NARROW [CHEBI:31991]
-synonym: "phenol resistance phenotype" NARROW [CHEBI:15882]
-synonym: "rose bengal resistance phenotype" NARROW [CHEBI:52261]
-synonym: "triclosan resistance phenotype" NARROW [CHEBI:164200]
-synonym: "triton X-100 resistance phenotype" NARROW []
+synonym: "gilvusmycin antimicrobial agent resistance phenotype" NARROW [CHEBI:65964]
+synonym: "phenol antimicrobial agent resistance phenotype" NARROW [CHEBI:15882]
+synonym: "phenols antimicrobial agent sensitivity phenotype" EXACT [CHEBI:33853]
+synonym: "triclosan antimicrobial agent resistance phenotype" NARROW [CHEBI:164200]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T16:00:17Z
@@ -13533,7 +13531,7 @@ creation_date: 2016-09-19T16:00:17Z
 id: OMP:0007475
 name: resistant to phenols
 def: "A phenols resistance phenotype where an organism, cell, or cells is resistant to phenols." [OMP:JG]
-is_a: OMP:0007474 ! phenols resistance phenotype
+is_a: OMP:0007474 ! phenolic antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T16:49:20Z
 
@@ -13541,7 +13539,7 @@ creation_date: 2016-09-19T16:49:20Z
 id: OMP:0007476
 name: not resistant to phenols
 def: "A phenols resistance phenotype where an organism or cell is sensitive to phenols." [OMP:JG]
-is_a: OMP:0007474 ! phenols resistance phenotype
+is_a: OMP:0007474 ! phenolic antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T16:49:20Z
 
@@ -13550,7 +13548,7 @@ id: OMP:0007477
 name: altered resistance to phenols
 def: "A phenol resistance phenotype where the frequency, rate, timing, or extent of resistance to phenols is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
-is_a: OMP:0007474 ! phenols resistance phenotype
+is_a: OMP:0007474 ! phenolic antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T16:49:20Z
 
@@ -13586,6 +13584,7 @@ def: "An antimicrobial agent resistance phenotype relating to the resistance or 
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 synonym: "benzalkonium chloride resistance phenotype" NARROW [CHEBI:3020]
+synonym: "methyl green resistance phenotype" NARROW [CHEBI:CHEBI\:87649]
 synonym: "quaternium-15 resistance phenotype" NARROW [CHEBI:59607]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: dsiegele
@@ -16752,6 +16751,30 @@ def: "An antimicrobial agent resistance phenotype" [CHEBI:33832, OMP:das]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2018-06-30T21:27:43Z
+
+[Term]
+id: OMP:0007847
+name: phosphonic acids antimicrobial agent resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to the resistance or sensitivity of a microbe to a member or members of the class phosphonic acids. Phosphonic acids includes HP(=O)(OH)2 (phosphonic acid) and its P-substituted derivatives." [CHEBI:26069, OMP:das]
+synonym: "fosfomycin resistance phenotype" NARROW [CHEBI:28915]
+synonym: "fosfomycin sensitivity phenotype" NARROW []
+synonym: "fosmidomycin antimicrobial agent resistance phenotype" NARROW [CHEBI:443725]
+synonym: "fosmidomycin antimicrobial agent sensitivity phenotype" NARROW [CHEBI:443725]
+synonym: "phosphonic acids antimicrobial agent sensitivity phenotype" EXACT []
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-24T19:34:05Z
+
+[Term]
+id: OMP:0007848
+name: phenolic chemical resistance phenotype
+def: "A chemical resistance phenotype relating to resistance or sensitivity of a microbe to  a member or members of the class phenols, which are organic aromatic compounds having one or more hydroxy groups attached to a benzene or other arene ring." [CHEBI:33853, OMP:das]
+synonym: "epigallocatechin gallate (EGCG) chemical resistance phenotype" NARROW [CHEBI\::4806]
+synonym: "phenol red chemical resistance phenotype" NARROW [CHEBI:31991]
+synonym: "rose bengal chemical resistance phenotype" NARROW [CHEBI:52261]
+is_a: OMP:0007195 ! chemical resistance phenotype
+created_by: siegele
+creation_date: 2018-07-26T17:28:29Z
 
 [Term]
 id: OMP:0008000
