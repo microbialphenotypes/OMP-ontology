@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 26:07:2018 17:45
+date: 29:07:2018 21:12
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -16769,12 +16769,64 @@ creation_date: 2018-07-24T19:34:05Z
 id: OMP:0007848
 name: phenolic chemical resistance phenotype
 def: "A chemical resistance phenotype relating to resistance or sensitivity of a microbe to  a member or members of the class phenols, which are organic aromatic compounds having one or more hydroxy groups attached to a benzene or other arene ring." [CHEBI:33853, OMP:das]
-synonym: "epigallocatechin gallate (EGCG) chemical resistance phenotype" NARROW [CHEBI\::4806]
+synonym: "epigallocatechin gallate (EGCG) chemical resistance phenotype" NARROW [CHEBI:\:4806]
 synonym: "phenol red chemical resistance phenotype" NARROW [CHEBI:31991]
 synonym: "rose bengal chemical resistance phenotype" NARROW [CHEBI:52261]
 is_a: OMP:0007195 ! chemical resistance phenotype
 created_by: siegele
 creation_date: 2018-07-26T17:28:29Z
+
+[Term]
+id: OMP:0007849
+name: bicyclomycin antimicrobial agent resistance phenotype
+def: "An antimicrobial resistance phenotype relating to the resistance or sensitivity of a microbe to the antimicrobial agent bicyclomycin." [CHEBI:60584, OMP:das]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-29T21:02:55Z
+
+[Term]
+id: OMP:0007850
+name: presence of resistance to bicyclomycin
+is_a: OMP:0007849 ! bicyclomycin antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-29T21:05:09Z
+
+[Term]
+id: OMP:0007851
+name: absence of resistance to bicyclomycin
+is_a: OMP:0007849 ! bicyclomycin antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-29T21:05:09Z
+
+[Term]
+id: OMP:0007852
+name: altered resistance to bicyclomycin
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007849 ! bicyclomycin antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-29T21:05:09Z
+
+[Term]
+id: OMP:0007853
+name: increased resistance to bicyclomycin
+is_a: OMP:0007852 ! altered resistance to bicyclomycin
+created_by: siegele
+creation_date: 2018-07-29T21:05:09Z
+
+[Term]
+id: OMP:0007854
+name: decreased resistance to bicyclomycin
+is_a: OMP:0007852 ! altered resistance to bicyclomycin
+created_by: siegele
+creation_date: 2018-07-29T21:05:09Z
+
+[Term]
+id: OMP:0007855
+name: abolished resistance to bicyclomycin
+is_a: OMP:0007851 ! absence of resistance to bicyclomycin
+is_a: OMP:0007854 ! decreased resistance to bicyclomycin
+created_by: siegele
+creation_date: 2018-07-29T21:05:09Z
 
 [Term]
 id: OMP:0008000
