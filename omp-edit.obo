@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:07:2018 18:27
-saved-by: dsiegele
+date: 29:07:2018 21:12
+saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
@@ -16878,7 +16878,6 @@ is_a: OMP:0007857 ! absence of fosfomycin resistance
 is_a: OMP:0007860 ! decreased resistance to fosfomycin
 created_by: dsiegele
 creation_date: 2018-07-27T18:05:19Z
-
 [Term]
 id: OMP:0008000
 name: spore morphology phenotype
