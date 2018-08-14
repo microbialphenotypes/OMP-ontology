@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2018-07-06
-date: 27:06:2018 23:33
+data-version: releases/2018-08-14
+date: 29:07:2018 22:31
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2221,7 +2221,7 @@ creation_date: 2011-07-21T02:05:51Z
 [Term]
 id: OMP:0000274
 name: antimicrobial agent resistance phenotype
-def: "A microbial phenotype related to resistance or sensitivity to agents that kill (microbiocidal) or inhibit growth (microbiostatic) of a microbe." [CHEBI:33281, OMP:MCC]
+def: "A microbial phenotype related to the resistance or sensitivity of a microbe to antimicrobial agents that kill (microbiocidal) or inhibit growth (microbiostatic) of a microbe." [CHEBI:33281, OMP:MCC]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 synonym: "antibiotic resistance phenotype" NARROW []
@@ -2231,7 +2231,7 @@ synonym: "antimetabolite resistance phenotype" NARROW []
 synonym: "antimicrobial compound sensitivity phenotype" RELATED []
 synonym: "antiviral resistance phenotype" NARROW []
 xref: CHEBI:33281 "antimicrobial agent"
-is_a: OMP:0000000 ! microbial phenotype
+is_a: OMP:0007195 ! chemical resistance phenotype
 created_by: mchibucos
 creation_date: 2011-07-21T02:21:21Z
 
@@ -2592,12 +2592,12 @@ creation_date: 2013-05-23T01:40:40Z
 
 [Term]
 id: OMP:0000455
-name: alkaloid resistance phenotype
+name: alkaloid chemical resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to compounds containing basic nitrogen in a heterocyclic structure." [CHEBI:22315, OMP:WAM]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "alkaloid sensitivity phenotype" EXACT []
 synonym: "caffeine resistance phenotype" NARROW []
-synonym: "theophylline resistance phenotype" EXACT [CHEBI:28177]
+synonym: "theophylline resistance phenotype" NARROW [CHEBI:28177]
 is_a: OMP:0007195 ! chemical resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:53:57Z
@@ -2608,7 +2608,7 @@ name: caffeine resistance phenotype
 def: "An alkaloid resistance phenotype that is related to resistance or sensitivity to caffeine, which is a trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7." [CHEBI:27732, OMP:WAM]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "caffeine sensitivity phenotype" EXACT []
-is_a: OMP:0000455 ! alkaloid resistance phenotype
+is_a: OMP:0000455 ! alkaloid chemical resistance phenotype
 created_by: mchibucos
 creation_date: 2013-05-23T01:54:51Z
 
@@ -6318,7 +6318,7 @@ creation_date: 2014-07-24T16:34:28Z
 id: OMP:0006017
 name: altered aminoglycoside resistance
 def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside compound is altered relative to a designated control." [OMP:JCH]
-is_a: OMP:0006056 ! aminoglycoside resistance phenotype
+is_a: OMP:0006056 ! aminoglycoside antimicrobial agent resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:04:53Z
@@ -6336,7 +6336,7 @@ creation_date: 2014-07-24T17:13:02Z
 id: OMP:0006019
 name: altered azole resistance
 def: "An azole resistance phenotype where resistance to an azole compound is altered relative to a designated control." [OMp:JCH]
-is_a: OMP:0006028 ! azole resistance phenotype
+is_a: OMP:0006028 ! azole antimicrobial agent resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:20:23Z
@@ -6372,7 +6372,7 @@ creation_date: 2013-09-10T14:40:06Z
 [Term]
 id: OMP:0006023
 name: carbon source utilization phenotype
-def: "A nutrient utilization phenotype where the nutrient is being used as a source of carbon." [OMP:DAS]
+def: "A nutrient utilization phenotype related to the ability of a microbe to utilize a nutrient as a source of carbon." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 synonym: "acetate" NARROW []
@@ -6388,8 +6388,9 @@ creation_date: 2013-09-10T17:51:21Z
 
 [Term]
 id: OMP:0006024
-name: heterotrophic
-def: "A carbon source utilization phenotype where an organism uses organic molecules as the carbon source." [ISBN:9780073402406, OMP:DAS]
+name: presence of organic carbon source utilization
+def: "A carbon source utilization phenotype where a microorganism is able to utilize an organic molecule as its carbon source." [ISBN:9780073402406, OMP:DAS]
+synonym: "heterotrophy" EXACT []
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: jonathanherrera
 creation_date: 2013-09-10T18:39:02Z
@@ -6436,7 +6437,7 @@ creation_date: 2013-10-04T16:57:43Z
 
 [Term]
 id: OMP:0006028
-name: azole resistance phenotype
+name: azole antimicrobial agent resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to heteromonocyclic organic compounds consisting of a five-membered mancude-ring containing nitrogen." [CHEBI:68452, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.\n\nAzoles can also contain one or more other non-carbon atoms, such as nitrogen, sulfur or oxygen. A mancude ring has the maximum number of noncumulative double bonds, e.g. benzene, indole.
 subset: qc_do_not_manually_annotate
@@ -6693,7 +6694,7 @@ id: OMP:0006054
 name: not resistant to azole
 def: "An azole compound resistance phenotype where an organism or cell is sensitive to one or more azole compounds." [OMP:DAS]
 synonym: "azole sensitivity" RELATED []
-is_a: OMP:0006028 ! azole resistance phenotype
+is_a: OMP:0006028 ! azole antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
@@ -6701,14 +6702,14 @@ creation_date: 2013-10-11T17:45:44Z
 id: OMP:0006055
 name: resistant to azole
 def: "An azole compound resistance phenotype where an organism or cell is resistant to one or more azole compounds." [OMP:DAS]
-is_a: OMP:0006028 ! azole resistance phenotype
+is_a: OMP:0006028 ! azole antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:45:44Z
 
 [Term]
 id: OMP:0006056
-name: aminoglycoside resistance phenotype
-def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to a compound containing a cyclohexane ring with amino sugars." [CHEBI:47779, OMP:JCH]
+name: aminoglycoside antimicrobial agent resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity of a microbe to an aminoglycoside antibiotic. Aminoglycosides contain a cyclohexane ring with amino sugars." [CHEBI:47779, OMP:JCH]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 synonym: "amikacin resistance phenotype" NARROW [CHEBI:2673]
@@ -6748,7 +6749,7 @@ id: OMP:0006059
 name: not resistant to aminoglycoside
 def: "An aminoglycoside resistance phenotype where an organism or cell is sensitive to one or more aminoglycosides." [OMP:JCH]
 synonym: "aminoglycoside sensitivity" RELATED []
-is_a: OMP:0006056 ! aminoglycoside resistance phenotype
+is_a: OMP:0006056 ! aminoglycoside antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -6756,7 +6757,7 @@ creation_date: 2013-10-22T19:24:20Z
 id: OMP:0006060
 name: resistant to aminoglycoside
 def: "An aminoglycoside resistance phenotype where an organism or cell is resistant to one or more aminoglycoside compounds." [OMP:JCH]
-is_a: OMP:0006056 ! aminoglycoside resistance phenotype
+is_a: OMP:0006056 ! aminoglycoside antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
 
@@ -7137,9 +7138,9 @@ creation_date: 2014-07-25T11:52:24Z
 
 [Term]
 id: OMP:0006103
-name: abolished carbon source utilization
-def: "A decreased carbon source utilization phenotype where the ability to utilize a carbon source is abolished." [OMP:JCH]
-is_a: OMP:0007070 ! decreased carbon source utilization
+name: abolished organic carbon source utilization
+def: "A decreased carbon source utilization phenotype where the ability to utilize an organic carbon source is abolished." [OMP:JCH]
+is_a: OMP:0007070 ! decreased organic carbon source utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:54:11Z
 
@@ -7914,8 +7915,9 @@ creation_date: 2013-09-11T17:14:56Z
 
 [Term]
 id: OMP:0007012
-name: autotrophic
-def: "A carbon source utilization phenotype where a microbe can use carbon dioxide (CO2) as the sole or primary carbon source." [ISBN:9780073402406, OMP:DAS]
+name: presence of inorganic carbon source utilization
+def: "A carbon source utilization phenotype where a microbe can use an inorganic form of carbon, typically CO2 or carbonate, as the sole or primary carbon source." [ISBN:9780073402406, OMP:DAS]
+synonym: "autotrophy" EXACT []
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: siegele
 creation_date: 2013-09-13T15:10:16Z
@@ -8423,16 +8425,16 @@ creation_date: 2014-02-21T15:07:59Z
 
 [Term]
 id: OMP:0007070
-name: decreased carbon source utilization
-def: "An altered carbon source utilization phenotype where the ability to use a particular carbon source is decreased relative to a designated control." [OMP:DAS]
+name: decreased organic carbon source utilization
+def: "An altered carbon source utilization phenotype where the ability to use an organic carbon source is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007078 ! altered carbon source utilization
 created_by: siegele
 creation_date: 2014-02-21T15:18:08Z
 
 [Term]
 id: OMP:0007071
-name: increased carbon source utilization
-def: "An altered carbon source utilization phenotype where the ability to use a particular carbon source is increased relative to a designated control." [OMP:DAS]
+name: increased organic carbon source utilization
+def: "An altered carbon source utilization phenotype where the ability to use an organic carbon source is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007078 ! altered carbon source utilization
 created_by: siegele
 creation_date: 2014-02-21T15:18:41Z
@@ -8493,7 +8495,7 @@ creation_date: 2014-04-24T17:43:04Z
 [Term]
 id: OMP:0007078
 name: altered carbon source utilization
-def: "An altered nutrient utilization phenotype altered relative to a designated control." [OMP:JCH]
+def: "An altered nutrient utilization phenotype where the ability of a microbe to utilize a nutrient as the source of carbon is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006023 ! carbon source utilization phenotype
 is_a: OMP:0007104 ! altered nutrient utilization
 created_by: siegele
@@ -9018,7 +9020,7 @@ creation_date: 2014-08-17T13:12:31Z
 id: OMP:0007135
 name: not resistant to alkaloid
 def: "An alkaloid resistance phenotype where a cell or cells lack resistance to an alkaloid compound." [OMP:DAS]
-is_a: OMP:0000455 ! alkaloid resistance phenotype
+is_a: OMP:0000455 ! alkaloid chemical resistance phenotype
 created_by: siegele
 creation_date: 2014-08-17T13:19:30Z
 
@@ -9026,7 +9028,7 @@ creation_date: 2014-08-17T13:19:30Z
 id: OMP:0007136
 name: resistant to alkaloid
 def: "An alkaloid resistance phenotype where an organism or cell is resistant to one or more alkaloid compounds." [OMP:DAS]
-is_a: OMP:0000455 ! alkaloid resistance phenotype
+is_a: OMP:0000455 ! alkaloid chemical resistance phenotype
 created_by: siegele
 creation_date: 2014-08-17T13:19:30Z
 
@@ -9034,7 +9036,7 @@ creation_date: 2014-08-17T13:19:30Z
 id: OMP:0007137
 name: altered alkaloid resistance
 def: "An alkaloid resistance phenotype where resistance to an alkaloid compound is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0000455 ! alkaloid resistance phenotype
+is_a: OMP:0000455 ! alkaloid chemical resistance phenotype
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2014-08-17T13:19:30Z
@@ -10246,9 +10248,9 @@ creation_date: 2015-09-24T20:45:00Z
 
 [Term]
 id: OMP:0007274
-name: mixotrophic phenotype
-def: "A metabolic phenotype where an organism can switch between using different sources of energy and/or carbon instead of having a single trophic mode. For example, an organism may switch between autotrophic and heterotrophic growth or between phototrophic and chemoorganotrophic growth." [OMP:DAS]
-is_a: OMP:0000224 ! energy metabolism phenotype
+name: mixotrophic carbon source utilization
+def: "A carbon source utilization phenotype where a microbe can switch between using organic and inorganic sources of carbon instead of having a single trophic mode." [OMP:DAS]
+synonym: "mixotrophy" BROAD []
 is_a: OMP:0006023 ! carbon source utilization phenotype
 created_by: siegele
 creation_date: 2015-09-28T15:12:37Z
@@ -11057,8 +11059,8 @@ creation_date: 2016-06-20T16:40:21Z
 
 [Term]
 id: OMP:0007365
-name: acridine resistance phenotype
-def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a compound that includes an acridine moiety: a polycyclic heteroarene that is anthracene in which one of the central CH groups is replaced by a nitrogen atom." [CHEBI:36420, OMP:DAS]
+name: acridine antimicrobial agent resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity of a microbe to an antimicrobial agent that includes an acridine moiety: a polycyclic heteroarene that is anthracene in which one of the central CH groups is replaced by a nitrogen atom." [CHEBI:36420, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 synonym: "acridine orange" NARROW [CHEBI:51739]
@@ -11072,7 +11074,7 @@ creation_date: 2016-06-21T01:11:35Z
 id: OMP:0007366
 name: resistant to an acridine
 def: "An acridine resistance phenotype where an organism, cell, or cells is resistant to an acridine." [OMP:DAS]
-is_a: OMP:0007365 ! acridine resistance phenotype
+is_a: OMP:0007365 ! acridine antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-21T01:17:16Z
 
@@ -11080,7 +11082,7 @@ creation_date: 2016-06-21T01:17:16Z
 id: OMP:0007367
 name: not resistant to an acridine
 def: "An acridine resistance phenotype where an organism, cell, or cells is not resistant to an acridine." [OMP:DAS]
-is_a: OMP:0007365 ! acridine resistance phenotype
+is_a: OMP:0007365 ! acridine antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-21T01:17:16Z
 
@@ -11089,7 +11091,7 @@ id: OMP:0007368
 name: altered resistance to an acridine
 def: "An acridine resistance phenotype where resistance of an organism, cell, or cells to an acridine is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
-is_a: OMP:0007365 ! acridine resistance phenotype
+is_a: OMP:0007365 ! acridine antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-21T01:17:16Z
 
@@ -11197,9 +11199,8 @@ name: benzamides resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to a benzamide. Benzamides are compounds based on benzamide, which consists of benzene bearing a single carboxamido substituent." [CHEBI:22702, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
-synonym: "benzamide resistance phenotype" RELATED [CHEBI:28179]
-synonym: "CHIR-090 resistance phenotype" NARROW [CID:\:11546620]
-synonym: "sulfamonomethoxine resistance phenotype" NARROW [CHBEI:32164<new dbxref>]
+synonym: "benzamide resistance phenotype" NARROW [CHEBI:28179]
+synonym: "benzamides sensitivity phenotype" EXACT [CHEBI:22702]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-26T14:45:16Z
@@ -12009,16 +12010,14 @@ creation_date: 2016-09-13T14:35:10Z
 
 [Term]
 id: OMP:0007474
-name: phenols resistance phenotype
-def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to phenols, which are organic aromatic compounds having one or more hydroxy groups attached to a benzene or other arene ring." [CHEBI:33853, OMP:DAS]
+name: phenolic antimicrobial agent resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to an antimicrobial agent that belongs to the class phenols, which are organic aromatic compounds having one or more hydroxy groups attached to a benzene or other arene ring." [CHEBI:33853, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
-synonym: "Epigallocatechin gallate (EGCG)" NARROW []
-synonym: "phenol red resistance phenotype" NARROW [CHEBI:31991]
-synonym: "phenol resistance phenotype" NARROW [CHEBI:15882]
-synonym: "rose bengal resistance phenotype" NARROW [CHEBI:52261]
-synonym: "triclosan resistance phenotype" NARROW [CHEBI:164200]
-synonym: "triton X-100 resistance phenotype" NARROW []
+synonym: "gilvusmycin antimicrobial agent resistance phenotype" NARROW [CHEBI:65964]
+synonym: "phenol antimicrobial agent resistance phenotype" NARROW [CHEBI:15882]
+synonym: "phenols antimicrobial agent sensitivity phenotype" EXACT [CHEBI:33853]
+synonym: "triclosan antimicrobial agent resistance phenotype" NARROW [CHEBI:164200]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T16:00:17Z
@@ -12027,7 +12026,7 @@ creation_date: 2016-09-19T16:00:17Z
 id: OMP:0007475
 name: resistant to phenols
 def: "A phenols resistance phenotype where an organism, cell, or cells is resistant to phenols." [OMP:JG]
-is_a: OMP:0007474 ! phenols resistance phenotype
+is_a: OMP:0007474 ! phenolic antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T16:49:20Z
 
@@ -12035,7 +12034,7 @@ creation_date: 2016-09-19T16:49:20Z
 id: OMP:0007476
 name: not resistant to phenols
 def: "A phenols resistance phenotype where an organism or cell is sensitive to phenols." [OMP:JG]
-is_a: OMP:0007474 ! phenols resistance phenotype
+is_a: OMP:0007474 ! phenolic antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T16:49:20Z
 
@@ -12044,7 +12043,7 @@ id: OMP:0007477
 name: altered resistance to phenols
 def: "A phenol resistance phenotype where the frequency, rate, timing, or extent of resistance to phenols is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
-is_a: OMP:0007474 ! phenols resistance phenotype
+is_a: OMP:0007474 ! phenolic antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T16:49:20Z
 
@@ -12075,11 +12074,12 @@ creation_date: 2016-09-19T16:49:20Z
 
 [Term]
 id: OMP:0007481
-name: quaternary ammonium salts resistance phenotype
+name: quaternary ammonium salts antimicrobial agent resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to the resistance or sensitivity of a microbe to a quaternary ammonium salt. Quaternary ammonium salts are derivatives of ammonium compounds, (NH4+)Y-, in which all four of the hydrogens bonded to nitrogen have been replaced with univalent (usually organyl) groups." [CHEBI:35273, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 synonym: "benzalkonium chloride resistance phenotype" NARROW [CHEBI:3020]
+synonym: "methyl green resistance phenotype" NARROW [CHEBI:CHEBI\:87649]
 synonym: "quaternium-15 resistance phenotype" NARROW [CHEBI:59607]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: dsiegele
@@ -12087,51 +12087,51 @@ creation_date: 2016-09-19T17:10:16Z
 
 [Term]
 id: OMP:0007482
-name: resistant to quaternary ammonium salts
+name: resistant to quaternary ammonium salt antimicrobial agent
 def: "A quaternary ammonium salts resistance phenotype where an organism or cell is resistant to one or more quaternary ammonium salts." [OMP:JG]
-is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
+is_a: OMP:0007481 ! quaternary ammonium salts antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
 
 [Term]
 id: OMP:0007483
-name: not resistant to quaternary ammonium salts
+name: not resistant to quaternary ammonium salt antimicrobial agent
 def: "A quaternary ammonium salts resistance phenotype where an organism or cell is sensitive to one or more quaternary ammonium salts." [OMP:JG]
-is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
+is_a: OMP:0007481 ! quaternary ammonium salts antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
 
 [Term]
 id: OMP:0007484
-name: altered resistance to quaternary ammonium salts
+name: altered resistance to quaternary ammonium salt antimicrobial agent
 def: "A quaternary ammonium salts resistance phenotype where the frequency, rate, timing, or extent of resistance to quaternary ammonium salts is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
-is_a: OMP:0007481 ! quaternary ammonium salts resistance phenotype
+is_a: OMP:0007481 ! quaternary ammonium salts antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
 
 [Term]
 id: OMP:0007485
-name: increased resistance to quaternary ammonium salts
+name: increased resistance to quaternary ammonium salt antimicrobial agent
 def: "An altered resistance to quaternary ammonium salts where the frequency, rate, timing, or extent of resistance to quaternary ammonium salts is increased relative to a designated control." [OMP:JG]
-is_a: OMP:0007484 ! altered resistance to quaternary ammonium salts
+is_a: OMP:0007484 ! altered resistance to quaternary ammonium salt antimicrobial agent
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
 
 [Term]
 id: OMP:0007486
-name: decreased resistance to quaternary ammonium salts
+name: decreased resistance to quaternary ammonium salt antimicrobial agent
 def: "An altered resistance to quaternary ammonium salts where the frequency, rate, timing, or extent of resistance to quaternary ammonium salts is decreased relative to a designated control." [OMP:JG]
-is_a: OMP:0007484 ! altered resistance to quaternary ammonium salts
+is_a: OMP:0007484 ! altered resistance to quaternary ammonium salt antimicrobial agent
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
 
 [Term]
 id: OMP:0007487
-name: abolished resistance to quaternary ammonium salts
+name: abolished resistance to quaternary ammonium salt antimicrobial agent
 def: "A decreased resistance to quaternary ammonium salts where resistance to quaternary ammonium salts is abolished." [OMP:JG]
-is_a: OMP:0007483 ! not resistant to quaternary ammonium salts
-is_a: OMP:0007486 ! decreased resistance to quaternary ammonium salts
+is_a: OMP:0007483 ! not resistant to quaternary ammonium salt antimicrobial agent
+is_a: OMP:0007486 ! decreased resistance to quaternary ammonium salt antimicrobial agent
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
 
@@ -12200,7 +12200,6 @@ def: "An antimicrobial resistance phenotype relating to resistance or sensitivit
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 synonym: "cerulenin resistance phenotype" NARROW [CHEBI:171741]
-synonym: "fosfomycin resistance phenotype" NARROW [CHEBI:28915]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-09-25T12:02:01Z
@@ -15239,6 +15238,244 @@ def: "An altered germ tube morphology phenotype where the germ tube does not con
 is_a: OMP:0007739 ! altered germ tube morphology
 created_by: siegele
 creation_date: 2018-06-27T20:58:20Z
+
+[Term]
+id: OMP:0007846
+name: organic cyclic antimicrobial agent resistance phenotype
+def: "An antimicrobial agent resistance phenotype" [CHEBI:33832, OMP:das]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-06-30T21:27:43Z
+
+[Term]
+id: OMP:0007847
+name: fosfomycin resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to the resistance or sensitivity of a microbe to fosfomycin." [CHEBI:26069, OMP:das]
+synonym: "fosfomycin resistance phenotype" NARROW [CHEBI:28915]
+synonym: "fosfomycin sensitivity phenotype" NARROW []
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-24T19:34:05Z
+
+[Term]
+id: OMP:0007848
+name: phenolic chemical resistance phenotype
+def: "A chemical resistance phenotype relating to resistance or sensitivity of a microbe to  a member or members of the class phenols, which are organic aromatic compounds having one or more hydroxy groups attached to a benzene or other arene ring." [CHEBI:33853, OMP:das]
+synonym: "epigallocatechin gallate (EGCG) chemical resistance phenotype" NARROW [CHEBI:\:4806]
+synonym: "phenol red chemical resistance phenotype" NARROW [CHEBI:31991]
+synonym: "rose bengal chemical resistance phenotype" NARROW [CHEBI:52261]
+is_a: OMP:0007195 ! chemical resistance phenotype
+created_by: siegele
+creation_date: 2018-07-26T17:28:29Z
+
+[Term]
+id: OMP:0007849
+name: absence of organic carbon source utilization
+is_a: OMP:0006023 ! carbon source utilization phenotype
+created_by: dsiegele
+creation_date: 2018-07-27T16:15:15Z
+
+[Term]
+id: OMP:0007850
+name: absence of inorganic carbon source utilization
+is_a: OMP:0006023 ! carbon source utilization phenotype
+created_by: dsiegele
+creation_date: 2018-07-27T16:15:15Z
+
+[Term]
+id: OMP:0007851
+name: mixotrophic energy metabolism
+def: "A metabolic phenotype where an organism can switch between using different sources of energy instead of having a single trophic mode. For example, an organism may switch between phototrophic and chemoorganotrophic growth." [OMP:das]
+synonym: "mixotrophy" BROAD []
+is_a: OMP:0000224 ! energy metabolism phenotype
+created_by: dsiegele
+creation_date: 2018-07-27T16:29:26Z
+
+[Term]
+id: OMP:0007852
+name: increased inorganic carbon source utilization
+def: "An altered carbon source utilization phenotype where the ability to use an inorganic carbon source is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007078 ! altered carbon source utilization
+created_by: dsiegele
+creation_date: 2018-07-27T16:33:19Z
+
+[Term]
+id: OMP:0007853
+name: decreased inorganic carbon source utilization
+def: "An altered carbon source utilization phenotype where the ability to use an inorganic carbon source is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007078 ! altered carbon source utilization
+created_by: dsiegele
+creation_date: 2018-07-27T16:33:19Z
+
+[Term]
+id: OMP:0007854
+name: abolished inorganic carbon source utilization
+def: "A decreased inorganic carbon source utilization phenotype where the ability to use an inorganic carbon source is abolished." [OMP:das]
+is_a: OMP:0007853 ! decreased inorganic carbon source utilization
+created_by: dsiegele
+creation_date: 2018-07-27T16:33:19Z
+
+[Term]
+id: OMP:0007855
+name: fosmidomycin antimicrobial agent resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to the resistance or sensitivity of a microbe to fosmidomycin." [CHEBI:443725, OMP:das]
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: dsiegele
+creation_date: 2018-07-27T17:59:33Z
+
+[Term]
+id: OMP:0007856
+name: presence of fosfomycin resistance
+def: "An antimicrobial resistance phenotype where a microbe has the ability to grow and reproduce in the presence of fosfomycin." [OMP:das]
+is_a: OMP:0007847 ! fosfomycin resistance phenotype
+created_by: dsiegele
+creation_date: 2018-07-27T18:05:19Z
+
+[Term]
+id: OMP:0007857
+name: absence of fosfomycin resistance
+def: "An antimicrobial resistance phenotype where a microbe cannot grow and reproduce in the presence of fosfomycin." [OMP:das]
+is_a: OMP:0007847 ! fosfomycin resistance phenotype
+created_by: dsiegele
+creation_date: 2018-07-27T18:05:19Z
+
+[Term]
+id: OMP:0007858
+name: altered fosfomycin resistance
+def: "A fosfomycin resistance phenotype where the ability of a microbe to grow and reproduce in the presence of fosfomycin is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007847 ! fosfomycin resistance phenotype
+created_by: dsiegele
+creation_date: 2018-07-27T18:05:19Z
+
+[Term]
+id: OMP:0007859
+name: increased resistance to fosfomycin
+def: "An altered fosfomycin resistance phenotype where the ability of a microbe to grow and reproduce in the presence of fosfomycin is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007858 ! altered fosfomycin resistance
+created_by: dsiegele
+creation_date: 2018-07-27T18:05:19Z
+
+[Term]
+id: OMP:0007860
+name: decreased resistance to fosfomycin
+def: "An altered fosfomycin resistance phenotype where the ability of a microbe to grow and reproduce in the presence of fosfomycin is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007858 ! altered fosfomycin resistance
+created_by: dsiegele
+creation_date: 2018-07-27T18:05:19Z
+
+[Term]
+id: OMP:0007861
+name: abolished fosfomycin resistance
+def: "A decreased fosfomycin resistance phenotype where the ability of a microbe to grow and reproduce in the presence of fosfomycin is abolished." [OMP:das]
+is_a: OMP:0007857 ! absence of fosfomycin resistance
+is_a: OMP:0007860 ! decreased resistance to fosfomycin
+created_by: dsiegele
+creation_date: 2018-07-27T18:05:19Z
+
+[Term]
+id: OMP:0007862
+name: bicyclomycin antimicrobial agent resistance phenotype
+synonym: "azabicyclic antimicrobial agent resistance phenotype" BROAD []
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-29T21:34:15Z
+
+[Term]
+id: OMP:0007863
+name: presence of resistance to bicyclomycin
+is_a: OMP:0007862 ! bicyclomycin antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-29T21:34:15Z
+
+[Term]
+id: OMP:0007864
+name: absence of resistance to bicyclomycin
+is_a: OMP:0007862 ! bicyclomycin antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-29T21:34:15Z
+
+[Term]
+id: OMP:0007865
+name: altered resistance to bicyclomycin
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007862 ! bicyclomycin antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-29T21:34:15Z
+
+[Term]
+id: OMP:0007866
+name: decreased resistance to bicyclomycin
+is_a: OMP:0007865 ! altered resistance to bicyclomycin
+created_by: siegele
+creation_date: 2018-07-29T21:34:15Z
+
+[Term]
+id: OMP:0007867
+name: abolished resistance to bicyclomycin
+is_a: OMP:0007864 ! absence of resistance to bicyclomycin
+is_a: OMP:0007866 ! decreased resistance to bicyclomycin
+created_by: siegele
+creation_date: 2018-07-29T21:34:15Z
+
+[Term]
+id: OMP:0007868
+name: increased resistance to bicyclomycin
+is_a: OMP:0007865 ! altered resistance to bicyclomycin
+created_by: siegele
+creation_date: 2018-07-29T21:34:15Z
+
+[Term]
+id: OMP:0007869
+name: A22 antimicrobial agent resistance phenotype
+synonym: "amino[sulfanyl]methaniminiumchloride antimicrobial agent resistance phenotype" RELATED []
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-29T22:21:01Z
+
+[Term]
+id: OMP:0007870
+name: presence of resistance to A22
+is_a: OMP:0007869 ! A22 antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-29T22:22:16Z
+
+[Term]
+id: OMP:0007871
+name: absence of resistance to A22
+is_a: OMP:0007869 ! A22 antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-29T22:22:16Z
+
+[Term]
+id: OMP:0007872
+name: increased resistance to A22
+is_a: OMP:0007875 ! altered resistance to A22
+created_by: siegele
+creation_date: 2018-07-29T22:22:16Z
+
+[Term]
+id: OMP:0007873
+name: decreased resistance to A22
+is_a: OMP:0007875 ! altered resistance to A22
+created_by: siegele
+creation_date: 2018-07-29T22:22:16Z
+
+[Term]
+id: OMP:0007874
+name: abolished resistance to A22
+is_a: OMP:0007871 ! absence of resistance to A22
+is_a: OMP:0007873 ! decreased resistance to A22
+created_by: siegele
+creation_date: 2018-07-29T22:22:16Z
+
+[Term]
+id: OMP:0007875
+name: altered resistance to A22
+is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007869 ! A22 antimicrobial agent resistance phenotype
+created_by: siegele
+creation_date: 2018-07-29T22:22:16Z
 
 [Term]
 id: OMP:0008000
