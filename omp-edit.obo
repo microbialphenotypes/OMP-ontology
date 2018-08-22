@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 22:08:2018 15:58
-saved-by: dsiegele
-auto-generated-by: OBO-Edit 2.3.1
+date: 22:08:2018 18:21
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -17034,6 +17034,7 @@ creation_date: 2018-08-17T19:14:42Z
 id: OMP:0007884
 name: resistant to a metal
 is_a: OMP:0007247 ! resistant to a chemical
+is_a: OMP:0007890 ! metal resistance phenotype
 created_by: dsiegele
 creation_date: 2018-08-22T15:48:22Z
 
@@ -17041,6 +17042,7 @@ creation_date: 2018-08-22T15:48:22Z
 id: OMP:0007885
 name: not resistant to a metal
 is_a: OMP:0007246 ! not resistant to a chemical
+is_a: OMP:0007890 ! metal resistance phenotype
 created_by: dsiegele
 creation_date: 2018-08-22T15:53:56Z
 
@@ -17070,8 +17072,68 @@ creation_date: 2018-08-22T15:55:19Z
 id: OMP:0007889
 name: altered resistance to a metal
 is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007890 ! metal resistance phenotype
 created_by: dsiegele
 creation_date: 2018-08-22T15:56:07Z
+
+[Term]
+id: OMP:0007890
+name: metal resistance phenotype
+is_a: OMP:0007195 ! chemical resistance phenotype
+created_by: siegele
+creation_date: 2018-08-22T18:04:54Z
+
+[Term]
+id: OMP:0007891
+name: surfactant resistance phenotype
+synonym: "detergent resistance phenotype" NARROW []
+is_a: OMP:0007195 ! chemical resistance phenotype
+created_by: siegele
+creation_date: 2018-08-22T18:12:18Z
+
+[Term]
+id: OMP:0007892
+name: resistant to a detergent
+is_a: OMP:0007891 ! surfactant resistance phenotype
+created_by: siegele
+creation_date: 2018-08-22T18:13:28Z
+
+[Term]
+id: OMP:0007893
+name: not resistant to a surfactant
+is_a: OMP:0007891 ! surfactant resistance phenotype
+created_by: siegele
+creation_date: 2018-08-22T18:13:28Z
+
+[Term]
+id: OMP:0007894
+name: altered resistance to a surfactant
+is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007891 ! surfactant resistance phenotype
+created_by: siegele
+creation_date: 2018-08-22T18:13:28Z
+
+[Term]
+id: OMP:0007895
+name: increased resistance to a surfactant
+is_a: OMP:0007894 ! altered resistance to a surfactant
+created_by: siegele
+creation_date: 2018-08-22T18:13:58Z
+
+[Term]
+id: OMP:0007896
+name: decreased resistance to a surfactant
+is_a: OMP:0007894 ! altered resistance to a surfactant
+created_by: siegele
+creation_date: 2018-08-22T18:13:58Z
+
+[Term]
+id: OMP:0007897
+name: abolished resistance to a surfactant
+is_a: OMP:0007893 ! not resistant to a surfactant
+is_a: OMP:0007896 ! decreased resistance to a surfactant
+created_by: siegele
+creation_date: 2018-08-22T18:13:58Z
 
 [Term]
 id: OMP:0008000
