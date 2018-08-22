@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 17:08:2018 19:20
+date: 22:08:2018 15:58
 saved-by: dsiegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -17029,6 +17029,49 @@ def: "A decreased resistance to a chemical phenotype where resistance to the spe
 is_a: OMP:0007249 ! decreased resistance to a chemical
 created_by: dsiegele
 creation_date: 2018-08-17T19:14:42Z
+
+[Term]
+id: OMP:0007884
+name: resistant to a metal
+is_a: OMP:0007247 ! resistant to a chemical
+created_by: dsiegele
+creation_date: 2018-08-22T15:48:22Z
+
+[Term]
+id: OMP:0007885
+name: not resistant to a metal
+is_a: OMP:0007246 ! not resistant to a chemical
+created_by: dsiegele
+creation_date: 2018-08-22T15:53:56Z
+
+[Term]
+id: OMP:0007886
+name: decreased resistance to a metal
+is_a: OMP:0007889 ! altered resistance to a metal
+created_by: dsiegele
+creation_date: 2018-08-22T15:54:29Z
+
+[Term]
+id: OMP:0007887
+name: abolished resistance to a metal
+is_a: OMP:0007885 ! not resistant to a metal
+is_a: OMP:0007886 ! decreased resistance to a metal
+created_by: dsiegele
+creation_date: 2018-08-22T15:54:56Z
+
+[Term]
+id: OMP:0007888
+name: increased resistance to a metal
+is_a: OMP:0007889 ! altered resistance to a metal
+created_by: dsiegele
+creation_date: 2018-08-22T15:55:19Z
+
+[Term]
+id: OMP:0007889
+name: altered resistance to a metal
+is_a: OMP:0007248 ! altered chemical resistance
+created_by: dsiegele
+creation_date: 2018-08-22T15:56:07Z
 
 [Term]
 id: OMP:0008000
