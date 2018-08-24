@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 24:08:2018 00:49
+date: 24:08:2018 12:47
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -9027,7 +9027,7 @@ creation_date: 2014-07-25T15:33:11Z
 [Term]
 id: OMP:0006153
 name: abolished utilization of organic nitrogen
-def: "A decreased utilization of organic nitrogen phenotype where the ability to utilize organic nitrogen is abolished." [OMP:JCH]
+def: "An altered nitrogen source utilization phenotype where the ability to use an organic N-containing compound as the source of nitrogen is abolished." [OMP:JCH]
 is_a: OMP:0007035 ! decreased utilization of organic nitrogen source
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:36:09Z
@@ -9573,16 +9573,16 @@ creation_date: 2013-09-28T21:05:43Z
 [Term]
 id: OMP:0007035
 name: decreased utilization of organic nitrogen source
-def: "An organic nitrogen source utilization phenotype where the ability to use an organic N-containing compound as the source of nitrogen is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
+def: "An altered nitrogen source utilization phenotype where the ability to use an organic N-containing compound as the source of nitrogen is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007906 ! altered organic nitrogen source utilization
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:07:53Z
 
 [Term]
 id: OMP:0007036
 name: increased utilization of organic nitrogen source
-def: "An organic nitrogen source utilization phenotype where the ability to use an organic N-containing compound as the source of nitrogen is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
+def: "An altered nitrogen source utilization phenotype where the ability to use an organic N-containing compound as the source of nitrogen is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007906 ! altered organic nitrogen source utilization
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:07:58Z
 
@@ -9590,7 +9590,7 @@ creation_date: 2013-09-28T21:07:58Z
 id: OMP:0007037
 name: utilization of organic nitrogen phenotype
 def: "An organic nitrogen source utilization phenotype where an organism can use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
-is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
+is_obsolete: true
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:08:02Z
 
@@ -10995,6 +10995,7 @@ id: OMP:0007190
 name: altered dinitrogen utilization
 def: "A dinitrogen utilization phenotype where the ability to utilize dinitrogen is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0006030 ! dinitrogen utilization phenotype
+is_a: OMP:0007905 ! altered nitrogen source utilization
 created_by: siegele
 creation_date: 2014-10-04T01:42:58Z
 
@@ -12007,7 +12008,7 @@ id: OMP:0007305
 name: altered utilization of inorganic nitrogen source
 def: "An inorganic nitrogen source utilization phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
-is_a: OMP:0007104 ! altered nutrient utilization
+is_a: OMP:0007905 ! altered nitrogen source utilization
 created_by: siegele
 creation_date: 2016-01-31T00:41:26Z
 
@@ -17207,6 +17208,22 @@ is_a: OMP:0007900 ! not resistant to bile acids
 is_a: OMP:0007903 ! decreased resistance to bile acids
 created_by: siegele
 creation_date: 2018-08-23T16:11:39Z
+
+[Term]
+id: OMP:0007905
+name: altered nitrogen source utilization
+is_a: OMP:0006026 ! nitrogen source utilization phenotype
+is_a: OMP:0007104 ! altered nutrient utilization
+created_by: siegele
+creation_date: 2018-08-24T12:33:54Z
+
+[Term]
+id: OMP:0007906
+name: altered organic nitrogen source utilization
+is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
+is_a: OMP:0007905 ! altered nitrogen source utilization
+created_by: siegele
+creation_date: 2018-08-24T12:37:35Z
 
 [Term]
 id: OMP:0008000
