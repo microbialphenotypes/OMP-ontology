@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 23:08:2018 21:44
+date: 24:08:2018 00:49
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -17022,8 +17022,10 @@ creation_date: 2018-08-17T17:26:45Z
 id: OMP:0007881
 name: host defense peptides resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to an antimicrobial peptide that is synthesized as part of the innate immune response of a eukaryotic host." [OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "cecropin resistance phenotype" NARROW []
 synonym: "defensin resistance phenotype" NARROW []
+synonym: "host defense peptides sensitivity phenotype" EXACT []
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2018-08-17T18:21:52Z
@@ -17094,6 +17096,7 @@ creation_date: 2018-08-22T15:56:07Z
 [Term]
 id: OMP:0007890
 name: metal resistance phenotype
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 is_a: OMP:0007195 ! chemical resistance phenotype
 created_by: siegele
 creation_date: 2018-08-22T18:04:54Z
@@ -17153,7 +17156,8 @@ creation_date: 2018-08-22T18:13:58Z
 [Term]
 id: OMP:0007898
 name: bile acids resistance phenotype
-def: "A chemical resistance phenotype relating to the resistant or sensitivity of a microbe to a bile acid." [CHEBI:138366, OMP:das]
+def: "A chemical resistance phenotype relating to resistance or sensitivity of a microbe to a bile acid." [CHEBI:138366, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "bile acid sensitivity phenotype" EXACT []
 synonym: "bile salt resistance phenotype" NARROW []
 is_a: OMP:0007195 ! chemical resistance phenotype
