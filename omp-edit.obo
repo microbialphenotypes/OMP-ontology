@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 24:08:2018 17:05
+date: 26:08:2018 13:01
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -7942,7 +7942,7 @@ creation_date: 2013-09-10T17:54:07Z
 
 [Term]
 id: OMP:0006031
-name: altered macrolide resistance
+name: altered resistance to macrolide
 def: "A macrolide resistance phenotype where resistance to a macrolide compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
 is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
@@ -7988,7 +7988,7 @@ id: OMP:0006036
 name: decreased resistance to macrolide
 def: "A macrolide compound resistance phenotype where resistance to a macrolide compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "increased sensitivity to macrolide" RELATED []
-is_a: OMP:0006031 ! altered macrolide resistance
+is_a: OMP:0006031 ! altered resistance to macrolide
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
@@ -7997,7 +7997,7 @@ id: OMP:0006037
 name: increased resistance to macrolide
 def: "A macrolide compound resistance phenotype where resistance to a macrolide compound is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to macrolide" RELATED []
-is_a: OMP:0006031 ! altered macrolide resistance
+is_a: OMP:0006031 ! altered resistance to macrolide
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
@@ -12609,21 +12609,21 @@ creation_date: 2016-06-21T01:17:16Z
 [Term]
 id: OMP:0007372
 name: alkylating agent resistance phenotype
-def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to an alkylating agent: a highly reactive chemical that introduces alkyl radicals into biologically active molecules and thereby prevents their proper functioning." [CHEBI:22333, OMP:DAS]
+def: "A chemical resistance phenotype relating to resistance or sensitivity of a microbe to an alkylating agent: a highly reactive chemical that introduces alkyl radicals into biologically active molecules and thereby prevents their proper functioning." [CHEBI:22333, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
-synonym: "Cisplatin" NARROW [CHEBI:27899]
+synonym: "alkylating agent sensitivity phenotype" EXACT []
 synonym: "Hydroxyurea" NARROW [CHEBI:44423]
 synonym: "methyl methanesulfonate" NARROW [CHEBI:25255]
-synonym: "MMS" RELATED [CHEBI:25255]
-is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+synonym: "MMS" NARROW [CHEBI:25255]
+is_a: OMP:0007195 ! chemical resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-22T16:41:33Z
 
 [Term]
 id: OMP:0007373
 name: resistant to alkylating agent
-def: "An alkylating agent resistance phenotype where an organism, cell, or cells is resistant to an alkylating agent." [OMP:DAS]
+def: "An alkylating agent resistance phenotype where growth and reproduction of a microbe is resistant to an alkylating agent." [OMP:DAS]
 is_a: OMP:0007372 ! alkylating agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-23T15:27:23Z
@@ -12631,16 +12631,16 @@ creation_date: 2016-06-23T15:27:23Z
 [Term]
 id: OMP:0007374
 name: not resistant to alkylating agent
-def: "An alkylating agent resistance phenotype where an organism, cell, or cells is not resistant to an alkylating agent." [OMP:DAS]
+def: "An alkylating agent resistance phenotype where growth and reproduction of a microbe does not occur in the presence of an alkylating agent." [OMP:DAS]
 is_a: OMP:0007372 ! alkylating agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-23T15:27:23Z
 
 [Term]
 id: OMP:0007375
-name: altered resistance to alkylating agent
-def: "An alkylating agent resistance phenotype where resistance of an organism, cell, or cells to an alkylating agent is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
+name: altered resistance to an alkylating agent
+def: "An alkylating agent resistance phenotype where growth and reproduction of a microbe in the presence of an alkylating agent is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007248 ! altered chemical resistance
 is_a: OMP:0007372 ! alkylating agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-23T15:27:23Z
@@ -12648,23 +12648,25 @@ creation_date: 2016-06-23T15:27:23Z
 [Term]
 id: OMP:0007376
 name: increased resistance to alkylating agent
-def: "An altered alkylating agent resistance phenotype where resistance of an organism, cell, or cells to an alkylating agent is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007375 ! altered resistance to alkylating agent
+def: "An altered resistance to an alkylating agent phenotype where growth and reproduction of a microbe in the presence of an alkylating agent is increased relative to a designated control." [OMP:DAS]
+synonym: "decreased sensitivity to an alkylating agent" EXACT []
+is_a: OMP:0007375 ! altered resistance to an alkylating agent
 created_by: dsiegele
 creation_date: 2016-06-23T15:27:23Z
 
 [Term]
 id: OMP:0007377
 name: decreased resistance to alkylating agent
-def: "An altered alkylating agent resistance phenotype where resistance of an organism, cell, or cells to an alkylating agent is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007375 ! altered resistance to alkylating agent
+def: "An altered resistance to an alkylating agent phenotype where growth and reproduction of a microbe in the presence of an alkylating agent is decreased relative to a designated control." [OMP:DAS]
+synonym: "increased sensitivity to an alkylating agent" EXACT []
+is_a: OMP:0007375 ! altered resistance to an alkylating agent
 created_by: dsiegele
 creation_date: 2016-06-23T15:27:23Z
 
 [Term]
 id: OMP:0007378
 name: abolished resistance to alkylating agent
-def: "A decreased resistance to alkylating agent where resistance of an organism, cell, or cells to an alkylating agent is abolished." [OMP:DAS]
+def: "An decreased resistance to an alkylating agent phenotype where growth and reproduction of a microbe in the presence of an alkylating agent is abolished." [OMP:DAS]
 is_a: OMP:0007374 ! not resistant to alkylating agent
 is_a: OMP:0007377 ! decreased resistance to alkylating agent
 created_by: dsiegele
@@ -13335,7 +13337,7 @@ creation_date: 2016-08-08T15:17:42Z
 [Term]
 id: OMP:0007456
 name: population viability phenotype
-def: "A population phenotype relating to the proportion of a population that is viable under the specified conditions. Viability refers to the ability of a microbe to survive, grow, and reproduce." [FYPO:0002057, OMP:DAS]
+def: "A population phenotype relating to the proportion of a population that is viable under the specified conditions. Viability refers to the ability of a microbe to survive or grow and reproduce." [FYPO:0002057, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 is_a: OMP:0007006 ! population phenotype
@@ -16332,9 +16334,9 @@ creation_date: 2018-06-12T00:51:53Z
 [Term]
 id: OMP:0007800
 name: polyether antimicrobial resistance phenotype
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: This term and its children were deemed to be too granular. Instead, use one of the children of OMP:0000274 antimicrobial agent resistance phenotype and enter database identifier for A22 in the Annotation Extension field. \nOMP:0007876 resistant to an antimicrobial agent\nOMP:0007877 not resistant to an antimicrobial agent\nOMP:0007134 altered resistance to an antimicrobial agent\nOMP:0007878 increased resistance to an antimicrobial agent\nOMP:000 7879 decreased resistance to an antimicrobial agent\nOMP:0007880 abolished resistance to an antimicrobial agent
 subset: qc_do_not_manually_annotate
-is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+is_obsolete: true
 created_by: siegele
 creation_date: 2018-06-18T03:07:12Z
 
@@ -16570,7 +16572,7 @@ creation_date: 2018-06-21T22:15:28Z
 [Term]
 id: OMP:0007828
 name: sulfonamide antimicrobial agent resistance phenotype
-def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity of a microbe to one or more sulfonamide compounds. The sulfonamide function group is -S(=O)2-NH2, a sulfonyl group connected to an amine group." [CHEBI:35358, CHEBI:87228, OMP:das]
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity of a microbe to one or more sulfonamide compounds. The sulfonamide function group is -S(=O)2-NH2, a sulfonyl group connected to an amine group." [CHEBI:35358, OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 synonym: "sulfamethizole resistance phenotype" NARROW [CHEBI:9331]
@@ -16582,16 +16584,16 @@ creation_date: 2018-06-22T00:39:30Z
 
 [Term]
 id: OMP:0007829
-name: resistant to sulfonamide
-def: "A sulfonamide resistance phenotype where a microbe or microbes is sensitive to one or more sulfonamide compounds." [OMP:das]
+name: resistant to sulfonamide antimicrobial agent
+def: "A sulfonamide antimicrobial agent resistance phenotype where growth and reproduction of a microbe is not affected by the presence of a sulfonamide antimicrobial agent." [OMP:das]
 is_a: OMP:0007828 ! sulfonamide antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2018-06-22T00:47:21Z
 
 [Term]
 id: OMP:0007830
-name: not resistant to sulfonamide
-def: "A nitrofuran resistance phenotype where a microbe is sensitive to one or more nitrofuran compounds." [OMP:das]
+name: not resistant to a sulfonamide antimicrobial agent
+def: "A sulfonamide antimicrobial agent resistance phenotype where growth and reproduction of a microbe does not occur in the presence of a sulfonamide antimicrobial agent." [OMP:das]
 is_a: OMP:0007828 ! sulfonamide antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2018-06-22T00:47:21Z
@@ -16599,7 +16601,7 @@ creation_date: 2018-06-22T00:47:21Z
 [Term]
 id: OMP:0007831
 name: altered resistance to a sulfonamide antimicrobial agent
-def: "A sulfonamide resistance phenotype where resistance to a sulfonamide compound is altered relative to a designated control." [OMP:das]
+def: "A sulfonamide antimicrobial agent resistance phenotype where the ability of microbe to grow and reproduce in the presence of a sulfonamide antimicrobial agent is altered relative to a designated control." [OMP:das]
 is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 is_a: OMP:0007828 ! sulfonamide antimicrobial agent resistance phenotype
 created_by: siegele
@@ -16608,8 +16610,8 @@ creation_date: 2018-06-22T00:47:21Z
 [Term]
 id: OMP:0007832
 name: increased resistance to sulfonamide
-def: "An altered sulfonamide resistance phenotype where resistance to a sulfonamide compound is increased relative to a designated control." [OMP:das]
-synonym: "decreased sensitivity to sulfonamide" EXACT []
+def: "An altered sulfonamide antimicrobial agent resistance phenotype where resistance of a microbe to a sulfonamide antimicrobial agent is increased relative to a designated control." [OMP:das]
+synonym: "decreased sensitivity to sulfonamide antimicrobial agent" EXACT []
 is_a: OMP:0007831 ! altered resistance to a sulfonamide antimicrobial agent
 created_by: siegele
 creation_date: 2018-06-22T00:47:21Z
@@ -16617,7 +16619,7 @@ creation_date: 2018-06-22T00:47:21Z
 [Term]
 id: OMP:0007833
 name: decreased resistance to sulfonamde
-def: "An altered sulfonamide resistance phenotype where resistance to a sulfonamide compound is decreased relative to a designated control." [OMP:das]
+def: "An altered sulfonamide antimicrobial agent resistance phenotype where resistance of a microbe to a sulfonamide antimicrobial agent is decreased relative to a designated control." [OMP:das]
 synonym: "increased sensitivity to sulfonamide" EXACT []
 is_a: OMP:0007831 ! altered resistance to a sulfonamide antimicrobial agent
 created_by: siegele
@@ -16626,8 +16628,8 @@ creation_date: 2018-06-22T00:47:21Z
 [Term]
 id: OMP:0007834
 name: abolished resistance to sulfonamide
-def: "A decreased sulfonamide resistance phenotype where resistance to a sulfonamide compound is abolished." [OMP:das]
-is_a: OMP:0007830 ! not resistant to sulfonamide
+def: "A decreased sulfonamide antimicrobial resistance phenotype where the ability of a microbe to grow and reproduce in the presence of a sulfonamide antimicrobial agent is abolished." [OMP:das]
+is_a: OMP:0007830 ! not resistant to a sulfonamide antimicrobial agent
 is_a: OMP:0007833 ! decreased resistance to sulfonamde
 created_by: siegele
 creation_date: 2018-06-22T00:47:21Z
@@ -17226,14 +17228,6 @@ created_by: siegele
 creation_date: 2018-08-24T12:37:35Z
 
 [Term]
-id: OMP:0007907
-name: alkylating agent resistance phenotype
-synonym: "alkylating agent sensitivity phenotype" RELATED []
-is_a: OMP:0007195 ! chemical resistance phenotype
-created_by: siegele
-creation_date: 2018-08-24T16:58:07Z
-
-[Term]
 id: OMP:0007908
 name: chelator resistance phenotype
 is_a: OMP:0007195 ! chemical resistance phenotype
@@ -17283,50 +17277,6 @@ is_a: OMP:0007910 ! not resistant to a chelator
 is_a: OMP:0007912 ! decreased resistance to a chelator
 created_by: siegele
 creation_date: 2018-08-24T17:01:28Z
-
-[Term]
-id: OMP:0007915
-name: resistant to an alkylating agent
-is_a: OMP:0007907 ! alkylating agent resistance phenotype
-created_by: siegele
-creation_date: 2018-08-24T17:02:44Z
-
-[Term]
-id: OMP:0007916
-name: not resistant to an alkylating agent
-is_a: OMP:0007907 ! alkylating agent resistance phenotype
-created_by: siegele
-creation_date: 2018-08-24T17:04:20Z
-
-[Term]
-id: OMP:0007917
-name: altered resistance to an alkylating agent
-is_a: OMP:0007248 ! altered chemical resistance
-is_a: OMP:0007907 ! alkylating agent resistance phenotype
-created_by: siegele
-creation_date: 2018-08-24T17:04:20Z
-
-[Term]
-id: OMP:0007918
-name: increased resistance to an alkylating agent
-is_a: OMP:0007917 ! altered resistance to an alkylating agent
-created_by: siegele
-creation_date: 2018-08-24T17:04:20Z
-
-[Term]
-id: OMP:0007919
-name: decreased resistance to an alkylating agent
-is_a: OMP:0007917 ! altered resistance to an alkylating agent
-created_by: siegele
-creation_date: 2018-08-24T17:04:20Z
-
-[Term]
-id: OMP:0007920
-name: abolished resistance to an alkylating agent
-is_a: OMP:0007916 ! not resistant to an alkylating agent
-is_a: OMP:0007919 ! decreased resistance to an alkylating agent
-created_by: siegele
-creation_date: 2018-08-24T17:04:51Z
 
 [Term]
 id: OMP:0008000
