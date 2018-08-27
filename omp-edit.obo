@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 26:08:2018 13:01
+date: 26:08:2018 19:28
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2932,7 +2932,7 @@ creation_date: 2011-06-07T02:59:54Z
 
 [Term]
 id: OMP:0000176
-name: biofilm phenotype
+name: biofilm formation phenotype
 def: "A multi-organism phenotype dealing with the process in which microorganisms attach to and grow on a surface and produce extracellular polymers that facilitate attachment and matrix formation." [GO:0042710, OMP:WAM]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
@@ -3189,7 +3189,7 @@ creation_date: 2011-06-07T09:45:20Z
 id: OMP:0000205
 name: forms single species biofilm
 def: "A biofilm phenotype where the biofilm is formed by a single species." [OMP:WAM]
-is_a: OMP:0000176 ! biofilm phenotype
+is_a: OMP:0000176 ! biofilm formation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T02:26:30Z
 
@@ -3508,7 +3508,7 @@ creation_date: 2011-06-07T02:06:19Z
 id: OMP:0000245
 name: participates in multi-species biofilm
 def: "A biofilm phenotype where the formation involves two or more species." [OMP:WAM]
-is_a: OMP:0000176 ! biofilm phenotype
+is_a: OMP:0000176 ! biofilm formation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T02:27:00Z
 
@@ -3532,7 +3532,7 @@ creation_date: 2011-06-07T03:01:32Z
 id: OMP:0000248
 name: biofilm architecture phenotype
 def: "A biofilm phenotype dealing with the structural formation of the biofilm." [OMP:WAM]
-is_a: OMP:0000176 ! biofilm phenotype
+is_a: OMP:0000176 ! biofilm formation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:05:56Z
 
@@ -5292,9 +5292,9 @@ creation_date: 2014-07-15T17:31:56Z
 
 [Term]
 id: OMP:0005129
-name: altered biofilm
-def: "A biofilm phenotype that is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0000176 ! biofilm phenotype
+name: altered biofilm formation
+def: "A biofilm formation phenotype where the occurrence, extent, or timing of biofilm formation is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0000176 ! biofilm formation phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 created_by: wmeza
 creation_date: 2014-07-16T12:36:13Z
@@ -8592,6 +8592,7 @@ id: OMP:0006103
 name: abolished organic carbon source utilization
 def: "A decreased carbon source utilization phenotype where the ability to utilize an organic carbon source is abolished." [OMP:JCH]
 is_a: OMP:0007070 ! decreased organic carbon source utilization
+is_a: OMP:0007849 ! absence of organic carbon source utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:54:11Z
 
@@ -8661,7 +8662,7 @@ creation_date: 2014-07-25T12:21:50Z
 id: OMP:0006111
 name: abolished chromosome segregation
 def: "A altered chromosome segregation phenotype where the ability to partition a set of chromosomes to daughter cells is abolished." [OMP:JCH]
-is_a: OMP:0006001 ! altered chromosome segregation
+is_a: OMP:0005060 ! decreased frequency of chromosome missegregation
 is_a: OMP:0007601 ! absence of chromosome segregation
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:24:27Z
@@ -8671,6 +8672,7 @@ id: OMP:0006112
 name: abolished gene silencing
 def: "A decreased frequency of gene silencing phenotype where the ability to silence genes is abolished." [OMP:JCH]
 is_a: OMP:0005065 ! decreased frequency of gene silencing
+is_a: OMP:0005066 ! absence of gene silencing
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:40:10Z
 
@@ -8869,6 +8871,7 @@ id: OMP:0006135
 name: abolished biofilm formation
 def: "A decreased biofilm formation phenotype where the ability to form a biofilm is abolished." [OMP:JCH]
 is_a: OMP:0007026 ! decreased biofilm formation
+is_a: OMP:0007915 ! absence of biofilm formation
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:50:55Z
 
@@ -9449,7 +9452,7 @@ creation_date: 2013-09-16T17:30:07Z
 id: OMP:0007020
 name: increased biofilm formation
 def: "An altered biofilm phenotype where the amount of biofilm is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0005129 ! altered biofilm
+is_a: OMP:0005129 ! altered biofilm formation
 created_by: siegele
 creation_date: 2014-08-01T00:12:56Z
 
@@ -9502,7 +9505,7 @@ creation_date: 2013-09-17T16:33:34Z
 id: OMP:0007026
 name: decreased biofilm formation
 def: "An altered biofilm phenotype where the amount of biofilm is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0005129 ! altered biofilm
+is_a: OMP:0005129 ! altered biofilm formation
 created_by: siegele
 creation_date: 2014-08-01T00:12:56Z
 
@@ -14377,7 +14380,7 @@ creation_date: 2017-06-21T15:00:53Z
 [Term]
 id: OMP:0007573
 name: resistance to acidic pH stress phenotype
-def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to environmental pH at or below 6.5." [OMP:DAS]
+def: "A resistance to stress phenotype related to the resistance or sensitivity that a microbial population shows when exposed to environmental pH at or below 6.5." [OMP:DAS]
 is_a: OMP:0007568 ! resistance to stress phenotype
 created_by: dsiegele
 creation_date: 2017-06-21T16:00:11Z
@@ -16798,6 +16801,7 @@ creation_date: 2018-07-27T16:33:19Z
 id: OMP:0007854
 name: abolished inorganic carbon source utilization
 def: "A decreased inorganic carbon source utilization phenotype where the ability to use an inorganic carbon source is abolished." [OMP:das]
+is_a: OMP:0007850 ! absence of inorganic carbon source utilization
 is_a: OMP:0007853 ! decreased inorganic carbon source utilization
 created_by: dsiegele
 creation_date: 2018-07-27T16:33:19Z
@@ -17228,6 +17232,14 @@ created_by: siegele
 creation_date: 2018-08-24T12:37:35Z
 
 [Term]
+id: OMP:0007907
+name: presence of biofilm formation
+def: "A biofilm formation phenotype where a microbe is capable of forming a biofilm." [OMP:das]
+is_a: OMP:0000176 ! biofilm formation phenotype
+created_by: siegele
+creation_date: 2018-08-26T19:22:17Z
+
+[Term]
 id: OMP:0007908
 name: chelator resistance phenotype
 is_a: OMP:0007195 ! chemical resistance phenotype
@@ -17277,6 +17289,14 @@ is_a: OMP:0007910 ! not resistant to a chelator
 is_a: OMP:0007912 ! decreased resistance to a chelator
 created_by: siegele
 creation_date: 2018-08-24T17:01:28Z
+
+[Term]
+id: OMP:0007915
+name: absence of biofilm formation
+def: "A biofilm formation phenotype where a microbe is incapable of forming a biofilm." [OMP:das]
+is_a: OMP:0000176 ! biofilm formation phenotype
+created_by: siegele
+creation_date: 2018-08-26T19:22:17Z
 
 [Term]
 id: OMP:0008000
