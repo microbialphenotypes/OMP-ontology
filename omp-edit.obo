@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 26:08:2018 19:28
+date: 07:09:2018 18:18
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -1710,8 +1710,11 @@ creation_date: 2011-06-07T11:25:05Z
 
 [Term]
 id: OMP:0000039
-name: oxygen growth range phenotype
-def: "A growth range phenotype dealing with oxygen requirements and the range of oxygen concentrations that allow for growth." [OMP:WAM]
+name: O2 effects on population growth phenotype
+def: "A population growth range phenotype related to how growth of a microbial population is affected by different concentrations of oxygen gas (O2) in the environment." [OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007192 ! population growth range phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:36:04Z
@@ -2144,8 +2147,10 @@ creation_date: 2011-02-02T03:19:47Z
 [Term]
 id: OMP:0000087
 name: facultative anaerobe
-def: "An oxygen growth range phenotype where growth does not require oxygen but is better in its presence." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen growth range phenotype
+def: "A microbial phenotype that describes a microorganism that does not require oxygen gas (O2) for growth but will utilize O2 in metabolic reactions when it is present." [ISBN:9780073402406, OMP:WAM]
+synonym: "<new synonym>" RELATED []
+synonym: "facultative aerobe" EXACT [ISBN:978-0134261928]
+is_a: OMP:0007928 ! commonly used descriptors
 created_by: mchibucos
 creation_date: 2011-06-06T03:42:26Z
 
@@ -2325,8 +2330,8 @@ creation_date: 2011-02-02T02:42:12Z
 [Term]
 id: OMP:0000105
 name: aerotolerant anaerobe
-def: "An oxygen growth range phenotype, where growth occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen growth range phenotype
+def: "A microbial phenotype that describes a microorganism that does not require oxygen gas (O2) for growth and doesn't utilize O2 even when it is present." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0007928 ! commonly used descriptors
 created_by: mchibucos
 creation_date: 2011-06-06T03:43:38Z
 
@@ -2883,9 +2888,9 @@ creation_date: 2011-02-02T02:52:30Z
 [Term]
 id: OMP:0000171
 name: microaerophile
-def: "An oxygen growth range phenotype where growth and reproduction requires oxygen but at levels below that found in air (approx. 21%)." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen growth range phenotype where growth and reproduction requires oxygen but at levels below that found in air (approx. 21%).\n\nA microbial phenotype that describes a microorganism that requires O2 for growth, but doesn't grow in the presence of atmospheric levels of O2. Optimal growth of a microaerophile occurs in environments with xx% - xx% O2." [ISBN:9780073402406, OMP:WAM]
 comment: Optimal oxygen levels for growth of typical  microaerophilic bacteria is 2 to 10% O2, and growth is impaired by atmospheric oxygen levels (approx. 21%).
-is_a: OMP:0005255 ! presence of hypoxic growth
+is_a: OMP:0007928 ! commonly used descriptors
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
 
@@ -3009,18 +3014,18 @@ creation_date: 2011-02-07T03:52:44Z
 [Term]
 id: OMP:0000184
 name: obligate anaerobe
-def: "An oxygen growth range phenotype where growth does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "A microbial phenotype that describes a microorganism that does not grow in the presence of oxygen gas (O2)." [ISBN:9780073402406, OMP:WAM]
 synonym: "strict anaerobe" EXACT []
-is_a: OMP:0000039 ! oxygen growth range phenotype
+is_a: OMP:0007928 ! commonly used descriptors
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:34Z
 
 [Term]
 id: OMP:0000185
 name: obligate aerobe
-def: "An oxygen growth range phenotype where growth and reproduction is dependent on atmospheric oxygen (approx. 21%)." [ISBN:9780073402406, OMP:WAM]
+def: "A microbial phenotype that describes a microorganism that requires the presence of oxygen gas (O2) for growth." [ISBN:9780073402406, OMP:WAM]
 synonym: "strict aerobe" EXACT []
-is_a: OMP:0005253 ! presence of aerobic growth
+is_a: OMP:0007928 ! commonly used descriptors
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
 
@@ -4174,8 +4179,11 @@ creation_date: 2014-07-23T12:18:08Z
 
 [Term]
 id: OMP:0005002
-name: temperature growth range phenotype
-def: "A growth phenotype where the trait in question is the range of temperatures where growth of the microbe can occur." [OMP:WAM]
+name: temperature effects on population growth phenotype
+def: "A population growth range phenotype related to how growth of a microbial population is affected by the temperature of the environment." [OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 synonym: "temperature requirement for growth" NARROW []
 is_a: OMP:0007192 ! population growth range phenotype
 created_by: wmeza
@@ -4183,48 +4191,51 @@ creation_date: 2013-09-03T01:06:05Z
 
 [Term]
 id: OMP:0005003
-name: hyperthermophilic growth
-def: "A temperature growth range phenotype where optimal growth occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005002 ! temperature growth range phenotype
+name: hyperthermophilic population growth
+def: "A temperature growth range phenotype where optimal growth of a microbial population occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:29:51Z
 
 [Term]
 id: OMP:0005004
-name: thermophilic growth
-def: "A temperature growth range phenotype where growth can occur at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005002 ! temperature growth range phenotype
+name: thermophilic population growth
+def: "A temperature growth range phenotype where growth of a microbial population can occur at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:36:26Z
 
 [Term]
 id: OMP:0005005
-name: mesophilic growth
-def: "A temperature growth range phenotype where optimal growth occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005002 ! temperature growth range phenotype
+name: mesophilic population growth
+def: "A temperature growth range phenotype where optimal growth of a microbial population occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:24:06Z
 
 [Term]
 id: OMP:0005006
-name: psychrotrophic growth
-def: "A temperature growth range phenotype where growth of the occurs from 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature of growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005002 ! temperature growth range phenotype
+name: psychrotrophic population growth
+def: "A temperature growth range phenotype where growth of a microbial population can occur between 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature for population growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:38:56Z
 
 [Term]
 id: OMP:0005007
-name: psychrophilic growth
-def: "A temperature growth range phenotype where growth can occur at 0 degrees C and optimal growth occurs at temperatures of 15 degrees C or lower." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005002 ! temperature growth range phenotype
+name: psychrophilic population growth
+def: "A temperature population growth range phenotype where growth of a microbial population can occur at 0 C and optimal growth occurs at temperatures of 15 C or lower." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:40:27Z
 
 [Term]
 id: OMP:0005008
-name: pH growth range phenotype
-def: "A growth range phenotype related to the pH range that allows growth of a cell or organism." [OMP:WAM]
+name: pH effects on population growth phenotype
+def: "A population growth range phenotype relating to how growth of a microbial population is affected by the pH of the environment." [OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007192 ! population growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:57:28Z
@@ -4233,7 +4244,7 @@ creation_date: 2013-09-04T13:57:28Z
 id: OMP:0005009
 name: acidophile
 def: "A pH growth range phenotype where optimum growth occurs between pH 0 and 5.5." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005008 ! pH growth range phenotype
+is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:18:28Z
 
@@ -4241,7 +4252,7 @@ creation_date: 2013-09-04T16:18:28Z
 id: OMP:0005010
 name: neutrophile
 def: "A pH growth range phenotype where optimum growth occurs between pH 5.5 and 8.0." [ISBN:780073402406, OMP:WAM]
-is_a: OMP:0005008 ! pH growth range phenotype
+is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:21:50Z
 
@@ -4249,22 +4260,28 @@ creation_date: 2013-09-04T16:21:50Z
 id: OMP:0005011
 name: alkaliphile
 def: "A pH growth range phenotype where optimum growth of occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005008 ! pH growth range phenotype
+is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:24:24Z
 
 [Term]
 id: OMP:0005012
-name: pressure growth range phenotype
-def: "A growth range phenotype dealing with the pressure requirements for growth of an organism or cell." [OMP:WAM]
+name: pressure effects on population growth phenotype
+def: "A population growth range phenotype related to how growth of a microbial population is affected by pressure." [OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007192 ! population growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:42:28Z
 
 [Term]
 id: OMP:0005013
-name: solute and water activity growth range phenotype
-def: "A growth range phenotype dealing with the range of solute concentrations (water activity) that permit growth and proliferation of a microbe." [OMP:WAM]
+name: solute and water activity effects on population growth phenotype
+def: "A population growth range phenotype related to how growth of a microbial population is affected by  the concentration of solutes (water activity) in the environment." [OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007192 ! population growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:43:45Z
@@ -4274,7 +4291,7 @@ id: OMP:0005014
 name: piezophilic growth
 def: "A pressure growth range phenotype where growth is more rapid at high hydrostatic pressure." [ISBN:9780073402406, OMP:WAM]
 synonym: "barophilic growth" RELATED [ISBN:9780073402406]
-is_a: OMP:0005012 ! pressure growth range phenotype
+is_a: OMP:0005012 ! pressure effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:49:53Z
 
@@ -4282,7 +4299,7 @@ creation_date: 2013-09-09T11:49:53Z
 id: OMP:0005015
 name: osmotolerant growth
 def: "A solute and water activity phenotype where growth and proliferation can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005013 ! solute and water activity growth range phenotype
+is_a: OMP:0005013 ! solute and water activity effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:05:24Z
 
@@ -4290,7 +4307,7 @@ creation_date: 2013-09-09T13:05:24Z
 id: OMP:0005016
 name: halophilic growth
 def: "A solute and water activity phenotype where growth and proliferation requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005013 ! solute and water activity growth range phenotype
+is_a: OMP:0005013 ! solute and water activity effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:06:03Z
 
@@ -4890,7 +4907,10 @@ creation_date: 2013-11-22T15:55:45Z
 [Term]
 id: OMP:0005084
 name: resistance to UV radiation phenotype
-def: "A resistance to radiation stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to UV radiation (typically, irradiation by wavelengths 100-400 nm)." [ISO:21348, OMP:WAM]
+def: "A population growth phenotype relating to the ability of a microbial population to grow when exposed to UV radiation (typically, irradiation by wavelengths 100-400 nm)." [ISO:21348, OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007576 ! resistance to radiation stress phenotype
 created_by: wmeza
 creation_date: 2013-11-22T15:56:27Z
@@ -5827,73 +5847,76 @@ creation_date: 2016-05-21T10:06:05Z
 
 [Term]
 id: OMP:0005189
-name: anaerobic growth phenotype
-def: "An oxygen growth range phenotype related to the ability of a cell or cells to grow or reproduce in the absence of oxygen." [OMP:JG]
-is_a: OMP:0000039 ! oxygen growth range phenotype
+name: anaerobic population growth phenotype
+def: "A population growth range phenotype related to whether a microbial population can grow in the absence of oxygen." [OMP:JG]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0000039 ! O2 effects on population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-09T15:08:16Z
 
 [Term]
 id: OMP:0005190
-name: presence of anaerobic growth
-def: "An anaerobic growth phenotype where a cell or cells exhibit anaerobic growth." [OMP:JG]
-is_a: OMP:0005189 ! anaerobic growth phenotype
+name: presence of anaerobic population growth
+def: "A population growth range phenotype where a microbial population is able to grow in the absence of oxygen." [OMP:JG]
+is_a: OMP:0005189 ! anaerobic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-09T15:10:36Z
 
 [Term]
 id: OMP:0005191
-name: absence of anaerobic growth
-def: "An anaerobic growth phenotype where a cell or cells lack the ability to undergo anaerobic growth." [OMP:JG]
-is_a: OMP:0005189 ! anaerobic growth phenotype
+name: absence of anaerobic population growth
+def: "An anaerobic growth range phenotype where a microbial population cannot grow in the absence of oxygen." [OMP:JG]
+is_a: OMP:0005189 ! anaerobic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-09T15:12:13Z
 
 [Term]
 id: OMP:0005192
-name: altered anaerobic growth
-def: "An anaerobic growth phenotype where the ability of a cell or cells to undergo anaerobic growth is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0005189 ! anaerobic growth phenotype
+name: altered anaerobic population growth
+def: "A population growth range phenotype where the ability of a microbial population to grow in the absence of oxygen is altered relative to a designated control." [OMP:JG]
+comment: Altered population growth may result from changes in population growth rate or population growth yield. Consider using a more specific term if either of these parameters was determined in the experiments.
+is_a: OMP:0005189 ! anaerobic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-09T15:12:52Z
 
 [Term]
 id: OMP:0005193
-name: increased anaerobic growth yield
+name: increased anaerobic population growth yield
 def: "An altered anaerobic growth phenotype where the anaerobic growth yield is increased relative to a designated control." [OMP:JG]
-is_a: OMP:0005192 ! altered anaerobic growth
+is_a: OMP:0007926 ! increased anaerobic population growth
 created_by: Jesus
 creation_date: 2016-06-09T15:13:45Z
 
 [Term]
 id: OMP:0005194
-name: decreased anaerobic growth yield
+name: decreased anaerobic population growth yield
 def: "An altered anaerobic growth phenotype where the anaerobic growth yield is decreased relative to a designated control." [OMP:JG]
-is_a: OMP:0005192 ! altered anaerobic growth
+is_a: OMP:0007927 ! decreased anaerobic population growth
 created_by: Jesus
 creation_date: 2016-06-09T15:14:35Z
 
 [Term]
 id: OMP:0005195
-name: abolished anaerobic growth
-def: "An altered anaerobic growth phenotype where anaerobic growth is abolished." [OMP:JG]
-is_a: OMP:0005192 ! altered anaerobic growth
+name: abolished anaerobic population growth
+def: "An altered anaerobic population growth phenotype where growth of a microbial population in the absence of oxygen is abolished." [OMP:JG]
+is_a: OMP:0005191 ! absence of anaerobic population growth
+is_a: OMP:0007927 ! decreased anaerobic population growth
 created_by: Jesus
 creation_date: 2016-06-09T15:15:50Z
 
 [Term]
 id: OMP:0005196
-name: increased rate of anaerobic growth
+name: increased anaerobic population growth rate
 def: "An altered anaerobic growth phenotype where the anaerobic growth rate is increased relative to a designated control." [OMP:JG]
-is_a: OMP:0005192 ! altered anaerobic growth
+is_a: OMP:0007926 ! increased anaerobic population growth
 created_by: Jesus
 creation_date: 2016-06-09T15:19:53Z
 
 [Term]
 id: OMP:0005197
-name: decreased rate of anaerobic growth
+name: decreased anaerobic population growth rate
 def: "An altered anaerobic growth phenotype where the anaerobic growth rate is decreased relative to a designated control." [OMP:JG]
-is_a: OMP:0005192 ! altered anaerobic growth
+is_a: OMP:0007927 ! decreased anaerobic population growth
 created_by: Jesus
 creation_date: 2016-06-09T15:21:49Z
 
@@ -6345,82 +6368,84 @@ creation_date: 2016-06-23T14:44:33Z
 
 [Term]
 id: OMP:0005250
-name: aerobic growth phenotype
-def: "An oxygen growth range phenotype related to the ability of a cell or cells to grow and/or reproduce in the presence of oxygen at the level found in air (approximately 21%)." [OMP:JG]
+name: aerobic population growth phenotype
+def: "A population growth range phenotype related to the ability of a microbial population to grow in the presence of oxygen gas (O2) at the level found in air (approximately 21%)." [OMP:JG]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
-is_a: OMP:0000039 ! oxygen growth range phenotype
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
+is_a: OMP:0000039 ! O2 effects on population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T14:59:55Z
 
 [Term]
 id: OMP:0005251
-name: absence of aerobic growth
-def: "An aerobic growth phenotype where a cell or cells lack the ability to undergo aerobic growth." [OMP:JG]
-is_a: OMP:0005250 ! aerobic growth phenotype
+name: absence of aerobic population growth
+def: "An aerobic population growth phenotype where a microbial population cannot grow in the presence of atmospheric levels of O2 (approximately 21%)." [OMP:JG]
+is_a: OMP:0005250 ! aerobic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:00:52Z
 
 [Term]
 id: OMP:0005252
-name: altered of aerobic growth
-def: "An aerobic growth phenotype where the ability of a cell or cells to undergo aerobic growth is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0005250 ! aerobic growth phenotype
+name: altered aerobic population growth
+def: "A population growth range phenotype where the ability of a microbial population to growth in the presence of atmospheric levels of oxygen gas (approximately 20% O2) is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005250 ! aerobic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:01:40Z
 
 [Term]
 id: OMP:0005253
-name: presence of aerobic growth
-def: "An aerobic growth phenotype where a cell or cells are able to undergo aerobic growth." [OMP:JG]
-is_a: OMP:0005250 ! aerobic growth phenotype
+name: presence of aerobic population growth
+def: "A population growth range phenotype where a microbial population is able to grow in the presence of atmospheric levels of oxygen gas (approximately 21% O2)." [OMP:JG]
+is_a: OMP:0005250 ! aerobic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:02:38Z
 
 [Term]
 id: OMP:0005254
-name: hypoxic growth phenotype
-def: "An aerobic growth phenotype relating to the ability of a cell or cells to grow and/or reproduce in a hypoxic condition, which is one where O2 levels are below that found in air (approximately 21%)." [OMP:JG]
-is_a: OMP:0005250 ! aerobic growth phenotype
+name: microaerophilic population growth phenotype
+def: "A population growth range phenotype relating to the ability of a microbial population to grow when O2 levels are within the range xx-xx% O2, but does not grow at higher levels of O2 or in the absence of O2." [OMP:JG]
+is_a: OMP:0000039 ! O2 effects on population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:04:24Z
 
 [Term]
 id: OMP:0005255
-name: presence of hypoxic growth
+name: presence of microaerophilic population growth
 def: "A hypoxic growth phenotype in which a cell or cells are able to grow and/or reproduce in hypoxic conditions." [OMP:JG]
-is_a: OMP:0005254 ! hypoxic growth phenotype
+is_a: OMP:0005254 ! microaerophilic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:05:26Z
 
 [Term]
 id: OMP:0005256
-name: absence of hypoxic growth
-def: "A hypoxic growth phenotype in which a cell or cells are unable to grow and/or reproduce in hypoxic conditions." [JG:OMP]
-is_a: OMP:0005254 ! hypoxic growth phenotype
+name: absence of microaerophilic growth
+def: "A population growth range phenotype in which a microbial population cannot grow in a microaerophilic environment." [JG:OMP]
+is_a: OMP:0005254 ! microaerophilic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:06:52Z
 
 [Term]
 id: OMP:0005257
-name: altered hypoxic growth
-def: "A hypoxic growth phenotype where the frequency, rate, or extent  of hypoxic growth is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0005254 ! hypoxic growth phenotype
+name: altered microaerophilic population growth
+def: "A population growth range phenotype where the ability of a microbial population to grow in a microaerophilic environment is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005254 ! microaerophilic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:07:30Z
 
 [Term]
 id: OMP:0005258
-name: increased hypoxic growth rate
-def: "An altered hypoxic growth phenotype where the rate of growth under hypoxic conditions is increased relative to a designated control." [OMP:JG]
-is_a: OMP:0005257 ! altered hypoxic growth
+name: increased microaerophilic population growth rate
+def: "An altered microaerophilic population growth phenotype where the rate of growth of a microbial population in a microaerophilic environment is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0007930 ! increased microaerophilic population growth
 created_by: Jesus
 creation_date: 2016-06-23T15:07:51Z
 
 [Term]
 id: OMP:0005259
-name: decreased hypoxic growth rate
-def: "An altered hypoxic growth phenotype where the rate of growth under hypoxic conditions is decreased relative to a designated control." [OMP:JG]
-is_a: OMP:0005257 ! altered hypoxic growth
+name: decreased microaerophilic population growth rate
+def: "An altered microaerophilic population growth phenotype where the rate of growth of a microbial population in a microaerophilic environment is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0007929 ! decreased microaerophilic population growth
 created_by: Jesus
 creation_date: 2016-06-23T15:08:31Z
 
@@ -10528,7 +10553,7 @@ creation_date: 2014-08-17T13:19:30Z
 id: OMP:0007138
 name: altered pH growth range
 def: "A pH growth range phenotype where the range of pH where growth occurs is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0005008 ! pH growth range phenotype
+is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: siegele
 creation_date: 2014-08-17T17:35:20Z
 
@@ -10699,7 +10724,7 @@ creation_date: 2014-08-28T12:14:20Z
 [Term]
 id: OMP:0007157
 name: altered population growth
-def: "A population growth phenotype where the rate and/or extent of reproduction of a microbial population is altered relative to a designated control." [OMP:DAS]
+def: "A population growth phenotype where the rate and/or extent of growth of a microbial population is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007167 ! population growth phenotype
 is_a: OMP:0007351 ! altered biological process
 created_by: siegele
@@ -10801,6 +10826,7 @@ id: OMP:0007167
 name: population growth phenotype
 def: "A microbial phenotype that affects the rate or extent of increase in the number of individuals in a microbial population." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
 subset: qc_do_not_manually_annotate
 xref: GO:0000003 "reproduction"
 is_a: OMP:0007006 ! population phenotype
@@ -11013,7 +11039,7 @@ creation_date: 2014-10-04T01:44:57Z
 [Term]
 id: OMP:0007192
 name: population growth range phenotype
-def: "A population growth phenotype related to non-nutrient environmental factors how they affect growth of microbial populations." [ISBN:9780073402406, OMP:DAS]
+def: "A population growth phenotype related to how non-nutrient environmental factors affect growth of a microbial population." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0007167 ! population growth phenotype
 created_by: siegele
 creation_date: 2014-10-04T18:41:07Z
@@ -13866,7 +13892,7 @@ creation_date: 2017-02-20T15:38:16Z
 id: OMP:0007516
 name: population growth in high osmolarity phenotype
 def: "A population growth phenotype relating to the vegetative growth of a microbial population in conditions of high osmolarity, which refers to osmotic conditions where the osmolarity of the environment is higher than the osmolarity that allows for optimal population growth. Population growth may refer to growth rate, growth yield, or both." [OMP:DAS]
-is_a: OMP:0005013 ! solute and water activity growth range phenotype
+is_a: OMP:0005013 ! solute and water activity effects on population growth phenotype
 created_by: dsiegele
 creation_date: 2017-02-20T15:58:54Z
 
@@ -13892,7 +13918,7 @@ id: OMP:0007519
 name: altered population growth in high osmolarity
 def: "A population growth phenotype where the growth of a microbial population in conditions of high osmolarity is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007516 ! population growth in high osmolarity phenotype
-is_a: OMP:0007523 ! altered growth range
+is_a: OMP:0007523 ! altered population growth range
 created_by: dsiegele
 creation_date: 2017-02-20T15:59:09Z
 
@@ -13923,8 +13949,8 @@ creation_date: 2017-02-20T16:03:16Z
 
 [Term]
 id: OMP:0007523
-name: altered growth range
-def: "A growth range phenotype where the ability of a microbe to grow and proliferate under a specified growth condition is altered relative to a designated control." [OMP:DAS]
+name: altered population growth range
+def: "A population growth range phenotype where the ability of a microbial population to grow in a specified environmental condition is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007192 ! population growth range phenotype
 created_by: dsiegele
@@ -14334,6 +14360,8 @@ id: OMP:0007568
 name: resistance to stress phenotype
 def: "A population growth phenotype related to the resistance or sensitivity that microbes in a population show when exposed to a stress. Typically, a population is deemed resistant to a stress if microbes in the population continue to grow and multiply when exposed to the stress. A population is deemed sensitive to a stress if microbes in the population stop growing and multiplying (and may die) when exposed to the stress." [FYPO:0002046, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.\n\nUse a descendant of this term if you have assayed growth of cells exposed to a stress in culture. If you have assayed the response to a stress at the subcellular or molecular level, consider annotating to one of the descendants of 'response to stress phenotype' (OMP:0000173).
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 synonym: "resistant to a stress" NARROW []
 synonym: "sensitive to a stress" NARROW []
 is_a: OMP:0007167 ! population growth phenotype
@@ -16289,6 +16317,9 @@ creation_date: 2018-06-10T21:18:22Z
 id: OMP:0007794
 name: cell population growth phenotype
 def: "A cell population phenotype that affects the rate or extent of growth of a population of microbial cells." [FYPO:0000139, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 synonym: "cell population growth phenotype" RELATED [FYPO:0000139]
 is_a: OMP:0007167 ! population growth phenotype
 is_a: OMP:0007698 ! cell population phenotype
@@ -17297,6 +17328,122 @@ def: "A biofilm formation phenotype where a microbe is incapable of forming a bi
 is_a: OMP:0000176 ! biofilm formation phenotype
 created_by: siegele
 creation_date: 2018-08-26T19:22:17Z
+
+[Term]
+id: OMP:0007916
+name: decreased vegetative cell width
+def: "An altered cell size phenotype in which the width of a nonspherical cell in the vegetative growth phase of the life cycle is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007665 ! decreased cell width
+created_by: siegele
+creation_date: 2018-09-05T14:59:12Z
+
+[Term]
+id: OMP:0007917
+name: cell size variability within a cell population phenotype
+is_a: OMP:0007698 ! cell population phenotype
+created_by: siegele
+creation_date: 2018-09-05T15:18:58Z
+
+[Term]
+id: OMP:0007918
+name: altered variability in cell size within a cell population
+is_a: OMP:0007917 ! cell size variability within a cell population phenotype
+created_by: siegele
+creation_date: 2018-09-05T15:21:39Z
+
+[Term]
+id: OMP:0007919
+name: presence of cell population growth
+is_a: OMP:0007794 ! cell population growth phenotype
+created_by: siegele
+creation_date: 2018-09-05T15:58:51Z
+
+[Term]
+id: OMP:0007920
+name: absence of cell population growth
+is_a: OMP:0007794 ! cell population growth phenotype
+created_by: siegele
+creation_date: 2018-09-05T15:59:26Z
+
+[Term]
+id: OMP:0007921
+name: presence of cell size variability within a cell population
+is_a: OMP:0007917 ! cell size variability within a cell population phenotype
+created_by: siegele
+creation_date: 2018-09-05T16:06:50Z
+
+[Term]
+id: OMP:0007922
+name: absence of cell size variability within a cell population
+is_a: OMP:0007917 ! cell size variability within a cell population phenotype
+created_by: siegele
+creation_date: 2018-09-05T16:07:15Z
+
+[Term]
+id: OMP:0007923
+name: decreased variability in cell size within a cell population
+is_a: OMP:0007918 ! altered variability in cell size within a cell population
+created_by: siegele
+creation_date: 2018-09-05T16:08:39Z
+
+[Term]
+id: OMP:0007924
+name: increased variability in cell size within a cell population
+is_a: OMP:0007918 ! altered variability in cell size within a cell population
+created_by: siegele
+creation_date: 2018-09-05T16:08:39Z
+
+[Term]
+id: OMP:0007925
+name: abolished variability in cell size within a cell population
+is_a: OMP:0007922 ! absence of cell size variability within a cell population
+is_a: OMP:0007923 ! decreased variability in cell size within a cell population
+created_by: siegele
+creation_date: 2018-09-05T16:08:39Z
+
+[Term]
+id: OMP:0007926
+name: increased anaerobic population growth
+def: "An altered anaerobic population growth phenotype where growth of a microbial population in the absence of O2 is increased relative to a designated control." [OMP:das]
+comment: Altered population growth may result from changes in population growth rate or population growth yield. Consider using a more specific term if either of these parameters was determined in the experiments.
+is_a: OMP:0005192 ! altered anaerobic population growth
+created_by: siegele
+creation_date: 2018-09-05T16:39:27Z
+
+[Term]
+id: OMP:0007927
+name: decreased anaerobic population growth
+def: "An altered anaerobic population growth phenotype where growth of a microbial population in the absence of O2 is decreased relative to a designated control." [OMP:das]
+comment: Altered population growth may result from changes in population growth rate or population growth yield. Consider using a more specific term if either of these parameters was determined in the experiments.
+is_a: OMP:0005192 ! altered anaerobic population growth
+created_by: siegele
+creation_date: 2018-09-05T16:39:27Z
+
+[Term]
+id: OMP:0007928
+name: commonly used descriptors
+def: "Microbial taxa are commonly described in terms of phenotypic characteristics that are shared by all or almost all members of a particular taxonomic group." [OMP:das]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2018-09-06T17:18:16Z
+
+[Term]
+id: OMP:0007929
+name: decreased microaerophilic population growth
+def: "A population growth phenotype where growth of a microbial population in a microaerophilic environment is decreased relative to a designated control." [OMP:das]
+comment: Altered population growth may result from changes in population growth rate or population growth yield. Consider using a more specific term if either of these parameters was determined in the experiments.
+is_a: OMP:0005257 ! altered microaerophilic population growth
+created_by: siegele
+creation_date: 2018-09-07T18:13:30Z
+
+[Term]
+id: OMP:0007930
+name: increased microaerophilic population growth
+def: "An altered microaerophilic population growth phenotype where growth of a microbial population in a microaerophilic environment is increased relative to a designated control." [OMP:das]
+comment: Altered population growth may result from changes in population growth rate or population growth yield. Consider using a more specific term if either of these parameters was determined in the experiments.
+is_a: OMP:0005257 ! altered microaerophilic population growth
+created_by: siegele
+creation_date: 2018-09-07T18:14:29Z
 
 [Term]
 id: OMP:0008000
