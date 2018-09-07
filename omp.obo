@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2018-08-14
-date: 29:07:2018 22:31
+data-version: releases/2018-09-07
+date: 26:08:2018 19:28
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2967,7 +2967,7 @@ creation_date: 2011-06-07T02:59:54Z
 
 [Term]
 id: OMP:0000176
-name: biofilm phenotype
+name: biofilm formation phenotype
 def: "A multi-organism phenotype dealing with the process in which microorganisms attach to and grow on a surface and produce extracellular polymers that facilitate attachment and matrix formation." [GO:0042710, OMP:WAM]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
@@ -3224,7 +3224,7 @@ creation_date: 2011-06-07T09:45:20Z
 id: OMP:0000205
 name: forms single species biofilm
 def: "A biofilm phenotype where the biofilm is formed by a single species." [OMP:WAM]
-is_a: OMP:0000176 ! biofilm phenotype
+is_a: OMP:0000176 ! biofilm formation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T02:26:30Z
 
@@ -3543,7 +3543,7 @@ creation_date: 2011-06-07T02:06:19Z
 id: OMP:0000245
 name: participates in multi-species biofilm
 def: "A biofilm phenotype where the formation involves two or more species." [OMP:WAM]
-is_a: OMP:0000176 ! biofilm phenotype
+is_a: OMP:0000176 ! biofilm formation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T02:27:00Z
 
@@ -3567,7 +3567,7 @@ creation_date: 2011-06-07T03:01:32Z
 id: OMP:0000248
 name: biofilm architecture phenotype
 def: "A biofilm phenotype dealing with the structural formation of the biofilm." [OMP:WAM]
-is_a: OMP:0000176 ! biofilm phenotype
+is_a: OMP:0000176 ! biofilm formation phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T03:05:56Z
 
@@ -3623,7 +3623,7 @@ creation_date: 2011-07-21T01:34:48Z
 [Term]
 id: OMP:0000256
 name: MacConkey agar phenotype
-def: "A colony morphology phenotype that describes the appearance of colonies on MacConkey agar indicator medium." [OMP:AZ]
+def: "A colony morphology phenotype that describes the appearance of colonies on MacConkey agar indicator medium.\n\n** This term was made obsolete because the appearance of colonies on MacConkey agar was determined to be evidence for a phenotype rather than a phenotype itself." [OMP:AZ]
 comment: This term was made obsolete because the appearance of colonies on MacConkey agar was determined to be evidence for a phenotype rather than a phenotype itself.
 is_obsolete: true
 created_by: mchibucos
@@ -3986,7 +3986,7 @@ creation_date: 2012-11-04T02:52:18Z
 id: OMP:0000437
 name: resistant to ampicillin
 def: "An antimicrobial compound resistance phenotype where a cell or cells are resistant to ampicillin." []
-comment: This term was obsoleted in response to our decision to not have precomposed terms for individual antimicrobial compounds.  Instead, terms will be made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactam', and the particular antimicrobial compound tested will be annotated by putting its CHEBI ID into column 16.
+comment: This term was obsoleted in response to our decision to not have precomposed terms for individual antimicrobial compounds.  Instead, when possible, terms will be made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactam', and the particular antimicrobial compound tested will be annotated by putting its CHEBI ID into the annotation extension column. In cases where a natural grouping doesn't exist, the user should use "OMP:0007876 resistant to an antimicrobial agent" and put the CHEBI ID (or other identifier) into the annotation extension column.
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:48Z
@@ -4438,7 +4438,7 @@ id: OMP:0005029
 name: altered tetracycline resistance
 def: "A tetracycline resistance phenotype where resistance to a tetracycline compound is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0006062 ! tetracycline resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 created_by: wmeza
 creation_date: 2014-07-23T17:05:20Z
 
@@ -4479,7 +4479,7 @@ id: OMP:0005034
 name: altered quinolone resistance
 def: "A quinolone resistance phenotype where resistance to a quinolone compound is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0006029 ! quinolone resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 created_by: wmeza
 creation_date: 2014-07-23T17:13:45Z
 
@@ -5339,9 +5339,9 @@ creation_date: 2014-07-15T17:31:56Z
 
 [Term]
 id: OMP:0005129
-name: altered biofilm
-def: "A biofilm phenotype that is altered relative to a designated control." [OMP:WAM]
-is_a: OMP:0000176 ! biofilm phenotype
+name: altered biofilm formation
+def: "A biofilm formation phenotype where the occurrence, extent, or timing of biofilm formation is altered relative to a designated control." [OMP:WAM]
+is_a: OMP:0000176 ! biofilm formation phenotype
 is_a: OMP:0007085 ! altered microbial phenotype
 created_by: wmeza
 creation_date: 2014-07-16T12:36:13Z
@@ -6637,7 +6637,7 @@ id: OMP:0005275
 name: altered organic heterocyclic compound resistance
 def: "An organic heterocyclic compound resistance phenotype where the frequency, rate, timing, or extent of resistance to an organic heterocyclic compound is altered relative to a designated control." [OMP:JG]
 is_a: OMP:0005274 ! organic heterocyclic compound resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 created_by: Jesus
 creation_date: 2016-07-15T15:33:41Z
 
@@ -7829,7 +7829,7 @@ id: OMP:0006017
 name: altered aminoglycoside resistance
 def: "An aminoglycoside resistance phenotype where resistance to an aminoglycoside compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside antimicrobial agent resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:04:53Z
 
@@ -7838,7 +7838,7 @@ id: OMP:0006018
 name: altered aminopyrimidine resistance
 def: "An aminopyrimidine resistance phenotype where resistance to an aminopyrimidine compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000331 ! aminopyrimidine resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:13:02Z
 
@@ -7847,7 +7847,7 @@ id: OMP:0006019
 name: altered azole resistance
 def: "An azole resistance phenotype where resistance to an azole compound is altered relative to a designated control." [OMp:JCH]
 is_a: OMP:0006028 ! azole antimicrobial agent resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:20:23Z
 
@@ -7856,7 +7856,7 @@ id: OMP:0006020
 name: altered bacteriocin resistance
 def: "A bacteriocin resistance phenotype where resistance to a bacteriocin is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006027 ! bacteriocin resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:21:28Z
 
@@ -7865,7 +7865,7 @@ id: OMP:0006021
 name: altered beta-lactam resistance
 def: "A beta-lactam resistance phenotype where resistance to a beta-lactam compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:26:03Z
 
@@ -7910,7 +7910,7 @@ id: OMP:0006025
 name: altered chloramphenicol resistance
 def: "A chloramphenicol resistance phenotype where resistance to chloramphenicol is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0006066 ! chloramphenicol resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:39:51Z
 
@@ -8000,10 +8000,10 @@ creation_date: 2013-09-10T17:54:07Z
 
 [Term]
 id: OMP:0006031
-name: altered macrolide resistance
+name: altered resistance to macrolide
 def: "A macrolide resistance phenotype where resistance to a macrolide compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0000321 ! macrolide resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:40:33Z
 
@@ -8012,7 +8012,7 @@ id: OMP:0006032
 name: altered pteridine resistance
 def: "A pteridine resistance phenotype where resistance to a pteridine compound is altered relative to a designated control." [OMP:JCH]
 is_a: OMP:0007065 ! pteridine resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 created_by: jonathanherrera
 creation_date: 2014-07-24T17:42:30Z
 
@@ -8046,7 +8046,7 @@ id: OMP:0006036
 name: decreased resistance to macrolide
 def: "A macrolide compound resistance phenotype where resistance to a macrolide compound is decreased relative to a designated control." [OMP:JCH]
 synonym: "increased sensitivity to macrolide" RELATED []
-is_a: OMP:0006031 ! altered macrolide resistance
+is_a: OMP:0006031 ! altered resistance to macrolide
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
@@ -8055,7 +8055,7 @@ id: OMP:0006037
 name: increased resistance to macrolide
 def: "A macrolide compound resistance phenotype where resistance to a macrolide compound is increased relative to a designated control." [OMP:JCH]
 synonym: "decreased sensitivity to macrolide" RELATED []
-is_a: OMP:0006031 ! altered macrolide resistance
+is_a: OMP:0006031 ! altered resistance to macrolide
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:35:04Z
 
@@ -8651,6 +8651,7 @@ id: OMP:0006103
 name: abolished organic carbon source utilization
 def: "A decreased carbon source utilization phenotype where the ability to utilize an organic carbon source is abolished." [OMP:JCH]
 is_a: OMP:0007070 ! decreased organic carbon source utilization
+is_a: OMP:0007849 ! absence of organic carbon source utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T11:54:11Z
 
@@ -8721,7 +8722,7 @@ creation_date: 2014-07-25T12:21:50Z
 id: OMP:0006111
 name: abolished chromosome segregation
 def: "A altered chromosome segregation phenotype where the ability to partition a set of chromosomes to daughter cells is abolished." [OMP:JCH]
-is_a: OMP:0006001 ! altered chromosome segregation
+is_a: OMP:0005060 ! decreased frequency of chromosome missegregation
 is_a: OMP:0007601 ! absence of chromosome segregation
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:24:27Z
@@ -8731,6 +8732,7 @@ id: OMP:0006112
 name: abolished gene silencing
 def: "A decreased frequency of gene silencing phenotype where the ability to silence genes is abolished." [OMP:JCH]
 is_a: OMP:0005065 ! decreased frequency of gene silencing
+is_a: OMP:0005066 ! absence of gene silencing
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:40:10Z
 
@@ -8830,7 +8832,7 @@ creation_date: 2014-07-25T13:27:32Z
 [Term]
 id: OMP:0006124
 name: abolished mutation frequency
-def: "A decreased mutation frequency phenotype where mutations no longer occur." [OMP:JCH]
+def: "A decreased mutation frequency phenotype where mutations no longer occur.\n\n**This term was made obsolete because it describes a phenotype that is unlikely to occur in nature." [OMP:JCH]
 comment: This term was made obsolete because it describes a phenotype that is unlikely to occur in nature.
 is_obsolete: true
 created_by: jonathanherrera
@@ -8930,6 +8932,7 @@ id: OMP:0006135
 name: abolished biofilm formation
 def: "A decreased biofilm formation phenotype where the ability to form a biofilm is abolished." [OMP:JCH]
 is_a: OMP:0007026 ! decreased biofilm formation
+is_a: OMP:0007915 ! absence of biofilm formation
 created_by: jonathanherrera
 creation_date: 2014-07-25T14:50:55Z
 
@@ -9088,7 +9091,7 @@ creation_date: 2014-07-25T15:33:11Z
 [Term]
 id: OMP:0006153
 name: abolished utilization of organic nitrogen
-def: "A decreased utilization of organic nitrogen phenotype where the ability to utilize organic nitrogen is abolished." [OMP:JCH]
+def: "An altered nitrogen source utilization phenotype where the ability to use an organic N-containing compound as the source of nitrogen is abolished." [OMP:JCH]
 is_a: OMP:0007035 ! decreased utilization of organic nitrogen source
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:36:09Z
@@ -9514,7 +9517,7 @@ creation_date: 2013-09-16T17:30:07Z
 id: OMP:0007020
 name: increased biofilm formation
 def: "An altered biofilm phenotype where the amount of biofilm is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0005129 ! altered biofilm
+is_a: OMP:0005129 ! altered biofilm formation
 created_by: siegele
 creation_date: 2014-08-01T00:12:56Z
 
@@ -9567,7 +9570,7 @@ creation_date: 2013-09-17T16:33:34Z
 id: OMP:0007026
 name: decreased biofilm formation
 def: "An altered biofilm phenotype where the amount of biofilm is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0005129 ! altered biofilm
+is_a: OMP:0005129 ! altered biofilm formation
 created_by: siegele
 creation_date: 2014-08-01T00:12:56Z
 
@@ -9638,16 +9641,16 @@ creation_date: 2013-09-28T21:05:43Z
 [Term]
 id: OMP:0007035
 name: decreased utilization of organic nitrogen source
-def: "An organic nitrogen source utilization phenotype where the ability to use an organic N-containing compound as the source of nitrogen is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
+def: "An altered nitrogen source utilization phenotype where the ability to use an organic N-containing compound as the source of nitrogen is decreased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007906 ! altered organic nitrogen source utilization
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:07:53Z
 
 [Term]
 id: OMP:0007036
 name: increased utilization of organic nitrogen source
-def: "An organic nitrogen source utilization phenotype where the ability to use an organic N-containing compound as the source of nitrogen is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
+def: "An altered nitrogen source utilization phenotype where the ability to use an organic N-containing compound as the source of nitrogen is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007906 ! altered organic nitrogen source utilization
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:07:58Z
 
@@ -9655,7 +9658,7 @@ creation_date: 2013-09-28T21:07:58Z
 id: OMP:0007037
 name: utilization of organic nitrogen phenotype
 def: "An organic nitrogen source utilization phenotype where an organism can use an organic N-containing compound as the source of nitrogen." [OMP:DAS]
-is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
+is_obsolete: true
 created_by: DeborahSiegele
 creation_date: 2013-09-28T21:08:02Z
 
@@ -10564,7 +10567,7 @@ creation_date: 2014-08-17T12:52:35Z
 
 [Term]
 id: OMP:0007134
-name: altered antimicrobial agent resistance phenotype
+name: altered resistance to an antimicrobial agent
 def: "An antimicrobial agent resistance phenotype where resistance or sensitivity to an antimicrobial agent is altered relative to a designated control." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
@@ -10597,7 +10600,7 @@ id: OMP:0007137
 name: altered alkaloid resistance
 def: "An alkaloid resistance phenotype where resistance to an alkaloid compound is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000455 ! alkaloid chemical resistance phenotype
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 created_by: siegele
 creation_date: 2014-08-17T13:19:30Z
 
@@ -10900,77 +10903,52 @@ creation_date: 2014-09-25T17:18:11Z
 [Term]
 id: OMP:0007169
 name: antimicrobial peptide resistance phenotype
-def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to peptides with antimicrobial activity. This class includes ribosomally synthesized peptides, nonribosomally synthesized peptides, and peptides with additional groups attached." [OMP:DAS]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to peptides with antimicrobial activity. This class includes ribosomally synthesized peptides, nonribosomally synthesized peptides, and peptides with additional groups attached.  \n\n**This term was made obsolete because the grouping was too broad to be informative. It combined antimicrobial agents with widely different modes of action." [OMP:DAS]
 subset: qc_do_not_manually_annotate
-synonym: "<new synonym>" RELATED []
-synonym: "actinomycin D resistance phenotype" NARROW [CHEBI:27666]
-synonym: "bacitracin resistance phenotype" NARROW [CHEBI:28669]
-synonym: "bleomycin resistance phenotype" RELATED [CHEBI:22907]
-synonym: "cecropin B resistance phenotype" NARROW [CID:16741200]
-synonym: "defensin resistance phenotype" NARROW []
-synonym: "glycopeptide resistance" NARROW []
-synonym: "indolicidin resistance phenotype" NARROW [CHEBI:80180]
-synonym: "nonribosomally synthesized peptide resistance" NARROW []
-synonym: "phleomycin resistance phenotype" RELATED [CHEBI:75044]
-synonym: "polymyxin resistance phenotype" NARROW [CHEBI:59062]
-synonym: "ribosomally synthesized peptide resistance" NARROW []
-synonym: "vancomycin resistance phenotype" NARROW [CHEBI:28001]
-is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+is_obsolete: true
+consider: OMP:0007881
 created_by: siegele
 creation_date: 2014-09-26T15:57:03Z
 
 [Term]
 id: OMP:0007170
-name: altered antimicrobial peptide resistance
-def: "An antimicrobial peptide resistance phenotype where resistance or sensitivity to one or more antimicrobial peptides is altered relative to a designated control." [OMP:DAS]
+name: altered resistance to host defense peptides
+def: "An antimicrobial peptide resistance phenotype where resistance or sensitivity to one or more host defense peptides is altered relative to a designated control." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
-is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
-intersection_of: OMP:0007169 ! antimicrobial peptide resistance phenotype
-intersection_of: has_quality OMP:0007188 ! altered_process_quality
-relationship: has_quality OMP:0007188 ! altered_process_quality
+is_a: OMP:0007881 ! host defense peptides resistance phenotype
 created_by: siegele
 creation_date: 2014-09-26T16:02:16Z
 
 [Term]
 id: OMP:0007171
-name: resistant to antimicrobial peptide
-def: "An antimicrobial peptide resistance phenotype where an organism or cell is resistant to one or more antimicrobial peptides." [OMP:DAS]
-is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
-intersection_of: OMP:0007169 ! antimicrobial peptide resistance phenotype
-intersection_of: has_quality PATO:0000467 ! present
-relationship: has_quality PATO:0000467 ! present
+name: resistant to host defense peptide
+def: "A host defense peptide resistance phenotype where a microbe is resistant to one or more antimicrobial peptides." [OMP:DAS]
+is_a: OMP:0007881 ! host defense peptides resistance phenotype
 created_by: siegele
 creation_date: 2014-09-26T16:02:16Z
 
 [Term]
 id: OMP:0007172
-name: not resistant to antimicrobial peptide
-def: "An antimicrobial peptide resistance phenotype where an organism or cell is sensitive to one or more antimicrobial peptides." [OMP:DAS]
-is_a: OMP:0007169 ! antimicrobial peptide resistance phenotype
-intersection_of: OMP:0007169 ! antimicrobial peptide resistance phenotype
-intersection_of: has_quality PATO:0000462 ! absent
-relationship: has_quality PATO:0000462 ! absent
+name: not resistant to host defense peptide
+def: "A host defense peptide resistance phenotype where a microbe is sensitive to one or more host defense peptides." [OMP:DAS]
+is_a: OMP:0007881 ! host defense peptides resistance phenotype
 created_by: siegele
 creation_date: 2014-09-26T16:02:16Z
 
 [Term]
 id: OMP:0007173
-name: decreased resistance to antimicrobial peptide
-def: "An altered antimicrobial peptide resistance phenotype where resistance to an antimicrobial peptide is decreased relative to a designated control." [OMP:DAS]
-synonym: "decreased resistance to phleomycin" NARROW [CHEBI:75044]
-synonym: "Increased sensitivity to antimicrobial peptide" EXACT []
-synonym: "increased sensitivity to phleomycin" NARROW [CHEBI:\:75044]
-is_a: OMP:0007170 ! altered antimicrobial peptide resistance
+name: decreased resistance to host defense peptides
+def: "An altered host defense peptide resistance phenotype where resistance to is decreased relative to a designated control." [OMP:DAS]
+synonym: "Increased sensitivity to host defense peptide" EXACT []
+is_a: OMP:0007170 ! altered resistance to host defense peptides
 created_by: siegele
 creation_date: 2014-09-26T16:02:54Z
 
 [Term]
 id: OMP:0007174
-name: increased resistance to antimicrobial peptide
-def: "An altered antimicrobial peptide resistance phenotype where resistance is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007170 ! altered antimicrobial peptide resistance
+name: increased resistance to host defense peptides
+def: "An altered host defense peptide resistance phenotype where resistance is increased relative to a designated control." [OMP:DAS]
+is_a: OMP:0007170 ! altered resistance to host defense peptides
 created_by: siegele
 creation_date: 2014-09-26T16:02:54Z
 
@@ -11104,6 +11082,7 @@ id: OMP:0007190
 name: altered dinitrogen utilization
 def: "A dinitrogen utilization phenotype where the ability to utilize dinitrogen is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0006030 ! dinitrogen utilization phenotype
+is_a: OMP:0007905 ! altered nitrogen source utilization
 created_by: siegele
 creation_date: 2014-10-04T01:42:58Z
 
@@ -11353,7 +11332,7 @@ creation_date: 2015-03-15T22:30:48Z
 id: OMP:0007216
 name: altered rifamycin resistance
 def: "A rifamycin resistance phenotype where resistance to one or more rifamycin compounds is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 is_a: OMP:0007215 ! rifamycin resistance phenotype
 created_by: siegele
 creation_date: 2015-03-15T22:32:58Z
@@ -11647,8 +11626,8 @@ creation_date: 2015-07-16T00:42:17Z
 id: OMP:0007251
 name: abolished chemical sensitivity
 def: "An altered chemical sensitivity phenotype where the sensitivity of a cell, cells, or microbe to a chemical is abolished." [OMP:DAS]
-is_a: OMP:0007247 ! resistant to a chemical
-is_a: OMP:0007250 ! increased resistance to a chemical
+comment: Chemical sensitivity phenotype and its child terms were renamed as chemical resistance phenotypes to be consistent with other branches of OMP. Other terms were redefined, but this term had to be made obsolete and a new term: abolished chemical resistance was made.
+is_obsolete: true
 created_by: siegele
 creation_date: 2015-07-16T00:42:17Z
 
@@ -12125,7 +12104,7 @@ id: OMP:0007305
 name: altered utilization of inorganic nitrogen source
 def: "An inorganic nitrogen source utilization phenotype that is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007013 ! inorganic nitrogen source utilization phenotype
-is_a: OMP:0007104 ! altered nutrient utilization
+is_a: OMP:0007905 ! altered nitrogen source utilization
 created_by: siegele
 creation_date: 2016-01-31T00:41:26Z
 
@@ -12632,7 +12611,7 @@ creation_date: 2016-06-20T16:27:19Z
 id: OMP:0007361
 name: altered resistance to a nucleoside
 def: "A nucleoside resistance phenotype where resistance of an organism, cell, or cells to a nucleoside is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 is_a: OMP:0007358 ! nucleoside resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-20T16:27:19Z
@@ -12695,7 +12674,7 @@ creation_date: 2016-06-21T01:17:16Z
 id: OMP:0007368
 name: altered resistance to an acridine
 def: "An acridine resistance phenotype where resistance of an organism, cell, or cells to an acridine is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 is_a: OMP:0007365 ! acridine antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2016-06-21T01:17:16Z
@@ -12728,21 +12707,21 @@ creation_date: 2016-06-21T01:17:16Z
 [Term]
 id: OMP:0007372
 name: alkylating agent resistance phenotype
-def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to an alkylating agent: a highly reactive chemical that introduces alkyl radicals into biologically active molecules and thereby prevents their proper functioning." [CHEBI:22333, OMP:DAS]
+def: "A chemical resistance phenotype relating to resistance or sensitivity of a microbe to an alkylating agent: a highly reactive chemical that introduces alkyl radicals into biologically active molecules and thereby prevents their proper functioning." [CHEBI:22333, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
-synonym: "Cisplatin" NARROW [CHEBI:27899]
+synonym: "alkylating agent sensitivity phenotype" EXACT []
 synonym: "Hydroxyurea" NARROW [CHEBI:44423]
 synonym: "methyl methanesulfonate" NARROW [CHEBI:25255]
-synonym: "MMS" RELATED [CHEBI:25255]
-is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+synonym: "MMS" NARROW [CHEBI:25255]
+is_a: OMP:0007195 ! chemical resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-22T16:41:33Z
 
 [Term]
 id: OMP:0007373
 name: resistant to alkylating agent
-def: "An alkylating agent resistance phenotype where an organism, cell, or cells is resistant to an alkylating agent." [OMP:DAS]
+def: "An alkylating agent resistance phenotype where growth and reproduction of a microbe is resistant to an alkylating agent." [OMP:DAS]
 is_a: OMP:0007372 ! alkylating agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-23T15:27:23Z
@@ -12750,16 +12729,16 @@ creation_date: 2016-06-23T15:27:23Z
 [Term]
 id: OMP:0007374
 name: not resistant to alkylating agent
-def: "An alkylating agent resistance phenotype where an organism, cell, or cells is not resistant to an alkylating agent." [OMP:DAS]
+def: "An alkylating agent resistance phenotype where growth and reproduction of a microbe does not occur in the presence of an alkylating agent." [OMP:DAS]
 is_a: OMP:0007372 ! alkylating agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-23T15:27:23Z
 
 [Term]
 id: OMP:0007375
-name: altered resistance to alkylating agent
-def: "An alkylating agent resistance phenotype where resistance of an organism, cell, or cells to an alkylating agent is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+name: altered resistance to an alkylating agent
+def: "An alkylating agent resistance phenotype where growth and reproduction of a microbe in the presence of an alkylating agent is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007248 ! altered chemical resistance
 is_a: OMP:0007372 ! alkylating agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-23T15:27:23Z
@@ -12767,23 +12746,25 @@ creation_date: 2016-06-23T15:27:23Z
 [Term]
 id: OMP:0007376
 name: increased resistance to alkylating agent
-def: "An altered alkylating agent resistance phenotype where resistance of an organism, cell, or cells to an alkylating agent is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007375 ! altered resistance to alkylating agent
+def: "An altered resistance to an alkylating agent phenotype where growth and reproduction of a microbe in the presence of an alkylating agent is increased relative to a designated control." [OMP:DAS]
+synonym: "decreased sensitivity to an alkylating agent" EXACT []
+is_a: OMP:0007375 ! altered resistance to an alkylating agent
 created_by: dsiegele
 creation_date: 2016-06-23T15:27:23Z
 
 [Term]
 id: OMP:0007377
 name: decreased resistance to alkylating agent
-def: "An altered alkylating agent resistance phenotype where resistance of an organism, cell, or cells to an alkylating agent is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007375 ! altered resistance to alkylating agent
+def: "An altered resistance to an alkylating agent phenotype where growth and reproduction of a microbe in the presence of an alkylating agent is decreased relative to a designated control." [OMP:DAS]
+synonym: "increased sensitivity to an alkylating agent" EXACT []
+is_a: OMP:0007375 ! altered resistance to an alkylating agent
 created_by: dsiegele
 creation_date: 2016-06-23T15:27:23Z
 
 [Term]
 id: OMP:0007378
 name: abolished resistance to alkylating agent
-def: "A decreased resistance to alkylating agent where resistance of an organism, cell, or cells to an alkylating agent is abolished." [OMP:DAS]
+def: "An decreased resistance to an alkylating agent phenotype where growth and reproduction of a microbe in the presence of an alkylating agent is abolished." [OMP:DAS]
 is_a: OMP:0007374 ! not resistant to alkylating agent
 is_a: OMP:0007377 ! decreased resistance to alkylating agent
 created_by: dsiegele
@@ -13454,7 +13435,7 @@ creation_date: 2016-08-08T15:17:42Z
 [Term]
 id: OMP:0007456
 name: population viability phenotype
-def: "A population phenotype relating to the proportion of a population that is viable under the specified conditions. Viability refers to the ability of a microbe to survive, grow, and reproduce." [FYPO:0002057, OMP:DAS]
+def: "A population phenotype relating to the proportion of a population that is viable under the specified conditions. Viability refers to the ability of a microbe to survive or grow and reproduce." [FYPO:0002057, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 is_a: OMP:0007006 ! population phenotype
@@ -13647,7 +13628,7 @@ creation_date: 2016-09-19T16:49:20Z
 id: OMP:0007477
 name: altered resistance to phenols
 def: "A phenol resistance phenotype where the frequency, rate, timing, or extent of resistance to phenols is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 is_a: OMP:0007474 ! phenolic antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T16:49:20Z
@@ -13710,7 +13691,7 @@ creation_date: 2016-09-19T17:10:16Z
 id: OMP:0007484
 name: altered resistance to quaternary ammonium salt antimicrobial agent
 def: "A quaternary ammonium salts resistance phenotype where the frequency, rate, timing, or extent of resistance to quaternary ammonium salts is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 is_a: OMP:0007481 ! quaternary ammonium salts antimicrobial agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-09-19T17:10:16Z
@@ -13829,7 +13810,7 @@ creation_date: 2016-09-25T12:11:27Z
 id: OMP:0007498
 name: altered epoxide resistance
 def: "An epoxide resistance phenotype where the frequency, rate, timing, or extent of resistance to an epoxide is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 is_a: OMP:0007495 ! epoxide resistance phenotype
 created_by: siegele
 creation_date: 2016-09-25T12:11:27Z
@@ -14151,7 +14132,7 @@ creation_date: 2017-02-24T13:18:35Z
 id: OMP:0007536
 name: altered resistance to a urea derivative
 def: "A urea derivative resistance phenotype where resistance or sensitivity to a urea derivative is altered relative to a designated control." [CHEBI:47857, OMP:DAS]
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 is_a: OMP:0007533 ! urea derivative resistance phenotype
 created_by: siegele
 creation_date: 2017-02-24T13:18:35Z
@@ -14495,7 +14476,7 @@ creation_date: 2017-06-21T15:00:53Z
 [Term]
 id: OMP:0007573
 name: resistance to acidic pH stress phenotype
-def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to environmental pH at or below 6.5." [OMP:DAS]
+def: "A resistance to stress phenotype related to the resistance or sensitivity that a microbial population shows when exposed to environmental pH at or below 6.5." [OMP:DAS]
 is_a: OMP:0007568 ! resistance to stress phenotype
 created_by: dsiegele
 creation_date: 2017-06-21T16:00:11Z
@@ -15177,7 +15158,7 @@ creation_date: 2017-08-01T19:40:50Z
 id: OMP:0007652
 name: altered mitomycin resistance
 def: "A mitomycin resistance phenotype where resistance to a mitomycin is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 is_a: OMP:0007649 ! mitomycin resistance phenotype
 created_by: siegele
 creation_date: 2017-08-01T19:40:50Z
@@ -16452,9 +16433,9 @@ creation_date: 2018-06-12T00:51:53Z
 [Term]
 id: OMP:0007800
 name: polyether antimicrobial resistance phenotype
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: This term and its children were deemed to be too granular. Instead, use one of the children of OMP:0000274 antimicrobial agent resistance phenotype and enter database identifier for A22 in the Annotation Extension field. \nOMP:0007876 resistant to an antimicrobial agent\nOMP:0007877 not resistant to an antimicrobial agent\nOMP:0007134 altered resistance to an antimicrobial agent\nOMP:0007878 increased resistance to an antimicrobial agent\nOMP:000 7879 decreased resistance to an antimicrobial agent\nOMP:0007880 abolished resistance to an antimicrobial agent
 subset: qc_do_not_manually_annotate
-is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+is_obsolete: true
 created_by: siegele
 creation_date: 2018-06-18T03:07:12Z
 
@@ -16655,7 +16636,7 @@ creation_date: 2018-06-21T22:07:43Z
 id: OMP:0007824
 name: altered nitrofuran resistance
 def: "A nitrofuran resistance phenotype where resistance to a nitrofuran compound is altered relative to a designated control." [OMP:das]
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 is_a: OMP:0007821 ! nitrofuran resistance phenotype
 created_by: siegele
 creation_date: 2018-06-21T22:07:43Z
@@ -16689,8 +16670,8 @@ creation_date: 2018-06-21T22:15:28Z
 
 [Term]
 id: OMP:0007828
-name: sulfonamide resistance phenotype
-def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity of a microbe to one or more sulfonamide compounds. The sulfonamide function group is -S(=O)2-NH2, a sulfonyl group connected to an amine group." [CHEBI:35358, CHEBI:87228, OMP:das]
+name: sulfonamide antimicrobial agent resistance phenotype
+def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity of a microbe to one or more sulfonamide compounds. The sulfonamide function group is -S(=O)2-NH2, a sulfonyl group connected to an amine group." [CHEBI:35358, OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 synonym: "sulfamethizole resistance phenotype" NARROW [CHEBI:9331]
@@ -16702,52 +16683,52 @@ creation_date: 2018-06-22T00:39:30Z
 
 [Term]
 id: OMP:0007829
-name: resistant to sulfonamide
-def: "A sulfonamide resistance phenotype where a microbe or microbes is sensitive to one or more sulfonamide compounds." [OMP:das]
-is_a: OMP:0007828 ! sulfonamide resistance phenotype
+name: resistant to sulfonamide antimicrobial agent
+def: "A sulfonamide antimicrobial agent resistance phenotype where growth and reproduction of a microbe is not affected by the presence of a sulfonamide antimicrobial agent." [OMP:das]
+is_a: OMP:0007828 ! sulfonamide antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2018-06-22T00:47:21Z
 
 [Term]
 id: OMP:0007830
-name: not resistant to sulfonamide
-def: "A nitrofuran resistance phenotype where a microbe is sensitive to one or more nitrofuran compounds." [OMP:das]
-is_a: OMP:0007828 ! sulfonamide resistance phenotype
+name: not resistant to a sulfonamide antimicrobial agent
+def: "A sulfonamide antimicrobial agent resistance phenotype where growth and reproduction of a microbe does not occur in the presence of a sulfonamide antimicrobial agent." [OMP:das]
+is_a: OMP:0007828 ! sulfonamide antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2018-06-22T00:47:21Z
 
 [Term]
 id: OMP:0007831
-name: altered sulfonamide resistance
-def: "A sulfonamide resistance phenotype where resistance to a sulfonamide compound is altered relative to a designated control." [OMP:das]
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
-is_a: OMP:0007828 ! sulfonamide resistance phenotype
+name: altered resistance to a sulfonamide antimicrobial agent
+def: "A sulfonamide antimicrobial agent resistance phenotype where the ability of microbe to grow and reproduce in the presence of a sulfonamide antimicrobial agent is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
+is_a: OMP:0007828 ! sulfonamide antimicrobial agent resistance phenotype
 created_by: siegele
 creation_date: 2018-06-22T00:47:21Z
 
 [Term]
 id: OMP:0007832
 name: increased resistance to sulfonamide
-def: "An altered sulfonamide resistance phenotype where resistance to a sulfonamide compound is increased relative to a designated control." [OMP:das]
-synonym: "decreased sensitivity to sulfonamide" EXACT []
-is_a: OMP:0007831 ! altered sulfonamide resistance
+def: "An altered sulfonamide antimicrobial agent resistance phenotype where resistance of a microbe to a sulfonamide antimicrobial agent is increased relative to a designated control." [OMP:das]
+synonym: "decreased sensitivity to sulfonamide antimicrobial agent" EXACT []
+is_a: OMP:0007831 ! altered resistance to a sulfonamide antimicrobial agent
 created_by: siegele
 creation_date: 2018-06-22T00:47:21Z
 
 [Term]
 id: OMP:0007833
 name: decreased resistance to sulfonamde
-def: "An altered sulfonamide resistance phenotype where resistance to a sulfonamide compound is decreased relative to a designated control." [OMP:das]
+def: "An altered sulfonamide antimicrobial agent resistance phenotype where resistance of a microbe to a sulfonamide antimicrobial agent is decreased relative to a designated control." [OMP:das]
 synonym: "increased sensitivity to sulfonamide" EXACT []
-is_a: OMP:0007831 ! altered sulfonamide resistance
+is_a: OMP:0007831 ! altered resistance to a sulfonamide antimicrobial agent
 created_by: siegele
 creation_date: 2018-06-22T00:47:21Z
 
 [Term]
 id: OMP:0007834
 name: abolished resistance to sulfonamide
-def: "A decreased sulfonamide resistance phenotype where resistance to a sulfonamide compound is abolished." [OMP:das]
-is_a: OMP:0007830 ! not resistant to sulfonamide
+def: "A decreased sulfonamide antimicrobial resistance phenotype where the ability of a microbe to grow and reproduce in the presence of a sulfonamide antimicrobial agent is abolished." [OMP:das]
+is_a: OMP:0007830 ! not resistant to a sulfonamide antimicrobial agent
 is_a: OMP:0007833 ! decreased resistance to sulfonamde
 created_by: siegele
 creation_date: 2018-06-22T00:47:21Z
@@ -16916,6 +16897,7 @@ creation_date: 2018-07-27T16:33:19Z
 id: OMP:0007854
 name: abolished inorganic carbon source utilization
 def: "A decreased inorganic carbon source utilization phenotype where the ability to use an inorganic carbon source is abolished." [OMP:das]
+is_a: OMP:0007850 ! absence of inorganic carbon source utilization
 is_a: OMP:0007853 ! decreased inorganic carbon source utilization
 created_by: dsiegele
 creation_date: 2018-07-27T16:33:19Z
@@ -16948,7 +16930,7 @@ creation_date: 2018-07-27T18:05:19Z
 id: OMP:0007858
 name: altered fosfomycin resistance
 def: "A fosfomycin resistance phenotype where the ability of a microbe to grow and reproduce in the presence of fosfomycin is altered relative to a designated control." [OMP:das]
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
 is_a: OMP:0007847 ! fosfomycin resistance phenotype
 created_by: dsiegele
 creation_date: 2018-07-27T18:05:19Z
@@ -16982,105 +16964,435 @@ creation_date: 2018-07-27T18:05:19Z
 id: OMP:0007862
 name: bicyclomycin antimicrobial agent resistance phenotype
 synonym: "azabicyclic antimicrobial agent resistance phenotype" BROAD []
-is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+is_obsolete: true
+replaced_by: OMP:0000274
 created_by: siegele
 creation_date: 2018-07-29T21:34:15Z
 
 [Term]
 id: OMP:0007863
 name: presence of resistance to bicyclomycin
-is_a: OMP:0007862 ! bicyclomycin antimicrobial agent resistance phenotype
+is_obsolete: true
 created_by: siegele
 creation_date: 2018-07-29T21:34:15Z
 
 [Term]
 id: OMP:0007864
 name: absence of resistance to bicyclomycin
-is_a: OMP:0007862 ! bicyclomycin antimicrobial agent resistance phenotype
+is_obsolete: true
+replaced_by: OMP:0007877
 created_by: siegele
 creation_date: 2018-07-29T21:34:15Z
 
 [Term]
 id: OMP:0007865
 name: altered resistance to bicyclomycin
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
-is_a: OMP:0007862 ! bicyclomycin antimicrobial agent resistance phenotype
+is_obsolete: true
+replaced_by: OMP:0007134
 created_by: siegele
 creation_date: 2018-07-29T21:34:15Z
 
 [Term]
 id: OMP:0007866
 name: decreased resistance to bicyclomycin
-is_a: OMP:0007865 ! altered resistance to bicyclomycin
+is_obsolete: true
+replaced_by: OMP:0007879
 created_by: siegele
 creation_date: 2018-07-29T21:34:15Z
 
 [Term]
 id: OMP:0007867
 name: abolished resistance to bicyclomycin
-is_a: OMP:0007864 ! absence of resistance to bicyclomycin
-is_a: OMP:0007866 ! decreased resistance to bicyclomycin
+is_obsolete: true
+replaced_by: OMP:0007880
 created_by: siegele
 creation_date: 2018-07-29T21:34:15Z
 
 [Term]
 id: OMP:0007868
 name: increased resistance to bicyclomycin
-is_a: OMP:0007865 ! altered resistance to bicyclomycin
+is_obsolete: true
 created_by: siegele
 creation_date: 2018-07-29T21:34:15Z
 
 [Term]
 id: OMP:0007869
 name: A22 antimicrobial agent resistance phenotype
+comment: This term and its children were deemed to be too granular. Instead, use one of the children of OMP:0000274 antimicrobial agent resistance phenotype and enter database identifier for A22 in the Annotation Extension field. \nOMP:0007876 resistant to an antimicrobial agent\nOMP:0007877 not resistant to an antimicrobial agent\nOMP:0007134 altered resistance to an antimicrobial agent\nOMP:0007878 increased resistance to an antimicrobial agent\nOMP:000 7879 decreased resistance to an antimicrobial agent\nOMP:0007880 abolished resistance to an antimicrobial agent
 synonym: "amino[sulfanyl]methaniminiumchloride antimicrobial agent resistance phenotype" RELATED []
-is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+is_obsolete: true
+replaced_by: OMP:0000274
 created_by: siegele
 creation_date: 2018-07-29T22:21:01Z
 
 [Term]
 id: OMP:0007870
 name: presence of resistance to A22
-is_a: OMP:0007869 ! A22 antimicrobial agent resistance phenotype
+comment: This term and was deemed to be too granular. In its place, use OMP:0007876 resistant to an antimicrobial agent and enter database identifier for A22 in the Annotation Extension field.
+is_obsolete: true
 created_by: siegele
 creation_date: 2018-07-29T22:22:16Z
 
 [Term]
 id: OMP:0007871
 name: absence of resistance to A22
-is_a: OMP:0007869 ! A22 antimicrobial agent resistance phenotype
+comment: This term was deemed to be too granular. In its place, use OMP:0007877 not resistant to an antimicrobial agent and enter database identifier for A22 in the Annotation Extension field.
+is_obsolete: true
+replaced_by: OMP:0007877
 created_by: siegele
 creation_date: 2018-07-29T22:22:16Z
 
 [Term]
 id: OMP:0007872
 name: increased resistance to A22
-is_a: OMP:0007875 ! altered resistance to A22
+comment: This term and was deemed to be too granular. Instead, use OMP:0007878 increased resistance to an antimicrobial agent and enter database identifier for A22 in the Annotation Extension field.
+is_obsolete: true
+replaced_by: OMP:0007878
 created_by: siegele
 creation_date: 2018-07-29T22:22:16Z
 
 [Term]
 id: OMP:0007873
 name: decreased resistance to A22
-is_a: OMP:0007875 ! altered resistance to A22
+comment: This term and was deemed to be too granular. In its place, use OMP:000 7879 decreased resistance to an antimicrobial agent and enter database identifier for A22 in the Annotation Extension field.
+is_obsolete: true
+replaced_by: OMP:0007879
 created_by: siegele
 creation_date: 2018-07-29T22:22:16Z
 
 [Term]
 id: OMP:0007874
 name: abolished resistance to A22
-is_a: OMP:0007871 ! absence of resistance to A22
-is_a: OMP:0007873 ! decreased resistance to A22
+comment: This term was deemed to be too granular. In its place, use OMP:0007880 abolished resistance to an antimicrobial agent and enter database identifier for A22 in the Annotation Extension field.
+is_obsolete: true
+replaced_by: OMP:0007880
 created_by: siegele
 creation_date: 2018-07-29T22:22:16Z
 
 [Term]
 id: OMP:0007875
 name: altered resistance to A22
-is_a: OMP:0007134 ! altered antimicrobial agent resistance phenotype
-is_a: OMP:0007869 ! A22 antimicrobial agent resistance phenotype
+comment: This term and was deemed to be too granular. In its place, use OMP:0007134 altered resistance to an antimicrobial agent and enter database identifier for A22 in the Annotation Extension field.
+is_obsolete: true
+replaced_by: OMP:0007134
 created_by: siegele
 creation_date: 2018-07-29T22:22:16Z
+
+[Term]
+id: OMP:0007876
+name: resistant to an antimicrobial agent
+def: "An antimicrobial agent resistance phenotype where growth and reproduction of a microbe occurs in the presence of the antimicrobial agent specified in the Annotation Extension field." [OMP:das]
+synonym: "not sensitive to an antimicrobial agent" EXACT []
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: dsiegele
+creation_date: 2018-08-17T17:22:51Z
+
+[Term]
+id: OMP:0007877
+name: not resistant to an antimicrobial agent
+def: "An antimicrobial agent resistance phenotype where growth and reproduction of a microbe is inhibited by the presence of the antimicrobial agent specified in the Annotation Extension field." [OMP:das]
+synonym: "sensitive to an antimicrobial agent" EXACT []
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: dsiegele
+creation_date: 2018-08-17T17:25:08Z
+
+[Term]
+id: OMP:0007878
+name: increased resistance to an antimicrobial agent
+def: "An altered resistance to an antimicrobial agent phenotype where resistance to the antimicrobial agent specified in the annotation extension field is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
+created_by: dsiegele
+creation_date: 2018-08-17T17:26:30Z
+
+[Term]
+id: OMP:0007879
+name: decreased resistance to an antimicrobial agent
+def: "An altered resistance to an antimicrobial agent phenotype where resistance to the antimicrobial agent specified in the annotation extension field is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
+created_by: dsiegele
+creation_date: 2018-08-17T17:26:30Z
+
+[Term]
+id: OMP:0007880
+name: abolished resistance to an antimicrobial agent
+def: "A decreased resistance to an antimicrobial agent phenotype where resistance to the antimicrobial agent specified in the annotation extension field is abolished." [OMP:das]
+is_a: OMP:0007877 ! not resistant to an antimicrobial agent
+is_a: OMP:0007879 ! decreased resistance to an antimicrobial agent
+created_by: dsiegele
+creation_date: 2018-08-17T17:26:45Z
+
+[Term]
+id: OMP:0007881
+name: host defense peptides resistance phenotype
+def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to an antimicrobial peptide that is synthesized as part of the innate immune response of a eukaryotic host." [OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+synonym: "cecropin resistance phenotype" NARROW []
+synonym: "defensin resistance phenotype" NARROW []
+synonym: "host defense peptides sensitivity phenotype" EXACT []
+is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+created_by: dsiegele
+creation_date: 2018-08-17T18:21:52Z
+
+[Term]
+id: OMP:0007882
+name: abolished resistance to host defense peptides
+def: "A decreased resistance to host defense peptide phenotype where resistance is abolished." [OMP:das]
+is_a: OMP:0007172 ! not resistant to host defense peptide
+is_a: OMP:0007173 ! decreased resistance to host defense peptides
+created_by: dsiegele
+creation_date: 2018-08-17T18:31:14Z
+
+[Term]
+id: OMP:0007883
+name: abolished chemical resistance
+def: "A decreased resistance to a chemical phenotype where resistance to the specified chemical is abolished." [OMP:das]
+is_a: OMP:0007249 ! decreased resistance to a chemical
+created_by: dsiegele
+creation_date: 2018-08-17T19:14:42Z
+
+[Term]
+id: OMP:0007884
+name: resistant to a metal
+is_a: OMP:0007247 ! resistant to a chemical
+is_a: OMP:0007890 ! metal resistance phenotype
+created_by: dsiegele
+creation_date: 2018-08-22T15:48:22Z
+
+[Term]
+id: OMP:0007885
+name: not resistant to a metal
+is_a: OMP:0007246 ! not resistant to a chemical
+is_a: OMP:0007890 ! metal resistance phenotype
+created_by: dsiegele
+creation_date: 2018-08-22T15:53:56Z
+
+[Term]
+id: OMP:0007886
+name: decreased resistance to a metal
+is_a: OMP:0007889 ! altered resistance to a metal
+created_by: dsiegele
+creation_date: 2018-08-22T15:54:29Z
+
+[Term]
+id: OMP:0007887
+name: abolished resistance to a metal
+is_a: OMP:0007885 ! not resistant to a metal
+is_a: OMP:0007886 ! decreased resistance to a metal
+created_by: dsiegele
+creation_date: 2018-08-22T15:54:56Z
+
+[Term]
+id: OMP:0007888
+name: increased resistance to a metal
+is_a: OMP:0007889 ! altered resistance to a metal
+created_by: dsiegele
+creation_date: 2018-08-22T15:55:19Z
+
+[Term]
+id: OMP:0007889
+name: altered resistance to a metal
+is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007890 ! metal resistance phenotype
+created_by: dsiegele
+creation_date: 2018-08-22T15:56:07Z
+
+[Term]
+id: OMP:0007890
+name: metal resistance phenotype
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0007195 ! chemical resistance phenotype
+created_by: siegele
+creation_date: 2018-08-22T18:04:54Z
+
+[Term]
+id: OMP:0007891
+name: surfactant resistance phenotype
+synonym: "detergent resistance phenotype" NARROW []
+is_a: OMP:0007195 ! chemical resistance phenotype
+created_by: siegele
+creation_date: 2018-08-22T18:12:18Z
+
+[Term]
+id: OMP:0007892
+name: resistant to a surfactant
+is_a: OMP:0007891 ! surfactant resistance phenotype
+created_by: siegele
+creation_date: 2018-08-22T18:13:28Z
+
+[Term]
+id: OMP:0007893
+name: not resistant to a surfactant
+is_a: OMP:0007891 ! surfactant resistance phenotype
+created_by: siegele
+creation_date: 2018-08-22T18:13:28Z
+
+[Term]
+id: OMP:0007894
+name: altered resistance to a surfactant
+is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007891 ! surfactant resistance phenotype
+created_by: siegele
+creation_date: 2018-08-22T18:13:28Z
+
+[Term]
+id: OMP:0007895
+name: increased resistance to a surfactant
+is_a: OMP:0007894 ! altered resistance to a surfactant
+created_by: siegele
+creation_date: 2018-08-22T18:13:58Z
+
+[Term]
+id: OMP:0007896
+name: decreased resistance to a surfactant
+is_a: OMP:0007894 ! altered resistance to a surfactant
+created_by: siegele
+creation_date: 2018-08-22T18:13:58Z
+
+[Term]
+id: OMP:0007897
+name: abolished resistance to a surfactant
+is_a: OMP:0007893 ! not resistant to a surfactant
+is_a: OMP:0007896 ! decreased resistance to a surfactant
+created_by: siegele
+creation_date: 2018-08-22T18:13:58Z
+
+[Term]
+id: OMP:0007898
+name: bile acids resistance phenotype
+def: "A chemical resistance phenotype relating to resistance or sensitivity of a microbe to a bile acid." [CHEBI:138366, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+synonym: "bile acid sensitivity phenotype" EXACT []
+synonym: "bile salt resistance phenotype" NARROW []
+is_a: OMP:0007195 ! chemical resistance phenotype
+created_by: siegele
+creation_date: 2018-08-23T15:36:18Z
+
+[Term]
+id: OMP:0007899
+name: resistant to bile acids
+is_a: OMP:0007898 ! bile acids resistance phenotype
+created_by: siegele
+creation_date: 2018-08-23T16:11:39Z
+
+[Term]
+id: OMP:0007900
+name: not resistant to bile acids
+is_a: OMP:0007898 ! bile acids resistance phenotype
+created_by: siegele
+creation_date: 2018-08-23T16:11:39Z
+
+[Term]
+id: OMP:0007901
+name: altered resistance to bile acids
+is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007898 ! bile acids resistance phenotype
+created_by: siegele
+creation_date: 2018-08-23T16:11:39Z
+
+[Term]
+id: OMP:0007902
+name: increased resistance to bile acids
+is_a: OMP:0007901 ! altered resistance to bile acids
+created_by: siegele
+creation_date: 2018-08-23T16:11:39Z
+
+[Term]
+id: OMP:0007903
+name: decreased resistance to bile acids
+is_a: OMP:0007901 ! altered resistance to bile acids
+created_by: siegele
+creation_date: 2018-08-23T16:11:39Z
+
+[Term]
+id: OMP:0007904
+name: abolished resistance to bile acids
+is_a: OMP:0007900 ! not resistant to bile acids
+is_a: OMP:0007903 ! decreased resistance to bile acids
+created_by: siegele
+creation_date: 2018-08-23T16:11:39Z
+
+[Term]
+id: OMP:0007905
+name: altered nitrogen source utilization
+is_a: OMP:0006026 ! nitrogen source utilization phenotype
+is_a: OMP:0007104 ! altered nutrient utilization
+created_by: siegele
+creation_date: 2018-08-24T12:33:54Z
+
+[Term]
+id: OMP:0007906
+name: altered organic nitrogen source utilization
+is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
+is_a: OMP:0007905 ! altered nitrogen source utilization
+created_by: siegele
+creation_date: 2018-08-24T12:37:35Z
+
+[Term]
+id: OMP:0007907
+name: presence of biofilm formation
+def: "A biofilm formation phenotype where a microbe is capable of forming a biofilm." [OMP:das]
+is_a: OMP:0000176 ! biofilm formation phenotype
+created_by: siegele
+creation_date: 2018-08-26T19:22:17Z
+
+[Term]
+id: OMP:0007908
+name: chelator resistance phenotype
+is_a: OMP:0007195 ! chemical resistance phenotype
+created_by: siegele
+creation_date: 2018-08-24T16:59:36Z
+
+[Term]
+id: OMP:0007909
+name: resistant to a chelator
+is_a: OMP:0007908 ! chelator resistance phenotype
+created_by: siegele
+creation_date: 2018-08-24T17:00:53Z
+
+[Term]
+id: OMP:0007910
+name: not resistant to a chelator
+is_a: OMP:0007908 ! chelator resistance phenotype
+created_by: siegele
+creation_date: 2018-08-24T17:00:53Z
+
+[Term]
+id: OMP:0007911
+name: altered resistance to a chelator
+is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007908 ! chelator resistance phenotype
+created_by: siegele
+creation_date: 2018-08-24T17:00:53Z
+
+[Term]
+id: OMP:0007912
+name: decreased resistance to a chelator
+is_a: OMP:0007911 ! altered resistance to a chelator
+created_by: siegele
+creation_date: 2018-08-24T17:00:53Z
+
+[Term]
+id: OMP:0007913
+name: increased resistance to a chelator
+is_a: OMP:0007911 ! altered resistance to a chelator
+created_by: siegele
+creation_date: 2018-08-24T17:00:53Z
+
+[Term]
+id: OMP:0007914
+name: abolished resistance to a chelator
+is_a: OMP:0007910 ! not resistant to a chelator
+is_a: OMP:0007912 ! decreased resistance to a chelator
+created_by: siegele
+creation_date: 2018-08-24T17:01:28Z
+
+[Term]
+id: OMP:0007915
+name: absence of biofilm formation
+def: "A biofilm formation phenotype where a microbe is incapable of forming a biofilm." [OMP:das]
+is_a: OMP:0000176 ! biofilm formation phenotype
+created_by: siegele
+creation_date: 2018-08-26T19:22:17Z
 
 [Term]
 id: OMP:0008000
