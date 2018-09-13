@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 07:09:2018 18:18
+date: 12:09:2018 19:21
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -8729,9 +8729,9 @@ creation_date: 2014-07-25T12:50:04Z
 
 [Term]
 id: OMP:0006116
-name: abolished growth at acidic pH
+name: abolished population growth at acidic pH
 def: "A decreased growth at acidic pH phenotype where the ability to grow at an acidic pH is abolished." [OMP:DAS]
-is_a: OMP:0007008 ! decreased growth at acidic pH
+is_a: OMP:0007008 ! decreased population growth at acidic pH
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:58:01Z
 
@@ -8739,7 +8739,7 @@ creation_date: 2014-07-25T12:58:01Z
 id: OMP:0006117
 name: abolished growth at alkaline pH
 def: "A decreased growth at alkaline pH phenotype where the ability to grow at alkaline pH is abolished." [OMP:JCH]
-is_a: OMP:0007010 ! decreased growth at alkaline pH
+is_a: OMP:0007010 ! decreased population growth at alkaline pH
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:02:17Z
 
@@ -9369,33 +9369,33 @@ creation_date: 2014-07-31T16:11:22Z
 
 [Term]
 id: OMP:0007008
-name: decreased growth at acidic pH
+name: decreased population growth at acidic pH
 def: "An altered pH growth range phenotype where the ability to grow at some pH that is lower than pH 7 is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007138 ! altered pH growth range
+is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:11:01Z
 
 [Term]
 id: OMP:0007009
-name: increased growth at acidic pH
+name: increased population growth at acidic pH
 def: "An altered growth range phenotype where the ability to grow at some pH that is lower than pH 7 is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007138 ! altered pH growth range
+is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:11:44Z
 
 [Term]
 id: OMP:0007010
-name: decreased growth at alkaline pH
+name: decreased population growth at alkaline pH
 def: "An altered pH growth range phenotype where the ability to grow at some pH that is higher than pH 7 is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007138 ! altered pH growth range
+is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:14:28Z
 
 [Term]
 id: OMP:0007011
-name: increased growth at alkaline pH
+name: increased population growth at alkaline pH
 def: "An altered pH growth range phenotype where the ability to grow at some pH that is higher than pH 7 is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007138 ! altered pH growth range
+is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:14:56Z
 
@@ -10551,7 +10551,7 @@ creation_date: 2014-08-17T13:19:30Z
 
 [Term]
 id: OMP:0007138
-name: altered pH growth range
+name: altered effects of pH on population growth
 def: "A pH growth range phenotype where the range of pH where growth occurs is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: siegele
