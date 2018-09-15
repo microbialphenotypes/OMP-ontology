@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 12:09:2018 19:21
+date: 15:09:2018 02:00
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -3645,7 +3645,6 @@ synonym: "antimetabolite resistance phenotype" NARROW []
 synonym: "antimicrobial compound sensitivity phenotype" RELATED []
 synonym: "antiviral resistance phenotype" NARROW []
 xref: CHEBI:33281 "antimicrobial agent"
-is_a: OMP:0000000 ! microbial phenotype
 is_a: OMP:0007195 ! chemical resistance phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: towards CHEBI:33281 ! antimicrobial agent
@@ -10518,7 +10517,7 @@ def: "An antimicrobial agent resistance phenotype where resistance or sensitivit
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
-is_a: OMP:0007085 ! altered microbial phenotype
+is_a: OMP:0007248 ! altered chemical resistance
 intersection_of: OMP:0000274 ! antimicrobial agent resistance phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
@@ -10727,6 +10726,7 @@ name: altered population growth
 def: "A population growth phenotype where the rate and/or extent of growth of a microbial population is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007167 ! population growth phenotype
 is_a: OMP:0007351 ! altered biological process
+is_a: OMP:0007931 ! altered population phenotype
 created_by: siegele
 creation_date: 2014-08-28T12:15:47Z
 
@@ -10830,6 +10830,7 @@ subset: qc_do_not_annotate
 subset: qc_do_not_manually_annotate
 xref: GO:0000003 "reproduction"
 is_a: OMP:0007006 ! population phenotype
+is_a: OMP:0007194 ! biological process phenotype
 intersection_of: OMP:0000000 ! microbial phenotype
 intersection_of: inheres_in GO:0000003 ! reproduction
 created_by: siegele
@@ -11076,8 +11077,7 @@ comment: This is a high-level term whose primary purpose is to organize terms be
 subset: qc_do_not_manually_annotate
 synonym: "chemical sensitivity phenotype" EXACT []
 xref: APO:0000087 "resistance to chemicals"
-is_a: OMP:0000000 ! microbial phenotype
-is_a: OMP:0007194 ! biological process phenotype
+is_a: OMP:0007167 ! population growth phenotype
 intersection_of: OMP:0007194 ! biological process phenotype
 intersection_of: has_quality PATO:0001457 ! sensitivity of a process
 intersection_of: towards CHEBI:24431 ! chemical entity
@@ -11536,8 +11536,8 @@ id: OMP:0007248
 name: altered chemical resistance
 def: "A chemical resistance phenotype where resistance or sensitivity of a microbe to a chemical is altered relative to a designated control." [OMP:DAS]
 synonym: "altered chemical sensitivity" EXACT []
+is_a: OMP:0007157 ! altered population growth
 is_a: OMP:0007195 ! chemical resistance phenotype
-is_a: OMP:0007351 ! altered biological process
 created_by: siegele
 creation_date: 2015-07-16T00:36:34Z
 
@@ -12122,7 +12122,7 @@ name: population morphology phenotype
 def: "A microbial phenotype related to the appearance of a microbial population, such as a colony, liquid culture, or biofilm." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
-is_a: OMP:0007194 ! biological process phenotype
+is_a: OMP:0007006 ! population phenotype
 created_by: siegele
 creation_date: 2016-02-05T20:20:28Z
 
@@ -13493,7 +13493,7 @@ id: OMP:0007470
 name: altered population morphology
 def: "A population morphology phenotype where the visible appearance of a microbial population is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007315 ! population morphology phenotype
-is_a: OMP:0007351 ! altered biological process
+is_a: OMP:0007931 ! altered population phenotype
 created_by: dsiegele
 creation_date: 2016-09-12T15:16:19Z
 
@@ -17444,6 +17444,13 @@ comment: Altered population growth may result from changes in population growth 
 is_a: OMP:0005257 ! altered microaerophilic population growth
 created_by: siegele
 creation_date: 2018-09-07T18:14:29Z
+
+[Term]
+id: OMP:0007931
+name: altered population phenotype
+is_a: OMP:0007006 ! population phenotype
+created_by: siegele
+creation_date: 2018-09-15T01:45:33Z
 
 [Term]
 id: OMP:0008000
