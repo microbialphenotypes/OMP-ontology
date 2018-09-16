@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 15:09:2018 02:00
+date: 16:09:2018 02:06
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -5216,7 +5216,7 @@ id: OMP:0005118
 name: altered resistance to acidic pH stress phenotype
 def: "A resistance to acidic pH stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to acidic pH is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0007572 ! altered resistance to stress
-is_a: OMP:0007573 ! resistance to acidic pH stress phenotype
+is_a: OMP:0007573 ! resistance to pH shock phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:55:53Z
 
@@ -14407,7 +14407,7 @@ creation_date: 2017-06-21T15:00:53Z
 
 [Term]
 id: OMP:0007573
-name: resistance to acidic pH stress phenotype
+name: resistance to pH shock phenotype
 def: "A resistance to stress phenotype related to the resistance or sensitivity that a microbial population shows when exposed to environmental pH at or below 6.5." [OMP:DAS]
 is_a: OMP:0007568 ! resistance to stress phenotype
 created_by: dsiegele
@@ -14447,76 +14447,74 @@ creation_date: 2017-06-21T16:14:11Z
 
 [Term]
 id: OMP:0007578
-name: resistance to cold phenotype
-def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to a temperature below the optimal growth temperature of the microbe." [APO:0000148, OMP:DAS]
+name: resistance to cold shock phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity of a microbial population to cold shock. Cold shock is a form of temperature stress in which cells are briefly exposed to a low temperature, usually below the lowest growth temperature of the microbe." [FYPO:0006084, OMP:DAS]
 is_a: OMP:0007568 ! resistance to stress phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:41:35Z
 
 [Term]
 id: OMP:0007579
-name: resistance to heat phenotype
-def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to a temperature above the optimal growth temperature for the microbe." [OMP:DAS]
+name: resistance to heat shock phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity of a microbial population to heat shock. Heat shock is a form of temperature stress in which cells are briefly exposed to a high temperature, usually above the highest growth temperature of the microbe." [FYPO:0002045, OMP:DAS]
 is_a: OMP:0007568 ! resistance to stress phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:42:01Z
 
 [Term]
 id: OMP:0007580
-name: presence of resistance to cold
+name: presence of resistance to cold shock
 def: "A resistance to cold phenotype where microbes in a population continue to grow and divide when exposed to a temperature below the optimal growth temperature of the microbe." [OMP:DAS]
 synonym: "cold resistant" EXACT []
 synonym: "resistant to low temperature" EXACT []
-is_a: OMP:0007578 ! resistance to cold phenotype
+is_a: OMP:0007578 ! resistance to cold shock phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:48:47Z
 
 [Term]
 id: OMP:0007581
-name: absence of resistance to cold
+name: absence of resistance to cold shock
 def: "A resistance to cold phenotype where microbes in a population stop growing (and may die) when exposed to a temperature below the optimal growth temperature of the microbe." [OMP:DAS]
 synonym: "cold sensitive" EXACT [YPO:0000148]
 synonym: "cold sensitivity" EXACT [APO:0000148]
-is_a: OMP:0007578 ! resistance to cold phenotype
+is_a: OMP:0007578 ! resistance to cold shock phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:48:47Z
 
 [Term]
 id: OMP:0007582
-name: altered resistance to cold
-def: "A resistance to cold phenotype where the resistance or sensitivity that microbes in a population show when exposed to a temperature below the optimal growth temperature of the microbe is altered relative to a designated control." [OMP:DAS]
-synonym: "altered cold sensitivity" EXACT []
-synonym: "altered resistance to low temperature" EXACT []
+name: altered resistance to cold shock
+def: "A resistance to cold shock phenotype where the resistance or sensitivity of a microbial population to a cold shock is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007572 ! altered resistance to stress
-is_a: OMP:0007578 ! resistance to cold phenotype
+is_a: OMP:0007578 ! resistance to cold shock phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:48:47Z
 
 [Term]
 id: OMP:0007583
-name: presence of resistance to heat
-def: "A resistance to heat phenotype where cells in a population continue to grow and divide when exposed to a temperature above the optimal growth temperature of the microbe." [OMP:DAS]
-synonym: "heat resistant" EXACT []
-synonym: "resistant to high temperature" EXACT []
-is_a: OMP:0007579 ! resistance to heat phenotype
+name: presence of resistance to heat shock
+def: "A resistance to heat shock phenotype where a microbial population is resistant to heat shock." [OMP:DAS]
+synonym: "resistance to heat shock" EXACT [FYPO:0002045]
+synonym: "resistant to heat shock" EXACT []
+is_a: OMP:0007579 ! resistance to heat shock phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:54:38Z
 
 [Term]
 id: OMP:0007584
-name: absence of resistance to heat
-def: "A resistance to heat phenotype where cells in a population stop growing (and may die) when exposed to a temperature above the optimal growth temperature of the microbe." [OMP:DAS]
-synonym: "sensitive to high temperature" EXACT []
-is_a: OMP:0007579 ! resistance to heat phenotype
+name: absence of resistance to heat shock
+def: "A resistance to heat shock phenotype where a microbial population stops growing and may begin to die when exposed to a heat shock." [OMP:DAS]
+synonym: "sensitive to heat shock" EXACT []
+is_a: OMP:0007579 ! resistance to heat shock phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:54:39Z
 
 [Term]
 id: OMP:0007585
 name: altered resistance to heat
-def: "A resistance to heat phenotype where the resistance or sensitivity of microbes in a population to a temperature above the optimal growth temperature of the microbe is altered relative to a designated control." [OMP:DAS]
+def: "A resistance to heat shock phenotype where the resistance or sensitivity of a microbial population to heat shock is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007572 ! altered resistance to stress
-is_a: OMP:0007579 ! resistance to heat phenotype
+is_a: OMP:0007579 ! resistance to heat shock phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:54:39Z
 
@@ -14531,33 +14529,33 @@ creation_date: 2017-06-25T19:35:57Z
 
 [Term]
 id: OMP:0007587
-name: increased resistance to cold
+name: increased resistance to cold shock
 def: "An altered resistance to cold phenotype where the resistance of microbes in a population to temperatures below the optimal growth temperature is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007582 ! altered resistance to cold
+is_a: OMP:0007582 ! altered resistance to cold shock
 created_by: siegele
 creation_date: 2017-06-25T22:21:53Z
 
 [Term]
 id: OMP:0007588
-name: decreased resistance to cold
+name: decreased resistance to cold shock
 def: "An altered resistance to cold phenotype where the resistance of microbes in a population to temperatures below the optimal growth temperature is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007582 ! altered resistance to cold
+is_a: OMP:0007582 ! altered resistance to cold shock
 created_by: siegele
 creation_date: 2017-06-25T22:21:53Z
 
 [Term]
 id: OMP:0007589
-name: abolished resistance to cold
+name: abolished resistance to cold shock
 def: "A decreased resistance to cold phenotype where the resistance of microbes in a population to temperature below the optimal growth temperature is abolished." [OMP:DAS]
-is_a: OMP:0007581 ! absence of resistance to cold
-is_a: OMP:0007588 ! decreased resistance to cold
+is_a: OMP:0007581 ! absence of resistance to cold shock
+is_a: OMP:0007588 ! decreased resistance to cold shock
 created_by: siegele
 creation_date: 2017-06-25T22:21:53Z
 
 [Term]
 id: OMP:0007590
 name: increased resistance to heat
-def: "An altered resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is increased relative to a designated control." [OMP:DAS]
+def: "An altered resistance to heat shock phenotype where the resistance of a microbial population to heat shock is increased relative to a designated control." [OMP:DAS]
 xref: FYPO:0002626 "resistance to heat"
 is_a: OMP:0007585 ! altered resistance to heat
 created_by: siegele
@@ -14565,20 +14563,18 @@ creation_date: 2017-06-25T22:26:03Z
 
 [Term]
 id: OMP:0007591
-name: decreased resistance to heat
-def: "An altered resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is decreased relative to a designated control." [OMP:DAS]
+name: decreased resistance to heat shock
+def: "An altered resistance to heat shock phenotype where the resistance of a microbial population to heat shock is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007585 ! altered resistance to heat
 created_by: siegele
 creation_date: 2017-06-25T22:26:03Z
 
 [Term]
 id: OMP:0007592
-name: abolished resistance to heat
-def: "A decreased resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is abolished." [OMP:DAS]
-synonym: "heat sensitive" EXACT []
-synonym: "heat sensitivity" EXACT [APO:00000147]
-is_a: OMP:0007584 ! absence of resistance to heat
-is_a: OMP:0007591 ! decreased resistance to heat
+name: abolished resistance to heat shock
+def: "A decreased resistance to heat shock phenotype where the resistance of a microbial population to heat shock is abolished." [OMP:DAS]
+is_a: OMP:0007584 ! absence of resistance to heat shock
+is_a: OMP:0007591 ! decreased resistance to heat shock
 created_by: siegele
 creation_date: 2017-06-25T22:26:03Z
 
