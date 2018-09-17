@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 16:09:2018 02:06
+date: 17:09:2018 01:05
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -3956,6 +3956,7 @@ name: resistant to ampicillin
 def: "An antimicrobial compound resistance phenotype where a cell or cells are resistant to ampicillin." []
 comment: This term was obsoleted in response to our decision to not have precomposed terms for individual antimicrobial compounds.  Instead, when possible, terms will be made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactam', and the particular antimicrobial compound tested will be annotated by putting its CHEBI ID into the annotation extension column. In cases where a natural grouping doesn't exist, the user should use "OMP:0007876 resistant to an antimicrobial agent" and put the CHEBI ID (or other identifier) into the annotation extension column.
 is_obsolete: true
+replaced_by: OMP:0006047
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:48Z
 
@@ -3965,6 +3966,7 @@ name: resistant to penicillin
 def: "An antimicrobial compound resistance phenotype where a cell or cells are resistant to penicillin." []
 comment: This term was obsoleted in response to our decision to not have precomposed terms for individual antimicrobial compounds.  Instead, terms will be made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactam', and the particular antimicrobial compound tested will be annotated by putting its CHEBI ID into column 16.
 is_obsolete: true
+replaced_by: OMP:0006047
 created_by: mchibucos
 creation_date: 2012-11-04T02:55:41Z
 
@@ -10517,7 +10519,7 @@ def: "An antimicrobial agent resistance phenotype where resistance or sensitivit
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 intersection_of: OMP:0000274 ! antimicrobial agent resistance phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
 created_by: siegele
@@ -11533,7 +11535,7 @@ creation_date: 2015-07-16T00:36:34Z
 
 [Term]
 id: OMP:0007248
-name: altered chemical resistance
+name: altered resistance to chemical
 def: "A chemical resistance phenotype where resistance or sensitivity of a microbe to a chemical is altered relative to a designated control." [OMP:DAS]
 synonym: "altered chemical sensitivity" EXACT []
 is_a: OMP:0007157 ! altered population growth
@@ -11546,7 +11548,7 @@ id: OMP:0007249
 name: decreased resistance to a chemical
 def: "An altered chemical resistance phenotype where the resistance of a microbe to a chemical is decreased relative to a designated control." [OMP:DAS]
 synonym: " increased sensitivity to a chemical" EXACT []
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 created_by: siegele
 creation_date: 2015-07-16T00:42:17Z
 
@@ -11555,7 +11557,7 @@ id: OMP:0007250
 name: increased resistance to a chemical
 def: "An altered chemical resistance phenotype where the resistance of a microbe to a chemical is increased relative to a designated control." [OMP:DAS]
 synonym: "decreased sensitivity to a chemical" EXACT []
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 created_by: siegele
 creation_date: 2015-07-16T00:42:17Z
 
@@ -11563,8 +11565,9 @@ creation_date: 2015-07-16T00:42:17Z
 id: OMP:0007251
 name: abolished chemical sensitivity
 def: "An altered chemical sensitivity phenotype where the sensitivity of a cell, cells, or microbe to a chemical is abolished." [OMP:DAS]
-comment: Chemical sensitivity phenotype and its child terms were renamed as chemical resistance phenotypes to be consistent with other branches of OMP. Other terms were redefined, but this term had to be made obsolete and a new term: abolished chemical resistance was made.
+comment: Chemical sensitivity phenotype and its child terms were renamed as chemical resistance phenotypes to be consistent with other branches of OMP. Other terms in this branch were redefined, but this term was made obsolete and replaced by OMP:0007250 \! increased resistance to a chemical.\n\nWhen using OMP:0007250 for annotations enter the database identifier for the specific chemical in the Annotation Extension field.
 is_obsolete: true
+replaced_by: OMP:0007250
 created_by: siegele
 creation_date: 2015-07-16T00:42:17Z
 
@@ -12669,7 +12672,7 @@ creation_date: 2016-06-23T15:27:23Z
 id: OMP:0007375
 name: altered resistance to an alkylating agent
 def: "An alkylating agent resistance phenotype where growth and reproduction of a microbe in the presence of an alkylating agent is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 is_a: OMP:0007372 ! alkylating agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-23T15:27:23Z
@@ -14033,10 +14036,10 @@ creation_date: 2017-02-20T16:59:35Z
 id: OMP:0007533
 name: urea derivative resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to compounds that are structural derivatives of urea." [CHEBI:47857, OMP:DAS]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: The original term and its children were deemed to be too granular and were replaced with OMP:0007195 \! chemical resistance phenotype and its child terms, which are listed below. When using one of these terms for annotation, enter a database identifier for the specific chemical in the Annotation Extension field. \n\nOMP:0007247 resistant to a chemical\nOMP:0007246 not resistant to a chemical\nOMP:0007248 altered chemical resistance\nOMP:0007249 decreased resistance to a chemical\nOMP:0007883 abolished chemical resistance\nOMP:0007250 increased resistance to a chemical
 subset: qc_do_not_manually_annotate
-synonym: "hydroxyurea resistance phenotype" NARROW [CHEBI:44423]
-is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+is_obsolete: true
+replaced_by: OMP:0007195
 created_by: siegele
 creation_date: 2017-02-24T13:14:38Z
 
@@ -14044,7 +14047,8 @@ creation_date: 2017-02-24T13:14:38Z
 id: OMP:0007534
 name: resistant to a urea derivative
 def: "A ureas resistance phenotype where a microbe is resistant to a derivative of urea." [CHEBI:47857, OMP:DAS]
-is_a: OMP:0007533 ! urea derivative resistance phenotype
+is_obsolete: true
+replaced_by: OMP:0007247
 created_by: siegele
 creation_date: 2017-02-24T13:18:35Z
 
@@ -14052,9 +14056,9 @@ creation_date: 2017-02-24T13:18:35Z
 id: OMP:0007535
 name: not resistant to a urea derivative
 def: "A ureas resistance phenotype where a microbe is not resistant to a derivative of urea." [CHEBI:47857, OMP:DAS]
-synonym: "sensitive to a urea derivative" EXACT []
-synonym: "sensitive to hydroxyurea" NARROW []
-is_a: OMP:0007533 ! urea derivative resistance phenotype
+comment: The original term was deemed to be too granular.
+is_obsolete: true
+replaced_by: OMP:0007246
 created_by: siegele
 creation_date: 2017-02-24T13:18:35Z
 
@@ -14062,8 +14066,9 @@ creation_date: 2017-02-24T13:18:35Z
 id: OMP:0007536
 name: altered resistance to a urea derivative
 def: "A urea derivative resistance phenotype where resistance or sensitivity to a urea derivative is altered relative to a designated control." [CHEBI:47857, OMP:DAS]
-is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
-is_a: OMP:0007533 ! urea derivative resistance phenotype
+comment: The original term was deemed to be too granular and was replaced with OMP:0007248 \! altered resistance to chemical. When using this term for annotation, enter a database identifier for the specific chemical in the Annotation Extension field.
+is_obsolete: true
+replaced_by: OMP:0007248
 created_by: siegele
 creation_date: 2017-02-24T13:18:35Z
 
@@ -14071,9 +14076,11 @@ creation_date: 2017-02-24T13:18:35Z
 id: OMP:0007537
 name: increased resistance to a urea derivative
 def: "An altered resistance to a urea derivative phenotype where resistance to a derivative of urea is increased relative to a designated control." [OMP:DAS]
+comment: The original term was deemed to be too granular and were replaced with OMP:0007250 \! increased resistance to a chemical. When using this term for annotation, enter a database identifier for the specific chemical in the Annotation Extension field.
 synonym: "decreased sensitivity to a urea derivative" EXACT []
 synonym: "decreased sensitivity to hydroxyurea" NARROW [CHEBI:44423]
-is_a: OMP:0007536 ! altered resistance to a urea derivative
+is_obsolete: true
+replaced_by: OMP:0007250
 created_by: siegele
 creation_date: 2017-02-24T13:19:13Z
 
@@ -14081,9 +14088,11 @@ creation_date: 2017-02-24T13:19:13Z
 id: OMP:0007538
 name: decreased resistance to a urea derivative
 def: "An altered resistance to a urea derivative phenotype where resistance to a derivative of urea is decreased relative to a designated control." [OMP:DAS]
+comment: The original term was deemed to be too granular and were replaced with OMP:0007249 decreased resistance to chemical. When using this term for annotation, enter a database identifier for the specific chemical in the Annotation Extension field.
 synonym: "increased sensitivity to a urea derivative" EXACT []
 synonym: "increased sensitivity to hydroxyurea" NARROW [CHEBI:44423]
-is_a: OMP:0007536 ! altered resistance to a urea derivative
+is_obsolete: true
+replaced_by: OMP:0007249
 created_by: siegele
 creation_date: 2017-02-24T13:19:13Z
 
@@ -14091,8 +14100,9 @@ creation_date: 2017-02-24T13:19:13Z
 id: OMP:0007539
 name: abolished resistance to a urea derivative
 def: "A decreased resistance to a urea derivative phenotype where resistance to a structural derivative of urea is abolished." [OMP:DAS]
-is_a: OMP:0007535 ! not resistant to a urea derivative
-is_a: OMP:0007538 ! decreased resistance to a urea derivative
+comment: The original term was deemed to be too granular and were replaced with OMP:0007883 \! abolished resistance to a chemical. When using this term for annotation, enter a database identifier for the specific chemical in the Annotation Extension field.
+is_obsolete: true
+replaced_by: OMP:0007883
 created_by: siegele
 creation_date: 2017-02-24T13:19:20Z
 
@@ -16367,6 +16377,7 @@ name: polyether antimicrobial resistance phenotype
 comment: This term and its children were deemed to be too granular. Instead, use one of the children of OMP:0000274 antimicrobial agent resistance phenotype and enter database identifier for A22 in the Annotation Extension field. \nOMP:0007876 resistant to an antimicrobial agent\nOMP:0007877 not resistant to an antimicrobial agent\nOMP:0007134 altered resistance to an antimicrobial agent\nOMP:0007878 increased resistance to an antimicrobial agent\nOMP:000 7879 decreased resistance to an antimicrobial agent\nOMP:0007880 abolished resistance to an antimicrobial agent
 subset: qc_do_not_manually_annotate
 is_obsolete: true
+replaced_by: OMP:0000274
 created_by: siegele
 creation_date: 2018-06-18T03:07:12Z
 
@@ -16894,7 +16905,7 @@ creation_date: 2018-07-27T18:05:19Z
 [Term]
 id: OMP:0007862
 name: bicyclomycin antimicrobial agent resistance phenotype
-synonym: "azabicyclic antimicrobial agent resistance phenotype" BROAD []
+comment: The original term and its children were deemed to be too granular and replaced with OMP:0000274 \! antimicrobial agent resistance phenotype and its child terms, which are listed below. When using one of these terms for annotation, enter a database identifier for the specific antimicrobial agent in the Annotation Extension field. \n\nOMP:0007876 resistant to an antimicrobial agent\nOMP:0007877 not resistant to an antimicrobial agent\nOMP:0007134 altered resistance to an antimicrobial agent\nOMP:0007878 increased resistance to an antimicrobial agent\nOMP:000 7879 decreased resistance to an antimicrobial agent\nOMP:0007880 abolished resistance to an antimicrobial agent
 is_obsolete: true
 replaced_by: OMP:0000274
 created_by: siegele
@@ -16904,6 +16915,7 @@ creation_date: 2018-07-29T21:34:15Z
 id: OMP:0007863
 name: presence of resistance to bicyclomycin
 is_obsolete: true
+replaced_by: OMP:0007876
 created_by: siegele
 creation_date: 2018-07-29T21:34:15Z
 
@@ -16934,6 +16946,7 @@ creation_date: 2018-07-29T21:34:15Z
 [Term]
 id: OMP:0007867
 name: abolished resistance to bicyclomycin
+comment: The original term was deemed to be too granular. In its place, use OMP:0007880 abolished resistance to an antimicrobial agent. When using OMP:0007880 for annotation, enter a database identifier for the specific antimicrobial agent in the Annotation Extension field.
 is_obsolete: true
 replaced_by: OMP:0007880
 created_by: siegele
@@ -16943,13 +16956,14 @@ creation_date: 2018-07-29T21:34:15Z
 id: OMP:0007868
 name: increased resistance to bicyclomycin
 is_obsolete: true
+replaced_by: OMP:0007878
 created_by: siegele
 creation_date: 2018-07-29T21:34:15Z
 
 [Term]
 id: OMP:0007869
 name: A22 antimicrobial agent resistance phenotype
-comment: This term and its children were deemed to be too granular. Instead, use one of the children of OMP:0000274 antimicrobial agent resistance phenotype and enter database identifier for A22 in the Annotation Extension field. \nOMP:0007876 resistant to an antimicrobial agent\nOMP:0007877 not resistant to an antimicrobial agent\nOMP:0007134 altered resistance to an antimicrobial agent\nOMP:0007878 increased resistance to an antimicrobial agent\nOMP:000 7879 decreased resistance to an antimicrobial agent\nOMP:0007880 abolished resistance to an antimicrobial agent
+comment: The original term and its children were deemed to be too granular and replaced with OMP:0000274 \! antimicrobial agent resistance phenotype and its child terms, which are listed below. When using one of these terms for annotation, enter a database identifier for the specific antimicrobial agent in the Annotation Extension field. \n\nOMP:0007876 resistant to an antimicrobial agent\nOMP:0007877 not resistant to an antimicrobial agent\nOMP:0007134 altered resistance to an antimicrobial agent\nOMP:0007878 increased resistance to an antimicrobial agent\nOMP:000 7879 decreased resistance to an antimicrobial agent\nOMP:0007880 abolished resistance to an antimicrobial agent
 synonym: "amino[sulfanyl]methaniminiumchloride antimicrobial agent resistance phenotype" RELATED []
 is_obsolete: true
 replaced_by: OMP:0000274
@@ -16961,6 +16975,7 @@ id: OMP:0007870
 name: presence of resistance to A22
 comment: This term and was deemed to be too granular. In its place, use OMP:0007876 resistant to an antimicrobial agent and enter database identifier for A22 in the Annotation Extension field.
 is_obsolete: true
+replaced_by: OMP:0007876
 created_by: siegele
 creation_date: 2018-07-29T22:22:16Z
 
@@ -16994,7 +17009,7 @@ creation_date: 2018-07-29T22:22:16Z
 [Term]
 id: OMP:0007874
 name: abolished resistance to A22
-comment: This term was deemed to be too granular. In its place, use OMP:0007880 abolished resistance to an antimicrobial agent and enter database identifier for A22 in the Annotation Extension field.
+comment: The original term was deemed to be too granular. In its place, use OMP:0007880 abolished resistance to an antimicrobial agent. When using OMP:0007880 for annotation, enter a database identifier for the specific antimicrobial agent in the Annotation Extension field.
 is_obsolete: true
 replaced_by: OMP:0007880
 created_by: siegele
@@ -17122,7 +17137,7 @@ creation_date: 2018-08-22T15:55:19Z
 [Term]
 id: OMP:0007889
 name: altered resistance to a metal
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 is_a: OMP:0007890 ! metal resistance phenotype
 created_by: dsiegele
 creation_date: 2018-08-22T15:56:07Z
@@ -17160,7 +17175,7 @@ creation_date: 2018-08-22T18:13:28Z
 [Term]
 id: OMP:0007894
 name: altered resistance to a surfactant
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 is_a: OMP:0007891 ! surfactant resistance phenotype
 created_by: siegele
 creation_date: 2018-08-22T18:13:28Z
@@ -17215,7 +17230,7 @@ creation_date: 2018-08-23T16:11:39Z
 [Term]
 id: OMP:0007901
 name: altered resistance to bile acids
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 is_a: OMP:0007898 ! bile acids resistance phenotype
 created_by: siegele
 creation_date: 2018-08-23T16:11:39Z
@@ -17290,7 +17305,7 @@ creation_date: 2018-08-24T17:00:53Z
 [Term]
 id: OMP:0007911
 name: altered resistance to a chelator
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 is_a: OMP:0007908 ! chelator resistance phenotype
 created_by: siegele
 creation_date: 2018-08-24T17:00:53Z
