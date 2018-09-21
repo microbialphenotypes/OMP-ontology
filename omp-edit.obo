@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 17:09:2018 01:05
+date: 21:09:2018 14:36
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -10826,7 +10826,7 @@ creation_date: 2014-09-14T15:36:38Z
 [Term]
 id: OMP:0007167
 name: population growth phenotype
-def: "A microbial phenotype that affects the rate or extent of increase in the number of individuals in a microbial population." [OMP:DAS]
+def: "A microbial phenotype relating to the growth of a microbial population, i.e. an increase in the size of the population resulting from reproduction of individual microbes in the population." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_annotate
 subset: qc_do_not_manually_annotate
@@ -17205,7 +17205,7 @@ creation_date: 2018-08-22T18:13:58Z
 [Term]
 id: OMP:0007898
 name: bile acids resistance phenotype
-def: "A chemical resistance phenotype relating to resistance or sensitivity of a microbe to a bile acid." [CHEBI:138366, OMP:das]
+def: "A chemical resistance phenotype relating to the resistance or sensitivity of a microbial population to a bile acid." [CHEBI:138366, OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "bile acid sensitivity phenotype" EXACT []
 synonym: "bile salt resistance phenotype" NARROW []
@@ -17459,6 +17459,7 @@ creation_date: 2018-09-07T18:14:29Z
 [Term]
 id: OMP:0007931
 name: altered population phenotype
+def: "A microbial population phenotype where the phenotype of a microbial population is altered in some way relative to a designated control." [OMP:das]
 is_a: OMP:0007006 ! population phenotype
 created_by: siegele
 creation_date: 2018-09-15T01:45:33Z
