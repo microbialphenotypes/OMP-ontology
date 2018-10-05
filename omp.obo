@@ -1,8 +1,8 @@
 format-version: 1.2
-data-version: releases/2018-09-07
-date: 26:08:2018 19:28
+data-version: releases/2018-10-05
+date: 21:09:2018 14:36
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -1722,8 +1722,11 @@ creation_date: 2011-06-07T11:25:05Z
 
 [Term]
 id: OMP:0000039
-name: oxygen growth range phenotype
-def: "A growth range phenotype dealing with oxygen requirements and the range of oxygen concentrations that allow for growth." [OMP:WAM]
+name: O2 effects on population growth phenotype
+def: "A population growth range phenotype related to how growth of a microbial population is affected by different concentrations of oxygen gas (O2) in the environment." [OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007192 ! population growth range phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:36:04Z
@@ -2168,8 +2171,10 @@ creation_date: 2011-02-02T03:19:47Z
 [Term]
 id: OMP:0000087
 name: facultative anaerobe
-def: "An oxygen growth range phenotype where growth does not require oxygen but is better in its presence." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen growth range phenotype
+def: "A microbial phenotype that describes a microorganism that does not require oxygen gas (O2) for growth but will utilize O2 in metabolic reactions when it is present." [ISBN:9780073402406, OMP:WAM]
+synonym: "<new synonym>" RELATED []
+synonym: "facultative aerobe" EXACT [ISBN:978-0134261928]
+is_a: OMP:0007928 ! commonly used descriptors
 created_by: mchibucos
 creation_date: 2011-06-06T03:42:26Z
 
@@ -2354,8 +2359,8 @@ creation_date: 2011-02-02T02:42:12Z
 [Term]
 id: OMP:0000105
 name: aerotolerant anaerobe
-def: "An oxygen growth range phenotype, where growth occurs equally well in the presence or absence of oxygen." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0000039 ! oxygen growth range phenotype
+def: "A microbial phenotype that describes a microorganism that does not require oxygen gas (O2) for growth and doesn't utilize O2 even when it is present." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0007928 ! commonly used descriptors
 created_by: mchibucos
 creation_date: 2011-06-06T03:43:38Z
 
@@ -2917,9 +2922,9 @@ creation_date: 2011-02-02T02:52:30Z
 [Term]
 id: OMP:0000171
 name: microaerophile
-def: "An oxygen growth range phenotype where growth and reproduction requires oxygen but at levels below that found in air (approx. 21%)." [ISBN:9780073402406, OMP:WAM]
+def: "An oxygen growth range phenotype where growth and reproduction requires oxygen but at levels below that found in air (approx. 21%).\n\nA microbial phenotype that describes a microorganism that requires O2 for growth, but doesn't grow in the presence of atmospheric levels of O2. Optimal growth of a microaerophile occurs in environments with xx% - xx% O2." [ISBN:9780073402406, OMP:WAM]
 comment: Optimal oxygen levels for growth of typical  microaerophilic bacteria is 2 to 10% O2, and growth is impaired by atmospheric oxygen levels (approx. 21%).
-is_a: OMP:0005255 ! presence of hypoxic growth
+is_a: OMP:0007928 ! commonly used descriptors
 created_by: mchibucos
 creation_date: 2011-06-06T03:44:11Z
 
@@ -3044,18 +3049,18 @@ creation_date: 2011-02-07T03:52:44Z
 [Term]
 id: OMP:0000184
 name: obligate anaerobe
-def: "An oxygen growth range phenotype where growth does not occur in the presence of oxygen." [ISBN:9780073402406, OMP:WAM]
+def: "A microbial phenotype that describes a microorganism that does not grow in the presence of oxygen gas (O2)." [ISBN:9780073402406, OMP:WAM]
 synonym: "strict anaerobe" EXACT []
-is_a: OMP:0000039 ! oxygen growth range phenotype
+is_a: OMP:0007928 ! commonly used descriptors
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:34Z
 
 [Term]
 id: OMP:0000185
 name: obligate aerobe
-def: "An oxygen growth range phenotype where growth and reproduction is dependent on atmospheric oxygen (approx. 21%)." [ISBN:9780073402406, OMP:WAM]
+def: "A microbial phenotype that describes a microorganism that requires the presence of oxygen gas (O2) for growth." [ISBN:9780073402406, OMP:WAM]
 synonym: "strict aerobe" EXACT []
-is_a: OMP:0005253 ! presence of aerobic growth
+is_a: OMP:0007928 ! commonly used descriptors
 created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
 
@@ -3988,6 +3993,7 @@ name: resistant to ampicillin
 def: "An antimicrobial compound resistance phenotype where a cell or cells are resistant to ampicillin." []
 comment: This term was obsoleted in response to our decision to not have precomposed terms for individual antimicrobial compounds.  Instead, when possible, terms will be made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactam', and the particular antimicrobial compound tested will be annotated by putting its CHEBI ID into the annotation extension column. In cases where a natural grouping doesn't exist, the user should use "OMP:0007876 resistant to an antimicrobial agent" and put the CHEBI ID (or other identifier) into the annotation extension column.
 is_obsolete: true
+replaced_by: OMP:0006047
 created_by: mchibucos
 creation_date: 2012-11-04T02:52:48Z
 
@@ -3997,6 +4003,7 @@ name: resistant to penicillin
 def: "An antimicrobial compound resistance phenotype where a cell or cells are resistant to penicillin." []
 comment: This term was obsoleted in response to our decision to not have precomposed terms for individual antimicrobial compounds.  Instead, terms will be made for structural classes of antimicrobial compounds, for example 'resistant to beta-lactam', and the particular antimicrobial compound tested will be annotated by putting its CHEBI ID into column 16.
 is_obsolete: true
+replaced_by: OMP:0006047
 created_by: mchibucos
 creation_date: 2012-11-04T02:55:41Z
 
@@ -4211,8 +4218,11 @@ creation_date: 2014-07-23T12:18:08Z
 
 [Term]
 id: OMP:0005002
-name: temperature growth range phenotype
-def: "A growth phenotype where the trait in question is the range of temperatures where growth of the microbe can occur." [OMP:WAM]
+name: temperature effects on population growth phenotype
+def: "A population growth range phenotype related to how growth of a microbial population is affected by the temperature of the environment." [OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 synonym: "temperature requirement for growth" NARROW []
 is_a: OMP:0007192 ! population growth range phenotype
 created_by: wmeza
@@ -4220,48 +4230,51 @@ creation_date: 2013-09-03T01:06:05Z
 
 [Term]
 id: OMP:0005003
-name: hyperthermophilic growth
-def: "A temperature growth range phenotype where optimal growth occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005002 ! temperature growth range phenotype
+name: hyperthermophilic population growth
+def: "A temperature growth range phenotype where optimal growth of a microbial population occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:29:51Z
 
 [Term]
 id: OMP:0005004
-name: thermophilic growth
-def: "A temperature growth range phenotype where growth can occur at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005002 ! temperature growth range phenotype
+name: thermophilic population growth
+def: "A temperature growth range phenotype where growth of a microbial population can occur at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:36:26Z
 
 [Term]
 id: OMP:0005005
-name: mesophilic growth
-def: "A temperature growth range phenotype where optimal growth occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005002 ! temperature growth range phenotype
+name: mesophilic population growth
+def: "A temperature growth range phenotype where optimal growth of a microbial population occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:24:06Z
 
 [Term]
 id: OMP:0005006
-name: psychrotrophic growth
-def: "A temperature growth range phenotype where growth of the occurs from 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature of growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005002 ! temperature growth range phenotype
+name: psychrotrophic population growth
+def: "A temperature growth range phenotype where growth of a microbial population can occur between 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature for population growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:38:56Z
 
 [Term]
 id: OMP:0005007
-name: psychrophilic growth
-def: "A temperature growth range phenotype where growth can occur at 0 degrees C and optimal growth occurs at temperatures of 15 degrees C or lower." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005002 ! temperature growth range phenotype
+name: psychrophilic population growth
+def: "A temperature population growth range phenotype where growth of a microbial population can occur at 0 C and optimal growth occurs at temperatures of 15 C or lower." [ISBN:9780073402406, OMP:WAM]
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:40:27Z
 
 [Term]
 id: OMP:0005008
-name: pH growth range phenotype
-def: "A growth range phenotype related to the pH range that allows growth of a cell or organism." [OMP:WAM]
+name: pH effects on population growth phenotype
+def: "A population growth range phenotype relating to how growth of a microbial population is affected by the pH of the environment." [OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007192 ! population growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:57:28Z
@@ -4270,7 +4283,7 @@ creation_date: 2013-09-04T13:57:28Z
 id: OMP:0005009
 name: acidophile
 def: "A pH growth range phenotype where optimum growth occurs between pH 0 and 5.5." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005008 ! pH growth range phenotype
+is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:18:28Z
 
@@ -4278,7 +4291,7 @@ creation_date: 2013-09-04T16:18:28Z
 id: OMP:0005010
 name: neutrophile
 def: "A pH growth range phenotype where optimum growth occurs between pH 5.5 and 8.0." [ISBN:780073402406, OMP:WAM]
-is_a: OMP:0005008 ! pH growth range phenotype
+is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:21:50Z
 
@@ -4286,22 +4299,28 @@ creation_date: 2013-09-04T16:21:50Z
 id: OMP:0005011
 name: alkaliphile
 def: "A pH growth range phenotype where optimum growth of occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005008 ! pH growth range phenotype
+is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:24:24Z
 
 [Term]
 id: OMP:0005012
-name: pressure growth range phenotype
-def: "A growth range phenotype dealing with the pressure requirements for growth of an organism or cell." [OMP:WAM]
+name: pressure effects on population growth phenotype
+def: "A population growth range phenotype related to how growth of a microbial population is affected by pressure." [OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007192 ! population growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:42:28Z
 
 [Term]
 id: OMP:0005013
-name: solute and water activity growth range phenotype
-def: "A growth range phenotype dealing with the range of solute concentrations (water activity) that permit growth and proliferation of a microbe." [OMP:WAM]
+name: solute and water activity effects on population growth phenotype
+def: "A population growth range phenotype related to how growth of a microbial population is affected by  the concentration of solutes (water activity) in the environment." [OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007192 ! population growth range phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:43:45Z
@@ -4311,7 +4330,7 @@ id: OMP:0005014
 name: piezophilic growth
 def: "A pressure growth range phenotype where growth is more rapid at high hydrostatic pressure." [ISBN:9780073402406, OMP:WAM]
 synonym: "barophilic growth" RELATED [ISBN:9780073402406]
-is_a: OMP:0005012 ! pressure growth range phenotype
+is_a: OMP:0005012 ! pressure effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:49:53Z
 
@@ -4319,7 +4338,7 @@ creation_date: 2013-09-09T11:49:53Z
 id: OMP:0005015
 name: osmotolerant growth
 def: "A solute and water activity phenotype where growth and proliferation can occur over wide ranges of water activity or osmotic concentration." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005013 ! solute and water activity growth range phenotype
+is_a: OMP:0005013 ! solute and water activity effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:05:24Z
 
@@ -4327,7 +4346,7 @@ creation_date: 2013-09-09T13:05:24Z
 id: OMP:0005016
 name: halophilic growth
 def: "A solute and water activity phenotype where growth and proliferation requires high levels of sodium chloride, usually above or about 0.2 M." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005013 ! solute and water activity growth range phenotype
+is_a: OMP:0005013 ! solute and water activity effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-09T13:06:03Z
 
@@ -4934,7 +4953,10 @@ creation_date: 2013-11-22T15:55:45Z
 [Term]
 id: OMP:0005084
 name: resistance to UV radiation phenotype
-def: "A resistance to radiation stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to UV radiation (typically, irradiation by wavelengths 100-400 nm)." [ISO:21348, OMP:WAM]
+def: "A population growth phenotype relating to the ability of a microbial population to grow when exposed to UV radiation (typically, irradiation by wavelengths 100-400 nm)." [ISO:21348, OMP:WAM]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 is_a: OMP:0007576 ! resistance to radiation stress phenotype
 created_by: wmeza
 creation_date: 2013-11-22T15:56:27Z
@@ -5243,7 +5265,7 @@ id: OMP:0005118
 name: altered resistance to acidic pH stress phenotype
 def: "A resistance to acidic pH stress phenotype where the resistance or sensitivity that microbes in a population show when exposed to acidic pH is altered relative to a designated control." [OMP:WAM]
 is_a: OMP:0007572 ! altered resistance to stress
-is_a: OMP:0007573 ! resistance to acidic pH stress phenotype
+is_a: OMP:0007573 ! resistance to pH shock phenotype
 created_by: wmeza
 creation_date: 2014-07-11T12:55:53Z
 
@@ -5883,73 +5905,76 @@ creation_date: 2016-05-21T10:06:05Z
 
 [Term]
 id: OMP:0005189
-name: anaerobic growth phenotype
-def: "An oxygen growth range phenotype related to the ability of a cell or cells to grow or reproduce in the absence of oxygen." [OMP:JG]
-is_a: OMP:0000039 ! oxygen growth range phenotype
+name: anaerobic population growth phenotype
+def: "A population growth range phenotype related to whether a microbial population can grow in the absence of oxygen." [OMP:JG]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+is_a: OMP:0000039 ! O2 effects on population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-09T15:08:16Z
 
 [Term]
 id: OMP:0005190
-name: presence of anaerobic growth
-def: "An anaerobic growth phenotype where a cell or cells exhibit anaerobic growth." [OMP:JG]
-is_a: OMP:0005189 ! anaerobic growth phenotype
+name: presence of anaerobic population growth
+def: "A population growth range phenotype where a microbial population is able to grow in the absence of oxygen." [OMP:JG]
+is_a: OMP:0005189 ! anaerobic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-09T15:10:36Z
 
 [Term]
 id: OMP:0005191
-name: absence of anaerobic growth
-def: "An anaerobic growth phenotype where a cell or cells lack the ability to undergo anaerobic growth." [OMP:JG]
-is_a: OMP:0005189 ! anaerobic growth phenotype
+name: absence of anaerobic population growth
+def: "An anaerobic growth range phenotype where a microbial population cannot grow in the absence of oxygen." [OMP:JG]
+is_a: OMP:0005189 ! anaerobic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-09T15:12:13Z
 
 [Term]
 id: OMP:0005192
-name: altered anaerobic growth
-def: "An anaerobic growth phenotype where the ability of a cell or cells to undergo anaerobic growth is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0005189 ! anaerobic growth phenotype
+name: altered anaerobic population growth
+def: "A population growth range phenotype where the ability of a microbial population to grow in the absence of oxygen is altered relative to a designated control." [OMP:JG]
+comment: Altered population growth may result from changes in population growth rate or population growth yield. Consider using a more specific term if either of these parameters was determined in the experiments.
+is_a: OMP:0005189 ! anaerobic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-09T15:12:52Z
 
 [Term]
 id: OMP:0005193
-name: increased anaerobic growth yield
+name: increased anaerobic population growth yield
 def: "An altered anaerobic growth phenotype where the anaerobic growth yield is increased relative to a designated control." [OMP:JG]
-is_a: OMP:0005192 ! altered anaerobic growth
+is_a: OMP:0007926 ! increased anaerobic population growth
 created_by: Jesus
 creation_date: 2016-06-09T15:13:45Z
 
 [Term]
 id: OMP:0005194
-name: decreased anaerobic growth yield
+name: decreased anaerobic population growth yield
 def: "An altered anaerobic growth phenotype where the anaerobic growth yield is decreased relative to a designated control." [OMP:JG]
-is_a: OMP:0005192 ! altered anaerobic growth
+is_a: OMP:0007927 ! decreased anaerobic population growth
 created_by: Jesus
 creation_date: 2016-06-09T15:14:35Z
 
 [Term]
 id: OMP:0005195
-name: abolished anaerobic growth
-def: "An altered anaerobic growth phenotype where anaerobic growth is abolished." [OMP:JG]
-is_a: OMP:0005192 ! altered anaerobic growth
+name: abolished anaerobic population growth
+def: "An altered anaerobic population growth phenotype where growth of a microbial population in the absence of oxygen is abolished." [OMP:JG]
+is_a: OMP:0005191 ! absence of anaerobic population growth
+is_a: OMP:0007927 ! decreased anaerobic population growth
 created_by: Jesus
 creation_date: 2016-06-09T15:15:50Z
 
 [Term]
 id: OMP:0005196
-name: increased rate of anaerobic growth
+name: increased anaerobic population growth rate
 def: "An altered anaerobic growth phenotype where the anaerobic growth rate is increased relative to a designated control." [OMP:JG]
-is_a: OMP:0005192 ! altered anaerobic growth
+is_a: OMP:0007926 ! increased anaerobic population growth
 created_by: Jesus
 creation_date: 2016-06-09T15:19:53Z
 
 [Term]
 id: OMP:0005197
-name: decreased rate of anaerobic growth
+name: decreased anaerobic population growth rate
 def: "An altered anaerobic growth phenotype where the anaerobic growth rate is decreased relative to a designated control." [OMP:JG]
-is_a: OMP:0005192 ! altered anaerobic growth
+is_a: OMP:0007927 ! decreased anaerobic population growth
 created_by: Jesus
 creation_date: 2016-06-09T15:21:49Z
 
@@ -6401,82 +6426,84 @@ creation_date: 2016-06-23T14:44:33Z
 
 [Term]
 id: OMP:0005250
-name: aerobic growth phenotype
-def: "An oxygen growth range phenotype related to the ability of a cell or cells to grow and/or reproduce in the presence of oxygen at the level found in air (approximately 21%)." [OMP:JG]
+name: aerobic population growth phenotype
+def: "A population growth range phenotype related to the ability of a microbial population to grow in the presence of oxygen gas (O2) at the level found in air (approximately 21%)." [OMP:JG]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
-is_a: OMP:0000039 ! oxygen growth range phenotype
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
+is_a: OMP:0000039 ! O2 effects on population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T14:59:55Z
 
 [Term]
 id: OMP:0005251
-name: absence of aerobic growth
-def: "An aerobic growth phenotype where a cell or cells lack the ability to undergo aerobic growth." [OMP:JG]
-is_a: OMP:0005250 ! aerobic growth phenotype
+name: absence of aerobic population growth
+def: "An aerobic population growth phenotype where a microbial population cannot grow in the presence of atmospheric levels of O2 (approximately 21%)." [OMP:JG]
+is_a: OMP:0005250 ! aerobic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:00:52Z
 
 [Term]
 id: OMP:0005252
-name: altered of aerobic growth
-def: "An aerobic growth phenotype where the ability of a cell or cells to undergo aerobic growth is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0005250 ! aerobic growth phenotype
+name: altered aerobic population growth
+def: "A population growth range phenotype where the ability of a microbial population to growth in the presence of atmospheric levels of oxygen gas (approximately 20% O2) is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005250 ! aerobic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:01:40Z
 
 [Term]
 id: OMP:0005253
-name: presence of aerobic growth
-def: "An aerobic growth phenotype where a cell or cells are able to undergo aerobic growth." [OMP:JG]
-is_a: OMP:0005250 ! aerobic growth phenotype
+name: presence of aerobic population growth
+def: "A population growth range phenotype where a microbial population is able to grow in the presence of atmospheric levels of oxygen gas (approximately 21% O2)." [OMP:JG]
+is_a: OMP:0005250 ! aerobic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:02:38Z
 
 [Term]
 id: OMP:0005254
-name: hypoxic growth phenotype
-def: "An aerobic growth phenotype relating to the ability of a cell or cells to grow and/or reproduce in a hypoxic condition, which is one where O2 levels are below that found in air (approximately 21%)." [OMP:JG]
-is_a: OMP:0005250 ! aerobic growth phenotype
+name: microaerophilic population growth phenotype
+def: "A population growth range phenotype relating to the ability of a microbial population to grow when O2 levels are within the range xx-xx% O2, but does not grow at higher levels of O2 or in the absence of O2." [OMP:JG]
+is_a: OMP:0000039 ! O2 effects on population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:04:24Z
 
 [Term]
 id: OMP:0005255
-name: presence of hypoxic growth
+name: presence of microaerophilic population growth
 def: "A hypoxic growth phenotype in which a cell or cells are able to grow and/or reproduce in hypoxic conditions." [OMP:JG]
-is_a: OMP:0005254 ! hypoxic growth phenotype
+is_a: OMP:0005254 ! microaerophilic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:05:26Z
 
 [Term]
 id: OMP:0005256
-name: absence of hypoxic growth
-def: "A hypoxic growth phenotype in which a cell or cells are unable to grow and/or reproduce in hypoxic conditions." [JG:OMP]
-is_a: OMP:0005254 ! hypoxic growth phenotype
+name: absence of microaerophilic growth
+def: "A population growth range phenotype in which a microbial population cannot grow in a microaerophilic environment." [JG:OMP]
+is_a: OMP:0005254 ! microaerophilic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:06:52Z
 
 [Term]
 id: OMP:0005257
-name: altered hypoxic growth
-def: "A hypoxic growth phenotype where the frequency, rate, or extent  of hypoxic growth is altered relative to a designated control." [OMP:JG]
-is_a: OMP:0005254 ! hypoxic growth phenotype
+name: altered microaerophilic population growth
+def: "A population growth range phenotype where the ability of a microbial population to grow in a microaerophilic environment is altered relative to a designated control." [OMP:JG]
+is_a: OMP:0005254 ! microaerophilic population growth phenotype
 created_by: Jesus
 creation_date: 2016-06-23T15:07:30Z
 
 [Term]
 id: OMP:0005258
-name: increased hypoxic growth rate
-def: "An altered hypoxic growth phenotype where the rate of growth under hypoxic conditions is increased relative to a designated control." [OMP:JG]
-is_a: OMP:0005257 ! altered hypoxic growth
+name: increased microaerophilic population growth rate
+def: "An altered microaerophilic population growth phenotype where the rate of growth of a microbial population in a microaerophilic environment is increased relative to a designated control." [OMP:JG]
+is_a: OMP:0007930 ! increased microaerophilic population growth
 created_by: Jesus
 creation_date: 2016-06-23T15:07:51Z
 
 [Term]
 id: OMP:0005259
-name: decreased hypoxic growth rate
-def: "An altered hypoxic growth phenotype where the rate of growth under hypoxic conditions is decreased relative to a designated control." [OMP:JG]
-is_a: OMP:0005257 ! altered hypoxic growth
+name: decreased microaerophilic population growth rate
+def: "An altered microaerophilic population growth phenotype where the rate of growth of a microbial population in a microaerophilic environment is decreased relative to a designated control." [OMP:JG]
+is_a: OMP:0007929 ! decreased microaerophilic population growth
 created_by: Jesus
 creation_date: 2016-06-23T15:08:31Z
 
@@ -8764,9 +8791,9 @@ creation_date: 2014-07-25T12:50:04Z
 
 [Term]
 id: OMP:0006116
-name: abolished growth at acidic pH
+name: abolished population growth at acidic pH
 def: "A decreased growth at acidic pH phenotype where the ability to grow at an acidic pH is abolished." [OMP:DAS]
-is_a: OMP:0007008 ! decreased growth at acidic pH
+is_a: OMP:0007008 ! decreased population growth at acidic pH
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:58:01Z
 
@@ -8774,7 +8801,7 @@ creation_date: 2014-07-25T12:58:01Z
 id: OMP:0006117
 name: abolished growth at alkaline pH
 def: "A decreased growth at alkaline pH phenotype where the ability to grow at alkaline pH is abolished." [OMP:JCH]
-is_a: OMP:0007010 ! decreased growth at alkaline pH
+is_a: OMP:0007010 ! decreased population growth at alkaline pH
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:02:17Z
 
@@ -9409,33 +9436,33 @@ creation_date: 2014-07-31T16:11:22Z
 
 [Term]
 id: OMP:0007008
-name: decreased growth at acidic pH
+name: decreased population growth at acidic pH
 def: "An altered pH growth range phenotype where the ability to grow at some pH that is lower than pH 7 is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007138 ! altered pH growth range
+is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:11:01Z
 
 [Term]
 id: OMP:0007009
-name: increased growth at acidic pH
+name: increased population growth at acidic pH
 def: "An altered growth range phenotype where the ability to grow at some pH that is lower than pH 7 is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007138 ! altered pH growth range
+is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:11:44Z
 
 [Term]
 id: OMP:0007010
-name: decreased growth at alkaline pH
+name: decreased population growth at alkaline pH
 def: "An altered pH growth range phenotype where the ability to grow at some pH that is higher than pH 7 is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007138 ! altered pH growth range
+is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:14:28Z
 
 [Term]
 id: OMP:0007011
-name: increased growth at alkaline pH
+name: increased population growth at alkaline pH
 def: "An altered pH growth range phenotype where the ability to grow at some pH that is higher than pH 7 is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007138 ! altered pH growth range
+is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:14:56Z
 
@@ -10572,7 +10599,7 @@ def: "An antimicrobial agent resistance phenotype where resistance or sensitivit
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
-is_a: OMP:0007085 ! altered microbial phenotype
+is_a: OMP:0007248 ! altered resistance to chemical
 intersection_of: OMP:0000274 ! antimicrobial agent resistance phenotype
 intersection_of: has_quality OMP:0007188 ! altered_process_quality
 relationship: has_quality OMP:0007188 ! altered_process_quality
@@ -10606,9 +10633,9 @@ creation_date: 2014-08-17T13:19:30Z
 
 [Term]
 id: OMP:0007138
-name: altered pH growth range
+name: altered effects of pH on population growth
 def: "A pH growth range phenotype where the range of pH where growth occurs is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0005008 ! pH growth range phenotype
+is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: siegele
 creation_date: 2014-08-17T17:35:20Z
 
@@ -10781,9 +10808,10 @@ creation_date: 2014-08-28T12:14:20Z
 [Term]
 id: OMP:0007157
 name: altered population growth
-def: "A population growth phenotype where the rate and/or extent of reproduction of a microbial population is altered relative to a designated control." [OMP:DAS]
+def: "A population growth phenotype where the rate and/or extent of growth of a microbial population is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007167 ! population growth phenotype
 is_a: OMP:0007351 ! altered biological process
+is_a: OMP:0007931 ! altered population phenotype
 created_by: siegele
 creation_date: 2014-08-28T12:15:47Z
 
@@ -10812,6 +10840,7 @@ id: OMP:0007160
 name: altered colony morphology
 def: "A colony morphology phenotype where the morphology of a colony or colonies is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000100 ! colony morphology phenotype
+is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007470 ! altered population morphology
 created_by: siegele
 creation_date: 2014-08-29T12:27:50Z
@@ -10880,8 +10909,9 @@ creation_date: 2014-09-14T15:36:38Z
 [Term]
 id: OMP:0007167
 name: population growth phenotype
-def: "A microbial phenotype that affects the rate or extent of increase in the number of individuals in a microbial population." [OMP:DAS]
+def: "A microbial phenotype relating to the growth of a microbial population, i.e. an increase in the size of the population resulting from reproduction of individual microbes in the population." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
 subset: qc_do_not_manually_annotate
 xref: GO:0000003 "reproduction"
 is_a: OMP:0007006 ! population phenotype
@@ -11097,7 +11127,7 @@ creation_date: 2014-10-04T01:44:57Z
 [Term]
 id: OMP:0007192
 name: population growth range phenotype
-def: "A population growth phenotype related to non-nutrient environmental factors how they affect growth of microbial populations." [ISBN:9780073402406, OMP:DAS]
+def: "A population growth phenotype related to how non-nutrient environmental factors affect growth of a microbial population." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0007167 ! population growth phenotype
 created_by: siegele
 creation_date: 2014-10-04T18:41:07Z
@@ -11136,7 +11166,7 @@ comment: This is a high-level term whose primary purpose is to organize terms be
 subset: qc_do_not_manually_annotate
 synonym: "chemical sensitivity phenotype" EXACT []
 xref: APO:0000087 "resistance to chemicals"
-is_a: OMP:0007194 ! biological process phenotype
+is_a: OMP:0007167 ! population growth phenotype
 intersection_of: OMP:0007194 ! biological process phenotype
 intersection_of: has_quality PATO:0001457 ! sensitivity of a process
 intersection_of: towards CHEBI:24431 ! chemical entity
@@ -11596,11 +11626,11 @@ creation_date: 2015-07-16T00:36:34Z
 
 [Term]
 id: OMP:0007248
-name: altered chemical resistance
+name: altered resistance to chemical
 def: "A chemical resistance phenotype where resistance or sensitivity of a microbe to a chemical is altered relative to a designated control." [OMP:DAS]
 synonym: "altered chemical sensitivity" EXACT []
+is_a: OMP:0007157 ! altered population growth
 is_a: OMP:0007195 ! chemical resistance phenotype
-is_a: OMP:0007351 ! altered biological process
 created_by: siegele
 creation_date: 2015-07-16T00:36:34Z
 
@@ -11609,7 +11639,7 @@ id: OMP:0007249
 name: decreased resistance to a chemical
 def: "An altered chemical resistance phenotype where the resistance of a microbe to a chemical is decreased relative to a designated control." [OMP:DAS]
 synonym: " increased sensitivity to a chemical" EXACT []
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 created_by: siegele
 creation_date: 2015-07-16T00:42:17Z
 
@@ -11618,7 +11648,7 @@ id: OMP:0007250
 name: increased resistance to a chemical
 def: "An altered chemical resistance phenotype where the resistance of a microbe to a chemical is increased relative to a designated control." [OMP:DAS]
 synonym: "decreased sensitivity to a chemical" EXACT []
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 created_by: siegele
 creation_date: 2015-07-16T00:42:17Z
 
@@ -11626,8 +11656,9 @@ creation_date: 2015-07-16T00:42:17Z
 id: OMP:0007251
 name: abolished chemical sensitivity
 def: "An altered chemical sensitivity phenotype where the sensitivity of a cell, cells, or microbe to a chemical is abolished." [OMP:DAS]
-comment: Chemical sensitivity phenotype and its child terms were renamed as chemical resistance phenotypes to be consistent with other branches of OMP. Other terms were redefined, but this term had to be made obsolete and a new term: abolished chemical resistance was made.
+comment: Chemical sensitivity phenotype and its child terms were renamed as chemical resistance phenotypes to be consistent with other branches of OMP. Other terms in this branch were redefined, but this term was made obsolete and replaced by OMP:0007250 ! increased resistance to a chemical.\n\nWhen using OMP:0007250 for annotations enter the database identifier for the specific chemical in the Annotation Extension field.
 is_obsolete: true
+replaced_by: OMP:0007250
 created_by: siegele
 creation_date: 2015-07-16T00:42:17Z
 
@@ -12189,7 +12220,7 @@ name: population morphology phenotype
 def: "A microbial phenotype related to the appearance of a microbial population, such as a colony, liquid culture, or biofilm." [OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
-is_a: OMP:0007194 ! biological process phenotype
+is_a: OMP:0007006 ! population phenotype
 created_by: siegele
 creation_date: 2016-02-05T20:20:28Z
 
@@ -12738,7 +12769,7 @@ creation_date: 2016-06-23T15:27:23Z
 id: OMP:0007375
 name: altered resistance to an alkylating agent
 def: "An alkylating agent resistance phenotype where growth and reproduction of a microbe in the presence of an alkylating agent is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 is_a: OMP:0007372 ! alkylating agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-23T15:27:23Z
@@ -13562,7 +13593,7 @@ id: OMP:0007470
 name: altered population morphology
 def: "A population morphology phenotype where the visible appearance of a microbial population is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007315 ! population morphology phenotype
-is_a: OMP:0007351 ! altered biological process
+is_a: OMP:0007931 ! altered population phenotype
 created_by: dsiegele
 creation_date: 2016-09-12T15:16:19Z
 
@@ -13962,7 +13993,7 @@ creation_date: 2017-02-20T15:38:16Z
 id: OMP:0007516
 name: population growth in high osmolarity phenotype
 def: "A population growth phenotype relating to the vegetative growth of a microbial population in conditions of high osmolarity, which refers to osmotic conditions where the osmolarity of the environment is higher than the osmolarity that allows for optimal population growth. Population growth may refer to growth rate, growth yield, or both." [OMP:DAS]
-is_a: OMP:0005013 ! solute and water activity growth range phenotype
+is_a: OMP:0005013 ! solute and water activity effects on population growth phenotype
 created_by: dsiegele
 creation_date: 2017-02-20T15:58:54Z
 
@@ -13988,7 +14019,7 @@ id: OMP:0007519
 name: altered population growth in high osmolarity
 def: "A population growth phenotype where the growth of a microbial population in conditions of high osmolarity is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007516 ! population growth in high osmolarity phenotype
-is_a: OMP:0007523 ! altered growth range
+is_a: OMP:0007523 ! altered population growth range
 created_by: dsiegele
 creation_date: 2017-02-20T15:59:09Z
 
@@ -14019,8 +14050,8 @@ creation_date: 2017-02-20T16:03:16Z
 
 [Term]
 id: OMP:0007523
-name: altered growth range
-def: "A growth range phenotype where the ability of a microbe to grow and proliferate under a specified growth condition is altered relative to a designated control." [OMP:DAS]
+name: altered population growth range
+def: "A population growth range phenotype where the ability of a microbial population to grow in a specified environmental condition is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007085 ! altered microbial phenotype
 is_a: OMP:0007192 ! population growth range phenotype
 created_by: dsiegele
@@ -14103,10 +14134,10 @@ creation_date: 2017-02-20T16:59:35Z
 id: OMP:0007533
 name: urea derivative resistance phenotype
 def: "An antimicrobial agent resistance phenotype relating to resistance or sensitivity to compounds that are structural derivatives of urea." [CHEBI:47857, OMP:DAS]
-comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+comment: The original term and its children were deemed to be too granular and were replaced with OMP:0007195 ! chemical resistance phenotype and its child terms, which are listed below. When using one of these terms for annotation, enter a database identifier for the specific chemical in the Annotation Extension field. \n\nOMP:0007247 resistant to a chemical\nOMP:0007246 not resistant to a chemical\nOMP:0007248 altered chemical resistance\nOMP:0007249 decreased resistance to a chemical\nOMP:0007883 abolished chemical resistance\nOMP:0007250 increased resistance to a chemical
 subset: qc_do_not_manually_annotate
-synonym: "hydroxyurea resistance phenotype" NARROW [CHEBI:44423]
-is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
+is_obsolete: true
+replaced_by: OMP:0007195
 created_by: siegele
 creation_date: 2017-02-24T13:14:38Z
 
@@ -14114,7 +14145,8 @@ creation_date: 2017-02-24T13:14:38Z
 id: OMP:0007534
 name: resistant to a urea derivative
 def: "A ureas resistance phenotype where a microbe is resistant to a derivative of urea." [CHEBI:47857, OMP:DAS]
-is_a: OMP:0007533 ! urea derivative resistance phenotype
+is_obsolete: true
+replaced_by: OMP:0007247
 created_by: siegele
 creation_date: 2017-02-24T13:18:35Z
 
@@ -14122,9 +14154,9 @@ creation_date: 2017-02-24T13:18:35Z
 id: OMP:0007535
 name: not resistant to a urea derivative
 def: "A ureas resistance phenotype where a microbe is not resistant to a derivative of urea." [CHEBI:47857, OMP:DAS]
-synonym: "sensitive to a urea derivative" EXACT []
-synonym: "sensitive to hydroxyurea" NARROW []
-is_a: OMP:0007533 ! urea derivative resistance phenotype
+comment: The original term was deemed to be too granular.
+is_obsolete: true
+replaced_by: OMP:0007246
 created_by: siegele
 creation_date: 2017-02-24T13:18:35Z
 
@@ -14132,8 +14164,9 @@ creation_date: 2017-02-24T13:18:35Z
 id: OMP:0007536
 name: altered resistance to a urea derivative
 def: "A urea derivative resistance phenotype where resistance or sensitivity to a urea derivative is altered relative to a designated control." [CHEBI:47857, OMP:DAS]
-is_a: OMP:0007134 ! altered resistance to an antimicrobial agent
-is_a: OMP:0007533 ! urea derivative resistance phenotype
+comment: The original term was deemed to be too granular and was replaced with OMP:0007248 ! altered resistance to chemical. When using this term for annotation, enter a database identifier for the specific chemical in the Annotation Extension field.
+is_obsolete: true
+replaced_by: OMP:0007248
 created_by: siegele
 creation_date: 2017-02-24T13:18:35Z
 
@@ -14141,9 +14174,11 @@ creation_date: 2017-02-24T13:18:35Z
 id: OMP:0007537
 name: increased resistance to a urea derivative
 def: "An altered resistance to a urea derivative phenotype where resistance to a derivative of urea is increased relative to a designated control." [OMP:DAS]
+comment: The original term was deemed to be too granular and were replaced with OMP:0007250 ! increased resistance to a chemical. When using this term for annotation, enter a database identifier for the specific chemical in the Annotation Extension field.
 synonym: "decreased sensitivity to a urea derivative" EXACT []
 synonym: "decreased sensitivity to hydroxyurea" NARROW [CHEBI:44423]
-is_a: OMP:0007536 ! altered resistance to a urea derivative
+is_obsolete: true
+replaced_by: OMP:0007250
 created_by: siegele
 creation_date: 2017-02-24T13:19:13Z
 
@@ -14151,9 +14186,11 @@ creation_date: 2017-02-24T13:19:13Z
 id: OMP:0007538
 name: decreased resistance to a urea derivative
 def: "An altered resistance to a urea derivative phenotype where resistance to a derivative of urea is decreased relative to a designated control." [OMP:DAS]
+comment: The original term was deemed to be too granular and were replaced with OMP:0007249 decreased resistance to chemical. When using this term for annotation, enter a database identifier for the specific chemical in the Annotation Extension field.
 synonym: "increased sensitivity to a urea derivative" EXACT []
 synonym: "increased sensitivity to hydroxyurea" NARROW [CHEBI:44423]
-is_a: OMP:0007536 ! altered resistance to a urea derivative
+is_obsolete: true
+replaced_by: OMP:0007249
 created_by: siegele
 creation_date: 2017-02-24T13:19:13Z
 
@@ -14161,8 +14198,9 @@ creation_date: 2017-02-24T13:19:13Z
 id: OMP:0007539
 name: abolished resistance to a urea derivative
 def: "A decreased resistance to a urea derivative phenotype where resistance to a structural derivative of urea is abolished." [OMP:DAS]
-is_a: OMP:0007535 ! not resistant to a urea derivative
-is_a: OMP:0007538 ! decreased resistance to a urea derivative
+comment: The original term was deemed to be too granular and were replaced with OMP:0007883 ! abolished resistance to a chemical. When using this term for annotation, enter a database identifier for the specific chemical in the Annotation Extension field.
+is_obsolete: true
+replaced_by: OMP:0007883
 created_by: siegele
 creation_date: 2017-02-24T13:19:20Z
 
@@ -14430,6 +14468,8 @@ id: OMP:0007568
 name: resistance to stress phenotype
 def: "A population growth phenotype related to the resistance or sensitivity that microbes in a population show when exposed to a stress. Typically, a population is deemed resistant to a stress if microbes in the population continue to grow and multiply when exposed to the stress. A population is deemed sensitive to a stress if microbes in the population stop growing and multiplying (and may die) when exposed to the stress." [FYPO:0002046, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we recommend that it not be used for direct annotation. Please consider using a more specific term to annotate each phenotype.\n\nUse a descendant of this term if you have assayed growth of cells exposed to a stress in culture. If you have assayed the response to a stress at the subcellular or molecular level, consider annotating to one of the descendants of 'response to stress phenotype' (OMP:0000173).
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 synonym: "resistant to a stress" NARROW []
 synonym: "sensitive to a stress" NARROW []
 is_a: OMP:0007167 ! population growth phenotype
@@ -14475,7 +14515,7 @@ creation_date: 2017-06-21T15:00:53Z
 
 [Term]
 id: OMP:0007573
-name: resistance to acidic pH stress phenotype
+name: resistance to pH shock phenotype
 def: "A resistance to stress phenotype related to the resistance or sensitivity that a microbial population shows when exposed to environmental pH at or below 6.5." [OMP:DAS]
 is_a: OMP:0007568 ! resistance to stress phenotype
 created_by: dsiegele
@@ -14515,76 +14555,74 @@ creation_date: 2017-06-21T16:14:11Z
 
 [Term]
 id: OMP:0007578
-name: resistance to cold phenotype
-def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to a temperature below the optimal growth temperature of the microbe." [APO:0000148, OMP:DAS]
+name: resistance to cold shock phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity of a microbial population to cold shock. Cold shock is a form of temperature stress in which cells are briefly exposed to a low temperature, usually below the lowest growth temperature of the microbe." [FYPO:0006084, OMP:DAS]
 is_a: OMP:0007568 ! resistance to stress phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:41:35Z
 
 [Term]
 id: OMP:0007579
-name: resistance to heat phenotype
-def: "A resistance to stress phenotype related to the resistance or sensitivity that microbes in a population show when exposed to a temperature above the optimal growth temperature for the microbe." [OMP:DAS]
+name: resistance to heat shock phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity of a microbial population to heat shock. Heat shock is a form of temperature stress in which cells are briefly exposed to a high temperature, usually above the highest growth temperature of the microbe." [FYPO:0002045, OMP:DAS]
 is_a: OMP:0007568 ! resistance to stress phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:42:01Z
 
 [Term]
 id: OMP:0007580
-name: presence of resistance to cold
+name: presence of resistance to cold shock
 def: "A resistance to cold phenotype where microbes in a population continue to grow and divide when exposed to a temperature below the optimal growth temperature of the microbe." [OMP:DAS]
 synonym: "cold resistant" EXACT []
 synonym: "resistant to low temperature" EXACT []
-is_a: OMP:0007578 ! resistance to cold phenotype
+is_a: OMP:0007578 ! resistance to cold shock phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:48:47Z
 
 [Term]
 id: OMP:0007581
-name: absence of resistance to cold
+name: absence of resistance to cold shock
 def: "A resistance to cold phenotype where microbes in a population stop growing (and may die) when exposed to a temperature below the optimal growth temperature of the microbe." [OMP:DAS]
 synonym: "cold sensitive" EXACT [YPO:0000148]
 synonym: "cold sensitivity" EXACT [APO:0000148]
-is_a: OMP:0007578 ! resistance to cold phenotype
+is_a: OMP:0007578 ! resistance to cold shock phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:48:47Z
 
 [Term]
 id: OMP:0007582
-name: altered resistance to cold
-def: "A resistance to cold phenotype where the resistance or sensitivity that microbes in a population show when exposed to a temperature below the optimal growth temperature of the microbe is altered relative to a designated control." [OMP:DAS]
-synonym: "altered cold sensitivity" EXACT []
-synonym: "altered resistance to low temperature" EXACT []
+name: altered resistance to cold shock
+def: "A resistance to cold shock phenotype where the resistance or sensitivity of a microbial population to a cold shock is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007572 ! altered resistance to stress
-is_a: OMP:0007578 ! resistance to cold phenotype
+is_a: OMP:0007578 ! resistance to cold shock phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:48:47Z
 
 [Term]
 id: OMP:0007583
-name: presence of resistance to heat
-def: "A resistance to heat phenotype where cells in a population continue to grow and divide when exposed to a temperature above the optimal growth temperature of the microbe." [OMP:DAS]
-synonym: "heat resistant" EXACT []
-synonym: "resistant to high temperature" EXACT []
-is_a: OMP:0007579 ! resistance to heat phenotype
+name: presence of resistance to heat shock
+def: "A resistance to heat shock phenotype where a microbial population is resistant to heat shock." [OMP:DAS]
+synonym: "resistance to heat shock" EXACT [FYPO:0002045]
+synonym: "resistant to heat shock" EXACT []
+is_a: OMP:0007579 ! resistance to heat shock phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:54:38Z
 
 [Term]
 id: OMP:0007584
-name: absence of resistance to heat
-def: "A resistance to heat phenotype where cells in a population stop growing (and may die) when exposed to a temperature above the optimal growth temperature of the microbe." [OMP:DAS]
-synonym: "sensitive to high temperature" EXACT []
-is_a: OMP:0007579 ! resistance to heat phenotype
+name: absence of resistance to heat shock
+def: "A resistance to heat shock phenotype where a microbial population stops growing and may begin to die when exposed to a heat shock." [OMP:DAS]
+synonym: "sensitive to heat shock" EXACT []
+is_a: OMP:0007579 ! resistance to heat shock phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:54:39Z
 
 [Term]
 id: OMP:0007585
 name: altered resistance to heat
-def: "A resistance to heat phenotype where the resistance or sensitivity of microbes in a population to a temperature above the optimal growth temperature of the microbe is altered relative to a designated control." [OMP:DAS]
+def: "A resistance to heat shock phenotype where the resistance or sensitivity of a microbial population to heat shock is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007572 ! altered resistance to stress
-is_a: OMP:0007579 ! resistance to heat phenotype
+is_a: OMP:0007579 ! resistance to heat shock phenotype
 created_by: siegele
 creation_date: 2017-06-25T18:54:39Z
 
@@ -14599,33 +14637,33 @@ creation_date: 2017-06-25T19:35:57Z
 
 [Term]
 id: OMP:0007587
-name: increased resistance to cold
+name: increased resistance to cold shock
 def: "An altered resistance to cold phenotype where the resistance of microbes in a population to temperatures below the optimal growth temperature is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007582 ! altered resistance to cold
+is_a: OMP:0007582 ! altered resistance to cold shock
 created_by: siegele
 creation_date: 2017-06-25T22:21:53Z
 
 [Term]
 id: OMP:0007588
-name: decreased resistance to cold
+name: decreased resistance to cold shock
 def: "An altered resistance to cold phenotype where the resistance of microbes in a population to temperatures below the optimal growth temperature is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007582 ! altered resistance to cold
+is_a: OMP:0007582 ! altered resistance to cold shock
 created_by: siegele
 creation_date: 2017-06-25T22:21:53Z
 
 [Term]
 id: OMP:0007589
-name: abolished resistance to cold
+name: abolished resistance to cold shock
 def: "A decreased resistance to cold phenotype where the resistance of microbes in a population to temperature below the optimal growth temperature is abolished." [OMP:DAS]
-is_a: OMP:0007581 ! absence of resistance to cold
-is_a: OMP:0007588 ! decreased resistance to cold
+is_a: OMP:0007581 ! absence of resistance to cold shock
+is_a: OMP:0007588 ! decreased resistance to cold shock
 created_by: siegele
 creation_date: 2017-06-25T22:21:53Z
 
 [Term]
 id: OMP:0007590
 name: increased resistance to heat
-def: "An altered resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is increased relative to a designated control." [OMP:DAS]
+def: "An altered resistance to heat shock phenotype where the resistance of a microbial population to heat shock is increased relative to a designated control." [OMP:DAS]
 xref: FYPO:0002626 "resistance to heat"
 is_a: OMP:0007585 ! altered resistance to heat
 created_by: siegele
@@ -14633,20 +14671,18 @@ creation_date: 2017-06-25T22:26:03Z
 
 [Term]
 id: OMP:0007591
-name: decreased resistance to heat
-def: "An altered resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is decreased relative to a designated control." [OMP:DAS]
+name: decreased resistance to heat shock
+def: "An altered resistance to heat shock phenotype where the resistance of a microbial population to heat shock is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007585 ! altered resistance to heat
 created_by: siegele
 creation_date: 2017-06-25T22:26:03Z
 
 [Term]
 id: OMP:0007592
-name: abolished resistance to heat
-def: "A decreased resistance to heat phenotype where the resistance of microbes in a population to temperatures above the optimal growth temperature is abolished." [OMP:DAS]
-synonym: "heat sensitive" EXACT []
-synonym: "heat sensitivity" EXACT [APO:00000147]
-is_a: OMP:0007584 ! absence of resistance to heat
-is_a: OMP:0007591 ! decreased resistance to heat
+name: abolished resistance to heat shock
+def: "A decreased resistance to heat shock phenotype where the resistance of a microbial population to heat shock is abolished." [OMP:DAS]
+is_a: OMP:0007584 ! absence of resistance to heat shock
+is_a: OMP:0007591 ! decreased resistance to heat shock
 created_by: siegele
 creation_date: 2017-06-25T22:26:03Z
 
@@ -16385,6 +16421,9 @@ creation_date: 2018-06-10T21:18:22Z
 id: OMP:0007794
 name: cell population growth phenotype
 def: "A cell population phenotype that affects the rate or extent of growth of a population of microbial cells." [FYPO:0000139, OMP:das]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
 synonym: "cell population growth phenotype" RELATED [FYPO:0000139]
 is_a: OMP:0007167 ! population growth phenotype
 is_a: OMP:0007698 ! cell population phenotype
@@ -16436,6 +16475,7 @@ name: polyether antimicrobial resistance phenotype
 comment: This term and its children were deemed to be too granular. Instead, use one of the children of OMP:0000274 antimicrobial agent resistance phenotype and enter database identifier for A22 in the Annotation Extension field. \nOMP:0007876 resistant to an antimicrobial agent\nOMP:0007877 not resistant to an antimicrobial agent\nOMP:0007134 altered resistance to an antimicrobial agent\nOMP:0007878 increased resistance to an antimicrobial agent\nOMP:000 7879 decreased resistance to an antimicrobial agent\nOMP:0007880 abolished resistance to an antimicrobial agent
 subset: qc_do_not_manually_annotate
 is_obsolete: true
+replaced_by: OMP:0000274
 created_by: siegele
 creation_date: 2018-06-18T03:07:12Z
 
@@ -16963,7 +17003,7 @@ creation_date: 2018-07-27T18:05:19Z
 [Term]
 id: OMP:0007862
 name: bicyclomycin antimicrobial agent resistance phenotype
-synonym: "azabicyclic antimicrobial agent resistance phenotype" BROAD []
+comment: The original term and its children were deemed to be too granular and replaced with OMP:0000274 ! antimicrobial agent resistance phenotype and its child terms, which are listed below. When using one of these terms for annotation, enter a database identifier for the specific antimicrobial agent in the Annotation Extension field. \n\nOMP:0007876 resistant to an antimicrobial agent\nOMP:0007877 not resistant to an antimicrobial agent\nOMP:0007134 altered resistance to an antimicrobial agent\nOMP:0007878 increased resistance to an antimicrobial agent\nOMP:000 7879 decreased resistance to an antimicrobial agent\nOMP:0007880 abolished resistance to an antimicrobial agent
 is_obsolete: true
 replaced_by: OMP:0000274
 created_by: siegele
@@ -16973,6 +17013,7 @@ creation_date: 2018-07-29T21:34:15Z
 id: OMP:0007863
 name: presence of resistance to bicyclomycin
 is_obsolete: true
+replaced_by: OMP:0007876
 created_by: siegele
 creation_date: 2018-07-29T21:34:15Z
 
@@ -17003,6 +17044,7 @@ creation_date: 2018-07-29T21:34:15Z
 [Term]
 id: OMP:0007867
 name: abolished resistance to bicyclomycin
+comment: The original term was deemed to be too granular. In its place, use OMP:0007880 abolished resistance to an antimicrobial agent. When using OMP:0007880 for annotation, enter a database identifier for the specific antimicrobial agent in the Annotation Extension field.
 is_obsolete: true
 replaced_by: OMP:0007880
 created_by: siegele
@@ -17012,13 +17054,14 @@ creation_date: 2018-07-29T21:34:15Z
 id: OMP:0007868
 name: increased resistance to bicyclomycin
 is_obsolete: true
+replaced_by: OMP:0007878
 created_by: siegele
 creation_date: 2018-07-29T21:34:15Z
 
 [Term]
 id: OMP:0007869
 name: A22 antimicrobial agent resistance phenotype
-comment: This term and its children were deemed to be too granular. Instead, use one of the children of OMP:0000274 antimicrobial agent resistance phenotype and enter database identifier for A22 in the Annotation Extension field. \nOMP:0007876 resistant to an antimicrobial agent\nOMP:0007877 not resistant to an antimicrobial agent\nOMP:0007134 altered resistance to an antimicrobial agent\nOMP:0007878 increased resistance to an antimicrobial agent\nOMP:000 7879 decreased resistance to an antimicrobial agent\nOMP:0007880 abolished resistance to an antimicrobial agent
+comment: The original term and its children were deemed to be too granular and replaced with OMP:0000274 ! antimicrobial agent resistance phenotype and its child terms, which are listed below. When using one of these terms for annotation, enter a database identifier for the specific antimicrobial agent in the Annotation Extension field. \n\nOMP:0007876 resistant to an antimicrobial agent\nOMP:0007877 not resistant to an antimicrobial agent\nOMP:0007134 altered resistance to an antimicrobial agent\nOMP:0007878 increased resistance to an antimicrobial agent\nOMP:000 7879 decreased resistance to an antimicrobial agent\nOMP:0007880 abolished resistance to an antimicrobial agent
 synonym: "amino[sulfanyl]methaniminiumchloride antimicrobial agent resistance phenotype" RELATED []
 is_obsolete: true
 replaced_by: OMP:0000274
@@ -17030,6 +17073,7 @@ id: OMP:0007870
 name: presence of resistance to A22
 comment: This term and was deemed to be too granular. In its place, use OMP:0007876 resistant to an antimicrobial agent and enter database identifier for A22 in the Annotation Extension field.
 is_obsolete: true
+replaced_by: OMP:0007876
 created_by: siegele
 creation_date: 2018-07-29T22:22:16Z
 
@@ -17063,7 +17107,7 @@ creation_date: 2018-07-29T22:22:16Z
 [Term]
 id: OMP:0007874
 name: abolished resistance to A22
-comment: This term was deemed to be too granular. In its place, use OMP:0007880 abolished resistance to an antimicrobial agent and enter database identifier for A22 in the Annotation Extension field.
+comment: The original term was deemed to be too granular. In its place, use OMP:0007880 abolished resistance to an antimicrobial agent. When using OMP:0007880 for annotation, enter a database identifier for the specific antimicrobial agent in the Annotation Extension field.
 is_obsolete: true
 replaced_by: OMP:0007880
 created_by: siegele
@@ -17191,7 +17235,7 @@ creation_date: 2018-08-22T15:55:19Z
 [Term]
 id: OMP:0007889
 name: altered resistance to a metal
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 is_a: OMP:0007890 ! metal resistance phenotype
 created_by: dsiegele
 creation_date: 2018-08-22T15:56:07Z
@@ -17229,7 +17273,7 @@ creation_date: 2018-08-22T18:13:28Z
 [Term]
 id: OMP:0007894
 name: altered resistance to a surfactant
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 is_a: OMP:0007891 ! surfactant resistance phenotype
 created_by: siegele
 creation_date: 2018-08-22T18:13:28Z
@@ -17259,7 +17303,7 @@ creation_date: 2018-08-22T18:13:58Z
 [Term]
 id: OMP:0007898
 name: bile acids resistance phenotype
-def: "A chemical resistance phenotype relating to resistance or sensitivity of a microbe to a bile acid." [CHEBI:138366, OMP:das]
+def: "A chemical resistance phenotype relating to the resistance or sensitivity of a microbial population to a bile acid." [CHEBI:138366, OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "bile acid sensitivity phenotype" EXACT []
 synonym: "bile salt resistance phenotype" NARROW []
@@ -17284,7 +17328,7 @@ creation_date: 2018-08-23T16:11:39Z
 [Term]
 id: OMP:0007901
 name: altered resistance to bile acids
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 is_a: OMP:0007898 ! bile acids resistance phenotype
 created_by: siegele
 creation_date: 2018-08-23T16:11:39Z
@@ -17359,7 +17403,7 @@ creation_date: 2018-08-24T17:00:53Z
 [Term]
 id: OMP:0007911
 name: altered resistance to a chelator
-is_a: OMP:0007248 ! altered chemical resistance
+is_a: OMP:0007248 ! altered resistance to chemical
 is_a: OMP:0007908 ! chelator resistance phenotype
 created_by: siegele
 creation_date: 2018-08-24T17:00:53Z
@@ -17393,6 +17437,130 @@ def: "A biofilm formation phenotype where a microbe is incapable of forming a bi
 is_a: OMP:0000176 ! biofilm formation phenotype
 created_by: siegele
 creation_date: 2018-08-26T19:22:17Z
+
+[Term]
+id: OMP:0007916
+name: decreased vegetative cell width
+def: "An altered cell size phenotype in which the width of a nonspherical cell in the vegetative growth phase of the life cycle is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007665 ! decreased cell width
+created_by: siegele
+creation_date: 2018-09-05T14:59:12Z
+
+[Term]
+id: OMP:0007917
+name: cell size variability within a cell population phenotype
+is_a: OMP:0007698 ! cell population phenotype
+created_by: siegele
+creation_date: 2018-09-05T15:18:58Z
+
+[Term]
+id: OMP:0007918
+name: altered variability in cell size within a cell population
+is_a: OMP:0007917 ! cell size variability within a cell population phenotype
+created_by: siegele
+creation_date: 2018-09-05T15:21:39Z
+
+[Term]
+id: OMP:0007919
+name: presence of cell population growth
+is_a: OMP:0007794 ! cell population growth phenotype
+created_by: siegele
+creation_date: 2018-09-05T15:58:51Z
+
+[Term]
+id: OMP:0007920
+name: absence of cell population growth
+is_a: OMP:0007794 ! cell population growth phenotype
+created_by: siegele
+creation_date: 2018-09-05T15:59:26Z
+
+[Term]
+id: OMP:0007921
+name: presence of cell size variability within a cell population
+is_a: OMP:0007917 ! cell size variability within a cell population phenotype
+created_by: siegele
+creation_date: 2018-09-05T16:06:50Z
+
+[Term]
+id: OMP:0007922
+name: absence of cell size variability within a cell population
+is_a: OMP:0007917 ! cell size variability within a cell population phenotype
+created_by: siegele
+creation_date: 2018-09-05T16:07:15Z
+
+[Term]
+id: OMP:0007923
+name: decreased variability in cell size within a cell population
+is_a: OMP:0007918 ! altered variability in cell size within a cell population
+created_by: siegele
+creation_date: 2018-09-05T16:08:39Z
+
+[Term]
+id: OMP:0007924
+name: increased variability in cell size within a cell population
+is_a: OMP:0007918 ! altered variability in cell size within a cell population
+created_by: siegele
+creation_date: 2018-09-05T16:08:39Z
+
+[Term]
+id: OMP:0007925
+name: abolished variability in cell size within a cell population
+is_a: OMP:0007922 ! absence of cell size variability within a cell population
+is_a: OMP:0007923 ! decreased variability in cell size within a cell population
+created_by: siegele
+creation_date: 2018-09-05T16:08:39Z
+
+[Term]
+id: OMP:0007926
+name: increased anaerobic population growth
+def: "An altered anaerobic population growth phenotype where growth of a microbial population in the absence of O2 is increased relative to a designated control." [OMP:das]
+comment: Altered population growth may result from changes in population growth rate or population growth yield. Consider using a more specific term if either of these parameters was determined in the experiments.
+is_a: OMP:0005192 ! altered anaerobic population growth
+created_by: siegele
+creation_date: 2018-09-05T16:39:27Z
+
+[Term]
+id: OMP:0007927
+name: decreased anaerobic population growth
+def: "An altered anaerobic population growth phenotype where growth of a microbial population in the absence of O2 is decreased relative to a designated control." [OMP:das]
+comment: Altered population growth may result from changes in population growth rate or population growth yield. Consider using a more specific term if either of these parameters was determined in the experiments.
+is_a: OMP:0005192 ! altered anaerobic population growth
+created_by: siegele
+creation_date: 2018-09-05T16:39:27Z
+
+[Term]
+id: OMP:0007928
+name: commonly used descriptors
+def: "Microbial taxa are commonly described in terms of phenotypic characteristics that are shared by all or almost all members of a particular taxonomic group." [OMP:das]
+is_a: OMP:0000000 ! microbial phenotype
+created_by: siegele
+creation_date: 2018-09-06T17:18:16Z
+
+[Term]
+id: OMP:0007929
+name: decreased microaerophilic population growth
+def: "A population growth phenotype where growth of a microbial population in a microaerophilic environment is decreased relative to a designated control." [OMP:das]
+comment: Altered population growth may result from changes in population growth rate or population growth yield. Consider using a more specific term if either of these parameters was determined in the experiments.
+is_a: OMP:0005257 ! altered microaerophilic population growth
+created_by: siegele
+creation_date: 2018-09-07T18:13:30Z
+
+[Term]
+id: OMP:0007930
+name: increased microaerophilic population growth
+def: "An altered microaerophilic population growth phenotype where growth of a microbial population in a microaerophilic environment is increased relative to a designated control." [OMP:das]
+comment: Altered population growth may result from changes in population growth rate or population growth yield. Consider using a more specific term if either of these parameters was determined in the experiments.
+is_a: OMP:0005257 ! altered microaerophilic population growth
+created_by: siegele
+creation_date: 2018-09-07T18:14:29Z
+
+[Term]
+id: OMP:0007931
+name: altered population phenotype
+def: "A microbial population phenotype where the phenotype of a microbial population is altered in some way relative to a designated control." [OMP:das]
+is_a: OMP:0007006 ! population phenotype
+created_by: siegele
+creation_date: 2018-09-15T01:45:33Z
 
 [Term]
 id: OMP:0008000
