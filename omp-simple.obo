@@ -1,8 +1,8 @@
 format-version: 1.2
-data-version: releases/2018-11-02
-date: 21:09:2018 14:36
+data-version: releases/2018-12-07
+date: 04:11:2018 17:19
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -15964,6 +15964,57 @@ def: "A microbial population phenotype where the phenotype of a microbial popula
 is_a: OMP:0007006 ! population phenotype
 created_by: siegele
 creation_date: 2018-09-15T01:45:33Z
+
+[Term]
+id: OMP:0007932
+name: resistance to nutrient limitation stress
+is_a: OMP:0007568 ! resistance to stress phenotype
+created_by: siegele
+creation_date: 2018-11-04T16:55:30Z
+
+[Term]
+id: OMP:0007933
+name: presence of resistance to nutrient limitation
+is_a: OMP:0007932 ! resistance to nutrient limitation stress
+created_by: siegele
+creation_date: 2018-11-04T16:56:28Z
+
+[Term]
+id: OMP:0007934
+name: absence of resistance to nutrient limitation
+is_a: OMP:0007932 ! resistance to nutrient limitation stress
+created_by: siegele
+creation_date: 2018-11-04T16:56:28Z
+
+[Term]
+id: OMP:0007935
+name: altered resistance to nutrient limitation
+is_a: OMP:0007572 ! altered resistance to stress
+is_a: OMP:0007932 ! resistance to nutrient limitation stress
+created_by: siegele
+creation_date: 2018-11-04T16:56:28Z
+
+[Term]
+id: OMP:0007936
+name: increased resistance to nutrient limitation
+is_a: OMP:0007935 ! altered resistance to nutrient limitation
+created_by: siegele
+creation_date: 2018-11-04T16:56:35Z
+
+[Term]
+id: OMP:0007937
+name: decreased resistance to nutrient limitation
+is_a: OMP:0007935 ! altered resistance to nutrient limitation
+created_by: siegele
+creation_date: 2018-11-04T16:56:58Z
+
+[Term]
+id: OMP:0007938
+name: abolished resistance to nutrient limitation
+is_a: OMP:0007934 ! absence of resistance to nutrient limitation
+is_a: OMP:0007937 ! decreased resistance to nutrient limitation
+created_by: siegele
+creation_date: 2018-11-04T16:57:25Z
 
 [Term]
 id: OMP:0008000
