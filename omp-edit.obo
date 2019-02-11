@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 04:11:2018 17:19
+date: 01:02:2019 17:52
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -3696,7 +3696,7 @@ creation_date: 2011-07-21T04:07:44Z
 [Term]
 id: OMP:0000290
 name: genetic material phenotype
-def: "A microbial phenotype dealing with the various aspects of the molecular carrier of an organism's primary genetic information." [ISBN:9780198529170, OMP:WAM]
+def: "A microbial phenotype dealing with the various aspects of the nucleic acid carrier of a microbe's primary genetic information." [ISBN:9780198529170, OMP:WAM]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 synonym: "double stranded DNA" NARROW [ISBN:9780198529170]
@@ -11633,7 +11633,7 @@ creation_date: 2015-07-31T13:26:07Z
 
 [Term]
 id: OMP:0007259
-name: cell viability phenotype
+name: microbial cell viability phenotype
 def: "A cell phenotype related to the ability of a microbial cell to survive and go on to grow and reproduce under the specified conditions." [FYPO:0000004, OMP:DAS]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
@@ -11644,12 +11644,12 @@ creation_date: 2015-07-31T13:47:33Z
 
 [Term]
 id: OMP:0007260
-name: altered cell viability
-def: "A cell viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is altered relative to a designated control." [OMP:DAS]
+name: altered microbial cell viability
+def: "A cell viability phenotype where under the specified conditions the viability of a microbial cell is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0007085 ! altered microbial phenotype
-is_a: OMP:0007259 ! cell viability phenotype
+is_a: OMP:0007259 ! microbial cell viability phenotype
 is_a: OMP:0007637 ! altered cellular physical quality phenotype
-intersection_of: OMP:0007259 ! cell viability phenotype
+intersection_of: OMP:0007259 ! microbial cell viability phenotype
 intersection_of: has_quality OMP:0007189 ! altered_relative_to
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
@@ -11658,7 +11658,7 @@ creation_date: 2015-07-31T14:00:54Z
 id: OMP:0007261
 name: decreased cell viability
 def: "An altered cell viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007260 ! altered cell viability
+is_a: OMP:0007260 ! altered microbial cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
@@ -11666,14 +11666,14 @@ creation_date: 2015-07-31T14:00:54Z
 id: OMP:0007262
 name: increased cell viability
 def: "An altered viability phenotype where under the specified conditions the viability of a microbe, cell, or cells is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0007260 ! altered cell viability
+is_a: OMP:0007260 ! altered microbial cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
 [Term]
 id: OMP:0007263
 name: viable but nonculturable cell
-is_a: OMP:0007260 ! altered cell viability
+is_a: OMP:0007260 ! altered microbial cell viability
 created_by: siegele
 creation_date: 2015-07-31T14:00:54Z
 
@@ -12819,19 +12819,19 @@ creation_date: 2016-06-29T19:15:29Z
 
 [Term]
 id: OMP:0007392
-name: viable cell
+name: presence of microbial cell viability
 def: "A cell viability phenotype where a microbial cell is able to survive and go on to grow and reproduce under the specified conditions." [FYPO:0000124, OMP:DAS]
-is_a: OMP:0007259 ! cell viability phenotype
+is_a: OMP:0007259 ! microbial cell viability phenotype
 created_by: siegele
 creation_date: 2016-07-01T22:15:10Z
 
 [Term]
 id: OMP:0007393
-name: nonviable cell
+name: absence of microbial cell viability
 def: "A cell viability phenotype where a microbial cell is not viable under the specified conditions." [FYPO:0000049, OMP:DAS]
 synonym: "inviable" RELATED [APO:0000112]
 synonym: "inviable cell" NARROW [FYPO:0000049]
-is_a: OMP:0007259 ! cell viability phenotype
+is_a: OMP:0007259 ! microbial cell viability phenotype
 created_by: siegele
 creation_date: 2016-07-01T22:15:10Z
 
@@ -15650,14 +15650,15 @@ id: OMP:0007716
 name: viable vegetative cell
 def: "A cell viability phenotype observed in the vegetative growth phase of the life cycle where a microbial cell is able to survive and go on to grow and reproduce in the specified conditions." [FYPO:0001491, OMP:das]
 synonym: "viable vegetative cell" EXACT [FYPO:0001491]
-is_a: OMP:0007392 ! viable cell
+is_a: OMP:0007392 ! presence of microbial cell viability
 created_by: siegele
 creation_date: 2017-12-19T17:54:52Z
 
 [Term]
 id: OMP:0007717
-name: decreased vegetative cell viability
-def: "An altered cell viability phenotype observed in the vegetative phase of the growth cycle where the viability of a microbial cell is decreased relative to a designated control." [OMP:das]
+name: decreased viability of vegetative microbial cell 
+def: "An altered microbial cell viability phenotype observed in the vegetative phase of the growth cycle where the viability of a vegetative microbial cell is decreased relative to a designated control." [OMP:das]
+comment: Note that if you have done an experiment that assays the viability of a population of microbial cells, such as looking at colony growth or growth in liquid culture, you should also annotate to 'inviable cell population' (OMP:xx) or one of its descendants.
 is_a: OMP:0007261 ! decreased cell viability
 is_a: OMP:0007724 ! altered vegetative cell viability
 created_by: siegele
@@ -15665,9 +15666,9 @@ creation_date: 2017-12-19T17:56:29Z
 
 [Term]
 id: OMP:0007718
-name: abolished viability of vegetative cell
-def: "An altered cell viability phenotype where the viability of cells in the vegetative growth phase of the life cycle is abolished." [OMP:das]
-is_a: OMP:0007717 ! decreased vegetative cell viability
+name: abolished viability of vegetative microbial cell
+def: "An altered microbial cell viability phenotype where the viability of cells in the vegetative growth phase of the life cycle is abolished." [OMP:das]
+is_a: OMP:0007717 ! decreased viability of vegetative microbial cell 
 created_by: siegele
 creation_date: 2017-12-19T17:58:40Z
 
@@ -15718,15 +15719,15 @@ creation_date: 2017-12-20T16:46:25Z
 id: OMP:0007724
 name: altered vegetative cell viability
 def: "A cell viability phenotype observed in the vegetative phase of the growth cycle where the ability of a microbial cell to survive, germinate, and go on to grow and reproduce in the specified conditions is altered relative to a designated control." [OMP:das]
-is_a: OMP:0007260 ! altered cell viability
+is_a: OMP:0007260 ! altered microbial cell viability
 created_by: siegele
 creation_date: 2017-12-20T16:59:28Z
 
 [Term]
 id: OMP:0007725
 name: nonviable after spore germination
-def: "An vegetative cell viability phenotype in which a microbial spore germinates but fails to produce dividing cells that can survive and go on to grow and reproduce under the conditions specified." [FYPO:0000316, OMP:das]
-is_a: OMP:0007780 ! nonviable vegetative cell
+def: "A vegetative cell viability phenotype in which a microbial spore germinates but fails to produce dividing cells that can survive and go on to grow and reproduce under the conditions specified." [FYPO:0000316, OMP:das]
+is_a: OMP:0007780 ! absence of microbial vegetative cell viability
 created_by: siegele
 creation_date: 2017-12-20T16:59:57Z
 
@@ -16202,9 +16203,9 @@ creation_date: 2018-04-28T16:25:49Z
 
 [Term]
 id: OMP:0007780
-name: nonviable vegetative cell
-def: "A cell phenotype in which a cell in the vegetative growth phase of the life cycle is nonviable." [FYPO:0001489, OMP:das]
-is_a: OMP:0007393 ! nonviable cell
+name: absence of microbial vegetative cell viability
+def: "A cell phenotype in which a microbial cell in the vegetative growth phase of the life cycle is nonviable in the specified conditions." [FYPO:0001489, OMP:das]
+is_a: OMP:0007393 ! absence of microbial cell viability
 created_by: siegele
 creation_date: 2018-06-08T17:22:34Z
 
@@ -16213,7 +16214,7 @@ id: OMP:0007781
 name: septation following abnormal chromosome segregation during vegetative growth
 def: "A nonviable cell phenotype observed in the vegetative growth phase of the life cycle in which a cell undergoes septation despite abnormal chromosome segregation and gives rise to nonviable daughter cells." [FYPO:0000323, OMP:das]
 synonym: "septation following abnormal mitotic chromosome segregation" NARROW [FYPO:0000323]
-is_a: OMP:0007780 ! nonviable vegetative cell
+is_a: OMP:0007780 ! absence of microbial vegetative cell viability
 created_by: siegele
 creation_date: 2018-06-08T17:31:26Z
 
@@ -16681,7 +16682,7 @@ name: spore viability phenotype
 def: "A cell viability phenotype related to the ability of a microbial spore to survive, germinate, and go on to grow and reproduce under the specified conditions." [OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
-is_a: OMP:0007259 ! cell viability phenotype
+is_a: OMP:0007259 ! microbial cell viability phenotype
 created_by: siegele
 creation_date: 2018-06-25T10:35:25Z
 
@@ -16689,7 +16690,7 @@ creation_date: 2018-06-25T10:35:25Z
 id: OMP:0007836
 name: viable spore
 def: "A cell viability phenotype in which a microbial spore is able to survive and go on to grow and reproduce under the specified conditions." [OMP:das]
-is_a: OMP:0007392 ! viable cell
+is_a: OMP:0007392 ! presence of microbial cell viability
 is_a: OMP:0007835 ! spore viability phenotype
 created_by: siegele
 creation_date: 2018-06-25T10:37:49Z
@@ -16706,7 +16707,7 @@ creation_date: 2018-06-25T10:39:27Z
 id: OMP:0007838
 name: altered spore viability
 def: "A spore viability phenotype where the ability of a microbial spore to survive, germinate, and go on to grow and reproduce is altered relative to a designated control." [OMP:das]
-is_a: OMP:0007260 ! altered cell viability
+is_a: OMP:0007260 ! altered microbial cell viability
 is_a: OMP:0007835 ! spore viability phenotype
 created_by: siegele
 creation_date: 2018-06-25T16:17:02Z
@@ -16729,7 +16730,8 @@ creation_date: 2018-06-25T16:18:49Z
 
 [Term]
 id: OMP:0007841
-name: increased vegetative cell viability
+name: increased viability of vegetative microbial cell
+def: "An altered microbial cell viability phenotype observed in the vegetative phase of the growth cycle where the viability of a vegetative microbial cell is increased relative to a designated control." [OMP:das]
 is_a: OMP:0007262 ! increased cell viability
 is_a: OMP:0007724 ! altered vegetative cell viability
 created_by: siegele
@@ -17514,6 +17516,30 @@ is_a: OMP:0007934 ! absence of resistance to nutrient limitation
 is_a: OMP:0007937 ! decreased resistance to nutrient limitation
 created_by: siegele
 creation_date: 2018-11-04T16:57:25Z
+
+[Term]
+id: OMP:0007939
+name: increased ploidy in a vegetative microbial cell
+def: "A cell phenotype observed in the vegetative growth phase of the life cycle in which the number of sets of chromosomes in a microbial cell, i.e. ploidy, increases relative to the designated control." [OMP:das]
+is_a: OMP:0007746 ! altered vegetative cell phenotype
+created_by: siegele
+creation_date: 2019-02-01T15:05:44Z
+
+[Term]
+id: OMP:0007940
+name: increased spontaneous diploidization in a vegetative microbial cell
+def: "An altered cell phenotype observed in the vegetative phase of the life cycle in which haploid microbial cells spontaneously form cells with diploid DNA content at a higher frequency than the designated control." [FYPO:0000252, OMP:DAS]
+synonym: "increased spontaneous diploidization" NARROW [FYPO:0000252]
+is_a: OMP:0007939 ! increased ploidy in a vegetative microbial cell
+created_by: siegele
+creation_date: 2019-02-01T15:11:39Z
+
+[Term]
+id: OMP:0007941
+name: altered viability after microbial spore germination
+is_a: OMP:0007724 ! altered vegetative cell viability
+created_by: siegele
+creation_date: 2019-02-01T17:20:01Z
 
 [Term]
 id: OMP:0008000
