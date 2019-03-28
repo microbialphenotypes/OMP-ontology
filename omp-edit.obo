@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 01:02:2019 17:52
-saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+date: 27:03:2019 19:40
+saved-by: dsiegele
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -13339,29 +13339,30 @@ creation_date: 2016-07-27T22:40:08Z
 
 [Term]
 id: OMP:0007452
-name: presence of survival in macrophages
+name: presence of survival in macrophage
 def: "A presence of resistance to killing by host that describes the ability of a microbe to survive ingestion by host macrophages." [OMP:DAS]
-is_a: OMP:0005139 ! presence of  resistance to killing by host
+is_a: OMP:0007455 ! survival in macrophage phenotype
 created_by: dsiegele
 creation_date: 2016-08-08T14:58:53Z
 
 [Term]
 id: OMP:0007453
-name: absence of survival in macrophages
-is_a: OMP:0005140 ! absence of resistance to killing by host
+name: absence of survival in macrophage
+is_a: OMP:0007455 ! survival in macrophage phenotype
 created_by: dsiegele
 creation_date: 2016-08-08T15:15:44Z
 
 [Term]
 id: OMP:0007454
-name: altered survival in macrophages
-is_a: OMP:0005141 ! altered resistance to killing by host
+name: altered survival in macrophage
+is_a: OMP:0007403 ! altered microbe-host interaction
+is_a: OMP:0007455 ! survival in macrophage phenotype
 created_by: dsiegele
 creation_date: 2016-08-08T15:16:09Z
 
 [Term]
 id: OMP:0007455
-name: survival in macrophages phenotype
+name: survival in macrophage phenotype
 is_a: OMP:0000197 ! microbe-host interaction phenotype
 created_by: dsiegele
 creation_date: 2016-08-08T15:17:42Z
@@ -15656,7 +15657,7 @@ creation_date: 2017-12-19T17:54:52Z
 
 [Term]
 id: OMP:0007717
-name: decreased viability of vegetative microbial cell 
+name: decreased viability of vegetative microbial cell
 def: "An altered microbial cell viability phenotype observed in the vegetative phase of the growth cycle where the viability of a vegetative microbial cell is decreased relative to a designated control." [OMP:das]
 comment: Note that if you have done an experiment that assays the viability of a population of microbial cells, such as looking at colony growth or growth in liquid culture, you should also annotate to 'inviable cell population' (OMP:xx) or one of its descendants.
 is_a: OMP:0007261 ! decreased cell viability
@@ -15668,7 +15669,7 @@ creation_date: 2017-12-19T17:56:29Z
 id: OMP:0007718
 name: abolished viability of vegetative microbial cell
 def: "An altered microbial cell viability phenotype where the viability of cells in the vegetative growth phase of the life cycle is abolished." [OMP:das]
-is_a: OMP:0007717 ! decreased viability of vegetative microbial cell 
+is_a: OMP:0007717 ! decreased viability of vegetative microbial cell
 created_by: siegele
 creation_date: 2017-12-19T17:58:40Z
 
@@ -17540,6 +17541,28 @@ name: altered viability after microbial spore germination
 is_a: OMP:0007724 ! altered vegetative cell viability
 created_by: siegele
 creation_date: 2019-02-01T17:20:01Z
+
+[Term]
+id: OMP:0007942
+name: increased survival in macrophage
+is_a: OMP:0007454 ! altered survival in macrophage
+created_by: dsiegele
+creation_date: 2019-03-27T14:44:53Z
+
+[Term]
+id: OMP:0007943
+name: decreased survival in macrophage
+is_a: OMP:0007454 ! altered survival in macrophage
+created_by: dsiegele
+creation_date: 2019-03-27T14:45:12Z
+
+[Term]
+id: OMP:0007944
+name: abolished survival in macrophage
+is_a: OMP:0007453 ! absence of survival in macrophage
+is_a: OMP:0007943 ! decreased survival in macrophage
+created_by: dsiegele
+creation_date: 2019-03-27T14:45:29Z
 
 [Term]
 id: OMP:0008000
