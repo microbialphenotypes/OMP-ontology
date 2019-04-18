@@ -7621,7 +7621,7 @@ creation_date: 2017-11-03T21:45:08Z
 [Term]
 id: OMP:0005396
 name: isometric capsid
-def: "A capsid morphology phenotype where the capsid is shaped isometrically which is a shape that is characterized by equality of measure." [XX:<new dbxref>]
+def: "A capsid morphology phenotype where the capsid is shaped isometrically which is a shape that is characterized by equality of measure." []
 is_a: OMP:0005394 ! polyhedral shape
 created_by: MiLaptop
 creation_date: 2017-11-03T21:52:04Z
@@ -10999,7 +10999,7 @@ creation_date: 2014-09-29T14:08:46Z
 [Term]
 id: OMP:0007187
 name: quality (Interim)
-def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities." [XX:<new dbxref>]
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities." []
 is_obsolete: true
 created_by: siegele
 creation_date: 2014-10-03T17:22:57Z
