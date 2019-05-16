@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:03:2019 19:40
-saved-by: dsiegele
-auto-generated-by: OBO-Edit 2.3.1
+date: 16:05:2019 16:00
+saved-by: siegele
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -2148,7 +2148,6 @@ creation_date: 2011-02-02T03:19:47Z
 id: OMP:0000087
 name: facultative anaerobe
 def: "A microbial phenotype that describes a microorganism that does not require oxygen gas (O2) for growth but will utilize O2 in metabolic reactions when it is present." [ISBN:9780073402406, OMP:WAM]
-synonym: "<new synonym>" RELATED []
 synonym: "facultative aerobe" EXACT [ISBN:978-0134261928]
 is_a: OMP:0007928 ! commonly used descriptors
 created_by: mchibucos
@@ -3656,7 +3655,6 @@ id: OMP:0000280
 name: increased cell length
 def: "An altered cell morphology in which microbial cells are longer than a designated control; i.e. the maximum distance between the cell ends is greater than a designated control." [OMP:DAS]
 comment: The mukB mutant appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
-synonym: "<new synonym>" RELATED []
 xref: FYPO:0000017 "elongated cell"
 is_a: OMP:0000041 ! increased cell size
 created_by: mchibucos
@@ -4688,7 +4686,6 @@ name: transposable element transposition phenotype
 def: "A genetic material phenotype dealing with DNA sequences that change positions within the genome." [ISBN:9780198529170, OMP:WAM]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
-synonym: "<new synonym>" RELATED []
 xref: APO:0000047 "transposable element transposition"
 xref: GO:0032196 "transposition"
 is_a: OMP:0000290 ! genetic material phenotype
@@ -8316,8 +8313,7 @@ creation_date: 2013-10-24T19:41:11Z
 id: OMP:0006068
 name: increased resistance to chloramphenicol
 def: "A chloramphenicol compound resistance phenotype where resistance to a chloramphenicol compound is increased relative to a designated control." [OMP:JCH]
-synonym: "<new synonym>" RELATED []
-synonym: "decreased sensitivity to chloramphenicol" RELATED []
+synonym: "decreased sensitivity to chloramphenicol" EXACT []
 is_a: OMP:0006025 ! altered chloramphenicol resistance
 created_by: jonathanherrera
 creation_date: 2013-10-24T19:41:11Z
@@ -16484,7 +16480,7 @@ creation_date: 2018-06-20T14:55:08Z
 id: OMP:0007813
 name: presence of cellular pigment accumulation during vegetative growth
 def: "A cellular process phenotype observed during the vegetative growth phase of the life cycle where a cell or cells of a microorganism accumulate pigment." [OMP:das]
-synonym: "<new synonym>" NARROW [FYPO:0000740]
+synonym: "normal cellular pigment accumulation" NARROW [FYPO:0000740]
 is_a: OMP:0007812 ! presence of cellular pigment accumulation
 created_by: dsiegele
 creation_date: 2018-06-20T14:58:28Z
@@ -16507,9 +16503,9 @@ creation_date: 2018-06-20T15:11:51Z
 
 [Term]
 id: OMP:0007816
-name: increased cellular pigment accumulation during vegetative growth
+name: increased cellular pigment accumulation
 def: "An altered cellular pigment accumulation phenotype observed in the vegetative growth phase of the life cycle where the rate, extent, or timing of the process of pigment accumulation by a microbial cell or cells is increased relative to a designated control." [OMP:das]
-synonym: "<new synonym>" NARROW [FYPO:0000741]
+synonym: "increased cellular pigment accumulation" EXACT [FYPO:0000741]
 is_a: OMP:0007815 ! increased cellular pigment accumulation
 created_by: dsiegele
 creation_date: 2018-06-20T15:15:14Z
