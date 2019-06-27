@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 16:05:2019 16:00
+date: 27:06:2019 00:32
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -8231,7 +8231,7 @@ creation_date: 2013-10-22T19:24:20Z
 [Term]
 id: OMP:0006060
 name: resistant to aminoglycoside
-def: "An aminoglycoside resistance phenotype where an organism or cell is resistant to one or more aminoglycoside compounds." [OMP:JCH]
+def: "An aminoglycoside resistance phenotype where microbe is resistant to one or more aminoglycoside compounds." [OMP:JCH]
 is_a: OMP:0006056 ! aminoglycoside antimicrobial agent resistance phenotype
 created_by: jonathanherrera
 creation_date: 2013-10-22T19:24:20Z
@@ -17215,6 +17215,7 @@ creation_date: 2018-08-23T15:36:18Z
 [Term]
 id: OMP:0007899
 name: resistant to bile acids
+def: "A bile acids resistance phenotype where a microbe is resistant to one or more aminoglycoside compounds." [OMP:das]
 is_a: OMP:0007898 ! bile acids resistance phenotype
 created_by: siegele
 creation_date: 2018-08-23T16:11:39Z
@@ -17222,6 +17223,8 @@ creation_date: 2018-08-23T16:11:39Z
 [Term]
 id: OMP:0007900
 name: not resistant to bile acids
+def: "A bile acids resistance phenotype where a microbe isn't resistant to one or more aminoglycoside compounds." [OMP:das]
+synonym: "sensitive to bile acids" EXACT []
 is_a: OMP:0007898 ! bile acids resistance phenotype
 created_by: siegele
 creation_date: 2018-08-23T16:11:39Z
@@ -17229,6 +17232,8 @@ creation_date: 2018-08-23T16:11:39Z
 [Term]
 id: OMP:0007901
 name: altered resistance to bile acids
+def: "A bile acid resistance phenotype where resistance to a bile acid is altered relative to a designated control." [OMP:das]
+synonym: "altered sensitivity to bile acids" EXACT []
 is_a: OMP:0007248 ! altered resistance to chemical
 is_a: OMP:0007898 ! bile acids resistance phenotype
 created_by: siegele
@@ -17237,6 +17242,8 @@ creation_date: 2018-08-23T16:11:39Z
 [Term]
 id: OMP:0007902
 name: increased resistance to bile acids
+def: "An altered resistance to bile acids phenotype where resistance of a microbe to bile acids is increased relative to a designated control." [OMP:das]
+synonym: "decreased sensitivity to bile acids" EXACT []
 is_a: OMP:0007901 ! altered resistance to bile acids
 created_by: siegele
 creation_date: 2018-08-23T16:11:39Z
@@ -17244,6 +17251,8 @@ creation_date: 2018-08-23T16:11:39Z
 [Term]
 id: OMP:0007903
 name: decreased resistance to bile acids
+def: "An altered resistance to bile acids phenotype where resistance of a microbe to bile acids is decreased relative to a designated control." [OMP:das]
+synonym: "increased sensitivity to bile acids" NARROW []
 is_a: OMP:0007901 ! altered resistance to bile acids
 created_by: siegele
 creation_date: 2018-08-23T16:11:39Z
@@ -17251,6 +17260,7 @@ creation_date: 2018-08-23T16:11:39Z
 [Term]
 id: OMP:0007904
 name: abolished resistance to bile acids
+def: "A decreased resistance to bile acids phenotype where resistance of a microbe to bile acids is abolished." [OMP:das]
 is_a: OMP:0007900 ! not resistant to bile acids
 is_a: OMP:0007903 ! decreased resistance to bile acids
 created_by: siegele
