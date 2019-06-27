@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:06:2019 00:32
+date: 27:06:2019 00:53
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -12651,7 +12651,7 @@ creation_date: 2016-06-22T16:41:33Z
 [Term]
 id: OMP:0007373
 name: resistant to alkylating agent
-def: "An alkylating agent resistance phenotype where growth and reproduction of a microbe is resistant to an alkylating agent." [OMP:DAS]
+def: "An alkylating agent resistance phenotype where growth and reproduction of a microbe is resistant to an alkylating agent." [OMP:das]
 is_a: OMP:0007372 ! alkylating agent resistance phenotype
 created_by: dsiegele
 creation_date: 2016-06-23T15:27:23Z
@@ -17098,6 +17098,7 @@ creation_date: 2018-08-17T19:14:42Z
 [Term]
 id: OMP:0007884
 name: resistant to a metal
+def: "A metal resistance phenotype where growth and reproduction of a microbe occurs in the presence of a metal." [OMP:das]
 is_a: OMP:0007247 ! resistant to a chemical
 is_a: OMP:0007890 ! metal resistance phenotype
 created_by: dsiegele
@@ -17106,6 +17107,8 @@ creation_date: 2018-08-22T15:48:22Z
 [Term]
 id: OMP:0007885
 name: not resistant to a metal
+def: "A metal resistance phenotype where growth and reproduction of a microbe  doesn't occur in the presence of a metal." [OMP:das]
+synonym: "sensitive to a metal" EXACT []
 is_a: OMP:0007246 ! not resistant to a chemical
 is_a: OMP:0007890 ! metal resistance phenotype
 created_by: dsiegele
@@ -17114,6 +17117,8 @@ creation_date: 2018-08-22T15:53:56Z
 [Term]
 id: OMP:0007886
 name: decreased resistance to a metal
+def: "A metal resistance phenotype where growth and reproduction of a microbe in the presence of a metal is decreased relative to a designated control." [OMP:das]
+synonym: "increased sensitivity to a metal" EXACT []
 is_a: OMP:0007889 ! altered resistance to a metal
 created_by: dsiegele
 creation_date: 2018-08-22T15:54:29Z
@@ -17121,6 +17126,7 @@ creation_date: 2018-08-22T15:54:29Z
 [Term]
 id: OMP:0007887
 name: abolished resistance to a metal
+def: "A decreased metal resistance phenotype where growth and reproduction of a microbe in the presence of a metal is abolished." [OMP:das]
 is_a: OMP:0007885 ! not resistant to a metal
 is_a: OMP:0007886 ! decreased resistance to a metal
 created_by: dsiegele
@@ -17129,6 +17135,8 @@ creation_date: 2018-08-22T15:54:56Z
 [Term]
 id: OMP:0007888
 name: increased resistance to a metal
+def: "A metal resistance phenotype where growth and reproduction of a microbe in the presence of a metal is increased relative to a designated control." [OMP:das]
+synonym: "decreased sensitivity to a metal" EXACT []
 is_a: OMP:0007889 ! altered resistance to a metal
 created_by: dsiegele
 creation_date: 2018-08-22T15:55:19Z
@@ -17136,6 +17144,8 @@ creation_date: 2018-08-22T15:55:19Z
 [Term]
 id: OMP:0007889
 name: altered resistance to a metal
+def: "A metal resistance phenotype where growth and reproduction of a microbe in the presence of a metal is altered relative to a designated control." [OMP:das]
+synonym: "altered sensitivity to a metal" EXACT []
 is_a: OMP:0007248 ! altered resistance to chemical
 is_a: OMP:0007890 ! metal resistance phenotype
 created_by: dsiegele
@@ -17144,7 +17154,9 @@ creation_date: 2018-08-22T15:56:07Z
 [Term]
 id: OMP:0007890
 name: metal resistance phenotype
+def: "A chemical resistance phenotype relating to the resistance or sensitivity of growth and reproduction of a microbial population in the presence of a metal." [CHEBI:33521, OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+synonym: "metal sensitivity phenotype" EXACT []
 is_a: OMP:0007195 ! chemical resistance phenotype
 created_by: siegele
 creation_date: 2018-08-22T18:04:54Z
@@ -17204,7 +17216,7 @@ creation_date: 2018-08-22T18:13:58Z
 [Term]
 id: OMP:0007898
 name: bile acids resistance phenotype
-def: "A chemical resistance phenotype relating to the resistance or sensitivity of a microbial population to a bile acid." [CHEBI:138366, OMP:das]
+def: "A chemical resistance phenotype relating to the resistance or sensitivity of growth and reproduction of a microbial population to bile acids." [CHEBI:138366, OMP:das]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 synonym: "bile acid sensitivity phenotype" EXACT []
 synonym: "bile salt resistance phenotype" NARROW []
@@ -17215,7 +17227,7 @@ creation_date: 2018-08-23T15:36:18Z
 [Term]
 id: OMP:0007899
 name: resistant to bile acids
-def: "A bile acids resistance phenotype where a microbe is resistant to one or more aminoglycoside compounds." [OMP:das]
+def: "A bile acids resistance phenotype where growth and reproduction of a microbe occurs in the presence of bile acids." [OMP:das]
 is_a: OMP:0007898 ! bile acids resistance phenotype
 created_by: siegele
 creation_date: 2018-08-23T16:11:39Z
@@ -17223,7 +17235,7 @@ creation_date: 2018-08-23T16:11:39Z
 [Term]
 id: OMP:0007900
 name: not resistant to bile acids
-def: "A bile acids resistance phenotype where a microbe isn't resistant to one or more aminoglycoside compounds." [OMP:das]
+def: "A bile acids resistance phenotype where growth and reproduction of a microbe doesn't occur in the presence of bile acids." [OMP:das]
 synonym: "sensitive to bile acids" EXACT []
 is_a: OMP:0007898 ! bile acids resistance phenotype
 created_by: siegele
@@ -17242,7 +17254,7 @@ creation_date: 2018-08-23T16:11:39Z
 [Term]
 id: OMP:0007902
 name: increased resistance to bile acids
-def: "An altered resistance to bile acids phenotype where resistance of a microbe to bile acids is increased relative to a designated control." [OMP:das]
+def: "An altered resistance to bile acids phenotype where growth and reproduction of a microbe in the presence of bile acids is increased relative to a designated control." [OMP:das]
 synonym: "decreased sensitivity to bile acids" EXACT []
 is_a: OMP:0007901 ! altered resistance to bile acids
 created_by: siegele
@@ -17251,7 +17263,7 @@ creation_date: 2018-08-23T16:11:39Z
 [Term]
 id: OMP:0007903
 name: decreased resistance to bile acids
-def: "An altered resistance to bile acids phenotype where resistance of a microbe to bile acids is decreased relative to a designated control." [OMP:das]
+def: "An altered resistance to bile acids phenotype where growth and reproduction of a microbe in the presence of bile acids is decreased relative to a designated control." [OMP:das]
 synonym: "increased sensitivity to bile acids" NARROW []
 is_a: OMP:0007901 ! altered resistance to bile acids
 created_by: siegele
@@ -17260,7 +17272,7 @@ creation_date: 2018-08-23T16:11:39Z
 [Term]
 id: OMP:0007904
 name: abolished resistance to bile acids
-def: "A decreased resistance to bile acids phenotype where resistance of a microbe to bile acids is abolished." [OMP:das]
+def: "A decreased resistance to bile acids phenotype where growth and reproduction of a microbe in the presence of bile acids is abolished." [OMP:das]
 is_a: OMP:0007900 ! not resistant to bile acids
 is_a: OMP:0007903 ! decreased resistance to bile acids
 created_by: siegele
