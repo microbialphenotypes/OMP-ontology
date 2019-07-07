@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:06:2019 00:53
+date: 06:07:2019 21:07
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -11524,7 +11524,7 @@ creation_date: 2015-07-16T00:36:34Z
 [Term]
 id: OMP:0007247
 name: resistant to a chemical
-def: "A chemical resistance phenotype where a microbe is resistant to a chemical." [OMP:DAS]
+def: "A chemical resistance phenotype where growth and reproduction of a microbe occurs in the presence of a chemical." [OMP:DAS]
 is_a: OMP:0007195 ! chemical resistance phenotype
 created_by: siegele
 creation_date: 2015-07-16T00:36:34Z
@@ -17164,6 +17164,10 @@ creation_date: 2018-08-22T18:04:54Z
 [Term]
 id: OMP:0007891
 name: surfactant resistance phenotype
+def: "A chemical resistance phenotype relating to the resistance or sensitivity of growth and reproduction of a microbial population in the presence of a surfactant. A surfactant is a substance that lowers the surface tension of the medium in which it is dissolved, and/or the interfacial tension with other phases, and, accordingly, is positively adsorbed at the liquid/vapor and/or at other interfaces." [CHEBI:35195, OMP:das]
+subset: qc_do_not_annotate
+subset: qc_do_not_manually_annotate
+synonym: "benzalkonium chloride resistance phenotype" NARROW [CHEBI:3020]
 synonym: "detergent resistance phenotype" NARROW []
 is_a: OMP:0007195 ! chemical resistance phenotype
 created_by: siegele
@@ -17172,6 +17176,8 @@ creation_date: 2018-08-22T18:12:18Z
 [Term]
 id: OMP:0007892
 name: resistant to a surfactant
+def: "A surfactant resistance phenotype where growth and reproduction of a microbe occurs in the presence of a surfactant." [OMP:das]
+synonym: "not sensitive to a surfactant" EXACT []
 is_a: OMP:0007891 ! surfactant resistance phenotype
 created_by: siegele
 creation_date: 2018-08-22T18:13:28Z
@@ -17179,6 +17185,8 @@ creation_date: 2018-08-22T18:13:28Z
 [Term]
 id: OMP:0007893
 name: not resistant to a surfactant
+def: "A surfactant resistance phenotype where growth and reproduction of a microbe doesn't occur in the presence of a surfactant." [OMP:das]
+synonym: "sensitive to a surfactant" EXACT []
 is_a: OMP:0007891 ! surfactant resistance phenotype
 created_by: siegele
 creation_date: 2018-08-22T18:13:28Z
@@ -17186,6 +17194,7 @@ creation_date: 2018-08-22T18:13:28Z
 [Term]
 id: OMP:0007894
 name: altered resistance to a surfactant
+def: "A surfactant resistance phenotype where growth and reproduction of a microbe in the presence of a surfactant is altered relative to a designated control." [OMP:das]
 is_a: OMP:0007248 ! altered resistance to chemical
 is_a: OMP:0007891 ! surfactant resistance phenotype
 created_by: siegele
@@ -17194,6 +17203,8 @@ creation_date: 2018-08-22T18:13:28Z
 [Term]
 id: OMP:0007895
 name: increased resistance to a surfactant
+def: "An altered surfactant resistance phenotype where growth and reproduction of a microbe in the presence of a surfactant is increased relative to a designated control." [OMP:das]
+synonym: "decreased sensitivity to a surfactant" EXACT []
 is_a: OMP:0007894 ! altered resistance to a surfactant
 created_by: siegele
 creation_date: 2018-08-22T18:13:58Z
@@ -17201,6 +17212,8 @@ creation_date: 2018-08-22T18:13:58Z
 [Term]
 id: OMP:0007896
 name: decreased resistance to a surfactant
+def: "An altered surfactant resistance phenotype where growth and reproduction of a microbe in the presence of a surfactant is decreased relative to a designated control." [OMP:das]
+synonym: "increased sensitivity to a surfactant" EXACT []
 is_a: OMP:0007894 ! altered resistance to a surfactant
 created_by: siegele
 creation_date: 2018-08-22T18:13:58Z
@@ -17208,6 +17221,7 @@ creation_date: 2018-08-22T18:13:58Z
 [Term]
 id: OMP:0007897
 name: abolished resistance to a surfactant
+def: "A decreased surfactant resistance phenotype where growth and reproduction of a microbe in the presence of a surfactant is abolished." [OMP:das]
 is_a: OMP:0007893 ! not resistant to a surfactant
 is_a: OMP:0007896 ! decreased resistance to a surfactant
 created_by: siegele
