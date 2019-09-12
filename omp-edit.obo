@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 06:07:2019 21:07
+date: 12:09:2019 10:50
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1633,7 +1633,7 @@ creation_date: 2011-04-26T03:26:26Z
 [Term]
 id: OMP:0000028
 name: decreased number of pili
-def: "A presence of pilus phenotype where a cell has fewer pili relative to a designated control." [OMP:MCC]
+def: "A presence of pilus phenotype where a microorganism has fewer pili per cell relative to a designated control." [OMP:MCC]
 synonym: "decreased fimbriae formation" EXACT []
 is_a: OMP:0006010 ! altered pilus phenotype
 created_by: mchibucos
@@ -1676,7 +1676,7 @@ creation_date: 2011-04-26T03:44:01Z
 [Term]
 id: OMP:0000034
 name: presence of pilus
-def: "A pilus phenotype where an organism does possess a pilus in one or more growth conditions." [OMP:MCC]
+def: "A pilus phenotype where a microorganism produces a pilus or pili in one or more growth conditions." [OMP:MCC]
 comment: Fimbria (plural, fimbriae) is a common synonym for pilus (plural, pili).
 synonym: "fimbria present" EXACT []
 is_a: OMP:0000084 ! pilus morphology phenotype
@@ -2114,7 +2114,7 @@ creation_date: 2011-02-02T03:47:44Z
 [Term]
 id: OMP:0000084
 name: pilus morphology phenotype
-def: "A cell projection phenotype where the structure in question is a proteinaceous hair-like appendage on the surface of a microbial cell." [ISBN:9780073402406, OMP:MCC]
+def: "A cell projection phenotype morphology where the structure in question is a proteinaceous hair-like appendage on the surface of a microbial cell." [ISBN:9780073402406, OMP:MCC]
 synonym: "fimbria phenotype" EXACT [GO:0009289]
 is_a: OMP:0000083 ! cell projection morphology phenotype
 created_by: adrienne
@@ -4230,8 +4230,8 @@ creation_date: 2013-09-04T13:40:27Z
 
 [Term]
 id: OMP:0005008
-name: pH effects on population growth phenotype
-def: "A population growth range phenotype relating to how growth of a microbial population is affected by the pH of the environment." [OMP:WAM]
+name: pH effect on population growth phenotype
+def: "A population growth phenotype relating to how the rate and/or extent of growth of a microbial population is affected by the pH of the environment." [OMP:WAM]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_annotate
 subset: qc_do_not_manually_annotate
@@ -4243,7 +4243,7 @@ creation_date: 2013-09-04T13:57:28Z
 id: OMP:0005009
 name: acidophile
 def: "A pH growth range phenotype where optimum growth occurs between pH 0 and 5.5." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005008 ! pH effects on population growth phenotype
+is_a: OMP:0005008 ! pH effect on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:18:28Z
 
@@ -4251,7 +4251,7 @@ creation_date: 2013-09-04T16:18:28Z
 id: OMP:0005010
 name: neutrophile
 def: "A pH growth range phenotype where optimum growth occurs between pH 5.5 and 8.0." [ISBN:780073402406, OMP:WAM]
-is_a: OMP:0005008 ! pH effects on population growth phenotype
+is_a: OMP:0005008 ! pH effect on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:21:50Z
 
@@ -4259,7 +4259,7 @@ creation_date: 2013-09-04T16:21:50Z
 id: OMP:0005011
 name: alkaliphile
 def: "A pH growth range phenotype where optimum growth of occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
-is_a: OMP:0005008 ! pH effects on population growth phenotype
+is_a: OMP:0005008 ! pH effect on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:24:24Z
 
@@ -8727,7 +8727,7 @@ creation_date: 2014-07-25T12:50:04Z
 [Term]
 id: OMP:0006116
 name: abolished population growth at acidic pH
-def: "A decreased growth at acidic pH phenotype where the ability to grow at an acidic pH is abolished." [OMP:DAS]
+def: "An altered population growth phenotype where growth of a microbial population at acidic pH (< pH 7) is abolished." [OMP:DAS]
 is_a: OMP:0007008 ! decreased population growth at acidic pH
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:58:01Z
@@ -8735,7 +8735,7 @@ creation_date: 2014-07-25T12:58:01Z
 [Term]
 id: OMP:0006117
 name: abolished growth at alkaline pH
-def: "A decreased growth at alkaline pH phenotype where the ability to grow at alkaline pH is abolished." [OMP:JCH]
+def: "An altered population growth phenotype where growth of a microbial population at alkaline pH (> pH 7) is abolished." [OMP:JCH]
 is_a: OMP:0007010 ! decreased population growth at alkaline pH
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:02:17Z
@@ -8760,7 +8760,7 @@ creation_date: 2014-07-25T13:17:12Z
 [Term]
 id: OMP:0006120
 name: abolished heterocyst formation
-def: "A decreased heterocyst formation phenotype where the ability to form heterocysts is abolished." [OMP:JCH]
+def: "A decreased heterocyst formation phenotype where the ability to form a heterocyst is abolished." [OMP:JCH]
 is_a: OMP:0000011 ! absence of heterocysts
 is_a: OMP:0000015 ! decreased heterocyst formation
 created_by: jonathanherrera
@@ -9367,7 +9367,7 @@ creation_date: 2014-07-31T16:11:22Z
 [Term]
 id: OMP:0007008
 name: decreased population growth at acidic pH
-def: "An altered pH growth range phenotype where the ability to grow at some pH that is lower than pH 7 is decreased relative to a designated control." [OMP:DAS]
+def: "An altered population growth phenotype where the rate and/or extent of growth of a microbial population at an acidic pH (<pH 7) is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:11:01Z
@@ -9375,7 +9375,7 @@ creation_date: 2013-09-11T17:11:01Z
 [Term]
 id: OMP:0007009
 name: increased population growth at acidic pH
-def: "An altered growth range phenotype where the ability to grow at some pH that is lower than pH 7 is increased relative to a designated control." [OMP:DAS]
+def: "An altered population growth phenotype where rate and/or extent of growth of a microbial population at acidic pH (< pH 7) is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:11:44Z
@@ -9383,7 +9383,7 @@ creation_date: 2013-09-11T17:11:44Z
 [Term]
 id: OMP:0007010
 name: decreased population growth at alkaline pH
-def: "An altered pH growth range phenotype where the ability to grow at some pH that is higher than pH 7 is decreased relative to a designated control." [OMP:DAS]
+def: "An altered population growth phenotype where rate and/or extent of growth of a microbial population at alkaline pH (> pH 7) is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:14:28Z
@@ -9391,7 +9391,7 @@ creation_date: 2013-09-11T17:14:28Z
 [Term]
 id: OMP:0007011
 name: increased population growth at alkaline pH
-def: "An altered pH growth range phenotype where the ability to grow at some pH that is higher than pH 7 is increased relative to a designated control." [OMP:DAS]
+def: "An altered population growth phenotype where rate and/or extent of growth of a microbial population at alkaline pH (> pH 7) is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:14:56Z
@@ -10549,8 +10549,8 @@ creation_date: 2014-08-17T13:19:30Z
 [Term]
 id: OMP:0007138
 name: altered effects of pH on population growth
-def: "A pH growth range phenotype where the range of pH where growth occurs is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0005008 ! pH effects on population growth phenotype
+def: "A population growth phenotype where the rate and/or extent of growth of a microbial population at a specified pH is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0005008 ! pH effect on population growth phenotype
 created_by: siegele
 creation_date: 2014-08-17T17:35:20Z
 
@@ -17595,6 +17595,38 @@ is_a: OMP:0007453 ! absence of survival in macrophage
 is_a: OMP:0007943 ! decreased survival in macrophage
 created_by: dsiegele
 creation_date: 2019-03-27T14:45:29Z
+
+[Term]
+id: OMP:0007945
+name: presence of growth at acidic pH
+def: "A population growth phenotype where a microbial population is able to grow and reproduce at acidic pH (pH< 7)." [OMP:das]
+is_a: OMP:0005008 ! pH effect on population growth phenotype
+created_by: siegele
+creation_date: 2019-09-12T00:41:29Z
+
+[Term]
+id: OMP:0007946
+name: absence of growth at acidic pH
+def: "A population growth phenotype where a microbial population isn't  able to grow and reproduce at acidic pH (pH< 7)." [OMP:das]
+is_a: OMP:0005008 ! pH effect on population growth phenotype
+created_by: siegele
+creation_date: 2019-09-12T00:42:29Z
+
+[Term]
+id: OMP:0007947
+name: presence of growth at alkaline pH
+def: "A population growth phenotype where a microbial population is able to grow and reproduce at alkaline pH (pH>7)." [OMP:das]
+is_a: OMP:0005008 ! pH effect on population growth phenotype
+created_by: siegele
+creation_date: 2019-09-12T10:31:33Z
+
+[Term]
+id: OMP:0007948
+name: absence of growth at alkaline pH
+def: "A population growth phenotype where a microbial population isn't able to grow and reproduce at alkaline pH (pH>7)." [OMP:das]
+is_a: OMP:0005008 ! pH effect on population growth phenotype
+created_by: siegele
+creation_date: 2019-09-12T10:44:32Z
 
 [Term]
 id: OMP:0008000
