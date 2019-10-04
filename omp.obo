@@ -1,8 +1,8 @@
 format-version: 1.2
-data-version: releases/2019-09-06
-date: 06:07:2019 21:07
+data-version: releases/2019-10-04
+date: 27:09:2019 18:11
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -1645,7 +1645,7 @@ creation_date: 2011-04-26T03:26:26Z
 [Term]
 id: OMP:0000028
 name: decreased number of pili
-def: "A presence of pilus phenotype where a cell has fewer pili relative to a designated control." [OMP:MCC]
+def: "A presence of pilus phenotype where a microorganism has fewer pili per cell relative to a designated control." [OMP:MCC]
 synonym: "decreased fimbriae formation" EXACT []
 is_a: OMP:0006010 ! altered pilus phenotype
 created_by: mchibucos
@@ -1688,7 +1688,7 @@ creation_date: 2011-04-26T03:44:01Z
 [Term]
 id: OMP:0000034
 name: presence of pilus
-def: "A pilus phenotype where an organism does possess a pilus in one or more growth conditions." [OMP:MCC]
+def: "A pilus phenotype where a microorganism produces a pilus or pili in one or more growth conditions." [OMP:MCC]
 comment: Fimbria (plural, fimbriae) is a common synonym for pilus (plural, pili).
 synonym: "fimbria present" EXACT []
 is_a: OMP:0000084 ! pilus morphology phenotype
@@ -1727,7 +1727,7 @@ def: "A population growth range phenotype related to how growth of a microbial p
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_annotate
 subset: qc_do_not_manually_annotate
-is_a: OMP:0007192 ! population growth range phenotype
+is_a: OMP:0007192 ! effect of non-nutrient environmental factors on population growth phenotype
 created_by: mchibucos
 creation_date: 2011-06-06T03:36:04Z
 
@@ -2137,7 +2137,7 @@ creation_date: 2011-02-02T03:47:44Z
 [Term]
 id: OMP:0000084
 name: pilus morphology phenotype
-def: "A cell projection phenotype where the structure in question is a proteinaceous hair-like appendage on the surface of a microbial cell." [ISBN:9780073402406, OMP:MCC]
+def: "A cell projection phenotype morphology where the structure in question is a proteinaceous hair-like appendage on the surface of a microbial cell." [ISBN:9780073402406, OMP:MCC]
 synonym: "fimbria phenotype" EXACT [GO:0009289]
 is_a: OMP:0000083 ! cell projection morphology phenotype
 created_by: adrienne
@@ -4222,46 +4222,46 @@ comment: This is a high-level term whose primary purpose is to organize terms be
 subset: qc_do_not_annotate
 subset: qc_do_not_manually_annotate
 synonym: "temperature requirement for growth" NARROW []
-is_a: OMP:0007192 ! population growth range phenotype
+is_a: OMP:0007192 ! effect of non-nutrient environmental factors on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:06:05Z
 
 [Term]
 id: OMP:0005003
-name: hyperthermophilic population growth
-def: "A temperature growth range phenotype where optimal growth of a microbial population occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
+name: hyperthermophile
+def: "A population growth phenotype where optimal growth of a microbial population occurs between 85 C and 113 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:29:51Z
 
 [Term]
 id: OMP:0005004
-name: thermophilic population growth
-def: "A temperature growth range phenotype where growth of a microbial population can occur at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
+name: thermophile
+def: "A population growth phenotype where growth of a microbial population can occur at 55 C or higher and optimal growth occurs between 55 C and 65 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-03T01:36:26Z
 
 [Term]
 id: OMP:0005005
-name: mesophilic population growth
-def: "A temperature growth range phenotype where optimal growth of a microbial population occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
+name: mesophile
+def: "A population growth phenotype where optimal growth of a microbial population occurs between 20 C and 45 C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:24:06Z
 
 [Term]
 id: OMP:0005006
-name: psychrotrophic population growth
-def: "A temperature growth range phenotype where growth of a microbial population can occur between 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature for population growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
+name: psychrotroph
+def: "A population growth phenotype where growth of a microbial population can occur between 0 to 7 degrees C with optimum growth at 20 to 30 degrees C. The maximum temperature for population growth is around 35 degrees C." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:38:56Z
 
 [Term]
 id: OMP:0005007
-name: psychrophilic population growth
-def: "A temperature population growth range phenotype where growth of a microbial population can occur at 0 C and optimal growth occurs at temperatures of 15 C or lower." [ISBN:9780073402406, OMP:WAM]
+name: psychrophile
+def: "A population growth phenotype where growth of a microbial population can occur at 0 C and optimal growth occurs at temperatures of 15 C or lower." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005002 ! temperature effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:40:27Z
@@ -4269,18 +4269,18 @@ creation_date: 2013-09-04T13:40:27Z
 [Term]
 id: OMP:0005008
 name: pH effects on population growth phenotype
-def: "A population growth range phenotype relating to how growth of a microbial population is affected by the pH of the environment." [OMP:WAM]
+def: "A population growth phenotype relating to how the rate and/or extent of growth of a microbial population is affected by the pH of the environment." [OMP:WAM]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_annotate
 subset: qc_do_not_manually_annotate
-is_a: OMP:0007192 ! population growth range phenotype
+is_a: OMP:0007192 ! effect of non-nutrient environmental factors on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T13:57:28Z
 
 [Term]
 id: OMP:0005009
 name: acidophile
-def: "A pH growth range phenotype where optimum growth occurs between pH 0 and 5.5." [ISBN:9780073402406, OMP:WAM]
+def: "A population growth phenotype that applies to microorganisms whose optimal growth occurs between pH 0 and 5.5." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:18:28Z
@@ -4288,7 +4288,7 @@ creation_date: 2013-09-04T16:18:28Z
 [Term]
 id: OMP:0005010
 name: neutrophile
-def: "A pH growth range phenotype where optimum growth occurs between pH 5.5 and 8.0." [ISBN:780073402406, OMP:WAM]
+def: "A population growth phenotype that applies to microorganisms whose optimal growth occurs between pH 5.5 and 8.0." [ISBN:780073402406, OMP:WAM]
 is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:21:50Z
@@ -4296,7 +4296,7 @@ creation_date: 2013-09-04T16:21:50Z
 [Term]
 id: OMP:0005011
 name: alkaliphile
-def: "A pH growth range phenotype where optimum growth of occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
+def: "A population growth phenotype that applies to microorganisms whose optimal growth occurs between pH 8.0 to 11.5." [ISBN:9780073402406, OMP:WAM]
 is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-04T16:24:24Z
@@ -4308,7 +4308,7 @@ def: "A population growth range phenotype related to how growth of a microbial p
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_annotate
 subset: qc_do_not_manually_annotate
-is_a: OMP:0007192 ! population growth range phenotype
+is_a: OMP:0007192 ! effect of non-nutrient environmental factors on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:42:28Z
 
@@ -4319,7 +4319,7 @@ def: "A population growth range phenotype related to how growth of a microbial p
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_annotate
 subset: qc_do_not_manually_annotate
-is_a: OMP:0007192 ! population growth range phenotype
+is_a: OMP:0007192 ! effect of non-nutrient environmental factors on population growth phenotype
 created_by: wmeza
 creation_date: 2013-09-09T11:43:45Z
 
@@ -8788,15 +8788,15 @@ creation_date: 2014-07-25T12:50:04Z
 [Term]
 id: OMP:0006116
 name: abolished population growth at acidic pH
-def: "A decreased growth at acidic pH phenotype where the ability to grow at an acidic pH is abolished." [OMP:DAS]
+def: "An altered population growth phenotype where growth of a microbial population at acidic pH (< pH 7) is abolished." [OMP:DAS]
 is_a: OMP:0007008 ! decreased population growth at acidic pH
 created_by: jonathanherrera
 creation_date: 2014-07-25T12:58:01Z
 
 [Term]
 id: OMP:0006117
-name: abolished growth at alkaline pH
-def: "A decreased growth at alkaline pH phenotype where the ability to grow at alkaline pH is abolished." [OMP:JCH]
+name: abolished population growth at alkaline pH
+def: "An altered population growth phenotype where growth of a microbial population at alkaline pH (> pH 7) is abolished." [OMP:JCH]
 is_a: OMP:0007010 ! decreased population growth at alkaline pH
 created_by: jonathanherrera
 creation_date: 2014-07-25T13:02:17Z
@@ -8821,7 +8821,7 @@ creation_date: 2014-07-25T13:17:12Z
 [Term]
 id: OMP:0006120
 name: abolished heterocyst formation
-def: "A decreased heterocyst formation phenotype where the ability to form heterocysts is abolished." [OMP:JCH]
+def: "A decreased heterocyst formation phenotype where the ability to form a heterocyst is abolished." [OMP:JCH]
 is_a: OMP:0000011 ! absence of heterocysts
 is_a: OMP:0000015 ! decreased heterocyst formation
 created_by: jonathanherrera
@@ -9433,7 +9433,7 @@ creation_date: 2014-07-31T16:11:22Z
 [Term]
 id: OMP:0007008
 name: decreased population growth at acidic pH
-def: "An altered pH growth range phenotype where the ability to grow at some pH that is lower than pH 7 is decreased relative to a designated control." [OMP:DAS]
+def: "An altered population growth phenotype where the rate and/or extent of growth of a microbial population at an acidic pH (<pH 7) is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:11:01Z
@@ -9441,7 +9441,7 @@ creation_date: 2013-09-11T17:11:01Z
 [Term]
 id: OMP:0007009
 name: increased population growth at acidic pH
-def: "An altered growth range phenotype where the ability to grow at some pH that is lower than pH 7 is increased relative to a designated control." [OMP:DAS]
+def: "An altered population growth phenotype where rate and/or extent of growth of a microbial population at acidic pH (< pH 7) is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:11:44Z
@@ -9449,7 +9449,7 @@ creation_date: 2013-09-11T17:11:44Z
 [Term]
 id: OMP:0007010
 name: decreased population growth at alkaline pH
-def: "An altered pH growth range phenotype where the ability to grow at some pH that is higher than pH 7 is decreased relative to a designated control." [OMP:DAS]
+def: "An altered population growth phenotype where rate and/or extent of growth of a microbial population at alkaline pH (> pH 7) is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:14:28Z
@@ -9457,7 +9457,7 @@ creation_date: 2013-09-11T17:14:28Z
 [Term]
 id: OMP:0007011
 name: increased population growth at alkaline pH
-def: "An altered pH growth range phenotype where the ability to grow at some pH that is higher than pH 7 is increased relative to a designated control." [OMP:DAS]
+def: "An altered population growth phenotype where rate and/or extent of growth of a microbial population at alkaline pH (> pH 7) is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007138 ! altered effects of pH on population growth
 created_by: siegele
 creation_date: 2013-09-11T17:14:56Z
@@ -10630,7 +10630,7 @@ creation_date: 2014-08-17T13:19:30Z
 [Term]
 id: OMP:0007138
 name: altered effects of pH on population growth
-def: "A pH growth range phenotype where the range of pH where growth occurs is altered relative to a designated control." [OMP:DAS]
+def: "A population growth phenotype where the rate and/or extent of growth of a microbial population at a specified pH is altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: siegele
 creation_date: 2014-08-17T17:35:20Z
@@ -11122,7 +11122,7 @@ creation_date: 2014-10-04T01:44:57Z
 
 [Term]
 id: OMP:0007192
-name: population growth range phenotype
+name: effect of non-nutrient environmental factors on population growth phenotype
 def: "A population growth phenotype related to how non-nutrient environmental factors affect growth of a microbial population." [ISBN:9780073402406, OMP:DAS]
 is_a: OMP:0007167 ! population growth phenotype
 created_by: siegele
@@ -14048,9 +14048,9 @@ creation_date: 2017-02-20T16:03:16Z
 [Term]
 id: OMP:0007523
 name: altered population growth range
-def: "A population growth range phenotype where the ability of a microbial population to grow in a specified environmental condition is altered relative to a designated control." [OMP:DAS]
-is_a: OMP:0007085 ! altered microbial phenotype
-is_a: OMP:0007192 ! population growth range phenotype
+def: "A population growth range phenotype where the rate and/or extent of growth of a microbial population in a specified environmental condition is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0007157 ! altered population growth
+is_a: OMP:0007192 ! effect of non-nutrient environmental factors on population growth phenotype
 created_by: dsiegele
 creation_date: 2017-02-20T16:06:25Z
 
@@ -16228,7 +16228,8 @@ creation_date: 2018-03-13T01:01:28Z
 [Term]
 id: OMP:0007771
 name: presence of population growth at alkaline pH
-is_a: OMP:0007595 ! presence of population growth
+def: "A population growth phenotype where a microbial population is able to grow and reproduce at alkaline pH (pH>7)." [OMP:das]
+is_a: OMP:0005008 ! pH effects on population growth phenotype
 created_by: siegele
 creation_date: 2018-04-28T15:51:32Z
 
@@ -17196,7 +17197,7 @@ creation_date: 2018-08-17T19:14:42Z
 [Term]
 id: OMP:0007884
 name: resistant to a metal
-def: "A metal resistance phenotype where growth and reproduction of a microbe occurs in the presence of a metal." [OMP:das]
+def: "A metal resistance phenotype where growth of a microbial population occurs in the presence of a metal." [OMP:das]
 is_a: OMP:0007247 ! resistant to a chemical
 is_a: OMP:0007890 ! metal resistance phenotype
 created_by: dsiegele
@@ -17599,7 +17600,8 @@ creation_date: 2018-09-15T01:45:33Z
 
 [Term]
 id: OMP:0007932
-name: resistance to nutrient limitation stress
+name: resistance to nutrient limitation stress phenotype
+def: "A resistance to stress phenotype related to the resistance or sensitivity of a microbial population to limitation for an essential nutrient." [OMP:das]
 is_a: OMP:0007568 ! resistance to stress phenotype
 created_by: siegele
 creation_date: 2018-11-04T16:55:30Z
@@ -17607,22 +17609,25 @@ creation_date: 2018-11-04T16:55:30Z
 [Term]
 id: OMP:0007933
 name: presence of resistance to nutrient limitation
-is_a: OMP:0007932 ! resistance to nutrient limitation stress
+def: "A resistance to stress phenotype where a microbial population is resistant to limitation for an essential nutrient." [OMP:das]
+is_a: OMP:0007932 ! resistance to nutrient limitation stress phenotype
 created_by: siegele
 creation_date: 2018-11-04T16:56:28Z
 
 [Term]
 id: OMP:0007934
 name: absence of resistance to nutrient limitation
-is_a: OMP:0007932 ! resistance to nutrient limitation stress
+def: "A resistance to stress phenotype where a microbial population isn't resistant to limitation for an essential nutrient." [OMP:das]
+is_a: OMP:0007932 ! resistance to nutrient limitation stress phenotype
 created_by: siegele
 creation_date: 2018-11-04T16:56:28Z
 
 [Term]
 id: OMP:0007935
 name: altered resistance to nutrient limitation
+def: "A resistance to stress phenotype where the resistance of a microbial population to nutrient limitation is altered relative to a designated control." [OMP:das]
 is_a: OMP:0007572 ! altered resistance to stress
-is_a: OMP:0007932 ! resistance to nutrient limitation stress
+is_a: OMP:0007932 ! resistance to nutrient limitation stress phenotype
 created_by: siegele
 creation_date: 2018-11-04T16:56:28Z
 
@@ -17693,6 +17698,203 @@ is_a: OMP:0007453 ! absence of survival in macrophage
 is_a: OMP:0007943 ! decreased survival in macrophage
 created_by: dsiegele
 creation_date: 2019-03-27T14:45:29Z
+
+[Term]
+id: OMP:0007945
+name: presence of population growth at acidic pH
+def: "A population growth phenotype where a microbial population is able to grow and reproduce at acidic pH (pH< 7)." [OMP:das]
+is_a: OMP:0005008 ! pH effects on population growth phenotype
+created_by: siegele
+creation_date: 2019-09-12T00:41:29Z
+
+[Term]
+id: OMP:0007946
+name: absence of population growth at acidic pH
+def: "A population growth phenotype where a microbial population isn't  able to grow and reproduce at acidic pH (pH< 7)." [OMP:das]
+is_a: OMP:0005008 ! pH effects on population growth phenotype
+created_by: siegele
+creation_date: 2019-09-12T00:42:29Z
+
+[Term]
+id: OMP:0007947
+name: presence of growth at alkaline pH
+def: "A population growth phenotype where a microbial population is able to grow and reproduce at alkaline pH (pH>7)." [OMP:das]
+comment: This term was made obsolete because it was redundant with OMP:0007771. The two terms weren't merged because the redundancy of OMP:0007947 was discovered after one day and was never committed to a release.
+is_obsolete: true
+created_by: siegele
+creation_date: 2019-09-12T10:31:33Z
+
+[Term]
+id: OMP:0007948
+name: absence of growth at alkaline pH
+def: "A population growth phenotype where a microbial population isn't able to grow and reproduce at alkaline pH (pH>7)." [OMP:das]
+is_obsolete: true
+created_by: siegele
+creation_date: 2019-09-12T10:44:32Z
+
+[Term]
+id: OMP:0007949
+name: <new term>
+is_a: OMP:0007705 ! cell population viability phenotype
+created_by: siegele
+creation_date: 2019-09-13T00:12:25Z
+
+[Term]
+id: OMP:0007950
+name: presence of population growth at high temperature
+def: "A population growth phenotype where a microbial population is able to grow and reproduce at a temperature that is towards the upper end of the organism's temperature growth range." [OMP:das]
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
+created_by: siegele
+creation_date: 2019-09-13T01:17:11Z
+
+[Term]
+id: OMP:0007951
+name: absence of population growth at high temperature
+def: "A population growth phenotype where a microbial population isn't able to grow and reproduce at a temperature that is towards the upper end of the organism's temperature growth range." [OMP:das]
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
+created_by: siegele
+creation_date: 2019-09-13T01:22:12Z
+
+[Term]
+id: OMP:0007952
+name: altered population growth at high temperature
+def: "A population growth phenotype where the rate and/or extent of growth of a microbial population at a temperature that is towards the upper end of the organism's temperature growth range is altered relative to a designated control." [OMP:das]
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
+is_a: OMP:0007523 ! altered population growth range
+created_by: siegele
+creation_date: 2019-09-13T01:24:01Z
+
+[Term]
+id: OMP:0007953
+name: increased population growth at high temperature
+is_a: OMP:0007952 ! altered population growth at high temperature
+created_by: siegele
+creation_date: 2019-09-13T01:25:33Z
+
+[Term]
+id: OMP:0007954
+name: decreased population growth at high temperature
+is_a: OMP:0007951 ! absence of population growth at high temperature
+is_a: OMP:0007952 ! altered population growth at high temperature
+created_by: siegele
+creation_date: 2019-09-13T01:25:52Z
+
+[Term]
+id: OMP:0007955
+name: abolished population growth at high temperature
+is_a: OMP:0007954 ! decreased population growth at high temperature
+created_by: siegele
+creation_date: 2019-09-13T01:26:12Z
+
+[Term]
+id: OMP:0007956
+name: presence of population growth at low temperature
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
+created_by: siegele
+creation_date: 2019-09-13T01:41:59Z
+
+[Term]
+id: OMP:0007957
+name: absence of population growth at low temperature
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
+created_by: siegele
+creation_date: 2019-09-13T01:41:59Z
+
+[Term]
+id: OMP:0007958
+name: altered population growth at low temperature
+is_a: OMP:0005002 ! temperature effects on population growth phenotype
+is_a: OMP:0007157 ! altered population growth
+created_by: siegele
+creation_date: 2019-09-13T01:41:59Z
+
+[Term]
+id: OMP:0007959
+name: increased population growth at low temperature
+is_a: OMP:0007958 ! altered population growth at low temperature
+created_by: siegele
+creation_date: 2019-09-13T01:41:59Z
+
+[Term]
+id: OMP:0007960
+name: decreased population growth at low temperature
+is_a: OMP:0007958 ! altered population growth at low temperature
+created_by: siegele
+creation_date: 2019-09-13T01:41:59Z
+
+[Term]
+id: OMP:0007961
+name: abolished population growth at low temperature
+is_a: OMP:0007957 ! absence of population growth at low temperature
+is_a: OMP:0007960 ! decreased population growth at low temperature
+created_by: siegele
+creation_date: 2019-09-13T01:41:59Z
+
+[Term]
+id: OMP:0007962
+name: presence of cell population growth during nutrient limitation
+def: "A population growth phenotype where growth of a microbial population occurs under conditions of limitation for an essential nutrient (i.e. conditions where an essential nutrient is present at low concentration)." [OMP:das]
+synonym: "normal cell population growth during glucose starvation" NARROW [FYPO:0004765]
+synonym: "normal cell population growth during iron starvation" NARROW [FYPO:0001814]
+is_a: OMP:0007964 ! cell population growth during nutrient limitation phenotype
+created_by: siegele
+creation_date: 2019-09-23T14:17:16Z
+
+[Term]
+id: OMP:0007963
+name: absence of cell population growth during nutrient limitation
+def: "A cell population growth phenotype where growth of a microbial population doesn't occur under conditions of limitation for an essential nutrient (i.e. conditions where an essential nutrient is at present low concentration)." [OMP:das]
+is_a: OMP:0007964 ! cell population growth during nutrient limitation phenotype
+created_by: siegele
+creation_date: 2019-09-23T14:22:18Z
+
+[Term]
+id: OMP:0007964
+name: cell population growth during nutrient limitation phenotype
+def: "A cell population growth phenotype related to the rate or extent of growth of a microbial population under conditions of limitation for an essential nutrient (i.e. conditions where an essential nutrient is present at low concentration)." [OMP:das]
+is_a: OMP:0007794 ! cell population growth phenotype
+created_by: siegele
+creation_date: 2019-09-23T14:25:30Z
+
+[Term]
+id: OMP:0007965
+name: altered cell population growth during nutrient limitation
+def: "A cell population growth phenotype where the rate or extent of growth of a microbial population under conditions of limitation for an essential nutrient (i.e. conditions where an essential nutrient is present at low concentration) is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007809 ! altered cell population growth
+is_a: OMP:0007964 ! cell population growth during nutrient limitation phenotype
+created_by: siegele
+creation_date: 2019-09-23T14:31:13Z
+
+[Term]
+id: OMP:0007966
+name: increased population growth during nutrient limitation
+def: "An altered cell population growth phenotype where the rate or extent of growth of a microbial population under conditions of limitation for an essential nutrient (i.e. conditions where an essential nutrient is present at low concentration) is increased relative to a designated control." [OMP:das]
+synonym: "increased cell population growth during glucose starvation" NARROW [FYPO:0003938]
+synonym: "increased vegetative cell population growth during phosphate starvation" NARROW [FYPO:0004967]
+is_a: OMP:0007965 ! altered cell population growth during nutrient limitation
+created_by: siegele
+creation_date: 2019-09-23T14:32:07Z
+
+[Term]
+id: OMP:0007967
+name: decreased cell population growth during nutrient limitation
+def: "An altered cell population growth phenotype where the rate or extent of growth of a microbial population under conditions of limitation for an essential nutrient (i.e. conditions where an essential nutrient is present at low concentration) is decreased relative to a designated control." [OMP:das]
+synonym: "decreased cell population growth during glucose starvation" NARROW [FYPO:0003743]
+synonym: "decreased cell population growth during nitrogen starvation" NARROW [FYPO:0000709]
+synonym: "decreased vegetative cell population growth during phosphate starvation" NARROW [FYPO:0004968]
+is_a: OMP:0007965 ! altered cell population growth during nutrient limitation
+created_by: siegele
+creation_date: 2019-09-23T14:33:15Z
+
+[Term]
+id: OMP:0007968
+name: abolished population growth during nutrient limitation
+def: "A decreased cell population growth where the ability of a microbial population to grow under conditions of nutrient limitation ((i.e. conditions where an essential nutrient is present at low concentration) is abolished." [OMP:das]
+synonym: "abolished cell population growth during glucose starvation" NARROW [FYPO:0004837]
+is_a: OMP:0007963 ! absence of cell population growth during nutrient limitation
+is_a: OMP:0007967 ! decreased cell population growth during nutrient limitation
+created_by: siegele
+creation_date: 2019-09-23T14:34:07Z
 
 [Term]
 id: OMP:0008000
