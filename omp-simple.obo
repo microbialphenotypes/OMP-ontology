@@ -1,8 +1,8 @@
 format-version: 1.2
-data-version: releases/2019-11-01
-date: 27:09:2019 18:11
+data-version: releases/2019-12-06
+date: 18:11:2019 00:53
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3-beta6
+auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -984,7 +984,8 @@ creation_date: 2011-02-02T02:45:02Z
 [Term]
 id: OMP:0000111
 name: presence of motility by swimming
-def: "A presence of motility phenotype where microbe exhibits smooth movement through a liquid medium." [OMP:MCC]
+def: "A presence of motility phenotype where a microbe exhibits smooth movement through a liquid medium." [OMP:MCC]
+comment: In Bacteria and Archaea, motility by swimming is typically powered by a flagellum or flagella. In Protists, swimming motility is typically powered by cilia or flagella.
 is_a: OMP:0000005 ! presence of motility
 created_by: adrienne
 creation_date: 2011-02-07T03:17:40Z
@@ -7136,7 +7137,7 @@ id: OMP:0006100
 name: abolished motility by swimming
 def: "A decreased motility by swimming phenotype where the ability of a microbe to move by swimming motility is abolished." [OMP:JCH]
 is_a: OMP:0007000 ! abolished motility
-is_a: OMP:0007093 ! decreased cell motility by swimming
+is_a: OMP:0007093 ! decreased motility by swimming
 is_a: OMP:0007490 ! absence of motility by swimming
 created_by: jonathanherrera
 creation_date: 2014-08-15T19:12:43Z
@@ -7599,7 +7600,7 @@ creation_date: 2014-07-25T15:33:11Z
 id: OMP:0006153
 name: abolished utilization of organic nitrogen
 def: "An altered nitrogen source utilization phenotype where the ability to use an organic N-containing compound as the source of nitrogen is abolished." [OMP:JCH]
-is_a: OMP:0007035 ! decreased utilization of organic nitrogen source
+is_a: OMP:0007035 ! decreased organic nitrogen source utilization
 created_by: jonathanherrera
 creation_date: 2014-07-25T15:36:09Z
 
@@ -8140,7 +8141,7 @@ creation_date: 2013-09-28T21:05:43Z
 
 [Term]
 id: OMP:0007035
-name: decreased utilization of organic nitrogen source
+name: decreased organic nitrogen source utilization
 def: "An altered nitrogen source utilization phenotype where the ability to use an organic N-containing compound as the source of nitrogen is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007906 ! altered organic nitrogen source utilization
 created_by: DeborahSiegele
@@ -8148,7 +8149,7 @@ creation_date: 2013-09-28T21:07:53Z
 
 [Term]
 id: OMP:0007036
-name: increased utilization of organic nitrogen source
+name: increased organic nitrogen source utilization
 def: "An altered nitrogen source utilization phenotype where the ability to use an organic N-containing compound as the source of nitrogen is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007906 ! altered organic nitrogen source utilization
 created_by: DeborahSiegele
@@ -8656,8 +8657,8 @@ creation_date: 2014-07-10T20:08:43Z
 
 [Term]
 id: OMP:0007093
-name: decreased cell motility by swimming
-def: "A decreased motility phenotype where the frequency, rate, timing, or extent of cell motility by swimming is decreased relative to a designated control." [OMP:JCH]
+name: decreased motility by swimming
+def: "A decreased motility phenotype where the frequency, rate, timing, or extent of motility by swimming is decreased relative to a designated control." [OMP:JCH]
 is_a: OMP:0000002 ! decreased motility
 is_a: OMP:0005324 ! altered cell motility by swimming
 created_by: siegele
@@ -16298,6 +16299,20 @@ is_a: OMP:0007963 ! absence of cell population growth during nutrient limitation
 is_a: OMP:0007967 ! decreased cell population growth during nutrient limitation
 created_by: siegele
 creation_date: 2019-09-23T14:34:07Z
+
+[Term]
+id: OMP:0007969
+name: presence of organic nitrogen source utilization
+is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
+created_by: siegele
+creation_date: 2019-11-17T15:43:44Z
+
+[Term]
+id: OMP:0007970
+name: absence of organic nitrogen source utilization
+is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
+created_by: siegele
+creation_date: 2019-11-17T15:43:44Z
 
 [Term]
 id: OMP:0008000
