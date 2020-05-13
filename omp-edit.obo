@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 11:05:2020 11:01
+date: 12:05:2020 19:14
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -8109,6 +8109,7 @@ id: OMP:0006047
 name: resistant to beta-lactam
 def: "An beta-lactam compound resistance phenotype where an organism or cell is resistant to one or more beta-lactam compounds." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
+is_a: OMP:0007876 ! resistant to an antimicrobial agent
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
 
