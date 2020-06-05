@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2020-05-01
-date: 18:11:2019 00:53
+data-version: releases/2020-06-05
+date: 12:05:2020 19:14
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -6658,6 +6658,7 @@ id: OMP:0006047
 name: resistant to beta-lactam
 def: "An beta-lactam compound resistance phenotype where an organism or cell is resistant to one or more beta-lactam compounds." [OMP:JCH]
 is_a: OMP:0000336 ! beta-lactam resistance phenotype
+is_a: OMP:0007876 ! resistant to an antimicrobial agent
 created_by: jonathanherrera
 creation_date: 2013-10-11T17:40:34Z
 
@@ -16313,6 +16314,39 @@ name: absence of organic nitrogen source utilization
 is_a: OMP:0007014 ! organic nitrogen source utilization phenotype
 created_by: siegele
 creation_date: 2019-11-17T15:43:44Z
+
+[Term]
+id: OMP:0007971
+name: tolerance to an antimicrobial agent phenotype
+def: "An antimicrobial agent resistance phenotype that describes the ability of microorganisms to survive  a transient exposure to antimicrobial agents  at concentrations that would otherwise be lethal. A quantitative measure of tolerance is the minimum duration for killing (MDK)." [DOI:10.1038/nrmicro.2016.34, OMP:das, PMID:27080241]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.\n\nTolerance applies only to microbiocidal antimicrobial agents and not to microbiostatic agents. This is in contrast to resistance which applies to both microbiocidal and microbiostatic agents.
+is_a: OMP:0007877 ! not resistant to an antimicrobial agent
+created_by: siegele
+creation_date: 2020-05-08T13:13:10Z
+
+[Term]
+id: OMP:0007972
+name: altered tolerance to an antimicrobial agent phenotype
+def: "An antimicrobial agent tolerance phenotype where tolerance, the ability to survive transient exposure to an antimicrobial agent, is altered relative to a designated control." [OMP:das]
+is_a: OMP:0007971 ! tolerance to an antimicrobial agent phenotype
+created_by: siegele
+creation_date: 2020-05-08T13:17:08Z
+
+[Term]
+id: OMP:0007973
+name: increased tolerance to an antimicrobial agent
+def: "An altered tolerance to an antimicrobial agent phenotype where minimum duration of killing is increased relative to a designated control." [OMP:das]
+is_a: OMP:0007972 ! altered tolerance to an antimicrobial agent phenotype
+created_by: siegele
+creation_date: 2020-05-08T13:17:08Z
+
+[Term]
+id: OMP:0007974
+name: decreased tolerance to an antimicrobial agent
+def: "An altered tolerance to an antimicrobial agent phenotype where minimum duration of killing is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0007972 ! altered tolerance to an antimicrobial agent phenotype
+created_by: siegele
+creation_date: 2020-05-08T13:17:08Z
 
 [Term]
 id: OMP:0008000
