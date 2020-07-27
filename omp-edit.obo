@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 23:07:2020 14:46
+date: 26:07:2020 21:00
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -4240,6 +4240,35 @@ created_by: siegele
 creation_date: 2020-07-23T14:19:22Z
 
 [Term]
+id: OMP:0000317
+name: presence of cell length
+def: "A cell morphology phenotype used to describe the length of a microbial cell of the reference strain in the reference condition." [OMP:das]
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-07-26T17:18:57Z
+
+[Term]
+id: OMP:0000318
+name: presence of cell length variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T17:23:35Z
+
+[Term]
+id: OMP:0000319
+name: presence of cell width
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-07-26T17:25:22Z
+
+[Term]
+id: OMP:0000320
+name: presence of cell width variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T17:25:52Z
+
+[Term]
 id: OMP:0000321
 name: macrolide resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds with a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--that is linked to one or more sugars and that have antimicrobial properties." [CHEBI:25106, OMP:MCC]
@@ -4270,6 +4299,69 @@ created_by: mchibucos
 creation_date: 2012-11-02T01:51:04Z
 
 [Term]
+id: OMP:0000322
+name: presence of cell area
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-07-26T17:34:11Z
+
+[Term]
+id: OMP:0000323
+name: presence of cell area variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T17:35:24Z
+
+[Term]
+id: OMP:0000324
+name: presence of cell volume
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-07-26T17:38:27Z
+
+[Term]
+id: OMP:0000325
+name: presence of cell volume variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T17:44:34Z
+
+[Term]
+id: OMP:0000326
+name: presence of cell surface area
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-07-26T17:47:36Z
+
+[Term]
+id: OMP:0000327
+name: presence of cell surface area variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T17:50:29Z
+
+[Term]
+id: OMP:0000328
+name: presence of cell perimeter
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-07-26T19:06:08Z
+
+[Term]
+id: OMP:0000329
+name: presence of cell perimeter variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T19:07:06Z
+
+[Term]
+id: OMP:0000330
+name: presence of surface-area-to-volume ratio
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-07-26T19:09:11Z
+
+[Term]
 id: OMP:0000331
 name: aminopyrimidine resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
@@ -4287,6 +4379,20 @@ synonym: "trimetrexate resistance phenotype" NARROW [CID:5583]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:02:58Z
+
+[Term]
+id: OMP:0000332
+name: presence of surface-area-to-volume ratio variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T19:11:25Z
+
+[Term]
+id: OMP:0000333
+name: presence of cell circularity
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-07-26T19:22:00Z
 
 [Term]
 id: OMP:0000334
@@ -4333,6 +4439,34 @@ xref: CHEBI:27933 "beta-lactam antibiotic"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:06:13Z
+
+[Term]
+id: OMP:0000337
+name: presence of cell circularity variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T19:23:30Z
+
+[Term]
+id: OMP:0000338
+name: presence of cell aspect ratio
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-07-26T19:53:47Z
+
+[Term]
+id: OMP:0000339
+name: presence of cell aspect variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T19:54:28Z
+
+[Term]
+id: OMP:0000340
+name: presence of cell division ratio variability
+is_a: OMP:0007698 ! cell population phenotype
+created_by: siegele
+creation_date: 2020-07-26T19:58:18Z
 
 [Term]
 id: OMP:0000435
