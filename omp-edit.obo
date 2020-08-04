@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 26:07:2020 21:00
+date: 03:08:2020 20:35
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2725,7 +2725,7 @@ creation_date: 2011-02-21T04:27:48Z
 [Term]
 id: OMP:0000144
 name: multiple nucleoids
-def: "A nucleoid number phenotype where there are more than one nucleoid regions in the cell." [OMP:WAM]
+def: "A nucleoid number phenotype where there is more than one nucleoid regions in the cell." [OMP:WAM]
 is_a: OMP:0000043 ! nucleoid number phenotype
 created_by: adrienne
 creation_date: 2011-02-21T04:28:30Z
@@ -4240,26 +4240,11 @@ created_by: siegele
 creation_date: 2020-07-23T14:19:22Z
 
 [Term]
-id: OMP:0000317
-name: presence of cell length
-def: "A cell morphology phenotype used to describe the length of a microbial cell of the reference strain in the reference condition." [OMP:das]
-is_a: OMP:0000074 ! cell size phenotype
-created_by: siegele
-creation_date: 2020-07-26T17:18:57Z
-
-[Term]
 id: OMP:0000318
 name: presence of cell length variability
 is_a: OMP:0007921 ! presence of cell size variability within a cell population
 created_by: siegele
 creation_date: 2020-07-26T17:23:35Z
-
-[Term]
-id: OMP:0000319
-name: presence of cell width
-is_a: OMP:0000074 ! cell size phenotype
-created_by: siegele
-creation_date: 2020-07-26T17:25:22Z
 
 [Term]
 id: OMP:0000320
@@ -4299,25 +4284,11 @@ created_by: mchibucos
 creation_date: 2012-11-02T01:51:04Z
 
 [Term]
-id: OMP:0000322
-name: presence of cell area
-is_a: OMP:0000074 ! cell size phenotype
-created_by: siegele
-creation_date: 2020-07-26T17:34:11Z
-
-[Term]
 id: OMP:0000323
 name: presence of cell area variability
 is_a: OMP:0007921 ! presence of cell size variability within a cell population
 created_by: siegele
 creation_date: 2020-07-26T17:35:24Z
-
-[Term]
-id: OMP:0000324
-name: presence of cell volume
-is_a: OMP:0000074 ! cell size phenotype
-created_by: siegele
-creation_date: 2020-07-26T17:38:27Z
 
 [Term]
 id: OMP:0000325
@@ -4327,13 +4298,6 @@ created_by: siegele
 creation_date: 2020-07-26T17:44:34Z
 
 [Term]
-id: OMP:0000326
-name: presence of cell surface area
-is_a: OMP:0000074 ! cell size phenotype
-created_by: siegele
-creation_date: 2020-07-26T17:47:36Z
-
-[Term]
 id: OMP:0000327
 name: presence of cell surface area variability
 is_a: OMP:0007921 ! presence of cell size variability within a cell population
@@ -4341,25 +4305,11 @@ created_by: siegele
 creation_date: 2020-07-26T17:50:29Z
 
 [Term]
-id: OMP:0000328
-name: presence of cell perimeter
-is_a: OMP:0000074 ! cell size phenotype
-created_by: siegele
-creation_date: 2020-07-26T19:06:08Z
-
-[Term]
 id: OMP:0000329
 name: presence of cell perimeter variability
 is_a: OMP:0007921 ! presence of cell size variability within a cell population
 created_by: siegele
 creation_date: 2020-07-26T19:07:06Z
-
-[Term]
-id: OMP:0000330
-name: presence of surface-area-to-volume ratio
-is_a: OMP:0000074 ! cell size phenotype
-created_by: siegele
-creation_date: 2020-07-26T19:09:11Z
 
 [Term]
 id: OMP:0000331
@@ -4386,13 +4336,6 @@ name: presence of surface-area-to-volume ratio variability
 is_a: OMP:0007921 ! presence of cell size variability within a cell population
 created_by: siegele
 creation_date: 2020-07-26T19:11:25Z
-
-[Term]
-id: OMP:0000333
-name: presence of cell circularity
-is_a: OMP:0000074 ! cell size phenotype
-created_by: siegele
-creation_date: 2020-07-26T19:22:00Z
 
 [Term]
 id: OMP:0000334
@@ -4448,13 +4391,6 @@ created_by: siegele
 creation_date: 2020-07-26T19:23:30Z
 
 [Term]
-id: OMP:0000338
-name: presence of cell aspect ratio
-is_a: OMP:0000074 ! cell size phenotype
-created_by: siegele
-creation_date: 2020-07-26T19:53:47Z
-
-[Term]
 id: OMP:0000339
 name: presence of cell aspect variability
 is_a: OMP:0007921 ! presence of cell size variability within a cell population
@@ -4467,6 +4403,13 @@ name: presence of cell division ratio variability
 is_a: OMP:0007698 ! cell population phenotype
 created_by: siegele
 creation_date: 2020-07-26T19:58:18Z
+
+[Term]
+id: OMP:0000342
+name: presence of nucleoid area variability
+is_a: OMP:0007698 ! cell population phenotype
+created_by: siegele
+creation_date: 2020-07-27T16:05:18Z
 
 [Term]
 id: OMP:0000435
@@ -18408,7 +18351,7 @@ creation_date: 2020-07-22T19:21:08Z
 
 [Term]
 id: OMP:0007977
-name: altered cell width
+name: altered cell diameter
 is_a: OMP:0007083 ! altered cell size
 created_by: siegele
 creation_date: 2020-07-22T19:22:09Z
@@ -18416,7 +18359,7 @@ creation_date: 2020-07-22T19:22:09Z
 [Term]
 id: OMP:0007978
 name: altered cell width variability
-is_a: OMP:0007977 ! altered cell width
+is_a: OMP:0007977 ! altered cell diameter
 created_by: siegele
 creation_date: 2020-07-22T19:22:31Z
 
