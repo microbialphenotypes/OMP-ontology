@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2020-07-07
-date: 12:05:2020 19:14
+data-version: releases/2020-08-07
+date: 03:08:2020 20:35
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1480,6 +1480,13 @@ created_by: mchibucos
 creation_date: 2011-04-26T02:58:46Z
 
 [Term]
+id: OMP:0000009
+name: decreased cell surface area-to-volume ratio
+is_a: OMP:0007999 ! altered cell surface area-to-volume ratio
+created_by: siegele
+creation_date: 2020-07-22T22:22:03Z
+
+[Term]
 id: OMP:0000010
 name: presence of heterocysts
 def: "A heterocyst formation phenotype where a cell possesses the ability to differentiate into a heterocyst." [OMP:MCC]
@@ -1566,6 +1573,13 @@ created_by: mchibucos
 creation_date: 2011-04-26T03:09:25Z
 
 [Term]
+id: OMP:0000019
+name: increased cell surface area-to-volume ratio
+is_a: OMP:0007999 ! altered cell surface area-to-volume ratio
+created_by: siegele
+creation_date: 2020-07-22T22:22:03Z
+
+[Term]
 id: OMP:0000020
 name: presence of myxospore formation
 def: "A myxospore formation phenotype where an organism possesses the ability to form myxospores." [OMP:MCC]
@@ -1618,6 +1632,14 @@ def: "An altered flagellum phenotype where the length of the flagellum is altere
 is_a: OMP:0007105 ! altered flagellum
 created_by: mchibucos
 creation_date: 2011-06-07T11:19:56Z
+
+[Term]
+id: OMP:0000025
+name: altered cell surface area-to-volume ratio variability
+is_a: OMP:0007918 ! altered cell size variability within a cell population
+is_a: OMP:0007999 ! altered cell surface area-to-volume ratio
+created_by: siegele
+creation_date: 2020-07-22T22:23:15Z
 
 [Term]
 id: OMP:0000026
@@ -1677,6 +1699,13 @@ created_by: mchibucos
 creation_date: 2011-04-26T03:41:37Z
 
 [Term]
+id: OMP:0000032
+name: decreased cell surface area-to-volume ratio variability
+is_a: OMP:0000025 ! altered cell surface area-to-volume ratio variability
+created_by: siegele
+creation_date: 2020-07-22T22:24:44Z
+
+[Term]
 id: OMP:0000033
 name: absence of pilus
 def: "A pilus phenotype where an organism does not possess a pilus." [OMP:MCC]
@@ -1721,6 +1750,13 @@ created_by: mchibucos
 creation_date: 2011-06-07T11:25:05Z
 
 [Term]
+id: OMP:0000038
+name: increased cell surface area-to-volume ratio variability
+is_a: OMP:0000025 ! altered cell surface area-to-volume ratio variability
+created_by: siegele
+creation_date: 2020-07-22T22:24:44Z
+
+[Term]
 id: OMP:0000039
 name: O2 effects on population growth phenotype
 def: "A population growth range phenotype related to how growth of a microbial population is affected by different concentrations of oxygen gas (O2) in the environment." [OMP:WAM]
@@ -1757,11 +1793,19 @@ creation_date: 2011-04-26T03:51:47Z
 
 [Term]
 id: OMP:0000043
-name: nucleoid number
+name: nucleoid number phenotype
 def: "A nucleoid phenotype dealing with the number of nucleoid regions in the cell." [OMP:WAM]
 is_a: OMP:0000150 ! nucleoid phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T03:53:34Z
+
+[Term]
+id: OMP:0000044
+name: altered cell circularity
+def: "Cell circularity is defined as (2*pi*cell area/(cell perimeter)^2)." [OMP:das]
+is_a: OMP:0007101 ! altered cell shape
+created_by: siegele
+creation_date: 2020-07-22T22:30:41Z
 
 [Term]
 id: OMP:0000045
@@ -1826,6 +1870,13 @@ def: "An altered capsule phenotype where the amount of capsule produced is decre
 is_a: OMP:0007133 ! altered capsule phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T10:53:59Z
+
+[Term]
+id: OMP:0000051
+name: decreased cell circularity
+is_a: OMP:0000044 ! altered cell circularity
+created_by: siegele
+creation_date: 2020-07-22T22:32:02Z
 
 [Term]
 id: OMP:0000052
@@ -1929,6 +1980,13 @@ def: "A quorum sensing phenotype where an organism does not possess the ability 
 is_a: OMP:0000069 ! quorum sensing phenotype
 created_by: mchibucos
 creation_date: 2011-04-26T05:06:00Z
+
+[Term]
+id: OMP:0000064
+name: increased cell circularity
+is_a: OMP:0000044 ! altered cell circularity
+created_by: siegele
+creation_date: 2020-07-22T22:32:02Z
 
 [Term]
 id: OMP:0000065
@@ -2647,6 +2705,14 @@ created_by: Adrienne
 creation_date: 2011-02-02T02:46:39Z
 
 [Term]
+id: OMP:0000138
+name: altered cell circularity variability
+def: "Cell circularity is defined as (2*pi*cell area/(cell perimeter)^2)." []
+is_a: OMP:0000044 ! altered cell circularity
+created_by: siegele
+creation_date: 2020-07-22T22:32:45Z
+
+[Term]
 id: OMP:0000139
 name: dull colony sheen
 def: "A colony form phenotype characterized by a dull luster on the surface." [OMP:JCH]
@@ -2684,16 +2750,16 @@ creation_date: 2011-02-21T04:27:22Z
 [Term]
 id: OMP:0000143
 name: single nucleoid
-def: "A nucleoid number phenotype where there is only one nucleoid regions in the cell." [OMP:WAM]
-is_a: OMP:0000043 ! nucleoid number
+def: "A nucleoid number phenotype where there is only one nucleoid region in the cell." [OMP:WAM]
+is_a: OMP:0000043 ! nucleoid number phenotype
 created_by: adrienne
 creation_date: 2011-02-21T04:27:48Z
 
 [Term]
 id: OMP:0000144
 name: multiple nucleoids
-def: "A nucleoid number phenotype where there are more than one nucleoid regions in the cell." [OMP:WAM]
-is_a: OMP:0000043 ! nucleoid number
+def: "A nucleoid number phenotype where there is more than one nucleoid regions in the cell." [OMP:WAM]
+is_a: OMP:0000043 ! nucleoid number phenotype
 created_by: adrienne
 creation_date: 2011-02-21T04:28:30Z
 
@@ -2920,6 +2986,13 @@ created_by: Adrienne
 creation_date: 2011-02-02T02:52:30Z
 
 [Term]
+id: OMP:0000170
+name: decreased cell circularity variability
+is_a: OMP:0000138 ! altered cell circularity variability
+created_by: siegele
+creation_date: 2020-07-22T22:34:00Z
+
+[Term]
 id: OMP:0000171
 name: microaerophile
 def: "An oxygen growth range phenotype where growth and reproduction requires oxygen but at levels below that found in air (approx. 21%).\n\nA microbial phenotype that describes a microorganism that requires O2 for growth, but doesn't grow in the presence of atmospheric levels of O2. Optimal growth of a microaerophile occurs in environments with xx% - xx% O2." [ISBN:9780073402406, OMP:WAM]
@@ -3065,6 +3138,13 @@ created_by: Adrienne
 creation_date: 2011-02-02T03:29:51Z
 
 [Term]
+id: OMP:0000186
+name: increased cell circularity variability
+is_a: OMP:0000138 ! altered cell circularity variability
+created_by: siegele
+creation_date: 2020-07-22T22:34:00Z
+
+[Term]
 id: OMP:0000187
 name: granulation phenotype
 def: "A liquid culture morphology phenotype where cells group together and form small particles in the medium." [ISBN:9780763743031, OMP:WAM]
@@ -3120,6 +3200,13 @@ subset: qc_do_not_manually_annotate
 is_a: OMP:0000180 ! metabolic phenotype
 created_by: Adrienne
 creation_date: 2011-02-03T11:24:08Z
+
+[Term]
+id: OMP:0000193
+name: altered cell aspect ratio
+is_a: OMP:0007101 ! altered cell shape
+created_by: siegele
+creation_date: 2020-07-22T22:35:03Z
 
 [Term]
 id: OMP:0000194
@@ -3396,6 +3483,13 @@ created_by: Adrienne
 creation_date: 2011-02-03T04:45:37Z
 
 [Term]
+id: OMP:0000223
+name: decreased cell aspect ratio
+is_a: OMP:0000193 ! altered cell aspect ratio
+created_by: siegele
+creation_date: 2020-07-22T22:36:00Z
+
+[Term]
 id: OMP:0000224
 name: energy metabolism phenotype
 def: "A metabolic phenotype that deals with the specific process an organism uses to produce energy carriers." [OMP:JCH]
@@ -3413,6 +3507,20 @@ def: "A chemical production phenotype where carbon dioxide is produced." [OMP:JC
 is_a: OMP:0000192 ! chemical production phenotype
 created_by: Adrienne
 creation_date: 2011-02-07T03:53:37Z
+
+[Term]
+id: OMP:0000226
+name: increased cell aspect ratio
+is_a: OMP:0000193 ! altered cell aspect ratio
+created_by: siegele
+creation_date: 2020-07-22T22:36:00Z
+
+[Term]
+id: OMP:0000227
+name: altered cell aspect ratio variability
+is_a: OMP:0000193 ! altered cell aspect ratio
+created_by: siegele
+creation_date: 2020-07-22T22:37:16Z
 
 [Term]
 id: OMP:0000228
@@ -3458,6 +3566,13 @@ created_by: mchibucos
 creation_date: 2011-06-07T12:39:13Z
 
 [Term]
+id: OMP:0000233
+name: decreased cell aspect ratio variability
+is_a: OMP:0000227 ! altered cell aspect ratio variability
+created_by: siegele
+creation_date: 2020-07-22T22:38:22Z
+
+[Term]
 id: OMP:0000234
 name: butyrous colony consistency
 def: "A colony consistency phenotype where a colony or colonies have a butter-like consistency." [ISBN:1555810489, OMP:WAM]
@@ -3466,6 +3581,13 @@ xref: SNOMEDCT:25778006 "Bacterial colony consistency, butyrous"
 is_a: OMP:0000229 ! colony consistency phenotype
 created_by: mchibucos
 creation_date: 2011-06-07T12:41:24Z
+
+[Term]
+id: OMP:0000235
+name: increased cell aspect ratio variability
+is_a: OMP:0000227 ! altered cell aspect ratio variability
+created_by: siegele
+creation_date: 2020-07-22T22:38:22Z
 
 [Term]
 id: OMP:0000236
@@ -3585,6 +3707,23 @@ created_by: mchibucos
 creation_date: 2011-06-07T03:19:25Z
 
 [Term]
+id: OMP:0000250
+name: altered cell division
+def: "A cellular process phenotype observed in the vegetative growth phase of the life cycle in which cell division is altered relative to a designated control." [OMP:das]
+synonym: "abnormal cell division" NARROW [FYPO:0000186]
+is_a: OMP:0007784 ! altered cellular process during vegetative growth
+created_by: siegele
+creation_date: 2020-07-22T22:55:26Z
+
+[Term]
+id: OMP:0000251
+name: altered cell division ratio variability
+is_a: OMP:0000250 ! altered cell division
+is_a: OMP:0000281 ! altered cell population phenotype
+created_by: siegele
+creation_date: 2020-07-22T22:58:18Z
+
+[Term]
 id: OMP:0000252
 name: metabolite accumulation
 def: "A metabolic phenotype that deals with the accumulation of small intermediate or products of metabolism." [OMP:JCH]
@@ -3635,6 +3774,13 @@ created_by: mchibucos
 creation_date: 2011-07-21T01:35:25Z
 
 [Term]
+id: OMP:0000257
+name: decreased cell division ratio variability
+is_a: OMP:0000251 ! altered cell division ratio variability
+created_by: siegele
+creation_date: 2020-07-22T23:00:48Z
+
+[Term]
 id: OMP:0000258
 name: red colony on MacConkey agar
 def: "A colony morphology phenotype where cells form a red colony on MacConkey agar medium." [OMP:AZ]
@@ -3642,6 +3788,64 @@ comment: This term was made obsolete because 'red colony on MacConkey agar' was 
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T01:38:10Z
+
+[Term]
+id: OMP:0000259
+name: increased cell division ratio variability
+is_a: OMP:0000251 ! altered cell division ratio variability
+created_by: siegele
+creation_date: 2020-07-22T23:00:48Z
+
+[Term]
+id: OMP:0000260
+name: altered nucleoid area
+is_a: OMP:0000150 ! nucleoid phenotype
+created_by: siegele
+creation_date: 2020-07-22T23:02:57Z
+
+[Term]
+id: OMP:0000261
+name: decreased nucleoid area
+is_a: OMP:0000260 ! altered nucleoid area
+created_by: siegele
+creation_date: 2020-07-22T23:04:02Z
+
+[Term]
+id: OMP:0000262
+name: increased nucleoid area
+is_a: OMP:0000260 ! altered nucleoid area
+created_by: siegele
+creation_date: 2020-07-22T23:04:02Z
+
+[Term]
+id: OMP:0000263
+name: altered nucleoid area variability
+is_a: OMP:0000260 ! altered nucleoid area
+is_a: OMP:0000281 ! altered cell population phenotype
+created_by: siegele
+creation_date: 2020-07-22T23:05:16Z
+
+[Term]
+id: OMP:0000264
+name: decreased nucleoid area variability
+is_a: OMP:0000263 ! altered nucleoid area variability
+created_by: siegele
+creation_date: 2020-07-22T23:06:26Z
+
+[Term]
+id: OMP:0000265
+name: increased nucleoid area variability
+is_a: OMP:0000263 ! altered nucleoid area variability
+created_by: siegele
+creation_date: 2020-07-22T23:06:26Z
+
+[Term]
+id: OMP:0000266
+name: altered cell population growth rate
+is_a: OMP:0007809 ! altered cell population growth
+is_a: OMP:0007810 ! cell population growth rate phenotype
+created_by: siegele
+creation_date: 2020-07-22T23:15:57Z
 
 [Term]
 id: OMP:0000267
@@ -3669,6 +3873,34 @@ created_by: mchibucos
 creation_date: 2011-07-21T02:05:51Z
 
 [Term]
+id: OMP:0000270
+name: decreased cell population growth rate
+is_a: OMP:0000266 ! altered cell population growth rate
+created_by: siegele
+creation_date: 2020-07-22T23:16:35Z
+
+[Term]
+id: OMP:0000271
+name: increased cell population growth rate
+is_a: OMP:0000266 ! altered cell population growth rate
+created_by: siegele
+creation_date: 2020-07-22T23:16:35Z
+
+[Term]
+id: OMP:0000272
+name: cell morphology variability
+is_a: OMP:0007698 ! cell population phenotype
+created_by: siegele
+creation_date: 2020-07-23T10:45:45Z
+
+[Term]
+id: OMP:0000273
+name: altered cell perimeter
+is_a: OMP:0007083 ! altered cell size
+created_by: siegele
+creation_date: 2020-07-23T11:13:40Z
+
+[Term]
 id: OMP:0000274
 name: antimicrobial agent resistance phenotype
 def: "A microbial phenotype related to the resistance or sensitivity of a microbe to antimicrobial agents that kill (microbiocidal) or inhibit growth (microbiostatic) of a microbe." [CHEBI:33281, OMP:MCC]
@@ -3689,6 +3921,42 @@ created_by: mchibucos
 creation_date: 2011-07-21T02:21:21Z
 
 [Term]
+id: OMP:0000275
+name: decreased cell perimeter
+is_a: OMP:0000273 ! altered cell perimeter
+created_by: siegele
+creation_date: 2020-07-23T11:14:11Z
+
+[Term]
+id: OMP:0000276
+name: increased cell perimeter
+is_a: OMP:0000273 ! altered cell perimeter
+created_by: siegele
+creation_date: 2020-07-23T11:14:11Z
+
+[Term]
+id: OMP:0000277
+name: altered cell perimeter variability
+is_a: OMP:0000281 ! altered cell population phenotype
+is_a: OMP:0007083 ! altered cell size
+created_by: siegele
+creation_date: 2020-07-23T11:14:34Z
+
+[Term]
+id: OMP:0000278
+name: decreased cell perimeter variability
+is_a: OMP:0000277 ! altered cell perimeter variability
+created_by: siegele
+creation_date: 2020-07-23T11:15:25Z
+
+[Term]
+id: OMP:0000279
+name: increased cell perimeter variability
+is_a: OMP:0000277 ! altered cell perimeter variability
+created_by: siegele
+creation_date: 2020-07-23T11:15:25Z
+
+[Term]
 id: OMP:0000280
 name: increased cell length
 def: "An altered cell morphology in which microbial cells are longer than a designated control; i.e. the maximum distance between the cell ends is greater than a designated control." [OMP:DAS]
@@ -3697,6 +3965,14 @@ xref: FYPO:0000017 "elongated cell"
 is_a: OMP:0000041 ! increased cell size
 created_by: mchibucos
 creation_date: 2011-07-21T02:37:15Z
+
+[Term]
+id: OMP:0000281
+name: altered cell population phenotype
+is_a: OMP:0007698 ! cell population phenotype
+is_a: OMP:0007931 ! altered population phenotype
+created_by: siegele
+creation_date: 2020-07-23T11:38:45Z
 
 [Term]
 id: OMP:0000282
@@ -3719,6 +3995,41 @@ synonym: "increased growth rate" EXACT []
 is_a: OMP:0007115 ! altered population growth rate
 created_by: mchibucos
 creation_date: 2011-07-21T02:43:22Z
+
+[Term]
+id: OMP:0000284
+name: altered cell population growth yield
+is_a: OMP:0007809 ! altered cell population growth
+created_by: siegele
+creation_date: 2020-07-23T12:28:35Z
+
+[Term]
+id: OMP:0000285
+name: decreased cell population growth yield
+is_a: OMP:0000284 ! altered cell population growth yield
+created_by: siegele
+creation_date: 2020-07-23T12:29:32Z
+
+[Term]
+id: OMP:0000286
+name: increased cell population growth yield
+is_a: OMP:0000284 ! altered cell population growth yield
+created_by: siegele
+creation_date: 2020-07-23T12:29:32Z
+
+[Term]
+id: OMP:0000287
+name: altered fraction of non-constricted cells
+is_a: OMP:0000281 ! altered cell population phenotype
+created_by: siegele
+creation_date: 2020-07-23T12:46:03Z
+
+[Term]
+id: OMP:0000288
+name: decreased fraction of non-constricted cells
+is_a: OMP:0000287 ! altered fraction of non-constricted cells
+created_by: siegele
+creation_date: 2020-07-23T12:47:02Z
 
 [Term]
 id: OMP:0000289
@@ -3752,6 +4063,20 @@ created_by: mchibucos
 creation_date: 2011-07-21T04:25:09Z
 
 [Term]
+id: OMP:0000292
+name: increased fraction of non-constricted cells
+is_a: OMP:0000287 ! altered fraction of non-constricted cells
+created_by: siegele
+creation_date: 2020-07-23T12:47:02Z
+
+[Term]
+id: OMP:0000293
+name: altered fraction of cells with one nucleoid
+is_a: OMP:0000043 ! nucleoid number phenotype
+created_by: siegele
+creation_date: 2020-07-23T12:50:06Z
+
+[Term]
 id: OMP:0000294
 name: DNA supercoiling phenotype
 def: "A genetic material phenotype related to supercoiling of a double-stranded DNA molecule." [OMP:DAS]
@@ -3780,6 +4105,20 @@ created_by: mchibucos
 creation_date: 2011-07-21T04:48:22Z
 
 [Term]
+id: OMP:0000297
+name: decreased fraction of cells with one nucleoid
+is_a: OMP:0000293 ! altered fraction of cells with one nucleoid
+created_by: siegele
+creation_date: 2020-07-23T12:50:57Z
+
+[Term]
+id: OMP:0000298
+name: increased fraction of cells with one nucleoid
+is_a: OMP:0000293 ! altered fraction of cells with one nucleoid
+created_by: siegele
+creation_date: 2020-07-23T12:50:57Z
+
+[Term]
 id: OMP:0000299
 name: galactose-1-phosphate uridyl transferase activity
 def: "An enzymatic activity phenotype where galactose-1-phosphate uridyl transferase activity is present." []
@@ -3789,6 +4128,34 @@ created_by: mchibucos
 creation_date: 2011-07-21T05:12:43Z
 
 [Term]
+id: OMP:0000300
+name: altered fraction of cells with two nucleoids
+is_a: OMP:0000043 ! nucleoid number phenotype
+created_by: siegele
+creation_date: 2020-07-23T12:52:56Z
+
+[Term]
+id: OMP:0000301
+name: decreased fraction of cells with two nucleoids
+is_a: OMP:0000300 ! altered fraction of cells with two nucleoids
+created_by: siegele
+creation_date: 2020-07-23T12:53:45Z
+
+[Term]
+id: OMP:0000302
+name: increased fraction of cells with two nucleoids
+is_a: OMP:0000300 ! altered fraction of cells with two nucleoids
+created_by: siegele
+creation_date: 2020-07-23T12:53:45Z
+
+[Term]
+id: OMP:0000303
+name: altered correlation between the degrees of constriction of the nucleoid and the cell
+is_a: OMP:0000281 ! altered cell population phenotype
+created_by: siegele
+creation_date: 2020-07-23T14:15:02Z
+
+[Term]
 id: OMP:0000304
 name: increased substrate binding
 def: "A substrate binding phenotype where a protein has increased affinity for a substrate." []
@@ -3796,6 +4163,13 @@ comment: This term was obsoleted in response to the decision that Kd measurement
 is_obsolete: true
 created_by: mchibucos
 creation_date: 2011-07-21T05:18:58Z
+
+[Term]
+id: OMP:0000305
+name: decreased correlation between the degrees of constriction of the nucleoid and the cell
+is_a: OMP:0000303 ! altered correlation between the degrees of constriction of the nucleoid and the cell
+created_by: siegele
+creation_date: 2020-07-23T14:16:06Z
 
 [Term]
 id: OMP:0000306
@@ -3875,6 +4249,48 @@ created_by: mchibucos
 creation_date: 2012-04-05T11:43:53Z
 
 [Term]
+id: OMP:0000313
+name: increased correlation between the degrees of constriction of the nucleoid and the cell
+is_a: OMP:0000303 ! altered correlation between the degrees of constriction of the nucleoid and the cell
+created_by: siegele
+creation_date: 2020-07-23T14:16:06Z
+
+[Term]
+id: OMP:0000314
+name: altered degree of nucleoid constriction at the onset of cell constriction
+is_a: OMP:0000281 ! altered cell population phenotype
+created_by: siegele
+creation_date: 2020-07-23T14:18:50Z
+
+[Term]
+id: OMP:0000315
+name: decreased degree of nucleoid constriction at the onset of cell constriction
+is_a: OMP:0000314 ! altered degree of nucleoid constriction at the onset of cell constriction
+created_by: siegele
+creation_date: 2020-07-23T14:19:22Z
+
+[Term]
+id: OMP:0000316
+name: increased degree of nucleoid constriction at the onset of cell constriction
+is_a: OMP:0000314 ! altered degree of nucleoid constriction at the onset of cell constriction
+created_by: siegele
+creation_date: 2020-07-23T14:19:22Z
+
+[Term]
+id: OMP:0000318
+name: presence of cell length variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T17:23:35Z
+
+[Term]
+id: OMP:0000320
+name: presence of cell width variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T17:25:52Z
+
+[Term]
 id: OMP:0000321
 name: macrolide resistance phenotype
 def: "An antimicrobial compound resistance phenotype related to resistance or sensitivity to compounds with a macrolide ring--a large lactone ring with multiple keto and hydroxyl groups--that is linked to one or more sugars and that have antimicrobial properties." [CHEBI:25106, OMP:MCC]
@@ -3905,6 +4321,34 @@ created_by: mchibucos
 creation_date: 2012-11-02T01:51:04Z
 
 [Term]
+id: OMP:0000323
+name: presence of cell area variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T17:35:24Z
+
+[Term]
+id: OMP:0000325
+name: presence of cell volume variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T17:44:34Z
+
+[Term]
+id: OMP:0000327
+name: presence of cell surface area variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T17:50:29Z
+
+[Term]
+id: OMP:0000329
+name: presence of cell perimeter variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T19:07:06Z
+
+[Term]
 id: OMP:0000331
 name: aminopyrimidine resistance phenotype
 def: "An antimicrobial agent resistance phenotype related to resistance or sensitivity to aminopyrimidine compounds." [CHEBI:38338, OMP:DAS]
@@ -3922,6 +4366,13 @@ synonym: "trimetrexate resistance phenotype" NARROW [CID:5583]
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:02:58Z
+
+[Term]
+id: OMP:0000332
+name: presence of surface-area-to-volume ratio variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T19:11:25Z
 
 [Term]
 id: OMP:0000334
@@ -3968,6 +4419,34 @@ xref: CHEBI:27933 "beta-lactam antibiotic"
 is_a: OMP:0000274 ! antimicrobial agent resistance phenotype
 created_by: mchibucos
 creation_date: 2012-11-02T02:06:13Z
+
+[Term]
+id: OMP:0000337
+name: presence of cell circularity variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T19:23:30Z
+
+[Term]
+id: OMP:0000339
+name: presence of cell aspect variability
+is_a: OMP:0007921 ! presence of cell size variability within a cell population
+created_by: siegele
+creation_date: 2020-07-26T19:54:28Z
+
+[Term]
+id: OMP:0000340
+name: presence of cell division ratio variability
+is_a: OMP:0007698 ! cell population phenotype
+created_by: siegele
+creation_date: 2020-07-26T19:58:18Z
+
+[Term]
+id: OMP:0000342
+name: presence of nucleoid area variability
+is_a: OMP:0007698 ! cell population phenotype
+created_by: siegele
+creation_date: 2020-07-27T16:05:18Z
 
 [Term]
 id: OMP:0000435
@@ -10102,7 +10581,7 @@ creation_date: 2014-04-30T16:07:16Z
 [Term]
 id: OMP:0007083
 name: altered cell size
-def: "A cell size phenotype where the size of a cell is altered relative to a designated control." [OMP:DAS]
+def: "An altered cell morphology phenotype in which the volume or dimensions of a microbial cell are altered relative to a designated control." [OMP:DAS]
 is_a: OMP:0000074 ! cell size phenotype
 is_a: OMP:0007103 ! altered cell morphology
 created_by: siegele
@@ -13495,6 +13974,7 @@ creation_date: 2016-08-10T14:56:12Z
 id: OMP:0007459
 name: altered cell population viability
 def: "A cell population viability phenotype where the proportion of cells that remain viable under the specified conditions is altered relative to a designated control." [OMP:DAS]
+is_a: OMP:0000281 ! altered cell population phenotype
 is_a: OMP:0007705 ! cell population viability phenotype
 created_by: dsiegele
 creation_date: 2016-08-10T14:56:12Z
@@ -15106,6 +15586,7 @@ creation_date: 2017-07-11T02:11:36Z
 id: OMP:0007642
 name: altered population growth yield
 def: "A population growth yield phenotype where the number of microbes produced per amount of nutrient(s) consumed is  altered relative to a designated control." [OMP:DAS]
+synonym: "altered population density at growth saturation" EXACT []
 is_a: OMP:0007641 ! population growth yield phenotype
 created_by: siegele
 creation_date: 2017-07-11T02:22:26Z
@@ -15114,6 +15595,7 @@ creation_date: 2017-07-11T02:22:26Z
 id: OMP:0007643
 name: increased population growth yield
 def: "An altered population growth yield phenotype where the number of microbes produced per amount of nutrient(s) consumed is increased relative to a designated control." [OMP:DAS]
+synonym: "increased population density at growth saturation" EXACT []
 is_a: OMP:0007642 ! altered population growth yield
 created_by: siegele
 creation_date: 2017-07-11T02:24:32Z
@@ -15122,6 +15604,7 @@ creation_date: 2017-07-11T02:24:32Z
 id: OMP:0007644
 name: decreased population growth yield
 def: "An altered population growth yield phenotype where the number of microbes produced per amount of nutrient(s) consumed is decreased relative to a designated control." [OMP:DAS]
+synonym: "decreased population density at growth saturation" EXACT []
 is_a: OMP:0007642 ! altered population growth yield
 created_by: siegele
 creation_date: 2017-07-11T02:24:32Z
@@ -15720,6 +16203,7 @@ creation_date: 2017-12-19T17:04:41Z
 [Term]
 id: OMP:0007713
 name: altered vegetative cell size
+def: "An xx phenotype observed in the vegetative growth phase of the life cycle in which the volume or dimensions of a microbial cell are altered relative to a designated control." [OMP:das]
 is_a: OMP:0007083 ! altered cell size
 is_a: OMP:0007715 ! altered vegetative cell morphology
 created_by: siegele
@@ -16458,6 +16942,7 @@ creation_date: 2018-06-12T00:51:39Z
 id: OMP:0007798
 name: altered vegetative cell population growth
 is_a: OMP:0007795 ! vegetative cell population growth phenotype
+is_a: OMP:0007809 ! altered cell population growth
 created_by: siegele
 creation_date: 2018-06-12T00:51:39Z
 
@@ -16547,6 +17032,7 @@ creation_date: 2018-06-19T15:53:53Z
 id: OMP:0007809
 name: altered cell population growth
 def: "A cell population growth phenotype where the rate or extent of growth of a population of microbial cells is altered relative to a designated control." [OMP:das]
+is_a: OMP:0000281 ! altered cell population phenotype
 is_a: OMP:0007157 ! altered population growth
 is_a: OMP:0007794 ! cell population growth phenotype
 created_by: dsiegele
@@ -17493,7 +17979,7 @@ creation_date: 2018-09-05T15:18:58Z
 
 [Term]
 id: OMP:0007918
-name: altered variability in cell size within a cell population
+name: altered cell size variability within a cell population
 is_a: OMP:0007917 ! cell size variability within a cell population phenotype
 created_by: siegele
 creation_date: 2018-09-05T15:21:39Z
@@ -17528,23 +18014,23 @@ creation_date: 2018-09-05T16:07:15Z
 
 [Term]
 id: OMP:0007923
-name: decreased variability in cell size within a cell population
-is_a: OMP:0007918 ! altered variability in cell size within a cell population
+name: decreased cell size variability within a cell population
+is_a: OMP:0007918 ! altered cell size variability within a cell population
 created_by: siegele
 creation_date: 2018-09-05T16:08:39Z
 
 [Term]
 id: OMP:0007924
-name: increased variability in cell size within a cell population
-is_a: OMP:0007918 ! altered variability in cell size within a cell population
+name: increased cell size variability within a cell population
+is_a: OMP:0007918 ! altered cell size variability within a cell population
 created_by: siegele
 creation_date: 2018-09-05T16:08:39Z
 
 [Term]
 id: OMP:0007925
-name: abolished variability in cell size within a cell population
+name: abolished cell size variability within a cell population
 is_a: OMP:0007922 ! absence of cell size variability within a cell population
-is_a: OMP:0007923 ! decreased variability in cell size within a cell population
+is_a: OMP:0007923 ! decreased cell size variability within a cell population
 created_by: siegele
 creation_date: 2018-09-05T16:08:39Z
 
@@ -17944,6 +18430,184 @@ def: "An altered tolerance to an antimicrobial agent phenotype where minimum dur
 is_a: OMP:0007972 ! altered tolerance to an antimicrobial agent phenotype
 created_by: siegele
 creation_date: 2020-05-08T13:17:08Z
+
+[Term]
+id: OMP:0007975
+name: altered cell length
+is_a: OMP:0007083 ! altered cell size
+created_by: siegele
+creation_date: 2020-07-22T19:20:08Z
+
+[Term]
+id: OMP:0007976
+name: altered cell length variability
+is_a: OMP:0007918 ! altered cell size variability within a cell population
+is_a: OMP:0007975 ! altered cell length
+created_by: siegele
+creation_date: 2020-07-22T19:21:08Z
+
+[Term]
+id: OMP:0007977
+name: altered cell diameter
+is_a: OMP:0007083 ! altered cell size
+created_by: siegele
+creation_date: 2020-07-22T19:22:09Z
+
+[Term]
+id: OMP:0007978
+name: altered cell width variability
+is_a: OMP:0007977 ! altered cell diameter
+created_by: siegele
+creation_date: 2020-07-22T19:22:31Z
+
+[Term]
+id: OMP:0007979
+name: increased cell length variability
+is_a: OMP:0007976 ! altered cell length variability
+created_by: siegele
+creation_date: 2020-07-22T19:24:06Z
+
+[Term]
+id: OMP:0007980
+name: decreased cell length variability
+is_a: OMP:0007976 ! altered cell length variability
+created_by: siegele
+creation_date: 2020-07-22T19:24:06Z
+
+[Term]
+id: OMP:0007981
+name: decreased cell width variability
+is_a: OMP:0007978 ! altered cell width variability
+created_by: siegele
+creation_date: 2020-07-22T19:36:15Z
+
+[Term]
+id: OMP:0007982
+name: increased cell width variability
+is_a: OMP:0007978 ! altered cell width variability
+created_by: siegele
+creation_date: 2020-07-22T19:36:15Z
+
+[Term]
+id: OMP:0007983
+name: altered cell area
+is_a: OMP:0007083 ! altered cell size
+created_by: siegele
+creation_date: 2020-07-22T20:21:33Z
+
+[Term]
+id: OMP:0007984
+name: altered cell area variability
+is_a: OMP:0007918 ! altered cell size variability within a cell population
+is_a: OMP:0007983 ! altered cell area
+created_by: siegele
+creation_date: 2020-07-22T20:22:13Z
+
+[Term]
+id: OMP:0007985
+name: decreased cell area
+is_a: OMP:0007983 ! altered cell area
+created_by: siegele
+creation_date: 2020-07-22T20:23:00Z
+
+[Term]
+id: OMP:0007986
+name: increased cell area
+is_a: OMP:0007983 ! altered cell area
+created_by: siegele
+creation_date: 2020-07-22T20:23:00Z
+
+[Term]
+id: OMP:0007987
+name: decreased cell area variability
+is_a: OMP:0007984 ! altered cell area variability
+created_by: siegele
+creation_date: 2020-07-22T20:23:10Z
+
+[Term]
+id: OMP:0007988
+name: increased cell area variability
+is_a: OMP:0007984 ! altered cell area variability
+created_by: siegele
+creation_date: 2020-07-22T20:23:34Z
+
+[Term]
+id: OMP:0007989
+name: altered cell volume
+is_a: OMP:0007083 ! altered cell size
+created_by: siegele
+creation_date: 2020-07-22T20:25:24Z
+
+[Term]
+id: OMP:0007990
+name: altered cell volume variability
+is_a: OMP:0007989 ! altered cell volume
+created_by: siegele
+creation_date: 2020-07-22T20:26:40Z
+
+[Term]
+id: OMP:0007991
+name: decreased cell volume variability
+is_a: OMP:0007990 ! altered cell volume variability
+created_by: siegele
+creation_date: 2020-07-22T20:27:50Z
+
+[Term]
+id: OMP:0007992
+name: increased cell volume variability
+is_a: OMP:0007990 ! altered cell volume variability
+created_by: siegele
+creation_date: 2020-07-22T20:27:50Z
+
+[Term]
+id: OMP:0007993
+name: altered cell surface area
+is_a: OMP:0007083 ! altered cell size
+created_by: siegele
+creation_date: 2020-07-22T20:28:53Z
+
+[Term]
+id: OMP:0007994
+name: decreased cell surface area
+is_a: OMP:0007993 ! altered cell surface area
+created_by: siegele
+creation_date: 2020-07-22T20:29:49Z
+
+[Term]
+id: OMP:0007995
+name: increased cell surface area
+is_a: OMP:0007993 ! altered cell surface area
+created_by: siegele
+creation_date: 2020-07-22T20:29:49Z
+
+[Term]
+id: OMP:0007996
+name: altered cell surface area variability
+is_a: OMP:0007918 ! altered cell size variability within a cell population
+is_a: OMP:0007993 ! altered cell surface area
+created_by: siegele
+creation_date: 2020-07-22T20:29:49Z
+
+[Term]
+id: OMP:0007997
+name: decreased cell surface area variability
+is_a: OMP:0007996 ! altered cell surface area variability
+created_by: siegele
+creation_date: 2020-07-22T20:31:33Z
+
+[Term]
+id: OMP:0007998
+name: increased cell surface area variability
+is_a: OMP:0007996 ! altered cell surface area variability
+created_by: siegele
+creation_date: 2020-07-22T20:31:33Z
+
+[Term]
+id: OMP:0007999
+name: altered cell surface area-to-volume ratio
+is_a: OMP:0007083 ! altered cell size
+created_by: siegele
+creation_date: 2020-07-22T20:32:47Z
 
 [Term]
 id: OMP:0008000
