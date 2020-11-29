@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 03:08:2020 20:35
+date: 29:11:2020 14:35
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -1791,6 +1791,7 @@ creation_date: 2011-04-26T03:53:34Z
 id: OMP:0000044
 name: altered cell circularity
 def: "Cell circularity is defined as (2*pi*cell area/(cell perimeter)^2)." [OMP:das]
+is_a: OMP:0000333 ! cell circularity phenotype
 is_a: OMP:0007101 ! altered cell shape
 created_by: siegele
 creation_date: 2020-07-22T22:30:41Z
@@ -3169,6 +3170,8 @@ creation_date: 2011-02-03T11:24:08Z
 [Term]
 id: OMP:0000193
 name: altered cell aspect ratio
+def: "An altered cell shape phenotype where the cell aspect ratio (cell diameter/cell length) of a microbial cell is altered relative to a designated control." [OMP:das]
+is_a: OMP:0000338 ! cell aspect ratio phenotype
 is_a: OMP:0007101 ! altered cell shape
 created_by: siegele
 creation_date: 2020-07-22T22:35:03Z
@@ -3450,6 +3453,7 @@ creation_date: 2011-02-03T04:45:37Z
 [Term]
 id: OMP:0000223
 name: decreased cell aspect ratio
+def: "An altered cell aspect ratio phenotype where the cell aspect ratio (cell diameter/cell length) of a microbial cell is decreased relative to a designated control." [OMP:das]
 is_a: OMP:0000193 ! altered cell aspect ratio
 created_by: siegele
 creation_date: 2020-07-22T22:36:00Z
@@ -3476,6 +3480,7 @@ creation_date: 2011-02-07T03:53:37Z
 [Term]
 id: OMP:0000226
 name: increased cell aspect ratio
+def: "An altered cell aspect ratio phenotype where the cell aspect ratio (cell diameter/cell length) of a microbial cell is increased relative to a designated control." [OMP:das]
 is_a: OMP:0000193 ! altered cell aspect ratio
 created_by: siegele
 creation_date: 2020-07-22T22:36:00Z
@@ -3763,7 +3768,7 @@ creation_date: 2020-07-22T23:00:48Z
 [Term]
 id: OMP:0000260
 name: altered nucleoid area
-is_a: OMP:0000150 ! nucleoid phenotype
+is_a: OMP:0000344 ! nucleoid area phenotype
 created_by: siegele
 creation_date: 2020-07-22T23:02:57Z
 
@@ -3784,7 +3789,6 @@ creation_date: 2020-07-22T23:04:02Z
 [Term]
 id: OMP:0000263
 name: altered nucleoid area variability
-is_a: OMP:0000260 ! altered nucleoid area
 is_a: OMP:0000281 ! altered cell population phenotype
 created_by: siegele
 creation_date: 2020-07-22T23:05:16Z
@@ -3859,7 +3863,8 @@ creation_date: 2020-07-23T10:45:45Z
 
 [Term]
 id: OMP:0000273
-name: altered cell perimeter
+name: altered cell perimeter length
+is_a: OMP:0000324 ! cell perimeter length phenotype
 is_a: OMP:0007083 ! altered cell size
 created_by: siegele
 creation_date: 2020-07-23T11:13:40Z
@@ -3886,36 +3891,37 @@ creation_date: 2011-07-21T02:21:21Z
 [Term]
 id: OMP:0000275
 name: decreased cell perimeter
-is_a: OMP:0000273 ! altered cell perimeter
+is_a: OMP:0000273 ! altered cell perimeter length
 created_by: siegele
 creation_date: 2020-07-23T11:14:11Z
 
 [Term]
 id: OMP:0000276
 name: increased cell perimeter
-is_a: OMP:0000273 ! altered cell perimeter
+is_a: OMP:0000273 ! altered cell perimeter length
 created_by: siegele
 creation_date: 2020-07-23T11:14:11Z
 
 [Term]
 id: OMP:0000277
-name: altered cell perimeter variability
+name: altered cell perimeter length variability
 is_a: OMP:0000281 ! altered cell population phenotype
 is_a: OMP:0007083 ! altered cell size
+is_a: OMP:0007918 ! altered cell size variability within a cell population
 created_by: siegele
 creation_date: 2020-07-23T11:14:34Z
 
 [Term]
 id: OMP:0000278
-name: decreased cell perimeter variability
-is_a: OMP:0000277 ! altered cell perimeter variability
+name: decreased cell perimeter length variability
+is_a: OMP:0000277 ! altered cell perimeter length variability
 created_by: siegele
 creation_date: 2020-07-23T11:15:25Z
 
 [Term]
 id: OMP:0000279
-name: increased cell perimeter variability
-is_a: OMP:0000277 ! altered cell perimeter variability
+name: increased cell perimeter length variability
+is_a: OMP:0000277 ! altered cell perimeter length variability
 created_by: siegele
 creation_date: 2020-07-23T11:15:25Z
 
@@ -3926,6 +3932,7 @@ def: "An altered cell morphology in which microbial cells are longer than a desi
 comment: The mukB mutant appear to have elongated cell length. This is different from cell filamentation. PMID:1989883.
 xref: FYPO:0000017 "elongated cell"
 is_a: OMP:0000041 ! increased cell size
+is_a: OMP:0007975 ! altered cell length
 created_by: mchibucos
 creation_date: 2011-07-21T02:37:15Z
 
@@ -3962,6 +3969,7 @@ creation_date: 2011-07-21T02:43:22Z
 [Term]
 id: OMP:0000284
 name: altered cell population growth yield
+is_a: OMP:0000345 ! cell population growth yield phenotype
 is_a: OMP:0007809 ! altered cell population growth
 created_by: siegele
 creation_date: 2020-07-23T12:28:35Z
@@ -3983,7 +3991,8 @@ creation_date: 2020-07-23T12:29:32Z
 [Term]
 id: OMP:0000287
 name: altered fraction of non-constricted cells
-is_a: OMP:0000281 ! altered cell population phenotype
+def: "population growth phenotype" []
+is_a: OMP:0000350 ! altered cell division during cell population growth
 created_by: siegele
 creation_date: 2020-07-23T12:46:03Z
 
@@ -4113,8 +4122,8 @@ creation_date: 2020-07-23T12:53:45Z
 
 [Term]
 id: OMP:0000303
-name: altered correlation between the degrees of constriction of the nucleoid and the cell
-is_a: OMP:0000281 ! altered cell population phenotype
+name: altered correlation between nucleoid and cell constriction during cell division
+is_a: OMP:0000347 ! altered nucleoid constriction during cell division
 created_by: siegele
 creation_date: 2020-07-23T14:15:02Z
 
@@ -4129,8 +4138,8 @@ creation_date: 2011-07-21T05:18:58Z
 
 [Term]
 id: OMP:0000305
-name: decreased correlation between the degrees of constriction of the nucleoid and the cell
-is_a: OMP:0000303 ! altered correlation between the degrees of constriction of the nucleoid and the cell
+name: decreased correlation between nucleoid and cell constriction during cell division
+is_a: OMP:0000303 ! altered correlation between nucleoid and cell constriction during cell division
 created_by: siegele
 creation_date: 2020-07-23T14:16:06Z
 
@@ -4213,15 +4222,16 @@ creation_date: 2012-04-05T11:43:53Z
 
 [Term]
 id: OMP:0000313
-name: increased correlation between the degrees of constriction of the nucleoid and the cell
-is_a: OMP:0000303 ! altered correlation between the degrees of constriction of the nucleoid and the cell
+name: increased correlation between nucleoid and cell constriction during cell division
+is_a: OMP:0000303 ! altered correlation between nucleoid and cell constriction during cell division
 created_by: siegele
 creation_date: 2020-07-23T14:16:06Z
 
 [Term]
 id: OMP:0000314
 name: altered degree of nucleoid constriction at the onset of cell constriction
-is_a: OMP:0000281 ! altered cell population phenotype
+comment: This is a population average.
+is_a: OMP:0000347 ! altered nucleoid constriction during cell division
 created_by: siegele
 creation_date: 2020-07-23T14:18:50Z
 
@@ -4240,6 +4250,13 @@ created_by: siegele
 creation_date: 2020-07-23T14:19:22Z
 
 [Term]
+id: OMP:0000317
+name: cell diameter phenotype
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-11-18T10:05:19Z
+
+[Term]
 id: OMP:0000318
 name: presence of cell length variability
 is_a: OMP:0007921 ! presence of cell size variability within a cell population
@@ -4247,8 +4264,15 @@ created_by: siegele
 creation_date: 2020-07-26T17:23:35Z
 
 [Term]
+id: OMP:0000319
+name: cell area phenotype
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-11-26T13:14:47Z
+
+[Term]
 id: OMP:0000320
-name: presence of cell width variability
+name: presence of cell diameter variability
 is_a: OMP:0007921 ! presence of cell size variability within a cell population
 created_by: siegele
 creation_date: 2020-07-26T17:25:52Z
@@ -4284,11 +4308,25 @@ created_by: mchibucos
 creation_date: 2012-11-02T01:51:04Z
 
 [Term]
+id: OMP:0000322
+name: cell length phenotype
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-11-26T13:14:47Z
+
+[Term]
 id: OMP:0000323
 name: presence of cell area variability
 is_a: OMP:0007921 ! presence of cell size variability within a cell population
 created_by: siegele
 creation_date: 2020-07-26T17:35:24Z
+
+[Term]
+id: OMP:0000324
+name: cell perimeter length phenotype
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-11-26T13:14:47Z
 
 [Term]
 id: OMP:0000325
@@ -4298,6 +4336,13 @@ created_by: siegele
 creation_date: 2020-07-26T17:44:34Z
 
 [Term]
+id: OMP:0000326
+name: cell surface area phenotype
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-11-26T13:14:47Z
+
+[Term]
 id: OMP:0000327
 name: presence of cell surface area variability
 is_a: OMP:0007921 ! presence of cell size variability within a cell population
@@ -4305,11 +4350,25 @@ created_by: siegele
 creation_date: 2020-07-26T17:50:29Z
 
 [Term]
+id: OMP:0000328
+name: cell volume phenotype
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-11-26T13:14:47Z
+
+[Term]
 id: OMP:0000329
-name: presence of cell perimeter variability
+name: presence of cell perimeter length variability
 is_a: OMP:0007921 ! presence of cell size variability within a cell population
 created_by: siegele
 creation_date: 2020-07-26T19:07:06Z
+
+[Term]
+id: OMP:0000330
+name: cell surface area-to-volume ratio phenotype
+is_a: OMP:0000074 ! cell size phenotype
+created_by: siegele
+creation_date: 2020-11-26T13:14:47Z
 
 [Term]
 id: OMP:0000331
@@ -4332,10 +4391,18 @@ creation_date: 2012-11-02T02:02:58Z
 
 [Term]
 id: OMP:0000332
-name: presence of surface-area-to-volume ratio variability
+name: presence of cell surface area-to-volume ratio variability
 is_a: OMP:0007921 ! presence of cell size variability within a cell population
 created_by: siegele
 creation_date: 2020-07-26T19:11:25Z
+
+[Term]
+id: OMP:0000333
+name: cell circularity phenotype
+def: "4 pi area/(perimeter)^2 or 2 pi area/(perimeter)^2? defined differently in two places in paper" []
+is_a: OMP:0000073 ! cell shape phenotype
+created_by: siegele
+creation_date: 2020-11-27T16:31:01Z
 
 [Term]
 id: OMP:0000334
@@ -4391,8 +4458,16 @@ created_by: siegele
 creation_date: 2020-07-26T19:23:30Z
 
 [Term]
+id: OMP:0000338
+name: cell aspect ratio phenotype
+def: "cell aspect ratio (diameter/length)" []
+is_a: OMP:0000073 ! cell shape phenotype
+created_by: siegele
+creation_date: 2020-11-27T19:14:47Z
+
+[Term]
 id: OMP:0000339
-name: presence of cell aspect variability
+name: presence of cell aspect ratio variability
 is_a: OMP:0007921 ! presence of cell size variability within a cell population
 created_by: siegele
 creation_date: 2020-07-26T19:54:28Z
@@ -4405,11 +4480,206 @@ created_by: siegele
 creation_date: 2020-07-26T19:58:18Z
 
 [Term]
+id: OMP:0000341
+name: cell shape variability phenotype
+def: "A cell population phenotype where the trait is variability in cell shape within a microbial cell population." [OMP:das]
+is_a: OMP:0000272 ! cell morphology variability
+created_by: siegele
+creation_date: 2020-11-27T19:18:22Z
+
+[Term]
 id: OMP:0000342
 name: presence of nucleoid area variability
 is_a: OMP:0007698 ! cell population phenotype
 created_by: siegele
 creation_date: 2020-07-27T16:05:18Z
+
+[Term]
+id: OMP:0000343
+name: altered cell shape variability phenotype
+def: "A cell population phenotype where variability in cell shape is altered relative to a designated control." [OMP:das]
+is_a: OMP:0000341 ! cell shape variability phenotype
+created_by: siegele
+creation_date: 2020-11-27T19:21:14Z
+
+[Term]
+id: OMP:0000344
+name: nucleoid area phenotype
+is_a: OMP:0000150 ! nucleoid phenotype
+created_by: siegele
+creation_date: 2020-11-27T19:47:09Z
+
+[Term]
+id: OMP:0000345
+name: cell population growth yield phenotype
+is_a: OMP:0007794 ! cell population growth phenotype
+created_by: siegele
+creation_date: 2020-11-27T20:14:46Z
+
+[Term]
+id: OMP:0000346
+name: nucleoid constriction during cell division phenotype
+is_a: OMP:0000150 ! nucleoid phenotype
+created_by: siegele
+creation_date: 2020-11-29T12:13:41Z
+
+[Term]
+id: OMP:0000347
+name: altered nucleoid constriction during cell division
+comment: This is a cell population average.
+is_a: OMP:0000281 ! altered cell population phenotype
+is_a: OMP:0000346 ! nucleoid constriction during cell division phenotype
+created_by: siegele
+creation_date: 2020-11-29T12:22:10Z
+
+[Term]
+id: OMP:0000348
+name: correlation between nucleoid and cell constriction phenotype
+is_a: OMP:0000346 ! nucleoid constriction during cell division phenotype
+created_by: siegele
+creation_date: 2020-11-29T12:40:18Z
+
+[Term]
+id: OMP:0000349
+name: cell division during cell population growth phenotype
+is_a: OMP:0007794 ! cell population growth phenotype
+created_by: siegele
+creation_date: 2020-11-29T13:03:32Z
+
+[Term]
+id: OMP:0000350
+name: altered cell division during cell population growth
+def: "population growth phenotype" []
+is_a: OMP:0000349 ! cell division during cell population growth phenotype
+is_a: OMP:0007809 ! altered cell population growth
+created_by: siegele
+creation_date: 2020-11-29T13:09:01Z
+
+[Term]
+id: OMP:0000351
+name: altered nucleoid number phenotype
+is_a: OMP:0000043 ! nucleoid number phenotype
+created_by: siegele
+creation_date: 2020-11-29T13:20:35Z
+
+[Term]
+id: OMP:0000352
+name: timing of cell constriction phenotype
+is_a: OMP:0000349 ! cell division during cell population growth phenotype
+created_by: siegele
+creation_date: 2020-11-29T13:54:26Z
+
+[Term]
+id: OMP:0000353
+name: timing of nucleoid separation phenotype
+is_a: OMP:0000349 ! cell division during cell population growth phenotype
+created_by: siegele
+creation_date: 2020-11-29T13:55:15Z
+
+[Term]
+id: OMP:0000354
+name: altered timing of cell constriction
+is_a: OMP:0000352 ! timing of cell constriction phenotype
+created_by: siegele
+creation_date: 2020-11-29T14:02:10Z
+
+[Term]
+id: OMP:0000355
+name: altered timing of nucleoid separation
+is_a: OMP:0000353 ! timing of nucleoid separation phenotype
+created_by: siegele
+creation_date: 2020-11-29T14:03:05Z
+
+[Term]
+id: OMP:0000356
+name: decreased relative timing of cell constriction
+is_a: OMP:0000354 ! altered timing of cell constriction
+created_by: siegele
+creation_date: 2020-11-29T14:13:36Z
+
+[Term]
+id: OMP:0000357
+name: increased relative timing of cell constriction
+is_a: OMP:0000354 ! altered timing of cell constriction
+created_by: siegele
+creation_date: 2020-11-29T14:13:36Z
+
+[Term]
+id: OMP:0000358
+name: cell length variability phenotype
+is_a: OMP:0007917 ! cell size variability
+created_by: siegele
+creation_date: 2020-11-29T14:19:27Z
+
+[Term]
+id: OMP:0000359
+name: cell diameter variability phenotype
+is_a: OMP:0007917 ! cell size variability
+created_by: siegele
+creation_date: 2020-11-29T14:20:53Z
+
+[Term]
+id: OMP:0000360
+name: cell area variability phenotype
+is_a: OMP:0007917 ! cell size variability
+created_by: siegele
+creation_date: 2020-11-29T14:21:45Z
+
+[Term]
+id: OMP:0000361
+name: cell volume variability phenotype
+is_a: OMP:0007917 ! cell size variability
+created_by: siegele
+creation_date: 2020-11-29T14:22:39Z
+
+[Term]
+id: OMP:0000362
+name: cell surface area variability phenotype
+is_a: OMP:0007917 ! cell size variability
+created_by: siegele
+creation_date: 2020-11-29T14:24:11Z
+
+[Term]
+id: OMP:0000363
+name: cell perimeter length variability phenotype
+is_a: OMP:0007917 ! cell size variability
+created_by: siegele
+creation_date: 2020-11-29T14:24:52Z
+
+[Term]
+id: OMP:0000364
+name: cell surface area-to-volume ratio variability phenotype
+is_a: OMP:0007917 ! cell size variability
+created_by: siegele
+creation_date: 2020-11-29T14:25:30Z
+
+[Term]
+id: OMP:0000365
+name: cell circularity variability phenotype
+is_a: OMP:0007917 ! cell size variability
+created_by: siegele
+creation_date: 2020-11-29T14:26:57Z
+
+[Term]
+id: OMP:0000366
+name: cell aspect ratio variability phenotype
+is_a: OMP:0007917 ! cell size variability
+created_by: siegele
+creation_date: 2020-11-29T14:27:30Z
+
+[Term]
+id: OMP:0000367
+name: nucleoid area variability phenotype
+is_a: OMP:0000272 ! cell morphology variability
+created_by: siegele
+creation_date: 2020-11-29T14:30:57Z
+
+[Term]
+id: OMP:0000368
+name: cell division ratio variability phenotype
+is_a: OMP:0007794 ! cell population growth phenotype
+created_by: siegele
+creation_date: 2020-11-29T14:33:05Z
 
 [Term]
 id: OMP:0000435
@@ -5599,7 +5869,9 @@ creation_date: 2014-05-07T12:40:14Z
 [Term]
 id: OMP:0005108
 name: increased cell diameter
-def: "An altered cell size phenotype where the diameter of a spherical microbial cell or cells is increased relative to a designated control." [OMP:WAM]
+alt_id: OMP:0007664
+def: "MERGED DEFINITION: An altered cell size phenotype where the diameter of a microbial cell with a circular cross-section is increased relative to a designated control. \n\nTARGET DEFINITION: An altered cell size phenotype where the diameter of a coccus-shaped (spherical) microbial cell or cells is increased relative to a designated control.\n--------------------\nSOURCE DEFINITION: An altered cell size phenotype where the width of a non-coccus,  i.e. rod- or spiral-shaped, microbial cell or cells is increased relative to a designated control." [OMP:DAS, OMP:WAM]
+synonym: "increased cell width" EXACT []
 is_a: OMP:0000041 ! increased cell size
 created_by: wmeza
 creation_date: 2014-07-02T18:39:12Z
@@ -5607,7 +5879,9 @@ creation_date: 2014-07-02T18:39:12Z
 [Term]
 id: OMP:0005109
 name: decreased cell diameter
-def: "An altered cell size phenotype where the diameter of a spherical microbial cell or cells is decreased relative to a designated control." [OMP:WAM]
+alt_id: OMP:0007665
+def: "MERGED DEFINITION:  An altered cell size phenotype where the diameter of a microbial cell with a circular cross-section is decreased relative to a designated control. \n\nTARGET DEFINITION: An altered cell size phenotype where the diameter of a coccus-shaped (spherical) microbial cell or cells is decreased relative to a designated control.\n--------------------\nSOURCE DEFINITION: An altered cell size phenotype where the width of a non-coccus,  i.e. rod- or spiral-shaped, microbial cell or cells is decreased relative to a designated control." [OMP:DAS, OMP:WAM]
+synonym: "decreased cell width" EXACT []
 is_a: OMP:0000040 ! decreased cell size
 created_by: wmeza
 creation_date: 2014-07-02T18:46:00Z
@@ -10522,6 +10796,7 @@ id: OMP:0007084
 name: decreased cell length
 def: "An altered cell size phenotype where the long axis of a cell or cells is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0000040 ! decreased cell size
+is_a: OMP:0007975 ! altered cell length
 created_by: siegele
 creation_date: 2014-07-06T14:43:59Z
 
@@ -11127,6 +11402,7 @@ creation_date: 2014-08-19T14:26:57Z
 id: OMP:0007148
 name: cytokinesis phenotype
 def: "A cell cycle phenotype related to the process in a proliferating cell or organism in which the cytoplasm and cell envelope are separation into two or more daughter cells." [OMP:DAS]
+synonym: "cell division phenotype" EXACT []
 xref: GO:0000910 "cytokinesis"
 is_a: OMP:0005115 ! cell cycle phenotype
 created_by: siegele
@@ -15673,22 +15949,6 @@ created_by: siegele
 creation_date: 2017-08-02T00:49:40Z
 
 [Term]
-id: OMP:0007664
-name: increased cell width
-def: "An altered cell size phenotype where the width of a nonspherical microbial cell is increased relative to a designated control." [OMP:DAS]
-is_a: OMP:0000041 ! increased cell size
-created_by: siegele
-creation_date: 2017-09-23T00:47:28Z
-
-[Term]
-id: OMP:0007665
-name: decreased cell width
-def: "An altered cell size phenotype where the width of a nonspherical microbial cell is decreased relative to a designated control." [OMP:DAS]
-is_a: OMP:0000040 ! decreased cell size
-created_by: siegele
-creation_date: 2017-09-23T00:47:28Z
-
-[Term]
 id: OMP:0007666
 name: bulging cell morphology
 def: "An altered cell morphology phenotype where a microbial cell or cells exhibit a prominent bulge not present in the designated control." [OMP:DAS, PMID:27238023]
@@ -16183,7 +16443,7 @@ creation_date: 2017-12-20T16:40:08Z
 [Term]
 id: OMP:0007722
 name: increased vegetative cell diameter
-def: "An altered cell size phenotype where the diameter of cells in the vegetative growth phase of the life cycle is increased relative to a designated control." [OMP:das]
+def: "An altered cell size phenotype observed in the vegetative growth phase of the life cycle where the diameter of a microbial cell with a circular cross-section is increased relative to a designated control." [OMP:das]
 is_a: OMP:0005108 ! increased cell diameter
 is_a: OMP:0007713 ! altered vegetative cell size
 created_by: siegele
@@ -17866,23 +18126,24 @@ creation_date: 2018-08-26T19:22:17Z
 
 [Term]
 id: OMP:0007916
-name: decreased vegetative cell width
-def: "An altered cell size phenotype in which the width of a nonspherical cell in the vegetative growth phase of the life cycle is decreased relative to a designated control." [OMP:das]
-is_a: OMP:0007665 ! decreased cell width
+name: decreased vegetative cell diameter
+def: "An altered cell size phenotype observed in the vegetative growth phase of the life cycle where the diameter of a microbial cell with a circular cross-section is decreased relative to a designated control." [OMP:das]
+is_a: OMP:0005109 ! decreased cell diameter
 created_by: siegele
 creation_date: 2018-09-05T14:59:12Z
 
 [Term]
 id: OMP:0007917
-name: cell size variability within a cell population phenotype
-is_a: OMP:0007698 ! cell population phenotype
+name: cell size variability
+def: "A cell population phenotype that describes the extent of cell size variability within a growing microbial cell population." []
+is_a: OMP:0000272 ! cell morphology variability
 created_by: siegele
 creation_date: 2018-09-05T15:18:58Z
 
 [Term]
 id: OMP:0007918
 name: altered cell size variability within a cell population
-is_a: OMP:0007917 ! cell size variability within a cell population phenotype
+is_a: OMP:0007917 ! cell size variability
 created_by: siegele
 creation_date: 2018-09-05T15:21:39Z
 
@@ -17903,14 +18164,14 @@ creation_date: 2018-09-05T15:59:26Z
 [Term]
 id: OMP:0007921
 name: presence of cell size variability within a cell population
-is_a: OMP:0007917 ! cell size variability within a cell population phenotype
+is_a: OMP:0007917 ! cell size variability
 created_by: siegele
 creation_date: 2018-09-05T16:06:50Z
 
 [Term]
 id: OMP:0007922
 name: absence of cell size variability within a cell population
-is_a: OMP:0007917 ! cell size variability within a cell population phenotype
+is_a: OMP:0007917 ! cell size variability
 created_by: siegele
 creation_date: 2018-09-05T16:07:15Z
 
@@ -18337,6 +18598,7 @@ creation_date: 2020-05-08T13:17:08Z
 [Term]
 id: OMP:0007975
 name: altered cell length
+is_a: OMP:0000322 ! cell length phenotype
 is_a: OMP:0007083 ! altered cell size
 created_by: siegele
 creation_date: 2020-07-22T19:20:08Z
@@ -18344,21 +18606,22 @@ creation_date: 2020-07-22T19:20:08Z
 [Term]
 id: OMP:0007976
 name: altered cell length variability
+is_a: OMP:0000281 ! altered cell population phenotype
 is_a: OMP:0007918 ! altered cell size variability within a cell population
-is_a: OMP:0007975 ! altered cell length
 created_by: siegele
 creation_date: 2020-07-22T19:21:08Z
 
 [Term]
 id: OMP:0007977
 name: altered cell diameter
+is_a: OMP:0000317 ! cell diameter phenotype
 is_a: OMP:0007083 ! altered cell size
 created_by: siegele
 creation_date: 2020-07-22T19:22:09Z
 
 [Term]
 id: OMP:0007978
-name: altered cell width variability
+name: altered cell diameter variability
 is_a: OMP:0007977 ! altered cell diameter
 created_by: siegele
 creation_date: 2020-07-22T19:22:31Z
@@ -18379,21 +18642,22 @@ creation_date: 2020-07-22T19:24:06Z
 
 [Term]
 id: OMP:0007981
-name: decreased cell width variability
-is_a: OMP:0007978 ! altered cell width variability
+name: decreased cell diameter variability
+is_a: OMP:0007978 ! altered cell diameter variability
 created_by: siegele
 creation_date: 2020-07-22T19:36:15Z
 
 [Term]
 id: OMP:0007982
-name: increased cell width variability
-is_a: OMP:0007978 ! altered cell width variability
+name: increased cell diameter variability
+is_a: OMP:0007978 ! altered cell diameter variability
 created_by: siegele
 creation_date: 2020-07-22T19:36:15Z
 
 [Term]
 id: OMP:0007983
 name: altered cell area
+is_a: OMP:0000319 ! cell area phenotype
 is_a: OMP:0007083 ! altered cell size
 created_by: siegele
 creation_date: 2020-07-22T20:21:33Z
@@ -18437,6 +18701,7 @@ creation_date: 2020-07-22T20:23:34Z
 [Term]
 id: OMP:0007989
 name: altered cell volume
+is_a: OMP:0000328 ! cell volume phenotype
 is_a: OMP:0007083 ! altered cell size
 created_by: siegele
 creation_date: 2020-07-22T20:25:24Z
@@ -18465,6 +18730,7 @@ creation_date: 2020-07-22T20:27:50Z
 [Term]
 id: OMP:0007993
 name: altered cell surface area
+is_a: OMP:0000326 ! cell surface area phenotype
 is_a: OMP:0007083 ! altered cell size
 created_by: siegele
 creation_date: 2020-07-22T20:28:53Z
@@ -18508,6 +18774,7 @@ creation_date: 2020-07-22T20:31:33Z
 [Term]
 id: OMP:0007999
 name: altered cell surface area-to-volume ratio
+is_a: OMP:0000330 ! cell surface area-to-volume ratio phenotype
 is_a: OMP:0007083 ! altered cell size
 created_by: siegele
 creation_date: 2020-07-22T20:32:47Z
