@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 29:11:2020 14:35
+date: 01:12:2020 21:15
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -4680,6 +4680,55 @@ name: cell division ratio variability phenotype
 is_a: OMP:0007794 ! cell population growth phenotype
 created_by: siegele
 creation_date: 2020-11-29T14:33:05Z
+
+[Term]
+id: OMP:0000369
+name: internalization by macrophage phenotype    
+is_a: OMP:0007455 ! survival in macrophage phenotype
+created_by: siegele
+creation_date: 2020-12-01T21:00:29Z
+
+[Term]
+id: OMP:0000370
+name: presence of internalization by macrophage
+is_a: OMP:0000369 ! internalization by macrophage phenotype    
+created_by: siegele
+creation_date: 2020-12-01T21:06:40Z
+
+[Term]
+id: OMP:0000371
+name: absence of internalization by macrophage
+is_a: OMP:0000369 ! internalization by macrophage phenotype    
+created_by: siegele
+creation_date: 2020-12-01T21:06:40Z
+
+[Term]
+id: OMP:0000372
+name: altered internalization by macrophage
+is_a: OMP:0000369 ! internalization by macrophage phenotype    
+created_by: siegele
+creation_date: 2020-12-01T21:06:40Z
+
+[Term]
+id: OMP:0000373
+name: increased internalization by macrophage
+is_a: OMP:0000372 ! altered internalization by macrophage
+created_by: siegele
+creation_date: 2020-12-01T21:06:40Z
+
+[Term]
+id: OMP:0000374
+name: decreased internalization by macrophage
+is_a: OMP:0000372 ! altered internalization by macrophage
+created_by: siegele
+creation_date: 2020-12-01T21:06:40Z
+
+[Term]
+id: OMP:0000375
+name: abolished internalization by macrophage
+is_a: OMP:0000374 ! decreased internalization by macrophage
+created_by: siegele
+creation_date: 2020-12-01T21:06:40Z
 
 [Term]
 id: OMP:0000435
