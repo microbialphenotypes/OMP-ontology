@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 01:12:2020 21:15
+date: 27:12:2020 01:01
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2044,7 +2044,7 @@ creation_date: 2011-02-02T03:11:48Z
 [Term]
 id: OMP:0000071
 name: cell morphology phenotype
-def: "A microbial phenotype related to the form and structure of a microbe." [OMP:MCC]
+def: "A microbial phenotype related to the form and structure of a microbial cell." [OMP:MCC]
 comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
 subset: qc_do_not_manually_annotate
 xref: APO:0000050 "cellular morphology"
@@ -4683,7 +4683,7 @@ creation_date: 2020-11-29T14:33:05Z
 
 [Term]
 id: OMP:0000369
-name: internalization by macrophage phenotype    
+name: internalization by macrophage phenotype
 is_a: OMP:0007455 ! survival in macrophage phenotype
 created_by: siegele
 creation_date: 2020-12-01T21:00:29Z
@@ -4691,21 +4691,21 @@ creation_date: 2020-12-01T21:00:29Z
 [Term]
 id: OMP:0000370
 name: presence of internalization by macrophage
-is_a: OMP:0000369 ! internalization by macrophage phenotype    
+is_a: OMP:0000369 ! internalization by macrophage phenotype
 created_by: siegele
 creation_date: 2020-12-01T21:06:40Z
 
 [Term]
 id: OMP:0000371
 name: absence of internalization by macrophage
-is_a: OMP:0000369 ! internalization by macrophage phenotype    
+is_a: OMP:0000369 ! internalization by macrophage phenotype
 created_by: siegele
 creation_date: 2020-12-01T21:06:40Z
 
 [Term]
 id: OMP:0000372
 name: altered internalization by macrophage
-is_a: OMP:0000369 ! internalization by macrophage phenotype    
+is_a: OMP:0000369 ! internalization by macrophage phenotype
 created_by: siegele
 creation_date: 2020-12-01T21:06:40Z
 
@@ -4729,6 +4729,58 @@ name: abolished internalization by macrophage
 is_a: OMP:0000374 ! decreased internalization by macrophage
 created_by: siegele
 creation_date: 2020-12-01T21:06:40Z
+
+[Term]
+id: OMP:0000376
+name: acid tolerance response phenotype
+def: "A response to stress phenotype related to how exposure of a microbial cell or cells to a small decrease in pH affects" []
+is_a: OMP:0000173 ! response to stress phenotype
+created_by: siegele
+creation_date: 2020-12-27T00:51:04Z
+
+[Term]
+id: OMP:0000377
+name: absence of acid tolerance response
+is_a: OMP:0000376 ! acid tolerance response phenotype
+created_by: siegele
+creation_date: 2020-12-27T00:52:03Z
+
+[Term]
+id: OMP:0000378
+name: altered acid tolerance response
+is_a: OMP:0000376 ! acid tolerance response phenotype
+is_a: OMP:0007158 ! altered response to stress phenotype
+created_by: siegele
+creation_date: 2020-12-27T00:52:03Z
+
+[Term]
+id: OMP:0000379
+name: presence of acid tolerance response
+is_a: OMP:0000376 ! acid tolerance response phenotype
+created_by: siegele
+creation_date: 2020-12-27T00:52:03Z
+
+[Term]
+id: OMP:0000380
+name: decreased acid tolerance response
+is_a: OMP:0000378 ! altered acid tolerance response
+created_by: siegele
+creation_date: 2020-12-27T00:53:04Z
+
+[Term]
+id: OMP:0000381
+name: increased acid tolerance response
+is_a: OMP:0000378 ! altered acid tolerance response
+created_by: siegele
+creation_date: 2020-12-27T00:53:04Z
+
+[Term]
+id: OMP:0000382
+name: abolished acid tolerance response
+is_a: OMP:0000377 ! absence of acid tolerance response
+is_a: OMP:0000380 ! decreased acid tolerance response
+created_by: siegele
+creation_date: 2020-12-27T00:53:11Z
 
 [Term]
 id: OMP:0000435
