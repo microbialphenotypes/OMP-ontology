@@ -1,8 +1,8 @@
 format-version: 1.2
 data-version: releases/2015-02-19
-date: 27:12:2020 01:01
+date: 05:04:2021 15:38
 saved-by: siegele
-auto-generated-by: OBO-Edit 2.3.1
+auto-generated-by: OBO-Edit 2.3-beta6
 subsetdef: abnormal_slim "Abnormal/normal slim"
 subsetdef: absent_slim "Absent/present slim"
 subsetdef: attribute_slim "Attribute slim"
@@ -4781,6 +4781,61 @@ is_a: OMP:0000377 ! absence of acid tolerance response
 is_a: OMP:0000380 ! decreased acid tolerance response
 created_by: siegele
 creation_date: 2020-12-27T00:53:11Z
+
+[Term]
+id: OMP:0000383
+name: cell-cell self recognition phenotype
+def: "A biological process phenotype concerning whether cells of one strain of a microbial taxon are able to \ndiscriminate between cells of the same strain and cells that belong to a different strain of the same taxon, i.e. the ability to discriminate between self and non-self." [OMP:das, PMID:18621670]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+synonym: "<new synonym>" NARROW []
+is_a: OMP:0007194 ! biological process phenotype
+created_by: siegele
+creation_date: 2021-03-29T16:47:35Z
+
+[Term]
+id: OMP:0000384
+name: absence of cell-cell self recognition
+is_a: OMP:0000383 ! cell-cell self recognition phenotype
+created_by: siegele
+creation_date: 2021-03-29T16:49:55Z
+
+[Term]
+id: OMP:0000385
+name: presence of cell-cell self recognition
+def: "A cell-cell self-recognition phenotype where cells of a microbial strain recognizes self and different populations of the same strain will merge when grown on solid medium." []
+is_a: OMP:0000383 ! cell-cell self recognition phenotype
+created_by: siegele
+creation_date: 2021-03-29T16:49:55Z
+
+[Term]
+id: OMP:0000386
+name: altered cell-cell self recognition
+synonym: "aberrant cell-cell self recognition" NARROW [DDPHENO:0000122 ]
+is_a: OMP:0000383 ! cell-cell self recognition phenotype
+created_by: siegele
+creation_date: 2021-03-29T16:49:55Z
+
+[Term]
+id: OMP:0000387
+name: increased cell-cell self recognition
+is_a: OMP:0000386 ! altered cell-cell self recognition
+created_by: siegele
+creation_date: 2021-03-29T16:52:06Z
+
+[Term]
+id: OMP:0000388
+name: decreased cell-cell self recognition
+is_a: OMP:0000386 ! altered cell-cell self recognition
+created_by: siegele
+creation_date: 2021-03-29T16:52:06Z
+
+[Term]
+id: OMP:0000389
+name: abolished cell-cell self recognition
+is_a: OMP:0000386 ! altered cell-cell self recognition
+is_a: OMP:0000388 ! decreased cell-cell self recognition
+created_by: siegele
+creation_date: 2021-03-29T16:52:06Z
 
 [Term]
 id: OMP:0000435
