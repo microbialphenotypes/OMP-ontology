@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: releases/2021-03-05
-date: 27:12:2020 01:01
+data-version: releases/2021-04-16
+date: 13:04:2021 14:52
 saved-by: siegele
 auto-generated-by: OBO-Edit 2.3.1
 subsetdef: abnormal_slim "Abnormal/normal slim"
@@ -2311,7 +2311,7 @@ id: OMP:0000254
 name: constitutive transcription
 def: "An increased transcription phenotype where a gene or genes whose transcription is normally regulated are now transcribed constitutively." [OMP:WAM]
 synonym: "constitutive gene expression" EXACT []
-is_a: OMP:0007117 ! increased transcription
+is_a: OMP:0007117 ! increased transcription of gene or operon
 created_by: mchibucos
 creation_date: 2011-07-21T01:05:42Z
 
@@ -3364,6 +3364,74 @@ is_a: OMP:0000377 ! absence of acid tolerance response
 is_a: OMP:0000380 ! decreased acid tolerance response
 created_by: siegele
 creation_date: 2020-12-27T00:53:11Z
+
+[Term]
+id: OMP:0000383
+name: cell-cell self recognition phenotype
+def: "A biological process phenotype concerning whether cells of one strain of a microbial taxon are able to \ndiscriminate between cells of the same strain and cells that belong to a different strain of the same taxon, i.e. the ability to discriminate between self and non-self." [OMP:das, PMID:18621670]
+comment: This is a high-level term whose primary purpose is to organize terms beneath it in the ontology, and we expect that it will not be used for direct annotations. Please consider using a more specific term to annotate each phenotype.
+synonym: "<new synonym>" NARROW []
+is_a: OMP:0007194 ! biological process phenotype
+created_by: siegele
+creation_date: 2021-03-29T16:47:35Z
+
+[Term]
+id: OMP:0000384
+name: absence of cell-cell self recognition
+is_a: OMP:0000383 ! cell-cell self recognition phenotype
+created_by: siegele
+creation_date: 2021-03-29T16:49:55Z
+
+[Term]
+id: OMP:0000385
+name: presence of cell-cell self recognition
+def: "A cell-cell self-recognition phenotype where cells of a microbial strain recognizes self and different populations of the same strain will merge when grown on solid medium." []
+is_a: OMP:0000383 ! cell-cell self recognition phenotype
+created_by: siegele
+creation_date: 2021-03-29T16:49:55Z
+
+[Term]
+id: OMP:0000386
+name: altered cell-cell self recognition
+synonym: "aberrant cell-cell self recognition" NARROW [DDPHENO:0000122]
+is_a: OMP:0000383 ! cell-cell self recognition phenotype
+created_by: siegele
+creation_date: 2021-03-29T16:49:55Z
+
+[Term]
+id: OMP:0000387
+name: increased cell-cell self recognition
+is_a: OMP:0000386 ! altered cell-cell self recognition
+created_by: siegele
+creation_date: 2021-03-29T16:52:06Z
+
+[Term]
+id: OMP:0000388
+name: decreased cell-cell self recognition
+is_a: OMP:0000386 ! altered cell-cell self recognition
+created_by: siegele
+creation_date: 2021-03-29T16:52:06Z
+
+[Term]
+id: OMP:0000389
+name: abolished cell-cell self recognition
+is_a: OMP:0000388 ! decreased cell-cell self recognition
+created_by: siegele
+creation_date: 2021-03-29T16:52:06Z
+
+[Term]
+id: OMP:0000390
+name: presence of transcription of gene or operon
+is_a: OMP:0007106 ! transcription phenotype
+created_by: siegele
+creation_date: 2021-04-13T14:45:21Z
+
+[Term]
+id: OMP:0000391
+name: absence of transcription of gene or operon
+is_a: OMP:0007106 ! transcription phenotype
+created_by: siegele
+creation_date: 2021-04-13T14:46:06Z
 
 [Term]
 id: OMP:0000435
@@ -9742,7 +9810,7 @@ creation_date: 2014-07-18T13:53:13Z
 
 [Term]
 id: OMP:0007117
-name: increased transcription
+name: increased transcription of gene or operon
 def: "An altered transcription phenotype where transcription of a gene or genes is increased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007108 ! altered transcription
 created_by: dsiegele
@@ -9750,7 +9818,7 @@ creation_date: 2014-08-11T16:41:06Z
 
 [Term]
 id: OMP:0007118
-name: decreased transcription
+name: decreased transcription of gene or operon
 def: "An altered transcription phenotype where transcription of a gene or genes is decreased relative to a designated control." [OMP:DAS]
 is_a: OMP:0007108 ! altered transcription
 created_by: dsiegele
@@ -9758,9 +9826,9 @@ creation_date: 2014-08-11T16:41:06Z
 
 [Term]
 id: OMP:0007119
-name: abolished transcription
+name: abolished transcription of gene or operon
 def: "A decreased transcription phenotype where transcription of a gene or genes is abolished relative to a designated control." [OMP:DAS]
-is_a: OMP:0007118 ! decreased transcription
+is_a: OMP:0007118 ! decreased transcription of gene or operon
 created_by: dsiegele
 creation_date: 2014-08-11T16:42:21Z
 
@@ -9769,7 +9837,7 @@ id: OMP:0007120
 name: decreased transcription of sigma-factor dependent genes
 def: "A decreased transcription phenotype where transcription of a gene or genes dependent upon a particular sigma factor is decreased relative to a designated control." [OMP:DAS]
 comment: The UniProt accession for the particular sigma factor should be entered in the extension field.
-is_a: OMP:0007118 ! decreased transcription
+is_a: OMP:0007118 ! decreased transcription of gene or operon
 created_by: dsiegele
 creation_date: 2014-08-11T16:57:46Z
 
@@ -9778,7 +9846,7 @@ id: OMP:0007121
 name: increased transcription of sigma-factor dependent genes
 def: "An increased transcription phenotype where transcription of a gene or genes dependent upon a particular sigma factor is increased relative to a designated control." [OMP:DAS]
 comment: The UniProt accession for the particular sigma factor should be entered in the extension field.
-is_a: OMP:0007117 ! increased transcription
+is_a: OMP:0007117 ! increased transcription of gene or operon
 created_by: dsiegele
 creation_date: 2014-08-11T17:02:37Z
 
